@@ -1,0 +1,60 @@
+<!-- <div class="flex flex-col w-full p-8"> -->
+
+<div
+    class="p-8 flex flex-col items-center gap-4 w-full sm:m-auto sm:w-96 shadow bg-white rounded text-black"
+>
+    <span class="font-bold text-xl">Importação de Diárias </span>
+   <!-- Filtros -->
+   <div class="w-full">
+    <form [formGroup]="service.filtros" class="grid grid-cols-1 gap-3 w-full justify-items-center">
+        <mat-form-field class="w-full">
+            <mat-label class="">Ano Início</mat-label>
+            <mat-select formControlName="ano_inicio">
+                <mat-option *ngFor="let option of service.lista_anos" [value]="option">
+                    {{ option }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="w-full">
+            <mat-label class="">Ano Fim</mat-label>
+            <mat-select formControlName="ano_fim">
+                <mat-option *ngFor="let option of service.lista_anos" [value]="option">
+                    {{ option }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        
+        <div appearance="fill" class="w-full">
+            <mpmt-selecao
+                #selecaoServidorComponent
+                [titulo]="'Servidor'"
+                class="w-96"
+                placeholder="Selecione um servidor"
+                formControlName="servidor"
+                [configuracao]="selecaoServidor"
+            ></mpmt-selecao>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-3 w-full justify-items-center">
+            <mpmt-botao cor="critico" (click)="limparSelecao()">Limpar Seleção</mpmt-botao>
+            <mpmt-botao cor="sucesso" (click)="importarDados()">Importar</mpmt-botao>
+        </div>
+
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>

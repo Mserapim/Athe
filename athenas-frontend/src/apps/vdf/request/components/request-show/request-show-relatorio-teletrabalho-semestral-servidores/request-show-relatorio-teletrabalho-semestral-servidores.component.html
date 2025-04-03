@@ -1,0 +1,69 @@
+<div class="flex flex-col gap-2">
+    <div class="max-h-120 overflow-y-auto custom-scrollbar w-full">
+        <div class="flex flex-col h-full w-full gap-2 rounded">
+            <!-- <div class="flex flex-col gap-4" *ngFor="let grupo of dados">
+                <div class="flex flex-col font-bold text-xl">
+                    {{ grupo.tipo_ato }} - {{ grupo?.dados?.length }} Servidores
+                    <span class="text-xs"
+                        >( Servidores em Condições Especiais de Trabalho)</span
+                    >
+                </div> -->
+
+            <div class="flex flex-col">
+                <table>
+                    <thead class="bg-gray-200 text-left text-black font-bold">
+                        <th class="p-2">Matricula</th>
+                        <th class="p-2">Nome</th>
+                        <th class="p-2">Ato</th>
+                        <th class="p-2">GEDOC</th>
+                        <th class="p-2">Data Início</th>
+                        <th class="p-2">Data Fim</th>
+                        <th class="p-2 max-w-96">Envios</th>
+                    </thead>
+
+                    <tbody class="bg-gray-50 border border-gray-100">
+                        <ng-container
+                            *ngFor="
+                                let pessoa of dados.plano_servidores;
+                                let indexPessoa = index;
+                                let odd = odd
+                            "
+                        >
+                            <tr
+                                *ngFor="
+                                    let registro of pessoa?.registros;
+                                    let first = first;
+                                    let last = last
+                                "
+                                class=""
+                                :[ngClass]="{'bg-gray-200': odd, 'border-top border-gray-300': first}"
+                            >
+                                <td>
+                                    <div *ngIf="first">
+                                        {{ pessoa.matricula }}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div *ngIf="first">
+                                        {{ pessoa.nome }}
+                                    </div>
+                                </td>
+                                <td>{{ registro.ato }}</td>
+                                <td>{{ registro.gedoc }}</td>
+                                <td>
+                                    {{ printDate(registro.data_inicio) }}
+                                </td>
+                                <td>{{ printDate(registro.data_fim) }}</td>
+                                <td>{{ registro.envios.join(",") }}</td>
+                            </tr>
+                        </ng-container>
+                    </tbody>
+                </table>
+                <!-- </div> -->
+
+                <!-- <pre>      {{ dados | json }}</pre> -->
+                <!-- {{ listaFiltradaAto1058() | json }} -->
+            </div>
+        </div>
+    </div>
+</div>

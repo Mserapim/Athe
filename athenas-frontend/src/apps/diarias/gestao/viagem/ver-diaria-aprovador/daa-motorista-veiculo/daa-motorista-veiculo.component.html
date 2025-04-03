@@ -1,0 +1,30 @@
+<div class="flex flex-col gap-2">
+    <div class="flex justify-end">
+        <button (click)="fecharFormulario()">
+          <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <h1 class="font-bold text-lg text-primary" style="padding: 0 24px;">Detalhes da viagem</h1>
+
+    <div mat-dialog-content>
+      <div class="flex flex-col w-full sm:min-w-80" style="color: black;">
+        <div *ngIf="veiculoMotorista.motorista" style="padding-bottom: 10px;">  
+          <h2 class="font-bold text-md text-primary" style="padding-bottom: 5px;">
+            Dados do motorista
+          </h2>
+          <p><strong>Motorista:</strong> {{ veiculoMotorista.motorista }}</p>
+        </div>
+        
+        <div *ngIf="veiculoMotorista.veiculo_placa">
+          <h2 class="font-bold text-md text-primary" style="padding-bottom: 5px;">
+            Dados do veículo
+          </h2>
+          <p><strong>Placa:</strong> {{ veiculoMotorista.veiculo_placa }}</p>
+          <p><strong>Marca:</strong> {{ veiculoMotorista.veiculo_marca }}</p>
+          <p><strong>Modelo:</strong> {{ veiculoMotorista.veiculo_modelo }}</p>
+          <p><strong>Capacidade de passageiros:</strong> {{ veiculoMotorista.veiculo_capacidade_passageiros }}</p>
+        </div>
+      </div>
+    </div>
+</div>

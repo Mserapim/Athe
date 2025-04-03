@@ -1,0 +1,167 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <div class="flex justify-between py-2">
+        <div class="flex font-bold text-xl">
+            <h1 class="font-bold text-sm">{{ title }}</h1>
+            <p class="text-xs text-gray-600">
+                {{ subtitle }}
+            </p>
+        </div>
+        <div
+            class="flex text-bold text-sm py-1 px-2 bg-gray-100 border border-gray-200 rounded-full"
+            *ngIf="hasRequest"
+        >
+            {{ request?.status_name }}
+        </div>
+    </div>
+
+    <div
+        class="flex p-2 gap-2 bg-gray-100 w-full font-bold text-lg cursor-pointer text-center rounded-full"
+    >
+        <div
+            class="w-36 p-2 rounded-full"
+            [ngClass]="{ 'bg-gray-300': currentTab == 'DETAIL' }"
+            (click)="currentTab = 'DETAIL'"
+        >
+            Detalhes
+        </div>
+
+        <div
+            class="w-36 p-2 rounded-full"
+            [ngClass]="{ 'bg-gray-200': currentTab == 'HISTORICOS' }"
+            (click)="currentTab = 'HISTORICOS'"
+        >
+            Histórico
+        </div>
+    </div>
+
+    <div *ngIf="isLoading">Carregando...</div>
+    <div *ngIf="currentTab == 'DETAIL'">
+        <div
+            *ngIf="!isLoading"
+            class="flex flex-col h-full w-full p-4 gap-2 bg-gray-50 border border-gray-100 rounded"
+        >
+            <request-observation-alert
+                [requestId]="request?.pk"
+            ></request-observation-alert>
+
+            <div class="flex gap-4" *ngIf="hasRequest">
+                <div class="flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <div class="font-bold">Código da solicitação:</div>
+                        <div>{{ request?.pk }}</div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div class="font-bold">Data da solicitação:</div>
+                        <div>{{ request?.date | date : "dd.MM.YYYY" }}</div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div class="font-bold">Tipo da solicitação:</div>
+                        <div>{{ request?.type_of_request }}</div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div class="font-bold">Solicitante:</div>
+                        <div>{{ request?.employee_name }}</div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div class="font-bold">Aprovador atual:</div>
+                        <div>{{ request?.approver_name }}</div>
+                    </div>
+
+                    <div class="flex gap-2" *ngIf="request?.pk">
+                        <div class="text-red-500 font-bold">Referência:</div>
+                        <div class="text-red-500 font-bold">
+                            {{ request?.reference }}
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div class="font-bold mt-2">Arquivos:</div>
+                        <button
+                            mat-button
+                            color="primary"
+                            class="underscore"
+                            (click)="downloadTimeSheet()"
+                            [class.spinner]="isLoadingFolhaPonto"
+                            [disabled]="!isValid || isLoadingFolhaPonto"
+                        >
+                            Download Folha Ponto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col gap-2"
+                *ngIf="!hasRequest && canSelectReference"
+            >
+                <span class="font-bold"
+                    >Selecione a referência para qual deseja entregar a folha
+                    ponto</span
+                >
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-select [(ngModel)]="selectedReference">
+                        <mat-option
+                            *ngFor="let reference of references"
+                            [value]="reference.reference"
+                            >{{ reference.reference }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="currentTab == 'HISTORICOS'">
+        <request-show-historic
+            [requestId]="this.service.requestId"
+        ></request-show-historic>
+    </div>
+
+    <div class="flex flex-col justify-end gap-4">
+        <div
+            *ngIf="message"
+            class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+        >
+            {{ message }}
+        </div>
+
+        <div
+            *ngIf="messageError"
+            class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+        >
+            {{ messageError }}
+        </div>
+
+        <div
+            *ngIf="messageSuccess"
+            class="flex bg-green-100 w-full rounded p-2 text-green-700 font-bold text-md"
+        >
+            {{ messageSuccess }}
+        </div>
+
+        <div class="flex gap-2 self-center w-full justify-center p-2 rounded">
+            <button
+                *ngIf="canCancel"
+                mat-button
+                class="bg-red-400 text-white p-8 py-2 self-end"
+                (click)="cancelRequest()"
+            >
+                {{ textoCancelar }}
+            </button>
+
+            <button
+                mat-button
+                [disabled]="!isValid"
+                [ngClass]="{ 'bg-primary': isValid }"
+                class="bg-gray text-white p-8 py-4 w-56 self-end"
+                (click)="goNext()"
+            >
+                Avançar
+            </button>
+        </div>
+    </div>
+</div>

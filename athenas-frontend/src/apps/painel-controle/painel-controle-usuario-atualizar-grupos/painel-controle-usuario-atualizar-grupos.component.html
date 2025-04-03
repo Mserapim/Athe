@@ -1,0 +1,47 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">
+            Grupo de permissão de usuário
+        </h1>
+        <br />
+        <h3 class="font-bold text-lg">{{ nome }}</h3>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-row gap-2 w-full bg-gray-100 p-4">
+            <form
+                [formGroup]="filtros"
+                class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+            >
+                <div acoes class="flex flex-row w-full justify-start">
+                    <mpmt-selecao
+                        class="w-96"
+                        placeholder="Selecione um módulo"
+                        formControlName="modulo_id"
+                        [configuracao]="selecaoModulos"
+                        (ngModelChange)="aplicarFiltros()"
+                    ></mpmt-selecao>
+                </div>
+            </form>
+        </div>
+
+        <mpmt-picklist-paginado-api
+            [textoLista1]="'Nome'"
+            [textoLista2]="'Nome'"
+            [lista1]="lista1"
+            [lista2]="lista2"
+            (lista1Retorno)="receberEvento1($event)"
+            (lista2Retorno)="receberEvento2($event)"
+            (filtroLista1)="receberFiltroEvento1($event)"
+            [totalItems]="totalItensLista1"
+        >
+        </mpmt-picklist-paginado-api>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" [mat-dialog-close]="">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="atualizarUsuarioGrupos()"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>

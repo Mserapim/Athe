@@ -1,0 +1,68 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [service]="service" [habilitar-favorito]="false">
+        <!-- Ações -->
+        <div acoes>
+            <button
+                type="button"
+                primary
+                class="bg-primary text-white font-bold mt-1 mr-5"
+                mat-button
+                (click)="openMenu()"
+            >
+                Nova solicitação
+            </button>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full"
+            >
+                <mat-form-field class="w-56 self-center" class="w-full">
+                    <mat-label class="text-white">Filtro por texto</mat-label>
+                    <input
+                        matInput
+                        type="text"
+                        formControlName="keyword"
+                        placeholder="Buscar por"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                    />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white"
+                        >Filtro por tipo solicitação</mat-label
+                    >
+                    <mat-select
+                        formControlName="request_type"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let requestType of requestTypes"
+                            [value]="requestType.value"
+                            >{{ requestType.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white"
+                        >Filtro por situação</mat-label
+                    >
+                    <mat-select
+                        formControlName="status"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let status of requestStatus"
+                            [value]="status.value"
+                            >{{ status.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

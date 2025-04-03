@@ -1,0 +1,110 @@
+<div class="flex flex-col gap-8 w-full">
+    <div *ngIf="loading" class="spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+
+    <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+        
+
+        <div class="grid grid-cols-4 gap-2 w-full">
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Tipo viagem</mat-label>
+                <mat-select formControlName="tipo_viagem">
+                    <mat-option *ngFor="let option of tipos_viagem" [value]="option.id">
+                        {{ option.descricao }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Motivo viagem</mat-label>
+                <mat-select formControlName="motivo_viagem">
+                    <mat-option *ngFor="let option of motivos" [value]="option.id">
+                        {{ option.descricao }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <div class="autocomplete-container">
+                <mat-form-field appearance="fill" class="w-full">
+                  <mat-label>Finalidade</mat-label>
+                  <input type="text" matInput [matAutocomplete]="auto" formControlName="finalidade_viagem">
+                  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="displayFinalidade">
+                    <mat-option *ngFor="let option of finalidadesFiltradas | async" [value]="option">
+                      {{ option.descricao }}
+                    </mat-option>
+                  </mat-autocomplete>
+                  <mat-icon matSuffix class="autocomplete-icon" style="color: rgba(0, 0, 0, 0.54)">arrow_drop_down</mat-icon>
+                </mat-form-field>
+            </div>
+
+            <div class="flex flex-col gap-2">
+
+                <span style="font-weight: 500; color: rgba(var(--fuse-text-default-rgb), var(--tw-text-opacity));">Nesta
+                    viagem será fornecida hospedagem?</span>
+
+                <mat-radio-group formControlName="hospedagem_anfitriao">
+
+                    <mat-radio-button [value]="true">Sim</mat-radio-button>
+                    <mat-radio-button [value]="false">Não</mat-radio-button>
+                </mat-radio-group>
+            </div>
+              
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 w-full">
+            <mat-form-field class="w-full">
+                <mat-label>Data início</mat-label>
+                <input matInput [matDatepicker]="inicioPicker" formControlName="data_inicio_viagem" placeholder="">
+                <mat-datepicker-toggle matSuffix [for]="inicioPicker"></mat-datepicker-toggle>
+                <mat-datepicker #inicioPicker></mat-datepicker>
+            </mat-form-field>
+        
+            <mat-form-field class="w-full">
+                <mat-label>Data fim</mat-label>
+                <input matInput [matDatepicker]="fimPicker" formControlName="data_fim_viagem" placeholder="">
+                <mat-datepicker-toggle matSuffix [for]="fimPicker"></mat-datepicker-toggle>
+                <mat-datepicker #fimPicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <mpmt-texto-formatado 
+            class="w-full"
+            formControlName="resumo"
+            titulo="Resumo*"
+        >
+        </mpmt-texto-formatado>
+        <br>
+
+        <mpmt-texto-formatado 
+            class="w-full"
+            formControlName="justificativa"
+            titulo="Justificativa*"
+        >
+        </mpmt-texto-formatado>
+        <br>
+
+        <mpmt-file-update 
+            [acceptMultiple]="true" 
+            [acceptedFileTypes]="['application/pdf']"
+            titulo="Adicionar documentos*"
+            (lista_documentos)="receberAnexos($event)" 
+            [lista_arquivos_carregados]="anexos_carregados">
+        </mpmt-file-update>
+
+
+    </form>
+
+
+    <div class="flex justify-end gap-2">
+        <button mat-button color="[#174166]" class="bg-[#174166] text-white p-8 py-4 w-56" (click)="salvarRascunho()"
+            [ngClass]="{ 'bg-gray-300': !isValid }" [disabled]="!isValid">
+            Salvar rascunho
+        </button>
+        <button mat-button color="[#174166]" class="bg-[#174166] text-white p-8 py-4 w-56" (click)="irProximo()"
+            [ngClass]="{ 'bg-gray-300': !isValid }" [disabled]="!isValid">
+            Avançar
+        </button>
+    </div>
+</div>

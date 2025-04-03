@@ -1,0 +1,163 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Nova etapa do fluxo de aprovação de diárias</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <mat-form-field class="w-full">
+                    <mat-label>Etapa</mat-label>
+                    <mat-select formControlName="etapa">
+                        <mat-option *ngFor="let etapa of etapas" [value]="etapa.value">
+                            {{ etapa.label }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label>Ordenação</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        formControlName="ordem"
+                        placeholder=""
+                        min="0"
+                        max="99999"
+                    />
+                    <mat-error
+                        *ngIf="formulario.get('ordem').hasError('required')"
+                        >Informe numero entre 0 e 99999</mat-error
+                    >
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Situação</mat-label>
+                    <mat-select formControlName="situacao">
+                        <mat-option *ngFor="let situacao of situacoes" [value]="situacao.value">
+                            {{ situacao.label }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="">
+                    <mat-label>Link informação</mat-label>
+                    <input
+                        matInput
+                        formControlName="link_informacao"
+                        placeholder=""
+                    />
+                </mat-form-field>
+
+                <div formArrayName="grupos_condicionais" class="grupos-condicionais-container">
+                    <h2 style="color: black;">
+                        Condicionais
+                        <button matTooltip="Clique para entender como as condicionais funcionam" (click)="abrirExplicacaoCondicionais()"
+                            style=" font-size: 14px; width: 18px; height:18px; border-radius: 50%; background-color: #174166; 
+                            color: white; text-align: center; line-height: 18px; font-weight: bold;">
+                            ?
+                        </button>
+                    </h2>
+                    
+                    <div *ngFor="let grupo of gruposCondicionais.controls; let groupIndex = index" [formGroupName]="groupIndex" class="grupo-condicional">
+                        <div class="grupo-header" [ngStyle]="{'padding-top': groupIndex > 0 ? '20px' : '0'}">
+                            <button mat-icon-button (click)="removerGrupoCondicional(groupIndex)" *ngIf="gruposCondicionais.length > 1">
+                                <mat-icon color="warn">remove_circle_outline</mat-icon>
+                            </button>
+                            <!-- Operador entre grupos -->
+                            <mat-form-field *ngIf="groupIndex > 0" class="operador-grupo" style="width: 200px;">
+                                <mat-label>Operador entre grupos</mat-label>
+                                <mat-select formControlName="operador_entre_grupos">
+                                    <mat-option value="E">E</mat-option>
+                                    <mat-option value="OU">OU</mat-option>
+                                </mat-select>
+                            </mat-form-field>                      
+                        </div>
+
+                        <!-- Condicionais dentro do grupo -->
+                        <div 
+                            formArrayName="condicionais" 
+                            class="condicoes-container" 
+                            style="padding: 20px 30px 10px 30px; background-color: #e0e0e0; border-radius: 8px;"
+                            >
+                            <div *ngFor="let cond of grupo.get('condicionais').controls; let i = index" [formGroupName]="i" class="condicional">
+                                <button mat-icon-button (click)="removerCondicional(groupIndex, i)" *ngIf="i > 0">
+                                    <mat-icon color="warn">remove_circle_outline</mat-icon>
+                                </button>
+                                
+                                <mat-form-field *ngIf="i > 0" class="operador-condicional" style="width: 220px;">
+                                    <mat-label>Operador entre condicionais</mat-label>
+                                    <mat-select formControlName="operador" (selectionChange)="atualizarOperadores(groupIndex, $event.value)">
+                                        <mat-option value="E">E</mat-option>
+                                        <mat-option value="OU">OU</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                
+                                <mat-form-field class="w-full">
+                                    <mat-label>Condicional</mat-label>
+                                    <mat-select formControlName="condicao">
+                                        <mat-option *ngFor="let condicional of condicionais" [value]="condicional.value">
+                                            {{ condicional.label }}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <button mat-button 
+                                (click)="adicionarCondicional(groupIndex)" 
+                                color="primary"
+                                [disabled]="!podeAdicionarCondicional(groupIndex)">
+                                Adicionar condicional
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Botão para adicionar grupo de condicionais -->
+                    <button mat-button 
+                        (click)="adicionarGrupoCondicional()" 
+                        color="primary"
+                        [disabled]="!podeAdicionarGrupo()">
+                        Adicionar grupo de condicionais
+                    </button>
+                </div>
+
+                <div class="w-full flex items-center">
+                    <mat-slide-toggle formControlName="notificar_solicitante" color="primary">
+                        Notificar solicitante
+                    </mat-slide-toggle>
+                </div>
+
+                <div class="w-full flex items-center">
+                    <mat-slide-toggle formControlName="deferir_todos_beneficiarios" color="primary">
+                        Deferir todos os beneficiários
+                    </mat-slide-toggle>
+                </div>
+
+                <div class="w-full flex items-center">
+                    <mat-slide-toggle formControlName="calcular" color="primary">
+                        Calcular
+                    </mat-slide-toggle>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>
+
+
+
+
+

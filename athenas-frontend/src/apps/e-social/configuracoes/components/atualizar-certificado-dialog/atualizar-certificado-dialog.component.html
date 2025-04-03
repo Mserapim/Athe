@@ -1,0 +1,92 @@
+<mat-dialog-content class="h-full flex flex-col">
+    <h2 class="dialog-title font-bold text-xl self-start text-primary">
+        Carregar arquivos de retorno do eSocial
+    </h2>
+    <br/>
+
+    <!-- Contêiner rolável para o formulário -->
+    <div class="flex-grow overflow-y-auto">
+        <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+            <div class="flex flex-col gap-2">
+                <mat-label class="font-bold text-base text-black">Certificado digital A1 (pfx, p12)</mat-label>
+                <button
+                    (click)="fileCertificadoA1Input.click()"
+                    class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg rounded cursor-pointer"
+                >
+                    <div *ngIf="!fileCertificadoA1" class="w-full text-black">
+                        <span>Clique para selecionar um arquivo</span>
+                    </div>
+                    <div *ngIf="fileCertificadoA1" class="w-full text-black">
+                        {{ fileCertificadoA1?.name }}
+                    </div>
+
+                    <input
+                        #fileCertificadoA1Input
+                        type="file"
+                        (change)="onFileCertificadoA1Input($event)"
+                        style="display: none"
+                    />
+                    <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+                </button>
+            </div>
+            <br/>
+            <div class="flex flex-col gap-2">
+                <mat-form-field class="w-full" appearance="fill">
+                    <mat-label class="font-bold text-base text-black">Senha do certificado digital</mat-label>
+                    <input
+                        matInput
+                        [type]="hide ? 'password' : 'text'"
+                        formControlName="certificado_senha"
+                    />
+                    <button
+                        mat-icon-button
+                        matSuffix
+                        type="button"
+                        (click)="hide = !hide"
+                        [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide"
+                    >
+                        <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <mat-label class="font-bold text-base text-black">Certificado digital CAs</mat-label>
+                <button
+                    (click)="fileCertificadoCAsInput.click()"
+                    class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg rounded cursor-pointer"
+                >
+                    <div *ngIf="!fileCertificadoCAs" class="w-full text-black">
+                        <span>Clique para selecionar um arquivo</span>
+                    </div>
+                    <div *ngIf="fileCertificadoCAs" class="w-full text-black">
+                        {{ fileCertificadoCAs?.name }}
+                    </div>
+
+                    <input
+                        #fileCertificadoCAsInput
+                        type="file"
+                        (change)="onFileCertificadoCAsInput($event)"
+                        style="display: none"
+                    />
+                    <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div *ngIf="message" class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md">
+        {{ message }}
+    </div>
+
+    <!-- Botões fixos -->
+    <div mat-dialog-actions class="flex justify-end gap-4 mt-4">
+        <mpmt-botao tipo="borda" (click)="fechar()">Fechar</mpmt-botao>
+        <mpmt-botao
+            cor="sucesso"
+            (click)="goConfirm()"
+            [desabilitado]="!isValid || this.isLoading"
+        >Salvar</mpmt-botao>
+    </div>
+</mat-dialog-content>

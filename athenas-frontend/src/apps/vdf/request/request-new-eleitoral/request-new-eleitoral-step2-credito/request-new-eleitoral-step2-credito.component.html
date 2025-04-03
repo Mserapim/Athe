@@ -1,0 +1,145 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <div class="flex flex-col gap-1">
+        <h1 class="text-base">Solicitação de inclusão de direito da dispensa eleitoral</h1>
+
+        <p class="text-sm text-gray-600">
+            Informe os dias trabalhados para a justiça eleitoral, após a solicitação efetivada,
+            poderá usufruir do saldo
+        </p>
+    </div>
+
+    <form [formGroup]="form" class="flex flex-col gap-2 w-full">
+        <p class="font-bold text-base text-black">
+            Preencha os dados da solicitação
+        </p>
+        <div *ngIf="modoEdicao">
+            <p class="font-bold text-base text-black">
+                Motivo da devolução:
+            </p>
+            <p class="font-bold text-base text-red-500">
+                {{obsRetorno}}
+            </p>
+        </div>
+        <div class="flex flex-col gap-2">
+            <mat-label class="font-bold text-base text-black">Certidão *</mat-label>
+            <div class="flex gap-4 self-center w-full rounded">
+                <button
+                    (click)="fileInput.click()"
+                    class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg cursor-pointer w-full"
+                >
+                    <div *ngIf="!file" class="w-full text-black">
+                        <span>Clique para selecionar um arquivo</span>
+                    </div>
+                    <div *ngIf="file" class="w-full text-black">
+                        {{ file?.name }}
+                    </div>
+
+                    <input
+                        #fileInput
+                        type="file"
+                        (change)="onFileInput($event)"
+                        style="display: none"
+                    />
+                    <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+                </button>
+                <mpmt-botao
+                    class="w-12 h-12 self-center items-center"
+                    (click)="downloadAnexo()"
+                    *ngIf="file"
+                    [cor]="'secondario'"
+                    tipo="borda"
+                >
+                    <mat-icon svgIcon="heroicons_solid:arrow-circle-down"></mat-icon>
+
+                </mpmt-botao>
+            </div>
+        </div>
+        <br>
+
+        <div class="flex gap-2 justify-between">
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data</mat-label>
+                <input
+                    matInput
+                    [matDatepicker]="datepicker1"
+                    [ngModel]="form.value.data_inicio"
+                    (ngModelChange)="onChangeStartDate($event)"
+                    formControlName="data_inicio"
+                    [disabled]="true"
+                    [readonly]="true"
+                />
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="datepicker1"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #datepicker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Quantidade</mat-label>
+                <input
+                    type="number"
+                    matInput
+                    (ngModelChange)="onChangeDays($event)"
+                    [ngModel]="form.value.days"
+                    formControlName="days"
+                    disabled
+                    [min]="1"
+                    [step]="1"
+                />
+                <mat-error *ngIf="form.get('days').hasError('min')">
+                    A quantidade deve ser maior ou igual a 1
+                </mat-error>
+                <mat-error *ngIf="form.get('days').hasError('pattern')">
+                    A quantidade deve ser um número inteiro
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Fim</mat-label>
+                <input
+                    [ngModel]="form.value.data_fim"
+                    matInput
+                    disabled="true"
+                    readonly="true"
+                    class=""
+                    [disabled]="true"
+                    [matDatepicker]="datepicker2"
+                    formControlName="data_fim"
+                    [readonly]="true"
+                />
+                <mat-datepicker #datepicker2></mat-datepicker>
+            </mat-form-field>
+        </div>
+        {{ getFormValidationErrors() | json }}
+        <mat-form-field class="example-full-width">
+            <mat-label>Observação (opcional)</mat-label>
+            <textarea matInput placeholder="Observação" formControlName="observacao"></textarea>
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center w-full">
+        <button
+            mat-button
+            class="p-8 py-4 w-full outline outline-1 outline-gray-200"
+            (click)="goBack()"
+        >
+            Voltar
+        </button>
+        <button
+            mat-button
+            [ngClass]="{ '!bg-primary': form.valid }"
+            class="bg-gray-300 text-white p-8 py-4 w-full"
+            (click)="goConfirm()"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

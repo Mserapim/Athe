@@ -1,0 +1,43 @@
+<mpmt-form-base [titulo]="titulo" [mensagemErro]="mensagemDeErro()">
+    <form [formGroup]="form" class="flex flex-row gap-2 w-full">
+        <p-multiselect
+            formControlName="valor"
+            styleClass="w-full"
+            [options]="items"
+            [optionLabel]="atributoDisplay"
+            [filter]="true"
+            [loading]="carregando"
+            [showClear]="true"
+            [placeholder]="placeholder"
+            [disabled]="desabilitado"
+            [maxSelectedLabels]="1"
+            [dataKey]="atributoChave"
+            [virtualScroll]="false" 
+            [virtualScrollItemSize]="23"
+            [showToggleAll]="false" 
+            [selectAll]="false"
+            (onFilter)="filtrarUmaVez($event)"
+            (onChange)="aoSelecionar($event)"
+            [displaySelectedLabel]="'label'"
+            autocomplete="on"
+         >
+            <ng-template let-item #item>
+                <div class="flex items-center gap-2">
+                    <div *ngIf="item['ativo']">{{ item['matricula']}} - {{item['nome'] }} </div>
+                    <div *ngIf="!item['ativo']" class="text-gray-400">{{item['matricula']}} - {{item['nome']}} </div>
+                </div>
+            </ng-template>
+
+            <ng-template #footer>
+                <div class="p-3 flex justify-between">
+                    <div class="flex items-center gap-2">
+                        <div class="flex flex-row gap-1">
+                            <p-toggleswitch formControlName="somenteAtivo" (onChange)="aoAlterarSomenteAtivo($event)"/>
+                            <label>Somente ativos</label>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-multiselect>
+    </form>
+</mpmt-form-base>

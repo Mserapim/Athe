@@ -1,0 +1,62 @@
+<layout-padrao-modal [title]="'Novo Colaborador Eventual'" [buttons]="modalButtons" (close)="fecharFormulario()">
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <div *ngIf="loading" class="spinner-container">
+                <mat-spinner></mat-spinner>
+            </div>
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+                <div class="flex flex-row gap-1 w-full">
+                    <mpmt-selecao-form [titulo]="'CBO*'" class="w-full" placeholder="CBO"
+                        formControlName="cbo" [form_control]="formulario.get('cbo')"
+                        [configuracao]="selecaoCbo"></mpmt-selecao-form>
+
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mpmt-selecao-form [titulo]="'Lotação*'" class="w-full" placeholder="Lotação"
+                        formControlName="lotacao" [form_control]="formulario.get('lotacao')"
+                        [configuracao]="selecaoLotacao"></mpmt-selecao-form>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mpmt-selecao-form [titulo]="'Natureza da Atividade'" class="w-full" placeholder="Natureza da Atividade"
+                        formControlName="natureza_atividade" [form_control]="formulario.get('natureza_atividade')"
+                        [configuracao]="selecaoNaturezaAtividade"></mpmt-selecao-form>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Data do Pagamento</mat-label>
+                        <input matInput [matDatepicker]="inicioPicker" formControlName="data_pagamento" placeholder="">
+                        <mat-datepicker-toggle matSuffix [for]="inicioPicker"></mat-datepicker-toggle>
+                        <mat-datepicker #inicioPicker></mat-datepicker>
+                    </mat-form-field>
+
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="Valor Bruto">
+                        <mat-label>Valor Bruto</mat-label>
+                        <input matInput type="number" formControlName="valor_bruto" placeholder="" />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-checkbox formControlName="isento_inss">
+                        Isento INSS?
+                    </mat-checkbox>
+
+                    <mat-checkbox formControlName="contribuido">
+                        Existe contribuição parcial em outro local?
+                    </mat-checkbox>
+
+                </div>
+
+                <div class="flex flex-row gap-1 w-full" *ngIf="formulario.get('contribuido').value">
+                    <mat-form-field class="w-full" placeholder="Valor da contribuição parcial">
+                        <mat-label>Valor da contribuição parcial:</mat-label>
+                        <input matInput type="number" formControlName="contribuicao_parcial" placeholder="" />
+                    </mat-form-field>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</layout-padrao-modal>

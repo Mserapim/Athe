@@ -1,0 +1,65 @@
+<div class="flex flex-col py-2 gap-2 overflow-y-auto text-black">
+    <div class="font-bold">Anexar arquivo</div>
+    <div class="flex flex-col gap-2">
+        <button
+            (click)="fileInput.click()"
+            class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 rounded cursor-pointer"
+            [ngClass]="{ 'bg-green-50': this.file }"
+        >
+            <div class="flex gap-2">
+                <div *ngIf="!file" class="w-full text-black">
+                    <span>Clique para selecionar um arquivo</span>
+                </div>
+                <div *ngIf="file" class="w-full text-green-500 text-bold">
+                    {{ file?.name }}
+                </div>
+            </div>
+
+            <input
+                #fileInput
+                type="file"
+                (change)="onFileInput($event)"
+                style="display: none"
+            />
+            <mat-icon [svgIcon]="'heroicons_outline:plus'"></mat-icon>
+        </button>
+    </div>
+
+    <div *ngIf="this.file">
+        <mat-form-field class="w-full">
+            <mat-label>Nome do arquivo</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="name"
+                placeholder="Informe o nome do arquivo"
+            />
+        </mat-form-field>
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex p-2 px-4 text-red-500 border bg-red-100 border-red-500 rounded"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center w-full mt-4">
+        <button
+            mat-button
+            class="p-8 py-4 w-full outline outline-1 outline-gray-200"
+            (click)="goBack()"
+        >
+            Cancelar
+        </button>
+        <button
+            mat-button
+            [ngClass]="{ '!bg-primary': isValid }"
+            class="bg-gray-300 text-white p-8 py-4 w-full"
+            (click)="goConfirm()"
+            [disabled]="!isValid || isLoading"
+        >
+            Salvar
+        </button>
+    </div>
+</div>

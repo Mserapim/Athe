@@ -1,0 +1,79 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">
+            Manutenção de Grupos de Acesso do Menu
+        </h1>
+    </h1>
+
+    <div mat-dialog-content class="flex flex-col gap-4">
+        <painel-controle-navegacao-menu-editar-menuconfigs
+            [menuId]="data.menuId"
+            *ngIf="data.menuId"
+        ></painel-controle-navegacao-menu-editar-menuconfigs>
+
+        <div class="flex flex-col gap-2 bg-gray-50 border-gray-100 p-2">
+            <div class="font-bold">Incluir</div>
+            <div
+                class="flex flex-col w-full bg-gray-50 border border-gray-100 py-2 justify-end"
+            >
+                <form
+                    [formGroup]="formulario"
+                    class="grid grid-cols-[3fr_3fr_1fr] gap-2 w-full justify-end"
+                >
+                    <mpmt-selecao
+                        titulo="Selecione um grupo de acesso"
+                        class="w-full"
+                        placeholder="Selecione um grupo"
+                        formControlName="usuario_grupo"
+                        [configuracao]="selecaoGrupos"
+                    ></mpmt-selecao>
+
+                    <mat-form-field class="w-full">
+                        <mat-label>Ações (Selecione uma ou mais)</mat-label>
+                        <mat-select
+                            multiple
+                            formControlName="acoes"
+                            (selectionChange)="onSelectionChange($event)"
+                        >
+                            <mat-option
+                                [value]="TODOS"
+                                (click)="toggleAllSelection()"
+                            >
+                                Todos
+                            </mat-option>
+
+                            <mat-option
+                                *ngFor="let acao of acoes"
+                                [value]="acao"
+                            >
+                                {{ acao }}
+                            </mat-option>
+
+                            <mat-select-trigger *ngIf="mostrarTodosNaSelecao()">
+                                {{ TODOS }}
+                            </mat-select-trigger>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <!-- <mpmt-botao tipo="preenchido" class="self-center"
+                        >Vincular grupo de acesso</mpmt-botao
+                    > -->
+
+                    <mpmt-botao
+                        cor="sucesso"
+                        (click)="confirmarFormulario($event)"
+                        [desabilitado]="!formularioValido"
+                        class="self-center"
+                        >Salvar</mpmt-botao
+                    >
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+    </div>
+</div>

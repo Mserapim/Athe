@@ -1,0 +1,64 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <div class="flex flex-clol gap-1 justify-between py-2">
+        <div class="flex-col flex font-bold text-xl">
+            <h1 class="font-bold text-sm">{{ title }}</h1>
+            <p class="text-xs text-gray-600">
+                {{ subtitle }}
+            </p>
+        </div>
+    </div>
+
+    <div
+        class="flex flex-col h-full w-full p-4 gap-2 rounded border border-gray-100 bg-gray-50"
+        *ngFor="let item of dados"
+    >
+        <div class="flex gap-4">
+            <div class="flex flex-col gap-2 text-black">
+                <div class="flex gap-2">
+                    <div class="text-red-500 font-bold">Mês de Referência:</div>
+                    <div class="text-red-500 font-bold">
+                        {{ item?.referencia }}
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <div class="font-bold">
+                        Vigência do plano de teletrabalho:
+                    </div>
+                    <div>
+                        {{ item?.vigencia }}
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <div class="font-bold">Motivo do bloqueio:</div>
+                    <div>{{ item?.motivo }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="flex flex-col justify-end gap-4">
+            <div
+                *ngIf="mensagem"
+                class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+            >
+                {{ mensagem }}
+            </div>
+
+            <div
+                class="flex gap-2 self-center w-full justify-center p-2 rounded"
+            >
+                <button
+                    mat-button
+                    [ngClass]="{ 'bg-primary': true }"
+                    class="bg-gray text-white p-8 py-4 w-56 self-end"
+                    (click)="goNext()"
+                >
+                    Avançar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

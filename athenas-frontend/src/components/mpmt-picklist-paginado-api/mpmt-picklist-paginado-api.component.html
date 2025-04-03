@@ -1,0 +1,79 @@
+<div class="mat-elevation-z2 picklist-container">
+    <div class="picklist-column mat-elevation-z2">
+        <div class="mat-elevation-z2 flex justify-center items-center gap-2 h-1/5">
+            <label class="font-bold">{{textoLista1}}</label>
+            <mat-form-field appearance="fill" class="picklist-form-field" style="margin-top: 3%">
+                <input matInput placeholder="Pesquisar..." (input)="searchLeft($event.target.value)">
+                <button mat-icon-button aria-label="Buscar">
+                    <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-icon-button (click)="marcarDesmarcarTodos('availableList')"
+                    matTooltip="Marcar/Desmarcar Todos" matTooltipPosition="after">
+                <mat-icon>{{ todosSelecionados ? 'check_box' : 'check_box_outline_blank' }}</mat-icon>
+            </button>
+        </div>
+        <div class="list-container">
+            <ng-container *ngIf="!isLoadingLista1; else loadingSpinner1">
+                <mat-selection-list #availableList [ngModel]="_lista1" class="picklist-list">
+                    <ng-container *ngFor="let item of _lista1; let i = index">
+                        <mat-list-option [ngClass]="{'bg-gray-100': isSelected(item)}" [value]="item" [disabled]="isSelected(item)">
+                            {{ item.label }}
+                        </mat-list-option>
+                        <mat-divider *ngIf="i < _lista1.length - 1"></mat-divider>
+                    </ng-container>
+                </mat-selection-list>
+            </ng-container>
+            <ng-template #loadingSpinner1>
+                <div class="spinner-container">
+                    <mat-spinner mode="indeterminate"></mat-spinner>
+                </div>
+            </ng-template>
+
+            <mat-paginator [length]="totalItems" [pageSize]="pageSize" [disabled]="isLoadingLista1"
+                           (page)="onPageChange($event)" [showFirstLastButtons]="true"></mat-paginator>
+        </div>
+    </div>
+
+    <div class="picklist-add-remove-buttons">
+        <button mat-icon-button (click)="addToRight()" class="picklist-add-remove-button" matTooltip="Adicionar" matTooltipPosition="after">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+        <button mat-icon-button (click)="removeFromRight()" class="picklist-add-remove-button" matTooltip="Remover" matTooltipPosition="after">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+    </div>
+
+    <div class="picklist-column mat-elevation-z2">
+        <div class="mat-elevation-z2 flex justify-center items-center gap-2 h-1/5">
+            <label class="font-bold">{{textoLista2}}</label>
+            <mat-form-field appearance="fill" class="picklist-form-field" style="margin-top: 3%">
+                <input matInput placeholder="Pesquisar..." [(ngModel)]="searchRightTerm" (ngModelChange)="searchRight()">
+                <button mat-icon-button aria-label="Buscar">
+                    <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-icon-button (click)="marcarDesmarcarTodos('selectedList')"
+                    matTooltip="Marcar/Desmarcar Todos" matTooltipPosition="after">
+                <mat-icon>{{ todosSelecionados2 ? 'check_box' : 'check_box_outline_blank' }}</mat-icon>
+            </button>
+        </div>
+        <div class="list-container">
+            <ng-container *ngIf="!isLoadingLista2; else loadingSpinner2">
+                <mat-selection-list #selectedList [ngModel]="lista2Filtrada" class="picklist-list-2">
+                    <ng-container *ngFor="let item of lista2Filtrada; let i = index">
+                        <mat-list-option [value]="item">
+                            {{ item.label }}
+                        </mat-list-option>
+                        <mat-divider *ngIf="i < lista2Filtrada.length - 1"></mat-divider>
+                    </ng-container>
+                </mat-selection-list>
+            </ng-container>
+            <ng-template #loadingSpinner2>
+                <div class="spinner-container">
+                    <mat-spinner mode="indeterminate"></mat-spinner>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>

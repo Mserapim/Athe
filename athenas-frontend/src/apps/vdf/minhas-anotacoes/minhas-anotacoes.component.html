@@ -1,0 +1,101 @@
+<div class="p-8 flex flex-col w-full gap-8">
+    <span class="font-bold text-xl">Minhas Anotações</span>
+    
+    <div class="flex flex-row justify-between items-center">
+        <mat-form-field class="w-full md:w-1/3 self-center">
+            <mat-label class="text-white"
+                >Filtro por tipo de anotação</mat-label
+            >
+            <mat-select
+                [(ngModel)]="filters.tipo_anotacao_id"
+                (ngModelChange)="applyFilter()"
+                multiple
+            >
+                <mat-option
+                    *ngFor="let tipo of tiposAnotacao"
+                    [value]="tipo.value"
+                    >{{ tipo.label }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+
+        <span class="mb-4">
+            <button mat-button class="bg-primary text-white w-min"   
+                (click)="download()"
+                [disabled]="isLoading"
+            >
+                <mat-progress-spinner *ngIf="isLoading" mode="indeterminate" diameter="25"></mat-progress-spinner>
+                <mat-icon style="font-size: 24px; color:white;">picture_as_pdf</mat-icon>
+                <span>Download</span>
+            </button>
+        </span>
+    </div>
+
+    <div class="flex flex-col">
+        <table mat-table [dataSource]="dataSource.results$" class="">
+            <ng-container matColumnDef="tipo_label">
+                <th mat-header-cell *matHeaderCellDef>Tipo de anotação</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.tipo_label }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="documento_tipo_label">
+                <th mat-header-cell *matHeaderCellDef>Tipo de documento</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.documento_tipo_label }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="publicacao_label">
+                <th mat-header-cell *matHeaderCellDef>Publicação</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.publicacao_label }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="documento_numero">
+                <th mat-header-cell *matHeaderCellDef>Número doc.</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.documento_numero }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="documento_data">
+                <th mat-header-cell *matHeaderCellDef>Data do documento</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ printDate(row.documento_data) }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="gedoc_numero">
+                <th mat-header-cell *matHeaderCellDef>GEDOC</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.gedoc_numero }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="anotacao">
+                <th mat-header-cell *matHeaderCellDef>Anotação</th>
+                <td mat-cell *matCellDef="let row">
+                    <button mat-button (click)="showAnotacao(row)">
+                        Visualizar
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr
+                mat-row
+                *matRowDef="let row; columns: displayedColumns"
+                (click)="selectMyRights(row.pk)"
+            ></tr>
+        </table>
+
+        <mat-paginator
+            [length]="dataSource.total$ | async"
+            [pageSize]="10"
+            [pageSizeOptions]="[10, 15, 30]"
+        ></mat-paginator>
+    </div>
+</div>

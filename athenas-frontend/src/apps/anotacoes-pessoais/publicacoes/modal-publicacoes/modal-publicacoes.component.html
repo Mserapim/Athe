@@ -1,0 +1,60 @@
+<div class="flex flex-col gap-8 h-full">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">{{ titulo }}</h1>
+    </h1>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <mpmt-listagem-selecao [service]="service" [permitirMultiplosSelecionados]="false" [tabelaComBorda]="true">
+                <div filtros class="w-full">
+                    <div class="flex justify-between items-center w-full">
+                        <form
+                            [formGroup]="service.filtros"
+                            class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full"
+                        >
+                            <mat-form-field class="self-center w-full">
+                                <mat-label>Palavra chave</mat-label>
+                                <input
+                                    matInput
+                                    type="text"
+                                    formControlName="keyword"
+                                    placeholder="Palavra chave"
+                                    (ngModelChange)="service.recarregarListagem()" 
+                                />
+                            </mat-form-field>
+                
+                            <mat-form-field appearance="fill" class="w-full">
+                                <mat-label>Tipo publicação</mat-label>
+                                <mat-select 
+                                    formControlName="tipo"
+                                    (ngModelChange)="service.recarregarListagem()" 
+                                    multiple
+                                >
+                                    <mat-option 
+                                        *ngFor="let option of service.tipos" 
+                                        [value]="option.value"
+                                    >
+                                        {{ option.label }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </form>
+                
+                        <div class="flex items-center justify-end w-full md:w-auto ml-4">
+                            <mpmt-botao (click)="irNovo()" *ngIf="navegacaoAtualService.possuiPermissao('criar')">
+                                Nova publicação
+                            </mpmt-botao>
+                        </div>
+                    </div>
+                </div>
+                
+            </mpmt-listagem-selecao>
+        </div>
+    </div>
+
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="confirmarFormulario()"
+            [desabilitado]="!service.itemSelecionado">Selecionar</mpmt-botao>
+    </div>
+</div>

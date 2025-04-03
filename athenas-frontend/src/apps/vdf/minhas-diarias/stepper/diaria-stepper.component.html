@@ -1,0 +1,11 @@
+<div class="flex flex-col gap-8 pt-8">
+    <div class="font-bold underline">Etapas</div>
+    <div class="flex flex-col gap-2 -ml-4">
+        <div *ngFor="let item of novaDiariaStepperService.steps; let index = index">
+            <div class="pl-8 font-medium bg-white/20 p-2 rounded-r-full" 
+            [ngClass]="{'bg-white/20': index == novaDiariaStepperService.currentStep }">
+                {{ item }}
+            </div>
+        </div>
+    </div>
+</div>

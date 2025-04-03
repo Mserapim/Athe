@@ -1,0 +1,93 @@
+<div class="flex flex-col gap-4" style="width: 700px;">
+    
+    <button class="absolute top-0 right-0 w-15 h-15"
+        (click)="fecharFormulario()">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">{{ data.titulo }}</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex-1" style="color:#1E293B;">
+                        <label style="font-weight: 500;">Quantidade total de diárias calculadas: </label>
+                        <p style="padding-top: 10px; padding-left: 10px;">{{ formulario.controls.quantidadeTotal.value }} diárias</p>
+                    </div>
+
+                    <div class="flex-1">
+                        <mat-form-field class="w-full">
+                            <mat-label>Quantidade total de diárias deferidas</mat-label>
+                            <input
+                                matInput
+                                type="number"
+                                formControlName="quantidadeDeferida"
+                                [disabled]="data.excedente || data.possuiExcedente"
+                                min="0"
+                                step="0.5"
+                            />
+                            <mat-error *ngIf="formulario.get('quantidadeDeferida').hasError('required') && !data.excedente">
+                                Informe um número maior do que 0.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <p *ngIf="data.excedente || data.possuiExcedente" style="color: rgb(191, 0, 0); font-size: 14px; padding-bottom: 15px;">
+                    A edição do campo "Quantidade total de diárias deferidas" não é permitida por se tratar de 
+                    uma viagem excedente.
+                </p>
+
+                <p *ngIf="data.reanalise" style="color: rgb(191, 0, 0); font-size: 14px; padding-bottom: 15px;">
+                    Esta é uma reanálise da viagem devido à alteração de data no itinerário. A quantidade de diárias deferidas anteriormente foi de {{ data.qtdTotalDiariasDeferidas }}, 
+                    e o novo valor calculado, considerando as alterações, é de {{ data.qtdTotalDiarias }}. 
+                </p>
+
+                <div>
+                    <label style="font-weight: 500; color:#1E293B;">Feedback</label>
+                    <mat-radio-group formControlName="feedback" style="display: flex; gap: 20px;">
+                        <mat-radio-button value="positivo">
+                            <mat-icon style="color: #018c6a;">thumb_up</mat-icon>
+                        </mat-radio-button>
+
+                        <mat-radio-button value="negativo">
+                            <mat-icon style="color: #f74747;">thumb_down</mat-icon>
+                        </mat-radio-button>
+
+                        <mat-radio-button value="alerta">
+                            <mat-icon style="color: #fccb1a;">warning</mat-icon>
+                        </mat-radio-button>
+                    </mat-radio-group>
+
+                    <p *ngIf="formulario.get('feedback').hasError('required')"
+                        style="color: rgb(191, 0, 0); font-size: 14px; padding-bottom: 15px;">
+                        Feedback é obrigatório para análise.
+                    </p>
+                </div>
+
+                <mpmt-texto-formatado class="w-full" formControlName="analise" titulo="Análise"></mpmt-texto-formatado>
+            </form>
+        </div>
+    </div>
+    
+
+
+    <div mat-dialog-actions style="display: flex; justify-content: center; gap: 20px;">
+        <mpmt-botao 
+            (click)="irAnalisar()">
+            Analisar
+        </mpmt-botao>
+
+        <mpmt-botao 
+            *ngIf="data.encaminhar"
+            (click)="irAnalisar(29)">
+            <!-- O valor 29 é referente ao id do fluxo a ser direcionado: Assessoria do PGJ - Análise afastamento-->
+            Encaminhar para análise de afastamento
+        </mpmt-botao>
+    </div>
+
+</div>

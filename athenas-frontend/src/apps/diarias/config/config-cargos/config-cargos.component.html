@@ -1,0 +1,25 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [titulo]="titulo" [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <mpmt-botao (click)="irNovoCargo()">Novo cargo</mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label class="text-white">Pesquisar por nome</mat-label>
+                    <input
+                        matInput
+                        formControlName="palavra_chave"
+                        placeholder=""
+                        (change)="service.recarregarListagem()"
+                    />
+                </mat-form-field>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

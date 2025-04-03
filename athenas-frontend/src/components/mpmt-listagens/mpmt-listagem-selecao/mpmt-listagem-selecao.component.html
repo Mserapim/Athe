@@ -1,0 +1,57 @@
+<div class="flex flex-col w-full h-full">
+  <div class="flex justify-end w-full">
+      <ng-content select="[acoes]"></ng-content>
+  </div>
+
+  <div class="flex flex-row gap-2 w-full py-2">
+      <ng-content select="[filtros]"></ng-content>
+  </div>
+
+  <div class="flex flex-row w-full table-responsive rounded-b">
+      <table
+          [ngStyle]="tabelaComBorda ? {'border': '2px solid #e0e0e0'} : {}"
+          mat-table
+          [dataSource]="service.listagem$"
+          class="mat-elevation-z8"
+          matSort
+          (matSortChange)="service.alterarOrdenacao($event)"
+      >
+          <ng-container
+              [matColumnDef]="coluna.codigo"
+              *ngFor="let coluna of service.colunasVisiveis | async"
+          >
+              <th
+                  mat-header-cell
+                  *matHeaderCellDef
+                  mat-sort-header
+                  [disabled]="!coluna.ordenavel"
+              >
+                  {{ coluna.titulo }}
+              </th>
+              <td mat-cell *matCellDef="let linha">
+                <mpmt-celula
+                        [coluna]="coluna"
+                        [linha]="linha"
+                        [estaSelecionada]="estaSelecionada.bind(this)"
+                        [toggleSelecao]="toggleSelecao.bind(this)"
+                ></mpmt-celula>
+              </td>
+          </ng-container>
+
+          <tr
+              mat-header-row
+              *matHeaderRowDef="service.colunaCodigos | async"
+          ></tr>
+          <tr
+              mat-row
+              *matRowDef="let row; columns: service.colunaCodigos | async"
+          ></tr>
+      </table>
+  </div>
+<div *ngIf="service.paginacao.per_page != null">
+    <mat-paginator
+        [length]="service.total$ | async"
+        [pageSize]="10"
+        [pageSizeOptions]="[10, 15, 30, 50, 100]"
+    ></mat-paginator>
+</div>

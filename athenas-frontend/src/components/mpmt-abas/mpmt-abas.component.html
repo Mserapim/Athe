@@ -1,0 +1,7 @@
+<mat-tab-group (selectedIndexChange)="mudarTab($event)">
+  <mat-tab *ngFor="let tab of tabs; let i = index" [label]="tab.title">
+    <ng-template matTabContent>
+      <ng-container *ngIf="tabAtiva === i" #conteudoDinamico></ng-container>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

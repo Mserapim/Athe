@@ -1,0 +1,46 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [titulo]="titulo" [service]="service">
+        <!-- Filtros -->
+        <div filtros class="grid grid-cols-1 lg:grid-cols-2 gap-2 w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Pesquisar">
+                    <mat-label class="text-white">Pesquisar</mat-label>
+                    <input
+                        matInput
+                        formControlName="keyword"
+                        placeholder=""
+                        (ngModelChange)="service.recarregarListagem()"
+                    />
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white"
+                        >Executado</mat-label
+                    >
+                    <mat-select
+                        formControlName="executado"
+                        (ngModelChange)="service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of this.options.executado"
+                            [value]="option.value"
+                            >{{ option.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+            </form>
+            <div class="w-full flex justify-betwen">
+                <mpmt-botao
+                    (click)="service.limparFiltros()"
+                    style="padding-top: 27px;"
+                    cor="branco"
+                    >
+                    Limpar filtros
+                </mpmt-botao>
+            </div>
+        </div>
+    </mpmt-listagem2>
+</div>

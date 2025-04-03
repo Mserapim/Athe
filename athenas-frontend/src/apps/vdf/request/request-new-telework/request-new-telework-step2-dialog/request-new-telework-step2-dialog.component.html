@@ -1,0 +1,33 @@
+<layout-padrao-modal
+    title= 'Memorial de cálculo'
+    (close)="fechar()"
+>
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <h3 class="flex flex-col gap-2">
+                <p>
+                    Para fins de cálculo da meta proporcional, será utilizado
+                    somente números inteiros, caso dê fracionado, aplica-se a
+                    regra do arredondamento para o número inteiro mais próximo.
+                </p>
+                <p>
+                    <b
+                        >Meta proporcional ({{ data.meta_mes - data.saldo_devedor }}) = (Meta
+                        cadastrada[{{ data.mark_plan?.meta }}]/{{
+                            data.qtde_dias_mes
+                        }}) x ({{ data.qtde_dias_mes_proporcional }} - afastamentos[{{
+                            data.qtde_dias_afastamento_mes
+                        }}])</b
+                    >
+                </p>
+                <p>
+                    <b
+                        >Meta do mês ({{ data.meta_mes }})
+                        = Meta proporcional({{ data.meta_mes - data.saldo_devedor }}) + Saldo
+                        devedor({{ data.saldo_devedor }})</b
+                    >
+                </p>
+            </h3>
+        </div>
+    </div>
+</layout-padrao-modal>

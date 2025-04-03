@@ -1,0 +1,69 @@
+<div
+    class="fixed top-0 left-0 h-screen flex flex-col gap-4 !z-50 border-gray-300 bg-gray-50 rouded border-r shadow"
+    style="z-index: 1000 !important; width: 280px"
+    *ngIf="aberto"
+>
+    <div
+        class="flex flex-col gap-2 h-24 bg-gray-100 border-b border-gray-200 p-4 py-2 justify-start"
+    >
+        <button class="justify-center" mat-icon-button (click)="fechar()">
+            <mat-icon [svgIcon]="'heroicons_outline:view-grid'"></mat-icon>
+        </button>
+        <div class="text-lg font-bold self-start pl-2">Aplicativos</div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 p-4 cursor-pointer bg-gray-50">
+        <!-- Transformar em ngFor quando retornar da api -->
+        <div
+            class="flex gap-2 text-sm font-bold border border-1 rounded bg-gray-50 p-2"
+            (click)="goApp('ATHENAS')"
+        >
+            <div class="w-6 h-6">
+                <img
+                    src="https://athenas.mpmt.mp.br/athenas/static/images/favicon-mpmt.jpg"
+                    class="self-center"
+                />
+            </div>
+            <div class="self-center">Athenas</div>
+        </div>
+
+        <div
+            class="flex gap-2 text-sm font-bold border border-1 rounded bg-gray-50 p-2"
+            (click)="goApp('ATHENAS')"
+        >
+            <div class="w-6 h-6">
+                <img
+                    src="https://athenas.mpmt.mp.br/athenas/static/images/favicon-mpmt.jpg"
+                    class="self-center"
+                />
+            </div>
+            <div class="self-center">Painel de Controle</div>
+        </div>
+
+        <!--
+            <div
+            class="flex gap-2 text-sm font-bold border border-1 rounded bg-gray-50 p-2"
+            (click)="goApp('ATHENAS')"
+        >
+            <div class="w-6 h-6">
+                <img
+                    src="https://athenas.mpmt.mp.br/athenas/static/images/favicon-mpmt.jpg"
+                    class="self-center"
+                />
+            </div>
+            <div class="self-center">Athenas</div>
+        </div>
+        <div
+            class="flex gap-2 text-sm font-bold border border-1 rounded bg-gray-50 p-2"
+            (click)="goApp('ATHENAS')"
+        >
+            <div class="w-6 h-6">
+                <img
+                    src="https://athenas.mpmt.mp.br/athenas/static/images/favicon-mpmt.jpg"
+                    class="self-center"
+                />
+            </div>
+            <div class="self-center">Athenas</div>
+        </div> -->
+    </div>
+</div>

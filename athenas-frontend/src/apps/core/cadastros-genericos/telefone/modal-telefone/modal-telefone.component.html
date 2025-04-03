@@ -1,0 +1,30 @@
+<layout-padrao-modal [title]="'Telefones'" [buttons]="modalButtons" (close)="fecharFormulario()">
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+
+                <div class="flex flex-row gap-1 w-full">
+                    <mpmt-selecao-form [titulo]="'Tipo Telefone*'" class="w-full" placeholder="Tipo Telefone"
+                        formControlName="tipo_telefone" [form_control]="formulario.get('tipo_telefone')"
+                        [configuracao]="selecaoTipoTelefone"></mpmt-selecao-form>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="Numero">
+                        <mat-label>Numero</mat-label>
+                        <input matInput formControlName="numero" placeholder="" autofocus/>
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-checkbox formControlName="principal">
+                        Principal
+                    </mat-checkbox>
+
+                    <mat-checkbox formControlName="publico">
+                        Publico
+                    </mat-checkbox>
+                </div>
+            </form>
+        </div>
+    </div>
+</layout-padrao-modal>

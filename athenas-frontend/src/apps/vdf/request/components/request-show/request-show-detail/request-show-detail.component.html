@@ -1,0 +1,178 @@
+<div class="flex flex-col gap-2">
+    <div
+        class="flex flex-col md:flex-row py-2 gap-2 border-b border-gray-200 self-center w-full justify-center text-center sm:justify-between"
+    >
+        <div class="flex font-bold text-xl">Visualizar solicitação</div>
+        <div
+            class="flex text-bold text-base py-2 px-4 bg-gray-100 border border-gray-200 rounded-full max-w-min min-w-56 text-center justify-center self-start"
+            [ngClass]="{
+                'border border-red-500 text-red-500 !bg-red-50':
+                    statusGroup == 'CANCELED',
+                'border border-green-900 text-green-500 !bg-green-100':
+                    statusGroup == 'CONFIRMED',
+                'border border-yellow-500 !bg-yellow-100':
+                    statusGroup == 'PROGRESS'
+            }"
+        >
+            {{ requestStatusLabel(data?.status) }}
+        </div>
+    </div>
+
+    <div class="flex gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <!-- Coluna 1 -->
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Tipo da solicitação:</div>
+                    <div>{{ data?.type_of_request }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Código da solicitação:</div>
+                    <div>{{ data?.pk }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Data da solicitação:</div>
+                    <div>{{ data?.date | date : "dd/MM/YYYY" }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Solicitante:</div>
+                    <div>{{ data?.employee_name }}</div>
+                </div>
+            </div>
+            <!-- Coluna 1 -->
+            <div class="flex flex-col gap-2">
+                <div
+                    class="flex flex-col md:flex-row gap-2"
+                    *ngIf="data?.reference"
+                >
+                    <div class="font-bold">Mês de referência:</div>
+                    <div class="text-red-500 font-bold">
+                        {{ data?.reference }}
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row gap-2"
+                    *ngIf="data?.start_work_plan"
+                >
+                    <div class="font-bold">
+                        Vigência do plano de teletrabalho:
+                    </div>
+                    <div>{{ data?.start_work_plan }}</div>
+                    até
+                    <div>{{ data?.end_work_plan }}</div>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row gap-2"
+                    *ngIf="data?.acquisitive_period"
+                >
+                    <div class="font-bold">Periodo aquisitivo:</div>
+                    <div>{{ data?.acquisitive_period }}</div>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row gap-2"
+                    *ngIf="data?.lotacao_teletrabalho"
+                >
+                    <div class="font-bold">Lotação:</div>
+                    <div>{{ data?.lotacao_teletrabalho }}</div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row gap-2"
+                    *ngIf="data?.classe_atual"
+                >
+                    <div class="font-bold">Classe atual:</div>
+                    <div>{{ data?.classe_atual }}</div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row gap-2"
+                    *ngIf="data?.classe_progredir"
+                >
+                    <div class="font-bold">Classe progredir:</div>
+                    <div>{{ data?.classe_progredir }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap gap-4 mt-2">
+        <div *ngIf="enableDownloadTimeSheet">
+            <button
+                mat-button
+                class="flex flex-row gap-2 bg-primary text-white underscore"
+                (click)="downloadTimeSheet()"
+                [class.spinner]="isLoadingTimeSheet"
+                [disabled]="isLoadingTimeSheet"
+            >
+                <div class="flex flex-row gap-1">
+                    <span class="hidden md:flex">Download</span>
+                    Folha Ponto
+                </div>
+            </button>
+        </div>
+        <div *ngIf="enableDownloadRelatorioTeletrabalho">
+            <button
+                mat-button
+                class="flex flex-row bg-primary text-white underscore"
+                (click)="downloadRelatorioTeletrabalho()"
+                [class.spinner]="isLoadingRelatorioTeletrabalho"
+                [disabled]="isLoadingRelatorioTeletrabalho"
+            >
+                <div class="flex flex-row gap-1">
+                    <span class="hidden md:flex">Download</span>
+                    Relatório Teletrabalho
+                </div>
+            </button>
+        </div>
+        <div *ngIf="this.request.anexo_id">
+            <button
+                mat-button
+                class="flex flex-row bg-primary text-white underscore"
+                (click)="downloadGed()"
+            >
+                <div class="flex flex-row gap-1">
+                    <span class="hidden md:flex">Documento da</span> Comprovação
+                    da Meta
+                </div>
+            </button>
+        </div>
+        <div *ngIf="enableCreditoDispensaEleitoral()">
+            <button
+                mat-button
+                class="flex flex-row bg-primary text-white underscore"
+                (click)="downloadCreditoDispensaEleitoral()"
+            >
+                <div class="flex flex-row gap-1">
+                    <span class="hidden md:flex">Visualizar certidão</span>
+                </div>
+            </button>
+        </div>
+        <div *ngIf="data?.termo_aceite != null">
+            <div *ngIf="data?.termo_aceite; else termo_aceite_false">
+                <mat-label class="font-bold"
+                    >Estou de acordo com o termo:</mat-label
+                >
+                <div>
+                    "Requerimento fundamentado nos artigos 35 e 36, ambos da Lei
+                    nº. 9.782/2012, em razão de preencher os requisitos exigidos
+                    pelos dispositivos supramencionados, conforme comprova-se
+                    pelo documento em anexo"
+                </div>
+            </div>
+            <ng-template #termo_aceite_false>
+                <mat-label class="font-bold"
+                    >Não estou de acordo com o termo:</mat-label
+                >
+                <div>
+                    "Requerimento fundamentado nos artigos 35 e 36, ambos da Lei
+                    nº. 9.782/2012, em razão de preencher os requisitos exigidos
+                    pelos dispositivos supramencionados, conforme comprova-se
+                    pelo documento em anexo"
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>

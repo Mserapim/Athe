@@ -1,0 +1,115 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <p class="text-xs text-gray-600">
+        Selecione as substituições que deseja solicitar
+    </p>
+
+    <!-- <h1 class="font-bold text-base">Substituições</h1> -->
+
+    <div
+        class="bg-gray-50 border-gray-200 p-2 font-bold text-gray-500 rounded"
+        *ngIf="total <= 0"
+    >
+        Não há exercicio cumulativo pendente de solicitação
+    </div>
+
+    <!-- {{ dataSource.results$ | async | json }}
+    {{ dataSource.total$ | async | json }} -->
+
+    <div class="table-responsive max-h-90 overflow-y-auto custom-scrollbar w-full" *ngIf="total > 0">
+        <table mat-table [dataSource]="results" class="">
+            <ng-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef>
+                    <mat-checkbox
+                        (change)="$event ? toggleAllRows() : null"
+                        [checked]="selection.hasValue() && isAllSelected()"
+                        [indeterminate]="
+                            selection.hasValue() && !isAllSelected()
+                        "
+                    >
+                    </mat-checkbox>
+                </th>
+                <td mat-cell *matCellDef="let row">
+                    <mat-checkbox
+                        (click)="$event.stopPropagation()"
+                        (change)="$event ? selection.toggle(row) : null"
+                        [checked]="selection.isSelected(row)"
+                    >
+                    </mat-checkbox>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="cumulativa">
+                <th mat-header-cell *matHeaderCellDef>Lotação</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.cumulativa }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="serv_substituto">
+                <th mat-header-cell *matHeaderCellDef>Servidor Substituto</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.serv_substituto }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="serv_substituido">
+                <th mat-header-cell *matHeaderCellDef>Servidor Substituido</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.serv_substituido }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="data_inicio">
+                <th mat-header-cell *matHeaderCellDef>Data Início</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ printDate(element.data_inicio) }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="data_fim">
+                <th mat-header-cell *matHeaderCellDef>Data Fim</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ printDate(element.data_fim) }}
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </div>
+
+    <div class="flex flex-col justify-end gap-4">
+        <div
+            *ngIf="total > 0"
+            class="flex flex-col w-full gap-2 justify-between relative bg-white"
+        >
+            <mat-form-field class="h-full">
+                <mat-label>Observação (Opcional)</mat-label>
+                <textarea
+                    matInput
+                    placeholder=""
+                    class="h-16"
+                    [readonly]="false"
+                    >{{ observation }}</textarea
+                >
+            </mat-form-field>
+        </div>
+
+        <div
+            *ngIf="message"
+            class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+        >
+            {{ message }}
+        </div>
+
+        <button
+            mat-button
+            [disabled]="!isValid || this.isLoading"
+            class="bg-primary text-white p-8 py-4 w-56 self-end"
+            [ngClass]="{ 'bg-gray-300': !isValid }"
+            (click)="goConfirm()"
+        >
+            Solicitar
+        </button>
+    </div>
+</div>

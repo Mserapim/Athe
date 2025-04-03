@@ -1,0 +1,11 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <mpmt-botao (click)="atualizarCertificado()" style="margin-right: 10px" *ngIf="navegacaoAtualService.possuiPermissao('editar')">Atualizar certificado</mpmt-botao>
+            <mpmt-botao (click)="criar()" *ngIf="navegacaoAtualService.possuiPermissao('criar')">
+                Nova configuração
+            </mpmt-botao>
+        </div>
+    </mpmt-listagem2>
+</div>

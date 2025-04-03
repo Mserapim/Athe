@@ -1,0 +1,51 @@
+<div class="flex flex-col py-2 gap-2">
+    <div class="max-h-120 overflow-y-auto custom-scrollbar w-full">
+        <div class="grid grid-cols-3 gap-8">
+            <div class="flex flex-row font-medium p-2 underline">
+                Descrição das dificuldades observadas pelo Gestor durante o
+                regime de Teletrabalho no semestre avaliado em relação ao/s
+                servidores.
+            </div>
+            <div class="p-2 font-bold col-span-2">
+                {{ dados?.dificuldades_servidores }}
+            </div>
+
+            <div class="flex flex-row font-medium p-2 underline">
+                Medidas adotadas para dirimir as dificuldades apontadas
+            </div>
+            <div class="p-2 font-bold col-span-2">
+                {{ dados?.medidas_dirimir_dificuldades_servidores }}
+            </div>
+
+            <div class="flex flex-row font-medium p-2 underline">
+                Descrição das dificuldades e facilidades do gestor em relação à
+                gestão do Teletrabalho no semestre avaliado
+            </div>
+            <div class="p-2 font-bold col-span-2">
+                {{ dados?.dificuldades_facilidades_gestor }}
+            </div>
+
+            <div class="flex flex-row font-medium p-2 underline">
+                Medidas adotadas para dirimir as dificuldades apontadas
+            </div>
+            <div class="p-2 font-bold col-span-2">
+                {{ dados?.medidas_dirimir_dificuldades_gestor }}
+            </div>
+
+            <div class="flex flex-row font-medium p-2 underline">
+                Descrição dos resultados alcançados na unidade em função do
+                regime de teletrabalho no semestre avaliado.
+            </div>
+            <div class="p-2 font-bold col-span-2">
+                {{ dados?.resultados_alcancados }}
+            </div>
+
+            <div class="flex flex-row font-medium p-2 underline">
+                Sugestões de melhorias para aperfeiçoamento do programa
+            </div>
+            <div class="p-2 font-bold col-span-2">
+                {{ dados?.sugestoes_melhorias }}
+            </div>
+        </div>
+    </div>
+</div>

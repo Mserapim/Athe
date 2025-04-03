@@ -1,0 +1,32 @@
+<mpmt-pagina-listagem [service]="service" class="w-full tabela-auditoria">
+
+    <div filtros>
+
+        <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full">
+
+            <mpmt-form-texto titulo="Filtro por texto" placeholder="" formControlName="keyword"/>
+
+            <mpmt-form-multiselecao
+                [fonte]="acoes_logs"
+                formControlName="acoes"
+                titulo="Ação"
+                atributoDisplay="label" 
+                atributoChave="value" 
+            />
+
+            <mpmt-form-multiselecao
+                [fonte]="apiAuditoriaModelosLogs"
+                formControlName="modelos"
+                titulo="Modelo"
+                atributoDisplay="label" 
+                atributoChave="value" 
+            />
+
+            <div class="flex flex-row w-full">
+                <mpmt-form-periodo formControlName="periodo_em" titulo="Filtro por período" class="w-full"/>
+            </div>
+        </form>
+
+    </div>
+
+</mpmt-pagina-listagem>

@@ -1,0 +1,78 @@
+.timeline-container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+  
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: rgba(79,70,229, 1);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: var(--timeline-altura);
+    margin-top: 20px;
+}
+
+.timeline-circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(79,70,229, 1);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.timeline-item {
+    position: relative;
+    width: 35%;
+    margin-bottom: 20px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background-color: rgba(204, 204, 204, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.timeline-item.right {
+    left: 25%;
+}
+
+.timeline-item.left {
+    right: 25%;
+}
+
+
+@media (max-width: 768px) {
+    .timeline-circle {
+        left: 10%;
+    }
+
+    .timeline-item {
+        width: 80%;
+        padding: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    .timeline-item.right {
+        left: 20%;
+    }
+    
+    .timeline-item.left {
+        left: 20%;
+    }
+
+    .timeline-container::after {
+        left: 10%; 
+    }
+    
+}

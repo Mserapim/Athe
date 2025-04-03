@@ -1,0 +1,30 @@
+<mat-dialog-content class="h-full flex flex-col">
+    <h2 class="dialog-title font-bold text-xl self-start text-primary">
+        Gerador de arquivo para qualificação no E-social
+    </h2>
+    <br/>
+
+    <div class="flex-grow">
+        <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+            <div class="w-full flex items-center">
+                <mat-slide-toggle formControlName="naoQualificados" color="primary" tabindex="-1">
+                    Apenas não qualificados?
+                </mat-slide-toggle>
+            </div>
+        </form>
+    </div>
+
+    <div *ngIf="message" class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md">
+        {{ message }}
+    </div>
+
+    <!-- Botões fixos -->
+    <div mat-dialog-actions class="flex justify-end gap-4 mt-4">
+        <mpmt-botao tipo="borda" (click)="fechar()">Fechar</mpmt-botao>
+        <mpmt-botao
+            cor="sucesso"
+            (click)="goConfirm()"
+            [desabilitado]="!isValid || this.isLoading"
+        >Salvar</mpmt-botao>
+    </div>
+</mat-dialog-content>

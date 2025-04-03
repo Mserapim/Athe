@@ -1,0 +1,91 @@
+<div class="flex flex-col gap-4">
+    <button class="absolute top-0 right-0 w-15 h-15" (click)="fecharFormulario()">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Editar fluxo</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <!-- Tabela de Beneficiários -->
+            <div class="flex flex-col gap-2 mb-4" style="margin-bottom: 30px !important">
+                <h2 style="padding-top: 10px; color:#1E293B;">Beneficiários*</h2>
+                <div [ngStyle]="{'border': '2px solid #cbd5e1', 'border-radius': '8px'}">
+                    <table 
+                        mat-table 
+                        [dataSource]="beneficiarios" 
+                        style="background-color: transparent;"
+                    >
+                        <ng-container matColumnDef="select">
+                            <th mat-header-cell *matHeaderCellDef style="background-color: transparent;">
+                                <mat-checkbox
+                                    (change)="toggleAllSelection($event.checked)">
+                                </mat-checkbox>
+                            </th>
+                            <td mat-cell *matCellDef="let row">
+                                <mat-checkbox
+                                    [(ngModel)]="row.selected"
+                                    (change)="toggleSelection(row)">
+                                </mat-checkbox>
+                            </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="codigo_os">
+                            <th mat-header-cell *matHeaderCellDef>Código OS</th>
+                            <td mat-cell *matCellDef="let row">{{ row.codigo_os }}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="beneficiario">
+                            <th mat-header-cell *matHeaderCellDef>Beneficiário</th>
+                            <td mat-cell *matCellDef="let row">{{ row.servidor_nome }}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="fluxo">
+                            <th mat-header-cell *matHeaderCellDef style="background-color: transparent;">Fluxo</th>
+                            <td mat-cell *matCellDef="let row">{{ row.fluxo_unicode }}</td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
+            </div>
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <!-- Campo Fluxo -->
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Novo fluxo</mat-label>
+                    <input
+                        type="text"
+                        matInput
+                        [matAutocomplete]="auto"
+                        formControlName="fluxo"
+                        (input)="filtrarFluxos($event.target.value)">
+                    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFluxo">
+                        <mat-option *ngFor="let fluxo of fluxosFiltrados" [value]="fluxo">
+                            {{ fluxo.ordem }} - {{ fluxo.situacao_display }} - {{ fluxo.etapa_display }}
+                        </mat-option>
+                    </mat-autocomplete>
+                    <mat-icon matSuffix>arrow_drop_down</mat-icon>
+                </mat-form-field>
+
+                <!-- Campo Observação -->
+                <mpmt-texto-formatado
+                    class="w-full"
+                    formControlName="observacao"
+                    titulo="Observação*"
+                ></mpmt-texto-formatado>
+            </form>
+
+ 
+        </div>
+    </div>
+
+    <div mat-dialog-actions style="display: flex; justify-content: center; gap: 20px;">
+        <mpmt-botao [desabilitado]="!habilitarSalvar" (click)="irConfirmar()">Salvar</mpmt-botao>
+    </div>
+</div>

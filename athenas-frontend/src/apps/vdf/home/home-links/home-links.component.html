@@ -1,0 +1,38 @@
+<div class="flex flex-col gap-4 w-full">
+    <h1 class="font-bold text-lg">Links Rápidos</h1>
+
+    <div class="flex gap-4 overflow-x-auto">
+        <div
+            class="flex bg-white p-4 rounded gap-2 shadow cursor-pointer min-w-56"
+            [ngClass]="{ '!bg-gray-300 opacity-30': isLoadingTimesheet }"
+            (click)="downloadTimesheet()"
+            *ngIf="!currentUserService.isMember"
+        >
+            <div class="self-center">
+                <mat-icon [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-gray-400 font-bold">Folha Ponto</div>
+                <div class="text-gray-800 text-xs">
+                    Competência {{ competence(5) }}
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="flex bg-white p-4 rounded gap-2 shadow cursor-pointer min-w-56"
+            [ngClass]="{ '!bg-gray-300 opacity-30': isLoadingPaycheck }"
+            (click)="downloadPaycheck()"
+        >
+            <div class="self-center">
+                <mat-icon [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-gray-400 font-bold">Holerite</div>
+                <div class="text-gray-800 text-xs">
+                    Competência {{ comp_contracheque }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

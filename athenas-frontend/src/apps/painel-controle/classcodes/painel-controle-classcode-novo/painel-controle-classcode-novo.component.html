@@ -1,0 +1,44 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Título">
+                    <mat-label>Título</mat-label>
+                    <input matInput formControlName="title" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Path">
+                    <mat-label>Path</mat-label>
+                    <input matInput formControlName="path" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Slug">
+                    <mat-label>Slug</mat-label>
+                    <input matInput formControlName="slug" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Objeto">
+                    <mat-label>Objeto</mat-label>
+                    <input matInput formControlName="name_object" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Descrição">
+                    <mat-label>Descrição</mat-label>
+                    <input matInput formControlName="description" placeholder="" />
+                </mat-form-field>
+                <mpmt-selecao
+                    [titulo]="'Tipo'"
+                    class="w-full"
+                    placeholder="Tipo"
+                    formControlName="type_of"
+                    [configuracao]="selecaoTiposClasscode"
+                ></mpmt-selecao>
+            </form>
+        </div>
+    </div>
+
+</layout-padrao-modal>

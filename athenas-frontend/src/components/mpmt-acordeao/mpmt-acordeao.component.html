@@ -1,0 +1,10 @@
+<div class="acordeao-container">
+    <div class="acordeao-titulo" (click)="toggle.emit()">
+      {{ titulo }}
+      <span class="subtitulo">{{ subtitulo }}</span>
+      <span class="icon">{{ estaExpandido ? '▲' : '▼' }}</span>
+    </div>
+    <div *ngIf="estaExpandido" class="acordeao-conteudo" (click)="$event.stopPropagation()">
+      <ng-container *ngTemplateOutlet="templateRef"></ng-container>
+    </div>
+</div>

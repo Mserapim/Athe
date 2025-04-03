@@ -1,0 +1,193 @@
+<div class="flex flex-col gap-8 h-full">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">
+            {{ this.formulario.value.servidor_matricula }} -
+            {{ this.formulario.value.servidor_nome }}
+        </h1>
+    </h1>
+
+    <div mat-dialog-content class="h-full">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <div class="flex flex-row gap-2">
+                    <div class="flex flex-row gap-1 w-full">
+                        <mat-form-field class="self-center w-full">
+                            <mat-label>Publicação</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                formControlName="publicacao_display"
+                                placeholder="Publicação"
+                                readonly="true"
+                            />
+                        </mat-form-field>
+                        <div class="flex h-full items-center">
+                            <mat-icon
+                                *ngIf="publicacaoSelecionada"
+                                [svgIcon]="'heroicons_solid:plus-circle'"
+                                (click)="irNovoPublicacao()"
+                                class="cursor-pointer"
+                            ></mat-icon>
+                            <mat-icon
+                                *ngIf="!publicacaoSelecionada"
+                                [svgIcon]="'heroicons_solid:pencil-alt'"
+                                (click)="irEditarPublicacao()"
+                                class="cursor-pointer"
+                            ></mat-icon>
+                        </div>
+                    </div>
+
+                    <mat-form-field
+                        class="w-full"
+                        placeholder="Data de publicação"
+                    >
+                        <mat-label>Data de publicação</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_publicacao"
+                            placeholder=""
+                            [readonly]="true"
+                            [disabled]="true"
+                        />
+                    </mat-form-field>
+                
+                    <mat-form-field
+                        class="w-full"
+                        placeholder="Data de expedição"
+                    >
+                        <mat-label>Data de expedição da publicação</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_expedicao_publicacao"
+                            placeholder=""
+                            [readonly]="true"
+                            [disabled]="true"
+                        />
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-2">
+                    <mpmt-selecao-form
+                        #selecaoTipo
+                        [titulo]="'Tipo*'"
+                        class="w-full"
+                        placeholder="Tipo"
+                        formControlName="tipo"
+                        [form_control]="formulario.get('tipo')"
+                        [configuracao]="selecaoAnotacaoPessoalTiposAnotacao"
+                    ></mpmt-selecao-form>
+
+                    <mpmt-selecao-form
+                        #selecaoTipoDocumento
+                        [titulo]="'Tipo do documento*'"
+                        class="w-full"
+                        placeholder="Tipo Documento"
+                        formControlName="documento_tipo"
+                        [form_control]="formulario.get('documento_tipo')"
+                        [configuracao]="selecaoAnotacaoPessoalTiposDocumentos"
+                    ></mpmt-selecao-form>
+
+                    <mat-form-field class="w-full" placeholder="Número documento">
+                        <mat-label>Número documento</mat-label>
+                        <input
+                            matInput
+                            formControlName="documento_numero"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Ano documento">
+                        <mat-label>Ano do documento</mat-label>
+                        <input
+                            matInput
+                            formControlName="documento_ano"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-2">
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data do documento</mat-label>
+                        <input
+                            matInput
+                            formControlName="documento_data"
+                            [matDatepicker]="datepickerStart"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerStart"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerStart></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data de efeito início</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_efeito_inicio"
+                            [matDatepicker]="datepickerDateEfeitoInicio"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerDateEfeitoInicio"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker
+                            #datepickerDateEfeitoInicio
+                        ></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data de efeito fim</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_efeito_fim"
+                            [matDatepicker]="datepickerDateEfeitoFim"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerDateEfeitoFim"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker
+                            #datepickerDateEfeitoFim
+                        ></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>GEDOC</mat-label>
+                        <input
+                            matInput
+                            formControlName="gedoc_numero"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-row gap-2 w-full">
+                    <mpmt-texto-formatado
+                        class="w-full"
+                        formControlName="texto"
+                        titulo="Conteúdo da anotação*"
+                    >
+                    </mpmt-texto-formatado>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div
+        mat-dialog-actions
+        class="flex flex-col sm:flex-row justify-end gap-4 self-end"
+    >
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>

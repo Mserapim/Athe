@@ -1,0 +1,42 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let dado of service.listagem$ | async; let i = index" 
+        (opened)="onPanelOpened(i)"
+        (closed)="onPanelClosed(i)"
+        [expanded]="isPanelExpanded(i)">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <div class="flex flex-row justify-between w-full">
+                    <div *ngFor="let coluna of service.colunasVisiveisItem | async">
+                        <span> {{ service.pegarValorItem(dado.item, coluna) }} </span>
+                    </div>
+                </div>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="flex justify-end w-full">
+            <ng-container *ngTemplateOutlet="acoesTemplate; context: { $implicit: dado }"></ng-container>
+        </div>
+
+        <div class="flex flex-row gap-2 w-full text-white py-2">
+            <ng-container *ngTemplateOutlet="filtrosTemplate; context: { $implicit: dado.item }"></ng-container>
+        </div>
+
+        <div class="flex flex-row w-full table-responsive rounded-b">
+            <table mat-table [dataSource]="dado.subItem" class="mat-elevation-z8" matSort
+                (matSortChange)="service.alterarOrdenacaoSubItem($event)">
+                <ng-container [matColumnDef]="coluna.codigo"
+                    *ngFor="let coluna of service.colunasVisiveisSubItem | async">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header [disabled]="!coluna.ordenavel"
+                    >
+                        {{ coluna.titulo }}
+                    </th>
+                    <td mat-cell *matCellDef="let linha">
+                        <mpmt-celula [coluna]="coluna" [linha]="linha"></mpmt-celula>
+                    </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="service.colunaCodigosSubItem | async"></tr>
+                <tr mat-row *matRowDef="let row; columns: service.colunaCodigosSubItem | async"></tr>
+            </table>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>

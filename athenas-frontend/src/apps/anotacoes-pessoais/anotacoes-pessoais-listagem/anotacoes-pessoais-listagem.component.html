@@ -1,0 +1,57 @@
+<div class="flex flex-col w-full p-8">
+    <div *ngIf="service.loading" class="spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+
+    <mpmt-listagem2 [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <mpmt-botao (click)="irGerarRelatorio()" [desabilitado]="!servidorSelecionado">Gerar relatório</mpmt-botao>	&nbsp;
+            <mpmt-botao (click)="irNovo()" *ngIf="navegacaoAtualService.possuiPermissao('criar')">Nova anotação</mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full"
+            >
+     
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao-servidores 
+                        formControlName="servidor_ids" 
+                        (chance)="service.recarregarListagem()"
+                        class="w-full h-full"
+                    />
+                </div>
+
+                <!-- mpmt-form-multiselecao -->
+
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="tipos_anotacao" 
+                        (chance)="service.recarregarListagem()"
+                        [titulo]="'Tipos Anotações'"
+                        class="w-full h-full"
+                        [fonte]="apiAnotacaoPessoalTiposAnotacao"
+                        [atributoChave]="'value'"
+                        [atributoDisplay]="'label'"
+                    />
+                </div>
+
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="tipos_documento" 
+                        (chance)="service.recarregarListagem()"
+                        [titulo]="'Tipos Documento'"
+                        class="w-full h-full"
+                        [fonte]="apiAnotacoesPessoaisTiposDocumentos"
+                        [atributoChave]="'value'"
+                        [atributoDisplay]="'label'"
+
+                    />
+                </div>
+
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

@@ -1,0 +1,179 @@
+<div class="flex flex-col p-8 w-full">
+    <!-- DESKTOP --->
+    <div class="flex flex-col justify-between">
+        <div class="flex flex-col md:flex-row gap-4 justify-between">
+            <p class="text-lg font-bold py-4 self-center">Minhas Aprovações</p>
+
+            <mat-checkbox
+                color="white"
+                [(ngModel)]="filters.pending_request"
+                (ngModelChange)="applyFilter()"
+                ><mat-label class="!text-white">
+                    Filtrar somente pendentes
+                </mat-label></mat-checkbox
+            >
+        </div>
+
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 justify-end w-full"
+        >
+            <mat-form-field class="w-full self-center" class="w-full">
+                <mat-label class="text-white">Filtro por texto</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="filters.keyword"
+                    placeholder="Buscar por"
+                    (ngModelChange)="applyFilter()"
+                />
+
+                <button
+                    *ngIf="filters.keyword"
+                    matSuffix
+                    mat-icon-button
+                    aria-label="Clear"
+                    (click)="clearKeyword()"
+                >
+                    <mat-icon
+                        [svgIcon]="'heroicons_.;  \solid:x-circle'"
+                    ></mat-icon>
+                </button>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label class="text-white">Filtro por aprovador</mat-label>
+                <mat-select
+                    [(ngModel)]="filters.approvals"
+                    (ngModelChange)="applyFilter()"
+                    multiple
+                >
+                    <mat-option
+                        *ngFor="let option of approvers"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label class="!text-white">Filtro por situação</mat-label>
+                <mat-select
+                    [(ngModel)]="filters.status"
+                    (ngModelChange)="applyFilter()"
+                    multiple
+                >
+                    <mat-option
+                        *ngFor="let option of statuses"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label class="!text-white">Filtro por categoria</mat-label>
+                <mat-select
+                    [(ngModel)]="filters.employe_types"
+                    (ngModelChange)="applyFilter()"
+                    multiple
+                >
+                    <mat-option
+                        *ngFor="let option of employee_types"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label class="!text-white"
+                    >Filtro por tipo de solicitação</mat-label
+                >
+                <mat-select
+                    [(ngModel)]="filters.request_type"
+                    (ngModelChange)="applyFilter()"
+                    multiple
+                >
+                    <mat-option
+                        *ngFor="let option of types"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table mat-table [dataSource]="results" class="mat-elevation-z8">
+            <ng-container matColumnDef="pk">
+                <th mat-header-cell *matHeaderCellDef>Código</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.pk }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef>Data da solicitação</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.date | date : "dd/MM/yyyy" }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="type_of_request">
+                <th mat-header-cell *matHeaderCellDef>Tipo da solicitação</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.type_of_request }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="employee_name">
+                <th mat-header-cell *matHeaderCellDef>Solicitante</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.employee_name }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="approver_name">
+                <th mat-header-cell *matHeaderCellDef>Aprovador atual</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.approver_name }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="status_name">
+                <th mat-header-cell *matHeaderCellDef>Situação</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.status_name }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="days_awaiting_approval">
+                <th mat-header-cell *matHeaderCellDef>
+                    Aguardando aprovador (dias)
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.days_awaiting_approval }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef>Visualizar</th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-button (click)="showDetail(element)">
+                        Visualizar
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </div>
+
+    <mat-paginator
+        [length]="total"
+        [pageSize]="10"
+        [pageSizeOptions]="[10, 15, 30, 50, 100]"
+    ></mat-paginator>
+</div>

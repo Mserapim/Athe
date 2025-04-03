@@ -1,0 +1,235 @@
+<div *ngIf="!data?.status">Carregando</div>
+<div
+    class="flex flex-col h-full w-full p-4 gap-2 min-h-160"
+    *ngIf="data?.status"
+>
+    <div class="flex justify-between py-2">
+        <div class="flex font-bold text-xl">Visualizar solicitação</div>
+        <div
+            class="flex text-bold text-base py-2 px-4 bg-gray-100 border border-gray-200 rounded-full"
+            [ngClass]="{
+                '!bg-red-100': statusGroup == 'CANCELED',
+                '!bg-green-100': statusGroup == 'CONFIRMED',
+                '!bg-yellow-100': statusGroup == 'PROGRESS'
+            }"
+        >
+            {{ requestStatusLabel(data?.status) }}
+        </div>
+    </div>
+
+    <div class="flex gap-4">
+        <div class="flex flex-col gap-2">
+            <div class="flex gap-2">
+                <div class="font-bold">Código da solicitação:</div>
+                <div>{{ data?.pk }}</div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="font-bold">Data da solicitação:</div>
+                <div>{{ data?.date }}</div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="font-bold">Tipo da solicitação:</div>
+                <div>{{ data?.type_of_request }}</div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="font-bold">Solicitante:</div>
+                <div>{{ data?.employee_name }}</div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="font-bold">Periodo aquisitivo:</div>
+                <div>{{ data?.acquisitive_period }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="flex mt-4 p-2 gap-2 bg-gray-100 w-full font-bold text-lg cursor-pointer text-center rounded-full"
+    >
+        <div
+            class="w-36 p-2 rounded-full"
+            [ngClass]="{ 'bg-gray-300': currentTab == 'USUFRUTOS' }"
+            (click)="currentTab = 'USUFRUTOS'"
+        >
+            Usufrutos
+        </div>
+        <div
+            class="w-36 p-2 rounded-full"
+            [ngClass]="{ 'bg-gray-200': currentTab == 'SUBSTITUTOS' }"
+            (click)="currentTab = 'SUBSTITUTOS'"
+        >
+            Substitutos
+        </div>
+        <div
+            class="w-36 p-2 rounded-full"
+            [ngClass]="{ 'bg-gray-200': currentTab == 'HISTORICOS' }"
+            (click)="currentTab = 'HISTORICOS'"
+        >
+            Histórico
+        </div>
+    </div>
+
+    <div class="flex flex-col py-4 gap-2" *ngIf="currentTab == 'USUFRUTOS'">
+        <div class="table-responsive">
+            <table mat-table [dataSource]="usufructs" class="">
+                <ng-container matColumnDef="start_date">
+                    <th mat-header-cell *matHeaderCellDef>Data inicio</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.start_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="end_date">
+                    <th mat-header-cell *matHeaderCellDef>Data fim</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.end_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="days">
+                    <th mat-header-cell *matHeaderCellDef>Dias</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.days }} dia(s)
+                        <div *ngIf="!element.start_date">(Venda)</div>
+                    </td>
+                </ng-container>
+
+                <tr
+                    mat-header-row
+                    *matHeaderRowDef="usufructDisplayedColumns"
+                ></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: usufructDisplayedColumns"
+                ></tr>
+            </table>
+        </div>
+
+        <!-- <div class="flex flex-col gap-2 w-full">
+            <div class="flex px-8 rounded-r-full w-full font-bold">
+                <div class="w-2/12">Data inicio</div>
+                <div class="w-2/12">Data fim</div>
+                <div class="w-4/12">Dias</div>
+            </div>
+
+            <div
+                class="flex bg-gray-50 p-2 px-8 rounded-r-full w-full font-bold"
+                *ngFor="let item of usufructs || []"
+            >
+                <div class="w-2/12">
+                    {{ item.start_date | date : "dd.MM.y" }}
+                </div>
+                <div class="w-2/12">
+                    {{ item.end_date | date : "dd.MM.y" }}
+                </div>
+                <div class="flex w-4/12">
+                    {{ item.days }} dias
+                    <div *ngIf="!item.start_date">(Venda)</div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <div
+        class="flex flex-col py-2 gap-2 overflow-y-auto"
+        *ngIf="currentTab == 'HISTORICOS'"
+    >
+        <!-- {{ histories | json }} -->
+        <div class="table-responsive">
+            <table mat-table [dataSource]="histories" class="">
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef>Data</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="group">
+                    <th mat-header-cell *matHeaderCellDef>Grupo</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.group }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="employee">
+                    <th mat-header-cell *matHeaderCellDef>Servidor</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.employee }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="action_label">
+                    <th mat-header-cell *matHeaderCellDef>Ação realizada</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.action_label }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="observation">
+                    <th mat-header-cell *matHeaderCellDef>Observação</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.observation?.substring(0, 30) }}
+                    </td>
+                </ng-container>
+
+                <tr
+                    mat-header-row
+                    *matHeaderRowDef="historiesDisplayedColumns"
+                ></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: historiesDisplayedColumns"
+                ></tr>
+            </table>
+        </div>
+    </div>
+
+    <div
+        class="flex gap-2 self-center w-full justify-center p-2 rounded"
+        *ngIf="canCancel"
+    >
+        <button
+            mat-button
+            class="bg-red-400 text-white p-8 py-2 self-end"
+            (click)="cancelRequest()"
+        >
+            {{textoCancelar}}
+        </button>
+    </div>
+
+    <div
+        class="flex gap-2 self-center w-full justify-center bg-gray-100 p-2 rounded"
+        *ngIf="showActions && actions?.length > 0"
+    >
+        <mat-form-field class="w-full">
+            <mat-label>Observação (Opcional)</mat-label>
+            <input
+                type="textarea"
+                matInput
+                [formControl]="observation"
+                placeholder="..."
+            />
+        </mat-form-field>
+
+        <div *ngFor="let action of actions">
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-2 justify-end"
+                (click)="confirm(action.action)"
+            >
+                {{ action.label }}
+            </button>
+        </div>
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <h1 class="font-bold text-lg">Visualize o periodo aquisitivo</h1>
+
+    <p class="text-xs text-gray-600">
+        Essa etapa é apenas para que tenha ciencia de qual periodo aquisitivo
+        está usufruido.Entretanto, a solicitação sempre utilizar o periodo
+        aquisitivo mais antigo.
+    </p>
+
+    <h1 class="font-bold text-lg">Períodos aquistivos</h1>
+
+    <div class="flex flex-col gap-1 w-full text-black">
+        <div
+            class="grid grid-cols-1 md:grid-cols-6 bg-gray-200 p-2 px-8 rounded w-full font-bold"
+        >
+            <div class="col-span-2" style="width: 100%;">Periodo Aquisitivo</div>
+            <div class="">Inicio Aquisição</div>
+            <div class="">Fim Aquisição</div>
+            <div class="">Dias</div>
+            <div class="">Saldo</div>
+        </div>
+        <div
+            class="grid grid-cols-1 md:grid-cols-6 bg-gray-200 p-2 px-8 rounded w-full font-bold"
+            *ngFor="let item of results"
+            [ngClass]="{
+                'bg-gray-500 text-white': item.status == 2,
+                'text-gray-400': item.status != 2
+            }"
+        >
+            <div class="col-span-2" style="width: 100%;">{{ item.group_period_unicode }}</div>
+            <div class="">
+                {{ printDate(item.start_date_acquisition) }}
+            </div>
+            <div class="">
+                {{ printDate(item.end_date_acquisition) }}
+            </div>
+            <div class="">{{ item.days }} dias</div>
+            <div class="">{{ item.balance_available }} dias</div>
+        </div>
+    </div>
+
+    <div class="flex justify-end">
+        <button
+            mat-button
+            color="primary"
+            class="bg-primary text-white p-8 py-4 w-56"
+            (click)="goNext()"
+            [ngClass]="{ 'bg-gray-300': !isValid }"
+            [disabled]="!isValid"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

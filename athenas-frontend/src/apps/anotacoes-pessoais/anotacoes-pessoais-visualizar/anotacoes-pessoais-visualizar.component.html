@@ -1,0 +1,155 @@
+<div class="flex flex-col gap-8 h-full">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">
+            {{ this.formulario.value.servidor_matricula }} - 
+            {{ this.formulario.value.servidor_nome }}
+        </h1>
+    </h1>
+
+    <div mat-dialog-content class="h-full">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <div class="flex flex-row gap-2">
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>Publicação</mat-label>
+                        <input
+                            matInput
+                            formControlName="publicacao_display"
+                            placeholder=""
+                            [readonly]="true"
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data da publicação</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_publicacao"
+                            [matDatepicker]="datepickerStart"
+                            [readonly]="true"
+                            [disabled]="true"
+                        />
+                        <mat-datepicker #datepickerStart></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-2">
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>Tipo</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            formControlName="tipo_display"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Tipo Documento">
+                        <mat-label>Tipo do documento</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            formControlName="documento_tipo_display"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>Número do documento</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            formControlName="documento_numero"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>Ano do documento</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            formControlName="documento_ano"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-2">
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data do documento</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            placeholder=""
+                            formControlName="documento_data"
+                            [matDatepicker]="datepickerStart"
+                        />
+                    </mat-form-field>
+            
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data de efeito início</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            placeholder=""
+                            formControlName="data_efeito_inicio"
+                            [matDatepicker]="datepickerDateEfeitoInicio"
+                        />
+                        <mat-datepicker
+                            #datepickerDateEfeitoInicio
+                        ></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data de efeito fim</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            placeholder=""
+                            formControlName="data_efeito_fim"
+                            [matDatepicker]="datepickerDateEfeitoFim"
+                        />
+                        <mat-datepicker
+                            #datepickerDateEfeitoFim
+                        ></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>GEDOC</mat-label>
+                        <input
+                            matInput
+                            [readonly]="true"
+                            [disabled]="true"
+                            formControlName="gedoc_numero"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-col w-full">
+                    <p style="color: #1E293B; font-weight: 500;">Texto da anotação</p>
+                    <div class="mpmt-texto-formatado-conteudo" [innerHTML]="formulario.value.texto"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div
+        mat-dialog-actions
+        class="flex flex-col sm:flex-row justify-end gap-4 self-end"
+    >
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+    </div>
+</div>

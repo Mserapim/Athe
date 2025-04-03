@@ -1,0 +1,74 @@
+<div class="flex flex-col md:flex-row py-2 gap-2 overflow-y-auto w-full">
+    <div
+        class="flex flex-col gap-4 border border-gray-200 bg-gray-100 rounded p-2 h-full w-full"
+    >
+        <div class="font-bold">Usufrutos a serem retificados</div>
+        <div class="table-responsive">
+            <table mat-table [dataSource]="resultsBefore" class="">
+                <ng-container matColumnDef="start_date">
+                    <th mat-header-cell *matHeaderCellDef>Data inicio</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.start_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="end_date">
+                    <th mat-header-cell *matHeaderCellDef>Data fim</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.end_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="days">
+                    <th mat-header-cell *matHeaderCellDef>Dias</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.days }} dia(s)
+                        <div *ngIf="!element.start_date">(Venda)</div>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: displayedColumns"
+                ></tr>
+            </table>
+        </div>
+    </div>
+    <div
+        class="flex flex-col gap-4 border border-gray-200 bg-gray-100 rounded p-2 h-full w-full"
+    >
+        <div class="font-bold">Nova programação</div>
+        <div class="table-responsive">
+            <table mat-table [dataSource]="results" class="">
+                <ng-container matColumnDef="start_date">
+                    <th mat-header-cell *matHeaderCellDef>Data inicio</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.start_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="end_date">
+                    <th mat-header-cell *matHeaderCellDef>Data fim</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.end_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="days">
+                    <th mat-header-cell *matHeaderCellDef>Dias</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.days }} dia(s)
+                        <div *ngIf="!element.start_date">(Venda)</div>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: displayedColumns"
+                ></tr>
+            </table>
+        </div>
+    </div>
+</div>

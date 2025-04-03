@@ -1,0 +1,40 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+
+                <div class="w-full" placeholder="Nome">
+                    <mat-label>Nome: </mat-label>
+                    {{ formulario.controls.nome.value }}
+                </div>
+                <div class="w-full" placeholder="Matricula">
+                    <mat-label>Matricula: </mat-label>
+                    <label>{{ formulario.controls.matricula.value }}</label>
+                </div>
+                <div class="w-full" placeholder="Categoria">
+                    <mat-label>Categoria: </mat-label>
+                    <label>{{ formulario.controls.categoria_funcional.value }}</label>
+                </div>
+                <div class="w-full" placeholder="Lotação">
+                    <mat-label>Lotação: </mat-label>
+                    <label>{{ formulario.controls.lotacao.value }}</label>
+                </div>
+
+                <mat-form-field class="w-full" placeholder="Username">
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName="username" placeholder="" (focus)="true"/>
+                </mat-form-field>
+                
+            </form>
+        </div>
+    </div>
+
+</layout-padrao-modal>

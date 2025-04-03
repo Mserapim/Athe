@@ -1,0 +1,48 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label>Nome do grupo de acesso</mat-label>
+                    <input matInput formControlName="nome" placeholder="" />
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label>Descrição</mat-label>
+                    <input matInput formControlName="descricao" placeholder="" />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Situação</mat-label>
+                    <input
+                        matInput
+                        [matAutocomplete]="auto2"
+                        formControlName="situacao"
+                    />
+                    <mat-autocomplete #auto2="matAutocomplete">
+                        <mat-option
+                            *ngFor="let option of situacoes"
+                            [value]="option.valor"
+                        >
+                            {{ option.nome }}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+
+                <mat-checkbox formControlName="grupo_padrao" color="primary">
+                    <mat-label>Grupo padrão</mat-label>              
+                </mat-checkbox>
+
+            </form>
+        </div>
+    </div>
+
+</layout-padrao-modal>

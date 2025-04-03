@@ -1,0 +1,31 @@
+<mpmt-timeline [events]="historico" [templateEvento]="customtemplateEvento"></mpmt-timeline>
+
+<ng-template #customtemplateEvento let-event>
+    <div class="timeline-content" style="line-height: 1.8; display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <p class="font-bold text-primary" *ngIf="event.data_acao">
+                {{ event.data_acao.split(' ')[0] }} às {{ event.data_acao.split(' ')[1] }}
+            </p>
+        </div>
+
+        <div *ngIf="event.tem_anexo || event.tem_informacao" class="ml-auto">
+            <button mat-icon-button (click)="irDetalhesHistorico(event.historico_id)">
+                <mat-icon *ngIf="event.tem_anexo">attach_file</mat-icon>
+                <mat-icon *ngIf="event.tem_informacao">info</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="timeline-content" style="line-height: 1.8;">
+        <p *ngIf="event.etapa"><strong>Etapa:</strong> {{ event.etapa }}</p>
+        <p *ngIf="event.situacao">
+            <strong>Situação:</strong> 
+            {{ decisaoMap[event.decisao] || event.situacao }}
+        </p>
+        <p *ngIf="event.acao_por"><strong>Ação por:</strong> {{ event.acao_por | formatarNome }}</p>
+        <p *ngIf="event.tipo_historico === 'viagem' && event.viagem_data_inicio && event.viagem_data_fim">
+            <strong>Período:</strong> {{ event.viagem_data_inicio }} - {{ event.viagem_data_fim }}
+        </p>
+    </div>
+
+</ng-template>

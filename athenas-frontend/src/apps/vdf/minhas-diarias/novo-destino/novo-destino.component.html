@@ -1,0 +1,128 @@
+<div class="flex flex-col gap-2">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Novo destino</h1>
+
+        <div *ngIf="dataInicio && dataFim" class="font-bold text-md text-secondary" style="margin-top: 10px;">
+            <span>Período da viagem: {{ printDate(dataInicio) }}</span> a
+            <span>{{ printDate(dataFim) }}</span>
+        </div>
+    </h1>
+
+    <div class="flex flex-col items-center ">
+        <h1 *ngIf="servidor" class="font-bold text-lg"> {{servidor.unicode}} </h1>
+    </div>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form [formGroup]="formulario" class="grid grid-cols-1 w-full">
+
+                
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Evento</mat-label>
+                    <mat-select formControlName="evento">
+                        <mat-option *ngFor="let option of eventos" [value]="option.id">
+                            {{ option.unicode }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+
+
+                <div class="grid grid-cols-2 gap-2 w-full">
+                    <div appearance="fill" class="w-full">
+                        <mpmt-selecao-form
+                            #selecaoUfOrigemComponent
+                            [titulo]="'UF de origem'"
+                            class="w-96"
+                            placeholder="UF de origem"
+                            formControlName="uf_origem"
+                            [form_control]="formulario.get('uf_origem')"
+                            [isReadOnly]="viagemEstadual"
+                            [configuracao]="selecaoUfOrigem"
+                        ></mpmt-selecao-form>
+                    </div>
+
+                    <div appearance="fill" class="w-full">
+                        <mpmt-selecao-form
+                            #selecaoMunicipioOrigemComponent
+                            [titulo]="'Município de origem'"
+                            class="w-96"
+                            placeholder="Município de origem"
+                            formControlName="municipio_origem"
+                            [form_control]="formulario.get('municipio_origem')"
+                            [configuracao]="selecaoMunicipioOrigem"
+                        ></mpmt-selecao-form>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 w-full">
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Forma de deslocamento</mat-label>
+                        <mat-select formControlName="forma_deslocamento">
+                            <mat-option *ngFor="let option of formas_deslocamento" [value]="option.id">
+                                {{ option.descricao }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Preferência de turno</mat-label>
+                        <mat-select formControlName="pref_turno_ida">
+                            <mat-option *ngFor="let option of turnos" [value]="option.id">
+                                {{ option.descricao }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div *ngIf="formulario.get('forma_deslocamento').value === '2'" class="grid grid-cols-2 gap-2 w-full">
+                    <div class="w-full">
+                        <mat-checkbox formControlName="com_motorista">Com motorista</mat-checkbox>
+                    </div>
+                    <div class="w-full">
+                        <mat-checkbox formControlName="veiculo_daa">Veículo DAA</mat-checkbox>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 w-full">
+                    <div appearance="fill" class="w-full">
+                        <mpmt-selecao-form
+                            #selecaoUfDestinoComponent
+                            [titulo]="'UF de destino'"
+                            class="w-96"
+                            placeholder="UF de destino"
+                            formControlName="uf_destino"
+                            [form_control]="formulario.get('uf_destino')"
+                            [isReadOnly]="viagemEstadual"
+                            [configuracao]="selecaoUfDestino"
+                        ></mpmt-selecao-form>
+                    </div>
+                    <div appearance="fill" class="w-full">
+                        <mpmt-selecao-form
+                            #selecaoMunicipioDestinoComponent
+                            [titulo]="'Município de destino'"
+                            class="w-96"
+                            placeholder="Município de destino"
+                            formControlName="municipio_destino"
+                            [form_control]="formulario.get('municipio_destino')"
+                            [configuracao]="selecaoMunicipioDestino"
+                        ></mpmt-selecao-form>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 w-full">
+                    <mat-form-field class="w-full">
+                        <mat-label>Data</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName="data" placeholder="">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="w-full" placeholder="Hora">
+                        <mat-label>Hora</mat-label>
+                        <input matInput type="time" formControlName="hora" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="confirmarFormulario()" [desabilitado]="!formularioValido">Salvar</mpmt-botao>
+    </div>
+</div>

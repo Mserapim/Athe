@@ -1,0 +1,54 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <h1 class="text-sm">Selecione classe para progredir</h1>
+
+    <p
+        class="text-sm font-bold text-gray-600 bg-gray-50 border border-gray-100 p-2"
+        *ngIf="this.service.nexts?.length == 0"
+    >
+        Não há combinação disponível para progressão horizontal
+    </p>
+
+    <div class="flex flex-col gap-2" *ngIf="this.service.nexts?.length > 0">
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Classe Atual</mat-label>
+            <mat-select [(ngModel)]="this.service.selectedCurrent">
+                <mat-option
+                    *ngFor="let option of this.service.currents"
+                    [value]="option.pk"
+                    >{{ option.mov_posse }} {{ option.reference }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Classe a progredir</mat-label>
+            <mat-select [(ngModel)]="this.service.selectedNext">
+                <mat-option
+                    *ngFor="let option of service.nexts"
+                    [value]="option.pk"
+                    >{{ option.name }}: {{ option.description }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-label class="font-bold">Requerimento fundamentado nos artigos 35 e 36, ambos da Lei nº. 9.782/2012, em razão de preencher os requisitos exigidos pelos dispositivos supramencionados, conforme comprova-se pelo documento em anexo</mat-label>
+        <mat-checkbox
+            [(ngModel)]="this.service.termo_aceite"
+            color="primary"
+        >
+            <mat-label class="font-bold">Estou de acordo com o termo</mat-label>              
+        </mat-checkbox>
+
+        <div class="flex justify-end">
+            <button
+                mat-button
+                [ngClass]="{ '!bg-primary': isValid }"
+                class="bg-gray-300 text-white p-8 py-4"
+                (click)="goNext()"
+                [disabled]="!isValid"
+            >
+                Continuar
+            </button>
+        </div>
+    </div>
+</div>

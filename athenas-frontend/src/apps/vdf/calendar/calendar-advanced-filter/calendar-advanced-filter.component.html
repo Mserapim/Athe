@@ -1,0 +1,39 @@
+<div class="flex flex-col gap-4 w-full h-full">
+
+    <h1 class="font-bold text-lg">Filtros</h1>
+
+    <mat-form-field class="self-center w-full">
+        <input matInput type="text" placeholder="Buscar por" />
+    </mat-form-field>
+
+    <h1 class="font-bold text-lg">Minha agenda</h1>
+
+    <div class="flex gap-4">
+        <mat-checkbox class="example-margin">Fernando Bispo Lucas Alencar</mat-checkbox>
+    </div>
+
+    <h1 class="font-bold text-lg">Minha equipe</h1>
+
+    <div class="flex flex-col">
+        <div *ngFor="let item of employeTeamDataSource.results$ | async">
+            <mat-checkbox>
+                <span class="text-xs">
+                    {{item.name?.substring(0,20)}}
+                </span>
+            </mat-checkbox>
+        </div>
+    </div>
+
+    <h1 class="font-bold text-lg">Tipo de solicitação</h1>
+
+    <div class="flex flex-col">
+        <div *ngFor="let item of eventTypesDataSource.results$ | async">
+            <mat-checkbox>
+                <span class="text-xs">
+                    {{item.name}}
+                </span>
+            </mat-checkbox>
+        </div>
+    </div>
+
+</div>

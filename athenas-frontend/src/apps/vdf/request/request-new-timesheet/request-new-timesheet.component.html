@@ -1,0 +1,35 @@
+<div class="flex flex-col h-full w-full p-8">
+    <div class="flex bg-white rounded">
+        <div
+            class="flex-col bg-primary text-white p-8 py-4 w-96 gap-4 hidden md:flex"
+        >
+            <h3 class="font-bold text-lg">
+                Solicitação de Entrega de Folha de Ponto
+            </h3>
+            <div class="font-bold text-xs leading-5">
+                <div class="flex flex-col">
+                    <li>1. Baixe a folha ponto para visualizar e conferir;</li>
+                    <li>
+                        2. Caso tenha ausências clique no botão “Novo” para
+                        adicionar justificativa;
+                    </li>
+                    <li>
+                        3. Envie ao aprovador somente após conferir a folha
+                        ponto e preencher todas as justificativas necessárias;
+                    </li>
+                    <li>
+                        * 4. Quem participa do programa de teletrabalho ATO
+                        1058/2021 ou ATO 862/2019 deve utilizar formulário
+                        próprio;
+                    </li>
+                </div>
+            </div>
+
+            <request-new-timesheet-stepper></request-new-timesheet-stepper>
+        </div>
+
+        <div class="p-8 w-full">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

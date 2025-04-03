@@ -1,0 +1,115 @@
+<div class="flex flex-col gap-8 w-full">
+    <h1 class="font-bold text-lg">
+        Informe os substitutos do usufruto 01/01/2023 à 31/01/2023
+    </h1>
+
+    <!-- <div class="flex flex-col">
+        <h2 class="font-bold text-base text-gray-600">
+            Indique um substituto para cada designação vigente.
+        </h2>
+    </div> -->
+
+    <div class="flex flex-col gap-2 w-full">
+        <div
+            class="flex flex-col w-full bg-slate-100 rounded-md p-2 gap-2"
+            *ngFor="let i of [1, 2, 3]"
+        >
+            <div class="flex font-bold">
+                20ª PROMOTORIA DE JUSTIÇA CÍVEL DE CUIABÁ
+            </div>
+            <div class="flex gap-2" *ngFor="let y of [0, 1]; let index = index">
+                <mat-form-field appearance="outline" class="w-3/12">
+                    <mat-label>Data início</mat-label>
+                    <input matInput [matDatepicker]="datepicker1" />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepicker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker1></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="w-3/12">
+                    <mat-label>Data Fim</mat-label>
+                    <input matInput [matDatepicker]="datepicker1" />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepicker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker1></mat-datepicker>
+                </mat-form-field>
+
+                <!--
+                <mat-form-field appearance="outline" class="w-6/12">
+                    <mat-label>Substituto</mat-label>
+                    <mat-select [(value)]="selectedConfig">
+                        <mat-option *ngFor="let item of configs$ | async; let index = index" [value]="item">
+                            {{ print(item) }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field> -->
+
+                <mat-form-field appearance="outline" class="w-6/12">
+                    <mat-label>Substituto</mat-label>
+                    <input
+                        type="text"
+                        placeholder="Selecione o substituto"
+                        matInput
+                        [formControl]="myControl"
+                        [matAutocomplete]="auto"
+                    />
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="w-6/12">
+                    <mat-label>Substituto</mat-label>
+                    <input
+                        type="text"
+                        placeholder="Selecione o substituto"
+                        matInput
+                        [formControl]="myControl"
+                        [matAutocomplete]="auto"
+                    />
+                    <mat-autocomplete
+                        autoActiveFirstOption
+                        #auto="matAutocomplete"
+                    >
+                        <mat-option
+                            *ngFor="let item of configs$ | async"
+                            [value]="item"
+                        >
+                            {{ item | json }}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <div class="flex font-bold self-center cursor-pointer w-8">
+                    <span *ngIf="index != 0"> X</span>
+                </div>
+            </div>
+
+            <div class="flex font-bold underscore cursor-pointer w-56">
+                + adicionar linha
+            </div>
+        </div>
+
+        <div
+            class="flex justify-end gap-2"
+            *ngIf="selectedConfig && selectedConfig.enjoyment?.length > 0"
+        >
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-56"
+                (click)="goBack()"
+            >
+                Voltar
+            </button>
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-56"
+                (click)="goNext()"
+            >
+                Continuar
+            </button>
+        </div>
+    </div>
+</div>

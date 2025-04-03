@@ -1,0 +1,30 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+            [formGroup]="formulario"
+            class="grid grid-cols-1 gap-2 w-full"
+        >
+            <mat-form-field class="w-full" placeholder="Nome completo">
+                <mat-label>Local</mat-label>
+                <input matInput formControlName="place" placeholder="" />
+            </mat-form-field>
+
+            <mat-form-field class="w-full" placeholder="Nome completo">
+                <mat-label>Promotoria</mat-label>
+                <input matInput formControlName="prosecution" placeholder="" />
+            </mat-form-field>
+            
+            <mat-form-field class="w-full" placeholder="Nome completo">
+                <mat-label>Rede</mat-label>
+                <input matInput formControlName="network" placeholder="" />
+            </mat-form-field>
+
+        </form>
+        </div>
+    </div>
+</layout-padrao-modal>

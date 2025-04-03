@@ -1,0 +1,13 @@
+<div class="flex flex-col">
+    <painel-controle-grupo-menu-editar-formulario
+        [usuarioGrupoId]="data.usuarioGrupoId"
+        (onClose)="aoFecharFormulario()"
+        class="w-full"
+    ></painel-controle-grupo-menu-editar-formulario>
+
+    <painel-controle-grupo-menu-editar-listagem
+        [usuarioGrupoId]="data.usuarioGrupoId"
+        (irNovo)="irFormulario()"
+    >
+    </painel-controle-grupo-menu-editar-listagem>
+</div>

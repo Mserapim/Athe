@@ -1,0 +1,30 @@
+<div class="p-8 flex flex-col gap-4 rounded w-full">
+    <span class="font-bold text-xl">Relatórios </span>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+        <!-- HOLERITE  -->
+        <app-reports-paycheck class="grid-item"></app-reports-paycheck>
+
+        <!-- FOLHA PONTO  -->
+        <app-reports-timesheet
+            class="grid-item"
+            *ngIf="!currentUserService.isMember"
+        ></app-reports-timesheet>
+
+        <!-- AGENDA FINANCEIRA  -->
+        <app-reports-calendar class="grid-item"></app-reports-calendar>
+
+        <!-- TEAM APROVADORES  -->
+        <app-reports-server-shift class="grid-item"></app-reports-server-shift>
+        <!-- <app-reports-approver class="grid-item"></app-reports-approver> -->
+
+        <!-- TEAM RELATORIO DE ENTREGA DE FOLHA PONTO  -->
+        <app-reports-delivery-point-sheet class="grid-item"></app-reports-delivery-point-sheet>
+
+        <!-- RELATORIO FICHA FINANCEIRA  -->
+        <app-reports-financial-statement class="grid-item"></app-reports-financial-statement>
+
+        <!-- RELATORIO Informe de Rendimentos  -->
+        <app-reports-income-statement class="grid-item"></app-reports-income-statement>
+    </div>
+</div>

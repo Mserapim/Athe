@@ -1,0 +1,60 @@
+<layout-padrao-modal
+    title= 'Justificativas'
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+    style="max-height: 80vh;"
+>
+
+    <div *ngIf="service.servidorInfo" class="flex flex-col justify-center items-center text-lg font-medium mb-4">
+        <div>
+            <strong> {{ service.servidorInfo.matricula }}: {{ service.servidorInfo.nome }} - {{ service.servidorInfo.lotacao }}</strong>
+        </div>
+    </div>
+
+    <div
+        class="flex flex-row justify-center text-lg font-medium"
+        *ngIf="data?.filtros.tipo_filtro == 'COMPETENCIA'"
+    >
+        <div class="flex self-center items-center">Competência:</div>
+        <div class="flex justify-center">
+            {{ data?.filtros.mes }}/{{ data?.filtros.ano }}
+        </div>
+    </div>
+
+    <div
+        class="flex flex-row justify-center text-lg font-medium"
+        *ngIf="data?.filtros.tipo_filtro == 'PERIODO'"
+    >
+        <div class="flex self-center items-center">Periodo:</div>
+        <div class="flex justify-center">
+            {{ printDate(data?.filtros.inicio) }} a
+            {{ printDate(data?.filtros.fim) }}
+        </div>
+    </div>
+    <div
+        style="
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        "
+    >
+    <mpmt-listagem2
+        [service]="service"
+        [habilitar-favorito]="false"
+        [habilitar-paginacao]="false"
+        [ocultarTitulo]="true"
+        [ocultarOpcoes]="true"
+    >
+        <!-- Ações -->
+        <div acoes></div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-6 gap-2 w-full"
+            ></form>
+        </div>
+    </mpmt-listagem2>
+    </div>
+</layout-padrao-modal>

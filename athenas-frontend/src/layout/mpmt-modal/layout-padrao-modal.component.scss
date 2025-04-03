@@ -1,0 +1,11 @@
+.modal-content {
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Arredonda os cantos */
+    padding: 16px; /* Espaçamento interno */
+}
+
+::ng-deep .mat-button-disabled {
+    background-color: #e0e0e0 !important; /* Cor de fundo desejada para o botão desativado */
+    color: #9e9e9e !important; /* Cor do texto desejada para o botão desativado */
+    cursor: not-allowed; /* Opcional: muda o cursor quando o botão está desativado */
+}

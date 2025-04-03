@@ -1,0 +1,186 @@
+<div class="flex flex-col w-full p-8" id="vdf-folha-ponto">
+    <mpmt-listagem2
+        [service]="service"
+        [habilitar-favorito]="false"
+        [habilitar-paginacao]="false"
+        class="!text-black"
+        [classe_titulo]="'!text-black'"
+        [loading]="service.loading$ | async"
+    >
+        <!-- Ações -->
+        <div acoes class="flex gap-2">
+            <mpmt-botao
+                (click)="irJustificativas()"
+                *ngIf="podeAdicionarJustificativa"
+            >
+                <span class="flex items-center gap-2">
+                    <mat-icon style="font-size: 20px; color: white;">assignment</mat-icon>
+                    <span>Justificativas</span>
+                </span>
+            </mpmt-botao
+            >
+            <mpmt-botao
+                [isLoading]="isLoading"
+                [desabilitado]="isLoading"
+                (click)="download()"
+                *ngIf="(service.total$ | async) > 0"
+            >
+                <span class="flex items-center gap-2">
+                    <mat-icon style="font-size: 20px; color: white;">picture_as_pdf</mat-icon>
+                    <span>Download</span>
+                </span>
+            </mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-6 gap-2 w-full"
+            >
+                <mpmt-selecao
+                    [titulo]="'Filtro por lotação'"
+                    [titulo_class]="'text-white'"
+                    placeholder="Lotação"
+                    formControlName="lotacao_id"
+                    [configuracao]="selecaoLotacoes"
+                    (onSelect)="service.recarregarListagem()"
+                    class="w-full"
+                ></mpmt-selecao>
+
+                <mpmt-selecao
+                    [titulo]="'Filtro por servidor'"
+                    [titulo_class]="'text-white'"
+                    placeholder="Servidor"
+                    formControlName="servidor_id"
+                    [configuracao]="selecaoServidores"
+                    (onSelect)="service.recarregarListagem()"
+                    class="w-full"
+                ></mpmt-selecao>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white"
+                        >Filtro por tipo dia</mat-label
+                    >
+                    <mat-select
+                        formControlName="tipos_dia"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let tipoDia of tipoDias"
+                            [value]="tipoDia.cod"
+                            >{{ tipoDia.descricao }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="flex flex-row gap-2 col-span-2">
+                    <mat-radio-group
+                        formControlName="tipo_filtro"
+                        class="flex flex-col !text-white gap-0"
+                    >
+                        <mat-radio-button
+                            value="COMPETENCIA"
+                            class="!text-white"
+                            (click)="
+                                service.periodo?.patchValue({
+                                    inicio: null,
+                                    fim: null
+                                })
+                            "
+                            ><div class="!text-white">
+                                Competência
+                            </div></mat-radio-button
+                        >
+                        <mat-radio-button
+                            value="PERIODO"
+                            class="!text-white"
+                            (click)="
+                                service.filtros?.patchValue({
+                                    competencia: null
+                                })
+                            "
+                            ><div class="!text-white">
+                                Período
+                            </div></mat-radio-button
+                        >
+                    </mat-radio-group>
+
+                    <mat-form-field
+                        class="self-center w-full"
+                        *ngIf="
+                            service.filtros?.value?.tipo_filtro == 'COMPETENCIA'
+                        "
+                    >
+                        <mat-label
+                            ><span class="text-white"
+                                >Filtro por competência</span
+                            ></mat-label
+                        >
+                        <input
+                            matInput
+                            [value]="service.compentenciaFormatado()"
+                            (click)="service.selecionarData($event, dp)"
+                        />
+
+                        <input matInput [matDatepicker]="dp" class="hidden" />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="dp"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker
+                            #dp
+                            startView="multi-year"
+                            (monthSelected)="
+                                service.selecionarCompetencia($event, dp)
+                            "
+                        >
+                        </mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field
+                        class="self-center w-full"
+                        *ngIf="service.filtros?.value?.tipo_filtro == 'PERIODO'"
+                    >
+                        <mat-label
+                            ><div class="text-white">
+                                Filtro por período
+                            </div></mat-label
+                        >
+                        <mat-date-range-input
+                            [rangePicker]="picker"
+                            [formGroup]="service.periodo"
+                        >
+                            <input
+                                matStartDate
+                                placeholder="Data de início"
+                                readonly="true"
+                                formControlName="inicio"
+                            />
+                            <input
+                                matEndDate
+                                placeholder="Data de fim"
+                                readonly="true"
+                                formControlName="fim"
+                                (dateChange)="service.recarregarListagem()"
+                            />
+                        </mat-date-range-input>
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="picker"
+                        ></mat-datepicker-toggle>
+                        <mat-date-range-picker #picker></mat-date-range-picker>
+                    </mat-form-field>
+                </div>
+                <mpmt-botao
+                    (click)="service.limparFiltros()"
+                    style="padding-top: 27px;"
+                    cor="branco"
+                >
+                    Limpar filtros
+                </mpmt-botao>
+
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

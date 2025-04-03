@@ -1,0 +1,127 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <div class="flex flex-col gap-1">
+        <h1 class="text-base">Solicitação de Saldo de Folgas</h1>
+
+        <p class="text-sm text-gray-600">
+            Informe os detalhes do período de trabalho realizado
+        </p>
+    </div>
+
+    <form [formGroup]="form" class="flex flex-col w-full">
+        <div class="flex flex-col gap-2 pb-4">
+            <mat-label class="font-bold text-base text-black"
+                >Documento *</mat-label
+            >
+            <button
+                (click)="fileInput.click()"
+                class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg rounded cursor-pointer"
+            >
+                <div *ngIf="!arquivo" class="w-full text-black">
+                    <span>Clique para selecionar um arquivo</span>
+                </div>
+                <div *ngIf="arquivo" class="w-full text-black">
+                    {{ arquivo?.name }}
+                </div>
+
+                <input
+                    #fileInput
+                    type="file"
+                    (change)="incluirArquivo($event)"
+                    style="display: none"
+                />
+                <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+            </button>
+        </div>
+
+        <div class="flex gap-4 justify-between">
+            <div class="flex flex-col md:flex-row gap-2 w-full">
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Data Início</mat-label>
+                    <input
+                        matInput
+                        [matDatepicker]="datepicker1"
+                        [ngModel]="form.value.dataInicio"
+                        (ngModelChange)="alterarDataInicio($event)"
+                        formControlName="dataInicio"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepicker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker1></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Quantidade de dias</mat-label>
+                    <input
+                        type="number"
+                        matInput
+                        [min]="1"
+                        (ngModelChange)="alterarDias($event)"
+                        [ngModel]="form.value.dias"
+                        formControlName="dias"
+                    />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Data Fim</mat-label>
+                    <input
+                        [ngModel]="form.value.dataFim"
+                        matInput
+                        disabled="true"
+                        readonly="true"
+                        class=""
+                        [matDatepicker]="datepicker2"
+                        formControlName="dataFim"
+                    />
+                    <mat-datepicker #datepicker2></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <mat-form-field class="w-full">
+            <mat-label>Selecione o tipo de trabalho realizado</mat-label>
+            <input
+                type="text"
+                placeholder="Selecione o tipo"
+                matInput
+                [matAutocomplete]="auto2"
+                formControlName="tipoItem"
+                (focus)="loadTipos($event)"
+            />
+            <mat-autocomplete
+                autoActiveFirstOption
+                #auto2="matAutocomplete"
+                [displayWith]="displayFn"
+            >
+                <mat-option *ngFor="let item of tipos" [value]="item">
+                    {{ item.label }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+        
+        <mat-form-field>
+            <mat-label>Observação (Opcional)</mat-label>
+            <textarea formControlName="observacao" matInput placeholder="Observação..."></textarea>
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center w-full">
+        <button
+            mat-button
+            [ngClass]="{ '!bg-primary': form.valid }"
+            class="bg-gray-300 text-white p-8 py-4 w-full"
+            (click)="goConfirm()"
+            [disabled]="!form.valid"
+        >
+            Confirmar
+        </button>
+    </div>
+</div>

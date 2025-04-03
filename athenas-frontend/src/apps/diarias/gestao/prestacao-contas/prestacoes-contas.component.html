@@ -1,0 +1,26 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [titulo]="titulo" [service]="service">
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
+
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao-servidores formControlName="servidores" [titulo]="'Beneficiários'"/>
+                </div>
+
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="status" 
+                        (chance)="service.recarregarListagem()"
+                        [titulo]="'Status'"
+                        class="w-full h-full"
+                        [fonte]="service.status_prestacao"
+                        [atributoChave]="'id'"
+                        [atributoDisplay]="'descricao'"
+                    />
+                </div>
+
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

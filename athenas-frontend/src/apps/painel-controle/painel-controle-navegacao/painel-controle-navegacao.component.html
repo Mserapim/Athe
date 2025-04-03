@@ -1,0 +1,203 @@
+<div *ngIf="this.loading$ | async" class="spinner-container">
+    <mat-spinner></mat-spinner>
+</div>
+
+<form class="flex flex-col p-8 w-full" [formGroup]="filtros">
+    <div class="text-lg font-bold py-4 self-start">
+        <mpmt-pagina-titulo></mpmt-pagina-titulo>
+    </div>
+
+    <div acoes class="flex flex-row justify-between w-full">
+        <mpmt-selecao
+            *ngIf="!(this.loading$ | async)"
+            class="w-96"
+            placeholder="Selecione um módulo"
+            formControlName="modulo"
+            [configuracao]="selecaoModulos"
+            (ngModelChange)="aplicarFiltros()"
+        ></mpmt-selecao>
+
+        <mpmt-botao
+            *ngIf="moduloSelecionado && !(this.loading$ | async)"
+            (click)="irGrupoMenuCriar()"
+            class="ml-auto"
+            >Novo grupo</mpmt-botao
+        >
+    </div>
+
+    <div
+        class="flex flex-col w-full p-8 text-center self-center items-center"
+        *ngIf="!moduloSelecionado"
+    >
+        <div class="flex font-bold">Selecione um módulo para continuar</div>
+    </div>
+    <div
+        class="flex flex-col w-full"
+        *ngIf="moduloSelecionado && !(this.loading$ | async)"
+    >
+        <div *ngFor="let grupoMenu of listagem$ | async" class="w-full">
+            <div class="flex justify-between w-full bg-gray-200 px-4 py-2">
+                <div class="flex font-bold text-black self-center">
+                    {{ grupoMenu?.nome }}
+                </div>
+
+                <div class="">
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item (click)="irMenuCriar(grupoMenu)">
+                            <mat-icon>add</mat-icon>
+                            Incluir menu
+                        </button>
+                        <button
+                            mat-menu-item
+                            (click)="irGrupoMenuEditar(grupoMenu)"
+                        >
+                            <mat-icon>edit</mat-icon>
+                            Editar grupo
+                        </button>
+                    </mat-menu>
+                </div>
+            </div>
+
+            <table
+                mat-table
+                [dataSource]="grupoMenu.menus"
+                class="mat-elevation-z8"
+                matSort
+                (matSortChange)="alterarOrdenacao($event)"
+            >
+                <ng-container matColumnDef="ordem">
+                    <th
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                        style="width: 10%"
+                    >
+                        Ordem
+                    </th>
+                    <td mat-cell *matCellDef="let element" style="width: 10%">
+                        {{ element.ordem }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="nome">
+                    <th
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                        style="width: 30%"
+                    >
+                        Nome
+                    </th>
+                    <td mat-cell *matCellDef="let element" style="width: 30%">
+                        {{ element.nome }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="qtd_grupo_permissao">
+                    <th
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                        style="width: 20%"
+                    >
+                        Grupos de permissões
+                    </th>
+                    <td mat-cell *matCellDef="let element" style="width: 20%">
+                        <div class="flex items-center gap-4 cursor-pointer">
+                            <div class="self-center">
+                                {{ element.qtd_grupo_permissao }}
+                            </div>
+                            <div
+                                class="text-gray-400"
+                                (click)="irMenuGrupoEditar(element)"
+                            >
+                                Ver itens
+                            </div>
+                        </div>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="qtd_usuario_grupo">
+                    <th
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                        style="width: 20%"
+                    >
+                        Usuários
+                    </th>
+                    <td mat-cell *matCellDef="let element" style="width: 20%">
+                        <div class="flex items-center gap-4 cursor-pointer">
+                            <div class="self-center">
+                                {{ element.qtd_usuario_grupo }}
+                            </div>
+                            <div
+                                class="text-gray-400"
+                                (click)="irMenuListarUsuarios(element)"
+                            >
+                                Ver itens
+                            </div>
+                        </div>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="situacao">
+                    <th
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                        style="width: 10%"
+                    >
+                        Situação
+                    </th>
+                    <td mat-cell *matCellDef="let element" style="width: 10%">
+                        {{ element.situacao }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="acao">
+                    <th
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                        style="width: 10%"
+                    ></th>
+                    <td mat-cell *matCellDef="let element" style="width: 10%">
+                        <div class="flex justify-end">
+                            <button
+                                mat-icon-button
+                                [matMenuTriggerFor]="editMenu"
+                            >
+                                <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu #editMenu="matMenu">
+                                <button
+                                    mat-menu-item
+                                    (click)="irMenuEditar(element)"
+                                >
+                                    <mat-icon>edit</mat-icon>
+                                    Editar
+                                </button>
+                            </mat-menu>
+                        </div>
+                    </td>
+                </ng-container>
+
+                <tr
+                    mat-header-row
+                    *matHeaderRowDef="colunasVisiveisComAcao | async"
+                ></tr>
+                <tr
+                    mat-row
+                    *matRowDef="
+                        let row;
+                        columns: colunasVisiveisComAcao | async
+                    "
+                ></tr>
+            </table>
+        </div>
+    </div>
+</form>

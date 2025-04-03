@@ -1,0 +1,45 @@
+<div *ngIf="limitesAnuais.length > 0 || (limitesMensais.length > 1 && !apenasUmMotivo)">
+    <h1 class="font-bold text-lg text-primary" style="margin-top:20px;">Limite de diárias</h1>
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="motivo">
+            <th mat-header-cell *matHeaderCellDef> Motivo </th>
+            <td mat-cell *matCellDef="let row" [ngClass]="{'saldo-negativo': row.saldo < 0}"> {{row.motivos}} </td>
+        </ng-container>
+        <ng-container matColumnDef="referencia">
+            <th mat-header-cell *matHeaderCellDef> Referência </th>
+            <td mat-cell *matCellDef="let row" [ngClass]="{'saldo-negativo': row.saldo < 0}"> {{row.referencia}} </td>
+        </ng-container>
+        <ng-container matColumnDef="limite">
+            <th mat-header-cell *matHeaderCellDef> Limite </th>
+            <td mat-cell *matCellDef="let row" [ngClass]="{'saldo-negativo': row.saldo < 0}"> 
+                {{row.limite}} </td>
+        </ng-container>
+        <ng-container matColumnDef="usado">
+            <th mat-header-cell *matHeaderCellDef> Diárias utilizadas </th>
+            <td mat-cell *matCellDef="let row" [ngClass]="{'saldo-negativo': row.saldo < 0}"> {{row.uso}} </td>
+        </ng-container>
+        <ng-container matColumnDef="saldo">
+            <th mat-header-cell *matHeaderCellDef> Saldo </th>
+            <td mat-cell *matCellDef="let row" [ngClass]="{'saldo-negativo': row.saldo < 0}"> {{row.saldo}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
+
+<div *ngIf="limitesMensais.length === 12 && limitesAnuais.length === 0 && apenasUmMotivo">
+    <div style="line-height: 2.0;">
+        <h1 class="font-bold text-lg text-primary" style="margin-top:20px; margin-bottom:5px;">Limite de diárias para {{ ano }}</h1>
+        <p><strong>Motivos:</strong> {{ limitesMensais[0].motivos }}</p>
+        <p><strong>Limite mensal:</strong> {{ limitesMensais[0].limite }} diárias</p>
+        <p><strong>Quantidade de diárias emitidas:</strong></p>
+        <div class="scroll-container" style="margin-bottom:10px;">
+            <div *ngFor="let limite of limitesMensais" class="scroll-item" [ngClass]="{'saldo-negativo': limite.saldo < 0}">
+                <div class="font-bold">{{ getMesNome(limite.referencia.split('/')[0]) }}</div>
+                <div>{{ limite.uso }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+  

@@ -1,0 +1,31 @@
+<div class="flex flex-col gap-8 w-full">
+    <h1 class="font-bold text-lg">
+        Informe os substitutos do usufruto 01/01/2022 à 31/01/2022
+    </h1>
+
+    <p class="text-xs text-gray-600">
+        Selecione a combinação entre usufruto e indenizado
+    </p>
+
+    <div class="flex gap-8 text-xs text-gray-600">
+        <div>Periodo aquisitivo selecioando:</div>
+        <div>Férias Individuais - 2023 - 1</div>
+    </div>
+
+    <h1 class="font-bold text-lg">Períodos aquistivos</h1>
+
+    <div class="flex flex-col gap-4 w-full">
+        <div
+            class="flex bg-primary/10 p-2 px-2 rounded-full w-full font-bold"
+            *ngFor="let item of [1, 2, 3, 4, 5]"
+        >
+            <div class="w-full flex gap-4">
+                <div
+                    class="w-5 h-5 bg-primary justify-start self-center rounded-full"
+                ></div>
+
+                <div>30 dias de usufruto(Folga)</div>
+            </div>
+        </div>
+    </div>
+</div>

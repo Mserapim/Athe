@@ -1,0 +1,95 @@
+<mpmt-pagina-listagem [service]="service" class="w-full">
+    <!-- opcoes -->
+    <div opcoes class="w-full flex flex-row gap-2 items-center justify-end py-4">
+        <mpmt-botao (click)="irNovo()" *ngIf="navegacaoAtualService.possuiPermissao('criar')">
+            <mat-icon [svgIcon]="'mat_outline:add'" style="vertical-align: middle"></mat-icon>Novo
+        </mpmt-botao>
+    </div>
+    <!-- Filtros -->
+    <div filtros class="w-full">
+        <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full">
+            <mat-form-field class="w-full" placeholder="Nome">
+                <mat-label class="text-white">Pesquisar por nome</mat-label>
+                <input matInput formControlName="palavra_chave" placeholder="" />
+            </mat-form-field>
+
+        </form>
+    </div>
+
+    <ng-template #conteudoExpandido let-rowData>
+        <div class="w-full flex flex-row gap-2 items-center justify-end py-4">
+            <mpmt-botao (click)="irNovoPagamento(rowData)" *ngIf="navegacaoAtualService.possuiPermissao('criar')">
+                <mat-icon [svgIcon]="'mat_outline:add'" style="vertical-align: middle"></mat-icon>Novo
+            </mpmt-botao>
+        </div>
+
+        <p-table [value]="rowData.pagamentos" size="small" showGridlines stripedRows >
+            <ng-template #header>
+                <tr>
+                    <th>Incluso em folha</th>
+                    <th>CBO </th>
+                    <th>Lotação </th>
+                    <th>Natureza da Atividade </th>
+                    <th>Dia do Pagamento </th>
+                    <th>Valor Bruto(R$) </th>
+                    <th>Isento INSS</th>
+                    <th>Contribuição parcial em outro local</th>
+                    <th>Valor da contribuição parcial em outro local(R$) </th>
+                    <th>Valor IR(R$) </th>
+                    <th>Valor Liquido(R$) </th>
+                    <th>  </th>
+
+                </tr>
+            </ng-template>
+            <ng-template #body let-item>
+                <tr>
+                    <td>
+                        <mat-icon *ngIf="item.aplicado_folha" style="color: green"
+                            [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+                        <mat-icon *ngIf="!(item.aplicado_folha)" style="color: red"
+                            [svgIcon]="'heroicons_solid:x-circle'"></mat-icon>
+                    </td>
+                    <td>{{ item.cbo_display }}</td>
+                    <td>{{ item.lotacao_display }}</td>
+                    <td>{{ item.natureza_atividade_display }}</td>
+                    <td>{{ item.data_pagamento | date:'dd/MM/YYYY' }}</td>
+                    <td>{{ item.valor_bruto }}</td>
+                    <td>
+                        <mat-icon *ngIf="item.isento_inss" style="color: green"
+                            [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+                        <mat-icon *ngIf="!(item.isento_inss)" style="color: red"
+                            [svgIcon]="'heroicons_solid:x-circle'"></mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon *ngIf="item.contribuido" style="color: green"
+                            [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+                        <mat-icon *ngIf="!(item.contribuido)" style="color: red"
+                            [svgIcon]="'heroicons_solid:x-circle'"></mat-icon>
+                    </td>
+                    <td>{{ item.contribuicao_parcial }}</td>
+                    <td>{{ item.valor_ir }}</td>
+                    <td>{{ item.valor_liquido }}</td>
+                    <td>
+                        <div class="flex flex-row items-center justify-end">
+                            <p-toast />
+                            <p-confirmdialog />
+
+                            <mpmt-botao (click)="irEditarPagamento(item)" [cor]="'branco'"
+                                *ngIf="navegacaoAtualService.possuiPermissao('editar')">
+                                <mat-icon [svgIcon]="'mat_outline:edit'" style="vertical-align: middle"></mat-icon>
+                            </mpmt-botao>
+
+                            <mpmt-botao (click)="irApagarPagamento($event, item)" [cor]="'branco'"
+                                *ngIf="navegacaoAtualService.possuiPermissao('apagar')">
+                                <mat-icon [svgIcon]="'mat_outline:delete'" style="vertical-align: middle"></mat-icon>
+                            </mpmt-botao>
+                        </div>
+                    </td>
+                </tr>
+            </ng-template>
+
+        </p-table>
+    </ng-template>
+
+
+</mpmt-pagina-listagem>

@@ -1,0 +1,44 @@
+<div class="flex flex-col gap-8">
+
+    <div class="grid grid-cols-2 w-full gap-2">
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Filtro por situação</mat-label>
+            <mat-select [(ngModel)]="situacao" (ngModelChange)="filtrar()">
+                <mat-option *ngFor="let situacao of situacoes"
+                            [value]="situacao.value">{{situacao.label}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div appearance="fill" class="w-full">
+            <mpmt-selecao
+                [titulo]="'Categoria Funcional'"
+                [titulo_class]="'text-black'"
+                class="w-96"
+                placeholder="Categoria Funcional"
+                [(ngModel)]="categoriaFuncional"
+                (ngModelChange)="filtrar()"
+                [configuracao]="selecaoCatFuncional"
+            ></mpmt-selecao>
+        </div>
+    </div>
+
+    <div >
+        <mpmt-picklist-paginado-api
+            textoLista1="Servidores que serão EXCLUÍDOS da geração"
+            textoLista2="Servidores que serão FILTRADOS da geração"
+            [lista1]="lista1"
+            [lista2]="lista2"
+            (lista1Retorno)="receberEvento1($event)"
+            (lista2Retorno)="receberEvento2($event)"
+            (filtroLista1)="receberFiltroEvento1($event)"
+            [totalItems]="totalItensLista1"
+        >
+        </mpmt-picklist-paginado-api>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" [mat-dialog-close]="">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="salvar()">Salvar</mpmt-botao
+        >
+    </div>
+</div>

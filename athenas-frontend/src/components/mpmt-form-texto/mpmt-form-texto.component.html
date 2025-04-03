@@ -1,0 +1,35 @@
+<mpmt-form-base [titulo]="titulo" [mensagemErro]="mensagemDeErro()">
+    
+    <p-inputGroup class="w-full">
+        <!-- Pre icon/addon -->
+        <p-inputGroupAddon *ngIf="iconePre || iconPreTemplate">
+            <i *ngIf="iconePre && !iconPreTemplate" [class]="iconePre"></i>
+            <ng-container *ngIf="iconPreTemplate">
+                <ng-container [ngTemplateOutlet]="iconPreTemplate"></ng-container>
+            </ng-container>
+        </p-inputGroupAddon>
+        
+        <!-- Input -->
+        <input 
+            pInputText
+            pSize="small"
+            [type]="tipo" 
+            [ngModel]="valor" 
+            [placeholder]="placeholder"
+            [disabled]="desabilitado"
+            [maxlength]="maxlength"
+            [minlength]="minlength"
+            (input)="alterarValor($event)"
+            class="w-full" 
+        />
+        
+        <!-- Post icon/addon -->
+        <p-inputGroupAddon *ngIf="iconePos || iconPosTemplate">
+            <i *ngIf="iconePos && !iconPosTemplate" [class]="iconePos"></i>
+            <ng-container *ngIf="iconPosTemplate">
+                <ng-container [ngTemplateOutlet]="iconPosTemplate"></ng-container>
+            </ng-container>
+        </p-inputGroupAddon>
+    </p-inputGroup>
+
+</mpmt-form-base>

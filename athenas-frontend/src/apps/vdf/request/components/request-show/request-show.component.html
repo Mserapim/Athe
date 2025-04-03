@@ -1,0 +1,187 @@
+<div
+    class="flex absolute cursor-pointer top-0 z-50 right-0 pr-6 font-bold w-full text-right justify-end"
+>
+    <div
+        class="flex px-2 pb-1 bg-gray-100 font-bold rounded-b-full"
+        (click)="close()"
+    >
+        X
+    </div>
+</div>
+
+<div *ngIf="!request?.status">Carregando</div>
+<div
+    class="flex flex-col h-full w-full gap-2 min-h-160 justify-between relative request-show"
+    *ngIf="request?.status"
+>
+    <div class="flex flex-col">
+        <request-show-detail [request]="this.request"></request-show-detail>
+
+        <div
+            class="flex mt-4 p-2 gap-2 bg-gray-100 w-full font-bold text-xs md:text-lg cursor-pointer text-center rounded-full overflow-x-auto"
+        >
+            <div
+                *ngFor="let tab of tabs$ | async"
+                class="text-nowrap break-keep p-2 rounded-full"
+                [ngClass]="{ 'bg-gray-300': currentTab == tab.key }"
+                (click)="currentTab = tab.key"
+            >
+                {{ tab.label }}
+            </div>
+        </div>
+        <div class="pt-4 overflow-auto max-h-1/2">
+            <div *ngIf="currentTab == 'DESBLOQUEAR_TELETRABALHO'">
+                <request-show-teletrabalho-desbloqueio
+                    [requestId]="this.request.pk"
+                ></request-show-teletrabalho-desbloqueio>
+            </div>
+
+            <div
+                *ngIf="
+                    currentTab == 'RELATORIO_TELETRABALHO_SEMESTRAL_SERVIDORES'
+                "
+            >
+                <request-show-relatorio-teletrabalho-semestral-servidores
+                    [requestId]="this.request.pk"
+                ></request-show-relatorio-teletrabalho-semestral-servidores>
+            </div>
+
+            <div
+                *ngIf="
+                    currentTab ==
+                    'RELATORIO_TELETRABALHO_SEMESTRAL_QUESTIONARIO'
+                "
+            >
+                <request-show-relatorio-teletrabalho-semestral-questionario
+                    [requestId]="this.request.pk"
+                ></request-show-relatorio-teletrabalho-semestral-questionario>
+            </div>
+
+            <div *ngIf="currentTab == 'PROGRESSAO_VERTICAL'">
+                <request-show-progressao-vertical
+                    [requestId]="this.request.pk"
+                ></request-show-progressao-vertical>
+            </div>
+
+            <div *ngIf="currentTab == 'HORIZONTAL_PROGRESSIONS'">
+                <request-show-horizontal-progressions
+                    [requestId]="this.request.pk"
+                ></request-show-horizontal-progressions>
+            </div>
+
+            <div *ngIf="currentTab == 'EXERCICIO_CUMULATIVO'">
+                <request-show-exercicio-cumulativo
+                    [requestId]="this.request.pk"
+                    [request]="this.request"
+                    [showActions]="this.showActions"
+                    (changeRequest)="changeRequestFather($event)"
+                ></request-show-exercicio-cumulativo>
+            </div>
+
+            <div *ngIf="currentTab == 'SERVER_SHIFT_CONFIRM'">
+                <request-show-server-shift-confirm
+                    [requestId]="this.request.pk"
+                    [portalRequestType]="this.request.portal_request_type"
+                ></request-show-server-shift-confirm>
+            </div>
+
+            <div *ngIf="currentTab == 'ABSENCES'">
+                <request-show-absences
+                    [requestId]="this.request.pk"
+                    [portalRequestType]="this.request.portal_request_type"
+                ></request-show-absences>
+            </div>
+
+            <div *ngIf="currentTab == 'RETIFICATIONS'">
+                <request-show-retifications
+                    [requestId]="this.payload.requestId"
+                ></request-show-retifications>
+            </div>
+
+            <div *ngIf="currentTab == 'USUFRUCTS'">
+                <request-show-usufructs
+                    [requestId]="this.payload.requestId"
+                ></request-show-usufructs>
+            </div>
+
+            <div *ngIf="currentTab == 'TIMESHEET_JUSTIFICATIONS'">
+                <request-show-timesheet-justifications
+                    [requestId]="this.payload.requestId"
+                ></request-show-timesheet-justifications>
+            </div>
+
+            <div *ngIf="currentTab == 'TIMESHEET_SOLICITACAO_AFASTAMENTO'">
+                <request-show-timesheet-solicitacao-afastamento
+                    [requestId]="this.payload.requestId"
+                ></request-show-timesheet-solicitacao-afastamento>
+            </div>
+
+            <div *ngIf="currentTab == 'TIMESHEET_PENDINGS'">
+                <request-show-timesheet-pendings
+                    [requestId]="this.payload.requestId"
+                ></request-show-timesheet-pendings>
+            </div>
+
+            <div *ngIf="currentTab == 'SUBSTITUTES'">
+                <request-show-substitutes
+                    [requestId]="this.payload.requestId"
+                ></request-show-substitutes>
+            </div>
+
+            <div *ngIf="currentTab == 'HISTORIC'">
+                <request-show-historic
+                    [requestId]="this.payload.requestId"
+                ></request-show-historic>
+            </div>
+
+            <div *ngIf="currentTab == 'TELEWORK_TARGETS'">
+                <request-show-telework-targets
+                    [requestId]="this.payload.requestId"
+                ></request-show-telework-targets>
+            </div>
+
+            <div *ngIf="currentTab == 'TELEWORK_AFASTAMENTOS'">
+                <request-show-telework-afastamentos
+                    [reference]="this.request.reference"
+                    [servidorId]="this.request.employee"
+                ></request-show-telework-afastamentos>
+            </div>
+
+            <div *ngIf="currentTab == 'CANCELAMENTO_TELETRABALHO'">
+                <request-show-cancelameno-teletrabalho
+                    [requestId]="this.payload.requestId"
+                ></request-show-cancelameno-teletrabalho>
+            </div>
+
+            <div *ngIf="currentTab == 'SOLICITACAO_FOLGA'">
+                <request-show-solicitacao-folga
+                    [requestId]="this.payload.requestId"
+                    [request]="this.request"
+                ></request-show-solicitacao-folga>
+            </div>
+
+            <div *ngIf="currentTab == 'SOLICITACAO_AUX_CRECHE_IR'">
+                <request-show-solicitacao-auxilio-creche-ir
+                    [requestId]="this.payload.requestId"
+                ></request-show-solicitacao-auxilio-creche-ir>
+            </div>
+
+            <div *ngIf="currentTab == 'SOLICITACAO_AUX_CRECHE_IR_EDITAR'">
+                <request-solicitacao-auxilio-creche-ir-editar>
+                </request-solicitacao-auxilio-creche-ir-editar>
+            </div>
+
+            <div *ngIf="currentTab == 'SOLICITACAO_CREDITO_DISPENSA_ELEITORAL'">
+                <request-show-credito-dispensa-eleitoral
+                    [id]="this.payload.requestId"
+                ></request-show-credito-dispensa-eleitoral>
+            </div>
+        </div>
+    </div>
+
+    <request-show-actions
+        [requestId]="this.payload.requestId"
+        [request]="this.request"
+        [showActions]="this.showActions"
+    ></request-show-actions>
+</div>

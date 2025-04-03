@@ -1,0 +1,40 @@
+.ck-editor__editable_inline {
+    color: #000000DE !important; 
+    background-color: #ffffff; 
+    min-height: 150px;
+    max-height: 480px;
+}
+
+.ck-content {
+    color: #000000DE !important;
+}
+
+.text-color {
+    color: #47505f;
+}
+
+:root {
+    --ck-border-radius: 6px;
+    --ck-color-base-border: hsl(212.73deg 26.83% 83.92%);
+}
+
+.ck-editor__editable_inline {
+    border-radius: var(--ck-border-radius);
+    border-color: var(--ck-color-base-border);
+}
+
+.ck-content ul,
+.ck-content ol {
+    padding-left: 40px;
+    margin-bottom: 1rem;
+}
+
+.ck-content li {
+    font-size: 14px;
+    list-style-type: disc;
+}
+
+.ck-content ol li {
+    list-style-type: decimal;
+}
+

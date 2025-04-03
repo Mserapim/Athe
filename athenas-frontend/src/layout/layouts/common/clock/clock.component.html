@@ -1,0 +1,12 @@
+<div
+    class="flex gap-2 w-full self-center text-center justify-center"
+    *ngIf="!currentUserService.isMember && !isMobile"
+>
+    <button
+        mat-button
+        class="outline outline-primary-900 outline-1"
+        (click)="goClocking()"
+    >
+        Registrar ponto
+    </button>
+</div>

@@ -1,0 +1,166 @@
+<div class="flex flex-col gap-4 w-full h-full ">
+    <div class="flex gap-4 justify-between border-b border-gray-200 pb-2">
+        <p class="text-lg font-bold py-4 self-center">Incluir novo Plantão</p>
+    </div>
+
+    <form [formGroup]="form" class="flex flex-col w-full">
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Tipo de plantão</mat-label>
+            <mat-select [(ngModel)]="form.value.type" formControlName="type">
+                <mat-option
+                    *ngFor="let option of types"
+                    [value]="option.value"
+                >{{ option.label }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Plantonista</mat-label>
+            <input
+                matInput
+                [matAutocomplete]="auto"
+                (ngModelChange)="onChangeSearchEmployee($event)"
+                formControlName="employee"
+            />
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayServidor">
+                <mat-option
+                    *ngFor="let option of dataSourceEmployee.results$ | async"
+                    [value]="option"
+                >
+                    {{ option.matricula }} - {{ option.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label *ngIf="form.value.type != 3">Lotação</mat-label>
+            <mat-label *ngIf="form.value.type == 3">Zona eleitoral</mat-label>
+            <input
+                matInput
+                [matAutocomplete]="autoWorkplace"
+                (ngModelChange)="onSearch($event)"
+                formControlName="workplace"
+            />
+            <mat-autocomplete
+                #autoWorkplace="matAutocomplete"
+                [displayWith]="displayFn"
+            >
+                <mat-option *ngFor="let option of workplaces" [value]="option">
+                    {{ option.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between">
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Início</mat-label>
+                <input
+                    matInput
+                    [matDatepicker]="datepicker1"
+                    [ngModel]="form.value.start"
+                    (ngModelChange)="onChangeStartDate($event)"
+                    formControlName="start"
+                />
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="datepicker1"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #datepicker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Quantidade de dias</mat-label>
+                <input
+                    type="number"
+                    matInput
+                    [min]="1"
+                    (ngModelChange)="onChangeDays($event)"
+                    [ngModel]="form.value.days"
+                    formControlName="days"
+                />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Fim</mat-label>
+                <input
+                    [ngModel]="form.value.end"
+                    matInput
+                    disabled="true"
+                    readonly="true"
+                    class=""
+                    [matDatepicker]="datepicker2"
+                    formControlName="end"
+                />
+                <mat-datepicker #datepicker2></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+
+        <div *ngIf="form.value.type == 3">
+            <div class="flex flex-col gap-2">
+                <mat-label class="font-bold text-base text-black"
+                >Anexo (Somente arquivo PDF) *</mat-label
+                >
+
+                <mat-label class="text-base"
+                >O anexo deve conter a portaria devidamente assinada</mat-label
+                >
+                <button
+                    (click)="fileInput.click()"
+                    class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg rounded cursor-pointer"
+                >
+                    <div *ngIf="!file" class="w-full text-black">
+                        <span>Clique para selecionar um arquivo</span>
+                    </div>
+                    <div *ngIf="file" class="w-full text-black">
+                        {{ file?.name }}
+                    </div>
+
+                    <input
+                        #fileInput
+                        type="file"
+                        (change)="onFileInput($event)"
+                        style="display: none"
+                    />
+                    <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+                </button>
+            </div>
+
+            <br/>
+
+            <mat-form-field class="w-full" floatLabel="never">
+                <mat-label>Observação*</mat-label>
+                <textarea matInput placeholder="Informe o munícipio de atuação do servidor entre outras informações"
+                          formControlName="observation"></textarea>
+            </mat-form-field>
+        </div>
+
+        <div
+            class="bg-red-100 border border-red-300 text-red-500 p-2 mb-4 rounded"
+            *ngIf="message"
+        >
+            {{ message }}
+        </div>
+
+        <div class="flex gap-4 self-center">
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-full"
+                [mat-dialog-close]=""
+            >
+                Fechar
+            </button>
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-full"
+                (click)="goConfirm()"
+                [disabled]="desabilitarSalvar()"
+            >
+                Salvar
+            </button>
+        </div>
+    </form>
+</div>

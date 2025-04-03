@@ -1,0 +1,32 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-black">Tem certeza que quer apagar este Cargo?</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+
+                <div class="w-full" placeholder="Nome">
+                    <mat-label class="font-bold">Nome: </mat-label>
+                    {{ formulario.controls.nome.value }}
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="critico"
+            (click)="confirmarFormulario()"
+            >Apagar</mpmt-botao
+        >
+    </div>
+</div>

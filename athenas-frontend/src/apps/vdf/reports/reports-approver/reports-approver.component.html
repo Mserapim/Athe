@@ -1,0 +1,43 @@
+<div
+    class="flex flex-col gap-2 p-4 rounded text-bold shadow bg-white h-full text-black"
+>
+    <span class="font-bold text-lg self-center pb-4 w-full rounded">
+        Relatório de aprovadores
+    </span>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Formato de saída</mat-label>
+        <mat-select [(ngModel)]="form.extention">
+            <mat-option
+                *ngFor="let option of options?.extensions"
+                [value]="option.value"
+                >{{ option.label }}</mat-option
+            >
+        </mat-select>
+    </mat-form-field>
+
+    <div
+        *ngIf="isLoading"
+        class="flex p-2 px-4 text-blue-500 border bg-blue-100 border-blue-500 rounded"
+    >
+        Gerando o arquivo, aguarda de 2 a 5 minutos até o download automático.
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex p-2 px-4 text-red-500 border bg-red-100 border-red-500 rounded"
+    >
+        {{ message }}
+    </div>
+
+    <button
+        mat-button
+        color="primary"
+        class="bg-primary text-white"
+        (click)="download()"
+        [class.spinner]="isLoading"
+        [disabled]="!isValid || isLoading"
+    >
+        Download
+    </button>
+</div>

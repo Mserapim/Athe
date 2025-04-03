@@ -1,0 +1,7 @@
+<mpmt-form-base [titulo]="titulo" [mensagemErro]="mensagemDeErro()">
+    
+    <p-autocomplete [(ngModel)]="valor" [suggestions]="items" (completeMethod)="pesquisar($event)" [dropdown]="true"
+    [disabled]="desabilitado" [multiple]="multiplos" fluid [optionLabel]="atributoDisplay"
+    (onSelect)="selecionarValor($event)" (onUnselect)="selecionarValor($event)" />
+
+</mpmt-form-base>

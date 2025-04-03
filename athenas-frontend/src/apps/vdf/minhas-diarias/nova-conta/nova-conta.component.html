@@ -1,0 +1,80 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Nova conta</h1>
+    </h1>
+    <div class="flex flex-col items-center px-8">
+        <h1 *ngIf="servidor" class="font-bold text-lg"> {{servidor.unicode}} </h1>
+    </div>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                
+            <div appearance="fill" class="w-full">
+                <mpmt-selecao
+                    [titulo]="'Banco'"
+                    class="w-96"
+                    placeholder="Banco"
+                    formControlName="banco"
+                    [configuracao]="selecaoBancos"
+                ></mpmt-selecao>
+            </div>
+            
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Tipo conta</mat-label>
+                <mat-select formControlName="tipo_conta">
+                    <mat-option *ngFor="let option of tipos_conta" [value]="option.id">
+                        {{ option.descricao }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+
+            <mat-form-field class="w-full" placeholder="Agência número">
+                <mat-label>Número da agência</mat-label>
+                <input matInput formControlName="agencia_numero" placeholder=""/>
+                <mat-error *ngIf="formulario.get('agencia_numero').hasError('somenteNumeros')">
+                    Agência deve conter apenas números
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full" placeholder="Agência DV">
+                <mat-label>Dv da agência</mat-label>
+                <input matInput formControlName="agencia_dv" placeholder=""/>
+                <mat-error *ngIf="formulario.get('agencia_dv').hasError('somenteNumeros')">
+                    Agência deve conter apenas números
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full" placeholder="Conta número">
+                <mat-label>Número da conta</mat-label>
+                <input matInput formControlName="conta_numero" placeholder=""/>
+                <mat-error *ngIf="formulario.get('conta_numero').hasError('somenteNumeros')">
+                    Número da conta deve conter apenas números
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full" placeholder="Conta Dv">
+                <mat-label>Dv da conta</mat-label>
+                <input matInput formControlName="conta_dv" placeholder=""/>
+            </mat-form-field>
+
+
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>

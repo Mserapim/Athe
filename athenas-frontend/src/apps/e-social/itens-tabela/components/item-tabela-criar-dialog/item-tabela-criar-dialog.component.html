@@ -1,0 +1,116 @@
+<mat-dialog-content class="h-full flex flex-col">
+    <h2 class="dialog-title font-bold text-xl self-start text-primary">
+        Novo item de tabela
+    </h2>
+    <br/>
+
+    <!-- Contêiner rolável para o formulário -->
+    <div class="flex-grow overflow-y-auto">
+        <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+            <div class="grid grid-cols-2 gap-2 w-full">
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Código</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        formControlName="codigo"
+                        placeholder=""
+                        min="0"
+                        max="99999"
+                    />
+                    <mat-error *ngIf="formulario.get('codigo').hasError('required')">
+                        Informe numero entre 0 e 99999
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Tabela e-Social</mat-label>
+                    <mat-select
+                        formControlName="tabela_esocial"
+                    >
+                        <mat-option
+                            *ngFor="let option of tabelasFiltro"
+                            [value]="option.id"
+                        >
+                            {{ option.titulo }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 w-full">
+                <mat-form-field class="w-full" placeholder="">
+                    <mat-label>Info</mat-label>
+                    <input matInput formControlName="info" placeholder="" />
+                </mat-form-field>
+            </div>
+
+            <mat-form-field class="w-full" placeholder="">
+                <mat-label>Nome</mat-label>
+                <input matInput formControlName="titulo" placeholder="" />
+            </mat-form-field>
+
+            <div class="grid grid-cols-2 gap-2 w-full">
+                <mat-form-field appearance="fill" class="flex w-full">
+                    <mat-label>Início da vigência</mat-label>
+                    <input
+                        matInput
+                        formControlName="inicio_vigencia"
+                        [matDatepicker]="datepickerStart"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepickerStart"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepickerStart></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="flex w-full">
+                    <mat-label>Fim da vigência</mat-label>
+                    <input
+                        matInput
+                        formControlName="fim_vigencia"
+                        [matDatepicker]="datepickerEnd"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepickerEnd"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepickerEnd></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+            <mat-form-field class="h-full w-full">
+                <mat-label>Descrição</mat-label>
+                <textarea
+                    matInput
+                    placeholder=""
+                    class="h-16"
+                    [readonly]="false"
+                    formControlName="descricao"
+                ></textarea>
+            </mat-form-field>
+
+            <mpmt-chips-autocomplete
+                [options]="this.opcoes"
+                [title]="'Opção correspondente'"
+                (optionsSelected)="opcaoSelecionada($event)"
+                (filter)="filterOpcao($event)"
+            >
+            </mpmt-chips-autocomplete>
+        </form>
+    </div>
+
+    <div *ngIf="message" class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md">
+        {{ message }}
+    </div>
+
+    <!-- Botões fixos -->
+    <div mat-dialog-actions class="flex justify-end gap-4 mt-4">
+        <mpmt-botao tipo="borda" (click)="fechar()">Fechar</mpmt-botao>
+        <mpmt-botao
+            cor="sucesso"
+            (click)="goConfirm()"
+            [desabilitado]="!isValid || this.isLoading"
+        >Salvar</mpmt-botao>
+    </div>
+</mat-dialog-content>

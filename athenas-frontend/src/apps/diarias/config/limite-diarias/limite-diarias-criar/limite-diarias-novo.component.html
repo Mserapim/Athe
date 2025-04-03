@@ -1,0 +1,88 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Novo limite de diárias</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >   
+
+                <mat-form-field class="w-full">
+                    <mat-label>Tipo</mat-label>
+                    <mat-select formControlName="tipo">
+                        <mat-option *ngFor="let tipo of tipos" [value]="tipo.id">
+                            {{ tipo.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Referência</mat-label>
+                    <mat-select formControlName="referencia">
+                        <mat-option *ngFor="let referencia of referencias" [value]="referencia.id">
+                            {{ referencia.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Motivos da viagem</mat-label>
+                    <mat-select formControlName="motivos_viagem" multiple>
+                        <mat-option *ngFor="let motivo of motivos_viagem" [value]="motivo.id">
+                            {{ motivo.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Limite de dias</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        formControlName="limite"
+                        placeholder=""
+                        min="0"
+                        [max]="maxLimite"
+                        [disabled]="formulario.get('ilimitado').value"
+                    />
+
+                    <mat-error *ngIf="formulario.hasError('limiteMensalInvalido')">
+                        O limite para a referência mensal não pode exceder 30 dias.
+                    </mat-error>
+                    <mat-error *ngIf="formulario.hasError('limiteAnualInvalido')">
+                        O limite para a referência anual não pode exceder 365 dias.
+                    </mat-error>
+
+                    <mat-checkbox matSuffix formControlName="ilimitado">
+                        Ilimitado
+                    </mat-checkbox>
+
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Data de início da vigência</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="dt_inicio_vigencia" placeholder="">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>
+

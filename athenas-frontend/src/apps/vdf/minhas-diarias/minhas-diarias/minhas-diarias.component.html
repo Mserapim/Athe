@@ -1,0 +1,91 @@
+<div class="flex flex-col w-full p-8">
+
+    <div *ngIf="carregandoDados" class="spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+
+    <mpmt-listagem2 [titulo]="titulo" [service]="service" [urlAjuda]="service.urlAjuda">
+        <!-- Ações -->
+        <div acoes *ngIf="permissao">
+            <mpmt-botao (click)="irNovaDiaria()" >Nova diária</mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label class="text-white">Pesquisar por nome</mat-label>
+                    <input matInput formControlName="palavra_chave" placeholder=""
+                        (change)="service.recarregarListagem()" />
+                </mat-form-field>
+
+                <!--Filtro Situação-->
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Situação</mat-label>
+                    <mat-select 
+                        formControlName="situacoes"
+                        (ngModelChange)="service.recarregarListagem()" 
+                        multiple
+                    >
+                        <mat-option 
+                            *ngFor="let option of service.situacoes" 
+                            [value]="option.id"
+                        >
+                            {{ option.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <!--Filtro Tipos Viagem-->
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Tipo da viagem</mat-label>
+                    <mat-select 
+                        formControlName="tipos_viagem"
+                        (ngModelChange)="service.recarregarListagem()" 
+                        multiple
+                    >
+                        <mat-option 
+                            *ngFor="let option of service.tipos_viagem" 
+                            [value]="option.id"
+                        >
+                            {{ option.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <!--Filtro Motivos Viagem-->
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Motivo da viagem</mat-label>
+                    <mat-select 
+                        formControlName="motivos_viagem"
+                        (ngModelChange)="service.recarregarListagem()" 
+                        multiple
+                    >
+                        <mat-option 
+                            *ngFor="let option of service.motivos_viagem" 
+                            [value]="option.id"
+                        >
+                            {{ option.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <!--Filtro Finalidades-->
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Finalidade</mat-label>
+                    <mat-select 
+                        formControlName="finalidades"
+                        (ngModelChange)="service.recarregarListagem()" 
+                        multiple
+                    >
+                        <mat-option 
+                            *ngFor="let option of service.finalidades" 
+                            [value]="option.id"
+                        >
+                            {{ option.descricao }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

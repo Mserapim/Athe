@@ -1,0 +1,51 @@
+<!-- Esse arquivo é um modelo  -->
+<div class="flex flex-col w-full h-full m-8">
+    <div
+        class="flex flex-row gap-2 text-gray-800 p-4 items-center justify-between w-full bg-gray-100 h-16"
+    >
+        <div
+            class="flex flex-row text-lg items-center font-bold h-full justify-center"
+        >
+            {{ obterTitulo() }}
+        </div>
+        <div acoes></div>
+    </div>
+
+    <div class="flex flex-row gap-2 w-full">
+        <div filtros></div>
+    </div>
+
+    <div class="flex flex-row w-full table-responsive">
+        <table
+            mat-table
+            [dataSource]="listagem$"
+            class="mat-elevation-z8"
+            matSort
+            (matSortChange)="alterarOrdenacao($event)"
+        >
+            <ng-container
+                [matColumnDef]="column"
+                *ngFor="let column of colunasVisiveis | async"
+            >
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ (this.colunas$ | async)[column] }}
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element[column] }}
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="colunasVisiveis | async"></tr>
+            <tr
+                mat-row
+                *matRowDef="let row; columns: colunasVisiveis | async"
+            ></tr>
+        </table>
+    </div>
+
+    <mat-paginator
+        [length]="total$ | async"
+        [pageSize]="10"
+        [pageSizeOptions]="[10, 15, 30, 50, 100]"
+    ></mat-paginator>
+</div>

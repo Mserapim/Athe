@@ -1,0 +1,32 @@
+<div class="flex flex-col gap-2">
+    <div class="flex justify-end">
+        <button (click)="fecharFormulario()">
+          <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <h1 class="font-bold text-lg text-primary" style="padding: 0 24px;">Detalhes da passagem aérea</h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-80" style="color: black;">
+            <p><strong>Empresa (companhia aérea):</strong> {{ passagem.nome_companhia }}</p>
+            <p><strong>Aeroporto:</strong> {{ passagem.aeroporto }}</p>
+            <p><strong>Número do bilhete:</strong> {{ passagem.numero_bilhete }}</p>
+            <p><strong>Data do voo:</strong> {{ passagem.dataVoo }}</p>
+            <p><strong>Hora de saída do voo:</strong> {{ passagem.horaSaidaVoo }}</p>
+
+            <div *ngIf="anexos?.length">
+                <p><strong>Passagem:</strong></p>
+                  <div *ngFor="let anexo of anexos" style="display: flex; align-items: center;">
+                    <div style="flex: 1; text-align: left; padding-right: 20px;">
+                      <p>{{ anexo.filename }}</p>
+                    </div>
+                    <div style="flex: 1; display: flex; justify-content: flex-start;">
+                      <button (click)="downloadAnexo(anexo.id)">
+                          <mat-icon style="font-size: 24px;" class="mat-primary">download</mat-icon>
+                      </button>
+                    </div>
+              </div>
+        </div>
+    </div>
+</div>

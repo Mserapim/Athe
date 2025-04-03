@@ -1,0 +1,79 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Editar Módulo</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label>Nome</mat-label>
+                    <input matInput formControlName="nome" placeholder="" />
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="Descrição">
+                    <mat-label>Descrição</mat-label>
+                    <input matInput formControlName="descricao" placeholder="" />
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label>Sigla</mat-label>
+                    <input matInput formControlName="sigla" placeholder="" />
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label>Ordenação</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        formControlName="ordem"
+                        placeholder=""
+                        min="0"
+                        max="99999"
+                    />
+                    <mat-error
+                        *ngIf="formulario.get('ordem').hasError('required')"
+                        >Informe numero entre 0 e 99999</mat-error
+                    >
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Situação</mat-label>
+                    <input
+                        matInput
+                        [matAutocomplete]="auto2"
+                        formControlName="situacao"
+                    />
+                    <mat-autocomplete #auto2="matAutocomplete">
+                        <mat-option
+                            *ngFor="let option of situacoes"
+                            [value]="option.valor"
+                        >
+                            {{ option.nome }}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+
+                <mpmt-selecao-icones
+                    [selectedIcon]="selectedIcon"
+                    (iconSelected)="onIconSelected($event)">
+                </mpmt-selecao-icones>
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>

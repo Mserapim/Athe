@@ -1,0 +1,201 @@
+<div class="flex flex-col gap-2">
+    <div *ngIf="loading" class="spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Prestação de Contas</h1>
+    </h1>
+    <div mat-dialog-content>
+        <div class="p-4 rounded-lg">
+            <h1 class="font-bold text-lg text-primary">OS Número {{beneficiario.codigo_os}} </h1>
+            <h2 class="font-bold text-md text-primary">Informações básicas</h2>
+            <div style="display: flex; flex-wrap: wrap; line-height: 2.0; margin-top:10px;">
+                <div style="width: 50%;">
+                    <p><strong>Matricula:</strong> {{ beneficiario.servidor_matricula }}</p>
+                    <p><strong>Nome:</strong> {{ beneficiario.servidor_nome }}</p>
+                </div>
+
+                <div style="width: 50%;">
+                    <p><strong>Categoria funcional:</strong> {{ beneficiario.categoria_funcional }}</p>
+                    <p><strong>Lotação:</strong> {{ beneficiario.lotacao }}</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="p-4 rounded-lg" *ngIf="contaDevolucao != null">
+            <h2 class="font-bold text-md text-primary">Informações para devolução</h2>
+            <div style="display: flex; flex-wrap: wrap; line-height: 2.0; margin-top:10px;">
+                <div style="width: 50%;">
+                    <p><strong>Banco:</strong> {{ contaDevolucao.banco }}</p>
+                    <p><strong>Chave Pix:</strong> {{ contaDevolucao.chave_pix }}</p>
+                </div>
+
+                <div style="width: 50%;">
+                    <p><strong>Agência:</strong> {{ contaDevolucao.agencia }}</p>
+                    <p><strong>Conta:</strong> {{ contaDevolucao.conta }}</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="p-4 rounded-lg mt-2 mb-2">
+            <h2 class="font-bold text-md text-primary">Informações da viagem</h2>
+
+            <div *ngFor="let destino of destinos; let i = index; let last = last"
+                style="display: flex; flex-wrap: wrap; line-height: 2.0; margin-top:10px;"
+                class="p-4 rounded-lg">
+
+                <div style="width: 50%;">
+                    <p><strong>Origem: </strong>{{ destino.municipio_origem_display }} - {{ destino.uf_origem_sigla }}
+                    </p>
+                    <p><strong>Forma de deslocamento: </strong> {{ destino.forma_deslocamento_display}}</p>
+                    <div *ngIf="destino.forma_deslocamento == 2">
+                        <p><strong>Com motorista:</strong> {{ formatarBooleano(destino.com_motorista)  }}</p>
+                        <p><strong>Veículo do DAA:</strong> {{ formatarBooleano(destino.veiculo_daa)  }}</p>
+                    </div>
+                    <p><strong>Data ida: </strong> {{ destino.data | date: 'dd/MM/yyyy' }}</p>
+                    <p><strong>Horário: </strong> {{ destino.data | date: 'HH:mm' }}</p>
+                </div>
+                <div style="width: 50%;">
+                    <p><strong>Destino:</strong> {{ destino.municipio_destino_display }} - {{ destino.uf_destino_sigla
+                        }}</p>
+                    <p><strong>Preferência de turno de ida: </strong> {{ destino.pref_turno_ida }}
+                    </p>
+
+                </div>
+                <hr class="m-3" *ngIf="!last">
+            </div>
+        </div>
+
+        <div class="flex flex-col w-full sm:min-w-120 p-4 rounded-lg">
+            <form [formGroup]="formulario" class="grid grid-cols-1 w-full">
+
+
+                <div class="grid grid-cols-1 gap-2 w-full">
+                    <mat-radio-group formControlName="viagem_realizada" aria-label="Viagem Realizada">
+                        <mat-label class="font-bold ">Viagem realizada:</mat-label>
+                        <mat-radio-button [value]="true" [disabled]="data.visualizacao">Sim</mat-radio-button>
+                        <mat-radio-button [value]="false" [disabled]="data.visualizacao">Não</mat-radio-button>
+                    </mat-radio-group>
+                    <div *ngIf="isViagemRealizada()">
+                        <mat-radio-group formControlName="viagem_total" aria-label="Viagem Total" [disabled]="data.visualizacao">
+                            <mat-label class="font-bold ">Viagem total:</mat-label>
+                            <mat-radio-button [value]="true" [disabled]="data.visualizacao">Total</mat-radio-button>
+                            <mat-radio-button [value]="false" [disabled]="data.visualizacao">Parcial</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div *ngIf="isViagemParcial()" style="width: 50%;">
+                        <mat-form-field class="w-full" placeholder="Valor Devolvido">
+                            <mat-label class="font-bold">Valor Devolvido</mat-label>
+                            <input matInput type="number" formControlName="valor_devolvido" placeholder="" />
+                        </mat-form-field>
+                    </div>
+                </div>
+                <span class="font-bold text-sm text-primary">Quando for com devolução, deverá ser obrigatório o envio do
+                    comprovante de devolução do valor para que seja aceita e finalizada a prestação de contas pelo
+                    DEFIN</span>
+
+                <div class="grid grid-cols-1 gap-2 w-full">
+                    <!-- <mat-form-field class="w-full" placeholder="Serviços executados">
+                        <mat-label class="font-bold ">Serviços executados:</mat-label>
+                        <textarea matInput formControlName="obs_servicos_executados" placeholder="" [readonly]="data.visualizacao"></textarea>
+                    </mat-form-field> -->
+                    <div *ngIf="!data.visualizacao" style="padding-top: 15px;">
+                        <mpmt-texto-formatado
+                            class="w-full"
+                            formControlName="obs_servicos_executados"
+                            titulo="Serviços executados:"
+                        ></mpmt-texto-formatado>
+                    </div>
+                    <div style="padding-top: 15px;" *ngIf="data.visualizacao">
+                        <div class="w-full">
+                            <label style="font-weight: bold; color: #717171;">Serviços executados:</label>
+                            <div class="mpmt-texto-formatado-conteudo" [innerHTML]="formulario.get('obs_servicos_executados')?.value"></div>
+                        </div>
+                    </div>
+
+                    <div *ngIf="!data.visualizacao" style="padding-top: 15px;">
+                        <mpmt-texto-formatado
+                            class="w-full"
+                            formControlName="obs_resultado"
+                            titulo="Resultados alcançados e pessoas contactadas:"
+                        ></mpmt-texto-formatado>
+                    </div>
+                    <div *ngIf="data.visualizacao">
+                        <div class="w-full">
+                            <label style="font-weight: bold; color: #717171;">Resultados alcançados e pessoas contactadas:</label>
+                            <div class="mpmt-texto-formatado-conteudo" [innerHTML]="formulario.get('obs_resultado')?.value"></div>
+                        </div>
+                    </div>
+
+                    <div *ngIf="!data.visualizacao" style="padding-top: 15px;">
+                        <mpmt-texto-formatado
+                            class="w-full"
+                            formControlName="obs"
+                            titulo="Observações:"
+                        ></mpmt-texto-formatado>
+                    </div>
+                    <div *ngIf="data.visualizacao">
+                        <div class="w-full">
+                            <label style="font-weight: bold; color: #717171;">Observações:</label>
+                            <div class="mpmt-texto-formatado-conteudo" [innerHTML]="formulario.get('obs')?.value"></div>
+                        </div>
+                    </div>
+
+                    <div *ngIf="!data.visualizacao" style="padding-top: 15px; padding-bottom: 20px;">
+                        <mpmt-texto-formatado
+                            class="w-full"
+                            formControlName="obs_anlaise"
+                            titulo="Observações de análise:"
+                        ></mpmt-texto-formatado>
+                    </div>
+                    <div style="padding-bottom: 10px;" *ngIf="data.visualizacao">
+                        <div class="w-full">
+                            <label style="font-weight: bold; color: #717171;">Observações de análise:</label>
+                            <div class="mpmt-texto-formatado-conteudo" [innerHTML]="formulario.get('obs_anlaise')?.value"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <mpmt-file-update [acceptMultiple]="true" [acceptedFileTypes]="['application/pdf']"
+                    (lista_documentos)="receberAnexos($event)"  [isReadOnly]="data.visualizacao"
+                    [lista_arquivos_carregados]="anexos_carregados"></mpmt-file-update>
+
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-center gap-4">
+        <button mat-button color="[#9CA3A9]" class="bg-[#9CA3A9] text-white p-8 py-4 w-50"
+            (click)="fecharFormulario()">
+            Fechar
+        </button>
+        <div *ngIf="!data.visualizacao">
+            <button mat-button color="[#4F46E5]" class="bg-[#4F46E5] text-white p-8 py-4 w-50"
+                (click)="confirmarFormulario()" [ngClass]="{ 'bg-gray-300': !formularioValido }"
+                [disabled]="!formularioValido">
+                Salvar rascunho
+            </button>
+            <button mat-button color="[#00AC81]" class="bg-[#00AC81] text-white p-8 py-4 w-50" (click)="assinarPrestacao()"
+                [ngClass]="{ 'bg-gray-300': !formularioValido }" [disabled]="!formularioValido" *ngIf="!data.avaliar">
+                Assinar e Finalizar
+            </button>
+    
+            <button mat-button color="[#F87171]" class="bg-[#F87171] text-white p-8 py-4 w-50"
+                (click)="indeferirPrestacao()" [ngClass]="{ 'bg-gray-300': !formularioValido }"
+                [disabled]="!formularioValido" *ngIf="data.avaliar">
+                Indeferir
+            </button>
+            <button mat-button color="[#00AC81]" class="bg-[#00AC81] text-white p-8 py-4 w-50" (click)="deferirPrestacao()"
+                [ngClass]="{ 'bg-gray-300': !formularioValido }" [disabled]="!formularioValido" *ngIf="data.avaliar">
+                Assinar e Deferir
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div [formGroup]="form">
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>{{ titulo }}</mat-label>
+    <input matInput #pesquisarInput (keyup)="aplicarFiltros($event)"
+           placeholder="Pesquisar" [readonly]="isReadOnly"
+           (focus)="openSelect()" [value]="tituloSelecionado" class="auto-width-input">
+    <mat-select formControlName="form_control" (selectionChange)="onSelectionChange($event)" #selecaoOpcoes [disabled]="isReadOnly">
+      <mat-select-trigger>
+        <!-- Vazio, então não será exibido nada -->
+      </mat-select-trigger>
+      <mat-option *ngFor="let opcao of opcoes" [value]="opcao.valor">
+        {{ opcao.titulo }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

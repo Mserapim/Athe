@@ -1,0 +1,20 @@
+<mpmt-pagina-listagem [service]="service" class="w-full tabela-auditoria">
+
+    <div filtros>
+
+        <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+
+            <mpmt-form-texto titulo="Filtro por texto" placeholder="" formControlName="keyword"/>
+
+            <mpmt-form-multiselecao
+                [fonte]="apiGestorCargosTipoLeiCargos"
+                formControlName="tipo_lei_cargos"
+                titulo="Filtro por Tipo"
+                atributoDisplay="display" 
+                atributoChave="valor" 
+            />
+        </form>
+
+    </div>
+
+</mpmt-pagina-listagem>

@@ -1,0 +1,24 @@
+<div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl w-full mx-auto min-w-96">
+    <!-- Cabeçalho -->
+    <div class="bg-gray-50 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+        <div class="flex-grow">
+            <ng-container *ngTemplateOutlet="cabecalho"></ng-container>
+        </div>
+        <button *ngIf="permiteFechar"
+            class="ml-4 text-red-400 bg-red-100 hover:bg-red-200 py-1 px-2 pb-1 rounded-full hover:text-red-500 focus:outline-none" 
+            (click)="fechar()"
+            aria-label="Fechar">
+            <i class="pi pi-times text-sm self-center items-center"></i>
+        </button>
+    </div>
+    
+    <!-- Corpo com barra de rolagem -->
+    <div class="px-6 py-5 overflow-y-auto" style="max-height: 60vh;">
+        <ng-container *ngTemplateOutlet="corpo"></ng-container>
+    </div>
+    
+    <!-- Rodapé -->
+    <div class="bg-gray-50 px-6 py-3 flex justify-end border-t border-gray-200">
+        <ng-container *ngTemplateOutlet="rodape"></ng-container>
+    </div>
+</div>

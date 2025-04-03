@@ -1,0 +1,65 @@
+<div class="flex flex-col gap-2 h-full w-full p-8" *ngIf="service.typeId == 1">
+    <div class="flex justify-between">
+        <h2 class="font-bold text-xl self-center">
+            {{ title }}
+        </h2>
+        <button mat-button class="text-white" (click)="goRequests()">
+            Voltar
+        </button>
+    </div>
+    <div class="flex flex-col-reverse lg:flex-row bg-white w-full min-h-120">
+        <div
+            class="flex flex-col bg-primary text-white p-4 py-4 w-full rounded-l lg:w-72 gap-4"
+        >
+            <div class="text-xs leading-5">
+                <b>Informações Gerais</b><br>
+                <b>DECLARAÇÃO DE TRABALHO PRESTADO À JUSTIÇA ELEITORAL</b>
+                <li>Por convocação do Cartório Eleitoral (e não pelo Promotor de Justiça Eleitoral);</li>
+                <li>
+                    Cada dia trabalhado junto à Justiça Eleitoral confere o direito a
+                    <b>02 (dois) dias de dispensa do serviço;</b>
+                </li>
+                <li>
+                    Apenas são admitidos, para fins de dispensa eleitoral, os dias trabalhados após sua admissão no MPMT, ou seja,
+                    <b>não são aceitas declarações/certidões prévias ao seu vínculo atual com o MPMT.</b>
+                </li>
+                <br>
+                <b>Em caso de dúvidas:</b><br>
+                <li>dgp&#64;mpmt.mp.br</li>
+                <li>Gerência de Servidores: pessoasservidores&#64;mpmt.mp.br</li>
+                <li>Gerência de Membros: pessoasmembros&#64;mpmt.mp.br</li>
+                <b>Em caso de dificuldade técnica:</b><br>
+                <li>suporte&#64;mpmt.mp.br</li>
+            </div>
+
+            <request-stepper></request-stepper>
+        </div>
+
+        <div class="p-4 grow rounded-r border border-gray-100 shadow">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col gap-2 h-full w-full p-8" *ngIf="service.typeId != 1">
+    <div class="flex justify-between">
+        <h2 class="font-bold text-xl self-center">
+            {{ title }}
+        </h2>
+        <button mat-button class="text-white" (click)="goRequests()">
+            Voltar
+        </button>
+    </div>
+    <div class="flex flex-col-reverse lg:flex-row bg-white w-full min-h-120">
+        <div
+            class="flex flex-col bg-primary text-white p-4 py-4 w-full rounded-l lg:w-72 gap-4"
+        >
+            <p class="text-xs leading-5" [innerHtml]="descriptionFull"></p>
+
+            <request-stepper></request-stepper>
+        </div>
+
+        <div class="p-4 grow rounded-r border border-gray-100 shadow">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

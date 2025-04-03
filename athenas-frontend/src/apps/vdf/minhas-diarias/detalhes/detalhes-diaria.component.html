@@ -1,0 +1,9 @@
+<div class="flex flex-col gap-8" style="overflow-y: auto;">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Detalhes da solicitação</h1>
+    </h1>
+    <mpmt-abas [tabs]="dadosAbas" [id]="diariaId"></mpmt-abas>
+</div>
+<div mat-dialog-actions class="flex flex-col sm:flex-row justify-center gap-4">
+    <mpmt-botao tipo="borda" (click)="onClose()">Fechar</mpmt-botao>
+</div>

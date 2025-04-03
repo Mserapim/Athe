@@ -1,0 +1,164 @@
+<div
+    class="flex absolute cursor-pointer top-0 z-50 right-0 pr-6 font-bold text-right justify-end w-full"
+>
+    <div
+        class="flex px-2 pb-1 bg-gray-100 font-bold rounded-b-full"
+        (click)="close()"
+    >
+        X
+    </div>
+</div>
+
+<div class="font-bold py-4 text-lg">Cadastrar pessoa</div>
+
+<div class="flex flex-col w-full gap-2 min-h-56 justify-start">
+    <form
+        [formGroup]="form"
+        class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+    >
+        <mat-form-field class="w-full col-span-2" placeholder="Nome completo">
+            <mat-label>Nome</mat-label>
+            <input
+                matInput
+                formControlName="name"
+                placeholder=""
+                minlength="1"
+                maxlength="50"
+            />
+        </mat-form-field>
+
+        <mat-form-field class="w-full" placeholder="CPF">
+            <mat-label>CPF</mat-label>
+            <input
+                matInput
+                formControlName="cpf"
+                placeholder=""
+                maxlength="11"
+            />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="flex w-full">
+            <mat-label>Data Nascimento</mat-label>
+            <input
+                matInput
+                formControlName="data_nascimento"
+                [matDatepicker]="datepickerStart"
+                [max]="now"
+            />
+            <mat-datepicker-toggle
+                matIconSuffix
+                [for]="datepickerStart"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #datepickerStart></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Naturalidade</mat-label>
+            <input
+                matInput
+                [matAutocomplete]="auto"
+                formControlName="municipio_naturalidade"
+                (ngModelChange)="this.loadLocations($event)"
+            />
+            <mat-autocomplete
+                #auto="matAutocomplete"
+                [displayWith]="displayFnLocation"
+            >
+                <mat-option
+                    *ngFor="let option of dataSourceLocations.results$ | async"
+                    [value]="option"
+                >
+                    {{ option.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Sexo</mat-label>
+            <input matInput [matAutocomplete]="auto2" formControlName="sexo" />
+            <mat-autocomplete
+                #auto2="matAutocomplete"
+                [displayWith]="displayFnSexo"
+            >
+                <mat-option *ngFor="let option of sexos" [value]="option">
+                    {{ option.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Imigrante tempo de residência</mat-label>
+            <input
+                matInput
+                [matAutocomplete]="auto3"
+                formControlName="immigrant_residence_time"
+                (ngModelChange)="this.loadImigrantResidences($event)"
+            />
+            <mat-autocomplete
+                #auto3="matAutocomplete"
+                [displayWith]="displayFn"
+            >
+                <mat-option
+                    *ngFor="
+                        let option of imigrantResidencesDataSource.results$
+                            | async
+                    "
+                    [value]="option"
+                >
+                    {{ option.label }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Imigrante condição de ingresso </mat-label>
+            <input
+                matInput
+                [matAutocomplete]="auto4"
+                formControlName="immigrant_entry_condition"
+                (ngModelChange)="this.loadImigrantConditions($event)"
+            />
+            <mat-autocomplete
+                #auto4="matAutocomplete"
+                [displayWith]="displayFn"
+            >
+                <mat-option
+                    *ngFor="
+                        let option of imigrantConditionsDataSource.results$
+                            | async
+                    "
+                    [value]="option"
+                >
+                    {{ option.label }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+    <div class="flex justify-center gap-4">
+        <!-- <button
+        mat-button
+        color="primary"
+        class="border outline outline-1 border-gray-300 text-gray-500 p-8 py-4 w-56"
+        [mat-dialog-close]=""
+    >
+        Fechar
+    </button> -->
+
+        <button
+            mat-button
+            [disabled]="!form.valid"
+            class="bg-primary text-white p-8 py-4 w-56 self-end"
+            [ngClass]="{ 'bg-gray-300': !form.valid }"
+            (click)="goConfirm()"
+        >
+            Cadastrar
+        </button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="flex justify-end">
+    <button mat-button mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <h1 class="font-bold text-primary" style="padding: 0 24px;">Como funcionam as Condicionais</h1>
+
+<div mat-dialog-content style="color: black">
+    <p>
+        Cada grupo de condicionais pode conter uma ou mais condicionais, mas dentro de um grupo, você só pode utilizar um tipo de operador: <strong>"E"</strong> ou <strong>"OU"</strong>.
+    </p>
+    <p>
+        Entre diferentes grupos, você pode utilizar operadores diferentes. Isso permite criar combinações mais complexas.
+    </p>
+    <br>
+    <p>
+        <strong>Exemplo 1:</strong> Se você quiser criar a seguinte condição: <strong>Condicional 1 E Condicional 2 OU Condicional 3</strong>, você deve:
+    </p>
+    <ol>
+        <li>Criar um grupo com Condicional 1 e Condicional 2, utilizando o operador <strong>"E"</strong> entre elas.</li>
+        <li>Criar um segundo grupo contendo apenas a Condicional 3 e selecionar <strong>"OU"</strong> como o operador entre grupos.</li>
+    </ol>
+    <br>
+    <p>
+        <strong>Exemplo 2:</strong> Para a condição <strong>Condicional 1 OU Condicional 2 E Condicional 3</strong>, você:
+    </p>
+    <ol>
+        <li>Criar um grupo com Condicional 1 e Condicional 2, utilizando o operador <strong>"OU"</strong> entre elas.</li>
+        <li>Criar um segundo grupo com Condicional 3 e selecionar <strong>"E"</strong> como operador entre grupos.</li>
+    </ol>
+    <br>
+    <p>
+        Dessa forma, você consegue criar combinações flexíveis de condicionais.
+    </p>
+    
+</div>

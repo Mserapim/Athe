@@ -1,0 +1,30 @@
+<div class="flex flex-col w-full gap-4 h-full px-8 py-8" style="width: 100%">
+
+    <!-- ROW ONE-->
+    <div class="flex flex-row items-center justify-between w-full ">
+        <mpmt-pagina-titulo></mpmt-pagina-titulo>
+        <mpmt-pagina-listagem-botoes [service]="service" [ajuda-url]="ajudaUrl"></mpmt-pagina-listagem-botoes>
+    </div>
+
+    <!-- ROW TWO-->
+    <mpmt-pagina-listagem-opcoes class="z-20 w-full">
+        <ng-content select="[opcoes]"></ng-content>
+    </mpmt-pagina-listagem-opcoes>
+
+    <!-- ROW THREE-->
+    <mpmt-pagina-listagem-filtros class="z-20 w-full">
+        <ng-content select="[filtros]"></ng-content>
+    </mpmt-pagina-listagem-filtros>
+
+    <!-- ROW FOUR-->
+    <div class="w-full overflow-visible  z-10 ">
+        <mpmt-pagina-listagem-tabela  [service]="service" [temConteudoExpandido]="temConteudoExpandido">
+            <ng-template #conteudoExpandido2 let-rowData v-if="temConteudoExpandido">
+                <ng-container *ngTemplateOutlet="conteudoExpandido; context: { $implicit: rowData, temConteudoExpandido: temConteudoExpandido }"></ng-container>
+            </ng-template>
+        </mpmt-pagina-listagem-tabela>
+
+        <mpmt-pagina-listagem-tabela-paginacao [service]="service" [page]="service.paginacao.page" [perPage]="service.paginacao.per_page"></mpmt-pagina-listagem-tabela-paginacao>
+    </div>
+
+</div>

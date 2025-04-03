@@ -1,0 +1,227 @@
+<div class="flex flex-col w-full p-8">
+    <div *ngIf="service.loading" class="spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+    
+    <mpmt-listagem2 [service]="service">
+        <!-- Ações -->
+        <div acoes></div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label class="text-white">Pesquisar por nome</mat-label>
+                    <input
+                        matInput
+                        formControlName="palavra_chave"
+                        placeholder=""
+                        (change)="service.recarregarListagem()"
+                    />
+                </mat-form-field>
+                <!--Filtro Situação-->
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Situação</mat-label>
+                    <input
+                        matInput
+                        [matAutocomplete]="auto2"
+                        formControlName="situacao"
+                        (ngModelChange)="service.recarregarListagem()"
+                    />
+                    <mat-autocomplete #auto2="matAutocomplete">
+                        <mat-option
+                            *ngFor="let option of situacoes"
+                            [value]="option.valor"
+                        >
+                            {{ option.nome }}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <!--Filtro Categoria Funcional-->
+                <div appearance="fill" class="w-full">
+                    <mpmt-selecao
+                        [titulo]="'Categoria Funcional'"
+                        [titulo_class]="'text-white'"
+                        class="w-96"
+                        placeholder="Categoria Funcional"
+                        formControlName="cat_func"
+                        [configuracao]="selecaoCatFuncional"
+                        (ngModelChange)="service.recarregarListagem()"
+                    ></mpmt-selecao>
+                </div>
+                <!--Filtro Lotacao-->
+                <div appearance="fill" class="w-full">
+                    <mpmt-selecao
+                        [titulo]="'Lotação'"
+                        [titulo_class]="'text-white'"
+                        class="w-96"
+                        placeholder="Lotação"
+                        formControlName="lotacao"
+                        [configuracao]="selecaoLotacao"
+                        (ngModelChange)="service.recarregarListagem()"
+                    ></mpmt-selecao>
+                </div>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>
+
+<!--
+
+    <div class="flex flex-row w-full table-responsive">
+        <table
+            mat-table
+            [dataSource]="listagem$"
+            class="mat-elevation-z8"
+            matSort
+            (matSortChange)="alterarOrdenacao($event)"
+        >
+
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Ativo
+                </th>
+                <td mat-cell *matCellDef="let element">
+    
+                    <mat-icon *ngIf="element.status" style="color: green;"
+                        [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+                    <mat-icon *ngIf="!element.status" style="color: red;"
+                        [svgIcon]="'heroicons_solid:x-circle'"></mat-icon>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="username">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Login
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.username }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="matricula">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Matricula
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.matricula }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="nome">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Nome
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.nome }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="categoria_funcional">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Categoria Funcional
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.categoria_funcional }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="lotacao">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Lotação
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.lotacao }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="cargo">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Cargo
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.cargo }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="qtd_grupos">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Grupos
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="flex items-center gap-4 cursor-pointer">
+                        <div class="self-center">
+                            {{ element.qtd_grupos }}
+                        </div>
+                        <div
+                            class="text-gray-400"
+                            (click)="irAtualizarGrupo(element)"
+                        >
+                            Ver lista
+                        </div>
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="qtd_menus">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Menus
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="flex items-center gap-4 cursor-pointer">
+                        <div class="self-center">
+                            {{ element.qtd_menus }}
+                        </div>
+                        <div
+                            class="text-gray-400"
+                            (click)="irVerPermissoes(element)"
+                        >
+                            Ver lista
+                        </div>
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="acao">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="flex justify-end">
+                        <button mat-icon-button [matMenuTriggerFor]="menu">
+                            <mat-icon class="material-icons">more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item (click)="irEditarUsuario(element)">
+                                <mat-icon [svgIcon]="'mat_outline:edit'"></mat-icon>
+                                Editar
+                            </button>
+                            <button mat-menu-item (click)="atualizarMastiff(element)">
+                                <mat-icon [svgIcon]="'mat_outline:refresh'"></mat-icon>
+                                Atualizar pelo Mastiff
+                            </button>
+                          </mat-menu>
+                    </div>
+                </td>
+            </ng-container>
+
+            <tr
+                mat-header-row
+                *matHeaderRowDef="colunasVisiveisComAcao | async"
+            ></tr>
+            <tr
+                mat-row
+                *matRowDef="
+                    let row;
+                    columns: colunasVisiveisComAcao | async
+                "
+            ></tr>
+        </table>
+    </div>
+
+    <mat-paginator
+        [length]="total$ | async"
+        [pageSize]="10"
+        [pageSizeOptions]="[10, 15, 30, 50, 100]"
+    ></mat-paginator>
+</div> -->

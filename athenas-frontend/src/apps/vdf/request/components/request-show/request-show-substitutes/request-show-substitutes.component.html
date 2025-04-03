@@ -1,0 +1,62 @@
+<div class="flex flex-col py-2 gap-2 overflow-y-auto">
+    <div
+        class="flex flex-col gap-4 border border-gray-200 bg-gray-100 rounded p-2 h-full w-full"
+    >
+        <div class="font-bold">Substitutos informados na solicitação</div>
+        <div class="table-responsive">
+            <div
+                class="text-gray-500 bg-gray-50 border border-gray-100 p-4 rounded"
+                *ngIf="!results || results?.length <= 0"
+            >
+                Nenhum substituto informado
+            </div>
+            <table
+                mat-table
+                [dataSource]="results"
+                *ngIf="results?.length > 0"
+                class="text-xs md:text-base"
+            >
+                <ng-container matColumnDef="designation">
+                    <th mat-header-cell *matHeaderCellDef>Designação</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.designation }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="start_date">
+                    <th mat-header-cell *matHeaderCellDef>Data Inicio</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.start_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="end_date">
+                    <th mat-header-cell *matHeaderCellDef>Data fim</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.end_date | date : "dd/MM/yyyy" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="employee">
+                    <th mat-header-cell *matHeaderCellDef>Servidor</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.employee }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="substitute_name">
+                    <th mat-header-cell *matHeaderCellDef>Substituto</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.substitute_name }}
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: displayedColumns"
+                ></tr>
+            </table>
+        </div>
+    </div>
+</div>

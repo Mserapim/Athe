@@ -1,0 +1,7 @@
+.mat-form-field-disabled .mat-input-element,
+.mat-form-field-disabled .mat-mdc-input-element,
+.mat-input-element[disabled],
+.mat-mdc-input-element[disabled] {
+    color: black !important;
+    opacity: 1 !important;
+}

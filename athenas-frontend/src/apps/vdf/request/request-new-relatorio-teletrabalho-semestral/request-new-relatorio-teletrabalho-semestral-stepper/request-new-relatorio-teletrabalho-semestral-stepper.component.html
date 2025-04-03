@@ -1,0 +1,23 @@
+<div class="flex flex-col gap-8 pt-8">
+    <div class="font-bold underline">Etapas</div>
+
+    <div class="flex flex-col gap-4 -ml-8">
+        <div
+            *ngFor="
+                let item of RequestNewRelatorioTeletrabalhoSemestralStepperService.steps;
+                let index = index
+            "
+        >
+            <div
+                class="pl-8 font-medium bg-white/20 p-2 rounded-r-full"
+                [ngClass]="{
+                    'bg-white/20':
+                        index + 1 ==
+                        RequestNewRelatorioTeletrabalhoSemestralStepperService.currentStep
+                }"
+            >
+                {{ item }}
+            </div>
+        </div>
+    </div>
+</div>

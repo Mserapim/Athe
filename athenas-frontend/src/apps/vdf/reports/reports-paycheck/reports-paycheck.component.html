@@ -1,0 +1,58 @@
+<!-- HOLERITE  -->
+<div
+    class="flex flex-col gap-2 p-4 rounded text-bold shadow bg-white text-black"
+>
+    <span class="font-bold text-lg self-center pb-4 w-full rounded">
+        Impressão do holerite
+    </span>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Ano</mat-label>
+        <mat-select [(ngModel)]="form.year" (selectionChange)="onChange()">
+            <mat-option
+                *ngFor="let option of this.options.years"
+                [value]="option.value"
+            >{{ option.label }}</mat-option
+            >
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Mês</mat-label>
+        <mat-select [(ngModel)]="form.month" (selectionChange)="onChange()">
+            <mat-option
+                *ngFor="let option of this.options.months"
+                [value]="option.value"
+                >{{ option.label }}</mat-option
+            >
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Tipo folha</mat-label>
+        <mat-select [(ngModel)]="form.type">
+            <mat-option
+                *ngFor="let option of this.options.types"
+                [value]="option.pk"
+                >{{ option.title }}</mat-option
+            >
+        </mat-select>
+    </mat-form-field>
+
+    <div
+        *ngIf="isLoading"
+        class="flex p-2 px-4 text-blue-500 border bg-blue-100 border-blue-500 rounded"
+    >
+        Gerando o arquivo, aguarda alguns instantes
+    </div>
+    <button
+        mat-button
+        class="bg-gray-200 text-white"
+        [ngClass]="{ '!bg-primary': isValid }"
+        (click)="download()"
+        [class.spinner]="isLoading"
+        [disabled]="!isValid || isLoading"
+    >
+        Download
+    </button>
+</div>

@@ -1,0 +1,8 @@
+{
+    "/athenas/api/v2/*": {
+        "target": "https://athenas-hom.mpmt.mp.br/athenas/api/v2",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

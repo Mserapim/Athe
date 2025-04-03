@@ -1,0 +1,287 @@
+<div
+    class="flex flex-col h-full"
+    [ngClass]="[
+        coluna.width ? coluna.width : 'w-full',
+        coluna.quebrarPalavra ? 'break-all' : ''
+    ]"
+>
+    <!-- TIPO TEXTO -->
+    <div 
+        *ngIf="coluna.tipo == 'TEXTO'"
+        [ngClass]="this.construirEstilos(coluna, linha)"
+    >
+        {{ valor$ | async }}
+    </div>
+
+    <!-- TIPO DATA -->
+    <div *ngIf="coluna.tipo == 'DATA'">
+        <div *ngIf="valor$ | async">{{ formatarData(valor$ | async) }}</div>
+    </div>
+
+    <!-- TIPO DATA HORA -->
+    <div *ngIf="coluna.tipo == 'DATA_HORA'">
+        {{ formatarDataHora(valor$ | async) }}
+    </div>
+
+    <!-- TIPO BOLEANO -->
+    <div *ngIf="coluna.tipo == 'BOLEANO'">
+        {{ formatarBooleano(valor$ | async) }}
+    </div>
+
+    <!-- TIPO BOLEANO -->
+    <div *ngIf="coluna.tipo == 'BOLEANO_ICONE'">
+        <mat-icon
+            *ngIf="valor$ | async"
+            style="color: green"
+            [svgIcon]="'heroicons_solid:check-circle'"
+        ></mat-icon>
+        <mat-icon
+            *ngIf="!(valor$ | async)"
+            style="color: red"
+            [svgIcon]="'heroicons_solid:x-circle'"
+        ></mat-icon>
+    </div>
+
+    <div
+        *ngIf="
+            coluna.tipo == 'BOTAO_PRIMARIO' &&
+            (coluna.titulo || (valor$ | async)) &&
+            coluna?.acoes?.length &&
+            coluna?.acoes?.length > 0 &&
+            acaoVisivel(coluna?.acoes[0], linha)
+        "
+    >
+        <mpmt-botao
+            tipo="preenchido"
+            (click)="coluna?.acoes[0]?.aoClicar(linha)"
+        >
+            {{ coluna.titulo || (valor$ | async) }}
+        </mpmt-botao>
+    </div>
+
+    <div
+        *ngIf="
+            coluna.tipo == 'BOTAO_CONTORNO' &&
+            (coluna.titulo || (valor$ | async))
+        "
+    >
+        <mpmt-botao
+            tipo="borda"
+            (click)="coluna?.acoes[0]?.aoClicar(linha)"
+            *ngIf="coluna?.acoes?.length && coluna?.acoes?.length > 0"
+            >{{ coluna.titulo || (valor$ | async) }}</mpmt-botao
+        >
+    </div>
+
+    <div *ngIf="coluna.tipo == 'LINK' && (coluna.titulo || (valor$ | async))">
+        <div *ngFor="let acao of coluna?.acoes">
+            <mpmt-botao
+                tipo="preenchido"
+                cor="branco"
+                (click)="acao.aoClicar(linha)"
+                *ngIf="
+                    coluna?.acoes?.length &&
+                    coluna?.acoes?.length > 0 &&
+                    acaoVisivel(coluna?.acoes[0], linha)
+                "
+                >{{
+                    acao?.titulo || coluna.titulo || (valor$ | async)
+                }}</mpmt-botao
+            >
+        </div>
+    </div>
+
+    <!-- TIPO VER_MAIS_DESTACADO -->
+    <div *ngIf="coluna.tipo == 'VER_MAIS_DESTACADO'">
+        <div class="flex items-center gap-4 cursor-pointer">
+            <div class="self-center font-bold text-red-600">
+                {{ valor$ | async }}
+            </div>
+            <div
+                *ngIf="coluna?.acoes?.length && coluna?.acoes?.length > 0"
+                class="font-bold text-red-600"
+                (click)="coluna?.acoes[0]?.aoClicar(linha)"
+            >
+                Ver itens
+            </div>
+        </div>
+    </div>
+
+    <!-- TIPO VER_MAIS -->
+    <div *ngIf="coluna.tipo == 'VER_MAIS'">
+        <div class="flex items-center gap-4 cursor-pointer">
+            <div class="self-center">
+                {{ valor$ | async }}
+            </div>
+            <div
+                *ngIf="coluna?.acoes?.length && coluna?.acoes?.length > 0"
+                class="text-gray-400"
+                (click)="coluna?.acoes[0]?.aoClicar(linha)"
+            >
+                Ver itens
+            </div>
+        </div>
+    </div>
+
+    <!-- TIPO VALOR_E_ACAO -->
+    <div *ngIf="coluna.tipo == 'VALOR_E_ACAO'">
+        {{ valor$ | async }}
+        <ng-container *ngFor="let acao of coluna.acoes">
+            <button
+                mat-button
+                (click)="acao.aoClicar(linha)"
+                class="text-gray-400"
+            >
+                {{ acao.titulo }}
+            </button>
+        </ng-container>
+    </div>
+
+    <!-- TIPO LISTA -->
+    <div *ngIf="coluna.tipo == 'LISTA'">
+        <mat-chip-listbox>
+            <mat-chip *ngFor="let tag of valor$ | async">{{ tag }}</mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <!-- TIPO ACOES -->
+    <div class="flex justify-end" *ngIf="coluna.tipo == 'ACOES'">
+        <button
+            mat-icon-button
+            [matMenuTriggerFor]="editMenu"
+            (click)="$event.stopPropagation()"
+            *ngIf="temAcoesVisiveis()"
+        >
+            <mat-icon>more_vert </mat-icon>
+        </button>
+        <mat-menu #editMenu="matMenu">
+            <div *ngFor="let acao of getVisibleAcoes(coluna.acoes, linha)">
+                <button mat-menu-item (click)="acao?.aoClicar(linha)">
+                    <mat-icon [svgIcon]="acao.icone">{{ acao.icone }}</mat-icon>
+                    {{ acao.titulo }}
+                </button>
+            </div>
+        </mat-menu>
+    </div>
+
+    <!-- TIPO ACAO_OU_ACOES_COM_DESTAQUE -->
+    <div
+        class="flex justify-end"
+        *ngIf="
+            coluna.tipo == 'ACAO_OU_ACOES_COM_DESTAQUE' && temAcoesVisiveis()
+        "
+    >
+        <!-- Se houver mais de uma ação, mostrar o ícone de more_vert -->
+        <ng-container *ngIf="getVisibleAcoes(coluna.acoes, linha).length > 1">
+            <button
+                mat-icon-button
+                [color]="getIconeLinha(coluna.acoes, linha) ? 'primary' : ''"
+                [matMenuTriggerFor]="editMenu"
+                (click)="$event.stopPropagation()"
+            >
+                <!-- Verificar se uma das ações tem icone_linha como true -->
+                <mat-icon *ngIf="getIconeLinha(coluna.acoes, linha) as icone">
+                    {{ icone }}
+                </mat-icon>
+                <mat-icon *ngIf="!getIconeLinha(coluna.acoes, linha)"
+                    >more_vert</mat-icon
+                >
+            </button>
+            <mat-menu #editMenu="matMenu">
+                <div *ngFor="let acao of coluna.acoes">
+                    <button
+                        mat-menu-item
+                        (click)="acao.aoClicar(linha)"
+                        *ngIf="acaoVisivel(acao, linha)"
+                    >
+                        <mat-icon
+                            *ngIf="acao.icone_linha"
+                            style="color: #4f46e5"
+                            [svgIcon]="acao.icone"
+                        >
+                            {{ acao.icone }}
+                        </mat-icon>
+                        <mat-icon
+                            *ngIf="!acao.icone_linha"
+                            [svgIcon]="acao.icone"
+                        >
+                            {{ acao.icone }}
+                        </mat-icon>
+                        <div *ngIf="acao.icone_linha" style="color: #4f46e5">
+                            {{ acao.titulo }}
+                        </div>
+                        <div *ngIf="!acao.icone_linha">
+                            {{ acao.titulo }}
+                        </div>
+                    </button>
+                </div>
+            </mat-menu>
+        </ng-container>
+
+        <!-- Se houver apenas uma ação, mostrá-la diretamente -->
+        <ng-container *ngIf="getVisibleAcoes(coluna.acoes, linha).length === 1">
+            <button
+                mat-icon-button
+                [color]="getVisibleAcoes(coluna.acoes, linha)[0].cor(linha)"
+                matTooltip="{{
+                    getVisibleAcoes(coluna.acoes, linha)[0].titulo
+                }}"
+                (click)="
+                    getVisibleAcoes(coluna.acoes, linha)[0].aoClicar(linha)
+                "
+            >
+                <mat-icon
+                    *ngIf="
+                        getVisibleAcoes(coluna.acoes, linha)[0].icone as icone
+                    "
+                >
+                    {{ icone }}
+                </mat-icon>
+            </button>
+        </ng-container>
+    </div>
+
+    <!-- TIPO ICONE -->
+    <div *ngIf="coluna.tipo == 'ICONE'">
+        <mat-icon
+            *ngIf="
+                coluna?.tooltip &&
+                (!coluna?.exibirSe || coluna?.exibirSe(linha))
+            "
+            [matTooltip]="coluna?.tooltip(linha)"
+            (click)="coluna?.aoClicar(linha)"
+            [ngClass]="this.construirEstilos(coluna, linha)"
+            >{{ valor$ | async }}</mat-icon
+        >
+
+        <mat-icon
+            *ngIf="
+                !coluna?.tooltip &&
+                (!coluna?.exibirSe || coluna?.exibirSe(linha))
+            "
+            (click)="coluna?.aoClicar(linha)"
+            [ngClass]="this.construirEstilos(coluna, linha)"
+            [svgIcon]="valor$ | async"
+            >{{ valor$ | async }}</mat-icon
+        >
+    </div>
+
+    <!-- TIPO EXECUCAO -->
+    <div *ngIf="coluna.tipo == 'EXECUCAO'">
+        <mat-icon
+            *ngIf="(valor$ | async) == 'sucesso'"
+            style="color: green"
+            [svgIcon]="'heroicons_solid:check-circle'"
+        ></mat-icon>
+        <mat-icon
+            *ngIf="(valor$ | async) == 'executando'"
+            style="color: blue"
+            [svgIcon]="'heroicons_solid:refresh'"
+        ></mat-icon>
+        <mat-icon
+            *ngIf="(valor$ | async) == 'erro'"
+            style="color: red"
+            [svgIcon]="'heroicons_solid:x-circle'"
+        ></mat-icon>
+    </div>
+</div>

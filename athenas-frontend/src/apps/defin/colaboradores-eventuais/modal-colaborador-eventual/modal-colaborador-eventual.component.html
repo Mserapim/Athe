@@ -1,0 +1,119 @@
+<layout-padrao-modal [title]="'Novo Colaborador Eventual'" [buttons]="modalButtons" (close)="fecharFormulario()">
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <div *ngIf="loading" class="spinner-container">
+                <mat-spinner></mat-spinner>
+            </div>
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>Nome</mat-label>
+                        <input matInput formControlName="nome_social" placeholder="" />
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>CPF</mat-label>
+                        <input matInput formControlName="cpf" placeholder="" />
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="Nome completo">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" formControlName="email" placeholder="" />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-row gap-1 w-full">
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Sexo</mat-label>
+                        <mat-select formControlName="sexo">
+                            <mat-option *ngFor="let option of sexos" [value]="option.valor">
+                                {{ option.nome }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mpmt-selecao-form #selecaoRacaCorComponente [titulo]="'Raça/Cor*'" class="w-full" placeholder="Raça/Cor"
+                        formControlName="raca_cor" [form_control]="formulario.get('raca_cor')"
+                        [configuracao]="selecaoRacaCor"></mpmt-selecao-form>
+
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Data Nascimento</mat-label>
+                        <input matInput [matDatepicker]="inicioPicker" formControlName="data_nascimento" placeholder="">
+                        <mat-datepicker-toggle matSuffix [for]="inicioPicker"></mat-datepicker-toggle>
+                        <mat-datepicker #inicioPicker></mat-datepicker>
+                    </mat-form-field>
+
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+
+
+                    <mpmt-selecao-form #selecaoPaisNacionalidadeComponente [titulo]="'Nacionalidade*'" class="w-full" placeholder="Nacionalidade"
+                        formControlName="pais_nacionalidade" [form_control]="formulario.get('pais_nacionalidade')"
+                        [configuracao]="selecaoPaisNacionalidade"></mpmt-selecao-form>
+
+
+                    <mpmt-selecao-form #selecaoPaisNaturalidadeComponente [titulo]="'Naturalidade*'" class="w-full" placeholder="Naturalidade"
+                        formControlName="pais_naturalidade" [form_control]="formulario.get('pais_naturalidade')"
+                        [configuracao]="selecaoPaisNaturalidade"></mpmt-selecao-form>
+
+                </div>
+
+                <div class="flex flex-row gap-1 w-full">
+
+
+                    <mpmt-selecao-form #selecaoCategoriaEsocialComponente [titulo]="'Categoria Esocial*'" class="w-full" placeholder="Categoria Esocial"
+                        formControlName="categoria_esocial" [form_control]="formulario.get('categoria_esocial')"
+                        [configuracao]="selecaoCategoriaEsocial"></mpmt-selecao-form>
+
+
+
+                    <mpmt-selecao-form #selecaoCargoEventualComponente [titulo]="'Cargo*'" class="w-full" placeholder="Cargo"
+                        formControlName="cargo_eventual" [form_control]="formulario.get('cargo_eventual')"
+                        [configuracao]="selecaoCargoEventual"></mpmt-selecao-form>
+
+                </div>
+
+                <div *ngIf="data?.colaborador_id != null">
+
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    Endereços
+                                </mat-panel-title>
+                                <mat-panel-description>
+
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <endereco-listagem [pessoaId]="data?.colaborador_id" [cadastro]="true"
+                                [orgaoId]="null"></endereco-listagem>
+                        </mat-expansion-panel>
+
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    Telefones
+                                </mat-panel-title>
+                                <mat-panel-description>
+
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <telefone-listagem [pessoaId]="data?.colaborador_id" [cadastro]="true"
+                                [orgaoId]="null"></telefone-listagem>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</layout-padrao-modal>

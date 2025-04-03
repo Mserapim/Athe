@@ -1,0 +1,7 @@
+services:
+    template-angular:
+        build:
+            context: .
+        container_name: mpmt-template-angular
+        ports:
+            - 443:443

@@ -1,0 +1,32 @@
+<div>
+    <header class="flex justify-between items-center mb-4">
+        <h2 class="dialog-title font-bold text-xl self-start text-primary">{{ title }}</h2>
+        <button mat-icon-button (click)="closeModal()" class="bg-red-500 hover:bg-red-600 text-white rounded-full icon-size-5 text-base flex items-center justify-center">
+            <mat-icon class="text-white text-base">close</mat-icon>
+        </button>
+    </header>
+
+    <section class="modal-content flex-1 ml-0 mb-4 overflow-y-auto">
+        <ng-content></ng-content>
+    </section>
+
+    <footer class="flex space-x-4 mt-auto" [ngClass]="alignButtons ? alignButtons : null">
+        <ng-container *ngFor="let button of buttons">
+            <button
+                mat-raised-button
+                [ngClass]="{
+                    'bg-gray-300 text-gray-500 cursor-not-allowed': button.disabled ? button.disabled() : false
+                }"
+                [ngStyle]="{
+                'background-color': button.backgroundColor ? button.backgroundColor : null,
+                 'color': button.color ? button.color : null}"
+                (click)="button.action()"
+                [disabled]="button.disabled ? button.disabled() : false"
+                class="min-w-[100px]"
+            >
+                {{ button.label }}
+            </button>
+        </ng-container>
+    </footer>
+</div>
+

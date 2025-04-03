@@ -1,0 +1,85 @@
+<div class="flex flex-col w-full gap-4 text-white p-8" [ngClass]="class">
+    <h1 class="font-bold text-lg">Agenda Funcional</h1>
+    <div class="flex flex-col md:flex-row gap-2" *ngIf="exibirFiltros">
+        <mat-form-field class="self-center w-full">
+            <mat-label class="!text-white">Pesquisar</mat-label>
+            <input
+                matInput
+                type="text"
+                placeholder="Buscar por textos"
+                [(ngModel)]="form.value.keyword"
+                (ngModelChange)="applyFilter()"
+            />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label class="!text-white">Filtro por tipo</mat-label>
+            <mat-select
+                multiple
+                [(ngModel)]="form.value.event_type_ids"
+                (ngModelChange)="applyFilter()"
+            >
+                <mat-option
+                    *ngFor="let option of eventTypes"
+                    [value]="option.value"
+                    >{{ option.label }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field
+            appearance="fill"
+            class="w-full !text-white"
+            *ngIf="employees && employees?.length > 0"
+        >
+            <mat-label class="!text-white"
+                >Filtro por membros da equipe</mat-label
+            >
+
+            <mat-select
+                multiple
+                [(ngModel)]="form.value.employee_ids"
+                (ngModelChange)="applyFilter()"
+            >
+                <mat-option
+                    *ngFor="let option of employees"
+                    [value]="option.servidor_id"
+                    >{{ option.name }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div
+        class="flex flex-col gap-4 w-full bg-white text-black p-4 rounded shadow h-full sm:h-screen/2"
+        id="calendar-wrapper"
+    >
+        <full-calendar
+            id="calendar1"
+            [options]="calendarOptions"
+            [events]="events"
+            class="w-full h-full hidden sm:flex"
+        ></full-calendar>
+
+        <full-calendar
+            id="calendar2"
+            [options]="calendarOptions"
+            [events]="eventsMobile"
+            class="w-full flex sm:hidden"
+        ></full-calendar>
+        <!-- {{ events | json }} -->
+    </div>
+
+    <div class="flex flex-col gap-2" *ngIf="eventsFiltered?.length > 0">
+        <div class="font-bold">
+            Eventos do dia {{ selectedDate | date : "dd/MM/YYYY" }}
+        </div>
+        <div
+            class="grid border-l-4 rounded"
+            *ngFor="let event of eventsFiltered"
+            [ngStyle]="{ 'border-color': event.backgroundColor }"
+        >
+            <div class="px-2">{{ event.title }}</div>
+        </div>
+    </div>
+</div>

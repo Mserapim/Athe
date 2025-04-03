@@ -1,0 +1,73 @@
+<fuse-drawer
+    (openedChanged)="aoFechar($event)"
+    [fixed]="false"
+    [mode]="'over'"
+    [name]="'rightDrawer'"
+    [opened]="aberto"
+    [position]="'right'"
+    [transparentOverlay]="false"
+>
+    <div class="flex flex-col gap-2 p-4 w-full">
+        <div class="font-bold pb-4">Incluir</div>
+
+        <form
+            [formGroup]="formulario"
+            class="grid grid-cols-1 gap-2 w-full justify-center"
+        >
+            <mpmt-selecao
+                [disabled]="formulario.value.moduloId == -1"
+                titulo="Selecione um módulo"
+                class="w-full"
+                placeholder="Selecione um módulo"
+                formControlName="moduloId"
+                [configuracao]="selecaoModulos"
+                (ngModelChange)="aoSelecionarModulo()"
+            ></mpmt-selecao>
+
+            <mpmt-selecao
+                *ngIf="formulario.value.moduloId || formulario.value.menuId"
+                [disabled]="!formulario.value.moduloId"
+                titulo="Selecione um menu"
+                class="w-full"
+                placeholder="Selecione um menu"
+                formControlName="menuId"
+                [configuracao]="selecaoMenus"
+                (ngModelChange)="aoSelecionarMenu()"
+            ></mpmt-selecao>
+
+            <section class="flex flex-col" *ngIf="formulario.value.menuId">
+                <div>
+                    <mat-checkbox
+                        (change)="selecionarTodos()"
+                        [indeterminate]="situacaoIndeterminado"
+                        [checked]="situacaoTodos"
+                    >
+                        Todos
+                    </mat-checkbox>
+                </div>
+                <div class="flex">
+                    <ul class="grid grid-cols-2">
+                        <li
+                            *ngFor="let acao of todasAcoes$ | async"
+                            (click)="trocarSelecionado(acao)"
+                        >
+                            <mat-checkbox [checked]="acaoEstaSelecionada(acao)">
+                                {{ acao }}
+                            </mat-checkbox>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </form>
+
+        <div class="flex justify-center">
+            <mpmt-botao
+                cor="sucesso"
+                (click)="confirmarFormulario()"
+                [desabilitado]="!formularioValido"
+                class=""
+                >Salvar</mpmt-botao
+            >
+        </div>
+    </div>
+</fuse-drawer>

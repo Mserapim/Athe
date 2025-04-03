@@ -1,0 +1,63 @@
+<div class="flex flex-col gap-2" style="min-width: 320px;">
+  <div class="flex justify-end">
+    <button (click)="fecharFormulario()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <h1 class="font-bold text-lg text-primary" style="padding: 0 24px;">Detalhes do histórico</h1>
+
+  <div mat-dialog-content style="color: black;">
+    
+      <div *ngIf="historico.numero_empenho">
+        <p><strong>Número do empenho:</strong> {{ historico.numero_empenho }}</p>
+      </div>
+
+      <div *ngIf="historico.gedoc">
+        <p><strong>GEDOC:</strong> {{ historico.gedoc }}</p>
+      </div>
+    
+      <div *ngIf="historico.numero_nota_liquidacao">
+        <p><strong>Número da nota de liquidação:</strong> {{ historico.numero_nota_liquidacao }}</p>
+      </div>
+    
+      <div *ngIf="historico.numero_ordem_bancaria">
+        <p><strong>Número da ordem bancária:</strong> {{ historico.numero_ordem_bancaria }}</p>
+      </div>
+
+      <div *ngIf="historico.qtd_total_diarias_deferido">
+        <p><strong>Quantidade de diárias deferidas:</strong> {{ historico.qtd_total_diarias_deferido }} diárias</p>
+      </div>
+
+      <div *ngIf="historico.acomp_autoridade_deferimento !== null">
+        <p><strong>Acompanhando autoridade:</strong> {{ historico.acomp_autoridade_deferimento ? 'Sim' : 'Não' }}</p>
+      </div>
+
+      <div *ngIf="historico.feedback !== null" style="padding-bottom: 10px;">
+        <p><strong>Feedback: </strong>
+          <mat-icon *ngIf="historico.feedback === 'positivo'" style="color: #018c6a;">thumb_up</mat-icon>
+          <mat-icon *ngIf="historico.feedback === 'negativo'" style="color: #f74747;">thumb_down</mat-icon>
+          <mat-icon *ngIf="historico.feedback === 'alerta'" style="color: #fccb1a;">warning</mat-icon>
+        </p>
+      </div>
+
+      <div *ngIf="historico.obs">
+        <p><strong>Observações:</strong></p>
+        <div class="mpmt-texto-formatado-conteudo" [innerHTML]="historico.obs"></div>
+      </div>
+    
+      <div *ngIf="anexos?.length">
+        <p><strong>Anexos:</strong></p>
+          <div *ngFor="let anexo of anexos" style="display: flex; align-items: center;">
+            <div style="flex: 1; text-align: left; padding-right: 20px;">
+              <p>{{ anexo.filename }}</p>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: flex-start;">
+              <button (click)="downloadAnexo(anexo.id)">
+                  <mat-icon style="font-size: 24px;" class="mat-primary">download</mat-icon>
+              </button>
+            </div>
+      </div>
+  </div>
+
+</div>

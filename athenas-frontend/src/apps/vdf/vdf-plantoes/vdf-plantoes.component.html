@@ -1,0 +1,152 @@
+<div class="flex flex-col w-full p-8">
+    <div *ngIf="service.loading" class="spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+    <mpmt-listagem2 [service]="service" [habilitar-favorito]="false">
+        <!-- Ações -->
+        <div acoes>
+            <button
+                type="button"
+                primary
+                class="bg-primary text-white font-bold mt-1 mr-5"
+                mat-button
+                (click)="goNew()"
+                *ngIf="isOwner"
+            >
+                Novo
+            </button>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full"
+            >
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="!text-white">Filtro por texto</mat-label>
+                    <input
+                        matInput
+                        type="text"
+                        formControlName="keyword"
+                        placeholder="Buscar por"
+                        (ngModelChange)="service.recarregarListagem()"
+                    />
+                    <button
+                        matSuffix
+                        mat-icon-button
+                        aria-label="Clear"
+                        *ngIf="service.filtros.value.keyword"
+                        (click)="service.filtros.value.keyword = ''"
+                    >
+                        <mat-icon
+                            [svgIcon]="'heroicons_solid:x-circle'"
+                        ></mat-icon>
+                    </button>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white"
+                        >Filtro por situação</mat-label
+                    >
+                    <mat-select
+                        formControlName="status"
+                        (ngModelChange)="service.recarregarListagem()"
+                    >
+                        <mat-option
+                            *ngFor="let status of requestStatus"
+                            [value]="status.value"
+                            >{{ status.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Filtro por tipo</mat-label>
+                    <mat-select
+                        multiple
+                        formControlName="tipo_plantao"
+                        (ngModelChange)="service.recarregarListagem()"
+                    >
+                        <mat-option
+                            *ngFor="let tipo of tipos"
+                            [value]="tipo?.value"
+                            >{{ tipo?.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <mpmt-selecao
+                    [titulo]="'Filtro por comarca'"
+                    [titulo_class]="'text-white'"
+                    placeholder="Filtro por Comarca"
+                    (onSelect)="service.recarregarListagem()"
+                    formControlName="comarca_id"
+                    [configuracao]="selecaoComarca"
+                    multiple
+                ></mpmt-selecao>
+
+                <mpmt-selecao
+                    [titulo]="'Filtro por lotação'"
+                    [titulo_class]="'text-white'"
+                    placeholder="Filtro por Lotação"
+                    (onSelect)="service.recarregarListagem()"
+                    formControlName="lotacao_id"
+                    [configuracao]="selecaoLotacao"
+                    multiple
+                ></mpmt-selecao>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Filtro por cadastro</mat-label>
+                    <mat-select
+                        formControlName="cadastrado_por"
+                        (ngModelChange)="service.recarregarListagem()"
+                    >
+                        <mat-option [value]="'usuario_atual'">Meus cadastros</mat-option>
+                        <mat-option [value]="'todos'">Todos cadastros</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                
+                <mat-form-field
+                        class="self-center w-full"
+                    >
+                        <mat-label
+                            ><div class="text-white">
+                                Filtro por período
+                            </div></mat-label
+                        >
+                        <mat-date-range-input
+                            [rangePicker]="picker"
+                            [formGroup]="service.periodo"
+                        >
+                            <input
+                                matStartDate
+                                placeholder="Data início"
+                                readonly="true"
+                                formControlName="start_date"
+                            />
+                            <input
+                                matEndDate
+                                placeholder="Data fim"
+                                readonly="true"
+                                formControlName="end_date"
+                                (dateChange)="service.recarregarListagem()"
+                            />
+                        </mat-date-range-input>
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="picker"
+                        ></mat-datepicker-toggle>
+                        <mat-date-range-picker #picker></mat-date-range-picker>
+                    </mat-form-field>
+
+                <mpmt-botao
+                    (click)="service.limparFiltros()"
+                    style="padding-top: 27px;"
+                    cor="branco"
+                >
+                    Limpar filtros
+                </mpmt-botao>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

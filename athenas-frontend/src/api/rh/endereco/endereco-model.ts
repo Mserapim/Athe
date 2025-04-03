@@ -1,0 +1,29 @@
+export class EnderecoModelReturn {
+    id: number;
+    tipo_endereco: number;
+    tipo_endereco_display: string;
+    tipo_logradouro: number;
+    tipo_logradouro_display: string;
+    unicode: string;
+    logradouro: string;
+    numero: number;
+    complemento: string;
+    bairro: string;
+    cep: string;
+    municipio: number;
+    municipio_display: string;
+    data_alteracao: Date;
+    pessoa: number;
+    orgao: number;
+    orgao_display: number;
+    pais: number;
+    pais_display: string;
+    exterior: boolean;
+    cidade_exterior: string;
+    modified_at: Date;
+    modified_by: number;
+    modified_by_display: string;
+    created_at: Date;
+    created_by: number;
+    created_by_display: string;
+}

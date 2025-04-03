@@ -1,0 +1,41 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <h1 class="font-bold text-lg text-black">Informe os substitutos</h1>
+
+    <div class="flex flex-col gap-4 w-full">
+        <request-substitutes
+            [dates]="service.usufructs"
+            (substitutes)="service.substitutes = $event"
+            [required]="false"
+            (isValid)="service.isValidStep3 = $event"
+        ></request-substitutes>
+
+        <div class="flex flex-col gap-2">
+            <div
+                *ngIf="service.message"
+                class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+            >
+                {{ service.message }}
+            </div>
+
+            <div class="flex justify-end gap-2">
+                <button
+                    mat-button
+                    class="border p-8 py-4 w-56"
+                    (click)="goBack()"
+                >
+                    Voltar
+                </button>
+
+                <button
+                    mat-button
+                    [disabled]="!service.isValidStep3 || isLoading"
+                    [ngClass]="{ '!bg-primary': service.isValidStep3 }"
+                    class="bg-gray-300 text-white p-8 py-4 w-56"
+                    (click)="goConfirm()"
+                >
+                    Finalizar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

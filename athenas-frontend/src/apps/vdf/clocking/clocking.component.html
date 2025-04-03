@@ -1,0 +1,117 @@
+<div
+    class="p-8 flex flex-col items-center gap-4 w-full sm:m-auto sm:w-96 shadow bg-white rounded text-black"
+>
+    <span class="font-bold text-xl">Registro de ponto </span>
+
+    <div class="text-2xl font-bold justify-center">
+        {{ time }}
+    </div>
+
+    <div
+        *ngIf="showAfastamentoMensagem"
+        class="flex flex-col items-center gap-2"
+    >
+        <div class="text-center">
+            Servidor com afastamento ativo.<br />Deseja continuar?
+        </div>
+        <div *ngIf="afastamento" class="text-gray-500 text-sm text-center">
+            {{ afastamento }}
+        </div>
+        <div class="flex gap-2">
+            <button
+                (click)="handleRespostaUsuario(true)"
+                mat-button
+                style="
+                    background-color: rgb(0, 172, 129);
+                    color: white;
+                    padding: 80px 2px;
+                    justify-content: flex-end;
+                "
+            >
+                <span class="mat-button-wrapper">Sim</span>
+            </button>
+            <button
+                (click)="handleRespostaUsuario(false)"
+                mat-button
+                class="bg-red-400 text-white justify-end"
+            >
+                <span class="mat-button-wrapper">Não</span>
+            </button>
+        </div>
+    </div>
+
+    <div *ngIf="permitirPonto" class="flex gap-4">
+        <mpmt-botao
+            cor="primario"
+            tipo="preenchido"
+            *ngIf="canRegisterInput"
+            (click)="register()"
+            [isLoading]="isLoading"
+            [desabilitado]="isLoading"
+        >
+            Registrar entrada</mpmt-botao
+        >
+
+        <mpmt-botao
+            cor="primario"
+            tipo="preenchido"
+            *ngIf="!canRegisterInput"
+            (click)="register()"
+            [isLoading]="isLoading"
+            [desabilitado]="isLoading"
+        >
+            Registrar saída</mpmt-botao
+        >
+    </div>
+
+    <div
+        class="p-2 rounded text-bold bg-green-100 border border-green-200 text-green-900 w-full"
+        *ngIf="messageSuccess"
+    >
+        {{ messageSuccess }}
+    </div>
+
+    <div
+        class="p-2 rounded text-bold bg-red-100 border border-red-200 text-red-900 w-full"
+        *ngIf="messageFail"
+    >
+        {{ messageFail }}
+    </div>
+    <!-- {{ lastBeats | json }} -->
+
+    <div class="flex flex-col gap-4 w-full" *ngIf="lastBeats?.marcacoes?.length > 0">
+        <table class="table bg-gray-50 w-full">
+            <thead class="w-full bg-gray-200">
+                <tr>
+                    <th class="flex self-center items-center font-bold py-2 px-4 w-full gap-2">
+                        <div class="font-bold">Últimas batidas</div>
+                        <button (click)="editarBatidas()" class="ml-auto">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tr
+                class="gap-2 px-4 py-2 bg-gray-50 border-b"
+                *ngFor="let marcacao of lastBeats.marcacoes"
+                [matTooltip]="!marcacao.marcacao_valida ? 'Marcação ignorada' : ''"
+                matTooltipPosition="above"
+            >
+                <td class="py-2 px-4 font-bold flex items-center gap-1"
+                    [class.text-gray-400]="!marcacao.marcacao_valida"
+                    [class.text-black]="marcacao.marcacao_valida"
+                >
+                    <span [class.line-through]="!marcacao.marcacao_valida">
+                        {{ marcacao?.marcacao_hora?.substring(0, 8) }}
+                    </span>
+
+                    <span *ngIf="!marcacao.marcacao_valida">
+                        <mat-icon class="text-yellow-500 ml-2" style="font-size: 20px;">warning</mat-icon>
+                    </span>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>

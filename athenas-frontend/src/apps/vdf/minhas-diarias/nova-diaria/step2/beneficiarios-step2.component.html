@@ -1,0 +1,19 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem-selecao [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <button mat-button color="[#174166]" class="bg-[#174166] text-white p-2 py-4 w-40" (click)="irNovoBeneficiario()">
+                Novo beneficiário
+            </button>
+        </div>
+    </mpmt-listagem-selecao>
+
+    <div class="flex justify-end gap-2 mt-4">
+        <button mat-button color="[#174166]" class="bg-[#174166] text-white p-8 py-4 w-56" (click)="irAnterior()">
+            Voltar
+        </button>
+        <button mat-button color="[#174166]" class="bg-[#174166] text-white p-8 py-4 w-56" (click)="irProximo()">
+            Avançar
+        </button>
+    </div>
+</div>

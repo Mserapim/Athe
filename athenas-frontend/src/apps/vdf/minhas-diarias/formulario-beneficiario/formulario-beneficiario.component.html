@@ -1,0 +1,61 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Beneficiário</h1>
+    </h1>
+
+    <div class="flex flex-col items-center px-8">
+        <h1 *ngIf="servidor" class="font-bold text-lg"> {{servidor.unicode}} </h1>
+    </div>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+                <div class="flex flex-col items-end px-8">
+                    <button mat-button color="[#174166]" class="bg-[#174166] text-white p-2 py-4 w-54"
+                        (click)="irAdicionarNovaConta()">
+                        Adicionar nova conta
+                    </button>
+                </div>
+                <div appearance="fill" class="w-full">
+                    <mat-label>Selecione uma conta:</mat-label>
+
+
+                    <mat-selection-list formControlName='conta' [multiple]="false">
+                        <mat-list-option *ngFor="let conta of lista_contas" [value]="conta.id" togglePosition="before">
+                            {{ conta.unicode }}
+                        </mat-list-option>
+                    </mat-selection-list>
+                </div>
+
+            </form>
+        </div>
+        <hr />
+        <h2><strong>Eventos</strong></h2>
+        <mpmt-listagem-selecao [service]="service_evento">
+            <!-- Ações -->
+            <div acoes class="flex justify-end m-4 gap-2">
+                <button mat-button color="[#174166]" class="bg-[#174166] text-white p-3 py-4 w-50"
+                    (click)="irClonarLoteParaEventos()" *ngIf="clonarValido"> 
+                        <mat-icon [svgIcon]="'mat_outline:content_copy'"></mat-icon>
+                        Clonar para
+                </button>
+
+                <button mat-button color="[#174166]" class="bg-[#174166] text-white p-3 py-4 w-50"
+                    (click)="irClonarLoteDeEventos()"> 
+                        <mat-icon [svgIcon]="'mat_outline:content_copy'"></mat-icon>
+                        Clonar de
+                </button>
+                
+                <button mat-button color="[#174166]" class="bg-[#174166] text-white p-2 py-4 w-40"
+                    (click)="irNovoEvento()">
+                    Novo evento
+                </button>
+            </div>
+        </mpmt-listagem-selecao>
+
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="confirmarFormulario()" [desabilitado]="!formularioValido">Salvar</mpmt-botao>
+    </div>
+</div>

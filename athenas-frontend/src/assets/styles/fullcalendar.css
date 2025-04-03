@@ -1,0 +1,15 @@
+
+@media (max-width: 599px){
+
+
+    .fc-daygrid-day-events{
+        display: flex;
+        font-size: 0px;
+    }
+
+    .fc-event{
+        width: 12px !important;
+        height: 12px;
+        border-radius: 100px;
+    }
+}

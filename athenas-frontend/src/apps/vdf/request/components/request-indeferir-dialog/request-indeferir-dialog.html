@@ -1,0 +1,22 @@
+<mat-dialog-content>
+    <form>
+      <mat-form-field class="w-full">
+        <textarea matInput placeholder="Observação (Opcional)" [(ngModel)]="observation"
+           name="observation" class="h-32">
+        </textarea>
+
+      </mat-form-field>
+      <div class="text-right">
+        <button mat-button (click)="fechar()">Cancelar</button>
+        <button mat-raised-button color="warn" (click)="indeferir()">Indeferir</button>
+      </div>
+    </form>
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+</mat-dialog-content>
+
+

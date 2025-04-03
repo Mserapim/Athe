@@ -1,0 +1,70 @@
+<mat-dialog-content>
+    <form [formGroup]="form">
+      <div class="flex gap-4 justify-between">
+        <div class="flex flex-col md:flex-row gap-2 w-full">
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Início</mat-label>
+                <input
+                    matInput
+                    [matDatepicker]="datepicker1"
+                    [ngModel]="form.value.dataInicio"
+                    (ngModelChange)="alterarDataInicio($event)"
+                    [disabled]="true"
+                    formControlName="dataInicio"
+                />
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="datepicker1"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #datepicker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Quantidade de dias</mat-label>
+                <input
+                    type="number"
+                    matInput
+                    [min]="1"
+                    (ngModelChange)="alterarDias($event)"
+                    [ngModel]="form.value.dias"
+                    formControlName="dias"
+                />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Fim</mat-label>
+                <input
+                    [ngModel]="form.value.dataFim"
+                    matInput
+                    disabled="true"
+                    readonly="true"
+                    class=""
+                    [matDatepicker]="datepicker2"
+                    formControlName="dataFim"
+                />
+                <mat-datepicker #datepicker2></mat-datepicker>
+            </mat-form-field>
+        </div>
+        
+      </div>
+
+      <mat-form-field class="w-full">
+        <textarea matInput placeholder="Observação (Opcional)" formControlName="observacao"
+           name="observation" class="h-32">
+        </textarea>
+
+      </mat-form-field>
+      <div class="text-right">
+        <button mat-button (click)="fechar()">Cancelar</button>
+        <button mat-raised-button class="bg-green-600 text-white w-min" (click)="goConfirm()">Confirmar</button>
+      </div>
+    </form>
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+</mat-dialog-content>
+
+ 

@@ -1,0 +1,27 @@
+<mpmt-pagina-dialogo [permiteFechar]="false">
+   <ng-template #cabecalho>
+      <div class="text-xl font-bold">Titulo</div>
+      <div class="text-xs font-bold text-gray-500">Subtitulo</div>
+   </ng-template>
+
+   <ng-template #corpo>
+
+      <div class="flex flex-col gap-4 ">
+         <div>paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1paragrafo 1</div>
+         <div>paragrafo 1</div>
+         <div>paragrafo 1</div>
+         <div>paragrafo 1</div>
+         <div>paragrafo 1</div>
+         <div>paragrafo 1</div>
+         <div>paragrafo 1</div>
+      </div>
+   </ng-template>
+
+   <ng-template #rodape>
+      <div class="flex flex-row gap-2">
+         <!-- <mpmt-botao label="Cancelar" severity="secondary" (click)="fechar()"  cor="branco">Cancelar</mpmt-botao> -->
+         <mpmt-botao label="Confirmar" (click)="confirmar()" cor="sucesso"></mpmt-botao>
+      </div>
+   </ng-template>
+
+</mpmt-pagina-dialogo>

@@ -1,0 +1,68 @@
+<div class="flex flex-col gap-4">
+    
+    <button class="absolute top-0 right-0 w-15 h-15"
+        (click)="fecharFormulario()">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">{{ data.titulo }}</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <div style="background-color: #ececee; border-radius: 5px; padding: 15px 15px 0px 15px;">
+                <div class="font-bold" style="color: #6b6c7e">
+                    Análise da assessoria
+                </div>
+                <div style="color:#1E293B;">
+                    <p style="font-weight: 500;">Feedback:
+                        <mat-icon *ngIf="analise.feedback === 'positivo'" style="color: #018c6a;">thumb_up</mat-icon>
+                        <mat-icon *ngIf="analise.feedback === 'negativo'" style="color: #f74747;">thumb_down</mat-icon>
+                        <mat-icon *ngIf="analise.feedback === 'alerta'" style="color: #fccb1a;">warning</mat-icon>
+                    </p>
+
+                    <p style="font-weight: 500;">Análise:</p>
+                    <div class="mpmt-texto-formatado-conteudo" [innerHTML]="analise.obs"></div>
+                </div>
+                <p *ngIf="data.reanalise" style="color: rgb(191, 0, 0); font-size: 14px; padding-bottom: 15px;">
+                    Esta é uma reanálise da viagem devido à alteração de data no itinerário. 
+                </p>
+            </div>            
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+                style="padding-top: 35px;"
+            >   
+                <mpmt-texto-formatado
+                    class="w-full"
+                    formControlName="informacao"
+                    titulo="Análise"
+                ></mpmt-texto-formatado>
+                <mat-error *ngIf="formulario.get('informacao')?.hasError('required') && clickedAnalisar">
+                    Análise é obrigatória.
+                </mat-error>
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions style="display: flex; justify-content: center; gap: 20px;" *ngIf="!analiseAfastamento(data.titulo)">
+        <button mat-button color="[#00AC81]" class="bg-[#00AC81] text-white p-8 py-4 w-50" 
+            (click)="irDeferir(true)">
+            Deferir
+        </button>
+
+        <button mat-button color="[#F87171]" class="bg-[#F87171] text-white p-8 py-4 w-50"
+            (click)="irDeferir(false)">
+            Indeferir
+        </button>
+    </div>
+
+    <div mat-dialog-actions style="display: flex; justify-content: center; gap: 20px;" *ngIf="analiseAfastamento(data.titulo)">
+        <mpmt-botao
+            (click)="irDeferir(true)">
+            Analisar
+        </mpmt-botao>
+    </div>
+
+</div>

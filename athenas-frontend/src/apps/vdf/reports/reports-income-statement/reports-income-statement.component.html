@@ -1,0 +1,51 @@
+<div
+    class="flex flex-col gap-2 p-4 rounded text-bold shadow bg-white h-full text-black"
+>
+    <span class="font-bold text-lg self-center pb-4 w-full rounded">
+        Informe de rendimentos
+    </span>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Ano</mat-label>
+        <mat-select [(ngModel)]="form.year">
+            <mat-option *ngFor="let option of years" [value]="option.id">{{
+                option.description
+            }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div *ngIf="['MBR', 'MEL', 'MCM', 'MEC', 'MAP', 'MBR2', 'MEL2', 'MCM2', 'MEC2'].includes(typeByPossession)">
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Órgão Emissor</mat-label>
+            <mat-select [(ngModel)]="form.type">
+                <mat-option value="MPMT">MPMT</mat-option>
+                <mat-option value="TRE">TRE</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div> 
+
+    <div
+        *ngIf="isLoading"
+        class="flex p-2 px-4 text-blue-500 border bg-blue-100 border-blue-500 rounded"
+    >
+        Gerando o arquivo, aguarda alguns instantes
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex p-2 px-4 text-red-500 border bg-red-100 border-red-500 rounded"
+    >
+        {{ message }}
+    </div>
+
+    <button
+        mat-button
+        class="bg-gray-200 text-white h-full mt-auto"
+        [ngClass]="{ '!bg-primary': isValid }"
+        (click)="download()"
+        [class.spinner]="isLoading"
+        [disabled]="!isValid || isLoading"
+    >
+        Download
+    </button>
+</div>

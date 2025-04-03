@@ -1,0 +1,18 @@
+<div appearance="fill" class="w-full flex flex-col gap-2">
+    <mat-label
+        *ngIf="titulo && titulo_class"
+        class="{{ titulo_class }} font-medium"
+        >{{ titulo }}</mat-label
+    >
+
+    <ckeditor
+        class="w-full"
+        [editor]="Editor"
+        [config]="config"
+        (change)="updateText($event)"
+        [data]="valor"
+        *ngIf="!disabled"
+    ></ckeditor>
+
+    <div *ngIf="disabled" [innerHTML]="valor" class="!text-black"></div>
+</div>

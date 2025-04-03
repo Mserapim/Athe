@@ -1,0 +1,26 @@
+<mat-dialog-content class="h-full flex flex-col">
+    <h2 class="dialog-title font-bold text-xl self-start text-primary">
+        Carregar arquivos de retorno do E-social
+    </h2>
+    <br/>
+
+    <div class="flex-grow">
+        <mpmt-file-update [acceptMultiple]="false" [acceptedFileTypes]="['text/plain']"
+                          (lista_documentos)="receberAnexos($event)"
+                          [lista_arquivos_carregados]="anexos_carregados"></mpmt-file-update>
+    </div>
+
+    <div *ngIf="message" class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md">
+        {{ message }}
+    </div>
+
+    <!-- Botões fixos -->
+    <div mat-dialog-actions class="flex justify-end gap-4 mt-4">
+        <mpmt-botao tipo="borda" (click)="fechar()">Fechar</mpmt-botao>
+        <mpmt-botao
+            cor="sucesso"
+            (click)="goConfirm()"
+            [desabilitado]="!isValid || this.isLoading"
+        >Salvar</mpmt-botao>
+    </div>
+</mat-dialog-content>

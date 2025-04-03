@@ -1,0 +1,40 @@
+<div class="flex flex-col gap-2">
+    <mat-label *ngIf="titulo" [ngClass]="titulo_class">{{ titulo }}</mat-label>
+
+    <div class="flex gap-4 self-center w-full rounded">
+        <button
+            (click)="fileInput.click()"
+            class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg cursor-pointer w-full"
+        >
+            <div *ngIf="!arquivo?.valor" class="w-full text-black">
+                <span>Clique para selecionar um arquivo</span>
+            </div>
+            <div *ngIf="arquivo?.valor" class="w-full text-black">
+                {{ arquivo?.display }}
+            </div>
+
+            <input
+                #fileInput
+                type="file"
+                (change)="onFileInput($event)"
+                style="display: none"
+            />
+            <mat-icon
+                [svgIcon]="'heroicons_solid:paper-clip'"
+                *ngIf="!arquivo?.valor"
+            ></mat-icon>
+
+            <mpmt-botao
+                class="w-12 h-12 self-center items-center"
+                (click)="download()"
+                *ngIf="arquivo?.valor"
+                [cor]="'secondario'"
+                tipo="borda"
+            >
+                <mat-icon
+                    svgIcon="heroicons_solid:arrow-circle-down"
+                ></mat-icon>
+            </mpmt-botao>
+        </button>
+    </div>
+</div>

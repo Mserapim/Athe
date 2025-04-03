@@ -1,0 +1,23 @@
+<div class="flex flex-col w-full p-8 text-black">
+    <div class="flex flex-col w-full h-full" style="background-color: #ffffff00;">
+        <div
+            class="flex flex-row gap-2 text-white items-center justify-between w-full py-6 x-0"
+        >
+            <div
+                class="flex flex-row text-xl items-center font-bold h-full justify-center gap-2"
+            >
+                <div class="flex self-center px-6">
+                    Detalhes da solicitação
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-end w-full px-6" style="margin-bottom: 20px">
+            <button mat-button class="text-white bg-primary" (click)="irViagens()">
+                Voltar
+            </button>
+        </div>
+
+        <mpmt-abas [tabs]="dadosAbas" [id]="diariaId"></mpmt-abas>
+    </div>
+</div>

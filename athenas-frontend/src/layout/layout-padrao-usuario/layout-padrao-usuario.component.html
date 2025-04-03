@@ -1,0 +1,77 @@
+<!-- Button -->
+<div
+    class="flex gap-2 cursor-pointer self-center items-center h-full"
+    [matMenuTriggerFor]="userActions"
+    [ngClass]="{
+        'w-full': showName,
+        'h-auto': showName,
+        'max-h-16': showName,
+        'rounded-none': showName
+    }"
+>
+    <!-- {{ usuario | json }} -->
+    <div class="flex flex-col items-center self-center" *ngIf="usuario">
+        <div class="flex items-center">
+            <ngx-avatars
+                initialsSize="2"
+                class=""
+                [size]="32"
+                [name]="usuario?.name"
+                [src]="null"
+                [matTooltip]="!showName ? usuario?.name : null"
+            > 
+            </ngx-avatars>
+
+            <span *ngIf="showName" class="text-xs">{{ usuario?.name }}</span>
+        </div>
+    </div>
+    <mat-icon
+        class="h-4 w-4 min-h-4 min-w-4"
+        [svgIcon]="'heroicons_solid:chevron-down'"
+    ></mat-icon>
+</div>
+
+<!-- Menu -->
+<mat-menu class="md:mt-2" [xPosition]="'before'" #userActions="matMenu">
+    <div class="bg-gray-100 block md:hidden" style="text-align: end">
+        <button style="font-size: 14px;" mat-icon-button (click)="userActions.closeMenu()">
+            <mat-icon style="font-size: 16px;">
+                close
+            </mat-icon>
+        </button>
+    </div>
+    <span class="text-xs bg-gray-100 -mt-2" mat-menu-item>
+        <div class="flex flex-col text-xs mt-2">
+            <span class="font-bold">{{ usuario?.name }}</span>
+            <span>Cargo/Função: {{ usuario?.jobposition }}</span>
+            <span>Matricula: {{ usuario?.matricula }}</span>
+            <span>Localização: {{ usuario?.workplace }}</span>
+            <span>E-mail secundário: {{ usuario?.email_pessoal }}</span>
+        </div>
+    </span>
+
+    <a (click)="goPortal()" mat-menu-item>
+        <mat-icon [svgIcon]="'heroicons_outline:home'"></mat-icon>
+        <span>Portal</span>
+    </a>
+
+    <a (click)="irAlterarEmailPessoal()" mat-menu-item>
+        <mat-icon [svgIcon]="'heroicons_outline:home'"></mat-icon>
+        <span>Alterar E-mail secundário</span>
+    </a>
+
+    <a
+        (click)="goClocking()"
+        mat-menu-item
+        class="flex sm:hidden"
+        *ngIf="!this.currentUserService.isMember"
+    >
+        <mat-icon [svgIcon]="'heroicons_outline:document'"></mat-icon>
+        <span>Registrar ponto</span>
+    </a>
+
+    <!-- <button mat-menu-item (click)="logout()">
+        <mat-icon [svgIcon]="'heroicons_outline:logout'"></mat-icon>
+        <span>Sair</span>
+    </button> -->
+</mat-menu>

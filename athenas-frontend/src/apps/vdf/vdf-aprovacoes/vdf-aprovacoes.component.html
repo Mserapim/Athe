@@ -1,0 +1,153 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [service]="service" [habilitar-favorito]="false">
+        <!-- Ações -->
+        <div acoes></div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full"
+            >
+                <mat-form-field class="w-full self-center" class="w-full">
+                    <mat-label class="text-white">Filtro por texto</mat-label>
+                    <input
+                        matInput
+                        type="text"
+                        formControlName="keyword"
+                        placeholder="Buscar por"
+                        (ngModelChange)="service.recarregarListagem()"
+                    />
+
+                    <button
+                        *ngIf="this.service.filtros.value.keyword"
+                        matSuffix
+                        mat-icon-button
+                        aria-label="Clear"
+                        (click)="clearKeyword()"
+                    >
+                        <mat-icon
+                            [svgIcon]="'heroicons_.;  \solid:x-circle'"
+                        ></mat-icon>
+                    </button>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white"
+                        >Filtro por aprovador</mat-label
+                    >
+                    <mat-select
+                        formControlName="approvals"
+                        (ngModelChange)="service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of approvers"
+                            [value]="option.value"
+                            >{{ option.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="!text-white"
+                        >Filtro por situação</mat-label
+                    >
+                    <mat-select
+                        formControlName="status"
+                        (ngModelChange)="service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of statuses"
+                            [value]="option.value"
+                            >{{ option.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="!text-white"
+                        >Filtro por categoria</mat-label
+                    >
+                    <mat-select
+                        formControlName="employe_types"
+                        (ngModelChange)="service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of employee_types"
+                            [value]="option.value"
+                            >{{ option.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="!text-white"
+                        >Filtro por tipo de solicitação</mat-label
+                    >
+                    <mat-select
+                        formControlName="request_type"
+                        (ngModelChange)="service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of types"
+                            [value]="option.value"
+                            >{{ option.label }}</mat-option
+                        >
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="flex flex-col gap-2 col-span-2">
+                    <mat-label class="!text-white"
+                        >Filtro por período</mat-label
+                    >
+                    <div class="flex gap-4">
+                        <mat-form-field class="w-full">
+                            <input
+                                matInput
+                                [matDatepicker]="pickerStart"
+                                formControlName="data_inicio"
+                                (dateChange)="service.recarregarListagem()"
+                                placeholder="Data início"
+                            />
+                            <mat-datepicker-toggle
+                                matSuffix
+                                [for]="pickerStart"
+                            ></mat-datepicker-toggle>
+                            <mat-datepicker #pickerStart></mat-datepicker>
+                        </mat-form-field>
+
+                        <mat-form-field class="w-full">
+                            <input
+                                matInput
+                                [matDatepicker]="pickerEnd"
+                                formControlName="data_fim"
+                                (dateChange)="service.recarregarListagem()"
+                                placeholder="Data fim"
+                            />
+                            <mat-datepicker-toggle
+                                matSuffix
+                                [for]="pickerEnd"
+                            ></mat-datepicker-toggle>
+                            <mat-datepicker #pickerEnd></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="flex self-center items-center">
+                    <mat-checkbox
+                        class="self-end"
+                        color="white"
+                        formControlName="pending_request"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        ><mat-label class="!text-white">
+                            Filtrar somente pendentes
+                        </mat-label></mat-checkbox
+                    >
+                </div>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

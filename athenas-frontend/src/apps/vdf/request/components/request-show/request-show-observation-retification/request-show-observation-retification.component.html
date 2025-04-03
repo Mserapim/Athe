@@ -1,0 +1,24 @@
+<div
+    class="flex cursor-pointer z-50 pr-6 font-bold w-full text-right justify-end bg-white"
+>
+    <div
+        class="flex px-2 pb-1 bg-gray-100 font-bold rounded-b-full"
+        (click)="close()"
+    >
+        X
+    </div>
+</div>
+
+<div
+    class="modal-body flex flex-col h-full w-full gap-2 min-h-96 justify-between relative bg-white"
+>
+    <mat-form-field class="h-full">
+        <mat-label>Observação (Opcional)</mat-label>
+        <textarea matInput placeholder="" class="min-h-96" [(ngModel)]="data.observation"></textarea>
+    </mat-form-field>
+</div>
+
+<div class="modal-footer flex justify-end p-2">
+    <button mat-button class="bg-primary text-white" (click)="submitEdit()">Retificar Anotação</button>
+</div>
+

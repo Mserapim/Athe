@@ -1,0 +1,148 @@
+<div class="flex flex-col gap-8 h-full">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Nova publicação</h1>
+    </h1>
+
+    <div mat-dialog-content class="h-full">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <div class="font-bold border-b border-gray-200 mb-4">
+                    Dados do documento
+                </div>
+
+                <div class="flex flex-row gap-2">
+                    <mat-form-field class="w-full" placeholder="">
+                        <mat-label>Número</mat-label>
+                        <input
+                            matInput
+                            formControlName="numero"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+                    <mpmt-selecao
+                        [titulo]="'Tipo'"
+                        class="w-full"
+                        placeholder="Tipo"
+                        formControlName="tipo"
+                        [configuracao]="selecaoAnotacaoPessoalTiposDocumentos"
+                    ></mpmt-selecao>
+
+                    <mpmt-selecao
+                        [titulo]="'Origem'"
+                        class="w-full"
+                        placeholder="Origem"
+                        formControlName="origem"
+                        [configuracao]="selecaoOrgaoGeral"
+                    ></mpmt-selecao>
+                </div>
+
+                <div class="flex flex-row gap-2">
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data de expedição</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_expedicao"
+                            [matDatepicker]="datepickerStart"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerStart"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerStart></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data de vigência</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_vigencia"
+                            [matDatepicker]="datepickerStart2"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerStart2"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerStart2></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-checkbox formControlName="interno" color="primary">
+                        <mat-label>Interno</mat-label>
+                    </mat-checkbox>
+                </div>
+                <div class="font-bold border-b border-gray-200 mb-4">
+                    Dados da publicação
+                </div>
+                <div class="flex flex-row gap-2">
+                    <mpmt-selecao
+                        [titulo]="'Veículo de publicação'"
+                        class="w-full"
+                        formControlName="veiculo_publicacao"
+                        [configuracao]="selecaoVeiculoPublicacao"
+                    ></mpmt-selecao>
+
+                    <mat-form-field class="w-full" placeholder="">
+                        <mat-label>Número da publicação</mat-label>
+                        <input
+                            matInput
+                            formControlName="numero_publicacao"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Data da publicação</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_publicacao"
+                            [matDatepicker]="datepickerStart3"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerStart3"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerStart3></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="">
+                        <mat-label>Número da página</mat-label>
+                        <input
+                            matInput
+                            formControlName="vehicle_page"
+                            placeholder=""
+                        />
+                    </mat-form-field>
+                </div>
+
+                <mpmt-arquivo
+                    titulo="Arquivo"
+                    formControlName="arquivo"
+                ></mpmt-arquivo>
+
+                <mpmt-texto-formatado
+                    class="w-full"
+                    formControlName="document"
+                    titulo="Texto do documento"
+                >
+                </mpmt-texto-formatado>
+            </form>
+        </div>
+    </div>
+
+    <div
+        mat-dialog-actions
+        class="flex flex-col sm:flex-row justify-end gap-4 self-end"
+    >
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>

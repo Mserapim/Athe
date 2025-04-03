@@ -1,0 +1,35 @@
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.scroll-item {
+    min-width: 100px;
+    text-align: center;
+}
+
+.saldo-negativo {
+    color: #dc2626 !important;
+    background-color: #dc26262b !important; 
+}
+
+.anexos-container {
+    display: flex;           /* Aplica flexbox ao contêiner */
+    flex-wrap: wrap;         /* Permite quebra de linha quando não houver mais espaço */
+    gap: 16px;               /* Espaçamento entre os itens */
+  }
+  
+.anexo-item {
+    display: flex;           /* Aplica flexbox a cada item de anexo */
+    align-items: center;     /* Alinha os itens no centro verticalmente */
+    gap: 8px;                /* Espaço entre ícone e texto */
+    flex: 1 1 200px;         /* Faz com que cada item ocupe até 200px */
+    min-width: 150px;        /* Largura mínima para evitar que os itens fiquem muito pequenos */
+    max-width: 200px;        /* Largura máxima para cada item */
+    margin-right: 10px;
+  }
+  
+.prestacao-item {
+    margin-left: 10px;
+}

@@ -1,0 +1,46 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Editar grupo de aprovadores de viagens</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >   
+                <mat-form-field class="w-full">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Digite o nome do grupo" formControlName="nome">
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Grupos</mat-label>
+                    <mat-select formControlName="grupos" multiple>
+                        <mat-option *ngFor="let grupo of grupos" [value]="grupo.value">
+                            {{ grupo.label }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>
+
+
+
+
+

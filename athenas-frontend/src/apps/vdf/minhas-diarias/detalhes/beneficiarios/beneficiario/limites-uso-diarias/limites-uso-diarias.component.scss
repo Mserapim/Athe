@@ -1,0 +1,15 @@
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.scroll-item {
+    min-width: 100px;
+    text-align: center;
+}
+
+.saldo-negativo {
+    color: #dc2626 !important;
+    background-color: #dc26262b !important; 
+}

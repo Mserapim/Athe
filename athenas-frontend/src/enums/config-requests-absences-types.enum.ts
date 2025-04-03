@@ -1,0 +1,9 @@
+export enum ConfigRequestsAbsencesTypesEnum {
+    'LICENCA_TRATAMENTO_SAUDE' = 1,
+    'LICENCA_TRATAMENTO_SAUDE_PESSOA_FAMILIA' = 2,
+    'LICENCA_PATERNIDADE' = 3,
+    'LICENCA_MATERNIDADE' = 4,
+    'LICENCA_LUTO' = 5,
+    'LICENCA_GALA' = 6,
+    'LICENCA_DOACAO_SANGUE' = 7,
+}

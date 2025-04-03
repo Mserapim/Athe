@@ -1,0 +1,230 @@
+<div class="p-8 flex flex-col w-full gap-8">
+    <span class="font-bold text-xl">Meus Direitos</span>
+
+    <div class="flex w-full flex-col gap-4">
+        <span class="font-bold">Tipos de direitos</span>
+
+        <div class="flex flex-col">
+            <table mat-table [dataSource]="resultsMyRights" class="">
+                <!-- Position Column -->
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef>Identificação</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.title }}
+                    </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="balance_days">
+                    <th mat-header-cell *matHeaderCellDef>Saldo disponível</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.balance_days }}
+                    </td>
+                </ng-container>
+
+                <tr
+                    mat-header-row
+                    *matHeaderRowDef="displayedColumnsMyRights"
+                ></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: displayedColumnsMyRights"
+                    (click)="selectMyRights(row.pk)"
+                ></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row w-full gap-4">
+        <div class="flex flex-col gap-2 w-full">
+            <span class="font-bold">Periodos aquisitivos</span>
+            <div
+                class="flex border border-gray-100 justify-center bg-gray-50 w-full self-center p-4"
+                *ngIf="!resultsMyRightsAcquisitionPeriods"
+            >
+                Selecione um tipo de direito
+            </div>
+            <div
+                class="flex flex-col gap-2 w-full table-responsive"
+                *ngIf="resultsMyRightsAcquisitionPeriods"
+            >
+                <table
+                    mat-table
+                    [dataSource]="resultsMyRightsAcquisitionPeriods"
+                    class=""
+                >
+                    <ng-container matColumnDef="group_period_name">
+                        <th mat-header-cell *matHeaderCellDef>Nome do grupo</th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ element.group_period_name }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="start_date_fruition">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Início da Fruição
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ printDate(element.start_date_fruition) }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="start_date_acquisition">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Início Aquisitivo
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ printDate(element.start_date_acquisition) }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="end_date_acquisition">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Fim Aquisitivo
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ printDate(element.end_date_acquisition) }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="days">
+                        <th mat-header-cell *matHeaderCellDef>Total em dias</th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ element.days }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="booked_days">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Total agendado
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ element.booked_days }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="balance_available">
+                        <th mat-header-cell *matHeaderCellDef>Saldo</th>
+                        <td mat-cell *matCellDef="let element">
+                            {{ element.balance_available }}
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="attachments">
+                        <th mat-header-cell *matHeaderCellDef>Anexos</th>
+                        <td mat-cell *matCellDef="let element">
+                            <button
+                                mat-button
+                                class="outline outline-primary-900 outline-1"
+                                (click)="openMyRightsAttachments(element.pk)"
+                            >
+                                Anexos
+                            </button>
+                        </td>
+                    </ng-container>
+
+                    <tr
+                        mat-header-row
+                        *matHeaderRowDef="
+                            displayedColumnsMyRightsAcquisitionPeriods
+                        "
+                    ></tr>
+                    <tr
+                        mat-row
+                        *matRowDef="
+                            let row;
+                            columns: displayedColumnsMyRightsAcquisitionPeriods
+                        "
+                        (click)="selectMyRightsAcquisitionPeriods(row.pk)"
+                    ></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="flex flex-col w-full">
+            <div class="flex flex-col gap-2">
+                <span class="font-bold">Usufrutos</span>
+                <div
+                    class="flex border border-gray-100 justify-center bg-gray-50 w-full self-center p-4"
+                    *ngIf="!resultsMyRightsAcquisitionPeriodsUsufructs"
+                >
+                    Selecione um periodo aquisitivo
+                </div>
+
+                <div
+                    class="flex border border-gray-100 justify-center bg-gray-50 w-full self-center p-4 text-red-900"
+                    *ngIf="
+                        resultsMyRightsAcquisitionPeriodsUsufructs?.length == 0
+                    "
+                >
+                    Não há usufrutos para o periodo aquisitivo selecionado
+                </div>
+
+                <div
+                    class="flex flex-col gap-2 w-full table-responsive"
+                    *ngIf="
+                        resultsMyRightsAcquisitionPeriodsUsufructs &&
+                        resultsMyRightsAcquisitionPeriodsUsufructs?.length > 0
+                    "
+                >
+                    <table
+                        mat-table
+                        [dataSource]="
+                            resultsMyRightsAcquisitionPeriodsUsufructs
+                        "
+                        class=""
+                    >
+                        <ng-container matColumnDef="status_name">
+                            <th mat-header-cell *matHeaderCellDef>Situação</th>
+                            <td mat-cell *matCellDef="let element">
+                                {{ element.status_name }}
+                            </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="start_date">
+                            <th mat-header-cell *matHeaderCellDef>Ínicio</th>
+                            <td mat-cell *matCellDef="let element">
+                                {{ printDate(element.start_date) }}
+                            </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="end_date">
+                            <th mat-header-cell *matHeaderCellDef>Fim</th>
+                            <td mat-cell *matCellDef="let element">
+                                {{ printDate(element.end_date) }}
+                            </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="days">
+                            <th mat-header-cell *matHeaderCellDef>
+                                Dias programados/Vendidos
+                            </th>
+                            <td mat-cell *matCellDef="let element">
+                                {{ element.days }}
+                            </td>
+                        </ng-container>
+
+                        <tr
+                            mat-header-row
+                            *matHeaderRowDef="
+                                displayedColumnsMyRightsAcquisitionPeriodsUsufructs
+                            "
+                        ></tr>
+                        <tr
+                            mat-row
+                            *matRowDef="
+                                let row;
+                                columns: displayedColumnsMyRightsAcquisitionPeriodsUsufructs
+                            "
+                            (click)="
+                                selectMyRightsAcquisitionPeriodsUsufructs(
+                                    row.pk
+                                )
+                            "
+                        ></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<layout-padrao-modal [title]="'Endereços'" [buttons]="modalButtons" (close)="fecharFormulario()">
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-checkbox formControlName="exterior">
+                        Endereço no exterior
+                    </mat-checkbox>
+
+                </div>
+
+                <div class="flex flex-row gap-1 w-full">
+
+                    <mpmt-selecao-form [titulo]="'Tipo Endereço*'" class="w-full" placeholder="Tipo Endereço"
+                        formControlName="tipo_endereco" [form_control]="formulario.get('tipo_endereco')"
+                        [configuracao]="selecaoTipoEndereco"></mpmt-selecao-form>
+
+                    <mpmt-selecao-form [titulo]="'Tipo Logradouro*'" class="w-full" placeholder="Tipo Logradouro"
+                        formControlName="tipo_logradouro" [form_control]="formulario.get('tipo_logradouro')"
+                        [configuracao]="selecaoTipoLogradouro" *ngIf="endereco_exterior() == false"></mpmt-selecao-form>
+
+                    <mat-form-field class="w-full" placeholder="Tipo Logradouro*" *ngIf="endereco_exterior()">
+                        <mat-label>Tipo Logradouro*</mat-label>
+                        <input matInput placeholder="" [value]="'EXTERIOR'" readonly="true" />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-row gap-1 w-full" *ngIf="endereco_exterior()">
+                    <mat-form-field class="w-full" placeholder="Cidade Exterior*">
+                        <mat-label>Cidade Exterior</mat-label>
+                        <input matInput placeholder="" formControlName="cidade_exterior" />
+                    </mat-form-field>
+                    <mpmt-selecao-form [titulo]="'Pais Exterior*'" class="w-full" placeholder="Pais Exterior"
+                        formControlName="pais" [form_control]="formulario.get('pais')"
+                        [configuracao]="selecaoPais"></mpmt-selecao-form>
+                </div>
+
+                <div class="flex flex-row gap-1 w-full" *ngIf="endereco_exterior() == false">
+                    <mpmt-selecao-form [titulo]="'Municipio*'" class="w-full" placeholder="Municipio"
+                        formControlName="municipio" [form_control]="formulario.get('municipio')"
+                        [configuracao]="selecaoMunicipio"></mpmt-selecao-form>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="Logradouro">
+                        <mat-label>Logradouro</mat-label>
+                        <input matInput formControlName="logradouro" placeholder="" />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="Numero">
+                        <mat-label>Numero</mat-label>
+                        <input matInput formControlName="numero" placeholder="" />
+                    </mat-form-field>
+                    <mat-form-field class="w-full" placeholder="Bairro/Distrito">
+                        <mat-label>Bairro/Distrito</mat-label>
+                        <input matInput formControlName="bairro" placeholder="" />
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field class="w-full" placeholder="CEP/Código Postal">
+                        <mat-label>CEP/Código Postal</mat-label>
+                        <input matInput formControlName="cep" placeholder="" />
+                    </mat-form-field>
+                </div>
+                <div class="flex flex-row gap-1 w-full">
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Complemento</mat-label>
+                        <textarea matInput formControlName="complemento" rows="4" class="w-full"
+                            placeholder="Digite o complemento..."></textarea>
+                    </mat-form-field>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</layout-padrao-modal>

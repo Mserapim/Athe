@@ -1,0 +1,13 @@
+
+#Tabela-esocial .expanded td {
+    border-bottom-color: rgba(0, 0, 0, 0) !important;
+}
+
+#td-linha-tabela-esocial {
+    padding: 0;
+}
+
+.element-row:hover {
+    background-color: #f0f1f3; /* Fundo ligeiramente mais escuro ao passar o mouse */
+    box-shadow: inset 0 -1px 0 #bbb, 0 2px 8px rgba(0, 0, 0, 0.15); /* Sombra aumentada */
+}

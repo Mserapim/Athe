@@ -1,0 +1,8 @@
+<button
+    mat-button
+    class="bg-primary text-white underscore"
+    [class.spinner]="isLoading"
+    (click)="download()"
+>
+    {{ label }}
+</button>

@@ -1,0 +1,68 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Novo Valor</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Valor estado">
+                    <mat-label>Valor estado</mat-label>
+                    <input matInput formControlName="valor_estado" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Valor fora do estado">
+                    <mat-label>Valor fora do estado</mat-label>
+                    <input matInput formControlName="valor_fora_estado" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Valor exterior">
+                    <mat-label>Valor exterior</mat-label>
+                    <input matInput formControlName="valor_exterior" placeholder="" />
+                </mat-form-field>
+                <div class="grid grid-cols-2 gap-2 w-full">
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Início da vigência</mat-label>
+                        <input
+                            matInput
+                            formControlName="dt_inicio_vigencia"
+                            [matDatepicker]="datepickerStart"
+                            [ngModel]="formulario.value.dt_inicio_vigencia"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerStart"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerStart></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Fim da vigência</mat-label>
+                        <input
+                            matInput
+                            formControlName="dt_fim_vigencia"
+                            [matDatepicker]="datepickerEnd"
+                            [ngModel]="formulario.value.dt_fim_vigencia"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerEnd"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerEnd></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>

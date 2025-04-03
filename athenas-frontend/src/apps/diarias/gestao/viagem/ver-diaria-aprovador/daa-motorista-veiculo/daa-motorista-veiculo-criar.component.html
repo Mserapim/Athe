@@ -1,0 +1,101 @@
+<div class="flex flex-col gap-4">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Adicionar veículo e motorista</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-100">
+
+            <!-- Etapa 1: Cadastro do Veículo -->
+            <ng-container *ngIf="data.veiculoDaa">
+                <h2 class="font-bold text-md text-primary" style="padding-bottom: 10px;">Cadastro do veículo</h2>
+                <form [formGroup]="formularioVeiculo" class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+                    <mat-form-field class="w-full">
+                        <mat-label>Capacidade de passageiros (incluindo o motorista)</mat-label>
+                        <input matInput type="number" formControlName="capacidade_passageiros" min="1" step="1" placeholder=""/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full">
+                        <mat-label>Marca</mat-label>
+                        <input matInput formControlName="marca" placeholder=""/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full">
+                        <mat-label>Modelo</mat-label>
+                        <input matInput formControlName="modelo" placeholder=""/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full">
+                        <mat-label>Placa</mat-label>
+                        <input matInput formControlName="placa" placeholder=""/>
+                    </mat-form-field>
+                </form>
+            </ng-container>
+
+            <!-- Etapa 2: Cadastro do Motorista -->
+            <ng-container *ngIf="data.comMotorista">
+                <h2 class="font-bold text-md text-primary" style="padding-bottom: 10px; padding-top: 10px;">Cadastro do motorista</h2>
+                <form [formGroup]="formularioMotorista" class="grid grid-cols-1 gap-2 w-full">
+                    <div class="flex items-center gap-2 w-full">
+                        <!-- Campo de seleção do motorista -->
+                        <mat-form-field class="flex-grow">
+                            <mat-label>Selecione o motorista</mat-label>
+                            <mat-select formControlName="motorista" (selectionChange)="onMotoristaChange()" placeholder="Selecione o motorista">
+                                <mat-option *ngFor="let motorista of motoristas" [value]="motorista.pk">
+                                    {{ motorista.matricula }} - {{ motorista.nome }}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        
+                        <!-- Botão "Selecionar dados bancários" -->
+                        <mpmt-botao *ngIf="exibirBotaoSelecionarDadosBancarios" (click)="abrirModalDadosBancarios()">
+                            {{ contaSelecionada ? 'Editar dados bancários' : 'Selecionar dados bancários' }}
+                        </mpmt-botao>
+                    </div>
+                </form>
+            </ng-container>
+
+            <!-- Etapa 3: Seleção dos Destinos e Beneficiários -->
+            <h2 class="font-bold text-md text-primary" style="padding-top: 10px;">Seleção de destinos e beneficiários</h2>
+            <div class="grid grid-cols-1 gap-2 w-full">
+                <mpmt-listagem-selecao
+                    [service]="service"
+                    [permitirMultiplosSelecionados]="true"
+                    [tabelaComBorda]="true"
+                ></mpmt-listagem-selecao>
+            </div>
+
+            <!-- Lista de Destinos Distintos Selecionados -->
+            <div *ngIf="formularioDestinosDistintos.controls.length > 0">
+                <h2 class="font-bold text-md text-primary" style="padding-top: 30px;">Destinos selecionados</h2>
+                <div *ngFor="let destinoGroup of formularioDestinosDistintos.controls; let i = index" [formGroup]="destinoGroup" class="flex flex-col sm:flex-row gap-4" style="padding-top: 10px;">
+                    <div class="flex-1" style="color:#1E293B;">
+                        <label style="font-weight: 500; padding-top: 10px;">Origem</label>
+                        <p style="padding-top: 10px; padding-left: 10px;">{{ destinoGroup.value.origem }}</p>
+                    </div>
+                    <div class="flex-1" style="color:#1E293B;">
+                        <label style="font-weight: 500; padding-top: 10px;">Destino</label>
+                        <p style="padding-top: 10px; padding-left: 10px;">{{ destinoGroup.value.destino }}</p>
+                    </div>
+                    <div class="flex-1">
+                        <mat-form-field class="w-full">
+                            <mat-label>Data</mat-label>
+                            <input matInput type="date" formControlName="data" />
+                        </mat-form-field>
+                    </div>
+                    <div class="flex-1" style="padding-left: 15px;">
+                        <mat-form-field class="w-full">
+                            <mat-label>Hora</mat-label>
+                            <input matInput type="time" formControlName="hora" />
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="confirmarFormulario()" [desabilitado]="!formularioValido">Salvar</mpmt-botao>
+    </div>
+</div>

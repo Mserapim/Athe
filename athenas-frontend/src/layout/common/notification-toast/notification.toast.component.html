@@ -1,0 +1,41 @@
+<div
+    class="flex flex-col -ml-4"
+    (click)="action()"
+    [style.display]="state.value === 'inactive' ? 'none' : ''"
+>
+    <div class="flex w-full gap-4">
+        <div class="flex -ml-2 w-[2%] items-center justify-center">
+            <mat-icon
+                class="text-white text-lg"
+                [svgIcon]="'heroicons_outline:bell'"
+            >
+            </mat-icon>
+        </div>
+        <div class="flex flex-col w-[98%]">
+            <div
+                *ngIf="title"
+                [class]="options.titleClass"
+                [attr.aria-label]="title"
+            >
+                {{ title }}
+            </div>
+            <div
+                *ngIf="message && options.enableHtml"
+                role="alert"
+                [class]="options.messageClass"
+                [innerHTML]="message"
+            ></div>
+            <div
+                *ngIf="message && !options.enableHtml"
+                role="alert"
+                [class]="options.messageClass"
+                [attr.aria-label]="message"
+            >
+                {{ message }}
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="options.progressBar">
+    <div class="toast-progress" [style.width]="width + '%'"></div>
+</div>

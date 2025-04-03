@@ -1,0 +1,93 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <mpmt-botao (click)="atualizarLista()" style="margin-right: 10px" *ngIf="navegacaoAtualService.possuiPermissao('editar')">
+                Atualiza Lista
+            </mpmt-botao>
+            <mpmt-botao (click)="gerarArquivo()" style="margin-right: 10px" *ngIf="navegacaoAtualService.possuiPermissao('editar')">
+                Gerar Arquivo
+            </mpmt-botao>
+            <mpmt-botao (click)="confirmarQualificacao()" *ngIf="navegacaoAtualService.possuiPermissao('editar')">
+                Confimar Qualificação
+            </mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-5 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nomenclatura">
+                    <mat-label class="text-white">Buscar por:</mat-label>
+                    <input
+                        matInput
+                        formControlName="keyword"
+                        placeholder=""
+                        (change)="this.service.recarregarListagem()"
+                    />
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Filtro por categoria:</mat-label>
+                    <mat-select
+                        formControlName="categoria[]"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of categoriasTiposPessoas"
+                            [value]="option.valor"
+                        >
+                            {{ option.texto }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Filtro por status:</mat-label>
+                    <mat-select
+                        formControlName="status[]"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of status"
+                            [value]="option.valor"
+                        >
+                            {{ option.texto }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Orientação CPF:</mat-label>
+                    <mat-select
+                        formControlName="orientacao_cpf[]"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of orientacaoCpf"
+                            [value]="option.valor"
+                        >
+                            {{ option.texto }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Orientação PIS/NIS/PASEP:</mat-label>
+                    <mat-select
+                        formControlName="orientacao_nis[]"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                        multiple
+                    >
+                        <mat-option
+                            *ngFor="let option of orientacoesNis"
+                            [value]="option.valor"
+                        >
+                            {{ option.texto }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

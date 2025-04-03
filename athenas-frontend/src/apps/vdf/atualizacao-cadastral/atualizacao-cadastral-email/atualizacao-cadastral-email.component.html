@@ -1,0 +1,153 @@
+<div *ngIf="passo == 'CADASTRO'">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary pb-4" *ngIf="!alterar">
+            <div>Inclusão do e-mail secundário</div>
+        </h1>
+
+        <h1 class="font-bold text-lg text-primary pb-4" *ngIf="alterar">
+            <div>Alteração do e-mail secundário</div>
+        </h1>
+    </h1>
+    <div mat-dialog-content>
+        <div class="flex flex-col gap-4" *ngIf="passo == 'CADASTRO'">
+            <div class="font-medium" *ngIf="!alterar">
+                Foi identificado que não possui e-mail secundário
+                cadastrado/confirmado
+            </div>
+
+            <div class="font-medium" *ngIf="alterar">
+                Para alterar o e-mail secundário cadastrado, por favor, informe
+                abaixo o novo endereço de e-mail a ser utilizado.
+            </div>
+
+            <div class="font-medium" *ngIf="!alterar">
+                A partir da data 31/01/2024 será obrigatório o cadastro para
+                acessar o sistema
+            </div>
+
+            <form [formGroup]="form">
+                <div class="flex flex-col">
+                    <mat-form-field class="self-center w-full">
+                        <input
+                            matInput
+                            type="text"
+                            formControlName="email_pessoal"
+                            placeholder="Informe o e-mail secundário"
+                        />
+                    </mat-form-field>
+                </div>
+            </form>
+        </div>
+
+        <div mat-dialog-actions class="flex flex-col gap-2 justify-end">
+            <div class="justify-end">
+                <button
+                    mat-button
+                    mat-dialog-close
+                    (click)="goClose()"
+                    *ngIf="emailPessoalVerificado"
+                >
+                    Cancelar
+                </button>
+                <mpmt-botao
+                    (click)="confirmarCadastro()"
+                    [desabilitado]="!form.valid"
+                >
+                    Enviar código no e-mail
+                </mpmt-botao>
+            </div>
+
+            <div
+                class="font-medium text-red-500 justify-end bg-red-50 p-2 text-center w-full rounded"
+                *ngIf="mensagem"
+            >
+                {{ mensagem }}
+            </div>
+
+            <div class="font-medium text-red-500 justify-end" *ngIf="alterar">
+                Ao solicitar o envio do código, o acesso ao VDF será liberado
+                apenas mediante a validação do código. Será enviado um e-mail
+                com código de 6 digitos para o endereço informado.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="passo == 'CONFIRMACAO'">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary pb-4">
+            <div>Informe o código recebido o e-mail</div>
+        </h1>
+    </h1>
+    <div mat-dialog-content>
+        <div class="flex flex-col gap-4">
+            <div class="font-medium">
+                Verifique sua caixa de e-mail({{ form.value.email_pessoal }}) e
+                copie o código recebido abaixo
+            </div>
+
+            <form [formGroup]="formConfirmacao">
+                <div class="flex flex-col">
+                    <mat-form-field class="self-center w-full">
+                        <input
+                            matInput
+                            type="text"
+                            maxlength="6"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').substring(0,6);"
+                            formControlName="codigo_email"
+                            placeholder="Código"
+                        />
+                    </mat-form-field>
+                </div>
+            </form>
+
+            {{ mensagem }}
+            <div class="font-medium text-red-500 justify-end" *ngIf="mensagem">
+                {{ mensagem }}
+            </div>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col gap-2 justify-end">
+        <div class="justify-end">
+            <button mat-button (click)="voltarCadastro()">Voltar</button>
+            <button
+                mat-button
+                mat-raised-button
+                color="primary"
+                cdkFocusInitial
+                (click)="validaCodigo()"
+                [disabled]="!formConfirmacao.valid"
+            >
+                Confirmar código
+            </button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="passo == 'FINALIZACAO'">
+    <div mat-dialog-content>
+        <div class="flex flex-col gap-4 text-center">
+            <div class="font-medium text-lg">Obrigado pela atualização :D</div>
+
+            <div class="font-medium">
+                O e-mail <b>{{ form.email_pessoal }}</b> será utilizado quando
+                for necessário alteração ou reset de senha.
+            </div>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col gap-2 justify-end">
+        <div class="justify-end">
+            <button
+                mat-button
+                mat-raised-button
+                color="primary"
+                cdkFocusInitial
+                (click)="finalizar()"
+            >
+                Fechar
+            </button>
+        </div>
+    </div>
+</div>

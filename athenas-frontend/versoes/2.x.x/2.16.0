@@ -1,0 +1,28 @@
+- 2024.8.6:
+    - CARD: ATS-4788 - MR: 334 - [FRONT] Adicionar campo de hora em Novo destino
+- 2024.8.7:
+    - CARD: ATS-4789 - MR: 335 - [FRONT] Impedir seleção de pagamento de cnab zerado ou negativo
+- 2024.8.8:
+    - CARD: ATS-4643 - MR: 337 - (frontend) Criar tela para cadastrar e editar datas de evento
+    - CARD: ATS-4779 - MR: 338 - [FRONT] Criar funcionalidade para Avaliação do CEAF
+- 2024.8.9:
+    - CARD: ATS-4830 - MR: 339 - [FRONT] Ajuste em tela de análise do ceaf
+- 2024.8.12:
+    - CARD: ATS-4781 - MR: 340 - [FRONT] Criar funcionalidade para Aguardando Empenho
+- 2024.8.13:
+    - CARD: ATS-4783 - MR: 343 - [FRONT] Criar funcionalidade de Aguardando nota de liquidação
+- 2024.8.15:
+    - CARD: ATS-4785 - MR: 344 - [FRONT] Criar funcionalidade para Ordem bancária
+    - CARD: ATS-4722 - MR: 346 - [front] Inserir campo Hora em todos locais que aparecem as datas de destino de destinos
+    - CARD: ATS-4766 - MR: 350 - [FRONT] Adicionar botões de observação e anexo no card de histórico
+- 2024.8.16:
+    - CARD: ATS-4723 - MR: 351 - [front] Acrescentar a obrigatoriedade de cadastro de trechos vinculados em um evento
+    - CARD: ATS-4810 - MR: 352 - [front] Anotações > Nova anotação
+    - CARD: ATS-4810 - MR: 352 - [front] Anotações > Editar anotação > Continuidade
+    - CARD: ATS-4810 - MR: 352 - [front] Anotações > Visualizar anotação
+    - CARD: ATS-4810 - MR: 352 - [front] Anotações > Listagem de publicação
+    - CARD: ATS-4749 - MR: 354 - [front] Padronizar telas do VDF - Aprovações
+    - CARD: ATS-4651 - MR: 353 - FRONT - Exibir mensagem de erro ao tentar usar email do mpmt como secundário
+    - CARD: ATS-4821 - MR: 355 - [Front] Modificar o modal de beneficiario na stap2 do diarias
+- 2024.8.19:
+    - CARD: ATS-4905 - MR: 358 - ATS-4905 - Criar componente RichText padrão

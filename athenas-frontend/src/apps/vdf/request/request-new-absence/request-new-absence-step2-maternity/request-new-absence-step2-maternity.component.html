@@ -1,0 +1,163 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <div class="flex flex-col gap-1">
+        <h1 class="text-base">Solicitação Licença maternidade</h1>
+
+        <p class="text-sm text-gray-600">
+            Informe os detalhes do afastamento de saude, preecha data inicio,
+            quantidade dias e data fim
+        </p>
+    </div>
+
+    <form [formGroup]="form" class="flex flex-col gap-2 w-full">
+        <div class="flex flex-col gap-2">
+            <mat-label class="font-bold text-base text-black"
+                >Atestado *</mat-label
+            >
+            <button
+                (click)="fileInput.click()"
+                class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg rounded cursor-pointer"
+            >
+                <div *ngIf="!file" class="w-full text-black">
+                    <span>Clique para selecionar um arquivo</span>
+                </div>
+                <div *ngIf="file" class="w-full text-black">
+                    {{ file?.name }}
+                </div>
+
+                <input
+                    #fileInput
+                    type="file"
+                    (change)="onFileInput($event)"
+                    style="display: none"
+                />
+                <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+            </button>
+        </div>
+
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Classificação</mat-label>
+            <mat-select formControlName="classificacao" (ngModelChange)="changeClassificacao()">
+                <mat-option *ngFor="let option of classificacoes" [value]="option.value">
+                    {{ option.label }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="w-full" *ngIf="form.value.classificacao == 1">
+            <mat-label>Nome da criança</mat-label>
+            <input
+                type="text"
+                placeholder="Selecione o familiar"
+                matInput
+                [matAutocomplete]="auto"
+                (keyup)="onChangeSearch($event)"
+                formControlName="dependent"
+            />
+
+            <mat-icon
+                [svgIcon]="'heroicons_solid:plus-circle'"
+                class="cursor-pointer"
+                (click)="openPersonNew()"
+            ></mat-icon>
+
+            <mat-autocomplete
+                autoActiveFirstOption
+                #auto="matAutocomplete"
+                (ngModel)="form.value['dependent'] = $event"
+                (optionSelected)="onSelectPerson($event)"
+                [displayWith]="displayFn"
+            >
+                <mat-option
+                    *ngFor="let item of dataSourcePersons.results$ | async"
+                    [value]="item"
+                >
+                    {{ item.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <div class="flex gap-2 justify-between">
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label *ngIf="form.value.classificacao == 1">Data nascimento</mat-label>
+                <mat-label *ngIf="form.value.classificacao == 2">Data inicio</mat-label>
+                <input
+                    matInput
+                    [matDatepicker]="datepicker1"
+                    [ngModel]="form.value.start_date"
+                    (ngModelChange)="onChangeStartDate($event)"
+                    formControlName="start_date"
+                    [disabled]="form.value.classificacao == 1"
+                    [readonly]="form.value.classificacao == 1"
+                />
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="datepicker1"
+                    [disabled]="form.value.classificacao == 1"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #datepicker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Quantidade de dias</mat-label>
+                <input
+                    type="number"
+                    matInput
+                    (ngModelChange)="onChangeDays($event)"
+                    [ngModel]="form.value.days"
+                    formControlName="days"
+                    [disabled]="true"
+                    [readonly]="true"
+                    disabled
+                />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Fim</mat-label>
+                <input
+                    [ngModel]="form.value.end_date"
+                    matInput
+                    disabled="true"
+                    readonly="true"
+                    class=""
+                    [disabled]="true"
+                    [matDatepicker]="datepicker2"
+                    formControlName="end_date"
+                    [readonly]="true"
+                />
+                <mat-datepicker #datepicker2></mat-datepicker>
+            </mat-form-field>
+        </div>
+        {{ getFormValidationErrors() | json }}
+        <mat-form-field class="example-full-width">
+            <mat-label>Observação (opcional)</mat-label>
+            <textarea matInput placeholder="Observação" formControlName="observation"></textarea>
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center w-full">
+        <button
+            mat-button
+            class="p-8 py-4 w-full outline outline-1 outline-gray-200"
+            (click)="goBack()"
+        >
+            Voltar
+        </button>
+        <button
+            mat-button
+            [ngClass]="{ '!bg-primary': !desabilitarSalvar() }"
+            class="bg-gray-300 text-white p-8 py-4 w-full"
+            (click)="goNext()"
+            [disabled]="desabilitarSalvar()"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

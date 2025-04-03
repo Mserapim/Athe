@@ -1,0 +1,271 @@
+<div class="flex flex-col gap-2">
+    <div mat-dialog-content>
+        <h2 class="font-bold text-xl self-start text-primary">
+            Informações do ambiente
+        </h2>
+        <br>
+        <div class="flex-grow border border-gray-300 p-4">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+                <h3 class="font-bold text-xl self-start">Configurações gerais</h3>
+                <div class="grid grid-cols-6 w-full gap-2">
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Ambiente</mat-label>
+                        <mat-select formControlName="ambiente">
+                            <mat-option *ngFor="let option of ambientes" [value]="option.id">
+                                {{ option.titulo }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Versão do layout</mat-label>
+                        <input
+                            matInput
+                            placeholder="Ex: 1.0"
+                            formControlName="layout_versao"
+                        />
+                        <mat-error *ngIf="formulario.get('layout_versao').hasError('pattern')">
+                            Formato inválido. Use o formato x.x (ex: 1.0).
+                        </mat-error>
+                    </mat-form-field>
+                    <div class="col-span-2 w-full">
+                        <mat-form-field class="w-full" placeholder="">
+                            <mat-label>Schema de envio</mat-label>
+                            <input matInput formControlName="nome_schema_envio" placeholder="" />
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-span-2 w-full">
+                        <mat-form-field class="w-full" placeholder="">
+                            <mat-label>Schema de consulta</mat-label>
+                            <input matInput formControlName="nome_schema_consulta" placeholder="" />
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-xl self-start">URLs de serviço</h3>
+                <div class="gap-2">
+                    <div class="grid grid-cols-2 w-full gap-2">
+                        <mat-form-field class="w-full" placeholder="">
+                            <mat-label>Web service - Consulta</mat-label>
+                            <input matInput formControlName="webservice_consulta" placeholder="" />
+                        </mat-form-field>
+                        <mat-form-field class="w-full" placeholder="">
+                            <mat-label>Web service - Envio</mat-label>
+                            <input matInput formControlName="webservice_envio" placeholder="" />
+                        </mat-form-field>
+                    </div>
+
+                    <div class="grid grid-cols-2 w-full gap-2">
+                        <mat-form-field class="w-full" placeholder="">
+                            <mat-label>URL envio</mat-label>
+                            <input matInput formControlName="url_envio" placeholder="" />
+                        </mat-form-field>
+                        <mat-form-field class="w-full" placeholder="">
+                            <mat-label>URL consulta</mat-label>
+                            <input matInput formControlName="url_consulta" placeholder="" />
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-xl self-start">Dados do empregador e responsáveis</h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Empregador</mat-label>
+                        <input
+                            matInput
+                            [matAutocomplete]="auto"
+                            (ngModelChange)="loadUnidadesAdministrativas($event)"
+                            formControlName="orgao_empregador"
+                        />
+                        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFnUnidade"
+                                          (optionSelected)="onEmpregadorSelected($event.option.value)">
+                            <mat-option
+                                *ngFor="let option of datasourceUnidadesAdministrativas.results$ | async"
+                                [value]="option"
+                            >
+                                {{ option.nome }}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Responsável e-social</mat-label>
+                        <input
+                            matInput
+                            [matAutocomplete]="autoResponsavel"
+                            (ngModelChange)="loadResponsaveis($event)"
+                            formControlName="responsavel"
+                        />
+                        <mat-autocomplete #autoResponsavel="matAutocomplete" [displayWith]="displayFn"
+                                          (optionSelected)="onResponsavelSelected($event.option.value)">
+                            <mat-option
+                                *ngFor="let option of dataSourceResponsaveis.results$ | async"
+                                [value]="option"
+                            >
+                                {{ option.name }}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="w-full">
+                        <mat-label>Responsável software</mat-label>
+                        <input
+                            matInput
+                            [matAutocomplete]="autoResponsavelSoftwareHouse"
+                            (ngModelChange)="loadResponsaveisSoftwareHouse($event)"
+                            formControlName="responsavel_sowfware_house"
+                        />
+                        <mat-autocomplete #autoResponsavelSoftwareHouse="matAutocomplete" [displayWith]="displayFn"
+                                          (optionSelected)="onResponsavelSoftwareSelected($event.option.value)">
+                            <mat-option
+                                *ngFor="let option of dataSourceResponsaveisSoftwareHouse.results$ | async"
+                                [value]="option"
+                            >
+                                {{ option.name }}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+
+                <h3 class="font-bold text-xl self-start">Datas e eventos</h3>
+                <div class="grid grid-cols-7 w-full gap-2">
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Tabela início</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="tabela_iniciais"
+                            [matDatepicker]="datepickerTabelaInicio"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerTabelaInicio"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerTabelaInicio></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Não períodicos</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="nao_periodicos"
+                            [matDatepicker]="datepickerNaoPeriodicos"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerNaoPeriodicos"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerNaoPeriodicos></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Períodicos</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="periodicos"
+                            [matDatepicker]="datepickerPeriodicos"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerPeriodicos"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerPeriodicos></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>SST</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="sst"
+                            [matDatepicker]="datepickerSST"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerSST"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerSST></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Início vigência</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="inicio_vigencia"
+                            [matDatepicker]="datepickerInicioVigencia"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerInicioVigencia"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerInicioVigencia></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Fim vigência</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="fim_vigencia"
+                            [matDatepicker]="datepickerFimVigencia"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerFimVigencia"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerFimVigencia></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Data corte s2231</mat-label>
+                        <input
+                            matInput
+                            placeholder="dd/mm/yyyy"
+                            formControlName="data_corte_s2231"
+                            [matDatepicker]="datepickerDataCorte"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerDataCorte"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #datepickerDataCorte></mat-datepicker>
+                    </mat-form-field>
+                </div>
+
+                <h3 class="font-bold text-xl self-start">Seção de lotes</h3>
+                <div class="grid grid-cols-7 w-full gap-2">
+                    <div class="items-start content-center">
+                        <div class="w-full flex justify-start">
+                            <mpmt-botao (click)="vincularServidores()" class="max-w-full flex">
+                                Vincular servidores
+                            </mpmt-botao>
+                        </div>
+                    </div>
+
+                    <div class="col-span-6 w-full">
+                        <mpmt-chips-autocomplete
+                            [options]="this.eventos"
+                            [title]="'Eventos que serão enviados'"
+                            (optionsSelected)="eventosSelecionados($event)"
+                            (filter)="filterEventos($event)"
+                        >
+                        </mpmt-chips-autocomplete>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botões fixos -->
+    <div mat-dialog-actions class="flex justify-end gap-4 mt-4">
+        <mpmt-botao tipo="borda" (click)="fechar()">Fechar</mpmt-botao>
+        <mpmt-botao
+            cor="sucesso"
+            (click)="goConfirm()"
+            [desabilitado]="!isValid || this.isLoading"
+        >Salvar</mpmt-botao>
+    </div>
+</div>

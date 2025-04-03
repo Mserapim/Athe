@@ -1,0 +1,23 @@
+import { Injectable } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { apiLimitesDiarias } from 'api/diarias/config/limite-diarias/api-limites-diarias';
+import { MpmtListagem2Service } from 'components/mpmt-listagem2/mpmt-listagem2.service';
+
+@Injectable()
+export class LimitesDiariasService extends MpmtListagem2Service {
+    filtros = new FormGroup({
+        palavra_chave: new FormControl<string>('', []),
+    });
+
+    constructor() {
+        super();
+    }
+
+    public async obterDados(filtros: any) {
+        return apiLimitesDiarias(filtros);
+    }
+
+    protected async obterFiltros() {
+        return { ...this.filtros.value };
+    }
+}

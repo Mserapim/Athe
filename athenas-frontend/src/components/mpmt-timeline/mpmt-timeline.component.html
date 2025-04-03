@@ -1,0 +1,10 @@
+<div class="timeline-container" style="background-color: white;">
+    <ng-container *ngFor="let event of events; let i = index">
+        <div class="timeline-circle" #inicioTimeline *ngIf="i === 0"></div>
+        <div class="timeline-circle" *ngIf="i !== 0 && i < events.length - 1"></div>
+        <div class="timeline-circle" #fimTimeline *ngIf="i === events.length - 1"></div>
+        <div class="timeline-item" [ngClass]="{'left': i % 2 === 0, 'right': i % 2 !== 0}">
+            <ng-container *ngTemplateOutlet="templateEvento; context: {$implicit: event}"></ng-container>
+        </div>
+    </ng-container>
+</div>

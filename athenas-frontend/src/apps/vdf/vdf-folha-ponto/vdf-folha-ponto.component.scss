@@ -1,0 +1,15 @@
+#vdf-folha-ponto {
+
+    .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+        border-color: white !important;
+    }
+
+    .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+        border-color: white !important;
+    }
+
+    .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:not(:checked)+.mdc-radio__background .mdc-radio__outer-circle {
+        border-color: white !important;
+    }
+
+}

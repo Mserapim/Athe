@@ -1,0 +1,145 @@
+<div class="flex flex-col w-full h-full">
+    <!-- TIPO TEXTO -->
+    <div *ngIf="coluna.tipo == 'TEXTO'">
+        {{ valor$ | async }}
+    </div>
+
+    <!-- TIPO DATA -->
+    <div *ngIf="coluna.tipo == 'DATA'">
+        {{ formatarData(valor$ | async) }}
+    </div>
+
+    <!-- TIPO DATA HORA -->
+    <div *ngIf="coluna.tipo == 'DATA_HORA'">
+        {{ formatarDataHora(valor$ | async) }}
+    </div>
+
+    <!-- TIPO BOLEANO -->
+    <div *ngIf="coluna.tipo == 'BOLEANO'">
+        {{ formatarBooleano(valor$ | async) }}
+    </div>
+
+    <!-- TIPO BOLEANO -->
+    <div *ngIf="coluna.tipo == 'BOLEANO_ICONE'">
+        <mat-icon
+            *ngIf="valor$ | async"
+            style="color: green"
+            [svgIcon]="'heroicons_solid:check-circle'"
+        ></mat-icon>
+        <mat-icon
+            *ngIf="!(valor$ | async)"
+            style="color: red"
+            [svgIcon]="'heroicons_solid:x-circle'"
+        ></mat-icon>
+    </div>
+
+    <!-- TIPO CHECKBOX -->
+    <div *ngIf="coluna.tipo == 'CHECKBOX' && !linha.checkboxDesativado">
+        <mat-checkbox
+          (change)="toggleSelecao(linha, $event)"
+          [checked]="estaSelecionada(linha)"
+        ></mat-checkbox>
+    </div>
+
+    <!-- TIPO RADIOBUTTON -->
+    <!-- Checkbox com estilo de Radio -->
+    <div *ngIf="coluna.tipo == 'RADIO' && !linha.checkboxDesativado">
+        <mat-checkbox 
+            class="custom-radio-checkbox" 
+            (change)="toggleSelecao(linha, $event)"
+            [checked]="estaSelecionada(linha)"
+        ></mat-checkbox>
+    </div>
+      
+
+    <!-- TIPO BOTAO_PRIMARIO -->
+    <div
+        *ngIf="
+            coluna.tipo == 'BOTAO_PRIMARIO' &&
+            (coluna.titulo || (valor$ | async)) &&
+            coluna?.acoes?.length &&
+            coluna?.acoes?.length > 0 &&
+            acaoVisivel(coluna?.acoes[0], linha)
+        "
+    >
+        <mpmt-botao
+            tipo="preenchido"
+            (click)="coluna?.acoes[0]?.aoClicar(linha)"
+            *ngIf="coluna?.acoes?.length && coluna?.acoes?.length > 0"
+            >{{ coluna.titulo || (valor$ | async) }}</mpmt-botao
+        >
+    </div>
+
+    <!-- TIPO BOTAO_CONTORNO -->
+    <div
+        *ngIf="
+            coluna.tipo == 'BOTAO_CONTORNO' &&
+            (coluna.titulo || (valor$ | async))
+        "
+    >
+        <mpmt-botao
+            tipo="borda"
+            (click)="coluna?.acoes[0]?.aoClicar(linha)"
+            *ngIf="coluna?.acoes?.length && coluna?.acoes?.length > 0"
+            >{{ coluna.titulo || (valor$ | async) }}</mpmt-botao
+        >
+    </div>
+
+    <!-- TIPO VER_MAIS -->
+    <div *ngIf="coluna.tipo == 'VER_MAIS'">
+        <div class="flex items-center gap-4 cursor-pointer">
+            <div class="self-center">
+                {{ valor$ | async }}
+            </div>
+            <div
+                *ngIf="coluna?.acoes?.length && coluna?.acoes?.length > 0"
+                class="text-gray-400"
+                (click)="coluna?.acoes[0]?.aoClicar(linha)"
+            >
+                Ver itens
+            </div>
+        </div>
+    </div>
+
+    <!-- TIPO VALOR_E_ACAO -->
+    <div *ngIf="coluna.tipo == 'VALOR_E_ACAO'">
+        {{ valor$ | async }}
+        <ng-container *ngFor="let acao of coluna.acoes">
+            <button
+                mat-button
+                (click)="acao.aoClicar(linha)"
+                class="text-gray-400"
+            >
+                {{ acao.titulo }}
+            </button>
+        </ng-container>
+    </div>
+
+    <!-- TIPO MOEDA -->
+    <div *ngIf="coluna.tipo == 'MOEDA'">
+        {{ formatarMoeda(valor$ | async) }}
+    </div>
+
+    <!-- TIPO ACOES -->
+    <div class="flex justify-end" *ngIf="coluna.tipo == 'ACOES' && !linha.ocultarAcoes">
+        <button 
+            mat-icon-button 
+            [matMenuTriggerFor]="editMenu"
+            *ngIf="temAcoesVisiveis()"
+        >
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #editMenu="matMenu">
+            <div *ngFor="let acao of coluna?.acoes">
+                <button
+                    mat-menu-item
+                    (click)="acao?.aoClicar(linha)"
+                    *ngIf="acaoVisivel(acao, linha)"
+                >
+                    <mat-icon [svgIcon]="acao.icone">{{ acao.icone }}</mat-icon>
+                    {{ acao.titulo }}
+                </button>
+            </div>
+        </mat-menu>
+    </div>
+</div>

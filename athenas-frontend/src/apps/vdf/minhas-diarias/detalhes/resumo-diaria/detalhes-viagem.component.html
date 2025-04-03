@@ -1,0 +1,67 @@
+<div style="background-color: #ffffff; padding:20px;">
+    <div *ngIf="viagem.motorista" style="position: relative;"
+        (mouseenter)="showTooltip = true" 
+        (mouseleave)="showTooltip = false">
+        <p class="tipo-viagem">
+            <strong>Viagem de motorista</strong>
+            <span class="info-icon" style="cursor: pointer; margin-left: 5px;">
+                ?
+            </span>
+            <span class="tooltip-content" [class.visible]="showTooltip">
+                Referente à solicitação de viagem de <strong>{{ viagemOrigem?.solicitante_unicode }}</strong> feita em <strong>{{ viagemOrigem?.created_at | date: 'dd/MM/yyyy' }}</strong>.
+            </span>
+        </p>
+    </div>
+    
+    <div *ngIf="viagem.importada" style="position: relative;"
+        (mouseenter)="showTooltip = true" 
+        (mouseleave)="showTooltip = false">
+        <p class="tipo-viagem">
+            <strong>Viagem importada</strong>
+            <span class="info-icon" style="cursor: pointer; margin-left: 5px;">
+                ?
+            </span>
+            <span class="tooltip-content" [class.visible]="showTooltip">
+                Viagem de origem de importação do sistema Sisdia.
+            </span>
+        </p>
+    </div>
+
+    <h1 class="font-bold text-lg text-primary" style="font-size: 1.2rem !important;">Fluxo atual: {{ viagem.situacao_etapa_atual }}</h1>
+    <div style="display: flex; flex-wrap: wrap; line-height: 2.0; margin-top:10px;">
+        <div style="width: 50%;">
+            <p><strong>Solicitante:</strong> {{ viagem.solicitante | formatarNome }}</p>
+            <p><strong>Data da solicitação:</strong> {{ viagem.data_solicitacao | date: 'dd/MM/yyyy' }}</p>
+            <p><strong>Data início:</strong> {{ printDate(viagem.data_inicio_viagem) }}</p>
+            <p><strong>Tipo viagem:</strong> {{ viagem.tipo_viagem_display }}</p>
+        </div>
+        <div style="width: 50%;">
+            <p><strong>Tipo solicitante:</strong> {{ viagem.tipo_solicitante_display }}</p>
+            <p><strong>Nesta viagem será fornecida hospedagem:</strong> {{ viagem.hospedagem_anfitriao ? 'Sim' : 'Não' }} </p>
+            <p><strong>Data fim:</strong> {{ printDate(viagem.data_fim_viagem) }}</p>
+            <p><strong>Motivo viagem:</strong> {{ viagem.motivo_viagem_display }}</p>
+        </div>
+        <p><strong>Finalidade:</strong> {{ viagem.finalidade_viagem_display }}</p>
+    </div>
+    <div style="line-height: 2.0; padding-top: 10px;">
+        <p><strong>Resumo:</strong></p>
+        <div class="mpmt-texto-formatado-conteudo" [innerHTML]="viagem.resumo"></div>
+
+        <p><strong>Justificativa:</strong></p>
+        <div class="mpmt-texto-formatado-conteudo" [innerHTML]="viagem.justificativa"></div>
+
+        <div *ngIf="anexos?.length">
+        <p><strong>Anexos:</strong></p>
+            <div *ngFor="let anexo of anexos" style="display: flex; padding: 0 30px; align-items: center;">
+                <div style="flex: 1; text-align: left; padding-right: 20px;">
+                    <p>{{ anexo.filename }}</p>
+                </div>
+                <div style="flex: 1; display: flex; justify-content: flex-start;">
+                    <button (click)="downloadAnexo(anexo.id)">
+                        <mat-icon style="font-size: 24px;" class="mat-primary">download</mat-icon>
+                    </button>
+                </div>
+            </div>   
+        </div>     
+    </div>
+</div>

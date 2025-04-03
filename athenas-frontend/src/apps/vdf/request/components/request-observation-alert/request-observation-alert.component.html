@@ -1,0 +1,19 @@
+<div
+    *ngIf="ultimoHistorico && titulo && texto"
+    class="bg-yellow-50 px-4 py-4 border border-yellow-100 text-yellow-700 rounded flex flex-col w-full gap-2"
+>
+    <div class="font-bold">
+        {{ titulo }}
+    </div>
+
+    <div class="flex flex-wrap gap-2">
+        <span [innerHTML]="texto?.substring(0, textoLimite)"></span>
+        <div
+            *ngIf="texto && texto?.length > textoLimite"
+            (click)="goDetail()"
+            class="font-bold cursor-pointer"
+        >
+            ver mais
+        </div>
+    </div>
+</div>

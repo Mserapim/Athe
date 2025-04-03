@@ -1,0 +1,138 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <h1 class="font-bold text-lg">Solicitação Licença Gala</h1>
+
+    <form [formGroup]="form" class="flex flex-col gap-2 w-full">
+        <div class="flex flex-col gap-2">
+            <mat-label class="text-base">Atestado de casamento *</mat-label>
+            <button
+                (click)="fileInput.click()"
+                class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg rounded cursor-pointer"
+            >
+                <div *ngIf="!file" class="w-full text-black">
+                    <span>Anexe o atestado de casamento cívil</span>
+                </div>
+                <div *ngIf="file" class="w-full text-black">
+                    {{ file?.name }}
+                </div>
+
+                <input
+                    #fileInput
+                    type="file"
+                    (change)="onFileInput($event)"
+                    style="display: none"
+                />
+                <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+            </button>
+        </div>
+
+        <mat-form-field class="w-full">
+            <mat-label>Pessoa da família</mat-label>
+            <input
+                type="text"
+                placeholder="Selecione o familiar"
+                matInput
+                [matAutocomplete]="auto"
+                (keyup)="onChangeSearch($event)"
+                formControlName="person"
+            />
+
+            <mat-icon
+                [svgIcon]="'heroicons_solid:plus-circle'"
+                class="cursor-pointer"
+                (click)="openPersonNew()"
+            ></mat-icon>
+
+            <mat-autocomplete
+                autoActiveFirstOption
+                #auto="matAutocomplete"
+                (ngModel)="form.value['person'] = $event"
+                (optionSelected)="onSelectPerson($event)"
+                [displayWith]="displayFn"
+            >
+                <mat-option
+                    *ngFor="let item of dataSourcePersons.results$ | async"
+                    [value]="item"
+                >
+                    {{ item.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <div class="flex gap-2 justify-between">
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Casamento(Cívil)</mat-label>
+                <input
+                    matInput
+                    [matDatepicker]="datepicker1"
+                    [ngModel]="form.value.start_date"
+                    (ngModelChange)="onChangeStartDate($event)"
+                    formControlName="start_date"
+                />
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="datepicker1"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #datepicker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Quantidade de dias</mat-label>
+                <input
+                    type="number"
+                    matInput
+                    (ngModelChange)="onChangeDays($event)"
+                    [ngModel]="form.value.days"
+                    formControlName="days"
+                    [readonly]="true"
+                />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Data Fim</mat-label>
+                <input
+                    [ngModel]="form.value.end_date"
+                    matInput
+                    disabled="true"
+                    readonly="true"
+                    class=""
+                    [disabled]="true"
+                    [matDatepicker]="datepicker2"
+                    formControlName="end_date"
+                />
+                <mat-datepicker #datepicker2></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field>
+            <mat-label>Observação (Opcional)</mat-label>
+            <textarea matInput placeholder="Observação..."></textarea>
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center">
+        <button
+            mat-button
+            color="primary"
+            class="bg-primary text-white p-8 py-4 w-full"
+            (click)="goBack()"
+        >
+            Voltar
+        </button>
+        <button
+            mat-button
+            [ngClass]="{ '!bg-primary': form.valid }"
+            class="bg-gray-300 text-white p-8 py-4 w-full"
+            (click)="goNext()"
+            [disabled]="!form.valid"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

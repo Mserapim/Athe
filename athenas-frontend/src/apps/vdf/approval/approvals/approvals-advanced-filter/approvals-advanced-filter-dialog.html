@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>
+    <h1 class="font-bold text-lg text-primary pb-4">
+        Opções de filtro avançado
+    </h1>
+</h1>
+
+<div mat-dialog-content>
+    <div class="flex flex-col">
+        <mat-form-field class="self-center w-full">
+            <input matInput type="text" [(ngModel)]="data.keyword" placeholder="Buscar por" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Filtro por situação</mat-label>
+            <mat-select [(ngModel)]="data.request_type" multiple>
+                <mat-option *ngFor="let requestType of requestTypesDataSource.results$ | async"
+                    [value]="requestType.value">{{requestType.label}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Filtro por situação</mat-label>
+            <mat-select [(ngModel)]="data.status" multiple>
+                <mat-option *ngFor="let status of requestStatusDataSource.results$ | async"
+                    [value]="status.value">{{status.label}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!-- <mat-form-field appearance="fill">
+            <mat-label>Tipo de solicitação</mat-label>
+            <mat-select [formControl]="toppings" multiple>
+                <mat-option
+                    *ngFor="let topping of toppingList"
+                    [value]="topping"
+                    >{{topping}}</mat-option
+                >
+            </mat-select>
+        </mat-form-field> -->
+    </div>
+</div>
+<div mat-dialog-actions class="justify-end">
+    <button mat-button mat-dialog-close pri>Cancelar</button>
+    <button mat-button mat-raised-button color="primary" cdkFocusInitial [mat-dialog-close]="data">
+        Filtrar
+    </button>
+</div>
+
+<!-- [mat-dialog-close]="{request_type: requestType.value}" -->

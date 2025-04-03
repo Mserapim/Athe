@@ -1,0 +1,146 @@
+<!-- Loading bar -->
+<fuse-loading-bar></fuse-loading-bar>
+
+<fuse-vertical-navigation
+    class="bg-white print:hidden"
+    [appearance]="navigationAppearance"
+    [mode]="isScreenSmall ? 'over' : 'side'"
+    [name]="'mainNavigation'"
+    [navigation]="navigation.default"
+    [opened]="!isScreenSmall"
+>
+    <!-- Navigation header hook -->
+    <ng-container fuseVerticalNavigationContentHeader>
+        <div class="flex flex-col gap-2 bg-gray-100 h-24 shadow border-b mb-4">
+            <div class="flex gap-2 px-4 pt-6">
+                <button
+                    class="px-4 py-2 self-center justify-center"
+                    [ngClass]="{ 'flex justify-center': isScreenSmall }"
+                    mat-icon-button
+                    (click)="appMenu.exibir()"
+                >
+                    <mat-icon
+                        [svgIcon]="'heroicons_outline:view-grid'"
+                        [ngClass]="{
+                            'text-center justify-center': isScreenSmall
+                        }"
+                    ></mat-icon>
+                </button>
+
+                <app-apps #appMenu></app-apps>
+
+                <img
+                    class="w-24"
+                    src="assets/images/logo/logo_mp.png"
+                    alt="Logo image"
+                    *ngIf="navigationAppearance != 'dense'"
+                />
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Footer -->
+    <ng-container fuseVerticalNavigationFooter>
+        <div *ngIf="navigationAppearance != 'dense'" class="relative flex flex-0 items-center w-full h-12 sm:h-12 px-4 md:px-6 z-49 border-t bg-card dark:bg-transparent print:hidden">
+            <p>{{ name_app }} {{ currentYear }}</p>
+            <p>Versão: {{ version_app }}</p>
+        </div>
+        <div *ngIf="navigationAppearance === 'dense'" class="relative flex flex-0 items-center w-full h-12 sm:h-12 px-4 md:px-6 z-49 border-t bg-card dark:bg-transparent print:hidden">
+            <p>{{ version_app }}</p>
+        </div>
+    </ng-container>
+</fuse-vertical-navigation>
+
+<!-- Wrapper -->
+<div class="flex flex-col flex-auto w-full min-w-0 bg-white">
+    <div
+        class="relative flex items-center w-full px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b dark:bg-transparent print:hidden h-24 bg-gray-100 justify-between"
+    >
+        <div class="flex">
+            <div
+                class="flex flex-row justify-between w-full text-left px-4 py-4"
+                *ngIf="isScreenSmall"
+            >
+                <button
+                    class="h-full self-center"
+                    [ngClass]="{ 'flex justify-center': isScreenSmall }"
+                    mat-icon-button
+                    (click)="toggleNavigation('mainNavigation')"
+                >
+                    <mat-icon
+                        [svgIcon]="'heroicons_outline:menu'"
+                        [ngClass]="{
+                            'text-center justify-center': isScreenSmall
+                        }"
+                    ></mat-icon>
+                </button>
+                <div class="flex flex-col gap-2">
+                    <img
+                        class="w-30"
+                        src="assets/images/logo/logo-text.svg"
+                        alt="Logo image"
+                    />
+                    <div class="flex pl-2 font-bold">
+                        <div class="text-lg">Vida Funcional</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 pl-2 font-bold" *ngIf="!isScreenSmall">
+                <button
+                    class="h-full self-center"
+                    [ngClass]="{ 'flex justify-center': isScreenSmall }"
+                    mat-icon-button
+                    (click)="toggleNavigationAppearance()"
+                >
+                    <mat-icon
+                        [svgIcon]="'heroicons_outline:menu'"
+                        [ngClass]="{
+                            'text-center justify-center': isScreenSmall
+                        }"
+                    ></mat-icon>
+                </button>
+
+                <div class="text-2xl pt-1">Vida Funcional</div>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div
+                class="flex gap-8 font-bold rounded-full justify-between px-1 py-1 bg-white content-center"
+            >
+                <!-- <search [appearance]="'bar'"></search> -->
+                <clock class="hidden sm:flex"></clock>
+                <usuario></usuario>
+
+                <button
+                    class="h-full flex gap-2 bg-[#174166] border-blue-900 rounded-full p-2 px-4 text-white text-md self-center justify-center font-bold"
+                    (click)="irAjuda()"
+                >
+                    <div class="text-xl">Ajuda</div>
+                    <div class="flex self-center">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M11.95 18q.525 0 .888-.363t.362-.887q0-.525-.362-.888t-.888-.362q-.525 0-.887.363t-.363.887q0 .525.363.888t.887.362m-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.312.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825M12 22q-2.075 0-3.9-.787t-3.175-2.138q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"
+                            />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div
+        class="flex flex-col flex-auto bg-[#174166] text-white h-screen overflow-auto"
+        style="height: calc(100vh - 400px) !important"
+    >
+        <router-outlet *ngIf="true"></router-outlet>
+    </div>
+</div>

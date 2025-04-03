@@ -1,0 +1,69 @@
+<mat-dialog-content>
+    <form [formGroup]="form" class="flex flex-col gap-8">
+        <mat-form-field appearance="fill" class="flex w-full">
+            <mat-label>Data de encerramento do teletrabalho</mat-label>
+            <input
+                matInput
+                formControlName="teletrabalho_desbloqueio_data_encerramento"
+                [matDatepicker]="datepickerStart"
+            />
+            <mat-datepicker-toggle
+                matIconSuffix
+                [for]="datepickerStart"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #datepickerStart></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field class="w-full" placeholder="Meses">
+            <mat-label>Prazo que o servidor ficará impedido(Meses)</mat-label>
+            <input
+                matInput
+                type="number"
+                formControlName="teletrabalho_desbloqueio_prazo_impedimento"
+                placeholder=""
+                min="0"
+                max="99999"
+            />
+            <mat-error
+                *ngIf="form.get('teletrabalho_desbloqueio_prazo_impedimento').hasError('required')"
+                >Informe numero entre 0 e 99999</mat-error
+            >
+        </mat-form-field>
+
+        <mpmt-arquivo
+            titulo="Decisão"
+            formControlName="teletrabalho_desbloqueio_anexo_id"
+        ></mpmt-arquivo>
+
+        <mat-form-field class="w-full">
+            <mat-label>Observação (Obrigatório)</mat-label>
+            <textarea
+                matInput
+                placeholder="Observação..."
+                formControlName="observacao"
+                required
+            >
+            </textarea>
+            <mat-error *ngIf="form.get('observacao').hasError('required')"
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+    </form>
+
+    <div class="text-right">
+        <button mat-button (click)="fechar()">Cancelar</button>
+
+        <mpmt-botao
+            cor="sucesso"
+            (click)="indeferir()"
+            [desabilitado]="!form.valid"
+            >Indeferir</mpmt-botao
+        >
+    </div>
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+</mat-dialog-content>

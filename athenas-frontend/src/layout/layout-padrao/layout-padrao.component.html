@@ -1,0 +1,77 @@
+<!-- Loading bar -->
+<fuse-loading-bar></fuse-loading-bar>
+
+<fuse-vertical-navigation
+    class="bg-white print:hidden"
+    [appearance]="navigationAppearance"
+    [mode]="isScreenSmall ? 'over' : 'side'"
+    [name]="'mainNavigation'"
+    [navigation]="navigation.default"
+    [opened]="!isScreenSmall"
+>
+    <!-- Navigation header hook -->
+    <ng-container fuseVerticalNavigationContentHeader>
+        <div class="flex flex-col gap-2 bg-gray-100 h-24 shadow border-b mb-4">
+            <div class="flex gap-2 px-4 pt-6">
+                <button
+                    class="px-4 py-2 self-center justify-center"
+                    [ngClass]="{ 'flex justify-center': isScreenSmall }"
+                    mat-icon-button
+                    (click)="appMenu.exibir()"
+                >
+                    <mat-icon
+                        [svgIcon]="'heroicons_outline:view-grid'"
+                        [ngClass]="{
+                            'text-center justify-center': isScreenSmall
+                        }"
+                    ></mat-icon>
+                </button>
+
+                <layout-modulos #appMenu></layout-modulos>
+
+                <img
+                    class="w-24"
+                    src="assets/images/logo/logo_mp.png"
+                    alt="Logo image"
+                    *ngIf="navigationAppearance != 'dense'"
+                />
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Footer -->
+    <ng-container fuseVerticalNavigationFooter>
+        <div
+            *ngIf="navigationAppearance != 'dense'"
+            class="flex flex-col relative flex-0 items-start w-full h-12 sm:h-12 px-4 md:px-6 z-49 border-t bg-card dark:bg-transparent print:hidden"
+        >
+            <p>{{ name_app }} {{ currentYear }}</p>
+            <p>Versão: {{ version_app }}</p>
+        </div>
+        <div
+            *ngIf="navigationAppearance === 'dense'"
+            class="relative flex flex-0 items-center w-full h-12 sm:h-12 px-4 md:px-6 z-49 border-t bg-card dark:bg-transparent print:hidden"
+        >
+            <p>{{ version_app }}</p>
+        </div>
+    </ng-container>
+</fuse-vertical-navigation>
+
+<!-- Wrapper -->
+<div class="flex flex-col flex-auto w-full min-w-0 bg-white">
+    <layout-padrao-cabecalho
+        [isScreenSmall]="isScreenSmall"
+        (toggleNavigationAppearance)="toggleNavigationAppearance()"
+        (toggleNavigation)="toggleNavigation('mainNavigation')"
+    ></layout-padrao-cabecalho>
+
+    <!-- Content -->
+    <div
+        class="flex flex-col flex-auto bg-[#174166] text-white h-screen overflow-auto"
+        style="height: calc(100vh - 400px) !important"
+    >
+        <router-outlet *ngIf="true"></router-outlet>
+    </div>
+</div>
+
+<div class="flex absolute top-0 left-1/2 h-full bg-red-300 mx-auto h-6 w-36 z-50 rounded-b-xl self-center text-center px-3 font-bold text-black" *ngIf="!ehProducao">{{tagTexto}}</div>

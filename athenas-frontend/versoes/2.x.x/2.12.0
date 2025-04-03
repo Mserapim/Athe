@@ -1,0 +1,36 @@
+- 2024.6.12:
+    - CARD: ATS-4160 - MR: 224 - Ajuste da mensagem de retorno de erro no cadastro de beneficiarios de uma diaria
+- 2024.6.13:
+    - CARD: ATS-4100 - MR: 225 - criação de component de abas -Visualizar detalhado A Solicitação no VDF
+- 2024.6.14:
+    - CARD: ATS-4100 - MR: 227 - criação de tela da aba "diária" -Visualizar detalhado A Solicitação no VDF
+    - CARD: ATS-4102 - MR: 228 - criação de component de histórico - Visualizar detalhado A Solicitação no VDF
+- 2024.6.17:
+    - CARD: ATS-4103 - MR: 229 - criação de tela da aba "histórico" -Visualizar detalhado A Solicitação no VDF
+    - CARD: ATS-4013 - MR: 230 - criandoo tela de cadastro da solicitação de auxilio creche / IRRF
+- 2024.6.18:
+    - CARD: ATS-4207 - MR: 231 - modificando layout dos itens do modulo e alterando athenas para administrativo
+    - CARD: ATS-4184 - MR: 232 - [FRONT] Criação de component de acordeão que expande outro component
+    - CARD: ATS-4104 - MR: 233 - criação da tela base de "beneficiários" - apenas listagem com acordeão Visualizar detalhado A Solicitação no VDF
+    - CARD: ATS-4105 - MR: 234 - criação de tela da aba "beneficiário" Visualizar detalhado A Solicitação no VDF
+    - CARD: ATS-4111 - MR: 235 - adicionando filtro especificos para o tipo de dependente ir
+    - CARD: ATS-4107 - MR: 237 - criação da tela de "histórico" -Visualizar detalhado A Solicitação no VDF
+    - CARD: ATS-4107v2 - MR: 238 - [AJUSTE] service do histórico de beneficiário
+- 2024.6.19:
+    - CARD: ATS-4071 - MR: 236 - Ajustes no módulo Diárias - Tela de cadastro de destinos
+    - CARD: ATS-4075 - MR: 239 - (frontend) Diárias - Corrigir comportamento no cadastramento de uma nova diária
+- 2024.6.20:
+    - CARD: ATS-4236 - MR: 244 - Inserir a tela Aprovações e Plantões ao padrão do novo Front
+    - CARD: ATS-4106 - MR: 240 - criação de tela da aba "trechos e destinos" Visualizar detalhado A Solicitação no VDF
+    - CARD: ATS-4180 - MR: 226 - Ajuste no design do component de abas
+    - CARD: ATS-4115 - MR: 243 - Novos campos de KM de destinos nos Beneficiários
+    - CARD: ATS-4149 - MR: 245 - [FRONT] - Alterar comportamento do popup seleção de colunas
+    - CARD: ATS-4150 - MR: 241 - [FRONT] - Grupo de acesso - Menus - Alterar formulário
+    - CARD: ATS-4151 - MR: 223 - [FRONT] - Painel de controle - Navegação - Remover primeira solicitação
+    - CARD: ATS-4216 - MR: 242 - [front] - Adaptar a chamada da API
+- 2024.6.21:
+    - CARD: ATS-4225 - MR: 251 - [front] - Criar os campos de filtros por período na tela de aprovações
+    - CARD: ATS-4129 - MR: 246 - criação de component de abas - Visualizar detalhado do diárias
+    - CARD: ATS-4118 - MR: 252 - Clonar destinos em Lote -Clonar destinos de Participantes
+    - CARD: ATS-4015 - MR: 253 - tela de visulizar auxilio creche ir
+

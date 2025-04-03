@@ -1,0 +1,31 @@
+<div class="flex flex-col w-full">
+    <mpmt-accordion [titulo]="titulo" [service]="service" classe_titulo="'black-text'">
+        <ng-template #acoesTemplate let-dado>
+            <div *ngIf="dado" [acoes]="dado">
+                <div class="flex justify-end m-4 gap-2">
+                    <button mat-button color="[#174166]" class="bg-[#174166] text-white p-3 py-4 w-50"
+                        (click)="irClonarLoteDestino(dado.item.id)" *ngIf="!dado.subItem">
+                        <mat-icon [svgIcon]="'mat_outline:content_copy'"></mat-icon>
+                        Clonar todos destinos
+                    </button>
+                    <button mat-button color="[#174166]" class="bg-[#174166] text-white p-3 py-4 w-50"
+                        (click)="irAdicionarDestino(dado.item.id)">
+                        <mat-icon [svgIcon]="'mat_outline:add'"></mat-icon>
+                        Adicionar destino
+                    </button>
+                </div>
+
+            </div>
+        </ng-template>
+
+    </mpmt-accordion>
+
+    <div class="flex justify-end gap-2 mt-4">
+        <button mat-button color="[#174166]" class="bg-[#174166] text-white p-8 py-4 w-56" (click)="irAnterior()">
+            Voltar
+        </button>
+        <button mat-button color="[#174166]" class="bg-[#174166] text-white p-8 py-4 w-56" (click)="irFinalizar()">
+            Finalizar
+        </button>
+    </div>
+</div>

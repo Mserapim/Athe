@@ -1,0 +1,63 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [titulo]="titulo" [service]="service">
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
+
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao-servidores formControlName="servidores" [titulo]="'Beneficiários'"/>
+                </div>
+
+                <!--Filtro Etapa-->
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="etapas" 
+                        [titulo]="'Etapas'"
+                        class="w-full h-full"
+                        [fonte]="apiDiariasChoicesEtapas"
+                        [atributoChave]="'id'"
+                        [atributoDisplay]="'descricao'"
+                    />
+                </div>
+
+                <!--Filtro Tipos Viagem-->
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="tipos_viagem" 
+                        [titulo]="'Tipo Viagem'"
+                        class="w-full h-full"
+                        [fonte]="service.tipos_viagem"
+                        [atributoChave]="'id'"
+                        [atributoDisplay]="'descricao'"
+                    />
+                </div>
+
+                <!--Filtro Motivos Viagem-->
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="motivos_viagem" 
+                        [titulo]="'Motivo Viagem'"
+                        class="w-full h-full"
+                        [fonte]="apiDiariasChoicesMotivosViagem"
+                        [atributoChave]="'id'"
+                        [atributoDisplay]="'descricao'"
+                    />
+                </div>
+
+                <!--Filtro Finalidades-->
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="finalidades" 
+                        [titulo]="'Finalidade'"
+                        class="w-full h-full"
+                        [fonte]="apiDiariasChoicesFinalidades"
+                        [atributoChave]="'id'"
+                        [atributoDisplay]="'descricao'"
+                    />
+                </div>
+
+                
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>

@@ -1,0 +1,73 @@
+<div style="line-height: 2.0;" *ngIf="destinos">
+ 
+    <h1 class="font-bold text-lg text-primary" style="margin-top:20px;">Destinos</h1>
+    <ng-container *ngFor="let destino of destinos; let i = index; let last = last">
+        <div [ngClass]="{'borda': !last, 'fundo-acinzentado': exibirBotaoPassagemAerea(destino) || exibirBotaoVeiculoMotorista(destino).mostrar}" 
+            style="display: flex; flex-wrap: wrap; margin-bottom: 30px;">
+            <div style="width: 50%;">
+                <p>
+                    <strong>Evento:</strong> {{ destino.evento_display }} 
+                    <mpmt-botao *ngIf="exibirBotaoPassagemAerea(destino)" 
+                        (click)="adicionarPassagemAerea(destino)"
+                        style="position: absolute; right: 30px; margin-top: -20px;">
+                        <mat-icon
+                            [svgIcon]="'mat_outline:airplanemode_active'"
+                            style="vertical-align: middle; color:white; padding-right: 5px;"
+                        ></mat-icon>
+                        Adicionar passagem
+                    </mpmt-botao>
+                    <mpmt-botao *ngIf="exibirBotaoVerPassagemAerea(destino)" 
+                        (click)="verPassagemAerea(destino)"
+                        style="position: absolute; right: 30px; margin-top: -20px;">
+                        <mat-icon
+                            [svgIcon]="'mat_outline:airplanemode_active'"
+                            style="vertical-align: middle; color:white; padding-right: 5px;">
+                        </mat-icon>
+                        Ver passagem
+                    </mpmt-botao>
+
+                    <mpmt-botao *ngIf="exibirBotaoVeiculoMotorista(destino).mostrar" 
+                        (click)="adicionarVeiculoMotorista(destino)"
+                        style="position: absolute; right: 30px; margin-top: -20px;">
+                        <mat-icon
+                            [svgIcon]="'mat_outline:directions_car'"
+                            style="vertical-align: middle; color:white; padding-right: 5px;">
+                        </mat-icon>
+                        {{ exibirBotaoVeiculoMotorista(destino).texto }}
+                    </mpmt-botao>
+
+                    <mpmt-botao *ngIf="exibirBotaoVerMotoristaVeiculo(destino)" 
+                    (click)="verMotoristaVeiculo(destino)"
+                    style="position: absolute; right: 30px; margin-top: -20px;">
+                    <mat-icon
+                        [svgIcon]="'mat_outline:directions_car'"
+                        style="vertical-align: middle; color:white; padding-right: 5px;">
+                    </mat-icon>
+                    Ver motorista e veículo
+                </mpmt-botao>
+                </p>
+                <p><strong>Origem:</strong> {{ destino.uf_origem_sigla }} - {{ destino.municipio_origem_display | formatarNome }}</p>
+                <p><strong>Forma de deslocamento:</strong> {{ destino.forma_deslocamento_display }}</p>
+                <p><strong>Data solicitada:</strong> {{ destino.data | date: 'dd/MM/yyyy' }}</p>
+                <div *ngIf="destino.forma_deslocamento == 2">
+                    <p><strong>Com motorista:</strong> {{ formatarBooleano(destino.com_motorista)  }}</p>
+                </div>
+                <div *ngIf="destino.data_daa">
+                    <p><strong>Data aprovada pelo DAA:</strong> {{ destino.data_daa | date: 'dd/MM/yyyy' }}</p>
+                </div>
+            </div>
+            <div style="width: 50%;" style="margin-bottom: 35px;">
+                <p>&nbsp;</p>
+                <p><strong>Destino:</strong> {{ destino.uf_destino_sigla }} - {{ destino.municipio_destino_display | formatarNome }}</p>
+                <p><strong>Preferência de turno:</strong> {{ destino.pref_turno_ida_display }}</p>
+                <p><strong>Horário solicitado:</strong> {{ destino.data | date: 'HH:mm' }}</p>
+                <div *ngIf="destino.forma_deslocamento == 2">
+                    <p><strong>Veículo do DAA:</strong> {{ formatarBooleano(destino.veiculo_daa)  }}</p>
+                </div>
+                <div *ngIf="destino.data_daa">
+                    <p><strong>Horário aprovado pelo DAA:</strong> {{ destino.data_daa | date: 'HH:mm' }}</p>
+                </div>
+                </div>
+        </div>
+    </ng-container>
+</div>

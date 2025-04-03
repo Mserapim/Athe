@@ -1,0 +1,12 @@
+<mpmt-listagem2 [service]="service" [habilitar-favorito]="false" [ocultarTitulo]="true" [ocultarOpcoes]="true">
+    <!-- Ações -->
+    <div acoes style="margin-bottom: 15px;">
+        <mpmt-botao (click)="irNovo()">Novo</mpmt-botao>
+    </div>
+
+    <!-- Filtros -->
+    <div filtros class="w-full">
+        <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
+        </form>
+    </div>
+</mpmt-listagem2>

@@ -1,0 +1,30 @@
+<div *ngIf="isOptionsOpen" class="overlay"></div>
+
+<mat-form-field *ngIf="ativarSelecao" appearance="fill" class="w-full flex">
+    <mat-label *ngIf="titulo && titulo_class" class="{{ titulo_class }}">{{
+        titulo
+    }}</mat-label>
+
+    <mat-label *ngIf="titulo && titulo_class == ''">{{ titulo }}</mat-label>
+
+    <input
+        matInput
+        [matAutocomplete]="auto2"
+        [placeholder]="this.placeholder"
+        (input)="limparSelecao()"
+        [(ngModel)]="palavra_chave"
+        [disabled]="disabled"
+        [multiple]="multiple"
+    />
+    <mat-autocomplete
+        #auto2="matAutocomplete"
+        [displayWith]="displayFn"
+        (optionSelected)="selecionar($event.option?.value)"
+        (opened)="onOptionsOpened()"
+        (closed)="onOptionsClosed()"
+    >
+        <mat-option *ngFor="let opcao of opcoes$ | async" [value]="opcao">
+            <span [innerHTML]="opcao?.titulo"></span>
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

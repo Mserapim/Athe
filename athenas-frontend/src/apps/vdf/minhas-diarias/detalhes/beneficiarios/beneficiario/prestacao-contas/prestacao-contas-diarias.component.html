@@ -1,0 +1,40 @@
+<div *ngIf="prestacoes && prestacoes.length > 0 ">
+    <h1 class="font-bold text-lg text-primary" style="margin-top:20px;">Prestação de contas</h1>
+
+    <mat-list>
+        <div *ngFor="let prestacao of prestacoes" class="prestacao-item">
+      
+          <div mat-subheader>Prestação - Data limite: {{prestacao.data_limite | date:'dd/MM/yyyy'}} - Status: {{prestacao.status_display}}</div>
+          
+          <mat-list-item>
+            <div class="anexos-container">
+      
+              <!-- Exportar Prestação -->
+              <div class="anexo-item">
+                <mat-icon matListItemIcon>picture_as_pdf</mat-icon>
+                Exportar Prestação
+                <button (click)="exportar_prestacao(prestacao.id)">
+                  <mat-icon style="font-size: 24px;" class="mat-primary">download</mat-icon>
+                </button>
+              </div>
+              
+              <!-- Anexos -->
+              <div *ngFor="let anexo of prestacao.anexos" class="anexo-item">
+                <mat-icon matListItemIcon>article</mat-icon>
+                <div>
+                  {{ anexo.filename }}
+                  <button (click)="downloadAnexo(anexo.id)">
+                    <mat-icon style="font-size: 24px;" class="mat-primary">download</mat-icon>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </mat-list-item>
+          
+        </div>
+      </mat-list>
+      
+        
+</div>
+  

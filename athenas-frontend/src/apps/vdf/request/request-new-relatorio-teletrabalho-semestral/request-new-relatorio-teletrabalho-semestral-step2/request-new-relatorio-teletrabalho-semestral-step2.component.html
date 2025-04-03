@@ -1,0 +1,166 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <div class="flex justify-between py-2">
+        <div class="flex font-bold text-xl">
+            <h1 class="font-bold text-lg">{{ title }}</h1>
+        </div>
+    </div>
+
+    <form [formGroup]="form" class="flex flex-col gap-2">
+        <mat-form-field class="self-center w-full">
+            <mat-label>
+                Descrição das dificuldades observadas pelo Gestor durante o
+                regime de Teletrabalho no semestre avaliado em relação ao/s
+                servidores.</mat-label
+            >
+
+            <textarea
+                matInput
+                type="text"
+                formControlName="dificuldades_servidores"
+                required
+            ></textarea>
+
+            <mat-error
+                *ngIf="form.get('dificuldades_servidores').hasError('required')"
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+
+        <mat-form-field class="self-center w-full">
+            <mat-label>
+                Medidas adotadas para dirimir as dificuldades
+                apontadas.</mat-label
+            >
+
+            <textarea
+                matInput
+                type="text"
+                required
+                formControlName="medidas_dirimir_dificuldades_servidores"
+            ></textarea>
+
+            <mat-error
+                *ngIf="
+                    form
+                        .get('medidas_dirimir_dificuldades_servidores')
+                        .hasError('required')
+                "
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+
+        <mat-form-field class="self-center w-full">
+            <mat-label>
+                Descrição das dificuldades e facilidades do gestor em relação à
+                gestão do Teletrabalho no semestre avaliado.</mat-label
+            >
+
+            <textarea
+                matInput
+                type="text"
+                required
+                formControlName="dificuldades_facilidades_gestor"
+            ></textarea>
+
+            <mat-error
+                *ngIf="
+                    form
+                        .get('dificuldades_facilidades_gestor')
+                        .hasError('required')
+                "
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+
+        <mat-form-field class="self-center w-full">
+            <mat-label>
+                Medidas adotadas para dirimir as dificuldades
+                apontadas.</mat-label
+            >
+
+            <textarea
+                matInput
+                required
+                type="text"
+                formControlName="medidas_dirimir_dificuldades_gestor"
+            ></textarea>
+
+            <mat-error
+                *ngIf="
+                    form
+                        .get('medidas_dirimir_dificuldades_gestor')
+                        .hasError('required')
+                "
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+
+        <mat-form-field class="self-center w-full">
+            <mat-label>
+                Descrição dos resultados alcançados na unidade em função do
+                regime de teletrabalho no semestre avaliado.</mat-label
+            >
+
+            <textarea
+                matInput
+                required
+                type="text"
+                formControlName="resultados_alcancados"
+            ></textarea>
+
+            <mat-error
+                *ngIf="form.get('resultados_alcancados').hasError('required')"
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+
+        <mat-form-field class="self-center w-full">
+            <mat-label>
+                Sugestões de melhorias para aperfeiçoamento do
+                programa.</mat-label
+            >
+
+            <textarea
+                matInput
+                required
+                type="text"
+                formControlName="sugestoes_melhorias"
+            ></textarea>
+            <mat-error
+                *ngIf="form.get('sugestoes_melhorias').hasError('required')"
+                >Preenchimento Obrigatório</mat-error
+            >
+        </mat-form-field>
+    </form>
+
+    <br />
+    <div
+        *ngIf="mensagem"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ mensagem }}
+    </div>
+    <div
+        class="flex flex-col md:flex-row justify-center md:justify-end gap-4 w-full"
+    >
+        <button
+            mat-button
+            color=""
+            class="p-8 py-4 w-full md:w-1/3"
+            (click)="goBack()"
+        >
+            Voltar
+        </button>
+
+        <button
+            mat-button
+            [disabled]="!form.valid"
+            color="primary"
+            [ngClass]="{ '!bg-primary': form.valid }"
+            class="bg-gray text-white p-8 py-4 w-full md:w-1/3"
+            (click)="goConfirmar()"
+        >
+            Realizar o envio
+        </button>
+    </div>
+</div>

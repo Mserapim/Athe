@@ -1,0 +1,30 @@
+<form>
+    <mat-form-field class="w-full relative">
+        <mat-label>{{title}}</mat-label>
+        <div class="chips-container w-full" (focusin)="onFocus()" (focusout)="onBlur($event)">
+            <input placeholder="{{placeholder}}" #input [formControl]="formControl"
+                   [matChipInputFor]="chipGrid" [matAutocomplete]="auto"
+                   [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                   (input)="onInputChange()"
+                   [(ngModel)]="textoPesquisa"
+                   (matChipInputTokenEnd)="add($event)"/>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onOptionSelected($event, input)">
+                <mat-option *ngFor="let option of _options" [value]="option.label">
+                    {{option.label}}
+                </mat-option>
+            </mat-autocomplete>
+            <mat-chip-grid #chipGrid aria-label="Selection">
+                <mat-chip-row *ngFor="let selectedOption of _selectedOptions" (removed)="removeOption(selectedOption)">
+                    {{ selectedOption.label }}
+                    <button *ngIf="inputFocused" matChipRemove [attr.aria-label]="'remove ' + selectedOption.label">
+                        <mat-icon>cancel</mat-icon>
+                    </button>
+                </mat-chip-row>
+            </mat-chip-grid>
+            <!-- Ícone de "X" para remover todos os chips -->
+            <button mat-icon-button (click)="removeAll()" class="absolute right-1 top-1/2 transform -translate-y-1/2" matTooltip="Remover todos">
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </div>
+    </mat-form-field>
+</form>

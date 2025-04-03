@@ -1,0 +1,26 @@
+// import { usePost } from 'core/axios/use-post';
+
+// interface Payload {
+//     id: number;
+//     targets: {
+//         id: number;
+//         total_completed: number;
+//         mark_situation: number;
+//         observation: string; //Será removido
+//     }[];
+//     observation: string;
+// }
+
+// class Response {}
+
+// export async function apiRhPvfRequestsIdSendingTeleworksService(
+//     payload: Payload
+// ) {
+//     const { data } = await usePost<Response>(
+
+//         /athenas/api/v2/rh/pvf/requests/{id}/sending-teleworks/
+//         `rh/pvf/requests/${payload.id}/sending-teleworks/`,
+//         payload
+//     );
+//     return data;
+// }

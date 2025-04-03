@@ -1,0 +1,45 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2-accordion [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <mpmt-botao (click)="criar()" *ngIf="navegacaoAtualService.possuiPermissao('criar')">
+                <mat-icon
+                    [svgIcon]="'mat_outline:add'"
+                    style="vertical-align: middle"
+                ></mat-icon>
+                Novo item
+            </mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nomenclatura">
+                    <mat-label class="text-white">Pesquisar por nome</mat-label>
+                    <input
+                        matInput
+                        formControlName="keyword"
+                        placeholder=""
+                        (change)="this.service.recarregarListagem()"
+                    />
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Filtro por tabela</mat-label>
+                    <mat-select
+                        formControlName="tabela"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                    >
+                        <mat-option
+                            *ngFor="let option of tabelasFiltro"
+                            [value]="option.id"
+                        >
+                            {{ option.titulo }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </form>
+        </div>
+    </mpmt-listagem2-accordion>
+</div>

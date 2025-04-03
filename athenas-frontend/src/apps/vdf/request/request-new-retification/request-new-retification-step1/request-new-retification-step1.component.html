@@ -1,0 +1,97 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <div class="flex flex-col gap-1">
+        <h1 class="text-base">Selecione um usufruto para retificar</h1>
+
+        <p class="text-xs text-gray-600">
+            Informe o tipo de afastamento que deseja solicitar e clique em
+            continuar.
+        </p>
+    </div>
+
+    <div
+        *ngIf="!results || results?.length <= 0"
+        class="bg-red-50 p-4 text-red-500 border border-red-200 rounded"
+    >
+        Não há usufrutos retificáveis
+    </div>
+    <div class="table-responsive" *ngIf="results?.length > 0">
+        <table mat-table [dataSource]="results">
+            <ng-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef>#</th>
+                <td mat-cell *matCellDef="let row">
+                    <mat-checkbox
+                        (click)="$event.stopPropagation()"
+                        (change)="$event ? selection.toggle(row) : null"
+                        [checked]="selection.isSelected(row)"
+                    >
+                    </mat-checkbox>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="type_usufruct">
+                <th mat-header-cell *matHeaderCellDef>Programação</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.type_usufruct_name }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="start_date">
+                <th mat-header-cell *matHeaderCellDef>Início</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.start_date | date : "dd/MM/yyyy" }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="end_date">
+                <th mat-header-cell *matHeaderCellDef>Fim</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.end_date | date : "dd/MM/yyyy" }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="days">
+                <th mat-header-cell *matHeaderCellDef>Dias programados</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.days }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="type_activity">
+                <th mat-header-cell *matHeaderCellDef>Tipo</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.type_activity }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="start_date_acquisition">
+                <th mat-header-cell *matHeaderCellDef>
+                    Início do período aquisitivo
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.start_date_acquisition | date : "dd/MM/yyyy" }}
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </div>
+
+    <!-- <mat-paginator
+        [length]="dataSource.total$ | async"
+        [pageSize]="10"
+        [pageSizeOptions]="[10, 15, 30]"
+    ></mat-paginator> -->
+
+    <div class="flex justify-end" *ngIf="results?.length > 0">
+        <button
+            [disabled]="!isValid"
+            (click)="goNext()"
+            mat-button
+            color="primary"
+            class="bg-primary text-white p-8 py-4 w-56"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

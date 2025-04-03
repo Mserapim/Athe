@@ -1,0 +1,70 @@
+.picklist-container {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.picklist-column {
+    margin-bottom: 20px;
+}
+
+.picklist-add-remove-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.picklist-add-remove-button {
+    width: 120px;
+    border-radius: 8px;
+    background-color: #4F46E5;
+    color: white;
+    margin-bottom: 10px;
+
+    .mat-icon {
+        color: white;
+    }
+}
+
+.picklist-add-remove-button:hover {
+    background-color: #4F46E5; //darken(#4F46E5, 10%);
+}
+
+.picklist-list {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.picklist-list-2 {
+    height: 350px;
+    overflow-y: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .picklist-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .picklist-column {
+        width: 45%;
+        margin-bottom: 0;
+    }
+}
+
+.picklist-form-field{
+    width: 80%;
+}
+
+.list-container {
+    position: relative;
+    min-height: 380px; // Ajuste conforme necessário
+}
+
+.spinner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

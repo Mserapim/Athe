@@ -1,0 +1,41 @@
+::ng-deep .custom-radio-checkbox .mdc-checkbox__background {
+  border-radius: 50% !important; /* Torna o checkbox circular */
+}
+
+::ng-deep .custom-radio-checkbox .mdc-checkbox__background::before {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #fff !important; /* Cor do círculo externo */
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  content: '' !important; /* Cria o círculo externo */
+}
+
+::ng-deep .custom-radio-checkbox .mdc-checkbox__background::after {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: transparent!important; /* Inicialmente transparente */
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  content: '' !important; /* Cria o círculo interno */
+  transition: background-color 0.2s ease-in-out !important; /* Transição suave para o preenchimento */
+}
+
+::ng-deep .custom-radio-checkbox.mat-checkbox-checked .mdc-checkbox__background::after {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: #000 !important; /* Inicialmente transparente */
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  content: '' !important; /* Cria o círculo interno */
+  transition: background-color 0.2s ease-in-out !important; /* Transição suave para o preenchimento */
+}

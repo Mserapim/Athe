@@ -1,0 +1,264 @@
+version: "3.7"
+
+services:
+  web:
+    image: ${IMGHUB_REPO}/nginx
+    command: configure start
+    stop_signal: SIGINT
+    deploy:
+      replicas: 4
+      restart_policy:
+        condition: any
+        delay: 15s
+      update_config:
+        parallelism: 2
+        delay: 15s
+        order: stop-first
+      resources:
+        limits:
+          memory: 1024M
+        reservations:
+          memory: 512M
+    ports:
+      - target: 8000
+        published: ${HTTP_PORT}
+        protocol: tcp
+      - target: 8443
+        published: ${HTTPS_PORT}
+        protocol: tcp
+    volumes:
+      - ${PWD}/volumes/etc:/app/etc
+      - ${PWD}/volumes/cache:/app/var/cache
+      - ${PWD}/volumes/htdocs:/app/var/www
+      - ${PWD}/volumes/logs:/app/var/log
+  worker:
+    stop_signal: SIGINT
+    image: ${IMGHUB_REPO}/athenas:${BRANCH}
+    # caso esteja rodando pela primeira vez ou atualizado de uma versão do SO para outra
+    # é necessário remover o app-vol/env para que seja criado com a estrura adequada
+    # do novo SO
+    command: register start
+    deploy:
+      mode: replicated
+      replicas: 4
+      restart_policy:
+        condition: any
+        delay: 5s
+      update_config:
+        parallelism: 1
+        delay: 30s
+        order: start-first
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+    environment:
+      PYTHONPATH: /app/root
+      ATHENAS_CONFIG_FILE: /etc/athenas.conf
+      PYTHONUNBUFFERED: 0
+      DCVS_BRANCH: port-py37
+      ENV_PY_VERSION: 3.9
+      RELOAD: 0
+      APP_USER_ID: $USER_ID
+      APP_GROUP_ID: $USER_ID
+      DATABASE_DEFAULT: /run/secrets/bd_athenas
+    volumes:
+      - ${PWD}/config.d/branched.json:/etc/athenas.conf:ro
+      - ${PWD}/volumes/etc:/app/etc
+      - ${PWD}/volumes/storage:/app/var/storage
+      - ${PWD}/volumes/htdocs:/app/var/www
+      - ${PWD}/volumes/logs:/app/var/log
+      - ${PWD}/volumes/cache:/app/var/cache
+    secrets:
+      - bd_athenas
+  manager:
+    stop_signal: SIGINT
+    image: ${IMGHUB_REPO}/athenas:${BRANCH}
+    # caso esteja rodando pela primeira vez ou atualizado de uma versão do SO para outra
+    # é necessário remover o app-vol/env para que seja criado com a estrura adequada
+    # do novo SO
+    command: configure collectstatic jsbuild migrate register start
+    # command: configure collectstatic jsbuild register start
+    deploy:
+      mode: replicated
+      placement:
+        constraints:
+          - node.labels.name == node0
+      replicas: 1
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+    environment:
+      PYTHONPATH: /app/root
+      ATHENAS_CONFIG_FILE: /etc/athenas.conf
+      PYTHONUNBUFFERED: 0
+      DCVS_BRANCH: port-py37
+      ENV_PY_VERSION: 3.9
+      RELOAD: 0
+      APP_USER_ID: $USER_ID
+      APP_GROUP_ID: $USER_ID
+      DATABASE_DEFAULT: /run/secrets/bd_athenas
+    volumes:
+      - ${PWD}/config.d/branched.json:/etc/athenas.conf:ro
+      - ${PWD}/volumes/etc:/app/etc
+      - ${PWD}/volumes/storage:/app/var/storage
+      - ${PWD}/volumes/htdocs:/app/var/www
+      - ${PWD}/volumes/logs:/app/var/log
+      - ${PWD}/volumes/cache:/app/var/cache
+    secrets:
+      - bd_athenas
+  daphne:
+    stop_signal: SIGINT
+    image: ${IMGHUB_REPO}/athenas:${BRANCH}
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: any
+        delay: 5s
+      update_config:
+        parallelism: 2
+        delay: 10s
+        order: stop-first
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 256M
+    command: daphne
+    volumes:
+      - ${PWD}/config.d/branched.json:/etc/athenas.conf:ro
+      - ${PWD}/volumes/storage:/app/var/storage
+      - ${PWD}/volumes/cache:/app/var/cache
+      - ${PWD}/volumes/logs:/app/var/log
+    environment:
+      DEV_MODE: 1
+      PYTHONPATH: /app/root
+      ATHENAS_CONFIG_FILE: /etc/athenas.conf
+      DJANGO_SETTINGS_MODULE: app.settings
+      PYTHONUNBUFFERED: 0
+      ENV_PY_VERSION: 3.9
+      APP_USER_ID: $USER_ID
+      APP_GROUP_ID: $USER_ID
+      DATABASE_DEFAULT: /run/secrets/bd_athenas
+    secrets:
+      - bd_athenas
+  celery:
+    stop_signal: SIGINT
+    image: ${IMGHUB_REPO}/athenas:${BRANCH}
+    deploy:
+      mode: replicated
+      replicas: 4
+      restart_policy:
+        condition: any
+        delay: 5s
+      update_config:
+        parallelism: 2
+        delay: 10s
+        order: stop-first
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 256M
+    command: celery
+    environment:
+      PYTHONPATH: /app/root
+      ATHENAS_CONFIG_FILE: /etc/athenas.conf
+      DJANGO_SETTINGS_MODULE: app.settings
+      PYTHONUNBUFFERED: 0
+      ENV_PY_VERSION: 3.9
+      APP_USER_ID: $USER_ID
+      APP_GROUP_ID: $USER_ID
+      DATABASE_DEFAULT: /run/secrets/bd_athenas
+    volumes:
+      - ${PWD}/config.d/branched.json:/etc/athenas.conf:ro
+      - ${PWD}/volumes/etc:/app/etc
+      - ${PWD}/volumes/storage:/app/var/storage
+      - ${PWD}/volumes/htdocs:/app/var/www
+      - ${PWD}/volumes/logs:/app/var/log
+      - ${PWD}/volumes/cache:/app/var/cache
+    secrets:
+      - bd_athenas
+  flower:
+    stop_signal: SIGINT
+    image: ${IMGHUB_REPO}/athenas:${BRANCH}
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: any
+        delay: 5s
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: stop-first
+      resources:
+        limits:
+          memory: 512M
+    command: flower
+    ports:
+      - ${FLOWER_PORT}:8001
+    environment:
+      PYTHONPATH: /app/root
+      ATHENAS_CONFIG_FILE: /etc/athenas.conf
+      DJANGO_SETTINGS_MODULE: app.settings
+      PYTHONUNBUFFERED: 0
+      ENV_PY_VERSION: 3.9
+      APP_USER_ID: $USER_ID
+      APP_GROUP_ID: $USER_ID
+      DATABASE_DEFAULT: /run/secrets/bd_athenas
+    volumes:
+      - ${PWD}/config.d/branched.json:/etc/athenas.conf:ro
+      - ${PWD}/volumes/logs:/app/var/log
+      - ${PWD}/volumes/storage:/app/var/storage
+      - ${PWD}/volumes/cache:/app/var/cache
+    secrets:
+      - bd_athenas
+  mongo:
+    #image: mongo:5.0.9
+    image: registry.mpmt.mp.br/mongo:5.0.9
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    volumes:
+      - ${PWD}/volumes/mongo:/data/db
+  
+  rabbitmq:
+    #image: rabbitmq:3-management
+    image: registry.mpmt.mp.br/rabbitmq:3-management
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    volumes:
+          - ${PWD}/volumes/etc/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+  redis:
+    #image: redis:5-alpine
+    image: registry.mpmt.mp.br/redis:5-alpine
+    command: redis-server /conf/redis.conf
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+    sysctls:
+      net.core.somaxconn: 1024
+    configs:
+      - source: athenas_redis
+        target: /conf/redis.conf
+        uid: '999'
+        mode: 0600
+    volumes:
+      - ${PWD}/volumes/redis:/data
+
+configs:
+  athenas_redis:
+    file: ${PWD}/redis.conf
+
+secrets:
+  bd_athenas:
+    external: true

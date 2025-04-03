@@ -1,0 +1,224 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-listagem2 [service]="service">
+        <!-- Ações -->
+        <div acoes>
+            <mpmt-botao (click)="atualizarAntiguidades()">
+                <mat-icon
+                    [svgIcon]="'mat_outline:refresh'"
+                    style="vertical-align: middle"
+                ></mat-icon>
+                Atualizar lista de antiguidades
+            </mpmt-botao>
+        </div>
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form
+                [formGroup]="service.filtros"
+                class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nome completo">
+                    <mat-label class="text-white">Pesquisar por nome</mat-label>
+                    <input
+                        matInput
+                        formControlName="palavra_chave"
+                        placeholder=""
+                        (change)="this.service.recarregarListagem()"
+                    />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label class="text-white">Tipo Membro</mat-label>
+                    <mat-select
+                        formControlName="tipo_membro"
+                        (ngModelChange)="this.service.recarregarListagem()"
+                    >
+                        <mat-option
+                            *ngFor="let option of tipos_membros"
+                            [value]="option.valor"
+                        >
+                            {{ option.nome }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </form>
+        </div>
+    </mpmt-listagem2>
+</div>
+<!--
+<div class="flex flex-col p-8 w-full">
+    <div class="text-lg font-bold py-4">
+        {{ obterTitulo() }}
+    </div>
+    <div class="flex justify-end">
+        <div acoes>
+            <mpmt-botao (click)="atualizarAntiguidades()">
+                <mat-icon
+                    [svgIcon]="'mat_outline:refresh'"
+                    style="vertical-align: middle"
+                ></mat-icon>
+                Atualizar lista de antiguidades
+            </mpmt-botao>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4 md:justify-between mt-0">
+        <form
+            [formGroup]="filtros"
+            class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
+        >
+            <mat-form-field class="w-full" placeholder="Nome completo">
+                <mat-label class="text-white">Pesquisar por nome</mat-label>
+                <input
+                    matInput
+                    formControlName="palavra_chave"
+                    placeholder=""
+                    (change)="this.service.recarregarListagem()"
+                />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label class="text-white">Tipo Membro</mat-label>
+                <mat-select
+                    formControlName="tipo_membro"
+                    (ngModelChange)="this.service.recarregarListagem()"
+                >
+                    <mat-option
+                        *ngFor="let option of tipos_membros"
+                        [value]="option.valor"
+                    >
+                        {{ option.nome }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </form>
+    </div>
+
+    <div class="flex flex-row w-full table-responsive">
+        <table
+            mat-table
+            [dataSource]="listagem$"
+            class="mat-elevation-z8"
+            matSort
+            (matSortChange)="alterarOrdenacao($event)"
+        >
+            <ng-container matColumnDef="ordem_antiguidade">
+                <th mat-header-cell *matHeaderCellDef>Ordem Antiguidade</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.ordem_antiguidade }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="matricula">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Matricula
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.matricula }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="nome">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.nome }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="get_tipo_cargo_display">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Tipo Membro
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.get_tipo_cargo_display }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="data_inicio_instancia">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Data Inicio Instancia
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ getData(element.data_inicio_instancia) }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="data_inicio_carreira">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Data Inicio Carreira
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ getData(element.data_inicio_carreira) }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="tempo_afastamento_formatado">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Tempo Afastamento
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.tempo_afastamento_formatado }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="total_instancia_formatado">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Tempo total de Instancia
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.total_instancia_formatado }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="efetivo_exercicio_formatado">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Tempo Efetivo
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.efetivo_exercicio_formatado }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="total_carreira_formatado">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Tempo total de Carreira
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.total_carreira_formatado }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="get_origem_display">
+                <th mat-header-cell *matHeaderCellDef>Origem</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.get_origem_display }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="posicao_concurso">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Posição Concurso
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.posicao_concurso }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="modified_at">
+                <th mat-header-cell *matHeaderCellDef>Processado em</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ getDataHora(element.modified_at) }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="acao">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="flex justify-end"></div>
+                </td>
+            </ng-container>
+
+            <tr
+                mat-header-row
+                *matHeaderRowDef="colunasVisiveisComAcao | async"
+            ></tr>
+            <tr
+                mat-row
+                *matRowDef="let row; columns: colunasVisiveisComAcao | async"
+            ></tr>
+        </table>
+    </div>
+
+    <mat-paginator
+        [length]="total$ | async"
+        [pageSize]="10"
+        [pageSizeOptions]="[10, 15, 30, 50, 100]"
+    ></mat-paginator>
+</div> -->

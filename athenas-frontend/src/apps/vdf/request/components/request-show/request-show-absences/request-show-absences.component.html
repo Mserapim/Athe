@@ -1,0 +1,111 @@
+<div class="flex flex-col gap-2 justify-between">
+    <div class="flex gap-2" *ngIf="data?.start_date">
+        <div class="font-bold">Data de inicio:</div>
+        <div>{{ printDate(data?.start_date) }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.days">
+        <div class="font-bold">Dias:</div>
+        <div>{{ data?.days }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.hours">
+        <div class="font-bold">Horas:</div>
+        <div>{{ data?.hours }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.end_date">
+        <div class="font-bold">Data de fim:</div>
+        <div>{{ printDate(data?.end_date) }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.family_bond">
+        <div class="font-bold">Familiar:</div>
+        <div>{{ data?.family_bond_label }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.person">
+        <div class="font-bold">Nome:</div>
+        <div>{{ data?.person_name }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.dependent_name">
+        <div class="font-bold">Nome do dependente:</div>
+        <div>{{ data?.dependent_name }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="exibirCapacidade(data)">
+        <div class="font-bold">Capacidade:</div>
+        <div>{{ data?.capacity_label }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.classificacao != undefined">
+        <div class="font-bold">Classificação:</div>
+        <div>{{ printCapacidade(data.classificacao) }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.incapacity">
+        <div class="font-bold">Capacidade:</div>
+        <div>{{ data?.incapacity }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.dependent_type_label">
+        <div class="font-bold">Tipo do Dependente:</div>
+        <div>{{ data?.dependent_type_label }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.cid?.code">
+        <div class="font-bold">CID:</div>
+        <div>
+            {{ data?.cid?.chapter }} - {{ data?.cid?.code }} -
+            {{ data?.cid?.description }}
+        </div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.medical_certificate">
+        <button
+            mat-button
+            class="bg-primary text-white w-min"
+            (click)="download(data.medical_certificate)"
+        >
+            Atestado medico
+        </button>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.blood_donation_certificate">
+        <button
+            mat-button
+            class="bg-primary text-white w-min"
+            (click)="download(data.blood_donation_certificate)"
+        >
+            Download
+        </button>
+    </div>
+
+    <button
+        *ngIf="data.marriage_certificate"
+        class="bg-primary text-white w-min"
+        (click)="download(data.marriage_certificate)"
+        mat-button
+    >
+        Download
+    </button>
+
+    <button
+        *ngIf="data.birth_certificate"
+        class="bg-primary text-white w-min"
+        (click)="download(data.birth_certificate)"
+        mat-button
+    >
+        Download
+    </button>
+
+    <button
+        *ngIf="data.death_certificate"
+        class="bg-primary text-white w-min"
+        (click)="download(data.death_certificate)"
+        mat-button
+    >
+        Download
+    </button>
+</div>

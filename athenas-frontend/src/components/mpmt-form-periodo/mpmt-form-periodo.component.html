@@ -1,0 +1,17 @@
+<mpmt-form-base [titulo]="titulo" [mensagemErro]="mensagemDeErro()" >
+    
+    <p-datepicker 
+        [(ngModel)]="valor" 
+        selectionMode="range" 
+        [readonlyInput]="true" 
+        [numberOfMonths]="2" 
+        [iconDisplay]="'input'" 
+        [showIcon]="true" 
+        (onSelect)="selecionar($event)" 
+    >
+        <ng-template #inputicon let-clickCallBack="clickCallBack">
+            <i class="pi pi-clock" (click)="clickCallBack($event)" ></i>
+        </ng-template>    
+    </p-datepicker>
+
+</mpmt-form-base>

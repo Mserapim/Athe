@@ -1,0 +1,111 @@
+<div class="flex flex-col py-2 gap-2 overflow-y-auto">
+    <div class="table-responsive">
+        <table mat-table [dataSource]="results" class="demo-table">
+            <ng-container matColumnDef="start_date">
+                <th mat-header-cell *matHeaderCellDef>Data inicio</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.start_date | date : "dd/MM/yyyy" }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="end_date">
+                <th mat-header-cell *matHeaderCellDef>Data fim</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.end_date | date : "dd/MM/yyyy" }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="days">
+                <th mat-header-cell *matHeaderCellDef>Dias</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.days }} dia(s)
+                    <div *ngIf="!element.start_date">(Venda)</div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="payment_installments">
+                <th mat-header-cell *matHeaderCellDef>Parcelas</th>
+                <td mat-cell *matCellDef="let element">
+                    <div *ngIf="!element.start_date">
+                        <div *ngIf="!element.isEditing">
+                            {{ element.payment_installments }}
+                        </div>
+                        <div *ngIf="element.isEditing">
+                            <input
+                            matInput
+                            [(ngModel)]="element.payment_installments"
+                            class="bg-gray-100 border w-full"
+                        />
+                        </div>
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="numero_parcela">
+                <th mat-header-cell *matHeaderCellDef>Parcelas</th>
+                <td mat-cell *matCellDef="let element">
+                    <div>
+                        {{ element.numero_parcela }}
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="payment_competence">
+                <th mat-header-cell *matHeaderCellDef>Previsão de pagamento</th>
+                <td mat-cell *matCellDef="let element">
+                    <div *ngIf="!element.isEditing">
+                        {{ element.payment_competence }}
+                    </div>
+                    <div *ngIf="element.isEditing">
+                        <input
+                            matInput
+                            [(ngModel)]="element.payment_competence"
+                            class="bg-gray-100 border w-full"
+                        />
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="editar">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let element" style="width: 240px;">
+                    <div class="flex justify-end" *ngIf="canEdit">
+                        <button
+                            mat-button
+                            class="bg-primary text-white w-min"
+                            *ngIf="!element.isEditing"
+                            (click)="enableEditing(element)"
+                        >
+                            Editar
+                        </button>
+                        <div *ngIf="element.isEditing">
+                            <button
+                                mat-button
+                                class="bg-primary text-white w-min"
+                                (click)="save(element)"
+                            >
+                                Salvar
+                            </button>
+                            <button
+                                mat-button
+                                class="bg-red-500 text-white w-min"
+                                (click)="cancelEditing(element)"
+                            >
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+        <div 
+            *ngIf="message" 
+            class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+        >
+            {{ message }}
+        </div>
+    </div>
+</div>

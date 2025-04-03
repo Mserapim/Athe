@@ -1,0 +1,11 @@
+<div class="flex flex-col gap-1 w-full h-min">
+    
+    <span *ngIf="titulo" class="font-medium text-sm">{{titulo}}</span>
+
+    <ng-content></ng-content>
+
+    <span *ngIf="mensagemErro" class="text-xs text-red-500">
+        {{ mensagemErro }}
+    </span>
+
+</div>

@@ -1,0 +1,138 @@
+<div
+    class="flex flex-col gap-2 p-4 rounded text-bold shadow bg-white text-black h-full max-h-[430px]"
+>
+    <span class="font-bold text-lg self-center pb-4 w-full rounded sticky top-0 bg-white z-10">
+        Escala de plantões de servidores
+    </span>
+
+    <div class="flex-1 overflow-y-auto">
+        <form [formGroup]="form" class="flex flex-col w-full">
+
+            <mat-radio-group
+                formControlName="tipo_filtro"
+                class="flex flex-col mb-2"
+            >
+                <mat-radio-button
+                    value="COMPETENCIA"
+                    (click)="form.patchValue({ inicio: null, fim: null })"
+                >
+                    Filtro por competência
+                </mat-radio-button>
+                <mat-radio-button
+                    value="PERIODO"
+                    (click)="form.patchValue({ competencia: null })"
+                >
+                    Filtro por período
+                </mat-radio-button>
+            </mat-radio-group>
+
+            <mat-form-field
+                class="w-full"
+                *ngIf="form.value.tipo_filtro === 'COMPETENCIA'"
+            >
+                <mat-label>Referência (MM/YYYY)</mat-label>
+                <input
+                    matInput
+                    formControlName="competencia"
+                    placeholder="MM/YYYY"
+                />
+            </mat-form-field>
+
+            <mat-form-field
+                class="w-full"
+                *ngIf="form.value.tipo_filtro === 'PERIODO'"
+            >
+                <mat-label>Filtro por período</mat-label>
+                <mat-date-range-input
+                    [rangePicker]="picker"
+                    [formGroup]="form"
+                >
+                    <input
+                        matStartDate
+                        placeholder="Data de início"
+                        formControlName="inicio"
+                    />
+                    <input
+                        matEndDate
+                        placeholder="Data de fim"
+                        formControlName="fim"
+                    />
+                </mat-date-range-input>
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="picker"
+                ></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Plantonista</mat-label>
+                <input
+                    matInput
+                    [matAutocomplete]="auto"
+                    (ngModelChange)="loadEmployees($event)"
+                    formControlName="employee"
+                />
+                <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                    <mat-option
+                        *ngFor="let option of dataSourceEmployee.results$ | async"
+                        [value]="option"
+                    >
+                        {{ option.name }}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Lotação</mat-label>
+                <input
+                    matInput
+                    [matAutocomplete]="autoWorkplace"
+                    (ngModelChange)="loadWorkplaces($event)"
+                    formControlName="workplace"
+                />
+                <mat-autocomplete
+                    #autoWorkplace="matAutocomplete"
+                    [displayWith]="displayFn"
+                >
+                    <mat-option
+                        *ngFor="let option of dataSourceWorkplaces.results$ | async"
+                        [value]="option"
+                    >
+                        {{ option.name }}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Tipo</mat-label>
+                <mat-select formControlName="tipo_plantao">
+                    <mat-option *ngFor="let tipo of tipos" [value]="tipo.value">
+                        {{ tipo.label }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mpmt-chips-autocomplete
+                [options]="comarcasOpcoes"
+                [title]="'Comarcas'"
+                (optionsSelected)="onComarcasSelecionadas($event)"
+                (filter)="filtrarComarcas($event)"
+            >
+            </mpmt-chips-autocomplete>
+        </form>
+    </div>
+
+    <div class="sticky bottom-0 bg-white pt-4">
+        <button
+            mat-button
+            class="bg-gray-200 text-white mt-auto w-full"
+            [ngClass]="{ '!bg-primary': isValid }"
+            (click)="download()"
+            [class.spinner]="isLoading"
+            [disabled]="!isValid || isLoading"
+        >
+            Download
+        </button>
+    </div>
+</div>

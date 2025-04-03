@@ -1,0 +1,50 @@
+<div
+    class="flex flex-col gap-2 p-4 rounded text-bold shadow bg-white h-full text-black"
+>
+    <span class="font-bold text-lg self-center pb-4 w-full rounded">
+        Ficha financeira
+    </span>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Ano início</mat-label>
+        <mat-select [(ngModel)]="form.ano_inicial">
+            <mat-option *ngFor="let option of years" [value]="option.id">{{
+                option.description
+            }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Ano fim</mat-label>
+        <mat-select [(ngModel)]="form.ano_final">
+            <mat-option *ngFor="let option of years" [value]="option.id">{{
+                option.description
+            }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div
+        *ngIf="isLoading"
+        class="flex p-2 px-4 text-blue-500 border bg-blue-100 border-blue-500 rounded"
+    >
+        Gerando o arquivo, aguarda alguns instantes
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex p-2 px-4 text-red-500 border bg-red-100 border-red-500 rounded"
+    >
+        {{ message }}
+    </div>
+
+    <button
+        mat-button
+        class="bg-gray-200 text-white"
+        [ngClass]="{ '!bg-primary': isValid }"
+        (click)="download()"
+        [class.spinner]="isLoading"
+        [disabled]="!isValid || isLoading"
+    >
+        Download
+    </button>
+</div>

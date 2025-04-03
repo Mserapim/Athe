@@ -1,0 +1,39 @@
+<div class="flex flex-col py-2 gap-8 overflow-y-auto text-black">
+    <div class="font-bold">Confirma exclusão do anexo</div>
+
+    <div>
+        <div class="w-full">
+            <div
+                class="bg-gray-50 p-4 rounded border border-gray-100 font-bold text-lg"
+            >
+                {{ description }}
+            </div>
+        </div>
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex p-2 px-4 text-red-500 border bg-red-100 border-red-500 rounded"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center w-full mt-4">
+        <button
+            mat-button
+            class="p-8 py-4 w-full outline outline-1 outline-gray-200"
+            (click)="goBack()"
+        >
+            Cancelar
+        </button>
+        <button
+            mat-button
+            [ngClass]="{ '!bg-primary': isValid }"
+            class="bg-gray-300 text-white p-8 py-4 w-full"
+            (click)="goConfirm()"
+            [disabled]="!isValid || isLoading"
+        >
+            Salvar
+        </button>
+    </div>
+</div>

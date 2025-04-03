@@ -1,0 +1,34 @@
+<div
+    class="absolute -mt-5 flex cursor-pointer z-50 pr-20 font-bold w-full text-right justify-end bg-white"
+>
+    <div
+        class="flex px-2 pb-1 bg-gray-100 font-bold rounded-b-full"
+        (click)="goClose()"
+    >
+        X
+    </div>
+</div>
+
+<div
+    class="modal-body flex flex-col h-full w-full gap-2 min-h-96 justify-between relative bg-white"
+>
+    <object
+        [data]="getData()"
+        type="application/pdf"
+        width="100%"
+        height="100%"
+    >
+        <div class="text-lg">
+            O navegador não tem suporte para exibição do PDF
+        </div>
+
+        <br />
+        <a
+            [href]="srclink"
+            class="text-blue-500 font-bold"
+            target="_blank"
+            (click)="goClose()"
+            >Clique aqui para baixar</a
+        >
+    </object>
+</div>

@@ -1,0 +1,116 @@
+<mpmt-pagina-listagem [service]="service" class="w-full">
+    <div filtros>
+
+        <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full">
+
+            <!-- <mpmt-form-texto titulo="Nome" placeholder="Digite seu nome" formControlName="nome">
+            </mpmt-form-texto>
+
+            <mpmt-form-texto titulo="Pesquisar" placeholder="Digite para pesquisar" iconePre="pi pi-search"
+                formControlName="termoPesquisa">
+            </mpmt-form-texto>
+
+            <mpmt-form-texto titulo="Código" [desabilitado]="true" formControlName="codigo">
+            </mpmt-form-texto> -->
+
+
+            <mpmt-form-multiselecao-servidores formControlName="usuarios" />
+
+            <mpmt-form-multiselecao [fonte]="apiRhPvfConfigRequestsTypes" formControlName="tipos_solicitacoes"
+                titulo="Tipo Solicitação" atributoDisplay="label" atributoChave="value" />
+
+            <mpmt-form-multiselecao [fonte]="apiRhPvfConfigRequestsStatus" formControlName="situacoes" titulo="Situação"
+                atributoDisplay="label" atributoChave="value" />
+
+            <mpmt-form-multiselecao [fonte]="apiRhPvfConfigRequestsEmployeeTypes" formControlName="categorias"
+                titulo="Categoria Funcional" atributoDisplay="label" atributoChave="value" />
+
+            <mpmt-form-multiselecao [fonte]="apiVdfConfigRequestsAcoesService" formControlName="tipos_acoes"
+                titulo="Tipo de ações" atributoDisplay="label" atributoChave="value" />
+
+            <div class="flex flex-row gap-2 w-full col-span-1 ">
+                <mpmt-form-botao-selecao formControlName="periodo_tipo"
+                    [opcoes]="[{titulo: 'Solicitação',valor: 'DT_SOL'},{titulo: 'Ação',valor: 'DT_ACAO'}]"
+                    class="justify-end mt-4  !w-72" />
+                <mpmt-form-periodo formControlName="periodo_em" titulo="Período" class="w-full"></mpmt-form-periodo>
+            </div>
+
+            <div class="flex col-span-2 w-full justify-end">
+                <mpmt-botao (click)="service.resetar()" cor="branco" class="self-end ">
+                    Limpar filtros
+                </mpmt-botao>
+            </div>
+        </form>
+
+    </div>
+
+    <div opcoes>
+
+        <div class="flex w-full justify-end">
+
+            <button mat-button class="flex flex-row gap-1 bg-primary text-white " (click)="service.downloadRelatorio()"
+                [disabled]="service.downloadMensagem">
+                <div class="flex flex-row gap-1">
+                    <div class="flex self-center items-center ">
+                        <mat-progress-spinner *ngIf="service.downloadMensagem" mode="indeterminate" diameter="16"
+                            class="flex"></mat-progress-spinner>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"
+                            *ngIf="!service.downloadMensagem">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M320 42.667H85.333v234.667H128v-192h174.293L384 167.04v110.294h42.666v-128zm101.655 341.852a56.4 56.4 0 0 0-8.661-5.376q-4.64-2.304-18.816-8.192c-9.515-3.904-15.552-6.848-18.048-8.81c-2.496-1.964-3.755-4.673-3.755-8.108c0-3.968 1.494-7.253 4.438-9.856c2.816-2.389 6.976-3.605 12.394-3.605q7.137 0 13.696 1.536c4.352 1.045 10.902 3.136 19.563 6.336l5.803-23.51c-14.72-4.65-28.352-6.954-40.875-6.954c-17.365 0-29.845 5.333-37.419 16c-4.97 6.87-7.424 14.848-7.424 23.957c0 10.54 3.755 18.624 11.286 24.235c2.645 1.984 5.568 3.755 8.725 5.333c3.179 1.558 8.619 3.947 16.32 7.147c10.432 4.288 16.981 7.424 19.627 9.493c2.645 2.048 3.989 4.907 3.989 8.576c0 4.118-1.365 7.574-4.075 10.411c-3.136 3.243-8.021 4.864-14.634 4.864c-10.198 0-22.614-3.05-37.248-9.216l-4.182 24.597q20.543 7.232 42.944 7.232c14.358 0 25.494-2.986 33.45-8.938c9.366-7.062 14.017-17.472 14.017-31.19c0-11.648-3.69-20.288-11.115-25.962m-242.308-64.284l-30.208 41.77l-29.824-41.77H85.758l45.034 62.379l-47.381 65.749h34.07l30.229-42.773l30.378 42.773h34.795L165.8 383.339l46.55-63.104zm58.349 0v128.128H321.6V425.75h-55.04V320.235z" />
+                        </svg>
+                        <!-- <mat-icon style="font-size: 24px; color:white;" *ngIf="!service.downloadMensagem">picture_as_pdf</mat-icon> -->
+                    </div>
+                    <span class="self-center">{{service.downloadMensagem?service.downloadMensagem:'Download'}}</span>
+                </div>
+            </button>
+
+            <!-- <button mat-icon-button (click)="service.downloadRelatorio()" [disabled]="service.downloadMensagem" >
+                <div>{{service.downloadMensagem?service.downloadMensagem:'Relatório'}}</div>
+                <mat-icon>file_download</mat-icon>
+            </button> -->
+
+            <!-- <mpmt-botao (click)="service.downloadRelatorio()" label="Show" [desabilitado]="service.downloadMensagem" > {{service.downloadMensagem?service.downloadMensagem:'Relatório'}} </mpmt-botao> -->
+        </div>
+        <!-- <div class="flex w-full h-full justify-end">
+            <mpmt-form-anexo formControlName="anexo" titulo="Anexo de Arquivo" formatosValidos="pdf,jpg,png,jpeg" />
+        </div>    -->
+
+
+    </div>
+    <ng-template #conteudoExpandido let-rowData>
+
+        <p-table [value]="rowData.historicos" size="small">
+            <ng-template #header>
+                <tr class="pr-16">
+                    <th style="border: 0px;visibility: hidden;"></th>
+                    <th class="!bg-gray-200">Grupo de Aprovação</th>
+                    <th class="!bg-gray-200">Data da Ação </th>
+                    <th class="!bg-gray-200">Servidor da Ação</th>
+                    <th class="!bg-gray-200">Ação realizada </th>
+                    <th class="!bg-gray-200">Observação </th>
+                    <th class="" style="border: 0px;visibility: hidden;"></th>
+                </tr>
+            </ng-template>
+            <ng-template #body let-item>
+                <tr>
+                    <td style="border: 0px;visibility: hidden;"></td>
+                    <td class="!bg-gray-100">{{ item?.grupo }}</td>
+                    <td class="!bg-gray-100">{{ item?.data | date:'dd/MM/YYYY' }}</td>
+                    <td class="!bg-gray-100">{{ item?.servidor }}</td>
+                    <td class="!bg-gray-100">{{ item?.acao?.display }}</td>
+                    <td class="!bg-gray-100">
+                        <div [innerHTML]="item?.observacao"></div>
+                    </td>
+                    <td style="border: 0px;visibility: hidden;"></td>
+                </tr>
+            </ng-template>
+
+
+        </p-table>
+    </ng-template>
+
+</mpmt-pagina-listagem>
+
+<!-- <button (click)="abrirVisualizar(item)">Visualizar</button> -->
+<!-- <gestao-pessoas-gestao-vdf-visualizar></gestao-pessoas-gestao-vdf-visualizar> -->

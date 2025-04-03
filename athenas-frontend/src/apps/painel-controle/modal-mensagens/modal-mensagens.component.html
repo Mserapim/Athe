@@ -1,0 +1,43 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    (close)="fecharFormulario()"
+    style="max-height: 80vh;"
+>
+    <div mat-dialog-content>
+        <div *ngIf="loading || service.loading" class="spinner-container">
+            <mat-spinner></mat-spinner>
+        </div>
+        
+        <div class="flex flex-col w-full sm:min-w-120">
+            <mpmt-listagem2 [service]="service" [ocultarOpcoes]="true" [ocultarTitulo]="true">
+                <div *ngIf="dadosUnicos.started_task" filtros class="w-full text-black">
+                    <div style="display: flex; flex-wrap: wrap; line-height: 2.0; margin-top:10px;">
+                        <div style="width: 50%;">
+                            <div>
+                                <p><strong>Descrição:</strong> {{ dadosUnicos.description }}</p>
+                                <p><strong>Iniciado em:</strong> {{ dadosUnicos.started_task }}</p>
+                            </div>
+                        </div>
+                        <div style="width: 50%;">
+                            <div>
+                                <p><strong>Task UUID:</strong> {{ dadosUnicos.task_uuid }}</p>
+                                <p><strong>Finalizado em:</strong> {{ dadosUnicos.finished_task }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="!dadosUnicos.started_task" filtros class="w-full text-red-700">
+                    <div style="display: flex; flex-wrap: wrap; line-height: 2.0; margin-top:10px;">
+                        <div style="width: 100%;">
+                            <div>
+                                <p><strong>Não há mensagens para exibir</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mpmt-listagem2>
+        </div>
+        
+    </div>
+
+</layout-padrao-modal>

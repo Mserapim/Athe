@@ -1,0 +1,23 @@
+<div class="flex flex-col gap-2 h-full w-full p-8">
+    <div class="flex justify-between">
+        <h2 class="font-bold text-xl self-center">
+            {{ title }}
+        </h2>
+        <button mat-button class="text-white" (click)="goRequests()">
+            Voltar
+        </button>
+    </div>
+    <div class="flex flex-col-reverse lg:flex-row bg-white w-full min-h-120">
+        <div
+            class="flex flex-col bg-primary text-white p-4 py-4 w-full rounded-l lg:w-72 gap-4"
+        >
+            <p class="text-xs leading-5" [innerHtml]="descriptionFull"></p>
+
+            <request-stepper></request-stepper>
+        </div>
+
+        <div class="p-4 grow rounded-r border border-gray-100 shadow">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

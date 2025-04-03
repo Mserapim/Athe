@@ -1,0 +1,8 @@
+<mpmt-form-base class="!w-full bg-white">
+
+    <div *ngFor="let opcao of opcoes" class="field-checkbox">
+        <p-radiobutton [inputId]="opcao.valor" [value]="opcao.valor" [(ngModel)]="valor" (onClick)="selecionar(opcao.valor)"/>
+        <label [for]="opcao.valor" class="ml-2 text-nowrap">{{ opcao.titulo }}</label>
+    </div>
+
+</mpmt-form-base> 

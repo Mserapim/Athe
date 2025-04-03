@@ -1,0 +1,107 @@
+<div class="flex flex-col gap-8 w-full">
+    <h1 class="font-bold text-lg">Selecione a combinação e datas</h1>
+
+    <p class="text-xs text-gray-600">
+        Essa etapa é apenas para que tenha ciencia de qual periodo aquisitivo
+        está usufruido.Entretanto, a solicitação sempre utilizar o periodo
+        aquisitivo mais antigo.
+    </p>
+
+    <div class="flex flex-col gap-2 w-full">
+        <h1 class="font-bold text-base text-black">
+            Selecione configuração de usufruto/venda
+        </h1>
+
+        <mat-form-field appearance="fill">
+            <mat-select
+                [value]="selectedConfig"
+                (selectionChange)="setSelectConfig($event)"
+            >
+                <mat-option
+                    *ngFor="let option of options; let index = index"
+                    [value]="option"
+                >
+                    {{ print(option) }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div
+            class="flex flex-col w-full gap-4"
+            *ngIf="selectedConfig && selectedConfig.enjoyment?.length > 0"
+        >
+            <div class="font-bold text-black">
+                Informe os periodos de usufruto
+            </div>
+            <div
+                class="flex p-2 shadow bg-primary/5 gap-4 w-full"
+                *ngFor="
+                    let configUsufructDay of selectedConfig.enjoyment;
+                    let index = index
+                "
+            >
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Data início</mat-label>
+                    <input
+                        matInput
+                        [matDatepicker]="datepicker1"
+                        (dateInput)="
+                            setUsufructDate(index, $event, configUsufructDay)
+                        "
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepicker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker1></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Data Fim</mat-label>
+                    <input
+                        matInput
+                        [matDatepicker]="datepicker"
+                        disabled
+                        [value]="dates[index]?.end"
+                    />
+                </mat-form-field>
+
+                <div class="w-full font-bold self-center">
+                    {{ configUsufructDay }} dias
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="bg-red-50 text-red-500 border border-red-100 p-2"
+            *ngIf="message"
+        >
+            <div>{{ message }}</div>
+        </div>
+        <div class="flex justify-end gap-2">
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-56"
+                (click)="goBack()"
+            >
+                Voltar
+            </button>
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-56"
+                (click)="goNext()"
+                [ngClass]="{ 'bg-gray-300': !isValid }"
+                [disabled]="!isValid"
+            >
+                <span *ngIf="this.currentUserService.isSubstitutable"
+                    >Continuar</span
+                >
+                <span *ngIf="!this.currentUserService.isSubstitutable | async"
+                    >Confirmar</span
+                >
+            </button>
+        </div>
+    </div>
+</div>

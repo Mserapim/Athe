@@ -1,0 +1,192 @@
+<mat-dialog-content>
+    <h2 class="dialog-title font-bold text-xl self-center">
+        Solicitação de Auxílio Creche
+    </h2>
+    <br/>
+    <p class="text-xs text-gray-600">
+        Declaro, sob as penas da lei, que as informações aqui prestadas são verdadeiras e de minha inteira responsabilidade,
+        <br/>
+        comprometendo-me, ainda, a renovar a presente declaração sempre que houver alteração nos dados fornecidos.
+    </p>
+    <br/>
+    <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+        <div class="flex flex-col gap-2">
+            <mat-label class="font-bold text-base text-black">Atestado *</mat-label>
+            <div class="flex gap-4 self-center w-full rounded">
+                <button
+                    (click)="fileInput.click()"
+                    class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 outline-4 bg-gray-50 text-lg cursor-pointer w-full"
+                >
+                    <div *ngIf="!file" class="w-full text-black">
+                        <span>Clique para selecionar um arquivo</span>
+                    </div>
+                    <div *ngIf="file" class="w-full text-black">
+                        {{ file?.name }}
+                    </div>
+
+                    <input
+                        #fileInput
+                        type="file"
+                        (change)="onFileInput($event)"
+                        style="display: none"
+                    />
+                    <mat-icon [svgIcon]="'heroicons_solid:paper-clip'"></mat-icon>
+                </button>
+                <mpmt-botao
+                    class="w-12 h-12 self-center items-center"
+                    (click)="downloadAnexo()"
+                    *ngIf="file"
+                    [cor]="'secondario'"
+                    tipo="borda"
+                >
+                    <mat-icon svgIcon="heroicons_solid:arrow-circle-down"></mat-icon>
+
+                </mpmt-botao>
+            </div>
+        </div>
+
+
+        <mat-form-field class="w-full">
+            <mat-label>Pessoa da família</mat-label>
+            <input
+                type="text"
+                placeholder="Selecione o familiar"
+                matInput
+                [matAutocomplete]="auto"
+                (keyup)="onChangeSearch($event, false)"
+                formControlName="pessoa_familia"
+            />
+
+            <mat-icon
+                [svgIcon]="'heroicons_solid:plus-circle'"
+                class="cursor-pointer"
+                (click)="openPersonNew()"
+            ></mat-icon>
+
+            <mat-autocomplete
+                autoActiveFirstOption
+                #auto="matAutocomplete"
+                (ngModel)="formulario.value['pessoa_familia'] = $event"
+                (optionSelected)="onSelectPerson($event)"
+                [displayWith]="displayFnPessoa"
+            >
+                <mat-option
+                    *ngFor="let item of dataSourcePersons.results$ | async"
+                    [value]="item"
+                >
+                    {{ item.name }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <div class="grid grid-cols-3 gap-2 w-full">
+            <mat-form-field class="w-full" placeholder="Data Nascimento">
+                <mat-label>Data Nascimento</mat-label>
+                <input matInput type="date" formControlName="data_nascimento" placeholder="" readonly="true"/>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Capacidade</mat-label>
+                <mat-select formControlName="capacidade">
+                    <mat-option *ngFor="let option of capacidadeList" [value]="option.value">
+                        {{ option.label }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Tipo de parentesco</mat-label>
+                <mat-select
+                    formControlName="tipo_parentesco"
+                    placeholder="Tipo de parentesco"
+                    (selectionChange)="changeTipoParentesco()"
+                >
+                    <mat-option
+                        *ngFor="
+                        let item of dataSourceDegreeKinshipt.results$ | async
+                    "
+                        [value]="item.value"
+                    >{{ item.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 w-full">
+            <mat-form-field appearance="fill" class="w-full" *ngIf="exibirDependenteAuxilioCreche()">
+                <mat-label>Dependente Auxílio Creche?</mat-label>
+                <mat-select formControlName="dependente_aux_creche">
+                    <mat-option *ngFor="let option of dependenteAuxCrecheList" [value]="option.value">
+                        {{ option.label }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full">
+                <mat-label>Dependente imposto de renda</mat-label>
+                <mat-select formControlName="dependente_ir" (selectionChange)="changeDependenteIR()">
+                    <mat-option *ngFor="let option of dependenteListIRRF" [value]="option.value">
+                        {{ option.label }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" *ngIf="exibirTipoDependenteIr()">
+                <mat-label>Tipo dependente IR</mat-label>
+                <mat-select
+                    formControlName="dependente_tipo"
+                    placeholder="Tipo dependete IR"
+                >
+                    <mat-option
+                        *ngFor="
+                        let item of listaTipoDependente
+                    "
+                        [value]="item.value"
+                    >{{ item.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="h-full">
+            <mat-label>Observação (Opcional)</mat-label>
+            <textarea
+                matInput
+                placeholder=""
+                class="h-16"
+                [readonly]="false"
+                formControlName="observacao"
+            ></textarea
+            >
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+
+    <div class="flex gap-4 self-center w-full">
+        <button
+            mat-button
+            color="primary"
+            class="w-full outline outline-1 outline-gray-200 text-black"
+            (click)="fechar()"
+        >
+            Fechar
+        </button>
+        <button
+            mat-button
+            [disabled]="!isValid || this.isLoading"
+            class="bg-primary text-white p-8 py-4 w-full self-end"
+            [ngClass]="{ 'bg-gray-300': !isValid }"
+            (click)="goConfirm()"
+        >
+            Solicitar
+        </button>
+    </div>
+</mat-dialog-content>
+
+

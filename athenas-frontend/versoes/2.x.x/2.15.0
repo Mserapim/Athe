@@ -1,0 +1,33 @@
+- 2024.7.25:
+    - CARD: ATS-4542 - MR: 308 - [FRONT] Definir um tamanho de altura máxima no modal de detalhes
+    - CARD: ATS-4620 - MR: 307 - [FRONT] Remover paginação da tela de Pagamentos
+- 2024.7.26:
+    - CARD: ATS-4541 - MR: 309 - [FRONT] Implementar autocomplete no campo "finalidade"
+- 2024.7.29:
+    - CARD: ATS-4427 - MR: 310 - [Front] Criar tela de listagem de Prestação de Contas
+- 2024.7.30:
+    - CARD: ATS-4466 - MR: 312 - [FRONT] Criar botão de "Gerar cnab" para múltiplos beneficiários
+    - CARD: ATS-4467 e ATS-4468 - MR: 311 - [FRONT] Criar botão 'gerar cnab' e 'regerar cnab' indvidual
+    - CARD: ATS-4429 - MR: 313 - [Front] Criar(modificar) modal para detalhes da tabela PrestacaoContas
+    - CARD: ATS-4708 - MR: 314 - [Front] Corrigir problema de data invalida nas listagens
+- 2024.7.31:
+    - CARD: ATS-4622 - MR: 315 - [FRONT] Ajustes na tela de cadastro de conta bancária e listagem de destino
+    - CARD: ATS-4613 - MR: 317 - [front] - Alterar a tela de detalhe de folha ponto para bloquear a edição da justificativa de origem feriado municipal
+    - CARD: ATS-4623 - MR: 316 - [FRONT] Adicionar informações da viagem do modal de cadastrado de trecho
+    - CARD: ATS-4469 - MR: 318 - [FRONT] Criar botão "Gerar CNAB para Pgto" na aba "beneficiários" de Diárias
+    - CARD: ATS-4545 - MR: 319 - [FRONT] Modificar exibição da listagem de Beneficiários em 'Solicitação de diária'
+    - CARD: ATS-4626 - MR: 320 - [FRONT] Colocar resposta ao clonar trecho
+- 2024.8.01:
+    - CARD: ATS-4760 - MR: 325 - Adaptações em campos de diárias após alterações em estrutura de tabelas
+    - CARD: ATS-4444 - MR: 321 - [Front] Adaptar o Modal do formulário de Prestação de contas, para as ações de deferir e indeferir
+- 2024.8.02:
+    - CARD: ATS-4763 - MR: 326 - [Front] gerar holerite consolidado no menu de acesso rápido VDF
+    - CARD: ATS-4672 - MR: 328 - [Front] Anotações > Listagem
+    - CARD: ATS-4665 - MR: 329 - [Front] Melhorias no Suíte - > Incluir no título qual página está
+    - CARD: ATS-4666 - MR: 329 - [Front] Melhorias no Suíte -> Painel de Controle → Controle de Acesso → Usuários → Ver itens(Funcionalidade)
+    - CARD: ATS-4667 - MR: 329 - [Front] Melhorias no Suíte -> Adicionar um Scrol Infinito e alterar a cor da barra notificações
+    - CARD: ATS-4668 - MR: 329 - [Front] Melhorias no Suíte -> Alterar a cor do cabeçalho
+    - CARD: ATS-4669 - MR: 329 - [Front] Melhorias no Suíte -> Reduzir as margens e espaçamentos para deixar as caixas mais retangulare
+    - CARD: ATS-4625 - MR: 322 - [FRONT] Bloquear combox de Cidade até retorno da api
+    - CARD: ATS-4544 - MR: 327 - [FRONT] Ajuste de layout em formulário 
+    - CARD: ATS-4544 - MR: 331 - (frontend) Tratar para que quando a viagem for do tipo Estadual, apareça somente os municípios do MT  

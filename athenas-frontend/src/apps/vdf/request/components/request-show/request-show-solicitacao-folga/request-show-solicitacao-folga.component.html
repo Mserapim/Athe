@@ -1,0 +1,78 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <form [formGroup]="form" class="flex flex-col w-full">
+        <div class="flex gap-4 justify-between">
+            <div class="flex flex-col md:flex-row gap-2 w-full">
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Data Início</mat-label>
+                    <input
+                        matInput
+                        [matDatepicker]="datepicker1"
+                        formControlName="dataInicio"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepicker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker1></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Quantidade de dias</mat-label>
+                    <input
+                        type="number"
+                        matInput
+                        [min]="1"
+                        formControlName="dias"
+                    />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Data Fim</mat-label>
+                    <input
+                        matInput
+                        class=""
+                        [matDatepicker]="datepicker2"
+                        formControlName="dataFim"
+                    />
+                    <mat-datepicker #datepicker2></mat-datepicker>
+                </mat-form-field>
+            </div>
+            
+        </div>
+
+        <div class="flex gap-2">
+            <button
+                mat-button
+                class="bg-green-600 text-white w-min"
+                [disabled]="!this.isAprovadorDgp() || !this.isSolitacaoAndamento()"
+                (click)="goConfirm()"
+            >
+                Editar
+            </button>
+        </div>
+        
+    </form>
+
+    <div class="flex gap-2" *ngIf="data?.tipo_folga_display">
+        <div class="font-bold">Trabalho realizado:</div>
+        <div>{{ data?.tipo_folga_display }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.anexo">
+        <button
+            mat-button
+            class="bg-primary text-white w-min"
+            (click)="download(data.anexo)"
+        >
+           Baixar Documento
+        </button>
+    </div>
+
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+    
+</div>

@@ -1,0 +1,74 @@
+variables:
+    SERVICE_NAME: suite-athenas
+    DOCKER_IMAGE: registry.mpmt.mp.br/${SERVICE_NAME}:${CI_COMMIT_REF_NAME}
+    REMOTE_COMMAND: ssh -p 2280 ${DEPLOY_USER}@${DEPLOY_HOST} -o StrictHostKeyChecking=no
+
+stages:
+    - build
+    - deploy
+
+build staging:
+    stage: build
+    before_script:
+        - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+    script:
+        - docker build --pull --no-cache --build-arg script="${SCRIPT_ENV}" --build-arg version_app="0.0.0-${CI_COMMIT_SHORT_SHA}" -t ${DOCKER_IMAGE} .
+        - docker push ${DOCKER_IMAGE}
+    environment:
+        name: staging
+    only:
+        refs:
+            - unstable
+
+build production:
+    stage: build
+    before_script:
+        - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+    script:
+        - docker build --pull --no-cache --build-arg script="${SCRIPT_ENV}" --build-arg version_app="${CI_COMMIT_TAG}" -t ${DOCKER_IMAGE} .
+        - docker push ${DOCKER_IMAGE}
+    environment:
+        name: production
+    only:
+        refs:
+            - tags
+
+deploy staging:
+    stage: deploy
+    before_script:
+        - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+        - chmod 0600 $DEPLOY_INDENT
+    script:
+        - |
+            $REMOTE_COMMAND -i $DEPLOY_INDENT "\
+              service_info=$(docker service ls --filter "name=${SERVICE_NAME}" --format "{{.Name}}")
+              if [ -z "$service_info" ]; then
+                docker service rm ${SERVICE_NAME} && docker wait $(docker ps -f "name=${SERVICE_NAME}" -q)
+              fi
+              docker pull ${DOCKER_IMAGE} \
+              && docker service create --name ${SERVICE_NAME} -p ${PORT_MAP} --replicas=4 ${DOCKER_IMAGE}"
+    environment:
+        name: staging
+    only:
+        refs:
+            - unstable
+
+deploy production:
+    stage: deploy
+    before_script:
+        - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+        - chmod 0600 $DEPLOY_INDENT
+    script:
+        - |
+            $REMOTE_COMMAND -i $DEPLOY_INDENT "\
+              service_info=$(docker service ls --filter "name=${SERVICE_NAME}" --format "{{.Name}}")
+              if [ -z "$service_info" ]; then
+                docker service rm ${SERVICE_NAME} && docker wait $(docker ps -f "name=${SERVICE_NAME}" -q)
+              fi
+              docker pull ${DOCKER_IMAGE} \
+              && docker service create --name ${SERVICE_NAME} -p ${PORT_MAP} --replicas=4 ${DOCKER_IMAGE}"
+    environment:
+        name: production
+    only:
+        refs:
+            - tags

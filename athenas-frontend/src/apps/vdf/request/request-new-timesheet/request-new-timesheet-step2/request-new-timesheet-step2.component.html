@@ -1,0 +1,186 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <div class="flex justify-between py-2">
+        <div class="flex font-bold text-xl">
+            <h1 class="font-bold text-lg">{{ title }}</h1>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-4 justify-center w-full">
+        <div
+            class="flex w-full justify-between rounded p-4 gap-2 bg-gray-50 border border-gray-100"
+            *ngIf="!justifications || justifications.length <= 0"
+        >
+            <div class="flex self-center">
+                Não há justificativas informadas, clique para adicionar
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table
+                mat-table
+                class="w-full"
+                [dataSource]="justifications"
+                *ngIf="justifications && justifications.length > 0"
+            >
+                <ng-container matColumnDef="reason_type_name">
+                    <th mat-header-cell *matHeaderCellDef>Motivo</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element?.reason_type_name || element.reason_type }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="start_date">
+                    <th mat-header-cell *matHeaderCellDef>Início</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ getDate(element.start_date) }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="end_date">
+                    <th mat-header-cell *matHeaderCellDef>Fim</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ getDate(element.end_date) }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="number_hours">
+                    <th mat-header-cell *matHeaderCellDef>Qtd Horas</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.number_hours }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="observation">
+                    <th mat-header-cell *matHeaderCellDef>Observação</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.observation }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="delete">
+                    <th mat-header-cell *matHeaderCellDef>#</th>
+                    <td mat-cell *matCellDef="let element">
+                        <div *ngIf="element.origem != 3"> <!-- Feriado Municipal -->
+                            <button
+                                mat-button
+                                mat-dialog-close
+                                class="bg-red-100"
+                                (click)="removeJustification(element)"
+                            >
+                                Cancelar
+                            </button>
+                        </div>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr
+                    mat-row
+                    *matRowDef="let row; columns: displayedColumns"
+                ></tr>
+            </table>
+        </div>
+        <div class="flex w-full justify-center">
+            <button
+                mat-button
+                color="primary"
+                class="border outline outline-1 border-gray-300 text-gray-500 p-8 py-4 w-56"
+                (click)="addJustification()"
+            >
+                Adicionar justificativa
+            </button>
+        </div>
+    </div>
+
+    <div class="" *ngFor="let row of data">
+        <div
+            class="flex flex-col md:flex-row justify-between gap-2 bg-gray-50 border border-gray-100 p-2 rounded text-black"
+        >
+            <div class="flex gap-2">
+                <div class="flex font-bold self-center h-full">
+                    {{ row?.mark_plan?.descricao }}
+                </div>
+            </div>
+
+            <div class="flex gap-2 font-medium">
+                <div class="flex flex-col gap-2">
+                    <span class="">Meta:</span>
+                    <span class="font-bold uppercase underline">
+                        {{ row?.mark_plan?.meta }}
+                        ({{ row?.mark_plan?.periodicity_label }})</span
+                    >
+                </div>
+            </div>
+
+            <mat-form-field class="self-center w-full md:w-24">
+                <mat-label>Meta alcançada</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="row.total_completed"
+                    placeholder="Meta alcançada"
+                />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-full md:w-1/2">
+                <mat-label>Situação da meta</mat-label>
+                <mat-select [(ngModel)]="row.mark_situation">
+                    <mat-option
+                        *ngFor="let option of options"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <!-- <mat-form-field class="">
+        <mat-label>Observação</mat-label>
+        <textarea
+            matInput
+            placeholder="Opcional..."
+            [(ngModel)]="observation"
+        ></textarea>
+    </mat-form-field> -->
+
+    <!-- {{ data | json }} -->
+    <br />
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+    <div
+        class="flex flex-col md:flex-row justify-center md:justify-end gap-4 w-full"
+    >
+        <!-- <button
+            mat-button
+            color="primary"
+            class="border outline outline-1 border-gray-300 text-gray-500 p-8 py-4 w-full md:w-1/3"
+            (click)="goBack()"
+        >
+            Voltar
+        </button> -->
+
+        <button
+            mat-button
+            color="primary"
+            class="bg-primary text-white p-8 py-4 w-full md:w-1/3"
+            (click)="goRequests()"
+        >
+            Continuar depois
+        </button>
+
+        <button
+            mat-button
+            [disabled]="!isValid"
+            color="primary"
+            [ngClass]="{ '!bg-primary': isValid }"
+            class="bg-gray text-white p-8 py-4 w-full md:w-1/3"
+            (click)="goNext()"
+        >
+            Realizar o envio
+        </button>
+    </div>
+</div>

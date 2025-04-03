@@ -1,0 +1,9 @@
+<button
+    mat-button
+    mpmtDebounceClick
+    (debounceClick)="this.irClick($event)"
+    [class]="classes"
+    [class.spinner]="isLoading"
+>
+    <ng-content> </ng-content>
+</button>

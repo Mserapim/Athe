@@ -1,0 +1,135 @@
+<div class="flex flex-col gap-8 w-full text-black">
+    <h1 class="font-bold text-lg text-black">Informe os substitutos</h1>
+
+    <div class="flex flex-col gap-2 w-full gap">
+        <!-- a {{ this.substitutes | json }}b -->
+
+        <div
+            *ngIf="!exercises || exercises?.length <= 0"
+            class="bg-gray-50 border border-gray-100 p-2"
+        >
+        Não há designações substituíveis para o período do usufruto, procure o DGP para maiores informações.
+        </div>
+        <div
+            *ngFor="let exercise of exercises"
+            class="flex flex-col w-full rounded-md p-2 md:p-4 bg-slate-100 border border-gray-200"
+        >
+            <div class="flex font-bold pb-4">
+                Designação: {{ exercise.exercise }}
+            </div>
+            <div
+                class="grid grid-cols-2 md:grid-cols-3 gap-2 w-full"
+                *ngFor="
+                    let substitute of getSubstitutesByExercise(exercise.pk);
+                    let index = index
+                "
+            >
+                <mat-form-field appearance="fill" class="flex w-full">
+                    <mat-label>Data início</mat-label>
+                    <input
+                        matInput
+                        [value]="substitute.start_date"
+                        [matDatepicker]="datepickerStart"
+                        (dateInput)="changeStartDate(substitute.index, $event)"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepickerStart"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepickerStart></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="flex w-full">
+                    <mat-label>Data Fim</mat-label>
+                    <input
+                        matInput
+                        [value]="substitute.end_date"
+                        [matDatepicker]="datepickerEnd"
+                        (dateInput)="changeEndDate(substitute.index, $event)"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepickerEnd"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepickerEnd></mat-datepicker>
+                </mat-form-field>
+
+                <div class="flex gap-2 w-full col-span-2 md:col-span-1">
+                    <mat-form-field class="w-full">
+                        <mat-label>Substituto</mat-label>
+                        <input
+                            type="text"
+                            placeholder="Selecione o substituto"
+                            matInput
+                            [(ngModel)]="substitute['employee']"
+                            [matAutocomplete]="auto"
+                            (keyup)="onSearchCandidates($event)"
+                            #substitutos
+                        />
+                        <mat-autocomplete
+                            autoActiveFirstOption
+                            #auto="matAutocomplete"
+                            [displayWith]="displayFn"
+                        >
+                            <mat-option
+                                *ngFor="
+                                    let item of candidatesDataSource.results$
+                                        | async
+                                "
+                                [value]="item"
+                            >
+                                {{ item.name }}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                    <div
+                        class="flex font-bold self-center cursor-pointer w-8"
+                        (click)="remove(substitute.index)"
+                    >
+                        <span
+                            *ngIf="
+                                getSubstitutesByExercise(exercise.pk).length > 1
+                            "
+                        >
+                            x</span
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div
+                (click)="add(exercise.pk)"
+                class="flex font-bold underscore cursor-pointer w-full text-end justify-end"
+            >
+                + adicionar linha
+            </div>
+        </div>
+
+        <div
+            class="bg-red-50 text-red-500 border border-red-100 p-2"
+            *ngIf="message"
+        >
+            <div>{{ message }}</div>
+        </div>
+        <div class="flex justify-end gap-2">
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-56"
+                (click)="goBack()"
+            >
+                Voltar
+            </button>
+            <button
+                mat-button
+                color="primary"
+                class="bg-primary text-white p-8 py-4 w-56"
+                (click)="goNext(true)"
+                [ngClass]="{ 'bg-gray-300': !isValid }"
+                [disabled]="!isValid || isLoading"
+            >
+                <span>Confirmar</span>
+            </button>
+        </div>
+    </div>
+</div>

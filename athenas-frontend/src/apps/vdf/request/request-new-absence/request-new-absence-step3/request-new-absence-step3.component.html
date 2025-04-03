@@ -1,0 +1,39 @@
+<div class="flex flex-col gap-8 w-full">
+    <h1 class="font-bold text-lg text-black">Informe os substitutos</h1>
+
+    <!-- {{ substitutes | json }} -->
+    <div class="flex flex-col gap-4 w-full">
+        <request-substitutes
+            [dates]="dates"
+            (substitutes)="substitutes = $event"
+            (isValid)="this.isValid = $event"
+        ></request-substitutes>
+
+        <div class="flex flex-col gap-2">
+            <div
+                *ngIf="message"
+                class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+            >
+                {{ message }}
+            </div>
+
+            <div class="flex justify-end gap-2">
+                <button
+                    mat-button
+                    class="border p-8 py-4 w-56"
+                    (click)="goBack()"
+                >
+                    Voltar
+                </button>
+                <button
+                    mat-button
+                    [ngClass]="{ '!bg-primary': isValid }"
+                    class="bg-gray-300 text-white p-8 py-4 w-full"
+                    (click)="goConfirm()"
+                >
+                    Finalizar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

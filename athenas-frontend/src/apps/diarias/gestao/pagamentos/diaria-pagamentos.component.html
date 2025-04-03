@@ -1,0 +1,53 @@
+<div class="flex flex-col w-full p-8">
+    <mpmt-cabecalho-listagem [titulo]="titulo" [service]="service"
+    ></mpmt-cabecalho-listagem>
+
+    <mpmt-listagem-selecao [service]="service">
+        <!-- Ações -->
+        <div acoes style="margin-bottom: 15px;">
+            <mpmt-botao (click)="irGerarCnab()">Gerar CNAB para pagamento</mpmt-botao>
+        </div>
+
+        <!-- Filtros -->
+        <div filtros class="w-full">
+            <form [formGroup]="service.filtros" class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
+                
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao-servidores formControlName="servidores" [titulo]="'Beneficiários'"/>
+                </div>
+                
+                <div appearance="fill" class="w-full">
+                    <mpmt-form-multiselecao 
+                        formControlName="status" 
+                        (chance)="service.recarregarListagem()"
+                        [titulo]="'Status'"
+                        class="w-full h-full"
+                        [fonte]="service.status_pagamento"
+                        [atributoChave]="'id'"
+                        [atributoDisplay]="'descricao'"
+                    />
+                </div>
+
+                <div class="w-full">
+                    <mat-label class="text-white">Filtro por data de pagamento</mat-label>
+                    <div class="flex gap-4">
+                        <mat-form-field class="w-full">
+                            <input matInput [matDatepicker]="pickerStart" formControlName="data_pgto_inicio" (dateChange)="service.recarregarListagem()" placeholder="Data início">
+                            <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
+                            <mat-datepicker #pickerStart></mat-datepicker>
+                        </mat-form-field>
+                
+                        <mat-form-field class="w-full">
+                            <input matInput [matDatepicker]="pickerEnd" formControlName="data_pgto_fim" (dateChange)="service.recarregarListagem()" placeholder="Data fim">
+                            <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+                            <mat-datepicker #pickerEnd></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </mpmt-listagem-selecao>
+    
+</div>

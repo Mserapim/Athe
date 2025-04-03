@@ -1,0 +1,29 @@
+<div class="flex flex-col gap-8 ">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Cancelar solicitação de diária</h1>
+    </h1>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <h3>Beneficiários</h3>
+            <form [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full p-4 border-double border-2 border-slate-400 rounded">
+                <div appearance="fill" class="w-full">
+                    <mat-label>Selecione um beneficiário:</mat-label>
+
+                    <mat-selection-list formControlName='beneficiarios' class="p-2">
+                        <mat-list-option *ngFor="let beneficiario of lista_beneficiarios" [value]="beneficiario.id"
+                            togglePosition="before" [disabled]="opcao_ativa(beneficiario)" >
+                            {{ beneficiario.servidor_unicode }} - {{ beneficiario.fluxo_unicode }}
+                        </mat-list-option>
+                    </mat-selection-list>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="critico" (click)="confirmarFormulario()" [desabilitado]="!formularioValido">Cancelar</mpmt-botao>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="flex flex-col gap-2">
+    <div mat-dialog-title class="flex justify-center">
+        <h1 class="font-bold text-lg text-primary">{{ titulo }}</h1>
+    </div>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form [formGroup]="formulario" class="grid grid-cols-1 w-full">
+
+                <mat-form-field class="w-full" placeholder="Usuário">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput formControlName="usuario" placeholder=""/>
+                </mat-form-field>
+    
+                <mat-form-field class="w-full" placeholder="Senha">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" formControlName="senha" placeholder=""/>
+                </mat-form-field>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="confirmarFormulario()" [desabilitado]="!formularioValido">Assinar</mpmt-botao>
+    </div>
+</div>

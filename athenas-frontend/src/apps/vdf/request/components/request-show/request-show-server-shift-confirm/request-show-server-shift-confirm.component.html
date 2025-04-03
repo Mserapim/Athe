@@ -1,0 +1,86 @@
+<div class="flex flex-col gap-2 justify-between">
+    <table mat-table [dataSource]="results" class="demo-table">
+        <ng-container matColumnDef="workplace_name">
+            <th mat-header-cell *matHeaderCellDef>Local</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.workplace_name }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="employee_name">
+            <th mat-header-cell *matHeaderCellDef>Plantonista</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.employee_name }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="type_shift_label">
+            <th mat-header-cell *matHeaderCellDef>Tipo de plantão</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.type_shift_label }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="start_date">
+            <th mat-header-cell *matHeaderCellDef>Data Início</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.start_date | date : "dd/MM/yyyy" }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="end_date">
+            <th mat-header-cell *matHeaderCellDef>Data fim</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.end_date | date : "dd/MM/yyyy" }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="days">
+            <th mat-header-cell *matHeaderCellDef>Dias</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.days }} dia(s)
+                <div *ngIf="!element.start_date">(Venda)</div>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="observacao">
+            <th mat-header-cell *matHeaderCellDef>Observação</th>
+            <td mat-cell *matCellDef="let element">
+                <div class="group">
+                    {{ element.observacao?.substring(0, 30) }}
+                    <div
+                        *ngIf="
+                                    element.observacao &&
+                                    element.observacao?.length > 30
+                                "
+                        rk
+                        class="font-bold text-black cursor-pointer"
+                        (click)="goDetail(element)"
+                    >
+                        ver mais
+                    </div>
+                </div>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="anexo">
+            <th mat-header-cell *matHeaderCellDef>Anexo</th>
+            <td mat-cell *matCellDef="let element">
+                <mpmt-botao
+                    class="w-12 h-12 self-center items-center"
+                    (click)="visualizarAnexo(element?.anexo)"
+                    *ngIf="element?.anexo"
+                    [cor]="'secondario'"
+                    tipo="borda"
+                >
+                    <mat-icon svgIcon="heroicons_solid:arrow-circle-down"></mat-icon>
+
+                </mpmt-botao>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+</div>

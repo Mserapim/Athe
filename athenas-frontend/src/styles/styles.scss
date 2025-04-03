@@ -1,0 +1,99 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Import/write your custom styles here.
+/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
+/* ----------------------------------------------------------------------------------------------------- */
+.mat-mdc-snack-bar-container.custom-snackbar .mdc-snackbar__surface {
+    background-color: rgba(200, 12, 2, 0.9) !important;
+    border-radius: 10px;
+}
+
+.mat-mdc-snack-bar-container.sucess-snackbar .mdc-snackbar__surface {
+    background-color: #00AC81 !important;
+    border-radius: 10px;
+}
+
+.mat-sort-header-content{
+    text-align: left !important;
+}
+
+.mat-mdc-snack-bar-label {
+    color: white !important;
+    text-align: center !important;
+    font-size: 18px !important;
+}
+
+.theme-default.light .mdc-menu-surface {
+    align-self: flex-end !important;
+}
+
+.mpmt-texto-formatado-conteudo {
+    border: 1px solid hsl(212.73deg 26.83% 83.92%);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #101010;
+    white-space: pre-wrap;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by {
+    display: none !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mat-form-field {
+    position: relative;
+    z-index: 10000;
+}
+
+
+.p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+    padding: 0.0rem 0.5rem !important;
+}
+
+// .p-datatable-tbody > tr > td {
+//     border-color: #fff !important;
+// }
+
+.p-multiselect {
+    height: 42px;
+}
+
+p-dynamicdialog .p-dialog-header {
+    padding: 0 !important;
+}
+
+p-dynamicdialog .p-dialog-content {
+    padding: 0 !important;
+}
+
+.p-paginator {
+    border-radius: 0px 0px 1px 1px !important;
+}
+
+mpmt-form-texto{
+    .p-inputtext{
+        border: 0px !important;
+        border-left: 1px solid #DDD !important;
+        padding: 10px 12px
+    }
+
+    .p-inputtext:enabled:focus,
+    .p-inputtext:hover {
+        border-color: transparent !important;
+        border-left: 1px solid #DDD !important;
+    }
+}
+
+.p-datepicker {
+    width: 100% !important;
+}

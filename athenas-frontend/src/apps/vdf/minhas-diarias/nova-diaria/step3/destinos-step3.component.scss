@@ -1,0 +1,64 @@
+.mat-accordion {
+
+  .mat-expansion-panel {
+    margin-bottom: 1px ;
+    border-radius: 8px !important;
+    transition: box-shadow 225ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    @apply shadow #{'!important'};
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.mat-expanded,
+    &:hover {
+      @apply shadow-lg #{'!important'};
+    }
+
+    &:not(.mat-expanded) {
+
+      .mat-expansion-panel-header {
+
+        &:not([aria-disabled=true]) {
+
+          &.cdk-keyboard-focused,
+          &.cdk-program-focused,
+          &:hover {
+            background: transparent !important;
+          }
+        }
+      }
+    }
+
+    .mat-expansion-panel-header {
+      font-size: 14px;
+
+      &[aria-disabled=true] {
+
+        .mat-expansion-panel-header-description {
+          margin-right: 28px;
+        }
+      }
+
+      .mat-expansion-indicator {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 12px;
+        height: 12px;
+
+        /* Do not override the border color of the expansion panel indicator */
+        &:after {
+          border-color: currentColor !important;
+        }
+      }
+    }
+
+    .mat-expansion-panel-body {
+      @apply text-secondary #{'!important'};
+    }
+  }
+  .mat-expansion-panel-spacing {
+    margin: 16px 0 !important;
+  }
+}

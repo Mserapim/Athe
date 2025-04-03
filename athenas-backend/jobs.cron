@@ -1,0 +1,107 @@
+JOBRUNNER=/nfs/athenas/mpmt-master/job.sh ath_mpmt_master manager /app/env-3.9/bin/python /app/root/manage.py
+LOG_DIR=/nfs/athenas/mpmt-master/volumes/logs
+
+###
+# Engine
+###
+0 */1 * * * $JOBRUNNER notifyctl --older 15 --mark-read 1>>$LOG_DIR/notify-abandoned.log 2>>$LOG_DIR/notify-abandoned.err
+
+###
+# Patrimonio
+###
+5 0 1 * * $JOBRUNNER deprecia --de '1989-01-01' --execute 1>> $LOG_DIR/deprecia.log 2>> $LOG_DIR/deprecia.err
+
+###
+# RH
+###
+1 6 * * * $JOBRUNNER update_ferias -unlc 1>>$LOG_DIR/update_ferias.log 2>>$LOG_DIR/update_ferias.err
+15 */6  * * * $JOBRUNNER update_ferias -c 1>>$LOG_DIR/update_ferias.log 2>>$LOG_DIR/update_ferias.err
+10 6 * * * $JOBRUNNER estagioctl -a 1>>$LOG_DIR/estagioctl.log 2>>$LOG_DIR/estagioctl.err
+# 20 6 * * * $JOBRUNNER pontoctl -a 1>>$LOG_DIR/pontoctl.log 2>>$LOG_DIR/pontoctl.err
+10 0 * * * $JOBRUNNER update_servidor -d -s -r -t -a 1>>$LOG_DIR/update_servidor.log 2>>$LOG_DIR/update_servidor.err
+20 0,7,9,14,17 * * * $JOBRUNNER update_servidor -x 1>>$LOG_DIR/update_servidor_exercicio.log 2>>$LOG_DIR/update_servidor_exercicio.err
+25 0,7,9,14,17 * * * $JOBRUNNER update_servidor -i 11725,11727,11729 >>$LOG_DIR/update_servidor_exercicio.log >>$LOG_DIR/update_servidor_exercicio.err
+1 0 * * * $JOBRUNNER rh_update -p -t 1>>$LOG_DIR/rh_update.log 2>>$LOG_DIR/rh_update.err
+30 0 * * * $JOBRUNNER registration -c 1>>$LOG_DIR/registration.log 2>>$LOG_DIR/registration.err
+0 2 * * * $JOBRUNNER user_permission_remove -r 1>>$LOG_DIR/user_permission_remove.log 2>>$LOG_DIR/user_permission_remove.err
+15 4 * * * $JOBRUNNER update_socialsecurity -e -r >> $LOG_DIR/update_socialsecurity.log
+# 5 1 * * * $JOBRUNNER gfp -d -n12 >> $LOG_DIR/gfp.log
+0 5 * * * $JOBRUNNER dayoffctl -u 1>>$LOG_DIR/dayoffctl.log 2>>$LOG_DIR/dayoffctl.err
+5 0 * * * $JOBRUNNER atualiza_status_teletrabalho_ctl 1>>$LOG_DIR/atualiza_status_teletrabalho_ctl.log 2>>$LOG_DIR/atualiza_status_teletrabalho_ctl.err
+
+###
+# Common
+###
+10 0 * * * $JOBRUNNER siatuctl -a 1>> $LOG_DIR/siatu.log 2>> $LOG_DIR/siatu.err
+# 0 8,9,10,11,12 * * * $JOBRUNNER saci_attached_extractor --recovery --search-not-extracted
+# 0 14,15,16,17,18 * * * $JOBRUNNER saci_attached_extractor --recovery --search-not-extracted
+
+###
+# Extrajudicial
+###
+# 0 8,9,10,11,12 * * * $JOBRUNNER attached_extractor --recovery --search-not-extracted
+# 0 14,15,16,17,18 * * * $JOBRUNNER attached_extractor --recovery --search-not-extracted
+# 0 8,10,12,14,16 * * * $JOBRUNNER judnotify 1>>$LOG_DIR/judnotify.log 2>>$LOG_DIR/judnotify.err
+# 30 0 * * * $JOBRUNNER juddeadline 1>>$LOG_DIR/juddeadline.log 2>>$LOG_DIR/juddeadline.err
+# */2 9-22 * * * date >> $LOG_DIR/judicial_create_cache.log && $JOBRUNNER create_cache --user rodrigomatias --last-minutes 4 >> $LOG_DIR/judicial_create_cache.log
+# 0 0 * * * date >> $LOG_DIR/judicial_create_cache.log && $JOBRUNNER create_cache --user rodrigomatias --last-minutes 1440 >> $LOG_DIR/judicial_create_cache.log
+
+###
+# Corregedoria
+###
+0 3 * * * $JOBRUNNER cirdir_admin --exec-actions --user athenas 1>>$LOG_DIR/srdir.log 2>>$LOG_DIR/srdir.err
+4 6 * * * $JOBRUNNER cifctl -a 1>>$LOG_DIR/cifctl.log 2>>$LOG_DIR/cifctl.err
+0 3 * * * $JOBRUNNER raf_admin --exec-actions 1>> $LOG_DIR/raf_execactions.log 2>> $LOG_DIR/raf_execactions.err
+# 30 5 23 12 * $JOBRUNNER raf_admin --close --month=10 --year=2017
+
+#
+# EDOC
+#
+*/5 * * * * $JOBRUNNER protocolctl --recovery-envelop 1>>$LOG_DIR/edoc-recovery-envelop.log 2>>$LOG_DIR/edoc-recovery-envelop.err
+
+#
+# Clinical
+#
+*/1 * * * * $JOBRUNNER clinicalctl -b 1>>$LOG_DIR/clinical.log 2>>$LOG_DIR/clinical.err
+*/1 * * * * sleep 30; $JOBRUNNER clinicalctl -d 1>>$LOG_DIR/clinical.log 2>>$LOG_DIR/clinical.err
+
+#VIDA FUNCIONAL
+0 1 * * * $JOBRUNNER vacationgeneratorctl 1>>$LOG_DIR/vacationgeneratorctl.log 2>>$LOG_DIR/vacationgeneratorctl.err
+*/30 * * * * $JOBRUNNER updateapproverctl 1>>$LOG_DIR/updateapproverctl.log 2>>$LOG_DIR/updateapproverctl.err
+5 1 * * * $JOBRUNNER automaticsubstitutectl 1>>$LOG_DIR/automaticsubstitutectl.log 2>>$LOG_DIR/automaticsubstitutectl.err
+20 1 * * * $JOBRUNNER createrequestdutyctl 1>>$LOG_DIR/createrequestdutyctl.log 2>>$LOG_DIR/createrequestdutyctl.err
+40 1 * * * $JOBRUNNER internrecessperiodclt 1>>$LOG_DIR/internrecessperiodclt.log 2>>$LOG_DIR/internrecessperiodclt.err
+30 7 * * * $JOBRUNNER schedulerecessinternctl 1>>$LOG_DIR/schedulerecessinternctl.log 2>>$LOG_DIR/schedulerecessinternctl.err
+20 2 * * * $JOBRUNNER enablesaledaysctl 1>>$LOG_DIR/enablesaledaysctl.log 2>>$LOG_DIR/enablesaledaysctl.err
+40 1 * * * $JOBRUNNER residentrecessperiodctl 1>>$LOG_DIR/residentrecessperiodctl.log 2>>$LOG_DIR/residentrecessperiodctl.err
+0 8 * * * $JOBRUNNER notificacao_relatorio_teletrabalho_semestral 1>>$LOG_DIR/notificacao_relatorio_teletrabalho_semestral.log 2>>$LOG_DIR/notificacao_relatorio_teletrabalho_semestral.err
+15 8 1-9 * * $JOBRUNNER abertura_prazo_teletrabalho_ctl 1>>$LOG_DIR/abertura_prazo_teletrabalho_ctl.log 2>>$LOG_DIR/abertura_prazo_teletrabalho_ctl.err
+30 8 5 * * $JOBRUNNER notifica_aprovadores_teletrabalho_ctl 1>>$LOG_DIR/notifica_aprovadores_teletrabalho_ctl.log 2>>$LOG_DIR/notifica_aprovadores_teletrabalho_ctl.err
+15 8 10 * * $JOBRUNNER encerramento_prazo_teletrabalho_ctl 1>>$LOG_DIR/encerramento_prazo_teletrabalho_ctl.log 2>>$LOG_DIR/encerramento_prazo_teletrabalho_ctl.err
+15 8 11 * * $JOBRUNNER nao_envio_teletrabalho_ctl 1>>$LOG_DIR/nao_envio_teletrabalho_ctl.log 2>>$LOG_DIR/nao_envio_teletrabalho_ctl.err
+
+#RH
+5 0 * * * $JOBRUNNER update_servidor -M 1>>$LOG_DIR/update_servidor.log 2>>$LOG_DIR/update_servidor.err
+0 5 * * * $JOBRUNNER automacao_status_trabalho_remoto 1>>$LOG_DIR/automacao_status_trabalho_remoto.log 2>>$LOG_DIR/automacao_status_trabalho_remoto.err
+0 7 * * * $JOBRUNNER atualizar_lista_antiguidades_membros 1>>$LOG_DIR/atualizar_lista_antiguidades_membros.log 2>>$LOG_DIR/atualizar_lista_antiguidades_membros.err
+0 */2 * * * $JOBRUNNER atualizar_servidor_username -t 1>>$LOG_DIR/atualizar_servidor_username.log 2>>$LOG_DIR/atualizar_servidor_username.err
+0 8 * * 3 $JOBRUNNER plantoesctl 1>>$LOG_DIR/plantoesctl.log 2>>$LOG_DIR/plantoesctl.err
+0 7 * * * $JOBRUNNER notifica_desligamento_res_est_vol 1>>$LOG_DIR/notifica_desligamento_res_est_vol.log 2>>$LOG_DIR/notifica_desligamento_res_est_vol.err
+30 6 * * * $JOBRUNNER inativacargahorariactl 1>>$LOG_DIR/inativacargahorariactl.log 2>>$LOG_DIR/inativacargahorariactl.err
+0 8 * * * $JOBRUNNER bloquear_mov_teletrabalho 1>>$LOG_DIR/bloquear_mov_teletrabalho.log 2>>$LOG_DIR/bloquear_mov_teletrabalho.err
+
+# Nomeação
+0 6 * * * $JOBRUNNER sinc_form_nomeacao -r 1>>$LOG_DIR/sinc_form_nomeacao.log 2>>$LOG_DIR/sinc_form_nomeacao.err
+
+
+# E-Social
+0 22 * * * $JOBRUNNER automatizacao_eventos_cadastro_esocial 1>>$LOG_DIR/automatizacao_eventos_cadastro_esocial.log 2>>$LOG_DIR/automatizacao_eventos_cadastro_esocial.err
+
+# Painel de Controle
+0 1 * * * $JOBRUNNER limpar_grupo_usuarios_servidores_inativos 1>>$LOG_DIR/limpar_grupo_usuarios_servidores_inativos.log 2>>$LOG_DIR/limpar_grupo_usuarios_servidores_inativos.err
+
+# Diarias
+30 3 * * * $JOBRUNNER notificar_prestacao_contas_colaborador_externo 1>>$LOG_DIR/notificar_prestacao_contas_colaborador_externo.log 2>>$LOG_DIR/notificar_prestacao_contas_colaborador_externo.err
+0 * * * * $JOBRUNNER atualizacao_status_pagamento 1>>$LOG_DIR/atualizacao_status_pagamento.log 2>>$LOG_DIR/atualizacao_status_pagamento.err
+0 3 * * * $JOBRUNNER notificar_prestacao_contas 1>>$LOG_DIR/notificar_prestacao_contas.log 2>>$LOG_DIR/notificar_prestacao_contas.err
+30 0 * * * $JOBRUNNER atualizacao_fluxo_prestacao_contas 1>>$LOG_DIR/atualizacao_fluxo_prestacao_contas.log 2>>$LOG_DIR/atualizacao_fluxo_prestacao_contas.err

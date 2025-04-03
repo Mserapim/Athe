@@ -1,0 +1,31 @@
+.acordeao-container {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  
+    .acordeao-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+  
+      .subtitulo {
+        flex-grow: 1;
+        text-align: right;
+        margin-right: 30px;
+      }
+
+      .icon {
+        padding-right: 20px;
+      }
+    }
+  
+    .acordeao-conteudo {
+      padding: 10px;
+      margin-top: 10px;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+  

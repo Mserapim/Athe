@@ -1,0 +1,65 @@
+<mpmt-form-base class="!w-full " [titulo]="titulo" [mensagemErro]="mensagemDeErro()">
+    <div class="flex flex-col bg-white rounded-md border border-gray-300 bg-white">
+        <input 
+            type="file" 
+            #fileInput 
+            class="hidden" 
+            (change)="onFileSelect($event)" 
+            [disabled]="desabilitado"
+        >
+        
+        <!-- Campo de formulário com informação do arquivo -->
+        <div class="p-2 flex items-center justify-between">
+            <div class="flex items-center flex-grow">
+                <i *ngIf="temArquivo" class="pi pi-file text-gray-400 mr-2"></i>
+                <span class="text-sm truncate text-gray-400" >
+                    {{ temArquivo ? valor?.nome : (placeholder || 'Nenhum arquivo selecionado') }}
+                </span>
+            </div>
+            
+            <div class="flex gap-1 ml-2">
+                <!-- Botão de download -->
+                <button 
+                    *ngIf="temArquivo"
+                    type="button" 
+                    class="p-button p-button-icon p-button-sm p-button-text" 
+                    (click)="baixarArquivo()" 
+                    [disabled]="desabilitado"
+                    pTooltip="Baixar arquivo"
+                >
+                    <i class="pi pi-download"></i>
+                </button>
+                
+                <!-- Botão de remover -->
+                <button 
+                    *ngIf="temArquivo"
+                    type="button" 
+                    class="p-button p-button-icon p-button-sm p-button-text p-button-danger" 
+                    (click)="removerArquivo()" 
+                    [disabled]="desabilitado"
+                    pTooltip="Remover arquivo"
+                >
+                    <i class="pi pi-trash"></i>
+                </button>
+                
+                <!-- Botão de anexar/substituir -->
+                <button 
+                    type="button" 
+                    class="p-button p-button-icon p-button-sm p-button-text" 
+                    (click)="fileInput.click()" 
+                    [disabled]="desabilitado || carregando"
+                    [pTooltip]="temArquivo ? 'Substituir arquivo' : 'Anexar arquivo'"
+                >
+                    <i [class]="temArquivo ? 'pi pi-paperclip' : 'pi pi-paperclip'"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Indicador de carregamento -->
+        <div *ngIf="carregando" class="flex justify-center py-1 border-t border-gray-200">
+            <p-progressSpinner [style]="{width: '20px', height: '20px'}"></p-progressSpinner>
+        </div>
+    </div>
+</mpmt-form-base>
+
+<p-toast />

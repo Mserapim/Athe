@@ -1,0 +1,52 @@
+<div class="flex flex-col gap-2 justify-between">
+    <div class="flex gap-2" *ngIf="data?.pk">
+        <div class="font-bold">Codigo:</div>
+        <div>{{ data.pk }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.dependente_name">
+        <div class="font-bold">Pessoa da família:</div>
+        <div>{{ data.dependente_name }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.capacidade">
+        <div class="font-bold">Capacidade:</div>
+        <div>{{ getCapacidade(data.capacidade) }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.tipo_parentesco_name">
+        <div class="font-bold">Tipo de parentesco :</div>
+        <div>{{ data.tipo_parentesco_name }}</div>
+    </div>
+
+    <div class="flex gap-2">
+        <div class="font-bold">Dependente imposto de renda:</div>
+        <div>{{ getDependenteIr(data.dependente_ir) }}</div>
+    </div>
+
+    <div class="flex gap-2">
+        <div class="font-bold">Dependente auxílio creche:</div>
+        <div>{{ getDependenteAuxilioCreche(data.dependente_aux_creche) }}</div>
+    </div>
+
+    <div class="flex gap-2">
+        <div class="font-bold">Tipo dependete IR:</div>
+        <div>{{ data.dependente_tipo_name }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data?.observacao">
+        <div class="font-bold">Observação:</div>
+        <div>{{ data.observacao }}</div>
+    </div>
+
+    <div class="flex gap-2" *ngIf="data.anexo_id">
+        <button
+            mat-button
+            class="bg-primary text-white w-min"
+            (click)="download(data.anexo_id)"
+        >
+            Download
+        </button>
+    </div>
+
+</div>

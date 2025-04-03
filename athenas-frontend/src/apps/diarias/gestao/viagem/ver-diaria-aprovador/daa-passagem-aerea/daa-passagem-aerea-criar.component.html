@@ -1,0 +1,62 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Adicionar passagem aérea</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-100">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+                
+                <mat-form-field class="w-full">
+                    <mat-label>Empresa (companhia aérea)</mat-label>
+                    <input matInput formControlName="empresa" placeholder=""/>
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Aeroporto</mat-label>
+                    <input matInput formControlName="aeroporto" placeholder=""/>
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Número do bilhete</mat-label>
+                    <input matInput formControlName="numeroBilhete" placeholder=""/>
+                </mat-form-field>
+
+                <mat-form-field class="w-full">
+                    <mat-label>Data do voo</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="dataVoo" placeholder="">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field class="w-full" placeholder="Hora">
+                    <mat-label>Hora de saída do voo</mat-label>
+                    <input matInput type="time" formControlName="horaSaidaVoo" placeholder="" />
+                </mat-form-field>
+
+                <mpmt-file-update
+                    [acceptedFileTypes]="['application/pdf']"
+                    (lista_documentos)="receberAnexos($event)"
+                    titulo="Anexar bilhete de viagem*"
+                ></mpmt-file-update>
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Fechar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Salvar</mpmt-botao
+        >
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,32 @@
+::ng-deep .mat-mdc-tab-group {
+    background-color: #ffffff00;
+  
+    .mat-mdc-tab-header {
+      background: #4f46e5;
+      border-radius: 20px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .mat-mdc-tab-labels .mdc-tab {
+      background-color: #4f46e5;
+  
+      .mdc-tab__text-label {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.1em;
+      }
+    }
+  }
+  
+::ng-deep .theme-default .light .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .theme-default .light .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .theme-default.light .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .theme-default.light .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: bold;
+}

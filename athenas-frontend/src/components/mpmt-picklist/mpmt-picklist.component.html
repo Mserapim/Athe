@@ -1,0 +1,55 @@
+<div class="mat-elevation-z2 picklist-container">
+    <div class="picklist-column mat-elevation-z2">
+        <div class="mat-elevation-z2 flex justify-center items-center gap-2 h-1/4">
+            <label class="font-bold">{{textoLista1}}</label>
+            <mat-form-field appearance="fill" class="picklist-form-field" style="margin-top: 3%">
+                <input matInput placeholder="Pesquisar..." [(ngModel)]="availableSearch">
+                <button mat-icon-button aria-label="Buscar">
+                    <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-icon-button (click)="marcarDesmarcarTodos('availableList')"
+                    matTooltip="Marcar/Desmarcar Todos" matTooltipPosition="after">
+                <mat-icon>{{ todosSelecionados ? 'check_box' : 'check_box_outline_blank' }}</mat-icon>
+            </button>
+        </div>
+        <mat-selection-list #availableList [ngModel]="lista1" class="picklist-list">
+            <mat-list-option *ngFor="let item of filterAvailableItems()" [value]="item">{{ item.label }}</mat-list-option>
+        </mat-selection-list>
+    </div>
+
+    <div class="picklist-add-remove-buttons">
+        <button mat-icon-button (click)="addItem()" class="picklist-add-remove-button" matTooltip="Adicionar" matTooltipPosition="after">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+        <button mat-icon-button (click)="removeItem()" class="picklist-add-remove-button" matTooltip="Remover" matTooltipPosition="after">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <button mat-icon-button (click)="addAllItems()" class="picklist-add-remove-button" matTooltip="Adicionar Todos" matTooltipPosition="after">
+            <mat-icon>keyboard_double_arrow_right</mat-icon>
+        </button>
+        <button mat-icon-button (click)="removeAllItems()" class="picklist-add-remove-button" matTooltip="Remover Todos" matTooltipPosition="after">
+            <mat-icon>keyboard_double_arrow_left</mat-icon>
+        </button>
+    </div>
+
+    <div class="picklist-column mat-elevation-z2">
+        <div class="mat-elevation-z2 flex justify-center items-center gap-2 h-1/4">
+            <label class="font-bold">{{textoLista1}}</label>
+            <mat-form-field appearance="fill" class="picklist-form-field" style="margin-top: 3%">
+                <input matInput placeholder="Pesquisar..." [(ngModel)]="selectedSearch">
+                <button mat-icon-button aria-label="Buscar">
+                    <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-icon-button (click)="marcarDesmarcarTodos('selectedList')"
+                    matTooltip="Marcar/Desmarcar Todos" matTooltipPosition="after">
+                <mat-icon>{{ todosSelecionados2 ? 'check_box' : 'check_box_outline_blank' }}</mat-icon>
+            </button>
+        </div>
+
+        <mat-selection-list #selectedList [ngModel]="lista2" class="picklist-list">
+            <mat-list-option *ngFor="let item of filterSelectedItems()" [value]="item">{{ item.label }}</mat-list-option>
+        </mat-selection-list>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <p class="text-xs text-gray-600">
+        {{ service.subtitle }}
+    </p>
+
+    <h1 class="font-bold text-base">Períodos aquisitivos</h1>
+
+    <div
+        class="bg-gray-50 border-gray-200 p-2 font-bold text-gray-500 rounded"
+        *ngIf="service.rights?.length == 0"
+    >
+        Não há periodos aquisitivos
+    </div>
+    <div class="table-responsive" *ngIf="service.rights?.length > 0">
+        <table mat-table [dataSource]="service.rights" class="">
+            <ng-container matColumnDef="group_period_name">
+                <th mat-header-cell *matHeaderCellDef>Grupo</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.group_period_name}}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="start_date_acquisition">
+                <th mat-header-cell *matHeaderCellDef>Início</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.start_date_acquisition | date : "dd.MM.y" }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="end_date_acquisition">
+                <th mat-header-cell *matHeaderCellDef>Fim</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.end_date_acquisition | date : "dd.MM.y" }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="balance_available">
+                <th mat-header-cell *matHeaderCellDef>Saldo</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.balance_available }}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="status_name">
+                <th mat-header-cell *matHeaderCellDef>Situação</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element.status_name }}
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </div>
+
+    <div class="flex flex-col justify-end gap-4">
+        <div
+            *ngIf="service.message"
+            class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+        >
+            {{ service.message }}
+        </div>
+
+        <button
+            *ngIf="service.rights?.length > 0"
+            mat-button
+            [disabled]="!isValid"
+            class="bg-primary text-white p-8 py-4 w-56 self-end"
+            [ngClass]="{ 'bg-gray-300': !isValid }"
+            (click)="goNext()"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div
+    class="flex flex-row text-xl items-center font-bold h-full justify-center gap-2"
+>
+    <mat-icon
+        *ngIf="habilitarFavorito"
+        [svgIcon]="'heroicons_solid:star'"
+        class="text-gray-100 cursor-pointer"
+        [ngClass]="{ '!text-yellow-500': favorito }"
+        (click)="favoritar()"
+    ></mat-icon>
+
+    <div class="flex self-center">
+        {{ titulo }}
+    </div>
+</div>

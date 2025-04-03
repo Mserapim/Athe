@@ -1,0 +1,93 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <h1 class="text-sm">Informe os documentos comprobatórios</h1>
+
+    <table
+        mat-table
+        [dataSource]="documents"
+        class="w-full table-responsive"
+        [ngClass]="{ hidden: documents.length <= 0 }"
+    >
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef class="w-full">Descrição</th>
+            <td mat-cell *matCellDef="let element">
+                <input
+                    mat-input
+                    [(ngModel)]="element.description"
+                    class="bg-gray-100 border w-full"
+                    required
+                    placeholder="Insira uma descrição"
+                />
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="originalName">
+            <th mat-header-cell *matHeaderCellDef>Arquivo</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.originalName }}
+                <!-- <mat-icon [svgIcon]="'heroicons_outline:plus'"></mat-icon> -->
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Remover</th>
+            <td mat-cell *matCellDef="let element">
+                <mat-icon
+                    [svgIcon]="'heroicons_outline:trash'"
+                    class="cursor-pointer"
+                    (click)="removeItem(element.id)"
+                ></mat-icon>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <div
+        *ngIf="service.message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ service.message }}
+    </div>
+
+    <div class="flex flex-col gap-2">
+        <button
+            (click)="fileInput.click()"
+            class="flex justify-between gap-4 p-4 outline-dashed outline-gray-100 rounded cursor-pointer"
+        >
+            <div class="flex gap-2">
+                <div class="w-full">
+                    <span>Selecione o arquivo para adicionar</span>
+                </div>
+            </div>
+            <input
+                #fileInput
+                type="file"
+                (change)="onFileInput($event)"
+                style="display: none"
+            />
+            <mat-icon [svgIcon]="'heroicons_outline:plus'"></mat-icon>
+        </button>
+    </div>
+
+    <div class="flex justify-end gap-4">
+        <button
+            (click)="goBack()"
+            mat-button
+            color="link"
+            class="bg-gray-100 border border-primary text-black p-8 py-4 w-56"
+        >
+            Voltar
+        </button>
+        <button
+            *ngIf="isValid"
+            [disabled]="!isValid || isLoading"
+            (click)="goConfirm()"
+            mat-button
+            color="primary"
+            class="bg-primary text-white p-8 py-4 w-56"
+        >
+            Solicitar progressão
+        </button>
+    </div>
+</div>

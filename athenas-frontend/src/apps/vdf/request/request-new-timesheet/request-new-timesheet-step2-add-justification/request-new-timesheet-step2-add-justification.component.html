@@ -1,0 +1,190 @@
+<div class="flex flex-col w-full gap-4">
+    <div class="flex justify-between py-2">
+        <div class="flex font-bold text-xl">
+            <h1 class="font-bold text-lg">{{ title }}</h1>
+        </div>
+    </div>
+
+    <!-- {{ form.value | json }} -->
+
+    <form [formGroup]="form" class="flex flex-col gap-2 w-full">
+        <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Justificativa</mat-label>
+            <mat-select
+                [(ngModel)]="form.value.justification"
+                formControlName="justification"
+            >
+                <mat-option
+                    *ngFor="let option of justifications"
+                    [value]="option.value_key"
+                    >{{ option.name }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+
+        <mat-radio-group
+            aria-label=""
+            class="w-full gap-5 justify-center"
+            [(ngModel)]="form.value.mode"
+            formControlName="mode"
+        >
+            <mat-radio-button value="HOUR">Hora(s)</mat-radio-button>
+            <mat-radio-button value="DAY">Dia(s)</mat-radio-button>
+        </mat-radio-group>
+
+        <form
+            [formGroup]="formHourMode"
+            class="flex gap-2 w-full"
+            *ngIf="form.value.mode == 'HOUR'"
+        >
+            <mat-form-field appearance="fill" class="w-6/12">
+                <mat-label>Data Início</mat-label>
+                <input
+                    matInput
+                    [matDatepicker]="datepicker1"
+                    [(ngModel)]="formHourMode.value.dateStart"
+                    formControlName="dateStart"
+                />
+                <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="datepicker1"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #datepicker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-3/12">
+                <mat-label>Hora(s)</mat-label>
+                <mat-select
+                    [(ngModel)]="formHourMode.value.hour"
+                    formControlName="hour"
+                >
+                    <mat-option
+                        *ngFor="let option of hours"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="w-3/12">
+                <mat-label>minutos(s)</mat-label>
+                <mat-select
+                    [(ngModel)]="formHourMode.value.minute"
+                    formControlName="minute"
+                >
+                    <mat-option
+                        *ngFor="let option of minutes"
+                        [value]="option.value"
+                        >{{ option.label }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+        </form>
+
+        <form
+            [formGroup]="formDayMode"
+            class="flex gap-2 w-full"
+            *ngIf="form.value.mode == 'DAY'"
+            class="w-full"
+        >
+            <div class="flex gap-2 justify-between">
+                <mat-form-field appearance="fill" class="w-6/12">
+                    <mat-label>Data Início</mat-label>
+                    <input
+                        matInput
+                        [matDatepicker]="datepicker1"
+                        (ngModelChange)="onChangeStartDate($event)"
+                        formControlName="dateStart"
+                    />
+                    <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="datepicker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker1></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-3/12">
+                    <mat-label>Quantidade de dias</mat-label>
+                    <input
+                        type="number"
+                        matInput
+                        (ngModelChange)="onChangeDays($event)"
+                        formControlName="days"
+                        [min]="1"
+                        [max]="31"
+                    />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-3/12">
+                    <mat-label>Data Fim</mat-label>
+                    <input
+                        matInput
+                        disabled="true"
+                        readonly="true"
+                        class=""
+                        [ngModel]="formDayMode.value.dateEnd"
+                        [matDatepicker]="datepicker2"
+                        formControlName="dateEnd"
+                    />
+                </mat-form-field>
+            </div>
+        </form>
+
+        <button
+            (click)="fileInput.click()"
+            class="flex justify-between gap-4 p-4 bg-gray-100 outline-dashed outline-gray-200 rounded cursor-pointer"
+        >
+            <div *ngIf="!file" class="w-full text-black">
+                <span>Clique para anexar um comprovante (Opcional)</span>
+            </div>
+            <div *ngIf="file" class="w-full text-black">
+                {{ file?.name }}
+            </div>
+
+            <input
+                #fileInput
+                type="file"
+                (change)="onFileInput($event)"
+                style="display: none"
+            />
+            <!-- <mat-icon [svgIcon]="'heroicons_solid:x'"></mat-icon> -->
+        </button>
+
+        <mat-form-field class="">
+            <mat-label>Observação (Opcional)</mat-label>
+            <textarea
+                matInput
+                placeholder="Observação..."
+                [(ngModel)]="observation"
+                formControlName="observation"
+            ></textarea>
+        </mat-form-field>
+    </form>
+    <!-- {{ data | json }} -->
+    <div
+        *ngIf="message"
+        class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+    >
+        {{ message }}
+    </div>
+    <div class="flex justify-end gap-4">
+        <button
+            mat-button
+            color="primary"
+            class="border outline outline-1 border-gray-300 text-gray-500 p-8 py-4 w-56"
+            [mat-dialog-close]=""
+        >
+            Fechar
+        </button>
+
+        <button
+            mat-button
+            [disabled]="!isValid"
+            class="bg-primary text-white p-8 py-4 w-56 self-end"
+            [ngClass]="{ 'bg-gray-300': !isValid }"
+            (click)="goNext()"
+        >
+            Enviar
+        </button>
+    </div>
+</div>

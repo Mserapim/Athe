@@ -1,0 +1,109 @@
+<div class="flex flex-col gap-4 w-full text-black">
+    <div class="flex flex-clol gap-1 justify-between py-2">
+        <div class="flex-col flex font-bold text-xl">
+            <h1 class="font-bold text-sm">{{ title }}</h1>
+            <p class="text-xs text-gray-600">{{ subtitle }}</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col h-full w-full p-4 gap-2 rounded">
+        <div class="flex flex-col gap-4" *ngFor="let grupo of lista">
+            <div class="flex flex-col font-bold text-xl">
+                {{ grupo.tipo_ato }} - {{ grupo?.dados?.length }} Servidor(es)
+                <span
+                    class="text-xs"
+                    *ngIf="grupo.tipo_ato?.trim() == 'ATO 862/2019'"
+                    >(Servidores sem condições especiais de trabalho)</span
+                >
+
+                <span
+                    class="text-xs"
+                    *ngIf="grupo.tipo_ato?.trim() != 'ATO 862/2019'"
+                    >( (Servidores em Condições Especiais de Trabalho))</span
+                >
+            </div>
+
+            <div class="flex flex-col">
+                <table>
+                    <thead class="bg-gray-500 text-left text-white font-bold">
+                        <th class="p-2">Matricula</th>
+                        <th class="p-2">Nome</th>
+                        <th class="p-2">GEDOC</th>
+                        <th class="p-2">Data Início</th>
+                        <th class="p-2">Data Fim</th>
+                        <th class="p-2 max-w-96">Envios</th>
+                    </thead>
+
+                    <tbody class="bg-gray-50 border border-gray-100">
+                        <ng-container
+                            *ngFor="
+                                let pessoa of grupo.dados;
+                                let indexPessoa = index;
+                                let odd = odd
+                            "
+                        >
+                            <tr
+                                *ngFor="
+                                    let registro of pessoa?.registros;
+                                    let first = first;
+                                    let last = last
+                                "
+                                class=""
+                                :[ngClass]="{'bg-gray-200': odd, 'border-top border-gray-300': first}"
+                            >
+                                <td>
+                                    <div *ngIf="first">
+                                        {{ pessoa.matricula }}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div *ngIf="first">
+                                        {{ pessoa.nome }}
+                                    </div>
+                                </td>
+                                <td>{{ registro.gedoc }}</td>
+                                <td>{{ printDate(registro.data_inicio) }}</td>
+                                <td>{{ printDate(registro.data_fim) }}</td>
+                                <td>{{ registro.envios.join(",") }}</td>
+                            </tr>
+                        </ng-container>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- {{ listaFiltradaAto1058() | json }} -->
+        </div>
+    </div>
+
+    <div>
+        <div class="flex flex-col justify-end gap-4">
+            <div
+                *ngIf="mensagem"
+                class="flex bg-red-100 w-full rounded p-2 text-red-700 font-bold text-md"
+            >
+                {{ mensagem }}
+            </div>
+
+            <div
+                class="flex gap-2 self-center w-full justify-center p-2 rounded"
+            >
+                <button
+                    mat-button
+                    class="bg-red-400 text-white p-8 py-2 justify-end"
+                    (click)="goRequests()"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    mat-button
+                    [ngClass]="{ 'bg-primary': true }"
+                    class="bg-gray text-white p-8 py-4 w-56 self-end"
+                    (click)="goNext()"
+                >
+                    Avançar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

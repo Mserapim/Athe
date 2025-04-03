@@ -1,0 +1,57 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">{{ data.titulo }}</h1>
+    </h1>
+
+    <div mat-dialog-content>
+        <table mat-table [dataSource]="data.dados" class="w-full">
+            <ng-container matColumnDef="servidor">
+                <th mat-header-cell *matHeaderCellDef> Beneficiário </th>
+                <td mat-cell *matCellDef="let item"> {{ item.servidor }} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="valor_liquido_deferido_viagem">
+                <th mat-header-cell *matHeaderCellDef> Valor líquido </th>
+                <td mat-cell *matCellDef="let item"> {{ item.valor_liquido_deferido_viagem | currency: 'BRL' : 'symbol':'1.2-2' }} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="info_conta_bancaria">
+                <th mat-header-cell *matHeaderCellDef> Dados bancários </th>
+                <td mat-cell *matCellDef="let item"> {{ item.info_conta_bancaria }} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        
+        <form 
+            [formGroup]="formulario"
+            class="grid grid-cols-1 gap-2 w-full py-10"
+        >   
+            <mat-form-field class="w-full">
+            <mat-label><strong>Data de pagamento</strong></mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dataPagamento">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="formulario.get('dataPagamento').hasError('required')">
+                Data de pagamento é obrigatória
+            </mat-error>
+            <mat-error *ngIf="formulario.get('dataPagamento').hasError('dataRetroativa')">
+                Não é permitido selecionar datas retroativas
+            </mat-error>
+            </mat-form-field>
+        </form>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()"
+            >Cancelar</mpmt-botao
+        >
+        <mpmt-botao
+            cor="sucesso"
+            (click)="confirmarFormulario()"
+            [desabilitado]="!formularioValido"
+            >Gerar</mpmt-botao
+        >
+    </div>
+</div>

@@ -1,0 +1,56 @@
+
+<div
+    class="flex cursor-pointer z-50 pr-6 font-bold w-full text-right justify-end bg-white"
+>
+    <div
+        class="flex px-2 pb-1 bg-gray-100 font-bold rounded-b-full"
+        (click)="fechar()"
+    >
+        X
+    </div>
+</div>
+
+<div
+    class="flex flex-col h-full w-full gap-2 justify-between relative bg-white"
+>
+    <div class="flex gap-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Tipo de Anotação:</div>
+                    <div>{{ anoatacao.tipo_label }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Tipo de Documento:</div>
+                    <div>{{ anoatacao.documento_tipo_label }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Número Doc.:</div>
+                    <div>{{ anoatacao.documento_numero }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Publicação:</div>
+                    <div>{{ anoatacao.publicacao_label }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">Data do Documento:</div>
+                    <div>{{ printDate(anoatacao.documento_data) }}</div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="font-bold">GEDOC:</div>
+                    <div>{{ anoatacao.gedoc_numero }}</div>
+                </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col w-full">
+        <div class="font-bold">Anotação:</div>
+        <div class="mpmt-texto-formatado-conteudo" [innerHTML]="anoatacao.texto"></div>
+    </div>
+</div>
+
+

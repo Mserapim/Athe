@@ -1,0 +1,37 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <mpmt-listagem-selecao [service]="service" [permitirMultiplosSelecionados]="false" [tabelaComBorda]="true">
+                <div filtros class="w-full">
+                    <div class="flex justify-between items-center w-full">
+                        <form
+                            [formGroup]="service.filtros"
+                            class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full"
+                        >
+                            <mat-form-field class="self-center w-full">
+                                <mat-label>Palavra chave</mat-label>
+                                <input
+                                    matInput
+                                    type="text"
+                                    formControlName="keyword"
+                                    placeholder="Palavra chave"
+                                    (ngModelChange)="service.recarregarListagem()" 
+                                />
+                            </mat-form-field>
+                        </form>
+
+                        <div class="flex items-center justify-end w-full md:w-auto ml-4">
+                            <mpmt-botao (click)="irNovo()" *ngIf="navegacaoAtualService.possuiPermissao('criar')">Novo classcode</mpmt-botao>
+                        </div>
+                    </div>
+                </div>
+            </mpmt-listagem-selecao>
+        </div>
+    </div>
+
+
+</layout-padrao-modal>

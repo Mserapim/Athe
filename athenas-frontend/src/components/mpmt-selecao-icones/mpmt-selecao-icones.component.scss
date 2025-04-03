@@ -1,0 +1,39 @@
+.icon-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    z-index: 1000;
+}
+
+.dropdown-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+.icon-container mat-icon {
+    margin-right: 5px;
+}
+
+.icon-name-container span {
+    margin-right: 8px;
+}
+
+

@@ -1,0 +1,47 @@
+<div class="flex flex-col gap-8">
+    <h1 mat-dialog-title>
+        <h1 class="font-bold text-lg text-primary">Novo Evento</h1>
+    </h1>
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form [formGroup]="formulario" class="grid grid-cols-1 gap-2 w-full">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Título</mat-label>
+                    <input matInput formControlName="titulo">
+                </mat-form-field>
+
+                <mat-slide-toggle formControlName="singleDate">Data única</mat-slide-toggle>
+
+                <mat-form-field appearance="fill" *ngIf="formulario.get('singleDate')?.value">
+                    <mat-label>Data início</mat-label>
+                    <input matInput [matDatepicker]="picker1" formControlName="data">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field class="example-form-field" *ngIf="!formulario.get('singleDate')?.value">
+                    <mat-label>Informe as datas de início e termino do evento</mat-label>
+                    <mat-date-range-input [rangePicker]="rangePicker" [formGroup]="formulario.get('dateRange')">
+                        <input matStartDate placeholder="Data início" formControlName="data_inicio" />
+                        <input matEndDate placeholder="Data término" formControlName="data_fim" />
+                    </mat-date-range-input>
+                    <mat-hint>DD/MM/YYYY – DD/MM/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="rangePicker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #rangePicker>
+                        <mat-date-range-picker-actions>
+                            <button mat-button matDateRangePickerCancel>Cancelar</button>
+                            <button mat-raised-button matDateRangePickerApply>Aplicar</button>
+                        </mat-date-range-picker-actions>
+                    </mat-date-range-picker>
+                </mat-form-field>
+
+            </form>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="flex flex-col sm:flex-row justify-end gap-4">
+        <mpmt-botao tipo="borda" (click)="fecharFormulario()">Fechar</mpmt-botao>
+        <mpmt-botao cor="sucesso" (click)="confirmarFormulario()" [desabilitado]="!formularioValido">Salvar</mpmt-botao>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<layout-padrao-modal
+    title= 'Nova justificativa'
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+
+    <div mat-dialog-content class="p-0">
+        <div class="flex flex-col sm:min-w-120 w-96">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+
+                <mpmt-selecao
+                    [titulo]="'Tipo justificativa*'"
+                    [titulo_class]="''"
+                    placeholder="Tipo justificativa"
+                    formControlName="tipoJustificativa"
+                    [configuracao]="selecaoTipoJustificativas"
+                ></mpmt-selecao>
+
+                <div
+                    class="flex flex-row gap-2"
+                    *ngIf="formulario?.value?.tipo == 'DIA'"
+                >
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Início</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_inicio"
+                            [matDatepicker]="datepickerStart"
+                            (ngModelChange)="onChangeData($event)"
+                        />
+                        <mat-datepicker-toggle
+                            matIconSuffix
+                            [for]="datepickerStart"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker 
+                            #datepickerStart
+                            [startAt]="startAt"
+                        ></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="w-full" placeholder="Dias">
+                        <mat-label>Dia(s)</mat-label>
+                        <input
+                            matInput
+                            placeholder=""
+                            formControlName="dias"
+                            min="1"
+                            max="9999"
+                            (ngModelChange)="onChangeData($event)"
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="flex w-full">
+                        <mat-label>Fim</mat-label>
+                        <input
+                            matInput
+                            formControlName="data_fim"
+                            [matDatepicker]="datepickerStart"
+                            readonly="true"
+                        />
+                    </mat-form-field>
+                </div>
+
+                <mpmt-arquivo formControlName="anexo"></mpmt-arquivo>
+
+                <mat-form-field class="w-full" placeholder="Descrição">
+                    <mat-label>Observação (Opcional)</mat-label>
+                    <textarea
+                        matInput
+                        placeholder="Observação (Opcional)"
+                        formControlName="observacao"
+                        name="observacao"
+                        class="h-32"
+                    >
+                    </textarea>
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+</layout-padrao-modal>

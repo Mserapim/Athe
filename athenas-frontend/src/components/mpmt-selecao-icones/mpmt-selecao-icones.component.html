@@ -1,0 +1,16 @@
+<mat-form-field [formGroup]="form" appearance="fill" class="w-full flex">
+    <mat-label>{{titulo}}</mat-label>
+    <mat-icon class="mr-2">{{ form.get('selectedIcon').value }} </mat-icon>
+    <input type="text"
+           placeholder="Escolha um"
+           aria-label="Ícone"
+           matInput
+           formControlName="selectedIcon"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let icon of filteredIcons | async" [value]="icon">
+            <mat-icon>{{ icon }}</mat-icon>
+            <span>{{ icon }}</span>
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

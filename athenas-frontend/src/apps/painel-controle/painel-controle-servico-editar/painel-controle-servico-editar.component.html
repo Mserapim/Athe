@@ -1,0 +1,58 @@
+<layout-padrao-modal
+    [title]="controlarTitulo()"
+    [buttons]="modalButtons"
+    (close)="fecharFormulario()"
+>
+
+    <div mat-dialog-content>
+        <div class="flex flex-col w-full sm:min-w-120">
+            <form
+                [formGroup]="formulario"
+                class="grid grid-cols-1 gap-2 w-full"
+            >
+                <mat-form-field class="w-full" placeholder="Nome">
+                    <mat-label>Nome</mat-label>
+                    <input matInput formControlName="name" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Comando">
+                    <mat-label>Comando</mat-label>
+                    <input matInput formControlName="command" placeholder="" />
+                </mat-form-field>
+                <mat-form-field class="w-full" placeholder="Descrição">
+                    <mat-label>Descrição</mat-label>
+                    <textarea matInput placeholder="Descrição" formControlName="description"
+                       name="description" class="h-32">
+                    </textarea>
+                </mat-form-field>
+                <div class="flex flex-row gap-1 w-full">
+                    <div class="self-center w-full">
+                        <mpmt-selecao-form
+                            #selecaoClasscode
+                            [titulo]="'Classcode*'"
+                            class="w-full"
+                            placeholder="Classcode"
+                            formControlName="classcode"
+                            [form_control]="formulario.get('classcode')"
+                            [configuracao]="selecaoServicoClasscodes"
+                        ></mpmt-selecao-form>
+                    </div>
+                    <div class="flex h-full items-center">
+                        <mat-icon
+                            *ngIf="classcodeSelecionado"
+                            [svgIcon]="'heroicons_solid:plus-circle'"
+                            (click)="irNovoClasscode()"
+                            class="cursor-pointer"
+                        ></mat-icon>
+                        <mat-icon
+                            *ngIf="!classcodeSelecionado"
+                            [svgIcon]="'heroicons_solid:pencil-alt'"
+                            (click)="irEditarClasscode()"
+                            class="cursor-pointer"
+                        ></mat-icon>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</layout-padrao-modal>
