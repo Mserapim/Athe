@@ -1,0 +1,88 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418213556216">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>03848705974</cpfTrab>
+      <nmTrab>DANIELE CREMA DA ROCHA DE SOUZA</nmTrab>
+      <sexo>F</sexo>
+      <racaCor>6</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>DANIELE CREMA DA ROCHA DE SOUZA</nmSoc>
+      <nascimento>
+        <dtNascto>1982-07-08</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>RUA DOS CEDROS</dscLograd>
+          <nrLograd>454</nrLograd>
+          <complemento>AP 301</complemento>
+          <bairro>CENTRO</bairro>
+          <cep>78450000</cep>
+          <codMunic>5105606</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>ARTHUR ROCHA DE SOUZA</nmDep>
+        <dtNascto>2013-06-27</dtNascto>
+        <cpfDep>06795011186</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <emailPrinc>daniele.rocha@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1270</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2009-04-03</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR DE JUSTICA - ENTRÂNCIA INTERMEDIÁRIA</nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>2018-01-12</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

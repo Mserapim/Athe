@@ -1,0 +1,257 @@
+[
+  {
+    "id": "39",
+    "text": "Afastamentos e Exerc\u00edcios",
+    "cls": "tree-icon-athenas-0460 larger-font"
+  },
+  {
+    "id": "40",
+    "text": "Anota\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0822 larger-font"
+  },
+  {
+    "id": "138",
+    "text": "Cadastro de Consultas",
+    "cls": "tree-icon-athenas-0346 larger-font"
+  },
+  {
+    "id": "147",
+    "text": "Cadastro de Modelos",
+    "cls": "tree-icon-athenas-0049 larger-font"
+  },
+  {
+    "id": "52",
+    "text": "Est\u00e1gio Probat\u00f3rio",
+    "cls": "tree-icon-athenas-0793 larger-font"
+  },
+  {
+    "id": "55",
+    "text": "Folha de Ponto",
+    "cls": "tree-icon-athenas-0285 larger-font"
+  },
+  {
+    "id": "142",
+    "text": "Gestor de benef\u00edcios",
+    "cls": "tree-icon-athenas-0824 larger-font"
+  },
+  {
+    "id": "155",
+    "text": "Gestor de Progress\u00f5es",
+    "cls": "tree-icon-athenas-0441 larger-font"
+  },
+  {
+    "id": "153",
+    "text": "Gratifica\u00e7\u00f5es de Membros",
+    "cls": "tree-icon-athenas-0001 larger-font"
+  },
+  {
+    "id": "154",
+    "text": "Gratifica\u00e7\u00f5es de Servidores",
+    "cls": "tree-icon-athenas-0001 larger-font"
+  },
+  {
+    "id": "61",
+    "text": "Identidade Funcional",
+    "cls": "tree-icon-athenas-0036 larger-font"
+  },
+  {
+    "id": "69",
+    "text": "Movimenta\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0423 larger-font"
+  },
+  {
+    "id": "72",
+    "text": "Par\u00e2metros",
+    "cls": "tree-icon-athenas-0374 larger-font"
+  },
+  {
+    "id": "140",
+    "text": "Qualidade Cadastral",
+    "cls": "tree-icon-athenas-0026 larger-font"
+  },
+  {
+    "id": "80",
+    "text": "RDIR",
+    "cls": "tree-icon-athenas-0429 larger-font"
+  },
+  {
+    "id": "81",
+    "text": "Recadastramento Funcional",
+    "cls": "tree-icon-athenas-0093 larger-font"
+  },
+  {
+    "id": "85",
+    "text": "Relat\u00f3rios",
+    "cls": "tree-icon-athenas-0291 larger-font"
+  },
+  {
+    "id": "160",
+    "text": "Teletrabalho",
+    "cls": "tree-icon-athenas-0438 larger-font"
+  },
+  {
+    "id": "134",
+    "text": "Usufrutos e folgas",
+    "cls": "tree-icon-athenas-0780 larger-font"
+  },
+  {
+    "id": "777",
+    "text": "Gestor de Ponto",
+    "cls": "tree-icon-athenas-0773 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('MarkPointAdmin')",
+    "uuid": "2d76dd851efc400c9298de028426525d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2d76dd851efc400c9298de028426525d",
+    "icon_file": ""
+  },
+  {
+    "id": "259",
+    "text": "Cadastro de Pessoas",
+    "cls": "tree-icon-athenas-0638 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHPersonRestful')",
+    "uuid": "c7800c74a1604edcb0b8d5334513fa9b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c7800c74a1604edcb0b8d5334513fa9b",
+    "icon_file": ""
+  },
+  {
+    "id": "260",
+    "text": "Cadastro de Servidor",
+    "cls": "tree-icon-athenas-0658 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeSpecialized')",
+    "uuid": "ef215b37faf1476ebf2936f22484b659",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ef215b37faf1476ebf2936f22484b659",
+    "icon_file": ""
+  },
+  {
+    "id": "279",
+    "text": "Gestor Afastamento",
+    "cls": "tree-icon-athenas-0460 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AFAManagerRestful')",
+    "uuid": "6538e69d7f824b73b75b4c48a8652b65",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/6538e69d7f824b73b75b4c48a8652b65",
+    "icon_file": ""
+  },
+  {
+    "id": "281",
+    "text": "Gestor de Faltas",
+    "cls": "tree-icon-athenas-0251 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PONTFalta')",
+    "uuid": "d604c3c7573e44e3b03ba6c2cd42fb80",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d604c3c7573e44e3b03ba6c2cd42fb80",
+    "icon_file": ""
+  },
+  {
+    "id": "283",
+    "text": "Gestor de Pens\u00f5es",
+    "cls": "tree-icon-athenas-0565 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PENPension')",
+    "uuid": "62db83ecdf6a436a97f76aaa8d31e115",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/62db83ecdf6a436a97f76aaa8d31e115",
+    "icon_file": ""
+  },
+  {
+    "id": "284",
+    "text": "Gestor de Processos - Suspens\u00e3o Tribut\u00e1ria",
+    "cls": "tree-icon-athenas-0766 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHLegalProcess')",
+    "uuid": "64ca76b676d24b17a105c14801cc9384",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/64ca76b676d24b17a105c14801cc9384",
+    "icon_file": ""
+  },
+  {
+    "id": "295",
+    "text": "Previs\u00e3o de Aposentadoria",
+    "cls": "tree-icon-athenas-0844 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSRetirementPrevision')",
+    "uuid": "ce3cc3df70774650bc1b53a1a4070266",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ce3cc3df70774650bc1b53a1a4070266",
+    "icon_file": ""
+  },
+  {
+    "id": "802",
+    "text": "Hist\u00f3rico Pessoal -  Esocial",
+    "cls": "tree-icon-athenas-0847 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHNaturalPersonHistory')",
+    "uuid": "2dfbf654b3144909b8f84f5009fc17c5",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2dfbf654b3144909b8f84f5009fc17c5",
+    "icon_file": ""
+  },
+  {
+    "id": "734",
+    "text": "Afastamento de Adidos",
+    "cls": "tree-icon-athenas-0830 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPExtraPaymentAttachePeriod')",
+    "uuid": "qa215b37faf1476ebf2936f22484b659",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/qa215b37faf1476ebf2936f22484b659",
+    "icon_file": ""
+  },
+  {
+    "id": "733",
+    "text": "Gerador de Holerites",
+    "cls": "tree-icon-athenas-0572 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GPPayCheckReport')",
+    "uuid": "8a63612086624e1ca76cfa0669e244fe",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8a63612086624e1ca76cfa0669e244fe",
+    "icon_file": ""
+  },
+  {
+    "id": "742",
+    "text": "Ficha Financeira",
+    "cls": "tree-icon-athenas-0552 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPFinancialStatementReport')",
+    "uuid": "86098a5fc6c6496c80ad17570f421815",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/86098a5fc6c6496c80ad17570f421815",
+    "icon_file": ""
+  },
+  {
+    "id": "195",
+    "text": "DBVR",
+    "cls": "tree-icon-athenas-0192 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CIRDIRControlInformation')",
+    "uuid": "d107a427b9d248988921a3d8cbd1b7c7",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d107a427b9d248988921a3d8cbd1b7c7",
+    "icon_file": ""
+  },
+  {
+    "id": "801",
+    "text": "Membro em Trabalho Remoto",
+    "cls": "tree-icon-athenas-0275 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHTelecommutingManager')",
+    "uuid": "e05c118f02004eadb0f9462c9f0aeaeb",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e05c118f02004eadb0f9462c9f0aeaeb",
+    "icon_file": ""
+  },
+  {
+    "id": "809",
+    "text": "Lista de Antiguidades Membros",
+    "cls": "tree-icon-athenas-0248 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ListaAntiguidadeRestfull')",
+    "uuid": "8d003891a1f74249a0eb2e383974384c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8d003891a1f74249a0eb2e383974384c",
+    "icon_file": ""
+  },
+  {
+    "id": "741",
+    "text": "Dado Banc\u00e1rio  - Pessoas",
+    "cls": "tree-icon-athenas-0466 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHBankingDataPerson')",
+    "uuid": "4c984d9c4aa54524ab4d750e021933f4",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/4c984d9c4aa54524ab4d750e021933f4",
+    "icon_file": ""
+  }
+]

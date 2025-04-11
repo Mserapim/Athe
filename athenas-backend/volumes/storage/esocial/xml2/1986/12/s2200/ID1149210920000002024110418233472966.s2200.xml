@@ -1,0 +1,90 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418233472966">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>07411600997</cpfTrab>
+      <nmTrab>JOSE BASILIO GONCALVES</nmTrab>
+      <sexo>M</sexo>
+      <racaCor>3</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>JOSE BASILIO GONCALVES</nmSoc>
+      <nascimento>
+        <dtNascto>1949-08-13</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>AV</tpLograd>
+          <dscLograd>Avenida Rubens de Mendonca 308</dscLograd>
+          <nrLograd>3085</nrLograd>
+          <complemento>ap. 1101</complemento>
+          <bairro>Alvorada</bairro>
+          <cep>78050000</cep>
+          <codMunic>5103403</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>99</tpDep>
+        <nmDep>RODOLFO BAGATELLI GONCALVES</nmDep>
+        <dtNascto>1991-02-18</dtNascto>
+        <cpfDep>03158621142</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+        <descrDep>FILHO(A) - RODOLFO BAGATELLI GONCALVES</descrDep>
+      </dependente>
+      <contato>
+        <emailPrinc>jose.goncalves@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1032</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>1986-12-15</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>S</indAbonoPerm>
+          <dtIniAbono>2005-04-15</dtIniAbono>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROCURADOR DE JUSTICA</nmCargo>
+        <CBOCargo>242210</CBOCargo>
+        <dtIngrCargo>1997-06-27</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

@@ -1,0 +1,80 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418234975148">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>31837581134</cpfTrab>
+      <nmTrab>KATIA MARIA AGUILERA RISPOLI</nmTrab>
+      <sexo>F</sexo>
+      <racaCor>3</racaCor>
+      <estCiv>3</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>KATIA MARIA AGUILERA RISPOLI</nmSoc>
+      <nascimento>
+        <dtNascto>1962-09-28</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>Rua Buenos Aires</dscLograd>
+          <nrLograd>280</nrLograd>
+          <complemento>ap. 801</complemento>
+          <bairro>Jardim das Amer</bairro>
+          <cep>78060634</cep>
+          <codMunic>5103403</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <contato>
+        <emailPrinc>katia.rispoli@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1042</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>1990-03-16</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>S</indAbonoPerm>
+          <dtIniAbono>2015-09-28</dtIniAbono>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROCURADOR DE JUSTICA</nmCargo>
+        <CBOCargo>242210</CBOCargo>
+        <dtIngrCargo>2004-02-06</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

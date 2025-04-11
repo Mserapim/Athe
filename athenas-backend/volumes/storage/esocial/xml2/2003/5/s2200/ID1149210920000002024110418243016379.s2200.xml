@@ -1,0 +1,98 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418243016379">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>28546979871</cpfTrab>
+      <nmTrab>LUIZ GUSTAVO MENDES DE MAIO</nmTrab>
+      <sexo>M</sexo>
+      <racaCor>1</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>LUIZ GUSTAVO MENDES DE MAIO</nmSoc>
+      <nascimento>
+        <dtNascto>1978-02-23</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>AV</tpLograd>
+          <dscLograd>DOS MOGNOS</dscLograd>
+          <nrLograd>480</nrLograd>
+          <complemento>MONDRIAN CASA 6</complemento>
+          <bairro>EUNICE</bairro>
+          <cep>78555900</cep>
+          <codMunic>5107909</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>JOSÉ GUILHERME DE PAULA MAIO</nmDep>
+        <dtNascto>2013-03-27</dtNascto>
+        <cpfDep>06532037133</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>LUIZ FELIPE DE PAULA MAIO</nmDep>
+        <dtNascto>2007-01-09</dtNascto>
+        <cpfDep>04799686160</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <fonePrinc>6699075879</fonePrinc>
+        <emailPrinc>luiz.maio@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1199</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2003-05-30</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR (A) DE JUSTICA </nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>2015-04-17</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

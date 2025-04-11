@@ -1,0 +1,62 @@
+[
+  {
+    "id": "714",
+    "text": "Gestor de Itens de tabela",
+    "cls": "tree-icon-athenas-0702 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ESOCIALItemTable')",
+    "uuid": "22173162731d40e6b9b4b23f456e85c2",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/22173162731d40e6b9b4b23f456e85c2",
+    "icon_file": ""
+  },
+  {
+    "id": "208",
+    "text": "Configura\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0810 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ESOCIALConfiguration')",
+    "uuid": "28594086a0234de09ac45af1ecc3498a",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/28594086a0234de09ac45af1ecc3498a",
+    "icon_file": ""
+  },
+  {
+    "id": "715",
+    "text": "Gestor de Itens de tabela",
+    "cls": "tree-icon-athenas-0702 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ESOCIALItemTable')",
+    "uuid": "d2d94489d3324e7e8f90414723319cf6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d2d94489d3324e7e8f90414723319cf6",
+    "icon_file": ""
+  },
+  {
+    "id": "209",
+    "text": "Gestor Eventos/Lotes",
+    "cls": "tree-icon-athenas-0617 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ESOCIALBatchEventEmployee')",
+    "uuid": "152c9724968e485fb66a1b1e0949543f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/152c9724968e485fb66a1b1e0949543f",
+    "icon_file": ""
+  },
+  {
+    "id": "716",
+    "text": "Gestor Eventos/Lotes - Admin",
+    "cls": "tree-icon-athenas-0617 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ESOCIALBatchEvent')",
+    "uuid": "a4d9b22f32fd451c8602adf747877e26",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/a4d9b22f32fd451c8602adf747877e26",
+    "icon_file": ""
+  },
+  {
+    "id": "210",
+    "text": "Qualifica\u00e7\u00e3o Cadastral",
+    "cls": "tree-icon-athenas-0420 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ESCRegistrationQualification')",
+    "uuid": "c40164c94aed469eafdb75ba98f7cd3d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c40164c94aed469eafdb75ba98f7cd3d",
+    "icon_file": ""
+  }
+]

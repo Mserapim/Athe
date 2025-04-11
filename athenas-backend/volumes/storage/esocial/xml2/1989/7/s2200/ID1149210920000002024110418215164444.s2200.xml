@@ -1,0 +1,78 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418215164444">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>06391818134</cpfTrab>
+      <nmTrab>EDMILSON DA COSTA PEREIRA</nmTrab>
+      <sexo>M</sexo>
+      <racaCor>3</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>EDMILSON DA COSTA PEREIRA</nmSoc>
+      <nascimento>
+        <dtNascto>1956-07-09</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>Rua das Imbuias</dscLograd>
+          <nrLograd>185</nrLograd>
+          <bairro>ALPHAVILLE I</bairro>
+          <cep>78061314</cep>
+          <codMunic>5103403</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <contato>
+        <emailPrinc>edmilson.pereira@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1086</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>1989-07-21</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROCURADOR DE JUSTICA</nmCargo>
+        <CBOCargo>242210</CBOCargo>
+        <dtIngrCargo>2005-02-18</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

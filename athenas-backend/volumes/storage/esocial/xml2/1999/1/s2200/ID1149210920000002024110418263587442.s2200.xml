@@ -1,0 +1,82 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418263587442">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>50544543653</cpfTrab>
+      <nmTrab>SALETE MARIA BUFALO PODEROSO</nmTrab>
+      <sexo>F</sexo>
+      <racaCor>1</racaCor>
+      <estCiv>1</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>SALETE MARIA BUFALO PODEROSO</nmSoc>
+      <nascimento>
+        <dtNascto>1966-02-27</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <dscLograd>R. TEN. ALCIDES DUARTE DE SOUZ</dscLograd>
+          <nrLograd>421</nrLograd>
+          <complemento>ED TOSCANA</complemento>
+          <bairro>GOIABEIRAS</bairro>
+          <cep>78043263</cep>
+          <codMunic>5103403</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <contato>
+        <emailPrinc>salete.bufalo@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1173</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>1999-01-25</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR (A) DE JUSTICA </nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>1999-01-25</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+      <afastamento>
+        <dtIniAfast>2018-01-15</dtIniAfast>
+        <codMotAfast>16</codMotAfast>
+      </afastamento>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

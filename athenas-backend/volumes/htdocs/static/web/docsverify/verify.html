@@ -1,0 +1,27 @@
+{% extends 'docsverify/index.html' %}
+
+{% block content %}
+<h1>Verificar</h1>
+<form method="post" class="verify" action="/{{context}}/docsverify/verify/">	
+	<fieldset>
+		<legend>Código do Documento</legend>
+		<div>
+			{% for field in f %}
+			<div class="wrapper">
+				{{field}}				
+				{% if field.errors.as_text %}
+				<span class="error">{{field.errors.as_text}}</span>
+				{% endif %}
+			</div>
+			{% endfor %}
+		</div>
+		<span class="warning">
+			O código do documento se encontra no rodapé do mesmo, na parte inferior direita, composto por quatro grupos de oito caractéres.			
+		</span>
+	</fieldset>
+	{% if msg %}				
+		<p class="error">{{msg}}</p>		
+	{% endif %}
+	<p> <input class="button" type="submit" value="Enviar"/> </p>
+</form>
+{% endblock %}

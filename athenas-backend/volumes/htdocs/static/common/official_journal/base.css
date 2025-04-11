@@ -1,0 +1,186 @@
+
+/* #Internal Page Styles av.1 p.Tamirys Virgulino
+================================================== */
+
+.extend{ float:left; width:100%; position:relative; }
+.extend_body{ width:100%; position:relative; }
+
+
+.container_geral{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* heading h1, h2, h3, h4, h5, h6 */
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    font-weight: normal;
+}
+
+.heading-title h2 b{
+    font-weight: normal;
+    font-family: '';
+    color: #235A85;
+}
+
+.heading-title h2{
+    text-transform: uppercase;
+    color: #235A85;
+    font-size: 30px;
+    font-family: '';
+
+}
+
+.heading-title h1 {
+    /* width: 5ch; */
+    font-family: '';
+	font-size: large;
+	color:#235A85;
+	text-transform:uppercase;
+	text-align:center;
+    /* transform: rotate(270deg); */
+    font-weight: bold;
+    /* position: absolute; */
+    bottom: 0;
+    word-break: break-all;
+    white-space: pre;
+    transform: rotate(-90deg);
+    transform-origin: right, top;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin:right, top;
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin:right, top;
+}
+
+p{
+	font-size: 16px;
+	color: #fff ;
+	font-family: Arial, "Arial Black";
+/*	line-height: 20px;*/
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+span{
+    font-size:16px;
+    color: #fff  ;
+    font-family: Arial, "Arial Black";
+/*  line-height: 20px;*/
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+b, strong{
+    font-family: '';
+    font-weight: normal;
+}
+
+/*
+	LISTAS RESET
+*/
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #404040;
+}
+
+body {
+	margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+a:link {
+	color: #009;
+    text-decoration: none;
+}
+
+a:visited {
+	color: #009;
+}
+
+a:hover {
+	color: #00C;
+    text-decoration: none;
+}
+
+a.opacy:hover * {
+	opacity: 0.8;
+}
+
+a:active {
+	color: #009;
+}
+
+img {
+	border: 0px;
+	display: block;
+}
+
+a, a:active, a:focus {
+    color: #9f9f9f;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 2vw;
+}
+
+/*
+	MARGINS ADICIONAIS
+*/
+.mt20{ margin-top: 30px; }
+.mb20{ margin-bottom: 30px; }
+.mr20{ margin-right: 30px; }
+.ml20{ margin-left: 30px; }
+.mt30{ margin-top: 30px; }
+.mb20{ margin-bottom: 20px; }
+.mr20{ margin-right: 20px; }
+.ml20{ margin-left: 20px; }
+.mt15{ margin-top: 15px; }
+.mb15{ margin-bottom: 15px; }
+.mr15{ margin-right: 15px; }
+.ml15{ margin-left: 15px; }
+.mt10{ margin-top: 10px; }
+.mb10{ margin-bottom: 10px; }
+.mr10{ margin-right: 10px; }
+.ml10{ margin-left: 10px; }
+.mt100{margin-top: 100px;}
+.mb100{margin-bottom: 100px;}
+.mt50{ margin-top: 50px; }
+.mt40{ margin-top: 40px; }
+.mb50{margin-bottom: 50px;}
+.mb30{ margin-bottom: 30px; }
+.mb40{ margin-bottom: 40px; }
+.mt70{margin-top: 70px;}
+.mb70{margin-bottom: 70px;}
+.mt24{margin-top: -24%;}
+.pt70{padding-top: 70px;}
+
+
+/* #Page Styles
+================================================== */
+
+.header, .body, .footer {
+	position:relative;
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "115",
+    "text": "Operacional",
+    "cls": "folder"
+  },
+  {
+    "id": "373",
+    "text": "Contra Cheques",
+    "cls": "tree-icon- larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPayCheckReport')",
+    "uuid": "3a8ce15950f14feba2ebe2e1ed247b23",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3a8ce15950f14feba2ebe2e1ed247b23",
+    "icon_file": ""
+  },
+  {
+    "id": "392",
+    "text": "Ficha Financeira",
+    "cls": "tree-icon- larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPFinancialStatementReport')",
+    "uuid": "f541f4ec4df04de5a3479676f2c20c2f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f541f4ec4df04de5a3479676f2c20c2f",
+    "icon_file": ""
+  },
+  {
+    "id": "440",
+    "text": "Tabela Salarial",
+    "cls": "tree-icon-athenas-0060 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHSalaryTableReport')",
+    "uuid": "bddb94d4daf84d25907d89e9579c6a44",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/bddb94d4daf84d25907d89e9579c6a44",
+    "icon_file": ""
+  },
+  {
+    "id": "727",
+    "text": "Natureza (eSocial)",
+    "cls": "tree-icon- larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHNatureESocialReport')",
+    "uuid": "9836615607c140f2b85dd54e65704c45",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/9836615607c140f2b85dd54e65704c45",
+    "icon_file": ""
+  },
+  {
+    "id": "753",
+    "text": "Cubo",
+    "cls": "tree-icon-athenas-0617 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CuboReport')",
+    "uuid": "a54002ef3ad84add87eded63f5089f80",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/a54002ef3ad84add87eded63f5089f80",
+    "icon_file": ""
+  },
+  {
+    "id": "720",
+    "text": "Relat\u00f3rio de Empenhos e LRF",
+    "cls": "tree-icon-athenas-0601 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPCommitmentReport')",
+    "uuid": "72f68e7ed0914c359d7a2b9aea8335c8",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/72f68e7ed0914c359d7a2b9aea8335c8",
+    "icon_file": ""
+  },
+  {
+    "id": "398",
+    "text": "Gerencial da DIRF",
+    "cls": "tree-icon-athenas-0775 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPComprovanteRendimentosGerencial')",
+    "uuid": "a835ab96969c4bdc8575b6a1d05eba0c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/a835ab96969c4bdc8575b6a1d05eba0c",
+    "icon_file": ""
+  },
+  {
+    "id": "757",
+    "text": "Lista",
+    "cls": "tree-icon-athenas-0617 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ListaReport')",
+    "uuid": "956614bf92e54a21be6fe214e46662e9",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/956614bf92e54a21be6fe214e46662e9",
+    "icon_file": ""
+  },
+  {
+    "id": "781",
+    "text": "Cedula C - Relat\u00f3rio",
+    "cls": "tree-icon-athenas-0201 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CedulaCIRPFReport')",
+    "uuid": "82b72f68b0a246aaa20c3fea096ce04e",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/82b72f68b0a246aaa20c3fea096ce04e",
+    "icon_file": ""
+  }
+]

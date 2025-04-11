@@ -1,0 +1,97 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418211270009">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>67334199200</cpfTrab>
+      <nmTrab>CLAIRE VOGEL DUTRA</nmTrab>
+      <sexo>F</sexo>
+      <racaCor>3</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>CLAIRE VOGEL DUTRA</nmSoc>
+      <nascimento>
+        <dtNascto>1981-03-04</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>AV</tpLograd>
+          <dscLograd>AV NIGERIA</dscLograd>
+          <nrLograd>85</nrLograd>
+          <complemento>AP 1402</complemento>
+          <bairro>JD ACLIMAÇÃO</bairro>
+          <cep>78050267</cep>
+          <codMunic>5103403</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>BERNARDO VOGEL DUTRA DE FREITAS</nmDep>
+        <dtNascto>2015-09-08</dtNascto>
+        <cpfDep>07717042169</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>SOFIA VOGEL DUTRA DE FREITAS</nmDep>
+        <dtNascto>2013-05-04</dtNascto>
+        <cpfDep>06831235131</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <emailPrinc>claire.dutra@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1232</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2005-04-29</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR (A) DE JUSTICA </nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>2015-06-01</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

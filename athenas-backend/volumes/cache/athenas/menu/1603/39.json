@@ -1,0 +1,52 @@
+[
+  {
+    "id": "290",
+    "text": "Local - Lota\u00e7\u00f5es e Exerc\u00edcios",
+    "cls": "tree-icon-athenas-0089 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeWorkplaceByWorkplaceManage')",
+    "uuid": "f099e64e3f3c48a49d3dbfbca16f3357",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f099e64e3f3c48a49d3dbfbca16f3357",
+    "icon_file": ""
+  },
+  {
+    "id": "299",
+    "text": "Servidor - Lota\u00e7\u00f5es e Exerc\u00edcios",
+    "cls": "tree-icon-athenas-0549 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeWorkplaceByEmployeeManage')",
+    "uuid": "cc9754c126fd4282b5d803b7853ec93b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/cc9754c126fd4282b5d803b7853ec93b",
+    "icon_file": ""
+  },
+  {
+    "id": "314",
+    "text": "Gestor Afastamento",
+    "cls": "tree-icon-athenas-0460 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AFAManagerRestful')",
+    "uuid": "8aa7392c31c346a4818d5c8644e4ef2c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8aa7392c31c346a4818d5c8644e4ef2c",
+    "icon_file": ""
+  },
+  {
+    "id": "797",
+    "text": "Membros com exerc\u00edcios pendentes",
+    "cls": "tree-icon-athenas-0460 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeePendingExercises')",
+    "uuid": "f9e889b7c11c457f896fb8bca03f0311",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f9e889b7c11c457f896fb8bca03f0311",
+    "icon_file": ""
+  },
+  {
+    "id": "798",
+    "text": "Locais com mais de um exerc\u00edcio",
+    "cls": "tree-icon-athenas-0460 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHExercisesMoreThanOne')",
+    "uuid": "0d204e0fe2ef4098920c709ebfb0784b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/0d204e0fe2ef4098920c709ebfb0784b",
+    "icon_file": ""
+  }
+]

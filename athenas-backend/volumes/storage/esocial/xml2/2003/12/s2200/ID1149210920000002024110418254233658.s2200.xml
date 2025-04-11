@@ -1,0 +1,97 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418254233658">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>03936265631</cpfTrab>
+      <nmTrab>PATRICIA ELEUTERIO CAMPOS DOWER</nmTrab>
+      <sexo>F</sexo>
+      <racaCor>1</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>PATRICIA ELEUTERIO CAMPOS DOWER</nmSoc>
+      <nascimento>
+        <dtNascto>1979-05-13</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>Rua Anhumapoca</dscLograd>
+          <nrLograd>23</nrLograd>
+          <complemento>CONDOMINIO</complemento>
+          <bairro>village cerrado</bairro>
+          <cep>78731617</cep>
+          <codMunic>5107602</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>PEDRO CAMPOS BASSIL DOWER</nmDep>
+        <dtNascto>2015-07-10</dtNascto>
+        <cpfDep>07612732122</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>DAVI CAMPOS BASSIL DOWER</nmDep>
+        <dtNascto>2013-11-01</dtNascto>
+        <cpfDep>07144713132</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <emailPrinc>patricia.campos@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1207</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2003-12-18</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR (A) DE JUSTICA </nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>2017-12-01</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

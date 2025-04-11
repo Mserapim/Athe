@@ -1,0 +1,110 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418203180759">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>61370428120</cpfTrab>
+      <nmTrab>AUGUSTO LOPES SANTOS</nmTrab>
+      <sexo>M</sexo>
+      <racaCor>6</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>AUGUSTO LOPES SANTOS</nmSoc>
+      <nascimento>
+        <dtNascto>1978-03-29</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <dscLograd>travessa nana farias</dscLograd>
+          <nrLograd>152</nrLograd>
+          <bairro>Santa rosa</bairro>
+          <cep>78200000</cep>
+          <codMunic>5102504</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <nmDep>ANA JULIA SANTIAGO LOPES</nmDep>
+        <dtNascto>2007-08-27</dtNascto>
+        <cpfDep>03764254157</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <nmDep>ANDRÉ SANTIAGO LOPES</nmDep>
+        <dtNascto>2005-11-30</dtNascto>
+        <cpfDep>03158548127</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <nmDep>ANA LUIZA SANTIAGO LOPES</nmDep>
+        <dtNascto>2002-09-06</dtNascto>
+        <cpfDep>03192673184</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <tpDep>01</tpDep>
+        <nmDep>ADRIANA SANTIAGO FREITAS LOPES SANTOS</nmDep>
+        <dtNascto>1977-02-16</dtNascto>
+        <cpfDep>81278675191</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <emailPrinc>augusto-lopes.santos@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1275</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2009-04-03</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR (A) DE JUSTICA </nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>2017-10-26</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

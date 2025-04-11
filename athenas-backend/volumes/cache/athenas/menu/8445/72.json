@@ -1,0 +1,182 @@
+[
+  {
+    "id": "114",
+    "text": "\u00d3rg\u00e3o Geral",
+    "cls": "tree-icon-athenas-0201 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHGeneralOrganRestful')",
+    "uuid": "efd45c4447c149a5b3845125027ef662",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/efd45c4447c149a5b3845125027ef662",
+    "icon_file": ""
+  },
+  {
+    "id": "156",
+    "text": "Unidade Administrativa",
+    "cls": "tree-icon-athenas-0111 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHAdministrativeUnitRestful')",
+    "uuid": "3de9954459304b878ea040ae3d35a4dd",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3de9954459304b878ea040ae3d35a4dd",
+    "icon_file": ""
+  },
+  {
+    "id": "264",
+    "text": "Cargo",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHJobPositionRestful')",
+    "uuid": "630c208b0a744d65ada77092955341c5",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/630c208b0a744d65ada77092955341c5",
+    "icon_file": ""
+  },
+  {
+    "id": "265",
+    "text": "Cargo em Quadro",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHJoPositionTableRestful')",
+    "uuid": "44c853d5eb6544c3bdf76d62236f892b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/44c853d5eb6544c3bdf76d62236f892b",
+    "icon_file": ""
+  },
+  {
+    "id": "268",
+    "text": "Concurso P\u00fablico",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHPublicConcurrenceRestful')",
+    "uuid": "da098e515e0840928a4a018df12b3585",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/da098e515e0840928a4a018df12b3585",
+    "icon_file": ""
+  },
+  {
+    "id": "269",
+    "text": "Curso",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHCursoRestful')",
+    "uuid": "88430c6c188e487684bdd4c4e71416a6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/88430c6c188e487684bdd4c4e71416a6",
+    "icon_file": ""
+  },
+  {
+    "id": "275",
+    "text": "Especialidade do Cargo",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEspecialidadeRestful')",
+    "uuid": "72ebcd36e1d745f5a4f6387e264445a6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/72ebcd36e1d745f5a4f6387e264445a6",
+    "icon_file": ""
+  },
+  {
+    "id": "276",
+    "text": "Estado",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEstadoRestful')",
+    "uuid": "82140a999018420abe102f91f481f16c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/82140a999018420abe102f91f481f16c",
+    "icon_file": ""
+  },
+  {
+    "id": "285",
+    "text": "Grupo Comarca",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHGrupoComarcaRestful')",
+    "uuid": "4cce0293cf334007bceb613e119adfda",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/4cce0293cf334007bceb613e119adfda",
+    "icon_file": ""
+  },
+  {
+    "id": "288",
+    "text": "Localidades",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHLocalidadeRestful')",
+    "uuid": "c546d627f6984283836f77a13ced4bcd",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c546d627f6984283836f77a13ced4bcd",
+    "icon_file": ""
+  },
+  {
+    "id": "291",
+    "text": "Lota\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHWorkplaceRestful')",
+    "uuid": "3177afcaea104a29a26b5b0d0f355f0b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3177afcaea104a29a26b5b0d0f355f0b",
+    "icon_file": ""
+  },
+  {
+    "id": "293",
+    "text": "Necessidade especial",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHNecessidadeEspecialRestful')",
+    "uuid": "817d8ec973894b2a997c7122b9aacc23",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/817d8ec973894b2a997c7122b9aacc23",
+    "icon_file": ""
+  },
+  {
+    "id": "301",
+    "text": "Tabela de Substitui\u00e7\u00e3o Autom\u00e1tica",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHWorkplaceReplacement')",
+    "uuid": "63639b48f9b5419687c8d8f3fe135329",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/63639b48f9b5419687c8d8f3fe135329",
+    "icon_file": ""
+  },
+  {
+    "id": "302",
+    "text": "Tempo Servi\u00e7o Finalidade",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHTempoServicoFinalidadeRestful')",
+    "uuid": "7bca4706df624e99a7bf2eec88e4d1d0",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7bca4706df624e99a7bf2eec88e4d1d0",
+    "icon_file": ""
+  },
+  {
+    "id": "804",
+    "text": "CID",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CIDRestful')",
+    "uuid": "2f3181496c834de99176c1cfcacf5a11",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2f3181496c834de99176c1cfcacf5a11",
+    "icon_file": ""
+  },
+  {
+    "id": "704",
+    "text": "Comarcas / Entr\u00e2ncias",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHComarcaRestful')",
+    "uuid": "43c3fdc59c294d7eb905fcc84ea10841",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/43c3fdc59c294d7eb905fcc84ea10841",
+    "icon_file": ""
+  },
+  {
+    "id": "641",
+    "text": "Publica\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHPublicacaoRestful')",
+    "uuid": "e87324e21a0949048723887b0b4413e4",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e87324e21a0949048723887b0b4413e4",
+    "icon_file": ""
+  },
+  {
+    "id": "805",
+    "text": "CIDCode",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CIDCodeRestful')",
+    "uuid": "8ca9fa99ef7d4afeb8722760b0ab18b7",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8ca9fa99ef7d4afeb8722760b0ab18b7",
+    "icon_file": ""
+  }
+]

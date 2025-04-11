@@ -1,0 +1,65 @@
+
+Ext._define('web.intranet.link.Restful', {
+    extend: 'core.Restful',
+
+    resource: 'LinkIntranet',
+
+    getFields: function (cfg) {
+        if (!this._fields)
+            this._fields = web.intranet.post.Restful.superclass.getFields.call(this, cfg).concat([
+                {type: "int", name: "id"},
+                {type: "int", name: "views"},
+                {type: "int", name: "ref_year"},
+                {type: "int", name: "ref_month"},
+                {type: "int", name: "categories"},
+                {type: "int", name: "site"},
+                {type: "int", name: "area"},
+                {type: "int", name: "ged"},
+                {type: "int", name: "files"},
+                {type: "int", name: "position"},
+                {type: "int", name: "kind"},
+                {type: "int", name: "parent"},
+                {type: "bool", name: "shared"},
+                {type: "bool", name: "has_link"},
+                {type: "bool", name: "has_file"},
+                {type: "bool", name: "has_image"},
+                {type: "bool", name: "has_audio"},
+                {type: "bool", name: "has_video"},
+                {type: "bool", name: "is_index"},
+                {type: "bool", name: "no_searchable"},
+                {type: "bool", name: "published"},
+                {type: "bool", name: "active"},
+                {type: "bool", name: "has_comment"},
+                {type: "bool", name: "has_tag"},
+                {type: "bool", name: "has_meta"},
+                {type: "bool", name: "as_link"},
+                {type: "bool", name: "as_gallery"},
+                {type: "bool", name: "marked_as_published"},
+                {type: "bool", name: "public_access"},
+                {type: "bool", name: "is_banner"},
+                {type: "string", name: "tags_display"},
+                {type: "string", name: "title"},
+                {type: "string", name: "slug"},
+                {type: "string", name: "credits"},
+                {type: "string", name: "category_unicode"},
+                {type: "string", name: "site_unicode"},
+                {type: "string", name: "area_unicode"},
+                {type: "string", name: "create_date"},
+                {type: "string", name: "text"},
+                {type: "string", name: "published_date"},
+                {type: "string", name: "publication_start"},
+                {type: "string", name: "publication_end"},
+                {type: "string", name: "url_embed"},
+                {type: "string", name: "fullname"},
+                {type: "string", name: "name"},
+                {type: "string", name: "content"},
+                {type: "string", name: "parent_title"},
+                {type: "string", name: "image_url"},
+                {type: "list", name: "tags"},
+                {type: "list", name: "areas"},
+            ]);
+
+        return this._fields;
+    },
+});
+

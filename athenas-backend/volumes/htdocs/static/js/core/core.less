@@ -1,0 +1,134 @@
+// out: core.css, compress: true
+
+@color: #E9F2FF;
+
+.notify-icon {
+    background: #f00;
+    width: 18px;
+    height: 16px;
+    margin: 10px auto;
+
+    span {
+        opacity: 0.8;
+        background: #f00;
+        border: 1px solid #800;
+        color: #fff;
+        padding: 2px 6px;
+        font-size: 8pt;
+        font-weight: bold;
+        border-radius: 3px;
+        float: left;
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+}
+
+.debug-info-button {
+    position: absolute;
+    right: 348px;
+    top: 125px;
+    width: 48px;
+    height: 48px;
+    background-color: @color;
+    border-radius: 5px 0 0 6px;
+    border: 1pt solid #99BBE8;
+    border-right: none;
+    z-index: 99999;
+}
+
+.debug-info-panel {
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    background-color: @color;
+    border-radius: 5px 0 0 6px;
+    border: 1pt solid #99BBE8;
+    border-right: none;
+    z-index: 99998;
+    min-height: 250px;
+
+    .panel-info-body {
+        padding: 0.5em 1em;
+
+        .section {
+            margin-bottom: 1.2em;
+
+            .label {
+                display: inline-block;
+                width: 120px;
+                text-decoration: underline;
+                float: left;
+                padding: 0.2em
+            }
+
+            .value {
+                padding: 0.3em;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
+                width: 180px;
+            }
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.badge {
+    margin-left: 2px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.6rem;
+    padding: 0px 5px;
+    border-radius: 5px;
+    color: #000;
+    border: 1px solid #000;
+    line-height: 1rem;
+}
+
+.badge-important {
+    background-color: #f88;
+    border-color: #800;
+}
+
+.badge-warning {
+    background-color: #ff8;
+    border-color: #880;
+
+}
+
+.badge-success {
+    background-color: #8f8;
+    border-color: #080;
+}
+
+.grid-row-bold {
+    .x-grid3-cell-inner {
+        font-weight: bold !important;
+    }
+}
+
+.grid-row-secretary {
+    .x-grid3-cell-inner {
+        font-weight: bold !important;
+        color: #138cff;
+    }
+}
+
+.grid-line-height-150 > .x-grid3-row-table > tbody > tr > td {
+    line-height: 1.5rem !important;
+    vertical-align: middle;
+}
+
+.grid-line-height-200 > .x-grid3-row-table > tbody > tr > td {
+    line-height: 2.0rem !important;
+    vertical-align: middle;
+}
+
+.badge-secretary {
+    background-color: #080;
+    border-color: #080;
+}

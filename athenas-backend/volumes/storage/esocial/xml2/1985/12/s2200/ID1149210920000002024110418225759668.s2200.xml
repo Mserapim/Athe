@@ -1,0 +1,93 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418225759668">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>14632918920</cpfTrab>
+      <nmTrab>HELIO FREDOLINO FAUST</nmTrab>
+      <sexo>M</sexo>
+      <racaCor>1</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>HELIO FREDOLINO FAUST</nmSoc>
+      <nascimento>
+        <dtNascto>1951-02-24</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>RUA ESTEVAO DE MENDONCA</dscLograd>
+          <nrLograd>81</nrLograd>
+          <complemento>AP. 1101</complemento>
+          <bairro>GOIABEIRAS</bairro>
+          <cep>78032085</cep>
+          <codMunic>5103403</codMunic>
+          <uf>MT</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>99</tpDep>
+        <nmDep>LUCAS PEREIRA FAUST</nmDep>
+        <dtNascto>1999-08-23</dtNascto>
+        <cpfDep>04449020154</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+        <descrDep>OUTROS - LUCAS PEREIRA FAUST</descrDep>
+      </dependente>
+      <contato>
+        <fonePrinc>65999782865</fonePrinc>
+        <emailPrinc>helio.faust@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1026</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>1985-12-19</dtExercicio>
+          <tpPlanRP>2</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>S</indAbonoPerm>
+          <dtIniAbono>2005-04-15</dtIniAbono>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROCURADOR DE JUSTICA</nmCargo>
+        <CBOCargo>242210</CBOCargo>
+        <dtIngrCargo>1997-08-14</dtIngrCargo>
+        <nmFuncao>CORREGEDOR-GERAL</nmFuncao>
+        <CBOFuncao>242210</CBOFuncao>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

@@ -1,0 +1,89 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418221729592">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>08978380760</cpfTrab>
+      <nmTrab>FABIO CAMILO DA SILVA</nmTrab>
+      <sexo>M</sexo>
+      <racaCor>6</racaCor>
+      <estCiv>1</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>FABIO CAMILO DA SILVA</nmSoc>
+      <nascimento>
+        <dtNascto>1980-05-04</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>RUA 14 DE JULHO 5093 5093 5093</dscLograd>
+          <nrLograd>5093</nrLograd>
+          <complemento>R. INDAIA BL.24</complemento>
+          <bairro>MONTE CASTELO</bairro>
+          <cep>79011470</cep>
+          <codMunic>5002704</codMunic>
+          <uf>MS</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>N</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>07</tpDep>
+        <nmDep>ISABELLA COLLYER DE LIMA CAMIL</nmDep>
+        <dtNascto>2017-05-01</dtNascto>
+        <cpfDep>62528925301</cpfDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <emailPrinc>fabio.silva@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1366</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>-------------value-not-found-on-model-----------------</tpRegPrev>
+      <cadIni>S</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2017-04-07</dtExercicio>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR DE JUSTICA SUBSTITUTO</nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <dtIngrCargo>2017-04-07</dtIngrCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+      <afastamento>
+        <dtIniAfast>2017-07-04</dtIniAfast>
+        <codMotAfast>10</codMotAfast>
+      </afastamento>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

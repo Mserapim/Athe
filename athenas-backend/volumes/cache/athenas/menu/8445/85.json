@@ -1,0 +1,82 @@
+[
+  {
+    "id": "49",
+    "text": "Controle de Lota\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0049 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHLotationControlReport')",
+    "uuid": "aade015cc4fd474a848760247377be6b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/aade015cc4fd474a848760247377be6b",
+    "icon_file": ""
+  },
+  {
+    "id": "101",
+    "text": "Listagem dos Servidores",
+    "cls": "tree-icon-athenas-0049 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeRelationReport')",
+    "uuid": "7f98ea87e2334bd4be445c7842a4d9f8",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7f98ea87e2334bd4be445c7842a4d9f8",
+    "icon_file": ""
+  },
+  {
+    "id": "144",
+    "text": "Servidores por Lota\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0166 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeLotationReport')",
+    "uuid": "702e368bb1e248ffac3d94b4edc6c216",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/702e368bb1e248ffac3d94b4edc6c216",
+    "icon_file": ""
+  },
+  {
+    "id": "726",
+    "text": "CBO",
+    "cls": "tree-icon-athenas-0105 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHJobPositionReport')",
+    "uuid": "2db0e31aeec04e33b1e7ff2e335a97aa",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2db0e31aeec04e33b1e7ff2e335a97aa",
+    "icon_file": ""
+  },
+  {
+    "id": "818",
+    "text": "Listagem dos Beneficiarios",
+    "cls": "tree-icon-athenas-0838 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHListaBeneficiariosReport')",
+    "uuid": "8a21821c921e4f238cc65680465d4592",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8a21821c921e4f238cc65680465d4592",
+    "icon_file": ""
+  },
+  {
+    "id": "729",
+    "text": "Lotacionograma",
+    "cls": "tree-icon-athenas-0167 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHLottationgramReport')",
+    "uuid": "992cb54ee4ee4abfaf34f902e7afd5ba",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/992cb54ee4ee4abfaf34f902e7afd5ba",
+    "icon_file": ""
+  },
+  {
+    "id": "528",
+    "text": "Data de Nascimento",
+    "cls": "tree-icon-athenas-0253 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeBirthdayReport')",
+    "uuid": "d95eef35e9214c6384dafd7012806378",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d95eef35e9214c6384dafd7012806378",
+    "icon_file": ""
+  },
+  {
+    "id": "730",
+    "text": "Designa\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0179 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHEmployeeDesignationReport')",
+    "uuid": "4bb98372ede4448fb45181dc3d085f6f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/4bb98372ede4448fb45181dc3d085f6f",
+    "icon_file": ""
+  }
+]

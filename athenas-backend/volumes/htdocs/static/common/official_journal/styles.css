@@ -1,0 +1,20 @@
+.icon-journal
+{
+    width: 16px;
+    height: 16px;
+}
+
+.icon-published
+{
+    background: url(../icons/published.png) no-repeat;
+}
+
+.icon-no-published
+{
+    background: url(../icons/no-published.png) no-repeat;
+}
+
+.icon-download
+{
+    background: url(../icons/open.png) no-repeat;
+}

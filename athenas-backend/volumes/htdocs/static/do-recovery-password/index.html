@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Senha - Ministerio Público do Estado do Tocantins</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="mask" class="mask"></div>
+    <div class="container">
+      <h1>Alteração de Senha</h1>
+      <form onsubmit="return fnSubmit(event)" method="POST">
+        <div class="">
+          <div class="flex-normal">
+            <input type="hidden" name="token" id="token" value="" required>
+          </div>
+        </div>
+        <div class="">
+          <label for="new_pwd">Nova senha:</label>
+          <div class="flex-normal">
+            <input type="password"
+                   name="new_pwd"
+                   id="new_pwd"
+                   value=""
+                   required
+                   onkeyup="fnSumStrongPassword(event)"
+                   onblur="fnSumStrongPassword(event)">
+             <div class="" id="strongOutput">Força</div>
+          </div>
+        </div>
+        <div class="">
+          <label for="new_pwd2">Confirmar nova senha:</label>
+          <div class="flex-normal">
+            <input type="password"
+                   name="new_pwd2"
+                   id="new_pwd2"
+                   value=""
+                   required
+                   onkeyup="fnMatchPassword(event)"
+                   onblur="fnMatchPassword(event)">
+            <div class="" id="matchOutput">Avaliação</div>
+          </div>
+        </div>
+        <div class="btn-group right">
+          <button type="submit" name="button">Alterar Senha</button>
+        </div>
+      </form>
+    </div>
+
+      <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "363",
+    "text": "Chancelamento da Folha",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPChancela')",
+    "uuid": "2a20cd75e6d846cb872edabb6f305bfe",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2a20cd75e6d846cb872edabb6f305bfe",
+    "icon_file": ""
+  },
+  {
+    "id": "437",
+    "text": "Sal\u00e1rio da Carreira",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPCarreiraSalario')",
+    "uuid": "de3d725622f24335acb43a056f19bf0d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/de3d725622f24335acb43a056f19bf0d",
+    "icon_file": ""
+  }
+]

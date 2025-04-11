@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form method="POST" {% if form_id %}id="form_{{ form_id }}"{% endif %}>
+    <div class="form-django" style="padding: 1em">
+    {% if form %}
+        <table class="form-fild-set">
+        {% for field in form %}
+            <tr>
+                <th style="padding:2pt;width:75pt;">{{ field.label_tag }} :</th>
+                <td title="{{ field.help_text }}">
+                    {{ field }}
+                    {% if field.errors %}
+                    {{ field.errors }}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>Não foi possível renderizar o formulário</p>
+    {% endif %}
+    </div>
+</form>

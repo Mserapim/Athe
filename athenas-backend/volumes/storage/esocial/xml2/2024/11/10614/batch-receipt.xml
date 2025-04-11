@@ -1,0 +1,20 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/lote/eventos/envio/retornoEnvio/v1_1_0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <retornoEnvioLoteEventos>
+    <status>
+      <cdResposta>402</cdResposta>
+      <descResposta>Lote Incorreto - Schema Inválido.</descResposta>
+      <ocorrencias>
+        <ocorrencia>
+          <codigo>402</codigo>
+          <descricao>The 'Id' attribute is invalid - The value '' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The empty string '' is not a valid name.</descricao>
+          <tipo>1</tipo>
+        </ocorrencia>
+        <ocorrencia>
+          <codigo>402</codigo>
+          <descricao>The element 'evento' in namespace 'http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1' has incomplete content. List of possible elements expected: any element in namespace '##any'.</descricao>
+          <tipo>1</tipo>
+        </ocorrencia>
+      </ocorrencias>
+    </status>
+  </retornoEnvioLoteEventos>
+</eSocial>

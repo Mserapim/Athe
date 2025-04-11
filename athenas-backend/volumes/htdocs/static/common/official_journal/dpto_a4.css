@@ -1,0 +1,234 @@
+.page_dpto {
+    width: 210mm;
+    min-height: 265.8mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: url("../official_journal/images/fachada_dpto.png") no-repeat center center #fff;
+    background-repeat: no-repeat;
+    background-position: 120% 85%;
+    overflow: auto;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    padding: initial;
+}
+
+.page_capa {
+    width: 210mm;
+    min-height: 265.8mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: url("../official_journal/images/fachada.png") no-repeat center center #225B91;
+    background-repeat: no-repeat;
+    background-position: 120% 85%;
+    overflow: auto;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    padding: initial;
+
+}
+
+.page_back {
+    width: 210mm;
+    min-height: 265mm;
+    margin: 10mm auto;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: url("../official_journal/images/testura.png") no-repeat center center #225B91;
+    background-repeat: repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: initial;
+
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .page_dpto {
+        width: initial;
+        margin: initial;
+        border: initial;
+        border-radius: initial;
+        min-height: 296.5mm;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        background: url("../official_journal/images/fachada_dpto.png") no-repeat center center #fff;
+        background-repeat: no-repeat;
+        background-position: 120% 100%;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .page_capa {
+        width: initial;
+        margin: initial;
+        border: initial;
+        border-radius: initial;
+        min-height: 296.5mm;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        background: url("../official_journal/images/fachada.png") no-repeat center center #225B91;
+        background-repeat: no-repeat;
+        background-position: 120% 100%;
+        z-index: 1;
+        position: relative;
+    }
+
+    .page_back {
+        width: initial;
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        min-height: 296.5mm;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        background: url("../official_journal/images/testura.png") no-repeat center center white;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page_dpto .banner-index img, .page_capa .banner-index img {
+        width: 645px;
+    }
+
+    .page_dpto .span-title-edition span, .page_capa .span-title-edition-capa span {
+        font-size: 18px;
+        padding: 0 52px 5px 52px;
+    }
+
+    #gfg {
+        width: 20%;
+        height: 170.5ch !important;
+        position: absolute !important;
+        z-index: 111;
+        white-space: pre;
+        background: url("../official_journal/images/division_bar.png") no-repeat center center #FFCC07;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    #ft {
+        z-index: -111;
+        position: relative !important;
+        bottom: -80vw !important;
+        width: 80%;
+        text-align: center;
+        word-wrap: normal;
+        float: right;
+        background: white;
+        display: flex;
+        margin: 0 0 0 10vw !important;
+    }
+
+    .division_content {
+        width: 72%;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+    .body_content {
+        -webkit-padding-after: 20ch;
+        -webkit-padding-before: 20ch;
+    }
+
+    .body_content h1{
+        font-size: 7.5mm !important;
+    }
+
+    .body_content h2 {
+        font-size: 5vw;
+    }
+
+    .body_content p {
+        font-size: 20px;
+    }
+
+    .title_dpto {
+        padding: auto;
+        -webkit-padding-after: 13ch;
+        -webkit-padding-before: 13ch;
+        padding-block-start: 20ch;
+    }
+
+    .title_dpto h1 {
+        font-size: 5mm;
+        padding: 15px;
+    }
+
+    .footer_content {
+        bottom: 0;
+        text-align: center;
+        word-wrap: normal;
+        float: right;
+        background: white;
+        display: flex;
+        -webkit-margin-start: 13em;
+        -moz-margin-start: 13em;
+    }
+
+    .footer_content_back {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        word-wrap: normal;
+        float: right;
+        padding: 15px 8px 0px 10px;
+        -webkit-padding-after: 20px;
+        -webkit-padding-before: 20px;
+        background: white;
+        display: flex;
+        top: 2vw;
+    }
+
+    .logo_sup {
+        padding-bottom: 15px;
+    }
+
+    .legal-sign .sign-content .sign-content-qrcode {
+        width: 125px !important;
+        height: 125px !important;
+    }
+
+    .legal-sign .sign-content .sign-content-person {
+        height: 122px !important;
+    }
+
+    .papper-body {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .footer_content .legal-sign .sign-content .sign-content-person,
+    .footer_content_back .legal-sign .sign-content .sign-content-person,
+    #ft .footer_content .legal-sign .sign-content .sign-content-person {
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+}

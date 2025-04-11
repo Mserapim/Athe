@@ -1,0 +1,172 @@
+[
+  {
+    "id": "139",
+    "text": "Confer\u00eancia",
+    "cls": "tree-icon-athenas-0357 larger-font"
+  },
+  {
+    "id": "50",
+    "text": "Diferen\u00e7as",
+    "cls": "tree-icon-athenas-0190 larger-font"
+  },
+  {
+    "id": "63",
+    "text": "Imposto de Renda",
+    "cls": "tree-icon-athenas-0075 larger-font"
+  },
+  {
+    "id": "73",
+    "text": "Par\u00e2metros",
+    "cls": "tree-icon-athenas-0374 larger-font"
+  },
+  {
+    "id": "77",
+    "text": "Previd\u00eancia",
+    "cls": "tree-icon-athenas-0075 larger-font"
+  },
+  {
+    "id": "83",
+    "text": "Relat\u00f3rio",
+    "cls": "tree-icon-athenas-0291 larger-font"
+  },
+  {
+    "id": "93",
+    "text": "Sal\u00e1rios",
+    "cls": "tree-icon-athenas-0573 larger-font"
+  },
+  {
+    "id": "98",
+    "text": "Transpar\u00eancia",
+    "cls": "tree-icon-athenas-0834 larger-font"
+  },
+  {
+    "id": "367",
+    "text": "Configura\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0702 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPConfiguracao')",
+    "uuid": "f3e8beaea98c40e7ad5d80a8f2393809",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f3e8beaea98c40e7ad5d80a8f2393809",
+    "icon_file": ""
+  },
+  {
+    "id": "375",
+    "text": "Controlador",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPControlador')",
+    "uuid": "897b4859978d4ddb8e58c680b7ee5f70",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/897b4859978d4ddb8e58c680b7ee5f70",
+    "icon_file": ""
+  },
+  {
+    "id": "381",
+    "text": "Estruturas Salariais",
+    "cls": "tree-icon-athenas-0573 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPEstruturaSalarialRestful')",
+    "uuid": "305e6151ec584959a89c6b8f9e20fe49",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/305e6151ec584959a89c6b8f9e20fe49",
+    "icon_file": ""
+  },
+  {
+    "id": "400",
+    "text": "Gestor de Domic\u00edlio Banc\u00e1rio",
+    "cls": "tree-icon-athenas-0699 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPBankingPersonTypePayroll')",
+    "uuid": "1481d3aca794457cab1b9f62309cd0c0",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/1481d3aca794457cab1b9f62309cd0c0",
+    "icon_file": ""
+  },
+  {
+    "id": "401",
+    "text": "Gestor de Eventos/Rubricas",
+    "cls": "tree-icon-athenas-0777 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPEvent')",
+    "uuid": "cd5367d054b04f30a9defbe7397bc11f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/cd5367d054b04f30a9defbe7397bc11f",
+    "icon_file": ""
+  },
+  {
+    "id": "403",
+    "text": "Gestor de Margem Consignada",
+    "cls": "tree-icon-athenas-0571 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPMarginConsignable')",
+    "uuid": "d51b01b4aa5b428db49544fda60ca1ba",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d51b01b4aa5b428db49544fda60ca1ba",
+    "icon_file": ""
+  },
+  {
+    "id": "405",
+    "text": "Gestor de RRA",
+    "cls": "tree-icon-athenas-0617 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPRRA')",
+    "uuid": "d95d7cf1864a475a80be569485899ce7",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d95d7cf1864a475a80be569485899ce7",
+    "icon_file": ""
+  },
+  {
+    "id": "406",
+    "text": "Gestor de Verbas/Pagamentos Adicionais",
+    "cls": "tree-icon-athenas-0570 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPExtraPayment')",
+    "uuid": "fd124aa3df834b5985fec8d453d25189",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/fd124aa3df834b5985fec8d453d25189",
+    "icon_file": ""
+  },
+  {
+    "id": "409",
+    "text": "Lan\u00e7ador",
+    "cls": "tree-icon-athenas-0472 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPayCheck')",
+    "uuid": "f853723c49294e6abe6240943fe88de1",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f853723c49294e6abe6240943fe88de1",
+    "icon_file": ""
+  },
+  {
+    "id": "787",
+    "text": "GCPP - Gest\u00e3o de Controle de Pagamento de Pessoal",
+    "cls": "tree-icon-athenas-0037 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GfpGCPPRestful')",
+    "uuid": "d954a7ea034a4d3d829d0965e4e271d2",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d954a7ea034a4d3d829d0965e4e271d2",
+    "icon_file": ""
+  },
+  {
+    "id": "749",
+    "text": "Novo Lan\u00e7ador",
+    "cls": "tree-icon-athenas-0472 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPayCheckNew')",
+    "uuid": "b1fbd26a369a4f97b04f754b6e2d104a",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b1fbd26a369a4f97b04f754b6e2d104a",
+    "icon_file": ""
+  },
+  {
+    "id": "785",
+    "text": "Gratifica\u00e7\u00f5es e Abonos",
+    "cls": "tree-icon-athenas-0301 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPaymentVacation')",
+    "uuid": "7bc4fcc4333a4b248469a8038b1e53ca",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7bc4fcc4333a4b248469a8038b1e53ca",
+    "icon_file": ""
+  },
+  {
+    "id": "810",
+    "text": "GCF - Estagi\u00e1rios e Residentes",
+    "cls": "tree-icon-athenas-0037 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GfpGCPPEstResRestful')",
+    "uuid": "281db8732a5f4326b8380b81495589a8",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/281db8732a5f4326b8380b81495589a8",
+    "icon_file": ""
+  }
+]

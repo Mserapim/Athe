@@ -1,0 +1,111 @@
+{% extends 'ouvidoria/templates/template.html' %}
+
+{% block content %}
+<h1>Acompanhamento</h1>
+<div id="monitoring">
+    <form method="post">
+	    <fieldset>
+		    <legend>Consultar por</legend>
+            {{ form.kind }}
+            {{ form.value }}
+		    {% if form.code.errors.as_text %}
+		    <span class="error">{{field.errors.as_text}}</span>
+		    {% endif %}
+		    <input class="button" type="submit" value="Enviar"/>
+	    </fieldset>
+    </form>
+{% if protocol %}
+    {% if protocol.sigiloso %}
+        <p class="warning" style="color: #cc3333; font-size: 15px; padding: 10px; line-height: 24px;">
+            Não é possivel exibir informações do protocolo pois o mesmo está marcado como sigiloso.
+        </p>
+    {% else %}
+        <p class="warning">
+            <span>Data de Contato:</span>
+            {{protocol.data_criacao}}
+        </p>
+        <p class="warning">
+            <span>Nome do Interessado:</span>
+            {{protocol.interessado.nome}}
+        </p>
+        <p class="warning">
+            <span>Assunto:</span>
+            {{protocol.assunto|lower|capfirst}}
+        </p>
+        <p class="warning">
+            <span>Finalizado:</span>
+            {{protocol.finalizado|lower|capfirst}}
+        </p>
+        <div class="warning">
+            <span>Texto:</span>
+            {{protocol.resumo|safe}}
+        </div>
+
+        {% if protocol.attachs %}
+        <div class="moves rounded">
+            <h2>Anexos</h2>
+            <ul>
+            {% for attach in protocol.attachs %}
+                <li><a href="{{attach.link}}">{{attach.nome}}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if moves %}
+        <div class="moves rounded">
+            <h2>Movimentação</h2>
+            <ul>
+            {% for move in moves %}
+                <li>
+                    <strong>{{move.data_encaminhamento}}</strong>
+                    <span>
+                    - {{move.lotacao_origem.nome}} <strong><i>para</i></strong>
+
+                    {% if move.destinatario.nome %}
+                        {{move.destinatario.nome}}
+                    {% else %}
+                        {{move.lotacao_destino.nome}}
+                    {% endif %}
+
+                    </span>
+                    <a href="#" class="opinion-button rounded">parecer</a>
+                    <div class="opinion hide" title="Parecer">
+                    {% if forloop.first and not move.parecer %}
+                        Aguardando parecer
+                    {% else %}
+                        {{move.parecer|safe}}
+                    {% endif %}
+                    </div>
+                {% if move.attachs %}
+                    <ul>
+                    {% for attach in move.attachs %}
+                        <li><a href="{{attach.link}}">{{attach.nome}}</a></li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% else %}
+        <p>Contato aguardando movimentação.</p>
+        {% endif %}
+
+        {% if protocol.lawsuits %}
+        <div class="moves rounded">
+            <h2>Procedimento(s) gerado(s) a partir desta manifestaçao</h2>
+            <ul>
+            {% for lawsuit in protocol.lawsuits %}
+                <li>
+                    <a href="{{lawsuit.url}}">{{lawsuit.number}}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    {% endif %}
+
+{% endif %}
+</div>
+{% endblock %}

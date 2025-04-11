@@ -1,0 +1,32 @@
+[
+  {
+    "id": "735",
+    "text": "Pensionistas",
+    "cls": "tree-icon-athenas-0830 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPExtraPaymentBenefitPeriod')",
+    "uuid": "as215b37faf1476ebf2936f22484b659",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/as215b37faf1476ebf2936f22484b659",
+    "icon_file": ""
+  },
+  {
+    "id": "736",
+    "text": "Servidores Aposentados",
+    "cls": "tree-icon-athenas-0830 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPExtraPaymentRetireePeriod')",
+    "uuid": "ff215b37faf1476ebf2936f22484b659",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ff215b37faf1476ebf2936f22484b659",
+    "icon_file": ""
+  },
+  {
+    "id": "737",
+    "text": "Membros Aposentados",
+    "cls": "tree-icon-athenas-0830 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPExtraPaymentRetireeMemberPeriod')",
+    "uuid": "qf215b37faf1476ebf2936f22484b659",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/qf215b37faf1476ebf2936f22484b659",
+    "icon_file": ""
+  }
+]

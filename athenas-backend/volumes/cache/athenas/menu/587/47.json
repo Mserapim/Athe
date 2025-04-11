@@ -1,0 +1,22 @@
+[
+  {
+    "id": "576",
+    "text": "Gestor de Usu\u00e1rio",
+    "cls": "tree-icon-athenas-0822 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AUTHEmployeeRestful')",
+    "uuid": "3f705c4efddc44d7bff01fc884d61369",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3f705c4efddc44d7bff01fc884d61369",
+    "icon_file": ""
+  },
+  {
+    "id": "566",
+    "text": "Gestor de Grupo de Usu\u00e1rio",
+    "cls": "tree-icon-athenas-0424 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AuthGroup')",
+    "uuid": "3ef93001bb874eed9412315afc38163d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3ef93001bb874eed9412315afc38163d",
+    "icon_file": ""
+  }
+]

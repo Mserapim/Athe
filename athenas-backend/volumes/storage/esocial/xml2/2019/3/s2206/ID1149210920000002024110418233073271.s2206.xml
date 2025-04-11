@@ -1,0 +1,44 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAltContratual/v_S_01_02_00">
+  <evtAltContratual Id="ID1149210920000002024110418233073271">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <ideVinculo>
+      <cpfTrab>08110433120</cpfTrab>
+      <matricula>1030</matricula>
+    </ideVinculo>
+    <altContratual>
+      <dtAlteracao>2019-03-13</dtAlteracao>
+      <dtEf>2019-03-13</dtEf>
+      <vinculo>
+        <tpRegPrev>2</tpRegPrev>
+        <infoRegimeTrab>
+          <infoEstatutario>
+            <tpPlanRP>2</tpPlanRP>
+            <indTetoRGPS>N</indTetoRGPS>
+            <indAbonoPerm>S</indAbonoPerm>
+          </infoEstatutario>
+        </infoRegimeTrab>
+        <infoContrato>
+          <nmCargo>PROCURADOR DE JUSTICA</nmCargo>
+          <CBOCargo>242210</CBOCargo>
+          <acumCargo>N</acumCargo>
+          <codCateg>301</codCateg>
+          <localTrabalho>
+            <localTrabGeral>
+              <tpInsc>1</tpInsc>
+              <nrInsc>14921092000157</nrInsc>
+            </localTrabGeral>
+          </localTrabalho>
+        </infoContrato>
+      </vinculo>
+    </altContratual>
+  </evtAltContratual>
+</eSocial>

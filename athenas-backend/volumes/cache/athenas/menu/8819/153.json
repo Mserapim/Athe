@@ -1,0 +1,52 @@
+[
+  {
+    "id": "791",
+    "text": "Exerc\u00edcios Cumulativos",
+    "cls": "tree-icon-athenas-0570 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMCumulativeExercises')",
+    "uuid": "2732b70226664233b21326e58d310523",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2732b70226664233b21326e58d310523",
+    "icon_file": ""
+  },
+  {
+    "id": "792",
+    "text": "Exerc\u00edcios Cumulativos Consolidado",
+    "cls": "tree-icon-athenas-0014 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMCumulativeExercisesConsolidated')",
+    "uuid": "f77d95cc7e864cf7a0294882ea669f26",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f77d95cc7e864cf7a0294882ea669f26",
+    "icon_file": ""
+  },
+  {
+    "id": "794",
+    "text": "Exerc\u00edcio Cumulativo Permanente",
+    "cls": "tree-icon-athenas-0572 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMPeriodoExercCumulPermanente')",
+    "uuid": "eb61e9915b4a4054953f996a15b7e8c9",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/eb61e9915b4a4054953f996a15b7e8c9",
+    "icon_file": ""
+  },
+  {
+    "id": "803",
+    "text": "Gratifica\u00e7\u00f5es de Membros",
+    "cls": "tree-icon-athenas-0248 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMPeriodoGratMembros')",
+    "uuid": "e0bac97f576f48af9768fd8ed39c5d34",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e0bac97f576f48af9768fd8ed39c5d34",
+    "icon_file": ""
+  },
+  {
+    "id": "807",
+    "text": "Configura\u00e7\u00e3o de Cumulativo de Substitui\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0318 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMCumulativoSubstituicao')",
+    "uuid": "aa4fe50bd4b747e2bd172a60c0b645e2",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/aa4fe50bd4b747e2bd172a60c0b645e2",
+    "icon_file": ""
+  }
+]

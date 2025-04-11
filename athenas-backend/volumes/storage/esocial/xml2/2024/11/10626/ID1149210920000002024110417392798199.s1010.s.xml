@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_02_00">
+  <evtTabRubrica Id="ID1149210920000002024110417392798199">
+    <ideEvento>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <infoRubrica>
+      <inclusao>
+        <ideRubrica>
+          <codRubr>50425</codRubr>
+          <ideTabRubr>00000000</ideTabRubr>
+          <iniValid>2021-07</iniValid>
+        </ideRubrica>
+        <dadosRubrica>
+          <dscRubr>SICREDI EMPRÉSTIMO - VI</dscRubr>
+          <natRubr>9989</natRubr>
+          <tpRubr>2</tpRubr>
+          <codIncCP>00</codIncCP>
+          <codIncIRRF>9</codIncIRRF>
+          <codIncFGTS>00</codIncFGTS>
+          <codIncCPRP>00</codIncCPRP>
+          <tetoRemun>N</tetoRemun>
+        </dadosRubrica>
+      </inclusao>
+    </infoRubrica>
+  </evtTabRubrica>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>D6ZKi5KxQzBo5+C9zlfcWjTfEa53CTnadnrM/+NAAI0=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>gDt4JMCGkTrSr4mH29i03iGfcWTaNOSzH2TSLfdhVJYe0kFCCOKtZneb+8+nYGZ3QPkcltB/FqJwRf5fVB4Oo3tWS+kkDYdSRp/mQX728WDOPti6xS5AaevDmjs427v0UZVOm5+t/BOKZvUQTFILF7Fj0DJ/JX2NDpr/O0JjuUGG7g/lYtUDCVU5Up72eLHqN60auUxZhNHCRED3bBXQfOwUvYZh3CH3heWONtIeLzlOEGARoP0wdqpuaKSlX0DGEQbfWM15Ddus3DGSa+EIFWIP6q0yhSopskBIqFTs2aEC/O/sKN7xnFDnM2KRp8oa2bO5oDOEcu+9obw1xlFB8w==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIHUjCCBTqgAwIBAgIIfg4kBANkErgwDQYJKoZIhvcNAQELBQAwWTELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxFTATBgNVBAsTDEFDIFNPTFVUSSB2
+NTEeMBwGA1UEAxMVQUMgU09MVVRJIE11bHRpcGxhIHY1MB4XDTI0MDQwMzIxMzUw
+MFoXDTI1MDQwMzIxMzUwMFowgfsxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1At
+QnJhc2lsMQswCQYDVQQIEwJNVDEPMA0GA1UEBxMGQ3VpYWJhMR4wHAYDVQQLExVB
+QyBTT0xVVEkgTXVsdGlwbGEgdjUxFzAVBgNVBAsTDjE4Nzk5ODk3MDAwMTIwMRkw
+FwYDVQQLExBWaWRlb2NvbmZlcmVuY2lhMRowGAYDVQQLExFDZXJ0aWZpY2FkbyBQ
+SiBBMTFJMEcGA1UEAxNAUFJPQ1VSQURPUklBIEdFUkFMIERFIEpVU1RJQ0EgRE8g
+RVNUQURPIERFIE1BVE8gRzoxNDkyMTA5MjAwMDE1NzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAMXJMPuCpa1/te466EJkH81kyjFD414qncPbLyqSokku
+qIZw4g04gk1jqcvPQ0d586ai8mdH6ednp1Hgv4PGW8DtBFPXGIL5l0WMVGKVsged
+IiyHT5oE4EOG6SvDSK4MCTT6ClN/1AiskQSoa8ovsQEYaVJHNFdsG1iWGrvexLgH
+Wt4yNTKHgeuimKvlOgy0SUcVAxUgNPKc4TX+HIkQiepjtF8IpwcMJSf+oeKahgMw
+qLlzUF29ishObrp6kPHcudYD/EzbXJldqJH2wgDrcbx9b09kZir4Y9h+HBlFzG5R
+wXgF3av5PwFlDL3Qq69z/a+6ZgRK8YEjcFENvaqnxV0CAwEAAaOCAnkwggJ1MAkG
+A1UdEwQCMAAwHwYDVR0jBBgwFoAUxVLtJYAJ35yCyJ9Hxt20XzHdubEwVAYIKwYB
+BQUHAQEESDBGMEQGCCsGAQUFBzAChjhodHRwOi8vY2NkLmFjc29sdXRpLmNvbS5i
+ci9sY3IvYWMtc29sdXRpLW11bHRpcGxhLXY1LnA3YjCBtAYDVR0RBIGsMIGpgRhk
+ZW9zZGV0ZS5jcnV6QG1wbXQubXAuYnKgHwYFYEwBAwKgFhMUREVPU0RFVEUgQ1JV
+WiBKVU5JT1KgGQYFYEwBAwOgEBMOMTQ5MjEwOTIwMDAxNTegOAYFYEwBAwSgLxMt
+MjExMTE5ODA3MDkxNzgxNzE2ODAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwoBcG
+BWBMAQMHoA4TDDAwMDAwMDAwMDAwMDBdBgNVHSAEVjBUMFIGBmBMAQIBJjBIMEYG
+CCsGAQUFBwIBFjpodHRwOi8vY2NkLmFjc29sdXRpLmNvbS5ici9kb2NzL2RwYy1h
+Yy1zb2x1dGktbXVsdGlwbGEucGRmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEF
+BQcDBDCBjAYDVR0fBIGEMIGBMD6gPKA6hjhodHRwOi8vY2NkLmFjc29sdXRpLmNv
+bS5ici9sY3IvYWMtc29sdXRpLW11bHRpcGxhLXY1LmNybDA/oD2gO4Y5aHR0cDov
+L2NjZDIuYWNzb2x1dGkuY29tLmJyL2xjci9hYy1zb2x1dGktbXVsdGlwbGEtdjUu
+Y3JsMB0GA1UdDgQWBBSuaoLY+XZ140cLUq/gis5DGzdaiTAOBgNVHQ8BAf8EBAMC
+BeAwDQYJKoZIhvcNAQELBQADggIBAAH7Bxm+eNNVhSFimf6yfyoQOoO9v5syu0q/
+ozxJInPtlamCN30swaLQ2PTpe9zPQDYv4u40ik6IGpd+4OQLI7VU4/XNANSwFJyQ
+kxDfTJshRUhuxxOwzrIqQC8GDvPmn0mEjl/b1SsDm7JWslj5qbVxDT1K5hoHxMq3
+YjhUCj0RP9Y4nYAKTmPMNIAkH3EzYYp0Ccg8h8lpajWsdA8Er8man7+3Eh1BTCZF
+8QK4ie4h8rtW1X2OhZb26NpxJ3Drkf8Xjznh5pdfbSCfzEu0J+Bmz/uOIRRKSZP/
+3X7fhATaKtgL+KbbtR48w0LUzAdVzlsd7skpmqBnIdwy/mTwVQpOPlkeZ8ZGdyvq
+ZwrWM/oyzRthIAFT6j5OB/NOx4/p4fymE3J6JeGSO+iG3XlRL43+sSgMBSSan31R
+a7oFlNUAFeWXmNlPV4wJIq3+m9w9e7E3ogxDedcIsHjBXNWMP4yy5wzO1qTWsUZW
+KtM43eJrleP47igUOAiSxg57EGSHtO//G1TqwJmRdIV9qDuWOSWbP2DHh5J9DiIL
+BAJoUsxOzG6PDuDC1ldUgVN1aPl2w9jy7cpWDpReYk1BANMaXpt15UtlwTRosJ9j
+UbFb/zruI6ABHKgBaHggkrhHsBJkKe8SdmKcW+fxDiMkbWInk9mX/ayEG/Rly2MQ
+gvN2bqM2
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "813",
+    "text": "Teletrabalho competencias",
+    "cls": "tree-icon-athenas-0444 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('TeletrabalhoCompetenciaRestful')",
+    "uuid": "775d23b081594e379186e3b2eca8c4bd",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/775d23b081594e379186e3b2eca8c4bd",
+    "icon_file": ""
+  },
+  {
+    "id": "788",
+    "text": "Gestor de Teletrabalho",
+    "cls": "tree-icon-athenas-0210 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHGestorTeletrabalho')",
+    "uuid": "3722ea6675d34d8ea37dcd5503ae9526",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3722ea6675d34d8ea37dcd5503ae9526",
+    "icon_file": ""
+  },
+  {
+    "id": "815",
+    "text": "Gestor Relatorio Semestral",
+    "cls": "tree-icon-athenas-0253 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GestorRelatorioSemestral')",
+    "uuid": "3397caa84c944cbd85ed193560c88cc2",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3397caa84c944cbd85ed193560c88cc2",
+    "icon_file": ""
+  },
+  {
+    "id": "814",
+    "text": "Config Periodo de Envio de Relatorios Semestreais",
+    "cls": "tree-icon-athenas-0675 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ConfigPeriodoEnvioRelatorioTeleRestful')",
+    "uuid": "c6dc0018506a4d2cbabfa8eedeb6b5de",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c6dc0018506a4d2cbabfa8eedeb6b5de",
+    "icon_file": ""
+  }
+]

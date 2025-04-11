@@ -1,0 +1,22 @@
+[
+  {
+    "id": "564",
+    "text": "Gestor de Funcionalidades",
+    "cls": "tree-icon-athenas-0210 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ENGApplicationRestful')",
+    "uuid": "143f3280b2bd44f2acca0e8d60c617cd",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/143f3280b2bd44f2acca0e8d60c617cd",
+    "icon_file": ""
+  },
+  {
+    "id": "626",
+    "text": "Permiss\u00f5es de Funcionalidades",
+    "cls": "tree-icon-athenas-0422 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ENGControllerPermissionRestful')",
+    "uuid": "8b19998559994eeeae5eaa58183f6b91",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8b19998559994eeeae5eaa58183f6b91",
+    "icon_file": ""
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "45",
+    "text": "Configura\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0222 larger-font"
+  },
+  {
+    "id": "47",
+    "text": "Controle de acesso",
+    "cls": "tree-icon-athenas-0424 larger-font"
+  },
+  {
+    "id": "57",
+    "text": "Funcionalidades",
+    "cls": "tree-icon-athenas-0061 larger-font"
+  },
+  {
+    "id": "620",
+    "text": "Par\u00e2metros do Sistema",
+    "cls": "tree-icon-athenas-0675 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDChoice')",
+    "uuid": "ee15ee5785a34ae3be2769e9054d4009",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ee15ee5785a34ae3be2769e9054d4009",
+    "icon_file": ""
+  },
+  {
+    "id": "756",
+    "text": "Auditoria de Logs",
+    "cls": "tree-icon-athenas-0810 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AuditLogEntry')",
+    "uuid": "e9499eddb2224d2e94bb30a6a930e766",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e9499eddb2224d2e94bb30a6a930e766",
+    "icon_file": ""
+  }
+]

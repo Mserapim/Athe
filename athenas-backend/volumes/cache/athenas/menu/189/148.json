@@ -1,0 +1,22 @@
+[
+  {
+    "id": "752",
+    "text": "Informar escala de plant\u00e3o(Chefia)",
+    "cls": "tree-icon-athenas-0032 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PVFShiftmanager')",
+    "uuid": "7e5eb13ebed54fef9a9fb1fc593974a9",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7e5eb13ebed54fef9a9fb1fc593974a9",
+    "icon_file": ""
+  },
+  {
+    "id": "758",
+    "text": "Relat\u00f3rio Escala de Plant\u00e3o",
+    "cls": "tree-icon-athenas-0049 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ShiftControlReport')",
+    "uuid": "e0f72a5ac00c456993ca9fa50ea5d4f9",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e0f72a5ac00c456993ca9fa50ea5d4f9",
+    "icon_file": ""
+  }
+]

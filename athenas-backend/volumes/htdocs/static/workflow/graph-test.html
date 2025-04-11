@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Test Graph</title>
+</head>
+<body>
+
+    <div style="width:750px;height:450px;border:1px solid #000;overflow:auto;display:block">
+        <div id="viewPort"></div>
+    </div>
+    <span><a href="javascript:zoomIn()">Zoom In</a></span>
+    <span><a href="javascript:zoomOut()">Zoom Out</a></span>
+    <span><a href="javascript:load()">Load</a></span>
+
+    <script type="text/javascript">
+
+    var viewPort = document.querySelector('#viewPort')
+    var zoomLevel = 1.0;
+    var zoomSize = 0.05;
+    var zoomLimit = 2.0;
+
+    function zoomIn() {
+        zoomLevel = (zoomLevel < zoomLimit ? (zoomLevel + zoomSize) : zoomLimit);
+        viewPort.style.webkitTransform = 'scale(' + zoomLevel + ' ,' + zoomLevel + ')';
+    }
+
+    function load() {
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', '/athenas/Workflow/graph/1');
+        xhr.onload = function(event) {
+            if(event.target.status == 200)
+                viewPort.innerHTML = event.target.responseText;
+        } 
+        xhr.send(null);
+
+    }
+
+    function zoomOut() {
+        zoomLevel = (zoomLevel > 0.00 ? (zoomLevel - zoomSize) : zoomLimit);
+        viewPort.style.webkitTransform = 'scale(' + zoomLevel + ' ,' + zoomLevel + ')';
+    }
+
+    </script>
+
+</body>
+</html>

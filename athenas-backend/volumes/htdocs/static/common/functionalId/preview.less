@@ -1,0 +1,62 @@
+// out: preview.css
+
+.functional-id-preview {
+    section {
+        margin: 10px 0;
+
+        div.flex-end {
+            justify-content: flex-end;
+        }
+
+        div.revoked {
+            border: 2px solid red;
+            color: red;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            flex: none;
+        }
+
+        div.working-in-progress {
+            border: 2px solid red;
+            color: red;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            flex: none;
+        }
+
+        /* row */
+        >div {
+            display: flex;
+            padding: 5px 0;
+
+            /* column */
+            >div {
+                border: 1px solid #ccc;
+                margin: 3px;
+                padding: 5px;
+                border-radius: 3px;
+                flex: 1;
+
+                >span {
+                    display: block;
+                    padding: 3px;
+                }
+
+                >span:first-child {
+                    color: #aaa;
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        .image-grid {
+            > div:first-child {
+                width: 160px;
+                height: 214px;
+                flex: none;
+            }
+        }
+    }
+}

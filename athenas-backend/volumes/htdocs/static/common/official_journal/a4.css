@@ -1,0 +1,46 @@
+.page {
+    width: 210mm;
+    min-height: 265mm;
+    padding: 20mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+
+@page {
+    size: A4;
+}
+
+@media print {
+    .page {
+        width: initial;
+        margin: inherit;
+        border: initial;
+        border-radius: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        display: inherit;
+    }
+
+    .page .papper-header-logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .page .banner-index img {
+        width: 645px;
+    }
+
+    .page .span-title-edition span{
+        font-size: 18px;
+        padding: 0 52px 5px 52px;
+    }
+
+}

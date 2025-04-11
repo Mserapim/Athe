@@ -1,0 +1,32 @@
+[
+  {
+    "id": "754",
+    "text": "Entrega Folha Ponto",
+    "cls": "tree-icon-athenas-0776 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PointSheetCheckReport')",
+    "uuid": "c23ebc59c9a64c299e6b7429ce6b070a",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c23ebc59c9a64c299e6b7429ce6b070a",
+    "icon_file": ""
+  },
+  {
+    "id": "717",
+    "text": "Holerite Online",
+    "cls": "tree-icon-athenas-0572 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PVFPayCheckReport')",
+    "uuid": "ad70c29590584fd7b6b73932537cb539",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ad70c29590584fd7b6b73932537cb539",
+    "icon_file": ""
+  },
+  {
+    "id": "779",
+    "text": "Relat\u00f3rio Aprovadores",
+    "cls": "tree-icon-athenas-0049 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ApppoverVfdfReport')",
+    "uuid": "c5d83be4234b45088dc91cc5711113e6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c5d83be4234b45088dc91cc5711113e6",
+    "icon_file": ""
+  }
+]

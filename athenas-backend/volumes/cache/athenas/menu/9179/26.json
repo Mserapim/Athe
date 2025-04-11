@@ -1,0 +1,97 @@
+[
+  {
+    "id": "45",
+    "text": "Configura\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0222 larger-font"
+  },
+  {
+    "id": "47",
+    "text": "Controle de acesso",
+    "cls": "tree-icon-athenas-0424 larger-font"
+  },
+  {
+    "id": "57",
+    "text": "Funcionalidades",
+    "cls": "tree-icon-athenas-0061 larger-font"
+  },
+  {
+    "id": "452",
+    "text": "Mapeamento de Processos",
+    "cls": "tree-icon-athenas-0810 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('WFLWWorkflowRestful')",
+    "uuid": "5ab407d6594a4ccc8b4f1c9be55dd8dc",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/5ab407d6594a4ccc8b4f1c9be55dd8dc",
+    "icon_file": ""
+  },
+  {
+    "id": "541",
+    "text": "Eventos para o usu\u00e1rio",
+    "cls": "tree-icon-athenas-0102 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EngEventoManager')",
+    "uuid": "3747086c8298473e8219f2fa79c8d2c0",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3747086c8298473e8219f2fa79c8d2c0",
+    "icon_file": ""
+  },
+  {
+    "id": "551",
+    "text": "Gerenciador de ClassCodes",
+    "cls": "tree-icon-athenas-0776 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDClassCodeRestful')",
+    "uuid": "f87689f557044fecb3e9a9b65a041209",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f87689f557044fecb3e9a9b65a041209",
+    "icon_file": ""
+  },
+  {
+    "id": "553",
+    "text": "Gerenciador de Mensagens",
+    "cls": "tree-icon-athenas-0116 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ENGMessageAdmin')",
+    "uuid": "c48b95cd171643cab1f47748a1033044",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c48b95cd171643cab1f47748a1033044",
+    "icon_file": ""
+  },
+  {
+    "id": "573",
+    "text": "Gestor de Profiles",
+    "cls": "tree-icon-athenas-0830 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PFJobProfile')",
+    "uuid": "56815d1b13b240268be00167394fe39e",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/56815d1b13b240268be00167394fe39e",
+    "icon_file": ""
+  },
+  {
+    "id": "620",
+    "text": "Par\u00e2metros do Sistema",
+    "cls": "tree-icon-athenas-0675 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDChoice')",
+    "uuid": "ee15ee5785a34ae3be2769e9054d4009",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ee15ee5785a34ae3be2769e9054d4009",
+    "icon_file": ""
+  },
+  {
+    "id": "685",
+    "text": "Visualiza\u00e7\u00e3o de Linhas do Log",
+    "cls": "tree-icon-athenas-0813 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AuditaLineLog')",
+    "uuid": "a345a8925a57413da9bb77eee446c49a",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/a345a8925a57413da9bb77eee446c49a",
+    "icon_file": ""
+  },
+  {
+    "id": "756",
+    "text": "Auditoria de Logs",
+    "cls": "tree-icon-athenas-0810 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('AuditLogEntry')",
+    "uuid": "e9499eddb2224d2e94bb30a6a930e766",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e9499eddb2224d2e94bb30a6a930e766",
+    "icon_file": ""
+  }
+]

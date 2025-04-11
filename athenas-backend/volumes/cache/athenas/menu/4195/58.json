@@ -1,0 +1,32 @@
+[
+  {
+    "id": "483",
+    "text": "Assunto",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EpadAssunto')",
+    "uuid": "55418af2badb4af2aa683760a528c6e6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/55418af2badb4af2aa683760a528c6e6",
+    "icon_file": ""
+  },
+  {
+    "id": "512",
+    "text": "Configura\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0185 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EpadConfig')",
+    "uuid": "76eef634ea474130ac90c623e39adc31",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/76eef634ea474130ac90c623e39adc31",
+    "icon_file": ""
+  },
+  {
+    "id": "671",
+    "text": "Situa\u00e7\u00e3o",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EpadSituacao')",
+    "uuid": "ff613a2afa4343a589cde8808ee6bd12",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ff613a2afa4343a589cde8808ee6bd12",
+    "icon_file": ""
+  }
+]

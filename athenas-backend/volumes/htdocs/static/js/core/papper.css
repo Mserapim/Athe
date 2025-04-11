@@ -1,0 +1,407 @@
+.papper-container,
+.papper-container-card,
+.papper-container-a4 {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border: 1px solid inherit;
+  background-color: #ddd;
+  overflow: auto;
+  font-size: 11pt;
+}
+p br {
+  background-color: red;
+}
+.small-bottom {
+  margin-bottom: 8px;
+}
+.inline-with-crop {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 10px;
+}
+.styled-text p::before {
+  content: '';
+  display: inline-block;
+  width: 2.5cm;
+  height: 5px;
+}
+.page-title {
+  text-align: center;
+  margin-bottom: 0.5cm;
+}
+.page-title small {
+  font-size: 7pt;
+  text-transform: uppercase;
+}
+.seal {
+  padding: 0.8em;
+  padding-top: 1.2em;
+  margin-top: 5em;
+  border-top: 2px solid #444;
+  font-weight: 5pt !important;
+}
+.papper-container-card .papper-model {
+  width: 155mm;
+  max-width: 155mm;
+  min-height: 120mm;
+}
+@media (max-width: 1330px) and (orientation: landscape) {
+  .papper-container-a4 .papper-model,
+  .papper-container-card .papper-model {
+    zoom: 0.9;
+  }
+}
+@media (max-width: 1280px) and (orientation: landscape) {
+  .papper-container-a4 .papper-model,
+  .papper-container-card .papper-model {
+    zoom: 0.85;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .papper-container-a4 .papper-model,
+  .papper-container-card .papper-model {
+    zoom: 0.55;
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  .papper-container-a4 .papper-model,
+  .papper-container-card .papper-model {
+    zoom: 0.8;
+  }
+}
+.papper-container-a4 .papper-model {
+  width: 210mm;
+  max-width: 210mm;
+  min-height: 270mm;
+}
+.papper h1,
+.papper h2,
+.papper h3,
+.papper h4,
+.papper h5,
+.papper h6 {
+  margin: 1.5em 0;
+}
+.papper-model {
+  background-color: white;
+  margin: 30px auto;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 0 0 20px #999;
+}
+.papper-model .papper blockquote {
+  margin: 1em;
+  border-left: 3px solid #aaa;
+  padding: 1em;
+  text-align: justify;
+  font-style: italic;
+}
+.papper-model .papper ol.list-numbered,
+.papper-model .papper ul.list-doted {
+  margin-left: 2.20cm;
+}
+.papper-model .papper ol.list-numbered li,
+.papper-model .papper ul.list-doted li {
+  line-height: 1.75em;
+  margin-top: 1.0em;
+}
+.papper-model .papper ol.list-numbered li .title,
+.papper-model .papper ul.list-doted li .title {
+  margin-right: 0.45cm;
+}
+.papper-model .papper ol.list-numbered li .paragraph-text,
+.papper-model .papper ul.list-doted li .paragraph-text {
+  padding-top: 0;
+}
+.papper-model .papper ol.list-numbered li .paragraph-text .numbered,
+.papper-model .papper ul.list-doted li .paragraph-text .numbered {
+  display: inline-block;
+  margin-right: 0.5em;
+  float: left;
+  font-weight: bold;
+}
+.papper-model .papper ul.list-doted {
+  list-style-type: circle;
+}
+.papper-model .papper ol.list-numbered {
+  list-style-type: decimal;
+}
+.papper-model .papper ol.list-numbered li ul,
+.papper-model .papper ul.list-doted li ul {
+  margin-left: 0.50cm;
+}
+.papper-model .papper ol.list-numbered li ul li,
+.papper-model .papper ul.list-doted li ul li {
+  margin-top: 0.5em;
+}
+.papper-model .papper .citation {
+  border-left: 3px solid #bbb;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  margin-left: 1cm;
+  color: #777;
+}
+.papper-model .papper .citation * {
+  font-style: italic;
+}
+.papper-model .papper .detail {
+  margin-left: 1cm;
+}
+.papper-model .papper .detail p {
+  line-height: 1.25em;
+  font-weight: normal;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.papper-model .papper .detail h1,
+.papper-model .papper .detail h2,
+.papper-model .papper .detail h3 {
+  margin: 1em 0;
+}
+.papper-model .papper strong,
+.papper-model .papper b {
+  font-weight: bold !important;
+}
+.papper-model .papper em,
+.papper-model .papper i {
+  font-style: italic !important;
+}
+.papper-model .papper em strong,
+.papper-model .papper i strong,
+.papper-model .papper em b,
+.papper-model .papper i b {
+  font-weight: bold !important;
+}
+.papper-model .papper .paragraph-text {
+  text-align: justify;
+  line-height: 1.25em;
+  padding-top: 1.25em;
+}
+.papper-model .papper .paragraph-text p,
+.papper-model .papper .paragraph-text h1,
+.papper-model .papper .paragraph-text h2,
+.papper-model .papper .paragraph-text h3 {
+  padding-top: 1.75em;
+}
+.papper-model .papper .paragraph-text p:first-child {
+  padding-top: 0;
+}
+.papper-model .papper .paragraph-text h1 {
+  font-size: 1.5em;
+}
+.papper-model .papper .paragraph-text h2,
+.papper-model .papper .paragraph-text h3 {
+  font-size: 1.2em;
+}
+.papper-model .papper .paragraph-text h3 {
+  text-decoration: underline;
+}
+.papper-model .papper .paragraph-text ol,
+.papper-model .papper .paragraph-text ul {
+  margin-left: 35px;
+}
+.papper-model .papper .paragraph-text ol {
+  list-style-type: decimal;
+}
+.papper-model .papper .paragraph-text ul {
+  list-style-type: circle;
+}
+.papper-model .papper .paragraph-text ol li,
+.papper-model .papper .paragraph-text ul li {
+  padding-top: 1.2em;
+}
+.papper-model .papper .paragraph-text .space {
+  display: inline-block;
+  width: 1.5cm;
+}
+.papper-model .papper .title-1 {
+  text-decoration: underline;
+  text-align: center;
+  text-transform: uppercase;
+}
+.papper-model .papper .top-space-3 {
+  margin-top: 3em;
+}
+.papper-model .papper .bold {
+  font-weight: bold;
+}
+.papper-model .papper .papper-header {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 1em;
+}
+.papper-model .papper .papper-header .papper-header-logo {
+  float: left;
+  background-image: url('/athenas/static/images/homedata.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 120px;
+  height: 70px;
+}
+.papper-model .papper .papper-header .papper-header-system {
+  margin-left: 130px;
+  font-size: 1.65em;
+  padding-top: 0.40em;
+}
+.papper-model .papper .papper-header .papper-header-instituation {
+  margin-left: 130px;
+  font-size: 1.65em;
+}
+.papper-model .papper .papper-header-publication {
+  height: 70px;
+}
+.papper-model .papper .papper-header-publication .papper-header-logo {
+  background-image: url('/athenas/static/images/homedata.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 120px;
+  height: 70px;
+  margin: 0 auto;
+}
+.papper-model .papper .papper-identify {
+  margin: 3em 0;
+  text-align: center;
+}
+.papper-model .papper .papper-identify h2 {
+  font-family: monospace !important;
+  font-size: 6em;
+  line-height: 1em;
+}
+.papper-model .papper .papper-identify h3 {
+  font-size: 2em;
+  line-height: 1.7em;
+}
+.papper-model .papper .papper-identify p {
+  font-size: 0.7em;
+}
+.papper-model .papper .papper-identify p.papper-identify-location {
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+.papper-model .papper .papper-identify p.papper-identify-location-sub {
+  padding-top: 3em;
+}
+.papper-model .papper .papper-resume,
+.papper-model .papper .papper-content {
+  padding-top: 1em;
+}
+.papper-model .papper .papper-resume span,
+.papper-model .papper .papper-content span {
+  display: block;
+  text-decoration: underline;
+}
+.papper-model .papper .papper-resume div,
+.papper-model .papper .papper-content div {
+  border: none;
+  padding-top: none;
+}
+.papper-model .papper .papper-resume div p,
+.papper-model .papper .papper-content div p {
+  padding-top: 1em;
+  line-height: 1.25em;
+}
+.papper-model .papper .papper-resume {
+  border-top: 1px solid #444;
+}
+.papper-model .papper .field .label {
+  font-weight: bold;
+}
+.papper-model .papper .field .value {
+  padding-bottom: 1em;
+}
+.papper-model .papper .field .column-two {
+  float: left;
+  width: 50%;
+}
+.papper-model .papper .field .composite .title {
+  padding-top: 1.5em;
+  padding-bottom: 0.7em;
+}
+.papper-model .papper .distribution {
+  border-bottom: 1px dashed #444;
+  margin-top: 2em;
+}
+.papper-model .papper .distribution h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-top: 3em;
+}
+.papper-model .papper .distribution .info {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+.papper-model .papper .distribution .info .label {
+  text-decoration: underline;
+}
+.papper-model .papper .distribution .info .value {
+  margin-bottom: 0.7em;
+}
+.papper-model .papper .distribution .info span,
+.papper-model .papper .distribution .info div {
+  padding: 0.3em 0;
+}
+.papper-model .papper .distribution .info ul {
+  margin-left: 0.5em;
+}
+.papper-model .papper .distribution .info ul ol,
+.papper-model .papper .distribution .info ul li {
+  padding: 0.3em;
+}
+.papper-model .papper .distribution .info ul li {
+  list-style: inside disc !important;
+}
+.papper-model .papper .distribution .info div.red {
+  background-color: red;
+  color: white;
+}
+.papper-model .papper .distribution .location {
+  margin-top: 1em;
+}
+.papper-model .papper .distribution:last-child {
+  border-bottom: none;
+}
+.page-of-image,
+.page-of-portable {
+  margin: -15mm -20mm;
+  width: 210mm;
+  height: 297mm;
+}
+.unfolded {
+  background-image: url(desentranhado.png);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+a[name^='I'] {
+  display: inline-block;
+}
+.papper + div {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.papper-identify fieldset {
+  border: 2px solid;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.papper-identify fieldset legend {
+  font-weight: bold;
+  display: block;
+  margin-left: 10px;
+  padding-bottom: 2px;
+}
+.papper-identify fieldset h5 {
+  margin-bottom: 0.5em;
+}
+.papper-info-cover {
+  text-align: justify;
+  font-size: 16pt;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+.papper-info-cover p {
+  padding: 0.4em;
+}

@@ -1,0 +1,97 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAdmissao/v_S_01_02_00">
+  <evtAdmissao Id="ID1149210920000002024110418260157587">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <trabalhador>
+      <cpfTrab>07528173452</cpfTrab>
+      <nmTrab>RAPHAEL HENRIQUE DE SENA OLIVEIRA</nmTrab>
+      <sexo>F</sexo>
+      <racaCor>3</racaCor>
+      <estCiv>2</estCiv>
+      <grauInstr>09</grauInstr>
+      <nmSoc>RAPHAEL HENRIQUE DE SENA OLIVEIRA</nmSoc>
+      <nascimento>
+        <dtNascto>1989-04-12</dtNascto>
+        <paisNascto>105</paisNascto>
+        <paisNac>105</paisNac>
+      </nascimento>
+      <endereco>
+        <brasil>
+          <tpLograd>R</tpLograd>
+          <dscLograd>RUA HERMÓGENES DE MORAIS</dscLograd>
+          <nrLograd>252</nrLograd>
+          <bairro>MADALENA</bairro>
+          <cep>50610160</cep>
+          <codMunic>2611606</codMunic>
+          <uf>PE</uf>
+        </brasil>
+      </endereco>
+      <infoDeficiencia>
+        <defFisica>S</defFisica>
+        <defVisual>N</defVisual>
+        <defAuditiva>N</defAuditiva>
+        <defMental>N</defMental>
+        <defIntelectual>N</defIntelectual>
+        <reabReadap>N</reabReadap>
+      </infoDeficiencia>
+      <dependente>
+        <tpDep>01</tpDep>
+        <nmDep>CLAUDETE JOSEFA DE MOURA SENA</nmDep>
+        <dtNascto>1993-02-06</dtNascto>
+        <cpfDep>10174439474</cpfDep>
+        <sexoDep>F</sexoDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <dependente>
+        <tpDep>03</tpDep>
+        <nmDep>ESTHER MILLENA DE MOURA SENA</nmDep>
+        <dtNascto>2018-09-11</dtNascto>
+        <cpfDep>15859011482</cpfDep>
+        <sexoDep>F</sexoDep>
+        <depIRRF>S</depIRRF>
+        <depSF>N</depSF>
+        <incTrab>N</incTrab>
+      </dependente>
+      <contato>
+        <emailPrinc>raphael-sena.oliveira@mpmt.mp.br</emailPrinc>
+      </contato>
+    </trabalhador>
+    <vinculo>
+      <matricula>1400</matricula>
+      <tpRegTrab>2</tpRegTrab>
+      <tpRegPrev>2</tpRegPrev>
+      <cadIni>N</cadIni>
+      <infoRegimeTrab>
+        <infoEstatutario>
+          <tpProv>1</tpProv>
+          <dtExercicio>2023-06-30</dtExercicio>
+          <tpPlanRP>1</tpPlanRP>
+          <indTetoRGPS>N</indTetoRGPS>
+          <indAbonoPerm>N</indAbonoPerm>
+        </infoEstatutario>
+      </infoRegimeTrab>
+      <infoContrato>
+        <nmCargo>PROMOTOR DE JUSTICA SUBSTITUTO</nmCargo>
+        <CBOCargo>242235</CBOCargo>
+        <acumCargo>N</acumCargo>
+        <codCateg>301</codCateg>
+        <localTrabalho>
+          <localTrabGeral>
+            <tpInsc>1</tpInsc>
+            <nrInsc>14921092000157</nrInsc>
+          </localTrabGeral>
+        </localTrabalho>
+      </infoContrato>
+    </vinculo>
+  </evtAdmissao>
+</eSocial>

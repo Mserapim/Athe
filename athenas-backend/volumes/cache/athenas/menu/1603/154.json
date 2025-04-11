@@ -1,0 +1,22 @@
+[
+  {
+    "id": "795",
+    "text": "Designa\u00e7\u00e3o para Dilig\u00eancia",
+    "cls": "tree-icon-athenas-0627 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMDiligenceMoveRestful')",
+    "uuid": "1875f7b94fc64253bb30f1f1edc70cec",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/1875f7b94fc64253bb30f1f1edc70cec",
+    "icon_file": ""
+  },
+  {
+    "id": "796",
+    "text": "Designa\u00e7\u00e3o para Auxiliar de Coordena\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0680 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GMMovAuxCoordenationRestful')",
+    "uuid": "1a639f1015784ca38294fea1bddcccf6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/1a639f1015784ca38294fea1bddcccf6",
+    "icon_file": ""
+  }
+]

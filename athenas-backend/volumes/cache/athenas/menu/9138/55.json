@@ -1,0 +1,52 @@
+[
+  {
+    "id": "263",
+    "text": "Carga Hor\u00e1ria",
+    "cls": "tree-icon-athenas-0427 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHWorkload')",
+    "uuid": "143d2550518c4f6f9be33af63a698e01",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/143d2550518c4f6f9be33af63a698e01",
+    "icon_file": ""
+  },
+  {
+    "id": "282",
+    "text": "Gestor de Hor\u00e1rio de Trabalho",
+    "cls": "tree-icon-athenas-0738 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHHoursWorkContract')",
+    "uuid": "b8daad96c8d34d2c86f58ad2be666bcd",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b8daad96c8d34d2c86f58ad2be666bcd",
+    "icon_file": ""
+  },
+  {
+    "id": "812",
+    "text": "Relat\u00f3rio Aprovadores",
+    "cls": "tree-icon-athenas-0049 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ApppoverVfdfReport')",
+    "uuid": "6bf060d5599c442e8c66b7cc2af6b608",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/6bf060d5599c442e8c66b7cc2af6b608",
+    "icon_file": ""
+  },
+  {
+    "id": "816",
+    "text": "Gestor de Batidas",
+    "cls": "tree-icon-athenas-0631 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHGestorBatidas')",
+    "uuid": "dbbcefb3154a4128ae7b3fec3e64dcd0",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/dbbcefb3154a4128ae7b3fec3e64dcd0",
+    "icon_file": ""
+  },
+  {
+    "id": "817",
+    "text": "Gestor de Envio de Folha Ponto",
+    "cls": "tree-icon-athenas-0773 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHGestorEnvioPontos')",
+    "uuid": "b1c8099a12714342b3d17f6f4568f4ce",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b1c8099a12714342b3d17f6f4568f4ce",
+    "icon_file": ""
+  }
+]

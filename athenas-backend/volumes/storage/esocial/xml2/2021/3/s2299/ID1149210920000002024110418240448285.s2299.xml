@@ -1,0 +1,23 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtDeslig/v_S_01_02_00">
+  <evtDeslig Id="ID1149210920000002024110418240448285">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <ideVinculo>
+      <cpfTrab>09047964187</cpfTrab>
+      <matricula>1043</matricula>
+    </ideVinculo>
+    <infoDeslig>
+      <mtvDeslig>-------------value-not-found-on-model-----------------</mtvDeslig>
+      <dtDeslig>2021-03-03</dtDeslig>
+      <indPagtoAPI>N</indPagtoAPI>
+    </infoDeslig>
+  </evtDeslig>
+</eSocial>

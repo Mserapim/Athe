@@ -1,0 +1,57 @@
+[
+  {
+    "id": "137",
+    "text": "Relat\u00f3rios",
+    "cls": "tree-icon-athenas-0291 larger-font"
+  },
+  {
+    "id": "712",
+    "text": "Meus Direitos",
+    "cls": "tree-icon-athenas-0057 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PVFRightType')",
+    "uuid": "86669c05c111403b96e4cd6cba775f72",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/86669c05c111403b96e4cd6cba775f72",
+    "icon_file": ""
+  },
+  {
+    "id": "774",
+    "text": "Registro de Ponto",
+    "cls": "tree-icon-athenas-0842 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RegisterPoint')",
+    "uuid": "6334b6c1f2e64e47934d81aaf0b15dc5",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/6334b6c1f2e64e47934d81aaf0b15dc5",
+    "icon_file": ""
+  },
+  {
+    "id": "449",
+    "text": "Atualiza\u00e7\u00e3o Cadastral",
+    "cls": "tree-icon-athenas-0093 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RegistrationFormInformation')",
+    "uuid": "8eff2ef8cbd04ec2b827496c739bc1ae",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/8eff2ef8cbd04ec2b827496c739bc1ae",
+    "icon_file": ""
+  },
+  {
+    "id": "711",
+    "text": "Minhas Solicita\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0466 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PortalRequestApi')",
+    "uuid": "b3c5b8ff70bb40deb750582b108f7d36",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b3c5b8ff70bb40deb750582b108f7d36",
+    "icon_file": ""
+  },
+  {
+    "id": "710",
+    "text": "Aguardando Aprova\u00e7\u00e3o/Ci\u00eancia",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('PortalwaitingApproval')",
+    "uuid": "cc75f5d99c334bad9f754fda160fdac6",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/cc75f5d99c334bad9f754fda160fdac6",
+    "icon_file": ""
+  }
+]

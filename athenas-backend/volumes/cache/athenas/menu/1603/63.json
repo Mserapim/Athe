@@ -1,0 +1,47 @@
+[
+  {
+    "id": "123",
+    "text": "Relat\u00f3rios",
+    "cls": "folder"
+  },
+  {
+    "id": "369",
+    "text": "Configurador DIRF",
+    "cls": "tree-icon-athenas-0705 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DIRFDialect')",
+    "uuid": "846b76e2ad1a417a996a21bf2edd2fbc",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/846b76e2ad1a417a996a21bf2edd2fbc",
+    "icon_file": ""
+  },
+  {
+    "id": "418",
+    "text": "Pagamentos para DIRF",
+    "cls": "tree-icon-athenas-0056 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DIRFDirfSummaryFinancial')",
+    "uuid": "b88147989a4b4b53b2a13994325a5a67",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b88147989a4b4b53b2a13994325a5a67",
+    "icon_file": ""
+  },
+  {
+    "id": "441",
+    "text": "Tabelas IRRF",
+    "cls": "tree-icon-athenas-0702 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPIRRF')",
+    "uuid": "e9bbceef42184c4a978a903acb2253e7",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e9bbceef42184c4a978a903acb2253e7",
+    "icon_file": ""
+  },
+  {
+    "id": "780",
+    "text": "Importar C\u00e9dula-C",
+    "cls": "tree-icon-athenas-0699 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CedulaCIRPF')",
+    "uuid": "acbdc30c5960401c95a73ec71ec70217",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/acbdc30c5960401c95a73ec71ec70217",
+    "icon_file": ""
+  }
+]

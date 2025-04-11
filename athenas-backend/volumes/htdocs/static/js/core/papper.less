@@ -1,0 +1,496 @@
+// out: papper.css, compress: false
+
+@space: 1em;
+
+.papper-container, .papper-container-card, .papper-container-a4 {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border: 1px solid inherit;
+    background-color: #ddd;
+    overflow: auto;
+
+    font-size: 11pt;
+}
+
+p br {
+    background-color: red;
+}
+
+.small-bottom {
+    margin-bottom: 8px
+}
+
+.inline-with-crop {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 10px;
+}
+
+.styled-text {
+    p::before {
+        content: '';
+        display: inline-block;
+        width: 2.5cm;
+        height: 5px;
+    }
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 0.5cm;
+
+    small {
+        font-size: 7pt;
+        text-transform: uppercase;
+    }
+}
+
+.seal {
+    padding: 0.8em;
+    padding-top: 1.2em;
+    margin-top: 5em;
+    border-top: 2px solid #444;
+    font-weight: 5pt !important;
+}
+
+.papper-container-card {
+    .papper-model {
+        width: 155mm;
+        max-width: 155mm;
+        min-height: 120mm;
+    }
+}
+
+@media(max-width: 1330px) and (orientation: landscape) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 0.9
+        }
+    }
+}
+
+@media(max-width: 1280px) and (orientation: landscape) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 0.85
+        }
+    }
+}
+
+@media(max-width: 1024px) and (orientation: landscape) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 0.55
+        }
+    }
+}
+
+@media(max-width: 1024px) and (orientation: portrait) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 0.8
+        }
+    }
+}
+
+.papper-container-a4 {
+    .papper-model {
+        width: 210mm;
+        max-width: 210mm;
+        min-height: 270mm;
+    }
+}
+
+.papper {
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1.5em 0;
+    }
+}
+
+.papper-model {
+    background-color: white;
+    margin: 30px auto;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 0 0 20px #999;
+    .papper {
+
+        blockquote {
+            margin: 1em;
+            border-left: 3px solid #aaa;
+            padding: 1em;
+            text-align: justify;
+            font-style: italic;
+        }
+
+        ol.list-numbered, ul.list-doted {
+            margin-left: 2.20cm;
+
+            li {
+                line-height:1.75em;
+                margin-top: 1.0em;
+
+                .title {
+                    margin-right: 0.45cm;
+                }
+
+                .paragraph-text {
+                    padding-top: 0;
+
+                    .numbered {
+                        display: inline-block;
+                        margin-right: 0.5em;
+                        float: left;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+
+        ul.list-doted {
+            list-style-type: circle;
+        }
+
+        ol.list-numbered {
+            list-style-type: decimal;
+        }
+
+        ol.list-numbered li ul, ul.list-doted li ul {
+            margin-left: 0.50cm;
+
+            li {
+                margin-top: 0.5em;
+            }
+        }
+
+        .citation {
+            border-left: 3px solid #bbb;
+            padding-left: 0.5cm;
+            padding-right: 0.5cm;
+            margin-left: 1cm;
+            color: #777;
+
+            * {
+                font-style: italic;
+            }
+        }
+
+        .detail {
+            margin-left: 1cm;
+
+            p {
+                line-height: 1.25em;
+                font-weight: normal;
+                margin-bottom: 1em;
+                text-align: justify;
+            }
+
+            h1, h2, h3 {
+                margin: 1em 0;
+            }
+        }
+
+        strong, b {
+            font-weight: bold !important;
+        }
+
+        em, i {
+            font-style: italic !important;
+
+            strong, b {
+                font-weight: bold !important;
+            }
+        }
+
+        .paragraph-text {
+            text-align: justify;
+            line-height: 1.25em;
+            padding-top: 1.25em;
+
+
+            p, h1, h2, h3 {
+                padding-top: 1.75em;
+            }
+
+            p:first-child {
+                padding-top: 0;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2, h3 {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                text-decoration: underline;
+            }
+
+            ol, ul {
+                margin-left: 35px;
+            }
+
+            ol {
+                list-style-type: decimal;
+            }
+
+            ul {
+                list-style-type: circle;
+            }
+
+            ol li, ul li {
+                padding-top: 1.2em
+            }
+
+            .space {
+                display: inline-block;
+                width: 1.5cm;
+            }
+        }
+
+        .title-1 {
+            text-decoration: underline;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .top-space-3 {
+            margin-top: 3em
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .papper-header {
+            margin-bottom: @space;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 1em;
+
+            .papper-header-logo {
+                float: left;
+                background-image: url('/athenas/static/images/homedata.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 120px;
+                height: 70px;
+            }
+
+            .papper-header-system {
+                margin-left: 130px;
+                font-size: 1.65em;
+                padding-top: 0.40em;
+            }
+
+            .papper-header-instituation {
+                margin-left: 130px;
+                font-size: 1.65em;
+            }
+        }
+
+        .papper-header-publication {
+            height: 70px;
+
+            .papper-header-logo {
+                background-image: url('/athenas/static/images/homedata.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 120px;
+                height: 70px;
+                margin: 0 auto;
+            }
+        }
+
+        .papper-identify {
+            margin: (3 * @space) 0;
+            text-align: center;
+
+            h2 {
+                font-family: monospace !important;
+                font-size: 6em;
+                line-height: 1em;
+            }
+
+            h3 {
+                font-size: 2em;
+                line-height: 1.7em;
+            }
+
+            p {
+                font-size: 0.7em
+            }
+
+            p.papper-identify-location {
+                text-decoration: underline;
+                font-size: 1.2em;
+            }
+
+            p.papper-identify-location-sub {
+                padding-top: 3em;
+            }
+
+        }
+
+        .papper-resume, .papper-content {
+            padding-top: @space;
+
+            span {
+                display: block;
+                text-decoration: underline;
+            }
+
+            div {
+                border: none;
+                padding-top: none;
+
+                p {
+                    padding-top: 1em;
+                    line-height: 1.25em;
+                }
+            }
+        }
+
+        .papper-resume {
+            border-top: 1px solid #444;
+        }
+
+        .field {
+            .label {
+                font-weight: bold;
+            }
+
+            .value {
+                padding-bottom: 1em;
+            }
+
+            .column-two {
+                float: left;
+                width: 50%;
+            }
+
+            .composite {
+                // p::before {
+                //     content: '';
+                //     margin-left: 1.5cm;
+                // }
+
+                .title {
+                    padding-top: 1.5em;
+                    padding-bottom: 0.7em;
+                }
+            }
+        }
+
+        .distribution {
+            border-bottom: 1px dashed #444;
+            margin-top: 2em;
+
+            h2 {
+                text-align: center;
+                text-decoration: underline;
+                text-transform: uppercase;
+                margin-top: 3em
+            }
+
+            .info {
+                margin-left: 1em;
+                margin-top: 0.5em;
+
+                .label {
+                    text-decoration: underline;
+                }
+
+                .value {
+                    margin-bottom: 0.7em;
+                }
+
+                span, div {
+                    padding: 0.3em 0;
+                }
+
+                ul {
+                    margin-left: 0.5em;
+                }
+
+                ul ol, ul li {
+                    padding: 0.3em
+                }
+
+                ul li {
+                    list-style: inside disc !important;
+                }
+
+                div.red {
+                    background-color: red;
+                    color: white;
+                }
+            }
+
+            .location {
+                margin-top: 1em;
+
+            }
+        }
+
+        .distribution:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.page-of-image, .page-of-portable {
+    margin: -15mm -20mm;
+    width: 210mm;
+    height: 297mm;
+}
+
+.unfolded {
+    background-image: url(desentranhado.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+a[name^='I']{
+    display: inline-block;
+}
+
+.papper + div {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.papper-identify {
+    fieldset {
+        legend{
+            font-weight:bold;
+            display: block;
+            margin-left: 10px;
+            padding-bottom: 2px;
+        }
+        h5 {
+            margin-bottom: 0.5em;
+        }
+
+    border: 2px solid;
+    border-radius: 5px;
+    padding-bottom: 20px;
+
+    }
+}
+
+.papper-info-cover {
+    p {
+        padding: 0.4em;
+    }
+
+    text-align: justify;
+    font-size: 16pt;
+    text-transform: uppercase;
+    padding-top: 25px;
+}

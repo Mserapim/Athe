@@ -1,0 +1,62 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAltCadastral/v_S_01_02_00">
+  <evtAltCadastral Id="ID1149210920000002024110418271628208">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <ideTrabalhador>
+      <cpfTrab>27015090848</cpfTrab>
+    </ideTrabalhador>
+    <alteracao>
+      <dtAlteracao>2024-02-08</dtAlteracao>
+      <dadosTrabalhador>
+        <nmTrab>WASHINGTON EDUARDO BORRERE</nmTrab>
+        <sexo>M</sexo>
+        <racaCor>3</racaCor>
+        <estCiv>3</estCiv>
+        <grauInstr>09</grauInstr>
+        <nmSoc>WASHINGTON EDUARDO BORRERE</nmSoc>
+        <paisNac>105</paisNac>
+        <endereco>
+          <brasil>
+            <tpLograd>R</tpLograd>
+            <dscLograd>MICAELA ATALA</dscLograd>
+            <nrLograd>45</nrLograd>
+            <bairro>JD DO TREVO</bairro>
+            <cep>78200000</cep>
+            <codMunic>5102504</codMunic>
+            <uf>MT</uf>
+          </brasil>
+        </endereco>
+        <infoDeficiencia>
+          <defFisica>N</defFisica>
+          <defVisual>N</defVisual>
+          <defAuditiva>N</defAuditiva>
+          <defMental>N</defMental>
+          <defIntelectual>N</defIntelectual>
+          <reabReadap>N</reabReadap>
+        </infoDeficiencia>
+        <dependente>
+          <tpDep>03</tpDep>
+          <nmDep>RAVI BALDINOT BORRERE</nmDep>
+          <dtNascto>2024-02-08</dtNascto>
+          <cpfDep>04629477187</cpfDep>
+          <sexoDep>M</sexoDep>
+          <depIRRF>S</depIRRF>
+          <depSF>N</depSF>
+          <incTrab>N</incTrab>
+        </dependente>
+        <contato>
+          <fonePrinc>65992289064</fonePrinc>
+          <emailPrinc>washington.borrere@mpmt.mp.br</emailPrinc>
+        </contato>
+      </dadosTrabalhador>
+    </alteracao>
+  </evtAltCadastral>
+</eSocial>

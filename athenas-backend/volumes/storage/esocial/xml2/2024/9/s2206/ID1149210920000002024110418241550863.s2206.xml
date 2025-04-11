@@ -1,0 +1,44 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAltContratual/v_S_01_02_00">
+  <evtAltContratual Id="ID1149210920000002024110418241550863">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <ideVinculo>
+      <cpfTrab>71108556949</cpfTrab>
+      <matricula>1176</matricula>
+    </ideVinculo>
+    <altContratual>
+      <dtAlteracao>2024-09-16</dtAlteracao>
+      <dtEf>2024-09-16</dtEf>
+      <vinculo>
+        <tpRegPrev>2</tpRegPrev>
+        <infoRegimeTrab>
+          <infoEstatutario>
+            <tpPlanRP>2</tpPlanRP>
+            <indTetoRGPS>N</indTetoRGPS>
+            <indAbonoPerm>N</indAbonoPerm>
+          </infoEstatutario>
+        </infoRegimeTrab>
+        <infoContrato>
+          <nmCargo>PROMOTOR (A) DE JUSTICA </nmCargo>
+          <CBOCargo>242235</CBOCargo>
+          <acumCargo>N</acumCargo>
+          <codCateg>301</codCateg>
+          <localTrabalho>
+            <localTrabGeral>
+              <tpInsc>1</tpInsc>
+              <nrInsc>14921092000157</nrInsc>
+            </localTrabGeral>
+          </localTrabalho>
+        </infoContrato>
+      </vinculo>
+    </altContratual>
+  </evtAltContratual>
+</eSocial>

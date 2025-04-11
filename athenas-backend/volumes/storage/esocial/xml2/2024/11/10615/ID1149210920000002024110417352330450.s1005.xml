@@ -1,0 +1,25 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtTabEstab/v_S_01_02_00">
+  <evtTabEstab Id="ID1149210920000002024110417352330450">
+    <ideEvento>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <infoEstab>
+      <inclusao>
+        <ideEstab>
+          <tpInsc>1</tpInsc>
+          <nrInsc>14921092000157</nrInsc>
+          <iniValid>2018-01</iniValid>
+        </ideEstab>
+        <dadosEstab>
+          <cnaePrep>8411600</cnaePrep>
+        </dadosEstab>
+      </inclusao>
+    </infoEstab>
+  </evtTabEstab>
+</eSocial>

@@ -1,0 +1,61 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAltCadastral/v_S_01_02_00">
+  <evtAltCadastral Id="ID1149210920000002024110418255648093">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <ideTrabalhador>
+      <cpfTrab>11066308748</cpfTrab>
+    </ideTrabalhador>
+    <alteracao>
+      <dtAlteracao>2022-09-20</dtAlteracao>
+      <dadosTrabalhador>
+        <nmTrab>PHILLIPE ALVES DE MESQUITA</nmTrab>
+        <sexo>M</sexo>
+        <racaCor>1</racaCor>
+        <estCiv>1</estCiv>
+        <grauInstr>09</grauInstr>
+        <nmSoc>PHILLIPE ALVES DE MESQUITA</nmSoc>
+        <paisNac>105</paisNac>
+        <endereco>
+          <brasil>
+            <tpLograd>R</tpLograd>
+            <dscLograd>MORAVIA</dscLograd>
+            <nrLograd>325</nrLograd>
+            <bairro>ILHA DO GOVERNADOR</bairro>
+            <cep>21921030</cep>
+            <codMunic>3304557</codMunic>
+            <uf>RJ</uf>
+          </brasil>
+        </endereco>
+        <infoDeficiencia>
+          <defFisica>N</defFisica>
+          <defVisual>N</defVisual>
+          <defAuditiva>N</defAuditiva>
+          <defMental>N</defMental>
+          <defIntelectual>N</defIntelectual>
+          <reabReadap>N</reabReadap>
+        </infoDeficiencia>
+        <dependente>
+          <tpDep>07</tpDep>
+          <nmDep>CECÍLIA LIMA DE MESQUITA</nmDep>
+          <dtNascto>2022-09-20</dtNascto>
+          <cpfDep>10487066219</cpfDep>
+          <sexoDep>F</sexoDep>
+          <depIRRF>S</depIRRF>
+          <depSF>N</depSF>
+          <incTrab>N</incTrab>
+        </dependente>
+        <contato>
+          <emailPrinc>phillipe.mesquita@mpmt.mp.br</emailPrinc>
+        </contato>
+      </dadosTrabalhador>
+    </alteracao>
+  </evtAltCadastral>
+</eSocial>

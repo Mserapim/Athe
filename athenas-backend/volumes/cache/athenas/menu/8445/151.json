@@ -1,0 +1,22 @@
+[
+  {
+    "id": "765",
+    "text": "Condi\u00e7\u00e3o do Ambiente de Trabalho",
+    "cls": "tree-icon-athenas-0690 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTWorkingConditionHarmfulAgentManage')",
+    "uuid": "f4bb7affe32746269f48c11729346471",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f4bb7affe32746269f48c11729346471",
+    "icon_file": ""
+  },
+  {
+    "id": "769",
+    "text": "Exposi\u00e7\u00e3o do Servidor",
+    "cls": "tree-icon-athenas-0658 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTWorkingConditionExposureEmployeeManage')",
+    "uuid": "aaab3fda88a242618da557b273a684ff",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/aaab3fda88a242618da557b273a684ff",
+    "icon_file": ""
+  }
+]

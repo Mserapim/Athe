@@ -1,0 +1,62 @@
+[
+  {
+    "id": "759",
+    "text": "Agente Causador do Acidente de Trabalho",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTCauserAgent')",
+    "uuid": "e70d33e01f0649bc80e03805252944d7",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e70d33e01f0649bc80e03805252944d7",
+    "icon_file": ""
+  },
+  {
+    "id": "760",
+    "text": "Agente Causador/Situa\u00e7\u00e3o do Acidente de Trabalho",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTCauserAgentAccident')",
+    "uuid": "7419ef185ed34bdcbc78bff17db32e6f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7419ef185ed34bdcbc78bff17db32e6f",
+    "icon_file": ""
+  },
+  {
+    "id": "761",
+    "text": "Agente Nocivo",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTHarmfulAgent')",
+    "uuid": "61520f45215b4369a137c7ba5f35f764",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/61520f45215b4369a137c7ba5f35f764",
+    "icon_file": ""
+  },
+  {
+    "id": "770",
+    "text": "Les\u00e3o",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTInjury')",
+    "uuid": "f272d1c96dd74f19b07e830604e71af9",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/f272d1c96dd74f19b07e830604e71af9",
+    "icon_file": ""
+  },
+  {
+    "id": "772",
+    "text": "Parte do corpo atingida",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTBodyPart')",
+    "uuid": "65b51685d032460db8c348ae4096ef92",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/65b51685d032460db8c348ae4096ef92",
+    "icon_file": ""
+  },
+  {
+    "id": "773",
+    "text": "Procedimento Diagn\u00f3stico",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('HEALTHDiagnosisProcedure')",
+    "uuid": "588c44f1041a4fd192a2369555f20c8e",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/588c44f1041a4fd192a2369555f20c8e",
+    "icon_file": ""
+  }
+]

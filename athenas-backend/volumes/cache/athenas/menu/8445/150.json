@@ -1,0 +1,52 @@
+[
+  {
+    "id": "762",
+    "text": "Agente Nocivo do Ambiente",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTEnvironmentHarmfulAgent')",
+    "uuid": "1c82cd5c19a045a0ac99dcb53a780b3b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/1c82cd5c19a045a0ac99dcb53a780b3b",
+    "icon_file": ""
+  },
+  {
+    "id": "764",
+    "text": "Condi\u00e7\u00e3o do Ambiente de Trabalho",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTEnvironmentWorkingCondition')",
+    "uuid": "e38183f2e7a741f387cfb9abe15e0ed3",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e38183f2e7a741f387cfb9abe15e0ed3",
+    "icon_file": ""
+  },
+  {
+    "id": "766",
+    "text": "EPI",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTEpi')",
+    "uuid": "1c4346f771cd42a1a29ccb7b4dffea57",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/1c4346f771cd42a1a29ccb7b4dffea57",
+    "icon_file": ""
+  },
+  {
+    "id": "767",
+    "text": "Exame",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTExamSst')",
+    "uuid": "339f65a31da4484a95702ab418cd1fdd",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/339f65a31da4484a95702ab418cd1fdd",
+    "icon_file": ""
+  },
+  {
+    "id": "768",
+    "text": "Exposi\u00e7\u00e3o do Servidor",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTExposureEmployeeEnvironment')",
+    "uuid": "c572da84bc3d44408e805c77e52b5c5f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c572da84bc3d44408e805c77e52b5c5f",
+    "icon_file": ""
+  }
+]

@@ -1,0 +1,482 @@
+/* DIÁRIO DEPARTAMENTOS */
+
+/* Customizado */
+@font-face {
+    font-family: 'Righteous';
+    src: url('fonts/righteous.regular.ttf');
+}
+
+.division_bar {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    z-index: 111;
+    background: url("../official_journal/images/division_bar.png") no-repeat center center #FFCC07;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.division_content {
+    width: 69.5%;
+    float: right;
+    display: flex;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.span-title-edition, .span-title-edition-capa {
+    display: flex;
+    justify-content: center;
+    border-bottom: 7px solid #FFCC07;
+}
+
+h2.span-title-edition {
+    font-family: sans-serif;
+    font-size: 17px;
+    color:#225B91;
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+    margin: 0;
+    width: inherit;
+}
+
+h2.span-title-edition-capa {
+    font-family: sans-serif;
+    font-size: 17px;
+    color:#fff;
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+    margin: 0;
+    width: inherit;
+}
+
+
+/* Body content */
+
+.body_content {
+    width: 80%;
+    float: right;
+    padding: 25ch 0;
+}
+
+.body_content > div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.body_content > div img {
+    width: 100%;
+    height: auto;
+}
+
+.body_content h1 {
+    font-family: 'Righteous';
+    font-size: 7.5mm;
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 900;
+}
+
+.body_content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color:#235A85;
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+}
+
+.body_content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#235A85;
+    text-align: center;
+    margin: 0;
+}
+
+.logo_sup {
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+}
+
+.logo_sup img {
+    width: 40%;
+}
+
+
+
+/* Title departamento */
+
+.title_dpto {
+    width: 80%;
+    float: right;
+    padding: 25ch 0;
+}
+
+.title_dpto > div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title_dpto h1 {
+    font-family: 'Righteous';
+    font-size: 7.5mm;
+    color:#225B91;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+
+/* .legal-sign {
+    padding: 0 0 5ch 0 !important;
+} */
+
+.legal-sign .sign-content {
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+}
+
+.legal-sign h2 {
+    margin-bottom: 1mm !important;
+}
+
+.legal-sign p {
+    color: black !important;
+}
+
+/* Footer */
+.footer_content {
+    z-index: -111;
+    position: absolute;
+    bottom: 0;
+    /* width: inherit; */
+    width: auto;
+    text-align: center;
+    word-wrap: normal;
+    float: right;
+    background: white;
+    display: flex;
+    margin: 0 0 0 8.23vw;
+}
+
+.footer_content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2mm;
+    color: black;
+    padding: 0 10px 0 10px;
+}
+
+.footer_content p strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8mm;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.footer_content .autenticidade{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: normal;
+    text-align: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.footer_content .autenticidade p{
+    font-size: 2.5mm;
+}
+
+.footer_content .mpto_info {
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: normal;
+    text-align: right;
+    width: 50%;
+    padding: 15px;
+}
+
+.footer_content .legal-sign {
+    margin: 0;
+    border-top: none;
+    padding: 15px;
+    background-color: transparent;
+    width: 50%;
+}
+
+.footer_content .legal-sign .sign-content {
+    min-width: 0;
+    margin-top: 0 !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+.footer_content .legal-sign .sign-content .sign-content-person {
+    border-left: none !important;
+    height: auto;
+    padding: 0 10px;
+    align-items: initial !important;
+}
+
+.footer_content .legal-sign .sign-content .sign-content-qrcode {
+    width: initial !important;
+    height: initial !important;
+}
+
+.footer_content .legal-sign .sign-content .sign-content-qrcode img, .footer_content_back .legal-sign .sign-content .sign-content-qrcode img {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.footer_content .legal-sign .sign-content .sign-content-person div {
+    min-width: 0 !important;
+    width: auto;
+    margin: 0;
+    font-size: 1.8mm;
+}
+
+/* Page Fundo */
+
+.bar_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.title-exp {
+    display: flex;
+    justify-content: center;
+    border-bottom: 7px solid #FFCC07;
+}
+
+h2.title-exp {
+    font-family: sans-serif;
+    font-size: 17px;
+    color:#fff;
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.list_dpto {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    /* teste */
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.list_dpto > div {
+    padding: 10px 50px;
+    width: 15rem;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.list_dpto span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color:#FFCC07;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.list_dpto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list_dpto ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:#fff;
+    padding: 0;
+    margin: 0;
+}
+
+.list_dpto ul li p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:#fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+.list_dpto ul li strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: none;
+    color:#fff;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer departamento */
+.footer_content_dpto {
+    position: relative;
+    bottom: 0;
+    margin-top: 55.6%;
+    /* width: inherit; */
+    width: 80.6%;
+    text-align: center;
+    word-wrap: normal;
+    float: right;
+    background: white;
+    display: flex;
+}
+
+.footer_content_dpto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2mm;
+    color: black;
+    padding: 0 10px 0 10px;
+}
+
+.footer_content_dpto p strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2mm;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.footer_content_dpto .autenticidade{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: normal;
+    text-align: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.footer_content_dpto .autenticidade p{
+    font-size: 2.5mm;
+}
+
+.footer_content_dpto .mpto_info {
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: normal;
+    text-align: right;
+    width: 50%;
+    padding: 15px;
+}
+
+/*  Footer fundo */
+.footer_content_back {
+    text-align: center;
+    word-wrap: normal;
+    padding: 0;
+    background: white;
+    display: flex;
+    bottom: 0;
+}
+
+.footer_content_back p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2mm;
+    color: black;
+    padding: 0 10px 0 10px;
+}
+
+.footer_content_back p strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2mm;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.footer_content_back .autenticidade{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: normal;
+    text-align: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.footer_content_back .autenticidade p{
+    font-size: 2.5mm;
+}
+
+.footer_content_back .mpto_info {
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: normal;
+    text-align: right;
+    width: 50%;
+    padding: 20px;
+}
+
+.papper-header-system, .papper-header-instituation {
+    margin-left: 130px;
+    font-size: 1.65em !important;
+    color: #000 !important;
+    margin: 0;
+}
+
+.papper-model .papper .field .value {
+    padding-bottom: 1em;
+}
+/* .papper div:nth-child(1) {
+    visibility: hidden;
+    margin: -2ch;
+} */
+
+.footer_content_back .legal-sign {
+    margin: 0;
+    border-top: none;
+    padding: 15px;
+    background-color: transparent;
+    width: 50%;
+}
+
+.footer_content_back .legal-sign .sign-content {
+    min-width: 0;
+    margin-top: 0 !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+.footer_content_back .legal-sign .sign-content .sign-content-person {
+    border-left: none !important;
+    height: auto;
+    padding: 0 10px;
+}
+
+.footer_content_back .legal-sign .sign-content .sign-content-person div {
+    min-width: 0 !important;
+    width: auto;
+    margin: 0 0 5px 0;
+    font-size: 2mm;
+}
+
+.footer_content_back .legal-sign .sign-content .sign-content-qrcode {
+    width: 70px !important;
+    height: 70px !important;
+}

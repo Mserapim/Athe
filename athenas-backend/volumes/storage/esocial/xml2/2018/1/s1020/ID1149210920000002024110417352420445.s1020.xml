@@ -1,0 +1,28 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtTabLotacao/v_S_01_02_00">
+  <evtTabLotacao Id="ID1149210920000002024110417352420445">
+    <ideEvento>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <infoLotacao>
+      <inclusao>
+        <ideLotacao>
+          <codLotacao>14921092000157</codLotacao>
+          <iniValid>2018-01</iniValid>
+        </ideLotacao>
+        <dadosLotacao>
+          <tpLotacao>01</tpLotacao>
+          <fpasLotacao>
+            <fpas>582</fpas>
+            <codTercs>0000</codTercs>
+          </fpasLotacao>
+        </dadosLotacao>
+      </inclusao>
+    </infoLotacao>
+  </evtTabLotacao>
+</eSocial>

@@ -1,0 +1,45 @@
+
+.base {
+    background-color: #333;
+}
+
+div.header {
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 34pt;
+    color: white;
+}
+
+.header-secretary {
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 34pt;
+    color: #ff2105;
+}
+
+.left {
+    display: inline-block;
+    float: left;
+    padding-left: 25pt;
+    background-image: none;
+}
+
+.right {
+    float: right;
+    display: inline-block;
+    padding-right: 25pt;
+    background-image: none;
+}
+
+.lawsuit-connected {
+    background-color: #fdfde2;
+}
+
+.dashed {
+    text-decoration: line-through;
+}
+
+.papper-text p {
+    text-align: justify;
+    margin-bottom: 1.5em
+}

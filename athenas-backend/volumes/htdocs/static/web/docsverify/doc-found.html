@@ -1,0 +1,21 @@
+{% extends 'docsverify/index.html' %}
+
+{% block content %}
+<h1>Verificação</h1>
+
+<p class="warning success">
+    <span>
+        Documento authentico gerado no MPE-TO
+    </span>
+</p>
+<p class="warning">
+    <span>Data de criação:</span>
+    {{created|date:'d/m/Y'}}
+</p>
+{% if publico %}
+<p class="warning">
+    <span>Download:</span>
+    <a href="{{url}}"> {{filename}}</a>
+</p>
+{% endif %}
+{% endblock %}

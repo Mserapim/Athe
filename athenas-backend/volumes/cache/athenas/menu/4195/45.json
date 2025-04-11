@@ -1,0 +1,42 @@
+[
+  {
+    "id": "511",
+    "text": "Configura\u00e7\u00e3o",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDConfiguration')",
+    "uuid": "507a704382c34ec191efecf500a8228b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/507a704382c34ec191efecf500a8228b",
+    "icon_file": ""
+  },
+  {
+    "id": "587",
+    "text": "Item de configura\u00e7\u00e3o",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDItem')",
+    "uuid": "91997635f1144997b0bb86716b0462fc",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/91997635f1144997b0bb86716b0462fc",
+    "icon_file": ""
+  },
+  {
+    "id": "778",
+    "text": "Modelos de Email",
+    "cls": "tree-icon-athenas-0036 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDEmailTemplate')",
+    "uuid": "7947f654fb9843749472bbb81b4f0243",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7947f654fb9843749472bbb81b4f0243",
+    "icon_file": ""
+  },
+  {
+    "id": "776",
+    "text": "Configura\u00e7\u00e3o do Ponto",
+    "cls": "tree-icon-athenas-0036 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('STDConfigPoint')",
+    "uuid": "3cb76ecb0d3943b0b8cfac99372bd720",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/3cb76ecb0d3943b0b8cfac99372bd720",
+    "icon_file": ""
+  }
+]

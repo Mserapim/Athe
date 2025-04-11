@@ -1,0 +1,37 @@
+[
+  {
+    "id": "150",
+    "text": "Cadastros",
+    "cls": "tree-icon-athenas-0093 larger-font"
+  },
+  {
+    "id": "151",
+    "text": "Exposi\u00e7\u00e3o a Risco",
+    "cls": "tree-icon-athenas-0529 larger-font"
+  },
+  {
+    "id": "152",
+    "text": "Par\u00e2metros",
+    "cls": "tree-icon-athenas-0374 larger-font"
+  },
+  {
+    "id": "763",
+    "text": "CAT - Comunica\u00e7\u00e3o de Acidente de Trabalho",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTWorkAccidentCommunication')",
+    "uuid": "46440873dee54fc5a69c93953abd8b2d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/46440873dee54fc5a69c93953abd8b2d",
+    "icon_file": ""
+  },
+  {
+    "id": "771",
+    "text": "Monitora\u00e7\u00e3o de Sa\u00fade do Servidor",
+    "cls": "tree-icon-athenas-0408 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('SSTMonitoringHealthManage')",
+    "uuid": "6edfcb5a40cd4bb1a8b27d34e2b69134",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/6edfcb5a40cd4bb1a8b27d34e2b69134",
+    "icon_file": ""
+  }
+]

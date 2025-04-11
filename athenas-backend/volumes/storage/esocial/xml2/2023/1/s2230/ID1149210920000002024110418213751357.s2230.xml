@@ -1,0 +1,27 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtAfastTemp/v_S_01_02_00">
+  <evtAfastTemp Id="ID1149210920000002024110418213751357">
+    <ideEvento>
+      <indRetif>1</indRetif>
+      <tpAmb>2</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>0.1</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>14921092</nrInsc>
+    </ideEmpregador>
+    <ideVinculo>
+      <cpfTrab>30306408848</cpfTrab>
+      <matricula>1258</matricula>
+    </ideVinculo>
+    <infoAfastamento>
+      <iniAfastamento>
+        <dtIniAfast>2023-01-12</dtIniAfast>
+        <codMotAfast>05</codMotAfast>
+      </iniAfastamento>
+      <fimAfastamento>
+        <dtTermAfast>2023-02-25</dtTermAfast>
+      </fimAfastamento>
+    </infoAfastamento>
+  </evtAfastTemp>
+</eSocial>

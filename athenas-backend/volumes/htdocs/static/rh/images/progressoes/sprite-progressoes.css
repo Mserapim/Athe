@@ -1,0 +1,16 @@
+.icon-progressoes {
+    background: url('sprite-progressoes.png') no-repeat 0 0;
+}
+
+.icon-progressoes-status { background-position: 0px 0px !important }
+.icon-progressoes-status-busy { background-position: 0px -16px !important }
+.icon-progressoes-status-offline { background-position: 0px -32px !important }
+.icon-progressoes-status-away { background-position: 0px -48px !important }
+.icon-progressoes-status-blocked { background-position: 0px -64px !important }
+.icon-progressoes-update { background-position: 0px -80px !important }
+.icon-progressoes-server-stable { background-position: 0px -96px !important }
+.icon-progressoes-server-stage { background-position: 0px -112px !important }
+.icon-progressoes-stabilization { background-position: 0px -128px !important }
+.icon-progressoes-progression { background-position: 0px -144px !important }
+.icon-progressoes-config { background-position: 0px -160px !important }
+.icon-progressoes-filter { background-position: 0px -176px !important }

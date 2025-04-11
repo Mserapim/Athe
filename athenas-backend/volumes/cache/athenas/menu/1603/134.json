@@ -1,0 +1,52 @@
+[
+  {
+    "id": "783",
+    "text": "Confer\u00eancia de F\u00e9rias",
+    "cls": "tree-icon-athenas-0249 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAYOFFPaymentVacation')",
+    "uuid": "463eaa698134438da18aee8d918ba2d1",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/463eaa698134438da18aee8d918ba2d1",
+    "icon_file": ""
+  },
+  {
+    "id": "696",
+    "text": "Configura\u00e7\u00f5es",
+    "cls": "tree-icon-athenas-0222 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAYOFFConfiguration')",
+    "uuid": "408a3c1604254a8f80603f45642ffc8b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/408a3c1604254a8f80603f45642ffc8b",
+    "icon_file": ""
+  },
+  {
+    "id": "698",
+    "text": "Grupo",
+    "cls": "tree-icon-athenas-0245 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAYOFFGroupPeriod')",
+    "uuid": "17f248fb24c94d079a452e05f249010d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/17f248fb24c94d079a452e05f249010d",
+    "icon_file": ""
+  },
+  {
+    "id": "740",
+    "text": "Gerenciamento Admin - MPMT",
+    "cls": "tree-icon-athenas-0256 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAYOFFAcquisitionPeriodAdminMPMT')",
+    "uuid": "fc54bc50b4e74e3c8cb72587ed44ac4c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/fc54bc50b4e74e3c8cb72587ed44ac4c",
+    "icon_file": ""
+  },
+  {
+    "id": "784",
+    "text": "Confer\u00eancia de Venda de F\u00e9rias",
+    "cls": "tree-icon-athenas-0573 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAYOFFSellVacation')",
+    "uuid": "4c47636301504df681e184983a6db2f0",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/4c47636301504df681e184983a6db2f0",
+    "icon_file": ""
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "394",
+    "text": "Folha de Pagamento",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPayroll')",
+    "uuid": "19336d2a96ec44d58957331ac9c7becf",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/19336d2a96ec44d58957331ac9c7becf",
+    "icon_file": ""
+  },
+  {
+    "id": "356",
+    "text": "Bancos",
+    "cls": "tree-icon-athenas-0123 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHBank')",
+    "uuid": "c80f4420a7084739a4f0c6ed84b07583",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/c80f4420a7084739a4f0c6ed84b07583",
+    "icon_file": ""
+  },
+  {
+    "id": "358",
+    "text": "Bases Remunera\u00e7\u00e3o",
+    "cls": "tree-icon-athenas-0800 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPRemunerationBase')",
+    "uuid": "4a45ac010bfa4ca7a6cd42aeb0f73185",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/4a45ac010bfa4ca7a6cd42aeb0f73185",
+    "icon_file": ""
+  },
+  {
+    "id": "376",
+    "text": "Conv\u00eanios Banc\u00e1rios",
+    "cls": "tree-icon-athenas-0774 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPBankingConvenant')",
+    "uuid": "b9b8ab1a352748438c9139c8125d1539",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b9b8ab1a352748438c9139c8125d1539",
+    "icon_file": ""
+  },
+  {
+    "id": "387",
+    "text": "Fatores de Corre\u00e7\u00e3o Monet\u00e1ria",
+    "cls": "tree-icon-athenas-0162 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPCorrectionFactor')",
+    "uuid": "d273d7e10df34556ae2faaa4c25ee3ff",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d273d7e10df34556ae2faaa4c25ee3ff",
+    "icon_file": ""
+  },
+  {
+    "id": "388",
+    "text": "Fator FAP",
+    "cls": "tree-icon-athenas-0164 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPFapFactor')",
+    "uuid": "104e3ced1eeb4cdbb9b0ad94194b2541",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/104e3ced1eeb4cdbb9b0ad94194b2541",
+    "icon_file": ""
+  },
+  {
+    "id": "390",
+    "text": "Fator RAT",
+    "cls": "tree-icon-athenas-0164 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPRatFactor')",
+    "uuid": "260b6f732b084766a8fc50b50fd0e24b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/260b6f732b084766a8fc50b50fd0e24b",
+    "icon_file": ""
+  },
+  {
+    "id": "411",
+    "text": "Modelo de lan\u00e7amentos",
+    "cls": "tree-icon-athenas-0640 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPModelPayroll')",
+    "uuid": "e107453389fb4943a808ee553f3821a2",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/e107453389fb4943a808ee553f3821a2",
+    "icon_file": ""
+  },
+  {
+    "id": "416",
+    "text": "Natureza Rubricas - eSocial",
+    "cls": "tree-icon-athenas-0617 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPNatureEvent')",
+    "uuid": "2c6d884f5ad94964a528a0d019b27d79",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2c6d884f5ad94964a528a0d019b27d79",
+    "icon_file": ""
+  },
+  {
+    "id": "420",
+    "text": "Periodo",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPeriod')",
+    "uuid": "ab7ba3a4e23e4bfabaf0dcee48f91f82",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ab7ba3a4e23e4bfabaf0dcee48f91f82",
+    "icon_file": ""
+  },
+  {
+    "id": "435",
+    "text": "RRA - Folha dos Servidores",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPRRAEmployeePayrollType')",
+    "uuid": "1994cad247ba4f6da431e356a06426f4",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/1994cad247ba4f6da431e356a06426f4",
+    "icon_file": ""
+  },
+  {
+    "id": "444",
+    "text": "Tipo de Folha",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPayrollType')",
+    "uuid": "b24f6b778b8a407bb5d722125f2aeb8d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b24f6b778b8a407bb5d722125f2aeb8d",
+    "icon_file": ""
+  },
+  {
+    "id": "719",
+    "text": "Configura\u00e7\u00e3o do Rel. de Folha",
+    "cls": "tree-icon-athenas-0675 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ConfigReportRestful')",
+    "uuid": "776ebfac1d6e4830b5955d11bb44753d",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/776ebfac1d6e4830b5955d11bb44753d",
+    "icon_file": ""
+  },
+  {
+    "id": "378",
+    "text": "Dado Banc\u00e1rio - Pessoas",
+    "cls": "tree-icon- larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('RHBankingDataPerson')",
+    "uuid": "7e436d10d18d4796af0df244cab24572",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/7e436d10d18d4796af0df244cab24572",
+    "icon_file": ""
+  }
+]

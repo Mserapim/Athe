@@ -1,0 +1,80 @@
+/* Grid Container */
+.dashboard-uinfo-container {
+    display: grid;
+    grid-template-columns: 80px 180px;
+    padding: 5px;
+}
+
+/* Grid Item */
+.dashboard-uinfo-item {
+    padding: 3px;
+    font-size: 12px;
+}
+
+.dashboard-uinfo-label {
+    text-align: right;
+    font-weight: bold;
+}
+
+.dashboard-uinfo-value {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.dashboard-uinfo-photo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    cursor: pointer;
+}
+
+.dashboard-uinfo-photo div {
+    display: block;
+    border: 1px solid #ddd;
+    width: 85px;
+    height: 113px;
+    margin: 5px auto;
+}
+
+.dashboard-uinfo-multivalued {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.dashboard-uinfo-email {
+    word-wrap: normal;
+}
+
+.dashboard-emptybody-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-emptybody-text {
+    color: #aaa;
+    font-style: italic;
+    text-align: center;
+}
+
+.dashboard-emptybody-container span {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.dashboard-notif-container {
+    display: grid;
+    grid-template-columns: 25px auto;
+    font-size: 10pt;
+    padding: 5px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.dashboard-notif-item {
+    overflow: hidden;
+    padding: 2px;
+}
+
+.dashboard-notif-item span {
+    font-weight: bold;
+}

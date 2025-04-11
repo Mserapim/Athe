@@ -1,0 +1,14 @@
+#header
+{ background: #1974a8 url(../images/top.png) repeat-x 0 bottom; }
+
+#header h1 
+{ text-shadow: 1px 1px #043754; }
+
+.gradient
+{ background: #00598d url(../images/top.png) repeat-x 0 bottom; }
+
+.warnings
+{ background:#00598d; }
+
+.warnings p
+{ color:#fff; }

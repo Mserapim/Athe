@@ -1,0 +1,22 @@
+[
+  {
+    "id": "397",
+    "text": "G\u00eaneros - Folha Pagamento",
+    "cls": "tree-icon-athenas-0475 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPGenreEventTransparency')",
+    "uuid": "ce2cec0ea1f44e4d8cae2dd7dd428f1f",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/ce2cec0ea1f44e4d8cae2dd7dd428f1f",
+    "icon_file": ""
+  },
+  {
+    "id": "402",
+    "text": "Gestor de Grupos de Eventos",
+    "cls": "tree-icon-athenas-0691 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPGroupEvents')",
+    "uuid": "2166b5bd35af4c8d9480d4cd897b3341",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2166b5bd35af4c8d9480d4cd897b3341",
+    "icon_file": ""
+  }
+]

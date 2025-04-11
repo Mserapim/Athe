@@ -1,0 +1,22 @@
+[
+  {
+    "id": "721",
+    "text": "Consultas",
+    "cls": "tree-icon-athenas-0288 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('QRConsultation')",
+    "uuid": "751ae249409b41c8820543619b3213d8",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/751ae249409b41c8820543619b3213d8",
+    "icon_file": ""
+  },
+  {
+    "id": "722",
+    "text": "Tags",
+    "cls": "tree-icon-athenas-0039 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('QRTags')",
+    "uuid": "85631558f8a14e86aa8efef02cc192f2",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/85631558f8a14e86aa8efef02cc192f2",
+    "icon_file": ""
+  }
+]

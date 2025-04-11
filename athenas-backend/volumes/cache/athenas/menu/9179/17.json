@@ -1,0 +1,47 @@
+[
+  {
+    "id": "141",
+    "text": "Servi\u00e7os",
+    "cls": "tree-icon-athenas-0188 larger-font"
+  },
+  {
+    "id": "81",
+    "text": "Gestor de distribui\u00e7\u00e3o (Gen\u00e9rico)",
+    "cls": "tree-icon-athenas-0677 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('CDDistribution')",
+    "uuid": "6f2de9517b364166b6fcbb8ab288922c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/6f2de9517b364166b6fcbb8ab288922c",
+    "icon_file": ""
+  },
+  {
+    "id": "93",
+    "text": "Incidentes de Seguran\u00e7a",
+    "cls": "tree-icon-athenas-0049 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('ISecIncidentReport')",
+    "uuid": "de5170e51f51489f99d2ed4323275683",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/de5170e51f51489f99d2ed4323275683",
+    "icon_file": ""
+  },
+  {
+    "id": "690",
+    "text": "Gestor de Controle de Acesso",
+    "cls": "tree-icon-athenas-0279 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAControl')",
+    "uuid": "2554c1030339492bab8aa11be6f06cd0",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/2554c1030339492bab8aa11be6f06cd0",
+    "icon_file": ""
+  },
+  {
+    "id": "691",
+    "text": "Gestor de N\u00edvel de Acesso",
+    "cls": "tree-icon-athenas-0001 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('DAControlType')",
+    "uuid": "b5cde22b6b55410a82f43e9ab445b32b",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/b5cde22b6b55410a82f43e9ab445b32b",
+    "icon_file": ""
+  }
+]

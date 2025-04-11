@@ -1,0 +1,37 @@
+[
+  {
+    "id": "58",
+    "text": "Funcionalidades",
+    "cls": "tree-icon-athenas-0061 larger-font"
+  },
+  {
+    "id": "503",
+    "text": "Caixa de Entrada",
+    "cls": "folder",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EpadProcesso')",
+    "uuid": "0071c0e818584b45a644db2f7fdd902a",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/0071c0e818584b45a644db2f7fdd902a",
+    "icon_file": ""
+  },
+  {
+    "id": "520",
+    "text": "Consulta de Processos",
+    "cls": "tree-icon-athenas-0367 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EpadProcessoComum')",
+    "uuid": "23cac98ee6184df9803d84cd054acf2c",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/23cac98ee6184df9803d84cd054acf2c",
+    "icon_file": ""
+  },
+  {
+    "id": "554",
+    "text": "Gerenciador de Processos",
+    "cls": "tree-icon-athenas-0519 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('EpadProcessoAdmin')",
+    "uuid": "04bb21125cc84a679bcc3f62c181d416",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/04bb21125cc84a679bcc3f62c181d416",
+    "icon_file": ""
+  }
+]

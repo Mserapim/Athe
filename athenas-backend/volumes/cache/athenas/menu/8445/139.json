@@ -1,0 +1,32 @@
+[
+  {
+    "id": "725",
+    "text": "Valor L\u00edquido (ContraCheque x R\u00fabrica)",
+    "cls": "tree-icon-athenas-0014 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPConferenceLiquidValue')",
+    "uuid": "4aa74754bc47419c8deb45fbb4ace9ab",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/4aa74754bc47419c8deb45fbb4ace9ab",
+    "icon_file": ""
+  },
+  {
+    "id": "744",
+    "text": "Confer\u00eancia de Folha",
+    "cls": "tree-icon-athenas-0464 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPPayCheckConference')",
+    "uuid": "d75abecad3f84de0aa896de84e735e0e",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/d75abecad3f84de0aa896de84e735e0e",
+    "icon_file": ""
+  },
+  {
+    "id": "728",
+    "text": "Gerenciamento em Massa de Verbas",
+    "cls": "tree-icon-athenas-0062 larger-font",
+    "leaf": true,
+    "href": "javascript:toolkit.Application.createFormFor('GFPMassManagementFunds')",
+    "uuid": "753715a436ae4cf689f215bebdfdcfed",
+    "uuid_url": "//127.0.0.1:8000/athenas/#/open/753715a436ae4cf689f215bebdfdcfed",
+    "icon_file": ""
+  }
+]
