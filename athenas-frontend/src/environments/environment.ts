@@ -2,18 +2,40 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
     production: false,
-    environmentName: 'Desenvolvimento',
-    url_base: 'https://teste.mpmt.mp.br/',
-    brokerNotificationURL: 'wss://teste.mpmt.mp.br/hermes-api/socket/websocket',
-    api_endpoint: 'https://local.mpmt.mp.br:4200/athenas/api/v2',
-    version_app: '1.0',
-    notificacoesURL: 'https://teste.mpmt.mp.br/hermes/#/notificacao',
-    name_app: 'Suite Athenas',
-    remote: '172.16.20.91',
+    environmentName: 'local',
+    url_base: 'http://localhost:4200/',
+    brokerNotificationURL: 'ws://localhost:8080/socket/websocket',
+    api_endpoint: 'http://localhost:8080/athenas/api/v2',
+    notificacoesURL: 'http://localhost:8080/hermes/#/notificacao',
+    version_app: require('../../package.json').version,
+    name_app: 'Suite Athenas (Local)',
     local: true,
-};
+    remote: undefined
+  };
+
+
+
+
+// export const environment = {
+//     production: false,
+//     environmentName: 'Desenvolvimento',
+//     url_base: 'https://teste.mpmt.mp.br/',
+//     brokerNotificationURL: 'wss://teste.mpmt.mp.br/hermes-api/socket/websocket',
+//     api_endpoint: 'https://local.mpmt.mp.br:4200/athenas/api/v2',
+//     version_app: '1.0',
+//     notificacoesURL: 'https://teste.mpmt.mp.br/hermes/#/notificacao',
+//     name_app: 'Suite Athenas',
+//     remote: '172.16.20.91',
+//     local: true,
+// };
+
+
+
+
+
 
 // export const environment = {
 //     production: false,

@@ -17,10 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "suite-athenas",
-              "browser":""
-            },
+            "outputPath": "dist/suite-athenas",
             "aot": true,
             "optimization": false,
             "progress": false,
@@ -66,7 +63,6 @@
               "src/@fuse/styles/main.scss",
               "src/styles/styles.scss",
               "src/styles/tailwind.scss",
-            //   "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css"
             ],
             "scripts": [],
@@ -77,8 +73,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "3mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "20mb",
+                  "maximumError": "25mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -112,13 +108,26 @@
               ],
               "optimization": false,
               "extractLicenses": true,
-              "baseHref": "https://athenas.mpmt.mp.br/suite-athenas/"
+              "baseHref": "/"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "local": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -135,6 +144,9 @@
             },
             "development": {
               "buildTarget": "fuse:build:development"
+            },
+            "local": {
+              "buildTarget": "fuse:build:local"
             }
           },
           "defaultConfiguration": "development"
@@ -202,3 +214,4 @@
     "analytics": false
   }
 }
+

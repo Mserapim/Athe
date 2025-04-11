@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   web:
-    image: ${IMGHUB_REPO}/nginx
-    command: configure start
+    image: nginx:1.25
+    entrypoint: ["nginx", "-g", "daemon off;"]
     stop_signal: SIGINT
     deploy:
       resources:
@@ -19,8 +19,8 @@ services:
       - ${PWD}/volumes/logs:/app/var/log
   worker:
     stop_signal: SIGINT
-    image: ${IMGHUB_REPO}/athenas:unstable
-    command: configure collectstatic jsbuild migrate register start
+    image:  athenas:unstable
+    #command: configure collectstatic jsbuild migrate register start
     deploy:
       replicas: 1
       resources:
@@ -74,41 +74,41 @@ services:
       - ${PWD}/volumes/htdocs:/app/var/www
       - ${PWD}/volumes/logs:/app/var/log
       - ${PWD}/volumes/cache:/app/var/cache
-    secrets:
-      - bd_athenas
-      - crowd_username
-      - crowd_password
-      - crowd_token
-      - ldap_admin_user_dn
-      - ldap_admin_passwd
-      - jasper_server_username
-      - jasper_server_password
-      - database_plantoes_user
-      - database_plantoes_password
-      - database_sisdias_user
-      - database_sisdias_password
-      - database_folhaponto_user
-      - database_folhaponto_password
-      - database_siap_user
-      - database_siap_password
-      - hermes_token
-      - hermes_token_relatorios
-      - hermes_token_email_pessoal
-      - hermes_token_processamentos
-      - crowd_app_passwd
-      - token_api_nomeacao_residentes
-      - jwt_secret_key
-      - token_api_daa_transp_dist
-      - token_api_plantoes
-      - token_api_sisdias
+    # secrets:
+    #   - bd_athenas
+    #   - crowd_username
+    #   - crowd_password
+    #   - crowd_token
+    #   - ldap_admin_user_dn
+    #   - ldap_admin_passwd
+    #   - jasper_server_username
+    #   - jasper_server_password
+    #   - database_plantoes_user
+    #   - database_plantoes_password
+    #   - database_sisdias_user
+    #   - database_sisdias_password
+    #   - database_folhaponto_user
+    #   - database_folhaponto_password
+    #   - database_siap_user
+    #   - database_siap_password
+    #   - hermes_token
+    #   - hermes_token_relatorios
+    #   - hermes_token_email_pessoal
+    #   - hermes_token_processamentos
+    #   - crowd_app_passwd
+    #   - token_api_nomeacao_residentes
+    #   - jwt_secret_key
+    #   - token_api_daa_transp_dist
+    #   - token_api_plantoes
+    #   - token_api_sisdias
   daphne:
     stop_signal: SIGINT
-    image: ${IMGHUB_REPO}/athenas:unstable
+    image: athenas:unstable
     deploy:
       resources:
         limits:
           memory: 1G
-    command: configure daphne
+    #command: configure daphne
     environment:
       DEV_MODE: 1
       PYTHONPATH: /app/root
@@ -149,41 +149,41 @@ services:
       - ${PWD}/volumes/logs:/app/var/log
       - ${PWD}/volumes/storage:/app/var/storage
       - ${PWD}/volumes/cache:/app/var/cache
-    secrets:
-      - bd_athenas
-      - crowd_username
-      - crowd_password
-      - crowd_token
-      - ldap_admin_user_dn
-      - ldap_admin_passwd
-      - jasper_server_username
-      - jasper_server_password
-      - database_plantoes_user
-      - database_plantoes_password
-      - database_sisdias_user
-      - database_sisdias_password
-      - database_folhaponto_user
-      - database_folhaponto_password
-      - database_siap_user
-      - database_siap_password
-      - hermes_token
-      - hermes_token_relatorios
-      - hermes_token_email_pessoal
-      - hermes_token_processamentos
-      - crowd_app_passwd
-      - token_api_nomeacao_residentes
-      - jwt_secret_key
-      - token_api_daa_transp_dist
-      - token_api_plantoes
-      - token_api_sisdias
+    # secrets:
+    #   - bd_athenas
+    #   - crowd_username
+    #   - crowd_password
+    #   - crowd_token
+    #   - ldap_admin_user_dn
+    #   - ldap_admin_passwd
+    #   - jasper_server_username
+    #   - jasper_server_password
+    #   - database_plantoes_user
+    #   - database_plantoes_password
+    #   - database_sisdias_user
+    #   - database_sisdias_password
+    #   - database_folhaponto_user
+    #   - database_folhaponto_password
+    #   - database_siap_user
+    #   - database_siap_password
+    #   - hermes_token
+    #   - hermes_token_relatorios
+    #   - hermes_token_email_pessoal
+    #   - hermes_token_processamentos
+    #   - crowd_app_passwd
+    #   - token_api_nomeacao_residentes
+    #   - jwt_secret_key
+    #   - token_api_daa_transp_dist
+    #   - token_api_plantoes
+    #   - token_api_sisdias
   celery:
     stop_signal: SIGINT
-    image: ${IMGHUB_REPO}/athenas:unstable
+    image: athenas:unstable
     deploy:
       resources:
         limits:
           memory: 2G
-    command: configure celery
+    #command: configure celery
     environment:
       PYTHONPATH: /app/root
       ATHENAS_CONFIG_FILE: /etc/athenas.conf
@@ -223,41 +223,41 @@ services:
       - ${PWD}/volumes/htdocs:/app/var/www
       - ${PWD}/volumes/logs:/app/var/log
       - ${PWD}/volumes/cache:/app/var/cache
-    secrets:
-      - bd_athenas
-      - crowd_username
-      - crowd_password
-      - crowd_token
-      - ldap_admin_user_dn
-      - ldap_admin_passwd
-      - jasper_server_username
-      - jasper_server_password
-      - database_plantoes_user
-      - database_plantoes_password
-      - database_sisdias_user
-      - database_sisdias_password
-      - database_folhaponto_user
-      - database_folhaponto_password
-      - database_siap_user
-      - database_siap_password
-      - hermes_token
-      - hermes_token_relatorios
-      - hermes_token_email_pessoal
-      - hermes_token_processamentos
-      - crowd_app_passwd
-      - token_api_nomeacao_residentes
-      - jwt_secret_key
-      - token_api_daa_transp_dist
-      - token_api_plantoes
-      - token_api_sisdias
+    # secrets:
+    #   - bd_athenas
+    #   - crowd_username
+    #   - crowd_password
+    #   - crowd_token
+    #   - ldap_admin_user_dn
+    #   - ldap_admin_passwd
+    #   - jasper_server_username
+    #   - jasper_server_password
+    #   - database_plantoes_user
+    #   - database_plantoes_password
+    #   - database_sisdias_user
+    #   - database_sisdias_password
+    #   - database_folhaponto_user
+    #   - database_folhaponto_password
+    #   - database_siap_user
+    #   - database_siap_password
+    #   - hermes_token
+    #   - hermes_token_relatorios
+    #   - hermes_token_email_pessoal
+    #   - hermes_token_processamentos
+    #   - crowd_app_passwd
+    #   - token_api_nomeacao_residentes
+    #   - jwt_secret_key
+    #   - token_api_daa_transp_dist
+    #   - token_api_plantoes
+    #   - token_api_sisdias
   flower:
     stop_signal: SIGINT
-    image: ${IMGHUB_REPO}/athenas:unstable
+    image: athenas:unstable
     deploy:
       resources:
         limits:
           memory: 512M
-    command: configure flower
+    #command: configure flower
     ports:
       - 8001:8001
     environment:
@@ -298,41 +298,41 @@ services:
       - ${PWD}/volumes/logs:/app/var/log
       - ${PWD}/volumes/storage:/app/var/storage
       - ${PWD}/volumes/cache:/app/var/cache
-    secrets:
-      - bd_athenas
-      - crowd_username
-      - crowd_password
-      - crowd_token
-      - ldap_admin_user_dn
-      - ldap_admin_passwd
-      - jasper_server_username
-      - jasper_server_password
-      - database_plantoes_user
-      - database_plantoes_password
-      - database_sisdias_user
-      - database_sisdias_password
-      - database_folhaponto_user
-      - database_folhaponto_password
-      - database_siap_user
-      - database_siap_password
-      - hermes_token
-      - hermes_token_relatorios
-      - hermes_token_email_pessoal
-      - hermes_token_processamentos
-      - crowd_app_passwd
-      - token_api_nomeacao_residentes
-      - jwt_secret_key
-      - token_api_daa_transp_dist
-      - token_api_plantoes
-      - token_api_sisdias
+    # secrets:
+    #   - bd_athenas
+    #   - crowd_username
+    #   - crowd_password
+    #   - crowd_token
+    #   - ldap_admin_user_dn
+    #   - ldap_admin_passwd
+    #   - jasper_server_username
+    #   - jasper_server_password
+    #   - database_plantoes_user
+    #   - database_plantoes_password
+    #   - database_sisdias_user
+    #   - database_sisdias_password
+    #   - database_folhaponto_user
+    #   - database_folhaponto_password
+    #   - database_siap_user
+    #   - database_siap_password
+    #   - hermes_token
+    #   - hermes_token_relatorios
+    #   - hermes_token_email_pessoal
+    #   - hermes_token_processamentos
+    #   - crowd_app_passwd
+    #   - token_api_nomeacao_residentes
+    #   - jwt_secret_key
+    #   - token_api_daa_transp_dist
+    #   - token_api_plantoes
+    #   - token_api_sisdias
   minifier:
     stop_signal: SIGINT
-    image: ${IMGHUB_REPO}/athenas:unstable
+    image: athenas:unstable
     deploy:
       resources:
         limits:
           memory: 512M
-    command: configure minifier
+    #command: configure minifier
     environment:
       PYTHONPATH: /app/root
       ATHENAS_CONFIG_FILE: /etc/athenas.conf
@@ -372,33 +372,33 @@ services:
       - ${PWD}/volumes/htdocs:/app/var/www
       - ${PWD}/volumes/logs:/app/var/log
       - ${PWD}/volumes/cache:/app/var/cache
-    secrets:
-      - bd_athenas
-      - crowd_username
-      - crowd_password
-      - crowd_token
-      - ldap_admin_user_dn
-      - ldap_admin_passwd
-      - jasper_server_username
-      - jasper_server_password
-      - database_plantoes_user
-      - database_plantoes_password
-      - database_sisdias_user
-      - database_sisdias_password
-      - database_folhaponto_user
-      - database_folhaponto_password
-      - database_siap_user
-      - database_siap_password
-      - hermes_token
-      - hermes_token_relatorios
-      - hermes_token_email_pessoal
-      - hermes_token_processamentos
-      - crowd_app_passwd
-      - token_api_nomeacao_residentes
-      - jwt_secret_key
-      - token_api_daa_transp_dist
-      - token_api_plantoes
-      - token_api_sisdias
+    # secrets:
+    #   - bd_athenas
+    #   - crowd_username
+    #   - crowd_password
+    #   - crowd_token
+    #   - ldap_admin_user_dn
+    #   - ldap_admin_passwd
+    #   - jasper_server_username
+    #   - jasper_server_password
+    #   - database_plantoes_user
+    #   - database_plantoes_password
+    #   - database_sisdias_user
+    #   - database_sisdias_password
+    #   - database_folhaponto_user
+    #   - database_folhaponto_password
+    #   - database_siap_user
+    #   - database_siap_password
+    #   - hermes_token
+    #   - hermes_token_relatorios
+    #   - hermes_token_email_pessoal
+    #   - hermes_token_processamentos
+    #   - crowd_app_passwd
+    #   - token_api_nomeacao_residentes
+    #   - jwt_secret_key
+    #   - token_api_daa_transp_dist
+    #   - token_api_plantoes
+    #   - token_api_sisdias
   mongo:
     image: mongo:5.0.9
     deploy:
@@ -410,7 +410,7 @@ services:
     ports:
       - 27018:27017
   rabbitmq:
-    image: registry.mpmt.mp.br/rabbitmq:3-management
+    image: rabbitmq:3-management
     deploy:
       resources:
         limits:
@@ -420,7 +420,7 @@ services:
     volumes:
           - ${PWD}/volumes/etc/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
   redis:
-    image: registry.mpmt.mp.br/redis:5-alpine
+    image: redis:5-alpine
     command: redis-server /conf/redis.conf
     deploy:
       resources:
@@ -434,7 +434,7 @@ services:
 
 configs:
   athenas_redis:
-    file: ${PWD}/redis.conf
+    file: ./redis.conf
 
 secrets:
   bd_athenas:
