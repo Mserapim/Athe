@@ -1,0 +1,86 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "registerpoint",
+    "name": "TIPO_DIA",
+    "label": "Normal",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "registerpoint.TIPO_DIA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "registerpoint",
+    "name": "TIPO_DIA",
+    "label": "Justificado",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "registerpoint.TIPO_DIA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "registerpoint",
+    "name": "TIPO_DIA",
+    "label": "Falta",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "registerpoint.TIPO_DIA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "registerpoint",
+    "name": "TIPO_DIA",
+    "label": "Feriados e Pontos Facultativos",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "registerpoint.TIPO_DIA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "registerpoint",
+    "name": "TIPO_DIA",
+    "label": "Licenças e Afastamentos",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "registerpoint.TIPO_DIA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "registerpoint",
+    "name": "TIPO_DIA",
+    "label": "DSR",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "registerpoint.TIPO_DIA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

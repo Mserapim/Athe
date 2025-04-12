@@ -1,0 +1,51 @@
+{% extends 'base/templates/template.html' %}
+
+{% block title %}- Verificação de Autenticidade de Documentos{% endblock %}
+
+{% block css %}
+	<link href="/athenas/static/web/docsverify/css/styles.css" rel="stylesheet" media="screen" />
+{% endblock %}
+
+{% block js %}
+	<script type="text/javascript" src="/athenas/static/web/docsverify/js/scripts.js"></script>
+{% endblock %}
+
+{% block section %}DOCUMENTOS ELETRÔNICOS{% endblock %}
+
+{% block menu %}
+<ul>
+    <li>
+        <a href="/{{context}}/docsverify/">Inicial</a>
+    </li>
+    <li>
+        <a href="/{{context}}/docsverify/verify/">Verificar</a>
+    </li>
+
+	<li>
+		<a href="https://mpto.mp.br/ouvidoria/search-manifestation/">Protocolo</a>
+	</li>
+
+</ul>
+{% endblock %}
+
+{% block content %}
+	<h1>Inicial</h1>
+    <h2><strong>Bem Vindo!</strong></h2>
+    <p>Acompanhamento de Documentos Protocolados e Verificador de Documentos Eletrônicos do Ministério Público do Estado do Tocantins.</p>
+
+    <p>Através deste serviço você poderá acompanhar o andamento dos documentos protocolados no Ministério Público do Estado do Tocantins, bem como verificar se a cópia recebida de um determinado documento, é de um documento emitido por este Órgão.</p>
+
+    <h2><strong>Onde e Como Acessar?</strong></h2>
+    <ol>
+        <li>Para acompanhar o DOCUMENTO PROTOCOLADO, clique na opção "PROTOCOLO", localizado no menu esquerdo, escolha se pesquisará pelo número do protocolo ou chancela e digite o respectivo número, clicando após em enviar.</li>
+        <li>Para fazer a VERIFICAÇÃO DE DOCUMENTO, clique na opção "VERIFICAR", localizada no menu esquerdo, e digite o código do documento que se encontra no rodapé do mesmo. Este código é composto por quatro grupo de oito caracteres.</li>
+    </ol>
+
+    <p>No protocolo será exibido o andamento do referido documento e sua localização atual.</p>
+    <p>Na verificação de documento, o documento encontrado, poderá ser baixado para comparação com o que você tem em mãos (os mesmos deverão ser idênticos), comprovando assim o seu conteúdo e a sua autenticidade.</p>
+    <!-- <p>Bem vindo ao Verificador de Documentos Eletrônicos do Ministério Público do Estado do Tocantins.</p>
+    <p>Através deste serviço você poderá verificar se um determinado documento foi realmente emitido por este Órgão.</p>
+    <p>Para fazer a verificação do documento, clique na opção verificar, localizada no menu esquerdo.</p>
+    <p>O documento encontrado na verificação poderá ser baixado para comparação com o que você tem em mãos
+    (os mesmos deverão ser idênticos), comprovando assim o seu conteúdo e a sua autenticidade.</p> -->
+{% endblock %}

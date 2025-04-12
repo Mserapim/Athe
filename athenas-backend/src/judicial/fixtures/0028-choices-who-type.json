@@ -1,0 +1,100 @@
+[
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 7,
+        "label": "(INTERNA)",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "7",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 1,
+        "description": ""
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 1,
+        "label": "Interessado",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "1",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 0,
+        "description": ""
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 2,
+        "label": "Apontado",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "2",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 0,
+        "description": ""
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 3,
+        "label": "Testemunha",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "3",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 0,
+        "description": ""
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 4,
+        "label": "Órgão de Execução",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "4",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 0,
+        "description": ""
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 5,
+        "label": "Órgão Público",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "5",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 0,
+        "description": ""
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "name": "WHO_TYPE",
+        "value": 6,
+        "label": "Empresa Privada",
+        "cache_path": "judicial.WHO_TYPE",
+        "cvalue": "6",
+        "app_label": "judicial",
+        "active": true,
+        "order_weight": 0,
+        "description": ""
+    },
+    "model": "standard.choice"
+}
+]

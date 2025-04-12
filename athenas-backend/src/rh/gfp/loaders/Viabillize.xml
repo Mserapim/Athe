@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ArquivoViabillize xmlns:Viabillize="http://www.viabillize.com.br/XMLSchema/Viabillize.xsd">
+  <Versao>1.0</Versao>
+  <Consignante>GOVERNO DO ESTADO DA GUANABARA</Consignante>
+  <Cnpj>00.000.000/0000-00</Cnpj>
+  <Folha_Descricao>NORMAL</Folha_Descricao>
+  <Folha_Referencia>012017</Folha_Referencia>
+  <Responsavel>
+    <Nome>Nome do Responsável pela Folha de Pagamento</Nome>
+    <Fone>(00) 0000-0000</Fone>
+    <Email>emailexemplo@email.com.br</Email>
+  </Responsavel>
+  <IntegracaoFopag>
+    <Sistema>Athenas</Sistema>
+    <Desenvolvedor>Rayson Romulo Silva</Desenvolvedor>
+    <Fone>(63) 3216-7564</Fone>
+    <Email>raysonsilva@mpto.mp.br</Email>
+    <ControleDeParcelas>true</ControleDeParcelas>
+    <NomeArquivoInclusao>@MES@ANO_EnvioInclusoes_NORMAL.txt</NomeArquivoInclusao>
+    <CabecarioArquivoInclusao>@ANO;@MES;NORMAL;</CabecarioArquivoInclusao>
+    <RegistroInclusao>I;NORMAL;@ANO;@MES;@MATRICULA;@NOME;@RUBRICA_CODIGO;@PRAZO;@VALOR_PARCELA_DECIMAL;@NUMERO_PARCELA;@ALIQUOTA;;@CODIGOADF;@HEMENSALIDADE</RegistroInclusao>
+    <NomeArquivoLiquidacao>@MES@ANO_EnvioLiquidacoes_NORMAL.txt</NomeArquivoLiquidacao>
+    <CabecarioArquivoLiquidacao>@ANO;@MES;NORMAL;</CabecarioArquivoLiquidacao>
+    <RegistroLiquidacao>E;NORMAL;@ANO;@MES;@MATRICULA;@NOME;@RUBRICA_CODIGO;@PRAZO;@VALOR_PARCELA_DECIMAL;@NUMERO_PARCELA;@ALIQUOTA;;@CODIGOADF;@HEMENSALIDADE</RegistroLiquidacao>
+    <InfoPrazoMensalidade>1</InfoPrazoMensalidade>
+  </IntegracaoFopag>
+  <IntegracaoWeb>
+    <DominioPortal>mpto.mp.br</DominioPortal>
+    <ChaveHash>WAIUD2J#%X87262ASBTOQTES@@2422</ChaveHash>
+  </IntegracaoWeb>
+  <TiposDeMargens>
+  </TiposDeMargens>
+  <LoteDeConsignados>
+    <LoteConsignados>
+      <NumeroLote>1</NumeroLote>
+      <NomeArquivo>Consignados_1.xml</NomeArquivo>
+      <Consignados />
+    </LoteConsignados>
+    <LoteConsignados>
+      <NumeroLote>2</NumeroLote>
+      <NomeArquivo>Consignados_2.xml</NomeArquivo>
+      <Consignados />
+    </LoteConsignados>
+    <LoteConsignados>
+      <NumeroLote>3</NumeroLote>
+      <NomeArquivo>Consignados_3.xml</NomeArquivo>
+      <Consignados />
+    </LoteConsignados>
+    <LoteConsignados>
+      <NumeroLote>4</NumeroLote>
+      <NomeArquivo>Consignados_4.xml</NomeArquivo>
+      <Consignados />
+    </LoteConsignados>
+    <LoteConsignados>
+      <NumeroLote>5</NumeroLote>
+      <NomeArquivo>Consignados_5.xml</NomeArquivo>
+      <Consignados />
+    </LoteConsignados>
+  </LoteDeConsignados>
+</ArquivoViabillize>

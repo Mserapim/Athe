@@ -1,0 +1,677 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 3990,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.01.001",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3991,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.02.001",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3992,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.03.001",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3993,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.04.001",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3994,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.05.001",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3995,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.06.001",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3996,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.07.001",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3997,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.08.001",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3998,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.09.001",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3999,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.10.001",
+        "value": 10,
+        "cvalue": "10",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4000,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.11.001",
+        "value": 11,
+        "cvalue": "11",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4001,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.01.12.001",
+        "value": 12,
+        "cvalue": "12",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4002,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.02.01.001",
+        "value": 13,
+        "cvalue": "13",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4003,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.02.02.001",
+        "value": 14,
+        "cvalue": "14",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4004,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.02.03.001",
+        "value": 15,
+        "cvalue": "15",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4005,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.02.04.001",
+        "value": 16,
+        "cvalue": "16",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4006,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.02.05.001",
+        "value": 17,
+        "cvalue": "17",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4007,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.02.06.001",
+        "value": 18,
+        "cvalue": "18",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4008,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.01.001",
+        "value": 19,
+        "cvalue": "19",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4009,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.02.001",
+        "value": 20,
+        "cvalue": "20",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4010,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.03.001",
+        "value": 21,
+        "cvalue": "21",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4011,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.04.001",
+        "value": 22,
+        "cvalue": "22",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4012,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.05.001",
+        "value": 23,
+        "cvalue": "23",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4013,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.06.001",
+        "value": 24,
+        "cvalue": "24",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4014,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.07.001",
+        "value": 25,
+        "cvalue": "25",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4015,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.08.001",
+        "value": 26,
+        "cvalue": "26",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4016,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.03.09.001",
+        "value": 27,
+        "cvalue": "27",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4017,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.04.01.001",
+        "value": 28,
+        "cvalue": "28",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4018,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.04.01.002",
+        "value": 29,
+        "cvalue": "29",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4019,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.05.01.001",
+        "value": 30,
+        "cvalue": "30",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4020,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.05.01.002",
+        "value": 31,
+        "cvalue": "31",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4021,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.05.01.003",
+        "value": 32,
+        "cvalue": "32",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4022,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.05.02.001",
+        "value": 33,
+        "cvalue": "33",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4023,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.06.01.001",
+        "value": 34,
+        "cvalue": "34",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4024,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.06.02.001",
+        "value": 35,
+        "cvalue": "35",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4025,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.06.02.002",
+        "value": 36,
+        "cvalue": "36",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4026,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "1.07.01.001",
+        "value": 37,
+        "cvalue": "37",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4027,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.01.01.001",
+        "value": 38,
+        "cvalue": "38",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4028,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.01.02.001",
+        "value": 39,
+        "cvalue": "39",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4029,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.01.03.001",
+        "value": 40,
+        "cvalue": "40",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4030,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.01.04.001",
+        "value": 41,
+        "cvalue": "41",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4031,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.02.01.001",
+        "value": 42,
+        "cvalue": "42",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4032,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.02.02.001",
+        "value": 43,
+        "cvalue": "43",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4033,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.02.03.001",
+        "value": 44,
+        "cvalue": "44",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4034,
+    "fields": {
+        "app_label": "gpf",
+        "name": "CONTA_CONTABIL",
+        "label": "2.03.01.001",
+        "value": 45,
+        "cvalue": "45",
+        "cache_path": "gpf.CONTA_CONTABIL",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

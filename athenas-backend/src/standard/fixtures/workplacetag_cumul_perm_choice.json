@@ -1,0 +1,17 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4114,
+    "fields": {
+        "app_label": "rh",
+        "name": "WORKPLACE_TAG",
+        "label": "EXERCICIO CUMULATIVO - PERMANENTE",
+        "value": 32,
+        "cvalue": "32",
+        "cache_path": "rh.WORKPLACE_TAG",
+        "description": "00800",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

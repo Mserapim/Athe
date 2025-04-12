@@ -1,0 +1,169 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Portrait"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto 
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto; 
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 2px solid #000000;
+        text-align: left;
+        font-size: 9pt;
+        padding: 2px;
+      }
+
+      /* table td div {height:12px;overflow:hidden;} */
+
+      table tr th {
+        font-weight: 200
+      }
+      h2 {
+        font-size: 14px;
+        text-align: center;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
+
+      .col-1 {
+        width: 400px;
+      }
+      .col-2 {
+        text-align: center;
+        width: 300px;
+      }
+      .col-3 {
+        text-align: center;
+        font-size: 8pt;
+      }
+
+      .color-1 {
+        background-color: #c4c0c0;
+      }
+      .color-2 {
+        background-color: #9eeef8;
+        text-align: center;
+      }
+      .color-3 {
+        background-color: #eff89e;
+        text-align: right;
+        padding-right: 36px;
+        font-size: 9pt;
+      }
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'portrait/header/header.html' %}
+    
+    
+    <section style="margin-top:50px;margin-bottom:20px;clear: both;">
+          <div>
+            {% for item in data %}
+            <h2>
+            
+                <div><b>{% if item.nucleo %}{{ item.nucleo }} {% endif %}</b></div>
+              
+            </h2>
+              <table>
+                <tbody>
+                    <tr>
+                      <td class="color-1" colspan="7">
+                        <div><b>{{ item.titulo }}</b></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="color-1" colspan="7">
+                        <div><b>{{ item.subtitulo }}</b></div>
+                      </td>
+                    </tr>
+                    {% for group in item.subdata  %}
+                      <tr>
+                        <td class="col-1 color-2">
+                          <div><b>{{ group.type_by_possession }}</b></div>
+                        </td>
+                        <td class="color-2">
+                          <div><b>CARGO</b></div>
+                        </td>
+                        <td class="color-2">
+                          <div><b>DATA DE ADMISSÃO</b></div>
+                        </td>
+                        <td class="color-2">
+                          <div><b>INICIO NA LOTAÇÃO</b></div>
+                        </td>
+                        <td class="color-2">
+                          <div><b>OBSERVAÇÃO</b></div>
+                        </td>
+                        <td class="color-2">
+                          <div><b>DATA INICIO DA OBS.</b></div>
+                        </td>
+                        <td class="color-2">
+                          <div><b>DATA FIM DA OBS.</b></div>
+                        </td>
+                      </tr>
+                      {% for value in group.contents %}
+                        <tr>
+                          <td>
+                            <div>{{ value.texto_servidor }}</div>
+                          </td>
+                          <td class="col-2">
+                            <div>{{ value.cargo }}</div>
+                          </td>
+                          <td class="col-3">
+                            <div>{{ value.dt_admissao }}</div>
+                          </td>
+                          <td class="col-3">
+                            <div>{{ value.dt_ini_lotacao }}</div>
+                          </td>
+                          <td class="col-2">
+                            {% for observation in value.observations %}
+                            <div>{{ observation.observation }}</div> <br>
+                            {% endfor %}
+                          </td>
+                          <td class="col-3">
+                            {% for observation in value.observations %}
+                            <div>{{ observation.dt_inicio }}</div><br>
+                            {% endfor %}
+                          </td>
+                          <td class="col-3">
+                            {% for observation in value.observations %}
+                            <div>{{ observation.dt_fim }}</div><br>
+                            {% endfor %}
+                          </td>
+                          
+                        </tr>
+                      {% endfor %}
+                    {% endfor %}
+                  <tr>
+                    <td class="color-3" colspan="7">
+                      <div><b>{{ item.total }}</b></div>
+                    </td>
+                  </tr>
+                </tbody> 
+              </table>    
+            {% endfor  %}
+          </div>
+    </section> 
+  </body>
+</html>

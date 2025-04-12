@@ -1,0 +1,58 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "engine",
+    "name": "TIPO_PROCESSAMENTO_TASK",
+    "label": "Padrão",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "engine.TIPO_PROCESSAMENTO_TASK",
+    "description": "Tipo  de processamento padrão",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "engine",
+    "name": "TIPO_PROCESSAMENTO_TASK",
+    "label": "Relatórios",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "engine.TIPO_PROCESSAMENTO_TASK",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "engine",
+    "name": "TIPO_PROCESSAMENTO_TASK",
+    "label": "Email pessoal",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "engine.TIPO_PROCESSAMENTO_TASK",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "engine",
+    "name": "TIPO_PROCESSAMENTO_TASK",
+    "label": "Esocial",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "engine.TIPO_PROCESSAMENTO_TASK",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

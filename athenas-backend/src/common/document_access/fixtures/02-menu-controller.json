@@ -1,0 +1,30 @@
+[
+{
+    "model": "engine.controller",
+    "fields": {
+        "icon": "athenas-0279.png",
+        "title": "Gestor de Controle de Acesso",
+        "controller": "DAControl",
+        "application": [
+            "82eeef8821b246b6b7948dad3a446532"
+        ],
+        "active": true,
+        "module": "common.document_access",
+        "uuid": "2554c1030339492bab8aa11be6f06cd0"
+    }
+},
+{
+    "model": "engine.controller",
+    "fields": {
+        "icon": "athenas-0001.png",
+        "title": "Gestor de Nível de Acesso",
+        "controller": "DAControlType",
+        "application": [
+            "82eeef8821b246b6b7948dad3a446532"
+        ],
+        "active": true,
+        "module": "common.document_access",
+        "uuid": "b5cde22b6b55410a82f43e9ab445b32b"
+    }
+}
+]

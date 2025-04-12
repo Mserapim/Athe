@@ -1,0 +1,105 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">
+    REQUERIMENTO SOLICITAÇÃO<br/>DE EMISSÃO DE CÉDULA DE IDENTIDADE FUNCIONAL
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th" colspan="3">Nome do(a) interessado(a):</th>
+        <th class="rf-th" colspan="1">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td" colspan="3">{{ name }}</td>
+        <td class="rf-td" colspan="1">{{ number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="4">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="4">{{ job_position }}</td></tr>
+    <tr>
+        <th class="rf-th">Data de nascimento:</th>
+        <th class="rf-th">Data exercício:</th>
+        <th class="rf-th">Sangue:</th>
+        <th class="rf-th">Doador:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ birth_date }}</td>
+        <td class="rf-td">{{ exercise_date }}</td>
+        <td class="rf-td">{{ blood }}</td>
+        <td class="rf-td">{{ donor }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th">RG:</th>
+        <th class="rf-th">Órgão:</th>
+        <th class="rf-th">Data de expedição:</th>
+        <th class="rf-th">CPF:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ rg }}</td>
+        <td class="rf-td">{{ rg_origin }}</td>
+        <td class="rf-td">{{ rg_date }}</td>
+        <td class="rf-td">{{ cpf }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th" colspan="2">Nome do pai:</th>
+        <th class="rf-th" colspan="2">Nome da mãe:</th>
+    </tr>
+    <tr>
+        <td class="rf-td" colspan="2">{{ father_name }}</td>
+        <td class="rf-td" colspan="2">{{ mother_name }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Tipo via:</th>
+        <th class="rf-th">Motivo da 2ª via:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">
+            {% if is_reissue %}
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) 1ª via</p>
+            <p class="rf-paragraph-height"><strong>( X ) 2ª via</strong></p>
+            {% else %}
+            <p class="rf-paragraph-height"><strong>( X ) 1ª via</strong></p>
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) 2ª via</p>
+            {% endif %}
+        </td>
+        <td class="rf-td">{{ reissue_reason_display }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center">SERVIDOR À DISPOSIÇÃO</th></tr>
+    <tr><th class="rf-th">Órgão de origem:</th></tr>
+    <tr><td class="rf-td">{{ original_public_institution }}</td></tr>
+    <tr><th class="rf-th">Cargo de origem:</th></tr>
+    <tr><td class="rf-td">{{ original_job_position }}</td></tr>
+    <tr><th class="rf-th">Data admissão origem:</th></tr>
+    <tr><td class="rf-td">{{ original_employment_date }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

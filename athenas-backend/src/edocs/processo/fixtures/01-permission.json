@@ -1,0 +1,266 @@
+[
+{
+    "fields": {
+        "codename": "add_assunto",
+        "name": "Can add assunto",
+        "content_type": [
+            "processo",
+            "assunto"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_assunto",
+        "name": "Can change assunto",
+        "content_type": [
+            "processo",
+            "assunto"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_assunto",
+        "name": "Can delete assunto",
+        "content_type": [
+            "processo",
+            "assunto"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_justificativa",
+        "name": "Can add justificativa",
+        "content_type": [
+            "processo",
+            "justificativa"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_justificativa",
+        "name": "Can change justificativa",
+        "content_type": [
+            "processo",
+            "justificativa"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_justificativa",
+        "name": "Can delete justificativa",
+        "content_type": [
+            "processo",
+            "justificativa"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_movimentacaoprocesso",
+        "name": "Can add movimentacao processo",
+        "content_type": [
+            "processo",
+            "movimentacaoprocesso"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_movimentacaoprocesso",
+        "name": "Can change movimentacao processo",
+        "content_type": [
+            "processo",
+            "movimentacaoprocesso"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_movimentacaoprocesso",
+        "name": "Can delete movimentacao processo",
+        "content_type": [
+            "processo",
+            "movimentacaoprocesso"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_processmatter",
+        "name": "Can add process matter",
+        "content_type": [
+            "processo",
+            "processmatter"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_processmatter",
+        "name": "Can change process matter",
+        "content_type": [
+            "processo",
+            "processmatter"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_processmatter",
+        "name": "Can delete process matter",
+        "content_type": [
+            "processo",
+            "processmatter"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_processo",
+        "name": "Can add processo",
+        "content_type": [
+            "processo",
+            "processo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "admin",
+        "name": "Visão administrativa",
+        "content_type": [
+            "processo",
+            "processo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_processo",
+        "name": "Can change processo",
+        "content_type": [
+            "processo",
+            "processo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_processo",
+        "name": "Can delete processo",
+        "content_type": [
+            "processo",
+            "processo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_referencia",
+        "name": "Can add referencia",
+        "content_type": [
+            "processo",
+            "referencia"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_referencia",
+        "name": "Can change referencia",
+        "content_type": [
+            "processo",
+            "referencia"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_referencia",
+        "name": "Can delete referencia",
+        "content_type": [
+            "processo",
+            "referencia"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_situacao",
+        "name": "Can add situacao",
+        "content_type": [
+            "processo",
+            "situacao"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_situacao",
+        "name": "Can change situacao",
+        "content_type": [
+            "processo",
+            "situacao"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_situacao",
+        "name": "Can delete situacao",
+        "content_type": [
+            "processo",
+            "situacao"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+}
+]

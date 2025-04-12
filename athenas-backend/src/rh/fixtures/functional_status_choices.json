@@ -1,0 +1,800 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Não encontrado",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Em atividade",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Tratamento de Saúde",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Doença em Pessoa da Família",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Maternidade",
+            "value": 5,
+            "cvalue": "5",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Tutoria ou Adoção",
+            "value": 6,
+            "cvalue": "6",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Afastamento do Conjuge/Companheiro",
+            "value": 7,
+            "cvalue": "7",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Serviço Militar",
+            "value": 8,
+            "cvalue": "8",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Atividade Política",
+            "value": 9,
+            "cvalue": "9",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Capacitação ou Especialização (3 meses por quinquênio)",
+            "value": 10,
+            "cvalue": "10",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Tratar de Interesse Particular",
+            "value": 11,
+            "cvalue": "11",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Licenciado - Desempenho de Mandato Classista",
+            "value": 12,
+            "cvalue": "12",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Servir a outro Órgão com ônus para o MP",
+            "value": 13,
+            "cvalue": "13",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Servir a outro Órgão sem ônus para o MP",
+            "value": 14,
+            "cvalue": "14",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Suspensão",
+            "value": 15,
+            "cvalue": "15",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Comparecer a juízo",
+            "value": 16,
+            "cvalue": "16",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Exercício de Mandato Eletivo",
+            "value": 17,
+            "cvalue": "17",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Estudar no País/Exterior",
+            "value": 18,
+            "cvalue": "18",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Missão Oficial no Exterior",
+            "value": 19,
+            "cvalue": "19",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Convocação da Justiça Eleitoral",
+            "value": 20,
+            "cvalue": "20",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Servir no Tribunal do Juri",
+            "value": 21,
+            "cvalue": "21",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Treinamento (Palestras/Congressos/Seminários/Outros)",
+            "value": 22,
+            "cvalue": "22",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Deslocamento até a nova sede",
+            "value": 23,
+            "cvalue": "23",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Competição desportiva ou representação cultural",
+            "value": 24,
+            "cvalue": "24",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Curso de formação de etapa de concurso público",
+            "value": 25,
+            "cvalue": "25",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Prisão",
+            "value": 26,
+            "cvalue": "26",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Ausente - Doação de sangue",
+            "value": 27,
+            "cvalue": "27",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Ausente - Alistamento como eleitor",
+            "value": 28,
+            "cvalue": "28",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Ausente - Casamento",
+            "value": 29,
+            "cvalue": "29",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Ausente - Nascimento/adoção de filho",
+            "value": 30,
+            "cvalue": "30",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Ausente - Falecimento",
+            "value": 31,
+            "cvalue": "31",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Ausente - Finalização de trabalho de conclusão de curso",
+            "value": 32,
+            "cvalue": "32",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Férias",
+            "value": 33,
+            "cvalue": "33",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Viagem a Serviço",
+            "value": 34,
+            "cvalue": "34",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Recesso",
+            "value": 35,
+            "cvalue": "35",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Folga Aniversário",
+            "value": 36,
+            "cvalue": "36",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Folga Eleitoral",
+            "value": 37,
+            "cvalue": "37",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Folga Compensação",
+            "value": 38,
+            "cvalue": "38",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Atuação em Grupo de Trabalho",
+            "value": 39,
+            "cvalue": "39",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Desempenho de Função",
+            "value": 40,
+            "cvalue": "40",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Plantão de Feriado",
+            "value": 41,
+            "cvalue": "41",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Em disponibilidade(com onus para origem ou para requisitante?)",
+            "value": 42,
+            "cvalue": "42",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Aposentado - Por invalidez",
+            "value": 43,
+            "cvalue": "43",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Aposentado - Compulsório",
+            "value": 44,
+            "cvalue": "44",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Aposentado - Voluntário",
+            "value": 45,
+            "cvalue": "45",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Aposentado - Especial",
+            "value": 46,
+            "cvalue": "46",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Aposentado - Por tempo de contribuição",
+            "value": 47,
+            "cvalue": "47",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Aposentado - Por idade",
+            "value": 48,
+            "cvalue": "48",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Falecido",
+            "value": 50,
+            "cvalue": "50",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Exonerado - A pedido",
+            "value": 51,
+            "cvalue": "51",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Exonerado - De ofício",
+            "value": 52,
+            "cvalue": "52",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Demitido",
+            "value": 53,
+            "cvalue": "53",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Devolvido ao Órgão de Origem",
+            "value": 54,
+            "cvalue": "54",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Posse em outro cargo inacumulável",
+            "value": 55,
+            "cvalue": "55",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Afastado - Em disponibilidade",
+            "value": 56,
+            "cvalue": "56",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Folga Banco de Horas",
+            "value": 57,
+            "cvalue": "57",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "SITUACAO_FUNCIONAL",
+            "label": "Fruindo Folga Prevenção Saúde",
+            "value": 58,
+            "cvalue": "58",
+            "cache_path": "rh.SITUACAO_FUNCIONAL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+]

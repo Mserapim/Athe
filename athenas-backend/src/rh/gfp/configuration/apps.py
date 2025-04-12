@@ -1,0 +1,64 @@
+# -*- coding:utf-8 -*-
+
+"""
+No escopo de módulo NÃO DEVE HAVER import do settings ou qualquer outro módulo ou aplicativo que tenha
+importação do settings do Django.
+
+Solução: Criar modulos separados e fazer import via importlib
+a partir do escopo do método ready do AppConfig
+"""
+
+import importlib
+from django.apps import AppConfig
+
+
+class GFPReportConfig(
+    AppConfig
+):  # Substituir "Sample" pelo nome que preferir dar ao AppConfig
+    name = "rh.gfp.configuration"  # Caminho completo para o app. Ex: rh.gfp.dirf
+    default_auto_field = "django.db.models.BigAutoField"
+
+    controllers = [
+        # Aqui devem ser listados os caminhos dos controllers do app. Ex: web.api.cms.metadata
+        "rh.gfp.configuration.api.configreport",
+    ]
+
+    def ready(self):
+        """
+        O carregamento de partes necessárias ao app.
+        """
+        register_statics()
+        connect_signals()
+        # carregar qualquer outra coisa necessária ao app
+        loaders()
+
+
+def connect_signals():
+    pass
+
+
+def register_statics():
+    """O registro dos arquivos estáticos do app deve ser feito aqui.
+
+    Ex:
+
+        Application = importlib.import_module('default.views').Application
+
+        Application.register_javascript('/%(context)s/static/web/js/shortcuts.js')
+        Application.register_stylesheet('/%(context)s/static/web/css/styles.css')
+    """
+    Application = importlib.import_module("default.views").Application
+
+    js_paths = (
+        "/%(context)s/static/rh/gfp/configuration/ConfigReportWindow.js",
+        "/%(context)s/static/rh/gfp/configuration/ConfigReportGrid.js",
+        "/%(context)s/static/rh/gfp/configuration/ConfigReportRestful.js",
+        "/%(context)s/static/rh/gfp/configuration/ConfigReportManage.js",
+    )
+
+    for path in js_paths:
+        Application.register_javascript(path, scope="rh")
+
+
+def loaders():
+    pass

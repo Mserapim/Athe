@@ -1,0 +1,42 @@
+<div class="papper">
+    {% block header %}
+    <div class="papper-header-publication">
+        <div class="papper-header-logo"></div>
+        <div style="clean:both"></div>
+    </div>
+    {% endblock %}
+
+    {% block body-resume %}
+    <div class="papper-content">
+        <div class="page-title">
+            <h2>{{ doc.formated_number }}</h2>
+            <small>{{ doc.origem.nome }}</small>
+        </div>
+
+        <div class="paragraph-text styled-text">
+            {% if doc.document %}
+            {{ doc.document | safe }}
+            {% else %}
+            <p>
+                Não foi inserido nenhum conteúdo na públicação. Esta deve ser uma publicação antiga ou quem fez o
+                registro não atendeu as normas.
+            </p>
+            {% endif %}
+        </div>
+
+        {% if doc.arquivo %}
+        <div class="paragraph-text">
+            <h3>Anexo:</h3>
+            <ul>
+                <li>
+                    <div class="inline-with-crop">
+                        <a href="{{ doc.arquivo.permalink }}">{{ doc.arquivo.filename }}</a>
+                    </div>
+                    <div><span style="font-size: 6px; text-decoration: none">MD5: {{ doc.arquivo.file }}</span></div>
+                </li>
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    {% endblock %}
+</div>

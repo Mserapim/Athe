@@ -1,0 +1,19 @@
+[
+{
+    "model": "diarias.fluxoviagem",
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-22T11:51:37.435",
+        "modified_at": "2024-11-22T12:27:11.827",
+        "ordem": 41,
+        "situacao": 4,
+        "etapa": 21,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": false,
+        "link_informacao": null
+    }
+}
+]

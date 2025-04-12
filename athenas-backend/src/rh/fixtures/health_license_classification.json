@@ -1,0 +1,38 @@
+[
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "cvalue": "1",
+            "label": "NORMAL",
+            "cache_path": "rh.HEALTH_LICENSE_CLASSIFICATION",
+            "app_label": "rh",
+            "name": "HEALTH_LICENSE_CLASSIFICATION"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "cvalue": "2",
+            "label": "ANTECIPAÇÃO",
+            "cache_path": "rh.HEALTH_LICENSE_CLASSIFICATION",
+            "app_label": "rh",
+            "name": "HEALTH_LICENSE_CLASSIFICATION"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "cvalue": "3",
+            "label": "PRORROGAÇÃO",
+            "cache_path": "rh.HEALTH_LICENSE_CLASSIFICATION",
+            "app_label": "rh",
+            "name": "HEALTH_LICENSE_CLASSIFICATION"
+        },
+        "model": "standard.choice"
+    }
+]

@@ -1,0 +1,156 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "label": "Concessão do auxílio-saúde. Ao ensejo, DECLARO que não recebo benefício de natureza semelhante",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "requestform.HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "label": "Alteração de valores do plano ou seguro de assistência à saúde",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "requestform.HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "label": "Mudança de plano ou seguro de assistência à saúde",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "requestform.HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "label": "Cancelamento do benefício",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "requestform.HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "label": "Reativação do benefício",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "requestform.HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "label": "Mudança de faixa etária",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "requestform.HEALTHCARE_ACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "label": "Concessão do auxílio-saúde. Ao ensejo, DECLARO que não recebo benefício de natureza semelhante",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "requestform.HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "label": "Alteração de valores do plano ou seguro de assistência à saúde",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "requestform.HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "label": "Mudança de plano ou seguro de assistência à saúde",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "requestform.HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "label": "Cancelamento do benefício",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "requestform.HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "label": "Reativação do benefício",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "requestform.HEALTHCARE_INACTIVE_EMP_REQTYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

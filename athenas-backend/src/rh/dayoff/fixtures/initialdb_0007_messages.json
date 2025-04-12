@@ -1,0 +1,142 @@
+[
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ANNOTATION_CHANGE",
+            "header": "Usufrutos e Folgas - Alteração",
+            "message": "DEFERIR, o pedido de alteração de %(type_of)s referente ao período %(group)s, conforme %(doc)s, a(s) parcela(s): %(modifieds)s. Para sem usufruídas em: %(usus)s. ",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'usus': '', u'group': '', u'modifieds': '', u'doc': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ANNOTATION_CHANGE_ATHENAS",
+            "header": "Usufrutos e Folgas - Alteração - Athenas",
+            "message": "DEFERIR alteração de %(type_of)s referente ao período %(group)s, %(modifieds)s, para serem usufruídas em: %(usus)s. %(doc)s.",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'usus': '', u'group': '', u'modifieds': '', u'doc': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ANNOTATION_HOMOLOGATE",
+            "header": "Usufrutos e Folgas - Homologação",
+            "message": "HOMOLOGAR, a(s) parcela(s) abaixo relacionada(s), do período %(group)s. %(publication)s de %(homologation_date)s. <br>Usufrutos:<br>%(usus)s",
+            "type": "INFO",
+            "default_params": "{u'homologation_date': '', u'group': '', u'publication': '', u'usus': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ANNOTATION_INTERRUPT",
+            "header": "Usufrutos e Folgas - Interromper",
+            "message": "INTERROMPER a partir de %(date)s o usufruto de %(type_of)s (%(start_date)s à\n %(end_date)s %(days)s), referente ao período %(group)s, conforme %(doc)s de \n%(date_doc)s.<br>Para usufruir em: %(usus)s.<br>Restando-lhe %(days_diff)s dia(s) para usufruir em época oportuna.",
+            "type": "INFO",
+            "default_params": "{u'end_date': '', u'type_of': '',  u'doc': '', u'date_doc': '', u'group': '', u'start_date': '', u'date': '', u'days': '', u'usus': '', u'days_diff': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ANNOTATION_SUSPEND",
+            "header": "Usufrutos e Folgas - Suspensão",
+            "message": "SUSPENDER, o usufruto de %(type_of)s marcada para %(start_date)s à \n%(end_date)s referente ao período %(group)s, conforme %(doc)s de \n%(date_doc)s.<br>Para usufruir em: %(usus)s.<br>Restando-lhe %(days_diff)s dia(s) para usufruir em época oportuna.",
+            "type": "INFO",
+            "default_params": "{u'end_date': '', u'type_of': '', u'doc': '', u'date_doc': '', u'group': '', u'start_date': '', u'days_diff': '', u'usus': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ANNOTATION_USU",
+            "header": "Usufrutos e Folgas - Marcação",
+            "message": "<p>%(acqp_action)s, a(s) parcela(s) de %(type_of)s abaixo relacionada(s), referente ao período %(group)s, marcada online (via sistema Athenas), autorizada pela chefia imediata e/ou mediata e homologada pelo departamento de <b>DGPFP</b> em %(homologation_date)s:<br>%(usus)s<br>%(publication)s",
+            "type": "INFO",
+            "default_params": "{u'acqp_action': '', u'homologation_date': '', u'type_of': '', u'group': '', u'publication': '', u'usus': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_ATHENAS_NOT",
+            "header": "Notificação Athenas(DOF_NOTIFICACAO_ATHENAS)",
+            "message": "%(message)s",
+            "type": "INFO",
+            "default_params": "{u'message': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_AUTHORIZATION_CALL_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "O servidor <b>%(employee)s</b> solicitou inclusão/alteração de %(type_of)s e necessita do seu deferimento.<br>Para esse procedimento acesse o sistema <b>Athenas</b> no menu: <b>GESTÃO DE PESSOAS</b> &gt;&gt;&nbsp; <b>%(type_of)s</b> &gt;&gt; <b>Autorização</b>.<br>",
+            "type": "INFO",
+            "default_params": "{u'employee': '', u'type_of': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_AUTHORIZATION_CHANGE_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "Sua alteração de %(type_of)s para as parcelas abaixo relacionadas foi <b>%(decision)s</b> pela chefia.<br><b>%(usus)s</b>",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'usus': '', u'decision': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_AUTHORIZATION_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "Sua %(type_of_activity)s de %(acquisition_period)s %(decision)s.",
+            "type": "INFO",
+            "default_params": "{u'type_of_activity': '', u'acquisition_period': '', u'decision': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_CONFLICT_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "Sua parcela <b>%(usufruct)s</b> está em conflito com outro servidor, altere-a para que possa ser autorizada! ",
+            "type": "WARNING",
+            "default_params": "{u'usufruct': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_FRUITION_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "Informamos que você iniciará sua fruição de %(type_of)s em %(start_date)s, referente ao período de %(group)s.<br>(Falta(m) <b>%(days)s dia(s)</b> para o início) <br>",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'group': '', u'start_date': '', u'days': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_HOMOLOGATION_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "<p>Seu período de %(type_of)s (<b>%(group)s</b>) foi homologado pelo <b>DGPFP</b> e agora aguarda fruição.</p>",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'group': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_RELEASE_NOT",
+            "header": "Usufrutos e Folgas",
+            "message": "Seu período (<b>%(group)s</b>) foi liberado para marcação pelo sistema. Porém seus usufrutos deverão ser posterior à %(start_date_fruition)s.",
+            "type": "INFO",
+            "default_params": "{u'group': '', u'start_date_fruition': ''}"
+        }
+    }
+]

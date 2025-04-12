@@ -1,0 +1,95 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Empenho em andamento",
+        "value": 26,
+        "cvalue": "26",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Ordem bancária em andamento",
+        "value": 27,
+        "cvalue": "27",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Fluxo anterior deve ter etapa específica (Liberação de empenho)",
+        "value": 37,
+        "cvalue": "37",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "etapa_anterior-48",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2025-01-27T10:54:19.378",
+        "modified_at": "2025-01-27T20:29:42.419",
+        "ordem": 32,
+        "situacao": 26,
+        "etapa": 3,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false,
+        "link_informacao": null
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2025-01-27T15:55:50.235",
+        "modified_at": "2025-01-27T20:29:42.413",
+        "ordem": 30,
+        "situacao": 26,
+        "etapa": 3,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false,
+        "link_informacao": null
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2025-01-27T20:28:34.323",
+        "modified_at": "2025-01-28T12:21:15.116",
+        "ordem": 36,
+        "situacao": 27,
+        "etapa": 11,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false,
+        "link_informacao": null
+    }
+}
+]

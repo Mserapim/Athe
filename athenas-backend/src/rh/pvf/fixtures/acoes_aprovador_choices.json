@@ -1,0 +1,184 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Deferir",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 9,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Aprovar",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 10,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Efetivar",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 11,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Confirmar Plantão realizado",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 8,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Consolidar",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 7,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Retornar ao aprovador",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 6,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Retornar ao solicitante",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 5,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Confirmar ciência",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 4,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Anotar",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 3,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Informar plantão não realizado",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 2,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Indeferir",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Cancelar",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACOES_APROVADOR",
+    "label": "Enviar Sub",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "pvf.ACOES_APROVADOR",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

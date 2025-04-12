@@ -1,0 +1,2978 @@
+[
+{
+  "model": "gfp.genreevent",
+  "pk": 61,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:34.572",
+    "modified_at": "2016-04-11T10:52:02.143",
+    "genre_number": "001",
+    "type_event": "P",
+    "character": 1,
+    "title": "SUBSIDIO",
+    "config_transparency": 25,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 62,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.508",
+    "modified_at": "2019-01-17T15:13:26.642",
+    "genre_number": "002",
+    "type_event": "P",
+    "character": 1,
+    "title": "VENCIMENTO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 63,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.546",
+    "modified_at": "2015-05-14T09:56:02.345",
+    "genre_number": "004",
+    "type_event": "P",
+    "character": 1,
+    "title": "VENCIMENTO REQUISITADO",
+    "config_transparency": 25,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 64,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.616",
+    "modified_at": "2016-10-24T12:00:50.661",
+    "genre_number": "005",
+    "type_event": "P",
+    "character": 1,
+    "title": "GRATIFICAÇÃO DE REPRESENTAÇÃO",
+    "config_transparency": 27,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 65,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.640",
+    "modified_at": "2016-10-24T11:53:42.036",
+    "genre_number": "006",
+    "type_event": "P",
+    "character": 1,
+    "title": "VENCIMENTO COMISSIONADO",
+    "config_transparency": 27,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 66,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.652",
+    "modified_at": "2018-05-29T17:57:15.986",
+    "genre_number": "007",
+    "type_event": "P",
+    "character": 1,
+    "title": "GRATIFICAÇÃO POR FUNÇÃO",
+    "config_transparency": 27,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 67,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.661",
+    "modified_at": "2017-09-13T10:52:37.266",
+    "genre_number": "008",
+    "type_event": "P",
+    "character": 1,
+    "title": "GRATIFICACAO DE CUMULAÇÃO ",
+    "config_transparency": 40,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 200,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-02-17T10:32:27.376",
+    "modified_at": "2018-09-04T16:38:40.935",
+    "genre_number": "009",
+    "type_event": "P",
+    "character": 2,
+    "title": "INDENIZAÇÃO POR REPRESENTAÇÃO",
+    "config_transparency": 104,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 201,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-02-22T08:29:13.783",
+    "modified_at": "2017-09-13T10:52:31.591",
+    "genre_number": "010",
+    "type_event": "P",
+    "character": 2,
+    "title": "INDENIZAÇÃO POR CUMULAÇÃO",
+    "config_transparency": 40,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 69,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.682",
+    "modified_at": "2016-10-25T10:38:24.776",
+    "genre_number": "011",
+    "type_event": "P",
+    "character": 1,
+    "title": "COMPLEMENTO VENC. COMISSIONADO",
+    "config_transparency": 27,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 323,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-05-10T13:45:17.904",
+    "modified_at": "2022-03-04T11:17:06.379",
+    "genre_number": "013",
+    "type_event": "P",
+    "character": 9,
+    "title": "13º SALÁRIO - ADIANTAMENTO LIQUIDO",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 72,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.724",
+    "modified_at": "2017-09-13T10:52:24.185",
+    "genre_number": "014",
+    "type_event": "P",
+    "character": 1,
+    "title": "COMPLEMENTO POR ENTRÂNCIA",
+    "config_transparency": 40,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 73,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.745",
+    "modified_at": "2021-03-09T17:27:28.080",
+    "genre_number": "015",
+    "type_event": "P",
+    "character": 1,
+    "title": "13º SALÁRIO",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 74,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.763",
+    "modified_at": "2021-03-09T17:27:37.881",
+    "genre_number": "016",
+    "type_event": "P",
+    "character": 1,
+    "title": "13º SALÁRIO - ADIANTAMENTO",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 75,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.780",
+    "modified_at": "2021-03-09T17:27:49.990",
+    "genre_number": "017",
+    "type_event": "P",
+    "character": 1,
+    "title": "13º SALÁRIO - PROPORCIONAL",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 264,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-08-17T10:55:19.422",
+    "modified_at": "2019-10-29T17:06:53.700",
+    "genre_number": "018",
+    "type_event": "P",
+    "character": 1,
+    "title": "DEPOSITO CONTA PJG- ACERTO SALDO- NORMAL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 274,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-05-10T10:20:12.252",
+    "modified_at": "2022-03-03T17:21:29.293",
+    "genre_number": "019",
+    "type_event": "D",
+    "character": 9,
+    "title": "13º SALÁRIO - RESSARCIMENTO ADIANTAMENTO",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 76,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.791",
+    "modified_at": "2017-09-13T10:52:09.766",
+    "genre_number": "020",
+    "type_event": "P",
+    "character": 1,
+    "title": "COMPLEMENTO SUBSTITUIÇÃO",
+    "config_transparency": 40,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 282,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-09-25T08:54:53.148",
+    "modified_at": "2019-10-22T10:44:47.005",
+    "genre_number": "021",
+    "type_event": "P",
+    "character": 1,
+    "title": "13º SALÁRIO - PROPORCIONAL INDENIZADO",
+    "config_transparency": 42,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 288,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-10-29T17:08:38.687",
+    "modified_at": "2019-10-29T17:08:38.687",
+    "genre_number": "022",
+    "type_event": "P",
+    "character": 2,
+    "title": "DEPOSITO CONTA PJG- ACERTO SALDO- AUX.ALIMENTAÇÃO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 296,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-06-01T09:09:57.722",
+    "modified_at": "2021-03-09T17:28:02.613",
+    "genre_number": "023",
+    "type_event": "P",
+    "character": 1,
+    "title": "13º SALÁRIO - ADIANTAMENTO CONFORME - ATO ",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 78,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.814",
+    "modified_at": "2016-08-10T10:24:51.847",
+    "genre_number": "030",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV PRINCIPAL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 79,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.826",
+    "modified_at": "2016-08-10T10:24:54.207",
+    "genre_number": "031",
+    "type_event": "P",
+    "character": 2,
+    "title": "URV ACESSÓRIOS",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 199,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-02-03T17:33:54.075",
+    "modified_at": "2016-08-10T10:24:56.602",
+    "genre_number": "032",
+    "type_event": "P",
+    "character": 2,
+    "title": "URV CORREÇÃO MONETARIA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 255,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-06-07T10:02:00.679",
+    "modified_at": "2018-06-07T10:02:00.679",
+    "genre_number": "033",
+    "type_event": "D",
+    "character": 2,
+    "title": "PAE - ESTORNO",
+    "config_transparency": 36,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 256,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-06-07T10:06:17.607",
+    "modified_at": "2018-06-07T10:06:17.607",
+    "genre_number": "034",
+    "type_event": "P",
+    "character": 2,
+    "title": "PAE - ANTECIPACAO LIQUIDO",
+    "config_transparency": 36,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 80,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.837",
+    "modified_at": "2019-07-29T18:31:17.403",
+    "genre_number": "035",
+    "type_event": "P",
+    "character": 1,
+    "title": "PAE PRINCIPAL",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 81,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.877",
+    "modified_at": "2019-07-29T18:31:26.834",
+    "genre_number": "036",
+    "type_event": "P",
+    "character": 1,
+    "title": "PAE ATUAL. MONETÁRIA",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 82,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.912",
+    "modified_at": "2019-07-29T18:31:40.978",
+    "genre_number": "037",
+    "type_event": "P",
+    "character": 2,
+    "title": "PAE JUROS DE MORA",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 198,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-02-03T17:32:44.647",
+    "modified_at": "2018-08-03T15:58:39.306",
+    "genre_number": "038",
+    "type_event": "P",
+    "character": 2,
+    "title": "PAE CORREÇÃO MONETÁRIA",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 236,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-09-20T10:07:40.359",
+    "modified_at": "2021-06-14T17:37:49.678",
+    "genre_number": "040",
+    "type_event": "P",
+    "character": 1,
+    "title": "SALARIO MATERNIDADE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 237,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-11-23T11:44:12.475",
+    "modified_at": "2021-10-27T16:16:19.896",
+    "genre_number": "046",
+    "type_event": "D",
+    "character": 2,
+    "title": "FALTA AUXÍLIO ALIMENTAÇÃO",
+    "config_transparency": 16,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 195,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-12-21T17:01:41.373",
+    "modified_at": "2016-10-25T10:38:02.064",
+    "genre_number": "047",
+    "type_event": "P",
+    "character": 2,
+    "title": "ACERTO BCO DE HORAS POSITIVO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 197,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-12-21T17:02:47.272",
+    "modified_at": "2017-09-21T11:00:24.826",
+    "genre_number": "048",
+    "type_event": "D",
+    "character": 2,
+    "title": "ACERTO BCO DE HORAS NEGATIVO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 181,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-05-13T07:43:26.816",
+    "modified_at": "2019-01-17T15:27:07.106",
+    "genre_number": "049",
+    "type_event": "D",
+    "character": 1,
+    "title": "FALTA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 83,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.926",
+    "modified_at": "2015-05-14T09:56:03.596",
+    "genre_number": "050",
+    "type_event": "P",
+    "character": 1,
+    "title": "ADICIONAL DE FÉRIAS",
+    "config_transparency": 31,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 84,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.938",
+    "modified_at": "2017-09-20T09:58:02.123",
+    "genre_number": "051",
+    "type_event": "P",
+    "character": 1,
+    "title": "VANTAGEM PESSOAL",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 85,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.948",
+    "modified_at": "2015-05-14T09:56:03.797",
+    "genre_number": "052",
+    "type_event": "P",
+    "character": 2,
+    "title": "ABONO DE PERMANÊNCIA - EC 41",
+    "config_transparency": 32,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 86,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.958",
+    "modified_at": "2018-07-11T15:19:05.691",
+    "genre_number": "053",
+    "type_event": "P",
+    "character": 2,
+    "title": "FÉRIAS VENCIDAS",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 87,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.968",
+    "modified_at": "2018-07-11T12:08:24.042",
+    "genre_number": "054",
+    "type_event": "P",
+    "character": 2,
+    "title": "ADIC. DE FÉRIAS VENCIDAS",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 88,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.978",
+    "modified_at": "2018-07-11T12:09:27.218",
+    "genre_number": "055",
+    "type_event": "P",
+    "character": 2,
+    "title": "FÉRIAS PROPORCIONAIS",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 89,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.987",
+    "modified_at": "2018-08-03T16:26:48.702",
+    "genre_number": "056",
+    "type_event": "P",
+    "character": 2,
+    "title": "ADIC.  FÉRIAS PROPORC.",
+    "config_transparency": 31,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 238,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-12-20T13:06:10.434",
+    "modified_at": "2018-07-11T12:10:19.355",
+    "genre_number": "057",
+    "type_event": "P",
+    "character": 2,
+    "title": "INDENIZAÇÃO DE FÉRIAS",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 249,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-02-05T16:31:02.423",
+    "modified_at": "2018-02-05T16:31:46.407",
+    "genre_number": "058",
+    "type_event": "D",
+    "character": 2,
+    "title": "ACERTO BCO DE HORAS NEGATIVO EXONERAÇÃO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 250,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-02-15T16:36:04.871",
+    "modified_at": "2019-07-25T13:23:08.675",
+    "genre_number": "059",
+    "type_event": "P",
+    "character": 2,
+    "title": "HORAS EXTRAORDINARIAS- LEI 1818 ART 71 ",
+    "config_transparency": 40,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 241,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-04T15:17:25.831",
+    "modified_at": "2018-05-28T17:05:04.893",
+    "genre_number": "060",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV - SUBSIDIO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 242,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-04T15:18:09.753",
+    "modified_at": "2018-05-28T17:05:04.997",
+    "genre_number": "061",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV - VENCIMENTO COMISSIONADO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 243,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-04T15:18:59.098",
+    "modified_at": "2018-05-28T17:05:05.042",
+    "genre_number": "062",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV - GRATIFICAÇÃO REPRESENTAÇÃO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 244,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-05T14:34:48.884",
+    "modified_at": "2018-05-28T17:05:05.078",
+    "genre_number": "063",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV - COMP. VENC. COMISSIONADO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 245,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-05T14:36:06.837",
+    "modified_at": "2018-05-28T17:05:05.114",
+    "genre_number": "064",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV - GRAT. FUNÇÃO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 246,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-06T09:57:09.420",
+    "modified_at": "2018-05-28T17:05:05.142",
+    "genre_number": "065",
+    "type_event": "P",
+    "character": 1,
+    "title": "URV - SALARIO MATERNIDADE",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 90,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.099",
+    "modified_at": "2016-02-01T13:54:43.931",
+    "genre_number": "066",
+    "type_event": "P",
+    "character": 2,
+    "title": "AUXÍLIO CRECHE",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 91,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.141",
+    "modified_at": "2016-02-01T13:54:50.336",
+    "genre_number": "067",
+    "type_event": "P",
+    "character": 2,
+    "title": "AUXÍLIO ALIMENTAÇÃO",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 92,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.150",
+    "modified_at": "2016-02-01T13:55:27.254",
+    "genre_number": "068",
+    "type_event": "P",
+    "character": 2,
+    "title": "AUXÍLIO ESPECIAL",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 41,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-01-27T09:20:02.943",
+    "modified_at": "2015-05-14T09:56:04.683",
+    "genre_number": "069",
+    "type_event": "P",
+    "character": 2,
+    "title": "AUXÍLIO MORADIA",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 248,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-01-24T09:21:48.774",
+    "modified_at": "2018-01-24T09:21:48.774",
+    "genre_number": "070",
+    "type_event": "P",
+    "character": 3,
+    "title": "SALÁRIO FAMILIA",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 254,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-05-29T18:17:30.627",
+    "modified_at": "2018-08-03T15:36:52.193",
+    "genre_number": "071",
+    "type_event": "P",
+    "character": 2,
+    "title": "LICENÇA PREMIO",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 257,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-06-12T17:36:10.793",
+    "modified_at": "2018-06-12T17:36:48.282",
+    "genre_number": "072",
+    "type_event": "P",
+    "character": 1,
+    "title": "DIÁRIAS VIAGENS",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 260,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-07-19T15:52:52.831",
+    "modified_at": "2020-06-25T09:35:47.758",
+    "genre_number": "073",
+    "type_event": "P",
+    "character": 2,
+    "title": "ABONO DE PERMANÊNCIA - EC 41 - EXERCICIO ANTERIOR",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 261,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-07-19T17:19:47.300",
+    "modified_at": "2018-11-05T16:40:13.198",
+    "genre_number": "074",
+    "type_event": "P",
+    "character": 2,
+    "title": "LICENÇA PRÊMIO - EXERCICIO ANTERIOR",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 262,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-08-02T16:16:50.802",
+    "modified_at": "2018-08-02T16:18:37.783",
+    "genre_number": "075",
+    "type_event": "P",
+    "character": 3,
+    "title": "BOLSA - ESTÁGIO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 263,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-08-02T16:19:11.700",
+    "modified_at": "2019-07-24T15:55:38.695",
+    "genre_number": "076",
+    "type_event": "P",
+    "character": 3,
+    "title": "AUXILIO TRANSPORTE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 265,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-08-20T08:35:24.923",
+    "modified_at": "2018-08-20T09:38:29.674",
+    "genre_number": "077",
+    "type_event": "P",
+    "character": 1,
+    "title": "ADIC. FÉRIAS - REF. FÉRIAS INDENIZADAS",
+    "config_transparency": 31,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 266,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-09-13T10:27:15.502",
+    "modified_at": "2018-09-13T10:27:15.502",
+    "genre_number": "078",
+    "type_event": "P",
+    "character": 2,
+    "title": "ABONO DE PERMANÊNCIA 13º SALÁRIO-EC 41 ",
+    "config_transparency": 32,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 272,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-04-11T16:24:31.059",
+    "modified_at": "2019-06-25T12:05:31.639",
+    "genre_number": "079",
+    "type_event": "P",
+    "character": 2,
+    "title": "INCENTIVO PAI - LEI 3.435/2019",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 278,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-06-20T17:48:59.143",
+    "modified_at": "2020-06-25T09:39:20.919",
+    "genre_number": "080",
+    "type_event": "P",
+    "character": 2,
+    "title": "ABONO DE PERM. 13º SAL.-EC 41 EXERCICIO ANTERIOR",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 279,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-08-27T14:39:18.624",
+    "modified_at": "2019-09-19T11:40:50.791",
+    "genre_number": "081",
+    "type_event": "P",
+    "character": 2,
+    "title": "INDENIZAÇÃO DE FÉRIAS-EXERCÍCIO ANTERIOR",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 280,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-09-03T14:53:37.976",
+    "modified_at": "2019-09-19T11:40:58.993",
+    "genre_number": "082",
+    "type_event": "P",
+    "character": 1,
+    "title": "ADIC. FÉRIAS - EXERCICIO ANTERIOR",
+    "config_transparency": 39,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 281,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-09-19T13:58:37.177",
+    "modified_at": "2019-09-24T14:42:31.516",
+    "genre_number": "083",
+    "type_event": "P",
+    "character": 2,
+    "title": "ADICIONAL DE FERIAS INDENIZADO",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 284,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-09-25T09:15:31.865",
+    "modified_at": "2019-10-08T11:22:29.576",
+    "genre_number": "084",
+    "type_event": "P",
+    "character": 2,
+    "title": "ADIC. FÉRIAS PROPORCIONAIS - INDENIZADAS",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 285,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-09-25T09:24:25.176",
+    "modified_at": "2019-10-15T17:41:40.193",
+    "genre_number": "085",
+    "type_event": "P",
+    "character": 2,
+    "title": "REMUNERAÇÕES INDENIZADAS",
+    "config_transparency": 42,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 290,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-12-30T15:15:23.489",
+    "modified_at": "2019-12-30T15:15:23.489",
+    "genre_number": "086",
+    "type_event": "P",
+    "character": 2,
+    "title": "DIFERENÇA DE ANUÊNIOS",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 71,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.712",
+    "modified_at": "2015-06-18T15:22:53.946",
+    "genre_number": "090",
+    "type_event": "D",
+    "character": 1,
+    "title": "RED. 50% REMUN.§ 3º-III-ART. 95/1818",
+    "config_transparency": 35,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 141,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-03-20T09:27:50.423",
+    "modified_at": "2015-05-14T09:56:04.784",
+    "genre_number": "091",
+    "type_event": "D",
+    "character": 1,
+    "title": "RED. 1/3 DA REMUN.§ 3º-III-ART. 95/1818",
+    "config_transparency": 1001,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 283,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-09-25T09:04:15.129",
+    "modified_at": "2019-10-08T11:22:45.831",
+    "genre_number": "092",
+    "type_event": "P",
+    "character": 2,
+    "title": "FÉRIAS PROPORCIONAIS INDENIZADAS",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 294,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-03-11T15:09:12.420",
+    "modified_at": "2020-04-16T16:07:06.035",
+    "genre_number": "093",
+    "type_event": "P",
+    "character": 2,
+    "title": "AUXÍLIO NATALIDADE",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 327,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-09-09T10:43:58.833",
+    "modified_at": "2021-09-24T11:05:31.899",
+    "genre_number": "094",
+    "type_event": "P",
+    "character": 2,
+    "title": "PASS",
+    "config_transparency": 47,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 267,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-02-13T10:46:06.056",
+    "modified_at": "2021-09-21T16:41:39.923",
+    "genre_number": "100",
+    "type_event": "D",
+    "character": 1,
+    "title": "FALTAS- SUBSÍDIO",
+    "config_transparency": 25,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 268,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-02-13T10:47:22.615",
+    "modified_at": "2019-02-13T10:47:22.615",
+    "genre_number": "101",
+    "type_event": "D",
+    "character": 1,
+    "title": "FALTAS- VENCIMENTO",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 269,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-02-13T10:49:17.157",
+    "modified_at": "2019-02-13T10:49:17.157",
+    "genre_number": "102",
+    "type_event": "D",
+    "character": 1,
+    "title": "FALTAS- GRATIFICAÇÕES",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 287,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-10-24T14:53:09.790",
+    "modified_at": "2019-10-25T09:32:46.036",
+    "genre_number": "103",
+    "type_event": "D",
+    "character": 7,
+    "title": "PENHORA JUDICIAL",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 298,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:30.856",
+    "modified_at": "2022-03-04T11:17:31.357",
+    "genre_number": "104",
+    "type_event": "P",
+    "character": 9,
+    "title": "SUBSIDIO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 299,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:30.889",
+    "modified_at": "2022-03-04T11:08:56.545",
+    "genre_number": "105",
+    "type_event": "P",
+    "character": 9,
+    "title": "VENCIMENTO REQUISITADO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 300,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:30.917",
+    "modified_at": "2022-03-03T17:22:02.256",
+    "genre_number": "106",
+    "type_event": "P",
+    "character": 9,
+    "title": "GRATIFICAÇÃO DE REPRESENTAÇÃO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 301,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:30.945",
+    "modified_at": "2022-03-03T17:22:15.907",
+    "genre_number": "107",
+    "type_event": "P",
+    "character": 9,
+    "title": "VENCIMENTO COMISSIONADO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 302,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:30.982",
+    "modified_at": "2022-03-04T11:17:37.587",
+    "genre_number": "108",
+    "type_event": "P",
+    "character": 9,
+    "title": "GRATIFICAÇÃO POR FUNÇÃO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 303,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.010",
+    "modified_at": "2022-03-04T11:18:00.873",
+    "genre_number": "109",
+    "type_event": "P",
+    "character": 9,
+    "title": "GRATIFICACAO DE CUMULAÇÃO  13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 304,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.038",
+    "modified_at": "2022-03-04T11:18:09.656",
+    "genre_number": "110",
+    "type_event": "P",
+    "character": 9,
+    "title": "COMPLEMENTO VENC. COMISSIONADO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 305,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.066",
+    "modified_at": "2022-03-04T11:18:21.554",
+    "genre_number": "111",
+    "type_event": "P",
+    "character": 9,
+    "title": "COMPLEMENTO POR ENTRÂNCIA 13º",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 306,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.093",
+    "modified_at": "2022-03-04T11:18:30.307",
+    "genre_number": "112",
+    "type_event": "P",
+    "character": 9,
+    "title": "COMPLEMENTO SUBSTITUIÇÃO 13º",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 307,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.121",
+    "modified_at": "2022-03-04T11:18:41.837",
+    "genre_number": "113",
+    "type_event": "P",
+    "character": 9,
+    "title": "SALARIO MATERNIDADE 13º",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 308,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.149",
+    "modified_at": "2022-03-04T11:18:47.981",
+    "genre_number": "114",
+    "type_event": "P",
+    "character": 9,
+    "title": "VANTAGEM PESSOAL 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 309,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.179",
+    "modified_at": "2022-03-04T11:18:58.940",
+    "genre_number": "115",
+    "type_event": "P",
+    "character": 9,
+    "title": "URV - SUBSIDIO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 310,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.207",
+    "modified_at": "2022-03-04T11:19:12.919",
+    "genre_number": "116",
+    "type_event": "P",
+    "character": 9,
+    "title": "URV - VENCIMENTO COMISSIONADO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 311,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.235",
+    "modified_at": "2022-03-04T11:19:20.141",
+    "genre_number": "117",
+    "type_event": "P",
+    "character": 9,
+    "title": "URV - GRATIFICAÇÃO REPRESENTAÇÃO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 312,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.263",
+    "modified_at": "2022-03-04T11:19:29.103",
+    "genre_number": "118",
+    "type_event": "P",
+    "character": 9,
+    "title": "URV - COMP. VENC. COMISSIONADO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 313,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.290",
+    "modified_at": "2022-03-04T11:19:35.365",
+    "genre_number": "119",
+    "type_event": "P",
+    "character": 9,
+    "title": "URV - GRAT. FUNÇÃO 13º",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 314,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.319",
+    "modified_at": "2022-03-04T11:19:41.419",
+    "genre_number": "120",
+    "type_event": "P",
+    "character": 9,
+    "title": "URV - SALARIO MATERNIDADE 13º",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 315,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-10T12:09:31.348",
+    "modified_at": "2022-03-04T11:19:46.876",
+    "genre_number": "121",
+    "type_event": "P",
+    "character": 9,
+    "title": "GRAT.  INCENTIVO DOCENCIA / RSR 13º",
+    "config_transparency": 25,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 182,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-05-13T07:58:23.814",
+    "modified_at": "2022-03-04T11:19:54.943",
+    "genre_number": "498",
+    "type_event": "D",
+    "character": 9,
+    "title": "REDUTOR DE TETO 13º SALÁRIO",
+    "config_transparency": 35,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 68,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:35.672",
+    "modified_at": "2017-04-24T16:09:29.933",
+    "genre_number": "499",
+    "type_event": "D",
+    "character": 1,
+    "title": "REDUTOR DE TETO",
+    "config_transparency": 35,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 93,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.209",
+    "modified_at": "2015-05-14T09:56:05.013",
+    "genre_number": "500",
+    "type_event": "D",
+    "character": 7,
+    "title": "BB EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 94,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.228",
+    "modified_at": "2015-05-14T09:56:05.174",
+    "genre_number": "501",
+    "type_event": "D",
+    "character": 7,
+    "title": "CEF EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 95,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.238",
+    "modified_at": "2015-05-14T09:56:05.322",
+    "genre_number": "502",
+    "type_event": "D",
+    "character": 7,
+    "title": "HSBC EMPRÉSTIMOS",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 96,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.256",
+    "modified_at": "2015-05-14T09:56:05.405",
+    "genre_number": "503",
+    "type_event": "D",
+    "character": 7,
+    "title": "BRADESCO EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 97,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.302",
+    "modified_at": "2015-05-14T09:56:05.460",
+    "genre_number": "504",
+    "type_event": "D",
+    "character": 7,
+    "title": "BMC EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 98,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.313",
+    "modified_at": "2015-05-14T09:56:05.542",
+    "genre_number": "505",
+    "type_event": "D",
+    "character": 7,
+    "title": "REAL EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 99,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.343",
+    "modified_at": "2015-05-14T09:56:05.613",
+    "genre_number": "506",
+    "type_event": "D",
+    "character": 7,
+    "title": "CRUZEIRO DO SUL EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 100,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.356",
+    "modified_at": "2015-05-14T09:56:05.691",
+    "genre_number": "507",
+    "type_event": "D",
+    "character": 7,
+    "title": "BANCO ALFA EMPRÉSTIMO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 101,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.374",
+    "modified_at": "2015-06-01T09:08:48.182",
+    "genre_number": "508",
+    "type_event": "D",
+    "character": 7,
+    "title": "BCO EMPREEND - EMPR. CONSIGNADO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 202,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-02-26T09:06:12.415",
+    "modified_at": "2016-02-26T09:06:12.415",
+    "genre_number": "509",
+    "type_event": "D",
+    "character": 7,
+    "title": "BCO EMPREEND - HABITACIONAL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 102,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.396",
+    "modified_at": "2015-05-13T07:50:44.950",
+    "genre_number": "510",
+    "type_event": "D",
+    "character": 6,
+    "title": "PLANSAUDE - MENSALIDADE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 103,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.409",
+    "modified_at": "2015-05-13T07:50:44.973",
+    "genre_number": "511",
+    "type_event": "D",
+    "character": 6,
+    "title": "PLANSAUDE - DEPENDENTE INDIRETO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 104,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.431",
+    "modified_at": "2015-05-13T07:50:44.988",
+    "genre_number": "512",
+    "type_event": "D",
+    "character": 6,
+    "title": "PLANSAUDE - COMPARTICIPACAO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 105,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.453",
+    "modified_at": "2015-05-13T07:50:45.003",
+    "genre_number": "513",
+    "type_event": "D",
+    "character": 6,
+    "title": "PLANSAUDE - TAXA DE INSCRICAO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 106,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.467",
+    "modified_at": "2015-05-13T07:50:45.018",
+    "genre_number": "514",
+    "type_event": "D",
+    "character": 6,
+    "title": "PLANSAUDE - PARCELAMENTO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 107,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.488",
+    "modified_at": "2016-03-22T09:17:00.670",
+    "genre_number": "515",
+    "type_event": "D",
+    "character": 1,
+    "title": "REEMB. A PGJ - PLANSAUDE PTRNAL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 331,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2022-02-02T11:20:03.232",
+    "modified_at": "2022-02-02T11:27:31.641",
+    "genre_number": "516",
+    "type_event": "D",
+    "character": 7,
+    "title": "BRADESCO FINANCIAMENTO S/A ",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 108,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.508",
+    "modified_at": "2015-05-13T07:50:45.054",
+    "genre_number": "519",
+    "type_event": "D",
+    "character": 7,
+    "title": "FENASEMP - CONTRIBUIÇÃO SINDICAL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 109,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.523",
+    "modified_at": "2015-05-13T07:50:45.069",
+    "genre_number": "520",
+    "type_event": "D",
+    "character": 6,
+    "title": "SINDSEMP",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 286,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-10-09T09:37:41.643",
+    "modified_at": "2020-01-22T07:43:45.720",
+    "genre_number": "521",
+    "type_event": "D",
+    "character": 6,
+    "title": "ANACOMP - ASSOC NACIONAL OFICIAIS MP",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 318,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-01-15T10:10:00.634",
+    "modified_at": "2021-10-25T16:53:55.882",
+    "genre_number": "522",
+    "type_event": "D",
+    "character": 6,
+    "title": "ASTIC - TO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 258,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-07-18T15:57:55.633",
+    "modified_at": "2018-07-31T15:18:47.358",
+    "genre_number": "525",
+    "type_event": "D",
+    "character": 6,
+    "title": "DOAÇÃO HOSPITAL DE AMOR- MENSALIDADE FIXA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 259,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-07-18T16:00:49.125",
+    "modified_at": "2018-07-31T15:31:02.934",
+    "genre_number": "526",
+    "type_event": "D",
+    "character": 6,
+    "title": "DOAÇÃO HOSPITAL DE AMOR- PARCELA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 275,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-06-06T15:34:08.039",
+    "modified_at": "2019-06-06T15:35:51.875",
+    "genre_number": "527",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - CONVENIOS FARMACIA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 276,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-06-06T15:34:41.090",
+    "modified_at": "2019-06-06T15:36:10.828",
+    "genre_number": "528",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - CONVENIO COMBUSTIVEL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 277,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-06-06T15:35:01.447",
+    "modified_at": "2019-06-06T15:36:26.639",
+    "genre_number": "529",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - CONVENIO CARTAO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 110,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.565",
+    "modified_at": "2015-05-13T07:50:45.086",
+    "genre_number": "530",
+    "type_event": "D",
+    "character": 6,
+    "title": "ASAMP - MENSALIDADE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 111,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.578",
+    "modified_at": "2015-05-13T07:50:45.103",
+    "genre_number": "531",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - CONVENIOS",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 112,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.612",
+    "modified_at": "2017-10-26T14:18:12.564",
+    "genre_number": "532",
+    "type_event": "D",
+    "character": 6,
+    "title": "ASAMP - UNIMED",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 113,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.625",
+    "modified_at": "2015-05-13T07:50:45.133",
+    "genre_number": "533",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - HONORARIOS",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 114,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.642",
+    "modified_at": "2015-05-13T07:50:45.166",
+    "genre_number": "534",
+    "type_event": "D",
+    "character": 6,
+    "title": "ASAMP - MENSALIDADE I",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 193,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-11-25T09:04:02.431",
+    "modified_at": "2015-11-25T09:04:02.431",
+    "genre_number": "535",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - BRASILCARD",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 252,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-05-17T15:37:58.783",
+    "modified_at": "2020-12-22T13:51:59.136",
+    "genre_number": "536",
+    "type_event": "D",
+    "character": 7,
+    "title": "ASAMP - COPARTICIPACAO UNIMED",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 115,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.660",
+    "modified_at": "2015-05-13T07:50:45.181",
+    "genre_number": "537",
+    "type_event": "D",
+    "character": 6,
+    "title": "IAJUS - UNIMED",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 116,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.679",
+    "modified_at": "2017-10-27T10:22:36.254",
+    "genre_number": "538",
+    "type_event": "D",
+    "character": 6,
+    "title": "ASMETO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 253,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-05-17T15:38:40.133",
+    "modified_at": "2018-06-27T09:19:21.329",
+    "genre_number": "539",
+    "type_event": "D",
+    "character": 6,
+    "title": "ASAMP - BRADESCO DENTAL",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 117,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.701",
+    "modified_at": "2015-05-13T07:50:45.211",
+    "genre_number": "540",
+    "type_event": "D",
+    "character": 6,
+    "title": "ATMP",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 118,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.716",
+    "modified_at": "2017-10-26T14:20:31.630",
+    "genre_number": "541",
+    "type_event": "D",
+    "character": 6,
+    "title": "ATMP - ORAL PREV",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 119,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.734",
+    "modified_at": "2017-10-26T14:20:39.956",
+    "genre_number": "542",
+    "type_event": "D",
+    "character": 6,
+    "title": "ATMP - UNIMED",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 120,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.749",
+    "modified_at": "2015-05-13T07:50:45.258",
+    "genre_number": "543",
+    "type_event": "D",
+    "character": 7,
+    "title": "ATMP - CONVENIOS",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 121,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.770",
+    "modified_at": "2015-05-13T07:50:45.273",
+    "genre_number": "544",
+    "type_event": "D",
+    "character": 7,
+    "title": "ATMP - CONSORCIO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 251,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-03-15T09:52:20.190",
+    "modified_at": "2020-12-22T12:42:03.071",
+    "genre_number": "545",
+    "type_event": "D",
+    "character": 7,
+    "title": "ATMP - UNIMED COPARTICIPACAO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 291,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-01-17T13:52:43.703",
+    "modified_at": "2020-01-17T13:52:43.703",
+    "genre_number": "546",
+    "type_event": "D",
+    "character": 7,
+    "title": "ATMP - BRASIL CARD",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 295,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-04-03T09:12:42.003",
+    "modified_at": "2020-05-27T20:34:51.072",
+    "genre_number": "547",
+    "type_event": "D",
+    "character": 7,
+    "title": "PARCERIA SOLIDÁRIA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 297,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-10-22T11:55:20.395",
+    "modified_at": "2020-10-22T11:55:20.395",
+    "genre_number": "548",
+    "type_event": "D",
+    "character": 7,
+    "title": "ATMP - BRADESCO SAÚDE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 316,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-11-12T10:19:21.368",
+    "modified_at": "2020-11-12T10:19:21.368",
+    "genre_number": "549",
+    "type_event": "D",
+    "character": 6,
+    "title": "ATMP - OPERADORA CLARO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 122,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.797",
+    "modified_at": "2019-07-25T13:21:10.914",
+    "genre_number": "550",
+    "type_event": "D",
+    "character": 6,
+    "title": "VALE TRANSPORTE",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 317,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-01-12T09:42:59.233",
+    "modified_at": "2021-09-21T16:26:32.856",
+    "genre_number": "551",
+    "type_event": "D",
+    "character": 6,
+    "title": "ATMP - PARCELAMENTO UNIMED",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 322,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-04-14T14:26:53.605",
+    "modified_at": "2021-10-25T16:53:58.455",
+    "genre_number": "552",
+    "type_event": "D",
+    "character": 7,
+    "title": "PARCERIA SOLIDÁRIA II",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 123,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.812",
+    "modified_at": "2015-06-25T08:49:39.064",
+    "genre_number": "700",
+    "type_event": "D",
+    "character": 7,
+    "title": "RESSARCIMENTO AO ERÁRIO",
+    "config_transparency": 36,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 124,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.831",
+    "modified_at": "2015-05-13T07:50:45.327",
+    "genre_number": "701",
+    "type_event": "D",
+    "character": 5,
+    "title": "PENSÃO ALIMENTÍCIA",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 125,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.849",
+    "modified_at": "2015-06-25T08:52:20.041",
+    "genre_number": "702",
+    "type_event": "D",
+    "character": 7,
+    "title": "RESSARCIMENTO - UNITINS",
+    "config_transparency": 36,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 142,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-03-20T10:31:34.605",
+    "modified_at": "2015-05-13T07:50:45.364",
+    "genre_number": "703",
+    "type_event": "D",
+    "character": 7,
+    "title": "RESSARCIMENTO - UNITINS - ADIC. DE FÉRIAS",
+    "config_transparency": 1002,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 194,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-12-02T17:10:51.179",
+    "modified_at": "2015-12-02T17:10:51.179",
+    "genre_number": "704",
+    "type_event": "D",
+    "character": 7,
+    "title": "RESSARCIMENTO - UNITINS 13º",
+    "config_transparency": 36,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 203,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-03-07T11:31:28.679",
+    "modified_at": "2016-03-07T11:31:28.679",
+    "genre_number": "705",
+    "type_event": "D",
+    "character": 5,
+    "title": "PENSÃO POR MORTE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 204,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2016-03-07T11:35:17.755",
+    "modified_at": "2016-03-07T11:35:17.755",
+    "genre_number": "706",
+    "type_event": "P",
+    "character": 5,
+    "title": "PENSÃO",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 239,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-03-13T08:50:51.832",
+    "modified_at": "2020-01-22T07:43:35.959",
+    "genre_number": "707",
+    "type_event": "D",
+    "character": 7,
+    "title": "DEVOLUÇÃO VENCIMENTO -  SECAD TO",
+    "config_transparency": 25,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 289,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-12-16T11:27:53.384",
+    "modified_at": "2020-01-22T07:42:23.846",
+    "genre_number": "708",
+    "type_event": "D",
+    "character": 7,
+    "title": "DEVOLUÇÃO ADIANTAMENTO 13º SALÁRIO - SECAD- TO",
+    "config_transparency": 30,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 330,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2022-01-18T16:49:43.720",
+    "modified_at": "2022-01-18T16:49:43.720",
+    "genre_number": "709",
+    "type_event": "D",
+    "character": 7,
+    "title": "TUTELA RECURSAL - PENHORA",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 161,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-04-28T13:29:11.011",
+    "modified_at": "2017-09-21T11:06:11.757",
+    "genre_number": "710",
+    "type_event": "P",
+    "character": 1,
+    "title": "GRAT.  INCENTIVO DOCENCIA / RSR",
+    "config_transparency": 25,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 126,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.867",
+    "modified_at": "2016-07-28T15:30:51.272",
+    "genre_number": "900",
+    "type_event": "D",
+    "character": 8,
+    "title": "IGEPREV PF",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 127,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.892",
+    "modified_at": "2022-03-04T11:20:34.909",
+    "genre_number": "901",
+    "type_event": "D",
+    "character": 17,
+    "title": "IGEPREV PF SOBRE 13º SALARIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 128,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.905",
+    "modified_at": "2016-07-28T15:30:51.328",
+    "genre_number": "902",
+    "type_event": "D",
+    "character": 8,
+    "title": "IGEPREV PF SOBRE RRA",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 129,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.925",
+    "modified_at": "2016-07-28T15:30:51.337",
+    "genre_number": "905",
+    "type_event": "D",
+    "character": 8,
+    "title": "IGEPREV PP",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 130,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.942",
+    "modified_at": "2022-03-04T11:20:41.975",
+    "genre_number": "906",
+    "type_event": "D",
+    "character": 17,
+    "title": "IGEPREV PP SOBRE 13º SALÁRIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 131,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.957",
+    "modified_at": "2016-07-28T15:30:51.401",
+    "genre_number": "907",
+    "type_event": "D",
+    "character": 8,
+    "title": "IGEPREV PP SOBRE RRA",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 240,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-11-08T10:10:41.283",
+    "modified_at": "2017-11-08T10:12:21.126",
+    "genre_number": "908",
+    "type_event": "D",
+    "character": 8,
+    "title": "GOIASPREV - PF",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 247,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2017-12-08T08:42:26.672",
+    "modified_at": "2022-03-04T11:20:48.664",
+    "genre_number": "909",
+    "type_event": "D",
+    "character": 17,
+    "title": "GOIASPREV PF SOBRE 13º SALARIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 132,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.969",
+    "modified_at": "2016-07-28T15:31:04.985",
+    "genre_number": "910",
+    "type_event": "D",
+    "character": 8,
+    "title": "INSS",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 133,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.985",
+    "modified_at": "2022-03-04T11:15:44.648",
+    "genre_number": "911",
+    "type_event": "D",
+    "character": 17,
+    "title": "INSS SOBRE 13º SALARIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 270,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-04-02T09:04:15.066",
+    "modified_at": "2019-04-02T09:04:15.066",
+    "genre_number": "912",
+    "type_event": "D",
+    "character": 8,
+    "title": "PREVIPORTO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 271,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2019-04-02T16:32:47.509",
+    "modified_at": "2022-03-04T11:20:58.626",
+    "genre_number": "913",
+    "type_event": "D",
+    "character": 17,
+    "title": "PREVIPORTO - 13º SALÁRIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 134,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.997",
+    "modified_at": "2016-07-28T15:31:53.350",
+    "genre_number": "915",
+    "type_event": "D",
+    "character": 8,
+    "title": "PREVPALMAS",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 135,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:37.008",
+    "modified_at": "2022-03-04T11:21:06.989",
+    "genre_number": "916",
+    "type_event": "D",
+    "character": 17,
+    "title": "PREVPALMAS SOBRE 13º SALARIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 292,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-02-06T15:19:40.440",
+    "modified_at": "2020-02-13T11:37:44.056",
+    "genre_number": "917",
+    "type_event": "D",
+    "character": 8,
+    "title": "ARRAIASPREV",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 293,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2020-02-06T15:20:42.024",
+    "modified_at": "2022-03-04T11:21:13.383",
+    "genre_number": "918",
+    "type_event": "D",
+    "character": 17,
+    "title": "ARRAIASPREV SOBRE 13º SALÁRIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 319,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-01-26T09:13:01.057",
+    "modified_at": "2021-01-26T09:13:01.057",
+    "genre_number": "919",
+    "type_event": "D",
+    "character": 8,
+    "title": "JUSPREV - FUNDO DE PENSÃO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 320,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-01-26T09:13:35.593",
+    "modified_at": "2022-03-04T11:21:19.308",
+    "genre_number": "920",
+    "type_event": "D",
+    "character": 17,
+    "title": "JUSPREV - FUNDO DE PENSÃO - 13º SALÁRIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 324,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-07-29T08:27:52.732",
+    "modified_at": "2021-07-29T08:27:52.732",
+    "genre_number": "921",
+    "type_event": "D",
+    "character": 8,
+    "title": "IMPARPREV",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 325,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-07-29T08:48:40.177",
+    "modified_at": "2022-03-04T11:21:25.682",
+    "genre_number": "922",
+    "type_event": "D",
+    "character": 17,
+    "title": "IMPARPREV SOBRE 13º SALÁRIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 328,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-09-14T10:46:04.638",
+    "modified_at": "2021-10-25T16:57:51.632",
+    "genre_number": "923",
+    "type_event": "D",
+    "character": 8,
+    "title": "GURUPI PREV",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 329,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2021-09-20T09:12:18.207",
+    "modified_at": "2022-03-04T11:21:35.230",
+    "genre_number": "924",
+    "type_event": "D",
+    "character": 17,
+    "title": "GURUPI PREV S/ 13º SALÁRIO",
+    "config_transparency": 33,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 136,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:37.039",
+    "modified_at": "2022-03-04T11:15:22.867",
+    "genre_number": "991",
+    "type_event": "D",
+    "character": 20,
+    "title": "IRRF SOBRE O 13º SALÁRIO",
+    "config_transparency": 34,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 137,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:37.100",
+    "modified_at": "2019-07-29T18:33:11.377",
+    "genre_number": "992",
+    "type_event": "D",
+    "character": 4,
+    "title": "IRRF SOBRE RRA",
+    "config_transparency": 41,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 138,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:37.161",
+    "modified_at": "2020-08-28T16:27:43.368",
+    "genre_number": "999",
+    "type_event": "D",
+    "character": 4,
+    "title": "IRRF",
+    "config_transparency": 34,
+    "socialsecurity_config": null
+  }
+}
+]

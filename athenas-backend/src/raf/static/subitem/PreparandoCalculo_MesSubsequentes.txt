@@ -1,0 +1,28 @@
+act = Activity.objects.get(pk=2471007)
+
+print(act.workerlocation.raf.month, act.workerlocation.raf.year, act.workerlocation.raf.employee, act, act.amount_submitted)
+8 2017 3790 : JACQUELINE BORGES SILVA TOMAZ PROC06 - 06ª PROCURADORIA DE JUSTIÇA - CÍVEL - PROCESSOS CÍVEIS - 2016  - DIREITO CONSUMIDOR - SALDO ATUAL 1
+
+for ic in act.subitem.for_calculation.all():
+    print(ic.subitem, ic.from_the_sum, ic.affectation, ic.previous_month)
+    from_the_sum=ic.subitem
+
+SALDO ANTERIOR SALDO ATUAL 1 True
+
+new_act = Activity.objects.filter(subitem=from_the_sum, item=act.item, workerlocation__location=act.workerlocation.location, workerlocation__raf__month=act.workerlocation.raf.month+1, workerlocation__raf__year=act.workerlocation.raf.year, workerlocation__raf__emplo
+yee=act.workerlocation.raf.employee)
+
+for a in new_act:
+    print(a.workerlocation.raf.month, a.workerlocation.raf.year, a.workerlocation.raf.employee, a, a.amount_submitted)
+
+9 2017 3790 : JACQUELINE BORGES SILVA TOMAZ PROC06 - 06ª PROCURADORIA DE JUSTIÇA - CÍVEL - PROCESSOS CÍVEIS - 2016  - DIREITO CONSUMIDOR - SALDO ANTERIOR 2
+
+for a in new_act:
+    print(a.workerlocation.raf.month, a.workerlocation.raf.year, a.workerlocation.raf.employee, a, a.amount_athenas)
+
+9 2017 3790 : JACQUELINE BORGES SILVA TOMAZ PROC06 - 06ª PROCURADORIA DE JUSTIÇA - CÍVEL - PROCESSOS CÍVEIS - 2016  - DIREITO CONSUMIDOR - SALDO ANTERIOR 1
+
+for a in new_act:
+    print(a.workerlocation.raf.month, a.workerlocation.raf.year, a.workerlocation.raf.employee, a, a.amount_athenas)
+
+9 2017 3790 : JACQUELINE BORGES SILVA TOMAZ PROC06 - 06ª PROCURADORIA DE JUSTIÇA - CÍVEL - PROCESSOS CÍVEIS - 2016  - DIREITO CONSUMIDOR - SALDO ANTERIOR 1

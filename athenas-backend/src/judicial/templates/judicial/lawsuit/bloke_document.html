@@ -1,0 +1,9 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Manifestação do {{ doc.bloke }} como apontado.</h2></div>
+    <div><small>Noticia de Fato : {{ doc.bloke.lawsuit.origin.codigo }} - {{ doc.bloke.lawsuit.cache_number }}</small></div>
+
+    <div class="paragraph-text">{{ doc.text | safely }}</div>
+</div>

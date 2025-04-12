@@ -1,0 +1,30 @@
+[
+{
+  "fields": {
+    "uuid": "405dc09c454341ef942e2a48552d26f2",
+    "title": "Recadastramento | Atualização de Informações",
+    "module": "rh.registration",
+    "application": [
+      "bd4437f276644ab7b0218f4e8a69da61"
+    ],
+    "controller": "RegistrationFormInformation",
+    "active": true,
+    "icon": ""
+  },
+  "model": "engine.controller"
+},
+{
+  "fields": {
+    "uuid": "0f511985b90743d9b3dc4df2e0a2d9eb",
+    "title": "Validação - Informações Pessoais",
+    "module": "rh.registration",
+    "application": [
+      "bd4437f276644ab7b0218f4e8a69da61"
+    ],
+    "controller": "RegistrationFormInformationAdmin",
+    "active": true,
+    "icon": ""
+  },
+  "model": "engine.controller"
+}
+]

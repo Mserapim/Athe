@@ -1,0 +1,93 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO AUXÍLIO FUNERAL</p>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor Geral da Procuradoria Geral de Justiça:
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone de contato:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+    <tr>
+        <th class="rf-th">RG:</th>
+        <th class="rf-th">CPF:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_rg }}</td>
+        <td class="rf-td">{{ employee_cpf }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th" colspan="2">Nome do(a) falecido(a):</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ deceased_name }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Grau de parentesco com o(a) falecido(a):</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ degree_of_kinship }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Lei 1.818/2007<br/>
+                Art. 55. São concedidos ao servidor titular de cargo de provimento
+                efetivo ou estabilizado e à sua família os seguintes auxílios pecuniários:<br/>
+                I - auxílio-funeral;<br/>
+                Art. 56 - O Auxílio-Funeral será devido à família do servidor ativo
+                ou inativo falecido, em valor equivalente a um mês da remuneração,
+                subsídio ou provento.<br/>
+                § 1º No caso de acumulação legal de cargos, o auxílio é pago somente em
+                razão do cargo de maior remuneração, subsídio ou provento.<br/>
+                § 2º O auxílio é devido, também, ao servidor, por morte do cônjuge,
+                companheiro ou de filho menor ou inválido.<br/>
+                § 3º O auxílio é pago no prazo de 48 horas, por meio de procedimento
+                sumaríssimo, à pessoa da família que houver custeado o funeral.<br/>
+                Art. 57. Se o funeral for custeado por terceiro, este é indenizado,
+                observado o disposto no art. 56 desta Lei.<br/>
+                Art. 58. Caso o servidor esteja a serviço fora do local de trabalho e
+                vier a falecer, as despesas de transporte do corpo correm à conta dos
+                recursos dos respectivos Poderes do Estado.
+            </p>
+            <p class="rf-paragraph-height">
+                - Nos casos de dúvidas sobre a aplicação da Lei, encaminhar à
+                Assessoria Jurídica da Diretoria Geral para Análise.
+            </p>
+            <p class="rf-paragraph-height">
+                - Documentos necessários: Atestado de Óbito e Comprovante de
+                Despesa com Funeral.
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

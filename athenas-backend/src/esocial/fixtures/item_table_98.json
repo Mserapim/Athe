@@ -1,0 +1,477 @@
+[
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "00",
+            "title": "Não é base de cálculo",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "01",
+            "title": "Não é base de cálculo em função de acordos internacionais de previdência social",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "11",
+            "title": "Mensal - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "12",
+            "title": "13º salário - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "13",
+            "title": "Exclusiva do empregador - Mensal - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "14",
+            "title": "Exclusiva do empregador - 13° salário - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "15",
+            "title": "Exclusiva do segurado - Mensal - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "16",
+            "title": "Exclusiva do segurado - 13° salário - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "21",
+            "title": "Salário-maternidade mensal, pago pelo empregador - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "22",
+            "title": "Salário-maternidade 13º salário, pago pelo empregador - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "25",
+            "title": "Salário-maternidade mensal, pago pelo INSS - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "26",
+            "title": "Salário-maternidade 13° salário, pago pelo INSS - Base de cálculo das contribuições sociais - Salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "31",
+            "title": "Mensal - Contribuição descontada do segurado sobre salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "32",
+            "title": "13º salário - Contribuição descontada do segurado sobre salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "34",
+            "title": "SEST - Contribuição descontada do segurado sobre salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "35",
+            "title": "SENAT - Contribuição descontada do segurado sobre salário de contribuição",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "51",
+            "title": "Salário-família - Outros",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "91",
+            "title": "Mensal - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "92",
+            "title": "13º salário - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "93",
+            "title": "Salário-maternidade - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "94",
+            "title": "Salário-maternidade 13º salário - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "95",
+            "title": "Exclusiva do empregador - Mensal - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "96",
+            "title": "Exclusiva do empregador - 13º salário - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "97",
+            "title": "Exclusiva do empregador - Salário-maternidade - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "98",
+            "title": "Exclusiva do empregador - Salário-maternidade 13º salário - Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "98",
+            "choice": []
+        }
+    }
+]

@@ -1,0 +1,61 @@
+{% load judicialfilters %}
+{% for moviment in protocol.fathers_of_moviment %}
+    <div style="margin-top: 1em; margin-bottom: 2.5em; border-bottom: 1px dashed #000 !important">
+        <table style="width:100%; text-align: justify; font-size: 0.75rem">
+            <thead style="font-weight: normal; vertical-align: top; padding: 0.2rem">
+                <tr>
+                    <th><span style="font-weight: bold">Remetente</span></th>
+                    <th><span style="font-weight: bold">Enviado em</span></th>
+                </tr>
+            </thead>
+            <tbody style="font-weight: normal; vertical-align: top; padding: 0.2rem">
+                <tr>
+                    <td width="80%">
+                       {{ moviment.workplace_sender}} - {{ moviment.sender_of_movement }}
+                   </td>
+                    <td width="20%">
+                        {{ moviment.send_at | date:'d/m/Y H:i' }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width:100%; text-align: justify; font-size: 0.75rem">
+            <thead style="font-weight: normal; vertical-align: top; padding: 0.2rem">
+                <tr >
+                    <th>
+                        <span style="font-weight: bold">Destinatário</span>
+                    </th>
+                    <th>
+                        <span style="font-weight: bold">Recebido por</span>
+                    </th>
+                    <th>
+                        <span style="font-weight: bold">Recebido em</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody style="font-size: 0.5625rem; font-weight: normal; vertical-align: top; padding: 0.2rem">
+                {% for child in moviment.child_of_movement%}
+                <tr>
+                    <th width="40%">
+                        &#9679;{% if child.destinatario %}
+                            {{ child.destinatario}}
+                        {% else %}
+                            {{ child.lotacao_destino.nome}}
+                        {% endif %}
+                    </th>
+                    <th width="40%">
+                        {% if child.servidor_destino %}
+                            {{ child.servidor_destino.pessoa_fisica }}
+                        {% else %}
+                            Documento não recebido
+                        {% endif %}
+
+                    </th>
+                    <th width="20%">{% if child.data_recebimento %}{{child.data_recebimento | date:'d/m/Y H:i' }} {% else %}---{% endif %}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {{moviment.rendered_content_unified | safe}}
+    </div>
+{% endfor %}

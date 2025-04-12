@@ -1,0 +1,731 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_eSocial" id="2410_eSocial">1</td>
+        <td><a href="#r_2410_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410" id="2410">2</td>
+        <td><a href="#r_2410">evtCdBenIn</a></td>
+        <td><a href="#r_2410_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Cadastro de Benefício - Entes Públicos - Início.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_BENEFICIO_VALIDA_NUMERO">REGRA_BENEFICIO_VALIDA_NUMERO</a><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXTEMP_REATIVACAO">REGRA_EXTEMP_REATIVACAO</a><br>
+            <a href="#REGRA_MUDANCA_CPF">REGRA_MUDANCA_CPF</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_BENEFICIO">REGRA_RETIFICA_MESMO_BENEFICIO</a><br>
+            <a href="#REGRA_VALIDA_CNPJ">REGRA_VALIDA_CNPJ</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_Id" id="2410_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2410">evtCdBenIn</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEvento" id="2410_ideEvento">4</td>
+        <td><a href="#r_2410_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2410">evtCdBenIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEvento_indRetif"
+            id="2410_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2410_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEvento_nrRecibo"
+            id="2410_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2410_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2410_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEvento_tpAmb" id="2410_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2410_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEvento_procEmi"
+            id="2410_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2410_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEvento_verProc"
+            id="2410_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2410_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEmpregador" id="2410_ideEmpregador">10
+        </td>
+        <td><a href="#r_2410_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2410">evtCdBenIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEmpregador_tpInsc"
+            id="2410_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2410_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_ideEmpregador_nrInsc"
+            id="2410_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2410_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2410_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_beneficiario" id="2410_beneficiario">13</td>
+        <td><a href="#r_2410_beneficiario">beneficiario</a></td>
+        <td><a href="#r_2410">evtCdBenIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do beneficiário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_beneficiario_cpfBenef"
+            id="2410_beneficiario_cpfBenef">14
+        </td>
+        <td>cpfBenef</td>
+        <td><a href="#r_2410_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Informar o CPF do beneficiário.<br>
+            <strong>Validação:</strong> Deve observar o que segue:<br>
+            a) Se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [S], deve estar cadastrado no evento S-2400 com data
+            de início igual à data de obrigatoriedade dos eventos não periódicos para o ente público no eSocial;<br>
+            b) Se <a href="#2410_infoBenInicio_indSitBenef">indSitBenef</a> = [1], deve estar cadastrado no evento
+            S-2400 com data de início igual ou anterior a <a
+                    href="#2410_infoBenInicio_dtIniBeneficio">dtIniBeneficio</a> (ou a <a
+                    href="#2410_infoBenInicio_dtPublic">dtPublic</a>, caso este campo tenha sido informado);<br>
+            c) Se <a href="#2410_infoBenInicio_indSitBenef">indSitBenef</a> = [2, 3], deve estar cadastrado no evento
+            S-2400 com data de início igual ou anterior a <a
+                    href="#2410_infoBenInicio_sucessaoBenef_dtTransf">dtTransf</a> ou <a
+                    href="#2410_infoBenInicio_mudancaCPF_dtAltCPF">dtAltCPF</a>, respectivamente.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_beneficiario_matricula"
+            id="2410_beneficiario_matricula">15
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2410_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula do servidor/militar constante no Sistema de Administração de Recursos Humanos do órgão cujo
+            vínculo deu ensejo ao benefício. No caso de pensão por morte, informar a matrícula do instituidor da pensão.<br>
+            <strong>Validação:</strong> Informação obrigatória se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [N]
+            e <a href="#2410_infoBenInicio_dadosBeneficio_tpBeneficio">tpBeneficio</a> pertencer ao grupo [01, 02, 03,
+            04, 05, 06, 11] da <a href="tabelas.html#25">Tabela 25</a>.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_beneficiario_cnpjOrigem"
+            id="2410_beneficiario_cnpjOrigem">16
+        </td>
+        <td>cnpjOrigem</td>
+        <td><a href="#r_2410_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ do órgão público responsável pela matrícula do servidor/militar. Informação obrigatória
+            se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [N], desde que haja informação de matrícula.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2410_infoBenInicio_cadIni">cadIni</a> =
+            [N] e houver informação de <a href="#2410_beneficiario_matricula">matricula</a>, exceto se existir vínculo
+            (evento S-2200) no órgão declarante para o beneficiário (indicado em <a href="#2410_beneficiario_cpfBenef">cpfBenef</a>
+            e <a href="#2410_beneficiario_matricula">matricula</a>) ou, se <a
+                    href="#2410_infoBenInicio_dadosBeneficio_tpBeneficio">tpBeneficio</a> pertencer ao grupo [06] da <a
+                    href="tabelas.html#25">Tabela 25</a>, para o instituidor da pensão por morte (indicado em <a
+                    href="#2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte_cpfInst">cpfInst</a> e <a
+                    href="#2410_beneficiario_matricula">matricula</a>).<br>
+            Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio" id="2410_infoBenInicio">17
+        </td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td><a href="#r_2410">evtCdBenIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do benefício - Início.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_cadIni"
+            id="2410_infoBenInicio_cadIni">18
+        </td>
+        <td>cadIni</td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se a data de início do benefício é anterior à obrigatoriedade dos eventos não periódicos para o ente
+            público no eSocial.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_indSitBenef"
+            id="2410_infoBenInicio_indSitBenef">19
+        </td>
+        <td>indSitBenef</td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar a situação do benefício no órgão declarante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Benefício concedido pelo próprio órgão declarante<br>
+            <strong>2</strong> - Benefício transferido de outro órgão<br>
+            <strong>3</strong> - Mudança de CPF do beneficiário<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#2410_infoBenInicio_cadIni">cadIni</a>
+            = [N].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_nrBeneficio"
+            id="2410_infoBenInicio_nrBeneficio">20
+        </td>
+        <td>nrBeneficio</td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Número do benefício.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dtIniBeneficio"
+            id="2410_infoBenInicio_dtIniBeneficio">21
+        </td>
+        <td>dtIniBeneficio</td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de início do benefício.<br>
+            <strong>Validação:</strong> Deve observar o que segue:<br>
+            a) Se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [S], deve ser anterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o ente público no eSocial;<br>
+            b) Se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [N], deve ser igual ou posterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dtPublic"
+            id="2410_infoBenInicio_dtPublic">22
+        </td>
+        <td>dtPublic</td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data de publicação da concessão do benefício, somente quando o ato concessório tiver vigência
+            retroativa.<br>
+            <strong>Validação:</strong> Deve ser posterior a <a
+                    href="#2410_infoBenInicio_dtIniBeneficio">dtIniBeneficio</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dadosBeneficio"
+            id="2410_infoBenInicio_dadosBeneficio">23
+        </td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio">dadosBeneficio</a></td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dados relativos ao benefício.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dadosBeneficio_tpBeneficio"
+            id="2410_infoBenInicio_dadosBeneficio_tpBeneficio">24
+        </td>
+        <td>tpBeneficio</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio">dadosBeneficio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Tipo de benefício.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#25">Tabela 25</a>.
+            Se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [N], não é permitido utilizar código do grupo [08]
+            dessa tabela.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dadosBeneficio_tpPlanRP"
+            id="2410_infoBenInicio_dadosBeneficio_tpPlanRP">25
+        </td>
+        <td>tpPlanRP</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio">dadosBeneficio</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de plano de segregação da massa.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Sem segregação da massa<br>
+            <strong>1</strong> - Fundo em capitalização<br>
+            <strong>2</strong> - Fundo em repartição<br>
+            <strong>3</strong> - Mantido pelo Tesouro
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dadosBeneficio_dsc"
+            id="2410_infoBenInicio_dadosBeneficio_dsc">26
+        </td>
+        <td>dsc</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio">dadosBeneficio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Descrição do instrumento ou situação que originou o pagamento do benefício.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2410_infoBenInicio_dadosBeneficio_tpBeneficio">tpBeneficio</a> = [0909, 1001, 1009].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dadosBeneficio_indDecJud"
+            id="2410_infoBenInicio_dadosBeneficio_indDecJud">27
+        </td>
+        <td>indDecJud</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio">dadosBeneficio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o benefício foi concedido por determinação judicial.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2410_infoBenInicio_cadIni">cadIni</a> =
+            [N].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_dadosBeneficio_infoPenMorte"
+            id="2410_infoBenInicio_dadosBeneficio_infoPenMorte">28
+        </td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio_infoPenMorte">infoPenMorte</a></td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio">dadosBeneficio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas à pensão por morte.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2410_infoBenInicio_dadosBeneficio_infoPenMorte_tpPenMorte"
+            id="2410_infoBenInicio_dadosBeneficio_infoPenMorte_tpPenMorte">29
+        </td>
+        <td>tpPenMorte</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio_infoPenMorte">infoPenMorte</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de pensão por morte.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Vitalícia<br>
+            <strong>2</strong> - Temporária
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte"
+            id="2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte">30
+        </td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte">instPenMorte</a></td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio_infoPenMorte">infoPenMorte</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do instituidor da pensão por morte.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte_cpfInst"
+            id="2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte_cpfInst">31
+        </td>
+        <td>cpfInst</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte">instPenMorte</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o CPF do instituidor da pensão por morte.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido e diferente do CPF do beneficiário.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte_dtInst"
+            id="2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte_dtInst">32
+        </td>
+        <td>dtInst</td>
+        <td><a href="#r_2410_infoBenInicio_dadosBeneficio_infoPenMorte_instPenMorte">instPenMorte</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de óbito do instituidor da pensão por morte.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_sucessaoBenef"
+            id="2410_infoBenInicio_sucessaoBenef">33
+        </td>
+        <td><a href="#r_2410_infoBenInicio_sucessaoBenef">sucessaoBenef</a></td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações de transferência de benefício.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_sucessaoBenef_cnpjOrgaoAnt"
+            id="2410_infoBenInicio_sucessaoBenef_cnpjOrgaoAnt">34
+        </td>
+        <td>cnpjOrgaoAnt</td>
+        <td><a href="#r_2410_infoBenInicio_sucessaoBenef">sucessaoBenef</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o CNPJ do órgão público anterior.<br>
+            <strong>Validação:</strong> Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as
+            particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14
+            (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se <a
+                    href="#2410_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a> tiver 14 (catorze) algarismos) e dos
+            estabelecimentos informados através do evento S-1005.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_sucessaoBenef_nrBeneficioAnt"
+            id="2410_infoBenInicio_sucessaoBenef_nrBeneficioAnt">35
+        </td>
+        <td>nrBeneficioAnt</td>
+        <td><a href="#r_2410_infoBenInicio_sucessaoBenef">sucessaoBenef</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Número do benefício no ente público anterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_sucessaoBenef_dtTransf"
+            id="2410_infoBenInicio_sucessaoBenef_dtTransf">36
+        </td>
+        <td>dtTransf</td>
+        <td><a href="#r_2410_infoBenInicio_sucessaoBenef">sucessaoBenef</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data da transferência do benefício para o órgão público declarante.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser posterior à data de início do benefício;<br>
+            b) Deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente
+            público no eSocial e igual ou anterior à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_sucessaoBenef_observacao"
+            id="2410_infoBenInicio_sucessaoBenef_observacao">37
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2410_infoBenInicio_sucessaoBenef">sucessaoBenef</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_mudancaCPF"
+            id="2410_infoBenInicio_mudancaCPF">38
+        </td>
+        <td><a href="#r_2410_infoBenInicio_mudancaCPF">mudancaCPF</a></td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de mudança de CPF do beneficiário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_mudancaCPF_cpfAnt"
+            id="2410_infoBenInicio_mudancaCPF_cpfAnt">39
+        </td>
+        <td>cpfAnt</td>
+        <td><a href="#r_2410_infoBenInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF antigo do beneficiário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_mudancaCPF_nrBeneficioAnt"
+            id="2410_infoBenInicio_mudancaCPF_nrBeneficioAnt">40
+        </td>
+        <td>nrBeneficioAnt</td>
+        <td><a href="#r_2410_infoBenInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Preencher com o número do benefício anterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_mudancaCPF_dtAltCPF"
+            id="2410_infoBenInicio_mudancaCPF_dtAltCPF">41
+        </td>
+        <td>dtAltCPF</td>
+        <td><a href="#r_2410_infoBenInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de alteração do CPF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_mudancaCPF_observacao"
+            id="2410_infoBenInicio_mudancaCPF_observacao">42
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2410_infoBenInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_infoBenTermino"
+            id="2410_infoBenInicio_infoBenTermino">43
+        </td>
+        <td><a href="#r_2410_infoBenInicio_infoBenTermino">infoBenTermino</a></td>
+        <td><a href="#r_2410_infoBenInicio">infoBenInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações da cessação do benefício.<br>
+            Grupo preenchido exclusivamente caso seja necessário enviar evento de reativação de benefício cessado antes
+            do início dos eventos não periódicos para o ente público no eSocial ou para informação de diferenças de
+            proventos e pensões devidos sob a vigência dos eventos periódicos para o ente público no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_infoBenTermino_dtTermBeneficio"
+            id="2410_infoBenInicio_infoBenTermino_dtTermBeneficio">44
+        </td>
+        <td>dtTermBeneficio</td>
+        <td><a href="#r_2410_infoBenInicio_infoBenTermino">infoBenTermino</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de cessação do benefício.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de início do benefício;<br>
+            b) Se <a href="#2410_infoBenInicio_cadIni">cadIni</a> = [S], deve ser anterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o ente público no eSocial;<br>
+            c) Se <a href="#2410_infoBenInicio_indSitBenef">indSitBenef</a> = [2], deve ser anterior a <a
+                    href="#2410_infoBenInicio_sucessaoBenef_dtTransf">dtTransf</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2410_infoBenInicio_infoBenTermino_mtvTermino"
+            id="2410_infoBenInicio_infoBenTermino_mtvTermino">45
+        </td>
+        <td>mtvTermino</td>
+        <td><a href="#r_2410_infoBenInicio_infoBenTermino">infoBenTermino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Motivo da cessação do benefício.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#26">Tabela 26</a>,
+            com exceção dos códigos [09, 10].
+        </td>
+    </tr>
+    </tbody>
+</table>

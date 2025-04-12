@@ -1,0 +1,65 @@
+[
+   {
+      "fields": {
+         "username": "web",
+         "first_name": "",
+         "last_name": "",
+         "is_active": true,
+         "is_superuser": false,
+         "is_staff": false,
+         "last_login": "2015-09-14T15:40:26.455",
+         "groups": [],
+         "user_permissions": [],
+         "password": "",
+         "email": "",
+         "date_joined": "2015-08-26T18:04:05.142"
+      },
+      "model": "auth.user"
+   },
+
+   {
+      "fields": {
+         "valid_at": null,
+         "app_key": "60ad3dca26112948cf16d962826434d6",
+         "title": "Extra Judicial Client"
+      },
+      "model": "ws.application"
+   },
+
+   {
+      "fields": {
+         "valid_at": null,
+         "app_key": "064b37f30304a0b5060fa46b872d4350",
+         "title": "Accounts Client"
+      },
+      "model": "ws.application"
+   },
+
+   {
+      "fields": {
+         "active": true,
+         "application": [
+            "60ad3dca26112948cf16d962826434d6"
+         ],
+         "user": [
+            "web"
+         ],
+         "user_token": "d90a56a8e0ca89a04396107dc4c332bb"
+      },
+      "model": "ws.userpermission"
+   },
+
+   {
+      "fields": {
+         "active": true,
+         "application": [
+            "064b37f30304a0b5060fa46b872d4350"
+         ],
+         "user": [
+            "web"
+         ],
+         "user_token": "a7bd3a51eb8abf366d95b8d0135da82e"
+      },
+      "model": "ws.userpermission"
+   }
+]

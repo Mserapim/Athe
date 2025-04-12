@@ -1,0 +1,58 @@
+[
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "QUOTA_SYSTEM_TYPE",
+			"label": "Ampla Concorrência",
+			"value": 1,
+			"cvalue": "1",
+			"cache_path": "rh.QUOTA_SYSTEM_TYPE",
+			"description": "Ampla Concorrência",
+			"order_weight": 4,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "QUOTA_SYSTEM_TYPE",
+			"label": "Cota Racial",
+			"value": 2,
+			"cvalue": "2",
+			"cache_path": "rh.QUOTA_SYSTEM_TYPE",
+			"description": "Cota Racial",
+			"order_weight": 3,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "QUOTA_SYSTEM_TYPE",
+			"label": "Cota para PCD",
+			"value": 3,
+			"cvalue": "3",
+			"cache_path": "rh.QUOTA_SYSTEM_TYPE",
+			"description": "Cota para PCD",
+			"order_weight": 2,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "QUOTA_SYSTEM_TYPE",
+			"label": "Outra Cota",
+			"value": 4,
+			"cvalue": "4",
+			"cache_path": "rh.QUOTA_SYSTEM_TYPE",
+			"description": "Outra Cota",
+			"order_weight": 1,
+			"active": true
+		}
+	}
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Visualização do Procedimento</title>
+        <link rel="stylesheet" type="text/css" href="{{ path.static }}/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="{{ path.static }}/js/ext/resources/css/ext-all.css">
+        <link rel="stylesheet" type="text/css" href="{{ path.static }}/judicial/judicial.css">
+        <link rel="stylesheet" type="text/css" href="{{ path.static }}/core.css">
+        <link rel="stylesheet" type="text/css" href="{{ path.static }}/judicial/proccess/default.css">
+
+        {% for path in csslist %}<link rel="stylesheet" type="text/css" href="{{ path }}">{% endfor %}
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            window.CONTEXT = "athenas";
+            window.CKEDITOR_BASEPATH = "/athenas/static/js/ckeditor/";
+            window.DEFAULT_THEME = 0;
+            window.DEBUG = false;
+            var force_secure = false;
+        </script>
+        {% if minified %}
+            <script src="{{ minified }}" charset="utf-8"></script>
+        {% else %}
+            {% for path in jslist %}<script type="text/javascript" src="{{ path }}"></script>{% endfor %}
+        {% endif %}
+        <script src="{{ path.static }}/judicial/proccess/BaseWorkspace.js" charset="utf-8"></script>
+        <script src="{{ path.static }}/judicial/proccess/PortraitWorkspace.js" charset="utf-8"></script>
+        <script src="{{ path.static }}/judicial/proccess/LandscapeWorkspace.js" charset="utf-8"></script>
+        <script src="{{ path.static }}/judicial/proccess/ViewerWorkspace.js" charset="utf-8"></script>
+        <script src="{{ path.static }}/judicial/proccess/launcher.js" charset="utf-8"></script>
+        <div id="container_error" style="display:none">
+        <div style="color:#333;text-align: center; display: block; font-size: 2.5rem;background-color: #ffd54f;">
+            <h1 style="font-weight: normal;display: inline-block; list-style-type: none; padding: 5em;">
+                Este procedimento não se encontra em sua posse.
+            </h1>
+          </div>
+        </div>
+        <div id="container_loading" style="color:#333;text-align: center; display: block; font-size: 2.5rem;">
+            <h1 style="font-weight: normal;display: inline-block; list-style-type: none; padding: 5em;">
+                Carregando informações ...
+            </h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<table border="0" cellborder="0" cellspacing="0" color="#000000">
+  {% if include_logo %}
+  <tr>
+    <td colspan="2">
+      <table border="0" cellborder="0" cellspacing="0" color="#000000">
+        <tr>
+          <td align="left"><img src="static/images/homedata.png"/></td>  <!-- A tag img precisa estar na mesma linha que td, senão o graphviz quebra. -->
+          <!-- <td align="left"><img src="https://athenas.mpto.mp.br/athenas/static/images/homedata.png"/></td> -->
+          <td align="left" width="350"><font point-size="18">Protocolo Eletrônico<br align="left"/>Ministério Público do Estado do Tocantins</font></td>  <!-- Caso o conteúdo do td seja texto, certifique-se de colocar tudo na mesma linha. -->
+        </tr>
+      </table>
+    </td>
+  </tr>
+  {% endif %}
+  <tr>
+    <td align="center" colspan="2" height="50"><font point-size="20">{{ instance.codigo }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Interessado(a):</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.interessado.nome }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Servidor(a) Origem:</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.servidor_origem.pessoa_fisica.nome }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Orgão Geral Origem:</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.orgao_geral_origem }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Assunto:</font></b></td>
+    <td align="left"><font point-size="10">{{ subject|safe }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Tipo Documento:</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.tipo_documento.nome }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Data Criação:</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.data_criacao|date:'d \d\e F \d\e Y, G:i:s'|default:'' }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Data Finalização:</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.data_finalizado|date:'d \d\e F \d\e Y, G:i:s'|default:'' }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Nível de Acesso:</font></b></td>
+    <td align="left"><font point-size="10">{% if instance.control_type %}{{ instance.control_type.title }}{% else %}Público{% endif %}</font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Hipótese Legal:</font></b></td>
+    <td align="left"><font point-size="10">{% if instance.legal_prerogative %}{{ instance.legal_prerogative.title }}{% else %}-{% endif %}</font></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="15"></td>
+  </tr>
+</table>

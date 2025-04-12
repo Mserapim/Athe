@@ -1,0 +1,44 @@
+{% load judicialfilters %}
+{% load humanize %}
+
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div style="margin-bottom:2em">
+        <h2>Termo de Ajustamento de Conduta</h2>
+        <div><small>{{ doc.description }}</small></div>
+        <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+    </div>
+
+    <div style="margin-bottom:2em">
+        <h2>Considerações</h2>
+        <div class="paragraph-text">{{ doc.considerations | safely }}</div>
+    </div>
+
+    <div class="field">
+        <h2>Clausulas</h2>
+        {% for activity in doc.activities_tac.filter %}
+        <div>
+            <div class="paragraph-text">
+                <div style="float:left; margin-right:0.2em">
+                    <span class="bold">Clausula {{ forloop.counter }}ª</span> -
+                </div>
+                {{ activity.description | safely }}
+                <div style="margin: 1em 1em 0 1em">
+                    Paragrafo único - {{ activity.responsible_activity.filter | join:', ' }},
+                    fica sujeito ao pagamento de multa de R$ {{ activity.fine_value | intcomma }}
+                    em caso de descumprimento da presente cláusula.
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="paragraph-text">{{ doc.text | safely }}</div>
+
+    <div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ execution_organ.localidade.nome | city_name }}, {{ doc.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>
+        <div><span style="font-size: 0.6em">{{ execution_organ.nome }}</span></div>
+    </div>
+</div>

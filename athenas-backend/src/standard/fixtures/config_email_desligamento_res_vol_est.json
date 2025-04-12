@@ -1,0 +1,32 @@
+[
+{
+    "model": "standard.item",
+    "pk": 145,
+    "fields": {
+        "configuration": 9,
+        "key": "EMAIL_DESLIGAMENTO_RESIDENTES",
+        "type_of": 3,
+        "value": "residentes@mpmt.mp.br;ensouza@mpmt.mp.br"
+    }
+},
+{
+    "model": "standard.item",
+    "pk": 146,
+    "fields": {
+        "configuration": 9,
+        "key": "EMAIL_DESLIGAMENTO_ESTAGIARIOS",
+        "type_of": 3,
+        "value": "estagiarios@mpmt.mp.br;ensouza@mpmt.mp.br"
+    }
+},
+{
+    "model": "standard.item",
+    "pk": 147,
+    "fields": {
+        "configuration": 9,
+        "key": "EMAIL_DESLIGAMENTO_VOLUNTARIOS",
+        "type_of": 3,
+        "value": "ensouza@mpmt.mp.br"
+    }
+}
+]

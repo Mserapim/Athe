@@ -1,0 +1,760 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_eSocial" id="2400_eSocial">1</td>
+        <td><a href="#r_2400_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400" id="2400">2</td>
+        <td><a href="#r_2400">evtCdBenefIn</a></td>
+        <td><a href="#r_2400_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Cadastro de Beneficiário - Entes Públicos - Início.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG">REGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_VALIDA_CNPJ">REGRA_VALIDA_CNPJ</a><br>
+            <a href="#REGRA_VALIDA_TRABALHADOR_BASE_CPF">REGRA_VALIDA_TRABALHADOR_BASE_CPF</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_Id" id="2400_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2400">evtCdBenefIn</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEvento" id="2400_ideEvento">4</td>
+        <td><a href="#r_2400_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2400">evtCdBenefIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEvento_indRetif"
+            id="2400_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2400_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEvento_nrRecibo"
+            id="2400_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2400_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2400_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEvento_tpAmb" id="2400_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2400_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEvento_procEmi"
+            id="2400_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2400_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEvento_verProc"
+            id="2400_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2400_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEmpregador" id="2400_ideEmpregador">10
+        </td>
+        <td><a href="#r_2400_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2400">evtCdBenefIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEmpregador_tpInsc"
+            id="2400_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2400_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_ideEmpregador_nrInsc"
+            id="2400_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2400_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2400_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.<br>
+            <strong>Validação:</strong> A natureza jurídica relativa ao número de inscrição informado deve ser igual a
+            1XX-X, 201-1, 203-8 ou 307-7.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario" id="2400_beneficiario">13</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td><a href="#r_2400">evtCdBenefIn</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do beneficiário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_cpfBenef"
+            id="2400_beneficiario_cpfBenef">14
+        </td>
+        <td>cpfBenef</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Informar o CPF do beneficiário.<br>
+            <strong>Validação:</strong> Não é possível existir dois eventos originais do mesmo órgão público declarante
+            para o mesmo CPF do beneficiário.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_nmBenefic"
+            id="2400_beneficiario_nmBenefic">15
+        </td>
+        <td>nmBenefic</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Informar o nome do beneficiário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dtNascto"
+            id="2400_beneficiario_dtNascto">16
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dtInicio"
+            id="2400_beneficiario_dtInicio">17
+        </td>
+        <td>dtInicio</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de início do cadastro do beneficiário. Informar a data de início da obrigatoriedade dos
+            eventos não periódicos para o ente público no eSocial caso o beneficiário possua cadastro anterior a essa
+            data.<br>
+            <strong>Validação:</strong> Deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não
+            periódicos para o ente público no eSocial e igual ou anterior à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_sexo"
+            id="2400_beneficiario_sexo">18
+        </td>
+        <td>sexo</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do beneficiário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino<br>
+            <strong>Validação:</strong> Informação obrigatória se <a href="#2400_beneficiario_dtInicio">dtInicio</a> for
+            posterior ao início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_racaCor"
+            id="2400_beneficiario_racaCor">19
+        </td>
+        <td>racaCor</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Etnia e raça do beneficiário, conforme sua autoclassificação (art. 39, § 8º, da Lei 12.288/2010).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Branca<br>
+            <strong>2</strong> - Preta<br>
+            <strong>3</strong> - Parda<br>
+            <strong>4</strong> - Amarela<br>
+            <strong>5</strong> - Indígena<br>
+            <strong>6</strong> - Não informado<br>
+            <strong>Validação:</strong> Se <a href="#2400_beneficiario_dtInicio">dtInicio</a> for igual ou posterior a
+            [2024-04-22], não pode ser informado o valor [6].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_estCiv"
+            id="2400_beneficiario_estCiv">20
+        </td>
+        <td>estCiv</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Estado civil do beneficiário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Solteiro<br>
+            <strong>2</strong> - Casado<br>
+            <strong>3</strong> - Divorciado<br>
+            <strong>4</strong> - Separado<br>
+            <strong>5</strong> - Viúvo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_incFisMen"
+            id="2400_beneficiario_incFisMen">21
+        </td>
+        <td>incFisMen</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o beneficiário é pessoa com doença incapacitante que isenta da contribuição previdenciária,
+            total ou parcialmente, reconhecida administrativa ou judicialmente, na forma da lei.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dtIncFisMen"
+            id="2400_beneficiario_dtIncFisMen">22
+        </td>
+        <td>dtIncFisMen</td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data do reconhecimento da incapacidade.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a href="#2400_beneficiario_incFisMen">incFisMen</a>
+            = [S].
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco"
+            id="2400_beneficiario_endereco">23
+        </td>
+        <td><a href="#r_2400_beneficiario_endereco">endereco</a></td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do endereço do beneficiário.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil"
+            id="2400_beneficiario_endereco_brasil">24
+        </td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td><a href="#r_2400_beneficiario_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no Brasil.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_tpLograd"
+            id="2400_beneficiario_endereco_brasil_tpLograd">25
+        </td>
+        <td>tpLograd</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Tipo de logradouro.<br>
+            <strong>Validação:</strong> Se informado, deve ser um código válido e existente na <a
+                    href="tabelas.html#20">Tabela 20</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_dscLograd"
+            id="2400_beneficiario_endereco_brasil_dscLograd">26
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_nrLograd"
+            id="2400_beneficiario_endereco_brasil_nrLograd">27
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_complemento"
+            id="2400_beneficiario_endereco_brasil_complemento">28
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_bairro"
+            id="2400_beneficiario_endereco_brasil_bairro">29
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_cep"
+            id="2400_beneficiario_endereco_brasil_cep">30
+        </td>
+        <td>cep</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal - CEP.<br>
+            <strong>Validação:</strong> Deve ser preenchido apenas com números, com 8 (oito) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_codMunic"
+            id="2400_beneficiario_endereco_brasil_codMunic">31
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_brasil_uf"
+            id="2400_beneficiario_endereco_brasil_uf">32
+        </td>
+        <td>uf</td>
+        <td><a href="#r_2400_beneficiario_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior"
+            id="2400_beneficiario_endereco_exterior">33
+        </td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td><a href="#r_2400_beneficiario_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no exterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_paisResid"
+            id="2400_beneficiario_endereco_exterior_paisResid">34
+        </td>
+        <td>paisResid</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_dscLograd"
+            id="2400_beneficiario_endereco_exterior_dscLograd">35
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_nrLograd"
+            id="2400_beneficiario_endereco_exterior_nrLograd">36
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_complemento"
+            id="2400_beneficiario_endereco_exterior_complemento">37
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_bairro"
+            id="2400_beneficiario_endereco_exterior_bairro">38
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_nmCid"
+            id="2400_beneficiario_endereco_exterior_nmCid">39
+        </td>
+        <td>nmCid</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-50</td>
+        <td>-</td>
+        <td>Nome da cidade.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_endereco_exterior_codPostal"
+            id="2400_beneficiario_endereco_exterior_codPostal">40
+        </td>
+        <td>codPostal</td>
+        <td><a href="#r_2400_beneficiario_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4-12</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente"
+            id="2400_beneficiario_dependente">41
+        </td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td><a href="#r_2400_beneficiario">beneficiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações dos dependentes.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_tpDep"
+            id="2400_beneficiario_dependente_tpDep">42
+        </td>
+        <td>tpDep</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de dependente.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2400_beneficiario_dependente_depIRRF">depIRRF</a>
+            = [S].<br>
+            Deve ser um código válido e existente na <a href="tabelas.html#07">Tabela 07</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_nmDep"
+            id="2400_beneficiario_dependente_nmDep">43
+        </td>
+        <td>nmDep</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome do dependente.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_dtNascto"
+            id="2400_beneficiario_dependente_dtNascto">44
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_cpfDep"
+            id="2400_beneficiario_dependente_cpfDep">45
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF.<br>
+            <strong>Validação:</strong> Deve ser um número de CPF válido, observando o que segue:<br>
+            a) O preenchimento é obrigatório se <a href="#2400_beneficiario_dependente_depIRRF">depIRRF</a> = [S];<br>
+            b) Não pode haver mais de um dependente com o mesmo número de CPF.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_sexoDep"
+            id="2400_beneficiario_dependente_sexoDep">46
+        </td>
+        <td>sexoDep</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do dependente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino<br>
+            <strong>Validação:</strong> Informação obrigatória se <a href="#2400_beneficiario_dtInicio">dtInicio</a> for
+            posterior ao início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_depIRRF"
+            id="2400_beneficiario_dependente_depIRRF">47
+        </td>
+        <td>depIRRF</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente do beneficiário para fins de dedução de seu rendimento tributável pelo Imposto de
+            Renda.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_incFisMen"
+            id="2400_beneficiario_dependente_incFisMen">48
+        </td>
+        <td>incFisMen</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o dependente é pessoa com doença incapacitante, na forma da lei.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2400_beneficiario_dependente_descrDep"
+            id="2400_beneficiario_dependente_descrDep">49
+        </td>
+        <td>descrDep</td>
+        <td><a href="#r_2400_beneficiario_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a descrição da dependência.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2400_beneficiario_dependente_tpDep">tpDep</a> = [99].
+        </td>
+    </tr>
+    </tbody>
+</table>

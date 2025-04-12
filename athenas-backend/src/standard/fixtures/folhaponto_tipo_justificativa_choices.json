@@ -1,0 +1,932 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4040,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ESQUECEU DE REGISTRAR",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4041,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ESQUECEU O CRACH\u00c1",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4042,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "FERIADO MUNICIPAL.",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4043,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LUTO OFICIAL",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4044,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "PARTICIPANDO DE CURSO",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4045,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "JORNADA REDUZIDA - PER\u00cdODO DE PROVAS",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4046,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A-PR\u00caMIO.",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4047,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "FOLGA CONCURSO ESTAGI\u00c1RIO",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4048,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "FOLGA PLANT\u00c3O SERVIDOR ",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4049,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "RECESSO REMUNERADO",
+        "value": 10,
+        "cvalue": "10",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4050,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "RECESSO ANO NOVO.",
+        "value": 11,
+        "cvalue": "11",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4051,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "A SERVI\u00c7O DA SINDSEMP-MT",
+        "value": 12,
+        "cvalue": "12",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4052,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "SISTEMA EM MANUTEN\u00c7\u00c3O.",
+        "value": 13,
+        "cvalue": "13",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4053,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "HOR\u00c1RIO COMPENSADO",
+        "value": 14,
+        "cvalue": "14",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4054,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A PARA TRATAR INTERESSE PARTICULAR",
+        "value": 15,
+        "cvalue": "15",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4055,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "SUSPENS\u00c3O DO EXPEDIENTE",
+        "value": 16,
+        "cvalue": "16",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4056,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "SISTEMA EM MANUTENCAO",
+        "value": 17,
+        "cvalue": "17",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4057,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A PARA QUALIFICA\u00c7\u00c3O PROFISSIONAL",
+        "value": 18,
+        "cvalue": "18",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4058,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "HOR\u00c1RIO COMPENSADO.",
+        "value": 19,
+        "cvalue": "19",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4059,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A PATERNIDADE",
+        "value": 20,
+        "cvalue": "20",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4060,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "FERIADO",
+        "value": 21,
+        "cvalue": "21",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4061,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "PONTO N\u00c3O REGISTRADO",
+        "value": 22,
+        "cvalue": "22",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4062,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "A SERVI\u00c7O FORA DA SEDE",
+        "value": 23,
+        "cvalue": "23",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4063,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "PONTO FACULTATIVO",
+        "value": 24,
+        "cvalue": "24",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4064,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DEMITIDO",
+        "value": 25,
+        "cvalue": "25",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4065,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DISPENSADO DO PONTO.",
+        "value": 26,
+        "cvalue": "26",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4066,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "SEM CRACH\u00c1",
+        "value": 27,
+        "cvalue": "27",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4067,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A LUTO",
+        "value": 28,
+        "cvalue": "28",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4068,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "FERIADO MUNICIPAL",
+        "value": 29,
+        "cvalue": "29",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4069,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "SISTEMA EM MANUTEN\u00c7\u00c3O",
+        "value": 30,
+        "cvalue": "30",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4070,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DISPENSADO DO PONTO",
+        "value": 31,
+        "cvalue": "31",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4071,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ATIVIDADES N\u00c3O INICIADAS",
+        "value": 32,
+        "cvalue": "32",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4072,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A GESTACIONAL",
+        "value": 33,
+        "cvalue": "33",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4073,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "FOLGA RECESSO FORENSE",
+        "value": 34,
+        "cvalue": "34",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4074,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DISPENSA ELEITORAL.",
+        "value": 35,
+        "cvalue": "35",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4075,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "F\u00c9RIAS",
+        "value": 36,
+        "cvalue": "36",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4076,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DISPENSA ELEITORAL",
+        "value": 37,
+        "cvalue": "37",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4077,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A PARA ATIVIDADE POL\u00cdTICA",
+        "value": 38,
+        "cvalue": "38",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4078,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "F\u00c9RIAS.",
+        "value": 39,
+        "cvalue": "39",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4079,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "SUSPENS\u00c3O DO EXPEDIENTE.",
+        "value": 40,
+        "cvalue": "40",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4080,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A GALA",
+        "value": 41,
+        "cvalue": "41",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4081,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "RECESSO NATALINO.",
+        "value": 42,
+        "cvalue": "42",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4082,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "RECESSO ANO NOVO",
+        "value": 43,
+        "cvalue": "43",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4083,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "PONTO N\u00c3O REGISTRADO.",
+        "value": 44,
+        "cvalue": "44",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4084,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "A SERVI\u00c7O DA JUSTI\u00c7A ELEITORAL",
+        "value": 45,
+        "cvalue": "45",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4085,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A M\u00c9DICA",
+        "value": 46,
+        "cvalue": "46",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4086,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DISPENSA POR DOA\u00c7\u00c3O DE SANGUE",
+        "value": 47,
+        "cvalue": "47",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4087,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "DIA SEM EST\u00c1GIO",
+        "value": 48,
+        "cvalue": "48",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4088,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A SEM REMUNERA\u00c7\u00c3O - ESTAGI\u00c1RIOS",
+        "value": 49,
+        "cvalue": "49",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4089,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ATIVIDADE DISCENTE OBRIGAT\u00d3RIA",
+        "value": 50,
+        "cvalue": "50",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4090,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "VIAGEM A SERVI\u00c7O",
+        "value": 51,
+        "cvalue": "51",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4091,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "LICEN\u00c7A-PR\u00caMIO",
+        "value": 52,
+        "cvalue": "52",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4092,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ESQUECEU DE REGISTRAR.",
+        "value": 53,
+        "cvalue": "53",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4093,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ATESTADO M\u00c9DICO.",
+        "value": 54,
+        "cvalue": "54",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4094,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "VIAGEM \u00c0 SERVI\u00c7O",
+        "value": 55,
+        "cvalue": "55",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4095,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "EM PROCESSO DE REMO\u00c7\u00c3O.",
+        "value": 56,
+        "cvalue": "56",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4096,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ATIVO",
+        "value": 57,
+        "cvalue": "57",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4097,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "TRIBUNAL DO J\u00daRI",
+        "value": 58,
+        "cvalue": "58",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4098,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "ATESTADO M\u00c9DICO",
+        "value": 59,
+        "cvalue": "59",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4099,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "EM PROCESSO DE REMO\u00c7\u00c3O",
+        "value": 60,
+        "cvalue": "60",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4100,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "RECESSO REMUNERADO.",
+        "value": 61,
+        "cvalue": "61",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4101,
+    "fields": {
+        "app_label": "registerpoint",
+        "name": "FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "label": "RECESSO NATALINO",
+        "value": 62,
+        "cvalue": "62",
+        "cache_path": "registerpoint.FOLHA_PONTO_TIPO_JUSTIFICATIVA",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

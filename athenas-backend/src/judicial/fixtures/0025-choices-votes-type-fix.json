@@ -1,0 +1,114 @@
+[
+{
+  "fields": {
+    "name": "RAPPORTEUR_VOTE_TYPE",
+    "value": 1,
+    "label": "Procedente o pedido",
+    "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+    "cvalue": "1",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "RAPPORTEUR_VOTE_TYPE",
+    "value": 2,
+    "label": "Improcedente o pedido",
+    "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+    "cvalue": "2",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "RAPPORTEUR_VOTE_TYPE",
+    "value": 201,
+    "label": "Declarar Impedimento",
+    "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+    "cvalue": "201",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "RAPPORTEUR_VOTE_TYPE",
+    "value": 202,
+    "label": "Declarar Suspeição",
+    "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+    "cvalue": "202",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "VOTE_TYPE",
+    "value": 1,
+    "label": "Procedente",
+    "cache_path": "council.VOTE_TYPE",
+    "cvalue": "1",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "VOTE_TYPE",
+    "value": 2,
+    "label": "Improcedente",
+    "cache_path": "council.VOTE_TYPE",
+    "cvalue": "2",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "VOTE_TYPE",
+    "value": 3,
+    "label": "Abstenção",
+    "cache_path": "council.VOTE_TYPE",
+    "cvalue": "3",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "VOTE_TYPE",
+    "value": 4,
+    "label": "Homologado parcialmente",
+    "cache_path": "council.VOTE_TYPE",
+    "cvalue": "4",
+    "app_label": "council",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+}
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 9000001,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "title": "Novos",
+            "slug": "novos",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 9000002,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "title": "Preparatório",
+            "slug": "preparatorio",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 9000003,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "title": "Executando",
+            "slug": "executando",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 9000004,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "title": "Finalizado",
+            "slug": "finalizado",
+            "tag_type": 1
+        }
+    }
+]

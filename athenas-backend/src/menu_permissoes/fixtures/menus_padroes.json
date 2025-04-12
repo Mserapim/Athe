@@ -1,0 +1,286 @@
+[
+{
+    "model": "menu_permissoes.modulo",
+    "pk": 1,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.956",
+        "modified_at": "2024-04-18T11:56:55.956",
+        "nome": "VDF",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 1,
+        "icone": null,
+        "sigla": null
+    }
+},
+{
+    "model": "menu_permissoes.modulo",
+    "pk": 2,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:57:06.914",
+        "modified_at": "2024-04-18T11:57:06.914",
+        "nome": "Painel de Controle",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 2,
+        "icone": null,
+        "sigla": null
+    }
+},
+{
+    "model": "menu_permissoes.menugrupo",
+    "pk": 1,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.965",
+        "modified_at": "2024-04-18T11:56:55.965",
+        "nome": "Grupo Padr\u00e3o",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 1,
+        "icone": null,
+        "modulo": 1
+    }
+},
+{
+    "model": "menu_permissoes.menugrupo",
+    "pk": 2,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:57:06.917",
+        "modified_at": "2024-04-18T11:57:06.917",
+        "nome": "Navega\u00e7\u00e3o",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 1,
+        "icone": null,
+        "modulo": 2
+    }
+},
+{
+    "model": "menu_permissoes.menugrupo",
+    "pk": 3,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:58:15.839",
+        "modified_at": "2024-04-18T11:58:15.839",
+        "nome": "Controle de Acessos",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 2,
+        "icone": null,
+        "modulo": 2
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 1,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.973",
+        "modified_at": "2024-04-18T11:56:55.973",
+        "nome": "In\u00edcio",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 1,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 2,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.977",
+        "modified_at": "2024-04-18T11:56:55.977",
+        "nome": "Agenda",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 2,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 3,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.981",
+        "modified_at": "2024-04-18T11:56:55.981",
+        "nome": "Solicita\u00e7\u00f5es",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 3,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 4,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.983",
+        "modified_at": "2024-04-18T11:56:55.983",
+        "nome": "Aprova\u00e7\u00f5es",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 4,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 5,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.986",
+        "modified_at": "2024-04-18T11:56:55.986",
+        "nome": "Direitos",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 5,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 6,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.989",
+        "modified_at": "2024-04-18T11:56:55.989",
+        "nome": "Anota\u00e7\u00f5es",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 6,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 7,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.992",
+        "modified_at": "2024-04-18T11:56:55.992",
+        "nome": "Relat\u00f3rios",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 7,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 8,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:56:55.996",
+        "modified_at": "2024-04-18T11:56:55.996",
+        "nome": "Plant\u00f5es",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 8,
+        "icone": null,
+        "grupo": 1,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 9,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:57:06.919",
+        "modified_at": "2024-04-18T11:57:06.919",
+        "nome": "M\u00f3dulo",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 1,
+        "icone": null,
+        "grupo": 2,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 10,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:57:06.922",
+        "modified_at": "2024-04-18T11:57:06.922",
+        "nome": "Menu",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 2,
+        "icone": null,
+        "grupo": 2,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 11,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:58:15.843",
+        "modified_at": "2024-04-18T11:58:15.843",
+        "nome": "Grupo de acesso",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 1,
+        "icone": null,
+        "grupo": 3,
+        "url": null
+    }
+},
+{
+    "model": "menu_permissoes.menu",
+    "pk": 12,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-04-18T11:58:15.845",
+        "modified_at": "2024-04-18T11:58:15.845",
+        "nome": "Usu\u00e1rios",
+        "descricao": null,
+        "situacao": "ATIVO",
+        "ordem": 2,
+        "icone": null,
+        "grupo": 3,
+        "url": null
+    }
+}
+]

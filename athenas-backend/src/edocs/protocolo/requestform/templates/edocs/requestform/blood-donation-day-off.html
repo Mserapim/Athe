@@ -1,0 +1,56 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO CONCESSÃO PARA DOAÇÃO DE SANGUE</p>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor Geral da Procuradoria Geral de Justiça:
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone de contato:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Prazo de concessão de 1 (um) dia.
+            </p>
+            <p class="rf-paragraph-height">
+                - Documentos necessários: Comprovante de doação de sangue.
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para a chefia imediata para ciência.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

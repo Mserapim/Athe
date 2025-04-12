@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="portrait"/>
+    <meta name="pdfkit-page-size" content="Legal"/>
+    <meta charset="UTF-8">
+
+  </head>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      clear:none;
+    }
+
+    html, body{
+      width: 100%;
+      height: 100%;
+    }
+
+    .calendar-header{
+      margin:50px;
+    }
+        
+    .event {
+      font-size: 12pt;
+      color: black;
+      padding-bottom: 3px; 
+    }
+
+    table {
+      font-family: "Times New Roman", Times, serif;
+      border-collapse: collapse;
+      width: 100%;
+      border-spacing: 0px;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    td, th {
+      padding: 8px 0 8px;
+    }
+
+    td {
+      text-align: left;
+    }
+
+    th {
+      background-color: #DBDBDB;
+      color: black;
+      text-align: center;
+      font-size: 14pt;
+    }
+
+    span {
+      color: black; 
+      font-size: 12pt;
+    }
+
+</style>
+
+  <body >
+    <div class="calendar-header" >
+        {% include 'header_report.html' %}
+    </div>
+
+    <table>
+      <tr>
+        <th>Data</th>
+        <th>Evento</th>
+      </tr>
+      {% for day, date in dates.items %}  
+      <tr>
+        <td style="width:25%; padding-left:35px;">          
+          <span>{{date|date:'j'}} {{date|date:'M Y'}}
+          {{date|date:'(l)'}} </span>
+
+        </td>
+        <td class="events">
+          
+          {% for event, value in birth_day.items %}
+            {% if date == value.event_start_date %}
+              <p class="event">{{value.event_name}}</p>
+            {% endif %}
+          {% endfor %}
+
+          {% for event, value in non_working_day.items %}
+             {% if date|date:"Y-m-d" == value.event_start_date|date:"Y-m-d" %}
+              <p class="event">{{value.event_name}} </p>
+            {% endif %}
+
+            {% if date|date:"Y-m-d" > value.event_start_date|date:"Y-m-d" and date|date:"Y-m-d" <= value.event_end_date|date:"Y-m-d" %}
+              <p class="event">{{value.event_name}}</p>
+            {% endif %}
+          {% endfor %}
+                   
+          {% for event, value in request_absence_event.items %}
+            {% if date >= value.event_start_date and date <= value.event_end_date %}
+                <p class="event "> {{value.event_name}} </p>
+            {% endif %}
+          {% endfor %}
+
+          {% for event, value in absence_event.items %}
+            {% if date >= value.event_start_date and date <= value.event_end_date %}
+                <p class="event"> {{value.event_name}} </p>
+            {% endif %}
+          {% endfor %}
+        
+          {% for event, value in usufruct_event.items %}
+            {% if date >= value.event_start_date and date <= value.event_end_date %}
+                <p class="event "> {{value.event_name}} </p>
+            {% endif %}
+          {% endfor %}
+
+          {% for event, value in substitution_event.items %}
+            {% if date >= value.event_start_date and date <= value.event_end_date %}
+                <p class="event "> {{value.event_name}} </p>
+            {% endif %}
+          {% endfor %}
+
+          {% for event, value in plantao_eventos.items %}
+            {% if date >= value.event_start_date and date <= value.event_end_date %}
+                <p class="event "> {{value.event_name}} </p>
+            {% endif %}
+          {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+      <table>
+
+  </body>
+</html>

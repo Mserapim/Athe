@@ -1,0 +1,480 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+{% load custom_filters %}
+
+<html>
+
+<head>
+    <meta name="pdfkit-orientation" content="Portrait" />
+    <meta name="pdfkit-page-size" content="A4" />
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+        tr {
+            page-break-inside: avoid;
+            page-break-after: auto
+        }
+
+        table {
+            font-family: Georgia, arial, sans-serif;
+            border-collapse: separate;
+            width: 100%;
+            float: left;
+            page-break-inside: auto;
+            margin-bottom: 30px;
+            table-layout: auto !important;
+        }
+
+        td,
+        th {
+            border: 0.5px solid #000000;
+            text-align: left;
+            font-size: 10px;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        table td div {
+            overflow: visible;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        table th div {
+            overflow: visible;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        table td p {
+            overflow: visible;
+        }
+
+        table tr th {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        .col-1 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .col-1 {
+            text-align: center;
+        }
+
+        .col-3 {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .col-4 {
+            font-weight: bold;
+            text-align: center;
+            font-size: 14;
+        }
+
+        .color-1 {
+            font-weight: bold;
+            background-color: #c4c0c0;
+            text-align: center;
+        }
+
+        .color-2 {
+            background-color: #f37d7d;
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* Organiza os itens em coluna */
+            justify-content: center;
+            /* Centraliza verticalmente */
+            align-items: center;
+            /* Centraliza horizontalmente */
+            height: 100%;
+            /* Garante que ocupe toda a altura da célula */
+        }
+
+        .text-container {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+
+    {% include 'portrait/header/header.html' %}
+
+    <section style="margin-top:50px;margin-bottom:20px; margin-right:5px;clear: both;">
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="col-1 ">
+                            <div>Projeto / Atividade</div>
+                        </th>
+                        <td class="col-2 ">
+                            <div>{{ data.projeto_atividade }}</div>
+                        </td>
+
+                        <th class="col-1 ">
+                            <div>Elemento Despesas</div>
+                        </th>
+                        <td class="col-2 ">
+                            <div>{{ data.elemento_dispesas }}</div>
+                        </td>
+
+                        <th class="col-1 ">
+                            <div>Ampa Legal</div>
+                        </th>
+                        <td class="col-2 ">
+                            <div>{{ data.amparo_legal }}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-1 " colspan="6">
+                            <div><b>Dados Beneficiario</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="col-1 ">
+                            <div><b>Matrícula - Nome</b></div>
+                        </th>
+                        <td class="col-2 " colspan="3">
+                            <div>{{ data.matricula }} - {{ data.nome }} {{data.cpf}}</div>
+                        </td>
+
+                        <th class="col-1 ">
+                            <div><b>Categoria Funcional</b></div>
+                        </th>
+                        <td class="col-2 " colspan="2">
+                            <div>{{ data.cat_funcional }}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-1 ">
+                            <div><b>Cargo</b></div>
+                        </th>
+                        <td class="col-2 " colspan="3">
+                            <div>{{ data.cargo }}</div>
+                        </td>
+
+                        <th class="col-1 ">
+                            <div><b>Lotação</b></div>
+                        </th>
+                        <td class="col-2 " colspan="2">
+                            <div>{{ data.lotação }}</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="col-1 " colspan="6">
+                            <div><b>Dados Viagem</b></div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th class="col-1">
+                            <div><b>Tipo da Viagem:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{data.viagem.get_tipo_viagem_display}}</div>
+                        </td>
+
+                        <th class="col-1">
+                            <div><b>Motivo da Viagem:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{data.viagem.get_motivo_viagem_display}}</div>
+                        </td>
+
+                        <th class="col-1">
+                            <div><b>Finalidade da Viagem:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{data.viagem.get_finalidade_viagem_display}}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-1">
+                            <div><b>Data Inicio:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{ data.viagem.data_inicio_viagem|default:""|date:"d-m-Y" }}</div>
+                        </td>
+
+                        <th class="col-1">
+                            <div><b>Data Fim:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{ data.viagem.data_fim_viagem|default:""|date:"d-m-Y" }}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-1 " colspan="6">
+                            <div><b>Dados Adicionais</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        {% if data.viagem.excedente %}
+                        <th class="col-1">
+                            <div><b>GEDOC Excedente:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{ data.beneficiario.gedoc_numero|default:"" }}</div>
+                        </td>
+                        {% else%} 
+
+                        <th class="col-1">
+                            <div><b>GEDOC Antigo:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div></div>
+                        </td>
+                        {% endif %}
+
+                        <th class="col-1">
+                            <div><b>Diária Excedente:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{% if data.viagem.excedente %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}</div>
+                        </td>
+
+                        <th class="col-1">
+                            <div><b>Diária de Motorista:</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{% if data.viagem.motorista %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="col-1 " colspan="6">
+                            <div><b>Trechos</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="col-2 container" colspan="6">
+
+                            {% for destino in data.destinos %}
+                            <p class="text-container"><b>Trecho:</b> {{ destino.unicode }} - <b>Evento:</b> {{ destino.evento.titulo }}</p>
+                            {% endfor %}
+                        </td>
+                    </tr>
+
+            </table>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="col-1 " colspan="5">
+                            <div><b>Diarias e Valores</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="col-1" colspan="2">
+                            <div></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Nº de Diárias</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Valor Base</b></div>
+                        </th>
+                        <th class="col-1 " >
+                            <div><b>Total</b></div>
+                        </th>
+                        
+                    </tr>
+                    <tr>
+                        <td class="col-2" colspan="2">
+                            <div></div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.qtd_diarias}}</div>
+                        </td>
+                        <td class="col-2">
+                            {% if data.servidor.membro %}
+                            <div>{{data.calculo.valor_base_diaria}}</div>
+                            {% else %}
+                            <div>{{data.calculo.valor_base_subsidio}}</div>
+                            {% endif %}
+                        </td>
+                        <td class="col-2" >
+                            <div>{{data.calculo.valor_total_bruto}}</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="col-1 " colspan="5">
+                            <div><b>Descontos</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="col-1 "><div></div></th>
+                        <th class="col-1 ">
+                            <div><b>Nº de Diárias</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Valor Base</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Valor Unit.</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Total</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="col-2">
+                            <div>Auxilio Alimentação</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.qtd_diarias}}</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_base_desc_alimentacao}}</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_unit_desc_alimentacao}}</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_desc_alimentacao}}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-2">
+                            <div>Auxilio Transporte</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.qtd_diarias}}</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_base_desc_transporte}}</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_unit_desc_transporte}}</div>
+                        </td>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_desc_transporte}}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-3" colspan="4">
+                            <div><b>Valor Total dos Descontos (Auxilio Alimentação + Auxilio Transporte)</b></div>
+                        </th>
+                        <td class="col-2">
+                            <div>{{data.calculo.valor_total_desconto}}</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="col-1 " colspan="5">
+                            <div><b>Total a Receber</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="col-1 " colspan="4">
+                            <div><b>Total a Receber (total de diárias - total de descontos) </b></div>
+                        </th>
+                        <td class="col-4">
+                            <div>{{data.calculo.valor_total_liquido}}</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="col-1 " colspan="5">
+                            <div><b>Dados Bancários</b></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="col-1 ">
+                            <div></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Banco</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Agência</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div><b>Conta</b></div>
+                        </th>
+                        <th class="col-1 ">
+                            <div></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="col-2 ">
+                            <div></div>
+                        </th>
+                        <th class="col-2 ">
+                            <div>{{data.beneficiario.conta_bancaria_pgto.banco_str}}</div>
+                        </th>
+                        <th class="col-2 ">
+                            <div>{{data.beneficiario.conta_bancaria_pgto.agencia_str}}</div>
+                        </th>
+                        <th class="col-2 ">
+                            <div>{{data.beneficiario.conta_bancaria_pgto.conta_str}}</div>
+                        </th>
+                        <th class="col-2 ">
+                            <div></div>
+                        </th>
+                    </tr>
+
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="col-1" style="width: 10%;">
+                            <div><b>Resumo:</b></div>
+                        </th>
+
+                        <td class="col-2" style="width: 90%;">
+                            {% autoescape off %}
+                            <div>{{data.viagem.resumo}}</div>
+                            {% endautoescape %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-1" style="width: 10%;">
+                            <div><b>Justificativa</b></div>
+                        </th>
+                        <td class="col-2" style="width: 90%;">
+                            {% autoescape off %}
+                            <div>{{data.viagem.justificativa}}</div>
+                            {% endautoescape %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        </div>
+
+    </section>
+</body>
+</html>

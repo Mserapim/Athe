@@ -1,0 +1,12 @@
+[
+{
+    "model": "standard.emailtemplate",
+    "pk": 47,
+    "fields": {
+        "code": "DIARIAS_MUDANCA_FLUXO",
+        "subject": "Atualiza\u00e7\u00e3o na Solicita\u00e7\u00e3o de Di\u00e1rias - Mudan\u00e7a de Etapa",
+        "contents": "<p>Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p><br></p><p> Gostar\u00edamos de informar que sua solicita\u00e7\u00e3o de di\u00e1rias referente ao pedido n\u00famero <b>%NUMERO_OS%</b> avan\u00e7ou da etapa <b>%ETAPA_ANTIGA%</b> para a etapa&nbsp;<b>%ETAPA_NOVA%</b> . <br type=\"_moz\"></p><p><br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p><br></p><br><p><br></p> ",
+        "description": null
+    }
+}
+]

@@ -1,0 +1,30 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Criando",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Criando",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+      "app_label": "esocial",
+      "name": "DELIVERY_STATUS_BATCH",
+      "label": "Aguardando envio",
+      "value": 2,
+      "cvalue": "2",
+      "cache_path": "esocial.STATUS_BATCH",
+      "description": "Aguardando envio",
+      "order_weight": 0,
+      "active": true
+  }
+}
+]

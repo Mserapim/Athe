@@ -1,0 +1,190 @@
+{% extends "base_generic.html" %}
+
+<table class="papper">
+    {% block header %}
+    <div class="papper-header">
+        <div class="papper-header-logo"></div>
+        <div>
+            <p class="papper-header-system">Gestão de Atas</p>
+            <p class="papper-header-instituation">Ministério Público do Estado do Tocantins</p>
+        </div>
+    </div>
+    {% endblock %} {% block content %}
+    <br /><br />
+    <p style="font-weight: bolder; text-align:center; font-size: 120%; "> ATA Nº {{minute.number}}</p>
+    <br /><br />
+    <p style="padding-bottom: 2%">Processo: <strong>{{minute.process_number}}</strong></p>
+    <p style="padding-bottom: 2%">Processo Mãe: <strong>{{minute.parent_process}}</strong></p>
+    <p style="padding-bottom: 2%">Publicação do Extrato: <strong>{{minute.publication_date}}</strong></p>
+    <p style="padding-bottom: 2%">Fornecedor: <strong>{{minute.provider.nome}}</strong></p>
+    <p style="padding-bottom: 2%">Objeto: <strong>{{minute.minute_object}}</strong></p>
+    <p style="padding-bottom: 2%">Início da Vigência: <strong>{{minute.begin_validity}}</strong></p>
+    <p style="padding-bottom: 2%">Fim da Vigência: <strong>{{minute.end_validity}}</strong></p>
+    <p style="padding-bottom: 2%">Valor Total da Ata: <strong>{{minute.total_amount}}</strong></p>
+
+
+    <p style="padding-bottom: 2%">Fiscais Titulares:
+        {% for supervisor in minute.main %}
+        <div style="width: 100%; overflow: hidden">
+            <div style="width: 50%; float:left;">
+                <strong>{{ supervisor.employee.pessoa_fisica.nome }} </strong>
+            </div>
+            <div style="float:left;">
+                <strong>Matricula: </strong> {{supervisor.employee.matricula}}
+            </div>
+        </div>
+        <div style="width: 100%; overflow: hidden">
+            <div style="float:left;">
+                <strong>Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document %}
+                {{supervisor.publication_document}}
+                {% endif %}
+            </div>
+            <div style="float:right;">
+                <strong>Data de Publicação Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document_date %}
+                {{supervisor.publication_document_date|date:"d / M / Y"}}
+                {% else %} - {% endif %}
+            </div>
+        </div></br>
+        {% endfor %}
+    </p>
+    <p style="padding-bottom: 2%">Fiscais Substitutos:
+        {% for supervisor in minute.substitutes %}
+        <div style="width: 100%; overflow: hidden">
+            <div style="width: 50%; float:left;">
+                <strong>{{ supervisor.employee.pessoa_fisica.nome }} </strong>
+            </div>
+            <div style="float:left;">
+                <strong>Matricula: </strong> {{supervisor.employee.matricula}}
+            </div>
+        </div>
+        <div style="width: 100%; overflow: hidden">
+            <div style="float:left;">
+                <strong>Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document %}
+                {{supervisor.publication_document}}
+                {% endif %}
+            </div>
+            <div style="float:right;">
+                <strong>Data de Publicação Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document_date %}
+                {{supervisor.publication_document_date|date:"d / M / Y"}}
+                {% else %} - {% endif %}
+            </div>
+        </div></br>
+        {% endfor %}
+    </p>
+
+    <table class="table_class">
+        <thead class="thead_class">
+            <th class="th_class"><strong>ITEM</strong></th>
+            <th class="th_class"><strong>DESCRIÇÃO</strong></th>
+            <th class="th_class"><strong>QTD</strong></th>
+            <th class="th_class"><strong>VALOR UN.</strong></th>
+            <th class="th_class"><strong>VALOR TOTAL</strong></th>
+            <th class="th_class"><strong>SALDO</strong></th>
+        </thead>
+        {% for item in minute.items %}
+        {% if item.status == 2 %}
+        <tr class="tr_class">
+            <td class="td_class" style="text-align: center;"><s>{{item.group}}</s></td>
+            <td class="td_class" style="text-align: left;"><s>{{item.description}}</s></td>
+            <td class="td_class" style="text-align: center;"><s>{{item.quantity}}</s></td>
+            <td class="td_class values"><s>{{item.unitary_value}}</s></td>
+            <td class="td_class values"><s>{{item.total_value}}</s></td>
+            <td class="td_class values"><s>{{item.balance}}</s></td>
+        </tr>
+        {% else %}
+        <tr class="tr_class">
+            <td class="td_class" style="text-align: center;">{{item.group}}</td>
+            <td class="td_class" style="text-align: left;">{{item.description}}</td>
+            <td class="td_class" style="text-align: center;">{{item.quantity}}</td>
+            <td class="td_class values">{{item.unitary_value}}</td>
+            <td class="td_class values">{{item.total_value}}</td>
+            <td class="td_class values">{{item.balance}}</td>
+        </tr>
+        {% endif %}
+
+        {% endfor %}
+    </table>
+    <style>
+        .xtable {
+            border: 0px solid black;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .xtable .xthead .xtr {
+            font-family: Arial, monospace;
+            font-size: 100%;
+        }
+
+        .xtable .xthead .xtr .xth {
+            border-bottom: 2px solid black;
+            border-top: 1px solid black;
+            margin: 0px;
+            padding: 2px;
+            background-color: #cccccc;
+        }
+
+        .xtable .xtr {
+            font-family: arial, monospace;
+            color: black;
+            font-size: 100%;
+            background-color: white;
+        }
+
+        .xtable .xtr.odd {
+            background-color: #AAAAAA;
+        }
+
+        table#some_table_id tr:nth-child(even) {
+            background-color: #BBBBBB;
+        }
+
+        .xtable .xtr,
+        .xtd,
+        .xth {
+            border-bottom: 1px solid black;
+            padding: 6px;
+        }
+    </style>
+    <style>
+        .table_class {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0px;
+        }
+
+        .thead_class {
+            padding: 3%;
+        }
+
+        .th_class {
+            text-align: center;
+            padding: 1px;
+            background-color: #0a5888;
+            color: white;
+
+        }
+
+        .tr_class {
+            padding: 1px;
+        }
+
+        .tr_class:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .td_class {
+            padding: 5px;
+            text-align: right;
+            border: 1px solid #d1d1d1;
+
+        }
+    </style>
+    {% endblock %}
+</table>

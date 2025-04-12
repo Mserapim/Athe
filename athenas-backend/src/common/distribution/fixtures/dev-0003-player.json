@@ -1,0 +1,72 @@
+[
+{
+  "model": "distribution.player",
+  "pk": 1,
+  "fields": {
+    "created_by": 1,
+    "modified_by": 1,
+    "created_at": "2019-06-27T17:31:38.047",
+    "modified_at": "2019-06-27T17:31:38.047",
+    "title": "Ator 1",
+    "score": 0,
+    "active": true,
+    "distribution": 1
+  }
+},
+{
+  "model": "distribution.player",
+  "pk": 2,
+  "fields": {
+    "created_by": 1,
+    "modified_by": 1,
+    "created_at": "2019-06-27T17:31:42.196",
+    "modified_at": "2019-06-27T17:31:42.196",
+    "title": "Ator 2",
+    "score": 0,
+    "active": true,
+    "distribution": 1
+  }
+},
+{
+  "model": "distribution.player",
+  "pk": 3,
+  "fields": {
+    "created_by": 1,
+    "modified_by": 1,
+    "created_at": "2019-06-27T17:31:46.356",
+    "modified_at": "2019-06-27T17:31:46.356",
+    "title": "Ator 3",
+    "score": 0,
+    "active": true,
+    "distribution": 1
+  }
+},
+{
+  "model": "distribution.player",
+  "pk": 4,
+  "fields": {
+    "created_by": 1,
+    "modified_by": 1,
+    "created_at": "2019-06-27T17:31:50.256",
+    "modified_at": "2019-06-27T17:31:50.256",
+    "title": "Ator 4",
+    "score": 0,
+    "active": true,
+    "distribution": 1
+  }
+},
+{
+  "model": "distribution.player",
+  "pk": 5,
+  "fields": {
+    "created_by": 1,
+    "modified_by": 1,
+    "created_at": "2019-06-27T17:31:56.058",
+    "modified_at": "2019-06-27T17:31:56.058",
+    "title": "Ator 5",
+    "score": 0,
+    "active": true,
+    "distribution": 1
+  }
+}
+]

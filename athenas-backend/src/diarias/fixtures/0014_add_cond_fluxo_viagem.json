@@ -1,0 +1,17 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário seja Servidor",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "benef_servidor",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]
+

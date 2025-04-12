@@ -1,0 +1,128 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Autorização",
+        "value": 7,
+        "cvalue": "6",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 7,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Obras Técnicas",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 5,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "A Pedido",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 4,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Convocação",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 3,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Designação",
+        "value": 6,
+        "cvalue": "0",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 2,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Pós Graduação - Art.1 §7 In.II Ato Adm. n°1.122/2022-PGJ",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 1,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Capacitação - Art 1 §7 Inci. I - Ato Adm. n° 1.122/2022-PGJ",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Representação",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "MOTIVO_VIAGEM",
+        "label": "Substituição",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "diarias.MOTIVO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

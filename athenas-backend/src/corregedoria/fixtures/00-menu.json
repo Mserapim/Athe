@@ -1,0 +1,111 @@
+[
+{
+  "model": "engine.application",
+  "fields": {
+    "icon": "athenas-0433.png",
+    "title": "CORREGEDORIA",
+    "active": true,
+    "father": null,
+    "uuid": "ffb4b2c9b18c40d2afa480fda956729b",
+    "layer": 1
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0110.png",
+    "title": "Configurações",
+    "controller": "CORREGEDORIAConfiguration",
+    "application": [
+      "ffb4b2c9b18c40d2afa480fda956729b"
+    ],
+    "active": true,
+    "module": "corregedoria",
+    "uuid": "a530b7b328ff471fbc760e8ec573b352"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0357.png",
+    "title": "SRDIR",
+    "controller": "CIRDIRControlInformation",
+    "application": [
+      "ffb4b2c9b18c40d2afa480fda956729b"
+    ],
+    "active": true,
+    "module": "corregedoria.cirdir",
+    "uuid": "8a1a81233d0e4d72b91aa94047fb43ac"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0617.png",
+    "title": "Você é Único",
+    "controller": "CIRDIRHealthArea",
+    "application": [
+      "d9abf08846134db49704a5941c53e36a"
+    ],
+    "active": true,
+    "module": "corregedoria.cirdir",
+    "uuid": "640ef43ad4e04ca8b28398a2b9e768db"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0039.png",
+    "title": "Acompanhar Recomendações",
+    "controller": "INSPECTIONFollowRecommendation",
+    "application": [
+      "6c7e75d572ce4ab19424ecd50816701c"
+    ],
+    "active": true,
+    "module": "corregedoria.inspection",
+    "uuid": "a7bb5cc664a14c029f65b96f0bc4b9d0"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0414.png",
+    "title": "Gestor de Inspeção",
+    "controller": "INSPECTIONInspection",
+    "application": [
+      "6c7e75d572ce4ab19424ecd50816701c"
+    ],
+    "active": true,
+    "module": "corregedoria.inspection",
+    "uuid": "a0fe6047076848e5b0a8fac2bfc14178"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0253.png",
+    "title": "Gestor de Recomendações",
+    "controller": "INSPECTIONFollowRecommendationCorregedoria",
+    "application": [
+      "6c7e75d572ce4ab19424ecd50816701c"
+    ],
+    "active": true,
+    "module": "corregedoria.inspection",
+    "uuid": "e55e2a65ae0b4ced90d4ec3d23841c75"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0093.png",
+    "title": "Gestor de Prontuários",
+    "controller": "PRONTUARYProntuary",
+    "application": [
+      "21a50dbb5f4244538b39177b092803a3"
+    ],
+    "active": true,
+    "module": "corregedoria.prontuary",
+    "uuid": "219e7430691042a3af47d23d81c2691b"
+  }
+}
+]

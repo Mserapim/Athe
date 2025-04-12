@@ -1,0 +1,47 @@
+{% extends 'ouvidoria/templates/template.html' %}
+
+{% block content %}
+<h1>Manifestação</h1>
+<h2>Orientações para criação de manifestação</h2>
+<ol class="ombudsman-directions">
+    <li>O que aconteceu, está acontecendo ou pode vir a acontecer. Descrição objetiva do fatos.</li>
+    <li>Quem é ou pode ser o autor do fato.</li>
+    <li>Quando ocorreu, se está ocorrendo ou pode vir a ocorrer o fato noticiado (data e, se possível, horário).</li>
+    <li>Onde ocorreu, está ocorrendo ou ocorrerá o fato noticiado.</li>
+    <li>Como ocorreu o fato ou como o fato foi executado, com o máximo de detalhes e circunstâncias.</li>
+    <li>Quem viu e como pode ser comprovado - devem ser indicadas as testemunhas ou outros meios (fotografias, filmagens, etc...) para a comprovação do fato denunciado.</li>
+</ol>
+<form action="/{{context}}/ouvidoria/contact/" method="post" enctype="multipart/form-data">
+{% for field in form %}
+    {% if field.is_hidden %}
+        {{field}}
+    {% elif field.name != 'captcha' %}
+	    <p>
+	    {% if not forloop.first %}
+	    	{{field.label_tag}}
+		{% endif %}
+
+	    {{field}}
+
+	    {% if field.errors.as_text %}
+		    <span class="error">{{field.errors.as_text}}</span>
+		    {% endif %}
+		    {% if field.help_text %}
+		    <span>{{field.help_text}}</span>
+		    {% endif %}
+	    </p>
+    {% endif %}
+{% endfor %}
+
+
+    <fieldset>
+        <legend>Anexos de provas e/ou evidências</legend>
+        <p><input type="file" class="file-field" name="file_1"></p>
+        <a class="more-file-slot">[ Anexar mais arquivos ]</a>
+    </fieldset>
+
+    {{form.captcha}}
+
+	<p> <input class="button" type="submit" value="Enviar"/> </p>
+</form>
+{% endblock %}

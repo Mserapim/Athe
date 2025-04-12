@@ -1,0 +1,30 @@
+[
+    {
+        "fields": {
+            "uuid": "10d634c403b011edb9390242ac120002",
+            "title": "Busca em Documentos",
+            "module": null,
+            "application": [
+                "de7c01584f6f4048a14c7bc2f7be7cb1"
+            ],
+            "controller": "EJudPartLawsuitSearch",
+            "active": true,
+            "icon": "athenas-0635.png"
+        },
+        "model": "engine.controller"
+    },
+    {
+        "fields": {
+            "uuid": "2445b0b603b011edb9390242ac120002",
+            "title": "Busca de Pessoas em Procedimentos",
+            "module": null,
+            "application": [
+                "de7c01584f6f4048a14c7bc2f7be7cb1"
+            ],
+            "controller": "EJudOutCourtLawsuitSearch",
+            "active": true,
+            "icon": "athenas-0425.png"
+        },
+        "model": "engine.controller"
+    }
+]

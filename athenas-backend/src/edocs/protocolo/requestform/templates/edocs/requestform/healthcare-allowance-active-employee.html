@@ -1,0 +1,39 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title" style="margin-top: 2.5em">
+    Requerimento PASS - Programa de Assistência à Saúde Suplementar
+</p>
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em">Exmo. Procurador-Geral de Justiça,</p>
+
+<p class="rf-abnt-text rf-text-justify rf-paragraph-height" style="margin: 3.5em 0em 1.5em 0em;">
+    Eu, <u>{{ employee_name }}</u>, inscrito(a) no CPF sob nª
+    <u>{{ employee_cpf }}</u>, matrícula nª <u>{{ employee_number }}
+    </u>, ocupante do cargo de <u>{{ job_position }}</u>, lotado(a)
+    <u>{{ department }}</u>, venho, respeitosamente, requerer:
+</p>
+
+{% for rt in request_type_query %}
+<p class="rf-paragraph-height">
+    {% if rt.value == request_type %}
+    <strong><span class="rf-ballot-box">&#x2611;</span>&nbsp;{{ rt.label }}</strong>
+    {% else %}
+    <span class="rf-ballot-box">&#x2610;</span>&nbsp;{{ rt.label }}
+    {% endif %}
+</p>
+{% endfor %}
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em; border-top: 1px solid black; padding-top: 1em;"><b>Instruções:</b></p>
+<p class="rf-paragraph-height">- Assinar este documento eletronicamente</p>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+<!-- {% extends "processo/base.html" %} -->
+
+{% block body-resume %}
+<div class="papper-content">
+    <!-- <h2>Movimentações</h2> -->
+    {% for moviment in process.cronologic_moviments_simple %}
+        {% include "processo/unified/movement.html" %}
+    {% empty %}
+    <div class="">
+        Nenhuma movimentação foi feita ainda.
+    </div>
+    {% endfor %}
+    
+    
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,47 @@
+[
+    {
+      "model": "standard.choice",
+      "pk": 3974,
+      "fields": {
+        "app_label": "rh",
+        "name": "TELECOMMUTING_STATUS",
+        "label": "ATIVO",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "rh.TELECOMMUTING_STATUS",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+      }
+    },
+    {
+      "model": "standard.choice",
+      "pk": 3975,
+      "fields": {
+        "app_label": "rh",
+        "name": "TELECOMMUTING_STATUS",
+        "label": "INATIVO",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "rh.TELECOMMUTING_STATUS",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+      }
+    },
+    {
+      "model": "standard.choice",
+      "pk": 3976,
+      "fields": {
+        "app_label": "rh",
+        "name": "TELECOMMUTING_STATUS",
+        "label": "AGENDADO",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "rh.TELECOMMUTING_STATUS",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+      }
+    }
+  ]

@@ -1,0 +1,37 @@
+- 2024.6.12:
+    - CARD: ATS-4077 - MR: 957 - [Back] Corrigir a criação de histórico no reenvio da solicitação [Progressão Horizontal]
+    - CARD: ATS-3974 - MR: 956 - back - VALIDAR AFASTAMENTO e VIAGEM DE BENEFICIÁRIOS NA HR DA SOLICITAÇÃO 
+    - CARD: ATS-4099 - MR: 955 - (backend) [Diárias] Criar mecanismo para retornar informações de histórico da Viagem e do Beneficiário
+    - CARD: ATS-4079 - MR: 959 - [Back] Validar a data de início de vigência a partir da data de reenvio da progressão horizontal
+- 2024.6.13:
+    - CARD: ATS-4073 - MR: 958 -  (backend) Ajustes no módulo Diárias - Tela de cadastro de destinos: 
+    - CARD: ATS-4081 - MR: 961 - [Back] Verificar o envio de email de notificação na solicitação de progressão horizontal
+    - CARD: ATS-4108/ATS-4109 - MR: 960 - (backend) APIs de histórico de fluxo da solicitação de uma Viagem e de um Beneficiário
+- 2024.6.14:
+    - CARD: ATS-4186 - MR: 963 - Adicionar 'tipo_solicitante_display" na api de diárias
+    - CARD: ATS-4082 - MR: 964 - [Back] Criar uma notificação por email para a gerência de desenvolvimento ao solicitar ou reenviar a progressão horizontal
+- 2024.6.17:
+    - CARD: ATS-4187 - MR: 965 - Criação de tabela para base de cálculo e alterações nas tabelas de Destino e FluxoViagem
+    - CARD: ATS-4088 - MR: 966 - [Back] Criar uma notificação por email para a gerência de desenvolvimento quando for recebido a solicitação de cancelamento de teletrabalho
+- 2024.6.18:
+    - CARD: ATS-4213 - MR: 967 - [BACK] Alteração na api de beneficiário de diárias
+    - CARD: ATS-4212 - MR: 968 - [back] Alterar API menu-configs para retornar mais campos
+    - CARD: ATS-4122 - MR: 962 - (backend) Valor Unitário de Diaria de Servidor
+    - CARD: ATS-4076 - MR: 962 - (backend) Diárias - Corrigir valores de campos de UF na tela de cadastro de destinos
+    - CARD: ATS-4222 - MR: 970 - (bakcend) Implementar ferramenta de health check no Athenas
+- 2024.6.19:
+    - CARD: ATS-4123 - MR: 975 - (backend) Valor Unitário de diaria de Membros
+- 2024.6.20:
+    - CARD: ATS-4228 - MR: 976 - [BACK] Diária - ajuste api de beneficiário e destinos
+    - CARD: ATS-4142 - MR: 971 - [Back] Criar cálculo para verba de aux creche retroativo
+    - CARD: ATS-4120 - MR: 977 - (backend) Valor de desconto do Auxilio -Criar regra de calculo de valores Membros / Geral
+    - CARD: ATS-4114 - MR: 979 - Back Novos campos de KM de destinos nos Beneficiários
+    - CARD: ATS-4116 - MR: 980 -  Adicionar filtros na api de beneficiários para auxliar no clone de destinos -Clonar destinos de Participantes 
+    - CARD: ATS-4121 - MR: 982 -  (backend) Valor de desconto do Transporte -Criar regra de calculo de valores Membros / Geral
+    - CARD: ATS-4215 - MR: 973 - [Back] - Adaptar a API para efetuar o dowload CSV
+- 2024.6.21:
+    - CARD: ATS-4225 - MR: 983 - Criar filtros por período na tela de aprovações
+    - CARD: ATS-4141 - MR: 984 - [Back] Gerar aux creche retroativo na GCPP
+    - CARD: ATS-4117 - MR: 981 - API Clonar destinos -Clonar destinos de Participantes 
+
+

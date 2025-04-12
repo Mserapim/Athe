@@ -1,0 +1,28 @@
+[
+    {
+        "model": "judicial.tag",
+        "fields": {
+            "title": "URGENTE",
+            "slug": "urgente",
+            "tag_type": 1,
+            "work_place": null,
+            "owner": null,
+            "classification": null,
+            "active": true,
+            "priority": 0
+        }
+    },
+    {
+        "model": "judicial.tag",
+        "fields": {
+            "title": "NÃO RECEBIDO",
+            "slug": "nao-recebido",
+            "tag_type": 1,
+            "work_place": null,
+            "owner": null,
+            "classification": null,
+            "active": true,
+            "priority": 0
+        }
+    }
+]

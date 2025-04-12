@@ -1,0 +1,184 @@
+[
+{
+    "fields": {
+        "name": "protocolo-geral",
+        "permissions": [
+            [
+                "has_general_protocol",
+                "protocolo",
+                "protocolo"
+            ],
+            [
+                "add_orgaogeral",
+                "rh",
+                "orgaogeral"
+            ],
+            [
+                "change_orgaogeral",
+                "rh",
+                "orgaogeral"
+            ],
+            [
+                "add_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "change_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "add_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "change_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "add_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ],
+            [
+                "change_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+},
+{
+    "fields": {
+        "name": "ouvidoria",
+        "permissions": [
+            [
+                "has_general_protocol",
+                "protocolo",
+                "protocolo"
+            ],
+            [
+                "add_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "change_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "add_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "change_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "add_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ],
+            [
+                "change_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+},
+{
+    "fields": {
+        "name": "Basico-protocolo",
+        "permissions": [
+            [
+                "add_anexo",
+                "protocolo",
+                "anexo"
+            ],
+            [
+                "change_anexo",
+                "protocolo",
+                "anexo"
+            ],
+            [
+                "delete_anexo",
+                "protocolo",
+                "anexo"
+            ],
+            [
+                "add_attachment",
+                "protocolo",
+                "attachment"
+            ],
+            [
+                "change_attachment",
+                "protocolo",
+                "attachment"
+            ],
+            [
+                "delete_attachment",
+                "protocolo",
+                "attachment"
+            ],
+            [
+                "add_groupgeneralorgan",
+                "protocolo",
+                "groupgeneralorgan"
+            ],
+            [
+                "change_groupgeneralorgan",
+                "protocolo",
+                "groupgeneralorgan"
+            ],
+            [
+                "delete_groupgeneralorgan",
+                "protocolo",
+                "groupgeneralorgan"
+            ],
+            [
+                "add_groupperson",
+                "protocolo",
+                "groupperson"
+            ],
+            [
+                "change_groupperson",
+                "protocolo",
+                "groupperson"
+            ],
+            [
+                "delete_groupperson",
+                "protocolo",
+                "groupperson"
+            ],
+            [
+                "add_referencia",
+                "protocolo",
+                "referencia"
+            ],
+            [
+                "change_referencia",
+                "protocolo",
+                "referencia"
+            ],
+            [
+                "delete_referencia",
+                "protocolo",
+                "referencia"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+}
+]

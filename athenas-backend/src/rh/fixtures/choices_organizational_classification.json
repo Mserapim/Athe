@@ -1,0 +1,170 @@
+[
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Não informado",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 1,
+        "cvalue": "1",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Primeira Entrância",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 2,
+        "cvalue": "2",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Primeira Entrância Nível 2",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 11,
+        "cvalue": "11",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Segunda Entrancia",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 3,
+        "cvalue": "3",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Segunda Entrancia Nível 2",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 12,
+        "cvalue": "12",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Sede Terceira Entrancia",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 4,
+        "cvalue": "4",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Terceira Entrancia",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 5,
+        "cvalue": "5",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Sede  & Promotoria",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 6,
+        "cvalue": "6",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Órgãos de Administração Superior e Execução",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 7,
+        "cvalue": "7",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Órgãos de Administração Superior e Execução Nivel 2",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 8,
+        "cvalue": "8",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Orgão Auxiliares - Diretoria Geral",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 9,
+        "cvalue": "9",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Orgão Auxiliares - Diretoria Geral  Nivel 2",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 10,
+        "cvalue": "10",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Orgão Auxiliares - Diretoria Geral  Nivel 3",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 13,
+        "cvalue": "13",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "rh.ORGANIZATIONAL_CLASSIFICATION",
+        "label": "Orgão Auxiliares - Diretoria Geral  Nivel 4",
+        "name": "ORGANIZATIONAL_CLASSIFICATION",
+        "value": 14,
+        "cvalue": "14",
+        "app_label": "rh"
+    },
+    "model": "standard.choice",
+    "pk": null
+}
+]

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Senha - Ministerio Público do Estado do Mato Grosso</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alteração de Senha</h1>
+      <form onsubmit="return fnSubmit(event)" method="POST">
+        <div class="">
+          <label for="username">Usuário:</label>
+          <div class="flex-normal">
+            <input type="text" name="username" id="username" value="" required>
+            <div class="form-mail-complement">@mpmt.mp.br</div>
+          </div>
+        </div>
+        <div class="">
+          <label for="current_password">Senha atual:</label>
+          <div class="flex-normal">
+            <input type="password" name="current_password" id="current_password" value="" required>
+          </div>
+        </div>
+        <div class="">
+          <label for="new_password">Nova senha:</label>
+          <div class="flex-normal">
+            <input type="password"
+                   name="new_password"
+                   id="new_password"
+                   value=""
+                   required
+                   onkeyup="fnSumStrongPassword(event)"
+                   onblur="fnSumStrongPassword(event)">
+             <div class="" id="strongOutput">Força</div>
+          </div>
+        </div>
+        <div class="">
+          <label for="password_confirmation">Confirmar nova senha:</label>
+          <div class="flex-normal">
+            <input type="password"
+                   name="password_confirmation"
+                   id="password_confirmation"
+                   value=""
+                   required
+                   onkeyup="fnMatchPassword(event)"
+                   onblur="fnMatchPassword(event)">
+            <div class="" id="matchOutput">Avaliação</div>
+          </div>
+        </div>
+        <div class="btn-group right">
+          <button type="submit" name="button">Alterar Senha</button>
+        </div>
+      </form>
+    </div>
+
+      <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

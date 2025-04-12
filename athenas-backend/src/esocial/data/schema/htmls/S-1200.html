@@ -1,0 +1,1848 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_eSocial" id="1200_eSocial">1</td>
+        <td><a href="#r_1200_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200" id="1200">2</td>
+        <td><a href="#r_1200">evtRemun</a></td>
+        <td><a href="#r_1200_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Remuneração de Trabalhador vinculado ao Regime Geral de Previdência Social.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_BLOQUEIA_USO_CPF_EMPREGADOR">REGRA_BLOQUEIA_USO_CPF_EMPREGADOR</a><br>
+            <a href="#REGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB">REGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB</a><br>
+            <a href="#REGRA_COMPATIB_REGIME_PREV">REGRA_COMPATIB_REGIME_PREV</a><br>
+            <a href="#REGRA_CONTROLE_DUPLICIDADE">REGRA_CONTROLE_DUPLICIDADE</a><br>
+            <a href="#REGRA_EMPREGADO_DOMESTICO">REGRA_EMPREGADO_DOMESTICO</a><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_POSTERIOR_CAT_OBITO">REGRA_EVENTO_POSTERIOR_CAT_OBITO</a><br>
+            <a href="#REGRA_EVE_FOPAG_SIMPLIFICADO">REGRA_EVE_FOPAG_SIMPLIFICADO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_GERAL_VALIDA_DADOS_TABCONTRIB">REGRA_GERAL_VALIDA_DADOS_TABCONTRIB</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_REMUN_ANUAL_DEZEMBRO">REGRA_REMUN_ANUAL_DEZEMBRO</a><br>
+            <a href="#REGRA_REMUN_CATEG_COMPATIVEL_TPLOTACAO">REGRA_REMUN_CATEG_COMPATIVEL_TPLOTACAO</a><br>
+            <a href="#REGRA_REMUN_CATEG_EXISTENTE_RET">REGRA_REMUN_CATEG_EXISTENTE_RET</a><br>
+            <a href="#REGRA_REMUN_FGTS_ANTERIOR_ESOCIAL">REGRA_REMUN_FGTS_ANTERIOR_ESOCIAL</a><br>
+            <a href="#REGRA_REMUN_IND_RETIFICACAO">REGRA_REMUN_IND_RETIFICACAO</a><br>
+            <a href="#REGRA_REMUN_JA_EXISTE_DESLIGAMENTO">REGRA_REMUN_JA_EXISTE_DESLIGAMENTO</a><br>
+            <a href="#REGRA_REMUN_PERMITE_EXCLUSAO">REGRA_REMUN_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_REMUN_TRAB_EXISTENTE_RET">REGRA_REMUN_TRAB_EXISTENTE_RET</a><br>
+            <a href="#REGRA_REMUN_VALIDA_INFO_COMPLEMENTAR">REGRA_REMUN_VALIDA_INFO_COMPLEMENTAR</a><br>
+            <a href="#REGRA_RUBRICA_COMPATIVEL_CATEGORIA">REGRA_RUBRICA_COMPATIVEL_CATEGORIA</a><br>
+            <a href="#REGRA_RUBRICA_COMPATIVEL_DECTERCEIRO">REGRA_RUBRICA_COMPATIVEL_DECTERCEIRO</a><br>
+            <a href="#REGRA_RUBRICA_COMPATIVEL_RESC">REGRA_RUBRICA_COMPATIVEL_RESC</a><br>
+            <a href="#REGRA_RUBRICA_ECONSIGNADO">REGRA_RUBRICA_ECONSIGNADO</a><br>
+            <a href="#REGRA_TSV_ATIVO_NA_DTEVENTO">REGRA_TSV_ATIVO_NA_DTEVENTO</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a><br>
+            <a href="#REGRA_VALIDA_PERIODO_APURACAO">REGRA_VALIDA_PERIODO_APURACAO</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_Id" id="1200_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1200">evtRemun</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento" id="1200_ideEvento">4</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1200">evtRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_indRetif"
+            id="1200_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_nrRecibo"
+            id="1200_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#1200_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_indApuracao"
+            id="1200_ideEvento_indApuracao">7
+        </td>
+        <td>indApuracao</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de período de apuração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Mensal<br>
+            <strong>2</strong> - Anual (13° salário)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_perApur"
+            id="1200_ideEvento_perApur">8
+        </td>
+        <td>perApur</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4 ou 7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) de referência das informações, se <a
+                href="#1200_ideEvento_indApuracao">indApuracao</a> for igual a [1], ou apenas o ano (formato AAAA), se
+            <a href="#1200_ideEvento_indApuracao">indApuracao</a> for igual a [2].<br>
+            <strong>Validação:</strong> Deve ser um mês/ano ou ano válido, igual ou posterior ao início da
+            obrigatoriedade dos eventos periódicos para o empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_indGuia"
+            id="1200_ideEvento_indGuia">9
+        </td>
+        <td>indGuia</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do tipo de guia.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Documento de Arrecadação do eSocial - DAE
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_tpAmb" id="1200_ideEvento_tpAmb">
+            10
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_procEmi"
+            id="1200_ideEvento_procEmi">11
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEvento_verProc"
+            id="1200_ideEvento_verProc">12
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEmpregador" id="1200_ideEmpregador">13
+        </td>
+        <td><a href="#r_1200_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1200">evtRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEmpregador_tpInsc"
+            id="1200_ideEmpregador_tpInsc">14
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1200_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideEmpregador_nrInsc"
+            id="1200_ideEmpregador_nrInsc">15
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1200_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1200_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador" id="1200_ideTrabalhador">16
+        </td>
+        <td><a href="#r_1200_ideTrabalhador">ideTrabalhador</a></td>
+        <td><a href="#r_1200">evtRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_cpfTrab"
+            id="1200_ideTrabalhador_cpfTrab">17
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_1200_ideTrabalhador">ideTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoMV"
+            id="1200_ideTrabalhador_infoMV">18
+        </td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV">infoMV</a></td>
+        <td><a href="#r_1200_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente em caso de trabalhador que possua outros vínculos/atividades nos quais já
+            tenha ocorrido desconto de contribuição previdenciária.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoMV_indMV"
+            id="1200_ideTrabalhador_infoMV_indMV">19
+        </td>
+        <td>indMV</td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV">infoMV</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de desconto da contribuição previdenciária do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - O declarante aplica a(s) alíquota(s) de desconto do segurado sobre a remuneração por
+            ele informada (o percentual da(s) alíquota(s) será(ão) obtido(s) considerando a remuneração total do
+            trabalhador)<br>
+            <strong>2</strong> - O declarante aplica a(s) alíquota(s) de desconto do segurado sobre a diferença entre o
+            limite máximo do salário de contribuição e a remuneração de outra(s) empresa(s) para as quais o trabalhador
+            informou que houve o desconto<br>
+            <strong>3</strong> - O declarante não realiza desconto do segurado, uma vez que houve desconto sobre o
+            limite máximo de salário de contribuição em outra(s) empresa(s)
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoMV_remunOutrEmpr"
+            id="1200_ideTrabalhador_infoMV_remunOutrEmpr">20
+        </td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV">infoMV</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao trabalhador que possui vínculo empregatício com outra(s) empresa(s) e/ou que exerce
+            outras atividades como contribuinte individual, detalhando as empresas que efetuaram (ou efetuarão) desconto
+            da contribuição.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc"
+            id="1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc">21
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoMV_remunOutrEmpr_nrInsc"
+            id="1200_ideTrabalhador_infoMV_remunOutrEmpr_nrInsc">22
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a>.<br>
+            <strong>Validação:</strong> a) Se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [1] e <a
+                    href="#1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a> = [1], deve ser um
+            CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos
+            estabelecimentos informados através do evento S-1005.<br>
+            b) Se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [1] e <a
+                    href="#1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a> = [2], deve ser um
+            CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF
+            do empregador.<br>
+            c) Se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [2] e <a
+                    href="#1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a> = [1], é permitido
+            informar número de inscrição igual ao CNPJ base indicado no evento de Informações do Empregador (S-1000) e
+            aos estabelecimentos informados através do evento S-1005.<br>
+            d) Se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [2] e <a
+                    href="#1200_ideTrabalhador_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a> = [2], deve ser um
+            CPF válido e diferente do CPF do trabalhador, mas é permitido informar número de inscrição igual ao CPF do
+            empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoMV_remunOutrEmpr_codCateg"
+            id="1200_ideTrabalhador_infoMV_remunOutrEmpr_codCateg">23
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador na qual houve a remuneração.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_ideTrabalhador_infoMV_remunOutrEmpr_vlrRemunOE"
+            id="1200_ideTrabalhador_infoMV_remunOutrEmpr_vlrRemunOE">24
+        </td>
+        <td>vlrRemunOE</td>
+        <td><a href="#r_1200_ideTrabalhador_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor da remuneração recebida pelo trabalhador na outra empresa/atividade, sobre a qual
+            houve desconto/recolhimento da contribuição do segurado.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoComplem"
+            id="1200_ideTrabalhador_infoComplem">25
+        </td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem">infoComplem</a></td>
+        <td><a href="#r_1200_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido quando o evento de remuneração se referir a trabalhador cuja categoria não está sujeita ao
+            evento de admissão ou ao evento TSVE - Início, bem como para informar remuneração devida pela empresa
+            sucessora a empregado desligado ainda na sucedida. No caso das categorias em que o envio do evento TSVE -
+            Início for opcional, o preenchimento do grupo somente é exigido se não houver o respectivo evento. As
+            informações complementares são necessárias para correta identificação do trabalhador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoComplem_nmTrab"
+            id="1200_ideTrabalhador_infoComplem_nmTrab">26
+        </td>
+        <td>nmTrab</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem">infoComplem</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Informar o nome do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoComplem_dtNascto"
+            id="1200_ideTrabalhador_infoComplem_dtNascto">27
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem">infoComplem</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoComplem_sucessaoVinc"
+            id="1200_ideTrabalhador_infoComplem_sucessaoVinc">28
+        </td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem_sucessaoVinc">sucessaoVinc</a></td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem">infoComplem</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações da sucessão de vínculo trabalhista.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_ideTrabalhador_infoComplem_sucessaoVinc_tpInsc"
+            id="1200_ideTrabalhador_infoComplem_sucessaoVinc_tpInsc">29
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_ideTrabalhador_infoComplem_sucessaoVinc_nrInsc"
+            id="1200_ideTrabalhador_infoComplem_sucessaoVinc_nrInsc">30
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do empregador anterior, de acordo com o tipo de inscrição indicado no campo
+            <a href="#1200_ideTrabalhador_infoComplem_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido e diferente da inscrição do declarante,
+            considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.<br>
+            Se <a href="#1200_ideTrabalhador_infoComplem_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a> = [1], deve
+            possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se <a
+                    href="#1200_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a> tiver 14 (catorze) algarismos) e dos
+            estabelecimentos informados através do evento S-1005.<br>
+            Se <a href="#1200_ideTrabalhador_infoComplem_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a> = [2], deve
+            possuir 11 (onze) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_ideTrabalhador_infoComplem_sucessaoVinc_matricAnt"
+            id="1200_ideTrabalhador_infoComplem_sucessaoVinc_matricAnt">31
+        </td>
+        <td>matricAnt</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula do trabalhador no empregador anterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_ideTrabalhador_infoComplem_sucessaoVinc_dtAdm"
+            id="1200_ideTrabalhador_infoComplem_sucessaoVinc_dtAdm">32
+        </td>
+        <td>dtAdm</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de admissão do trabalhador. No caso de transferência do empregado, deve ser preenchida
+            a data inicial do vínculo no primeiro empregador (data de início do vínculo).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_ideTrabalhador_infoComplem_sucessaoVinc_observacao"
+            id="1200_ideTrabalhador_infoComplem_sucessaoVinc_observacao">33
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_1200_ideTrabalhador_infoComplem_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_procJudTrab"
+            id="1200_ideTrabalhador_procJudTrab">34
+        </td>
+        <td><a href="#r_1200_ideTrabalhador_procJudTrab">procJudTrab</a></td>
+        <td><a href="#r_1200_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre a existência de processos judiciais do trabalhador com decisão favorável quanto à não
+            incidência de contribuições sociais e/ou Imposto de Renda.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_procJudTrab_tpTrib"
+            id="1200_ideTrabalhador_procJudTrab_tpTrib">35
+        </td>
+        <td>tpTrib</td>
+        <td><a href="#r_1200_ideTrabalhador_procJudTrab">procJudTrab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Abrangência da decisão.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - IRRF<br>
+            <strong>2</strong> - Contribuições sociais do trabalhador
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_procJudTrab_nrProcJud"
+            id="1200_ideTrabalhador_procJudTrab_nrProcJud">36
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_1200_ideTrabalhador_procJudTrab">procJudTrab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar um número de processo judicial cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido e existente na Tabela de
+            Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_procJudTrab_codSusp"
+            id="1200_ideTrabalhador_procJudTrab_codSusp">37
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1200_ideTrabalhador_procJudTrab">procJudTrab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoInterm"
+            id="1200_ideTrabalhador_infoInterm">38
+        </td>
+        <td><a href="#r_1200_ideTrabalhador_infoInterm">infoInterm</a></td>
+        <td><a href="#r_1200_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-31</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao trabalho intermitente.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoInterm_dia"
+            id="1200_ideTrabalhador_infoInterm_dia">39
+        </td>
+        <td>dia</td>
+        <td><a href="#r_1200_ideTrabalhador_infoInterm">infoInterm</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Dia do mês efetivamente trabalhado pelo empregado com contrato de trabalho intermitente.<br>
+            Caso não tenha havido trabalho no mês, informar 0 (zero).<br>
+            <strong>Validação:</strong> Deve ser um número entre 0 e 31, de acordo com o calendário anual.<br>
+            Retornar alerta caso seja informado 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_ideTrabalhador_infoInterm_hrsTrab"
+            id="1200_ideTrabalhador_infoInterm_hrsTrab">40
+        </td>
+        <td>hrsTrab</td>
+        <td><a href="#r_1200_ideTrabalhador_infoInterm">infoInterm</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Horas trabalhadas no dia pelo empregado com contrato de trabalho intermitente, no formato HHMM.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22].<br>
+            Se preenchida, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do
+            número, que indica os minutos, que deve ser menor ou igual a 59.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev" id="1200_dmDev">41</td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td><a href="#r_1200">evtRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação de cada um dos demonstrativos de valores devidos ao trabalhador.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_DEMONSTRATIVO">REGRA_DEMONSTRATIVO</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_ideDmDev" id="1200_dmDev_ideDmDev">42
+        </td>
+        <td>ideDmDev</td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Identificador atribuído pela empresa para o demonstrativo de valores devidos ao trabalhador. O empregador
+            pode preencher este campo utilizando-se de um identificador padrão para todos os trabalhadores; no entanto,
+            havendo mais de um demonstrativo relativo a uma mesma competência, devem ser utilizados identificadores
+            diferentes para cada um dos demonstrativos.<br>
+            <strong>Validação:</strong> Deve ser um identificador único dentro do mesmo <a
+                    href="#1200_ideEvento_perApur">perApur</a> para cada um dos demonstrativos do trabalhador. Se <a
+                    href="#1200_ideEvento_procEmi">procEmi</a> = [1, 3] e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [21, 22], o
+            identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_codCateg" id="1200_dmDev_codCateg">43
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_indRRA" id="1200_dmDev_indRRA">44</td>
+        <td>indRRA</td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de Rendimentos Recebidos Acumuladamente - RRA.<br>
+            Somente preencher este campo se for um demonstrativo de RRA.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA" id="1200_dmDev_infoRRA">45
+        </td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares relativas a Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_tpProcRRA"
+            id="1200_dmDev_infoRRA_tpProcRRA">46
+        </td>
+        <td>tpProcRRA</td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_nrProcRRA"
+            id="1200_dmDev_infoRRA_nrProcRRA">47
+        </td>
+        <td>nrProcRRA</td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar o número do processo/requerimento administrativo/judicial.<br>
+            <strong>Validação:</strong> Informação obrigatória se <a href="#1200_dmDev_infoRRA_tpProcRRA">tpProcRRA</a>
+            = [2] e opcional se <a href="#1200_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [1]. Deve ser número de processo
+            válido e:<br>
+            a) Se <a href="#1200_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [1], deve possuir 17 (dezessete) ou 21 (vinte
+            e um) algarismos;<br>
+            b) Se <a href="#1200_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [2], deve possuir 20 (vinte) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_descRRA"
+            id="1200_dmDev_infoRRA_descRRA">48
+        </td>
+        <td>descRRA</td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-50</td>
+        <td>-</td>
+        <td>Descrição dos Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_qtdMesesRRA"
+            id="1200_dmDev_infoRRA_qtdMesesRRA">49
+        </td>
+        <td>qtdMesesRRA</td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-4</td>
+        <td>1</td>
+        <td>Número de meses relativo aos Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_despProcJud"
+            id="1200_dmDev_infoRRA_despProcJud">50
+        </td>
+        <td><a href="#r_1200_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das despesas com processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_despProcJud_vlrDespCustas"
+            id="1200_dmDev_infoRRA_despProcJud_vlrDespCustas">51
+        </td>
+        <td>vlrDespCustas</td>
+        <td><a href="#r_1200_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor das despesas com custas judiciais.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_despProcJud_vlrDespAdvogados"
+            id="1200_dmDev_infoRRA_despProcJud_vlrDespAdvogados">52
+        </td>
+        <td>vlrDespAdvogados</td>
+        <td><a href="#r_1200_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor total das despesas com advogado(s).<br>
+            <strong>Validação:</strong> Se o grupo <a href="#1200_dmDev_infoRRA_ideAdv">ideAdv</a> for preenchido, o
+            valor informado neste campo deve ser maior ou igual à soma do(s) campo(s) <a
+                    href="#1200_dmDev_infoRRA_ideAdv_vlrAdv">vlrAdv</a> do grupo <a href="#1200_dmDev_infoRRA_ideAdv">ideAdv</a>.<br>
+            Deve ser maior ou igual a 0 (zero).<br>
+            O não preenchimento do grupo <a href="#1200_dmDev_infoRRA_ideAdv">ideAdv</a> indica que o contribuinte
+            declarante não possui as informações detalhadas por advogado.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_ideAdv"
+            id="1200_dmDev_infoRRA_ideAdv">53
+        </td>
+        <td><a href="#r_1200_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td><a href="#r_1200_dmDev_infoRRA">infoRRA</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação dos advogados.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_ideAdv_tpInsc"
+            id="1200_dmDev_infoRRA_ideAdv_tpInsc">54
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1200_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_ideAdv_nrInsc"
+            id="1200_dmDev_infoRRA_ideAdv_nrInsc">55
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1200_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do advogado.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido, de acordo com o tipo de inscrição
+            indicado no campo <a href="#1200_dmDev_infoRRA_ideAdv_tpInsc">ideAdv/tpInsc</a>, considerando as
+            particularidades aplicadas à informação de CNPJ de órgão público em S-1000.<br>
+            Se <a href="#1200_dmDev_infoRRA_ideAdv_tpInsc">ideAdv/tpInsc</a> = [1], deve possuir 14 (catorze) algarismos
+            e, no caso de declarante pessoa jurídica, ser diferente do CNPJ base do empregador (exceto se <a
+                    href="#1200_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a> tiver 14 (catorze) algarismos).<br>
+            Se <a href="#1200_dmDev_infoRRA_ideAdv_tpInsc">ideAdv/tpInsc</a> = [2], deve possuir 11 (onze) algarismos e,
+            no caso de declarante pessoa física, ser diferente do CPF do empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoRRA_ideAdv_vlrAdv"
+            id="1200_dmDev_infoRRA_ideAdv_vlrAdv">56
+        </td>
+        <td>vlrAdv</td>
+        <td><a href="#r_1200_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da despesa com o advogado, se houver.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur"
+            id="1200_dmDev_infoPerApur">57
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerApur">infoPerApur</a></td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao período de apuração.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur_ideEstabLot"
+            id="1200_dmDev_infoPerApur_ideEstabLot">58
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot">ideEstabLot</a></td>
+        <td><a href="#r_1200_dmDev_infoPerApur">infoPerApur</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-500</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento e da lotação nos quais o trabalhador possui remuneração no período de
+            apuração. O estabelecimento identificado no grupo pode ser: o número do CNPJ do estabelecimento da própria
+            empresa (matriz/filial), o número da obra (própria) no CNO, ou o número do CAEPF (no caso de pessoa física
+            obrigada a inscrição no Cadastro de Atividade Econômica da Pessoa Física).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur_ideEstabLot_tpInsc"
+            id="1200_dmDev_infoPerApur_ideEstabLot_tpInsc">59
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da <a
+                href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO<br>
+            <strong>Validação:</strong> Se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            em S-1000 = [21, 22], deve ser igual a [3, 4].<br>
+            Se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [04], deve ser
+            igual a [1].<br>
+            Nos demais casos (<a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000
+            diferente de [04, 21, 22]), deve ser igual a [1, 4].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur_ideEstabLot_nrInsc"
+            id="1200_dmDev_infoPerApur_ideEstabLot_nrInsc">60
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado
+            no campo <a href="#1200_dmDev_infoPerApur_ideEstabLot_tpInsc">ideEstabLot/tpInsc</a>.<br>
+            <strong>Validação:</strong> A inscrição informada deve ser compatível com <a
+                    href="#1200_dmDev_infoPerApur_ideEstabLot_tpInsc">ideEstabLot/tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur_ideEstabLot_codLotacao"
+            id="1200_dmDev_infoPerApur_ideEstabLot_codLotacao">61
+        </td>
+        <td>codLotacao</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador para a lotação tributária.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur_ideEstabLot_qtdDiasAv"
+            id="1200_dmDev_infoPerApur_ideEstabLot_qtdDiasAv">62
+        </td>
+        <td>qtdDiasAv</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Quantidade de dias trabalhados no mês pelo trabalhador avulso no tomador de serviços identificado em <a
+                href="#1200_dmDev_infoPerApur_ideEstabLot_codLotacao">ideEstabLot/codLotacao</a>. Cada dia, total ou
+            parcial, em que o trabalhador tenha prestado serviços ao tomador deve ser considerado. Ex.: Se, em um mesmo
+            mês, o trabalhador prestou serviços durante uma hora em um dia e durante mais uma hora em outro dia, deve-se
+            informar a quantidade de 2 dias.<br>
+            Caso não tenha havido trabalho no mês, informar 0 (zero).<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#1200_dmDev_infoPerApur_ideEstabLot_codLotacao">ideEstabLot/codLotacao</a> possuir <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_tpLotacao">tpLotacao</a> em S-1020 = [08, 09] em <a
+                    href="#1200_ideEvento_perApur">perApur</a> e se <a
+                    href="#1200_ideEvento_indApuracao">indApuracao</a> = [1].<br>
+            Se informado, deve ser um número entre 0 e 31, de acordo com o calendário anual.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur">63
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur">remunPerApur</a></td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot">ideEstabLot</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas à remuneração do trabalhador no período de apuração.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_matricula"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_matricula">64
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur">remunPerApur</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no
+            Sistema de Administração de Recursos Humanos do órgão.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200
+            ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário -
+            TSVE sem informação de matrícula no evento S-2300.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_indSimples"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_indSimples">65
+        </td>
+        <td>indSimples</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur">remunPerApur</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de contribuição substituída.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuição substituída integralmente<br>
+            <strong>2</strong> - Contribuição não substituída<br>
+            <strong>3</strong> - Contribuição não substituída concomitante com contribuição substituída<br>
+            <strong>Validação:</strong> O preenchimento do campo é obrigatório apenas no caso das empresas enquadradas
+            no regime de tributação Simples Nacional, com tributação previdenciária substituída e não substituída (<a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [03]). Para os
+            demais empregadores, não deve ser informado.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">66
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur">remunPerApur</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-200</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Rubricas que compõem a remuneração do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_codRubr"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_codRubr">67
+        </td>
+        <td>codRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código
+            da rubrica constante da Tabela de Rubricas Padrão.<br>
+            <strong>Validação:</strong> Não pode ser utilizada rubrica:<br>
+            a) cujo <a href="#1010_infoRubrica_inclusao_dadosRubrica_codIncCP">codIncCP</a> em S-1010 seja igual a [25,
+            26, 51] se <a href="#1200_dmDev_codCateg">codCateg</a> pertencer ao grupo "Contribuinte Individual" ou
+            "Bolsista" da <a href="tabelas.html#01">Tabela 01</a>;<br>
+            b) cuja <a href="#1010_infoRubrica_inclusao_dadosRubrica_natRubr">natRubr</a> em S-1010 seja igual a [1801,
+            9220], desde que <a href="#1200_ideEvento_perApur">perApur</a> &gt;= [2021-07] (se <a
+                    href="#1200_ideEvento_indApuracao">indApuracao</a> = [1]) ou <a href="#1200_ideEvento_perApur">perApur</a>
+            &gt;= [2021] (se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [2]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_ideTabRubr"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_ideTabRubr">68
+        </td>
+        <td>ideTabRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>Preencher com o identificador da Tabela de Rubricas para a rubrica definida em <a
+                href="#1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_codRubr">codRubr</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_qtdRubr"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_qtdRubr">69
+        </td>
+        <td>qtdRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-12</td>
+        <td>2</td>
+        <td>Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas
+            extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com
+            uma rubrica de salário, etc.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_fatorRubr"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_fatorRubr">70
+        </td>
+        <td>fatorRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informar o fator, percentual, etc. da rubrica, quando necessário. Ex.: Adicional de horas extras 50%,
+            relacionado a uma rubrica de horas extras: Fator = 50.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_vrRubr"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_vrRubr">71
+        </td>
+        <td>vrRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total da rubrica.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_indApurIR"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_indApurIR">72
+        </td>
+        <td>indApurIR</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de tipo de apuração de IR.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Normal (apuração sob a folha de pagamento declarada no eSocial)<br>
+            <strong>1</strong> - Situação especial de apuração de IR<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#1200_ideEvento_perApur">perApur</a> &gt;= [2021-07] (se <a
+                    href="#1200_ideEvento_indApuracao">indApuracao</a> = [1]) ou se <a href="#1200_ideEvento_perApur">perApur</a>
+            &gt;= [2021] (se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [2]).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha">73
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha">descFolha</a></td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun">itensRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de desconto do empréstimo em folha.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_tpDesc"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_tpDesc">74
+        </td>
+        <td>tpDesc</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do tipo de desconto.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - eConsignado
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_instFinanc"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_instFinanc">75
+        </td>
+        <td>instFinanc</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Código da Instituição Financeira concedente do empréstimo.<br>
+            <strong>Validação:</strong> Deve ser um código válido, conforme tabela do Banco Central.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_nrDoc"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_nrDoc">76
+        </td>
+        <td>nrDoc</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8-12</td>
+        <td>-</td>
+        <td>Número do contrato referente ao empréstimo.<br>
+            <strong>Validação:</strong> Se <a
+                    href="#1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_tpDesc">tpDesc</a> =
+            [1], deve ser informado com 8 (oito) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_observacao"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha_observacao">77
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_itensRemun_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Outras informações do desconto.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_infoAgNocivo"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_infoAgNocivo">78
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_infoAgNocivo">infoAgNocivo</a></td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur">remunPerApur</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo referente ao detalhamento do grau de exposição do trabalhador aos agentes nocivos que ensejam a
+            cobrança da contribuição adicional para financiamento dos benefícios de aposentadoria especial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_infoAgNocivo_grauExp"
+            id="1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_infoAgNocivo_grauExp">79
+        </td>
+        <td>grauExp</td>
+        <td><a href="#r_1200_dmDev_infoPerApur_ideEstabLot_remunPerApur_infoAgNocivo">infoAgNocivo</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código que representa o grau de exposição a agentes nocivos, conforme <a
+                href="tabelas.html#02">Tabela 02</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Não ensejador de aposentadoria especial<br>
+            <strong>2</strong> - Ensejador de aposentadoria especial - FAE15_12% (15 anos de contribuição e alíquota de
+            12%)<br>
+            <strong>3</strong> - Ensejador de aposentadoria especial - FAE20_09% (20 anos de contribuição e alíquota de
+            9%)<br>
+            <strong>4</strong> - Ensejador de aposentadoria especial - FAE25_06% (25 anos de contribuição e alíquota de
+            6%)
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt" id="1200_dmDev_infoPerAnt">
+            80
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt">infoPerAnt</a></td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo destinado às informações de:<br>
+            a) remuneração relativa a diferenças salariais provenientes de acordo coletivo, convenção coletiva e
+            dissídio;<br>
+            b) remuneração relativa a diferenças de vencimento provenientes de disposições legais;<br>
+            c) bases de cálculo para efeitos de apuração de FGTS resultantes de conversão de licença saúde em acidente
+            de trabalho;<br>
+            d) verbas de natureza salarial ou não salarial devidas após o desligamento.<br>
+            OBS.: As informações previstas acima podem se referir ao período de apuração definido em <a
+                    href="#1200_ideEvento_perApur">perApur</a> ou a períodos anteriores a <a
+                    href="#1200_ideEvento_perApur">perApur</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC"
+            id="1200_dmDev_infoPerAnt_ideADC">81
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC">ideADC</a></td>
+        <td><a href="#r_1200_dmDev_infoPerAnt">infoPerAnt</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração
+            anteriores.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC_dtAcConv"
+            id="1200_dmDev_infoPerAnt_ideADC_dtAcConv">82
+        </td>
+        <td>dtAcConv</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC">ideADC</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data da assinatura do acordo, convenção coletiva, sentença normativa ou da conversão da licença saúde em
+            acidente de trabalho.<br>
+            <strong>Validação:</strong> Informação obrigatória se <a href="#1200_dmDev_infoPerAnt_ideADC_tpAcConv">tpAcConv</a>
+            = [A, B, C, D, E]. Se preenchida, seu mês/ano deve ser igual ou anterior ao período de apuração, informado
+            em <a href="#1200_ideEvento_perApur">perApur</a>. A data deve ser igual ou posterior a 01/01/1890.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC_tpAcConv"
+            id="1200_dmDev_infoPerAnt_ideADC_tpAcConv">83
+        </td>
+        <td>tpAcConv</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC">ideADC</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração anteriores.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>A</strong> - Acordo Coletivo de Trabalho<br>
+            <strong>B</strong> - Legislação federal, estadual, municipal ou distrital<br>
+            <strong>C</strong> - Convenção Coletiva de Trabalho<br>
+            <strong>D</strong> - Sentença normativa - Dissídio<br>
+            <strong>E</strong> - Conversão de licença saúde em acidente de trabalho<br>
+            <strong>F</strong> - Outras verbas de natureza salarial ou não salarial devidas após o desligamento<br>
+            <strong>G</strong> - Antecipação de diferenças de acordo, convenção ou dissídio coletivo<br>
+            <strong>H</strong> - Declaração de base de cálculo de FGTS anterior ao início do FGTS Digital<br>
+            <strong>I</strong> - Sentença judicial (exceto reclamatória trabalhista)<br>
+            <strong>J</strong> - Parcelas complementares conhecidas após o fechamento da folha<br>
+            <strong>Validação:</strong> Se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            em S-1000 = [04, 22], não pode ser informado [E, H, I].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC_dsc"
+            id="1200_dmDev_infoPerAnt_ideADC_dsc">84
+        </td>
+        <td>dsc</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC">ideADC</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Descrição do instrumento ou situação que originou o pagamento das verbas relativas a períodos anteriores.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC_remunSuc"
+            id="1200_dmDev_infoPerAnt_ideADC_remunSuc">85
+        </td>
+        <td>remunSuc</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC">ideADC</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se a remuneração é relativa a verbas de natureza salarial ou não salarial devidas pela empresa
+            sucessora a empregados desligados ainda na sucedida.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC_idePeriodo"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo">86
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo">idePeriodo</a></td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC">ideADC</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-180</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do período ao qual se referem as diferenças de remuneração.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_perRef"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_perRef">87
+        </td>
+        <td>perRef</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo">idePeriodo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Informar o período ao qual se refere o complemento de remuneração, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser igual ou anterior ao período de apuração informado em <a
+                    href="#1200_ideEvento_perApur">perApur</a>.<br>
+            Deve ser informado no formato AAAA-MM.<br>
+            Se <a href="#1200_dmDev_infoPerAnt_ideADC_tpAcConv">tpAcConv</a> = [H], deve ser anterior ao início do FGTS
+            Digital e igual ou posterior a [1994-07].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot">88
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot">ideEstabLot</a></td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo">idePeriodo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-500</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento e da lotação ao qual se referem as diferenças de remuneração do mês
+            identificado no grupo superior.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_tpInsc"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_tpInsc">89
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da <a
+                href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO<br>
+            <strong>Validação:</strong> Se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            em S-1000 = [21, 22], deve ser igual a [3, 4].<br>
+            Se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [04], deve ser
+            igual a [1].<br>
+            Nos demais casos (<a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000
+            diferente de [04, 21, 22]), deve ser igual a [1, 4].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_nrInsc"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_nrInsc">90
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado
+            no campo <a href="#1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_tpInsc">ideEstabLot/tpInsc</a>.<br>
+            <strong>Validação:</strong> A inscrição informada deve ser compatível com <a
+                    href="#1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_tpInsc">ideEstabLot/tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_codLotacao"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_codLotacao">91
+        </td>
+        <td>codLotacao</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador para a lotação tributária.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt">92
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt">remunPerAnt</a></td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot">ideEstabLot</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas à remuneração do trabalhador em períodos anteriores.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_matricula"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_matricula">93
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt">remunPerAnt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no
+            Sistema de Administração de Recursos Humanos do órgão.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200
+            ou S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300
+            ou se <a href="#1200_dmDev_infoPerAnt_ideADC_remunSuc">remunSuc</a> = [S].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_indSimples"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_indSimples">94
+        </td>
+        <td>indSimples</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt">remunPerAnt</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de contribuição substituída.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuição substituída integralmente<br>
+            <strong>2</strong> - Contribuição não substituída<br>
+            <strong>3</strong> - Contribuição não substituída concomitante com contribuição substituída<br>
+            <strong>Validação:</strong> O preenchimento do campo é obrigatório apenas no caso das empresas enquadradas
+            no regime de tributação Simples Nacional, com tributação previdenciária substituída e não substituída (<a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [03]). Para os
+            demais empregadores, não deve ser informado.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">95
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt">remunPerAnt</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-200</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Rubricas que compõem a remuneração do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_codRubr"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_codRubr">96
+        </td>
+        <td>codRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código
+            da rubrica constante da Tabela de Rubricas Padrão.<br>
+            <strong>Validação:</strong> Não pode ser utilizada rubrica:<br>
+            a) cujo <a href="#1010_infoRubrica_inclusao_dadosRubrica_codIncCP">codIncCP</a> em S-1010 seja igual a [25,
+            26, 51] se <a href="#1200_dmDev_codCateg">codCateg</a> pertencer ao grupo "Contribuinte Individual" ou
+            "Bolsista" da <a href="tabelas.html#01">Tabela 01</a>;<br>
+            b) cuja <a href="#1010_infoRubrica_inclusao_dadosRubrica_natRubr">natRubr</a> em S-1010 seja igual a [1801,
+            9220], desde que <a href="#1200_ideEvento_perApur">perApur</a> &gt;= [2021-07] (se <a
+                    href="#1200_ideEvento_indApuracao">indApuracao</a> = [1]) ou <a href="#1200_ideEvento_perApur">perApur</a>
+            &gt;= [2021] (se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [2]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_ideTabRubr"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_ideTabRubr">97
+        </td>
+        <td>ideTabRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>Preencher com o identificador da Tabela de Rubricas para a rubrica definida em <a
+                href="#1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_codRubr">codRubr</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_qtdRubr"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_qtdRubr">98
+        </td>
+        <td>qtdRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-12</td>
+        <td>2</td>
+        <td>Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas
+            extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com
+            uma rubrica de salário, etc.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_fatorRubr"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_fatorRubr">99
+        </td>
+        <td>fatorRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informar o fator, percentual, etc. da rubrica, quando necessário. Ex.: Adicional de horas extras 50%,
+            relacionado a uma rubrica de horas extras: Fator = 50.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_vrRubr"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_vrRubr">100
+        </td>
+        <td>vrRubr</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total da rubrica.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_indApurIR"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun_indApurIR">101
+        </td>
+        <td>indApurIR</td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_itensRemun">itensRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de tipo de apuração de IR.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Normal (apuração sob a folha de pagamento declarada no eSocial)<br>
+            <strong>1</strong> - Situação especial de apuração de IR<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#1200_ideEvento_perApur">perApur</a> &gt;= [2021-07] (se <a
+                    href="#1200_ideEvento_indApuracao">indApuracao</a> = [1]) ou se <a href="#1200_ideEvento_perApur">perApur</a>
+            &gt;= [2021] (se <a href="#1200_ideEvento_indApuracao">indApuracao</a> = [2]).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_infoAgNocivo"
+            id="1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_infoAgNocivo">102
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt_infoAgNocivo">infoAgNocivo</a>
+        </td>
+        <td><a href="#r_1200_dmDev_infoPerAnt_ideADC_idePeriodo_ideEstabLot_remunPerAnt">remunPerAnt</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo referente ao detalhamento do grau de exposição do trabalhador aos agentes nocivos que ensejam a
+            cobrança da contribuição adicional para financiamento dos benefícios de aposentadoria especial.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoComplCont"
+            id="1200_dmDev_infoComplCont">103
+        </td>
+        <td><a href="#r_1200_dmDev_infoComplCont">infoComplCont</a></td>
+        <td><a href="#r_1200_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente quando o evento de remuneração se referir a trabalhador cuja categoria não
+            estiver obrigada ao evento de início de TSVE e se não houver evento S-2300 correspondente.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoComplCont_codCBO"
+            id="1200_dmDev_infoComplCont_codCBO">104
+        </td>
+        <td>codCBO</td>
+        <td><a href="#r_1200_dmDev_infoComplCont">infoComplCont</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Classificação Brasileira de Ocupações - CBO.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoComplCont_natAtividade"
+            id="1200_dmDev_infoComplCont_natAtividade">105
+        </td>
+        <td>natAtividade</td>
+        <td><a href="#r_1200_dmDev_infoComplCont">infoComplCont</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Natureza da atividade.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Trabalho urbano<br>
+            <strong>2</strong> - Trabalho rural<br>
+            <strong>Validação:</strong> O campo deve ser preenchido apenas se atendida uma das condições a seguir
+            apresentadas:<br>
+            a) <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [06, 07];<br>
+            b) <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [21, 22] e
+            existir remuneração para o trabalhador vinculada a um tipo de CAEPF informado em S-1005 como produtor rural
+            ou segurado especial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1200_dmDev_infoComplCont_qtdDiasTrab"
+            id="1200_dmDev_infoComplCont_qtdDiasTrab">106
+        </td>
+        <td>qtdDiasTrab</td>
+        <td><a href="#r_1200_dmDev_infoComplCont">infoComplCont</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Informação prestada exclusivamente pelo segurado especial em caso de contratação de contribuinte individual,
+            indicando a quantidade de dias trabalhados pelo mesmo.<br>
+            Caso não tenha havido trabalho no mês, informar 0 (zero).<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], <a
+                    href="#1200_dmDev_infoComplCont_natAtividade">natAtividade</a> = [2] e <a
+                    href="#1200_ideEvento_indApuracao">indApuracao</a> = [1]. Neste caso, preencher com um número entre
+            0 e 31, de acordo com o calendário anual.
+        </td>
+    </tr>
+    </tbody>
+</table>

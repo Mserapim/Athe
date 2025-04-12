@@ -1,0 +1,1302 @@
+[
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [
+      [
+        "05600"
+      ],
+      [
+        "05601"
+      ],
+      [
+        "05602"
+      ],
+      [
+        "05606"
+      ],
+      [
+        "05611"
+      ],
+      [
+        "05700"
+      ]
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "identifier": 7,
+    "slug": "abono-pecuniario",
+    "extra_info": "ABONO PECUNIARIO"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [
+      [
+        "99100"
+      ],
+      [
+        "99900"
+      ]
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "identifier": 3,
+    "slug": "deducao-dependentes",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "RIDAC",
+    "eventos": [],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "identifier": 5,
+    "slug": "diarias-e-ajuda-de-custo",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 2,
+    "id_receita": "RTIRF",
+    "eventos": [
+      [
+        "99100"
+      ],
+      [
+        "99101"
+      ],
+      [
+        "99102"
+      ],
+      [
+        "99106"
+      ],
+      [
+        "99108"
+      ],
+      [
+        "99900"
+      ],
+      [
+        "99901"
+      ],
+      [
+        "99902"
+      ],
+      [
+        "99906"
+      ],
+      [
+        "99907"
+      ],
+      [
+        "99908"
+      ]
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "identifier": 4,
+    "slug": "imposto-retido-na-fonte",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "RIIRP",
+    "eventos": [
+      [
+        "05300"
+      ],
+      [
+        "05301"
+      ],
+      [
+        "05306"
+      ],
+      [
+        "05311"
+      ],
+      [
+        "05400"
+      ],
+      [
+        "05401"
+      ],
+      [
+        "05406"
+      ],
+      [
+        "05411"
+      ],
+      [
+        "05500"
+      ],
+      [
+        "05501"
+      ],
+      [
+        "05506"
+      ],
+      [
+        "05511"
+      ],
+      [
+        "05600"
+      ],
+      [
+        "05601"
+      ],
+      [
+        "05606"
+      ],
+      [
+        "05611"
+      ],
+      [
+        "05701"
+      ],
+      [
+        "05706"
+      ]
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "identifier": 6,
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "ABONO PERMANENCIA",
+    "eventos": [
+      [
+        "05200"
+      ],
+      [
+        "05201"
+      ],
+      [
+        "05202"
+      ],
+      [
+        "05206"
+      ],
+      [
+        "05210"
+      ],
+      [
+        "07800"
+      ],
+      [
+        "07806"
+      ]
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "identifier": 8,
+    "slug": "outros-abono-permanencia",
+    "extra_info": "ABONO PERMANENCIA"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "eventos": [
+      [
+        "04600"
+      ],
+      [
+        "04601"
+      ],
+      [
+        "04602"
+      ],
+      [
+        "04606"
+      ],
+      [
+        "04608"
+      ],
+      [
+        "06700"
+      ],
+      [
+        "06701"
+      ],
+      [
+        "06702"
+      ],
+      [
+        "06703"
+      ],
+      [
+        "06706"
+      ],
+      [
+        "06707"
+      ]
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "identifier": 8,
+    "slug": "outros-auxilio-alimentacao",
+    "extra_info": "AUX. ALIMENTACAO"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "AUXILIO CRECHE",
+    "eventos": [
+      [
+        "06600"
+      ],
+      [
+        "06601"
+      ],
+      [
+        "06602"
+      ],
+      [
+        "06606"
+      ],
+      [
+        "06608"
+      ]
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "identifier": 8,
+    "slug": "outros-auxilio-creche",
+    "extra_info": "AUX. CRECHE"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "AUXILIO ESPECIAL",
+    "eventos": [
+      [
+        "06800"
+      ],
+      [
+        "06801"
+      ],
+      [
+        "06802"
+      ],
+      [
+        "06806"
+      ]
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "identifier": 8,
+    "slug": "outros-auxilio-especial",
+    "extra_info": "AUX ESPECIAL"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "identifier": 8,
+    "slug": "outros-auxilio-funeral",
+    "extra_info": "AUX FUNERAL"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "AUX. MORADIA",
+    "eventos": [
+      [
+        "06900"
+      ],
+      [
+        "06901"
+      ],
+      [
+        "06902"
+      ],
+      [
+        "06906"
+      ],
+      [
+        "06907"
+      ]
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "identifier": 8,
+    "slug": "outros-auxilio-moradia",
+    "extra_info": "AUX MORADIA"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "identifier": 8,
+    "slug": "outros-auxilio-natalidade",
+    "extra_info": "AUX NATALIDADE"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "eventos": [],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "identifier": 8,
+    "slug": "outros-incentivo-funcional",
+    "extra_info": "INC. FUNCIONAL"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "eventos": [
+      [
+        "55000"
+      ],
+      [
+        "55001"
+      ]
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "identifier": 8,
+    "slug": "outros-indenizacao-transporte",
+    "extra_info": "INDEN. TRANSPORTE"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [
+      [
+        "00900"
+      ],
+      [
+        "00906"
+      ],
+      [
+        "01000"
+      ],
+      [
+        "01001"
+      ],
+      [
+        "01002"
+      ],
+      [
+        "01006"
+      ],
+      [
+        "01007"
+      ]
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "identifier": 8,
+    "slug": "outros-indenizacoes",
+    "extra_info": "INDENIZAÇÕES"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "PAE",
+    "eventos": [
+      [
+        "03300"
+      ],
+      [
+        "03400"
+      ],
+      [
+        "03700"
+      ],
+      [
+        "03800"
+      ]
+    ],
+    "nome": "OUTROS-PAE",
+    "identifier": 8,
+    "slug": "outros-pae",
+    "extra_info": "PAE"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "ABONO PASEP",
+    "eventos": [],
+    "nome": "OUTROS-PASEP",
+    "identifier": 8,
+    "slug": "outros-pasep",
+    "extra_info": "PASEP"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "PRECATORIO",
+    "eventos": [],
+    "nome": "OUTROS-PRECATORIO",
+    "identifier": 8,
+    "slug": "outros-precatorio",
+    "extra_info": "PRECATORIO"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "REALINHAMENTO",
+    "eventos": [],
+    "nome": "OUTROS-REALINHAMENTO",
+    "identifier": 8,
+    "slug": "outros-realinhamento",
+    "extra_info": "REALINHAMENTO"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "SALARIO FAMILIA",
+    "eventos": [],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "identifier": 8,
+    "slug": "outros-salario-familia",
+    "extra_info": "SAL. FAMILIA"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "URV",
+    "eventos": [
+      [
+        "03100"
+      ],
+      [
+        "03200"
+      ]
+    ],
+    "nome": "OUTROS-URV",
+    "identifier": 8,
+    "slug": "outros-urv",
+    "extra_info": "URV"
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "RTPA",
+    "eventos": [
+      [
+        "70100"
+      ],
+      [
+        "70101"
+      ],
+      [
+        "70102"
+      ],
+      [
+        "70500"
+      ],
+      [
+        "70600"
+      ]
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "identifier": 13,
+    "slug": "pensao-alimenticia",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 2,
+    "id_receita": "RTPO",
+    "eventos": [
+      [
+        "90000"
+      ],
+      [
+        "90001"
+      ],
+      [
+        "90002"
+      ],
+      [
+        "90006"
+      ],
+      [
+        "90008"
+      ],
+      [
+        "90010"
+      ],
+      [
+        "90100"
+      ],
+      [
+        "90101"
+      ],
+      [
+        "90102"
+      ],
+      [
+        "90106"
+      ],
+      [
+        "90107"
+      ],
+      [
+        "90108"
+      ],
+      [
+        "90200"
+      ],
+      [
+        "90500"
+      ],
+      [
+        "90501"
+      ],
+      [
+        "90502"
+      ],
+      [
+        "90506"
+      ],
+      [
+        "90510"
+      ],
+      [
+        "90600"
+      ],
+      [
+        "90601"
+      ],
+      [
+        "90602"
+      ],
+      [
+        "90606"
+      ],
+      [
+        "90800"
+      ],
+      [
+        "90801"
+      ],
+      [
+        "90900"
+      ],
+      [
+        "90901"
+      ],
+      [
+        "90906"
+      ],
+      [
+        "91000"
+      ],
+      [
+        "91001"
+      ],
+      [
+        "91002"
+      ],
+      [
+        "91006"
+      ],
+      [
+        "91100"
+      ],
+      [
+        "91101"
+      ],
+      [
+        "91102"
+      ],
+      [
+        "91106"
+      ],
+      [
+        "91500"
+      ],
+      [
+        "91501"
+      ],
+      [
+        "91502"
+      ],
+      [
+        "91600"
+      ],
+      [
+        "91601"
+      ],
+      [
+        "91602"
+      ],
+      [
+        "91606"
+      ]
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "identifier": 2,
+    "slug": "previdencia-social",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "RTRT",
+    "eventos": [
+      [
+        "00100"
+      ],
+      [
+        "00101"
+      ],
+      [
+        "00102"
+      ],
+      [
+        "00103"
+      ],
+      [
+        "00106"
+      ],
+      [
+        "00107"
+      ],
+      [
+        "00130"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00401"
+      ],
+      [
+        "00402"
+      ],
+      [
+        "00406"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00501"
+      ],
+      [
+        "00502"
+      ],
+      [
+        "00506"
+      ],
+      [
+        "00507"
+      ],
+      [
+        "00508"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00601"
+      ],
+      [
+        "00602"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "00701"
+      ],
+      [
+        "00702"
+      ],
+      [
+        "00706"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "00801"
+      ],
+      [
+        "00802"
+      ],
+      [
+        "00806"
+      ],
+      [
+        "00807"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "01101"
+      ],
+      [
+        "01102"
+      ],
+      [
+        "01106"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "01401"
+      ],
+      [
+        "01402"
+      ],
+      [
+        "01406"
+      ],
+      [
+        "01407"
+      ],
+      [
+        "01408"
+      ],
+      [
+        "01500"
+      ],
+      [
+        "01501"
+      ],
+      [
+        "01502"
+      ],
+      [
+        "01506"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "01701"
+      ],
+      [
+        "01706"
+      ],
+      [
+        "01707"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "02001"
+      ],
+      [
+        "02002"
+      ],
+      [
+        "02006"
+      ],
+      [
+        "04000"
+      ],
+      [
+        "04001"
+      ],
+      [
+        "04006"
+      ],
+      [
+        "04700"
+      ],
+      [
+        "04701"
+      ],
+      [
+        "04702"
+      ],
+      [
+        "04706"
+      ],
+      [
+        "04800"
+      ],
+      [
+        "04801"
+      ],
+      [
+        "04802"
+      ],
+      [
+        "04806"
+      ],
+      [
+        "04900"
+      ],
+      [
+        "04901"
+      ],
+      [
+        "04902"
+      ],
+      [
+        "04903"
+      ],
+      [
+        "04906"
+      ],
+      [
+        "04908"
+      ],
+      [
+        "05000"
+      ],
+      [
+        "05001"
+      ],
+      [
+        "05002"
+      ],
+      [
+        "05006"
+      ],
+      [
+        "05007"
+      ],
+      [
+        "05014"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "05101"
+      ],
+      [
+        "05102"
+      ],
+      [
+        "05106"
+      ],
+      [
+        "05800"
+      ],
+      [
+        "05900"
+      ],
+      [
+        "05901"
+      ],
+      [
+        "05906"
+      ],
+      [
+        "05907"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06001"
+      ],
+      [
+        "06002"
+      ],
+      [
+        "06006"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06101"
+      ],
+      [
+        "06102"
+      ],
+      [
+        "06106"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06201"
+      ],
+      [
+        "06202"
+      ],
+      [
+        "06206"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06301"
+      ],
+      [
+        "06302"
+      ],
+      [
+        "06306"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06401"
+      ],
+      [
+        "06406"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "06501"
+      ],
+      [
+        "06506"
+      ],
+      [
+        "09000"
+      ],
+      [
+        "09001"
+      ],
+      [
+        "09100"
+      ],
+      [
+        "49800"
+      ],
+      [
+        "49801"
+      ],
+      [
+        "49806"
+      ],
+      [
+        "49900"
+      ],
+      [
+        "49901"
+      ],
+      [
+        "49902"
+      ],
+      [
+        "49906"
+      ],
+      [
+        "49907"
+      ],
+      [
+        "49908"
+      ],
+      [
+        "70000"
+      ],
+      [
+        "70200"
+      ],
+      [
+        "70201"
+      ],
+      [
+        "70202"
+      ],
+      [
+        "70206"
+      ],
+      [
+        "70300"
+      ],
+      [
+        "70400"
+      ],
+      [
+        "70700"
+      ],
+      [
+        "71000"
+      ],
+      [
+        "71001"
+      ],
+      [
+        "71007"
+      ],
+      [
+        "71008"
+      ]
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "identifier": 1,
+    "slug": "rendimentos-tributaveis",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 2,
+    "id_receita": "RTIRF",
+    "eventos": [
+      [
+        "99200"
+      ],
+      [
+        "99201"
+      ],
+      [
+        "99206"
+      ]
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "identifier": 11,
+    "slug": "rra-imposto-retido-na-fonte",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "RTPA",
+    "eventos": [
+      [
+        "70600"
+      ]
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "identifier": 14,
+    "slug": "rra-pensao-alimenticia",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 2,
+    "id_receita": "RTPO",
+    "eventos": [
+      [
+        "90200"
+      ]
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "identifier": 10,
+    "slug": "rra-previdencia-social",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [
+      [
+        "03500"
+      ]
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "identifier": 22,
+    "slug": "rra-quantidade-meses",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "",
+    "eventos": [
+      [
+        "03000"
+      ],
+      [
+        "03001"
+      ],
+      [
+        "03500"
+      ],
+      [
+        "03511"
+      ],
+      [
+        "03600"
+      ]
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "identifier": 21,
+    "slug": "rra-rendimentos-isentos-molestia",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+},
+{
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "tipo": 1,
+    "id_receita": "RTRT",
+    "eventos": [
+      [
+        "03000"
+      ],
+      [
+        "03001"
+      ],
+      [
+        "03500"
+      ],
+      [
+        "03511"
+      ],
+      [
+        "03600"
+      ]
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "identifier": 9,
+    "slug": "rra-rendimentos-tributaveis",
+    "extra_info": ""
+  },
+  "model": "dirf.token"
+}
+]

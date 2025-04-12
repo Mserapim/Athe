@@ -1,0 +1,161 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .ballot-box { font-size: 15pt; }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+<p class="rf-spacing">Assunto: <b>{{ protocol.assunto }}</b></p>
+
+<p class="rf-title">REQUERIMENTO DE TELETRABALHO INTEGRAL<br/>GRUPO DE RISCO</p>
+
+<p class="rf-paragraph-height">
+    <b>À Chefia Imediata, Sr(a): </b>{{ boss_name }}
+</p>
+
+<p class="rf-paragraph-height">
+    <b>Cargo: </b>{{ boss_job_position }}
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Condição (Grupo de Risco):</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                {% if elderly %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Idosos;
+            </p>
+            <p class="rf-paragraph-height">
+                {% if pregnant %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Gestantes;
+            </p>
+            <p class="rf-paragraph-height">
+                {% if chronic_diseases %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Portadores de doenças crônicas: hipertensão e diabetes, doenças autoimunes,
+                imunossupressoras, dentre outras;
+            </p>
+            <p class="rf-paragraph-height">
+                {% if pneumopathy_diseases %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Portadores de pneumopatias: asma, bronquite e doença pulmonar obstrutiva
+                crônica, dentre outras;
+            </p>
+            <p class="rf-paragraph-height">
+                {% if kidney_diseases %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Portadores de doenças renais;
+            </p>
+            <p class="rf-paragraph-height">
+                {% if cardiovascular_diseases %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Portadores de doenças cardiovasculares graves, insuficiência cardíaca,
+                revascularizados, infartados;
+            </p>
+            <p class="rf-paragraph-height">
+                {% if obese %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Pessoas com obesidade - IMC superior a 35 e outras comorbidades que possam
+                agravar o estado geral de saúde em virtude do contágio pela COVID-19.
+            </p>
+            <p class="rf-paragraph-height">
+                Exceto os idosos, os demais integrantes pertencentes ao grupo de risco
+                deverão anexar ao e-Doc, juntamente com este requerimento, documento
+                comprobatório da patologia ou na sua falta, declaração do próprio
+                requerente indicando a sua patologia para fins de análise e despacho
+                da Área de Promoção e Assistência à Saúde.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Período de teletrabalho:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                De <strong>{{ start_date|date:'d \d\e F \d\e Y' }}</strong> até o final da situação de
+                emergência declarado pelo Ministério Público.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Requerimento:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                Eu, acima qualificado, no pleno exercício de meu direito previsto no
+                art.10, do Ato Conjunto PGJ/CGMP Nº 009, de 20 de julho de 2020, que
+                define as Diretrizes para o retorno gradual às atividades presenciais
+                no âmbito do Ministério Público do Tocantins, venho requerer, por estar
+                enquadrado nos termos da legislação ora citada na condição de grupo
+                de risco, conforme motivo indicado no quadro acima, o regime de
+                teletrabalho integral, dispensando o meu comparecimento à unidade de
+                trabalho onde estou lotado, para exercer minhas atividades profissionais,
+                a partir da data indicada acima, declarando desde já estar em plenas
+                condições de saúde para o exercício do teletrabalho.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Atenção:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Não se esqueça de assinar este documento eletronicamente antes de encaminhá-lo.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

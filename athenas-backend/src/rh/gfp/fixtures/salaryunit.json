@@ -1,0 +1,100 @@
+[
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "cvalue": 1,
+    "label": "Por Hora",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "cvalue": 2,
+    "label": "Por Dia",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "cvalue": 3,
+    "label": "Por Semana",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "cvalue": 4,
+    "label": "Por Quinzena",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 5,
+    "cvalue": 5,
+    "label": "Por Mês",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 6,
+    "cvalue": 6,
+    "label": "Por Tarefa",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 7,
+    "cvalue": 7,
+    "label": "Não aplicável",
+    "cache_path": "gfp.SALARY_UNIT",
+    "app_label": "gfp",
+    "active": true,
+    "order_weight": 0,
+    "name": "SALARY_UNIT"
+  },
+  "model": "standard.choice"
+}
+]

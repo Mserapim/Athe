@@ -1,0 +1,12 @@
+[
+{
+  "model": "standard.emailtemplate",
+  "pk": null,
+  "fields": {
+    "code": "SALDO_DEVEDOR_META",
+    "subject": "AVISO DE SALDO DEVEDOR DE METAS DO TELETRABALHO",
+    "contents": "<p>Prezado(a) @nome_servidor,<br></p><p style=\"text-align: justify;\"><br></p><p>Estamos entrando em contato para informá-lo(a) que foi identificado saldo devedor referente as metas do mês @mes/@ano.</p><p><b>Detalhes do saldo:</b><br></p><p><b></b><br></p><p>@dados_meta<br></p><p><br></p><p>Em caso de dúvidas entre em contato com a Gerência de Desenvolvimento do Departamento de Gestão de Pessoas.<br></p><p style=\"text-align: justify;\"><br></p>",
+    "description": "<p style=\"text-align: justify;\"><br></p>"
+  }
+}
+]

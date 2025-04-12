@@ -1,0 +1,155 @@
+{% extends "inspection/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+        <br />
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>{{ title_app }} - {{ controlinformation.year }}</b></td></tr>
+        </table>
+            <div style="padding-top: 0.5em; ">
+              {% if check_address %}
+                  <div style="padding-left: 0.5em; padding-top: 1em; ">
+                    <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                      <b><u>Residência</u></b> [ {% if controlinformation.closed_address %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]<br />
+                      <div style="padding-top: 0.5em;">
+                        Prazo: <b>{{ controlinformation.open_date_address | date:'d/m/Y' }} a {{ controlinformation.get_close_date_address | date:'d/m/Y' }}</b><br />
+                      </div>
+
+                      {% block status-address %}
+                        {{ status_address_rendered }}
+                      {% endblock %}
+
+                      {% block pendency-address %}
+                        {{ pendency_address_rendered }}
+                      {% endblock %}
+
+                    </div>
+                  </div>
+              {% endif %}
+              {% if check_teaching %}
+                  <div style="padding-left: 0.5em; padding-top: 1em; ">
+                    <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                      <b><u>Docência (1º Semestre)</u></b> [ {% if controlinformation.closed_teaching_1st_semestry %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]
+                      <div style="padding-top: 0.5em;">
+                        Prazo: <b>{{ controlinformation.open_date_teaching_1st_semestry | date:'d/m/Y' }} a {{ controlinformation.get_close_date_teaching_one | date:'d/m/Y' }}</b><br />
+                      </div>
+
+                      {% block status-teaching_one %}
+                        {{ status_teaching_one_rendered }}
+                      {% endblock %}
+
+                      {% block pendency-teaching_one %}
+                        {{ pendency_teaching_one_rendered }}
+                      {% endblock %}
+                    </div>
+                  </div>
+              {% endif %}
+              {% if check_teaching %}
+                  <div style="padding-left: 0.5em; padding-top: 1em; ">
+                    <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                      <b><u>Docência (2º Semestre)</u></b> [ {% if controlinformation.closed_teaching_2nd_semestry %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]
+                      <div style="padding-top: 0.5em;">
+                        Prazo: <b>{{ controlinformation.open_date_teaching_2nd_semestry | date:'d/m/Y' }} a {{ controlinformation.get_close_date_teaching_two | date:'d/m/Y' }}</b><br />
+                      </div>
+                      
+                      {% block status-teaching_two %}
+                      {{ status_teaching_two_rendered }}
+                      {% endblock %}
+
+                      {% block pendency-teaching_two %}
+                        {{ pendency_teaching_two_rendered }}
+                      {% endblock %}
+                      
+                    </div>
+                  </div>
+              {% endif %}
+              {% if check_property %}
+                  <div style="padding-left: 0.5em; padding-top: 1em; ">
+                    <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                      <b><u>Bens e Direitos</u></b> [ {% if controlinformation.closed_property %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]
+                      <div style="padding-top: 0.5em;">
+                        Prazo: <b>{{ controlinformation.open_date_property | date:'d/m/Y' }} a {{ controlinformation.get_close_date_property | date:'d/m/Y' }}</b><br />
+                      </div>
+                      {% block status-property %}
+                      {{ status_property_rendered }}
+                      {% endblock %}
+
+                      {% block pendency-property %}
+                        {{ pendency_property_rendered }}
+                      {% endblock %}
+
+                    </div>
+                  </div>
+              {% endif %}
+              {% if check_debits %}
+                  <div style="padding-left: 0.5em; padding-top: 1em; ">
+                    <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                      <b><u>Dívidas e Ônus Reais</u></b> [ {% if controlinformation.closed_debits %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]
+                      
+                      <div style="padding-top: 0.5em;">
+                        Prazo: <b>{{ controlinformation.open_date_debits | date:'d/m/Y' }} a {{ controlinformation.get_close_date_debits | date:'d/m/Y' }}</b><br />
+                      </div>
+
+                      {% block status-debits %}
+                      {{ status_debits_rendered }}
+                      {% endblock %}
+
+                      {% block pendency-debits %}
+                        {{ pendency_debits_rendered }}
+                      {% endblock %}
+
+                    </div>
+                  </div>
+              {% endif %}
+              {% if check_irpf %}
+                  {% with irpf_info=controlinformation.status_irpf_template %}
+                      <div style="padding-left: 0.5em; padding-top: 1em; ">
+                        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                          <b><u>Declaração do IRPF</u></b> [ {% if irpf_info.is_closed %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]
+                          
+                          <div style="padding-top: 0.5em;">
+                            Prazo: <b>{{ controlinformation.open_date_irpf | date:'d/m/Y' }} a {{ controlinformation.get_close_date_irpf | date:'d/m/Y' }}</b><br />
+                          </div>
+
+                          {% block status-irpf %}
+                          {{ status_irpf_rendered }}
+                          {% endblock %}
+
+                          {% block pendency-irpf %}
+                          {{ pendency_irpf_rendered }}
+                          {% endblock %}
+                          
+                        </div>
+                      </div>
+                     {% endwith %}
+              {% endif %}
+              {% if check_health %}
+                  <div style="padding-left: 0.5em; padding-top: 1em; ">
+                    <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+                      <b><u>Saúde</u></b> [ {% if controlinformation.closed_health %} <b>FECHADO</b> {% else %} <b><font color="green">ABERTO</font></b> {% endif %} ]{% if controlinformation.health_submitted_by %} [ <font color="blue"><b>SUBMETIDO em {{ controlinformation.health_submitted_at | date:'d/m/Y H:i' }}</b></font> ] {% endif %}
+                      <div style="padding-top: 0.5em;">
+                        - Situação: {% if controlinformation.pendency_health %} <font color="red"> {{ controlinformation.pendency_health_msg | safely }} </font> {% else %} <b>{{ controlinformation.health_status }}</b>{% endif %}  <br />
+                        - Prazo: <b>{{ controlinformation.open_date_health | date:'d/m/Y' }} a {{ controlinformation.get_close_date_health | date:'d/m/Y' }}</b><br />
+                      </div>
+                    </div>
+                  </div>
+              {% endif %}
+            </div>
+
+        {% if controlinformation.privatelogs.all %}
+            <br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>Log Privado</b></td></tr>
+            </table>
+            <div style="padding-left: 0.5em; padding-top: 0.5em; ">
+                {% for data in controlinformation.privatelogs.all %}
+                    <div style="padding-bottom: 0.25em; font-size: 12px;">
+                        - <b><u>{{ data.created_at | date:'d/m/Y H:i' }}</u></b>: {{ data.information | safely }}
+                    </div>
+              {% endfor %}
+            </div>
+        {% endif %}
+
+
+    {% endblock %}
+</div>

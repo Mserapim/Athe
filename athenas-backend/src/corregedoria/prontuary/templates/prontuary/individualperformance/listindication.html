@@ -1,0 +1,49 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div class="composite">
+        {% block content %}
+            <b>DESEMPENHO INDIVIDUAL - Inscrições em Editais</b>
+            <div class="paragraph-text" style="padding-left: 0.5em; font-size: 12px;">
+                <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 2px;" colspan="2">Edital: <b>{{ detaillistindication.edital }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;">Critério: <b>{{ detaillistindication.get_criteria_display }}</u></td>
+                        <td style="padding: 2px;">Data: <b>{{ detaillistindication.date_edital | date:'d/m/Y' }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center; " colspan="2" >
+                            <u>Figurou em lista?</u>
+                            <b>
+                                {% if detaillistindication.list_figuration == 1 %} Sem informção {% endif %}
+                                {% if detaillistindication.list_figuration == 2 %} SIM {% endif %}
+                                {% if detaillistindication.list_figuration == 3 %} NÃO {% endif %}
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;" colspan="3">
+                            Anexos: <br />
+                            {% if detaillistindication.attachments.all %}
+                                {% for data in detaillistindication.attachments.all %}
+                                    - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                                    <div style="font-size:0.8em; padding-left: 1em; padding-bottom: 0.5em;">
+                                        <small>
+                                            URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                                            MD5: {{ data.attached_file.file }}
+                                        </small>
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                <div style="padding-left: 0.5em;">
+                                 - Não existem anexos.
+                                </div>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        {% endblock %}
+    </div>
+</div>

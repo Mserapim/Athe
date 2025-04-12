@@ -1,0 +1,27 @@
+- 2024.12.10:
+    - CARD: ATS-6150 - MR: 1558 - [back] - Incluir a comarca nos campos ‘ocultos’ na tela de plantões
+    - CARD: ATS-6153 - MR: 1559 - [back] - Criar API para o tipo de plantão
+- 2024.12.11:
+    - CARD: ATS-6152 - MR: 1562 - [back] - Adaptar API de plantões para novos filtros
+    - CARD: ATS-6131 - MR: 1563 - [EXT] Adicionar memorial de cálculo e remover tag de html
+- 2024.12.12:
+    - CARD: ATS-6103 - MR: 1565 - [back] - Ao remover verba da folha, tornar GCPP inapto para pagamento
+    - CARD: ATS-6104 - MR: 1565 - [back] - Permitir remover contracheque relacionado a um GCPP/GCF
+- 2024.12.13:
+    - CARD: ATS-6133 - MR: 1569 - [BACK] Criar lógicas para que ao fazer alterações nos envios, atualizar o campo 'possui_saldo_devedor"
+    - CARD: ATS-6132 - MR: 1568 - [BACK] Adicionar campo de "possui_saldo_devedor" em MovimentacaoTeletrabalho
+- 2024.12.16:
+    - CARD: ATS-5979 - MR: 1572 - [BACK] Considerar apenas marcação válida em api
+    - CARD: ATS-6188 - MR: 1571 - [back] Add modelo de cadastro de consultas na auditoria de logs
+- 2024.12.17:
+    - CARD: ATS-6127 - MR: 1573 - [back] - Alterar filtro da tela de abonos e gratificações
+    - CARD: ATS-6161 - MR: 1576 - [BACK] Reordenar api de servidores
+    - CARD: ATS-6112 - MR: 1577 - [BACK] Api para limitar acesso a justificativa
+    - CARD: ATS-5981 - MR: 1575 - [BACK] Ajustar feriado municipal pelo período na lotação
+- 2024.12.18:
+    - CARD: (leiaute-esocial1.3) - MR: 1586 - Publicação da atualização do leiaute do esocial em develop
+- 2024.12.19:
+    - CARD: ATS-5980 - MR: 1588 - [BACK] Habilitar ordenação de colunas
+    - CARD: ATS-5022 - MR: 1590 - [back] - Histórico de Serviços - Atribuir função de histórico aos Serviços existentes
+    - CARD: ATS-5023 - MR: 1591 - [back] - Histórico de Serviços - Criar API de listagem
+    - CARD: ATS-6147 - MR: 1584 - Importação do Sisdias 

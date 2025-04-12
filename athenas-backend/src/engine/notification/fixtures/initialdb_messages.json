@@ -1,0 +1,902 @@
+[
+{
+  "fields": {
+    "default_params": "{}",
+    "header": "Sistema de Notifica\u00e7\u00f5es",
+    "message": "Seja bem-vindo ao novo sistema de notifica\u00e7\u00f5es do Athenas, a partir de hoje algumas notifica\u00e7\u00f5es importantes aparecer\u00e3o neste local do sistema, fique atento!",
+    "type": "INFO",
+    "mid": "BEM_VINDO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'capacitacao': '', u'cidade_evento': '', u'data_inicio': '', u'data_fim': ''}",
+    "header": "Inscri\u00e7\u00e3o Homologada",
+    "message": "Sua inscri\u00e7\u00e3o na capacita\u00e7\u00e3o <b>%(capacitacao)s</b> que ocorrer\u00e1 em %(cidade_evento)s na data de <b>%(data_inicio)s</b> \u00e0 <b>%(data_fim)s</b>, foi homologa pelo CESAF.",
+    "type": "INFO",
+    "mid": "GECAP_HOMOLOGADO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'capacitacao': ''}",
+    "header": "Entrega de Certificado",
+    "message": "O CESAF vem atrav\u00e9s deste solicitar que seja entregue uma copia do certificado de participa\u00e7\u00e3o na capacita\u00e7\u00e3o <b>%(capacitacao)s</b>.",
+    "type": "INFO",
+    "mid": "GECAP_COBRA_CERTIFICADO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'pas': ''}",
+    "header": "F\u00e9rias",
+    "message": "Seu per\u00edodo de f\u00e9rias (<b>%(pas)s</b>) foi homologado pelo RH e agora aguarda frui\u00e7\u00e3o.",
+    "type": "INFO",
+    "mid": "FRS_HOMOLOGACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'pasu': ''}",
+    "header": "F\u00e9rias",
+    "message": "Sua parcela (<b>%(pasu)s</b>) foi autoriza pela chefia.",
+    "type": "INFO",
+    "mid": "FRS_AUTORIZACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'pas': '', u'data_inicio_usufruto': ''}",
+    "header": "F\u00e9rias",
+    "message": "Seu periodo aquisitivo (<b>%(pas)s</b>) foi liberado para marca\u00e7\u00e3o pelo sistema. Por\u00e9m seus usufrutos dever\u00e3o ser posterior \u00e0 %(data_inicio_usufruto)s.",
+    "type": "INFO",
+    "mid": "FRS_LIBERACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'pasu': ''}",
+    "header": "F\u00e9rias",
+    "message": "Sua parcela <b>%(pasu)s</b> est\u00e1 em conflito com outro servidor, altera-a para que possa ser autorizada! ",
+    "type": "WARNING",
+    "mid": "FRS_NOTIFICACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_homologacao': '', u'pa': '', u'publicacao': '', u'parcelas': ''}",
+    "header": "F\u00e9rias - Homologa\u00e7\u00e3o",
+    "message": "HOMOLOGAR, a(s) parcela(s) de f\u00e9rias abaixo relacionada(s), referente \u00e0 ESCALA DE F\u00c9RIAS do\n per\u00edodo aquisitivo %(pa)s, conforme&nbsp; %(publicacao)s de %(data_homologacao)s: <br>\n%(parcelas)s.<br>",
+    "type": "INFO",
+    "mid": "FRS_ANOTACAO_HOMOLOGA"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_fim': '', u'doc': '', u'data_doc': '', u'pa': '', u'data_inicio': '', u'dias': ''}",
+    "header": "F\u00e9rias - Suspens\u00e3o",
+    "message": "SUSPENDER, o usufruto de f\u00e9rias marcada para %(data_inicio)s \u00e0 \n%(data_fim)s referente ao per\u00edodo %(pa)s, conforme %(doc)s de \n%(data_doc)s.<br>Restando-lhe %(dias)s para usufruir em \u00e9poca oportuna.",
+    "type": "INFO",
+    "mid": "FRS_ANOTACAO_SUSPENSAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_fim': '', u'doc': '', u'data_doc': '', u'pa': '', u'data_inicio': '', u'data': '', u'dias': ''}",
+    "header": "F\u00e9rias - Interromper",
+    "message": "INTERROMPER a partir de %(data)s o usufruto de f\u00e9rias (%(data_inicio)s \u00e0\n %(data_fim)s), referente ao per\u00edodo %(pa)s, conforme %(doc)s de \n%(data_doc)s.<br>Restando-lhe %(dias)s dia(s) para usufruir em \u00e9poca oportuna.",
+    "type": "INFO",
+    "mid": "FRS_ANOTACAO_INTERROMPER"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'usufrutos': '', u'pa': '', u'parcelas': '', u'modo': ''}",
+    "header": "F\u00e9rias - Altera\u00e7\u00e3o",
+    "message": "DEFERIR, o pedido de altera\u00e7\u00e3o de f\u00e9rias referente ao per\u00edodo %(pa)s, conforme %(modo)s, a(s) parcela(s) de f\u00e9rias: %(parcelas)s. Para sem usufru\u00eddas em: %(usufrutos)s. ",
+    "type": "INFO",
+    "mid": "FRS_ANOTACAO_ALTERACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_homologacao': '', u'pa': '', u'publicacao': '', u'parcelas': ''}",
+    "header": "F\u00e9rias - Marca\u00e7\u00e3o",
+    "message": "HOMOLOGAR, a(s) parcela(s) de f\u00e9rias abaixo relacionada(s), referente ao\n per\u00edodo %(pa)s, marcada online (via sistema Athenas), autorizada pela \nchefia imediata e/ou mediata e homologada pelo departamento de RH em \n%(data_homologacao)s:<br>%(parcelas)s<br>%(publicacao)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "FRS_ANOTACAO_PASU"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'to': '', u'from': ''}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "Iniciando a transi\u00e7\u00e3o da folha de pagamento com a folha <b>%(from)s</b> sendo base para nova folha <b>%(to)s</b>.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-transicao-create"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'to': ''}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "A transi\u00e7\u00e3o da folha foi abortada por que a folha <b>%(to)s</b> j\u00e1 existe, caso queria continuar mesmo assim, marque a op\u00e7\u00e3o de remo\u00e7\u00e3o.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "WARNING",
+    "mid": "gfp-transicao-create-aborted"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'to': '', u'from': ''}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "Iniciando a transi\u00e7\u00e3o da folha de pagamento com a folha <b>%(from)s</b> sendo base para nova folha <b>%(to)s</b>, se folha j\u00e1 existir ser\u00e1 deletada.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-transicao-create-delete"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'to': '', u'cost': ''}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "A transi\u00e7\u00e3o da folha <b>%(to)s</b> foi finalizada com sucesso, e custou <b>%(cost)s</b> segundos para ser finalizada.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-transicao-end"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "Copiando eventos fixos.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-transicao-fix-init"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "Eventos tempor\u00e1rios j\u00e1 foram copiados.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-transicao-temporary-end"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{}",
+    "header": "Transi\u00e7\u00e3o da Folha",
+    "message": "Copiando eventos tempor\u00e1rios.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-transicao-temporary-init"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_portaria': '', u'lotacao': '', u'portaria': '', u'nome': ''}",
+    "header": "Anota\u00e7\u00e3o - Lota\u00e7\u00e3o",
+    "message": "Por %(portaria)s, de %(data_portaria)s, foi estabelecida lota\u00e7\u00e3o ao(\u00e0) servidor(a) %(nome)s, junto a(ao) %(lotacao)s.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "rh-anotacao-lotacao"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_portaria': '', u'lotacao': '', u'portaria': '', u'nome': ''}",
+    "header": "Anota\u00e7\u00e3o - Det. de Exerc\u00edcio",
+    "message": "Por %(portaria)s, de %(data_portaria)s, foi determinado o exerc\u00edcio ao(\u00e0) servidor(a) %(nome)s, junto a(ao) %(lotacao)s.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "rh-anotacao-det-exercicio"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'pa': '', u'data_inicio': '', u'dias': ''}",
+    "header": "F\u00e9rias",
+    "message": "Informamos que voc\u00ea iniciar\u00e1 sua frui\u00e7\u00e3o de f\u00e9rias em %(data_inicio)s, referente ao per\u00edodo de %(pa)s.<br>(Falta(m) <b>%(dias)s dia(s)</b> para o in\u00edcio) <br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "FRS_FRUICAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'servidor': ''}",
+    "header": "F\u00e9rias",
+    "message": "O servidor <b>%(servidor)s</b> solicitou inclus\u00e3o/altera\u00e7\u00e3o de f\u00e9rias e necessita do seu deferimento.<br>Para esse procedimento acesse o sistema <b>Athenas</b> no menu: <b>GEST\u00c3O DE PESSOAS</b> &gt;&gt;&nbsp; <b>F\u00e9rias</b> &gt;&gt; <b>Autoriza\u00e7\u00e3o</b>.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "FRS_SOLICITACAO_AUTORIZACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'custo': '', u'folha': ''}",
+    "header": "Folha - Recalculo",
+    "message": "O recalculo da folha <b>%(folha)s</b> foi finalizada com sucesso, e custou <b>%(custo)s</b> segundos para ser finalizada.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gfp-recalc-end"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'code': '', u'start_date': '', u'end_date': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "Voc\u00ea foi indicado para participar da viagem de c\u00f3digo %(code)s que ocorrer\u00e1 do dia %(start_date)s at\u00e9 %(end_date)s. <br>Favor confirmar sua participa\u00e7\u00e3o atrav\u00e9s da agenda de viagens.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-participant"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'status': '', u'code': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "O status da solicita\u00e7\u00e3o de viagem %(code)s mudou para %(status)s<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-status"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'code': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "Chegou uma nova solicita\u00e7\u00e3o de viagem.<br>C\u00f3digo da solicita\u00e7\u00e3o %(code)s.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-request"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'code': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "A solicita\u00e7\u00e3o de viagem %(code)s foi arquivada.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-filed"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'status': '', u'limit_date': '', u'code': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "A situa\u00e7\u00e3o do relat\u00f3rio da viagem&nbsp;%(code)s&nbsp;com prazo at\u00e9 dia %(limit_date)s \u00e9 %(status)s.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-report"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'status': '', u'code': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "<span style=\"font-size: 12px;\">Existe uma nova ocorr\u00eancia sobre %(status)s na solicita\u00e7\u00e3o %(code)s<span class=\"Apple-tab-span\" style=\"white-space:pre\">\t</span></span><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-occurrence"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'code': '', u'user': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "%(user)s respondeu \u00e0 uma ocorr\u00eancia da solicita\u00e7\u00e3o de viagem %(code)s.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-res-occurrence"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'code': ''}",
+    "header": "Sistema de Di\u00e1rias",
+    "message": "Sua presta\u00e7\u00e3o de contas referente a viagem %(code)s foi devolvida para corre\u00e7\u00e3o. Favor visualizar as cr\u00edticas na aba observa\u00e7\u00f5es. Para tal acesse a agenda de viagens, abra a viagem referida e visualize as presta\u00e7\u00f5es de contas.<br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "adm-notify-trip-correct-report"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'contrato': '', u'user': ''}",
+    "header": "Solicita\u00e7\u00e3o de Pagamento",
+    "message": "<b>%(user)s</b>&nbsp;solicitou um pagamento referente ao contrato&nbsp;<b>N\u00ba.</b>&nbsp;<b>%(contrato)s</b>.<b>&nbsp;</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "contrato-solic-pag"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'contrato': ''}",
+    "header": "Pagamento Lan\u00e7ado",
+    "message": "O pagamento referente ao contrato&nbsp;<b>N\u00ba.</b>&nbsp;<b>%(contrato)s&nbsp;</b>foi efetuado.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "contrato-pag-confirmado"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data': '', u'contrato': ''}",
+    "header": "Contrato Finalizado",
+    "message": "O contrato&nbsp;<b>N\u00ba.</b>&nbsp;<b>%(contrato)s&nbsp;</b>foi finalizado em:<b>&nbsp;%(data)s</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "contrato-finalizado"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'period': ''}",
+    "header": "Avalia\u00e7\u00e3o de Est\u00e1gio",
+    "message": "<b>%(from)s</b> realizou sua avalia\u00e7\u00e3o referente \u00e0 <b>%(period)s\u00aa</b> <b>etapa</b> do Est\u00e1gio Probat\u00f3rio. Realize a manifesta\u00e7\u00e3o referente a avalia\u00e7\u00e3o desta etapa.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu: <b>PORTAL DO SERVIDOR</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>Manifesta\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio</b>.",
+    "type": "INFO",
+    "mid": "gep-avaliacao-chefe"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'period': ''}",
+    "header": "Manifesta\u00e7\u00e3o de Est\u00e1gio",
+    "message": "<b>%(from)s</b> realizou uma manifesta\u00e7\u00e3o referente \u00e0 <b>%(period)s\u00aa</b> <b>etapa</b> do Est\u00e1gio Probat\u00f3rio. Esta etapa j\u00e1 encontra-se dispon\u00edvel para finaliza\u00e7\u00e3o.",
+    "type": "INFO",
+    "mid": "gep-manifestacao-estagio"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'period': ''}",
+    "header": "Avalia\u00e7\u00e3o de Est\u00e1gio Liberada",
+    "message": "A avalia\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio de <b>%(from)s</b> referente \u00e0 <b>%(period)s\u00aa etapa</b> est\u00e1 liberada para avalia\u00e7\u00e3o.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>RECURSOS HUMANOS</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>Est\u00e1gio Probat\u00f3rio</b>&nbsp;&gt;&gt;&nbsp;<b>Avalia\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio</b>.",
+    "type": "INFO",
+    "mid": "gep-avaliacao-liberada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'period': ''}",
+    "header": "Avalia\u00e7\u00e3o de Est\u00e1gio Atrasada",
+    "message": "A avalia\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio de <b>%(from)s</b> referente \u00e0 <b>%(period)s\u00aa</b> etapa est\u00e1 atrasada, a mesma encontra-se liberada para avalia\u00e7\u00e3o.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>RECURSOS HUMANOS</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>Est\u00e1gio Probat\u00f3rio</b>&nbsp;&gt;&gt;&nbsp;<b>Avalia\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio</b>.",
+    "type": "INFO",
+    "mid": "gep-avaliacao-atrasada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'period': ''}",
+    "header": "Etapa Finalizada",
+    "message": "A avalia\u00e7\u00e3o referente \u00e0 <b>%(period)s\u00aa</b> <b>etapa</b> do seu Est\u00e1gio Probat\u00f3rio foi finalizada pelo Departamento de Recursos Humanos.",
+    "type": "INFO",
+    "mid": "gep-avaliacao-finalizada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'period': ''}",
+    "header": "Altera\u00e7\u00e3o de Avalia\u00e7\u00e3o",
+    "message": "<b>%(from)s</b> realizou uma altera\u00e7\u00e3o na avalia\u00e7\u00e3o referente \u00e0 <b>%(period)s\u00aa</b> etapa do Est\u00e1gio Probat\u00f3rio. Revise sua avalia\u00e7\u00e3o.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>PORTAL DO SERVIDOR</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>Manifesta\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-alteracao-chefe"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'usufrutos': '', u'pa': '', u'parcelas': '', u'modo': ''}",
+    "header": "F\u00e9rias - Altera\u00e7\u00e3o - Athenas",
+    "message": "DEFERIR altera\u00e7\u00e3o de f\u00e9rias referente ao per\u00edodo %(pa)s, %(parcelas)s, para serem usufru\u00eddas em: %(usufrutos)s. %(modo)s.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "FRS_ANOTACAO_ALTERACAO_ATHENAS"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'servidor': ''}",
+    "header": "Chefe Imediato Pendente",
+    "message": "O(A) servidor(a) %(servidor)s n\u00e3o possui chefe imediato!<br>Esta pend\u00eancia poder\u00e1 gerar problemas no momento de marcar/alterar f\u00e9rias ou solicitar di\u00e1rias.<br>Contate departamento de Recursos Humanos (63 3216-7565) para solu\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "RH_SERVIDOR_CHEFE_IMEDIATO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'mensagem': ''}",
+    "header": "Notifica\u00e7\u00e3o Athenas",
+    "message": "%(mensagem)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "FRS_NOTIFICACAO_ATHENAS"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'mensagem': ''}",
+    "header": "Notifica\u00e7\u00e3o Athenas",
+    "message": "%(mensagem)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "NOTIFICACAO_ATHENAS"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'parcelas': '', u'deferido': ''}",
+    "header": "F\u00e9rias",
+    "message": "Sua altera\u00e7\u00e3o de f\u00e9rias para as parcelas abaixo relacionadas foi <b>%(deferido)s</b> pela chefia.<br><b>%(parcelas)s</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "FRS_AUTORIZACAO_ALTERACAO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'date': '', u'decision': '', u'from': ''}",
+    "header": "Decis\u00e3o de Est\u00e1gio Probat\u00f3rio",
+    "message": "<b>%(from)s&nbsp;</b>realizou&nbsp;a decis\u00e3o referente ao seu est\u00e1gio probat\u00f3rio em&nbsp;<b>%(date)s</b><b>.</b>&nbsp;A decis\u00e3o proferida foi:&nbsp;<b>%(decision)s.</b><br>\u00c9 necess\u00e1rio que voc\u00ea d\u00ea ci\u00eancia do recebimento dessa informa\u00e7\u00e3o.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>PORTAL DO SERVIDOR</b>&gt;&gt; &nbsp;<b>Manifesta\u00e7\u00e3o de&nbsp;Est\u00e1gio Probat\u00f3rio</b>&nbsp;&gt;&gt;&nbsp;<b>Selecione qualquer etapa e clique no&nbsp;\u00edcone&nbsp;CI\u00caNCIA DA DECIS\u00c3O</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-decisao-realizada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': ''}",
+    "header": "Comiss\u00e3o de Est\u00e1gio",
+    "message": "<span style=\"font-size: 12px;\">Voc\u00ea&nbsp;\u00e9 integrante da comiss\u00e3o de avalia\u00e7\u00e3o do est\u00e1gio probat\u00f3rio do servidor</span>(a)<span style=\"font-size: 12px;\">:</span><b style=\"color: rgb(0, 0, 0); font-size: 12px;\">&nbsp;%(from)s</b><span style=\"font-size: 12px;\">. \u00c9 necess\u00e1rio que voc\u00ea realize a recomenda\u00e7\u00e3o referente &nbsp;ao Est\u00e1gio Probat\u00f3rio&nbsp;</span>deste servidor<span style=\"font-size: 12px;\">.</span><br><span style=\"font-size: 12px;\">Para esse procedimento acesse o sistema&nbsp;</span><b style=\"color: rgb(0, 0, 0); font-size: 12px;\">Athenas</b><span style=\"font-size: 12px;\">&nbsp;no menu:&nbsp;</span><b style=\"color: rgb(0, 0, 0); font-size: 12px;\">RECURSOS HUMANOS</b><span style=\"font-size: 12px;\">&nbsp;&gt;&gt;&nbsp;&nbsp;</span><b style=\"color: rgb(0, 0, 0); font-size: 12px;\">Est\u00e1gio Probat\u00f3rio</b><span style=\"font-size: 12px;\">&nbsp;&gt;&gt;&nbsp;<b>Comiss\u00e3o de Est\u00e1gio Probat\u00f3rio</b>.</span><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-comissao"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': ''}",
+    "header": "Decis\u00e3o de Est\u00e1gio Probat\u00f3rio",
+    "message": "O Est\u00e1gio Probat\u00f3rio do(a) Servidor(a):&nbsp;<b>%(from)s</b>&nbsp;foi apreciado pela Comiss\u00e3o de Avalia\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio e encontra-se liberado para que possa realizar a decis\u00e3o.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>RECURSOS HUMANOS</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>Est\u00e1gio Probat\u00f3rio</b>&nbsp;&gt;&gt;&nbsp;<b>Decis\u00e3o Est\u00e1gio Probat\u00f3rio</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-decisao-liberada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'chefe_orgao': ''}",
+    "header": "Ci\u00eancia do Servidor",
+    "message": "O servidor(a)&nbsp;<b>%(from)s</b>&nbsp;deu ci\u00eancia da decis\u00e3o do est\u00e1gio probat\u00f3rio realizada por&nbsp;<b>%(chefe_orgao)s</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-ciencia-servidor"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'date': '', u'to': '', u'decision': '', u'from': ''}",
+    "header": "Decis\u00e3o de Est\u00e1gio pelo Gestor",
+    "message": "<b>%(from)s&nbsp;</b>realizou&nbsp;a decis\u00e3o referente ao est\u00e1gio probat\u00f3rio do servidor(a)&nbsp;<b>%(to)s&nbsp;</b>em&nbsp;<b>%(date)s</b><b>.</b>&nbsp;A decis\u00e3o proferida foi:&nbsp;<b>%(decision)s.</b><br>\u00c9 necess\u00e1rio que o servidor d\u00ea ci\u00eancia do recebimento da decis\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-decisao-realizada-rh"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'msg': ''}",
+    "header": "Est\u00e1gio Probat\u00f3rio",
+    "message": "<b>%(msg)s</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-notifica-discordancia"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': ''}",
+    "header": "Est\u00e1gio Probat\u00f3rio",
+    "message": "As avalia\u00e7\u00f5es de todas as etapas do est\u00e1gio probat\u00f3rio do(a) Servidor(a):<b>&nbsp;%(from)s</b>&nbsp;foram conclu\u00eddas. \u00c9 necess\u00e1rio que se atribua a este servidor a comiss\u00e3o de avalia\u00e7\u00e3o do est\u00e1gio probat\u00f3rio.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-aguardando-comissao"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'previsao': '', u'chamado': ''}",
+    "header": "Sistema de atendimento",
+    "message": "O seu chamado de c\u00f3digo %(chamado)s foi encaminhado para garantia.<br>Previs\u00e3o de t\u00e9rmino: %(previsao)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-garantia"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'chamado': ''}",
+    "header": "Sistema de atendimento",
+    "message": "O atendimento ao seu chamado de c\u00f3digo %(chamado)s foi finalizado. Por favor avalie o atendimento.",
+    "type": "INFO",
+    "mid": "siatu-aguardando-avaliacao"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'chamado': ''}",
+    "header": "Sistema de atendimento",
+    "message": "O seu chamado de c\u00f3digo %(chamado)s foi transferido para outro atendente. Confira no sistema a lista de atendentes atuais do chamado.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-transf-solicitante"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'previsao': '', u'terceirizada': '', u'chamado': ''}",
+    "header": "Sistema de atendimento",
+    "message": "O seu chamado de c\u00f3digo %(chamado)s foi encaminhado para a terceirizada %(terceirizada)s.<br>Previs\u00e3o de t\u00e9rmino: %(previsao)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-terceirizada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'chamado': '', u'avaliacao': ''}",
+    "header": "Notifica\u00e7\u00e3o Siatu",
+    "message": "O chamado de c\u00f3digo %(chamado)s foi avaliado como %(avaliacao)s.<br>Acesse o sistema para obter mais informa\u00e7\u00f5es, e contestar a avalia\u00e7\u00e3o se desejar.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-concluido"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'atendente': '', u'chamado': ''}",
+    "header": "Notifica\u00e7\u00e3o Siatu",
+    "message": "O atendente %(atendente)s aceitou o seu pedido de transfer\u00eancia para o chamado de c\u00f3digo %(chamado)s.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-transf-atendente"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'previsao': '', u'chamado': ''}",
+    "header": "Sistema de atendimento",
+    "message": "O prazo para t\u00e9rmino do estado encaminhado para terceirizada de seu chamado de c\u00f3digo %(chamado)s foi prorrogado para %(previsao)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-terceirizada-estendida"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'chamado': ''}",
+    "header": "Notifica\u00e7\u00e3o Siatu",
+    "message": "H\u00e1 um conflito de reincid\u00eancia no chamado de c\u00f3digo %(chamado)s.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-conflito-reincidencia"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'previsao': '', u'chamado': ''}",
+    "header": "Sistema de atendimento",
+    "message": "O prazo para t\u00e9rmino do estado encaminhado para garantia de seu chamado de c\u00f3digo %(chamado)s foi prorrogado para %(previsao)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-garantia-estendida"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'atendente': '', u'chamado': ''}",
+    "header": "Notifica\u00e7\u00e3o Siatu",
+    "message": "O atendente %(atendente)s lhe solicitou a transfer\u00eancia do chamado de c\u00f3digo %(chamado)s. Acesse o sistema para decidir sobre a transfer\u00eancia.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-pedido-transferencia"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'chamado': ''}",
+    "header": "Notifica\u00e7\u00e3o Siatu",
+    "message": "Voc\u00ea recebeu um chamado, acesse o sistema para atend\u00ea-lo.<br>C\u00f3digo do chamado: %(chamado)s<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-atendente-recebe"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'movimentado': '', u'numero': '', u'cedente': ''}",
+    "header": "Receber bens",
+    "message": "Foi solicitado pelo <b>%(cedente)s</b> o recebimento da movimenta\u00e7\u00e3o patrimonial <b>%(numero)s</b>no dia<b>%(movimentado)s</b>. Favor receber estes itens no sistema mediante o recebimento dos itens fisicamente.<br><br><b>Caminho</b>:<br>Patrimonio  Movimenta\u00e7\u00e3o de Bens<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOVD_PEDIDO_RECEBIMENTO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'numero': '', u'cedente': ''}",
+    "header": "Validar movimenta\u00e7\u00e3o",
+    "message": "A movimenta\u00e7\u00e3o de bens realizada pelo<b>%(cedente)s</b>que tem o numero<b>%(numero)s</b>esta aguardando valida\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOVD_VALIDAR"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'numero': ''}",
+    "header": "Movimenta\u00e7\u00e3o cancelada",
+    "message": "A movimenta\u00e7\u00e3o <b>%(numero)s</b> foi cancelada.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOV_CANCELADA"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data_pedido': '', u'numero': '', u'cedente': ''}",
+    "header": "Receber bens",
+    "message": "Foi solicitado pelo <b>%(cedente)s</b> o recebimento da movimenta\u00e7\u00e3o patrimonial <b>%(numero)s</b> no dia <b>%(data_pedido)s</b>. Favor receber estes itens no sistema mediante o recebimento dos itens fisicamente.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOV_PEDIDO_RECEBIMENTO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'numero': ''}",
+    "header": "Movimenta\u00e7\u00e3o Reaberta",
+    "message": "A movimenta\u00e7\u00e3o de bens <b>%(numero)s</b> foi devolvida para corre\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOV_REABERTO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'numero': ''}",
+    "header": "Movimenta\u00e7\u00e3o Validada",
+    "message": "A movimenta\u00e7\u00e3o <b>%(numero)s</b> foi validada.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOV_VALIDADO"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'favorecido': '', u'numero': '', u'cedente': ''}",
+    "header": "Validar movimenta\u00e7\u00e3o",
+    "message": "A movimenta\u00e7\u00e3o de bens realizada pelo <b>%(cedente)s </b>para o <b>%(favorecido)s</b> e que tem o numero <b>%(numero)s</b> esta aguardando valida\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOV_VALIDAR"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'numero': ''}",
+    "header": "Movimenta\u00e7\u00e3o autorizada",
+    "message": "A movimenta\u00e7\u00e3o&nbsp;<b>%(numero)s</b>&nbsp;foi autorizada.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "PAT_MOV_AUTHORIZED"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'msg': ''}",
+    "header": "Gestor de Informa\u00e7\u00e3o",
+    "message": "%(msg)s<br>Para visualizar as informa\u00e7\u00f5es, &nbsp;acesse o&nbsp;menu:&nbsp;<b>RECURSOS HUMANOS</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>RDIR</b>&nbsp;&gt;&gt; <b>Gestor de Informa\u00e7\u00f5es</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "cif-notification-member"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'period': ''}",
+    "header": "Gestor de Informa\u00e7\u00f5es",
+    "message": "Foi criado para voc\u00ea um novo per\u00edodo, referente a&nbsp;%(period)s,&nbsp;para presta\u00e7\u00e3o de informa\u00e7\u00f5es relativas a Doc\u00eancia, Resid\u00eancia e Bens e Valores.<br><br>Para visualizar as informa\u00e7\u00f5es, &nbsp;acesse o&nbsp;menu:&nbsp;<b>RECURSOS HUMANOS</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>RDIR</b>&nbsp;&gt;&gt;&nbsp;<b>Gestor de Informa\u00e7\u00f5es</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "cif-create-control"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'data': '', u'chamado': ''}",
+    "header": "Sistema de Atendimento",
+    "message": "O seu chamado de c\u00f3digo:&nbsp;<b>%(chamado)s</b>&nbsp;foi colocado em atendimento em:&nbsp;<b>%(data)s</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "siatu-atendimento"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'period': ''}",
+    "header": "Est\u00e1gio Probat\u00f3rio",
+    "message": "Sua manifesta\u00e7\u00e3o referente a avalia\u00e7\u00e3o da&nbsp;<b>%(period)s\u00aa&nbsp;etapa</b>&nbsp;do Est\u00e1gio Probat\u00f3rio est\u00e1 atrasada<br><br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;o&nbsp;<b>MENU DO SERVIDOR</b>&nbsp;&gt;&gt; <b>Manifesta\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio.</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-manifestacao-atrasada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'period': '', u'days': ''}",
+    "header": "Est\u00e1gio Probat\u00f3rio",
+    "message": "<span style=\"font-size: 12px;\">Seu Est\u00e1gio Probat\u00f3rio referente \u00e0&nbsp;</span><b style=\"color: rgb(0, 0, 0); font-size: 12px;\">%(period)s\u00aa etapa</b><span style=\"font-size: 12px;\">,&nbsp;foi prorrogado em virtude de Licen\u00e7a/Afastamento por&nbsp;</span><b><span style=\"font-size: 12px;\">%(days)s dia(s).</span></b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-etapa-prorrogada"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'period': ''}",
+    "header": "Est\u00e1gio Probat\u00f3rio",
+    "message": "Seu Est\u00e1gio Probat\u00f3rio referente \u00e0&nbsp;<b>%(period)s\u00aa etapa</b>,&nbsp;foi prorrogado em virtude de Licen\u00e7a/Afastamento&nbsp;que n\u00e3o possui data de finaliza\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "gep-licenca-sem-fim"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<p>Foi criando para voc\u00ea uma nova etapa de Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho referente ao per\u00edodo:&nbsp;<strong>%(start)s</strong>&nbsp;\u00e0&nbsp;<strong>%(end)s</strong>.<br><br>Para visualizar acesse o sistema&nbsp;<strong>Athenas</strong>&nbsp;no menu:&nbsp;<strong>GEST\u00c3O DE PESSOAS</strong>&nbsp;&gt;&gt;&nbsp;&nbsp;<strong>AVALIA\u00c7\u00c3O PERI\u00d3DICA DE DESEMPENHO</strong>&nbsp;&gt;&gt; <strong>Manifesta\u00e7\u00e3o de APD</strong><!--{cke_protected}{C}%3C!%2D%2D%20Corre%C3%A7%C3%A3o%20de%20bug%20da%20ExtJS%20%2D%2D%3E--></p>",
+    "type": "INFO",
+    "mid": "apd-newperiod"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<p><strong>%(from)s</strong>&nbsp;realizou altera\u00e7\u00e3o de sua avalia\u00e7\u00e3o referente a etapa:&nbsp;<strong>%(start)s \u00e0&nbsp;</strong><strong>%(end)s</strong>&nbsp;da sua Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho. Realize a manifesta\u00e7\u00e3o referente a avalia\u00e7\u00e3o desta etapa.<br></p><p>Para esse procedimento acesse o sistema&nbsp;<strong>Athenas</strong>&nbsp;no menu:&nbsp;<strong>PORTAL DO SERVIDOR</strong>&nbsp;&gt;&gt;&nbsp;&nbsp;<strong>Manifesta\u00e7\u00e3o de APD</strong><!--{cke_protected}{C}%3C!%2D%2D%20Corre%C3%A7%C3%A3o%20de%20bug%20da%20ExtJS%20%2D%2D%3E--></p>",
+    "type": "INFO",
+    "mid": "apd-evaluation-alter-boss"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<b>%(from)s</b>&nbsp;realizou sua avalia\u00e7\u00e3o referente a etapa:&nbsp;<b>%(start)s \u00e0&nbsp;</b><b>%(end)s</b>&nbsp;da sua Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho. Realize a manifesta\u00e7\u00e3o referente a avalia\u00e7\u00e3o desta etapa.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>PORTAL DO SERVIDOR</b>&nbsp;&gt;&gt;&nbsp;&nbsp;<b>Manifesta\u00e7\u00e3o de APD</b><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "apd-evaluation-boss"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': '', u'deadline': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<p><strong>%(from)s</strong>&nbsp;solicitou a recurso da Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho referente a etapa:&nbsp;<strong>%(start)s \u00e0 %(end)s.</strong>&nbsp;Voc\u00ea possui&nbsp;<strong>%(deadline)s</strong>&nbsp;<strong>dia(s)&nbsp;</strong>para se manifestar sobre o pedido.&nbsp;<br><br><br>Para esse procedimento acesse o sistema&nbsp;<strong>ATHENAS</strong>&nbsp;&gt;&gt;&nbsp;<strong>GEST\u00c3O DE PESSOAS</strong>&nbsp;&gt;&gt;&nbsp;&nbsp;<strong>AVALIA\u00c7\u00c3O PERI\u00d3DICA DE DESEMPENHO</strong>&nbsp;&gt;&gt;&nbsp;<strong>GESTOR DE RECURSOS</strong><!--{cke_protected}{C}%3C!%2D%2D%20Corre%C3%A7%C3%A3o%20de%20bug%20da%20ExtJS%20%2D%2D%3E--></p>",
+    "type": "INFO",
+    "mid": "apd-resource"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "O servidor(a)&nbsp;<b>%(from)s</b>&nbsp;deu ci\u00eancia da decis\u00e3o do recurso referente a avalia\u00e7\u00e3o peri\u00f3dica:&nbsp;<b>%(start)s</b>&nbsp; <b>\u00e0</b>&nbsp;<b>%(end)s</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "apd-science"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<p><strong>%(from)s</strong> opinou sobre o seu pedido de reconsidera\u00e7\u00e3o da Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho referente a etapa: <strong>%(start)s \u00e0 %(end)s.</strong>&nbsp; Visualize o parecer acessando a \u00e1rea de manifesta\u00e7\u00e3o de <strong>Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho</strong>.<br><br><br>Para esse procedimento acesse o sistema <strong>ATHENAS</strong> &gt;&gt;&nbsp;<strong>GEST\u00c3O DE PESSOAS</strong>&nbsp;&gt;&gt;&nbsp;&nbsp;<strong>AVALIA\u00c7\u00c3O PERI\u00d3DICA DE DESEMPENHO</strong>&nbsp;&gt;&gt;&nbsp;<strong>MANIFESTA\u00c7\u00c3O DE APD</strong><!--{cke_protected}{C}%3C!%2D%2D%20Corre%C3%A7%C3%A3o%20de%20bug%20da%20ExtJS%20%2D%2D%3E--></p>",
+    "type": "INFO",
+    "mid": "apd-opinion-reconsideration"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'decision': ''}",
+    "header": "",
+    "message": "A comiss\u00e3o de recursos realizou&nbsp;a decis\u00e3o do seu recurso. A decis\u00e3o proferida foi:&nbsp;<b>%(decision)s.</b><br>\u00c9 necess\u00e1rio que voc\u00ea d\u00ea ci\u00eancia do recebimento dessa informa\u00e7\u00e3o.<br>Para esse procedimento acesse o sistema&nbsp;<b>Athenas</b>&nbsp;no menu:&nbsp;<b>PORTAL DO&nbsp;</b><br><b>SERVIDOR</b>&gt;&gt; &nbsp;<b>Manifesta\u00e7\u00e3o de&nbsp;APD</b>&nbsp;&gt;&gt;&nbsp;<b>Selecione qualquer etapa e clique no Menu Ci\u00eancia e depois em Ci\u00eancia da decis\u00e3o do recurso</b>.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "apd-decision-resource"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'employee': '', u'period': ''}",
+    "header": "",
+    "message": "A comiss\u00e3o de recursos realizou&nbsp;a decis\u00e3o do seu recurso do servidor: <b>%(employee)s </b>referente ao per\u00edodo <b>%(period)s</b>.&nbsp;<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "apd-decision-resource-msg"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<b>%(from)s</b>&nbsp;solicitou a recurso da Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho referente a etapa:&nbsp;<b>%(start)s \u00e0 %(end)s.</b>&nbsp;<br><br><!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+    "type": "INFO",
+    "mid": "apd-boss-resource"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'from': '', u'period': ''}",
+    "header": "",
+    "message": "<p><strong>%(from)s</strong> realizou a manifesta\u00e7\u00e3o da Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho referente a etapa <strong>%(period)s</strong> <strong></strong>.<!--{cke_protected}{C}%3C!%2D%2D%20Corre%C3%A7%C3%A3o%20de%20bug%20da%20ExtJS%20%2D%2D%3E--></p>",
+    "type": "INFO",
+    "mid": "apd-manifestation"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<p>A avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho&nbsp;do(a) Servidor(a)&nbsp;<strong>%(from)s</strong>&nbsp;referente \u00e0 etapa:&nbsp;<strong>%(start)s \u00e0&nbsp;%(end)s</strong>&nbsp;est\u00e1 liberada para avalia\u00e7\u00e3o.</p><p><br>Para esse procedimento acesse o sistema&nbsp;<strong>Athenas</strong>&nbsp;no menu:&nbsp;<strong>GEST\u00c3O DE PESSOAS</strong>&nbsp;&gt;&gt;&nbsp;&nbsp;<strong>AVALIA\u00c7\u00c3O PERI\u00d3DICA DE DESEMPENHO</strong>&nbsp;&gt;&gt;&nbsp;<strong>Avalia\u00e7\u00e3o de APD</strong>.</p>",
+    "type": "INFO",
+    "mid": "apd-released"
+  },
+  "model": "notification.message"
+},
+{
+  "fields": {
+    "default_params": "{u'start': '', u'end': '', u'from': ''}",
+    "header": "Avalia\u00e7\u00e3o Peri\u00f3dica",
+    "message": "<p>A Avalia\u00e7\u00e3o Peri\u00f3dica de Desempenho do(a) Servidor(a)&nbsp;<strong>%(from)s</strong>&nbsp;referente a&nbsp;etapa:&nbsp;<strong>%(start)s \u00e0&nbsp;%(end)s</strong>&nbsp;est\u00e1 atrasada, a mesma encontra-se liberada para avalia\u00e7\u00e3o.</p><p>Para esse procedimento acesse o sistema&nbsp;<strong>Athenas</strong>&nbsp;no menu:&nbsp;<strong>GEST\u00c3O DE PESSOAS</strong>&nbsp;&gt;&gt;&nbsp;&nbsp;<strong>AVALIA\u00c7\u00c3O PERI\u00d3DICA DE DESEMPENHO</strong>&nbsp;&gt;&gt;&nbsp;<strong>Avalia\u00e7\u00e3o de APD</strong>.</p>",
+    "type": "INFO",
+    "mid": "apd-delayed"
+  },
+  "model": "notification.message"
+}
+]

@@ -1,0 +1,107 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4107,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "ler",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para leitura",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4108,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "criar",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para cria\u00e7\u00e3o",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4109,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "editar",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para editar",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4110,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "apagar",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para deletar",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4111,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "calcular",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para calcular",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4112,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "ativar",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para ativar",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4113,
+    "fields": {
+        "app_label": "menu_permissoes",
+        "name": "ACOES_PERMISSOES",
+        "label": "desativar",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "menu_permissoes.ACOES_PERMISSOES",
+        "description": "Permiss\u00e3o para desativar",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

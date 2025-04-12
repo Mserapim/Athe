@@ -1,0 +1,9 @@
+<div class="paragraph-text">
+    <div><strong>Atendido em: </strong>{{ step.origin|default:"sem informação" }}</div>
+    <div><strong>Encaminhado para: </strong>{{ step.destination|default:"sem informação" }}</div>
+    <div><strong>Por: </strong>{{ step.who_person }}</div>
+    <div><strong>Data: </strong>{{ step.created_at|date:"d/m/Y \à\s H:i:s" }}</div>
+    <h4>Parecer:</h4>
+    {{ step.annotation|safe }}
+    <hr/>
+</div>

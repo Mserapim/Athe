@@ -1,0 +1,282 @@
+[
+    {
+        "pk": 1, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "VE\u00cdCULOS DIVERSOS", 
+            "codigo": 10
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "VE\u00cdCULOS RODOVI\u00c1RIOS DE TRA\u00c7\u00c3O MEC\u00c2NICA E EQUIPAMENTOS PARA VE\u00cdCULOS", 
+            "codigo": 11
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS DE PROCESSAMENTO DE DADOS", 
+            "codigo": 20
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "APAR., EQUIP. E UTENS. M\u00c9D., ODONT., LABORATORIAIS E HOSPITALARES", 
+            "codigo": 24
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS DE PROTE\u00c7\u00c3O, SEGURANCA, SOCORRO, COMBATE E PREVEN\u00c7\u00c3O DE SINISTROS", 
+            "codigo": 25
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "APARELHOS E UTENS\u00cdLIOS DOM\u00c9STICOS", 
+            "codigo": 27
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "ARMAMENTOS", 
+            "codigo": 28
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "M\u00c1QUINAS, FERRAMENTAS E UTENS\u00cdLIOS DE OFICINA", 
+            "codigo": 29
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "M\u00c1QUINAS E EQUIPAMENTOS AGR\u00cdCOLAS, RODOVI\u00c1RIOS E PARA CONSTRU\u00c7\u00c3O CIVIL", 
+            "codigo": 30
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "M\u00c1QUINAS, MOTORES E EQUIPAMENTOS DE NATUREZA INDUSTRIAL, COMERCIAL E DE TRANSPORTE", 
+            "codigo": 31
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "MOBILI\u00c1RIO EM GERAL", 
+            "codigo": 32
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "SEMOVENTES E EQUIPAMENTOS DE MONTARIA (ANIMAIS N\u00c3O DESTINADOS A LABORAT\u00d3RIO OU CORTE)", 
+            "codigo": 34
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "AERONAVES", 
+            "codigo": 37
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "APARELHOS E INSTRUMENTOS T\u00c9CNICOS DE MEDI\u00c7\u00c3O, TESTE E CONTROLE", 
+            "codigo": 38
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "APARELHOS E EQUIPAMENTOS DE COMUNICA\u00c7\u00c3O", 
+            "codigo": 39
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "APARELHOS E EQUIPAMENTOS PARA ESPORTES, DIVERS\u00d5ES E RECREA\u00c7\u00c3O", 
+            "codigo": 40
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "BANDEIRAS, FL\u00c2MULAS E INS\u00cdGNIAS", 
+            "codigo": 41
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "COLE\u00c7\u00d5ES, MATERIAIS BIBLIOGR\u00c1FICOS, EDUCATIVOS E CULTURAIS", 
+            "codigo": 42
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EMBARCA\u00c7\u00d5ES", 
+            "codigo": 43
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS DE MANOBRA, PATRULHAMENTO E CAMPANHA", 
+            "codigo": 44
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "M\u00c1QUINAS E EQUIPAMENTOS GR\u00c1FICOS", 
+            "codigo": 46
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS PARA \u00c1UDIO, V\u00cdDEO E FOTO", 
+            "codigo": 47
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS HIDR\u00c1ULICOS, EL\u00c9TRICOS E ENERG\u00c9TICOS", 
+            "codigo": 48
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "VE\u00cdCULOS FERROVI\u00c1RIOS", 
+            "codigo": 49
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "PECAS N\u00c3O INCORPOR\u00c1VEIS A IM\u00d3VEIS", 
+            "codigo": 50
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "CARROS DE COMBATE", 
+            "codigo": 51
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS E ACESS\u00d3RIOS AERON\u00c1UTICOS", 
+            "codigo": 52
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS DE MERGULHO E SALVAMENTO", 
+            "codigo": 54
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "EQUIPAMENTOS, M\u00c1QUINAS E ACESS\u00d3RIOS MAR\u00cdTIMOS E FLUVIAIS", 
+            "codigo": 55
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "M\u00c1QUINAS, UTENS\u00cdLIOS E EQUIPAMENTOS DIVERSOS", 
+            "codigo": 56
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "M\u00c1QUINAS E UTENS\u00cdLIOS DE ESCRIT\u00d3RIO", 
+            "codigo": 57
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "OBRAS DE ARTE E PE\u00c7AS PARA MUSEU", 
+            "codigo": 58
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "INSTRUMENTOS MUSICAIS", 
+            "codigo": 60
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "N\u00c3O CONTEMPLADOS", 
+            "codigo": 94
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "patrimonio.grupoespecie", 
+        "fields": {
+            "titulo": "OUTROS MATERIAIS PERMANENTES", 
+            "codigo": 99
+        }
+    }
+]

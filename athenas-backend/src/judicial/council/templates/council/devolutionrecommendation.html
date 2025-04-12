@@ -1,0 +1,26 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Devolução com Recomendação.</h2></div>
+    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+
+    <div class="paragraph-text">{{ doc.justification | safely }}</div>
+</div>
+{% if signed_by %}
+<div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ execution_organ.localidade.nome }}, {{ doc.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ signed_by }}</span></div>
+        <div><span style="font-size: 0.6em">{{ execution_organ.nome }}</span></div>
+</div>
+{% endif %}
+{% if attachments %}
+<div style="margin: 2em 0">
+    <h3 style="margin-bottom:0.7em">Anexos</h3>
+    {% for attach in attachments %}
+    <div style="padding:0.5em 0">
+        <div>{% include "judicial/lawsuit/attach.html" %}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

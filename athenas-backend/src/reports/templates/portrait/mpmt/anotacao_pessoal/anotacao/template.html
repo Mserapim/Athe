@@ -1,0 +1,162 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto 
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto; 
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 0.5px solid #000000;
+        text-align: left;
+        font-size: 10px;
+        padding: 5px;
+      }
+      
+      table td div {
+        overflow:visible;
+      }
+
+      table tr th {
+        font-weight: 400;
+        text-align: center;
+      }
+      
+      tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
+
+      .col-1 {
+        width: 400px;
+        text-align: center;
+      }
+      .color-1 {
+        background-color: #c4c0c0;
+        text-align: center;
+      }
+      .color-2 {
+        background-color: #f37d7d;;
+        text-align: center;
+      }
+      .title{
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'portrait/header/header.html' %}
+    
+    
+    <section style="margin-top:50px;margin-bottom:20px; margin-right:5px;clear: both;">
+          <div>
+                <div>
+                    <!-- Tabela de Identificação -->
+                    <table>
+                        <tbody>
+
+                            <h3 class="title"><b>I - Identificação </b></h3>
+                            
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Matrícula - Nome</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.matricula }} - {{ data.nome }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Cargo</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.work_role }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Lotação</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.lotation }}</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Descrição das Metas -->
+                <div>
+                    <table>
+                        <tbody>
+
+                            <h3 class="title"><b>II - Descrição das Anotações Pessoais</b></h3>
+
+                            <tr class="col-1">
+                              <th colspan="10">Total de Registros Encontrados: <b>{{data.anotacoes_pessoais.count}}</b></th>
+                            </tr>
+                            <tr class="color-1">
+                                <th style="width: 10%;"><b> Publicação </b></th>
+                                <th style="width: 10%;"><b> Data Publicação </b></th>
+                                <th style="width: 20%;"><b> Nº Doc </b></th>
+                                <th style="width: 10%;"><b> Data Documento <b></th>
+                                <th style="width: 15%;"><b> Classificação </b></th>
+                                <th style="width: 35%;"><b> Texto </b></th>
+                            </tr>
+                            {% for anotacao in data.anotacoes_pessoais %}
+                                <tr>
+                                    <td class="col-1 ">
+                                        <div> {{ anotacao.publicacao|default:"" }}  </div>
+                                    </td>
+                                    <td class="col-1 ">
+                                      <div> 
+                                          {{ anotacao.data_publicacao|default:""|date:"d-m-Y" }}
+                                      </div>
+                                    </td>
+                                    <td class="col-1 ">
+                                        <div> {{ anotacao.documento_numero|default:"" }}/{{ anotacao.documento_ano|default:"" }} -{{ anotacao.get_documento_tipo_display|default:"" }} </div>
+                                    </td> 
+                                    <td class="col-1 ">
+                                      <div> {{ anotacao.documento_data|default:""|date:"d-m-Y" }}</div>
+                                  </td> 
+                                    <td class="col-1 ">
+                                        <div>{{ anotacao.get_tipo_display|default:"" }}</div>
+                                    </td> 
+                                    <td class="col-2 ">
+                                        <div>
+                                          {% autoescape off %}
+                                            {{ anotacao.texto|default:"" }}
+                                          {% endautoescape %}
+                                        </div>
+                                    </td>                              
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+        </section> 
+    </body>
+</html>

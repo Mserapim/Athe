@@ -1,0 +1,1402 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Atendimento ao Público",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Processos Judiciais Recebidos",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Processos Judiciais Devolvidos",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Processos Eleitorais Recebidos",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Processos Eleitorais Devolvidos",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Recomendações Extrajudiciais",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Termos de Ajustamento de Conduta",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Audiências Públicas",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Procedimentos Extrajudiciais Instaurados",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Procedimentos Extrajudiciais Arquivados",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Ações Civis Publicas e Medidas Ajuizadas",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "INSPECTION_TABLE",
+    "label": "Ações Civis Públicas - Improbidade Administrativa",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "corregedoria.INSPECTION_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Não se aplica",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Presteza  - Feitos Judiciais",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Presteza  - Feitos Extrajudiciais",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Presteza  - Atendimento tempestivo às determinações",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator I - Peças Iniciais",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Propositura de ações judiciais e instauração de procedimentos administrativos",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator I - Procedimentos Administrativos",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Propositura de ações judiciais e instauração de procedimentos administrativos",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator II - Peças Judiciais",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Elaboração de alegações, pareceres ou outras manifestações de mérito",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator II - Procedimentos Administrativos",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Elaboração de alegações, pareceres ou outras manifestações de mérito",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator III",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Elaboração de razões e contrarrazões recursais em processos judiciais, expedição de recomendação ou formalização de compromisso/termo de ajustamento de conduta em procedimento administrativo",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator IV - Audiências Judiciais",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Realização de audiências judiciais (Juizados Especiais tem acréscimo de 30%, conforme art. 12 § 2º), públicas ou administrativas e júris",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator IV - Aud. Públicas ou Administrativas",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Realização de audiências judiciais (Juizados Especiais tem acréscimo de 30%, conforme art. 12 § 2º), públicas ou administrativas e júris",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Produtividade - Fator IV - Júris",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "Realização de audiências judiciais (Juizados Especiais tem acréscimo de 30%, conforme art. 12 § 2º), públicas ou administrativas e júris",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Atendimento ao Público",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Cumulação de Atividades, Cargos e Funções ",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Afastamento para participação em cursos - DOUTORADO",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Afastamento para participação em cursos - MESTRADO",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Carga horária em cursos - ESPECIALIZAÇÃO",
+    "value": 17,
+    "cvalue": "17",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Carga horária em cursos - APERFEIÇOAMENTO",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "corregedoria",
+    "name": "SCORE_TABLE",
+    "label": "Atuação em Comarca de Particular Dificuldade",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "corregedoria.SCORE_TABLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ACTION_TYPE",
+    "label": "Não informado",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.ACTION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ACTION_TYPE",
+    "label": "Ação Civil Pública",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.ACTION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Regularidade dos Serviços",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Estrutura",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Desempenho Funcional",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Observações Gerais",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Recomendações",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Anexos",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Estrutura de Funcionamento",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Organização Administrativa",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AREA",
+    "label": "Atuação",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "inspection.AREA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Editais",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Portaria de Delegação",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Certidões",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Ata",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Peças",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Audiências",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Tabelas Extrajudiciais",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Impugnações",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Cumprimento de Sentenças",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Relatórios e-Proc",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ATTACHMENT_TYPE",
+    "label": "Imagens",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "inspection.ATTACHMENT_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Não informado",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Conciliação",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Instrução",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Julgamento",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Instrução e Julgamento",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Preliminar",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Interrogatório",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Inquirição",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Diplomação",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Justificação",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Apresentação",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Apresentação/Remissão",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Audiências gerais da Infância e Juventude",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Suspensão condicional do processo",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Concicliação, Instrução e Julgamento",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "AUDIENCE_TYPE",
+    "label": "Admonitória",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "inspection.AUDIENCE_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "GENERAL_STATUS",
+    "label": "INSUFICIENTE",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.GENERAL_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "GENERAL_STATUS",
+    "label": "REGULAR",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.GENERAL_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "GENERAL_STATUS",
+    "label": "BOM",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.GENERAL_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "GENERAL_STATUS",
+    "label": "MUITO BOM",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.GENERAL_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "GENERAL_STATUS",
+    "label": "ÓTIMO",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "inspection.GENERAL_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "INSPECTION_TYPE",
+    "label": "Órgão de Execução",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.INSPECTION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "INSPECTION_TYPE",
+    "label": "Grupo Especial",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.INSPECTION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "INSPECTION_TYPE",
+    "label": "Órgão Auxiliar",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.INSPECTION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "MEMBER_ROLE",
+    "label": "PRESIDENTE",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.MEMBER_ROLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "MEMBER_ROLE",
+    "label": "COORDENADOR",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.MEMBER_ROLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "MEMBER_ROLE",
+    "label": "INTEGRANTE",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.MEMBER_ROLE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ORGANIZATION",
+    "label": "Não informado",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.ORGANIZATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ORGANIZATION",
+    "label": "Adequada",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.ORGANIZATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ORGANIZATION",
+    "label": "Regular",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.ORGANIZATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "ORGANIZATION",
+    "label": "Inadequada",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.ORGANIZATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "PROFILE",
+    "label": "CORREGEDOR-GERAL",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.PROFILE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "PROFILE",
+    "label": "PROMOTOR-CORREGEDOR",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.PROFILE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "RECORD_TYPE",
+    "label": "Não informado",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.RECORD_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "RECORD_TYPE",
+    "label": "Informatizado",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.RECORD_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "RECORD_TYPE",
+    "label": "Livro Convencional",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.RECORD_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "RECORD_TYPE",
+    "label": "Fichas",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.RECORD_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "RECORD_TYPE",
+    "label": "Outros",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "inspection.RECORD_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "RECORD_TYPE",
+    "label": "Não possui",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "inspection.RECORD_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "REGISTRATION_TYPE",
+    "label": "Manual",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.REGISTRATION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "REGISTRATION_TYPE",
+    "label": "Informatizado",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.REGISTRATION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "REGISTRATION_TYPE",
+    "label": "Manual/Informatizado",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.REGISTRATION_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "STATUS_EQUIPMENT",
+    "label": "PÉSSIMO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "inspection.STATUS_EQUIPMENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "STATUS_EQUIPMENT",
+    "label": "RUIM",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "inspection.STATUS_EQUIPMENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "STATUS_EQUIPMENT",
+    "label": "BOM",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "inspection.STATUS_EQUIPMENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "STATUS_EQUIPMENT",
+    "label": "MUITO BOM",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "inspection.STATUS_EQUIPMENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "inspection",
+    "name": "STATUS_EQUIPMENT",
+    "label": "ÓTIMO",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "inspection.STATUS_EQUIPMENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

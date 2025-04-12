@@ -1,0 +1,85 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "rh-hoursworkload",
+    "permissions": [
+      [
+        "add_cargahoraria",
+        "rh",
+        "cargahoraria"
+      ],
+      [
+        "change_cargahoraria",
+        "rh",
+        "cargahoraria"
+      ],
+      [
+        "delete_cargahoraria",
+        "rh",
+        "cargahoraria"
+      ],
+      [
+        "add_employeehoursworkcontractworkload",
+        "rh",
+        "employeehoursworkcontractworkload"
+      ],
+      [
+        "change_employeehoursworkcontractworkload",
+        "rh",
+        "employeehoursworkcontractworkload"
+      ],
+      [
+        "delete_employeehoursworkcontractworkload",
+        "rh",
+        "employeehoursworkcontractworkload"
+      ],
+      [
+        "add_hoursworkcontract",
+        "rh",
+        "hoursworkcontract"
+      ],
+      [
+        "change_hoursworkcontract",
+        "rh",
+        "hoursworkcontract"
+      ],
+      [
+        "delete_hoursworkcontract",
+        "rh",
+        "hoursworkcontract"
+      ],
+      [
+        "add_hoursworkcontractworkload",
+        "rh",
+        "hoursworkcontractworkload"
+      ],
+      [
+        "change_hoursworkcontractworkload",
+        "rh",
+        "hoursworkcontractworkload"
+      ],
+      [
+        "delete_hoursworkcontractworkload",
+        "rh",
+        "hoursworkcontractworkload"
+      ],
+      [
+        "add_workhourinterval",
+        "rh",
+        "workhourinterval"
+      ],
+      [
+        "change_workhourinterval",
+        "rh",
+        "workhourinterval"
+      ],
+      [
+        "delete_workhourinterval",
+        "rh",
+        "workhourinterval"
+      ]
+    ]
+  }
+}
+]

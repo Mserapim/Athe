@@ -1,0 +1,1608 @@
+[
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "esocial-qualif-loader",
+    "path": "esocial.loaders.qualification.QualifLoader",
+    "title": "Carregador para arquivos de qualificação do eSocial",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "QualifLoader",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "registration-base",
+    "path": "rh.classcodes.registration.base.BaseRegistration",
+    "title": "Gerador básico de matrícula",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "BaseRegistration",
+    "typeof": "REGISTRATION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "registration-typeyear",
+    "path": "rh.classcodes.registration.base.TypeYearRegistration",
+    "title": "Gerador de matrícula no formato TAAXXX",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "TypeYearRegistration",
+    "typeof": "REGISTRATION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-acerto-auxilio-alimentacao",
+    "path": "rh.gfp.calcs.alimentacao.AcertoCalculo",
+    "title": "Acerto de Auxilio Alimentação",
+    "description": "Calculo automático para acerto de auxilio alimentação.",
+    "name_object": "AcertoCalculo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-auxilio-alimentacao",
+    "path": "rh.gfp.calcs.alimentacao.Calculo",
+    "title": "Auxilio Alimentação",
+    "description": "Calculo automático para auxilio alimentação.",
+    "name_object": "Calculo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-auxilio-especial",
+    "path": "rh.gfp.calcs.aux_especial.CalculoAuxilioEspecial",
+    "title": "Cálculo do Auxílio Especial",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "CalculoAuxilioEspecial",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-asamp",
+    "path": "rh.gfp.calcs.convenio.ASAMP",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "ASAMP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-atmp",
+    "path": "rh.gfp.calcs.convenio.ATMP",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "ATMP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-atmp-13salario",
+    "path": "rh.gfp.calcs.convenio.ATMP13Salario",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "ATMP13Salario",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-fenasemp",
+    "path": "rh.gfp.calcs.convenio.Fenasemp",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Fenasemp",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "plansaude-mensalidade",
+    "path": "rh.gfp.calcs.convenio.PlanSaudeMensalidade",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PlanSaudeMensalidade",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "plansaude-mensalidade4",
+    "path": "rh.gfp.calcs.convenio.PlanSaudeMensalidade4",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PlanSaudeMensalidade4",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "plansaude-mensalidade6",
+    "path": "rh.gfp.calcs.convenio.PlanSaudeMensalidade6",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PlanSaudeMensalidade6",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-sindsemp",
+    "path": "rh.gfp.calcs.convenio.SindSEMP",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "SindSEMP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-auxilio-creche",
+    "path": "rh.gfp.calcs.creche.CalculoAuxilioCreche",
+    "title": "Cálculo do Auxílio Creche",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "CalculoAuxilioCreche",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-auxilio-transporte",
+    "path": "rh.gfp.calcs.estagio.CalculoAuxilioTransporte",
+    "title": "Cálculo do Auxílio Transporte",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "CalculoAuxilioTransporte",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-bolsa-estagio",
+    "path": "rh.gfp.calcs.estagio.CalculoBolsaEstagio",
+    "title": "Cálculo da Bolsa de Estágio",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "CalculoBolsaEstagio",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-recesso-estagio",
+    "path": "rh.gfp.calcs.estagio.CalculoRecessoEstagio",
+    "title": "Cálculo do Recesso de Estagiário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "CalculoRecessoEstagio",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-desconto-auxilio-transporte",
+    "path": "rh.gfp.calcs.estagio.DescontoAuxilioTransporte",
+    "title": "Descontos do Auxílio Transporte",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "DescontoAuxilioTransporte",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-desconto-auxilio-transporte-mes-anterior",
+    "path": "rh.gfp.calcs.estagio.DescontoAuxilioTransporteMesAnterior",
+    "title": "Descontos do Auxílio Transporte Mês Anterior",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "DescontoAuxilioTransporteMesAnterior",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-desconto-bolsa",
+    "path": "rh.gfp.calcs.estagio.DescontoBolsaEstagio",
+    "title": "Descontos da Bolsa de Estágio",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "DescontoBolsaEstagio",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-desconto-bolsa-mes-anterior",
+    "path": "rh.gfp.calcs.estagio.DescontoBolsaEstagioMesAnterior",
+    "title": "Descontos da Bolsa de Estágio do Mês Anterior",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "DescontoBolsaEstagioMesAnterior",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-adicional-ferias-meio",
+    "path": "rh.gfp.calcs.ferias.AdicionalFeriasMeio",
+    "title": "Adicional de Férias",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "AdicionalFeriasMeio",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-adicional-ferias-terco",
+    "path": "rh.gfp.calcs.ferias.AdicionalFeriasTerco",
+    "title": "Adicional de Férias",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "AdicionalFeriasTerco",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "adiantamento-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.AdiantamentoGratificacaoNatalina",
+    "title": "13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "AdiantamentoGratificacaoNatalina",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "desconto-adiantamento-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.DescontoAdiantamento",
+    "title": "Desconto devido adiantamento de 13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "DescontoAdiantamento",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.GratificacaoNatalina",
+    "title": "13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "GratificacaoNatalina",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "igeprev-sobre-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.IgeprevTocantins",
+    "title": "Igeprev sobre o 13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "IgeprevTocantins",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "inss-sobre-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.INSS",
+    "title": "INSS sobre o 13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "INSS",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "ipasgo-sobre-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.Ipasgo",
+    "title": "Ipasgo sobre o 13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Ipasgo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "prevpalmas-sobre-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.PrevPalmas",
+    "title": "PrevPalmas sobre o 13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PrevPalmas",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "pgjmtprev-sobre-gratificacao-natalina",
+    "path": "rh.gfp.calcs.gratificacao_natalina.PrevPGJMT",
+    "title": "PGJMT sobre o 13° Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PrevPGJMT",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "provisioning-13thsalary",
+    "path": "rh.gfp.calcs.gratificacao_natalina.Provisioning13thSalary",
+    "title": "Provisionamento de 13º Salário",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Provisioning13thSalary",
+    "typeof": "PROVISION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-irrf",
+    "path": "rh.gfp.calcs.irrf.IRRF",
+    "title": "Calculo de imposto retido na fonte",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "IRRF",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-irrf-rra",
+    "path": "rh.gfp.calcs.irrf.IRRFRRA",
+    "title": "Calculo de imposto retido na fonte",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "IRRFRRA",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-cumulation",
+    "path": "rh.gfp.calcs.mpto.aid.AidCumulation",
+    "title": "Cálculo de Verbas adicionais por Percentual",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidCumulation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-cumulation-grat",
+    "path": "rh.gfp.calcs.mpto.aid.AidCumulationGrattification",
+    "title": "Cálculo de Verbas adicionais por Percentual",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidCumulationGrattification",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-daycare",
+    "path": "rh.gfp.calcs.mpto.aid.AidDaycare",
+    "title": "Cálculo do Auxílio Creche",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidDaycare",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-family",
+    "path": "rh.gfp.calcs.mpto.aid.AidFamily",
+    "title": "Cálculo do Auxílio Familia",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidFamily",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-habitation",
+    "path": "rh.gfp.calcs.mpto.aid.AidHabitation",
+    "title": "Cálculo do Auxílio Moradia",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidHabitation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-special",
+    "path": "rh.gfp.calcs.mpto.aid.AidSpecial",
+    "title": "Cálculo do Auxílio Especial",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidSpecial",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-supply",
+    "path": "rh.gfp.calcs.mpto.aid.AidSupply",
+    "title": "Cálculo do Auxílio Alimentação",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidSupply",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-supply-ii",
+    "path": "rh.gfp.calcs.mpto.aid.AidSupplyII",
+    "title": "Cálculo do Auxílio Alimentação",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidSupplyII",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-aid-supply-iii",
+    "path": "rh.gfp.calcs.mpto.aid.AidSupplyIII",
+    "title": "Cálculo do Auxílio Alimentação",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidSupplyIII",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-urv-admin-employee",
+    "path": "rh.gfp.calcs.mpto.aid.URVAdminEmployee",
+    "title": "Cálculo de Verbas adicionais por Percentual",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "URVAdminEmployee",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-urv-maternity",
+    "path": "rh.gfp.calcs.mpto.aid.URVMaternity",
+    "title": "Cálculo de Verbas adicionais por Percentual",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "URVMaternity",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "mpto-gfp-base-calculation",
+    "path": "rh.gfp.calcs.mpto.base.BaseCalculation",
+    "title": "Calculo Base para MPTO",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "BaseCalculation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-asamp",
+    "path": "rh.gfp.calcs.mpto.covenant.ASAMP",
+    "title": "Cálculo ASAMP",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ASAMP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-atmp",
+    "path": "rh.gfp.calcs.mpto.covenant.ATMP",
+    "title": "Cálculo ATMP",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ATMP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-atmp-13salario",
+    "path": "rh.gfp.calcs.mpto.covenant.ATMP13Salary",
+    "title": "Cálculo ATMP 13° Salário",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ATMP13Salary",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-fenasemp",
+    "path": "rh.gfp.calcs.mpto.covenant.Fenasemp",
+    "title": "Calculo Base para MPTO",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "Fenasemp",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-plansaude-monthly-payment",
+    "path": "rh.gfp.calcs.mpto.covenant.PlanSaudeMonthlyPayment",
+    "title": "Cálculo PlanSaúde",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PlanSaudeMonthlyPayment",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-sindsemp",
+    "path": "rh.gfp.calcs.mpto.covenant.SindSEMP",
+    "title": "Cálculo SindSEMP",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "SindSEMP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "mpto-gfp-difference",
+    "path": "rh.gfp.calcs.mpto.differences.Differences",
+    "title": "Cálculo de diferenças",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "Differences",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-fault-aid-supply",
+    "path": "rh.gfp.calcs.mpto.fault.AidSupplyFault",
+    "title": "Cálculo de faltas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AidSupplyFault",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-fault",
+    "path": "rh.gfp.calcs.mpto.fault.Fault",
+    "title": "Cálculo de faltas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "Fault",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-negative-hours",
+    "path": "rh.gfp.calcs.mpto.fault.NegativeHours",
+    "title": "Cálculo de Horas Negativas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "NegativeHours",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-positive-hours",
+    "path": "rh.gfp.calcs.mpto.fault.PositiveHours",
+    "title": "Cálculo de Horas Negativas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PositiveHours",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-holidays",
+    "path": "rh.gfp.calcs.mpto.ferias.AdditionalHolidays",
+    "title": "Adicional de Férias",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdditionalHolidays",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-proportional-holidays",
+    "path": "rh.gfp.calcs.mpto.ferias.AdditionalProportionalHolidays",
+    "title": "Adicional de proporcional de férias",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdditionalProportionalHolidays",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-proportional-vacation",
+    "path": "rh.gfp.calcs.mpto.ferias.AdditionalProportionalVacation",
+    "title": "Adicional de proporcional de férias",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdditionalProportionalVacation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-vacation",
+    "path": "rh.gfp.calcs.mpto.ferias.AdditionalVacation",
+    "title": "Adicional de Férias",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdditionalVacation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-vacation-ii",
+    "path": "rh.gfp.calcs.mpto.ferias.AdditionalVacationII",
+    "title": "Adicional de Férias",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdditionalVacationII",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-proportional-holidays",
+    "path": "rh.gfp.calcs.mpto.ferias.ProportionalHolidays",
+    "title": "Férias proporcionais",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ProportionalHolidays",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-proportional-vacation",
+    "path": "rh.gfp.calcs.mpto.ferias.ProportionalVacation",
+    "title": "Férias proporcionais",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ProportionalVacation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-proportional-vacation-ii",
+    "path": "rh.gfp.calcs.mpto.ferias.ProportionalVacationII",
+    "title": "Férias proporcionais",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ProportionalVacationII",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-unused-holidays",
+    "path": "rh.gfp.calcs.mpto.ferias.RescissionAdditionalUnusedHolidays",
+    "title": "Adicional de Férias Vencidas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "RescissionAdditionalUnusedHolidays",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-additional-unused-vacation",
+    "path": "rh.gfp.calcs.mpto.ferias.RescissionAdditionalUnusedVacation",
+    "title": "Adicional de Férias Vencidas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "RescissionAdditionalUnusedVacation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-unused-holidays",
+    "path": "rh.gfp.calcs.mpto.ferias.RescissionUnusedHolidays",
+    "title": "Férias Vencidas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "RescissionUnusedHolidays",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-unused-vacation",
+    "path": "rh.gfp.calcs.mpto.ferias.RescissionUnusedVacation",
+    "title": "Férias Vencidas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "RescissionUnusedVacation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-unused-vacation-ii",
+    "path": "rh.gfp.calcs.mpto.ferias.RescissionUnusedVacationII",
+    "title": "Férias Vencidas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "RescissionUnusedVacationII",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-provision-13thsalary",
+    "path": "rh.gfp.calcs.mpto.gratificacao_natalina.ChristmasGratificationProvision",
+    "title": "13° Salário",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ChristmasGratificationProvision",
+    "typeof": "PROVISION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-christmas-gratification-rescission",
+    "path": "rh.gfp.calcs.mpto.gratificacao_natalina.ChristmasGratificationRescission",
+    "title": "13° Salário",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ChristmasGratificationRescission",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-irrf",
+    "path": "rh.gfp.calcs.mpto.irrf.IRRF",
+    "title": "Calculo de imposto retido na fonte",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "IRRF",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-irrf-rra",
+    "path": "rh.gfp.calcs.mpto.irrf.IRRFRRA",
+    "title": "Calculo de imposto retido na fonte",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "IRRFRRA",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-pension-employee",
+    "path": "rh.gfp.calcs.mpto.pension.PensionEmployee",
+    "title": "Pensão paga pelo servidor",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PensionEmployee",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-pension-food",
+    "path": "rh.gfp.calcs.mpto.pension.PensionFood",
+    "title": "Pensão Alimenticia",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PensionFood",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-pension-pensioner",
+    "path": "rh.gfp.calcs.mpto.pension.PensionPensioner",
+    "title": "Pensão recebida pelo pensionista",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PensionPensioner",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-provision-socialsecurity-christmas",
+    "path": "rh.gfp.calcs.mpto.provisions.ProvisionSocialSecurityChristmas",
+    "title": "Provisão de Previdencia para 13̣°̣ Salário (patronal)",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ProvisionSocialSecurityChristmas",
+    "typeof": "PROVISION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-provision-vacation",
+    "path": "rh.gfp.calcs.mpto.provisions.VacationProvision",
+    "title": "Provisão de Férias",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "VacationProvision",
+    "typeof": "PROVISION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-Advance13thsalary",
+    "path": "rh.gfp.calcs.mpto.remuneracao.AdvanceChristmasGratification",
+    "title": "Adiantamento de 13° Salário",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdvanceChristmasGratification",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-Advance13thsalary-1382018",
+    "path": "rh.gfp.calcs.mpto.remuneracao.AdvanceChristmasGratification1382018",
+    "title": "Adiantamento de 13° Salário - Ato 138/2018",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "AdvanceChristmasGratification1382018",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-basesalary",
+    "path": "rh.gfp.calcs.mpto.remuneracao.BaseSalary",
+    "title": "Calculo Base para remuneração",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "BaseSalary",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-13thsalary",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ChristmasGratification",
+    "title": "13° Salário",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ChristmasGratification",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-rescission-13thsalary",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ChristmasGratificationRescission",
+    "title": "13° proporcional",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ChristmasGratificationRescission",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-substituion-salary",
+    "path": "rh.gfp.calcs.mpto.remuneracao.CommissionedSubstitution",
+    "title": "Calculo Substituição para a parte vencimental da remuneração.",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "CommissionedSubstitution",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-complementgratificationcommissioned",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ComplementGratificationCommissioned",
+    "title": "Complemento da grtificação de comissionado",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ComplementGratificationCommissioned",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-complementsalarycommissioned",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ComplementSalaryCommissioned",
+    "title": "Complemento do vencimento de comissionado",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ComplementSalaryCommissioned",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-substituion-complement",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ComplementSubstitution",
+    "title": "Complemento de substituição para a remuneração",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ComplementSubstitution",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-substituion-complement-member",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ComplementSubstitutionMember",
+    "title": "Complemento de substituição para membros",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ComplementSubstitutionMember",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-cumulation",
+    "path": "rh.gfp.calcs.mpto.remuneracao.Cumulation",
+    "title": "Cálculo de porcetagem de cumulação para membros",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "Cumulation",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-DevolutionAdvance13thsalary",
+    "path": "rh.gfp.calcs.mpto.remuneracao.DevolutionAdvanceChristmasGratification",
+    "title": "Calculo Base para MPTO",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "DevolutionAdvanceChristmasGratification",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-substituion-efective",
+    "path": "rh.gfp.calcs.mpto.remuneracao.EfectiveSubstitution",
+    "title": "Calculo Substituição de Efetivos.",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "EfectiveSubstitution",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-gratificationcomissioned",
+    "path": "rh.gfp.calcs.mpto.remuneracao.GratificationCommissioned",
+    "title": "Gratificação do cargo em comissão",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "GratificationCommissioned",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-gratificationfunction",
+    "path": "rh.gfp.calcs.mpto.remuneracao.GratificationFunction",
+    "title": "Gratificação de função de confiança",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "GratificationFunction",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-substituion-gratification",
+    "path": "rh.gfp.calcs.mpto.remuneracao.GratificationSubstitution",
+    "title": "Calculo Substituição para a parte vencimental da remuneração.",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "GratificationSubstitution",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-extra",
+    "path": "rh.gfp.calcs.mpto.remuneracao.IdentifiedPersonalAdvantage",
+    "title": "Cálculo de Vantagem Pessoal Identificada",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "IdentifiedPersonalAdvantage",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-indemnificationcomissioned",
+    "path": "rh.gfp.calcs.mpto.remuneracao.IndemnificationCommissioned",
+    "title": "Gratificação do cargo em comissão",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "IndemnificationCommissioned",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-maternitypay",
+    "path": "rh.gfp.calcs.mpto.remuneracao.MaternitySalary",
+    "title": "Salário Maternidade",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "MaternitySalary",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-redutor-teto",
+    "path": "rh.gfp.calcs.mpto.remuneracao.ReduceSalaryCap",
+    "title": "Redutor de Teto Constitucional",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ReduceSalaryCap",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-salarycommissioned",
+    "path": "rh.gfp.calcs.mpto.remuneracao.SalaryCommissioned",
+    "title": "Vencimento de comissionado",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "SalaryCommissioned",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-salaryalaryeffective",
+    "path": "rh.gfp.calcs.mpto.remuneracao.SalaryEffective",
+    "title": "Remuneração de efetivo apenas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "SalaryEffective",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-salaryeffective-old",
+    "path": "rh.gfp.calcs.mpto.remuneracao.SalaryEffectiveOld",
+    "title": "Remuneração de efetivo com função ou comissão/gratificação",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "SalaryEffectiveOld",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-salaryrequested",
+    "path": "rh.gfp.calcs.mpto.remuneracao.SalaryRequested",
+    "title": "Remuneração de servidor requisitado",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "SalaryRequested",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-socialsecurity-goiasprev-pf",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.GoiasPrevPF",
+    "title": "Calculo de previdencia social GOIASPREV-GO : Plano Financeiro",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "GoiasPrevPF",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-socialsecurity-igeprev-pf",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.IgeprevTocantinsPF",
+    "title": "Calculo de previdencia social IGEPREV-TO : Plano Financeiro",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "IgeprevTocantinsPF",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-socialsecurity-igeprev-pp",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.IgeprevTocantinsPP",
+    "title": "Calculo de previdencia social IGEPREV-TO : Plano Previdenciário",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "IgeprevTocantinsPP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-socialsecurity-inss",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.INSS",
+    "title": "Calculo de previdencia social INSS",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "INSS",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-socialsecurity-previporto",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.PreviPorto",
+    "title": "Calculo de previdencia social Previ-Porto",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PreviPorto",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-socialsecurity-prevpalmas",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.PrevPalmas",
+    "title": "Calculo de previdencia social Prev-Palmas",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "PrevPalmas",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-mpto-provision-socialsecurity",
+    "path": "rh.gfp.calcs.mpto.socialsecurity.ProvisionSocialSecurity",
+    "title": "Provisão de Patronal",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "ProvisionSocialSecurity",
+    "typeof": "PROVISION"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-pensao-alimenticia",
+    "path": "rh.gfp.calcs.pensao_alimenticia.PensaoAlimenticia",
+    "title": "Pensão Alimenticia",
+    "description": "Calculo autmático para pensão alimenticia.",
+    "name_object": "PensaoAlimenticia",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-igeprev",
+    "path": "rh.gfp.calcs.previdencia.IgeprevTocantins",
+    "title": "Calculo de previdencia social IGEPREV-TO",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "IgeprevTocantins",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-igeprev-ano-anterior",
+    "path": "rh.gfp.calcs.previdencia.IgeprevTocantinsAnoAnterior",
+    "title": "Calculo de previdencia social IGEPREV-TO referente ao ano anterior",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "IgeprevTocantinsAnoAnterior",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-igeprev-pp",
+    "path": "rh.gfp.calcs.previdencia.IgeprevTocantinsPP",
+    "title": "Calculo de previdencia social IGEPREV-TO",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "IgeprevTocantinsPP",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-inss",
+    "path": "rh.gfp.calcs.previdencia.INSS",
+    "title": "Calculo de previdencia social INSS",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "INSS",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-ipasgo",
+    "path": "rh.gfp.calcs.previdencia.Ipasgo",
+    "title": "Calculo de previdencia social IPASGO",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Ipasgo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-prevpalmas",
+    "path": "rh.gfp.calcs.previdencia.PrevPalmas",
+    "title": "Calculo de previdencia social Prev-Palmas",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PrevPalmas",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-previdencia-pgjmtprev",
+    "path": "rh.gfp.calcs.previdencia.PrevPGJMT",
+    "title": "Calculo de previdencia social PGJMT",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "PrevPGJMT",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-gratificacao-representacao",
+    "path": "rh.gfp.calcs.remuneracao.GratificacaoRepresentacao",
+    "title": "Calculo de gratificação de representação",
+    "description": "Demostração do calculo de subsidio.",
+    "name_object": "GratificacaoRepresentacao",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-produtividade",
+    "path": "rh.gfp.calcs.remuneracao.Produtividade",
+    "title": "Calculo de produtividade",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Produtividade",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-redutor-teto",
+    "path": "rh.gfp.calcs.remuneracao.RedutorTeto",
+    "title": "Redutor de Teto Constitucional",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "RedutorTeto",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-redutor-teto-adm",
+    "path": "rh.gfp.calcs.remuneracao.RedutorTetoAdministrativo",
+    "title": "Redutor de Teto Constitucional",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "RedutorTetoAdministrativo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-subsidio-acordocooperacao",
+    "path": "rh.gfp.calcs.remuneracao.RemuneracaoAcordoCooperacao",
+    "title": "Calculo de subsidio",
+    "description": "Demostração do calculo de subsidio.",
+    "name_object": "RemuneracaoAcordoCooperacao",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-subsidio-comissionado",
+    "path": "rh.gfp.calcs.remuneracao.RemuneracaoComissionado",
+    "title": "Calculo de subsidio",
+    "description": "Demostração do calculo de subsidio.",
+    "name_object": "RemuneracaoComissionado",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-subsidio-efetivo",
+    "path": "rh.gfp.calcs.remuneracao.SubsidioEfetivo",
+    "title": "Calculo de subsidio",
+    "description": "Demostração do calculo de subsidio.",
+    "name_object": "SubsidioEfetivo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-subsidio-requisicao",
+    "path": "rh.gfp.calcs.remuneracao.SubsidioRequisitado",
+    "title": "Calculo de subsidio para requisitados",
+    "description": "Demostração do calculo de subsidio.",
+    "name_object": "SubsidioRequisitado",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-vpi",
+    "path": "rh.gfp.calcs.remuneracao.VantagemPessoalIrreajustavel",
+    "title": "Calculo de Vantagem Pessoal Irreajustavel",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "VantagemPessoalIrreajustavel",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-vencimento-efetivo",
+    "path": "rh.gfp.calcs.remuneracao.VencimentoEfetivo",
+    "title": "Calculo de subsidio",
+    "description": "Demostração do calculo de subsidio.",
+    "name_object": "VencimentoEfetivo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-substituicao-base",
+    "path": "rh.gfp.calcs.substituicao.Base",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Base",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-substituicao-gratificacao",
+    "path": "rh.gfp.calcs.substituicao.Gratificacao",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Gratificacao",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-substituicao-subsidio",
+    "path": "rh.gfp.calcs.substituicao.Subsidio",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Subsidio",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-substituicao-geral",
+    "path": "rh.gfp.calcs.substituicao.Substituicao",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Substituicao",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-substituicao-vencimento",
+    "path": "rh.gfp.calcs.substituicao.Vencimento",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "Vencimento",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-calculo-base",
+    "path": "rh.gfp.calculo.BaseCalculo",
+    "title": "Calculo Base",
+    "description": "Este calculo pode ser usado de forma genérica para calculos simples",
+    "name_object": "BaseCalculo",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "febraban-bb-240",
+    "path": "rh.gfp.febrabam.bb.File",
+    "title": "Banco do Brasil CNAB240",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "File",
+    "typeof": "GENBANK"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-generic",
+    "path": "rh.gfp.loaders.gfp_loader.GFPLoader",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "GFPLoader",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-plansaude-comparticipacao",
+    "path": "rh.gfp.loaders.plansaude.PlansaudeComparticipacaoLoader",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "PlansaudeComparticipacaoLoader",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-plansaude-dependente",
+    "path": "rh.gfp.loaders.plansaude.PlansaudeDependenteIndireto",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "PlansaudeDependenteIndireto",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-plansaude-devolucoes",
+    "path": "rh.gfp.loaders.plansaude.PlansaudeDevolucao",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "PlansaudeDevolucao",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-plansaude-mensalidade",
+    "path": "rh.gfp.loaders.plansaude.PlansaudeMensalidade",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "PlansaudeMensalidade",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-plansaude-parcelamento",
+    "path": "rh.gfp.loaders.plansaude.PlansaudeParcelamento",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "PlansaudeParcelamento",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-plansaude-taxa",
+    "path": "rh.gfp.loaders.plansaude.PlansaudeTaxaInscricao",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "PlansaudeTaxaInscricao",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "gfp-loader-viabillize",
+    "path": "rh.gfp.loaders.viabillize.Viabillize",
+    "title": "Carregador genérico de arquivos da FOPAG",
+    "description": "Este carregador carrega arquivos genéricos de lançamentos nos contracheques de uma determinada folha.",
+    "name_object": "Viabillize",
+    "typeof": "LOADER"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "pensao-alimenticia",
+    "path": "rh.pensao.calcs.pensao_alimenticia.PensaoAlimenticia",
+    "title": "Pensão Alimenticia",
+    "description": "Calculo autmático para pensão alimenticia.",
+    "name_object": "PensaoAlimenticia",
+    "typeof": "CALCULO"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": null,
+    "path": null,
+    "title": "",
+    "description": null,
+    "name_object": "Subsidio",
+    "typeof": "CALCULO"
+  }
+}
+]

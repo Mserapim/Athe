@@ -1,0 +1,43 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+<div class="papper-content">
+    <div class="field">
+        <div class="composite">
+            <div class="label title">
+                Protocolo {{ protocol.codigo }}
+                <span>Assunto: {{ protocol.assunto }}</span>
+            </div>
+            <p class="hide-on-web">
+                <strong>CNPJ</strong>: {{ cnpj }} <br />
+                <strong>CEP</strong>: {{ zipcode }} <br />
+                <strong>Telefone</strong>: {{ phone_number }} <br />
+                <br />
+                {% if protocol.resumo %}
+            <div class="paragraph-text">{{ protocol.resumo | safe }}</div>
+            {% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+
+{% include "protocolo/protocol-attachments.html" %}
+
+{% if protocol.references.exists %}
+<div class="papper-content">
+    <h2 style="margin-bottom: 0.5em">Referências do Protocolo</h2>
+    <div class="opinion">
+        {% for reference in protocol.references.filter %}
+        <div>
+            <a href="#" onclick="edocs.protocolo.openReletad({{reference.protocolo.pk}})">{{reference.protocolo}}</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+[
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "",
+    "title": "Gestor de Escalas e Servidores",
+    "controller": "RHHoursWorkContractWorkloadManagerTab",
+    "application": [
+      "f97bcecc785847eb91638e2ae56d2b41"
+    ],
+    "active": true,
+    "module": "rh",
+    "uuid": "9f49423ded9745e3bce804fd566ba440"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "",
+    "title": "Gestor de Horário de Trabalho",
+    "controller": "RHHoursWorkContract",
+    "application": [
+      "f97bcecc785847eb91638e2ae56d2b41"
+    ],
+    "active": true,
+    "module": "rh",
+    "uuid": "b8daad96c8d34d2c86f58ad2be666bcd"
+  }
+}
+]

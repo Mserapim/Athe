@@ -1,0 +1,142 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "Integrado",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "Recesso",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "Eleitoral",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "DTI",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "PGJ",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "INTERINSTITUCIONAL",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "AUXILIAR ELEITORAL",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "JUIZADO DO TORCEDOR",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "CONSELHO TUTELAR",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_SHIFT",
+    "label": "CONCURSO",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.TYPE_SHIFT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

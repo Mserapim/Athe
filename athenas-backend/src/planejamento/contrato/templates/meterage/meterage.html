@@ -1,0 +1,47 @@
+{% load brmasks %}
+{% load l10n %}
+
+<h1 style='text-align: center;'><b>Solicita&ccedil;&atilde;o de Pagamento de Contrato</b></h1>
+<p>Processo: <b>{{meterage.processo}}</b></p>
+<p>Contrato: <b>{{meterage.contrato}}</b></p>
+
+<br>
+
+<table border='1' cellpadding="1" cellspacing="1" style="width:95%">
+    <tr>
+        <th>Número NE</th>
+        <th>Nota Fiscal</th>
+        <th>Interessado</th>
+        <th>CNPJ / CPF</th>
+        <th>Observação</th>
+        <th>Valor</th>
+        <th>Inicio Ref.</th>
+        <th>Fim Ref.</th>
+    </tr>
+    {% for meterage in meterages %}
+        <tr>
+            <td>{{meterage.nota_empenho.numero_ne}}</td>
+            <td>{{meterage.nota_fiscal}}</td>
+            <td>{{ meterage.nota_empenho.fornecedor.nome }}</td>
+            {% if meterage.nota_empenho.fornecedor.kind == 'pessoajuridica' %}
+                <td>{{meterage.nota_empenho.fornecedor.pessoajuridica.cnpj | cnpj }}</td>
+            {% else %}
+                <td>{{meterage.nota_empenho.fornecedor.pessoafisica.cpf | cpf }}</td>
+            {% endif %}
+            <td>{{ meterage.observacao | striptags }}</td>
+            {% localize on %}
+                <td>{{ meterage.valor }}</td>
+            {% endlocalize %}
+            <td>{{meterage.inicio_periodo_referencia | date:"d/m/Y" }}</td>
+            <td>{{meterage.fim_periodo_referencia | date:"d/m/Y" }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+{% localize on %}
+<b>VALOR TOTAL: {{meterage.total}}</b>
+<br/>
+{% endlocalize %}
+<b>QUANTIDADE DE EMPRESAS: {{meterage.quantidade}}</b>

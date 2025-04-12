@@ -1,0 +1,68 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO PARA EXCLUSÃO DE DEPENDENTES</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone de contato:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+</table>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor-Geral da Procuradoria Geral de Justiça a Exclusão de seu(s) dependente(s) abaixo relacionado(s):
+</p>
+
+{% for exclusion_item in exclusion_items %}
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome:</th>
+        <th class="rf-th">CPF:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ exclusion_item.dependent.pessoa_fisica.nome }}</td>
+        <td class="rf-td">{{ exclusion_item.dependent.pessoa_fisica.cpf }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th" colspan="2">Grau de Parentesco:</th>
+    </tr>
+    <tr>
+        <td class="rf-td" colspan="2">{{ exclusion_item.dependent.get_grau_parentesco_display }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th" colspan="2">Para fins de:</th>
+    </tr>
+    <tr>
+        <td class="rf-td-right-borderless">
+            ( {% if exclusion_item.income_tax %}<b>X</b>{% else %}&nbsp;&nbsp;&nbsp;{% endif %} ) Imposto de Renda
+        </td>
+        <td class="rf-td-left-borderless">
+            ( {% if exclusion_item.post_mortem_pension %}<b>X</b>{% else %}&nbsp;&nbsp;&nbsp;{% endif %} ) Pensão Post Mortem
+        </td>
+    </tr>
+</table>
+{% empty %}
+    <p style="color:red; font-weight:bold">Nenhum informado ainda.</p>
+{% endfor %}
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

@@ -1,0 +1,450 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1000",
+    "value": 1,
+    "cvalue": "s1000",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1005",
+    "value": 2,
+    "cvalue": "s1005",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1010",
+    "value": 3,
+    "cvalue": "s1010",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1020",
+    "value": 4,
+    "cvalue": "s1020",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1070",
+    "value": 5,
+    "cvalue": "s1070",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2200",
+    "value": 6,
+    "cvalue": "s2200",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2205",
+    "value": 7,
+    "cvalue": "s2205",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2206",
+    "value": 8,
+    "cvalue": "s2206",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2230",
+    "value": 9,
+    "cvalue": "s2230",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2231",
+    "value": 10,
+    "cvalue": "s2231",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2298",
+    "value": 11,
+    "cvalue": "s2298",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2299",
+    "value": 12,
+    "cvalue": "s2299",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2300",
+    "value": 13,
+    "cvalue": "s2300",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2306",
+    "value": 14,
+    "cvalue": "s2306",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2399",
+    "value": 15,
+    "cvalue": "s2399",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s3000",
+    "value": 16,
+    "cvalue": "s3000",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1200",
+    "value": 17,
+    "cvalue": "s1200",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1202",
+    "value": 18,
+    "cvalue": "s1202",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1207",
+    "value": 19,
+    "cvalue": "s1207",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1210",
+    "value": 20,
+    "cvalue": "s1210",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1299",
+    "value": 21,
+    "cvalue": "s1299",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2400",
+    "value": 22,
+    "cvalue": "s2400",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2405",
+    "value": 23,
+    "cvalue": "s2405",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2410",
+    "value": 24,
+    "cvalue": "s2410",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2416",
+    "value": 25,
+    "cvalue": "s2416",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2418",
+    "value": 26,
+    "cvalue": "s2418",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2420",
+    "value": 27,
+    "cvalue": "s2420",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2210",
+    "value": 28,
+    "cvalue": "s2210",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2220",
+    "value": 29,
+    "cvalue": "s2220",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2240",
+    "value": 30,
+    "cvalue": "s2240",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s5012",
+    "value": 31,
+    "cvalue": "s5012",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s5501",
+    "value": 32,
+    "cvalue": "s5501",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

@@ -1,0 +1,2317 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_eSocial" id="5011_eSocial">1</td>
+        <td><a href="#r_5011_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011" id="5011">2</td>
+        <td><a href="#r_5011">evtCS</a></td>
+        <td><a href="#r_5011_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Informações das Contribuições Sociais Consolidadas por Contribuinte.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_Id" id="5011_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_5011">evtCS</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_ideEvento" id="5011_ideEvento">4</td>
+        <td><a href="#r_5011_ideEvento">ideEvento</a></td>
+        <td><a href="#r_5011">evtCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do evento de retorno.<br>
+            <strong>Evento de origem:</strong> S-1299.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_ideEvento_indApuracao"
+            id="5011_ideEvento_indApuracao">5
+        </td>
+        <td>indApuracao</td>
+        <td><a href="#r_5011_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de período de apuração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Mensal<br>
+            <strong>2</strong> - Anual (13° salário)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_ideEvento_perApur"
+            id="5011_ideEvento_perApur">6
+        </td>
+        <td>perApur</td>
+        <td><a href="#r_5011_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4 ou 7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) de referência das informações, se <a
+                href="#5011_ideEvento_indApuracao">indApuracao</a> for igual a [1], ou apenas o ano (formato AAAA), se
+            <a href="#5011_ideEvento_indApuracao">indApuracao</a> for igual a [2].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_ideEmpregador" id="5011_ideEmpregador">7</td>
+        <td><a href="#r_5011_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_5011">evtCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_ideEmpregador_tpInsc"
+            id="5011_ideEmpregador_tpInsc">8
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5011_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_ideEmpregador_nrInsc"
+            id="5011_ideEmpregador_nrInsc">9
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5011_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#5011_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS" id="5011_infoCS">10</td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td><a href="#r_5011">evtCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas às contribuições sociais devidas à Previdência Social e a Outras Entidades e Fundos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_nrRecArqBase"
+            id="5011_infoCS_nrRecArqBase">11
+        </td>
+        <td>nrRecArqBase</td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo que deu origem ao presente arquivo de retorno ao empregador.<br>
+            <strong>Validação:</strong> Deve ser um recibo de entrega válido, correspondente ao arquivo que deu origem
+            ao presente arquivo de retorno (S-1299).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_indExistInfo"
+            id="5011_infoCS_indExistInfo">12
+        </td>
+        <td>indExistInfo</td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de existência de valores de bases e de contribuições sociais.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Há informações com apuração de contribuições sociais<br>
+            <strong>2</strong> - Há movimento, porém sem apuração de contribuições sociais<br>
+            <strong>3</strong> - Não há movimento no período informado em <a href="#5011_ideEvento_perApur">perApur</a>
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCPSeg" id="5011_infoCS_infoCPSeg">
+            13
+        </td>
+        <td><a href="#r_5011_infoCS_infoCPSeg">infoCPSeg</a></td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de contribuição previdenciária do segurado.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCPSeg_vrDescCP"
+            id="5011_infoCS_infoCPSeg_vrDescCP">14
+        </td>
+        <td>vrDescCP</td>
+        <td><a href="#r_5011_infoCS_infoCPSeg">infoCPSeg</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total da contribuição descontada dos segurados.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [21].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCPSeg_vrCpSeg"
+            id="5011_infoCS_infoCPSeg_vrCpSeg">15
+        </td>
+        <td>vrCpSeg</td>
+        <td><a href="#r_5011_infoCS_infoCPSeg">infoCPSeg</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total calculado relativo à contribuição dos segurados.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCpCalc_vrCpSeg">vrCpSeg</a> de S-5001.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib"
+            id="5011_infoCS_infoContrib">16
+        </td>
+        <td><a href="#r_5011_infoCS_infoContrib">infoContrib</a></td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações gerais do contribuinte necessárias à apuração das contribuições sociais.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_classTrib"
+            id="5011_infoCS_infoContrib_classTrib">17
+        </td>
+        <td>classTrib</td>
+        <td><a href="#r_5011_infoCS_infoContrib">infoContrib</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente à classificação tributária do contribuinte, conforme <a
+                href="tabelas.html#08">Tabela 08</a>.<br>
+            <strong>Evento de origem:</strong> S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ"
+            id="5011_infoCS_infoContrib_infoPJ">18
+        </td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td><a href="#r_5011_infoCS_infoContrib">infoContrib</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares, exclusivas da Pessoa Jurídica.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_indCoop"
+            id="5011_infoCS_infoContrib_infoPJ_indCoop">19
+        </td>
+        <td>indCoop</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de cooperativa.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não é cooperativa<br>
+            <strong>1</strong> - Cooperativa de trabalho<br>
+            <strong>2</strong> - Cooperativa de produção<br>
+            <strong>3</strong> - Outras cooperativas<br>
+            <strong>Evento de origem:</strong> S-1000.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_indConstr"
+            id="5011_infoCS_infoContrib_infoPJ_indConstr">20
+        </td>
+        <td>indConstr</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de construtora.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não é construtora<br>
+            <strong>1</strong> - Empresa construtora<br>
+            <strong>Evento de origem:</strong> S-1000.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_indSubstPatr"
+            id="5011_infoCS_infoContrib_infoPJ_indSubstPatr">21
+        </td>
+        <td>indSubstPatr</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de substituição da contribuição previdenciária patronal.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Integralmente substituída<br>
+            <strong>2</strong> - Parcialmente substituída<br>
+            <strong>Origem:</strong> campo <a href="#1280_infoSubstPatr_indSubstPatr">indSubstPatr</a> de S-1280.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_percRedContrib"
+            id="5011_infoCS_infoContrib_infoPJ_percRedContrib">22
+        </td>
+        <td>percRedContrib</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Percentual de redução da contribuição prevista na Lei 12.546/2011.<br>
+            <strong>Evento de origem:</strong> S-1280.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_percTransf"
+            id="5011_infoCS_infoContrib_infoPJ_percTransf">23
+        </td>
+        <td>percTransf</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Percentual de contribuição social - Lei 11.096/2005.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - 0,2000<br>
+            <strong>2</strong> - 0,4000<br>
+            <strong>3</strong> - 0,6000<br>
+            <strong>4</strong> - 0,8000<br>
+            <strong>5</strong> - 1,0000<br>
+            <strong>Evento de origem:</strong> S-1280.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_infoContrib_infoPJ_indTribFolhaPisPasep"
+            id="5011_infoCS_infoContrib_infoPJ_indTribFolhaPisPasep">24
+        </td>
+        <td>indTribFolhaPisPasep</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de tributação sobre a folha de pagamento - PIS e PASEP.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>Evento de origem:</strong> S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_infoAtConc"
+            id="5011_infoCS_infoContrib_infoPJ_infoAtConc">25
+        </td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ_infoAtConc">infoAtConc</a></td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ">infoPJ</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações prestadas por empresa enquadrada no regime de tributação Simples Nacional com tributação
+            previdenciária substituída e não substituída.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_infoContrib_infoPJ_infoAtConc_fatorMes"
+            id="5011_infoCS_infoContrib_infoPJ_infoAtConc_fatorMes">26
+        </td>
+        <td>fatorMes</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ_infoAtConc">infoAtConc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informe o fator a ser utilizado para cálculo da contribuição patronal do mês dos trabalhadores envolvidos na
+            execução das atividades enquadradas no Anexo IV em conjunto com as dos Anexos I a III e V da Lei
+            Complementar 123/2006.<br>
+            <strong>Evento de origem:</strong> S-1280.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoContrib_infoPJ_infoAtConc_fator13"
+            id="5011_infoCS_infoContrib_infoPJ_infoAtConc_fator13">27
+        </td>
+        <td>fator13</td>
+        <td><a href="#r_5011_infoCS_infoContrib_infoPJ_infoAtConc">infoAtConc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informe o fator a ser utilizado para cálculo da contribuição patronal do décimo terceiro dos trabalhadores
+            envolvidos na execução das atividades enquadradas no Anexo IV em conjunto com as dos Anexos I a III e V da
+            Lei Complementar 123/2006.<br>
+            <strong>Evento de origem:</strong> S-1280.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab" id="5011_infoCS_ideEstab">
+            28
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-N</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do estabelecimento ou obra de construção civil.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_tpInsc"
+            id="5011_infoCS_ideEstab_tpInsc">29
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_nrInsc"
+            id="5011_infoCS_ideEstab_nrInsc">30
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11, 12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#5011_infoCS_ideEstab_tpInsc">ideEstab/tpInsc</a>.<br>
+            <strong>Evento de origem:</strong> S-1260, S-1270 ou S-5001.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab"
+            id="5011_infoCS_ideEstab_infoEstab">31
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas a cada estabelecimento, necessárias à apuração das contribuições sociais.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_cnaePrep"
+            id="5011_infoCS_ideEstab_infoEstab_cnaePrep">32
+        </td>
+        <td>cnaePrep</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código CNAE, conforme informado em S-1005.<br>
+            <strong>Evento de origem:</strong> S-1005.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_cnpjResp"
+            id="5011_infoCS_ideEstab_infoEstab_cnpjResp">33
+        </td>
+        <td>cnpjResp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ responsável pela inscrição no cadastro de obras da RFB.<br>
+            <strong>Evento de origem:</strong> S-1005.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_aliqRat"
+            id="5011_infoCS_ideEstab_infoEstab_aliqRat">34
+        </td>
+        <td>aliqRat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar a alíquota RAT.<br>
+            <strong>Valores válidos:</strong> 1, 2, 3<br>
+            <strong>Validação:</strong> Deve corresponder à alíquota declarada no evento S-1005. Caso não haja
+            informação, retornar a alíquota definida na legislação vigente para o código CNAE informado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_fap"
+            id="5011_infoCS_ideEstab_infoEstab_fap">35
+        </td>
+        <td>fap</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Fator Acidentário de Prevenção - FAP.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a href="#5011_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a>
+            = [1]. Deve corresponder ao FAP estabelecido para a empresa pelo órgão governamental competente, exceto
+            se:<br>
+            a) <a href="#5011_infoCS_ideEstab_tpInsc">ideEstab/tpInsc</a> = [4] e se não existir o campo <a
+                    href="#5011_infoCS_ideEstab_infoEstab_cnpjResp">cnpjResp</a>; ou<br>
+            b) <a href="#5011_infoCS_ideEstab_tpInsc">ideEstab/tpInsc</a> = [1, 4] e se houver informação de <a
+                    href="#1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">procAdmJudFap</a> em S-1005;
+            ou<br>
+            c) <a href="#5011_infoCS_ideEstab_tpInsc">ideEstab/tpInsc</a> = [1, 4] e o estabelecimento ou o CNPJ
+            responsável pela inscrição no CNO não for encontrado na tabela FAP referente ao ano de <a
+                    href="#5011_ideEvento_perApur">perApur</a>.<br>
+            Caso haja alguma exceção acima, retornar o FAP declarado no evento S-1005.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_aliqRatAjust"
+            id="5011_infoCS_ideEstab_infoEstab_aliqRatAjust">36
+        </td>
+        <td>aliqRatAjust</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Alíquota do RAT após ajuste pelo FAP.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a href="#5011_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a>
+            = [1]. Deve corresponder ao resultado da multiplicação dos campos <a
+                    href="#5011_infoCS_ideEstab_infoEstab_aliqRat">infoEstab/aliqRat</a> e <a
+                    href="#5011_infoCS_ideEstab_infoEstab_fap">infoEstab/fap</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_infoEstabRef"
+            id="5011_infoCS_ideEstab_infoEstab_infoEstabRef">37
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab_infoEstabRef">infoEstabRef</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Informações de RAT e FAP de referência, nos casos de processo administrativo ou judicial que altere a(s)
+            alíquota(s).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_infoEstab_infoEstabRef_aliqRat"
+            id="5011_infoCS_ideEstab_infoEstab_infoEstabRef_aliqRat">38
+        </td>
+        <td>aliqRat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab_infoEstabRef">infoEstabRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Retornar a alíquota RAT definida na legislação vigente.<br>
+            <strong>Valores válidos:</strong> 1, 2, 3<br>
+            <strong>Validação:</strong> Deve corresponder à alíquota definida na legislação vigente para o código CNAE
+            informado em S-1005.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_infoEstabRef_fap"
+            id="5011_infoCS_ideEstab_infoEstab_infoEstabRef_fap">39
+        </td>
+        <td>fap</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab_infoEstabRef">infoEstabRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Fator Acidentário de Prevenção - FAP estabelecido pelo órgão governamental competente.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a href="#5011_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a>
+            = [1]. Deve corresponder ao FAP estabelecido para a empresa pelo órgão governamental competente.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_infoEstab_infoEstabRef_aliqRatAjust"
+            id="5011_infoCS_ideEstab_infoEstab_infoEstabRef_aliqRatAjust">40
+        </td>
+        <td>aliqRatAjust</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab_infoEstabRef">infoEstabRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Alíquota de referência - RAT após ajuste pelo FAP.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a href="#5011_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a>
+            = [1]. Deve corresponder ao resultado da multiplicação dos campos <a
+                    href="#5011_infoCS_ideEstab_infoEstab_infoEstabRef_aliqRat">infoEstabRef/aliqRat</a> e <a
+                    href="#5011_infoCS_ideEstab_infoEstab_infoEstabRef_fap">infoEstabRef/fap</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoEstab_infoComplObra"
+            id="5011_infoCS_ideEstab_infoEstab_infoComplObra">41
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab_infoComplObra">infoComplObra</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab">infoEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares relativas a obras de construção civil.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_infoEstab_infoComplObra_indSubstPatrObra"
+            id="5011_infoCS_ideEstab_infoEstab_infoComplObra_indSubstPatrObra">42
+        </td>
+        <td>indSubstPatrObra</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoEstab_infoComplObra">infoComplObra</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de substituição da contribuição patronal de obra de construção civil.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuição patronal substituída<br>
+            <strong>2</strong> - Contribuição patronal não substituída<br>
+            <strong>Origem:</strong> campo <a href="#1005_infoEstab_inclusao_dadosEstab_infoObra_indSubstPatrObra">indSubstPatrObra</a>
+            de S-1005.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao"
+            id="5011_infoCS_ideEstab_ideLotacao">43
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-N</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da lotação tributária.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_codLotacao"
+            id="5011_infoCS_ideEstab_ideLotacao_codLotacao">44
+        </td>
+        <td>codLotacao</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador para a lotação tributária.<br>
+            <strong>Evento de origem:</strong> S-1270 ou S-5001.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_fpas"
+            id="5011_infoCS_ideEstab_ideLotacao_fpas">45
+        </td>
+        <td>fpas</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código relativo ao FPAS.<br>
+            <strong>Evento de origem:</strong> S-1020.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_codTercs"
+            id="5011_infoCS_ideEstab_ideLotacao_codTercs">46
+        </td>
+        <td>codTercs</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Preencher com o código de Terceiros, conforme <a href="tabelas.html#04">Tabela 04</a>.<br>
+            <strong>Evento de origem:</strong> S-1020.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_codTercsSusp"
+            id="5011_infoCS_ideEstab_ideLotacao_codTercsSusp">47
+        </td>
+        <td>codTercsSusp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Informar o código combinado dos Terceiros para os quais o recolhimento está suspenso em virtude de processos
+            judiciais.<br>
+            <strong>Evento de origem:</strong> S-1020.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_infoTercSusp"
+            id="5011_infoCS_ideEstab_ideLotacao_infoTercSusp">48
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoTercSusp">infoTercSusp</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-15</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de suspensão de contribuições destinadas a Outras Entidades e Fundos (Terceiros).</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoTercSusp_codTerc"
+            id="5011_infoCS_ideEstab_ideLotacao_infoTercSusp_codTerc">49
+        </td>
+        <td>codTerc</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoTercSusp">infoTercSusp</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Informar o código de Terceiro.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_codTerc">codTerc</a>
+            de S-1020.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial"
+            id="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">50
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação complementar que apresenta identificação do contratante e do proprietário de obra de construção
+            civil contratada sob regime de empreitada parcial ou subempreitada.<br>
+            <strong>Evento de origem:</strong> S-1020.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_tpInscContrat"
+            id="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_tpInscContrat">51
+        </td>
+        <td>tpInscContrat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de inscrição do contratante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_nrInscContrat"
+            id="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_nrInscContrat">52
+        </td>
+        <td>nrInscContrat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Número de inscrição (CNPJ/CPF) do contratante.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_tpInscProp"
+            id="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_tpInscProp">53
+        </td>
+        <td>tpInscProp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de inscrição do proprietário do CNO.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>Validação:</strong> Retornar o tipo de inscrição do proprietário no CNO. Caso não tenha sido
+            encontrado, retornar <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscProp">tpInscProp</a> de S-1020.
+            Se o tipo de inscrição do proprietário no CNO não for encontrado e se não houver informação de <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscProp">tpInscProp</a> em S-1020,
+            retornar <a href="#5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_tpInscContrat">tpInscContrat</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_nrInscProp"
+            id="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_nrInscProp">54
+        </td>
+        <td>nrInscProp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.<br>
+            <strong>Validação:</strong> Retornar o número de inscrição do proprietário no CNO. Caso não tenha sido
+            encontrado, retornar <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_nrInscProp">nrInscProp</a> de S-1020.
+            Se o número de inscrição do proprietário no CNO não for encontrado e se não houver informação de <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_nrInscProp">nrInscProp</a> em S-1020,
+            retornar <a href="#5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_nrInscContrat">nrInscContrat</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_cnoObra"
+            id="5011_infoCS_ideEstab_ideLotacao_infoEmprParcial_cnoObra">55
+        </td>
+        <td>cnoObra</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12</td>
+        <td>-</td>
+        <td>Número do CNO da obra.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_dadosOpPort"
+            id="5011_infoCS_ideEstab_ideLotacao_dadosOpPort">56
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao operador portuário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_cnpjOpPortuario"
+            id="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_cnpjOpPortuario">57
+        </td>
+        <td>cnpjOpPortuario</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ do operador portuário.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_nrInsc">dadosLotacao/nrInsc</a> de S-1020.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_aliqRat"
+            id="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_aliqRat">58
+        </td>
+        <td>aliqRat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar a alíquota RAT.<br>
+            <strong>Valores válidos:</strong> 1, 2, 3<br>
+            <strong>Origem:</strong> campo <a href="#1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort_aliqRat">dadosOpPort/aliqRat</a>
+            de S-1020.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_fap"
+            id="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_fap">59
+        </td>
+        <td>fap</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Fator Acidentário de Prevenção - FAP.<br>
+            <strong>Origem:</strong> campo <a href="#1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort_fap">dadosOpPort/fap</a>
+            de S-1020.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_aliqRatAjust"
+            id="5011_infoCS_ideEstab_ideLotacao_dadosOpPort_aliqRatAjust">60
+        </td>
+        <td>aliqRatAjust</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Alíquota do RAT após ajuste pelo FAP.<br>
+            <strong>Validação:</strong> Deve corresponder ao resultado da multiplicação dos campos <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_dadosOpPort_aliqRat">dadosOpPort/aliqRat</a> e <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_dadosOpPort_fap">dadosOpPort/fap</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_basesRemun"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun">61
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun">basesRemun</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Bases de cálculo da contribuição previdenciária incidente sobre remunerações, por categoria.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">62
+        </td>
+        <td>indIncid</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun">basesRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de incidência para fins de apuração da contribuição
+            previdenciária.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Normal<br>
+            <strong>2</strong> - Atividade concomitante<br>
+            <strong>9</strong> - Substituída ou isenta<br>
+            <strong>Validação:</strong> a) Para empresas com <a href="#5011_infoCS_infoContrib_classTrib">classTrib</a>
+            = [01, 70, 80], todas as bases de cálculo devem ser totalizadas com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9], EXCETO para <a
+                    href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [01] E <a
+                    href="#5011_infoCS_ideEstab_tpInsc">ideEstab/tpInsc</a> = [4], que deve ser totalizada com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [1].<br>
+            b) Para empresas com <a href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [03], considerar a
+            informação prestada no campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_indSimples">indSimples</a> do
+            evento S-5001, conforme abaixo:<br>
+            - Se o <a href="#5001_infoCp_ideEstabLot_infoCategIncid_indSimples">indSimples</a> em S-5001 = [1] (contrib.
+            subst. integralmente), a base de cálculo do respectivo trabalhador deve ser totalizada com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9];<br>
+            - Se o <a href="#5001_infoCp_ideEstabLot_infoCategIncid_indSimples">indSimples</a> em S-5001 = [2] (contrib.
+            não substituída), a base de cálculo do respectivo trabalhador deve ser totalizada com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [1] (normal);<br>
+            - Se o <a href="#5001_infoCp_ideEstabLot_infoCategIncid_indSimples">indSimples</a> em S-5001 = [3] (ativ.
+            concomitante), a base de cálculo do respectivo trabalhador deve ser totalizada com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [2].<br>
+            c) Para empresas com <a href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [10] (sindicato de avulsos
+            não portuários), as bases de cálculo dos trabalhadores avulsos da categoria [202] devem ser totalizadas com
+            <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9].<br>
+            d) Para <a href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [22] (segurado especial), as bases de
+            cálculo dos trabalhadores devem ser totalizadas com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9], EXCETO para a
+            categoria [104] (empregado doméstico) ou se <a href="#5011_infoCS_ideEstab_tpInsc">ideEstab/tpInsc</a> =
+            [4], que deve ser totalizada com <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a>
+            = [1].<br>
+            e) Para contribuinte com <a href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [99] e com <a
+                    href="#5011_infoCS_infoContrib_infoPJ_indCoop">indCoop</a> = [1] (cooperativa de trabalho), as
+            remunerações dos cooperados (categoria [731, 734]) cuja lotação esteja classificada com <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_tpLotacao">tpLotacao</a> em S-1020 = [05, 06, 07]
+            devem ser totalizadas com <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9].
+            Nos demais casos, <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [1].<br>
+            f) Para contribuintes com <a href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [11], as bases de
+            cálculo dos trabalhadores devem ser totalizadas com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9], EXCETO para as
+            categorias de contribuinte individual, que devem ser totalizadas com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [1].<br>
+            g) Para <a href="#1020_infoLotacao_inclusao_dadosLotacao_tpLotacao">tpLotacao</a> em S-1020 = [91, 92],
+            todas as bases de cálculo devem ser totalizadas com <a
+                    href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_indIncid">indIncid</a> = [9].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_codCateg"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_codCateg">63
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun">basesRemun</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador, conforme definido em S-5001.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">64
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun">basesRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Valores correspondentes às bases, contribuições do segurado e deduções da contribuição previdenciária.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp00"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp00">65
+        </td>
+        <td>vrBcCp00</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição previdenciária sobre a remuneração.<br>
+            <strong>Origem:</strong> para <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_codCateg">codCateg</a>
+            diferente de [104]: somatório do campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [11, 15]; para <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_codCateg">codCateg</a> = [104]:
+            somatório do campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a> de S-5001,
+            quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001 = [11,
+            15], limitado ao teto do salário de contribuição.<br>
+            OBS.: A contribuição previdenciária patronal do empregador doméstico tem como base de cálculo o somatório do
+            salário de contribuição de cada empregado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp15"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp15">66
+        </td>
+        <td>vrBcCp15</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 15 anos de contribuição.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, se <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001 =
+            [12, 16].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp20"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp20">67
+        </td>
+        <td>vrBcCp20</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 20 anos de contribuição.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [13, 17].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp25"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp25">68
+        </td>
+        <td>vrBcCp25</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 25 anos de contribuição.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [14, 18].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp00"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp00">69
+        </td>
+        <td>vrSuspBcCp00</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da BC com incidência suspensa em decorrência de decisão judicial.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [91, 95].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp15"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp15">70
+        </td>
+        <td>vrSuspBcCp15</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador direito a aposentadoria especial aos 15 anos de trabalho, com incidência suspensa em
+            decorrência de decisão judicial.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [92, 96].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp20"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp20">71
+        </td>
+        <td>vrSuspBcCp20</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador expectativa de aposentadoria especial aos 20 anos de trabalho, com incidência suspensa
+            em decorrência de decisão judicial.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [93, 97].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp25"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp25">72
+        </td>
+        <td>vrSuspBcCp25</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador direito a aposentadoria especial aos 25 anos de trabalho, com incidência suspensa em
+            decorrência de decisão judicial.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [94, 98].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp00VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp00VA">73
+        </td>
+        <td>vrBcCp00VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição previdenciária sobre a remuneração - Contrato Verde e
+            Amarelo.<br>
+            <strong>Origem:</strong> somatório do campo <a
+                    href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a> de S-5001, quando <a
+                    href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001 = [41, 45].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp15VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp15VA">74
+        </td>
+        <td>vrBcCp15VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 15 anos de contribuição - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, se <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001 =
+            [42, 46].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp20VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp20VA">75
+        </td>
+        <td>vrBcCp20VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 20 anos de contribuição - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [43, 47].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp25VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrBcCp25VA">76
+        </td>
+        <td>vrBcCp25VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 25 anos de contribuição - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [44, 48].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp00VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp00VA">77
+        </td>
+        <td>vrSuspBcCp00VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da BC com incidência suspensa em decorrência de decisão judicial - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [81, 85].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp15VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp15VA">78
+        </td>
+        <td>vrSuspBcCp15VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador direito a aposentadoria especial aos 15 anos de trabalho, com incidência suspensa em
+            decorrência de decisão judicial - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [82, 86].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp20VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp20VA">79
+        </td>
+        <td>vrSuspBcCp20VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador expectativa de aposentadoria especial aos 20 anos de trabalho, com incidência suspensa
+            em decorrência de decisão judicial - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [83, 87].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp25VA"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSuspBcCp25VA">80
+        </td>
+        <td>vrSuspBcCp25VA</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador direito a aposentadoria especial aos 25 anos de trabalho, com incidência suspensa em
+            decorrência de decisão judicial - Contrato Verde e Amarelo.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [84, 88].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrDescSest"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrDescSest">81
+        </td>
+        <td>vrDescSest</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total descontado do trabalhador para recolhimento ao SEST.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [22].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrCalcSest"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrCalcSest">82
+        </td>
+        <td>vrCalcSest</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor calculado relativo à contribuição devida pelo trabalhador para recolhimento ao SEST.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_calcTerc_vrCsSegTerc">vrCsSegTerc</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_calcTerc_tpCR">calcTerc/tpCR</a> em
+            S-5001 = [121802], exceto se houver informação de processo judicial do trabalhador, quando deve ser
+            utilizado o valor apurado em <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrDescSest">vrDescSest</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrDescSenat"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrDescSenat">83
+        </td>
+        <td>vrDescSenat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total descontado do trabalhador para recolhimento ao SENAT.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [23].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrCalcSenat"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrCalcSenat">84
+        </td>
+        <td>vrCalcSenat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor calculado relativo à contribuição devida pelo trabalhador para recolhimento ao SENAT.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_calcTerc_vrCsSegTerc">vrCsSegTerc</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_calcTerc_tpCR">calcTerc/tpCR</a> em
+            S-5001 = [122102], exceto se houver informação de processo judicial do trabalhador, quando deve ser
+            utilizado o valor apurado em <a href="#5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrDescSenat">vrDescSenat</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSalFam"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSalFam">85
+        </td>
+        <td>vrSalFam</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total do salário-família para a categoria indicada.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [31].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSalMat"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp_vrSalMat">86
+        </td>
+        <td>vrSalMat</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp">basesCp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total do salário-maternidade para a categoria indicada.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [32].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">87
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun">basesRemun</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Valores correspondentes às remunerações a título de 13º salário incluídas em folha mensal - Empresas
+            desoneradas.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp00"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp00">88
+        </td>
+        <td>vrBcCp00</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição previdenciária - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [51].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp15"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp15">89
+        </td>
+        <td>vrBcCp15</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 15 anos de contribuição - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [52].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp20"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp20">90
+        </td>
+        <td>vrBcCp20</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 20 anos de contribuição - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [53].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp25"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrBcCp25">91
+        </td>
+        <td>vrBcCp25</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base de cálculo da contribuição adicional para o financiamento dos benefícios de
+            aposentadoria especial após 25 anos de contribuição - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [54].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp00"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp00">92
+        </td>
+        <td>vrSuspBcCp00</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo com incidência suspensa em decorrência de decisão judicial - Remuneração a título
+            de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [71].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp15"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp15">93
+        </td>
+        <td>vrSuspBcCp15</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador direito a aposentadoria especial aos 15 anos de trabalho, com incidência suspensa em
+            decorrência de decisão judicial - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [72].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp20"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp20">94
+        </td>
+        <td>vrSuspBcCp20</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador expectativa de aposentadoria especial aos 20 anos de trabalho, com incidência suspensa
+            em decorrência de decisão judicial - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [73].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp25"
+            id="5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13_vrSuspBcCp25">95
+        </td>
+        <td>vrSuspBcCp25</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesRemun_basesCp13">basesCp13</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária adicional correspondente a exposição a agente nocivo
+            que dá ao trabalhador direito a aposentadoria especial aos 25 anos de trabalho, com incidência suspensa em
+            decorrência de decisão judicial - Remuneração a título de 13º salário.<br>
+            <strong>Origem:</strong> campo <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_valor">valor</a>
+            de S-5001, quando <a href="#5001_infoCp_ideEstabLot_infoCategIncid_infoBaseCS_tpValor">tpValor</a> em S-5001
+            = [74].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort">96
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de bases de cálculo relativas à contratação de trabalhadores avulsos não portuários.<br>
+            Informações desse grupo conforme informado pelo contribuinte em S-1270.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp00"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp00">97
+        </td>
+        <td>vrBcCp00</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária sobre a remuneração dos trabalhadores avulsos não
+            portuários.<br>
+            <strong>Origem:</strong> campo <a href="#1270_remunAvNP_vrBcCp00">vrBcCp00</a> de S-1270.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp15"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp15">98
+        </td>
+        <td>vrBcCp15</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição adicional para o financiamento dos benefícios de aposentadoria
+            especial após 15 anos de contribuição.<br>
+            <strong>Origem:</strong> campo <a href="#1270_remunAvNP_vrBcCp15">vrBcCp15</a> de S-1270.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp20"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp20">99
+        </td>
+        <td>vrBcCp20</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição adicional para o financiamento dos benefícios de aposentadoria
+            especial após 20 anos de contribuição.<br>
+            <strong>Origem:</strong> campo <a href="#1270_remunAvNP_vrBcCp20">vrBcCp20</a> de S-1270.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp25"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp25">100
+        </td>
+        <td>vrBcCp25</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição adicional para o financiamento dos benefícios de aposentadoria
+            especial após 25 anos de contribuição.<br>
+            <strong>Origem:</strong> campo <a href="#1270_remunAvNP_vrBcCp25">vrBcCp25</a> de S-1270.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp13"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrBcCp13">101
+        </td>
+        <td>vrBcCp13</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da contribuição previdenciária sobre o 13° salário dos trabalhadores avulsos não
+            portuários contratados.<br>
+            <strong>Origem:</strong> campo <a href="#1270_remunAvNP_vrBcCp13">vrBcCp13</a> de S-1270.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrDescCP"
+            id="5011_infoCS_ideEstab_ideLotacao_basesAvNPort_vrDescCP">102
+        </td>
+        <td>vrDescCP</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_basesAvNPort">basesAvNPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor total da contribuição descontada dos trabalhadores avulsos não portuários.<br>
+            <strong>Origem:</strong> campo <a href="#1270_remunAvNP_vrDescCP">vrDescCP</a> de S-1270.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoSubstPatrOpPort"
+            id="5011_infoCS_ideEstab_ideLotacao_infoSubstPatrOpPort">103
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoSubstPatrOpPort">infoSubstPatrOpPort</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao">ideLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente pelo Órgão Gestor de Mão de Obra - OGMO (<a
+                href="#5011_infoCS_infoContrib_classTrib">classTrib</a> = [09]), relativamente a operador portuário
+            enquadrado nos arts. 7º a 9º da Lei 12.546/2011.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_ideLotacao_infoSubstPatrOpPort_cnpjOpPortuario"
+            id="5011_infoCS_ideEstab_ideLotacao_infoSubstPatrOpPort_cnpjOpPortuario">104
+        </td>
+        <td>cnpjOpPortuario</td>
+        <td><a href="#r_5011_infoCS_ideEstab_ideLotacao_infoSubstPatrOpPort">infoSubstPatrOpPort</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ do operador portuário.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_nrInsc">dadosLotacao/nrInsc</a> de S-1020 relativo a
+            <a href="#1280_infoSubstPatrOpPort_codLotacao">codLotacao</a> em S-1280.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis"
+            id="5011_infoCS_ideEstab_basesAquis">105
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-6</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de bases de cálculo relativas à aquisição de produção rural.<br>
+            <strong>Evento de origem:</strong> S-1250 (existente até a versão 2.5 do leiaute).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_indAquis"
+            id="5011_infoCS_ideEstab_basesAquis_indAquis">106
+        </td>
+        <td>indAquis</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo da aquisição.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aquisição da produção de produtor rural pessoa física ou segurado especial em geral<br>
+            <strong>2</strong> - Aquisição da produção de produtor rural pessoa física ou segurado especial em geral por
+            entidade do PAA<br>
+            <strong>3</strong> - Aquisição da produção de produtor rural pessoa jurídica por entidade do PAA<br>
+            <strong>4</strong> - Aquisição da produção de produtor rural pessoa física ou segurado especial em geral -
+            Produção isenta (Lei 13.606/2018)<br>
+            <strong>5</strong> - Aquisição da produção de produtor rural pessoa física ou segurado especial em geral por
+            entidade do PAA - Produção isenta (Lei 13.606/2018)<br>
+            <strong>6</strong> - Aquisição da produção de produtor rural pessoa jurídica por entidade do PAA - Produção
+            isenta (Lei 13.606/2018)<br>
+            <strong>Origem:</strong> campo {indAquis} de S-1250.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vlrAquis"
+            id="5011_infoCS_ideEstab_basesAquis_vlrAquis">107
+        </td>
+        <td>vlrAquis</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total da aquisição de produção rural de produtor rural.<br>
+            <strong>Origem:</strong> campo {vlrTotAquis} de S-1250.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrCPDescPR"
+            id="5011_infoCS_ideEstab_basesAquis_vrCPDescPR">108
+        </td>
+        <td>vrCPDescPR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor da contribuição previdenciária descontada pelo adquirente de produção de produtor
+            rural - sub-rogação.<br>
+            <strong>Origem:</strong> somatório do campo {vrCpDescPR} de S-1250.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrCPNRet"
+            id="5011_infoCS_ideEstab_basesAquis_vrCPNRet">109
+        </td>
+        <td>vrCPNRet</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição previdenciária que deixou de ser retida pelo declarante em decorrência de
+            decisão/sentença judicial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrRatNRet"
+            id="5011_infoCS_ideEstab_basesAquis_vrRatNRet">110
+        </td>
+        <td>vrRatNRet</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da GILRAT, incidente sobre a aquisição de produção rural de produtor rural, cuja retenção deixou de
+            ser efetuada em decorrência de decisão/sentença judicial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrSenarNRet"
+            id="5011_infoCS_ideEstab_basesAquis_vrSenarNRet">111
+        </td>
+        <td>vrSenarNRet</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição destinada ao SENAR, incidente sobre a aquisição de produção rural de produtor rural
+            pessoa física/segurado especial, que deixou de ser retida em decorrência de decisão/sentença judicial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrCPCalcPR"
+            id="5011_infoCS_ideEstab_basesAquis_vrCPCalcPR">112
+        </td>
+        <td>vrCPCalcPR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor calculado relativo à contribuição previdenciária do produtor rural, de acordo com <a
+                href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a>, conforme segue:<br>
+            a) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [1, 2]: <a
+                    href="#5011_infoCS_ideEstab_basesAquis_vlrAquis">vlrAquis</a> x 1,2%;<br>
+            b) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [3]: <a
+                    href="#5011_infoCS_ideEstab_basesAquis_vlrAquis">vlrAquis</a> x 1,7%;<br>
+            c) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [4, 5, 6]: 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrRatDescPR"
+            id="5011_infoCS_ideEstab_basesAquis_vrRatDescPR">113
+        </td>
+        <td>vrRatDescPR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição destinada ao financiamento dos benefícios concedidos em razão do grau de incidência da
+            incapacidade laborativa decorrente dos riscos ambientais do trabalho, incidente sobre a aquisição de
+            produção rural de produtor rural.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrRatCalcPR"
+            id="5011_infoCS_ideEstab_basesAquis_vrRatCalcPR">114
+        </td>
+        <td>vrRatCalcPR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor calculado relativo à contribuição GILRAT devida pelo produtor rural, de acordo com <a
+                href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a>, conforme segue:<br>
+            a) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [1, 2, 3]: <a
+                    href="#5011_infoCS_ideEstab_basesAquis_vlrAquis">vlrAquis</a> x 0,1%;<br>
+            b) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [4, 5, 6]: 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrSenarDesc"
+            id="5011_infoCS_ideEstab_basesAquis_vrSenarDesc">115
+        </td>
+        <td>vrSenarDesc</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição destinada ao SENAR, incidente sobre a aquisição de produção rural de produtor rural
+            pessoa física/segurado especial.<br>
+            <strong>Origem:</strong> campo {vrSenarDesc} de S-1250.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesAquis_vrSenarCalc"
+            id="5011_infoCS_ideEstab_basesAquis_vrSenarCalc">116
+        </td>
+        <td>vrSenarCalc</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesAquis">basesAquis</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor calculado da contribuição devida pelo produtor rural ao SENAR, conforme segue:<br>
+            a) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [1, 2, 4, 5]: <a
+                    href="#5011_infoCS_ideEstab_basesAquis_vlrAquis">vlrAquis</a> x 0,2%;<br>
+            b) <a href="#5011_infoCS_ideEstab_basesAquis_indAquis">indAquis</a> = [3, 6]: 0 (zero).<br>
+            OBS.: No período de 04/2020 a 06/2020, a alíquota deve ser 0,1%.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesComerc"
+            id="5011_infoCS_ideEstab_basesComerc">117
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesComerc">basesComerc</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-5</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de bases de cálculo relativas à comercialização da produção rural da Pessoa Física.<br>
+            Informações desse grupo conforme informado pelo contribuinte em S-1260.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesComerc_indComerc"
+            id="5011_infoCS_ideEstab_basesComerc_indComerc">118
+        </td>
+        <td>indComerc</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesComerc">basesComerc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de comercialização.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>2</strong> - Comercialização da produção efetuada diretamente no varejo a consumidor final ou a
+            outro produtor rural pessoa física por produtor rural pessoa física, inclusive por segurado especial, ou por
+            pessoa física não produtor rural<br>
+            <strong>3</strong> - Comercialização da produção por prod. rural PF/seg. especial - Vendas a PJ (exceto
+            entidade inscrita no Programa de Aquisição de Alimentos - PAA) ou a intermediário PF<br>
+            <strong>7</strong> - Comercialização da produção isenta de acordo com a Lei 13.606/2018 efetuada diretamente
+            no varejo a consumidor final ou a outro produtor rural pessoa física por produtor rural pessoa física,
+            inclusive por segurado especial, ou por pessoa física não produtor rural<br>
+            <strong>8</strong> - Comercialização da produção da pessoa física/segurado especial para entidade inscrita
+            no PAA<br>
+            <strong>9</strong> - Comercialização da produção no mercado externo<br>
+            <strong>Origem:</strong> campo <a href="#1260_infoComProd_ideEstabel_tpComerc_indComerc">indComerc</a> de
+            S-1260.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesComerc_vrBcComPR"
+            id="5011_infoCS_ideEstab_basesComerc_vrBcComPR">119
+        </td>
+        <td>vrBcComPR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesComerc">basesComerc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo da comercialização da produção rural do produtor rural PF/segurado especial a outra
+            PF no varejo ou a outro produtor rural PF/segurado especial ou no mercado externo, conforme <a
+                    href="#5011_infoCS_ideEstab_basesComerc_indComerc">indComerc</a>.<br>
+            <strong>Origem:</strong> campo <a href="#1260_infoComProd_ideEstabel_tpComerc_vrTotCom">vrTotCom</a> de
+            S-1260.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesComerc_vrCPSusp"
+            id="5011_infoCS_ideEstab_basesComerc_vrCPSusp">120
+        </td>
+        <td>vrCPSusp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesComerc">basesComerc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição previdenciária com exigibilidade suspensa.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud_vrCPSusp">vrCPSusp</a> de S-1260.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesComerc_vrRatSusp"
+            id="5011_infoCS_ideEstab_basesComerc_vrRatSusp">121
+        </td>
+        <td>vrRatSusp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesComerc">basesComerc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição para GILRAT com exigibilidade suspensa.<br>
+            <strong>Origem:</strong> campo <a href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud_vrRatSusp">vrRatSusp</a>
+            de S-1260.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesComerc_vrSenarSusp"
+            id="5011_infoCS_ideEstab_basesComerc_vrSenarSusp">122
+        </td>
+        <td>vrSenarSusp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesComerc">basesComerc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição para o SENAR com exigibilidade suspensa.<br>
+            <strong>Origem:</strong> campo <a href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud_vrSenarSusp">vrSenarSusp</a>
+            de S-1260.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoCREstab"
+            id="5011_infoCS_ideEstab_infoCREstab">123
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoCREstab">infoCREstab</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações das contribuições sociais devidas à Previdência Social e Outras Entidades e Fundos, consolidadas
+            por estabelecimento e por Código de Receita - CR.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoCREstab_tpCR"
+            id="5011_infoCS_ideEstab_infoCREstab_tpCR">124
+        </td>
+        <td>tpCR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoCREstab">infoCREstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Código de Receita - CR relativo a contribuições sociais devidas à Previdência Social e a Outras Entidades e
+            Fundos (Terceiros), conforme legislação em vigor na competência.<br>
+            <strong>Validação:</strong> Deve ser um código válido, compatível com a classificação tributária do
+            contribuinte e com as informações prestadas nos demais eventos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoCREstab_vrCR"
+            id="5011_infoCS_ideEstab_infoCREstab_vrCR">125
+        </td>
+        <td>vrCR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoCREstab">infoCREstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor correspondente ao CR apurado.<br>
+            <strong>Validação:</strong> Deve ser apurado de acordo com a legislação em vigor na competência.<br>
+            Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_infoCREstab_vrSuspCR"
+            id="5011_infoCS_ideEstab_infoCREstab_vrSuspCR">126
+        </td>
+        <td>vrSuspCR</td>
+        <td><a href="#r_5011_infoCS_ideEstab_infoCREstab">infoCREstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor suspenso correspondente ao CR apurado.<br>
+            <strong>Validação:</strong> Deve ser apurado de acordo com as informações de processos judiciais e
+            administrativos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesPisPasep"
+            id="5011_infoCS_ideEstab_basesPisPasep">127
+        </td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesPisPasep">basesPisPasep</a></td>
+        <td><a href="#r_5011_infoCS_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Valores correspondentes às bases da contribuição do PIS/PASEP.<br>
+            O cálculo do CR 8301-02 depende da versão e do período de apuração do fechamento. Se a versão for S-1.3 e <a
+                    href="#1299_ideEvento_perApur">perApur</a> &gt;= [2025-01], então o CR será calculado sobre <a
+                    href="#5011_infoCS_ideEstab_basesPisPasep">basesPisPasep</a>; em caso contrário, o CR será calculado
+            com as bases da previdência.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_ideEstab_basesPisPasep_vrBcPisPasep"
+            id="5011_infoCS_ideEstab_basesPisPasep_vrBcPisPasep">128
+        </td>
+        <td>vrBcPisPasep</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesPisPasep">basesPisPasep</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base da contribuição do PIS/PASEP.<br>
+            <strong>Origem:</strong> somatório do campo <a
+                    href="#5001_infoPisPasep_ideEstab_infoCategPisPasep_infoBasePisPasep_valorPisPasep">valorPisPasep</a>
+            de S-5001, quando <a href="#5001_infoPisPasep_ideEstab_infoCategPisPasep_infoBasePisPasep_tpValorPisPasep">tpValorPisPasep</a>
+            em S-5001 = [11].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5011_infoCS_ideEstab_basesPisPasep_vrBcPisPasepSusp"
+            id="5011_infoCS_ideEstab_basesPisPasep_vrBcPisPasepSusp">129
+        </td>
+        <td>vrBcPisPasepSusp</td>
+        <td><a href="#r_5011_infoCS_ideEstab_basesPisPasep">basesPisPasep</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com a base da contribuição do PIS/PASEP suspensa.<br>
+            <strong>Origem:</strong> somatório do campo <a
+                    href="#5001_infoPisPasep_ideEstab_infoCategPisPasep_infoBasePisPasep_valorPisPasep">valorPisPasep</a>
+            de S-5001, quando <a href="#5001_infoPisPasep_ideEstab_infoCategPisPasep_infoBasePisPasep_tpValorPisPasep">tpValorPisPasep</a>
+            em S-5001 = [91].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCRContrib"
+            id="5011_infoCS_infoCRContrib">130
+        </td>
+        <td><a href="#r_5011_infoCS_infoCRContrib">infoCRContrib</a></td>
+        <td><a href="#r_5011_infoCS">infoCS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações consolidadas das contribuições sociais devidas à Previdência Social e Outras Entidades e Fundos,
+            por Código de Receita - CR.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCRContrib_tpCR"
+            id="5011_infoCS_infoCRContrib_tpCR">131
+        </td>
+        <td>tpCR</td>
+        <td><a href="#r_5011_infoCS_infoCRContrib">infoCRContrib</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Código de Receita - CR relativo a contribuições sociais devidas à Previdência Social e a Outras Entidades e
+            Fundos (Terceiros), conforme legislação em vigor na competência.<br>
+            <strong>Validação:</strong> Deve ser um código válido, compatível com a classificação tributária do
+            contribuinte e com as informações prestadas nos demais eventos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCRContrib_vrCR"
+            id="5011_infoCS_infoCRContrib_vrCR">132
+        </td>
+        <td>vrCR</td>
+        <td><a href="#r_5011_infoCS_infoCRContrib">infoCRContrib</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor correspondente ao CR apurado.<br>
+            <strong>Validação:</strong> Deve ser apurado de acordo com a legislação em vigor na competência.<br>
+            Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5011_infoCS_infoCRContrib_vrCRSusp"
+            id="5011_infoCS_infoCRContrib_vrCRSusp">133
+        </td>
+        <td>vrCRSusp</td>
+        <td><a href="#r_5011_infoCS_infoCRContrib">infoCRContrib</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor do tributo com exigibilidade suspensa.</td>
+    </tr>
+    </tbody>
+</table>

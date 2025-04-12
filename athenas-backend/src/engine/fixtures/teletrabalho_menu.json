@@ -1,0 +1,35 @@
+[
+    
+    {
+        "model": "engine.application",
+        "pk": 160,
+        "fields": {
+            "icon": "athenas-0438.png",
+            "title": "Teletrabalho",
+            "active": true,
+            "father": 22,
+            "uuid": "514233be3b3e4abc96e77b32e68aa5b2",
+            "layer": 2,
+            "created_by": 9137,
+            "modified_by": 9137
+        }
+    },
+    {
+        "model": "engine.controller",
+        "pk": 813,
+        "fields": {
+            "icon": "athenas-0444.png",
+            "title": "Teletrabalho competencias",
+            "controller": "TeletrabalhoCompetenciaRestful",
+            "application": 160,
+            "active": true,
+            "module": "rh.teletrabalho",
+            "uuid": "775d23b081594e379186e3b2eca8c4bd",
+            "icon_file": null,
+            "position": 9999,
+            "created_by": 9137,
+            "modified_by": 9137
+        }
+    }
+    ]
+    

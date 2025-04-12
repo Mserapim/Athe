@@ -1,0 +1,15 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+<div class="papper-content">
+    {% for movement in protocol.fathers_of_moviment %}
+    <div {% if movement.pk == selected %}class="edoc-selected"{% endif %}>
+        {{ movement.cache }}
+    </div>
+    {% empty %}
+    <div class="">
+        Nenhuma movimentação foi feita ainda.
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

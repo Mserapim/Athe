@@ -1,0 +1,14 @@
+{% extends extends_template %}
+
+{% block content %}
+<div id="error">
+    <h1>Erro! {{error}}</h1>
+    <div class="warning">
+        <p>{{message}}</p>                
+        <p>
+            <a href="{{link}}">Tentar novamente</a>
+        </p>        
+        <small>{{detail}}</small>
+    </div>
+</div>
+{% endblock %}

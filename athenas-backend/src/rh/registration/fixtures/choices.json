@@ -1,0 +1,112 @@
+[
+{
+    "fields": {
+        "cache_path": "registration.FORMINFORMATION_STATE",
+        "label": "EDIÇÃO DO SERVIDOR",
+        "name": "FORMINFORMATION_STATE",
+        "value": 1,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.FORMINFORMATION_STATE",
+        "label": "ENVIADO AO DGPFP",
+        "name": "FORMINFORMATION_STATE",
+        "value": 2,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.FORMINFORMATION_STATE",
+        "label": "RECEBIDO DGPFP",
+        "name": "FORMINFORMATION_STATE",
+        "value": 3,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.FORMINFORMATION_STATE",
+        "label": "VALIDADO COM PENDÊNCIA",
+        "name": "FORMINFORMATION_STATE",
+        "value": 4,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.FORMINFORMATION_STATE",
+        "label": "VALIDADO SEM PENDÊNCIA",
+        "name": "FORMINFORMATION_STATE",
+        "value": 5,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.VALIDATION_STATE",
+        "label": "VALIDADO COM PENDÊNCIA",
+        "name": "VALIDATION_STATE",
+        "value": 4,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.VALIDATION_STATE",
+        "label": "VALIDADO SEM PENDÊNCIA",
+        "name": "VALIDATION_STATE",
+        "value": 5,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.DIGITAL_DOCUMENT_STATE",
+        "label": "NÃO PROCESSADO",
+        "name": "DIGITAL_DOCUMENT_STATE",
+        "value": 1,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.DIGITAL_DOCUMENT_STATE",
+        "label": "PROCESSADO",
+        "name": "DIGITAL_DOCUMENT_STATE",
+        "value": 2,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "registration.DIGITAL_DOCUMENT_STATE",
+        "label": "NÃO VALIDADO",
+        "name": "DIGITAL_DOCUMENT_STATE",
+        "value": 3,
+        "app_label": "registration"
+    },
+    "model": "standard.choice",
+    "pk": null
+}
+]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<header >
+    <hr style="height:2px;border:none;color:#333;background-color:#333; margin-top:0 ;" >
+
+    <div style="width: 100%;height: 10%;margin-top:0">
+      <div class="left" style="float: left; width: 23%; margin-left: -35;">
+        <ul>
+          <li>
+            <img src="data:image/png;base64,{{logo_mpmt}}" width="100px" height="30px" alt="MPMT">
+          </li>
+          <li>
+            Hora: {{ hour }}
+          </li>
+          <li>
+            Empresa: PGJ-MT / Filial: PGJ-MT            
+          </li>
+        </ul>
+      </div>
+      <div class="center" style="float: left; width: 60%;margin-top:-5;">
+        <center><h2 style="margin-top:35px;font-weight: 200;">
+          Relatório de Folha para Fins de Empenho e Liquidação ({{payroll}})
+        </h2>
+        {% if subtitle %}
+          <h2 style="margin-top:-15px;font-weight: 200;"> ({{ subtitle }}) </h2>
+        {% endif %}
+      </center> 
+      </div>
+      <div class="right" style="float: right; width: 17%;margin-right: -90px;">
+        <ul>
+          <li>
+            Dt.Ref: {{date}}  
+          </li>
+          <li>
+            Emissão: {{date}}       
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr style="height:2px;border:none;color:#333;background-color:#333; margin-top: 110px;" >
+</header>

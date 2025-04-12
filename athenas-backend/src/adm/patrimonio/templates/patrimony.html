@@ -1,0 +1,138 @@
+{% extends "base_generic.html" %}
+
+<table class="papper">
+    {% block header %}
+    <div class="papper-header">
+        <div class="papper-header-logo"></div>
+        <div>
+            <p class="papper-header-system">Controle Patrimonial</p>
+            <p class="papper-header-instituation">Ministério Público do Estado do Tocantins</p>
+        </div>
+    </div>
+    {% endblock %} {% block content %}
+    <br /><br />
+    <p style="font-weight: bolder; text-align:center; font-size: 120%; "> Plaqueta Nº {{patrimonio.plaqueta}}</p>
+    <br /><br />
+    <p style="padding-bottom: 2%">Especie: <strong>{{patrimonio.especie}}</strong></p>
+    <p style="padding-bottom: 2%">Descrição: <strong>{{patrimonio.descricao}}</strong></p>
+    <p style="padding-bottom: 2%">Localização: <strong>{{patrimonio.localizacao}}</strong></p>
+    <p style="padding-bottom: 2%">Responsável: <strong>{{patrimonio.responsavel}}</strong></p>
+    <p style="padding-bottom: 2%">Utilizado por: <strong>{{patrimonio.utilizado_por}}</strong></p>
+    <p style="padding-bottom: 2%">Estado de Conservação: <strong>{{patrimonio.conservacao}}</strong></p>
+    <p style="padding-bottom: 2%">Prazo de Garantia: <strong>{{patrimonio.prazo_garantia}}</strong></p>
+    <p style="padding-bottom: 2%">Data do Tombo: <strong>{{patrimonio.data_tombo}}</strong></p>
+
+    <p style="padding-bottom: 2%">Última movimentação:
+        <div style="width: 100%; overflow: hidden">
+            <div style="padding-left: 3%; width: 50%; float:left;">
+                Identificação: <strong>{{ patrimonio.identificacao_mov }} </strong>
+            </div>
+            <div style="float:left;">
+                Data da Movimentação: <strong> {{patrimonio.data_movimento_mov}} </strong>
+            </div>
+        </div>
+        <div style="padding-left: 3%; width: 100%;">
+            Destino: <strong>{{patrimonio.destino_mov}} </strong>
+        </div>
+        <div style="padding-left: 3%; width: 100%;">
+            Responsável: <strong>{{patrimonio.responsavel_destino_mov}} </strong>
+        </div>
+        </br>
+    </p>
+    <table class="table_class">
+        <thead class="thead_class">
+            <th class="th_class">Vl. Aquisição</th>
+            <th class="th_class">Total Depreciações</th>
+            <th class="th_class">Total Reavaliações</th>
+            <th class="th_class">Valor Base</th>
+            <th class="th_class">Valor Atual</th>
+        </thead>
+        <tr class="tr_class">
+            <td class="td_class" style="text-align: center;">{{patrimonio.valor_aquisicao}}</td>
+            <td class="td_class" style="text-align: center;">{{patrimonio.total_depreciacao}}</td>
+            <td class="td_class" style="text-align: center;">{{patrimonio.total_reavaliacao}}</td>
+            <td class="td_class" style="text-align: center;">{{patrimonio.valor_base}}</td>
+            <td class="td_class" style="text-align: center;">{{patrimonio.valor_atual}}</td>
+        </tr>
+    </table>
+
+    <style>
+        .table_class {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0px;
+        }
+
+        .thead_class {
+            padding: 3%;
+        }
+
+        .th_class {
+            text-align: center;
+            padding: 1px;
+            background-color: #0a5888;
+            color: white;
+
+        }
+
+        .tr_class {
+            padding: 1px;
+        }
+
+        .tr_class:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .td_class {
+            padding: 5px;
+            text-align: right;
+            border: 1px solid #d1d1d1;
+
+        }
+    </style>
+    <style>
+        .xtable {
+            border: 0px solid black;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .xtable .xthead .xtr {
+            font-family: Arial, monospace;
+            font-size: 100%;
+        }
+
+        .xtable .xthead .xtr .xth {
+            border-bottom: 2px solid black;
+            border-top: 1px solid black;
+            margin: 0px;
+            padding: 2px;
+            background-color: #cccccc;
+        }
+
+        .xtable .xtr {
+            font-family: arial, monospace;
+            color: black;
+            font-size: 100%;
+            background-color: white;
+        }
+
+        .xtable .xtr.odd {
+            background-color: #AAAAAA;
+        }
+
+        table#some_table_id tr:nth-child(even) {
+            background-color: #BBBBBB;
+        }
+
+        .xtable .xtr,
+        .xtd,
+        .xth {
+            border-bottom: 1px solid black;
+            padding: 6px;
+        }
+    </style>
+    {% endblock %}
+</table>

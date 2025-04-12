@@ -1,0 +1,185 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Portrait"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto 
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto; 
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 0.5px solid #000000;
+        text-align: left;
+        font-size: 10px;
+        padding: 5px;
+      }
+      
+      table td div {
+        overflow:visible;
+      }
+
+      table tr th {
+        font-weight: 400;
+        text-align: center;
+      }
+      
+      tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
+
+      .col-1 {
+        width: 400px;
+        text-align: center;
+      }
+      .color-1 {
+        background-color: #c4c0c0;
+        text-align: center;
+      }
+      .color-2 {
+        background-color: #f37d7d;;
+        text-align: center;
+      }
+      .title{
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'portrait/header/header.html' %}
+    
+    
+    <section style="margin-top:50px;margin-bottom:20px; margin-right:5px;clear: both;">
+          <div>
+                <div>
+                    <!-- Tabela de Identificação -->
+                    <table>
+                        <tbody>
+
+                            <h3 class="title"><b>I - Identificação </b></h3>
+                            
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Nome</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.nome }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Cargo</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.work_role }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Lotação</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.lotation }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b> GEDOC </b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.mov_teletrabalho.gedoc }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b> Data Início </b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.mov_teletrabalho.data_inicio|date:"d/m/Y"}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b> Data Fim </b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.mov_teletrabalho.data_fim|date:"d/m/Y" }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b> Tipo Ato/Portaria </b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.mov_teletrabalho.get_tipo_ato_display }}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-1 ">
+                                    <div><b>Aprovador</b></div>
+                                </td>
+                                <td class="col-2 ">
+                                    <div>{{ data.mov_teletrabalho.aprovador }}</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Descrição das Metas -->
+                <div>
+                    <table>
+                        <tbody>
+
+                            <h3 class="title"><b>II - Descrição das atividades desempenhados pelo(a) servidor(a) no mês</b></h3>
+                            
+                            <tr class="color-1" colspan="5">
+                                <th><b> Atividade </b></th>
+                                <th><b> Meta no plano </b></th>
+                                <th><b> Data Início </b></th>
+                                <th><b> Data Fim </b></th>
+                            </tr>
+                            {% for meta in data.metas %}
+                                <tr>
+                                    <td class="col-1 ">
+                                        <div>{{ meta.descricao }}</div>
+                                    </td>
+                                    <td class="col-1 ">
+                                        <div>{{ meta.meta }}</div>
+                                    </td>
+                                    <td class="col-1 ">
+                                        <div>{{ meta.data_inicio|date:"d/m/Y" }}</div>
+                                    </td>
+                                    <td class="col-1 ">
+                                        <div>{{ meta.data_fim|date:"d/m/Y" }}</div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+        </section> 
+    </body>
+</html>

@@ -1,0 +1,16 @@
+[
+{
+    "pk": null, 
+    "model": "auth.group", 
+    "fields": {
+        "name": "epad-admin", 
+        "permissions": [
+            [
+                "admin", 
+                "processo", 
+                "processo"
+            ]
+        ]
+    }
+}
+]

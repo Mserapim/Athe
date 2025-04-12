@@ -1,0 +1,13 @@
+[
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "registration admin",
+            "content_type": [
+                "registration",
+                "forminformation"
+            ],
+            "codename": "registration_admin"
+        }
+    }
+]

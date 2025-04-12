@@ -1,0 +1,30 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário possui etapa no histórico (DAA)",
+        "value": 28,
+        "cvalue": "28",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "mot_viagem_4_5",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário possui etapa no histórico (DEPLAN - Executor)",
+        "value": 29,
+        "cvalue": "29",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "benef_membro",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]	

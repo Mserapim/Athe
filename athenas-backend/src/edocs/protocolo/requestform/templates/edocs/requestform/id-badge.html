@@ -1,0 +1,88 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO PARA CONFECÇÃO DE CRACHÁ</p>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor Geral da Procuradoria Geral de Justiça:
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th" colspan="3">Nome do(a) interessado(a):</th>
+        <th class="rf-th" colspan="1">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td" colspan="3">{{ name }}</td>
+        <td class="rf-td" colspan="1">{{ number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="4">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="4">{{ job_position }}</td></tr>
+    <tr>
+        <th class="rf-th" colspan="3">Nome para constar no crachá:</th>
+        <th class="rf-th" colspan="1">Data de nascimento:</th>
+    </tr>
+    <tr>
+        <td class="rf-td" colspan="3">{{ display_name }}</td>
+        <td class="rf-td" colspan="1">{{ birth_date }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th">RG:</th>
+        <th class="rf-th">Órgão:</th>
+        <th class="rf-th">CPF:</th>
+        <th class="rf-th">Sangue:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ rg }}</td>
+        <td class="rf-td">{{ rg_origin }}</td>
+        <td class="rf-td">{{ cpf }}</td>
+        <td class="rf-td">{{ blood }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Tipo via:</th>
+        <th class="rf-th">Motivo da 2ª via:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">
+            {% if is_reissue %}
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) 1ª via</p>
+            <p class="rf-paragraph-height"><strong>( X ) 2ª via</strong></p>
+            {% else %}
+            <p class="rf-paragraph-height"><strong>( X ) 1ª via</strong></p>
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) 2ª via</p>
+            {% endif %}
+        </td>
+        <td class="rf-td">{{ reissue_reason_display }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Anexar uma foto 3x4.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

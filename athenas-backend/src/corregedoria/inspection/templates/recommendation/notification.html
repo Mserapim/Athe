@@ -1,0 +1,43 @@
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+        <br />
+        <br />
+        {% if recipient.pessoa_fisica.sexo == 'M' %}
+            <div class="paragraph-text" style="padding-left: 1em;">
+                Ao Excelentíssimo Senhor Promotor de Justiça
+            </div>
+        {% endif %}
+        {% if recipient.pessoa_fisica.sexo == 'F' %}
+            <div class="paragraph-text" style="padding-left: 1em;">
+                A Excelentíssima Senhora Promotora de Justiça
+            </div>
+        {% endif %}
+        <br />
+        <br />
+        <div class="paragraph-text" style="padding-left: 1em;">
+            {% if message %}
+                {{message | safely}}
+            {% else %}
+                Vencido(s) o(s) prazo(s) fixado(s), solicito a Vossa Excelência, no <b>prazo de 5 (cinco) dias</b>, informações a respeito do cumprimento da(s) recomendação(ões) expedida(s) pela Corregedoria-Geral por ocasião da última inspeção realizada na <b>{{ execution_organ.nome | safely }}</b>.
+            {% endif %}
+        </div>
+        <br />
+        <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+            Atenciosamente,
+        </div>
+        <br />
+        <br />
+        <div class="paragraph-text" style="text-align: center;">
+            <b>{{ inspector_general.pessoa_fisica.nome | safely }}</b><br />
+            <div style="font-size: 0.8em;">
+                Corregedor-geral<br />
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="paragraph-text" style="padding-left: 1em;">
+            <font color="red"><u><b>ATENÇÃO</b></u></font>: notificação enviada pelo Sistema Gestor de Inspeções.<br />Para acompanhamento <b><a href="#" onClick="javascript:toolkit.Application.createFormFor('INSPECTIONFollowRecommendation');">CLIQUE AQUI</a></b> ou acesse pelo menu: <b>ATHENAS > CORREGEDORIA > INSPEÇÃO/CORREIÇÃO > ACOMPANHAR RECOMENDAÇÕES</b> - <u>NÃO RESPONDER</u> via e-Doc.
+        </div>
+        <br />
+    {% endblock %}
+</div>

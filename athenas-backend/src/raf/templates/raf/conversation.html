@@ -1,0 +1,16 @@
+{% load judicialfilters %}
+<div style="padding-left: 1em;">
+    <table width=100%>
+        <tr>
+            <td width=70%>
+                <div>Por: {{content.employee.pessoa_fisica.nome|default:"Sem informação"}}</div>
+            </td>
+            <td>
+                <div>Em: {{content.created_at_formatted|default:"Sem informação"}}</div>
+            </td>
+        </tr>
+    </table>
+    <div>Mensagem:</div>
+    <div style="padding-left: 1em; text-align: justify"><b>{{content.message | safely }}</b></div>
+</div>
+<hr />

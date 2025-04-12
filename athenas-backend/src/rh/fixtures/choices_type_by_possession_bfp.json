@@ -1,0 +1,16 @@
+[
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 28,
+    "label": "BENEFICIÁRIO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "BFP",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "BENEFICIÁRIO"
+  },
+  "model": "standard.choice"
+}
+]

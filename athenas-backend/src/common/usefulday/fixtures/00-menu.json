@@ -1,0 +1,27 @@
+[
+    {
+        "fields": {
+            "layer": 1,
+            "uuid": "777e4c5dc4b746c7ab0e96e573d1b784",
+            "title": "GESTÃO DE DIAS ÚTEIS",
+            "father": null,
+            "active": true,
+            "icon": "athenas-0837.png"
+        },
+        "model": "engine.application"
+    },
+    {
+        "fields": {
+            "uuid": "cc9eb8c9669a4e4c93c8de3018f40aff",
+            "title": "Gestor de Dias Úteis",
+            "module": "common.usefulday",
+            "application": [
+                "777e4c5dc4b746c7ab0e96e573d1b784"
+            ],
+            "controller": "CUNNonWorkingDay",
+            "active": true,
+            "icon": "athenas-0251.png"
+        },
+        "model": "engine.controller"
+    }
+]

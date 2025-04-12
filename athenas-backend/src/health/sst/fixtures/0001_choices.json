@@ -1,0 +1,996 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "YES_NO_NOT_SUPPLIED",
+    "label": "Não informado",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "sst.YES_NO_NOT_SUPPLIED",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "YES_NO_NOT_SUPPLIED",
+    "label": "Sim",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "sst.YES_NO_NOT_SUPPLIED",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "YES_NO_NOT_SUPPLIED",
+    "label": "Não",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "sst.YES_NO_NOT_SUPPLIED",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "INITIATOR_CAT",
+    "label": "Empregador",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "sst.INITIATOR_CAT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "INITIATOR_CAT",
+    "label": "Ordem judicial",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "sst.INITIATOR_CAT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "INITIATOR_CAT",
+    "label": "Determinação de órgão fiscalizador",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "sst.INITIATOR_CAT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "LATERALITY",
+    "label": "Não aplicável",
+    "value": 99,
+    "cvalue": "99",
+    "cache_path": "sst.LATERALITY",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "LATERALITY",
+    "label": "Esquerda",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "sst.LATERALITY",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "LATERALITY",
+    "label": "Direita",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "sst.LATERALITY",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "LATERALITY",
+    "label": "Ambas",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "sst.LATERALITY",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ACCIDENT",
+    "label": "TÍPICO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "sst.TYPE_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ACCIDENT",
+    "label": "DOENÇA",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "sst.TYPE_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ACCIDENT",
+    "label": "TRAJETO",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "sst.TYPE_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Estabelecimento do empregador no Brasil",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Estabelecimento do empregador no exterior",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Estabelecimento de terceiros onde o empregador presta serviços",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Via pública",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Área rural",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Embarcação",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_ADDRES_ACCIDENT",
+    "label": "Outros",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "sst.TYPE_ADDRES_ACCIDENT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_CAT",
+    "label": "Inicial",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "sst.TYPE_CAT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_CAT",
+    "label": "Reabertura",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "sst.TYPE_CAT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "sst",
+    "name": "TYPE_CAT",
+    "label": "Comunicação de óbito",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "sst.TYPE_CAT",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ASO",
+        "label": "Exame médico admissional",
+        "value": 99,
+        "cvalue": "99",
+        "cache_path": "sst.TYPE_ASO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ASO",
+        "label": "Exame médico periódico, conforme Norma",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "sst.TYPE_ASO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ASO",
+        "label": "Exame médico de retorno ao trabalho",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "sst.TYPE_ASO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ASO",
+        "label": "Exame médico de mudança de função ou de mudança de risco ocupacional",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "sst.TYPE_ASO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ASO",
+        "label": "Exame médico de monitoração pontual, não enquadrado nos demais casos",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "sst.TYPE_ASO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ASO",
+        "label": "Exame médico demissional",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "sst.TYPE_ASO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ENVIRONMENT",
+        "label": "Estabelecimento do próprio empregador",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "sst.TYPE_ENVIRONMENT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_ENVIRONMENT",
+        "label": "Estabelecimento de terceiros",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "sst.TYPE_ENVIRONMENT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EVALUATION",
+        "label": "Critério quantitativo",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "sst.TYPE_EVALUATION",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EVALUATION",
+        "label": "Critério qualitativo",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "sst.TYPE_EVALUATION",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EVALUATION",
+        "label": "Não informado",
+        "value": 99,
+        "cvalue": "99",
+        "cache_path": "sst.TYPE_EVALUATION",
+        "description": "",
+        "order_weight": 1,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 1,
+        "cvalue": "1",
+        "label": "dose diária de ruído",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 2,
+        "cvalue": "2",
+        "label": "decibel linear(dB(linear))",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 3,
+        "cvalue": "3",
+        "label": "decibel(C)(dB(C))",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 4,
+        "cvalue": "4",
+        "label": "decibel(A)(dB(A))",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 5,
+        "cvalue": "5",
+        "label": "metro por segundo ao quadrado(m/s2)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 6,
+        "cvalue": "6",
+        "label": "metro por segundo elevado a 1, 75 (m/s1, 75)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 7,
+        "cvalue": "7",
+        "label": "parte de vapor ou gás por milhão de partes de ar contaminado(ppm)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 8,
+        "cvalue": "8",
+        "label": "miligrama por metro cúbico de ar(mg/m3)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 9,
+        "cvalue": "9",
+        "label": "fibra por centímetro cúbico(f/cm3)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 10,
+        "cvalue": "10",
+        "label": "grau Celsius(oC)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 11,
+        "cvalue": "11",
+        "label": "metro por segundo(m/s)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 12,
+        "cvalue": "12",
+        "label": "porcentual",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 13,
+        "cvalue": "13",
+        "label": "lux(lx)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 14,
+        "cvalue": "14",
+        "label": "unidade formadora de colônias por metro cúbico (ufc/m3)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 15,
+        "cvalue": "15",
+        "label": "dose diária",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 16,
+        "cvalue": "16",
+        "label": "dose mensal",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 17,
+        "cvalue": "17",
+        "label": "dose trimestral",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 18,
+        "cvalue": "18",
+        "label": "dose anual",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 19,
+        "cvalue": "19",
+        "label": "watt por metro quadrado(W/m2)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 20,
+        "cvalue": "20",
+        "label": "ampère por metro(A/m)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 21,
+        "cvalue": "21",
+        "label": "militesla(mT)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 22,
+        "cvalue": "22",
+        "label": "microtesla(μT)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 23,
+        "cvalue": "23",
+        "label": "miliampère(mA)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 24,
+        "cvalue": "24",
+        "label": "quilovolt por metro(kV/m)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 25,
+        "cvalue": "25",
+        "label": "volt por metro(V/m)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 26,
+        "cvalue": "26",
+        "label": "joule por metro quadrado(J/m2)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 27,
+        "cvalue": "27",
+        "label": "milijoule por centímetro quadrado(mJ/cm2)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 28,
+        "cvalue": "28",
+        "label": "milisievert(mSv)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 29,
+        "cvalue": "29",
+        "label": "milhão de partículas por decímetro cúbico(mppdc)",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 30,
+        "cvalue": "30",
+        "label": "umidade relativa do ar (UR ( % ))",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "MEASURE_UNIT",
+        "value": 99,
+        "cvalue": "99",
+        "label": "Não informado",
+        "cache_path": "sst.MEASURE_UNIT",
+        "description": "",
+        "order_weight": 1,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EPC",
+        "value": 99,
+        "cvalue": "99",
+        "label": "Não se aplica",
+        "cache_path": "sst.TYPE_EPC",
+        "description": "",
+        "order_weight": 1,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EPC",
+        "value": 1,
+        "cvalue": "1",
+        "label": "Não implementa",
+        "cache_path": "sst.TYPE_EPC",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EPC",
+        "value": 2,
+        "cvalue": "2",
+        "label": "Implementa",
+        "cache_path": "sst.TYPE_EPC",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EPI",
+        "value": 99,
+        "cvalue": "99",
+        "label": "Não se aplica",
+        "cache_path": "sst.TYPE_EPI",
+        "description": "",
+        "order_weight": 1,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EPI",
+        "value": 1,
+        "cvalue": "1",
+        "label": "Não utilizado",
+        "cache_path": "sst.TYPE_EPI",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "sst",
+        "name": "TYPE_EPI",
+        "value": 2,
+        "cvalue": "2",
+        "label": "Utilizado",
+        "cache_path": "sst.TYPE_EPI",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

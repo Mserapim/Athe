@@ -1,0 +1,44 @@
+{% extends "protocolo/base.html" %}
+{% load brmasks %}
+
+{% block body-resume %}
+
+<div class="papper-content">
+	<div class="field">
+		<div class="composite">
+			<div class="label title">
+				Protocolo {{ protocol.codigo }}
+				<span>Assunto: {{ protocol.assunto }}</span>
+			</div>
+			<p class="text-center"><strong>Solicitação de certidão</strong>
+			</p>
+			<p class="hide-on-web">
+				Solicito certidão acerca da existência de procedimentos extrajudiciais no âmbito do
+				Ministério Público do Tocantins em desfavor de
+				<strong>{{ name }}, {% if cnpj %} CNPJ {{ cnpj|cnpj }} {% endif %} {% if cpf %} CPF {{ cpf|cpf }} {% endif %}</strong>. A certidão
+				deve ser encaminhada para o e-mail <strong>{{ email }}</strong>.
+				<br />
+			</p>
+		</div>
+	</div>
+</div>
+
+{% include "protocolo/protocol-attachments.html" %}
+
+{% if protocol.references.exists %}
+<div class="papper-content">
+	<h2 style="margin-bottom: 0.5em">Referências do Protocolo</h2>
+	<div class="opinion">
+		{% for reference in protocol.references.filter %}
+		<div>
+			<a href="#" onclick="edocs.protocolo.openReletad({{reference.protocolo.pk}})">{{reference.protocolo}}</a>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
+
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

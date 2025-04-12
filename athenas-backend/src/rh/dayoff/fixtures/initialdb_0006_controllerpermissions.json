@@ -1,0 +1,124 @@
+[
+    {
+        "model": "engine.controllerpermission",
+        "fields": {
+            "name": "dayoff-admin",
+            "users": [
+                [
+                    "valdinamaciel"
+                ],
+                [
+                    "franciscosantos"
+                ],
+                [
+                    "alinnydias"
+                ],
+                [
+                    "vicentejunior"
+                ],
+                [
+                    "patriciacabral"
+                ],
+                [
+                    "katiacorrea"
+                ],
+                [
+                    "iradianmorais"
+                ]
+            ],
+            "controllers": [
+                [
+                    "413d46666eca4c56b9fcbab4ba230ee8"
+                ],
+                [
+                    "d96813ea33c84756b98e58f7aea06ccc"
+                ],
+                [
+                    "dae06712a05a442f8ff9bbd3d20e5993"
+                ],
+                [
+                    "27861cfb152a4331a880b89e7b6e363e"
+                ],
+                [
+                    "56486ff30ae04a1380524e3057b34b1d"
+                ],
+                [
+                    "408a3c1604254a8f80603f45642ffc8b"
+                ],
+                [
+                    "2b27a45116984e9897474887c3ae193a"
+                ],
+                [
+                    "17f248fb24c94d079a452e05f249010d"
+                ],
+                [
+                    "ff478013ce2f40cabc9a5ed5c0267a79"
+                ],
+                [
+                    "411a87d9c4814c61a7429fe76117ba59"
+                ],
+                [
+                    "6e86a3d36718475299f0fa4e01e714d7"
+                ]
+            ]
+        }
+    },
+    {
+        "model": "engine.controllerpermission",
+        "fields": {
+            "name": "dayoff-immediate-chief",
+            "users": [],
+            "controllers": [
+                [
+                    "56486ff30ae04a1380524e3057b34b1d"
+                ]
+            ]
+        }
+    },
+    {
+        "model": "engine.controllerpermission",
+        "fields": {
+            "name": "dayoff-mediate-chief",
+            "users": [],
+            "controllers": [
+                [
+                    "ff478013ce2f40cabc9a5ed5c0267a79"
+                ]
+            ]
+        }
+    },
+    {
+        "model": "engine.controllerpermission",
+        "fields": {
+            "name": "dayoff-user",
+            "users": [
+                [
+                    "valdinamaciel"
+                ],
+                [
+                    "patriciacabral"
+                ],
+                [
+                    "alinnydias"
+                ],
+                [
+                    "katiacorrea"
+                ],
+                [
+                    "iradianmorais"
+                ],
+                [
+                    "franciscosantos"
+                ]
+            ],
+            "controllers": [
+                [
+                    "d96813ea33c84756b98e58f7aea06ccc"
+                ],
+                [
+                    "2b27a45116984e9897474887c3ae193a"
+                ]
+            ]
+        }
+    }
+]

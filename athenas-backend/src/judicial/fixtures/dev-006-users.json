@@ -1,0 +1,997 @@
+[
+{
+    "fields": {
+        "username": "emannuellaoliveira",
+        "first_name": "Emannuella",
+        "last_name": "Sales Sousa Oliveira",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-24T09:02:44.170",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "rh-afastamento-gestor"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$z0hyj$c5f3f7055954bacaf3f878c0925ccf5c",
+        "email": "",
+        "date_joined": "2009-10-29T09:00:18.107"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "elenilsoncorreia",
+        "first_name": "Elenilson",
+        "last_name": "Correia Pereira",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-11T11:39:46.606",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$titd$46966ef479985e0f9baa6d956a3f8ba6",
+        "email": "",
+        "date_joined": "2009-10-29T08:54:28.097"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "williamgomes",
+        "first_name": "William",
+        "last_name": "Gomes",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-04T16:54:17.673",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-geral"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "estagio-avaliador"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$pmgyj$95eef53696e0a8ebc55adeb187b96af7",
+        "email": "",
+        "date_joined": "2009-10-29T08:21:21.143"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "eliaslima",
+        "first_name": "Elias",
+        "last_name": "Roseno De Lima",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-21T17:55:17.937",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$7lpn$4c7731d6d1083cb965e23c221206d1f5",
+        "email": "eliaslima@mpto.mp.br ",
+        "date_joined": "2009-10-28T18:01:50.071"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "luismilhomem",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T09:58:04.286",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "diaria-despacha"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$axqt$003e3a52d14591405d9ced0c41fb48fa",
+        "email": "luismilhomem@mpto.mp.br",
+        "date_joined": "2013-10-18T08:45:19.991"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "kamilasodre",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T14:21:57.589",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "diaria-despacha"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$jvzm$5d43d917ee6f64239c3446dd3c0cfb0c",
+        "email": "kamilasodre@mpto.mp.br ",
+        "date_joined": "2012-06-25T08:44:48.009"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "nataliabarbosa",
+        "first_name": "Natalia",
+        "last_name": "Barbosa",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-11-24T16:01:05.688",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "rh-afastamento-gestor"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$rggyk$e1245b854ccf43daced5c4a3b6ddf5de",
+        "email": "",
+        "date_joined": "2009-10-29T08:31:18.515"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "mariasilva",
+        "first_name": "Maria",
+        "last_name": "Celia De Quiroz E Silva",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-23T15:52:10.899",
+        "groups": [
+            [
+                "estagio-avaliador"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-triagem"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$p75r$28add1654e4643c04c5b6cfb541d5b7c",
+        "email": "mariasilva@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "suelenelucena",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-23T15:42:30.166",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-triagem"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "sha1$7bc03$7e9e354e87d39ba9bba6951c8b7fa722b0739f5d",
+        "email": "suelenelucena@mpto.mp.br ",
+        "date_joined": "2011-03-01T16:52:35.346"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "mariasouza",
+        "first_name": "Maria",
+        "last_name": "Das Neves Menezes Souza",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-29T17:16:12.036",
+        "groups": [
+            [
+                "estagio-avaliador"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-triagem"
+            ],
+            [
+                "ejud-gestor-diligencia"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$aikpd$265975f98586e12abeb16bc34e7266ce",
+        "email": "mariasouza@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "caiopatury",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-25T14:43:50.650",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-promotoria-analista"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "sha1$4becc$04413bcb4f8ca5f351744f21a67a54a4aced3421",
+        "email": "caiopatury@mpto.mp.br ",
+        "date_joined": "2011-04-04T15:57:48.157"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "claudiapaz",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-25T14:42:52.073",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-promotoria-analista"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "sha1$d7c88$bcb0f9ee244eef9eeef0aa192d68fcd6c4475503",
+        "email": "claudiapaz@mpto.mp.br ",
+        "date_joined": "2012-07-19T09:10:44.751"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "adrianadutra",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-25T14:44:38.399",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-promotoria-analista"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "sha1$badc1$ab709bc2f04e7b332c95192f3e6adce0c25a7216",
+        "email": "adrianadutra@mpto.mp.br ",
+        "date_joined": "2011-07-08T09:10:32.994"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "marcellasilva",
+        "first_name": "Marcella",
+        "last_name": "Guedes Da Silva",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T11:38:11.945",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-promotoria-analista"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "marcellasilva@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "millenacavalcante",
+        "first_name": "Millena",
+        "last_name": "Freire Cavalcante",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-24T14:14:35.192",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-promotoria-analista"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "millenacavalcante@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "allanetenorio",
+        "first_name": "Allane",
+        "last_name": "Thassia Tenorio",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T09:34:45.966",
+        "groups": [
+            [
+                "Cerimonial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "ejud-conselho"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "sha1$aba05$0da246ac97ae4052b6e1331a3206b8b0c49e391b",
+        "email": "allanetenorio@mpto.mp.br ",
+        "date_joined": "2009-09-10T15:07:11.317"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "danielaqueiroz",
+        "first_name": "Daniela",
+        "last_name": "Conceicao R. De Queiroz",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T09:28:29.966",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-conselho"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "123",
+        "email": "danielaqueiroz@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "mariamascarenhas",
+        "first_name": "Maria",
+        "last_name": "Da Guia Costa Mascarenhas",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-20T17:50:30.311",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-conselho"
+            ]
+        ],
+        "user_permissions": [
+            [
+                "add_areaconhecimento",
+                "gecap",
+                "areaconhecimento"
+            ],
+            [
+                "change_areaconhecimento",
+                "gecap",
+                "areaconhecimento"
+            ],
+            [
+                "delete_areaconhecimento",
+                "gecap",
+                "areaconhecimento"
+            ],
+            [
+                "add_capacitacao",
+                "gecap",
+                "capacitacao"
+            ],
+            [
+                "change_capacitacao",
+                "gecap",
+                "capacitacao"
+            ],
+            [
+                "delete_capacitacao",
+                "gecap",
+                "capacitacao"
+            ],
+            [
+                "add_congresso",
+                "gecap",
+                "congresso"
+            ],
+            [
+                "change_congresso",
+                "gecap",
+                "congresso"
+            ],
+            [
+                "delete_congresso",
+                "gecap",
+                "congresso"
+            ],
+            [
+                "add_curso",
+                "gecap",
+                "curso"
+            ],
+            [
+                "change_curso",
+                "gecap",
+                "curso"
+            ],
+            [
+                "delete_curso",
+                "gecap",
+                "curso"
+            ],
+            [
+                "add_evento",
+                "gecap",
+                "evento"
+            ],
+            [
+                "change_evento",
+                "gecap",
+                "evento"
+            ],
+            [
+                "delete_evento",
+                "gecap",
+                "evento"
+            ],
+            [
+                "add_feira",
+                "gecap",
+                "feira"
+            ],
+            [
+                "change_feira",
+                "gecap",
+                "feira"
+            ],
+            [
+                "delete_feira",
+                "gecap",
+                "feira"
+            ],
+            [
+                "add_inscricao",
+                "gecap",
+                "inscricao"
+            ],
+            [
+                "change_inscricao",
+                "gecap",
+                "inscricao"
+            ],
+            [
+                "delete_inscricao",
+                "gecap",
+                "inscricao"
+            ],
+            [
+                "add_investimento",
+                "gecap",
+                "investimento"
+            ],
+            [
+                "change_investimento",
+                "gecap",
+                "investimento"
+            ],
+            [
+                "delete_investimento",
+                "gecap",
+                "investimento"
+            ],
+            [
+                "add_oficina",
+                "gecap",
+                "oficina"
+            ],
+            [
+                "change_oficina",
+                "gecap",
+                "oficina"
+            ],
+            [
+                "delete_oficina",
+                "gecap",
+                "oficina"
+            ],
+            [
+                "add_reuniao",
+                "gecap",
+                "reuniao"
+            ],
+            [
+                "change_reuniao",
+                "gecap",
+                "reuniao"
+            ],
+            [
+                "delete_reuniao",
+                "gecap",
+                "reuniao"
+            ],
+            [
+                "add_seminario",
+                "gecap",
+                "seminario"
+            ],
+            [
+                "change_seminario",
+                "gecap",
+                "seminario"
+            ],
+            [
+                "delete_seminario",
+                "gecap",
+                "seminario"
+            ]
+        ],
+        "password": "md5$8c3u$62579ddab4defc3b9d443064e7da8aa0",
+        "email": "mariamascarenhas@mpto.mp.br",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "adelmacarvalho",
+        "first_name": "Adelma",
+        "last_name": "Cunha Freire De Carvalho",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-24T09:38:46.512",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "ejud-conselho"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "adelmacarvalho@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "shirleysantos",
+        "first_name": "Shirley",
+        "last_name": "Santos",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2016-04-20T08:47:05.943",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-conselho"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "shirleysantos@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "isleysilva",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-21T17:40:23.971",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "ejud-conselho"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "rh-afastamento-gestor"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$oya9$86ad9f142e20213b397f059759fb4a84",
+        "email": "isleysilva@mp.to.gov.br",
+        "date_joined": "2014-05-16T16:01:02.187"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "mariasouza",
+        "first_name": "Maria",
+        "last_name": "Das Neves Menezes Souza",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-29T17:16:12.036",
+        "groups": [
+            [
+                "estagio-avaliador"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-triagem"
+            ],
+            [
+                "ejud-gestor-diligencia"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$aikpd$265975f98586e12abeb16bc34e7266ce",
+        "email": "mariasouza@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "adrianoneves",
+        "first_name": "Adriano",
+        "last_name": "Cesar Pereira Das Neves",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-25T14:34:21.201",
+        "groups": [
+            [
+                "estagio-avaliador"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-promotoria"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "adrianoneves@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "edsonazambuja",
+        "first_name": "Edson",
+        "last_name": "Azambuja",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-28T14:49:44.909",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-promotoria"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "edsonazambuja@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "miguelsiqueira",
+        "first_name": "Miguel",
+        "last_name": "Siqueira",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2016-06-27T17:22:28.601",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-promotoria"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "",
+        "email": "miguelsiqueira@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+}
+]

@@ -1,0 +1,12 @@
+<div class="sign-content">
+    <div
+        class="sign-content-qrcode"
+        style="background: url(data:image/png;base64,{{ sign.qrcode }}) no-repeat center center">
+    </div>
+    <div class="sign-content-person">
+        <div><strong>Assinado por</strong>: {{ sign.who_person }} como ({{ sign.who }})</div>
+        <div><strong>Na data</strong>: {{ sign.when | date:"d/m/Y \à\s H:i:s" }}</div>
+        <div><strong>SIGN</strong>: {{ sign.content_sign }}</div>
+        <div><strong>URL</strong>: <a href="{{ sign.permalink }}" target="_blank">{{ sign.permalink }}</a></div>
+    </div>
+</div>

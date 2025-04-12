@@ -1,0 +1,224 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+{% load custom_filters %}
+
+
+<html>
+
+<head>
+    <meta name="pdfkit-orientation" content="Landscape" />
+    <meta name="pdfkit-page-size" content="A4" />
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+        tr {
+            page-break-inside: avoid;
+            page-break-after: auto
+        }
+
+        table {
+            font-family: Georgia, arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            float: left;
+            page-break-inside: auto;
+            margin-bottom: 30px;
+            table-layout: auto !important;
+        }
+
+        td,
+        th {
+            border: 0.5px solid #000000;
+            text-align: left;
+            font-size: 10px;
+            padding: 5px;
+        }
+
+        table td div {
+            overflow: visible;
+        }
+
+        table tr th {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        .col-1 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .color-1 {
+            font-weight: bold;
+            background-color: #c4c0c0;
+            text-align: center;
+        }
+
+        .color-2 {
+            background-color: #f37d7d;
+            
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+
+    {% include 'portrait/header/header.html' %}
+
+
+    <section style="margin-top:50px;margin-bottom:20px; margin-right:5px;clear: both;">
+        <div>
+            <div>
+                <!-- Tabela de Identificação -->
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <td class="col-1">
+                                <div><b>Matricula</b></div>
+                            </td>
+                            <td class="col-2 ">
+                                <div>{{ data.matricula }}</div>
+                            </td>
+                            <td class="col-1 ">
+                                <div><b>Nome</b></div>
+                            </td>
+                            <td class="col-2 " colspan="3">
+                                <div>{{ data.nome }}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-1 ">
+                                <div><b>Nomeação</b></div>
+                            </td>
+                            <td class="col-2 ">
+                                <div>{{ data.nomeacao }}</div>
+                            </td>
+                            <td class="col-1 ">
+                                <div><b>Posse</b></div>
+                            </td>
+                            <td class="col-2 ">
+                                <div>{{ data.posse }}</div>
+                            </td>
+                            <td class="col-1 ">
+                                <div><b>Exercicio</b></div>
+                            </td>
+                            <td class="col-2 ">
+                                <div>{{ data.exercicio }}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-1 ">
+                                <div><b>Cargo</b></div>
+                            </td>
+                            <td class="col-2 " colspan="5">
+                                <div>{{ data.cargo }}</div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            {% for periodo in data.periodos %}
+            
+            <div>
+                <h2> Referente ao exercício: {{periodo.ano}} </h2>
+                <!--Tabela de proventos-->
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="color-1" rowspan="2" rowspan="2" style="width: 20%;">PROVENTOS</th>
+                            <th class="color-1" colspan="13">MESES</th>
+                            <th class="color-1" rowspan="2">TOTAL DOS EVENTOS </th>
+                        </tr>
+                        <tr>
+                            <th class="color-1">Janeiro</th>
+                            <th class="color-1">Fevereiro</th>
+                            <th class="color-1">Março</th>
+                            <th class="color-1">Abril</th>
+                            <th class="color-1">Maio</th>
+                            <th class="color-1">Junho</th>
+                            <th class="color-1">Julho</th>
+                            <th class="color-1">Agosto</th>
+                            <th class="color-1">Setembro</th>
+                            <th class="color-1">Outubro</th>
+                            <th class="color-1">Novembro</th>
+                            <th class="color-1">Dezembro</th>
+                            <th class="color-1">13° Salário</th>
+                        </tr>
+                        {% for provento in periodo.proventos %}
+                            <tr>
+                            {% for item in provento %}
+                                <td> {{ item|moeda_floatformat }} </td>
+                            {% endfor %}
+                            </tr>
+                        {% endfor %}
+                    
+                    <!--Tabela de descontos-->
+                        <tr style="margin: 50px;">
+                            <td colspan="16"></td>
+                        </tr>         
+                        <tr>
+                            <th class="color-1" rowspan="2" rowspan="2" style="width: 20%;">DESCONTOS</th>
+                            <th class="color-1" colspan="13">MESES</th>
+                            <th class="color-1" rowspan="2">TOTAL DOS EVENTOS </th>
+                        </tr>
+                        <tr>
+                            <th class="color-1">Janeiro</th>
+                            <th class="color-1">Fevereiro</th>
+                            <th class="color-1">Março</th>
+                            <th class="color-1">Abril</th>
+                            <th class="color-1">Maio</th>
+                            <th class="color-1">Junho</th>
+                            <th class="color-1">Julho</th>
+                            <th class="color-1">Agosto</th>
+                            <th class="color-1">Setembro</th>
+                            <th class="color-1">Outubro</th>
+                            <th class="color-1">Novembro</th>
+                            <th class="color-1">Dezembro</th>
+                            <th class="color-1">13° Salário</th>
+                        </tr>
+                        {% for desconto in periodo.descontos %}
+                            <tr>
+                            {% for item in desconto %}
+                                <td> {{ item|moeda_floatformat }} </td>
+                            {% endfor %}
+                            </tr>
+                        {% endfor %}
+
+                        <tr style="margin: 50px;">
+                            <td colspan="16"></td>
+                        </tr> 
+                        <!--Tabela total Liquido-->
+                        <tr>
+                            {% for item in periodo.total_liquido %}
+                                <th><b> {{ item|moeda_floatformat }} </b></th>
+                            {% endfor %}
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            {% endfor %}
+            
+    </section>
+</body>
+
+</html>

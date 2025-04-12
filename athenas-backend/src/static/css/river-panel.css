@@ -1,0 +1,82 @@
+/*
+ * Este arquivo define um estilo customizado para o componente `Ext.Panel`.
+ * Para utilizar este estilo, basta adicionar a config `baseCls` com o valor 'x-river-panel'.
+ */
+
+ .x-river-panel {
+    border-style: solid;
+    border-width: 0;
+}
+
+.x-river-panel-header,
+.x-river-panel-tbar,
+.x-river-panel-body,
+.x-river-panel-bbar,
+.x-river-panel-footer {
+    overflow: hidden;
+    border-style: solid;
+    border-color: #eee;
+}
+
+.x-river-panel-header {
+    /* border-radius: 8px 8px 0px 0px; */
+    zoom: 1;
+    background-color: #005a7c;
+    border-width: 1px;
+    padding: 6px 6px;
+    cursor: default;
+    user-select: none;
+    color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: tahoma, arial, verdana, sans-serif;
+}
+
+/* .x-river-panel-header-text {} */
+
+/* body wrap */
+.x-river-panel-bwrap {
+    overflow: hidden;
+    background-color: white;
+}
+
+.x-river-panel-body, .x-river-panel-footer {
+    background-color: white;
+    border-width: 1px;
+}
+
+.x-river-panel-body {
+    padding: 6px;
+}
+
+.x-river-panel-tbar, .x-river-panel-bbar {
+    border-width: 0px 1px;
+}
+
+.x-river-panel-tbar {
+    border-top-width: 1px;
+}
+
+.x-river-panel-header + .x-river-panel-bwrap .x-river-panel-tbar,  /* Se header presente, esconde border-top do topbar */
+.x-river-panel-header + .x-river-panel-bwrap .x-river-panel-body,  /* Se header presente, esconde border-top do body */
+.x-river-panel-tbar + .x-river-panel-body,  /* Se topbar presente, esconde border-top do body */
+.x-river-panel-body + .x-river-panel-footer,  /* Se body presente, esconde border-top do footer */
+.x-river-panel-bbar + .x-river-panel-footer {  /* Se bottombar presente, esconde border-top do footer */
+    border-top: 0px;
+}
+
+/*
+Esses DIVs são acrescentados pela Ext quando "frame: true".
+São simplesmente estruturas que auxiliam na construção visual.
+*/
+/* .x-river-panel-tl,  // div top-left
+.x-river-panel-tr,  // div top-right
+.x-river-panel-tc,  // div top-center
+.x-river-panel-ml,  // div middle-left
+.x-river-panel-mr,  // div middle-right
+.x-river-panel-mc,  // div middle-center
+.x-river-panel-bl,  // div bottom-left
+.x-river-panel-br,  // div bottom-right
+.x-river-panel-bc {  // div bottom-center
+    border: 0px;
+} */

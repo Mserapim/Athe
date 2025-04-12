@@ -1,0 +1,18 @@
+<div class="sign-content">
+    <div class="sign-content-qrcode">
+        <img
+            src="data:image/png;base64,{{ sign.qrcode }}"
+            alt="Imagem de validação"
+            width="80">
+    </div>
+    <div class="sign-content-person">
+        <div><strong>Assinado por</strong>: {{ sign.who_person }} como ({{ sign.who }})</div>
+        <div><strong>Na data</strong>: {{ sign.when | date:"d/m/Y \à\s H:i:s" }}</div>
+        <div><strong>SIGN</strong>: {{ sign.content_sign }}</div>
+        <div><strong>URL</strong>: <a href="{{ sign.permalink }}" target="_blank">{{ sign.permalink }}</a></div>
+    </div>
+    {% comment %} <img src="/athenas/static/common/official_journal/images/qrcode.png" width="60px" height="60px" alt="" />
+    <p>Chave de autenticidade: 00000-0000 <a href="#">https://athenas.mpto.mp.br/athenas/docsverify/verify/</a>
+    Assinado de forma digital conforme MPº 2.200-2 de 24/08/2001.
+    Edição nº 1414 - Publicação em 14/03/2022 </p> {% endcomment %}
+</div>

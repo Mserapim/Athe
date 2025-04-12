@@ -1,0 +1,45 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .ballot-box { font-size: 15pt; }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">TERMO DE DEVOLUÇÃO</p>
+
+<p class="rf-abnt-text rf-text-justify rf-paragraph-height" style="margin-top: 7em;">
+    Eu, <b>{{ employee_name }}</b>, matrícula <b>{{ employee_number }}</b>, devolvo à 
+    Procuradoria-Geral de Justiça, na presente data, 01 (um) aparelho celular do 
+    modelo <b>{{ phone_description|safe }}</b>, de linha telefônica nº <b>{{ phone_number }}</b> e 
+    IMEI nº <b>{{ imei }}</b>, que ficará sob a guarda do servidor <b>{{ successor }}</b> até 
+    que o próximo Promotor de Justiça assuma a referida comarca.
+</p>
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em;"><b>Acessórios entregues:</b></p>
+<p class="rf-paragraph-height">
+    <span class="ballot-box">{% if returned_battery_charger %}&#x2611;{% else %}&#x2610;{% endif %}</span>
+    Carregador de bateria
+</p>
+<p class="rf-paragraph-height">
+    <span class="ballot-box">{% if returned_headphone %}&#x2611;{% else %}&#x2610;{% endif %}</span>
+    Fone de ouvido
+</p>
+<p class="rf-paragraph-height">
+    <span class="ballot-box">{% if returned_sim_ejector %}&#x2611;{% else %}&#x2610;{% endif %}</span>
+    Extrator de chip
+</p>
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em;"><b>Instruções:</b></p>
+<p class="rf-paragraph-height">- Assine este documento eletronicamente.</p>
+<p class="rf-paragraph-height">- Encaminhe-o para a Área de Suporte de Serviços Administrativos (SUPADM).</p>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

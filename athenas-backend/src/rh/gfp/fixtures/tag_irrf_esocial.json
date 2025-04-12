@@ -1,0 +1,16 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "EVENT_TAGS",
+            "label": "irrf-esocial",
+            "value": 19,
+            "cvalue": "19",
+            "cache_path": "gfp.EVENT_TAGS",
+            "description": "Tag utilizada para identificar eventos utilizados em S5002 e S5012",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+]

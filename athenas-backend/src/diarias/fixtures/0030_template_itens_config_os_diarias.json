@@ -1,0 +1,32 @@
+[
+{
+    "model": "standard.item",
+    "pk": 149,
+    "fields": {
+        "configuration": 15,
+        "key": "DIARIAS_PROJETO_ATIVIDADE",
+        "type_of": 3,
+        "value": "2007.9900-ESTADO"
+    }
+},
+{
+    "model": "standard.item",
+    "pk": 150,
+    "fields": {
+        "configuration": 15,
+        "key": "DIARIAS_ELEMENTOS_DISPESAS",
+        "type_of": 3,
+        "value": "3390.1400"
+    }
+},
+{
+    "model": "standard.item",
+    "pk": 151,
+    "fields": {
+        "configuration": 15,
+        "key": "DIARIAS_AMPARO_LEGAL",
+        "type_of": 3,
+        "value": "Lei N\u00ba 9.077-2912/2008"
+    }
+}
+]

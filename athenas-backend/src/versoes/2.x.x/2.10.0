@@ -1,0 +1,36 @@
+- 2024.5.14:
+    - CARD: ATS-3852 - MR: 879 - Api de Criação de Viagem, do diarias 
+- 2024.5.15:
+    - CARD: ATS-3723 - MR: 885 - Cadastro de Valores [Back DB] Criar tabela
+    - CARD: ATS-3724 - MR: 887 - cadastro de Valores [Back API] API listagem
+    - CARD: ATS-3818 - MR: 886 - BACK -Listagem de todas as etapas
+- 2024.5.17:
+    - CARD: ATS-3736 - MR: 892 - Criar módulo para exportar em csv.Excell (Backend)
+    - CARD: ATS-3814 - MR: 893 - Criar a lógica de grupo padrão para aplicar para novos servidores
+- 2024.5.20:
+    - CARD: ATS-3725 - MR: 891 - Cadastro de Valores -[Back API] API Cadastro
+    - CARD: ATS-3726 - MR: 891 - Cadastro de Valores - [Back API] API Edição
+    - CARD: ATS-3727 - MR: 891 - Cadastro de Valores - [Back API] API Exclusão
+    - CARD: ATS-3819 - MR: 896 - BACK - Criar novo item do fluxo
+    - CARD: ATS-3821, ATS-3822, ATS-3823 - MR: 895 - BACK - Listagem de condições, etapa e situação
+- 2024.5.22:
+    - CARD: ATS-3773 - MR: 899 - [SISDIAS] Criar mecanismo para identificar qual é a etapa atual da Viagem
+    - CARD: ATS-3796 - MR: 905 - [SISDIAS] Criar modelo para grupo de aprovadores
+    - CARD: ATS-3932 - MR: 907 - [SISDIAS] Alterar campos de tabelas do diárias 
+    
+- 2024.5.23:
+    - CARD: ATS-3711 - MR: 894 - [Back] Cadastro de dados Bancários (servidor)
+    - CARD: ATS-3929 - MR: 902 - [Back] Corrigir erro ao salvar novo grupo de acesso
+    - CARD: ATS-3811 - MR: 909 - Vincular processos de RRA a folha de pagamento
+    - CARD: ATS-3938 - MR: 910 - Ajustes na Api de Servidores e criação da api servidor
+    - CARD: ATS-3817 - MR: 908 - Portal Transparência - Criar API para buscar as informações do ATHENAS
+    - CARD: ATS-3708 - MR: 911 - [Back]Beneficiários - API de Beneficiarios 
+    - CARD: ATS-3798 - MR: 914 - [SISDIAS] Criar os métodos de condicionais
+    - CARD: ATS-3945 - MR: 912 - API de criação de colaborador eventual na solicitação de diárias
+    - CARD: ATS-3820 - MR: 903 - BACK -editar item do fluxo
+- 2024.5.24:
+    - CARD: ATS-3937 - MR: 915 - [Back] Parâmetro de Exibição de Holerite - VDF
+    - CARD: ATS-3825 - MR: 918 - BACk - Editar ordem de todos os fluxos
+    - CARD: ATS-3825 - MR: 919 - BACK salvar pessoas a serem notificadas
+    - CARD: ATS-3799 - MR: 916 - criar mecanismo para identificar qual é a proxima situação/etapa 
+    - CARD: ATS-3965 - MR: 920 - ajuste de migração

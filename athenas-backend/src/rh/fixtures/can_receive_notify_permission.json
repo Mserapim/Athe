@@ -1,0 +1,13 @@
+[
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Pode receber notificação",
+    "content_type": [
+      "afastamento",
+      "baselicencaafastamento"
+    ],
+    "codename": "can_receive_notify"
+  }
+}
+]

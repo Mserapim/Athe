@@ -1,0 +1,184 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando empenho",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando assinatura empenho",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando assinatura Ordenador de Despesas",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Analise - DAA",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Nota Liquidação",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Ordem Bancária",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Pagamento",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Pago",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Prestação de Contas",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Validação Prestação de Contas",
+        "value": 10,
+        "cvalue": "10",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Finalizado",
+        "value": 11,
+        "cvalue": "11",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando Ajustes pelo Solicitante",
+        "value": 12,
+        "cvalue": "12",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Rascunho",
+        "value": 13,
+        "cvalue": "13",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]	

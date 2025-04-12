@@ -1,0 +1,35 @@
+- 2024.4.30:
+    - CARD: ATS-3688 - MR: 845 - [Gestor de faltas] Notificação de email
+    - CARD: ATS-3684 - MR: 846 - [Back Navegação] Corrigir API de lista quantidade de usuários
+    - CARD: ATS-3702 - MR: 847 - Criar um modal para exibir os dados do gestor do tele
+- 2024.5.01:
+    - CARD: ATS-3751 - MR: 851 - [Back] ajustes na api da lista de antiguidades corrigindo um filtro e adicionando um campo 
+- 2024.5.02:
+    - CARD: ATS-3671 - MR: 843 - [SISDIAS - backend] Criar o módulo SISDIA 
+- 2024.5.03:
+    - CARD: ATS-3685 - MR: 857 - [Back NAVEGAÇÃO] Adicionar s grupos na API de listagem
+    - CARD: ATS-3703 - MR: 859 - [Front - usuários] - vincular o botão Atualizar Mastiff com a API
+    - CARD: ATS-3714 - MR: 860 - Cadastro de Cargos [Back DB] Criar tabela
+    - CARD: ATS-3742 / ATS-60 - MR: 861 - [RM DIARIAS] Apagar o módulo 'adm.diarias' - Ativar o novo módulo de Diárias 
+- 2024.5.06:
+    - CARD: ATS-3761 - MR: 858 - [Back] Ajuste na Api da Lista de Antiguidades na função de ordenação 
+- 2024.5.07:
+    - CARD: ATS-3672 - MR: 862 - [SISDIAS - backend] Criar as tabelas da estrutura de solicitações
+- 2024.5.08:
+    - CARD: ATS-3715 - MR: 866 - Cadastro de Cargos [Back API] API listagem com filtro de nome
+    - CARD: ATS-3716 - MR: 866 - Cadastro de Cargos [Back API] API Cadastro
+    - CARD: ATS-3717 - MR: 866 - Cadastro de Cargos [Back API] API Edição
+    - CARD: ATS-3718 - MR: 866 - Cadastro de Cargos [Back API] API Exclusão
+    - CARD: ATS-3772 - MR: 867 -  [SISDIAS] Alterar campos e criar novas tabelas no módulo Diárias 
+    - CARD: ATS-3780 - MR: 868 -  Adicionar campos de 'sigla' e 'icone' na resposta da rota '/painel-controle/controle-acesso/menu/usuario' 
+    - CARD: ATS-3781 - MR: 870 -  [BACK NAVEGAÇÃO] - Editar ações de grupo de acesso
+    - CARD: ATS-3777 - MR: 859 -  Criação de um Script para criar um grupo de acesso "perfil-vdf-padrao" e adicionar todos os servidores 
+- 2024.5.09:
+    - CARD: ATS-3732 - MR: 873 - Criar afastamento (Doença em pessoa da família - junta médica)
+    - CARD: ATS-3705 - MR: 863 - [Back] Consultar Diarias - API Consultar
+    - CARD: ATS-3707 - MR: 876 - [Back] APIS de parametros de sistema - Choices para o Diarias
+    - CARD: ATS-3627 - MR: 875 - Inserir os grupos para visualizar todas as solicitações do teletrabalho
+- 2024.5.10:
+    - CARD: ATS-3783 - MR: 874 - [SISDIAS] Criar modelo de fluxo de viagem e novos itens de parâmetros do sistema do app diarias
+- 2024.5.13:
+    - CARD: ATS-3844 - MR: 877 - Ajuste na api de modulos de usuario logado 

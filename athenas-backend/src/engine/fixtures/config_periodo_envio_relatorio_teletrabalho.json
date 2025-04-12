@@ -1,0 +1,19 @@
+[
+    {
+        "model": "engine.controller",
+        "pk": 814,
+        "fields": {
+            "icon": "athenas-0675.png",
+            "title": "Config Periodo de Envio de Relatorios Semestreais",
+            "controller": "ConfigPeriodoEnvioRelatorioTeleRestful",
+            "application": 160,
+            "active": true,
+            "module": "rh.teletrabalho",
+            "uuid": "c6dc0018506a4d2cbabfa8eedeb6b5de",
+            "icon_file": null,
+            "position": 9999,
+            "created_by": 9137,
+            "modified_by": 9137
+        }
+    }
+]

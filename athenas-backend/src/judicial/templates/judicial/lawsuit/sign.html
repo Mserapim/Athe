@@ -1,0 +1,13 @@
+{% load judicialfilters %}
+<div style="text-align:center; padding-top: 2.5em">
+    <div style="padding: 3.0em 0; font-size: 0.8em">{{ sign.organ.localidade.nome | city_name }}, {{ sign.moment_at | date:'d \d\e F \d\e Y \à\s H:i:s' }}</div>
+    {% if sign.is_signed_by_system %}
+        <div>
+            <span class="bold">Este documento foi assinado digitalmente pelo sistema.</span>
+            <small style="display:block; font-size: 0.7em;">Essa assinatura foi gerada durante o processo de migração de dados.</small>
+        </div>    
+    {% else %}
+        <div><span class="bold">{{ sign.person }}</span></div>
+        <div><span style="font-size: 0.6em">{{ sign.organ.nome }}</span></div>
+    {% endif %}
+</div>

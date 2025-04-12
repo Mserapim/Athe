@@ -1,0 +1,107 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO PARA INCLUSÃO DE DEPENDENTES</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone de contato:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+</table>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor-Geral da Procuradoria Geral de Justiça a Inclusão da(s) pessoa(s) inframencionada(s) como dependente(s) para os efeitos de tributação de Imposto de Renda:
+</p>
+
+{% for dependent in dependents %}
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome:</th>
+        <th class="rf-th">CPF:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ dependent.name }}</td>
+        <td class="rf-td">{{ dependent.cpf }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th" colspan="2">Grau de Parentesco:</th>
+    </tr>
+    <tr>
+        <td class="rf-td" colspan="2">{{ dependent.get_degree_of_kinship_display }}</td>
+    </tr>
+</table>
+{% empty %}
+    <p style="color:red; font-weight:bold">Nenhum informado ainda.</p>
+{% endfor %}
+
+<table class="rf-table">
+    <tr><th class="rf-th-center">DOCUMENTOS NECESSÁRIOS</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">Se o dependente for:</p>
+            <p class="rf-paragraph-height">
+                1) o cônjuge – cópia do Documento de Identidade do Cônjuge e da Certidão de Casamento;
+            </p>
+            <p class="rf-paragraph-height">
+                2) o companheiro ou a companheira, desde que haja vida em comum por mais de cinco anos – declaração do requerente firmando que há vida em comum entre o casal por mais de cinco anos;
+            </p>
+            <p class="rf-paragraph-height">
+                3) o companheiro ou a companheira desde que haja vida em comum por tempo inferior a cinco anos, se da união resultou filho – Declaração do requerente firmando que há vida em comum entre o casal e cópia da Certidão de Nascimento do(a) filho(a);
+            </p>
+            <p class="rf-paragraph-height">
+                4) a filha, o filho, até 21 anos – cópia da certidão de nascimento;
+            </p>
+            <p class="rf-paragraph-height">
+                5) a enteada ou o enteado, até 21 anos – cópia da certidão de casamento e de nascimento da enteada ou do enteado;
+            </p>
+            <p class="rf-paragraph-height">
+                6) a filha, o filho, a enteada ou o enteado de qualquer idade quando incapacitado física ou mentalmente para o trabalho – cópia das certidões do item 4 ou 5 e Laudo Médico atestando especificamente a incapacidade física ou mental para o trabalho;
+            </p>
+            <p class="rf-paragraph-height">
+                7) o menor pobre, até 21 anos, que o contribuinte crie e eduque e do qual detenha a guarda judicial – cópia do Termo de Guarda Judicial e declaração do requerente firmando que o menor é pobre, nos termos da Lei;
+            </p>
+            <p class="rf-paragraph-height">
+                8) o irmão, o neto ou o bisneto, sem arrimo dos pais, até 21 anos, desde que o contribuinte detenha a guarda judicial, ou de qualquer idade quando incapacitado física ou mentalmente para o trabalho – cópia dos documentos que comprovem a idade e o parentesco e do Termo de Guarda Judicial ou Laudo Médico atestando especificamente a incapacidade física ou mental para o trabalho;
+            </p>
+            <p class="rf-paragraph-height">
+                9) os pais, avós e bisavós que não aufiram qualquer rendimentos e/ou pais, avós e bisavós que aufiram rendimentos, tributáveis ou não, desde que não ultrapasse o limite de isenção mensal – cópia do RG do Genitor ou Genitora,avós e bisavós.
+            </p>
+            <p class="rf-paragraph-height">
+                10) o absolutamente incapaz, do qual o contribuinte seja tutor ou curador – cópia dos documentos que comprovem o parentesco e do Termo da Tutela ou Curatela.
+            </p>
+            <p class="rf-paragraph-height">
+                OBS: Os dependentes de que tratam os itens 4, 5, 6 e 7 poderão ser considerados dependentes mesmo quando maiores de 21, até 24 anos de idade, se ainda estiverem cursando estabelecimento de ensino superior ou escola técnica de segundo grau.
+            </p>
+            <p class="rf-paragraph-height">
+                Os dependentes comuns poderão, opcionalmente, ser considerados por qualquer um dos cônjuges. No caso de filhos de pais separados, poderão ser considerados dependentes os que ficarem sob a guarda do contribuinte, em cumprimento de decisão judicial ou acordo homologado judicialmente.
+            </p>
+            <p class="rf-paragraph-height">
+                Observa-se que, nos termos do § 6o , do artigo 12, da Lei no 2.354/1954 (que altera a legislação do imposto sobre Renda), esta Instituição não será responsabilizada pelas informações prestadas por seus servidores, para efeito de desconto do imposto retido na fonte, sendo de responsabilidade exclusiva do servidor a veracidade das declarações e documentos apresentados. Assim, as referidas informações deverão ficar à disposição da Receita Federal para fiscalização.
+            </p>
+            <p class="rf-paragraph-height"><b>OBS: Nos casos de dúvidas sobre a aplicação da Lei, encaminhar à Assessoria Jurídica da Diretoria Geral para Análise.</b></p>
+            <p class="rf-paragraph-height">- Assinar este documento eletronicamente.</p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

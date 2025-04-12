@@ -1,0 +1,58 @@
+[
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TYPE_LEGAL_REPRESENTATIVE",
+			"label": "Representação por Tutela",
+			"value": 1,
+			"cvalue": "1",
+			"cache_path": "rh.TYPE_LEGAL_REPRESENTATIVE",
+			"description": "Representação por Tutela",
+			"order_weight": 2,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TYPE_LEGAL_REPRESENTATIVE",
+			"label": "Representação por Cautela",
+			"value": 2,
+			"cvalue": "2",
+			"cache_path": "rh.TYPE_LEGAL_REPRESENTATIVE",
+			"description": "Representação por Cautela",
+			"order_weight": 3,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TYPE_LEGAL_REPRESENTATIVE",
+			"label": "Sem Representante",
+			"value": 3,
+			"cvalue": "3",
+			"cache_path": "rh.TYPE_LEGAL_REPRESENTATIVE",
+			"description": "",
+			"order_weight": 1,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TYPE_LEGAL_REPRESENTATIVE",
+			"label": "Representação por Procuração",
+			"value": 4,
+			"cvalue": "4",
+			"cache_path": "rh.TYPE_LEGAL_REPRESENTATIVE",
+			"description": "Representação por Procuração",
+			"order_weight": 4,
+			"active": true
+		}
+	}
+]

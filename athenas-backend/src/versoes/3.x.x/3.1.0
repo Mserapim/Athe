@@ -1,0 +1,44 @@
+- 2025.02.18:
+    - CARD: ATS-6645 - MR: 1722 - [back] Ajustes e Criação de Novos Filtros na API de Gestão VDF
+    - CARD: ATS-6646 - MR: 1723 - [back] Adicionando Filtros em Relatório de Gestão VDF
+    - CARD: ATS-6702 - MR: 1724 - [back] Adicionando Filtro de Evento
+- 2025.02.20:
+    - CARD: ATS-6716 - MR: 1729 -[back] formatar código do Athenas com o black formatter
+    - CARD: ATS-6658 - MR: 1728 -[back] Padronização do resultado das api's de listagem
+    - CARD: ATS-6652 - MR: 1727 -[BACK] Ajuste para filtrar por cadastro
+-2025.02.21:
+    - CARD: ATS-6659 - MR: 1728 - [back] Otimizar Edição de Recesso Forense - Membros
+-2025.02.26:
+    - CARD: ATS-6027 - MR: 1694 - Parcelamento de Usufruto - Membros (Gerenciador Admin)
+    - CARD: ATS-6515 - MR: 1695 - [back] - Parcelamento de Usufruto - Criar lógica para gerar o número de parcelas
+    - CARD: ATS-6516 - MR: 1696 - [back] - Parcelamento de Usufruto - Atualizar API com o número da parcela
+    - CARD: ATS-6517 - MR: 1697 - [front ext] - Parcelamento de usufruto - Informar a parcela na grid de usufrutos
+    - CARD: ATS-6518 - MR: 1699 - [front ext] - Parcelamento de usufruto - Exibir parcelas na tela de pagamentos
+    - CARD: ATS-6519 - MR: 1707 - [back] - Parcelamento de usufruto - Atualizar cálculo de usufruto por parcela
+    - CARD: ATS-6520 - MR: 1714 - [back] - Parcelamento de usufruto - Verificar impacto da função marcar no gerenciador admin
+    - CARD: ATS-6633 - MR: 1725 - [back] - Parcelamento de Usufrutos - Criar job para atualizar a quantidade de parcelas dos usufrutos
+    - CARD: ATS-6698 - MR: 1738 - [back] - Parcelamento de usufruto - Criar lógica para atualizar a parcela ao retificar o usufruto
+    - CARD: ATS-6692 - MR: 1732 - [back] - Ajuste de texto nos relatórios
+    - CARD: ATS-6492 - MR: 1739 - [back] - Criar relacionamento entre as mensagens e os serviços
+    - CARD: ATS-5682 - MR: 1740 - [back] - Mensagens dos Serviços - Criar API para retornar a lista de mensagens
+-2025.02.27:    
+    - CARD: ATS-6138 - MR: 1731 - [back] - Migrando relatório do Jasper ODT para DOCX
+    - CARD: ATS-6489 - MR: 1746 - [back] - Criar property para status "em execução" dos serviços
+    - CARD: ATS-6768 - MR: 1732 - [Back] - rotina de migração de dados do Sisdia para Athenas via comando de tela e APIs 
+    - CARD: ATS-6717 - MR: 1736 - Athenas - Lista de Antiguidade - corrigir informação nas colunas
+-2025.02.28:    
+    - CARD: ATS-6635 - MR: 1747 - [BACK] API de afastamentos dos membros
+    - CARD: ATS-6653 - MR: 1748 - [BACK] Ajuste em tempo de justificativa por dia
+    - CARD: ATS-6655 - MR: 1749 - [BACK] Aplicar cargo e departamento de acordo com o período
+    - CARD: ATS-6660 - MR: 1751 - [back] Esocial - Melhorar o desempenho da geração de eventos de cadastro (afastamentos)
+    - CARD: ATS-6670, ATS-6671 - MR: 1752 - [back] Criar api de listagem da auditoria de logs
+    - CARD: ATS-6757 - MR: 1753 - Realizar o desligamento das lotações de estagiários e residentes que estão exonerados 
+    - CARD: ATS-6783 - MR: 1754 - correção no tipo de Configuração de Previdencia 
+    - CARD: ATS-6691 - MR: 1757 - [back] Esocial - Criar estrutura de dependente de plano de saúde S1210
+-2025.03.05:
+    - CARD: ATS-6135 - MR: 1759 - [BACK] Migração de Relatório Jasper | XLS para XLSX
+    - CARD: ATS-6855 - MR: 1761 - [back] Alterar script de popular paecelas para rodar em um job
+
+   
+
+

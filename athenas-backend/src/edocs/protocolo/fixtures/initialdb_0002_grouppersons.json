@@ -1,0 +1,162 @@
+[
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "CHEFE DE DEPARTAMENTOS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "COMISSÃO DE ELABORAÇÃO DE CARTA DE SERVIÇOS AO CIDADÃO"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "COMITÊ GESTOR DE TABELAS UNIFICADAS (ÁREA MEIO)"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "ENCARREGADOS DE ÁREAS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "FISCAIS E SUBSTITUTOS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "GERENTES DE PROJETOS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "INAUGURAÇÃO_SEDE_AUGUSTINÓPOLIS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "MOTORISTAS E MOTORISTAS PROFISSIONAIS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "PROCURADORES"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "PROMOTORES"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "PROMOTORES SUBSTITUTOS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": true,
+    "level_access": 2,
+    "all_members": false,
+    "title": "REQUERIMENTO DE INDENIZAÇÃO DE TRANSPORTE - OFD79007"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 2,
+    "all_members": false,
+    "title": "SERVIDORES DA CORREGEDORIA"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": false,
+    "level_access": 1,
+    "all_members": true,
+    "title": "TODOS OS MEMBROS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": true,
+    "level_access": 1,
+    "all_members": false,
+    "title": "TODOS OS SERVIDORES"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+},
+{
+  "fields": {
+    "all_employees": true,
+    "level_access": 1,
+    "all_members": true,
+    "title": "TODOS OS SERVIDORES E MEMBROS"
+  },
+  "model": "protocolo.groupperson",
+  "pk": null
+}
+]

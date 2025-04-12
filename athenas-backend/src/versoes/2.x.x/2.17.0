@@ -1,0 +1,43 @@
+- 2024.8.19:
+    - CARD: ATS-4908 - MR: 1182 - [BACK] Alterar api anotacoes-pessoais/detalhes para retornar atributo publicacao_display 
+- 2024.8.21:
+    - CARD: ATS-4458 - MR: 1185 - [back] - Criar relatório em pdf
+    - CARD: ATS-4921 - MR: 1187 - [Back]  Folha Ponto - Criar api folha ponto servidores
+    - CARD: ATS-4922 - MR: 1188 - [Back]  Folha Ponto - Criar api tipo dia folha ponto
+    - CARD: ATS-4903 - MR: 1189 - [Back] Criar um novo relatório de anotações pessoais com base no relatório usado no athenas legado, para o athenas suite 
+    - CARD: ATS-4909 - MR: 1191 - [Back] Editar/ativar APIs de para criar editar e apagar publicações
+    - CARD: ATS-4930 - MR: 1190 - [BACK] Criar nova etapa do fluxo (Aguardando Ciência/Chefe imediato)
+    - CARD: ATS-4848 - MR: 1192 - [back] - Criar relatório em csv
+- 2024.8.22:
+    - CARD: ATS-4957 - MR: 1193 - Diferença CNE % - Proporcionalidade em Dias 
+    - CARD: ATS-4910 - MR: 1194 - [Athenas Ext] Adicionar a opção residente no filtro de tipos de servidores na tela de afastamentos
+    - CARD: ATS-4964 - MR: 1196 - ATS-4964 - Erro ao recalcular contracheque com 2 subsídios no mês
+- 2024.8.22:
+    - CARD: ATS-4849 - MR: 1197 - [back] - Criar relatório em xls
+- 2024.8.26:
+    - CARD: ATS-4993 - MR: 1198 - [back] - Adicionar validação na verba 01119 para não calcular em níveis específicos de cargos CNE
+    - CARD: ATS-4917 - MR: 1199 - [Athenas Ext] Adicionar a opção residente no filtro de tipos de servidores na tela de afastamentos 
+    - CARD: ATS-4927 - MR: 1202 - [BACK] Alterar api de listagem de beneficiários para incluir "chefe_imediato"
+    - CARD: ATS-4920 - MR: 1201 - [BACK] Alterar api de diárias do VDF para mostrar diárias para o chefe imediato
+    - CARD: ATS-4897 - MR: 1200 - [back] - Alterar cálculo SPPREVCOM
+    - CARD: ATS-5004 - MR: 1203 - [Back] Ajuste na api menu/usuario/ do painel de controle
+- 2024.8.27:
+    - CARD: ATS-4911 - MR: 1204 - [Back] Criar job para notificar os colabores externos sobre a prestação de contas 
+    - CARD: ATS-5019 - MR: 1205 - [BACK] Criar botão de pendência de diárias em "minhas pendências"
+    - CARD: ATS-4928 - MR: 1207 - [Back] Folha Ponto  - Criar estrutura para retornar as informações das marcações agrupada por dia
+    - CARD: ATS-4938 - MR: 1206 - [back] Esocial -  Criar droplist na tela de necessidades especias do campo "TIPO DE DEFIFICIÊNCIA"
+- 2024.8.28:
+    - CARD: ATS-4940 - MR: 1208 - [front Ext] - Criar filtro por data início e fim no gestor de trabalho remoto de membros
+    - CARD: ATS-5034 - MR: 1209 - ATS5034 - [backend - Diárias - Excedentes] Criar e alterar configurações de Etapas e Situações
+    - CARD: ATS-4915 - MR: 1211 - [Back] Criar api para reenvio de email para colaboradores externos sobre a prestação de contas 
+    - CARD: ATS-4588 - MR: 1210 - [back] - Exibir informação de periodicidade da meta do teletrabalho no relatório
+    - CARD: ATS-4923 - MR: 1212 - [Back] Folha Ponto  - Criar api da lista de marcações do ponto
+    - CARD: ATS-4925 - MR: 1213 - [Back] Folha Ponto - Criar api para ignoara batida
+- 2024.8.29:
+    - CARD: ATS-5070 - MR: 1215 - [BACK] Alterar query de minhas-diarias e lógica de chefe_imediato
+    - CARD: ATS-5036 - MR: 1214 - [BACK] Criar api para ciencia do chefe imediato
+    - CARD: ATS-4601 - MR: 1217 - [back] - Conferência de Venda de Férias não exibe datas de Início (Retificação)
+    - CARD: ATS-4589 - MR: 1216 - [back] - Corrigir busca por matricula no controle de plantões
+- 2024.8.30:
+    - CARD: ATS-5047 - MR: 1219 - [Back] Criar A função e API para clonar em lote os eventos de um beneficiario 
+    - CARD: ATS-4841 - MR: 1220 - [front ext] - Corrigir tamanho da tela de configuração de eventos e rubricas

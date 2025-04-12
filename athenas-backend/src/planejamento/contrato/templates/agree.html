@@ -1,0 +1,177 @@
+{% extends "base_generic.html" %}
+
+<table class="papper">
+    {% block header %}
+    <div class="papper-header">
+        <div class="papper-header-logo"></div>
+        <div>
+            <p class="papper-header-system">Gestão de Contratos</p>
+            <p class="papper-header-instituation">Ministério Público do Estado do Tocantins</p>
+        </div>
+        <div style="clean:both"></div>
+    </div>
+    {% endblock %} {% block content %}
+    <br /><br />
+
+    <div class="line">
+        <div class="col-33" style="border-style: double; border-width: 3px; text-align: center;"><strong>{{agree.status|upper}}</strong></div>
+        <div class="col-33">
+            <p style="font-weight: bolder; text-align:center; font-size: 120%; ">{{agree.tipo_licitacao}} {{agree.numero}}</p>
+        </div>
+        <div class="col-33">&nbsp;</div>
+    </div>
+
+    <br /><br />
+    <p style="padding-bottom: 2%">Processo: <strong>{{agree.numero_processo}}</strong></p>
+    <p style="padding-bottom: 2%">Processo Mãe: <strong>{{agree.numero_processo_mae}}</strong></p>
+    {% for o in agree.fornecedor %}
+    <p style="padding-bottom: 2%">Fornecedor: <strong>{{o.nome}}</strong></p>
+    {% endfor %}
+    <p style="padding-bottom: 2%">Objeto: <strong>{{agree.objeto}}</strong></p>
+    <p style="padding-bottom: 2%">Início da Vigência: <strong>{{agree.data_inicio}}</strong></p>
+    <p style="padding-bottom: 2%">Fim da Vigência: <strong>{{agree.data_vencimento}}</strong></p>
+    <p style="padding-bottom: 2%">Duração Aproximada: <strong>{{agree.duracao}} meses</strong></p>
+
+
+    <p style="padding-bottom: 2%">Fiscais Titulares:
+        {% for supervisor in agree.main %}
+        <div style="width: 100%; overflow: hidden">
+            <div style="width: 50%; float:left;">
+                <strong>{{ supervisor.employee.pessoa_fisica.nome }} </strong>
+            </div>
+            <div style="float:left;">
+                <strong>Matricula: </strong> {{supervisor.employee.matricula}}
+            </div>
+        </div>
+        <div style="width: 100%; overflow: hidden">
+            <div style="float:left;">
+                <strong>Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document %}
+                {{supervisor.publication_document}}
+                {% endif %}
+            </div>
+            <div style="float:right;">
+                <strong>Data de Publicação Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document_date %}
+                {{supervisor.publication_document_date|date:"d / M / Y"}}
+                {% else %} - {% endif %}
+            </div>
+        </div></br>
+        {% endfor %}
+    </p>
+    <p style="padding-bottom: 2%">Fiscais Substitutos:
+        {% for supervisor in agree.substitutes %}
+        <div style="width: 100%; overflow: hidden">
+            <div style="width: 50%; float:left;">
+                <strong>{{ supervisor.employee.pessoa_fisica.nome }} </strong>
+            </div>
+            <div style="float:left;">
+                <strong>Matricula: </strong> {{supervisor.employee.matricula}}
+            </div>
+        </div>
+        <div style="width: 100%; overflow: hidden">
+            <div style="float:left;">
+                <strong>Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document %}
+                {{supervisor.publication_document}}
+                {% endif %}
+            </div>
+            <div style="float:right;">
+                <strong>Data de Publicação Portaria de Fiscal: </strong>
+                {% if supervisor.publication_document_date %}
+                {{supervisor.publication_document_date|date:"d / M / Y"}}
+                {% else %} - {% endif %}
+            </div>
+        </div></br>
+        {% endfor %}
+    </p>
+
+    <style>
+        .line{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .col-50 {
+            width: 50%;
+        }
+        .col-33 {
+            width: 33%;
+        }
+        .col-20 {
+            width: 20%;
+        }
+        .xtable {
+            border: 0px solid black;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .xtable .xthead .xtr {
+            font-family: Arial, monospace;
+            font-size: 100%;
+        }
+
+        .xtable .xthead .xtr .xth {
+            border-bottom: 2px solid black;
+            border-top: 1px solid black;
+            margin: 0px;
+            padding: 2px;
+            background-color: #cccccc;
+        }
+
+        .xtable .xtr {
+            font-family: arial, monospace;
+            color: black;
+            font-size: 100%;
+            background-color: white;
+        }
+
+        .xtable .xtr.odd {
+            background-color: #AAAAAA;
+        }
+
+        table#some_table_id tr:nth-child(even) {
+            background-color: #BBBBBB;
+        }
+
+        .xtable .xtr,
+        .xtd,
+        .xth {
+            border-bottom: 1px solid black;
+            padding: 6px;
+        }
+    </style>
+
+    <br />
+    <p style="text-align: center; font-size: 120%">Valores</p>
+    <br />
+    <table class="xtable" id="some_table_id">
+        <thead class="xthead" style="background-color: #AAAAAA">
+            <th class="xth">Data Início</th>
+            <th class="xth">Data Final</th>
+            <th class="xth">Data Publicação</th>
+            <th class="xth">Valor</th>
+            <th class="xth">Executado</th>
+            <th class="xth">Saldo</th>
+            <th class="xth">Tipo</th>
+            <th class="xth">Termo Aditivo</th>
+        </thead>
+        {% for o in agree.valor_contrato %}
+        <tr class="xtr">
+            <td class="xtd">{{o.data_ref_inicio}}</td>
+            <td class="xtd">{{o.data_ref_fim}}</td>
+            <td class="xtd">{% if o.data_publicacao %}{{o.data_publicacao}}{% endif %}</td>
+            <td class="xtd">{{o.valor}}</td>
+            <td class="xtd">{{o.executado}}</td>
+            <td class="xtd">{{o.saldo}}</td>
+            <td class="xtd">{{o.tipo_valor_contrato}}</td>
+            <td class="xtd">{{o.ordem}}</td>
+        </tr>
+        {% endfor %}
+        <tfoot>
+            <th>Total: <strong>{{agree.total}}</strong></th>
+        </tfoot>
+    </table>
+    {% endblock %}
+</table>

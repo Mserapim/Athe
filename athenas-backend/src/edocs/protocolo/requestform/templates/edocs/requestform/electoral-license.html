@@ -1,0 +1,63 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO LICENÇA ELEITORAL</p>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor Geral da Procuradoria Geral de Justiça:
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone da lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Descrição (data(s) de licença):</th></tr>
+    <tr><td class="rf-td">{{ description|safe }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Para a comprovação da Licença Eleitoral é indispensável <u>anexar a declaração 
+                emitida pela Justiça Eleitoral</u>. Conforme dispõe o Art. 98 da Lei 9.504/1997: 
+                “Os eleitores nomeados para compor as Mesas Receptoras ou Juntas Eleitorais e os 
+                requisitados para auxiliar seus trabalhos serão dispensados do serviço, mediante 
+                declaração expedida pela Justiça Eleitoral, sem prejuízo do salário, vencimento 
+                ou qualquer outra vantagem, pelo dobro dos dias da convocação.”
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para a chefia imediata para ciência.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

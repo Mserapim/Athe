@@ -1,0 +1,33 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div class="composite">
+        {% block content %}
+            <b>DESEMPENHO INDIVIDUAL - Participação Institucional</b>
+            <div class="paragraph-text" style="padding-left: 0.5em; font-size: 12px;">
+                {{ detailinstitutionalparticipation.contribution | safely }}<br /><br />
+                De acordo:
+                <b>
+                    {% if detailinstitutionalparticipation.validated == 1 %} Sem informção {% endif %}
+                    {% if detailinstitutionalparticipation.validated == 2 %} SIM {% endif %}
+                    {% if detailinstitutionalparticipation.validated == 3 %} NÃO {% endif %}
+                </b><br /><br />
+                Anexos: <br />
+                {% if detailinstitutionalparticipation.attachments.all %}
+                    {% for data in detailinstitutionalparticipation.attachments.all %}
+                        - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                        <div style="font-size:0.8em; padding-left: 1em; padding-bottom: 0.5em;">
+                            <small>
+                                URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                                MD5: {{ data.attached_file.file }}
+                            </small>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                <div style="padding-left: 0.5em;">
+                    - Não existem anexos.
+                </div>
+                {% endif %}
+            </div>
+        {% endblock %}
+    </div>
+</div>

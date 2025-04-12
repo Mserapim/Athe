@@ -1,0 +1,12 @@
+[
+{
+    "model": "standard.emailtemplate",
+    "pk": 37,
+    "fields": {
+        "code": "PRESTACAO_CONTAS_DIARIAS_EXTERNA",
+        "subject": "Presta\u00e7\u00e3o de Contas de Di\u00e1ria",
+        "contents": "<p>Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p> Estamos entrando em contato para solicitar o preenchimento da presta\u00e7\u00e3o de contas referente a di\u00e1ria abaixo. Para facilitar o processo, preparamos um formul\u00e1rio online onde voc\u00ea poder\u00e1 inserir todas as informa\u00e7\u00f5es necess\u00e1rias. <br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p> Por favor, acesse o link abaixo para preencher a sua presta\u00e7\u00e3o de contas: <br type=\"_moz\"></p><p>%LINK%<br type=\"_moz\"></p><p>Pedimos gentilmente que o preenchimento seja realizado at\u00e9 o dia %DATA_LIMITE%. <br></p><p>Ap\u00f3s esta data voc\u00ea estar\u00e1 sujeito \u00e0s san\u00e7\u00f5es previstas na Normativa que regem as regras de Pagamento de Di\u00e1rias.<br type=\"_moz\"></p><p>Caso tenha alguma d\u00favida ou necessite de assist\u00eancia durante o processo, estamos \u00e0 disposi\u00e7\u00e3o para ajudar.<br type=\"_moz\"></p><p>Agradecemos antecipadamente pela sua colabora\u00e7\u00e3o.</p> <p><br type=\"_moz\"></p>",
+        "description": null
+    }
+}
+]

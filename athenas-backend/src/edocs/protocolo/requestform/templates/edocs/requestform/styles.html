@@ -1,0 +1,32 @@
+<!--
+    Originalmente eu havia criado um arquivo de estilo no diretório static
+    para ser utilizado em todos os templates do app requestform, até descobrir
+    que a opção de impressão do EDOC não reconhecia os estilos. A solução
+    alternativa foi criar este arquivo e fazer o include dele nos templates.
+-->
+
+<style>
+    .rf-abnt{
+        font-size: 12pt;
+        text-indent: 15mm;    /* Recuo da primeira linha 1,5 cm */
+        line-height: 7.5mm;   /* Espaçamento entre linhas 1,5 cm */
+        text-align: justify;  /* Texto justificado */
+        margin: 0.8em 0em;    /* Espaçamento entre parágrafos 1,25 cm */
+    }
+    .rf-abnt-text{line-height:1.5em;}
+    .rf-abnt-first-line{text-indent:15mm;}
+    .rf-abnt-font{font-size:12pt;}
+    .rf-text-justify{text-align:justify;}
+    .rf-text-center{text-align:center;}
+    .rf-spacing{padding:2em 0;}
+    .rf-title{text-align:center;font-size:14pt;font-weight:bold;margin-bottom:1.5em;margin-top:1.5em;}
+    .rf-table{margin-bottom:20px;width:100%;border-collapse:collapse;}
+    .rf-td{border:1px solid #000000;border-top:none;text-align:left;padding:8px;}
+    .rf-td-left-borderless{border:1px solid #000000;border-top:none;border-left:none;text-align:center;padding:8px;}
+    .rf-td-right-borderless{border:1px solid #000000;border-top:none;border-right:none;text-align:center;padding:8px;}
+    .rf-th{border:1px solid #000000;border-bottom:none;text-align:left;padding:4px;font-weight:bold;}
+    .rf-th-center{border:1px solid #000000;border-bottom:none;text-align:center;padding:4px;font-weight:bold;}
+    .rf-paragraph-height{margin:0.8em 0em}
+    .rf-ballot-box{font-size:1.42em}
+    .rf-bg-gray{background-color: #e3dddc;}
+</style>

@@ -1,0 +1,418 @@
+[
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1,
+    "modified_by": 1177,
+    "created_at": "2020-10-02T09:56:12.097",
+    "modified_at": "2020-10-06T10:51:56.972",
+    "title": "Informação Pessoal",
+    "description": "<p style=\"text-align: justify;\"><b>Resolução 07/2017 CPJ, art 2º inciso III e art. 43, inciso I e II</b><br></p><p style=\"text-align: justify;\">Art. 2º A definição das informações divide-se em:<br></p><p style=\"text-align: justify;\">III - <b>informações pessoais</b>: são aquelas sobre pessoa natural identificada ou identificável relativa à intimidade, vida privada, honra e imagem.<br></p><p style=\"text-align: justify;\">Art. 43. As informações pessoais relativas à intimidade, vida privada, honra e imagem sob a guarda do MPTO:<br>I – <b>terão seu acesso restrito</b>, independente de classificação de sigilo, pelo prazo máximo de 100 (cem) anos, a contar da data da produção, aos agentes públicos legalmente autorizados e as pessoas a que elas se referirem; e<br>II – poderão ter autorizada sua divulgação ou acesso por terceiros diante de previsão legal ou consentimento expresso da própria pessoa.<br></p>",
+    "control_type": 1
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T10:56:06.327",
+    "modified_at": "2020-10-06T11:09:52.936",
+    "title": "Sigilo Bancário",
+    "description": "<p><b>Lei Complementar nº 105/2001 - Art. 1º.</b> As instituições financeiras conservarão sigilo em suas operações ativas e passivas e serviços prestados.<br></p>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T10:56:36.062",
+    "modified_at": "2020-10-06T11:08:58.210",
+    "title": "Sigilo Fiscal",
+    "description": "<p style=\"text-align: justify;\"><b>Código Tributário Nacional - Art. 198.</b> Sem prejuízo do disposto na legislação criminal, é vedada a divulgação, por parte da Fazenda Pública ou de seus servidores, de informação obtida em razão do ofício sobre a situação econômica ou financeira do sujeito passivo ou de terceiros e sobre a natureza e o estado de seus negócios ou atividades. (Redação dada pela Lcp nº 104, de 2001).<br></p>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T10:57:34.392",
+    "modified_at": "2020-10-06T10:57:34.392",
+    "title": "Documentos da Corregedoria Geral",
+    "description": "<p>Art.13, §2º,3º e 4º da Res.CSMP nº10/2015<br></p><p>§ 2°. Os documentos, relatórios e procedimentos instaurados em seu âmbito, têm caráter sigiloso, cabendo exclusivamente ao Corregedor-Geral a flexibilização da regra.<br></p>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T11:02:50.514",
+    "modified_at": "2020-10-06T11:07:44.925",
+    "title": "Interceptação Telefônica",
+    "description": "<p style=\"text-align: justify;\"><b>Lei 9.296/1996, Art. 8º-A</b>. Para investigação ou instrução criminal, poderá ser autorizada pelo juiz, a requerimento da autoridade policial ou do Ministério Público, a captação ambiental de sinais eletromagnéticos, ópticos ou acústicos, quando:<br></p><p style=\"text-align: justify;\">I - a prova não puder ser feita por outros meios disponíveis e igualmente eficazes; e&nbsp;&nbsp;&nbsp;&nbsp; <br></p><p style=\"text-align: justify;\">II - houver elementos probatórios razoáveis de autoria e participação em infrações criminais cujas penas máximas sejam superiores a 4 (quatro) anos ou em infrações penais conexas.&nbsp;&nbsp;&nbsp;&nbsp; <br></p><br>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T11:07:20.916",
+    "modified_at": "2020-10-06T11:26:06.070",
+    "title": "Documentos de Procedimentos Extrajudiciais",
+    "description": "<p style=\"text-align: justify;\"><b>Resolução nº 07, Art. 5º, inciso II</b> - documentos e informações técnicas decorrentes de investigações, perícias e fiscalizações, e outros documentos relativos a ações na área de competência do MP, quando ainda não concluídos os respectivos procedimentos.<br></p><p style=\"text-align: justify;\"><b>CPP - Art. 20. </b>A autoridade assegurará no inquérito o sigilo necessário à elucidação do fato ou exigido pelo interesse da sociedade.<br></p><p style=\"text-align: justify;\"><b>Lei 12.850 -Art. 23</b>. O sigilo da investigação poderá ser decretado pela autoridade judicial competente, para garantia da celeridade e da eficácia das diligências investigatórias, assegurando-se ao defensor, no interesse do representado, amplo acesso aos elementos de prova que digam respeito ao exercício do direito de defesa, devidamente precedido de autorização judicial, ressalvados os referentes às diligências em andamento.<br></p>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T11:17:13.440",
+    "modified_at": "2020-10-06T11:17:13.440",
+    "title": "Segredo de Justiça",
+    "description": "<p><b>Codigo de Processo Civil - Art. 155.</b> Os atos processuais são públicos. Correm, todavia, em segredo de justiça os processos:<br>I - em que o exigir o interesse público;<br>Il - que dizem respeito a casamento, filiação, separação dos cônjuges, conversão desta em divórcio, alimentos e guarda de menores. (Redação dada pela Lei nº 6.515, de 26.12.1977)<br></p>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T11:34:31.648",
+    "modified_at": "2020-10-06T11:34:31.648",
+    "title": "Segurança Institucional",
+    "description": "<p style=\"text-align: justify;\"><b>Resolução nº 07, inciso VII </b>- Comprometer atividades de segurança institucional, tais quais:<br>a)arquivos de imagem e som proveniente de circuito fechado de televisão e outros;<br>b) equipamentos utilizados pelo MPTO;<br>c) arquivos e documentos produzidos pelo Núcleo de Inteligência e Segurança Institucional - NIS.<br></p>",
+    "control_type": 3
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 378,
+    "created_at": "2020-10-06T15:20:47.758",
+    "modified_at": "2020-10-12T19:57:24.363",
+    "title": "Art. 4º inciso I",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º inciso I - colocar em risco a defesa e a soberania nacionais ou integridade do Território Nacional;<br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 378,
+    "created_at": "2020-10-06T15:23:17.507",
+    "modified_at": "2020-10-07T10:17:11.456",
+    "title": "Art. 4º inciso II",
+    "description": "<p>Art. 4º inciso II - prejudicar ou vulnerar negociações, relações internacionais ou informações fornecidas em caráter sigiloso por outros Estados e/ou organismos internacionais;<br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 378,
+    "created_at": "2020-10-06T15:28:13.584",
+    "modified_at": "2020-10-12T19:57:35.278",
+    "title": "Art. 4º, inciso III",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso III - oferecer risco à vida, segurança ou saúde da população, estabilidade financeira, econômica ou monetária do país; <br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T15:30:26.563",
+    "modified_at": "2020-10-06T15:34:31.263",
+    "title": "Art. 4º , inciso IV ",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso IV - comprometer planos ou operações estratégicas das Forças Armadas, projetos de pesquisa e desenvolvimento científico ou tecnológico, assim como a sistemas, bens, instalações ou áreas de interesse estratégico nacional;<br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 378,
+    "created_at": "2020-10-06T15:31:46.790",
+    "modified_at": "2020-10-12T19:57:43.017",
+    "title": "Art. 4º, inciso V ",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso V – pôr em risco a segurança da Instituição, membros, servidores; bem como seus familiares, dentre as quais:<br>a) plantas baixas, estruturais e de instalações de imóveis do MPTO;<br>b) detalhamento da arquitetura de tecnologias da informação e comunicação; e<br>c) códigos-fonte de sistemas informatizados, ressalvados hipóteses de cessão voluntária, observado o interesse da Administração.<br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 378,
+    "created_at": "2020-10-06T15:32:30.276",
+    "modified_at": "2020-10-12T19:57:52.211",
+    "title": "Art. 4º, inciso VI ",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso VI –comprometer investigações ou fiscalizações em andamentos para prevenir ou reprimir infrações;<br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 378,
+    "created_at": "2020-10-06T15:33:33.429",
+    "modified_at": "2020-10-12T19:57:59.293",
+    "title": "Art. 4º, inciso VII ",
+    "description": "<p><br></p><p>Resolução 07/2017/CPJ - Art. 4º, inciso VII - comprometer atividades de segurança institucional, dentre as quais:</p><p>a) arquivos de imagem e som proveniente de circuito fechado de televisão e outros;</p><p>b) equipamentos utilizados pelo MPTO; e</p><p>c) arquivos e documentos produzidos pelo Núcleo de Inteligência e Segurança Institucional – NIS;<br></p><br>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T15:38:55.611",
+    "modified_at": "2020-10-06T15:38:55.611",
+    "title": "Art. 4º, inciso VIII",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso VIII - expor conteúdo de investigação ou decisão, relativa a juízos éticos e disciplinares em desfavor dos Integrantes deste MPTO.<br></p>",
+    "control_type": 8
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T15:56:17.406",
+    "modified_at": "2020-10-06T15:56:17.406",
+    "title": "Art. 4º, inciso I",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º inciso I - colocar em risco a defesa e a soberania nacionais ou integridade do Território Nacional;<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T15:56:59.528",
+    "modified_at": "2020-10-06T16:13:32.949",
+    "title": "Art. 4º, inciso II",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º inciso II - prejudicar ou vulnerar negociações, relações internacionais ou informações fornecidas em caráter sigiloso por outros Estados e/ou organismos internacionais;<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T15:59:23.493",
+    "modified_at": "2020-10-06T16:13:37.282",
+    "title": "Art. 4º, inciso III",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso III - oferecer risco à vida, segurança ou saúde da população, estabilidade financeira, econômica ou monetária do país; <br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T15:59:53.446",
+    "modified_at": "2020-10-06T16:13:40.831",
+    "title": "Art. 4º, inciso IV",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso IV - comprometer planos ou operações estratégicas das Forças Armadas, projetos de pesquisa e desenvolvimento científico ou tecnológico, assim como a sistemas, bens, instalações ou áreas de interesse estratégico nacional;<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:00:22.541",
+    "modified_at": "2020-10-06T16:13:43.774",
+    "title": "Art. 4º, inciso V",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso V – pôr em risco a segurança da Instituição, membros, servidores; bem como seus familiares, dentre as quais:<br>a) plantas baixas, estruturais e de instalações de imóveis do MPTO;<br>b) detalhamento da arquitetura de tecnologias da informação e comunicação; e<br>c) códigos-fonte de sistemas informatizados, ressalvados hipóteses de cessão voluntária, observado o interesse da Administração.<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:01:38.790",
+    "modified_at": "2020-10-06T16:13:50.408",
+    "title": "Art. 4º, inciso VI",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso VI –comprometer investigações ou fiscalizações em andamentos para prevenir ou reprimir infrações;<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:03:59.936",
+    "modified_at": "2020-10-06T16:13:53.279",
+    "title": "Art. 4º, inciso VII",
+    "description": "<p>Resolução 07/2017/CPJ - Art. 4º, inciso VII - comprometer atividades de segurança institucional, dentre as quais:</p><p>a) arquivos de imagem e som proveniente de circuito fechado de televisão e outros;</p><p>b) equipamentos utilizados pelo MPTO; e</p><p>c) arquivos e documentos produzidos pelo Núcleo de Inteligência e Segurança Institucional – NIS;<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:05:24.717",
+    "modified_at": "2020-10-06T16:14:10.281",
+    "title": "Art. 4º, inciso VIII",
+    "description": "<p style=\"text-align: justify;\">Resolução 07/2017/CPJ - art. 4º, inciso VIII - expor conteúdo de investigação ou decisão, relativa a juízos éticos e disciplinares em desfavor dos Integrantes deste MPTO.<br></p>",
+    "control_type": 7
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:07:48.967",
+    "modified_at": "2020-10-06T16:07:48.967",
+    "title": "Art. 4º, inciso I",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso I – colocar em risco a defesa e a soberania nacionais ou integridade do Território Nacional;<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:08:11.621",
+    "modified_at": "2020-10-06T16:08:11.621",
+    "title": "Art. 4º, inciso II",
+    "description": "<p>II – prejudicar ou vulnerar negociações, relações internacionais ou informações fornecidas em caráter sigiloso por outros Estados e/ou organismos internacionais;<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:08:50.308",
+    "modified_at": "2020-10-06T16:08:50.308",
+    "title": "Art. 4º, inciso III",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso III – oferecer risco à vida, segurança ou saúde da população, estabilidade financeira, econômica ou monetária do país;<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:09:40.429",
+    "modified_at": "2020-10-06T16:09:40.429",
+    "title": "Art. 4º, inciso IV",
+    "description": "<p>Resolução 07/2017/CPJ, art. 4º, inciso IV – comprometer planos ou operações estratégicas das Forças Armadas, projetos de pesquisa e desenvolvimento científico ou tecnológico, assim como a sistemas, bens, instalações ou áreas de interesse estratégico nacional;<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:10:31.878",
+    "modified_at": "2020-10-06T16:10:31.878",
+    "title": "Art. 4º, inciso V",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso V – pôr em risco a segurança da Instituição, membros, servidores; bem como seus familiares, dentre as quais:<br>a) plantas baixas, estruturais e de instalações de imóveis do MPTO;<br>b) detalhamento da arquitetura de tecnologias da informação e comunicação; e<br>c) códigos-fonte de sistemas informatizados, ressalvados hipóteses de cessão voluntária, observado o interesse da Administração.<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:11:21.543",
+    "modified_at": "2020-10-06T16:11:21.543",
+    "title": "Art. 4º, inciso VI",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso VI – comprometer investigações ou fiscalizações em andamentos para prevenir ou reprimir infrações;<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:12:06.999",
+    "modified_at": "2020-10-06T16:12:06.999",
+    "title": "Art. 4º, inciso VII",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso VII – comprometer atividades de segurança institucional, dentre as quais:<br>a) arquivos de imagem e som proveniente de circuito fechado de televisão e outros;<br>b) equipamentos utilizados pelo MPTO; e<br>c) arquivos e documentos produzidos pelo Núcleo de Inteligência e Segurança Institucional – NIS;<br></p>",
+    "control_type": 6
+  }
+},
+{
+  "model": "document_access.legalprerogative",
+  "pk": null,
+  "fields": {
+    "created_by": 1177,
+    "modified_by": 1177,
+    "created_at": "2020-10-06T16:12:47.912",
+    "modified_at": "2020-10-06T16:12:47.912",
+    "title": "Art. 4º, inciso VIII",
+    "description": "<p>Resolução 07/2017/CPJ - art. 4º, inciso VIII – expor conteúdo de investigação ou decisão, relativa a juízos éticos e disciplinares em desfavor dos Integrantes deste MPTO.<br></p>",
+    "control_type": 6
+  }
+}
+]

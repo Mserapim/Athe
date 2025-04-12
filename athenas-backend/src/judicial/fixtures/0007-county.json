@@ -1,0 +1,686 @@
+[
+{
+    "pk": 1,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ALMAS",
+        "created_at": "2014-10-23T10:58:27.260",
+        "modified_at": "2014-10-23T10:58:27.260",
+        "locations": [
+            12049,
+            12148
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 2,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ALVORADA",
+        "created_at": "2014-10-23T10:58:27.385",
+        "modified_at": "2014-10-23T10:58:27.385",
+        "locations": [
+            12050,
+            12177
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 3,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ANANAS",
+        "created_at": "2014-10-23T10:58:27.410",
+        "modified_at": "2014-10-23T10:58:27.410",
+        "locations": [
+            12051,
+            12052,
+            12154,
+            12074
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 4,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ARAGUACEMA",
+        "created_at": "2014-10-23T10:58:27.434",
+        "modified_at": "2014-10-23T10:58:27.435",
+        "locations": [
+            12055,
+            12079
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 5,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ARAGUACU",
+        "created_at": "2014-10-23T10:58:27.460",
+        "modified_at": "2014-10-23T10:58:27.460",
+        "locations": [
+            12056,
+            12159
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 6,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ARAGUAINA",
+        "created_at": "2014-10-23T10:58:27.486",
+        "modified_at": "2014-10-23T10:58:27.486",
+        "locations": [
+            12057,
+            12054,
+            12058,
+            12128,
+            12125,
+            12160,
+            12077
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 7,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ARAGUATINS",
+        "created_at": "2014-10-23T10:58:27.511",
+        "modified_at": "2014-10-23T10:58:27.511",
+        "locations": [
+            12059,
+            12166,
+            12073
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 8,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ARAPOEMA",
+        "created_at": "2014-10-23T10:58:27.537",
+        "modified_at": "2014-10-23T10:58:27.537",
+        "locations": [
+            12060,
+            12066,
+            12138
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 9,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ARRAIAS",
+        "created_at": "2014-10-23T10:58:27.562",
+        "modified_at": "2014-10-23T10:58:27.563",
+        "locations": [
+            12061
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 10,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE AUGUSTINOPOLIS",
+        "created_at": "2014-10-23T10:58:27.588",
+        "modified_at": "2014-10-23T10:58:27.588",
+        "locations": [
+            12062,
+            12170,
+            12158,
+            12150,
+            12094,
+            12078
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 11,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE AURORA DO TOCANTINS",
+        "created_at": "2014-10-23T10:58:27.614",
+        "modified_at": "2014-10-23T10:58:27.614",
+        "locations": [
+            12063,
+            12084,
+            12114,
+            12131
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 12,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE AXIXA DO TOCANTINS",
+        "created_at": "2014-10-23T10:58:27.640",
+        "modified_at": "2014-10-23T10:58:27.640",
+        "locations": [
+            12064,
+            12173
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 13,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE COLINAS DO TOCANTINS",
+        "created_at": "2014-10-23T10:58:27.665",
+        "modified_at": "2014-10-23T10:58:27.665",
+        "locations": [
+            12083,
+            12110,
+            12182,
+            12071,
+            12069,
+            12151
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 14,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE COLMEIA",
+        "created_at": "2014-10-23T10:58:27.691",
+        "modified_at": "2014-10-23T10:58:27.691",
+        "locations": [
+            12142,
+            12086,
+            12100,
+            12108,
+            12141
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 15,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE CRISTALANDIA",
+        "created_at": "2014-10-23T10:58:27.716",
+        "modified_at": "2014-10-23T10:58:27.716",
+        "locations": [
+            12087,
+            12129,
+            12111
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 16,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE DIANOPOLIS",
+        "created_at": "2014-10-23T10:58:27.742",
+        "modified_at": "2014-10-23T10:58:27.742",
+        "locations": [
+            12090,
+            12132,
+            12155,
+            12176,
+            12085
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 17,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE FIGUEIROPOLIS",
+        "created_at": "2014-10-23T10:58:27.766",
+        "modified_at": "2014-10-23T10:58:27.766",
+        "locations": [
+            12096,
+            12174
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 18,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE FILADELFIA",
+        "created_at": "2014-10-23T10:58:27.792",
+        "modified_at": "2014-10-23T10:58:27.792",
+        "locations": [
+            12097,
+            12065,
+            12134
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 19,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE FORMOSO DO ARAGUA\u00cdA",
+        "created_at": "2014-10-23T10:58:27.817",
+        "modified_at": "2014-10-23T10:58:27.817",
+        "locations": [
+            12098
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 20,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE GOIATINS",
+        "created_at": "2014-10-23T10:58:27.843",
+        "modified_at": "2014-10-23T10:58:27.843",
+        "locations": [
+            12101,
+            12067,
+            12075
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 21,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE GUARAI",
+        "created_at": "2014-10-23T10:58:27.869",
+        "modified_at": "2014-10-23T10:58:27.869",
+        "locations": [
+            12102,
+            12099
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 22,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE GURUPI",
+        "created_at": "2014-10-23T10:58:27.894",
+        "modified_at": "2014-10-23T10:58:27.894",
+        "locations": [
+            12103,
+            12048,
+            12088,
+            12076,
+            12093
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 23,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ITACAJA",
+        "created_at": "2014-10-23T10:58:27.920",
+        "modified_at": "2014-10-23T10:58:27.920",
+        "locations": [
+            12105,
+            12080,
+            12153,
+            12107
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 24,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE ITAGUATINS",
+        "created_at": "2014-10-23T10:58:27.946",
+        "modified_at": "2014-10-23T10:58:27.946",
+        "locations": [
+            12106,
+            12168,
+            12119
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 25,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE MIRACEMA DO TOCANTINS",
+        "created_at": "2014-10-23T10:58:27.971",
+        "modified_at": "2014-10-23T10:58:27.971",
+        "locations": [
+            12120
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 26,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE MIRANORTE",
+        "created_at": "2014-10-23T10:58:27.997",
+        "modified_at": "2014-10-23T10:58:27.997",
+        "locations": [
+            12121,
+            12068,
+            12156,
+            12092
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 27,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE NATIVIDADE",
+        "created_at": "2014-10-23T10:58:28.022",
+        "modified_at": "2014-10-23T10:58:28.022",
+        "locations": [
+            12126,
+            12082,
+            12163
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 28,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE NOVO ACORDO",
+        "created_at": "2014-10-23T10:58:28.048",
+        "modified_at": "2014-10-23T10:58:28.048",
+        "locations": [
+            12130,
+            12112,
+            12164,
+            12167,
+            12053
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 29,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PALMAS",
+        "created_at": "2014-10-23T10:58:28.072",
+        "modified_at": "2014-10-23T10:58:28.072",
+        "locations": [
+            12178
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 30,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PALMEIROPOLIS",
+        "created_at": "2014-10-23T10:58:28.098",
+        "modified_at": "2014-10-23T10:58:28.098",
+        "locations": [
+            12135,
+            12169
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 31,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PARAISO DO TOCANTINS",
+        "created_at": "2014-10-23T10:58:28.124",
+        "modified_at": "2014-10-23T10:58:28.124",
+        "locations": [
+            12136,
+            12046,
+            12091,
+            12117,
+            12123,
+            12152
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 32,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PARANA",
+        "created_at": "2014-10-23T10:58:28.149",
+        "modified_at": "2014-10-23T10:58:28.149",
+        "locations": [
+            12137
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 33,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PEDRO AFONSO",
+        "created_at": "2014-10-23T10:58:28.176",
+        "modified_at": "2014-10-23T10:58:28.176",
+        "locations": [
+            12139,
+            12181,
+            12161,
+            12070
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 34,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PEIXE",
+        "created_at": "2014-10-23T10:58:28.201",
+        "modified_at": "2014-10-23T10:58:28.201",
+        "locations": [
+            12140,
+            12171,
+            12109
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 35,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PIUM",
+        "created_at": "2014-10-23T10:58:28.226",
+        "modified_at": "2014-10-23T10:58:28.226",
+        "locations": [
+            12145,
+            12081
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 36,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PONTE ALTA DO TOCANTINS",
+        "created_at": "2014-10-23T10:58:28.251",
+        "modified_at": "2014-10-23T10:58:28.251",
+        "locations": [
+            12147,
+            12143,
+            12118
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 37,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE PORTO NACIONAL",
+        "created_at": "2014-10-23T10:58:28.275",
+        "modified_at": "2014-10-23T10:58:28.275",
+        "locations": [
+            12149,
+            12122,
+            12072,
+            12162,
+            12172,
+            12133,
+            12104,
+            12095
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 38,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE TAGUATINGA",
+        "created_at": "2014-10-23T10:58:28.299",
+        "modified_at": "2014-10-23T10:58:28.299",
+        "locations": [
+            12175,
+            12146
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 39,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE TOCANTINIA",
+        "created_at": "2014-10-23T10:58:28.324",
+        "modified_at": "2014-10-23T10:58:28.324",
+        "locations": [
+            12179,
+            12115,
+            12113,
+            12157
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 40,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE TOCANTINOPOLIS",
+        "created_at": "2014-10-23T10:58:28.349",
+        "modified_at": "2014-10-23T10:58:28.349",
+        "locations": [
+            12180,
+            12047,
+            12116,
+            12127,
+            12165
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 41,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE WANDERLANDIA",
+        "created_at": "2014-10-23T10:58:28.374",
+        "modified_at": "2014-10-23T10:58:28.374",
+        "locations": [
+            12183,
+            12089,
+            12144
+        ],
+        "created_by": 845
+    }
+},
+{
+    "pk": 42,
+    "model": "judicial.county",
+    "fields": {
+        "modified_by": 845,
+        "title": "COMARCA DE XAMBIOA",
+        "created_at": "2014-10-23T10:58:28.399",
+        "modified_at": "2014-10-23T10:58:28.399",
+        "locations": [
+            12184
+        ],
+        "created_by": 845
+    }
+}
+]

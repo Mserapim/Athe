@@ -1,0 +1,9 @@
+{% extends "raf/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+
+    {% block content %}
+        {{ doc.content | safely }}
+    {% endblock %}
+
+</div>

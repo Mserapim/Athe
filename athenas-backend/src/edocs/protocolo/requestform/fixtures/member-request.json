@@ -1,0 +1,282 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Afastamentos p/ cursos, seminários e congressos",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Informar o período e a programação.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Anotações diversas em ficha funcional",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Anexar documento comprobatório.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Aposentadoria",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Especificar o motivo.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Averbação de tempo de serviço",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Anexar a competente certidão.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Certidões ou declarações para fins específicos",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Especificar a finalidade.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Recesso natalino",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Indicar a data para usufruir e especificar o ano do plantão.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Férias",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Indicar o período aquisitivo e data para usufruir.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Imposto de Renda - Exclusão de dependente.",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Esclarecer se é por morte, matrimônio, atividade remunerada, separação conjugal, anexando o documento comprobatório.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Inclusão de dependentes para todos os fins de direito, inclusive Imposto de Renda",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Informar se o cônjuge declara ou não o dependente para fins de IRRF, anexando a certidão de casamento, nascimento.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Licença Casamento/Luto",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Informar período, anexando certidão de casamento.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Licença Eleitoral",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Portaria / Doc. de convocação indicando o período da convocação.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Licença paternidade",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Anexar certidão de nascimento.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Licença saúde até trinta dias",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Anexar atestado médico.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Licença por motivo de doença em pessoa da família",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Anexar atestado médico e comprovante de parentesco.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Retificação de nome ou dados cadastrais",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Informar o dado atualizado, anexando o respectivo comprovante.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Atividade Política",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Registro da candidatura perante justiça eleitoral.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Domicílio bancário",
+    "value": 17,
+    "cvalue": "17",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Informar agência, conta corrente e nome do banco.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Contra - Cheque",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Especificar o mês.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Levantamento de Tempo de Contribuição Averbado junto ao",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Informar data de início no MPE.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEMBER_REQUEST_TYPE",
+    "label": "Outros",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "requestform.MEMBER_REQUEST_TYPE",
+    "description": "Mencionar o assunto e anexar documento(s) quando for necessário.",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

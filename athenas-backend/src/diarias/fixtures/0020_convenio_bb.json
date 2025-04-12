@@ -1,0 +1,21 @@
+[
+{
+    "model": "gfp.bankingconvenant",
+    "pk": 1,
+    "fields": {
+        "identification": "BB",
+        "bank": 1,
+        "convenant": "0001201240126",
+        "generator": 141,
+        "counter": 1555,
+        "active": true,
+        "type_convenant": 1,
+        "agency_cod": "3834",
+        "agency_cod_dv": "2",
+        "account_cod": "6403",
+        "account_cod_dv": "3",
+        "chave_pix": "CNPJ: 14.921.092/0001-57",
+        "excluded_bank": []
+    }
+}
+]

@@ -1,0 +1,4 @@
+./manage.py exportdata "Application.objects.order_by('layer', 'title').filter(title='FERRAMENTAS')" --indent=4 --with-natural-keys --import-module engine --outfile /app/root/common/document_access/fixtures/01-menu-application.json
+./manage.py exportdata "Controller.objects.filter(module='common.document_access')" --indent=4 --with-natural-keys --import-module engine --outfile /app/root/common/document_access/fixtures/02-menu-controller.json
+./manage.py exportdata "Choice.objects.filter(app_label='document_access', name='LOG_TYPE')" --indent=4 --with-natural-keys --import-module standard --outfile /app/root/common/document_access/fixtures/03-choices.json
+./manage.py exportdata "ControlType.objects.all()" --indent=4 --with-natural-keys --import-module common.document_access --outfile /app/root/common/document_access/fixtures/04-controltypes.json

@@ -1,0 +1,352 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. I",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar I",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. II",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar II",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. III",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar III",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. IV",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar IV",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. V",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar V",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. VI",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar VI",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. VII",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar VII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. VIII",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar VIII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. IX",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar IX",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. X",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar X",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XI",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XI",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XII",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XIII",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XIII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XIV",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XIV",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XV",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XV",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XVI",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XVI",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XVII",
+    "value": 17,
+    "cvalue": "17",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XVII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XVIII",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XVIII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XIX",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XIX",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XX",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XX",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XXI",
+    "value": 21,
+    "cvalue": "21",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XXI",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XXII",
+    "value": 22,
+    "cvalue": "22",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XXII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XXIII",
+    "value": 23,
+    "cvalue": "23",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XXIII",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "COMPL. XXIV",
+    "value": 24,
+    "cvalue": "24",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "Complementar XXIV",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "COMPLEMENT_PAYROLL",
+    "label": "BASE",
+    "value": 0,
+    "cvalue": "0",
+    "cache_path": "gfp.COMPLEMENT_PAYROLL",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+}
+]

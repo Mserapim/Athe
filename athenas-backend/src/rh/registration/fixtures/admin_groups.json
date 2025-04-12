@@ -1,0 +1,15 @@
+[
+    {
+        "fields": {
+            "name": "rh-admin-registration",
+            "permissions": [
+                [
+                    "registration_admin",
+                    "registration",
+                    "forminformation"
+                ]
+            ]
+        },
+        "model": "auth.group"
+    }
+]

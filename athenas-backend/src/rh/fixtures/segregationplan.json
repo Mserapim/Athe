@@ -1,0 +1,58 @@
+[
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "cvalue": 1,
+    "label": "Sem segregação da massa",
+    "cache_path": "rh.MASS_SEGREGATION_PLAN",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "name": "MASS_SEGREGATION_PLAN"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "cvalue": 2,
+    "label": "Fundo em capitalização",
+    "cache_path": "rh.MASS_SEGREGATION_PLAN",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "name": "MASS_SEGREGATION_PLAN"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "cvalue": 3,
+    "label": "Fundo em repartição",
+    "cache_path": "rh.MASS_SEGREGATION_PLAN",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "name": "MASS_SEGREGATION_PLAN"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "cvalue": 4,
+    "label": "Mantido pelo Tesouro",
+    "cache_path": "rh.MASS_SEGREGATION_PLAN",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "name": "MASS_SEGREGATION_PLAN"
+  },
+  "model": "standard.choice"
+}
+]

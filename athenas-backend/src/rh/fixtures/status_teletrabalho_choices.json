@@ -1,0 +1,100 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Regular",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Desbloqueado",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Bloqueado",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Revogado",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Ignorado",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Concluído",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "STATUS_TELETRABALHO",
+    "label": "Pendente",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "rh.STATUS_TELETRABALHO",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

@@ -1,0 +1,58 @@
+[
+{
+    "model": "services.scheduledservices",
+    "pk": 51,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2023-07-14T00:47:01.343",
+        "modified_at": "2023-07-14T00:47:01.343",
+        "name": "Agendamento de recesso de residentes",
+        "command": "resident_scheduling_recess",
+        "description": "Agendamento de recesso de residentes",
+        "classcode": 387
+    }
+},
+{
+    "model": "services.scheduledservices",
+    "pk": 52,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2023-07-14T00:47:45.116",
+        "modified_at": "2023-07-14T00:47:45.116",
+        "name": "Notifica\u00e7\u00e3o de recesso de residentes",
+        "command": "notify_resident_scheduled_recess",
+        "description": "Notifica\u00e7\u00e3o de recesso de residentes",
+        "classcode": 387
+    }
+},
+{
+    "model": "services.scheduledservices",
+    "pk": 53,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2023-07-20T14:04:26.314",
+        "modified_at": "2023-07-20T14:04:26.314",
+        "name": "Desligamento de residentes",
+        "command": "cmd_terminate_resident",
+        "description": "COMANDO PARA ENCERRAR O PROVIMENTO DE RESIDENTES",
+        "classcode": 365
+    }
+},
+{
+    "model": "services.scheduledservices",
+    "pk": 54,
+    "fields": {
+        "created_by": 190,
+        "modified_by": 190,
+        "created_at": "2023-07-20T17:32:14.628",
+        "modified_at": "2023-07-20T17:32:14.628",
+        "name": "Gerar per\u00edodo aquisitivo recesso residente",
+        "command": "resident_generator",
+        "description": "Comando para gerar per\u00edodo aquisitivo de recesso de estagi\u00e1rio",
+        "classcode": 315
+    }
+}
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "pk": 1,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "work_place": null,
+            "title": "Noticia de Fato",
+            "slug": "noticia-de-fato",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "work_place": null,
+            "title": "Inquerito Civil Público",
+            "slug": "inquerito-civil-publico",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "work_place": null,
+            "title": "Procedimento Preparatório",
+            "slug": "procedimento-preparatorio",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "work_place": null,
+            "title": "Em instauração",
+            "slug": "em-instauracao",
+            "tag_type": 1
+        }
+    },
+    {
+        "pk": 7,
+        "model": "judicial.tag",
+        "fields": {
+            "owner": null,
+            "work_place": null,
+            "title": "Procedimento Administrativo",
+            "slug": "procedimento-administrativo",
+            "tag_type": 1
+        }
+    }
+]

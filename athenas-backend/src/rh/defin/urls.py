@@ -1,0 +1,63 @@
+from django.urls import path
+
+from rh.defin.apiv2.views import (
+    ColaboradorPfListView,
+    ColaboradorPfApiCore,
+    ColaboradorPfDetailView,
+    PagamentoColaboradorListView,
+    PagamentoColaboradorApiCore,
+    PagamentoColaboradorDetailView,
+)
+
+urlpatterns = [
+    path(
+        "colaboradores-eventuais/",
+        ColaboradorPfListView.as_view(),
+        name="colaboradores_eventuais_pf",
+    ),
+    path(
+        "colaborador-eventual/",
+        ColaboradorPfDetailView.as_view(),
+        name="colaborador_eventual_pf",
+    ),
+    path(
+        "colaborador-eventual/criar/",
+        ColaboradorPfApiCore.as_view(),
+        name="colaborador_eventual_pf-criar",
+    ),
+    path(
+        "colaborador-eventual/editar/",
+        ColaboradorPfApiCore.as_view(),
+        name="colaborador_eventual_pf-editar",
+    ),
+    path(
+        "colaborador-eventual/apagar/",
+        ColaboradorPfApiCore.as_view(),
+        name="colaborador_eventual_pf-apagar",
+    ),
+    path(
+        "pagamentos-colaborador/",
+        PagamentoColaboradorListView.as_view(),
+        name="pagamentos-colaborador",
+    ),
+    path(
+        "pagamento-colaborador/",
+        PagamentoColaboradorDetailView.as_view(),
+        name="pagamentos-colaborador",
+    ),
+    path(
+        "pagamento-colaborador/criar/",
+        PagamentoColaboradorApiCore.as_view(),
+        name="pagamentos-colaborador-criar",
+    ),
+    path(
+        "pagamento-colaborador/editar/",
+        PagamentoColaboradorApiCore.as_view(),
+        name="pagamentos-colaborador-editar",
+    ),
+    path(
+        "pagamento-colaborador/apagar/",
+        PagamentoColaboradorApiCore.as_view(),
+        name="pagamentos-colaborador-apagar",
+    ),
+]

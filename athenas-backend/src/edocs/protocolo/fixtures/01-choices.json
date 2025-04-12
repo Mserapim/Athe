@@ -1,0 +1,57 @@
+[
+{
+    "fields": {
+        "cache_path": "protocolo.MIDIA",
+        "label": "FAX",
+        "name": "MIDIA",
+        "value": 1,
+        "app_label": "protocolo"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "protocolo.MIDIA",
+        "label": "CARTA",
+        "name": "MIDIA",
+        "value": 2,
+        "app_label": "protocolo"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "protocolo.MIDIA",
+        "label": "EMAIL",
+        "name": "MIDIA",
+        "value": 3,
+        "app_label": "protocolo"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "protocolo.PRINTER_DRIVER",
+        "label": "Zebra",
+        "name": "PRINTER_DRIVER",
+        "value": 1,
+        "app_label": "protocolo"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "protocolo.PRINTER_DRIVER",
+        "label": "TSC M240",
+        "name": "PRINTER_DRIVER",
+        "value": 2,
+        "app_label": "protocolo"
+    },
+    "model": "standard.choice",
+    "pk": null
+}
+]

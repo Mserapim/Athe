@@ -1,0 +1,55 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .local-p, .local-ol {
+        margin: 1.5em 0em;
+    }
+
+    .local-ol {
+        list-style: decimal;
+        padding: 0em 0em 0em 3em;
+    }
+
+    .local-li {
+        margin: 1em 0em;
+    }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-spacing rf-text-justify">
+    Assunto:
+    <b>
+        {{ protocol.assunto }}
+    </b>
+</p>
+
+<h2 class="rf-spacing rf-text-center">TERMO DE ADESÃO AO PROGRAMA "VEM DE BIKE"</h2>
+
+<p class="local-p" style="text-align:justify; line-height:1.5em;">
+    Eu, {{ employee_name }}, matrícula {{ employee_number }}, tenho
+    interesse em participar do Programa “Vem de Bike” da Procuradoria-Geral
+    de Justiça do Estado do Tocantins, gerenciado pelo Departamento de
+    Gestão de Pessoas/Área de Promoção e Assistência à Saúde.
+</p>
+
+<p class="local-p">Declaro que:</p>
+
+<ol class="local-ol">
+    <li class="local-li">Tenho conhecimento e concordo com os objetivos, resultados
+    esperados e as ações a serem desenvolvidas pelo programa;</li>
+    <li class="local-li">Tenho conhecimento dos meus deveres e obrigações dispostas
+    no Ato no 093/2020;</li>
+    <li class="local-li">Autorizo o uso das informações coletadas, mantendo o meu
+    anonimato, para análise estatística e divulgação do programa.</li>
+</ol>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

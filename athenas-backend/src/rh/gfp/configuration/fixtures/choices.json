@@ -1,0 +1,451 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_TYPE_EVENT",
+            "label": "PROVENTO",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "gfp.GFP_TYPE_EVENT",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_TYPE_EVENT",
+            "label": "DESCONTO",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "gfp.GFP_TYPE_EVENT",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_TYPE_EVENT",
+            "label": "INDIFERENTE",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "gfp.GFP_TYPE_EVENT",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "010 - APOSENTADOS",
+            "value": 10,
+            "cvalue": "10",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "APOSENTADOS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "020 - MILITARES",
+            "value": 20,
+            "cvalue": "20",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "MILITARES",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "030 - PENSIONISTAS",
+            "value": 30,
+            "cvalue": "30",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "PENSIONISTAS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "040 - SERVIDORES ATIVOS ",
+            "value": 40,
+            "cvalue": "40",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "SERVIDORES ATIVOS ",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "050 - SENTENCAS JUDICIAIS",
+            "value": 50,
+            "cvalue": "50",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "SENTENCAS JUDICIAIS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "060 - DESPESAS DE EXERCICIOS ANTERIORES",
+            "value": 60,
+            "cvalue": "60",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "DESPESAS DE EXERCICIOS ANTERIORES",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "065 - INDENIZACOES E RESTITUICOES TRABALHISTAS",
+            "value": 65,
+            "cvalue": "65",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "INDENIZACOES E RESTITUICOES TRABALHISTAS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "070 - OUTROS BENEFICIOS ASSISTENCIAIS",
+            "value": 70,
+            "cvalue": "70",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "OUTROS BENEFICIOS ASSISTENCIAIS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "080 - AUXILIO ALIMENTACAO ",
+            "value": 80,
+            "cvalue": "80",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "AUXILIO ALIMENTACAO ",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "090 - INDENIZACOES E RESTITUICOES",
+            "value": 90,
+            "cvalue": "90",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "INDENIZACOES E RESTITUICOES",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "100 - OBRIGACOES PATRONAIS",
+            "value": 100,
+            "cvalue": "100",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "OBRIGACOES PATRONAIS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "110 - RESUMO",
+            "value": 110,
+            "cvalue": "110",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "RESUMO",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "500 - FOLHA DE PAGAMENTO",
+            "value": 500,
+            "cvalue": "500",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "FOLHA DE PAGAMENTO",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "510 - ADIANTAMENTO DE 13 SALARIO",
+            "value": 510,
+            "cvalue": "510",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "ADIANTAMENTO DE 13 SALARIO",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "520 - ADICIONAL DE FERIAS",
+            "value": 520,
+            "cvalue": "520",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "ADICIONAL DE FERIAS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "530 - OUTROS VENCIMENTOS",
+            "value": 530,
+            "cvalue": "530",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "OUTROS VENCIMENTOS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "540 - OUTRAS DESPESAS VARIAVEIS",
+            "value": 540,
+            "cvalue": "540",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "OUTRAS DESPESAS VARIAVEIS",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_SECTION",
+            "label": "900 - REPASSES DA FOLHA DO MES",
+            "value": 900,
+            "cvalue": "900",
+            "cache_path": "gfp.GFP_SECTION",
+            "description": "REPASSES DA FOLHA DO MES",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_TYPE_REPORT",
+            "label": "Empenhos",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "gfp.GFP_TYPE_REPORT",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "GFP_TYPE_REPORT",
+            "label": "LRF",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "gfp.GFP_TYPE_REPORT",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TRANSFER_TYPE",
+            "label": "Financeiro",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "gfp.TRANSFER_TYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TRANSFER_TYPE",
+            "label": "Contabil",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "gfp.TRANSFER_TYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TRANSFER_TYPE",
+            "label": "Apenas totalizador Financeiro",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "gfp.TRANSFER_TYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TRANSFER_TYPE",
+            "label": "Apenas totalizador Contabil",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "gfp.TRANSFER_TYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TRANSFER_TYPE",
+            "label": "Não Exibir",
+            "value": 5,
+            "cvalue": "5",
+            "cache_path": "gfp.TRANSFER_TYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TYPE_FORMULA",
+            "label": "Padrão",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "gfp.TYPE_FORMULA",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TYPE_FORMULA",
+            "label": "Cadastro",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "gfp.TYPE_FORMULA",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "TYPE_FORMULA",
+            "label": "SQL",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "gfp.TYPE_FORMULA",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "gfp",
+            "name": "CONFIG_GROUP_SQL",
+            "label": "mpmt-perfil-relatorio-empenhos-sql",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "gfp.CONFIG_GROUP_SQL",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+
+]

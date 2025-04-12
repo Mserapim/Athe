@@ -1,0 +1,101 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .local-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .local-th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 4px;
+        font-weight: bold;
+    }
+
+    .local-td {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 4px;
+    }
+
+    .local-td-x {
+        width: 2.5em;
+        text-align: center;
+    }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+<p class="rf-spacing">Assunto: <b>{{ protocol.assunto }}</b></p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height rf-text-justify">
+                - Antes de movimentar este requerimento, leia atentamente as 
+                informações e documentos necessários para a tramitação deste, 
+                a fim de evitar atrasos.
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este requerimento antes de encaminhá-lo.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para a chefia imediata para ciência, quando for o caso.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor Geral da Procuradoria Geral de Justiça:
+</p>
+
+<table class="local-table">
+    <tr>
+        <th class="local-th" colspan="2">Assunto</th>
+        <th class="local-th">Documentos / Informações</th>
+    </tr>
+    {% for choice in request_type_query %}
+    <tr>
+        {% if choice.value == request_type %}
+        <td class="local-td local-td-x"><strong>( X )</strong></td>
+        <td class="local-td"><strong>{{ choice.label }}</strong></td>
+        <td class="local-td"><strong>{{ choice.description }}</strong></td>
+        {% else %}
+        <td class="local-td local-td-x">(&nbsp;&nbsp;&nbsp;&nbsp;)</td>
+        <td class="local-td">{{ choice.label }}</td>
+        <td class="local-td">{{ choice.description }}</td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Descrição do pedido:</th></tr>
+    <tr><td class="rf-td"><p>{{ description | safe | escape }}</p></td></tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

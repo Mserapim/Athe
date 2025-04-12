@@ -1,0 +1,64 @@
+<article class="papper">
+    <div class="papper-header">
+        <div class="papper-header-logo"></div>
+        <div>
+            <p class="papper-header-system">Sistema de Procedimento Extrajudicial</p>
+            <p class="papper-header-instituation">Ministério Público do Estado do Tocantins</p>
+        </div>
+        <div style="clean:both"></div>
+    </div>
+
+    <div>
+        <div style="float: right">
+            <img src="data:image/png;base64,{{ qrcode }}"
+                 alt="QRCode com número do procedimento."
+                 title="QRCode com número do procedimento.">
+        </div>
+    </div>
+
+    <div class="papper-identify">
+        <div>
+            <h2 style="font-size: 18pt;">Procedimento Extrajudicial</h2>
+            <h2 style="font-size: 18pt;">{{ number }}</h2>
+        </div>
+    </div>
+    <div class="papper-identify">
+        <div class="papper-info-cover">
+            <p><strong>Data de Autuação: </strong>{{ created_at }}</p>
+            <p><strong>Classe:</strong> {{ doc.get_type_lawsuit_display }}</p>
+            {% if doc.acting_zone %}<p><strong>Área de Atuação:</strong> {{ doc.acting_zone.title }}</p>{% endif %}
+            {% if is_confidential %}<p style="color:red"><strong>Sigiloso</strong></p>{% endif %}
+            {% if doc.location %}<p><strong>Promotoria:</strong> {{ doc.location.nome }}</p>{% endif %}
+        </div>
+
+    </div>
+    {% if matters %}
+    <div class="papper-identify">
+        <fieldset>
+            <legend>Assunto(s)</legend>
+            <div style="text-align: justify; padding: 15px; font-size:12px;">
+                {% for subject in matters %}
+                    {{ subject }}
+                {% endfor %}
+            </div>
+        </fieldset>
+    </div>
+    {% endif %}
+    <div class="papper-identify">
+        <fieldset>
+            <legend>Partes do Procedimento</legend>
+            <div style="float: left; width:50%">
+                <h5>Interessado(s)</h5>
+                <p>{{ doc.interested|join:", " }}</p>
+            </div>
+            <div style="float: right; width:50%">
+            <h5>Investigados</h5>
+                {% for bloke in doc.blokes.filter %}
+                    <p style="text-transform: uppercase">{{ bloke }}</p>
+                {% empty %}
+                    <p>Ainda não temos nenhum investigado ou apontado reconhecido.</p>
+                {% endfor %}
+            </div>
+        </fieldset>
+    </div>
+</article>

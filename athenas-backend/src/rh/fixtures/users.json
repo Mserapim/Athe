@@ -1,0 +1,807 @@
+[
+{
+  "fields": {
+    "username": "alinnydias",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-26T08:56:57.399",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$jyg5$73393a39e8fce164e8f26efcbb3c99b7",
+    "email": "alinnydias@mpto.mp.br",
+    "date_joined": "2011-02-16T14:42:28.371"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "eliasoliveira",
+    "first_name": "elias",
+    "last_name": "fonseca oliveira",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T08:50:36.282",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "publicacao-oficial"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "PLANO-CONTA-FINANCEIRO"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-previsao-aposentadoria"
+      ],
+      [
+        "rh-folha-pagamento"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-relationship"
+      ]
+    ],
+    "user_permissions": [
+      [
+        "add_justificativa",
+        "processo",
+        "justificativa"
+      ],
+      [
+        "change_justificativa",
+        "processo",
+        "justificativa"
+      ],
+      [
+        "delete_justificativa",
+        "processo",
+        "justificativa"
+      ],
+      [
+        "admin",
+        "processo",
+        "processo"
+      ]
+    ],
+    "password": "md5$i5yu$43203622b648358a9a00591b47b334eb",
+    "email": "eliasoliveira@mpto.mp.br",
+    "date_joined": "2010-09-24T14:11:24.190"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "esmeraldasiqueira",
+    "first_name": "esmeralda",
+    "last_name": "siqueira",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T08:50:02.564",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "rh-geral"
+      ]
+    ],
+    "user_permissions": [
+      [
+        "add_areaconhecimento",
+        "gecap",
+        "areaconhecimento"
+      ],
+      [
+        "change_areaconhecimento",
+        "gecap",
+        "areaconhecimento"
+      ],
+      [
+        "delete_areaconhecimento",
+        "gecap",
+        "areaconhecimento"
+      ],
+      [
+        "add_capacitacao",
+        "gecap",
+        "capacitacao"
+      ],
+      [
+        "change_capacitacao",
+        "gecap",
+        "capacitacao"
+      ],
+      [
+        "delete_capacitacao",
+        "gecap",
+        "capacitacao"
+      ],
+      [
+        "add_congresso",
+        "gecap",
+        "congresso"
+      ],
+      [
+        "change_congresso",
+        "gecap",
+        "congresso"
+      ],
+      [
+        "delete_congresso",
+        "gecap",
+        "congresso"
+      ],
+      [
+        "add_curso",
+        "gecap",
+        "curso"
+      ],
+      [
+        "change_curso",
+        "gecap",
+        "curso"
+      ],
+      [
+        "delete_curso",
+        "gecap",
+        "curso"
+      ],
+      [
+        "add_evento",
+        "gecap",
+        "evento"
+      ],
+      [
+        "change_evento",
+        "gecap",
+        "evento"
+      ],
+      [
+        "delete_evento",
+        "gecap",
+        "evento"
+      ],
+      [
+        "add_feira",
+        "gecap",
+        "feira"
+      ],
+      [
+        "change_feira",
+        "gecap",
+        "feira"
+      ],
+      [
+        "delete_feira",
+        "gecap",
+        "feira"
+      ],
+      [
+        "add_inscricao",
+        "gecap",
+        "inscricao"
+      ],
+      [
+        "change_inscricao",
+        "gecap",
+        "inscricao"
+      ],
+      [
+        "delete_inscricao",
+        "gecap",
+        "inscricao"
+      ],
+      [
+        "add_investimento",
+        "gecap",
+        "investimento"
+      ],
+      [
+        "change_investimento",
+        "gecap",
+        "investimento"
+      ],
+      [
+        "delete_investimento",
+        "gecap",
+        "investimento"
+      ],
+      [
+        "add_oficina",
+        "gecap",
+        "oficina"
+      ],
+      [
+        "change_oficina",
+        "gecap",
+        "oficina"
+      ],
+      [
+        "delete_oficina",
+        "gecap",
+        "oficina"
+      ],
+      [
+        "add_reuniao",
+        "gecap",
+        "reuniao"
+      ],
+      [
+        "change_reuniao",
+        "gecap",
+        "reuniao"
+      ],
+      [
+        "delete_reuniao",
+        "gecap",
+        "reuniao"
+      ],
+      [
+        "add_seminario",
+        "gecap",
+        "seminario"
+      ],
+      [
+        "change_seminario",
+        "gecap",
+        "seminario"
+      ],
+      [
+        "delete_seminario",
+        "gecap",
+        "seminario"
+      ]
+    ],
+    "password": "md5$rqfi6$b984c6c181fbbead9c2ec600072148f6",
+    "email": "esmeraldasiqueira@mpto.mp.br ",
+    "date_joined": "2010-09-09T16:13:41.306"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "franciscosantos",
+    "first_name": "Francisco",
+    "last_name": "Das Chagas Dos Santos",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T09:03:08.857",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "estagio-admin"
+      ],
+      [
+        "estagio-avaliador"
+      ],
+      [
+        "publicacao-oficial"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "Recursos Humanos Localização"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "estagio-comissao"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-previsao-aposentadoria"
+      ],
+      [
+        "rh-folha-pagamento"
+      ],
+      [
+        "contrato-fiscal"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "diaria-chefia-superior"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "apd-boss"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ],
+      [
+        "rh-relationship"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$plip$8bca30a7f293a85ac5d148176de48500",
+    "email": "franciscosantos@mpto.mp.br",
+    "date_joined": "2009-12-09T08:45:58"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "freurismarsousa",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T16:14:27.604",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "publicacao-oficial"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "PLANO-CONTA-FINANCEIRO"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-folha-pagamento"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "rh-geral"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "sha1$51633$ef685b29202912ee16d7c7efbe180c35065e8433",
+    "email": "freurismarsousa@mpto.mp.br ",
+    "date_joined": "2011-03-01T09:27:18.076"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "iradianmorais",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T08:46:09.016",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-previsao-aposentadoria"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$lfajh$0f5757161ada63d4a07e62161c04909b",
+    "email": "iradianmorais@mpto.mp.br",
+    "date_joined": "2010-12-17T08:50:51.822"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "katiacorrea",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T11:01:27.530",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$qza2$c5a9036ff7b9e314d2167d49987ed785",
+    "email": "katiacorrea@mpto.mp.br ",
+    "date_joined": "2012-06-26T11:38:44.810"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "patriciacabral",
+    "first_name": "Patricia",
+    "last_name": "de Oliveira Cabral",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T09:07:14.530",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "Recursos Humanos Localização"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "contrato-fiscal"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "raf-promotoria"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$yxm0$c3b0b1b0bdf1c11c24ebdbc3a06e9f3d",
+    "email": "patriciacabral@mpto.mp.br ",
+    "date_joined": "2009-12-09T08:45:58"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "valdinamaciel",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T08:35:24.461",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-previsao-aposentadoria"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$4hl55$89fa88c6b760da481eb37327c3b1261c",
+    "email": "valdinamaciel@mpto.mp.br",
+    "date_joined": "2013-06-06T09:50:42.815"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "vandacavalcante",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T10:29:02.249",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$yayy$abd6fde43e6c4b9355e5462b55ecd1b5",
+    "email": "vandacavalcante@mpto.mp.br",
+    "date_joined": "2011-03-16T15:58:58.597"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "vicentejunior",
+    "first_name": "Vicente",
+    "last_name": "Oliveira De Araujo Junior",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2018-02-27T08:36:22.574",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ],
+      [
+        "estagio-avaliador"
+      ],
+      [
+        "Férias - Gestor"
+      ],
+      [
+        "rh-lotacao"
+      ],
+      [
+        "Recursos Humanos Localização"
+      ],
+      [
+        "rh-afastamento"
+      ],
+      [
+        "Basico"
+      ],
+      [
+        "rh-previsao-aposentadoria"
+      ],
+      [
+        "rh-folha-pagamento"
+      ],
+      [
+        "contrato-fiscal"
+      ],
+      [
+        "rh-gestor-servidor-orgao-geral"
+      ],
+      [
+        "diaria-despacha"
+      ],
+      [
+        "apd-admin"
+      ],
+      [
+        "apd-boss"
+      ],
+      [
+        "rh-geral"
+      ],
+      [
+        "rh-afastamento-gestor"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$dsy1l$4c60e02228e76e864e535b70639ca20f",
+    "email": "vicentejunior@mpto.mp.br ",
+    "date_joined": "2009-10-23T16:06:25.775"
+  },
+  "model": "auth.user"
+}
+]

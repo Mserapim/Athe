@@ -1,0 +1,19 @@
+.workflow-graph
+{ padding:10px; font-size:13px; font-family:Helvetica; }
+
+.workflow-graph ul
+{ display: table; }
+
+.workflow-graph ul li
+{ list-style: disc inside; }
+
+.workflow-graph ul li span
+{ font-weight: bold; }
+
+.workflow-graph ul ul
+{ margin: 0 0 20px 20px; }
+
+.workflow-graph ul li li
+{ list-style: circle inside !important; }
+
+

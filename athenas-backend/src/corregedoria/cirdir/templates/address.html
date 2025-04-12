@@ -1,0 +1,41 @@
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>ENDEREÇO</b></td></tr>
+      </table>
+      <div style="padding-top: 1em; ">
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Tipo de Residência: <b>{{ address.get_type_residence_display.upper | safely }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Endereço:
+        </div>
+        <div style="padding-top: 0.25em; padding-left: 1em; padding-bottom: 0.25em; font-size: 12px; ">
+          Município: <b>{{ address.ref_address.municipio }}</b><br />
+          Tipo de Endereço: <b>{{ address.ref_address.get_tipo_endereco_display.upper }}</b><br />
+          Tipo de Logradouro: <b>{{ address.ref_address.get_tipo_logradouro_display.upper }}</b><br />
+          Logradouro: <b>{{ address.ref_address.logradouro }}</b><br />
+          Número: <b>{{ address.ref_address.numero }}</b><br />
+          <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+              <tr>
+                  <td width=50% >
+                    CEP: <b>{{ address.ref_address.cep }}</b><br />
+                  </td>
+                  <td>
+                    Bairro/Distrito: <b>{{ address.ref_address.bairro }}</b><br />
+                  </td>
+              </tr>
+          </table>
+          Complemento: <b>{{ address.ref_address.complemento }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Início da residência: <b>{{ address.start_date | date:'d/m/Y' }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          [<b> {% if address.authorization_reside_outside == True %} X {% else %}   {%endif%} </b>] Possui autorização do CSMP para residir fora da Comarca.
+        </div>
+      </div>
+
+    {% endblock %}
+</div>

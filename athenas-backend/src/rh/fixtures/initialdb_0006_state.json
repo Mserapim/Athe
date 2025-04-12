@@ -1,0 +1,618 @@
+[
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "ACRE",
+    "descricao": "ACRE",
+    "pais": [
+      "55"
+    ],
+    "sigla": "AC",
+    "siafi": null,
+    "tse": null,
+    "ibge": 12
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "ALAGOAS",
+    "descricao": "ALAGOAS",
+    "pais": [
+      "55"
+    ],
+    "sigla": "AL",
+    "siafi": null,
+    "tse": null,
+    "ibge": 27
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "AMAPA",
+    "descricao": "AMAPA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "AP",
+    "siafi": null,
+    "tse": null,
+    "ibge": 16
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "AMAZONAS",
+    "descricao": "AMAZONAS",
+    "pais": [
+      "55"
+    ],
+    "sigla": "AM",
+    "siafi": null,
+    "tse": null,
+    "ibge": 13
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "BAHIA",
+    "descricao": "BAHIA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "BA",
+    "siafi": null,
+    "tse": null,
+    "ibge": 29
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "CEARA",
+    "descricao": "CEARA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "CE",
+    "siafi": null,
+    "tse": null,
+    "ibge": 23
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "DISTRITO FEDERAL",
+    "descricao": "DISTRITO FEDERAL",
+    "pais": [
+      "55"
+    ],
+    "sigla": "DF",
+    "siafi": null,
+    "tse": null,
+    "ibge": 53
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "ESPIRITO SANTO",
+    "descricao": "ESPIRITO SANTO",
+    "pais": [
+      "55"
+    ],
+    "sigla": "ES",
+    "siafi": null,
+    "tse": null,
+    "ibge": 32
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "GOIAS",
+    "descricao": "GOIAS",
+    "pais": [
+      "55"
+    ],
+    "sigla": "GO",
+    "siafi": null,
+    "tse": null,
+    "ibge": 52
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "MARANHAO",
+    "descricao": "MARANHAO",
+    "pais": [
+      "55"
+    ],
+    "sigla": "MA",
+    "siafi": null,
+    "tse": null,
+    "ibge": 21
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "MATO GROSSO",
+    "descricao": "MATO GROSSO",
+    "pais": [
+      "55"
+    ],
+    "sigla": "MT",
+    "siafi": null,
+    "tse": null,
+    "ibge": 51
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "MATO GROSSO DO SUL",
+    "descricao": "MATO GROSSO DO SUL",
+    "pais": [
+      "55"
+    ],
+    "sigla": "MS",
+    "siafi": null,
+    "tse": null,
+    "ibge": 50
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "MINAS GERAIS",
+    "descricao": "MINAS GERAIS",
+    "pais": [
+      "55"
+    ],
+    "sigla": "MG",
+    "siafi": null,
+    "tse": null,
+    "ibge": 31
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "PARA",
+    "descricao": "PARA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "PA",
+    "siafi": null,
+    "tse": null,
+    "ibge": 15
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "PARAIBA",
+    "descricao": "PARAIBA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "PB",
+    "siafi": null,
+    "tse": null,
+    "ibge": 25
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "PARANA",
+    "descricao": "PARANA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "PR",
+    "siafi": null,
+    "tse": null,
+    "ibge": 41
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "PERNAMBUCO",
+    "descricao": "PERNAMBUCO",
+    "pais": [
+      "55"
+    ],
+    "sigla": "PE",
+    "siafi": null,
+    "tse": null,
+    "ibge": 26
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "PIAUI",
+    "descricao": "PIAUI",
+    "pais": [
+      "55"
+    ],
+    "sigla": "PI",
+    "siafi": null,
+    "tse": null,
+    "ibge": 22
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "RIO DE JANEIRO",
+    "descricao": "RIO DE JANEIRO",
+    "pais": [
+      "55"
+    ],
+    "sigla": "RJ",
+    "siafi": null,
+    "tse": null,
+    "ibge": 33
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "RIO GRANDE DO NORTE",
+    "descricao": "RIO GRANDE DO NORTE",
+    "pais": [
+      "55"
+    ],
+    "sigla": "RN",
+    "siafi": null,
+    "tse": null,
+    "ibge": 24
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "RIO GRANDE DO SUL",
+    "descricao": "RIO GRANDE DO SUL",
+    "pais": [
+      "55"
+    ],
+    "sigla": "RS",
+    "siafi": null,
+    "tse": null,
+    "ibge": 43
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "RONDONIA",
+    "descricao": "RONDONIA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "RO",
+    "siafi": null,
+    "tse": null,
+    "ibge": 11
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "RORAIMA",
+    "descricao": "RORAIMA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "RR",
+    "siafi": null,
+    "tse": null,
+    "ibge": 14
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "SANTA CATARINA",
+    "descricao": "SANTA CATARINA",
+    "pais": [
+      "55"
+    ],
+    "sigla": "SC",
+    "siafi": null,
+    "tse": null,
+    "ibge": 42
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "SAO PAULO",
+    "descricao": "SAO PAULO",
+    "pais": [
+      "55"
+    ],
+    "sigla": "SP",
+    "siafi": null,
+    "tse": null,
+    "ibge": 35
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "SERGIPE",
+    "descricao": "SERGIPE",
+    "pais": [
+      "55"
+    ],
+    "sigla": "SE",
+    "siafi": null,
+    "tse": null,
+    "ibge": 28
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:21.487",
+    "modified_at": "2014-07-07T18:27:21.680",
+    "nome": "TOCANTINS",
+    "descricao": "TOCANTINS",
+    "pais": [
+      "55"
+    ],
+    "sigla": "TO",
+    "siafi": null,
+    "tse": null,
+    "ibge": 17
+  }
+},
+{
+  "model": "rh.estado",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2020-05-04T11:29:35.712",
+    "modified_at": "2020-05-04T11:29:35.712",
+    "nome": "VALLE BUENAVENTURA",
+    "descricao": "",
+    "pais": [
+      null
+    ],
+    "sigla": "VB",
+    "siafi": "",
+    "tse": "",
+    "ibge": null
+  }
+}
+]

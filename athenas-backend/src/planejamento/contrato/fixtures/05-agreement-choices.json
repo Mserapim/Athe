@@ -1,0 +1,72 @@
+[
+    {
+        "fields": {
+            "description": "",
+            "value": 5,
+            "cvalue":"005",
+            "label": "Cancelado",
+            "cache_path": "contrato.STATUS_CONTRATO",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "STATUS_CONTRATO"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 6,
+            "cvalue":"006",
+            "label": "Anulado",
+            "cache_path": "contrato.STATUS_CONTRATO",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "STATUS_CONTRATO"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 14,
+            "cvalue":"014",
+            "label": "Reativar",
+            "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "TIPO_ACAO_CONTRATO"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 15,
+            "cvalue":"015",
+            "label": "Cancelar",
+            "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "TIPO_ACAO_CONTRATO"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 16,
+            "cvalue":"016",
+            "label": "Anular",
+            "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "TIPO_ACAO_CONTRATO"
+        },
+        "model": "standard.choice"
+    }
+]

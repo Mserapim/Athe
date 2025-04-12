@@ -1,0 +1,22 @@
+[
+{
+    "model": "standard.emailtemplate",
+    "pk": 52,
+    "fields": {
+        "code": "DIARIAS_ACAO_DEFERIR",
+        "subject": "Atualiza\u00e7\u00e3o na Solicita\u00e7\u00e3o de Di\u00e1rias - Solicita\u00e7\u00e3o Deferida",
+        "contents": "<p>Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p style=\"text-align: justify;\"><br type=\"_moz\"></p><p> Gostar\u00edamos de informar que sua solicita\u00e7\u00e3o de di\u00e1rias referente ao pedido n\u00famero <b>%NUMERO_OS%</b> foi deferida durante a etapa&nbsp;<b>%ETAPA% </b>por <b>%AVALIADOR%</b> . <br type=\"_moz\"></p><p><br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p><br></p><br><p><br></p> ",
+        "description": null
+    }
+},
+{
+    "model": "standard.emailtemplate",
+    "pk": 53,
+    "fields": {
+        "code": "DIARIAS_ACAO_INDEFERIR",
+        "subject": "Atualiza\u00e7\u00e3o na Solicita\u00e7\u00e3o de Di\u00e1rias - Solicita\u00e7\u00e3o indeferida",
+        "contents": "<p style=\"text-align: justify;\">Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p style=\"text-align: justify;\"><br type=\"_moz\"></p><p> Gostar\u00edamos de informar que sua solicita\u00e7\u00e3o de di\u00e1rias referente ao pedido n\u00famero <b>%NUMERO_OS%</b> foi indeferida durante a etapa&nbsp;<b>%ETAPA%</b>&nbsp; por <b>%AVALIADOR%</b>. <br type=\"_moz\"></p><p><br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p><br></p><br><p><br></p> ",
+        "description": null
+    }
+}
+]

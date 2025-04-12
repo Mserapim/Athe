@@ -1,0 +1,90 @@
+{{solicitation.minute_justification}}
+<p><b>PEDIDO Nº: </b>{{solicitation.number}}</p>
+<p><b>ATA Nº: </b>{{solicitation.minute_number}}</p>
+<p><b>DATA VENCIMENTO DA ATA: </b>{{solicitation.minute_end_validity}}</p>
+<p><b>PROCESSO Nº: </b>{{solicitation.minute_process_number}}</p>
+<p><b>{{solicitation.minute_provider_title}}: </b>{{solicitation.minute_provider_name}}<br></p>
+<p><b>{{solicitation.minute_provider_document_title}}: </b>{{solicitation.minute_provider_document}}<br></p>
+<p><b>VALOR TOTAL DO PEDIDO: </b>R$ {{solicitation.total_solicitation}}</p>
+
+
+{% if solicitation.table_group_flag %}
+<table style="width: 100%;" border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <td><b>GRUPO</b></td>
+
+            {% if solicitation.column_line %}
+            <td><b>LINHA</b></td>
+            {% endif %}
+
+            <td><b>ESPECIFICAÇÃO</b></td>
+
+            {% if solicitation.column_brand %}
+            <td><b>MARCA /<br>MODELO</b></td>
+            {% endif %}
+
+            <td><b>UN</b></td>
+            <td><b>QT</b></td>
+            <td><b>VALOR<br>UNIT. (R$)</b></td>
+            <td><b>VALOR<br>TOTAL (R$)</b></td>
+        </tr>
+    </thead>
+    {% for item_group in solicitation.items_group %}
+    <tr>
+        <td style="text-align:center">{{item_group.group}}</td>
+        {% if solicitation.column_line %}
+        <td style="text-align:center">{{item_group.line}}</td>
+        {% endif %}
+        <td>{{item_group.description}} <br> {{item_group.item_description}}</td>
+        {% if solicitation.column_brand %}
+        <td>{{item_group.brand}}</td>
+        {% endif %}
+        <td style="text-align:center">{{item_group.unit_measure}}</td>
+        <td style="text-align:center">{{item_group.quantity}}</td>
+        <td style="text-align:center">{{item_group.unitary_value}}</td>
+        <td style="text-align:center">{{item_group.total_item}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+<br>
+{% if solicitation.table_item_flag %}
+<table style="width: 100%;" border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <td><b>ITEM</b></td>
+            {% if solicitation.column_line %}
+            <td><b>LINHA</b></td>
+            {% endif %}
+
+            <td><b>ESPECIFICAÇÃO</b></td>
+
+            {% if solicitation.column_brand %}
+            <td><b>MARCA /<br>MODELO</b></td>
+            {% endif %}
+
+            <td><b>UN</b></td>
+            <td><b>QT</b></td>
+            <td><b>VALOR<br>UNIT. (R$)</b></td>
+            <td><b>VALOR<br>TOTAL (R$)</b></td>
+        </tr>
+    </thead>
+    {% for item_line in solicitation.items_line %}
+    <tr>
+        <td style="text-align:center">{{item_line.group}}</td>
+        {% if solicitation.column_line %}
+        <td style="text-align:center">{{item_line.line}}</td>
+        {% endif %}
+        <td>{{item_line.description}} <br> {{item_line.item_description}}</td>
+        {% if solicitation.column_brand %}
+        <td>{{item_line.brand}}</td>
+        {% endif %}
+        <td style="text-align:center">{{item_line.unit_measure}}</td>
+        <td style="text-align:center">{{item_line.quantity}}</td>
+        <td style="text-align:center">{{item_line.unitary_value}}</td>
+        <td style="text-align:center">{{item_line.total_item}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}

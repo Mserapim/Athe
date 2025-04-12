@@ -1,0 +1,2 @@
+./manage.py exportdata "Choice.objects.order_by('app_label', 'name', 'value')" -i 2 --with-natural-keys -m standard -o "standard/fixtures/initialdb_0001_choices.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "ClassCode.objects.order_by('path')" -i 2 --with-natural-keys -m standard -o "standard/fixtures/initialdb_0002_classcode.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"

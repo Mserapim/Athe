@@ -1,0 +1,22 @@
+{% extends "common/document_access/base.html" %}
+
+{% block content %}
+
+<table class="papper">
+
+    <p style="font-weight: bolder; text-align:center; font-size: 120%; ">Histórico</p>
+    <br /><br />
+    <p style="padding-bottom: 2%"><strong>Tipo de ação: </strong>{{ log_type_display }}</p>
+    <p style="padding-bottom: 2%"><strong>Data da ação: </strong>{{ signed_at|date:'d \d\e F \d\e Y, G:i:s'|default:'' }}</p>
+    <p style="padding-bottom: 2%"><strong>Responsável: </strong>{{ signed_by }}</p>
+    <p style="padding-bottom: 2%"><strong>Documento: </strong>{{ document_number }}</p>
+    <p style="padding-bottom: 2%"><strong>Validação ignorada: </strong>{% if validation_bypassed %}Sim{% else %}Não{% endif %}</p>
+    <p style="padding-bottom: 2%"><strong>Efetivado: </strong>{% if is_committed %}Sim{% else %}Não{% endif %}</p>
+    <p style="padding-bottom: 2%"><strong>Nível de acesso: </strong>{{ control_type }}</p>
+    <p style="padding-bottom: 2%"><strong>Hipótese legal: </strong>{{ legal_prerogative }}</p>
+
+    <p style="margin-top: 2em">{{ description|striptags }}</p>
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,660 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "1 - NÃO INFORMADO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "NÃO INFORMADO - PARA SERVIDORES QUE NÃO POSSUEM CATEGORIA DEFINIDA",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "101 - Empregado - Geral, inclusive o empregado público da administração direta ou indireta contratado pela CLT",
+    "value": 101,
+    "cvalue": "101",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "102 - Empregado - Trabalhador rural por pequeno prazo da Lei 11.718/2008",
+    "value": 102,
+    "cvalue": "102",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "103 - Empregado - Aprendiz",
+    "value": 103,
+    "cvalue": "103",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "104 - Empregado - Doméstico",
+    "value": 104,
+    "cvalue": "104",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "105 - Empregado - Contrato a termo firmado nos termos da Lei 9.601/1998",
+    "value": 105,
+    "cvalue": "105",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "106 - Trabalhador temporário - Contrato nos termos da Lei 6.019/1974",
+    "value": 106,
+    "cvalue": "106",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "107 - Empregado - Contrato de trabalho Verde e Amarelo - sem acordo para antecipação mensal da multa",
+    "value": 107,
+    "cvalue": "107",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Empregado - Contrato de trabalho Verde e Amarelo - sem acordo para antecipação mensal da multa rescisória do FGTS",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "108 - Empregado - Contrato de trabalho Verde e Amarelo - com acordo para antecipação mensal da multa rescisória do FGTS",
+    "value": 108,
+    "cvalue": "108",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Empregado - Contrato de trabalho Verde e Amarelo - com acordo para antecipação mensal da multa",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "111 - Empregado - Contrato de trabalho intermitente",
+    "value": 111,
+    "cvalue": "111",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "201 - Trabalhador avulso portuário",
+    "value": 201,
+    "cvalue": "201",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "202 - Trabalhador avulso não portuário",
+    "value": 202,
+    "cvalue": "202",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "301 - Servidor público titular de cargo efetivo, magistrado, ministro de Tribunal de Contas, conselheiro de",
+    "value": 301,
+    "cvalue": "301",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Servidor público titular de cargo efetivo, magistrado, ministro de Tribunal de Contas, conselheiro de Tribunal de Contas e membro do Ministério Público",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "302 - Servidor público ocupante de cargo exclusivo em comissão",
+    "value": 302,
+    "cvalue": "302",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "303 - Exercente de mandato eletivo",
+    "value": 303,
+    "cvalue": "303",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "304 - Servidor público exercente de mandato eletivo, inclusive com exercício de cargo em comissão",
+    "value": 304,
+    "cvalue": "304",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "305 - Servidor público indicado para conselho ou órgão deliberativo, na condição de representante do governo",
+    "value": 305,
+    "cvalue": "305",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Servidor público indicado para conselho ou órgão deliberativo, na condição de representante do governo, órgão ou entidade da administração pública",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "306 - Servidor público contratado por tempo determinado, sujeito a regime administrativo especial definido",
+    "value": 306,
+    "cvalue": "306",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Servidor público contratado por tempo determinado, sujeito a regime administrativo especial definido em lei própria",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "307 - Militar",
+    "value": 307,
+    "cvalue": "307",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "308 - Conscrito",
+    "value": 308,
+    "cvalue": "308",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "309 - Agente público - Outros",
+    "value": 309,
+    "cvalue": "309",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "310 - Servidor público eventual",
+    "value": 310,
+    "cvalue": "310",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "311 - Ministros, juízes, procuradores, promotores ou oficiais de justiça à disposição da Justiça Eleitoral",
+    "value": 311,
+    "cvalue": "311",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "312 - Auxiliar local",
+    "value": 312,
+    "cvalue": "312",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "313 - Servidor público exercente de atividade de instrutoria, capacitação, treinamento, curso ou concurso",
+    "value": 313,
+    "cvalue": "313",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Servidor público exercente de atividade de instrutoria, capacitação, treinamento, curso ou concurso, ou convocado para pareceres técnicos ou depoimentos",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "401 - Dirigente sindical - Informação prestada pelo sindicato",
+    "value": 401,
+    "cvalue": "401",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "410 - Trabalhador cedido/exercício em outro órgão/juiz auxiliar - Informação prestada pelo cessionário/destino",
+    "value": 410,
+    "cvalue": "410",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "501 - Dirigente sindical - Segurado especial",
+    "value": 501,
+    "cvalue": "501",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "701 - Contribuinte individual - Autônomo em geral, exceto se enquadrado em uma das demais categorias",
+    "value": 701,
+    "cvalue": "701",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Contribuinte individual - Autônomo em geral, exceto se enquadrado em uma das demais categorias de contribuinte individual",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "711 - Contribuinte individual - Transportador autônomo de passageiros",
+    "value": 711,
+    "cvalue": "711",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "712 - Contribuinte individual - Transportador autônomo de carga",
+    "value": 712,
+    "cvalue": "712",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "721 - Contribuinte individual - Diretor não empregado, com FGTS",
+    "value": 721,
+    "cvalue": "721",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "722 - Contribuinte individual - Diretor não empregado, sem FGTS",
+    "value": 722,
+    "cvalue": "722",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "723 - Contribuinte individual - Empresário, sócio e membro de conselho de administração ou fiscal",
+    "value": 723,
+    "cvalue": "723",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "731 - Contribuinte individual - Cooperado que presta serviços por intermédio de cooperativa de trabalho",
+    "value": 731,
+    "cvalue": "731",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "734 - Contribuinte individual - Transportador cooperado que presta serviços por intermédio de",
+    "value": 734,
+    "cvalue": "734",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Contribuinte individual - Transportador cooperado que presta serviços por intermédio de cooperativa de trabalho",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "738 - Contribuinte individual - Cooperado filiado a cooperativa de produção",
+    "value": 738,
+    "cvalue": "738",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "741 - Contribuinte individual - Microempreendedor individual",
+    "value": 741,
+    "cvalue": "741",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "751 - Contribuinte individual - Magistrado classista temporário da Justiça do Trabalho ou da Justiça Eleitoral",
+    "value": 751,
+    "cvalue": "751",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Contribuinte individual - Magistrado classista temporário da Justiça do Trabalho ou da Justiça Eleitoral que seja aposentado de qualquer regime previdenciário",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "761 - Contribuinte individual - Associado eleito para direção de cooperativa, associação ou entidade de classe",
+    "value": 761,
+    "cvalue": "761",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "Contribuinte individual - Associado eleito para direção de cooperativa, associação ou entidade de classe de qualquer natureza ou finalidade, bem como o síndico ou administrador eleito para exercer atividade de direção condominial, desde que recebam remuneração",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "771 - Contribuinte individual - Membro de conselho tutelar, nos termos da Lei 8.069/1990",
+    "value": 771,
+    "cvalue": "771",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "781 - Ministro de confissão religiosa ou membro de vida consagrada, de congregação ou de ordem religiosa",
+    "value": 781,
+    "cvalue": "781",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "901 - Estagiário",
+    "value": 901,
+    "cvalue": "901",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "902 - Médico residente ou residente em área profissional de saúde",
+    "value": 902,
+    "cvalue": "902",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "903 - Bolsista",
+    "value": 903,
+    "cvalue": "903",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "904 - Participante de curso de formação, como etapa de concurso público, sem vínculo de emprego/estatutário",
+    "value": 904,
+    "cvalue": "904",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "CATEGORY_WORKER",
+    "label": "906 - Beneficiário do Programa Nacional de Prestação de Serviço Civil Voluntário",
+    "value": 906,
+    "cvalue": "906",
+    "cache_path": "rh.CATEGORY_WORKER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+    }
+}
+]

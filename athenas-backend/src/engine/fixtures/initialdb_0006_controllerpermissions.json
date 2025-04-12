@@ -1,0 +1,4166 @@
+[
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "admin-voce-e-unico",
+    "controllers": [
+      [
+        "640ef43ad4e04ca8b28398a2b9e768db"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "apd-admin",
+    "controllers": [
+      [
+        "f1398f5721f64b61a4306a3d47bea28b"
+      ],
+      [
+        "693a26d78d124a8db0227803ef0d7333"
+      ],
+      [
+        "5eb8a4a8568a4125a0afa8a9eb8f36da"
+      ],
+      [
+        "cf4d9b72cbf84975a4d61acf976140ea"
+      ],
+      [
+        "2deb57516a2e42fc8d6bcf52423df0c0"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "apd-boss",
+    "controllers": [
+      [
+        "5eb8a4a8568a4125a0afa8a9eb8f36da"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "apd-commission",
+    "controllers": [
+      [
+        "2deb57516a2e42fc8d6bcf52423df0c0"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "atendimento-controle-usuarios",
+    "controllers": [
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ],
+      [
+        "e5eca3fec99e4da8a2f0e286b8071dd2"
+      ],
+      [
+        "a6bedb51e3dd4c0ead4732e64fdf7822"
+      ],
+      [
+        "4c02d7daa4494e94bd24fd193ca5c398"
+      ],
+      [
+        "d0621bb6cdcd440098ad7c7ee4d71726"
+      ],
+      [
+        "3f705c4efddc44d7bff01fc884d61369"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "avaliador-voce-e-unico",
+    "controllers": [
+      [
+        "fe1dbf0153664805b483e6ec2731e4cf"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "basico",
+    "controllers": [
+      [
+        "e9b7f403e9b24956bdab030d0bf01382"
+      ],
+      [
+        "5c1e56f5b1394b87b461b6dc5c0de7f4"
+      ],
+      [
+        "a78ebf5c1c1d433da68bc613a53f6427"
+      ],
+      [
+        "76ba28b68bac42aa9e3153b09f913fc7"
+      ],
+      [
+        "15ddb4c84faf4f4ba62da8ef7564c2d0"
+      ],
+      [
+        "35327fec226f479488a62229cf1cfae7"
+      ],
+      [
+        "b8ac0292ae6e431883b6acc652ed946d"
+      ],
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ],
+      [
+        "4e2119f9522f4a6e897c3380c26b10ea"
+      ],
+      [
+        "0071c0e818584b45a644db2f7fdd902a"
+      ],
+      [
+        "23cac98ee6184df9803d84cd054acf2c"
+      ],
+      [
+        "6f2de9517b364166b6fcbb8ab288922c"
+      ],
+      [
+        "84305fe4c74749b99986fdc76e4d4f41"
+      ],
+      [
+        "35491f1872f34c778d89b0ff0e4a648c"
+      ],
+      [
+        "23043b5064144fcbbd3bbd70af1380f7"
+      ],
+      [
+        "3065bc876579449ab9556408d2716a6b"
+      ],
+      [
+        "9e4fbb64fe8842459cf8aad80745be75"
+      ],
+      [
+        "d1c107aeef70409cacaf29ae8ca2cc16"
+      ],
+      [
+        "7ee3d24c982445eb8ca83d8fd048b26f"
+      ],
+      [
+        "f732678a0aca47b59885ad13d683c7ca"
+      ],
+      [
+        "a7e7317051db4a489de173b9408ae6e4"
+      ],
+      [
+        "f0d2e26eaeac4bbc9d857f8deb07a0c6"
+      ],
+      [
+        "33520f2b22a346ecb17f778e66cb9c18"
+      ],
+      [
+        "deb9f804ecaf49ad8f3f4d197afa5246"
+      ],
+      [
+        "8eff2ef8cbd04ec2b827496c739bc1ae"
+      ],
+      [
+        "f85fcd219bf6449c84efae6e3172b911"
+      ],
+      [
+        "2e35c0b202fc4d1fa4bfdb0669628a8f"
+      ],
+      [
+        "d6b41b809d5a4e5686fc327f703cf7c3"
+      ],
+      [
+        "53961e0467d44b3db55b2b6d3fafceb3"
+      ],
+      [
+        "2771fdf284884dc0a20882da944c8bd3"
+      ],
+      [
+        "a02d6f38b29b40738b01161428481cdc"
+      ],
+      [
+        "1f2a3e2073c74911b14f748607407ada"
+      ],
+      [
+        "0ea88bb558d840bb81fdb4dbc1264970"
+      ],
+      [
+        "69eaf772d29d4750843abfef9d695e44"
+      ],
+      [
+        "d421211cfae244c0b9ef14535ddf4a03"
+      ],
+      [
+        "8fb22d2d30f249e59a1fe93f712b3dc0"
+      ],
+      [
+        "7cb057f38d8340598ec5b9bbe1ec44b6"
+      ],
+      [
+        "abf69ce664534c218f86ee3b25756506"
+      ],
+      [
+        "b71de58760c74031858cf44fe2129aad"
+      ],
+      [
+        "4f6a32357d294549b4c4b64adc4c437b"
+      ],
+      [
+        "963762c934ab491f8736bc8722ab2858"
+      ],
+      [
+        "6030d15fdd064b60a057044d9a899356"
+      ],
+      [
+        "9b5a4a36e3d5465c8b2cda58ccc471c5"
+      ],
+      [
+        "413a9391b67742c1b3f0e8e5785788b4"
+      ],
+      [
+        "1bd03deba6ee4522aeef6a56e38f4a8d"
+      ],
+      [
+        "4b28ba51875f4bd99b69d745524bba88"
+      ],
+      [
+        "ec4f7dcbf6db43a0b76e6790dc93a90c"
+      ],
+      [
+        "f4e1a8ff0f6945ec83c68c8f70d003d4"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "bi",
+    "controllers": [
+      [
+        "27c615043deb4f668ae15c241d4b4e4a"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cerimonial-relatorios",
+    "controllers": [
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ],
+      [
+        "ca40ab39e6404d28804f1600722c2aea"
+      ],
+      [
+        "47068ecfc8944f0f9f8b12421e82dcb0"
+      ],
+      [
+        "026535dbea2a44198d1020b8c30c96e8"
+      ],
+      [
+        "2b81a1a689f64ae79f2f712c5e08a40c"
+      ],
+      [
+        "4f46aa5a636a4c7eb7573a1a79fca801"
+      ],
+      [
+        "c28bb21042ea4e02abcc06d2a5fb752d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cesaf",
+    "controllers": [
+      [
+        "4ed3a8894ec241a6a4e0d0e91976f705"
+      ],
+      [
+        "dfffd524d1ce4de790615507d464a61e"
+      ],
+      [
+        "50e031d3995b4d9591e0bd45976f8c3d"
+      ],
+      [
+        "513cfd4075c04eaebb681a2ef159f631"
+      ],
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ciaca-relatorios",
+    "controllers": [
+      [
+        "16cc8043a89e419bae6aee7cdbfe0dab"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cif-admin",
+    "controllers": [
+      [
+        "0cb6f7fadf674b78a597008f3f933007"
+      ],
+      [
+        "686dd5af01564dcaa1e04c318f007af1"
+      ],
+      [
+        "c49d9277217b4a6ba277f53007db00dc"
+      ],
+      [
+        "be19e447007a425f9cb55ec26ee2396d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cif-auditoria",
+    "controllers": [
+      [
+        "c49d9277217b4a6ba277f53007db00dc"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cif-membro",
+    "controllers": []
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cif-oculto",
+    "controllers": [
+      [
+        "7d69700713ff4aea9d29e45286b7f645"
+      ],
+      [
+        "0cb6f7fadf674b78a597008f3f933007"
+      ],
+      [
+        "67f77d410a424a48ae836d4ac284c988"
+      ],
+      [
+        "686dd5af01564dcaa1e04c318f007af1"
+      ],
+      [
+        "c49d9277217b4a6ba277f53007db00dc"
+      ],
+      [
+        "dac82aa90b3d48bc8b5836c2169abeed"
+      ],
+      [
+        "be360f253aea40fcb9e30d05ae861eb0"
+      ],
+      [
+        "ebfb030a65724ebf8d39e4ff9dbd7f67"
+      ],
+      [
+        "be19e447007a425f9cb55ec26ee2396d"
+      ],
+      [
+        "5d004af1df524d9b873a1785d9a8a6cd"
+      ],
+      [
+        "236d1130536a4bfca1b6c28687206289"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ci-relatorios",
+    "controllers": [
+      [
+        "47225c02e1e24c1d97301eb16b0e5581"
+      ],
+      [
+        "448ec10b62e04655a177023510837cff"
+      ],
+      [
+        "87d79a30ea6649aebb138efc2d0e6a7a"
+      ],
+      [
+        "0d54b498f5f04488acbe17b7a42feae9"
+      ],
+      [
+        "6d59fc278a36444eba3dfe3639e0781f"
+      ],
+      [
+        "c7cc4166ea974dac9e1c5734d60be21c"
+      ],
+      [
+        "b7520bfec02c4e048a3087edc930f914"
+      ],
+      [
+        "6e23d0b90c4d454cb8224d966d61a4ec"
+      ],
+      [
+        "ded44b4ab6d34a88a313ad1fcc44d938"
+      ],
+      [
+        "842a9c2db25a46499668d6ea6229a37d"
+      ],
+      [
+        "a843ea56f43d44f5a0ff49959d7b5ebf"
+      ],
+      [
+        "8eb0c9b1bd3c491a831a1651cd2edb39"
+      ],
+      [
+        "e63810cdda7c4be884c93a16d333abb0"
+      ],
+      [
+        "1bea965f0b694b34bc935aeccfbfb12c"
+      ],
+      [
+        "d139918f7c8748d284d1456cc4a1817d"
+      ],
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "cd26efd6c35a480586a443e5a00efa61"
+      ],
+      [
+        "55abbeb846c845429b39aea06cde40a2"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ],
+      [
+        "8f0a22e4952743fcaa0d4f60948dd78c"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "cms",
+    "controllers": [
+      [
+        "e7c1ad30fb774b498036f8f14ba9c096"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "colaborador",
+    "controllers": [
+      [
+        "fd14bb580ea24a0580a11434f5d5c2b2"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "comunicacao-relatorios",
+    "controllers": [
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "conselho-afastamento-membros",
+    "controllers": [
+      [
+        "5c651507847b4de3b4d82c44bed02d7c"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "contorno-politico",
+    "controllers": [
+      [
+        "76ba28b68bac42aa9e3153b09f913fc7"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-cadastroservidor",
+    "controllers": [
+      [
+        "d53ad3db2edb4338b28e100a2a738678"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-chefia",
+    "controllers": [
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-inspection",
+    "controllers": [
+      [
+        "e55e2a65ae0b4ced90d4ec3d23841c75"
+      ],
+      [
+        "a0fe6047076848e5b0a8fac2bfc14178"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-prontuary",
+    "controllers": [
+      [
+        "219e7430691042a3af47d23d81c2691b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-raf",
+    "controllers": [
+      [
+        "9fd4117c78a449be995e5dddf6cbddd3"
+      ],
+      [
+        "84ac2f7326734fe797c280f0d86d5f5e"
+      ],
+      [
+        "e1ccd2f3393b43bdb6f3e7c5eadaf58a"
+      ],
+      [
+        "32209d373c3044abac201a19ccc486c4"
+      ],
+      [
+        "3916fda2b2d54c72ae222cbbc221e7b8"
+      ],
+      [
+        "87d285984ed448809e172bf4d1302245"
+      ],
+      [
+        "866d00cdba2e4ac2b8946feaee20ed62"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-rh",
+    "controllers": [
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-rh-lotacao",
+    "controllers": [
+      [
+        "3177afcaea104a29a26b5b0d0f355f0b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-srdir-administrador",
+    "controllers": [
+      [
+        "8a1a81233d0e4d72b91aa94047fb43ac"
+      ],
+      [
+        "a530b7b328ff471fbc760e8ec573b352"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "corregedoria-srdir-membro",
+    "controllers": [
+      [
+        "8a1a81233d0e4d72b91aa94047fb43ac"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-auxiliar",
+    "controllers": [
+      [
+        "d5df318c9cdb4b5eb84e0f8c67785813"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-cerimonial",
+    "controllers": [
+      [
+        "9c861e281f224444a9027912b005ac05"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-diretoria-geral",
+    "controllers": [
+      [
+        "1a6c1f8eba2f49fcb563ee268b407b86"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-financeiro",
+    "controllers": [
+      [
+        "3ed6566dc2dc4d28ac2f1a7782c4ea93"
+      ],
+      [
+        "0a03fcb60df34f8594d929b66d229195"
+      ],
+      [
+        "1d36790092464f01af84036fa65d6582"
+      ],
+      [
+        "81beaa9ccfb6442d9636b49f9d61965b"
+      ],
+      [
+        "96958124f33c477f902a3ec12aff33aa"
+      ],
+      [
+        "6cf7a40103e04e3c964ae8c409cd1553"
+      ],
+      [
+        "69a4879a4e494b879c741828f1549037"
+      ],
+      [
+        "1b7deca579d44ceaa6679a332c618d0b"
+      ],
+      [
+        "ea00e9d4fe3e4c3c9966d545fa2b7549"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-gestao",
+    "controllers": [
+      [
+        "59e9bd77cb9a40ad8ccf2c0b1a58c656"
+      ],
+      [
+        "4d99b2bed19c4c498a0d2c2a7c3bc133"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-gestor-admin",
+    "controllers": [
+      [
+        "1a6c1f8eba2f49fcb563ee268b407b86"
+      ],
+      [
+        "8df64df297ce4554931079987dd599d8"
+      ],
+      [
+        "81beaa9ccfb6442d9636b49f9d61965b"
+      ],
+      [
+        "96958124f33c477f902a3ec12aff33aa"
+      ],
+      [
+        "6cf7a40103e04e3c964ae8c409cd1553"
+      ],
+      [
+        "7721870d8bac44e2848b1905ea94cd07"
+      ],
+      [
+        "69a4879a4e494b879c741828f1549037"
+      ],
+      [
+        "1b7deca579d44ceaa6679a332c618d0b"
+      ],
+      [
+        "ea00e9d4fe3e4c3c9966d545fa2b7549"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-pagamento",
+    "controllers": [
+      [
+        "0a03fcb60df34f8594d929b66d229195"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-planejamento",
+    "controllers": [
+      [
+        "3b01dd56f0cf400ca8fddd144cc89236"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-relatorios",
+    "controllers": [
+      [
+        "273f0b5ebb6f46438866dc5f976669aa"
+      ],
+      [
+        "5040ec14ce2f4326a8f6c5e819bc0deb"
+      ],
+      [
+        "81beaa9ccfb6442d9636b49f9d61965b"
+      ],
+      [
+        "96958124f33c477f902a3ec12aff33aa"
+      ],
+      [
+        "6cf7a40103e04e3c964ae8c409cd1553"
+      ],
+      [
+        "7721870d8bac44e2848b1905ea94cd07"
+      ],
+      [
+        "52e601cf2243402293777afcd01a7b7b"
+      ],
+      [
+        "c6dbd3f9a4f242539805ce42d1380b00"
+      ],
+      [
+        "95d2e24702e7458ab3512dbd4acd1c17"
+      ],
+      [
+        "8c8216b5d504420aa33e68620c4ebd72"
+      ],
+      [
+        "4ba95e4e759542e9ac07224ae3e234ad"
+      ],
+      [
+        "361114ca0dc24034b390a7afe9f7c1a1"
+      ],
+      [
+        "b1da9d7d3c334b7b8958ca6621d9a6ff"
+      ],
+      [
+        "69a4879a4e494b879c741828f1549037"
+      ],
+      [
+        "1b7deca579d44ceaa6679a332c618d0b"
+      ],
+      [
+        "ea00e9d4fe3e4c3c9966d545fa2b7549"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-relatorio-viagem",
+    "controllers": [
+      [
+        "8df64df297ce4554931079987dd599d8"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-rh-folha",
+    "controllers": [
+      [
+        "5040ec14ce2f4326a8f6c5e819bc0deb"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-somente-gestor",
+    "controllers": [
+      [
+        "59e9bd77cb9a40ad8ccf2c0b1a58c656"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-tabela",
+    "controllers": [
+      [
+        "953d7b16c1264ff58b53c68c95d88201"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diarias-transporte",
+    "controllers": [
+      [
+        "dba16757e4814c85ba1c27add3547f95"
+      ],
+      [
+        "1a6c1f8eba2f49fcb563ee268b407b86"
+      ],
+      [
+        "b0614894104749dfac949ff9003ff16f"
+      ],
+      [
+        "cc07e3db3fd94a9985b4eb5ea92ed39e"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diario-oficial",
+    "controllers": [
+      [
+        "707e454ce4e246a09ea683a1cf0bf2c2"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diretoria-geral-relatorios",
+    "controllers": [
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ],
+      [
+        "2f7ccca66ed64ba1af28a6b2e42b30fb"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "diretoriageral-rh-relatorio",
+    "controllers": [
+      [
+        "5dffbb593add4f35aaaad8c8a1dbfda8"
+      ],
+      [
+        "b77bdf8a36d14773a2da24e76e690ae5"
+      ],
+      [
+        "5c28d5a7151749f9a576967d0c8a3f91"
+      ],
+      [
+        "a21c57894291404f82f9c6207d262bdd"
+      ],
+      [
+        "874f76e34ee5486db6f8759d4ded0606"
+      ],
+      [
+        "702e368bb1e248ffac3d94b4edc6c216"
+      ],
+      [
+        "7f98ea87e2334bd4be445c7842a4d9f8"
+      ],
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ],
+      [
+        "2fc943fe942a4f769ebb0f679849e578"
+      ],
+      [
+        "f9604723d99c43fab22c14b1c79be2d1"
+      ],
+      [
+        "35d3c7a2b79d40148c78b81d9315a0a8"
+      ],
+      [
+        "3b84e7901a99482c82cbc797e1f075ec"
+      ],
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ],
+      [
+        "4c54b36d739143a08060b672630f6c84"
+      ],
+      [
+        "2f7ccca66ed64ba1af28a6b2e42b30fb"
+      ],
+      [
+        "ca9c137fc041482a8a25ed53ecb0eac8"
+      ],
+      [
+        "26af6cfc2baa4753b6ce511a0b85148f"
+      ],
+      [
+        "5de533ca454947779ae1e8f64069edf3"
+      ],
+      [
+        "751431ba89454d3ca56803011f1437cd"
+      ],
+      [
+        "52c0a021c4df4701b785b26b0e85f72b"
+      ],
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "cd26efd6c35a480586a443e5a00efa61"
+      ],
+      [
+        "55abbeb846c845429b39aea06cde40a2"
+      ],
+      [
+        "5a89266bc6254c85bc563f4bae52ed55"
+      ],
+      [
+        "0b4648e0e8b24a0a81dc44d6282172f1"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ],
+      [
+        "8f0a22e4952743fcaa0d4f60948dd78c"
+      ],
+      [
+        "c1ee4f47c21845ac99f37a989f315f18"
+      ],
+      [
+        "14defd25348b4294b6b4bfd0265d0718"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "edoc",
+    "controllers": [
+      [
+        "cefa52a62189439b92b1e4df24f5589a"
+      ],
+      [
+        "1f6cb0b44e984d8cba7992fae053294a"
+      ],
+      [
+        "0fc9eb7b14844f6684c4f135ad7f0f1a"
+      ],
+      [
+        "8665d46a89d94b939e087ed008799621"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-conselho",
+    "controllers": [
+      [
+        "4551005305f44934809b8d5c7a812cad"
+      ],
+      [
+        "083cc11c7a1c4a0da542bad5196632fe"
+      ],
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ],
+      [
+        "170ead2d0138416bb0ae52844b76b56d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-corregedoria",
+    "controllers": [
+      [
+        "170ead2d0138416bb0ae52844b76b56d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-expediente",
+    "controllers": [
+      [
+        "28225f4c292743d385b845ec29a76ec0"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-gestor-diligencia",
+    "controllers": [
+      [
+        "6c288c582eec4631a380e8f0c93522e3"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-gestor-expediente",
+    "controllers": [
+      [
+        "5595022c149d4ece8fc0c77c49d2de85"
+      ],
+      [
+        "64d5dacf3b43495d9000cbbf1f8febb2"
+      ],
+      [
+        "28225f4c292743d385b845ec29a76ec0"
+      ],
+      [
+        "4210cf27da214460a1b8a56e0d3467e5"
+      ],
+      [
+        "894ebdc800ed44218551cb5bebfa647e"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-oficial-diligencia",
+    "controllers": [
+      [
+        "9999ef4d67354e6b8b8fc0a7f4dcb058"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-promotoria-1",
+    "controllers": [
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-promotoria-2",
+    "controllers": [
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-promotoria-analista-1",
+    "controllers": [
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-promotoria-analista-2",
+    "controllers": [
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-promotoria-interior",
+    "controllers": [
+      [
+        "6c288c582eec4631a380e8f0c93522e3"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-suporte",
+    "controllers": [
+      [
+        "525ca4151ad24f9b937586973dc65c79"
+      ],
+      [
+        "33803aeb797c4c2fbdbb28a5d581f956"
+      ],
+      [
+        "4e2d01abda7e46709a64fe82e210d079"
+      ],
+      [
+        "5595022c149d4ece8fc0c77c49d2de85"
+      ],
+      [
+        "64d5dacf3b43495d9000cbbf1f8febb2"
+      ],
+      [
+        "9392d15382be49b794ae8e176862dcea"
+      ],
+      [
+        "a0ac01b288a2435997d3f863787d432b"
+      ],
+      [
+        "16aefb20b8274001a5d498b04cfb4111"
+      ],
+      [
+        "5b93636cc02642ce88050b25fd85fb99"
+      ],
+      [
+        "170ead2d0138416bb0ae52844b76b56d"
+      ],
+      [
+        "f68d4754e6804bc6a4c87070364cbfdd"
+      ],
+      [
+        "4210cf27da214460a1b8a56e0d3467e5"
+      ],
+      [
+        "894ebdc800ed44218551cb5bebfa647e"
+      ],
+      [
+        "3e04a3ed47024fa882251da2aac97c8a"
+      ],
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ],
+      [
+        "3177afcaea104a29a26b5b0d0f355f0b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ejud-triagem",
+    "controllers": [
+      [
+        "170ead2d0138416bb0ae52844b76b56d"
+      ],
+      [
+        "14e7478c580a462d972982d2acad7b26"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "epad-admin",
+    "controllers": [
+      [
+        "04bb21125cc84a679bcc3f62c181d416"
+      ],
+      [
+        "55418af2badb4af2aa683760a528c6e6"
+      ],
+      [
+        "76eef634ea474130ac90c623e39adc31"
+      ],
+      [
+        "ff613a2afa4343a589cde8808ee6bd12"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "estagio-avaliador",
+    "controllers": [
+      [
+        "254965a780344ff3a7316bedea4e4232"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "estagio-comissao",
+    "controllers": [
+      [
+        "952207a14d5240058f3ee53b70342d04"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "estagio-decisao-gestor",
+    "controllers": [
+      [
+        "512d3a83946e477fa6f9d75a5bf504a2"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "estagio-gestor",
+    "controllers": [
+      [
+        "7cea088537074ab98b1f8a5e0c3ceb8c"
+      ],
+      [
+        "011940e765974cf1903cfd6829e79d54"
+      ],
+      [
+        "9c0e0887971a4682b51092c65b7bd5a0"
+      ],
+      [
+        "e9625de60ac840eaa149d0674510bedd"
+      ],
+      [
+        "55e978185a604191a5ad151369137362"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ferias-autorizacao-chefia",
+    "controllers": [
+      [
+        "27c615043deb4f668ae15c241d4b4e4a"
+      ],
+      [
+        "08dd65fec6d246f5b62ed023fcaba625"
+      ],
+      [
+        "52c0a021c4df4701b785b26b0e85f72b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ferias-gestor-admin",
+    "controllers": [
+      [
+        "34b54c87340445609b97042aba12a7a7"
+      ],
+      [
+        "21f58c81b9e04d21a3b4d4c6ea4fc109"
+      ],
+      [
+        "75fde2e2a1ae47dabb735a2b01b0987f"
+      ],
+      [
+        "e26d39ea2ecc4862b915a6d7bd397463"
+      ],
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "cd26efd6c35a480586a443e5a00efa61"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ferias-gestor-membros",
+    "controllers": [
+      [
+        "af8c99136ddb4679898a6f6c87085257"
+      ],
+      [
+        "49b7cdc2dcc34ddbbef288eadb633e44"
+      ],
+      [
+        "08dd65fec6d246f5b62ed023fcaba625"
+      ],
+      [
+        "34b54c87340445609b97042aba12a7a7"
+      ],
+      [
+        "eaedfb6540c2494f897bbcda28fe8288"
+      ],
+      [
+        "21f58c81b9e04d21a3b4d4c6ea4fc109"
+      ],
+      [
+        "cbb294bd5f304092891261c7c89fb8bd"
+      ],
+      [
+        "2fbe849c7c0244e88b5075fafb55b963"
+      ],
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "cd26efd6c35a480586a443e5a00efa61"
+      ],
+      [
+        "55abbeb846c845429b39aea06cde40a2"
+      ],
+      [
+        "5a89266bc6254c85bc563f4bae52ed55"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ],
+      [
+        "c17b31b354264ca9b359ea00ff701185"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ferias-relatorio-colaborador",
+    "controllers": [
+      [
+        "52c0a021c4df4701b785b26b0e85f72b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ferias-relatorios",
+    "controllers": [
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "financeiro-boletos-admin",
+    "controllers": [
+      [
+        "ff909c9fb0ef4c8c87e4493758ffa0d1"
+      ],
+      [
+        "8682fd7ed1a9492b895a021d32c28740"
+      ],
+      [
+        "963762c934ab491f8736bc8722ab2858"
+      ],
+      [
+        "6030d15fdd064b60a057044d9a899356"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "financeiro-rh-funcionalidades",
+    "controllers": [
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-de-pagamento-controle-interno",
+    "controllers": [
+      [
+        "897b4859978d4ddb8e58c680b7ee5f70"
+      ],
+      [
+        "7bf34d6bffda4ba597c96db992c064c4"
+      ],
+      [
+        "f853723c49294e6abe6240943fe88de1"
+      ],
+      [
+        "f26ef3bffc184de184b5601b84a2379a"
+      ],
+      [
+        "dbcf8eb844fe45479c3bfbd749c28996"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-de-pagamento-financeiro",
+    "controllers": [
+      [
+        "2f5e4d469b0c413094ee224e5009be5b"
+      ],
+      [
+        "94954455261e4b3da6c3df189bc9564d"
+      ],
+      [
+        "b88147989a4b4b53b2a13994325a5a67"
+      ],
+      [
+        "d99065571e0d4bf0b74af55dea0dd3a9"
+      ],
+      [
+        "0e3dcdd18f49425c9b38845ce60db7cf"
+      ],
+      [
+        "52d6ed49541441179f98de2ab6c64950"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-diretor-geral",
+    "controllers": [
+      [
+        "7bf34d6bffda4ba597c96db992c064c4"
+      ],
+      [
+        "f853723c49294e6abe6240943fe88de1"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-pagamento",
+    "controllers": [
+      [
+        "37a5cf0d2202475fbd02445e5b9e2f52"
+      ],
+      [
+        "1481d3aca794457cab1b9f62309cd0c0"
+      ],
+      [
+        "f3e8beaea98c40e7ad5d80a8f2393809"
+      ],
+      [
+        "897b4859978d4ddb8e58c680b7ee5f70"
+      ],
+      [
+        "305e6151ec584959a89c6b8f9e20fe49"
+      ],
+      [
+        "cd5367d054b04f30a9defbe7397bc11f"
+      ],
+      [
+        "fd124aa3df834b5985fec8d453d25189"
+      ],
+      [
+        "7bf34d6bffda4ba597c96db992c064c4"
+      ],
+      [
+        "d51b01b4aa5b428db49544fda60ca1ba"
+      ],
+      [
+        "f853723c49294e6abe6240943fe88de1"
+      ],
+      [
+        "62db83ecdf6a436a97f76aaa8d31e115"
+      ],
+      [
+        "c48b95cd171643cab1f47748a1033044"
+      ],
+      [
+        "dcd7b37ed2354583b6c39e94eed7423d"
+      ],
+      [
+        "954776af92dd488182f7539b7b264244"
+      ],
+      [
+        "5926bece09cf4b1ba0ce56115d83f468"
+      ],
+      [
+        "e5de3e3b303c49dc92696f85d7e0f841"
+      ],
+      [
+        "dfb7ad1b40c94af18551295231a92581"
+      ],
+      [
+        "fd14bb580ea24a0580a11434f5d5c2b2"
+      ],
+      [
+        "143d2550518c4f6f9be33af63a698e01"
+      ],
+      [
+        "62b7369b0614414e8ca138d70a0c8ef1"
+      ],
+      [
+        "37d556a0a3194352a1dbdbb9e1028568"
+      ],
+      [
+        "846b76e2ad1a417a996a21bf2edd2fbc"
+      ],
+      [
+        "b88147989a4b4b53b2a13994325a5a67"
+      ],
+      [
+        "e9bbceef42184c4a978a903acb2253e7"
+      ],
+      [
+        "e5f0dd0a351c472390ebddf33a90225a"
+      ],
+      [
+        "450514539966411296aeccdd8c0302a4"
+      ],
+      [
+        "b4bea103b1fe4c1c8819d39627f39332"
+      ],
+      [
+        "3cd7d173f58147d1a6ce270b56c1e034"
+      ],
+      [
+        "8a4e0cb1f5124d378d55e5ffaa80ff39"
+      ],
+      [
+        "30ae776d5d1540989416bdc0018623b8"
+      ],
+      [
+        "dbcf8eb844fe45479c3bfbd749c28996"
+      ],
+      [
+        "7f124c749892424bb94e19aeae2c6040"
+      ],
+      [
+        "d273d7e10df34556ae2faaa4c25ee3ff"
+      ],
+      [
+        "e42a3530de524cbd988b51cad9516a1f"
+      ],
+      [
+        "e107453389fb4943a808ee553f3821a2"
+      ],
+      [
+        "19336d2a96ec44d58957331ac9c7becf"
+      ],
+      [
+        "b24f6b778b8a407bb5d722125f2aeb8d"
+      ],
+      [
+        "ab7ba3a4e23e4bfabaf0dcee48f91f82"
+      ],
+      [
+        "1994cad247ba4f6da431e356a06426f4"
+      ],
+      [
+        "7390a5cd467042c1bdc90a54cd586962"
+      ],
+      [
+        "47c2ff8f48f747bcb58d556cb480026c"
+      ],
+      [
+        "a835ab96969c4bdc8575b6a1d05eba0c"
+      ],
+      [
+        "ba230161de514b6292a0ec675b360419"
+      ],
+      [
+        "f541f4ec4df04de5a3479676f2c20c2f"
+      ],
+      [
+        "3a8ce15950f14feba2ebe2e1ed247b23"
+      ],
+      [
+        "f922d1bad6694388a74f637e024014c6"
+      ],
+      [
+        "8c9a4ce378674c228ea1870d496efafc"
+      ],
+      [
+        "79b487201e2c488199a3757038c8d102"
+      ],
+      [
+        "ce2cec0ea1f44e4d8cae2dd7dd428f1f"
+      ],
+      [
+        "de3d725622f24335acb43a056f19bf0d"
+      ],
+      [
+        "466f8a96e3e54d9987887057a02dc733"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-pagamento-controlador-igeprev",
+    "controllers": [
+      [
+        "897b4859978d4ddb8e58c680b7ee5f70"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-pagamento-dirf-relatorio",
+    "controllers": [
+      [
+        "22fa3f14d0804c31b04fd7bd4ed86549"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-pagamento-relatorios",
+    "controllers": [
+      [
+        "a835ab96969c4bdc8575b6a1d05eba0c"
+      ],
+      [
+        "ba230161de514b6292a0ec675b360419"
+      ],
+      [
+        "f541f4ec4df04de5a3479676f2c20c2f"
+      ],
+      [
+        "2495ddf72edc486ea6d174345b65529c"
+      ],
+      [
+        "d99065571e0d4bf0b74af55dea0dd3a9"
+      ],
+      [
+        "3a8ce15950f14feba2ebe2e1ed247b23"
+      ],
+      [
+        "8c9a4ce378674c228ea1870d496efafc"
+      ],
+      [
+        "0e3dcdd18f49425c9b38845ce60db7cf"
+      ],
+      [
+        "22fa3f14d0804c31b04fd7bd4ed86549"
+      ],
+      [
+        "4828d3015d244d89897d69e974f77a9f"
+      ],
+      [
+        "37aa245e0c264b1ea5c3db0ee34cae49"
+      ],
+      [
+        "dc3e661a18b34c0c82f5333df9f6603a"
+      ],
+      [
+        "bddb94d4daf84d25907d89e9579c6a44"
+      ],
+      [
+        "de3d725622f24335acb43a056f19bf0d"
+      ],
+      [
+        "2a20cd75e6d846cb872edabb6f305bfe"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "folha-pagamento-relatorios-atendimento",
+    "controllers": [
+      [
+        "f541f4ec4df04de5a3479676f2c20c2f"
+      ],
+      [
+        "3a8ce15950f14feba2ebe2e1ed247b23"
+      ],
+      [
+        "f922d1bad6694388a74f637e024014c6"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "gestor-de-eleicao",
+    "controllers": [
+      [
+        "a593c3903e494f4eb1265f0a52a4ed8f"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "hiring-manager",
+    "controllers": [
+      [
+        "ff994653e838454aa6c478cbbe3679b7"
+      ],
+      [
+        "84305fe4c74749b99986fdc76e4d4f41"
+      ],
+      [
+        "9b5a4a36e3d5465c8b2cda58ccc471c5"
+      ],
+      [
+        "413a9391b67742c1b3f0e8e5785788b4"
+      ],
+      [
+        "1bd03deba6ee4522aeef6a56e38f4a8d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "hiring-user",
+    "controllers": [
+      [
+        "9b5a4a36e3d5465c8b2cda58ccc471c5"
+      ],
+      [
+        "413a9391b67742c1b3f0e8e5785788b4"
+      ],
+      [
+        "1bd03deba6ee4522aeef6a56e38f4a8d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "isec-admin",
+    "controllers": [
+      [
+        "de5170e51f51489f99d2ed4323275683"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "labim-central-de-servico",
+    "controllers": [
+      [
+        "efd45c4447c149a5b3845125027ef662"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "mala-direta",
+    "controllers": [
+      [
+        "b86ae69f5e6749598e1c204c240a21a8"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "notification",
+    "controllers": [
+      [
+        "7ee3d24c982445eb8ca83d8fd048b26f"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "patrimonio-admin",
+    "controllers": [
+      [
+        "e49d8b45406f43c28956fad68043bc9c"
+      ],
+      [
+        "a8ace4222790467080c87b72f5608ce6"
+      ],
+      [
+        "c38f7a2be1a149faa73024742309cb7f"
+      ],
+      [
+        "1c3fb637a46c471daf75c9e792e1ef34"
+      ],
+      [
+        "e5d1d461553b4115866cd080749b918c"
+      ],
+      [
+        "5c1e56f5b1394b87b461b6dc5c0de7f4"
+      ],
+      [
+        "3e89f07148354c36b6a97f933874fd63"
+      ],
+      [
+        "b75aee27b91846859be2fb696cdee5df"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "patrimonio-central-servico",
+    "controllers": [
+      [
+        "e5d1d461553b4115866cd080749b918c"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "patrimonio-contabilidade",
+    "controllers": [
+      [
+        "c38f7a2be1a149faa73024742309cb7f"
+      ],
+      [
+        "e5d1d461553b4115866cd080749b918c"
+      ],
+      [
+        "b75aee27b91846859be2fb696cdee5df"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "patrimonio-controle",
+    "controllers": [
+      [
+        "e5d1d461553b4115866cd080749b918c"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "patrimonio-diretor-geral",
+    "controllers": [
+      [
+        "e5d1d461553b4115866cd080749b918c"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "patrimonio-operacional",
+    "controllers": [
+      [
+        "e49d8b45406f43c28956fad68043bc9c"
+      ],
+      [
+        "a8ace4222790467080c87b72f5608ce6"
+      ],
+      [
+        "c38f7a2be1a149faa73024742309cb7f"
+      ],
+      [
+        "1c3fb637a46c471daf75c9e792e1ef34"
+      ],
+      [
+        "e5d1d461553b4115866cd080749b918c"
+      ],
+      [
+        "deb9f804ecaf49ad8f3f4d197afa5246"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "pe-3gen",
+    "controllers": [
+      [
+        "cca30c6e1b7c4c279fdf318b58740ac0"
+      ],
+      [
+        "4ab94e44c38049dcbd31105967449028"
+      ],
+      [
+        "ba7172b87a67478ebb8dfe5c876c4534"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "pe-relatorio",
+    "controllers": [
+      [
+        "4ab94e44c38049dcbd31105967449028"
+      ],
+      [
+        "ba7172b87a67478ebb8dfe5c876c4534"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "planejamento-edoc-relatorio",
+    "controllers": [
+      [
+        "66198d4e7bba493faddff298d2a7324e"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "plano-conta-provisao",
+    "controllers": [
+      [
+        "94954455261e4b3da6c3df189bc9564d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ppa-planejamento",
+    "controllers": [
+      [
+        "4061e80fde7f422a9913f6cd973221e9"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "promotoria-inspection",
+    "controllers": [
+      [
+        "a7bb5cc664a14c029f65b96f0bc4b9d0"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "promotoria-raf",
+    "controllers": [
+      [
+        "e1ccd2f3393b43bdb6f3e7c5eadaf58a"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "publicaca-oficial",
+    "controllers": []
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "raf-administracao",
+    "controllers": [
+      [
+        "6a7d277624b04b2bb8e2192791b6ef59"
+      ],
+      [
+        "0d4b68891f8849ae9ac617c1417fdd61"
+      ],
+      [
+        "4f6a32357d294549b4c4b64adc4c437b"
+      ],
+      [
+        "acfc333d22d94a358395f52d3f779d62"
+      ],
+      [
+        "f6d09e07f35c4116a5b6b37ee3dd9f45"
+      ],
+      [
+        "9a6fb4d776d84bfa858d2bcdffffbbea"
+      ],
+      [
+        "7ac5276a279e44d49b07c05f8fe85a36"
+      ],
+      [
+        "9fd4117c78a449be995e5dddf6cbddd3"
+      ],
+      [
+        "84ac2f7326734fe797c280f0d86d5f5e"
+      ],
+      [
+        "e1ccd2f3393b43bdb6f3e7c5eadaf58a"
+      ],
+      [
+        "32209d373c3044abac201a19ccc486c4"
+      ],
+      [
+        "3916fda2b2d54c72ae222cbbc221e7b8"
+      ],
+      [
+        "87d285984ed448809e172bf4d1302245"
+      ],
+      [
+        "866d00cdba2e4ac2b8946feaee20ed62"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "raf-promotoria",
+    "controllers": [
+      [
+        "4f6a32357d294549b4c4b64adc4c437b"
+      ],
+      [
+        "e1ccd2f3393b43bdb6f3e7c5eadaf58a"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "registration-public",
+    "controllers": [
+      [
+        "405dc09c454341ef942e2a48552d26f2"
+      ],
+      [
+        "d45042372e9a4e2582bdbdd8f7a90dfa"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-cadastro-pessoa",
+    "controllers": [
+      [
+        "c7800c74a1604edcb0b8d5334513fa9b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-controle-interno",
+    "controllers": [
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ],
+      [
+        "bb5c9e4b74bf408ba2f00c462aaa857f"
+      ],
+      [
+        "c98a7ddde569431ca82ff22f0c13493a"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-dbvr-administrador",
+    "controllers": [
+      [
+        "d107a427b9d248988921a3d8cbd1b7c7"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-dbvr-servidor",
+    "controllers": [
+      [
+        "d107a427b9d248988921a3d8cbd1b7c7"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-diretor-geral-all",
+    "controllers": [
+      [
+        "6538e69d7f824b73b75b4c48a8652b65"
+      ],
+      [
+        "f9ccb11ecd1646059b63e8858ea514a6"
+      ],
+      [
+        "62db83ecdf6a436a97f76aaa8d31e115"
+      ],
+      [
+        "d604c3c7573e44e3b03ba6c2cd42fb80"
+      ],
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ],
+      [
+        "c7800c74a1604edcb0b8d5334513fa9b"
+      ],
+      [
+        "af8c99136ddb4679898a6f6c87085257"
+      ],
+      [
+        "643aeaec8e2e4dd59de562520b7ad6ba"
+      ],
+      [
+        "ce3cc3df70774650bc1b53a1a4070266"
+      ],
+      [
+        "791973113a924a51bee78243d591d763"
+      ],
+      [
+        "1a2ecd09ab144ff28a81e887d3528ffd"
+      ],
+      [
+        "6b6442cc73124626b2865b107dbee47f"
+      ],
+      [
+        "9e5f3881bd19418ba08e217731720115"
+      ],
+      [
+        "7e305e13b01740f49771b8074aa49bf9"
+      ],
+      [
+        "a439b45ea74148ec940d911cf25132c1"
+      ],
+      [
+        "23aa162860214021ba7e43ac81d6ac51"
+      ],
+      [
+        "5f6d488d67fe45a98df1a1b5a63b8060"
+      ],
+      [
+        "00ea29b2735342f8a6f358fa41c7f9ed"
+      ],
+      [
+        "682d5b7094b7420491ab97bd62758203"
+      ],
+      [
+        "db7fa7abe0564befafd7d1534d490a2d"
+      ],
+      [
+        "83a4c917ed1a42f0b73e3cdc42348698"
+      ],
+      [
+        "0be8ed435c834c8f869a26128196a63a"
+      ],
+      [
+        "a4abb531d3fa41928214eabb724e84fe"
+      ],
+      [
+        "479c7d9ca3114614847a74c1ae05a894"
+      ],
+      [
+        "c4faaa0704a4415fbc36ca2eac02166e"
+      ],
+      [
+        "f1eb5a2897af4474b32c0e464bdba188"
+      ],
+      [
+        "7927fc15cae24b7abaa92ac5ac9430bd"
+      ],
+      [
+        "b9a37c4e02e34eabba0d382ff2cada77"
+      ],
+      [
+        "43db99e920924baa89e4251813cf2940"
+      ],
+      [
+        "84b141c7c79943589d213160e0e3a2a9"
+      ],
+      [
+        "189a96d5789c4a8c806ac0189c648e9a"
+      ],
+      [
+        "6e58c623f4c647b88d3183589a2ce805"
+      ],
+      [
+        "fa69ac1cc1d948d69ac73db19ccf2501"
+      ],
+      [
+        "77efc160bbf54ef39d2e4a8150f46e21"
+      ],
+      [
+        "8217acb68b2e482bb0e8eb57eddfcbc9"
+      ],
+      [
+        "2f9e54d6774c4de685d70834b63c94e7"
+      ],
+      [
+        "200b0b8ab2d24adfbeb45517cf4fa906"
+      ],
+      [
+        "f3d554b69bcb4fdcbb1ff1fb12d6d4ab"
+      ],
+      [
+        "bd68c6f407f641699de53a2c60dd5e8f"
+      ],
+      [
+        "95312f053a09480a90766a7e43764ed3"
+      ],
+      [
+        "ebb6cc295ee14e9395e78c026e400808"
+      ],
+      [
+        "fdba3bd7b533485b9312dc42cb617c9a"
+      ],
+      [
+        "2c62ed39fa614e87b1a63b0216cbd64e"
+      ],
+      [
+        "7348cc9831f8494fbb27f333d8bde20f"
+      ],
+      [
+        "4dbe612d62454e3a96ea85ea3f2ece6a"
+      ],
+      [
+        "3d5f0b6bb9af4b3e9a76b44835741627"
+      ],
+      [
+        "85a6cc9061804aea943e75ecd2505cf1"
+      ],
+      [
+        "424a2e1d53824da2a0a9d7fe492ee386"
+      ],
+      [
+        "051dae2bc2e6455fad31b4bca0c75e01"
+      ],
+      [
+        "de481c4817e84781a6d2396e17692ea4"
+      ],
+      [
+        "d75c9fb9d9014efc88eaa5aa44e41abb"
+      ],
+      [
+        "8aa7392c31c346a4818d5c8644e4ef2c"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ],
+      [
+        "93ec0a14ae58484bbbc802346f56e1a0"
+      ],
+      [
+        "0180eb74d31d418282422a8e3ff203bf"
+      ],
+      [
+        "34942a507b44407489d22835ae2b663e"
+      ],
+      [
+        "d2a97cc3819a4e3289e159a4da3a0314"
+      ],
+      [
+        "03822b71b6f344d38d8f7255b902a21c"
+      ],
+      [
+        "13a71fa11fce4ebe91cd1265584b330e"
+      ],
+      [
+        "49b7cdc2dcc34ddbbef288eadb633e44"
+      ],
+      [
+        "447526de3c56489bad4d45e22757ce4b"
+      ],
+      [
+        "b4f1182413d34f23ba350140622e5a39"
+      ],
+      [
+        "904a1384987343fc8a5661950aa7f369"
+      ],
+      [
+        "9b146c7d2d83434ea68a7408463a2ebf"
+      ],
+      [
+        "16b8173d8f6849228621f95100c447e4"
+      ],
+      [
+        "c84aed1cd9f14e979724df903acb1606"
+      ],
+      [
+        "51f4d546626f4381881bd55f7152f80b"
+      ],
+      [
+        "08e42a9f3603467ebc1d88883d9999ec"
+      ],
+      [
+        "a5a06705d78640ada46febc579dc1d38"
+      ],
+      [
+        "ec2153daf8e345a3beeb136526ef2b1b"
+      ],
+      [
+        "c7f167a8bc8741caa075f23330ce1acb"
+      ],
+      [
+        "6cc836bb3afb4e60bf8059d4d9459b5b"
+      ],
+      [
+        "9f9801b6b47942fcb653c2b984857d92"
+      ],
+      [
+        "2d8f3688036e427089a7268c7b4d388d"
+      ],
+      [
+        "8414f5f69e45482090bad9cd9c082826"
+      ],
+      [
+        "f1398f5721f64b61a4306a3d47bea28b"
+      ],
+      [
+        "693a26d78d124a8db0227803ef0d7333"
+      ],
+      [
+        "5eb8a4a8568a4125a0afa8a9eb8f36da"
+      ],
+      [
+        "e5e716514ffa4d26b1ac8b543ab18aba"
+      ],
+      [
+        "cf4d9b72cbf84975a4d61acf976140ea"
+      ],
+      [
+        "2deb57516a2e42fc8d6bcf52423df0c0"
+      ],
+      [
+        "a6bedb51e3dd4c0ead4732e64fdf7822"
+      ],
+      [
+        "d0621bb6cdcd440098ad7c7ee4d71726"
+      ],
+      [
+        "7cea088537074ab98b1f8a5e0c3ceb8c"
+      ],
+      [
+        "011940e765974cf1903cfd6829e79d54"
+      ],
+      [
+        "9c0e0887971a4682b51092c65b7bd5a0"
+      ],
+      [
+        "e9625de60ac840eaa149d0674510bedd"
+      ],
+      [
+        "512d3a83946e477fa6f9d75a5bf504a2"
+      ],
+      [
+        "952207a14d5240058f3ee53b70342d04"
+      ],
+      [
+        "254965a780344ff3a7316bedea4e4232"
+      ],
+      [
+        "55e978185a604191a5ad151369137362"
+      ],
+      [
+        "08dd65fec6d246f5b62ed023fcaba625"
+      ],
+      [
+        "34b54c87340445609b97042aba12a7a7"
+      ],
+      [
+        "eaedfb6540c2494f897bbcda28fe8288"
+      ],
+      [
+        "21f58c81b9e04d21a3b4d4c6ea4fc109"
+      ],
+      [
+        "2d1d1d58e2f74137be6ba610effd66fe"
+      ],
+      [
+        "bb5c9e4b74bf408ba2f00c462aaa857f"
+      ],
+      [
+        "75fde2e2a1ae47dabb735a2b01b0987f"
+      ],
+      [
+        "cbb294bd5f304092891261c7c89fb8bd"
+      ],
+      [
+        "5a5d286a9b994bbdbded371b144e29df"
+      ],
+      [
+        "2fbe849c7c0244e88b5075fafb55b963"
+      ],
+      [
+        "e26d39ea2ecc4862b915a6d7bd397463"
+      ],
+      [
+        "e5de3e3b303c49dc92696f85d7e0f841"
+      ],
+      [
+        "dfb7ad1b40c94af18551295231a92581"
+      ],
+      [
+        "fd14bb580ea24a0580a11434f5d5c2b2"
+      ],
+      [
+        "143d2550518c4f6f9be33af63a698e01"
+      ],
+      [
+        "c1c90773918944e4a238c53292e51855"
+      ],
+      [
+        "47225c02e1e24c1d97301eb16b0e5581"
+      ],
+      [
+        "83d23ec10ed646eaa86e632d3e3dc843"
+      ],
+      [
+        "14af466c97a142d6a165b46247227d1d"
+      ],
+      [
+        "43f39b320a20479f95ae13ad93077d1c"
+      ],
+      [
+        "a08208ec1e914403ac47212a245a139d"
+      ],
+      [
+        "86ed7fcf7aa24fc59a901ecfbad93d72"
+      ],
+      [
+        "448ec10b62e04655a177023510837cff"
+      ],
+      [
+        "87d79a30ea6649aebb138efc2d0e6a7a"
+      ],
+      [
+        "b1aa707faf604d7bb33375322f520c7f"
+      ],
+      [
+        "0d54b498f5f04488acbe17b7a42feae9"
+      ],
+      [
+        "6d59fc278a36444eba3dfe3639e0781f"
+      ],
+      [
+        "dd29bfce218344d48976f1416bec2b90"
+      ],
+      [
+        "c7cc4166ea974dac9e1c5734d60be21c"
+      ],
+      [
+        "b7520bfec02c4e048a3087edc930f914"
+      ],
+      [
+        "7bdb1929ae164349b52bbb51637faac0"
+      ],
+      [
+        "6e23d0b90c4d454cb8224d966d61a4ec"
+      ],
+      [
+        "2eab847097cd474c9d3fffce179f9fb0"
+      ],
+      [
+        "ded44b4ab6d34a88a313ad1fcc44d938"
+      ],
+      [
+        "842a9c2db25a46499668d6ea6229a37d"
+      ],
+      [
+        "152d7415335d4695a80ee18540a5c602"
+      ],
+      [
+        "a843ea56f43d44f5a0ff49959d7b5ebf"
+      ],
+      [
+        "8eb0c9b1bd3c491a831a1651cd2edb39"
+      ],
+      [
+        "917928e667a848c8bd3e90f98c443d30"
+      ],
+      [
+        "b2e96311fdcc4c82a1ef75cf14a9868e"
+      ],
+      [
+        "e63810cdda7c4be884c93a16d333abb0"
+      ],
+      [
+        "1bea965f0b694b34bc935aeccfbfb12c"
+      ],
+      [
+        "f26ef3bffc184de184b5601b84a2379a"
+      ],
+      [
+        "7f124c749892424bb94e19aeae2c6040"
+      ],
+      [
+        "56be01ac62f94d8aa626433589bfe4cd"
+      ],
+      [
+        "8f0890f0a981451cb174af4f99ee6bc6"
+      ],
+      [
+        "91fc9d08deac44868ea233aeece3d632"
+      ],
+      [
+        "5dce0e6223134ea7a03dc03ad5570f5c"
+      ],
+      [
+        "c46c59cc0dbb47e09ac9e51b3eb7f0a6"
+      ],
+      [
+        "2c491027b8014586844851efeb92a8be"
+      ],
+      [
+        "3de9954459304b878ea040ae3d35a4dd"
+      ],
+      [
+        "6584d0a0aefc489fa744b581f7a089eb"
+      ],
+      [
+        "92b39b2156ba42bd99ab143f97bdf07b"
+      ],
+      [
+        "ccd1f08928d7482ab11205b97a585be1"
+      ],
+      [
+        "ce8769098b7c4d7891f73bd024906044"
+      ],
+      [
+        "d28bd304b21a4434bb8110c7d028ffbd"
+      ],
+      [
+        "2d6db8c51b1747c1aef428cb3972b030"
+      ],
+      [
+        "82ce6d01cf094c7f9a6f988d45a86000"
+      ],
+      [
+        "bc0c3981a52345ca96f395cc35777b62"
+      ],
+      [
+        "e860500606784a849c4a51a895f3832d"
+      ],
+      [
+        "724d367d24364cf18658cede077c4906"
+      ],
+      [
+        "16cefd54f7674041ab244bd7f7e2f01e"
+      ],
+      [
+        "41e2065ef5b248a097ff76842dd582ed"
+      ],
+      [
+        "0f424210923d433ca7f10dc5737b9d21"
+      ],
+      [
+        "e280e7cca0f849d29b17db37687864e4"
+      ],
+      [
+        "321a0bb279a847d884319481485ac114"
+      ],
+      [
+        "ac26e62cc5ca49ae925e51596b177654"
+      ],
+      [
+        "efd45c4447c149a5b3845125027ef662"
+      ],
+      [
+        "5530d98e6f7741a192eba712460d7f76"
+      ],
+      [
+        "a8bc4944e5094f4aa7ecbd8884fb9d4e"
+      ],
+      [
+        "0f61fad17e4a4ce29e3cd11210d99117"
+      ],
+      [
+        "630c208b0a744d65ada77092955341c5"
+      ],
+      [
+        "44c853d5eb6544c3bdf76d62236f892b"
+      ],
+      [
+        "38e50854f85741428656af45503e1dec"
+      ],
+      [
+        "fc0d3b48aead41c5a51e4eb866203a95"
+      ],
+      [
+        "29718980f0204570b2d43a709891fb73"
+      ],
+      [
+        "f9004d5ce7ed4f799351efe72958f3f0"
+      ],
+      [
+        "3ab094790ab5476b979463d69fc982ad"
+      ],
+      [
+        "edf08d90105247108ebc83eb0f0d133f"
+      ],
+      [
+        "ee8b3eaf58c14707b069e6fdcf34f12c"
+      ],
+      [
+        "bee60ae556744e029af59206ac687c1a"
+      ],
+      [
+        "f575047343f24d9192e5465959207917"
+      ],
+      [
+        "56a284fe94a0475bafdcc47bf96558a4"
+      ],
+      [
+        "10d3987018084870a29e58e4398978a7"
+      ],
+      [
+        "7d5d650c95164d37917d79ade2eb1d88"
+      ],
+      [
+        "e9728c8b079344029270a7caea0fdc4d"
+      ],
+      [
+        "c98a7ddde569431ca82ff22f0c13493a"
+      ],
+      [
+        "e87324e21a0949048723887b0b4413e4"
+      ],
+      [
+        "a0385d787ab34f6bb6914800c680b789"
+      ],
+      [
+        "e18216e2bf60482e8b4e6a3923347953"
+      ],
+      [
+        "523e2ab220e1405996a53413a9bf9b94"
+      ],
+      [
+        "941d944e481543e1a2999edc684024c9"
+      ],
+      [
+        "b08b13b7ad8e408ebea5c83f38f88e65"
+      ],
+      [
+        "6e0ba171c52b4070a207612c2d0c37ab"
+      ],
+      [
+        "d1e9857cc0704f1d8444d8bce4181ad4"
+      ],
+      [
+        "3177afcaea104a29a26b5b0d0f355f0b"
+      ],
+      [
+        "7d69700713ff4aea9d29e45286b7f645"
+      ],
+      [
+        "67f77d410a424a48ae836d4ac284c988"
+      ],
+      [
+        "686dd5af01564dcaa1e04c318f007af1"
+      ],
+      [
+        "c49d9277217b4a6ba277f53007db00dc"
+      ],
+      [
+        "dac82aa90b3d48bc8b5836c2169abeed"
+      ],
+      [
+        "be360f253aea40fcb9e30d05ae861eb0"
+      ],
+      [
+        "ebfb030a65724ebf8d39e4ff9dbd7f67"
+      ],
+      [
+        "be19e447007a425f9cb55ec26ee2396d"
+      ],
+      [
+        "5d004af1df524d9b873a1785d9a8a6cd"
+      ],
+      [
+        "236d1130536a4bfca1b6c28687206289"
+      ],
+      [
+        "5dffbb593add4f35aaaad8c8a1dbfda8"
+      ],
+      [
+        "b77bdf8a36d14773a2da24e76e690ae5"
+      ],
+      [
+        "f5668c657a1b4871b7a8fb3735a0af0d"
+      ],
+      [
+        "5c28d5a7151749f9a576967d0c8a3f91"
+      ],
+      [
+        "a21c57894291404f82f9c6207d262bdd"
+      ],
+      [
+        "874f76e34ee5486db6f8759d4ded0606"
+      ],
+      [
+        "702e368bb1e248ffac3d94b4edc6c216"
+      ],
+      [
+        "7f98ea87e2334bd4be445c7842a4d9f8"
+      ],
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ],
+      [
+        "2fc943fe942a4f769ebb0f679849e578"
+      ],
+      [
+        "f9604723d99c43fab22c14b1c79be2d1"
+      ],
+      [
+        "35d3c7a2b79d40148c78b81d9315a0a8"
+      ],
+      [
+        "aade015cc4fd474a848760247377be6b"
+      ],
+      [
+        "3b84e7901a99482c82cbc797e1f075ec"
+      ],
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ],
+      [
+        "4c54b36d739143a08060b672630f6c84"
+      ],
+      [
+        "2f7ccca66ed64ba1af28a6b2e42b30fb"
+      ],
+      [
+        "ca9c137fc041482a8a25ed53ecb0eac8"
+      ],
+      [
+        "26af6cfc2baa4753b6ce511a0b85148f"
+      ],
+      [
+        "5de533ca454947779ae1e8f64069edf3"
+      ],
+      [
+        "751431ba89454d3ca56803011f1437cd"
+      ],
+      [
+        "d53ad3db2edb4338b28e100a2a738678"
+      ],
+      [
+        "bf4b9f284301443db6dc9a81a60283e5"
+      ],
+      [
+        "64f0d47848f348fb92231fedd024f035"
+      ],
+      [
+        "02e00543b5344ab6b884873d9474b348"
+      ],
+      [
+        "de58b4176d1b4e02a5f4236ebfd9a87c"
+      ],
+      [
+        "78e3af05712e4ff8b9e99e3846784ce2"
+      ],
+      [
+        "d139918f7c8748d284d1456cc4a1817d"
+      ],
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "cd26efd6c35a480586a443e5a00efa61"
+      ],
+      [
+        "55abbeb846c845429b39aea06cde40a2"
+      ],
+      [
+        "5a89266bc6254c85bc563f4bae52ed55"
+      ],
+      [
+        "0b4648e0e8b24a0a81dc44d6282172f1"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ],
+      [
+        "8f0a22e4952743fcaa0d4f60948dd78c"
+      ],
+      [
+        "c1ee4f47c21845ac99f37a989f315f18"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-funcionalidades",
+    "controllers": [
+      [
+        "c40164c94aed469eafdb75ba98f7cd3d"
+      ],
+      [
+        "152c9724968e485fb66a1b1e0949543f"
+      ],
+      [
+        "28594086a0234de09ac45af1ecc3498a"
+      ],
+      [
+        "37a5cf0d2202475fbd02445e5b9e2f52"
+      ],
+      [
+        "cc9eb8c9669a4e4c93c8de3018f40aff"
+      ],
+      [
+        "f9ccb11ecd1646059b63e8858ea514a6"
+      ],
+      [
+        "62db83ecdf6a436a97f76aaa8d31e115"
+      ],
+      [
+        "d604c3c7573e44e3b03ba6c2cd42fb80"
+      ],
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ],
+      [
+        "64ca76b676d24b17a105c14801cc9384"
+      ],
+      [
+        "c7800c74a1604edcb0b8d5334513fa9b"
+      ],
+      [
+        "af8c99136ddb4679898a6f6c87085257"
+      ],
+      [
+        "643aeaec8e2e4dd59de562520b7ad6ba"
+      ],
+      [
+        "ce3cc3df70774650bc1b53a1a4070266"
+      ],
+      [
+        "28c94897dbef4588af6e2e7d427fd36e"
+      ],
+      [
+        "1425886f9c9b45c4aaa9ee17d27d822c"
+      ],
+      [
+        "ab0187d8fc7d419185e596e2107dd5f6"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ],
+      [
+        "5c20198b4cac4647ae7bd6780e2d61b0"
+      ],
+      [
+        "93ec0a14ae58484bbbc802346f56e1a0"
+      ],
+      [
+        "16322ce05da24b4497f7af0d791c46ba"
+      ],
+      [
+        "8050db610b9c46f2af13cddc0c849feb"
+      ],
+      [
+        "29a668dda58d4ac39f74ed0125ba83b0"
+      ],
+      [
+        "0180eb74d31d418282422a8e3ff203bf"
+      ],
+      [
+        "3c97e46dc79246c5badbc096e5578a5d"
+      ],
+      [
+        "34942a507b44407489d22835ae2b663e"
+      ],
+      [
+        "6cb43ea550d0497baeac7b03b399b63e"
+      ],
+      [
+        "d2a97cc3819a4e3289e159a4da3a0314"
+      ],
+      [
+        "34463deb2cf3485f8f983b06b8406825"
+      ],
+      [
+        "03822b71b6f344d38d8f7255b902a21c"
+      ],
+      [
+        "2f470c2b239240ab890fcdf580c5e48c"
+      ],
+      [
+        "13a71fa11fce4ebe91cd1265584b330e"
+      ],
+      [
+        "15f785ccbb4c4d8e94a328c6e14f6357"
+      ],
+      [
+        "49b7cdc2dcc34ddbbef288eadb633e44"
+      ],
+      [
+        "2af9b47d74024fe5ba761fea96a57cc4"
+      ],
+      [
+        "48cd4d7023dc4ef6bf06346e9a48b26d"
+      ],
+      [
+        "a0d7d9d2cb9b494e9bbfc3131a62b90f"
+      ],
+      [
+        "4430cfc12aac4f049846a0cd20e020d8"
+      ],
+      [
+        "447526de3c56489bad4d45e22757ce4b"
+      ],
+      [
+        "882a663e8acd431698655a49971db4ec"
+      ],
+      [
+        "b4f1182413d34f23ba350140622e5a39"
+      ],
+      [
+        "de1e5b265f61493398d01201a405a26e"
+      ],
+      [
+        "904a1384987343fc8a5661950aa7f369"
+      ],
+      [
+        "013e79c0f5754b2b9a0351b67cc69cfa"
+      ],
+      [
+        "9b146c7d2d83434ea68a7408463a2ebf"
+      ],
+      [
+        "7930ceedf31847baa7def50fce4ba446"
+      ],
+      [
+        "16b8173d8f6849228621f95100c447e4"
+      ],
+      [
+        "8b27f3fea6b34147afc322a15e5f54f9"
+      ],
+      [
+        "c84aed1cd9f14e979724df903acb1606"
+      ],
+      [
+        "ed343721b0ad45559498c8377f952eaa"
+      ],
+      [
+        "51f4d546626f4381881bd55f7152f80b"
+      ],
+      [
+        "08e42a9f3603467ebc1d88883d9999ec"
+      ],
+      [
+        "c4858435a31243b4a9bfcc190ec2e3b2"
+      ],
+      [
+        "a5a06705d78640ada46febc579dc1d38"
+      ],
+      [
+        "933fd3d3c3c74fb799f6858681f13c59"
+      ],
+      [
+        "ec2153daf8e345a3beeb136526ef2b1b"
+      ],
+      [
+        "463b0da798e4438085beba278a25c25b"
+      ],
+      [
+        "c7f167a8bc8741caa075f23330ce1acb"
+      ],
+      [
+        "6db662eee66b40a5b7a2e0e5017698f3"
+      ],
+      [
+        "6cc836bb3afb4e60bf8059d4d9459b5b"
+      ],
+      [
+        "62e4ebce4a664ae58f9f59a3c49c92ba"
+      ],
+      [
+        "9f9801b6b47942fcb653c2b984857d92"
+      ],
+      [
+        "2d8f3688036e427089a7268c7b4d388d"
+      ],
+      [
+        "8414f5f69e45482090bad9cd9c082826"
+      ],
+      [
+        "f1398f5721f64b61a4306a3d47bea28b"
+      ],
+      [
+        "693a26d78d124a8db0227803ef0d7333"
+      ],
+      [
+        "5eb8a4a8568a4125a0afa8a9eb8f36da"
+      ],
+      [
+        "e5e716514ffa4d26b1ac8b543ab18aba"
+      ],
+      [
+        "cf4d9b72cbf84975a4d61acf976140ea"
+      ],
+      [
+        "2deb57516a2e42fc8d6bcf52423df0c0"
+      ],
+      [
+        "e5eca3fec99e4da8a2f0e286b8071dd2"
+      ],
+      [
+        "a6bedb51e3dd4c0ead4732e64fdf7822"
+      ],
+      [
+        "4c02d7daa4494e94bd24fd193ca5c398"
+      ],
+      [
+        "d0621bb6cdcd440098ad7c7ee4d71726"
+      ],
+      [
+        "7cea088537074ab98b1f8a5e0c3ceb8c"
+      ],
+      [
+        "011940e765974cf1903cfd6829e79d54"
+      ],
+      [
+        "9c0e0887971a4682b51092c65b7bd5a0"
+      ],
+      [
+        "e9625de60ac840eaa149d0674510bedd"
+      ],
+      [
+        "512d3a83946e477fa6f9d75a5bf504a2"
+      ],
+      [
+        "952207a14d5240058f3ee53b70342d04"
+      ],
+      [
+        "254965a780344ff3a7316bedea4e4232"
+      ],
+      [
+        "55e978185a604191a5ad151369137362"
+      ],
+      [
+        "21f58c81b9e04d21a3b4d4c6ea4fc109"
+      ],
+      [
+        "2d1d1d58e2f74137be6ba610effd66fe"
+      ],
+      [
+        "75fde2e2a1ae47dabb735a2b01b0987f"
+      ],
+      [
+        "cbb294bd5f304092891261c7c89fb8bd"
+      ],
+      [
+        "2fbe849c7c0244e88b5075fafb55b963"
+      ],
+      [
+        "e26d39ea2ecc4862b915a6d7bd397463"
+      ],
+      [
+        "e5de3e3b303c49dc92696f85d7e0f841"
+      ],
+      [
+        "dfb7ad1b40c94af18551295231a92581"
+      ],
+      [
+        "fd14bb580ea24a0580a11434f5d5c2b2"
+      ],
+      [
+        "143d2550518c4f6f9be33af63a698e01"
+      ],
+      [
+        "c1c90773918944e4a238c53292e51855"
+      ],
+      [
+        "47225c02e1e24c1d97301eb16b0e5581"
+      ],
+      [
+        "83d23ec10ed646eaa86e632d3e3dc843"
+      ],
+      [
+        "14af466c97a142d6a165b46247227d1d"
+      ],
+      [
+        "a08208ec1e914403ac47212a245a139d"
+      ],
+      [
+        "43f39b320a20479f95ae13ad93077d1c"
+      ],
+      [
+        "86ed7fcf7aa24fc59a901ecfbad93d72"
+      ],
+      [
+        "448ec10b62e04655a177023510837cff"
+      ],
+      [
+        "87d79a30ea6649aebb138efc2d0e6a7a"
+      ],
+      [
+        "b1aa707faf604d7bb33375322f520c7f"
+      ],
+      [
+        "0d54b498f5f04488acbe17b7a42feae9"
+      ],
+      [
+        "6d59fc278a36444eba3dfe3639e0781f"
+      ],
+      [
+        "dd29bfce218344d48976f1416bec2b90"
+      ],
+      [
+        "c7cc4166ea974dac9e1c5734d60be21c"
+      ],
+      [
+        "b7520bfec02c4e048a3087edc930f914"
+      ],
+      [
+        "7bdb1929ae164349b52bbb51637faac0"
+      ],
+      [
+        "6e23d0b90c4d454cb8224d966d61a4ec"
+      ],
+      [
+        "2eab847097cd474c9d3fffce179f9fb0"
+      ],
+      [
+        "ded44b4ab6d34a88a313ad1fcc44d938"
+      ],
+      [
+        "842a9c2db25a46499668d6ea6229a37d"
+      ],
+      [
+        "152d7415335d4695a80ee18540a5c602"
+      ],
+      [
+        "a843ea56f43d44f5a0ff49959d7b5ebf"
+      ],
+      [
+        "8eb0c9b1bd3c491a831a1651cd2edb39"
+      ],
+      [
+        "917928e667a848c8bd3e90f98c443d30"
+      ],
+      [
+        "b2e96311fdcc4c82a1ef75cf14a9868e"
+      ],
+      [
+        "e63810cdda7c4be884c93a16d333abb0"
+      ],
+      [
+        "1bea965f0b694b34bc935aeccfbfb12c"
+      ],
+      [
+        "f26ef3bffc184de184b5601b84a2379a"
+      ],
+      [
+        "3de9954459304b878ea040ae3d35a4dd"
+      ],
+      [
+        "e77244fdfedd4b7cad312e883797cd85"
+      ],
+      [
+        "ccd1f08928d7482ab11205b97a585be1"
+      ],
+      [
+        "ce8769098b7c4d7891f73bd024906044"
+      ],
+      [
+        "d28bd304b21a4434bb8110c7d028ffbd"
+      ],
+      [
+        "aecdfbc1ce914698b6bf01b4c344d334"
+      ],
+      [
+        "2d6db8c51b1747c1aef428cb3972b030"
+      ],
+      [
+        "88430c6c188e487684bdd4c4e71416a6"
+      ],
+      [
+        "bc0c3981a52345ca96f395cc35777b62"
+      ],
+      [
+        "e860500606784a849c4a51a895f3832d"
+      ],
+      [
+        "72ebcd36e1d745f5a4f6387e264445a6"
+      ],
+      [
+        "321a0bb279a847d884319481485ac114"
+      ],
+      [
+        "82140a999018420abe102f91f481f16c"
+      ],
+      [
+        "efd45c4447c149a5b3845125027ef662"
+      ],
+      [
+        "4cce0293cf334007bceb613e119adfda"
+      ],
+      [
+        "01b858ad8ffc4f5bb7f8fd1f2d1c84e9"
+      ],
+      [
+        "630c208b0a744d65ada77092955341c5"
+      ],
+      [
+        "44c853d5eb6544c3bdf76d62236f892b"
+      ],
+      [
+        "c546d627f6984283836f77a13ced4bcd"
+      ],
+      [
+        "fc0d3b48aead41c5a51e4eb866203a95"
+      ],
+      [
+        "29718980f0204570b2d43a709891fb73"
+      ],
+      [
+        "817d8ec973894b2a997c7122b9aacc23"
+      ],
+      [
+        "60c627080c13460683c0743be43a82c1"
+      ],
+      [
+        "f575047343f24d9192e5465959207917"
+      ],
+      [
+        "10d3987018084870a29e58e4398978a7"
+      ],
+      [
+        "6a5a52880eae46a59c2afea301725c56"
+      ],
+      [
+        "e87324e21a0949048723887b0b4413e4"
+      ],
+      [
+        "da098e515e0840928a4a018df12b3585"
+      ],
+      [
+        "8ffe607d9fc34c3f8f413838b5c194e0"
+      ],
+      [
+        "7bca4706df624e99a7bf2eec88e4d1d0"
+      ],
+      [
+        "d1e9857cc0704f1d8444d8bce4181ad4"
+      ],
+      [
+        "3177afcaea104a29a26b5b0d0f355f0b"
+      ],
+      [
+        "405dc09c454341ef942e2a48552d26f2"
+      ],
+      [
+        "0f511985b90743d9b3dc4df2e0a2d9eb"
+      ],
+      [
+        "d45042372e9a4e2582bdbdd8f7a90dfa"
+      ],
+      [
+        "ba230161de514b6292a0ec675b360419"
+      ],
+      [
+        "f541f4ec4df04de5a3479676f2c20c2f"
+      ],
+      [
+        "3a8ce15950f14feba2ebe2e1ed247b23"
+      ],
+      [
+        "f922d1bad6694388a74f637e024014c6"
+      ],
+      [
+        "5dffbb593add4f35aaaad8c8a1dbfda8"
+      ],
+      [
+        "5040ec14ce2f4326a8f6c5e819bc0deb"
+      ],
+      [
+        "b77bdf8a36d14773a2da24e76e690ae5"
+      ],
+      [
+        "5c28d5a7151749f9a576967d0c8a3f91"
+      ],
+      [
+        "874f76e34ee5486db6f8759d4ded0606"
+      ],
+      [
+        "702e368bb1e248ffac3d94b4edc6c216"
+      ],
+      [
+        "7f98ea87e2334bd4be445c7842a4d9f8"
+      ],
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ],
+      [
+        "2fc943fe942a4f769ebb0f679849e578"
+      ],
+      [
+        "f9604723d99c43fab22c14b1c79be2d1"
+      ],
+      [
+        "35d3c7a2b79d40148c78b81d9315a0a8"
+      ],
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ],
+      [
+        "4c54b36d739143a08060b672630f6c84"
+      ],
+      [
+        "2f7ccca66ed64ba1af28a6b2e42b30fb"
+      ],
+      [
+        "26af6cfc2baa4753b6ce511a0b85148f"
+      ],
+      [
+        "5de533ca454947779ae1e8f64069edf3"
+      ],
+      [
+        "751431ba89454d3ca56803011f1437cd"
+      ],
+      [
+        "ce2cec0ea1f44e4d8cae2dd7dd428f1f"
+      ],
+      [
+        "2166b5bd35af4c8d9480d4cd897b3341"
+      ],
+      [
+        "d139918f7c8748d284d1456cc4a1817d"
+      ],
+      [
+        "52c0a021c4df4701b785b26b0e85f72b"
+      ],
+      [
+        "04be76df2b814765ba20b2b565cb4329"
+      ],
+      [
+        "d806b74c321b4e3a82d0151d74c534d3"
+      ],
+      [
+        "2b08c02b3bfa4cf0a5289c9f5ea59a56"
+      ],
+      [
+        "cd26efd6c35a480586a443e5a00efa61"
+      ],
+      [
+        "55abbeb846c845429b39aea06cde40a2"
+      ],
+      [
+        "5a89266bc6254c85bc563f4bae52ed55"
+      ],
+      [
+        "0b4648e0e8b24a0a81dc44d6282172f1"
+      ],
+      [
+        "7cb29336104e420da3013d692cc76b90"
+      ],
+      [
+        "c7da20182f92436a95c5308f3126efda"
+      ],
+      [
+        "c17b31b354264ca9b359ea00ff701185"
+      ],
+      [
+        "14defd25348b4294b6b4bfd0265d0718"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-funcionalidades-expediente",
+    "controllers": [
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ],
+      [
+        "c7800c74a1604edcb0b8d5334513fa9b"
+      ],
+      [
+        "8aa7392c31c346a4818d5c8644e4ef2c"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ],
+      [
+        "a08208ec1e914403ac47212a245a139d"
+      ],
+      [
+        "43f39b320a20479f95ae13ad93077d1c"
+      ],
+      [
+        "e87324e21a0949048723887b0b4413e4"
+      ],
+      [
+        "63639b48f9b5419687c8d8f3fe135329"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-functional-id",
+    "controllers": [
+      [
+        "c1c84ca0ce08429fb45243c247f9bf8a"
+      ],
+      [
+        "9723effc48c34312a00a80bbb0a6b873"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-gestor-afastamento",
+    "controllers": [
+      [
+        "8aa7392c31c346a4818d5c8644e4ef2c"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-hoursworkload",
+    "controllers": [
+      [
+        "b8daad96c8d34d2c86f58ad2be666bcd"
+      ],
+      [
+        "9f49423ded9745e3bce804fd566ba440"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-previsao-aposentadoria",
+    "controllers": [
+      [
+        "ce3cc3df70774650bc1b53a1a4070266"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-publicacao",
+    "controllers": [
+      [
+        "e87324e21a0949048723887b0b4413e4"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-redes-visualizacao",
+    "controllers": [
+      [
+        "6538e69d7f824b73b75b4c48a8652b65"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-registration",
+    "controllers": [
+      [
+        "405dc09c454341ef942e2a48552d26f2"
+      ],
+      [
+        "0f511985b90743d9b3dc4df2e0a2d9eb"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relationship",
+    "controllers": [
+      [
+        "107170d35a944852b9b02a28c28c270e"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relationship-admin",
+    "controllers": [
+      [
+        "107170d35a944852b9b02a28c28c270e"
+      ],
+      [
+        "e0b1524b2d3e4402891f6bf6fd638742"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorio-cargo-comissao",
+    "controllers": [
+      [
+        "a21c57894291404f82f9c6207d262bdd"
+      ],
+      [
+        "3b84e7901a99482c82cbc797e1f075ec"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorio-chefe",
+    "controllers": [
+      [
+        "a21c57894291404f82f9c6207d262bdd"
+      ],
+      [
+        "3b84e7901a99482c82cbc797e1f075ec"
+      ],
+      [
+        "52c0a021c4df4701b785b26b0e85f72b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorio-saude",
+    "controllers": []
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorios-dg",
+    "controllers": [
+      [
+        "28c94897dbef4588af6e2e7d427fd36e"
+      ],
+      [
+        "1425886f9c9b45c4aaa9ee17d27d822c"
+      ],
+      [
+        "ab0187d8fc7d419185e596e2107dd5f6"
+      ],
+      [
+        "5dffbb593add4f35aaaad8c8a1dbfda8"
+      ],
+      [
+        "b77bdf8a36d14773a2da24e76e690ae5"
+      ],
+      [
+        "5c28d5a7151749f9a576967d0c8a3f91"
+      ],
+      [
+        "a21c57894291404f82f9c6207d262bdd"
+      ],
+      [
+        "874f76e34ee5486db6f8759d4ded0606"
+      ],
+      [
+        "702e368bb1e248ffac3d94b4edc6c216"
+      ],
+      [
+        "7f98ea87e2334bd4be445c7842a4d9f8"
+      ],
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ],
+      [
+        "2fc943fe942a4f769ebb0f679849e578"
+      ],
+      [
+        "f9604723d99c43fab22c14b1c79be2d1"
+      ],
+      [
+        "35d3c7a2b79d40148c78b81d9315a0a8"
+      ],
+      [
+        "3b84e7901a99482c82cbc797e1f075ec"
+      ],
+      [
+        "d95eef35e9214c6384dafd7012806378"
+      ],
+      [
+        "4c54b36d739143a08060b672630f6c84"
+      ],
+      [
+        "2f7ccca66ed64ba1af28a6b2e42b30fb"
+      ],
+      [
+        "ca9c137fc041482a8a25ed53ecb0eac8"
+      ],
+      [
+        "26af6cfc2baa4753b6ce511a0b85148f"
+      ],
+      [
+        "5de533ca454947779ae1e8f64069edf3"
+      ],
+      [
+        "751431ba89454d3ca56803011f1437cd"
+      ],
+      [
+        "14defd25348b4294b6b4bfd0265d0718"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorio-servidor-lotacao",
+    "controllers": [
+      [
+        "702e368bb1e248ffac3d94b4edc6c216"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorios-expediente",
+    "controllers": [
+      [
+        "49b7cdc2dcc34ddbbef288eadb633e44"
+      ],
+      [
+        "0fc9eb7b14844f6684c4f135ad7f0f1a"
+      ],
+      [
+        "28c0852e35464c92a4c7896d259b5077"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-relatorio-transparencia",
+    "controllers": [
+      [
+        "1425886f9c9b45c4aaa9ee17d27d822c"
+      ],
+      [
+        "ab0187d8fc7d419185e596e2107dd5f6"
+      ],
+      [
+        "2431f2dfb3d74743a37c859e65b65215"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-saude",
+    "controllers": [
+      [
+        "ef215b37faf1476ebf2936f22484b659"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-sicap",
+    "controllers": [
+      [
+        "de58b4176d1b4e02a5f4236ebfd9a87c"
+      ],
+      [
+        "78e3af05712e4ff8b9e99e3846784ce2"
+      ],
+      [
+        "8f0a22e4952743fcaa0d4f60948dd78c"
+      ],
+      [
+        "c1ee4f47c21845ac99f37a989f315f18"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "rh-sspe",
+    "controllers": [
+      [
+        "8aa7392c31c346a4818d5c8644e4ef2c"
+      ],
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ],
+      [
+        "a6bedb51e3dd4c0ead4732e64fdf7822"
+      ],
+      [
+        "4c02d7daa4494e94bd24fd193ca5c398"
+      ],
+      [
+        "d0621bb6cdcd440098ad7c7ee4d71726"
+      ],
+      [
+        "3ab094790ab5476b979463d69fc982ad"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "scmmp-admin",
+    "controllers": [
+      [
+        "d53ad3db2edb4338b28e100a2a738678"
+      ],
+      [
+        "bf4b9f284301443db6dc9a81a60283e5"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "siacmp-atendimento",
+    "controllers": [
+      [
+        "77a9f5e16d884d91beaec3b5b1eab89b"
+      ],
+      [
+        "454139008b424205b3d671a7bfae899b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "siacmp-promotoria",
+    "controllers": [
+      [
+        "5d22d52594ce49f9b828b5404728acc7"
+      ],
+      [
+        "454139008b424205b3d671a7bfae899b"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "siatu-admin",
+    "controllers": [
+      [
+        "d080011131b04b7fae089ca5d71388dd"
+      ],
+      [
+        "3a53a96dccb543eabb9570a387bbb612"
+      ],
+      [
+        "71bf4796f48d44e185f90ba67fe5d44f"
+      ],
+      [
+        "03ff08a9dfbb49c7895390be80c953ed"
+      ],
+      [
+        "03018a01c1cd4c228f2253cde39ab698"
+      ],
+      [
+        "c205911bcd6a4d07abe1deb484aaab30"
+      ],
+      [
+        "dbf12b2a8b4d4571b5048423a050e7f1"
+      ],
+      [
+        "9f4260ad69544a7d885813a8a6c41bcb"
+      ],
+      [
+        "86e87ea8e9984dac9d56059fd9d27b1d"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "siatu-atendente",
+    "controllers": [
+      [
+        "3a53a96dccb543eabb9570a387bbb612"
+      ],
+      [
+        "a24e35df56b84515863ad5de05e5307c"
+      ],
+      [
+        "c205911bcd6a4d07abe1deb484aaab30"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "siatu-gerente",
+    "controllers": [
+      [
+        "d080011131b04b7fae089ca5d71388dd"
+      ],
+      [
+        "3a53a96dccb543eabb9570a387bbb612"
+      ],
+      [
+        "1723aebbb1604985acddeaf4c5e72a3e"
+      ],
+      [
+        "e6b6c923fa45413db03dfeb4da8f9e66"
+      ],
+      [
+        "c205911bcd6a4d07abe1deb484aaab30"
+      ],
+      [
+        "91e0cad41a5d407e9735808c9b6eca68"
+      ],
+      [
+        "9f4260ad69544a7d885813a8a6c41bcb"
+      ],
+      [
+        "86e87ea8e9984dac9d56059fd9d27b1d"
+      ],
+      [
+        "ed575fa7d4e947f98d04d0befc3c940f"
+      ],
+      [
+        "b868d23b54c944df9832ea29a14a010a"
+      ],
+      [
+        "d19acac645a249f38db6cf7e1111bf36"
+      ],
+      [
+        "003057d1cd90486cb034fee472286523"
+      ],
+      [
+        "f9726af85cba4452acf3651b702c63e2"
+      ],
+      [
+        "cd72c50c486d4862b6b4d02ac47ef100"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "sispat-relatorios",
+    "controllers": [
+      [
+        "a29501cc4d9f4fdbbd984844e890c184"
+      ],
+      [
+        "4eaf31abe9f245288b405be7960df15d"
+      ],
+      [
+        "d9e0d18d9b01495694b90d19a641c066"
+      ],
+      [
+        "b45ed01183994017aa8acb45107d3c8a"
+      ],
+      [
+        "463ec8b2c55c4580ba75c22eb834db31"
+      ],
+      [
+        "62cc61777b1b41e58642bb979859c0ed"
+      ],
+      [
+        "f1226f79d2b146669425ff7d7c828842"
+      ],
+      [
+        "da03e9db2a914d1baf6317ae72920482"
+      ],
+      [
+        "9b6cff404aa746f587358a33b0eb01c7"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "ti-central-atendimento",
+    "controllers": [
+      [
+        "cc9754c126fd4282b5d803b7853ec93b"
+      ],
+      [
+        "f099e64e3f3c48a49d3dbfbca16f3357"
+      ],
+      [
+        "e5eca3fec99e4da8a2f0e286b8071dd2"
+      ],
+      [
+        "a6bedb51e3dd4c0ead4732e64fdf7822"
+      ],
+      [
+        "4c02d7daa4494e94bd24fd193ca5c398"
+      ],
+      [
+        "d0621bb6cdcd440098ad7c7ee4d71726"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "transparencia",
+    "controllers": [
+      [
+        "eae4f796143649e0ad5aafa9e5ed5187"
+      ]
+    ]
+  }
+},
+{
+  "model": "engine.controllerpermission",
+  "fields": {
+    "name": "usefulday-admin",
+    "controllers": [
+      [
+        "cc9eb8c9669a4e4c93c8de3018f40aff"
+      ]
+    ]
+  }
+}
+]

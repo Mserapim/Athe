@@ -1,0 +1,3 @@
+./manage.py exportdata "Application.objects.order_by('layer', 'title').filter(title__icontains='CORREGEDORIA')" --indent=2 --with-natural-keys --import-module=engine > corregedoria/fixtures/00-menu.json
+./manage.py exportdata "Controller.objects.filter(module__icontains='corregedoria').order_by('module', 'title')" --indent=2 --with-natural-keys --import-module=engine >> corregedoria/fixtures/00-menu.json
+./manage.py exportdata "Choice.objects.filter(app_label__in=['corregedoria', 'inspection'])" --indent=2 --with-natural-keys --set-fields="{'modified_by_id': 845, 'created_by_id': 845}" --import-module=corregedoria > corregedoria/fixtures/01-choices.json

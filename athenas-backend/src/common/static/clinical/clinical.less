@@ -1,0 +1,178 @@
+// out: clinical.css, compress: true
+
+div.clinical-header {
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    div.qrcode {
+        border: 1px solid #000;
+    }
+
+    div.title {
+        -webkit-box-flex: 1;
+        flex: 1;
+
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+    }
+}
+
+div.slot {
+    margin-top: 1.5rem;
+}
+
+div.id-doctor {
+    div.emmiter, div.sign {
+        border: 1px solid #000;
+        border-top: none;
+    }
+
+    div.title {
+        border: 1px solid #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    div.emmiter {
+        display: -webkit-box;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+
+        div.doctor {
+            -webkit-box-flex: 1;
+            flex: 1;
+            div {
+                padding: 0.3rem;
+
+                span.bold {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        div.logo {
+            text-align: center;
+            width: 145px;
+            height: 100%;
+        }
+    }
+
+
+    div.sign {
+        > div.sign-content {
+            display: -webkit-box;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+
+            > div.sign-content-qrcode {
+                border-right: 1px solid #000
+            }
+
+            > div.sign-content-person {
+                -webkit-box-flex: 1;
+                flex: 1;
+                font-size: 0.8rem;
+
+                > div {
+                    display: block;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin: 0 auto;
+                    padding: 0.3rem 0.15rem;
+                    width: 98%;
+
+                    > strong {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.id-patient {
+    div.patient {
+        border: 1px solid #000;
+        border-top: none;
+
+        div {
+            padding: 0.3rem;
+
+            span.bold {
+                font-weight: bold;
+            }
+        }
+    }
+
+    div.title {
+        border: 1px solid #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0.3rem;
+    }
+}
+
+div.prescription {
+    > div.title {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0.3rem;
+    }
+
+    > div.content {
+        height: 235px;
+        margin: 0.3rem;
+        padding: 0.3rem;
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        background-color: #f3f3f3;
+    }
+}
+
+div.delivery-control {
+    display: -webkit-box;
+    display: flex;
+
+    div.to, div.from {
+        -webkit-box-flex: 1;
+        flex: 1;
+
+        > div.title {
+            border: 1px solid #000;
+            text-transform: uppercase;
+            padding: 0.25rem;
+            text-align: center;
+        }
+
+        > div.content {
+            border: 1px solid #000;
+            border-top: none;
+            padding: 0.25rem 0;
+            text-align: center;
+        }
+    }
+
+    div.to {
+        margin-right: 0.5rem;
+    }
+
+    div.from {
+        margin-left: 0.5rem;
+    }
+}

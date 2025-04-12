@@ -1,0 +1,198 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="Legal"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto;
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto; 
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 2px solid #000000;
+        text-align: left;
+        font-size: 10pt;
+        padding: 2px;
+      }
+
+      /* table td div {height:12px;overflow:hidden;} */
+
+      table tr th {
+        font-weight: 200;
+        padding: 5px;
+
+      }
+
+      .tabela-ajustada, .tabela-ajustada td, .tabela-ajustada th {
+          border-left: none;
+          border-right: none;
+      }
+
+      h2 {
+        font-size: 14px;
+        text-align: center;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
+
+      .recuo2 {
+        text-indent:2em
+      }
+      .recuo4 {
+        text-indent:4em
+      }
+
+      .col-1 {
+        width: 400px;
+      }
+      .col-2 {
+        text-align: center;
+        width: 300px;
+      }
+      .col-3 {
+        text-align: center;
+        font-size: 8pt;
+      }
+
+      .color-1 {
+        background-color: #c4c0c0;
+      }
+      .color-2 {
+        background-color: #9eeef8;
+        text-align: center;
+      }
+      .color-3 {
+        background-color: #eff89e;
+        text-align: right;
+        padding-right: 36px;
+        font-size: 9pt;
+      }
+      .color-4 {
+        background-color: #ffffff;
+        color: #c01111;
+        font-size: 14px;
+      }
+
+      .sub-tabela {
+        width: 100%;
+        border-collapse: collapse; 
+        border: none; 
+        table-layout: fixed !important;
+        word-wrap: break-word;
+        margin: -2px;
+        
+      }
+
+      .sub-tabela th, .sub-tabela td {
+        border: 1px solid #9c9c9c; 
+        text-align: center;
+        overflow: hidden;
+
+      }
+
+      .tabela-filtro {
+        width: 100%; 
+        border-collapse: collapse; 
+        
+      }
+
+      .list-container {
+        width: 100%;
+        overflow: hidden; 
+      }
+      .list-container li {
+          float: left;
+          width: 30%; 
+          margin-bottom: 10px;
+          list-style-type: none; 
+      }
+
+
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'portrait/header/header.html' %}
+
+    <p><strong>Filtros Aplicados:</strong></p>
+    <ul class="list-container">
+      <li><strong>Referência mês:</strong> {{filtros.mes_competencia}}</li>
+      <li><strong>Referência ano:</strong> {{filtros.ano_competencia}}</li>
+      <li><strong>Status:</strong> {{filtros.status}}</li>
+      <li><strong>Teletrabalho:</strong> {{filtros.teletrabalho}}</li>
+      <li><strong>Tipos de posses:</strong> {{filtros.posses}}</li>
+      <li><strong>Notificado:</strong> {{filtros.notificado}}</li> 
+      <li><strong>Palavra-chave:</strong> {{filtros.palavra_chave}}</li>
+    </ul>
+  
+    <section style="margin-top:50px;margin-bottom:20px;clear: both;">
+      <div class="coluna">
+        <table class="tabela-principal">
+          <thead>
+            <tr>
+                  <th class="col-2" rowspan="2">MATRÍCULA</th>
+                  <th class="col-2" rowspan="2">NOME</th>
+                  <th class="col-2" rowspan="2">LOTAÇÃO</th>
+                  <th class="col-2" rowspan="2">CATEGORIA FUNCIONAL</th>
+                  <th class="col-2" rowspan="2">STATUS</th>
+                  <th class="col-2" rowspan="2">ÚLTIMO ENVIO</th>
+                  <th class="col-2" colspan="3">HISTÓRICO DE NOTIFICAÇÕES</th>
+              </tr>
+              <tr>
+                <th class="col-2">DATA</th>
+                <th class="col-2">EMAIL</th>
+                <th class="col-2">USUÁRIO</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            {% for item in data %}
+            <tr>
+                <td class="col-2 ">{{ item.matricula}}</td>
+                <td class="col-2 " >{{ item.nome }}</td>
+                <td class="col-2 " >{{ item.lotacao }}</td>
+                <td class="col-2 " >{{ item.categoria_funcional }}</td>
+                <td class="col-2 ">{{ item.situacao }}</td>
+                <td class="col-2 ">{{ item.ultimo_envio }}</td>
+  
+                <td colspan="3">
+                  <table class="sub-tabela">
+                    <thead>
+                      {% for notificacao in item.notificacoes %}
+                      <tr>
+                          <th class="col-3">{{ notificacao.data }}</th>
+                          <th class="col-3">{{ notificacao.email }}</th>
+                          <th class="col-3">{{ notificacao.usuario }}</th>
+                      </tr>
+                      {% endfor %}
+                    </thead>
+                  </table>
+              </td>
+            </tr>
+            {% endfor %} 
+          </tbody>
+        </table>
+      </div>
+    </section> 
+
+  </body>
+</html>

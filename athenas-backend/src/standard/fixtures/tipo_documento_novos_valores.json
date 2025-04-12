@@ -1,0 +1,62 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 3849,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_DOCUMENTO",
+        "label": "Portaria PGJ",
+        "value": 106,
+        "cvalue": "106",
+        "cache_path": "rh.TIPO_DOCUMENTO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3850,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_DOCUMENTO",
+        "label": "Portaria DG",
+        "value": 107,
+        "cvalue": "107",
+        "cache_path": "rh.TIPO_DOCUMENTO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3851,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_DOCUMENTO",
+        "label": "Portaria SGA",
+        "value": 108,
+        "cvalue": "108",
+        "cache_path": "rh.TIPO_DOCUMENTO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3852,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_DOCUMENTO",
+        "label": "Portaria PRE MT",
+        "value": 109,
+        "cvalue": "109",
+        "cache_path": "rh.TIPO_DOCUMENTO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

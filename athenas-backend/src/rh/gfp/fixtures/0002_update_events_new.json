@@ -1,0 +1,219 @@
+[
+{
+  "model": "gfp.evento",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:39.459",
+    "modified_at": "2022-06-01T16:05:17.729",
+    "order": 128,
+    "numero": "06702",
+    "genre_event": [
+      "067"
+    ],
+    "specie_event": [
+      "02"
+    ],
+    "lancamento": "T",
+    "tipo": "D",
+    "tipo_calculo": 3,
+    "carater": 2,
+    "nature_event": [
+      "1899",
+      "3"
+    ],
+    "nature_of_event": [
+      "1899"
+    ],
+    "titulo": "AUXÍLIO ALIMENTAÇÃO - DEVOLUÇÃO",
+    "publicacao": null,
+    "base_de_calculo": 0,
+    "previous_event": [
+      "5501"
+    ],
+    "description": "",
+    "active": true,
+    "consignment_manager": false,
+    "evaluate_difference": false,
+    "separate_for_competencies": true,
+    "separate_for_info_event": false,
+    "config_value": "",
+    "consignatario": null,
+    "aplica_consignado": false,
+    "aplica_consignavel": false,
+    "config_transparencia": null,
+    "suspension_process": [],
+    "tags": [
+      [
+        "gfp",
+        "EVENT_TAGS",
+        11
+      ]
+    ]
+  }
+},
+{
+  "model": "gfp.evento",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2018-06-12T17:38:32.870",
+    "modified_at": "2022-06-07T15:25:14.104",
+    "order": 1,
+    "numero": "07202",
+    "genre_event": [
+      "072"
+    ],
+    "specie_event": [
+      "02"
+    ],
+    "lancamento": "T",
+    "tipo": "D",
+    "tipo_calculo": 4,
+    "carater": 2,
+    "nature_event": [
+      "1650",
+      "3"
+    ],
+    "nature_of_event": [
+      "1650"
+    ],
+    "titulo": "DIÁRIAS VIAGENS - DEVOLUÇÃO",
+    "publicacao": null,
+    "base_de_calculo": 0,
+    "previous_event": null,
+    "description": "",
+    "active": true,
+    "consignment_manager": false,
+    "evaluate_difference": true,
+    "separate_for_competencies": true,
+    "separate_for_info_event": false,
+    "config_value": "",
+    "consignatario": null,
+    "aplica_consignado": false,
+    "aplica_consignavel": false,
+    "config_transparencia": null,
+    "suspension_process": [],
+    "tags": [
+      [
+        "gfp",
+        "EVENT_TAGS",
+        10
+      ]
+    ]
+  }
+},
+{
+  "model": "gfp.evento",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2018-06-12T17:38:00.847",
+    "modified_at": "2022-06-07T15:25:14.097",
+    "order": 1,
+    "numero": "07200",
+    "genre_event": [
+      "072"
+    ],
+    "specie_event": [
+      "00"
+    ],
+    "lancamento": "T",
+    "tipo": "P",
+    "tipo_calculo": 4,
+    "carater": 2,
+    "nature_event": [
+      "1650",
+      "3"
+    ],
+    "nature_of_event": [
+      "1650"
+    ],
+    "titulo": "DIÁRIAS VIAGENS",
+    "publicacao": null,
+    "base_de_calculo": 0,
+    "previous_event": null,
+    "description": "",
+    "active": true,
+    "consignment_manager": false,
+    "evaluate_difference": true,
+    "separate_for_competencies": true,
+    "separate_for_info_event": false,
+    "config_value": "",
+    "consignatario": null,
+    "aplica_consignado": false,
+    "aplica_consignavel": false,
+    "config_transparencia": null,
+    "suspension_process": [],
+    "tags": [
+      [
+        "gfp",
+        "EVENT_TAGS",
+        3
+      ]
+    ]
+  }
+},
+{
+  "model": "gfp.evento",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-06-01T10:05:12.312",
+    "modified_at": "2022-06-07T15:25:42.528",
+    "order": 1,
+    "numero": "08700",
+    "genre_event": [
+      "087"
+    ],
+    "specie_event": [
+      "00"
+    ],
+    "lancamento": "F",
+    "tipo": "P",
+    "tipo_calculo": 4,
+    "carater": 2,
+    "nature_event": null,
+    "nature_of_event": null,
+    "titulo": "AJUDA DE CUSTO TRANSPORTE",
+    "publicacao": null,
+    "base_de_calculo": 0,
+    "previous_event": null,
+    "description": "",
+    "active": true,
+    "consignment_manager": false,
+    "evaluate_difference": false,
+    "separate_for_competencies": false,
+    "separate_for_info_event": false,
+    "config_value": "",
+    "consignatario": null,
+    "aplica_consignado": false,
+    "aplica_consignavel": false,
+    "config_transparencia": null,
+    "suspension_process": [],
+    "tags": [
+      [
+        "gfp",
+        "EVENT_TAGS",
+        4
+      ]
+    ]
+  }
+}
+]

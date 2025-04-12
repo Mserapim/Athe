@@ -1,0 +1,32 @@
+{% load judicialfilters %}
+{% load humanize %}
+<div class="composite">
+    {% block content %}
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>DÍVIDAS E ÔNUS REAIS</b></td></tr>
+      </table>
+      <div style="padding-top: 1em; ">
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Classificação IR: <b>{{ debits.irscode.code }} - {{ debits.irscode.title.upper | safely }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Descrição:
+          <div style="padding-top: 0.25em; padding-left: 1em; font-size: 12px; text-align: justify; ">
+            {{ debits.description | safely }}
+          </div>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Tipo: <b>{{ debits.get_kind_display.upper }}</b><br />
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Valor em <b>31/12/{{debits.controlinformation.refer_year}}</b>: <b>R${{ debits.current_value | intcomma }}</b><br />
+        </div>
+        <!-- {% if property.last_value %}
+          <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+            - Valor em 31/12/{{debits.controlinformation.previous_controlinformation.refer_year}}:  R${{ debits.last_value | intcomma }} <br />
+          </div>
+        {% endif %} -->
+      </div>
+
+    {% endblock %}
+</div>

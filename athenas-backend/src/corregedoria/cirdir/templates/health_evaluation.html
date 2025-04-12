@@ -1,0 +1,351 @@
+{% extends "inspection/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>QUESTIONÁRIO - VC É ÚNICO</b></td></tr>
+      </table>
+      <div style="padding-top: 1em; font-size: 10pt; ">
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.5em; ">
+          <b>Dados dos Integrante:</b><br />
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+              - Sexo: <b> {{ health.controlinformation.employee.pessoa_fisica.sexo }} </b><br />
+              - Idade: <b> {{ health.controlinformation.employee.pessoa_fisica.age }} </b><br />
+          </div>
+
+          <br />
+          <b>1. Exame Físico:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            - Pressão Arterial: <b> {{ health.physical_exam_blood_pressure }} </b><br />
+            - IMC: <b> {{ health.physical_exam_imc }} </b><br />
+            - Circunferência abdominal: <b> {{ health.physical_exam_abdominal_circumference }} </b><br />
+            - Pulso: <b> {{ health.physical_exam_pulse }} </b><br />
+            - Outros: <b> {{ health.physical_exam_other }} </b><br />
+          </div>
+
+          <br />
+          <b>2. Frequencia de ingestão de alimentos semanal conforme categoria a seguir:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            - Doces: <b> {{ ingestion_candy.label }} </b><br />
+            - Massas: <b> {{ ingestion_pasta.label }} </b><br />
+            - Fruta: <b> {{ ingestion_fruit.label }} </b><br />
+            - Vegetais/legumes: <b> {{ ingestion_vegetable.label }} </b><br />
+            - Carnes vermelha/branca: <b> {{ ingestion_beef.label }} </b><br />
+            - Frituras: <b> {{ ingestion_fry.label }} </b><br />
+            - Suplementos proteicos: <b> {{ ingestion_supplement.label }} </b><br />
+          </div>
+
+          <br />
+          <b>3. Alguém da sua família apresenta ou já apresentou alguma das condições abaixo?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Câncer <br />
+            [ {% if '2' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Hipertensão <br />
+            [ {% if '3' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Diabetes <br />
+            [ {% if '4' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sobreposição/obesidade <br />
+            [ {% if '5' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Baixo peso <br />
+            [ {% if '6' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Doença renal <br />
+            [ {% if '7' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Doença cardíaca <br />
+            [ {% if '8' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Doenças reumáticas <br />
+            [ {% if '9' in health.family_health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Outros{% if '9' in health.family_health_problems %}: <b>{{health.family_health_problems_other}}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>4. Você apresenta ou já apresentou alguma das condições abaixo?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Câncer <br />
+            [ {% if '2' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Hipertensão <br />
+            [ {% if '3' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Diabetes <br />
+            [ {% if '4' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sobreposição/obesidade <br />
+            [ {% if '5' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Baixo peso <br />
+            [ {% if '6' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Doença renal <br />
+            [ {% if '7' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Doença cardíaca <br />
+            [ {% if '8' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Doenças reumáticas <br />
+            [ {% if '9' in health.health_problems %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Outros{% if '9' in health.health_problems %}: <b>{{health.health_problems_other}}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>5. Hábitos de vida:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.life_habits %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Tabagismo <br />
+            [ {% if '2' in health.life_habits %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Etilismo <br />
+            [ {% if '3' in health.life_habits %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Dependência química <br />
+            [ {% if '4' in health.life_habits %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sedentarismo <br />
+            [ {% if '5' in health.life_habits %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Outros{% if '9' in health.life_habits %}: <b>{{health.life_habits_other}}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>6. Imunização:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.immunization %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Imunizações atualizadas <br />
+            [ {% if '2' in health.immunization %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Imunizações desatualizadas <br />
+            [ {% if '3' in health.immunization %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não sabe informar <br />
+          </div>
+
+          <br />
+          <b>7. Uso de medicamentos:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Anti-hipertensivo <br />
+            [ {% if '2' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Hipoglicemiante oral (tratamento de diabetes) <br />
+            [ {% if '3' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Estatinas (redução de colesterol, triglicérides) <br />
+            [ {% if '4' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Contraceptivos <br />
+            [ {% if '5' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Anti-depressivo e/ou ansiolíticos <br />
+            [ {% if '6' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Analgésicos <br />
+            [ {% if '7' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Hormônios <br />
+            [ {% if '8' in health.medicament %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Outros{% if '8' in health.medicament %}: <b>{{health.medicament_other}}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>8. Você realizada atividade síca com qual frequência?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.physical_activity %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Nunca <br />
+            [ {% if '2' in health.physical_activity %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 1 vez por semana <br />
+            [ {% if '3' in health.physical_activity %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 2 vezes por semana <br />
+            [ {% if '4' in health.physical_activity %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 3 ou mais vezes por semana <br />
+          </div>
+
+          <br />
+          <b>9. Você sente dor ou fadiga durante o trabalho?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.has_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não. <br />
+            [ {% if '2' in health.has_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim. A dor e/ou fadiga aó aparece no <u>final</u> da jornada de trabalho, e cessa à noite e nos dias de folga. <br />
+            [ {% if '3' in health.has_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim. A dor e/ou fadiga aó aparece no <u>início</u> da jornada de trabalho, e não melhora com o repouso. <br />
+            [ {% if '4' in health.has_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim. Além da dor e/ou fadiga, há também fraqueza e dificuldade para realizar atividades laborais e domésticas.<br />
+          </div>
+
+          <br />
+          <b>10. A dor citada acima é recorrente (crônica)? Em quais regiôes?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Cervical <br />
+            [ {% if '2' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Torácica <br />
+            [ {% if '3' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Lombar <br />
+            [ {% if '4' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Quadril <br />
+            [ {% if '5' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Joelho <br />
+            [ {% if '6' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Ombros <br />
+            [ {% if '7' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Dor de cabeça <br />
+            [ {% if '8' in health.local_pain %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Outros{% if '8' in health.local_pain %}: <b>{{health.local_pain_other}}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>11. A sua atividade exige que você faça muita força física como, por exemplo, levantar 5 ou mais quilos?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.strength_at_work %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não <br />
+            [ {% if '2' in health.strength_at_work %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Raramente <br />
+            [ {% if '3' in health.strength_at_work %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Frequentemente <br />
+            [ {% if '4' in health.strength_at_work %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Todo o tempo <br />
+          </div>
+
+          <br />
+          <b>12. A cadeira que você utiliza no trablho oferece possibilidade de ajustes, tais como:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            - Regulagem de altura do assento? [ {% if '1' in health.work_chair_seat_adjustment %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_seat_adjustment %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Regulagem de altura do encosto? [ {% if '1' in health.work_chair_height_adjustment %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_height_adjustment %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Regulagem de inclinação do encosto? [ {% if '1' in health.work_chair_tilt_adjustment %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_tilt_adjustment %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Base com rodízios? [ {% if '1' in health.work_chair_has_rod %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_has_rod %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Permite apoiar os pés? [ {% if '1' in health.work_chair_foot_support %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_foot_support %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Você ajusta a cadeira antes de começar a trabalhar? [ {% if '1' in health.work_chair_regulates_when_sitting %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_regulates_when_sitting %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Apoia as costas no encosto? [ {% if '1' in health.work_chair_supports_back %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_supports_back %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Você utiliza os rodízios da cadeita para rodar o tronco de pegar objetos distantes? [ {% if '1' in health.work_chair_use_rods %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.work_chair_use_rods %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Você utiliza duas telas de computador? [ {% if '1' in health.uses_2_screens %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.uses_2_screens %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Durante a jornada de trablhao você realiza pausas para descanso de movimentos repetitivos, a cada 1 hora de trabalho? [ {% if '1' in health.pause_for_rest %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] Sim &nbsp; [ {% if '2' in health.pause_for_rest %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não<br />
+            - Quanto tempo fica sentado(a), sem se levantar de cadeira? [ {% if '1' in health.sitting_time %} <b>X</b> {% else %} &nbsp;&nbsp; {% endif %} ] 1 hora &nbsp; [ {% if '2' in health.sitting_time %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 2 horas &nbsp; [ {% if '3' in health.sitting_time %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 3 horas &nbsp; [ {% if '4' in health.sitting_time %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Ou mais horas<br />
+
+          </div>
+
+          <br />
+          <b>13. Última avaliação na odontologia:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+              [ {% if '1' in health.dental_evaluation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] No último ano <br />
+              [ {% if '2' in health.dental_evaluation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Entre 1 e 2 anos <br />
+              [ {% if '3' in health.dental_evaluation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Há mais de 2 anos <br />
+          </div>
+
+          <br />
+          <b>14. Consulta médica:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+              [ {% if '1' in health.medical_consultation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] No último ano <br />
+              [ {% if '2' in health.medical_consultation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Entre 1 e 2 anos <br />
+              [ {% if '3' in health.medical_consultation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Há mais de 2 anos <br />
+            - Qual especialidade: {% if health.medical_consultation_specialty %} <b>{{ health.medical_consultation_specialty }}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>15. Realizou exames:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+              [ {% if '1' in health.conducted_examinations %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] No último ano <br />
+              [ {% if '2' in health.conducted_examinations %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Entre 1 e 2 anos <br />
+              [ {% if '3' in health.conducted_examinations %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Há mais de 2 anos <br />
+            - Quais: {% if health.conducted_examinations_which %} <b>{{ health.conducted_examinations_which }}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>16. Você já precisou se afastar do serviço nos últimos 02 anos por motivo de saúde, por um período superior a 03 dias?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.medical_license_higher_3_days_last_2_years %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim <br />
+            [ {% if '2' in health.medical_license_higher_3_days_last_2_years %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não <br />
+          </div>
+
+          <br />
+          <b>17. Você precisou ficar sem vir ao trablho por menos de 03 dias no último ano por motivo de saúde?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.medical_license_less_3_days_last_year %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim <br />
+            [ {% if '2' in health.medical_license_less_3_days_last_year %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não <br />
+          </div>
+
+          <br />
+          <b>18. Você já precisou se afastar do serviço nos últimos 02 anos por otivo de doença em pessoa da família?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.medical_license_family_support %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim <br />
+            [ {% if '2' in health.medical_license_family_support %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não <br />
+          </div>
+
+          <br />
+          <b>19. Com que frequência você se sente satisfeito(a) no exercício da sua função?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.job_satisfaction %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Nunca <br />
+            [ {% if '2' in health.job_satisfaction %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Raramente <br />
+            [ {% if '3' in health.job_satisfaction %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Às vezes <br />
+            [ {% if '4' in health.job_satisfaction %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Frequentemente <br />
+            [ {% if '5' in health.job_satisfaction %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sempre <br />
+          </div>
+
+          <br />
+          <b>20. Quanto dias, no último mês, você se sentou esgotado(a) física e/ou, mentalmente ao final do expediente de trabalho?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.job_exhaustion %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 0 a 3 dias <br />
+            [ {% if '2' in health.job_exhaustion %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 4 a 6 dias <br />
+            [ {% if '3' in health.job_exhaustion %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 7 a 9 dias <br />
+            [ {% if '4' in health.job_exhaustion %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 10 a 12 dias <br />
+            [ {% if '5' in health.job_exhaustion %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] 13 ou mais dias <br />
+          </div>
+
+          <br />
+          <b>21. Como você considera o seu relacionmento com colegas do setor?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.job_relationship %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Totalmente satisfatório <br />
+            [ {% if '2' in health.job_relationship %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Parcialmente satisfatório <br />
+            [ {% if '3' in health.job_relationship %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Insatisfatório <br />
+            [ {% if '4' in health.job_relationship %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sem resposta <br />
+          </div>
+
+          <br />
+          <b>22. Como você considera o seu relacionamento com as chefias mediatas e imediatas?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.job_relationship_boss %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Totalmente satisfatório <br />
+            [ {% if '2' in health.job_relationship_boss %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Parcialmente satisfatório <br />
+            [ {% if '3' in health.job_relationship_boss %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Insatisfatório <br />
+            [ {% if '4' in health.job_relationship_boss %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sem resposta <br />
+          </div>
+
+          <br />
+          <b>23. O que mais te agrada em trabalhador nesta Instituição?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            {% if health.better_at_work %} {{ health.better_at_work }} {% endif %} <br />
+          </div>
+
+          <br />
+          <b>24. O que menos te agrada em trabalhador nesta Instituição?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            {% if health.less_at_work %} {{ health.less_at_work }} {% endif %} <br />
+          </div>
+
+          <br />
+          <b>25. Quando está fora do ambiente de trabalho, com que frequência você se engaja em ações de lazer?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.leisure_actions %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Nunca <br />
+            [ {% if '2' in health.leisure_actions %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Raramente <br />
+            [ {% if '3' in health.leisure_actions %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Às vezes <br />
+            [ {% if '4' in health.leisure_actions %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Frequentemente <br />
+            [ {% if '5' in health.leisure_actions %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sempre <br />
+          </div>
+
+          <br />
+          <b>26. Com que frequência você tem dificuldade paraq dormir à noite (tanto para iniciar a dormir, quanto para manter-se dormindo pelas horas necessárias)?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.difficulty_sleeping %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Nunca <br />
+            [ {% if '2' in health.difficulty_sleeping %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Raramente <br />
+            [ {% if '3' in health.difficulty_sleeping %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Às vezes <br />
+            [ {% if '4' in health.difficulty_sleeping %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Frequentemente <br />
+            [ {% if '5' in health.difficulty_sleeping %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sempre <br />
+          </div>
+
+          <br />
+          <b>27. Você planeja ações pessoais para o futuro com que frequência?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.planning_future %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Nunca <br />
+            [ {% if '2' in health.planning_future %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Raramente <br />
+            [ {% if '3' in health.planning_future %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Às vezes <br />
+            [ {% if '4' in health.planning_future %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Frequentemente <br />
+            [ {% if '5' in health.planning_future %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sempre <br />
+          </div>
+
+          <br />
+          <b>28. O estresse ou a ansiedade são minhas principais dificuldades atualmente?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.stress_or_anxiety_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Discordo totalmente <br />
+            [ {% if '2' in health.stress_or_anxiety_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Discordo parcialmente <br />
+            [ {% if '3' in health.stress_or_anxiety_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não discordo <br />
+            [ {% if '4' in health.stress_or_anxiety_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Concordo parciamente <br />
+            [ {% if '5' in health.stress_or_anxiety_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Concordo totalmente <br />
+          </div>
+
+          <br />
+          <b>29. O depressão ou a frustração são minhas principais dificuldades atualmente?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.depression_or_frustration_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Discordo totalmente <br />
+            [ {% if '2' in health.depression_or_frustration_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Discordo parcialmente <br />
+            [ {% if '3' in health.depression_or_frustration_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não discordo <br />
+            [ {% if '4' in health.depression_or_frustration_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Concordo parciamente <br />
+            [ {% if '5' in health.depression_or_frustration_major_problem %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Concordo totalmente <br />
+          </div>
+
+          <br />
+          <b>30. Usufruiu férias?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.enjoyed_the_vacation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] No último ano <br />
+            [ {% if '2' in health.enjoyed_the_vacation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Entre 1 e 2 anos <br />
+            [ {% if '3' in health.enjoyed_the_vacation %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Há mais de 2 anos <br />
+          </div>
+
+          <br />
+          <b>31. Você se sente satisfeito com o serviço prestado?</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            [ {% if '1' in health.satisfied_service %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Sim <br />
+            [ {% if '2' in health.satisfied_service %} <b>X</b> {% else %} &nbsp;&nbsp;&nbsp; {% endif %} ] Não <br />
+            - Justifique: {% if health.satisfied_service_justify %} <b>{{ health.satisfied_service_justify }}</b> {% endif %} <br />
+          </div>
+
+          <br />
+          <b>32. Indique temas que você gostaria de obter mais informações.</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            {% if health.topics_of_interest %} {{ health.topics_of_interest }} {% endif %} <br />
+          </div>
+
+          <br />
+          <b>33. Espaço para observações.</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; font-size: 9pt">
+            {% if health.observations %} {{ health.observations }} {% endif %} <br />
+          </div>
+
+        </div>
+
+        {% if health.assessments_signed.exists %}
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.5em; ">
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>RECOMENDAÇÕES</b></td></tr>
+            </table>
+              {% for assessment in health.assessments_signed %}
+                  <div style="padding-top:1em; padding-left: 0.5em; ">
+                        {{ assessment.content | safely }}
+                        <div>
+                            <hr />
+                        </div>
+                  </div>
+              {% endfor %}
+
+        </div>
+        {% endif %}
+
+      </div>
+
+    {% endblock %}
+</div>

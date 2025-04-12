@@ -1,0 +1,130 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">ATO PGJ Nº 064/2014, DE 10 DE JUNHO DE 2014.</p>
+<p class="rf-title">REQUERIMENTO DE RESSARCIMENTO DE DESPESAS</p>
+<p class="rf-title">EXCELENTÍSSIMO SENHOR PROCURADOR-GERAL DE JUSTIÇA DO ESTADO DO TOCANTINS.</p>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">IDENTIFICAÇÃO DO SERVIDOR</th></tr>
+    <tr>
+        <th class="rf-th">Nome:</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_job_title }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ home_court_unicode }}</td></tr>
+    <tr><th class="rf-th" colspan="2">E-mail institucional:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_work_email }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">FINALIDADE</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ finality }}</td></tr>
+    <tr>
+        <th class="rf-th">Data de saída:</th>
+        <th class="rf-th">Data de retorno:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ output_date }}</td>
+        <td class="rf-td">{{ return_date }}</td>
+    </tr>
+</table>
+
+{% for compensate_expense in compensate_expense_items %}
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="3">INFORMAÇÕES PARA O RESSARCIMENTO DAS DESPESAS ABAIXO RELACIONADAS</th></tr>
+    <tr>
+        <th class="rf-th">Número da nota fiscal:</th>
+        <th class="rf-th">Nome da empresa ou do prestador de serviço:</th>
+        <th class="rf-th">Vencimento da nota fiscal:</th>
+    </tr>
+    <tr>
+        {% if not compensate_expense.nota %}
+            <td class="rf-td">Não informado</td>
+        {% else %}
+            <td class="rf-td">{{ compensate_expense.nota }}</td>
+        {% endif %}
+        {% if not compensate_expense.company %}
+            <td class="rf-td">Não informado</td>
+        {% else %}
+            <td class="rf-td">{{ compensate_expense.company }}</td>
+        {% endif %}
+        {% if not compensate_expense.venc_date_nf %}
+            <td class="rf-td">Não informado</td>
+        {% else %}
+            <td class="rf-td">{{ compensate_expense.venc_date_nf  | date:'d/m/Y' }}</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+        <th class="rf-th" colspan="2">Tipo da nota:</th>
+        <th class="rf-th">Valor:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                {% if compensate_expense.nota_material %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Nota de material
+            </p>
+        </td>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                {% if compensate_expense.nota_service %}
+                <span class="ballot-box">&#x2611;</span>
+                {% else %}
+                <span class="ballot-box">&#x2610;</span>
+                {% endif %}
+                Nota de serviço
+            </p>
+        </td>
+        {% load helpers_format %}
+        <td class="rf-td">{{ compensate_expense.value | currency_format }}</td>
+    </tr>
+</table>
+{% endfor %}
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">RESSARCIMENTO DE DESPESAS</th></tr>
+    <tr>
+        <th class="rf-th">Total a ressarcir:</th>
+        <th class="rf-th">Combustível:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">R$ {{ total_compensate }}</td>
+        <td class="rf-td">R$ {{ combustible }}</td>
+    </tr>
+    <tr>
+        <th class="rf-th">Material:</th>
+        <th class="rf-th">Serviço:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ material }}</td>
+        <td class="rf-td">{{ service }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">OBSERVAÇÃO</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ note | safe  }}</td></tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

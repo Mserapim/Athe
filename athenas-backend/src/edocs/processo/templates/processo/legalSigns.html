@@ -1,0 +1,12 @@
+<div class="legal-sign">
+    <h2>Assinaturas do documento</h2>
+
+    {% for sign in process.valid_signatures %}
+        {% include "processo/sign.html" %}
+    {% endfor %}
+
+    <p style="text-align:center; font-size:0.8em">
+        Este documento foi assinado eletrônicamente mediante usuário autenticado no Sistema Athenas.
+        O mesmo possui amparo legal no ambito do <b>Ministério Público do Estado do Tocantins</b>, segundo o <b>Ato 071/2012 da PGJ</b>.
+    </p>
+</div>

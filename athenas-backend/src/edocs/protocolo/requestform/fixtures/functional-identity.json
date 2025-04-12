@@ -1,0 +1,44 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "FUNCTIONALIDENTITY_REISSUE_REASON",
+    "label": "EXTRAVIO / ROUBO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "requestform.FUNCTIONALIDENTITY_REISSUE_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "FUNCTIONALIDENTITY_REISSUE_REASON",
+    "label": "ALTERAÇÃO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "requestform.FUNCTIONALIDENTITY_REISSUE_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "FUNCTIONALIDENTITY_REISSUE_REASON",
+    "label": "SUBSTITUIÇÃO",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "requestform.FUNCTIONALIDENTITY_REISSUE_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

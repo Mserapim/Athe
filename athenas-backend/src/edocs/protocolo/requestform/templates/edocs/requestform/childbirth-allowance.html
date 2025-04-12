@@ -1,0 +1,68 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO AUXÍLIO NATALIDADE</p>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor Geral da Procuradoria Geral de Justiça:
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone de contato:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Nome da criança:</th></tr>
+    <tr><td class="rf-td">{{ child_name }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height rf-text-justify">
+                Observar os Art. 55 e 59 da Lei 1818/2007:<br/>
+                1ª - O servidor tem que ser Efetivo ou Estabilizado e Ativo;<br/>
+                2ª - O valor do auxílio-natalidade será equivalente ao menor
+                vencimento do serviço público estadual, vigente à época do evento,
+                inclusive no caso de natimorto.<br/>
+                3ª - Caso pai e mãe sejam servidores, o auxílio-natalidade é
+                devido apenas a um deles; 4ª - Na hipótese de parto múltiplo, ao
+                valor do auxílio será acrescido 50%.
+            </p>
+            <p class="rf-paragraph-height">
+                - Documentos necessários: Certidão de Nascimento ou Atestado de Óbito do Natimorto.
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

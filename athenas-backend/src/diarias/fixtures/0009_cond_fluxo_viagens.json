@@ -1,0 +1,72 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Motivo de viagem deve ser com id 4 ou 5",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "mot_viagem_4_5",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário seja Membro",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "benef_membro",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário seja Servidor GSI",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "benef_serv_gsi",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Custo de deslocamento pelo MPMT",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "transporte_mpmt",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Alteração de data no itinerário",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "alt_dt_itinerario",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]	

@@ -1,0 +1,36 @@
+{% extends "judicial/lawsuit/base.html" %}
+{% load judicialfilters %}
+
+{% block body-content %}
+<div class="paragraph-text">
+    {% if vote.vote_type %}
+        {% if vote.vote_type == 3 %}
+        <p>
+            O <strong>Dr{% if vote.councillor.employee.pessoa_fisica.sexo == 'F' %}a{% endif %}. {{ vote.councillor.employee.pessoa_fisica }}</strong>
+            se absteve de votar.
+        </p>
+        {% else %}
+        <p>
+            O <b>Dr{% if vote.councillor.employee.pessoa_fisica.sexo == 'F' %}a{% endif %}. {{ vote.councillor.employee.pessoa_fisica }}</b>
+            votou <b>SER {{ vote.get_vote_type_display | upper }}</b> o pedido apreciado.
+        </p>
+        {% endif %}
+    {% else %}
+    <p>
+        O <strong>Dr{% if vote.councillor.employee.pessoa_fisica.sexo == 'F' %}a{% endif %}. {{ vote.councillor.employee.pessoa_fisica }}</strong>
+        não apresentou voto.
+    </p>
+    {% endif %}
+
+    {% if vote.observation %}
+    {{ vote.observation | safe }}
+    {% endif %}
+
+    {% if vote.attaches.exists %}
+        <h4>Anexos do voto:</h4>
+        {% for attach in vote.attaches.all %}
+            {% include 'judicial/lawsuit/attach.html' %}
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

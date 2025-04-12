@@ -1,0 +1,73 @@
+[
+  {
+    "model": "engine.application",
+    "fields": {
+        "icon": "athenas-0824.png",
+        "title": "Gestor de benefícios",
+        "active": true,
+        "father": [
+            "7180066e807d41268f1950a4a0f7092a"
+        ],
+        "uuid": "6c0bae66cc034d9c9e5628b9cc66a0f7",
+        "layer": 2
+    }
+  },
+
+  {
+    "model": "engine.controller",
+    "fields": {
+      "icon": "athenas-0830.png",
+      "title": "Afastamento de Adidos",
+      "controller": "GFPExtraPaymentAttachePeriod",
+      "application": [
+        "7180066e807d41268f1950a4a0f7092a"
+      ],
+      "active": true,
+      "module": "rh",
+      "uuid": "qa215b37faf1476ebf2936f22484b659"
+    }
+  },
+  {
+    "model": "engine.controller",
+    "fields": {
+      "icon": "athenas-0830.png",
+      "title": "Pensionistas",
+      "controller": "GFPExtraPaymentBenefitPeriod",
+      "application": [
+        "6c0bae66cc034d9c9e5628b9cc66a0f7"
+      ],
+      "active": true,
+      "module": "rh",
+      "uuid": "as215b37faf1476ebf2936f22484b659"
+    }
+  },
+  {
+    "model": "engine.controller",
+    "fields": {
+      "icon": "athenas-0830.png",
+      "title": "Servidores Aposentados",
+      "controller": "GFPExtraPaymentRetireePeriod",
+      "application": [
+        "6c0bae66cc034d9c9e5628b9cc66a0f7"
+      ],
+      "active": true,
+      "module": "rh",
+      "uuid": "ff215b37faf1476ebf2936f22484b659"
+    }
+  },
+  {
+    "model": "engine.controller",
+    "fields": {
+      "icon": "athenas-0830.png",
+      "title": "Membros Aposentados",
+      "controller": "GFPExtraPaymentRetireeMemberPeriod",
+      "application": [
+        "6c0bae66cc034d9c9e5628b9cc66a0f7"
+      ],
+      "active": true,
+      "module": "rh",
+      "uuid": "qf215b37faf1476ebf2936f22484b659"
+    }
+  }
+
+]

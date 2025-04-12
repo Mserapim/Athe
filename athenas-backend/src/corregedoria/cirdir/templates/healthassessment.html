@@ -1,0 +1,11 @@
+{% load judicialfilters %}
+
+<div class="composite">
+    {% block content %}
+        {% if doc.signed_by %}
+            {{ doc.content_signed | safe }}
+        {% elif doc.content%}
+            {{ doc.content | safe }}
+        {% endif %}
+    {% endblock %}
+</div>

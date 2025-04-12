@@ -1,0 +1,72 @@
+Ext._define('rh.gfp.conference.payroll.PayCheckRestful', {
+  extend: 'core.Restful',
+
+  resource: 'GFPPayCheckConference',
+
+
+  getFields: function(cfg) {
+    if(!this._fields)
+        this._fields = rh.gfp.paycheck.PayCheckRestful.superclass.getFields.call(this, cfg).concat([
+            {type: "date", name: "data_admissao", dateFormat: "d/m/Y"},
+            {type: "int", name: "referencia_salarial_eletivo", useNull: true},
+            {type: "string", name: "referencia_salarial_eletivo_unicode"},
+            {type: "bool", name: "alterado"},
+            {type: "int", name: "dependentes_ir", useNull: true},
+            {type: "string", name: "referencia_efetivo_cache"},
+            {type: "int", name: "cargo_eletivo", useNull: true},
+            {type: "string", name: "cargo_eletivo_unicode"},
+            {type: "int", name: "referencia_salarial_comissao", useNull: true},
+            {type: "string", name: "referencia_salarial_comissao_unicode"},
+            {type: "float", name: "margem_consignada_livre", useNull: true},
+            {type: "int", name: "lotacao", useNull: true},
+            {type: "string", name: "lotacao_unicode"},
+            {type: "int", name: "referencia_salarial_efetivo", useNull: true},
+            {type: "string", name: "referencia_salarial_efetivo_unicode"},
+            {type: "int", name: "referencia_salario_eletivo", useNull: true},
+            {type: "string", name: "referencia_salario_eletivo_unicode"},
+            {type: "string", name: "situacao_funcional"},
+            {type: "string", name: "situacao_previdenciaria"},
+            {type: "int", name: "cargo_comissao", useNull: true},
+            {type: "string", name: "cargo_comissao_unicode"},
+            {type: "int", name: "modified_by", useNull: true},
+            {type: "string", name: "modified_by_unicode"},
+            {type: "float", name: "margem_consignada_total", useNull: true},
+            {type: "string", name: "referencia_eletivo_cache"},
+            {type: "date", name: "modified_at", dateFormat: "d/m/Y H:i"},
+            {type: "string", name: "created_by_unicode"},
+            {type: "int", name: "folha", useNull: true},
+            {type: "string", name: "folha_unicode"},
+            {type: "int", name: "servidor", useNull: true},
+            {type: "string", name: "servidor_unicode"},
+            {type: "float", name: "total_liquido", useNull: true},
+            {type: "string", name: "status"},
+            {type: "string", name: "status_display"},
+            {type: "int", name: "dado_bancario_pessoa", useNull: true},
+            {type: "string", name: "dado_bancario_pessoa_unicode"},
+            {type: "int", name: "cargo_efetivo", useNull: true},
+            {type: "string", name: "cargo_efetivo_unicode"},
+            {type: "float", name: "base_previdenciaria", useNull: true},
+            {type: "int", name: "referencia_salario_efetivo", useNull: true},
+            {type: "string", name: "referencia_salario_efetivo_unicode"},
+            {type: "float", name: "total_bruto", useNull: true},
+            {type: "string", name: "referencia_comissao_cache"},
+            {type: "int", name: "dependentes_sf", useNull: true},
+            {type: "date", name: "created_at", dateFormat: "d/m/Y H:i"},
+            {type: "int", name: "referencia_salario_comissao", useNull: true},
+            {type: "string", name: "referencia_salario_comissao_unicode"},
+            {type: "int", name: "pensioner", useNull: true},
+            {type: "string", name: "pensioner_unicode"},
+            {type: "int", name: "message", useNull: true},
+            {type: "int", name: "classification"},
+            {type: "string", name: "message_unicode"},
+            {type: "string", name: "cpf"},
+            {type: "string", name: "benefit_number"},
+            {type: 'auto', name: "icons"},
+            {type: "bool", name: "blocked"},
+            {type: "int", name: "previous_paycheck",useNull: true},
+        ]);
+
+    return this._fields;
+}
+
+});

@@ -1,0 +1,4 @@
+./manage.py exportdata "Choice.objects.filter(app_label='esocial').order_by('app_label', 'name', 'value')" -i 2 --with-natural-keys -m standard -o /app/root/esocial/fixtures/initialdb_0001_choices.json
+./manage.py exportdata "Application.objects.filter(title='ESOCIAL').order_by('title')" -i 2 --with-natural-keys -m engine -o /app/root/esocial/fixtures/initialdb_0002_application.json
+./manage.py exportdata "Controller.objects.filter(application__title='ESOCIAL').order_by('application__layer', 'title')" -i 2 --with-natural-keys -m engine -o /app/root/esocial/fixtures/initialdb_0003_controllers.json
+./manage.py exportdata "ItemTable.objects.filter()" -i 2 --with-natural-keys -m esocial --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o /app/root/esocial/fixtures/initialdb_0004_itemtable.json

@@ -1,0 +1,72 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "ponto",
+    "name": "ORIGEM_JUSTIFICATIVA",
+    "label": "Vida Funcional",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "ponto.ORIGEM_JUSTIFICATIVA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "ponto",
+    "name": "ORIGEM_JUSTIFICATIVA",
+    "label": "Gestor de Faltas",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "ponto.ORIGEM_JUSTIFICATIVA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "ponto",
+    "name": "ORIGEM_JUSTIFICATIVA",
+    "label": "Feriado muncipal",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "ponto.ORIGEM_JUSTIFICATIVA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "ponto",
+    "name": "ORIGEM_JUSTIFICATIVA",
+    "label": "Folha ponto",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "ponto.ORIGEM_JUSTIFICATIVA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "ponto",
+    "name": "ORIGEM_JUSTIFICATIVA",
+    "label": "Importação triello",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "ponto.ORIGEM_JUSTIFICATIVA",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

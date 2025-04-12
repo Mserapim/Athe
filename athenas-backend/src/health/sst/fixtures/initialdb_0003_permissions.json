@@ -1,0 +1,618 @@
+[
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Procedimento Diagnóstico",
+    "content_type": [
+      "health",
+      "diagnosisprocedure"
+    ],
+    "codename": "add_diagnosisprocedure"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Procedimento Diagnóstico",
+    "content_type": [
+      "health",
+      "diagnosisprocedure"
+    ],
+    "codename": "change_diagnosisprocedure"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Procedimento Diagnóstico",
+    "content_type": [
+      "health",
+      "diagnosisprocedure"
+    ],
+    "codename": "delete_diagnosisprocedure"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Procedimento Diagnóstico",
+    "content_type": [
+      "health",
+      "diagnosisprocedure"
+    ],
+    "codename": "view_diagnosisprocedure"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Exame",
+    "content_type": [
+      "health",
+      "exam"
+    ],
+    "codename": "add_exam"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Exame",
+    "content_type": [
+      "health",
+      "exam"
+    ],
+    "codename": "change_exam"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Exame",
+    "content_type": [
+      "health",
+      "exam"
+    ],
+    "codename": "delete_exam"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Exame",
+    "content_type": [
+      "health",
+      "exam"
+    ],
+    "codename": "view_exam"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Parte do corpo atingida",
+    "content_type": [
+      "sst",
+      "bodypart"
+    ],
+    "codename": "add_bodypart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Parte do corpo atingida",
+    "content_type": [
+      "sst",
+      "bodypart"
+    ],
+    "codename": "change_bodypart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Parte do corpo atingida",
+    "content_type": [
+      "sst",
+      "bodypart"
+    ],
+    "codename": "delete_bodypart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Parte do corpo atingida",
+    "content_type": [
+      "sst",
+      "bodypart"
+    ],
+    "codename": "view_bodypart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Agente Causador do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragent"
+    ],
+    "codename": "add_causeragent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Agente Causador do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragent"
+    ],
+    "codename": "change_causeragent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Agente Causador do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragent"
+    ],
+    "codename": "delete_causeragent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Agente Causador do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragent"
+    ],
+    "codename": "view_causeragent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Agente Causador ou Situação do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragentaccident"
+    ],
+    "codename": "add_causeragentaccident"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Agente Causador ou Situação do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragentaccident"
+    ],
+    "codename": "change_causeragentaccident"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Agente Causador ou Situação do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragentaccident"
+    ],
+    "codename": "delete_causeragentaccident"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Agente Causador ou Situação do Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "causeragentaccident"
+    ],
+    "codename": "view_causeragentaccident"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "environmentharmfulagent"
+    ],
+    "codename": "add_environmentharmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "environmentharmfulagent"
+    ],
+    "codename": "change_environmentharmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "environmentharmfulagent"
+    ],
+    "codename": "delete_environmentharmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "environmentharmfulagent"
+    ],
+    "codename": "view_environmentharmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Condição Ambiental de Trabalho",
+    "content_type": [
+      "sst",
+      "environmentworkingcondition"
+    ],
+    "codename": "add_environmentworkingcondition"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Condição Ambiental de Trabalho",
+    "content_type": [
+      "sst",
+      "environmentworkingcondition"
+    ],
+    "codename": "change_environmentworkingcondition"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Condição Ambiental de Trabalho",
+    "content_type": [
+      "sst",
+      "environmentworkingcondition"
+    ],
+    "codename": "delete_environmentworkingcondition"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Condição Ambiental de Trabalho",
+    "content_type": [
+      "sst",
+      "environmentworkingcondition"
+    ],
+    "codename": "view_environmentworkingcondition"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add EPI",
+    "content_type": [
+      "sst",
+      "epi"
+    ],
+    "codename": "add_epi"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change EPI",
+    "content_type": [
+      "sst",
+      "epi"
+    ],
+    "codename": "change_epi"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete EPI",
+    "content_type": [
+      "sst",
+      "epi"
+    ],
+    "codename": "delete_epi"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view EPI",
+    "content_type": [
+      "sst",
+      "epi"
+    ],
+    "codename": "view_epi"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add exam sst",
+    "content_type": [
+      "sst",
+      "examsst"
+    ],
+    "codename": "add_examsst"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change exam sst",
+    "content_type": [
+      "sst",
+      "examsst"
+    ],
+    "codename": "change_examsst"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete exam sst",
+    "content_type": [
+      "sst",
+      "examsst"
+    ],
+    "codename": "delete_examsst"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view exam sst",
+    "content_type": [
+      "sst",
+      "examsst"
+    ],
+    "codename": "view_examsst"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "exposureemployeeenvironment"
+    ],
+    "codename": "add_exposureemployeeenvironment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "exposureemployeeenvironment"
+    ],
+    "codename": "change_exposureemployeeenvironment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "exposureemployeeenvironment"
+    ],
+    "codename": "delete_exposureemployeeenvironment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Agente Nocivo do Ambiente",
+    "content_type": [
+      "sst",
+      "exposureemployeeenvironment"
+    ],
+    "codename": "view_exposureemployeeenvironment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Agente Nocivo",
+    "content_type": [
+      "sst",
+      "harmfulagent"
+    ],
+    "codename": "add_harmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Agente Nocivo",
+    "content_type": [
+      "sst",
+      "harmfulagent"
+    ],
+    "codename": "change_harmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Agente Nocivo",
+    "content_type": [
+      "sst",
+      "harmfulagent"
+    ],
+    "codename": "delete_harmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Agente Nocivo",
+    "content_type": [
+      "sst",
+      "harmfulagent"
+    ],
+    "codename": "view_harmfulagent"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Lesão",
+    "content_type": [
+      "sst",
+      "injury"
+    ],
+    "codename": "add_injury"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Lesão",
+    "content_type": [
+      "sst",
+      "injury"
+    ],
+    "codename": "change_injury"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Lesão",
+    "content_type": [
+      "sst",
+      "injury"
+    ],
+    "codename": "delete_injury"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Lesão",
+    "content_type": [
+      "sst",
+      "injury"
+    ],
+    "codename": "view_injury"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Monitoramento da Saúde do Trabalhador",
+    "content_type": [
+      "sst",
+      "monitoroccupationalhealth"
+    ],
+    "codename": "add_monitoroccupationalhealth"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Monitoramento da Saúde do Trabalhador",
+    "content_type": [
+      "sst",
+      "monitoroccupationalhealth"
+    ],
+    "codename": "change_monitoroccupationalhealth"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Monitoramento da Saúde do Trabalhador",
+    "content_type": [
+      "sst",
+      "monitoroccupationalhealth"
+    ],
+    "codename": "delete_monitoroccupationalhealth"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Monitoramento da Saúde do Trabalhador",
+    "content_type": [
+      "sst",
+      "monitoroccupationalhealth"
+    ],
+    "codename": "view_monitoroccupationalhealth"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Comunicação de Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "workaccidentcommunication"
+    ],
+    "codename": "add_workaccidentcommunication"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Comunicação de Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "workaccidentcommunication"
+    ],
+    "codename": "change_workaccidentcommunication"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Comunicação de Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "workaccidentcommunication"
+    ],
+    "codename": "delete_workaccidentcommunication"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Comunicação de Acidente de Trabalho",
+    "content_type": [
+      "sst",
+      "workaccidentcommunication"
+    ],
+    "codename": "view_workaccidentcommunication"
+  }
+}
+]

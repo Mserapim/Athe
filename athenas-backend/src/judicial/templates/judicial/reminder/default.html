@@ -1,0 +1,11 @@
+{% load judicialfilters %}
+<div>
+    <p>
+        {{ reminder.content | safely }}
+    </p>
+
+    <p style="text-align:center; font-size: 8pt; margin-top: 5em">
+        Criado por: {{ created_by.pessoa_fisica.nome }} em {{ reminder.created_at | date:'d/m/Y H:i' }}
+    </p>
+
+</div>

@@ -1,0 +1,50 @@
+[
+{
+  "model": "gfp.genreevent",
+  "pk": 91,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2015-02-25T12:00:36.141",
+    "modified_at": "2016-02-01T13:54:50.336",
+    "genre_number": "067",
+    "type_event": "P",
+    "character": 2,
+    "title": "AUXÍLIO ALIMENTAÇÃO",
+    "config_transparency": 37,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 257,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2018-06-12T17:36:10.793",
+    "modified_at": "2022-06-07T15:25:14.083",
+    "genre_number": "072",
+    "type_event": "P",
+    "character": 2,
+    "title": "DIÁRIAS VIAGENS",
+    "config_transparency": 26,
+    "socialsecurity_config": null
+  }
+},
+{
+  "model": "gfp.genreevent",
+  "pk": 333,
+  "fields": {
+    "created_by": 845,
+    "modified_by": 845,
+    "created_at": "2022-06-01T10:04:25.835",
+    "modified_at": "2022-06-07T15:25:42.522",
+    "genre_number": "087",
+    "type_event": "P",
+    "character": 2,
+    "title": "AJUDA DE CUSTO TRANSPORTE",
+    "config_transparency": null,
+    "socialsecurity_config": null
+  }
+}
+]

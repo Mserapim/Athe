@@ -1,0 +1,12 @@
+[
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "DOF_CANCELED_EMPLOYEE",
+            "header": "Usufrutos e Folgas",
+            "message": "<p>Seu período de %(type_of)s (<b>%(group)s</b>) foi cancelado pelo sistema. Para mais detalhes consultar DGPFP.</p>",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'group': ''}"
+        }
+    }
+]

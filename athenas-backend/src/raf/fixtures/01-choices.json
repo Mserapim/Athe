@@ -1,0 +1,508 @@
+[
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "PERMITIR ajustes nas atividades",
+    "cache_path": "raf.ACTIVITIES_MAINTANANCE",
+    "app_label": "raf",
+    "name": "ACTIVITIES_MAINTANANCE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "NÃO PERMITIR ajustes nas atividades",
+    "cache_path": "raf.ACTIVITIES_MAINTANANCE",
+    "app_label": "raf",
+    "name": "ACTIVITIES_MAINTANANCE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "E-PROC",
+    "cache_path": "raf.ACTIVITY_SOURCE",
+    "app_label": "raf",
+    "name": "ACTIVITY_SOURCE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "E-EXT",
+    "cache_path": "raf.ACTIVITY_SOURCE",
+    "app_label": "raf",
+    "name": "ACTIVITY_SOURCE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "label": "SIACMP",
+    "cache_path": "raf.ACTIVITY_SOURCE",
+    "app_label": "raf",
+    "name": "ACTIVITY_SOURCE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "label": "REGISTRO INTERNO",
+    "cache_path": "raf.ACTIVITY_SOURCE",
+    "app_label": "raf",
+    "name": "ACTIVITY_SOURCE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "Adicionar processo na atividade",
+    "value": 1,
+    "label": "ADICIONAR",
+    "cache_path": "raf.ADJUSTMENT_OPERATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_OPERATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "Remover processo da atividade",
+    "value": 2,
+    "label": "REMOVER",
+    "cache_path": "raf.ADJUSTMENT_OPERATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_OPERATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 0,
+    "label": "Não avaliado",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Aguardando informações",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Deferido",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "label": "Indeferido",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "label": "Cancelado",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 5,
+    "label": "Não enviado",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 6,
+    "label": "Avaliado",
+    "cache_path": "raf.ADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "ADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Positivamente",
+    "cache_path": "raf.AFFECTATION",
+    "app_label": "raf",
+    "name": "AFFECTATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Negativamente",
+    "cache_path": "raf.AFFECTATION",
+    "app_label": "raf",
+    "name": "AFFECTATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 0,
+    "label": "Não analisado",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Processo classificado com sucesso",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Sem promotoria registrada para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "label": "Não encontrou questionário para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "label": "Não encontrou linha para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 5,
+    "label": "Não encontrou coluna para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 6,
+    "label": "Sem classe registrada para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 7,
+    "label": "Sem assunto registrado para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 8,
+    "label": "Sem movimento registrado para o processo",
+    "cache_path": "raf.ANALISE",
+    "app_label": "raf",
+    "name": "ANALISE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 0,
+    "label": "Não avaliado",
+    "cache_path": "raf.DATAADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "DATAADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Aguardando informações",
+    "cache_path": "raf.DATAADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "DATAADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Deferido",
+    "cache_path": "raf.DATAADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "DATAADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "label": "Indeferido",
+    "cache_path": "raf.DATAADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "DATAADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "label": "Cancelado",
+    "cache_path": "raf.DATAADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "DATAADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 5,
+    "label": "Não enviado",
+    "cache_path": "raf.DATAADJUSTMENT_SITUATION",
+    "app_label": "raf",
+    "name": "DATAADJUSTMENT_SITUATION"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Inserção",
+    "cache_path": "raf.HISTORIC_RAF",
+    "app_label": "raf",
+    "name": "HISTORIC_RAF"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Abertura",
+    "cache_path": "raf.HISTORIC_RAF",
+    "app_label": "raf",
+    "name": "HISTORIC_RAF"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 3,
+    "label": "Fechamento",
+    "cache_path": "raf.HISTORIC_RAF",
+    "app_label": "raf",
+    "name": "HISTORIC_RAF"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 4,
+    "label": "Submissão",
+    "cache_path": "raf.HISTORIC_RAF",
+    "app_label": "raf",
+    "name": "HISTORIC_RAF"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "Não se aplica",
+    "value": 1,
+    "label": "Não se aplica",
+    "cache_path": "raf.PRODUCTIVITY",
+    "app_label": "raf",
+    "name": "PRODUCTIVITY"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "Propositura de ações judiciais e instauração de procedimentos administrativos",
+    "value": 2,
+    "label": "Fator I",
+    "cache_path": "raf.PRODUCTIVITY",
+    "app_label": "raf",
+    "name": "PRODUCTIVITY"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": " Elaboração de Alegações, pareceres ou outras manifestações de mérito",
+    "value": 3,
+    "label": "Fator II",
+    "cache_path": "raf.PRODUCTIVITY",
+    "app_label": "raf",
+    "name": "PRODUCTIVITY"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "Elaboração de razões e contrarrazões recursais em processos judiciais, expedição de recomendação ou formalização de compromisso/termo de ajustamento de conduta em procedimento administrativo",
+    "value": 4,
+    "label": "Fator III",
+    "cache_path": "raf.PRODUCTIVITY",
+    "app_label": "raf",
+    "name": "PRODUCTIVITY"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": " Realização de audiências judiciais, públicas ou administrativas e júris",
+    "value": 5,
+    "label": "Fator IV",
+    "cache_path": "raf.PRODUCTIVITY",
+    "app_label": "raf",
+    "name": "PRODUCTIVITY"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Somente RAFs submetidos",
+    "cache_path": "raf.REPORT_CONSOLIDADO_SUBMETIDO",
+    "app_label": "raf",
+    "name": "REPORT_CONSOLIDADO_SUBMETIDO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Todos os RAFs",
+    "cache_path": "raf.REPORT_CONSOLIDADO_SUBMETIDO",
+    "app_label": "raf",
+    "name": "REPORT_CONSOLIDADO_SUBMETIDO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 0,
+    "label": "Não informado",
+    "cache_path": "raf.TYPE_SUBITEM",
+    "app_label": "raf",
+    "name": "TYPE_SUBITEM"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Estatísticas/Quantidade",
+    "cache_path": "raf.TYPE_SUBITEM",
+    "app_label": "raf",
+    "name": "TYPE_SUBITEM"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Movimentos",
+    "cache_path": "raf.TYPE_SUBITEM",
+    "app_label": "raf",
+    "name": "TYPE_SUBITEM"
+  },
+  "model": "standard.choice"
+}
+]

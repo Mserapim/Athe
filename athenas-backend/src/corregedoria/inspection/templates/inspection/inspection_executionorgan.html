@@ -1,0 +1,1015 @@
+{% extends "inspection/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+      <div>
+          <h1 class="title-1 top-space-1" style="font-size: 20px">RELATÓRIO DE INSPEÇÃO</h1>
+      </div>
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>I - DADOS GERAIS</b></td></tr>
+      </table>
+        <div style="padding-left: 1em; padding-bottom: 1em;">
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>1. DADOS DA INSPEÇÃO</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              <table width=100%>
+                <tr>
+                  <td>Data: <b>{{ inspection.inspection_date_initial | date:'d/m/Y' }} a {{ inspection.inspection_date_final | date:'d/m/Y' }}</b><br /></td>
+                  <td>Edital: <b>{{ inspection.notice | safely }}</b></td>
+                  <td>Publicação: <b>{{ inspection.publication | safely }}</b></td>
+                </tr>
+              </table>
+              Corregedor-Geral: <b>{{ inspection.inspector_general.pessoa_fisica.nome | safely }}</b><br />
+              Promotor-Corregedor:
+              <div style="padding-left: 1em; ">
+                <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                  {% for data in inspection.inspector_prosecutors.all %}
+                    <tr>
+                      <td style="padding: 2px; "><b>{{ data.pessoa_fisica.nome }}</b></td>
+                    </tr>
+                  {% endfor %}
+                </table>
+              </div>
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>2. DADOS FUNCIONAIS DO MEMBRO DO MINISTÉRIO PÚBLICO</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Órgão de Execução: <b>{{ inspection.execution_organ.nome | safely }}</b><br />
+              Responsável: <b>{{ inspection.responsible.pessoa_fisica.nome | safely }}</b>
+              <div style="padding-left: 1.5em;">
+                Inspecionado: <b>{{ inspection.employee.pessoa_fisica.nome | safely }}</b>
+              </div>
+              Área de Atuação: <b>{{ inspection.area_of_action.upper | safely }}</b><br />
+              Atribuição: <b>{{ inspection.assignment | safely }}</b><br />
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>3. DESIGNAÇÃO ELEITORAL</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Zona Eleitoral: <b>{{ inspection.electoral_electoralzone | safely }}</b><br />
+              Ato de Designação: <b>{{ inspection.electoral_designation | safely }}</b><br />
+              <table width=100%>
+                <tr>
+                  <td>início do Biênio: <b>{{ inspection.electoral_initialbiennium | safely }}</b><br /></td>
+                  <td>Término do Biênio: <b>{{ inspection.electoral_finalbiennium | safely }}</b><br /></td>
+                </tr>
+              </table>
+              Se aplica: <b>{% if inspection.electoral_applicable == 2 %}SIM{% else %}NÃO{% endif %}</b><br />
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>4. INFORMAÇÕES DO MEMBRO DO MINISTÉRIO PÚBLICO</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;" >
+              Mantém residência efetiva na Comarca de lotação, inclusive aos finais de semana:{% if inspection.residence %} <b> SIM</b><br /> {% else %} <div style="padding-left: 1em;"><b>NÃO</b>. Com autorização do Procurador-Geral de Justiça.</div>{% endif %}
+                {% if inspection.addresses.count > 0 %}
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                      {% for data in inspection.addresses.all %}
+                        <tr style="font-size: 10px;">
+                          <td style="padding: 2px; ">{{ data.get_address.ref_address }}</td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  </div>
+                {% else %}
+                  <div style="padding-left: 0.5em; font-size: 10px;">Não consta endereço registrado para o período.</div>
+                {% endif %}
+              Acumula ou acumulou outra Promotoria: {% if inspection.accumulates %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}<br />
+                {% if inspection.accumulation.count > 0 %}
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                      {% for data in inspection.accumulation.all %}
+                        <tr>
+                          <td style="padding: 2px; font-size: 10px;" width="70%"><b>{{ data.accumulation.lotacao.nome }}</b></td>
+                          <td style="padding: 2px; font-size: 10px; text-align: center; "><b>{{ data.accumulation.data_vigencia_inicio | date:'d/m/Y' }}</b></td>
+                          <td style="padding: 2px; font-size: 10px; text-align: center; "><b>{{ data.accumulation.data_vigencia_fim | date:'d/m/Y' }}</b></td>
+                        </tr>
+                      {% endfor %}
+                      </table>
+                  </div>
+                {% endif %}
+              Substituiu outra Promotoria: {% if inspection.replacements %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}<br />
+                {% if inspection.replacement.count > 0 %}
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                      {% for data in inspection.replacement.all %}
+                        <tr >
+                          <td style="padding: 2px; font-size: 10px;" width="70%">Cargo: <b>{{ data.replacement.posse.quadro }}</b></td>
+                          <td style="padding: 2px; font-size: 10px; text-align: center; "><b>{{ data.replacement.data_inicio | date:'d/m/Y' }}</b></td>
+                          <td style="padding: 2px; font-size: 10px; text-align: center; "><b>{{ data.replacement.data_fim | date:'d/m/Y' }}</b></td>
+                        </tr>
+                        <tr style="font-size: 10px;">
+                          <td style="padding: 2px; padding-left: 10px; " colspan="3">Substituído: <b>{{ data.replacement.servidor_substituido }}</b></td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  </div>
+                {% endif %}
+              Atende aos expedientes internos e externos: {% if inspection.attendance %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}<br />
+              Exerce atividade docente: {% if inspection.teaching %} <b>SIM</b>. Inclusive, houve comunicação para o Conselho Superior. {% else %} <b>NÃO</b> {% endif %}<br />
+                {% if inspection.teachings.count > 0 %}
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                      {% for data in inspection.teachings.all %}
+                        <tr>
+                          <td style="padding: 2px; " colspan="2">Instituição: <b>{{ data.get_teaching.institution.razao_social }}</b></td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 2px; padding-left: 10px; " width="75%" >Disciplina: <b>{{ data.get_teaching.discipline.name }}</b></td>
+                          <td style="padding: 2px; ">Carga horária: <b>{{ data.get_teaching.work_hours }}</b></td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 2px; padding-left: 10px; " colspan="2">Horários: <b>{{ data.get_teaching.get_schedules_time }}</b></td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 2px; padding-left: 10px; " width="75%" >Cidade: <b>{{ data.get_teaching.institution.county }}</b></td>
+                          <td style="padding: 2px; ">Autorizado?: <b>{% if data.get_teaching.authorization_teaching %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}</b></td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  </div>
+                {% endif %}
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>5. DADOS DA PROMOTORIA DE JUSTIÇA</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Data da última inspeção: <b>{{ inspection.last_inspection_date | date:'d/m/Y' }}</b><br />
+              Promotor de Justiça Titular: {% if inspection.titular_employee %} <b>SIM</b> {% else %} <b>NÃO</b>, Titular: <b>{{ inspection.holder_employee.pessoa_fisica.nome | safely }}</b> {% endif %}<br />
+              Atendimento diário ao público: {% if inspection.daily_attendance %} <b>SIM</b> {% else %} <b>NÃO</b> {% endif %}<br />
+              {% if inspection.daily_attendance == False %}<div style="padding-left: 0.5em;">Se não, quantos dias por semana: <b>{{ inspection.days_of_attendance_per_week }}</b><br /></div>{% endif %}
+              Horário de Atendimento:
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                    <tr>
+                      <td style="padding: 2px;" >Manhã: <b>{{ inspection.attendance_schedule1_inital | safely }} às {{ inspection.attendance_schedule1_final | safely }}</b></td>
+                      <td style="padding: 2px;" >Tarde: <b>{{ inspection.attendance_schedule2_inital | safely }} às {{ inspection.attendance_schedule2_final | safely }}</b></td>
+                    </tr>
+                  </table>
+                </div>
+              Observações/Determinações: <b>{{ inspection.observation | safely }}</b>
+            </div>
+          </div>
+        </div>
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+        <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>II - REGULARIDADE DOS SERVIÇOS</b></td></tr>
+      </table>
+        <div style="padding-left: 1em; padding-bottom: 1em;">
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>1. GESTÃO DA PROMOTORIA</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em; text-align: justify">
+              Organização de documentos/expedientes recebidos e expedidos; organização dos materiais de expediente; organização dos livros obrigatórios; organização e controle dos procedimentos extrajudiciais; organização do arquivo: <b>{% if inspection.executionorganmanagement %}{{ inspection.executionorganmanagement.get_organization_display.upper }}{% else %}NÃO INFORMADO{% endif %}</b><br />
+              {% if inspection.executionorganmanagement.observation %}<div style="padding-left: 4em;"><u>Observações</u>: {{ inspection.executionorganmanagement.observation }}</div>{% endif %}
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>2. ATENDIMENTO AO PÚBLICO</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Registro de Atendimento ao Público:
+                <table width=100%>
+                  <tr>
+                    <td style="padding-left: 20px;" >Possui: <b>{{ inspection.publicattendance.get_record_type_display.upper }}</td>
+                    <td>Aplicativo: <b>{{ inspection.publicattendance.apps.upper }}</td>
+                    <td>Data Abertura: <b>{{ inspection.publicattendance.opening_date | date:'d/m/Y' }}</b></td>
+                  </tr>
+                </table>
+              Termo de Abertura:
+                <table width=100%>
+                  <tr>
+                    <td style="padding-left: 20px;" >Possui: {% if inspection.publicattendance.has_openind_term %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.publicattendance.has_openind_term %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br /></td>
+                    <td>Numeração: {% if inspection.publicattendance.has_numeration %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.publicattendance.has_numeration %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br /></td>
+                    <td>Folhas Rubricadas: {% if inspection.publicattendance.has_signed_sheets %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.publicattendance.has_signed_sheets %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br /></td>
+                  </tr>
+                </table>
+              Em ordem: {% if inspection.publicattendance.ordered %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.publicattendance.ordered %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br />
+              Observações/Determinações: {{ inspection.publicattendance.observation }}
+                {% if rpa %}
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                      {% for data in rpa %}
+                      <tr style="background-color: #c0c0c0;">
+                        <td style="padding: 2px;" colspan=5> Ano: <b>{{ data.year }}</b></td>
+                        <td style="padding: 2px; text-align: right; " colspan=1>Total: <b>{{ data.sum_amount }}</b></td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 2px;">Janeiro: <b>{% if data.amount_january != None %}{{ data.amount_january }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Fevereiro: <b>{% if data.amount_february != None %}{{ data.amount_february }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Março: <b>{% if data.amount_march != None %}{{ data.amount_march }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Abril: <b>{% if data.amount_april != None %}{{ data.amount_april }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Maio: <b>{% if data.amount_may != None %}{{ data.amount_may }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Junho: <b>{% if data.amount_june != None %}{{ data.amount_june }}{% else %}-{% endif %}</b></td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 2px;">Julho: <b>{% if data.amount_july != None %}{{ data.amount_july }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Agosto: <b>{% if data.amount_august != None %}{{ data.amount_august }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Setembro: <b>{% if data.amount_september != None %}{{ data.amount_september }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Outubro: <b>{% if data.amount_october != None %}{{ data.amount_october }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Novembro: <b>{% if data.amount_november != None %}{{ data.amount_november }}{% else %}-{% endif %}</b></td>
+                        <td style="padding: 2px;">Dezembro: <b>{% if data.amount_december != None %}{{ data.amount_december }}{% else %}-{% endif %}</b></td>
+                      </tr>
+                      {% endfor %}
+                    </table>
+                  </div>
+                {% endif %}
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>3. CONTROLE DE PROCEDIMENTOS EXTRAJUDICIAIS</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Controle:
+                <table width=100%>
+                  <tr>
+                    <td style="padding-left: 20px;" >Possui: <b>{{ inspection.outcourtlawsuitcontrol.get_record_type_display.upper }}<br /></td>
+                    <td>Aplicativo: <b>{{ inspection.outcourtlawsuitcontrol.apps.upper }}<br /></td>
+                    <td>Data Abertura: <b>{{ inspection.outcourtlawsuitcontrol.opening_date | date:'d/m/Y' }}</b><br /></td>
+                  </tr>
+                </table>
+              Termo de Abertura:<br />
+                <table width=100%>
+                  <tr>
+                    <td style="padding-left: 20px;" >Possui: {% if inspection.outcourtlawsuitcontrol.has_openind_term %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.outcourtlawsuitcontrol.has_openind_term %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br /></td>
+                    <td>Numeração: {% if inspection.outcourtlawsuitcontrol.has_numeration %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.outcourtlawsuitcontrol.has_numeration %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br /></td>
+                    <td>Folhas Rubricadas: {% if inspection.outcourtlawsuitcontrol.has_signed_sheets %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.outcourtlawsuitcontrol.has_signed_sheets %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br /></td>
+                  </tr>
+                </table>
+              Em ordem: {% if inspection.outcourtlawsuitcontrol.ordered %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.outcourtlawsuitcontrol.ordered %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br />
+              Observações/Determinações: {{ inspection.outcourtlawsuitcontrol.observation }}<br />
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  {% if broclc %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                      <tr style="text-align: center; background-color: #c0c0c0;">
+                        <td style="padding: 2px;" width=75% > <b>Livro</b></td>
+                        <td style="padding: 2px;" width=25% > <b>Data de abertura</b></td>
+                      </tr>
+                      {% for data in broclc %}
+                        <tr>
+                          <td style="padding: 2px; " width=75% >{{ data.book }}</td>
+                          <td style="padding: 2px; " align=center width=25%>{{ data.opening_date | date:'d/m/Y' }}</td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% else %}
+                    Sem registro de livros.
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>4. CONTROLE DE PROCESSOS JUDICIAIS</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Controle:
+                <table width=100%>
+                  <tr>
+                    <td style="padding-left: 20px;" >Possui: <b>{{ inspection.courtlawsuitcontrol.get_record_type_display.upper }}</td>
+                    <td>Aplicativo: <b>{{ inspection.courtlawsuitcontrol.apps.upper }}</td>
+                    <td>Data Abertura: <b>{{ inspection.courtlawsuitcontrol.opening_date | date:'d/m/Y' }}</b></td>
+                  </tr>
+                </table>
+              Termo de Abertura:
+                <table width=100%>
+                  <tr>
+                    <td style="padding-left: 20px;" >Possui: {% if inspection.courtlawsuitcontrol.has_openind_term %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.courtlawsuitcontrol.has_openind_term %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}</td>
+                    <td>Numeração: {% if inspection.courtlawsuitcontrol.has_numeration %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.courtlawsuitcontrol.has_numeration %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}</td>
+                    <td>Folhas Rubricadas: {% if inspection.courtlawsuitcontrol.has_signed_sheets %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.courtlawsuitcontrol.has_signed_sheets %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}</td>
+                  </tr>
+                </table>
+              Em ordem: {% if inspection.courtlawsuitcontrol.ordered %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.courtlawsuitcontrol.ordered %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br />
+              Observações/Determinações: {{ inspection.courtlawsuitcontrol.observation }}
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  {% if brclc %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                      <tr style="text-align: center; background-color: #c0c0c0;">
+                        <td style="padding: 2px;" width=75% > <b>Livro</b></td>
+                        <td style="padding: 2px;" width=25% > <b>Data de abertura</b></td>
+                      </tr>
+                      {% for data in brclc %}
+                        <tr>
+                          <td style="padding: 2px;" width=75% > <b>{{ data.book }}</b></td>
+                          <td style="padding: 2px;" width=25% > <b>{{ data.opening_date | date:'d/m/Y' }}</b></td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% else %}
+                    Sem registro de livros.
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>5. QUANTITATIVO DE PROCESSOS JUDICIAIS</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Processos pendentes de citação/intimação – Urgentes: <b>{{ inspection.courtlawsuitcount.number_of_processes_pending_citation_urgent }}</b><br />
+              Processos pendentes de citação/intimação: <b>{{ inspection.courtlawsuitcount.number_of_processes_pending_citation }}</b><br />
+              Processos pendentes de ciência: <b>{{ inspection.courtlawsuitcount.number_of_processes_pending_science }}</b><br />
+              Processos com prazo em aberto: <b>{{ inspection.courtlawsuitcount.processes_with_open_deadline }}</b><br />
+              Decurso de prazo nos últimos 30 dias: <b>{{ inspection.courtlawsuitcount.expired_deadline_the_last_30_days }}</b><br />
+              Decurso de prazo há mais de 30 dias: <b>{{ inspection.courtlawsuitcount.expired_deadline_more_than_30_days_ago }}</b><br />
+              Decurso de prazo no período da inspeção: <b>{{ inspection.courtlawsuitcount.expired_deadline_in_the_period_of_inspection }}</b><br />
+              Número de processos <b>RECEBIDOS</b> no período da inspeção: <br />
+              {% if rclr %}
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                    {% for data in rclr %}
+                    <tr style="background-color: #c0c0c0;">
+                      <td style="padding: 2px;" colspan=5> Ano: <b>{{ data.year }}</b></td>
+                      <td style="padding: 2px; text-align: right; " colspan=1>Total: <b>{{ data.sum_amount }}</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px;">Janeiro: <b>{% if data.amount_january != None %}{{ data.amount_january }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Fevereiro: <b>{% if data.amount_february != None %}{{ data.amount_february }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Março: <b>{% if data.amount_march != None %}{{ data.amount_march }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Abril: <b>{% if data.amount_april != None %}{{ data.amount_april }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Maio: <b>{% if data.amount_may != None %}{{ data.amount_may }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Junho: <b>{% if data.amount_june != None %}{{ data.amount_june }}{% else %}-{% endif %}</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px;">Julho: <b>{% if data.amount_july != None %}{{ data.amount_july }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Agosto: <b>{% if data.amount_august != None %}{{ data.amount_august }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Setembro: <b>{% if data.amount_september != None %}{{ data.amount_september }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Outubro: <b>{% if data.amount_october != None %}{{ data.amount_october }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Novembro: <b>{% if data.amount_november != None %}{{ data.amount_november }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Dezembro: <b>{% if data.amount_december != None %}{{ data.amount_december }}{% else %}-{% endif %}</b></td>
+                    </tr>
+                    {% endfor %}
+                  </table>
+                </div>
+              {% endif %}
+              Número de processos <b>DEVOLVIDOS</b> no período de inspeção:<br />
+              {% if rclrt %}
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                    {% for data in rclrt %}
+                    <tr style="background-color: #c0c0c0;">
+                      <td style="padding: 2px;" colspan=5> Ano: <b>{{ data.year }}</b></td>
+                      <td style="padding: 2px; text-align: right; " colspan=1>Total: <b>{{ data.sum_amount }}</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px;">Janeiro: <b>{% if data.amount_january != None %}{{ data.amount_january }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Fevereiro: <b>{% if data.amount_february != None %}{{ data.amount_february }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Março: <b>{% if data.amount_march != None %}{{ data.amount_march }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Abril: <b>{% if data.amount_april != None %}{{ data.amount_april }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Maio: <b>{% if data.amount_may != None %}{{ data.amount_may }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Junho: <b>{% if data.amount_june != None %}{{ data.amount_june }}{% else %}-{% endif %}</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px;">Julho: <b>{% if data.amount_july != None %}{{ data.amount_july }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Agosto: <b>{% if data.amount_august != None %}{{ data.amount_august }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Setembro: <b>{% if data.amount_september != None %}{{ data.amount_september }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Outubro: <b>{% if data.amount_october != None %}{{ data.amount_october }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Novembro: <b>{% if data.amount_november != None %}{{ data.amount_november }}{% else %}-{% endif %}</b></td>
+                      <td style="padding: 2px;">Dezembro: <b>{% if data.amount_december != None %}{{ data.amount_december }}{% else %}-{% endif %}</b></td>
+                    </tr>
+                    {% endfor %}
+                  </table>
+                </div>
+              {% endif %}
+              Observações/Determinações: {{ inspection.courtlawsuitcount.observation | safely }}<br />
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>6. QUANTITATIVO DE PROCEDIMENTOS EXTRAJUDICIAIS</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                Número de Procedimentos Extrajudiciais em andamento: <b>{{ inspection.outcourtlawsuitcount.number_of_procedures_in_progress }}</b><br />
+                Número de Procedimentos Extrajudiciais em atraso: <b>{{ inspection.outcourtlawsuitcount.number_of_procedures_in_arrears }}</b><br />
+                Procedimentos Extrajudiciais devidamente registrados e autuados: {% if inspection.outcourtlawsuitcount.correctly_registered_procedures %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.outcourtlawsuitcount.correctly_registered_procedures %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br />
+                Número de Ações Civis Públicas e Medidas ajuizadas no último ano: <b>{{ inspection.outcourtlawsuitcount.number_of_public_civil_actions_in_the_last_year }}</b><br />
+                <div style="padding-left: 20px;">
+                  Desta, quantas foram de improbidade? <b>{{ inspection.outcourtlawsuitcount.number_of_acp_administrative_dishonesty }}</b><br />
+                </div>
+                Número de Recomendações expedidas no último ano: <b>{{ inspection.outcourtlawsuitcount.number_of_recommendations_issued_in_the_last_year }}</b><br />
+                Número de Termos de Ajustamento de Conduta celebrados no último ano: <b>{{ inspection.outcourtlawsuitcount.number_of_conduct_adjustment_terms_in_the_last_year }}</b><br />
+                Número de Audiências Públicas realizadas no último ano: <b>{{ inspection.outcourtlawsuitcount.number_of_public_audiences_in_the_last_year }}</b><br />
+                Número de Procedimentos Extrajudiciais instaurados no último ano: <b>{{ inspection.outcourtlawsuitcount.number_of_procedures_instituted_in_the_last_year }}</b><br />
+                Número de Procedimentos Extrajudiciais arquivados no último ano: <b>{{ inspection.outcourtlawsuitcount.number_of_procedures_archived_in_the_last_year }}</b><br />
+                Observações/Determinações: {{ inspection.outcourtlawsuitcount.observation | safely }}<br />
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>7. QUANTITATIVO DE PROCESSOS JUDICIAIS ELEITORAIS</b>
+              <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                {% if inspection.electoral_applicable == 2 %}
+                  Número de processos eleitorais <b>RECEBIDOS</b> no período da inspeção:
+                    {% if rcler %}
+                      <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                          {% for data in rcler %}
+                          <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px;" colspan=5> Ano: <b>{{ data.year }}</b></td>
+                            <td style="padding: 2px; text-align: right; " colspan=1>Total: <b>{{ data.sum_amount }}</b></td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 2px;">Janeiro: <b>{% if data.amount_january != None %}{{ data.amount_january }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Fevereiro: <b>{% if data.amount_february != None %}{{ data.amount_february }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Março: <b>{% if data.amount_march != None %}{{ data.amount_march }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Abril: <b>{% if data.amount_april != None %}{{ data.amount_april }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Maio: <b>{% if data.amount_may != None %}{{ data.amount_may }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Junho: <b>{% if data.amount_june != None %}{{ data.amount_june }}{% else %}-{% endif %}</b></td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 2px;">Julho: <b>{% if data.amount_july != None %}{{ data.amount_july }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Agosto: <b>{% if data.amount_august != None %}{{ data.amount_august }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Setembro: <b>{% if data.amount_september != None %}{{ data.amount_september }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Outubro: <b>{% if data.amount_october != None %}{{ data.amount_october }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Novembro: <b>{% if data.amount_november != None %}{{ data.amount_november }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Dezembro: <b>{% if data.amount_december != None %}{{ data.amount_december }}{% else %}-{% endif %}</b></td>
+                          </tr>
+                          {% endfor %}
+                        </table>
+                      </div>
+                    {% endif %}
+                  Número de processos eleitorais <b>DEVOLVIDOS</b> no período de inspeção:
+                    {% if rclert %}
+                      <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                          {% for data in rclert %}
+                          <tr>
+                            <td style="padding: 2px;" colspan=5> Ano: <b>{{ data.year }}</b></td>
+                            <td style="padding: 2px; text-align: right;" colspan=1>Total: <b>{{ data.sum_amount }}</b></td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 2px;">Janeiro: <b>{% if data.amount_january != None %}{{ data.amount_january }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Fevereiro: <b>{% if data.amount_february != None %}{{ data.amount_february }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Março: <b>{% if data.amount_march != None %}{{ data.amount_march }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Abril: <b>{% if data.amount_april != None %}{{ data.amount_april }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Maio: <b>{% if data.amount_may != None %}{{ data.amount_may }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Junho: <b>{% if data.amount_june != None %}{{ data.amount_june }}{% else %}-{% endif %}</b></td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 2px;">Julho: <b>{% if data.amount_july != None %}{{ data.amount_july }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Agosto: <b>{% if data.amount_august != None %}{{ data.amount_august }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Setembro: <b>{% if data.amount_september != None %}{{ data.amount_september }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Outubro: <b>{% if data.amount_october != None %}{{ data.amount_october }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Novembro: <b>{% if data.amount_november != None %}{{ data.amount_november }}{% else %}-{% endif %}</b></td>
+                            <td style="padding: 2px;">Dezembro: <b>{% if data.amount_december != None %}{{ data.amount_december }}{% else %}-{% endif %}</b></td>
+                          </tr>
+                          {% endfor %}
+                        </table>
+                      </div>
+                    {% endif %}
+                {% else %} Sem atribuição eleitoral. {% endif %}
+              </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>8. QUANTITATIVO DE PROCEDIMENTOS EXTRAJUDICIAIS ELEITORAIS</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              {% if inspection.electoral_applicable == 2 %}
+                Número de Procedimentos Extrajudiciais em andamento: <b>{{ inspection.outcourtlawsuitelectoralcount.number_of_procedures_in_progress }}</b><br />
+                Número de Procedimentos Extrajudiciais em atraso: <b>{{ inspection.outcourtlawsuitelectoralcount.number_of_procedures_in_arrears }}</b><br />
+                Procedimentos Extrajudiciais devidamente registrados e autuados: {% if inspection.outcourtlawsuitelectoralcount.correctly_registered_procedures %} <b>[ X ] SIM</b> {% else %} [ ] SIM {% endif %} {% if inspection.outcourtlawsuitelectoralcount.correctly_registered_procedures %} [ ] NÃO {% else %} <b>[ X ] NÃO</b> {% endif %}<br />
+                Observações/Determinações: {{ inspection.outcourtlawsuitelectoralcount.observation }}<br />
+              {% else %} Sem atribuição eleitoral. {% endif %}
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>9. ANÁLISE DA ATUAÇÃO EM AUDIÊNCIAS</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              Constam processos analisados na Inspeção anterior? <b>{% if inspection.analysisperformanceinaudiences.processes_analyzed_in_the_previous_inspection %}{% if inspection.analysisperformanceinaudiences.processes_analyzed_in_the_previous_inspection == 2 %}SIM{% endif %}{% if inspection.analysisperformanceinaudiences.processes_analyzed_in_the_previous_inspection == 3 %}NÃO{% endif %}{% else %}NÃO SE APLICA{% endif %}</b><br />
+              Nesta Inspeção foi realizada vistoria em feitos escolhidos aleatoriamente? <b>{% if inspection.analysisperformanceinaudiences.survey_in_randomly_chosen_processes %}{% if inspection.analysisperformanceinaudiences.survey_in_randomly_chosen_processes == 2 %}SIM{% endif %}{% if inspection.analysisperformanceinaudiences.survey_in_randomly_chosen_processes == 3 %}NÃO{% endif %}{% else %}NÃO SE APLICA{% endif %}</b><br />
+              Observações/Determinações: {{ inspection.analysisperformanceinaudiences.observation }}<br />
+              {% if pfapia %}
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                    {% for data in pfapia %}
+                    <tr>
+                      <td style="padding: 2px; " colspan=2>
+                        Tipo de ação: <b>{{ data.action_type.title }}</b><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px; padding-left: 10px;" colspan=2>
+                        Número do feito: <b>{{ data.action_number }}</b><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px; padding-left: 10px;" colspan=2>
+                        Audiência de: <b>{{ data.get_audience_type_display }}</b><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px; padding-left: 10px;" width=50%>Intimação: <b>{% if data.intimation %} SIM {% else %} NÃO {% endif %}</b></td>
+                      <td style="padding: 2px; " width=50%>Presença: <b>{% if data.presence %} SIM {% else %} NÃO {% endif %}</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px; padding-left: 10px;" width=50%>Reperguntas: <b>{% if data.questions %} SIM {% else %} NÃO {% endif %}</b></td>
+                      <td style="padding: 2px; " width=50%>Manifestação Oral: <b>{% if data.oral_manifestation %} SIM {% else %} NÃO {% endif %}</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px; padding-left: 10px;" colspan=2>
+                        Observações: <b>{{ data.observation}}</b>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </table>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <div style="padding-top: 0.5em; font-size: 12px; ">
+            <b>10. ANÁLISE DA ATUAÇÃO EM SESSÃO PLENÁRIA DO TRIBUNAL DO JÚRI</b>
+            <div style="padding-top: 0.5em; padding-left: 0.5em;">
+              {% if inspection.analysisperformanceinplenarysessionofthejury %}
+                <div style="text-align: justify;">
+                  {{ inspection.analysisperformanceinplenarysessionofthejury.analysis | safely }}<br />
+                </div>
+              {% endif %}
+              {% if attach_rs %}
+                Anexos
+                <div style="padding-left: 1em;">
+                  {% for data in attach_rs %}
+                    - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                    <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                      <small>
+                        URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                        MD5: {{ data.attached_file.file }}
+                      </small>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>III - ESTRUTURA</b></td></tr>
+        </table>
+          <div style="padding-left: 1em; padding-bottom: 1em;">
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <b>1. ESTRUTURA DE PESSOAL</b>
+              <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                <b>SERVIDOR EFETIVOS</b>
+                {% if see %}
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                      <tr style="text-align: center; background-color: #c0c0c0;">
+                        <td style="padding: 2px;" width=60% ><b>Nome</b></td>
+                        <td style="padding: 2px;" width=40% ><b>Cargo<b/></td>
+                      </tr>
+                      {% for data in see %}
+                        <tr>
+                          <td style="padding: 2px; " width=60% >{{ data.effective_employee.servidor.pessoa_fisica.nome}}</td>
+                          <td style="padding: 2px; " width=40% >{{ data.effective_employee.movimentacaoposse.quadro.cargo.nome}}</td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  </div>
+                {% else %} Sem designações para o Órgão de Execução{% endif %}
+              </div>
+              <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                <b>SERVIDOR TERCEIRIZADO/CEDIDO/COMISSIONADO</b>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>COMISSIONADO</b>
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                      {% if sce %}
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                          <tr style="text-align: center; background-color: #c0c0c0;">
+                            <td style="padding: 2px;" width=60% ><b>Nome</b></td>
+                            <td style="padding: 2px;" width=40% ><b>Cargo<b/></td>
+                          </tr>
+                          {% for data in sce %}
+                            <tr>
+                              <td style="padding: 2px; " width=60% >{{ data.commissioned_employee.servidor.pessoa_fisica.nome}}</td>
+                              <td style="padding: 2px; " width=40% >{{ data.commissioned_employee.movimentacaoposse.quadro.cargo.nome}}</td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                        {% else %} Sem designações para o Órgão de Execução{% endif %}
+                      </div>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>CEDIDO/TERCEIRIZADO/ESTAGIÁRIO</b>
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                      {% if sep %}
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                          <tr style="text-align: center; background-color: #c0c0c0;">
+                            <td style="padding: 2px;" width=60% ><b>Nome</b></td>
+                            <td style="padding: 2px;" width=40% ><b>Cargo (Categoria)<b/></td>
+                          </tr>
+                          {% for data in sep %}
+                            <tr>
+                              <td style="padding: 2px; " width=60% >{{ data.name}}</td>
+                              <td style="padding: 2px; " width=40% >{{ data.function | safely }} ({{ data.category | safely }})</td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                      {% else %} Sem designações para o Órgão de Execução{% endif %}
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <b>2. ESTRUTURA DO ESPAÇO FÍSICO</b>
+              <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                {% if inspection.structuredeficiency %}
+                  <div style="padding-left: 0.5em; padding-bottom: 0.5em; text-align: justify">
+                    {{ inspection.structuredeficiency.deficiency | safely }}
+                  </div>
+                {% endif %}
+                {% if attach_e %}
+                  Anexos
+                  <div style="padding-left: 1em;">
+                    {% for data in attach_e %}
+                      - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                      <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                        <small>
+                          URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                          MD5: {{ data.attached_file.file }}
+                        </small>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>IV - DO DESEMPENHO FUNCIONAL</b></td></tr>
+        </table>
+          <div style="padding-left: 1em; padding-bottom: 1em;">
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <b>OPEROSIDADE</b>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>1. NÚMERO DE ATENDIMENTO AO PÚBLICO REGISTRADO</b>
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                      <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                        <tr>
+                          <td style="padding: 2px;">Média mensal de atendimentos: <b>{{ inspection.registeredpublicattendancenumber.average }}</b></td>
+                          <td style="padding: 2px;">Pontuação: <b>{{ inspection.registeredpublicattendancenumber.score }}</b></td>
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>2. ANÁLISE QUALITATIVA DAS PEÇAS FORENSES CÍVEIS</b>
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    {% if qapccl.applicable %}
+                      {% if qapccl.no_parts_to_analyze %}
+                        <div align=right>
+                          Média Final: <b>{{ qapccl.score }}</b>
+                        </div>
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                          {% for data in pfqapccl %}
+                            <tr>
+                              <td style="padding: 2px; " colspan=2>a) Ação de: <b>{{ data.action_type.title }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>b) Número: <b>{{ data.action_number }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>c) Tipo de peça: <b>{{ data.part_type.path_cache }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>e) Relatório: <b>{{ data.report }}</b></td>
+                              <td style="padding: 2px; " width=50%>f) Fundamentação: <b>{{ data.basis }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>g) Provas: <b>{{ data.proof }}</b></td>
+                              <td style="padding: 2px; " width=50%>h) Convencimento: <b>{{ data.convincily }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>i) Redação: <b>{{ data.redaction }}</b></td>
+                              <td style="padding: 2px; " width=50%>j) Pontuação: <b>{{ data.score }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>l) Observações: <b>{{ data.observation}}</b></td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                      {% else %}
+                          Possui peças para análise: <b>NÃO</b>
+                      {% endif %}
+                    {% else %}
+                        Tem atribuição: <b>NÃO</b>
+                    {% endif %}
+                  </div>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>3. ANÁLISE QUALITATIVA DAS PEÇAS FORENSES CRIMINAIS</b>
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                      {% if qapcrcl.applicable %}
+                        {% if qapcrcl.no_parts_to_analyze %}
+                          <div align=right>
+                            Média Final: <b>{{ qapcrcl.score }}</b>
+                          </div>
+                          <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                            {% for data in pfqapcrcl %}
+                              <tr>
+                                <td style="padding: 2px; " colspan=2>a) Ação de: <b>{{ data.action_type.title }}</b></td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 2px; padding-left:10px;" colspan=2>b) Número: <b>{{ data.action_number }}</b></td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 2px; padding-left:10px;" colspan=2>c) Tipo de peça: <b>{{ data.part_type.path_cache }}</b></td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 2px; padding-left:10px;" width=50%>e) Relatório: <b>{{ data.report }}</b></td>
+                                <td style="padding: 2px; " width=50%>f) Fundamentação: <b>{{ data.basis }}</b></td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 2px; padding-left:10px;" width=50%>g) Provas: <b>{{ data.proof }}</b></td>
+                                <td style="padding: 2px; " width=50%>h) Convencimento: <b>{{ data.convincily }}</b></td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 2px; padding-left:10px;" width=50%>i) Redação: <b>{{ data.redaction }}</b></td>
+                                <td style="padding: 2px; " width=50%>j) Pontuação: <b>{{ data.score }}</b></td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 2px; padding-left:10px;" colspan=2>l) Observações: <b>{{ data.observation}}</b></td>
+                              </tr>
+                            {% endfor %}
+                          </table>
+                        {% else %}
+                          Possui peças para análise: <b>NÃO</b>
+                        {% endif %}
+                      {% else %}
+                        Tem atribuição: <b>NÃO</b>
+                      {% endif %}
+                    </div>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>4. ANÁLISE QUALITATIVA DAS PEÇAS DOS PROCEDIMENTOS EXTRAJUDICIAIS</b>
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    {% if qapocl.applicable %}
+                      {% if qapocl.no_parts_to_analyze %}
+                        <div align=right>
+                          Média Final: <b>{{ qapocl.score }}</b>
+                        </div>
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                          {% for data in pfqapocl %}
+                            <tr>
+                              <td style="padding: 2px; " colspan=2>a) Ação de: <b>{{ data.action_type.title }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>b) Número: <b>{{ data.action_number }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>c) Tipo de peça: <b>{{ data.part_type.path_cache }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>e) Relatório: <b>{{ data.report }}</b></td>
+                              <td style="padding: 2px; " width=50%>f) Fundamentação: <b>{{ data.basis }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>g) Provas: <b>{{ data.proof }}</b></td>
+                              <td style="padding: 2px; " width=50%>h) Convencimento: <b>{{ data.convincily }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>i) Redação: <b>{{ data.redaction }}</b></td>
+                              <td style="padding: 2px; " width=50%>j) Pontuação: <b>{{ data.score }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>l) Observações: <b>{{ data.observation}}</b></td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                      {% else %}
+                          Possui peças para análise: <b>NÃO</b>
+                      {% endif %}
+                    {% else %}
+                        Tem atribuição: <b>NÃO</b>
+                    {% endif %}
+                  </div>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>5. ANÁLISE QUALITATIVA DAS PEÇAS ELEITORAIS</b>
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    {% if qape.applicable %}
+                      {% if qape.no_parts_to_analyze %}
+                        <div align=right>
+                          Média Final: <b>{{ qape.score }}</b>
+                        </div>
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                          {% for data in pfqape %}
+                            <tr>
+                              <td style="padding: 2px; " colspan=2>a) Ação de: <b>{{ data.action_type.title }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>b) Número: <b>{{ data.action_number }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>c) Tipo de peça: <b>{{ data.part_type.path_cache }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>e) Relatório: <b>{{ data.report }}</b></td>
+                              <td style="padding: 2px; " width=50%>f) Fundamentação: <b>{{ data.basis }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>g) Provas: <b>{{ data.proof }}</b></td>
+                              <td style="padding: 2px; " width=50%>h) Convencimento: <b>{{ data.convincily }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" width=50%>i) Redação: <b>{{ data.redaction }}</b></td>
+                              <td style="padding: 2px; " width=50%>j) Pontuação: <b>{{ data.score }}</b></td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 2px; padding-left:10px;" colspan=2>l) Observações: <b>{{ data.observation}}</b></td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                      {% else %}
+                          Possui peças para análise: <b>NÃO</b>
+                      {% endif %}
+                    {% else %}
+                        Tem atribuição: <b>NÃO</b>
+                    {% endif %}
+                  </div>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>CÁLCULO DE NOTA PARA OPEROSIDADE</b>
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    ITEM 1+((ITEM 2+ITEM 3+ITEM 4+ITEM 5)/ITENS COM ATRIBUIÇÃO) = <b>{{ inspection.operability_score }}</b>
+                  </div>
+                </div>
+            </div>
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <b>PRESTEZA</b>
+                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                  <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                    <tr>
+                      <td style="padding: 2px; " width=80%>1. CUMPRIMENTO DOS PRAZOS PROCESSUAIS NOS <u>FEITOS JUDICIAIS</u> (INCLUVISE ELEITORAL)</td>
+                      <td style="padding: 2px; text-align: right;" width=20%>
+                        Percentual: <b>{{ inspection.promptnesscourtlawsuit.percentual }}%</b><br />
+                        Pontuação: <b>{{ inspection.promptnesscourtlawsuit.score }}</b><br />
+                        {% if data.observation %}Observações: {{ inspection.promptnesscourtlawsuit.observation }}<br />{% endif %}
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding: 2px; " width=80%>2. CUMPRIMENTO DOS PRAZOS NOS <u>PROCEDIMENTOS EXTRAJUDICIAIS</u> (INCLUVISE ELEITORAL)</td>
+                      <td style="padding: 2px; text-align: right;" width=20%>
+                        Percentual: <b>{{ inspection.promptnessoutcourtlawsuit.percentual }}%</b><br />
+                        Pontuação: <b>{{ inspection.promptnessoutcourtlawsuit.score }}</b><br />
+                        {% if data.observation %}Observações: {{ inspection.promptnessoutcourtlawsuit.observation }}<br />{% endif %}
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding: 2px; " width=80%>3. ATENDIMENTO TEMPESTIVO ÀS DETERMINAÇÕES DA ADMINISTRAÇÃO SUPERIOR E DA OUVIDORIA<br /></td>
+                      <td style="padding: 2px; text-align: right;" width=20%>
+                        Percentual: <b>{{ inspection.promptnessuppermanagement.percentual }}%</b><br />
+                        Pontuação: <b>{{ inspection.promptnessuppermanagement.score }}</b><br />
+                        {% if data.observation %}Observações: {{ inspection.promptnessuppermanagement.observation }}<br />{% endif %}
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                  <b>CÁLCULO DE NOTA PARA PRESTEZA</b>
+                  <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                    ((ITEM 1+ITEM 2)/2)+ITEM 3 = <b>{{ inspection.promptness_score }}</b>
+                  </div>
+                </div>
+            </div>
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <b>CÁLCULO DE NOTA FINAL</b>
+              <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                NOTA OPEROSIDADE + NOTA PRESTEZA = <b>{{ inspection.final_score }}</b>
+              </div>
+            </div>
+
+            {% if attach_df %}
+              Anexos
+              <div style="padding-left: 1em;">
+                {% for data in attach_df %}
+                  - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                  <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                    <small>
+                      URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                      MD5: {{ data.attached_file.file }}
+                    </small>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>OBSERVAÇÕES GERAIS</b></td></tr>
+        </table>
+          <div style="padding-left: 1em; padding-bottom: 1em;">
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <div style="padding-bottom: 0.5em; text-align: justify; ">
+                {% if inspection.generalobservations %}
+                    {{ inspection.generalobservations.observation | safely }}
+                {% else %}
+                    Não foi registrada nenhuma recomendação.
+                {% endif %}
+              </div>
+              {% if attach_og %}
+                Anexos
+                <div style="padding-left: 1em;">
+                  {% for data in attach_og %}
+                    - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                    <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                      <small>
+                        URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                        MD5: {{ data.attached_file.file }}
+                      </small>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>RECOMENDAÇÕES</b></td></tr>
+        </table>
+          <div style="padding-left: 1em; padding-bottom: 1em; font-size: 12px;">
+            <div style="padding-top: 0.3em; padding-bottom: 0.8em;">
+              {% if rec %}
+                <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                  <tr style="text-align: center; background-color: #c0c0c0;">
+                    <td style="padding: 2px; " width=15% ><b>Prazo</b></td>
+                    <td class="paragraph-text" style="padding: 2px; " width=85% ><b>Recomendação</b></td>
+                  </tr>
+                  {% for data in rec %}
+                  <tr>
+                    {% if data.waiting_response %}
+                      <td style="padding: 2px; " width=15% >{{ data.deadline | date:'d/m/Y'}}</td>
+                      <td class="paragraph-text" style="padding: 2px; " width=85% >{{ data.recommendation | safely}}</td>
+                    {% else %}
+                      <td class="paragraph-text" style="padding: 2px; " colspan="2" >{{ data.recommendation | safely}}</td>
+                    {% endif %}
+                  </tr>
+                  {% endfor %}
+                </table>
+                {% else %} Não foi registrada nenhuma recomendação. {% endif %}
+                {% if attach_r %}
+                  Anexos
+                  <div style="padding-left: 1em;">
+                    {% for data in attach_r %}
+                      - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                      <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                        <small>
+                          URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                          MD5: {{ data.attached_file.file }}
+                        </small>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>ANEXOS</b></td></tr>
+        </table>
+          <div style="padding-left: 1em; padding-bottom: 1em;" align=justify>
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              {% if attach_a %}
+                {% for data in attach_a %}
+                  - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                  <div style="font-size:0.8em; padding-left: 1em; padding-bottom: 0.5em;">
+                    <small>
+                      URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                      MD5: {{ data.attached_file.file }}
+                    </small>
+                  </div>
+                {% endfor %}
+              {% else %} Não existem anexos. {% endif %}
+            </div>
+          </div>
+        <div style="font-size: 12px; ">
+          {% if sign_inspector_prosecutors %}
+              {% for data in sign_inspector_prosecutors.all %}
+                <br />
+                <br />
+                <br />
+                <div class="paragraph-text" style="text-align: center;">
+                    Palmas-TO, {{ data.created_at | date:'d/m/Y' }}
+                </div>
+                <br />
+                <br />
+                <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+                    {{ data.dispatch | safely }}
+                </div>
+                <br />
+                <div class="paragraph-text" style="text-align: center;">
+                    <b>{{ data.employee.pessoa_fisica.nome | safely }}</b><br />
+                    <div style="font-size: 0.8em;">
+                        Promotor-Corregedor<br />
+                        Assinado de forma digital em: {{ data.created_at | date:'d/m/Y H:i:s' }}
+                    </div>
+                </div>
+              {%endfor%}
+              {% if sign_inspector_general %}
+                  <br />
+                  <br />
+                  <br />
+                  <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+                      {{ sign_inspector_general.dispatch | safely }}
+                  </div>
+                  <br />
+                  <div class="paragraph-text" style="text-align: center;">
+                      <b>{{ inspection.inspector_general.pessoa_fisica.nome | safely }}</b><br />
+                      <div style="font-size: 0.8em;">
+                          Corregedor-Geral<br />
+                          Assinado de forma digital em: {{ sign_inspector_general.created_at | date:'d/m/Y H:i:s' }}
+                      </div>
+                  </div>
+              {% endif %}
+          {% endif %}
+        </div>
+
+    {% endblock %}
+</div>

@@ -1,0 +1,3 @@
+./manage.py exportdata "Choice.objects.filter(app_label='official_journal').order_by('app_label', 'name', 'value')" -i 2 --with-natural-keys -m standard -o /app/root/common/official_journal/fixtures/initialdb_0001_choices.json
+./manage.py exportdata "Application.objects.filter(title='DIÁRIO OFICIAL').order_by('title')" -i 2 --with-natural-keys -m engine -o /app/root/common/official_journal/fixtures/initialdb_0002_application.json
+./manage.py exportdata "Controller.objects.filter(application__title='DIÁRIO OFICIAL').order_by('application__layer', 'title')" -i 2 --with-natural-keys -m engine -o /app/root/common/official_journal/fixtures/initialdb_0003_controllers.json

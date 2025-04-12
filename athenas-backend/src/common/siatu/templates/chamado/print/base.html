@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Documento para Impressão</title>
+
+        <link rel="stylesheet" href="/athenas/static/js/core/papper.css">
+        <link rel="stylesheet" href="/athenas/static/js/core/print-papper.css">
+        <link rel="stylesheet" href="/athenas/static/edocs/protocolo/protocolo.css">
+    </head>
+    <body>
+        <div class="papper-container-a4">
+            <div class="papper-model">
+                {{ document | safe }}
+            </div>
+        </div>
+        <div class="end-page"></div>
+        {% for page in appends %}
+        <div class="papper-container-a4">
+            <div class="papper-model">
+                {{ page | safe }}
+            </div>
+        </div>
+        {% if forloop.last == False %}
+        <div class="end-page"></div>
+        {% endif %}
+        {% endfor %}
+    </body>
+</html>

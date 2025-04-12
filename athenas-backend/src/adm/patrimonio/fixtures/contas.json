@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "patrimonio.conta",
+        "fields": {
+            "titulo": "PR\u00d3PRIO CONTROLADO",
+            "sequencia": 2,
+            "tipo": 1,
+            "principal": true
+        }
+    },
+    {
+        "pk": 2,
+        "model": "patrimonio.conta",
+        "fields": {
+            "titulo": "PR\u00d3PRIO RELACIONADO",
+            "sequencia": 5,
+            "tipo": 2,
+            "principal": true
+        }
+    },
+    {
+        "pk": 3,
+        "model": "patrimonio.conta",
+        "fields": {
+            "titulo": "TERCEIRO RELACIONADO",
+            "sequencia": 5,
+            "tipo": 2,
+            "principal": false
+        }
+    },
+    {
+        "pk": 5,
+        "model": "patrimonio.conta",
+        "fields": {
+            "titulo": "TERCEIRO CONTROLADO",
+            "sequencia": 2,
+            "tipo": 1,
+            "principal": false
+        }
+    }
+]

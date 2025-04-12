@@ -1,0 +1,47 @@
+[
+{
+    "fields": {
+        "uuid": "8aa7392c31c346a4818d5c8644e4ef2c",
+        "title": "Gestor Afastamento - Novo",
+        "module": "rh.afastamento",
+        "application": [
+            "7180066e807d41268f1950a4a0f7092a"
+        ],
+        "controller": "AFAManagerRestful",
+        "active": true,
+        "icon": "athenas-0460.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "cc9754c126fd4282b5d803b7853ec93b",
+        "title": "Servidor - Lotações e Exercícios",
+        "module": "rh",
+        "application": [
+            "7180066e807d41268f1950a4a0f7092a"
+        ],
+        "controller": "RHEmployeeWorkplaceByEmployeeManage",
+        "active": true,
+        "icon": ""
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "f099e64e3f3c48a49d3dbfbca16f3357",
+        "title": "Local - Lotações e Exercícios",
+        "module": "rh",
+        "application": [
+            "7180066e807d41268f1950a4a0f7092a"
+        ],
+        "controller": "RHEmployeeWorkplaceByWorkplaceManage",
+        "active": true,
+        "icon": "athenas-0089.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+}
+]

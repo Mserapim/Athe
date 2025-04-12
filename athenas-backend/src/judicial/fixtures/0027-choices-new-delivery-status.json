@@ -1,0 +1,62 @@
+[
+    {
+        "fields": {
+            "cache_path": "judicial.DELIVERY_STATUS",
+            "label": "Devolvido",
+            "name": "DELIVERY_STATUS",
+            "value": 8,
+            "cvalue":"8",
+            "app_label": "judicial"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "judicial.DELIVERY_STATUS",
+            "label": "Aguardando Resposta",
+            "name": "DELIVERY_STATUS",
+            "value": 9,
+            "cvalue":"9",
+            "app_label": "judicial"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "judicial.DELIVERY_STATUS",
+            "label": "Atrasado",
+            "name": "DELIVERY_STATUS",
+            "value": 10,
+            "cvalue": "10",
+            "app_label": "judicial"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "judicial.DELIVERY_STATUS",
+            "label": "Copiado",
+            "name": "DELIVERY_STATUS",
+            "value": 11,
+            "cvalue": "11",
+            "app_label": "judicial"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "judicial.DELIVERY_STATUS",
+            "label": "Finalizado",
+            "name": "DELIVERY_STATUS",
+            "value": 99,
+            "cvalue": "99",
+            "app_label": "judicial"
+        },
+        "model": "standard.choice",
+        "pk": null
+    }
+]

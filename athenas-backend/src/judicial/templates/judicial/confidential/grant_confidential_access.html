@@ -1,0 +1,24 @@
+{% load judicialfilters %}
+
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <h2 class="title-1" style="text-align:center;">{{ doc.title }}</h2>
+    <div>
+        <small>
+            Processo: {{ doc.lawsuit.cache_number }}
+        </small>
+    </div>
+
+    <div class="paragraph-text">
+       Aqui vai o texto oficial.
+    </div>
+
+    {% if doc.signed_at %}
+    	{% with modified_at=doc.signed_at %}
+        	{% include "judicial/lawsuit/owner_sign.html" %}
+    	{% endwith %}
+	{% else %}
+        <p style="padding-top:5em; text-align: center">Este documento ainda não foi assinado.</p>
+    {% endif %}
+</div>

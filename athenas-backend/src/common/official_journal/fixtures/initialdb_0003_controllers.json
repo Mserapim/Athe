@@ -1,0 +1,50 @@
+[
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0534.png",
+    "title": "Gestor de Diários",
+    "controller": "JournalOfficialDiary",
+    "application": [
+      "b7e324db77b74a7c934415eac51825ac"
+    ],
+    "active": true,
+    "module": "common.official_journal",
+    "uuid": "268e9f52246f44cabd9498b6537af9be",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0098.png",
+    "title": "Gestor de Documentos",
+    "controller": "JournalDocument",
+    "application": [
+      "b7e324db77b74a7c934415eac51825ac"
+    ],
+    "active": true,
+    "module": "common.official_journal",
+    "uuid": "fb394734d31644b7a6fc9a8cc0f09dab",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0613.png",
+    "title": "Gestor de Publicações",
+    "controller": "JournalRestful",
+    "application": [
+      "b7e324db77b74a7c934415eac51825ac"
+    ],
+    "active": true,
+    "module": "common.official_journal",
+    "uuid": "707e454ce4e246a09ea683a1cf0bf2c2",
+    "icon_file": null,
+    "position": 9999
+  }
+}
+]

@@ -1,0 +1,4424 @@
+[
+    {
+        "fields": {
+            "cache_path": "rh.ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Revogação",
+            "name": "ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Alteração a pedido",
+            "name": "ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Suspensão",
+            "name": "ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Cancelado",
+            "name": "ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Interrupção",
+            "name": "ALTERACAO_BASE_LICENCA_AFASTAMENTO",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CARGO_ELETIVO_CHOICES",
+            "label": "Prefeito/Vice",
+            "name": "CARGO_ELETIVO_CHOICES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CARGO_ELETIVO_CHOICES",
+            "label": "Vereador",
+            "name": "CARGO_ELETIVO_CHOICES",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CARGO_ELETIVO_CHOICES",
+            "label": "Deputado Estadual",
+            "name": "CARGO_ELETIVO_CHOICES",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CARGO_ELETIVO_CHOICES",
+            "label": "Deputado Federal",
+            "name": "CARGO_ELETIVO_CHOICES",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CARGO_ELETIVO_CHOICES",
+            "label": "Governador/Vice",
+            "name": "CARGO_ELETIVO_CHOICES",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CARGO_ELETIVO_CHOICES",
+            "label": "Senador/Presidente República/Vice",
+            "name": "CARGO_ELETIVO_CHOICES",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 3º, da EC nº 47/05",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 40º, § 1º, III, b, da Constituição Federal",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 10º, § 1º, I, da  EC nº 103/19",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 4º da EC nº 103/19",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Regra Geral: Fundamento Art. 40, § 1°, III, a, da CF.",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 8, I e III, a e b, da EC nº 20/98 (vigente até 31/12/2003)",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 8º, § 1º, I, a e b, da EC nº 20/98 (Vigente até 31.12.03)",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 2º, I a III, a e b, da EC nº 41/03",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 6º, da EC nº 41/03",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.RULES",
+            "label": "Art. 20 da  EC nº 103/19",
+            "name": "RULES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AGENDADO",
+            "name": "ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "label": "ATIVO",
+            "name": "ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "label": "ENCERRADO",
+            "name": "ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "label": "CANCELADO",
+            "name": "ESTADO_BASE_LICENCA_AFASTAMENTO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "CÔNJUGE",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "COMPANHEIRO",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "FILHO(A)",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "PAI/MÃE",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "IRMÃO",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "ENTEADO",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "MENOR TUTELADO",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "EX-CÔNJUGE",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "NETOS",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_CHOICES",
+            "label": "OUTROS",
+            "name": "GRAU_PARENTESCO_CHOICES",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_DOENCA_CHOICES",
+            "label": "Cônjuge/Companheiro(a)",
+            "name": "GRAU_PARENTESCO_DOENCA_CHOICES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_DOENCA_CHOICES",
+            "label": "Pai/Mãe",
+            "name": "GRAU_PARENTESCO_DOENCA_CHOICES",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_DOENCA_CHOICES",
+            "label": "Madrasta/Padrasto",
+            "name": "GRAU_PARENTESCO_DOENCA_CHOICES",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_DOENCA_CHOICES",
+            "label": "Filho(a)",
+            "name": "GRAU_PARENTESCO_DOENCA_CHOICES",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_DOENCA_CHOICES",
+            "label": "Enteado(a)",
+            "name": "GRAU_PARENTESCO_DOENCA_CHOICES",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.GRAU_PARENTESCO_DOENCA_CHOICES",
+            "label": "Dependente",
+            "name": "GRAU_PARENTESCO_DOENCA_CHOICES",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.INSTANCE",
+            "label": "PRIMEIRA INSTÂNCIA",
+            "name": "INSTANCE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.INSTANCE",
+            "label": "SEGUNDA INSTÂNCIA",
+            "name": "INSTANCE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_INSTANCE",
+            "label": "PRIMEIRA ENTRÂNCIA",
+            "name": "LEVEL_INSTANCE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_INSTANCE",
+            "label": "SEGUNDA ENTRÂNCIA",
+            "name": "LEVEL_INSTANCE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_INSTANCE",
+            "label": "TERCEIRA ENTRÂNCIA",
+            "name": "LEVEL_INSTANCE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_INSTANCE",
+            "label": "PROCURADORIA",
+            "name": "LEVEL_INSTANCE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_STATE",
+            "label": "EXECUTIVO",
+            "name": "LEVEL_STATE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_STATE",
+            "label": "LEGISLATIVO",
+            "name": "LEVEL_STATE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_STATE",
+            "label": "JUDICIÁRIO",
+            "name": "LEVEL_STATE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_STATE",
+            "label": "MINISTÉRIO PÚBLICO",
+            "name": "LEVEL_STATE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_STATE",
+            "label": "DESCONHECIDO",
+            "name": "LEVEL_STATE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_STATE",
+            "label": "TRIBUNAL DE CONTAS",
+            "name": "LEVEL_STATE",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "label": "Confederação",
+            "name": "MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "label": "Federação",
+            "name": "MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "label": "Associação Classe Nacional",
+            "name": "MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "label": "Associação Classe Estadual",
+            "name": "MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "label": "Sindicato e Entidade Fiscalizadora da Profissão",
+            "name": "MANDATO_CLASSISTA_TIPO_ENTIDADE_CHOICES",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "FÉRIAS",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "LICENÇA",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "RECESSO NATALINO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "PLANTÃO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "VIAGEM A TRABALHO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "DESEMPENHO DE FUNÇÃO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "DISPOSIÇÃO DE OUTRO ÓRGÃO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "REPRESENTAÇÃO DE CLASSE",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "ATUAÇÃO DE GRUPO DE TRABALHO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "TRÂNSITO/PROMOÇÃO/REMOÇÃO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MOTIVO_SUBSTITUICAO",
+            "label": "SUSPENSÃO",
+            "name": "MOTIVO_SUBSTITUICAO",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.PUBLICATION_STATE",
+            "label": "Em Aberto",
+            "name": "PUBLICATION_STATE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.PUBLICATION_STATE",
+            "label": "Públicação Solicitada",
+            "name": "PUBLICATION_STATE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.PUBLICATION_STATE",
+            "label": "Públicação Realizada",
+            "name": "PUBLICATION_STATE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.PUBLICATION_STATE",
+            "label": "Públicação Cancelada",
+            "name": "PUBLICATION_STATE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.REGIME_PREVIDENCIARIO",
+            "label": "RGPS",
+            "name": "REGIME_PREVIDENCIARIO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.REGIME_PREVIDENCIARIO",
+            "label": "RPPS",
+            "name": "REGIME_PREVIDENCIARIO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.REGIME_PREVIDENCIARIO",
+            "label": "MILITAR",
+            "name": "REGIME_PREVIDENCIARIO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SEXUAL_ORIENTATION",
+            "label": "HETEROSSEXUAL",
+            "name": "SEXUAL_ORIENTATION",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SEXUAL_ORIENTATION",
+            "label": "HOMOSSEXUAL",
+            "name": "SEXUAL_ORIENTATION",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SEXUAL_ORIENTATION",
+            "label": "BISSEXUAL",
+            "name": "SEXUAL_ORIENTATION",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SEXUAL_ORIENTATION",
+            "label": "ASSEXUAL",
+            "name": "SEXUAL_ORIENTATION",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SEXUAL_ORIENTATION",
+            "label": "NÃO INFORMADA",
+            "name": "SEXUAL_ORIENTATION",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SIM_NAO",
+            "label": "Sim",
+            "name": "SIM_NAO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SIM_NAO",
+            "label": "Não",
+            "name": "SIM_NAO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.FACTOR_RH",
+            "label": "-",
+            "name": "FACTOR_RH",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.FACTOR_RH",
+            "label": "+",
+            "name": "FACTOR_RH",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.BLOOD",
+            "label": "B",
+            "name": "BLOOD",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.BLOOD",
+            "label": "AB",
+            "name": "BLOOD",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.BLOOD",
+            "label": "O",
+            "name": "BLOOD",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.BLOOD",
+            "label": "A",
+            "name": "BLOOD",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_APROVACAO",
+            "label": "Não informada",
+            "name": "TIPO_APROVACAO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_APROVACAO",
+            "label": "Deferida",
+            "name": "TIPO_APROVACAO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_APROVACAO",
+            "label": "Indeferida",
+            "name": "TIPO_APROVACAO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "BaseLicencaAfastamento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Afastamento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Licenca",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Ausencia",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "FeriasAfastamento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Viagem",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Recesso",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaSaude",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaSaude3Dias",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaSaudeJuntaMedica",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaDoencaPessoaFamilia",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaMaternidade",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaAdocao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaAfastamentoConjuge",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaServicoMilitar",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaAtividadePolitica",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 16,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaCapacitacao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 17,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaInteresseParticular",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 18,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaMandatoClassista",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 19,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoOutroOrgao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 20,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoMandatoEletivo",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 21,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoEstudar",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 22,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoMissao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 23,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoEleitoral",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 24,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoServirJuri",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 25,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoTreinamento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 26,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoDeslocamento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 27,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoCompeticao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 28,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoCursoConcurso",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 29,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoPrisao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 30,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AusenciaDoacaoSangue",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 31,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AusenciaEleitor",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 32,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AusenciaCasamento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 33,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AusenciaNascimento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 34,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AusenciaFalecimento",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 35,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AusenciaConclusao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 36,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "LicencaSaude30Dias",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 37,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "FolgaEleitoral",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 38,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AtuacaoGrupoTrabalho",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 39,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "DesempenhoFuncao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 40,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "Plantao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 41,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "FolgaCompensacao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 42,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "FolgaAniversario",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 43,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoSuspensao",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 44,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoComparecimentoJuizo",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 45,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "AfastamentoDisponibilidade",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 46,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_BASE_LICENCA_AFASTAMENTO",
+            "label": "BancoDeHoras",
+            "name": "TIPO_BASE_LICENCA_AFASTAMENTO",
+            "value": 47,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "ATO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "DECRETO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "PORTARIA",
+            "name": "TIPO_DOCUMENTO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "OFÍCIO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "DESPACHO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "TERMO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "MEMORANDO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "REQUERIMENTO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "CONCESSÃO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "ACORDO COOPERAÇÃO TÉCNICA",
+            "name": "TIPO_DOCUMENTO",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "LEI",
+            "name": "TIPO_DOCUMENTO",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "APOSTILA",
+            "name": "TIPO_DOCUMENTO",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "DECRETO LEGISLATIVO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "RESOLUÇÃO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "CIRCULAR",
+            "name": "TIPO_DOCUMENTO",
+            "value": 16,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "PROCESSO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 17,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "DECLARAÇÃO DE ENTRADA EM ATIVIDADE",
+            "name": "TIPO_DOCUMENTO",
+            "value": 95,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "TERMO LOTAÇÃO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 96,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "TERMO EXERCÍCIO",
+            "name": "TIPO_DOCUMENTO",
+            "value": 97,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "TERMO POSSE",
+            "name": "TIPO_DOCUMENTO",
+            "value": 98,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "OUTROS",
+            "name": "TIPO_DOCUMENTO",
+            "value": 99,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_DOCUMENTO",
+            "label": "DOCUMENTO DIGITAL",
+            "name": "TIPO_DOCUMENTO",
+            "value": 100,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_ONUS",
+            "label": "Origem",
+            "name": "TIPO_ONUS",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_ONUS",
+            "label": "Requisitante",
+            "name": "TIPO_ONUS",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TIPO_ONUS",
+            "label": "Cedente e Cessionário",
+            "name": "TIPO_ONUS",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ONUS_PAYMENT",
+            "label": "Apenas do Empregador",
+            "name": "ONUS_PAYMENT",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ONUS_PAYMENT",
+            "label": "Apenas do Sindicato",
+            "name": "ONUS_PAYMENT",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ONUS_PAYMENT",
+            "label": "Parte do Empregador, sendo a diferença e/ou complementação salarial paga pelo Sindicato",
+            "name": "ONUS_PAYMENT",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO",
+            "label": "Matutino",
+            "name": "TURNO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO",
+            "label": "Vespertino",
+            "name": "TURNO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO",
+            "label": "Noturno",
+            "name": "TURNO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO",
+            "label": "Dia inteiro",
+            "name": "TURNO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO_ELEITORAL",
+            "label": "1º",
+            "name": "TURNO_ELEITORAL",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO_ELEITORAL",
+            "label": "2º",
+            "name": "TURNO_ELEITORAL",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TURNO_ELEITORAL",
+            "label": "1º e 2º",
+            "name": "TURNO_ELEITORAL",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE ACRE",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE AMAPA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE AMAZONAS",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE RORAIMA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE RONDONIA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE PARA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE TOCANTINS",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE CEARA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE RIO GRANDE DO NORTE",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE PERNAMBUCO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE PARAIBA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE SERGIPE",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE BAHIA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE MARANHAO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE PIAUI",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE MINAS GERAIS",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 16,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE SAO PAULO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 17,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE ESPIRITO SANTO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 18,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE RIO DE JANEIRO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 19,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE PARANA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 21,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE SANTA CATARINA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 22,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE RIO GRANDE DO SUL",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 23,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE MATO GROSSO DO SUL",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 24,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE GOIAS",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 25,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE DISTRITO FEDERAL",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 26,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DOE MATO GROSSO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 27,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DIARIO JUSTICA",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 28,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DIARIO JUSTICA ELEITORAL",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 29,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DIARIO OFICIAL DA UNIAO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 30,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DIARIO OFICIAL DO MUNICIPIO DE PALMAS TO",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 31,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "REGISTRO CIVIL DAS PESSOAS NATURAIS",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 32,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "PLACAR",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 33,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.VEICULO_PUBLICACAO",
+            "label": "DIÁRIO ELETRÔNICO DO MPE",
+            "name": "VEICULO_PUBLICACAO",
+            "value": 34,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_PROMOTION",
+            "label": "ANTIGUIDADE",
+            "name": "LEVEL_PROMOTION",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_PROMOTION",
+            "label": "MERECIMENTO",
+            "name": "LEVEL_PROMOTION",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_PROMOTION",
+            "label": "PERMUTA",
+            "name": "LEVEL_PROMOTION",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ACIDENTE_TRANSITO",
+            "label": "ATROPELAMENTO",
+            "name": "ACIDENTE_TRANSITO",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ACIDENTE_TRANSITO",
+            "label": "COLISÃO",
+            "name": "ACIDENTE_TRANSITO",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.ACIDENTE_TRANSITO",
+            "label": "OUTROS",
+            "name": "ACIDENTE_TRANSITO",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_REMOVAL_MEMBER",
+            "label": "ANTIGUIDADE",
+            "name": "LEVEL_REMOVAL_MEMBER",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_REMOVAL_MEMBER",
+            "label": "MERECIMENTO",
+            "name": "LEVEL_REMOVAL_MEMBER",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_REMOVAL_MEMBER",
+            "label": "PERMUTA",
+            "name": "LEVEL_REMOVAL_MEMBER",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_REMOVAL_REASON",
+            "label": "OFÍCIO",
+            "name": "LEVEL_REMOVAL_REASON",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_REMOVAL_REASON",
+            "label": "REQUERIMENTO",
+            "name": "LEVEL_REMOVAL_REASON",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.LEVEL_REMOVAL_REASON",
+            "label": "PERMUTA",
+            "name": "LEVEL_REMOVAL_REASON",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "EXONERAÇÃO EFETIVO",
+            "name": "TYPE_FIRED",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "EXONERAÇÃO COMISSIONADO",
+            "name": "TYPE_FIRED",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "EXONERAÇÃO ESTABILIZADO",
+            "name": "TYPE_FIRED",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "APOSENTADORIA POR INVALIDEZ",
+            "name": "TYPE_FIRED",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "APOSENTADORIA VOLUNTÁRIA",
+            "name": "TYPE_FIRED",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "POSSE EM OUTRO CARGO",
+            "name": "TYPE_FIRED",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "FALECIMENTO",
+            "name": "TYPE_FIRED",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "RESCISÃO",
+            "name": "TYPE_FIRED",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "DEMISSÃO",
+            "name": "TYPE_FIRED",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "RESERVA REFORMA",
+            "name": "TYPE_FIRED",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "DISPONIBILIDADE",
+            "name": "TYPE_FIRED",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "PROMOÇÃO/REMOÇÃO",
+            "name": "TYPE_FIRED",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "FIM REQUISIÇÃO/ACORDO COOPERAÇÃO",
+            "name": "TYPE_FIRED",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "APOSENTADORIA COMPULSÓRIA",
+            "name": "TYPE_FIRED",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "APOSENTADORIA ESPECIAL",
+            "name": "TYPE_FIRED",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "APOSENTADORIA POR TEMPO DE CONTRIBUIÇÃO",
+            "name": "TYPE_FIRED",
+            "value": 16,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "APOSENTADORIA POR IDADE",
+            "name": "TYPE_FIRED",
+            "value": 17,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "REDISTRIBUIÇÃO",
+            "name": "TYPE_FIRED",
+            "value": 18,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED",
+            "label": "REVERSÃO DE REINTEGRAÇÃO",
+            "name": "TYPE_FIRED",
+            "value": 19,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED_DOC",
+            "label": "A PEDIDO",
+            "name": "TYPE_FIRED_DOC",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_FIRED_DOC",
+            "label": "OFÍCIO",
+            "name": "TYPE_FIRED_DOC",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_REDISTRIBUTION",
+            "label": "OFÍCIO",
+            "name": "TYPE_REDISTRIBUTION",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_REDISTRIBUTION",
+            "label": "DISPONIBILIDADE",
+            "name": "TYPE_REDISTRIBUTION",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_REDISTRIBUTION",
+            "label": "DISPONIBILIDADE PROVISÓRIA",
+            "name": "TYPE_REDISTRIBUTION",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RETIREMENT",
+            "label": "COMPULSÓRIA",
+            "name": "TYPE_RETIREMENT",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RETIREMENT",
+            "label": "ESPECIAL",
+            "name": "TYPE_RETIREMENT",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RETIREMENT",
+            "label": "IMPLEMENTO DE IDADE",
+            "name": "TYPE_RETIREMENT",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RETIREMENT",
+            "label": "INVALIDEZ",
+            "name": "TYPE_RETIREMENT",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RETIREMENT",
+            "label": "TEMPO DE CONTRIBUIÇÃO",
+            "name": "TYPE_RETIREMENT",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RETIREMENT",
+            "label": "VOLUNTÁRIA",
+            "name": "TYPE_RETIREMENT",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "TÍTULO DE ELEITOR",
+            "name": "DOCUMENT_PERSON",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "CNH",
+            "name": "DOCUMENT_PERSON",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "CTPS",
+            "name": "DOCUMENT_PERSON",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "PIS/PASEP",
+            "name": "DOCUMENT_PERSON",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "NIS",
+            "name": "DOCUMENT_PERSON",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "IPSEP",
+            "name": "DOCUMENT_PERSON",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "INSS",
+            "name": "DOCUMENT_PERSON",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "RESERVISTA",
+            "name": "DOCUMENT_PERSON",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "CONSELHO PROFISSIONAL",
+            "name": "DOCUMENT_PERSON",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "RIC",
+            "name": "DOCUMENT_PERSON",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "RNE",
+            "name": "DOCUMENT_PERSON",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "CPF",
+            "name": "DOCUMENT_PERSON",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "RG",
+            "name": "DOCUMENT_PERSON",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "PASSAPORTE",
+            "name": "DOCUMENT_PERSON",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DOCUMENT_PERSON",
+            "label": "UNIAO ESTAVEL",
+            "name": "DOCUMENT_PERSON",
+            "value": 54,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "TÍTULO DE ELEITOR",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "CNH",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "CTPS",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "PIS/PASEP",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "NIS",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "RESERVISTA",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "CONSELHO PROFISSIONAL",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "RIC",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "RNE",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "CPF",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "RG",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "PASSAPORTE",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "CERTIDÃO DE NASCIMENTO",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 50,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "CERTIDÃO DE CASAMENTO",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 51,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "COMPROVANTE DE ENDEREÇO",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 52,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "TERMO DE CUSTODIA DE MENOR",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 53,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DIGITAL_DOCUMENT_TYPE",
+            "label": "UNIAO ESTAVEL",
+            "name": "DIGITAL_DOCUMENT_TYPE",
+            "value": 54,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "TÍTULO DE ELEITOR.ZONA",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "TÍTULO DE ELEITOR.SEÇÃO",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "TÍTULO DE ELEITOR.UF",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "CNH.CATEGORIA",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "RESERVISTA.CLASSE",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "CTPS.SÉRIE",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "TÍTULO DE ELEITOR.MUNICIPIO",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "CTPS.UF",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "RIC.EMISSOR",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "RNE.EMISSOR",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "CONSELHO PROFISSIONAL.EMISSOR",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "CNH.DATA PRIMEIRA HABILITAÇÃO",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.SPECIFICITY_DOCUMENT",
+            "label": "RG.ÓRGÃO EMISSOR",
+            "name": "SPECIFICITY_DOCUMENT",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CAPACITY",
+            "label": "VÁLIDO",
+            "name": "CAPACITY",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CAPACITY",
+            "label": "INVÁLIDO",
+            "name": "CAPACITY",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "CÔNJUGE",
+            "name": "DEPENDENT_TYPE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "COMPANHEIRO(A) - UNIÃO ESTÁVEL",
+            "name": "DEPENDENT_TYPE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "FILHO(A) NÃO EMANCIPADO MENOR DE 21 ANOS",
+            "name": "DEPENDENT_TYPE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "FILHO(A) ABSOLUTAMENTE INCAPAZ DO QUAL SEJA TUTOR OU CURADOR",
+            "name": "DEPENDENT_TYPE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "PAI(MÃE) COM DEPENDÊNCIA ECONÔMICA",
+            "name": "DEPENDENT_TYPE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "IRMÃO NÃO EMANCIPADO MENOR DE 21 ANOS COM DEPENDÊNCIA ECONÔMICA E GUARDA JUDICIAL",
+            "name": "DEPENDENT_TYPE",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "IRMAO(A) ABSOLUTAMENTE INCAPAZ DO QUAL SEJA TUTOR OU CURADOR",
+            "name": "DEPENDENT_TYPE",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "ENTEADO NÃO EMANCIPADO MENOR DE 21",
+            "name": "DEPENDENT_TYPE",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "ENTEADO ABSOLUTAMENTE INCAPAZ DO QUAL SEJA TUTOR OU CURADOR",
+            "name": "DEPENDENT_TYPE",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "MENOR TUTELADO NÃO EMANCIPADO MENOR DE 21 ANOS COM DEPENDÊNCIA ECONÔMICA OU GUARDA JUDICIAL",
+            "name": "DEPENDENT_TYPE",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "MENOR ABSOLUTAMENTE INCAPAZ DO QUAL SEJA TUTOR OU CURADOR",
+            "name": "DEPENDENT_TYPE",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "AVÓS COM DEPENDENCIA ECONOMICA",
+            "name": "DEPENDENT_TYPE",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "BISAVÓS COM DEPENDENCIA ECONOMICA",
+            "name": "DEPENDENT_TYPE",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "NETO(A) NÃO EMANCIPADO MENOR DE 21 ANOS COM DEPENDÊNCIA ECONÔMICA E GUARDA JUDICIAL",
+            "name": "DEPENDENT_TYPE",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "BISNETO(A) NÃO EMANCIPADO MENOR DE 21 ANOS COM DEPENDÊNCIA ECONÔMICA E GUARDA JUDICIAL",
+            "name": "DEPENDENT_TYPE",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": " EX-CÔNJUGE",
+            "name": "DEPENDENT_TYPE",
+            "value": 16,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "FILHO(A) OU ENTEADO(A) UNIVERSITÁRIO(A) OU CURSANDO ESCOLA TÉCNICA DE 2ºGRAU, ATÉ 24 ANOS",
+            "name": "DEPENDENT_TYPE",
+            "value": 17,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEPENDENT_TYPE",
+            "label": "AGREGADO/OUTROS",
+            "name": "DEPENDENT_TYPE",
+            "value": 18,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "ANALFABETO",
+            "name": "DEGREE_EDUCATION",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "ALFABETIZADO SEM CURSOS REGULARES",
+            "name": "DEGREE_EDUCATION",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "SERA EXCLUIDO 4",
+            "name": "DEGREE_EDUCATION",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "FUNDAMENTAL COMPLETO",
+            "name": "DEGREE_EDUCATION",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "MÉDIO INCOMPLETO",
+            "name": "DEGREE_EDUCATION",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "MEDIO COMPLETO OU EQUIVALENTE LEGAL",
+            "name": "DEGREE_EDUCATION",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "SUPERIOR INCOMPLETO",
+            "name": "DEGREE_EDUCATION",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "SUPERIOR COMPLETO OU EQUIVALENTE LEGAL",
+            "name": "DEGREE_EDUCATION",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "ESPECIALIZAÇÃO/PÓS",
+            "name": "DEGREE_EDUCATION",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "MESTRADO",
+            "name": "DEGREE_EDUCATION",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "DOUTORADO",
+            "name": "DEGREE_EDUCATION",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "SERA EXCLUIDO",
+            "name": "DEGREE_EDUCATION",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "SERA EXCLUIDO 1",
+            "name": "DEGREE_EDUCATION",
+            "value": 13,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "SERA EXCLUIDO 2",
+            "name": "DEGREE_EDUCATION",
+            "value": 14,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "ATÉ O 5o ANO INCOMPLETO DO ENSINO FUNDAMENTAL",
+            "name": "DEGREE_EDUCATION",
+            "value": 15,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "5o ANO COMPLETO DO ENSINO FUNDAMENTAL",
+            "name": "DEGREE_EDUCATION",
+            "value": 16,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEGREE_EDUCATION",
+            "label": "DO 6o AO 9o ANO DO ENSINO FUNDAMENTAL INCOMPLETO",
+            "name": "DEGREE_EDUCATION",
+            "value": 17,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MARITAL_STATUS",
+            "label": "SOLTEIRO",
+            "name": "MARITAL_STATUS",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MARITAL_STATUS",
+            "label": "CASADO",
+            "name": "MARITAL_STATUS",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MARITAL_STATUS",
+            "label": "VIUVO",
+            "name": "MARITAL_STATUS",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MARITAL_STATUS",
+            "label": "SEPARADO JUDICIALMENTE",
+            "name": "MARITAL_STATUS",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MARITAL_STATUS",
+            "label": "DIVORCIADO",
+            "name": "MARITAL_STATUS",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.MARITAL_STATUS",
+            "label": "UNIAO ESTAVEL",
+            "name": "MARITAL_STATUS",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEFICIENCY_TYPE",
+            "label": "Física",
+            "name": "DEFICIENCY_TYPE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEFICIENCY_TYPE",
+            "label": "Visual",
+            "name": "DEFICIENCY_TYPE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEFICIENCY_TYPE",
+            "label": "Auditiva",
+            "name": "DEFICIENCY_TYPE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEFICIENCY_TYPE",
+            "label": "Mental",
+            "name": "DEFICIENCY_TYPE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.DEFICIENCY_TYPE",
+            "label": "Intelectual",
+            "name": "DEFICIENCY_TYPE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Visto permanente",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Visto temporário",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Asilado",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Refugiado",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Solicitante de Refúgio",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Residente em país fronteiriço ao Brasil",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Deficiente físico e com mais de 51 anos",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 7,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Com residência provisória e anistiado, em situação",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Permanência no Brasil em razão de filhos ou cônjuge",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Beneficiado pelo acordo entre países do Mercosul",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 10,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Dependente de agente diplomático e/ou consular",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 11,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CLASSIFICATION_PERMANENCE",
+            "label": "Beneficiado pelo Tratado de Amizade, Cooperação",
+            "name": "CLASSIFICATION_PERMANENCE",
+            "value": 12,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_PHONE",
+            "label": "RESIDENCIAL",
+            "name": "TYPE_PHONE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_PHONE",
+            "label": "COMERCIAL",
+            "name": "TYPE_PHONE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_PHONE",
+            "label": "CELULAR",
+            "name": "TYPE_PHONE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_PHONE",
+            "label": "FAX",
+            "name": "TYPE_PHONE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_PHONE",
+            "label": "INSTITUCIONAL",
+            "name": "TYPE_PHONE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_PHONE",
+            "label": "CONTATO EMERGÊNCIA",
+            "name": "TYPE_PHONE",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_ADDRESS",
+            "label": "Residencial",
+            "name": "TYPE_ADDRESS",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_ADDRESS",
+            "label": "Comercial",
+            "name": "TYPE_ADDRESS",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_ADDRESS",
+            "label": "Institucional",
+            "name": "TYPE_ADDRESS",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_ADDRESS",
+            "label": "Profissional",
+            "name": "TYPE_ADDRESS",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_ADDRESS",
+            "label": "Via pública",
+            "name": "TYPE_ADDRESS",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "AVENIDA",
+            "name": "TYPE_STREET",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "PRAÇA",
+            "name": "TYPE_STREET",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "VIELA",
+            "name": "TYPE_STREET",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "VIADUTO",
+            "name": "TYPE_STREET",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "RUA",
+            "name": "TYPE_STREET",
+            "value": 8,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "QUADRA",
+            "name": "TYPE_STREET",
+            "value": 9,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_STREET",
+            "label": "EXTERIOR",
+            "name": "TYPE_STREET",
+            "value": 100,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RACE",
+            "label": "PARDA",
+            "name": "TYPE_RACE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RACE",
+            "label": "AMARELA",
+            "name": "TYPE_RACE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RACE",
+            "label": "PRETA",
+            "name": "TYPE_RACE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RACE",
+            "label": "INDÍGENA",
+            "name": "TYPE_RACE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RACE",
+            "label": "NÃO INFORMADO",
+            "name": "TYPE_RACE",
+            "value": 5,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_RACE",
+            "label": "BRANCA",
+            "name": "TYPE_RACE",
+            "value": 6,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CUMULATIVE",
+            "label": "NÃO ACUMULÁVEL",
+            "name": "CUMULATIVE",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CUMULATIVE",
+            "label": "PROFISSIONAL DE SAÚDE",
+            "name": "CUMULATIVE",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CUMULATIVE",
+            "label": "PROFESSOR",
+            "name": "CUMULATIVE",
+            "value": 3,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.CUMULATIVE",
+            "label": "TÉCNICO/CIENTÍFICO",
+            "name": "CUMULATIVE",
+            "value": 4,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_INTERVAL",
+            "label": "FIXO",
+            "name": "TYPE_INTERVAL",
+            "value": 1,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "cache_path": "rh.TYPE_INTERVAL",
+            "label": "VARIÁVEL",
+            "name": "TYPE_INTERVAL",
+            "value": 2,
+            "app_label": "rh"
+        },
+        "model": "standard.choice",
+        "pk": null
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "label": "Imposto de Renda",
+            "cache_path": "rh.TYPE_OF_DEPENDENCE",
+            "app_label": "rh",
+            "name": "TYPE_OF_DEPENDENCE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "label": "PlanSaúde",
+            "cache_path": "rh.TYPE_OF_DEPENDENCE",
+            "app_label": "rh",
+            "name": "TYPE_OF_DEPENDENCE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "label": "Salário Família",
+            "cache_path": "rh.TYPE_OF_DEPENDENCE",
+            "app_label": "rh",
+            "name": "TYPE_OF_DEPENDENCE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 4,
+            "label": "Auxílio Creche",
+            "cache_path": "rh.TYPE_OF_DEPENDENCE",
+            "app_label": "rh",
+            "name": "TYPE_OF_DEPENDENCE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 5,
+            "label": "Previdência",
+            "cache_path": "rh.TYPE_OF_DEPENDENCE",
+            "app_label": "rh",
+            "name": "TYPE_OF_DEPENDENCE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 6,
+            "label": "Auxílio Especial",
+            "cache_path": "rh.TYPE_OF_DEPENDENCE",
+            "app_label": "rh",
+            "name": "TYPE_OF_DEPENDENCE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "label": "OBRIGATÓRIO",
+            "cache_path": "rh.TRAINEE_NATURE",
+            "app_label": "rh",
+            "name": "TRAINEE_NATURE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "label": "NÃO OBRIGATÓRIO",
+            "cache_path": "rh.TRAINEE_NATURE",
+            "app_label": "rh",
+            "name": "TRAINEE_NATURE"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "label": "Fundamental",
+            "cache_path": "rh.TRAINEE_LEVEL",
+            "app_label": "rh",
+            "name": "TRAINEE_LEVEL"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "label": "Médio",
+            "cache_path": "rh.TRAINEE_LEVEL",
+            "app_label": "rh",
+            "name": "TRAINEE_LEVEL"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "label": "Formação Profissional",
+            "cache_path": "rh.TRAINEE_LEVEL",
+            "app_label": "rh",
+            "name": "TRAINEE_LEVEL"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 4,
+            "label": "Superior",
+            "cache_path": "rh.TRAINEE_LEVEL",
+            "app_label": "rh",
+            "name": "TRAINEE_LEVEL"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 8,
+            "label": "Especial",
+            "cache_path": "rh.TRAINEE_LEVEL",
+            "app_label": "rh",
+            "name": "TRAINEE_LEVEL"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 9,
+            "label": "Mãe social",
+            "cache_path": "rh.TRAINEE_LEVEL",
+            "app_label": "rh",
+            "name": "TRAINEE_LEVEL"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "label": "Executivo",
+            "cache_path": "rh.CHOICE_SUBTETUS",
+            "app_label": "rh",
+            "name": "CHOICE_SUBTETUS"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "label": "Judiciário",
+            "cache_path": "rh.CHOICE_SUBTETUS",
+            "app_label": "rh",
+            "name": "CHOICE_SUBTETUS"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "label": "Legislativo",
+            "cache_path": "rh.CHOICE_SUBTETUS",
+            "app_label": "rh",
+            "name": "CHOICE_SUBTETUS"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 9,
+            "label": "Todos os poderes",
+            "cache_path": "rh.CHOICE_SUBTETUS",
+            "app_label": "rh",
+            "name": "CHOICE_SUBTETUS"
+        },
+        "model": "standard.choice"
+    },
+]

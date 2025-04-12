@@ -1,0 +1,744 @@
+[
+    {
+        "fields": {
+            "name": "ACCOUNT_TYPE",
+            "value": 1,
+            "label": "Controlado",
+            "cache_path": "patrimonio.ACCOUNT_TYPE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ACCOUNT_TYPE",
+            "value": 2,
+            "label": "Relacionado",
+            "cache_path": "patrimonio.ACCOUNT_TYPE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_PARAMETER_TYPE",
+            "value": 1,
+            "label": "Conservação",
+            "cache_path": "patrimonio.ASSESSMENT_PARAMETER_TYPE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_PARAMETER_TYPE",
+            "value": 2,
+            "label": "Utilização",
+            "cache_path": "patrimonio.ASSESSMENT_PARAMETER_TYPE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_PARAMETER_TYPE",
+            "value": 3,
+            "label": "Vida útil futura",
+            "cache_path": "patrimonio.ASSESSMENT_PARAMETER_TYPE",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_TYPE",
+            "value": 1,
+            "label": "Depreciação de Rotina",
+            "cache_path": "patrimonio.ASSESSMENT_TYPE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_TYPE",
+            "value": 2,
+            "label": "Depreciação manual",
+            "cache_path": "patrimonio.ASSESSMENT_TYPE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_TYPE",
+            "value": 3,
+            "label": "Reavaliação",
+            "cache_path": "patrimonio.ASSESSMENT_TYPE",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ASSESSMENT_TYPE",
+            "value": 4,
+            "label": "Reversão de Depreciação",
+            "cache_path": "patrimonio.ASSESSMENT_TYPE",
+            "cvalue": "4",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "BUDGETARY_EXECUTION",
+            "value": 1,
+            "label": "DEO - Dependente da Execução Orçamentária",
+            "cache_path": "patrimonio.BUDGETARY_EXECUTION",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "BUDGETARY_EXECUTION",
+            "value": 2,
+            "label": "IEO - Independente da Execução Orçamentária",
+            "cache_path": "patrimonio.BUDGETARY_EXECUTION",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "BUDGETARY_EXECUTION",
+            "value": 3,
+            "label": "DOAÇÃO",
+            "cache_path": "patrimonio.BUDGETARY_EXECUTION",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CONSERVATION",
+            "value": 1,
+            "label": "Novo",
+            "cache_path": "patrimonio.CONSERVATION",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CONSERVATION",
+            "value": 2,
+            "label": "Bom",
+            "cache_path": "patrimonio.CONSERVATION",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CONSERVATION",
+            "value": 3,
+            "label": "Regular",
+            "cache_path": "patrimonio.CONSERVATION",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CONSERVATION",
+            "value": 4,
+            "label": "Inservivel",
+            "cache_path": "patrimonio.CONSERVATION",
+            "cvalue": "4",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CRITICIZE_ENTRANCE_NOTE_STATE",
+            "value": 1,
+            "label": "Aberto",
+            "cache_path": "patrimonio.CRITICIZE_ENTRANCE_NOTE_STATE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CRITICIZE_ENTRANCE_NOTE_STATE",
+            "value": 2,
+            "label": "Deferido",
+            "cache_path": "patrimonio.CRITICIZE_ENTRANCE_NOTE_STATE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "CRITICIZE_ENTRANCE_NOTE_STATE",
+            "value": 3,
+            "label": "Indeferido",
+            "cache_path": "patrimonio.CRITICIZE_ENTRANCE_NOTE_STATE",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ENTRANCE_NOTE_STATE",
+            "value": 1,
+            "label": "Nota Aberta",
+            "cache_path": "patrimonio.ENTRANCE_NOTE_STATE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ENTRANCE_NOTE_STATE",
+            "value": 2,
+            "label": "Nota Finalizada",
+            "cache_path": "patrimonio.ENTRANCE_NOTE_STATE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "ENTRANCE_NOTE_STATE",
+            "value": 3,
+            "label": "Nota Cancelada",
+            "cache_path": "patrimonio.ENTRANCE_NOTE_STATE",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_SIGNATURE_SCORE",
+            "value": 9,
+            "label": "Diretor Geral",
+            "cache_path": "patrimonio.MOVEMENT_SIGNATURE_SCORE",
+            "cvalue": "9",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_SIGNATURE_SCORE",
+            "value": 10,
+            "label": "Procurador Geral",
+            "cache_path": "patrimonio.MOVEMENT_SIGNATURE_SCORE",
+            "cvalue": "10",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_STATUS",
+            "value": 1,
+            "label": "Aberto",
+            "cache_path": "patrimonio.MOVEMENT_STATUS",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_STATUS",
+            "value": 2,
+            "label": "Aguardando recebimento",
+            "cache_path": "patrimonio.MOVEMENT_STATUS",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_STATUS",
+            "value": 3,
+            "label": "Recebido",
+            "cache_path": "patrimonio.MOVEMENT_STATUS",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_STATUS",
+            "value": 4,
+            "label": "Ciência",
+            "cache_path": "patrimonio.MOVEMENT_STATUS",
+            "cvalue": "4",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_STATUS",
+            "value": 5,
+            "label": "Cancelado",
+            "cache_path": "patrimonio.MOVEMENT_STATUS",
+            "cvalue": "5",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "MOVEMENT_STATUS",
+            "value": 6,
+            "label": "Autorizado",
+            "cache_path": "patrimonio.MOVEMENT_STATUS",
+            "cvalue": "6",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "OUTPUT_TYPE",
+            "value": 1,
+            "label": "Sintético",
+            "cache_path": "patrimonio.OUTPUT_TYPE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "OUTPUT_TYPE",
+            "value": 2,
+            "label": "Analítico",
+            "cache_path": "patrimonio.OUTPUT_TYPE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "REPORT_TYPE",
+            "value": 1,
+            "label": "Somente bens Proprio",
+            "cache_path": "patrimonio.REPORT_TYPE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "REPORT_TYPE",
+            "value": 2,
+            "label": "Somente bens de Terceiro",
+            "cache_path": "patrimonio.REPORT_TYPE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "REPORT_TYPE",
+            "value": 3,
+            "label": "Todos os bens",
+            "cache_path": "patrimonio.REPORT_TYPE",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "REPORT_TYPE_SIMPLE",
+            "value": 1,
+            "label": "Somente bens Proprio",
+            "cache_path": "patrimonio.REPORT_TYPE_SIMPLE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "REPORT_TYPE_SIMPLE",
+            "value": 2,
+            "label": "Somente bens de Terceiros",
+            "cache_path": "patrimonio.REPORT_TYPE_SIMPLE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "SPECIE_STATUS",
+            "value": 1,
+            "label": "ATIVO",
+            "cache_path": "patrimonio.SPECIE_STATUS",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "SPECIE_STATUS",
+            "value": 2,
+            "label": "INATIVO",
+            "cache_path": "patrimonio.SPECIE_STATUS",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "SUSPENSION_TYPE",
+            "value": 1,
+            "label": "Suspensão de Nota de Entrada",
+            "cache_path": "patrimonio.SUSPENSION_TYPE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "SUSPENSION_TYPE",
+            "value": 2,
+            "label": "Suspensão de Item de Entrada",
+            "cache_path": "patrimonio.SUSPENSION_TYPE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "UTILIZATION",
+            "value": 1,
+            "label": "1 Turno",
+            "cache_path": "patrimonio.UTILIZATION",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "UTILIZATION",
+            "value": 2,
+            "label": "2 Turnos",
+            "cache_path": "patrimonio.UTILIZATION",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "UTILIZATION",
+            "value": 3,
+            "label": "3 Turnos",
+            "cache_path": "patrimonio.UTILIZATION",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_STATE",
+            "value": 1,
+            "label": "Nota Aberta",
+            "cache_path": "patrimonio.WRITEOFF_STATE",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_STATE",
+            "value": 2,
+            "label": "Nota Finalizada",
+            "cache_path": "patrimonio.WRITEOFF_STATE",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_STATE",
+            "value": 3,
+            "label": "Nota Cancelada",
+            "cache_path": "patrimonio.WRITEOFF_STATE",
+            "cvalue": "3",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_SUBTYPES",
+            "value": 1,
+            "label": "Obsolescência",
+            "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+            "cvalue": "1",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_SUBTYPES",
+            "value": 2,
+            "label": "Deterioração",
+            "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+            "cvalue": "2",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_SUBTYPES",
+            "value": 11,
+            "label": "Perda",
+            "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+            "cvalue": "11",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_SUBTYPES",
+            "value": 12,
+            "label": "Furto",
+            "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+            "cvalue": "12",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_SUBTYPES",
+            "value": 13,
+            "label": "Roubo",
+            "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+            "cvalue": "13",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "WRITEOFF_SUBTYPES",
+            "value": 1000,
+            "label": "Não informado",
+            "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+            "cvalue": "1000",
+            "app_label": "patrimonio",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    }
+]

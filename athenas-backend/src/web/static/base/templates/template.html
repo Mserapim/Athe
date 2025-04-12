@@ -1,0 +1,61 @@
+{% load recaptcha2 %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Ministério Público do Tocantins {% block title %} {% endblock %}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="mp ouvidoria tocantins" />
+		<meta name="robots" content="" />
+		<meta name="rating" content="General" />
+
+		<meta name="author" content="Tony Kamillo" />
+		<meta name="language" content="pt-br" />
+		<meta name="doc-rights" content="Private" />
+
+		<link href="/athenas/static/web/base/css/reset.css" rel="stylesheet" media="screen" />
+		<link href="/athenas/static/web/base/css/jquery-ui.css" rel="stylesheet" media="screen" />
+		<link href="/athenas/static/web/base/css/styles.css" rel="stylesheet" media="screen" />
+		{% block css %}{% endblock %}
+		<script type="text/javascript" src="/athenas/static/web/base/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="/athenas/static/web/base/js/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript" src="/athenas/static/web/base/js/jquery.plugins.js"></script>
+		<script type="text/javascript" src="/athenas/static/web/base/js/functions.js"></script>
+		{% block js %}{% endblock %}
+
+        {% recaptcha_init %}
+	</head>
+	<body>
+
+        <div id="page">
+            <div id="top">
+	        	<!--<div class="logo"></div>-->
+		        <div class="links-search">
+
+		        	<a class="feed" title="RSS">RSS</a>
+		        	<a class="intranet" href="http://www.mp.to.gov.br/intranet" title="Intranet">Intranet</a>
+		        	<a class="home" href="http://www.mp.to.gov.br" title="Página Principal">Página Principal</a>
+					<form id="search">
+						<input type="text" name="keywords"/>
+					</form>
+
+					<!--<div class="links">
+		                <a href="http://www.mp.to.gov.br">Página Principal</a>
+		                <a href="http://www.mp.to.gov.br/intranet" class="base">Intranet</a>
+			        </div>-->
+				</div>
+            </div>
+            <div id="section">
+            	<span class="local-date">{{ date }}</span>
+				<span>{% block section %}{% endblock %}</span>
+            </div>
+            <div id="menu">
+            {% block menu %}{% endblock %}
+            </div>
+            <div id="content">
+			{% block content %}{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>
+

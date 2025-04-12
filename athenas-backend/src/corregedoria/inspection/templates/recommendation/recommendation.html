@@ -1,0 +1,97 @@
+{% extends "recommendation/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+      <div>
+          <h1 class="title-1 top-space-1" style="font-size: 20px">EXTRATO DE ACOMPANHAMENTO DE RECOMENDAÇÕES</h1>
+      </div>
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>DADOS GERAIS</b></td></tr>
+      </table>
+        <div style="padding-left: 1em; padding-bottom: 1em;">
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <u>Órgão de Execução</u>: <b> {{ recommendation.inspection.execution_organ }}</b><br />
+              {% if recommendation.inspection.execution_organ.employee_workplaces_responsible %}
+                  <u>Responsável</u>:
+                  {% for sl in recommendation.inspection.execution_organ.employee_workplaces_responsible %}
+                      <div style="padding-left: 0.5em; ">
+                          - <b>{{ sl.servidor.pessoa_fisica }}</b>
+                      </div>
+                  {% endfor %}
+              {% endif %}
+              {% if recommendation.waiting_response %}
+                <u>Prazo</u>: <b> {{ recommendation.deadline | date:'d/m/Y' }}</b>
+                <div style="font-size: 0.8em;">{% if recommendation.deadline_origin %} {% if recommendation.deadline != recommendation.deadline_origin %} (Prazo original: {{ recommendation.deadline_origin | date:'d/m/Y' }}) {% endif %} {% endif %}</div>
+              {% endif %}
+              <u>Recomendação</u>:
+              <div style="padding-left: 0.5em; text-align: justify; ">
+                  {{ recommendation.recommendation | safely }}
+              </div>
+          </div>
+        </div>
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>MOVIMENTAÇÕES</b></td></tr>
+      </table>
+          <div style="padding-left: 1em; padding-bottom: 1em;">
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              {% if delayoftime or response %}
+                {% if delayoftime %}
+                    {% for dt in delayoftime %}
+                        <u>Solicitação de mais prazo em: <b> {{ dt.created_at | date:'d/m/Y' }} </b></u><br />
+                        <div style="padding-left: 0.5em; padding-top: 0.5em;">
+                          Responsável: <b> {{ dt.sent_by }} </b><br />
+                          <div style="padding-top: 0.5em; padding-left: 0.5em; text-align: justify; ">
+                            {{ dt.response | safely}}
+                          </div>
+                          {% if dt.signdecision_by %}
+                              <div style="padding-top: 0.5em; padding-left: 0.5em; text-align: justify; ">
+                                  <u>Decisão</u>:
+                                  <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                                    {{ dt.decision | safely}} <br />
+                                    {% if dt.deadline != recommendation.deadline_origin %}
+                                      - <u>Novo prazo</u>: <b> {{ dt.deadline | date:'d/m/Y' }} </b><br />
+                                    {% endif %}
+                                </div>
+                              </div>
+                              <div style="font-size: 0.8em; padding-top: 0.5em; padding-left: 2.5em; padding-bottom: 1em; ">
+                                  Assinado digitalmente em <b> {{ dt.signdecision_at | date:'d/m/Y' }} </b>, por <b> {{ dt.signdecision_by }}</b>.<br />
+                              </div>
+                          {% endif %}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if response %}
+                    {% for rp in response %}
+                        <u>Informação de cumprimento em: <b> {{ rp.created_at | date:'d/m/Y' }} </b></u><br />
+                        <div style="padding-left: 0.5em; padding-top: 0.5em;">
+                          Responsável: <b> {{ rp.sent_by }} </b><br />
+                          <div style="padding-top: 0.5em; padding-left: 0.5em; text-align: justify; ">
+                              {{ rp.response | safely}}
+                          </div>
+                          {% if rp.signdecision_by %}
+                              <div style="padding-top: 0.5em; padding-left: 0.5em; text-align: justify; ">
+                                  <u>Decisão</u>:
+                                  <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                                    {{ rp.decision | safely}}
+                                  </div>
+                              </div>
+                              <div style="font-size: 0.8em; padding-top: 0.5em; padding-left: 2.5em; padding-bottom: 1em; ">
+                                  Assinado digitalmente em <b> {{ rp.signdecision_at | date:'d/m/Y' }} </b>, por <b> {{ rp.signdecision_by }}</b>.<br />
+                              </div>
+                          {% endif %}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+              {% else %}
+                Sem movimentações registradas.
+              {% endif %}
+            </div>
+          </div>
+      {% if recommendation.finalized_at %}
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse; text-align: center; ">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><u>FINALIZADO EM</u>: <b> {{ recommendation.finalized_at | date:'d/m/Y' }}</b></td></tr>
+        </table>
+      {% endif %}
+
+    {% endblock %}
+</div>

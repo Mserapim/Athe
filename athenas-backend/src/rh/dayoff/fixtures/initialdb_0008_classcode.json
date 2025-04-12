@@ -1,0 +1,35 @@
+[
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "dayoff-base",
+    "path": "rh.dayoff.classcodes.base.DayOffBase",
+    "title": "Código de validações base",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "DayOffBase",
+    "typeof": "DAYOFF"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "dayoff-classcodes-birthdaybreak",
+    "path": "rh.dayoff.classcodes.birthdaybreak.BirthdayBreak",
+    "title": "Código de validações base",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "BirthdayBreak",
+    "typeof": "DAYOFF"
+  }
+},
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "dayoff-classcodes-recess",
+    "path": "rh.dayoff.classcodes.recess.Recess",
+    "title": "Código de validações base",
+    "description": "SEM DESCRIÇÃO",
+    "name_object": "Recess",
+    "typeof": "DAYOFF"
+  }
+}
+]

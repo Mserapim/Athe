@@ -1,0 +1,25 @@
+[
+    {
+        "fields": {
+            "name": "common-usefulday-admin",
+            "permissions": [
+                [
+                    "add_nonworkingday",
+                    "usefulday",
+                    "nonworkingday"
+                ],
+                [
+                    "change_nonworkingday",
+                    "usefulday",
+                    "nonworkingday"
+                ],
+                [
+                    "delete_nonworkingday",
+                    "usefulday",
+                    "nonworkingday"
+                ]
+            ]
+        },
+        "model": "auth.group"
+    }
+]

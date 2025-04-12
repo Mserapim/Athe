@@ -1,0 +1,102 @@
+{% extends "processo/base.html" %}
+
+{% block body-resume %}
+<div class="papper-content">
+    <div class="field">
+        <div class="composite">
+            <div class="label title">
+                Processo: {{ process.codigo_processo }} <br>
+                Assunto: {{ process.process_matter_subject | safe }} <br>
+                Paginas: {{ process.paginas}} <br>
+                {% for app in appends %}
+                    Volume:
+                    {{ app.volume }} <br>
+                    Qtde de dias:
+                    {{ app.dias_criacao }} <br>
+                    Interessados:
+                    {{ app.primeiro_interessado }} <br>
+                {% endfor %}
+                <br>
+            </div>
+            {% if process.resumo %}
+                <div class="label title">
+                    Resumo:
+                </div>
+                <div class="paragraph-text">{{ process.resumo | safe }}</div>
+            {% endif %}
+        </div>
+    </div>
+{% if process.attachments.exists %}
+    <div class="papper-content">
+        <h2 style="margin-bottom: 0.5em">Anexos do Processo</h2>
+        <ul>
+            {% for attach in process.attachment_list %}
+                {% include "processo/attachment.html" %}
+            {% endfor %}
+        </ul>
+        <div style="border: 1px solid #000; font-size: 9pt; margin-top: 1.5em; padding: 3px 5px; background-color: #eee; text-align: justify; border-radius: 3px">
+            Para validar os anexos você pode utilizar o código de 32 digitos, para buscar o documento na base do
+            sistema, para isto acesse o endereço:
+            <a href="https://athenas.mpto.mp.br/athenas/docsverify/verify/" title="Verificador de documentos">https://athenas.mpto.mp.br/athenas/docsverify/verify/</a>
+            será devolvido uma cópia do documento que se identifica com o código informado.
+        </div>
+    </div>
+{% endif %}
+
+
+{% if process.proc_referencias.exists %}
+    <div class="papper-content">
+        <h2 style="margin-bottom: 0.5em">Referências do Processo:</h2>
+        <div class="opinion">
+            {% for reference in process.proc_referencias.filter %}
+                <div>
+                    <a href="#" onclick="edocs.protocolo.openReletad({{reference.referenciado.pk}})">{{reference.referenciado}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
+
+
+    <div class="papper-content">
+        <div class="field" style="padding-top:1em;margin-top:2em;border-top: 1px dashed #000">
+            <div class="composite">
+                <div class="label title">Informações do documento</div>
+            </div>
+
+            <div class="column-two">
+                <div class="label">Protocolo :</div>
+                <div class="value">{{ process.codigo }}</div>
+            </div>
+
+            <div>
+                <div class="label">Data de Protocolização :</div>
+                <div class="value">{{ process.data_criacao | date:'d/m/Y H:i:s' }}</div>
+            </div>
+
+            <div class="column-two">
+                <div class="label">Chancela :</div>
+                <div class="value">{% if process.chancela %}{{ process.chancela }}{% else %}Não informado{% endif %}</div>
+            </div>
+
+            <div>
+                <div class="label">Protocolo Externo :</div>
+                <div class="value">{% if process.numero_externo %}{{ process.numero_externo }}{% else %}Não informado{% endif %}</div>
+            </div>
+
+            <div class="column-two">
+                <div class="label">Interessado :</div>
+                <div class="value">{{ process.interessado }}</div>
+            </div>
+
+            <div>
+                <div class="label">Midia :</div>
+                <div class="value">{% if process.midia %}{{ process.get_midia_display }}{% else %} Protocolo Eletrônico{% endif %}</div>
+            </div>
+        </div>
+    </div>
+
+    {% include "processo/unified/moviments.html" %}
+    
+
+{% endblock %}

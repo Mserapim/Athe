@@ -1,0 +1,8 @@
+./manage.py exportdata "TipoDocumento.objects.order_by('nome')" -i 2 --with-natural-keys -m edocs.protocolo --set-fields="{'modified_by_id': 845, 'created_by_id': 845}" -o 'edocs/protocolo/fixtures/initialdb_0001_tipodocumentos.json'
+./manage.py exportdata "GroupPerson.objects.order_by('title')" -i 2 --with-natural-keys -m edocs.protocolo -e "['persons', 'department']" -o 'edocs/protocolo/fixtures/initialdb_0002_grouppersons.json'
+./manage.py exportdata "GroupGeneralOrgan.objects.order_by('title')" -i 2 --with-natural-keys -m edocs.protocolo -e "['general_organ', 'department']" -o 'edocs/protocolo/fixtures/initialdb_0003_groupgeneralorgans.json'
+# ./manage.py exportdata "ContentType.objects.order_by('app_label', 'model')" -i 2 --with-natural-keys -m django.contrib.contenttypes -o 'engine/fixtures/initialdb_0002_contenttypes.json'
+# ./manage.py exportdata "Permission.objects.order_by('content_type', 'codename')" -i 2 --with-natural-keys -m django.contrib.auth -o 'engine/fixtures/initialdb_0003_permissions.json'
+# ./manage.py exportdata "Group.objects.order_by('name')" -i 2 --with-natural-keys -m django.contrib.auth -o 'engine/fixtures/initialdb_0004_groups.json'
+# ./manage.py exportdata "Controller.objects.order_by('module', 'title')" -i 2 --with-natural-keys -m engine -o 'engine/fixtures/initialdb_0005_controllers.json'
+# ./manage.py exportdata "Message.objects.exclude(mid__startswith='__MSG').order_by('mid')" -i 2 --with-natural-keys -m engine.notification -o 'engine/fixtures/initialdb_0007_messages.json'

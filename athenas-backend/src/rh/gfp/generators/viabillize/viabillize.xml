@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArquivoViabillize xmlns:Viabillize="http://www.viabillize.com.br/XMLSchema/Viabillize.xsd">
+  <Versao>1.0</Versao>
+  <IntegracaoFopag>
+    <Sistema>Athenas</Sistema>
+    <Desenvolvedor>Rayson Romulo Silva</Desenvolvedor>
+    <Fone>(63) 3216-7564</Fone>
+    <Email>raysonsilva@mpto.mp.br</Email>
+    <ControleDeParcelas>true</ControleDeParcelas>
+    <NomeArquivoInclusao>@MES@ANO_EnvioInclusoes_NORMAL.txt</NomeArquivoInclusao>
+    <CabecarioArquivoInclusao>@ANO;@MES;NORMAL;</CabecarioArquivoInclusao>
+    <RegistroInclusao>I;NORMAL;@ANO;@MES;@MATRICULA;@NOME;@RUBRICA_CODIGO;@PRAZO;@VALOR_PARCELA_DECIMAL;@NUMERO_PARCELA;@ALIQUOTA;;@CODIGOADF;@HEMENSALIDADE</RegistroInclusao>
+    <NomeArquivoLiquidacao>@MES@ANO_EnvioLiquidacoes_NORMAL.txt</NomeArquivoLiquidacao>
+    <CabecarioArquivoLiquidacao>@ANO;@MES;NORMAL;</CabecarioArquivoLiquidacao>
+    <RegistroLiquidacao>E;NORMAL;@ANO;@MES;@MATRICULA;@NOME;@RUBRICA_CODIGO;@PRAZO;@VALOR_PARCELA_DECIMAL;@NUMERO_PARCELA;@ALIQUOTA;;@CODIGOADF;@HEMENSALIDADE</RegistroLiquidacao>
+    <InfoPrazoMensalidade>1</InfoPrazoMensalidade>
+  </IntegracaoFopag>
+  <IntegracaoWeb>
+    <DominioPortal>mpto.mp.br</DominioPortal>
+    <ChaveHash>WAIUD2J#%X87262ASBTOQTES@@2422</ChaveHash>
+  </IntegracaoWeb>
+</ArquivoViabillize>

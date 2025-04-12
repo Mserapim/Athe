@@ -1,0 +1,123 @@
+[
+{
+    "fields": {
+        "description": "",
+        "value": 0,
+        "label": "Não informado",
+        "cache_path": "tac.ACCEPTED",
+        "app_label": "tac",
+        "name": "ACCEPTED"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Cumprido",
+        "cache_path": "tac.ACCEPTED",
+        "app_label": "tac",
+        "name": "ACCEPTED"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 2,
+        "label": "Não cumprido",
+        "cache_path": "tac.ACCEPTED",
+        "app_label": "tac",
+        "name": "ACCEPTED"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 0,
+        "label": "Em andamento",
+        "cache_path": "tac.REALIZED_CHOICES",
+        "app_label": "tac",
+        "name": "REALIZED_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Cumprido",
+        "cache_path": "tac.REALIZED_CHOICES",
+        "app_label": "tac",
+        "name": "REALIZED_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 2,
+        "label": "Não cumprido",
+        "cache_path": "tac.REALIZED_CHOICES",
+        "app_label": "tac",
+        "name": "REALIZED_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 3,
+        "label": "Executado",
+        "cache_path": "tac.REALIZED_CHOICES",
+        "app_label": "tac",
+        "name": "REALIZED_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 0,
+        "label": "Não informado",
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "app_label": "tac",
+        "name": "TIMETYPE_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 1,
+        "label": "em dias",
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "app_label": "tac",
+        "name": "TIMETYPE_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 2,
+        "label": "em mêses",
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "app_label": "tac",
+        "name": "TIMETYPE_CHOICES"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 3,
+        "label": "em anos",
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "app_label": "tac",
+        "name": "TIMETYPE_CHOICES"
+    },
+    "model": "standard.choice"
+}
+]

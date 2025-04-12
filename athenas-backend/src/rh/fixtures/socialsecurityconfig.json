@@ -1,0 +1,41 @@
+[
+  {
+    "fields": {
+      "start": "1970-01-01",
+      "end": null,
+      "mass_segregation_plan": 1,
+      "organ": [
+        "29979036053856"
+      ],
+      "regime": 1
+    },
+    "model": "rh.socialsecurityconfig",
+    "pk": null
+  },
+  {
+    "fields": {
+      "start": "2013-05-01",
+      "end": null,
+      "mass_segregation_plan": 2,
+      "organ": [
+        "25091307000176"
+      ],
+      "regime": 2
+    },
+    "model": "rh.socialsecurityconfig",
+    "pk": null
+  },
+  {
+    "fields": {
+      "start": "1989-01-01",
+      "end": "2013-04-30",
+      "mass_segregation_plan": 4,
+      "organ": [
+        "25091307000176"
+      ],
+      "regime": 2
+    },
+    "model": "rh.socialsecurityconfig",
+    "pk": null
+  }
+]

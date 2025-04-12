@@ -1,0 +1,6126 @@
+[
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2017-12-20T17:11:22.139",
+    "nome": "BANCO DO BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": [
+      "00000000000191"
+    ],
+    "numero": "001",
+    "sigla": "BB",
+    "principal": true,
+    "tem_convenio": 1,
+    "numero_convenio": "0007272100126",
+    "agencia": "3615",
+    "dv_agencia": "3",
+    "conta": "80695",
+    "dv_conta": "1",
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DA AMAZONIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "003",
+    "sigla": "BASA",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO NORDESTE DO BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "004",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTANDER MERIDIONAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "008",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DE ALAGOAS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "020",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANESTES S.A BANCO DO ESTADO DO ESPIRITO SANTO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "021",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CREDIREAL",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "022",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE PERNAMBUCO S.A.-BANDEPE",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "024",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ALFA S/A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "025",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO ACRE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "026",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DE SANTA CATARINA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "027",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANEB",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "028",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANERJ S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "029",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "PARAIBAN BANCO DO ESTADO DA PARAIBA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "030",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DE GOIAS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "031",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO MATO GROSSO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "032",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTANDER",
+    "descricao": "N/A",
+    "pessoajuridica": [
+      "90400888000142"
+    ],
+    "numero": "033",
+    "sigla": "STD",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": "00333932008300010356",
+    "agencia": "3932",
+    "dv_agencia": null,
+    "conta": "29000073",
+    "dv_conta": "0",
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO AMAZONAS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "034",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO CEARA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "035",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO MARANHAO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "036",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO PARA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "037",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANESTADO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "038",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO PIAUI S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "039",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CARGILL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "040",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "041",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO J. SAFRA S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "042",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BVA SA",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "044",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO OPPORTUNITY S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "045",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DE SERGIPE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "047",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BEMGE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "048",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DE RONDONIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "059",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ABB SA",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "061",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO1.NET S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "062",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "IBIBANK S.A BANCO MULTIPLO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "063",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "GOLDMAN SACHS DO BRASIL-BANCO MULTIPLO S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "064",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PATAGON S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "065",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MORGAN STANLEY DEAN WITTER S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "066",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANEB SA",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "067",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE BRASILIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": [
+      "00000208000100"
+    ],
+    "numero": "070",
+    "sigla": "BRB",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CAIXA ECONOMICA FEDERAL",
+    "descricao": "N/A",
+    "pessoajuridica": [
+      "01786078000146"
+    ],
+    "numero": "104",
+    "sigla": "CEF",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": "8788",
+    "agencia": "2569",
+    "dv_agencia": "0",
+    "conta": "600000003",
+    "dv_conta": "4",
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ITABANCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "106",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BBM S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "107",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CREDIBANCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "109",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "UNICRED CENTRO BRASILEIRA",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "pessoajuridica": [
+      "37395399000167"
+    ],
+    "numero": "112",
+    "sigla": "UCB",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BNL DO BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "116",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANK OF AMERICA - BRASIL S.A. (BANCO MULTIPLO)",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "148",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO NOSSA CAIXA S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "151",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CAIXA ECONOMICA ESTADUAL DO RIO GRANDE DO SUL",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "153",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO NORCHEM S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "165",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INTER-ATLANTICO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "166",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "HSBC INVESTMENT BANK BRASIL S.A.-BANCO MULTIPLO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "168",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CONTINENTAL BANCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "175",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BBA - CREDITANSTALT S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "184",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FINANCIAL PORTUGUES",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "199",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FICRISA AXELRUD S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "200",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO AXIAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "201",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INTER AMERICAN EXPRESS S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "204",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SUL AMERICA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "205",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MARTINELLI S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "206",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PACTUAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "208",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "DRESDNER BANK LATEINAMERIKA AKTIENGESELLSCHAFT",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "210",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SISTEMA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "211",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MATONE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "212",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ARBI S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "213",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DIBENS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "214",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO AMERICA DO SUL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "215",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO REGIONAL MALCON S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "216",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO JOHN DEERE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "217",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BONSUCESSO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "218",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ZOGBI",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "219",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CREFISUL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "220",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CHASE FLEMING S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "221",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CREDIT LYONNAIS BRASIL S/A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "222",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FIBRA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "224",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BRASCAN S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "225",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ICATU S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "228",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CRUZEIRO DO SUL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "229",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANDEIRANTES S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "230",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BOAVISTA INTERATLANTICO S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "231",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INTERPART S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "232",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO GE CAPITAL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "233",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO LAVRA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "234",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO LIBERAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "235",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CAMBIAL SA",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "236",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BRADESCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "237",
+    "sigla": "BRAD",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANCRED S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "239",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE CREDITO REAL DE MINAS GERAIS S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "240",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CLASSICO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "241",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO EUROINVEST S.A. EUROBANCO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "242",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO STOCK MAXIMA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "243",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CIDADE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "244",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO EMPRESARIAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "245",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ABC-BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "246",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "UBS WARBURG S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "247",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INVESTCRED S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "249",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SCHAHIN",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "250",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FININVEST S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "252",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "PARANA BANCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "254",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "MILBANCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "255",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO GULFINVEST S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "256",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INDUSCRED S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "258",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BOREAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "262",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CACIQUE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "263",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FATOR S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "265",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CEDULA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "266",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BBM-COM.C.IMOB.CFI S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "267",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PLANIBANC S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "277",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BRASILEIRO COMERCIAL S.A.- BBC",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "282",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE CREDITO NACIONAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "291",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BCR",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "294",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE LA NACION ARGENTINA",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "300",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO PROGRESSO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "302",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO HNF S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "303",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PONTUAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "304",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BMG S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "318",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INDUSTRIAL E COMERCIAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "320",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ITAU S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "341",
+    "sigla": "ITAU",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BFB",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "346",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SUDAMERIS BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "347",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BOZANO, SIMONSEN S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "351",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTANDER BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "353",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ABN AMRO REAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": [
+      "33066408058628"
+    ],
+    "numero": "356",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": "09327021044PG",
+    "agencia": "0932",
+    "dv_agencia": "6",
+    "conta": "7021044",
+    "dv_conta": "8",
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SOCIETE GENERALE BRASIL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "366",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DIGIBANCO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "369",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO EUROPEU PARA AMERICA LATINA (BEAL) S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "370",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ITAMARATI S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "372",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FENICIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "375",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CHASE MANHATTAN S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "376",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BMD S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "388",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MERCANTIL DO BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "389",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MERCANTIL DE SAO PAULO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "392",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BMC S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "394",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "HSBC BANK BRASIL S.A.-BANCO MULTIPLO",
+    "descricao": "N/A",
+    "pessoajuridica": [
+      "01701201030762"
+    ],
+    "numero": "399",
+    "sigla": "HSBC",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": "374954",
+    "agencia": "1598",
+    "dv_agencia": "0",
+    "conta": "23587",
+    "dv_conta": "90",
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "UNIBANCO - UNIAO DE BANCOS BRASILEIROS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "409",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CAPITAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "412",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO NACIONAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "415",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANORTE - BANCO NACIONAL DO NORTE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "420",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SAFRA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "422",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTANDER NOROESTE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "424",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANFORT - BANCO FORTALEZA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "434",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO RURAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "453",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE TOKYO MITSUBISHI BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "456",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SUMITOMO MITSUI BRASILEIRO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "464",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "LLOYDS BANK PLC",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "472",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FINANCIAL PORTUGUES",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "473",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CITIBANK N.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "477",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANKBOSTON BANCO MULTIPLO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "479",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO WACHOVIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "480",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "DEUTSCHE BANK S. A. - BANCO ALEMAO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "487",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "MORGAN GUARANTY TRUST COMPANY OF NEW YORK",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "488",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FRANCES INTERNACIONAL-BRASIL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "489",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "ING BANK N.V.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "492",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO UNION - BRASIL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "493",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE LA REPUBLICA ORIENTAL DEL URUGUAY",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "494",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "495",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO UNO-E BRASIL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "496",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "CENTRO HISPANO BANCO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "498",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO IOCHPE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "499",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BRASILEIRO IRAQUIANO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "501",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTANDER DE NEGOCIOS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "502",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MULTIPLIC S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "504",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CREDIT SUISSE FIRST BOSTON GARANTIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "505",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO LUSO BRASILEIRO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "600",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PATENTE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "602",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INDUSTRIAL DO BRASIL S. A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "604",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTOS NEVES S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "607",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO VR S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "610",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PAULISTA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "611",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO GUANABARA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "612",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PECUNIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "613",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO TENDENCIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "618",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO APLICAP S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "621",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PANAMERICANO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "623",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO GENERAL MOTORS S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "624",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO ARAUCARIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "625",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FICSA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "626",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DESTAK S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "627",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CRITERIUM S. A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "628",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INTERCAP S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "630",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO RENDIMENTO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "633",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO TRIANGULO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "634",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO AMAPA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "635",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SOFISA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "637",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PROSPER S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "638",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CREDITO METROPOLITANO S/A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "640",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BILBAO VIZCAYA ARGENTARIA BRASIL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "641",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PINE S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "643",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DO ESTADO DE RORAIMA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "645",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MARKA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "647",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DIMENSAO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "649",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PEBB S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "650",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FRANCES E BRASILEIRO SA",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "652",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INDUSVAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "653",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO A.J. RENNER S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "654",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO VOTORANTIM S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "655",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MATRIX S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "656",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO TECNICORP S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "657",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO PORTO REAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "658",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO SANTOS S. A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "702",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DAYCOVAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "707",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO VETOR S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "711",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO VEGA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "715",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO OPERADOR S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "718",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANIF PRIMUS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "719",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MAXINVEST S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "720",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CREDIBEL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "721",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO INTERIOR DE SAO PAULO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "722",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FINANSINOS S. A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "725",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FITAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "728",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO FONTE CINDAM S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "729",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MINAS S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "732",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO DAS NACOES S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "733",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO GERDAU S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "734",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO POTTENCIAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "735",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO THECA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "737",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MORADA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "738",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BGN S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "739",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BARCLAYS E GALICIA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "740",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO RIBEIRAO PRETO S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "741",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO EQUATORIAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "742",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO EMBLEMA S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "743",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANKBOSTON N.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "744",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO CITIBANK S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "745",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MODAL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "746",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO RABOBANK INTERNATIONAL BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "747",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO COOPERATIVO SICREDI S.A. - BANSICREDI",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "748",
+    "sigla": "SICR",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BR BANCO MERCANTIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "749",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "HSBC REPUBLIC BANK BRASIL S.A-BANCO MULTIPLO",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "750",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "DRESDNER BANK BRASIL S.A. BANCO MULTIPLO.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "751",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO BANQUE NATIONALE DE PARIS BRASIL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "752",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO COMERCIAL URUGUAI S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "753",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO MERRILL LYNCH S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "755",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO COOPERATIVO DO BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "756",
+    "sigla": "BCB",
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BANCO KEB DO BRASIL S.A.",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "757",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+},
+{
+  "model": "rh.banco",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:23.275",
+    "modified_at": "2014-07-07T18:27:23.427",
+    "nome": "BCR BANCO DE CREDITO REAL S.A",
+    "descricao": "N/A",
+    "pessoajuridica": null,
+    "numero": "800",
+    "sigla": null,
+    "principal": false,
+    "tem_convenio": 2,
+    "numero_convenio": null,
+    "agencia": null,
+    "dv_agencia": null,
+    "conta": null,
+    "dv_conta": null,
+    "sequencial_arquivo": 0
+  }
+}
+]

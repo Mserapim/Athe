@@ -1,0 +1,104 @@
+<div class="functional-id-preview">
+    <section>
+        <div class="flex-end">
+            {% if fid.revoked_by %}
+            <div class="revoked">
+                REVOGADA desde {{ fid.revoked_at | date:'d/m/Y H:i' }}
+            </div>
+            {% endif %}
+            {% if not fid.signed_by %}
+            <div class="working-in-progress">
+                Documento em EDIÇÃO
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    <section>
+        <h1>Dados funcionais</h1>
+        <div>
+            <div>
+                <span>Matricula</span>
+                <span>&nbsp;{{ fid.employee.matricula }}</span>
+            </div>
+            <div>
+                <span>Tipo</span>
+                <span>&nbsp;{{ fid.get_functional_type_display }}</span>
+            </div>
+            <div>
+                <span>Ingresso</span>
+                <span>&nbsp;{{ fid.ingress_date | date:'d/m/Y' }}</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Cargo</span>
+                <span>&nbsp;{{ fid.job_position }}</span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Dados Pessoais</h1>
+        <div>
+            <div>
+                <span>Nome</span>
+                <span>&nbsp;{{ fid.name }}</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Nome da mãe</span>
+                <span>&nbsp;{{ fid.mother_name }}</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Nome do pai</span>
+                <span>&nbsp;{{ fid.father_name }}</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Identidade</span>
+                <span>&nbsp;{{ fid.local_id_number }} &nbsp;{{ fid.local_id_issuance }}</span>
+            </div>
+            <div>
+                <span>Cadastro de Pessoa Física</span>
+                <span>&nbsp;{{ fid.national_id_number }}</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Nascido</span>
+                <span>&nbsp;{{ fid.born_location }} no dia &nbsp;{{ fid.born_date | date:'d/m/Y' }}</span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Imagens anexadas</h1>
+
+        <div class="image-grid">
+            <div style="background: url(/athenas/FileUploadController/get_image_file/{{fid.photo.file}}/160.214/) no-repeat center center">
+                <div style="display: table; margin: 15px; color: white; text-shadow: 0 0 2px #111; float: right">
+                    Foto 3x4
+                </div>
+            </div>
+            <div class="">
+                {% if fid.employee_sign_image %}
+                <div style="margin-bottom: 10px; height: 100px; background: url(/athenas/FileUploadController/get_image_file/{{fid.employee_sign_image.file}}/440.100/) no-repeat center center">
+                    <div style="display: table; margin: 15px; color: #000; text-shadow: 0 0 2px #ddd; float: right">
+                        Assinatura do Portador
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if fid.validator_sign_image %}
+                <div style="height: 100px; background: url(/athenas/FileUploadController/get_image_file/{{fid.validator_sign_image.file}}/440.100/) no-repeat center center">
+                    <div style="display: table; margin: 15px; color: #000; text-shadow: 0 0 2px #ddd; float: right">
+                        Assinatura do Signatatio
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</div>

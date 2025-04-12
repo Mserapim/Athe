@@ -1,0 +1,444 @@
+[
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-01-27T09:20:34.617",
+    "modified_at": "2015-05-13T07:50:45.711",
+    "specie_number": "00",
+    "title": "NORMAL",
+    "invert_type": false,
+    "concatenate_name": false
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.320",
+    "modified_at": "2015-05-13T07:50:46.161",
+    "specie_number": "01",
+    "title": "DIFERENÇA",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.505",
+    "modified_at": "2015-05-13T07:50:46.229",
+    "specie_number": "02",
+    "title": "DEVOLUÇÃO",
+    "invert_type": true,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-06-15T15:17:55.877",
+    "modified_at": "2015-06-16T09:12:39.970",
+    "specie_number": "03",
+    "title": "FALTA",
+    "invert_type": true,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-20T08:13:20.467",
+    "modified_at": "2020-03-22T08:16:26.181",
+    "specie_number": "06",
+    "title": "MESES ANTERIORES",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-05-26T13:58:19.425",
+    "modified_at": "2015-06-10T10:29:34.322",
+    "specie_number": "07",
+    "title": "ESTORNO DÉBITO",
+    "invert_type": true,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-06-10T10:28:35.563",
+    "modified_at": "2018-11-30T16:35:59.983",
+    "specie_number": "08",
+    "title": "ESTORNO CRÉDITO",
+    "invert_type": true,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-03-20T09:50:10.201",
+    "modified_at": "2015-12-23T08:38:06.607",
+    "specie_number": "10",
+    "title": "EXERC. ANTERIORES",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-11-18T11:27:25.307",
+    "modified_at": "2015-11-18T11:27:25.307",
+    "specie_number": "11",
+    "title": "ATUALIZAÇÃO MONETÁRIA",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2016-02-18T11:10:19.666",
+    "modified_at": "2016-02-18T11:10:19.666",
+    "specie_number": "14",
+    "title": "AUT/PGJ",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.534",
+    "modified_at": "2015-05-13T07:50:46.390",
+    "specie_number": "20",
+    "title": "I",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.553",
+    "modified_at": "2015-05-13T07:50:46.451",
+    "specie_number": "21",
+    "title": "II",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.563",
+    "modified_at": "2015-05-13T07:50:46.513",
+    "specie_number": "22",
+    "title": "III",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.573",
+    "modified_at": "2015-05-13T07:50:46.568",
+    "specie_number": "23",
+    "title": "IV",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.587",
+    "modified_at": "2015-05-13T07:50:46.610",
+    "specie_number": "24",
+    "title": "V",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.603",
+    "modified_at": "2015-05-13T07:50:46.637",
+    "specie_number": "25",
+    "title": "VI",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.616",
+    "modified_at": "2015-05-13T07:50:46.652",
+    "specie_number": "26",
+    "title": "VII",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.632",
+    "modified_at": "2015-05-13T07:50:46.667",
+    "specie_number": "27",
+    "title": "VIII",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2017-01-16T14:48:52.240",
+    "modified_at": "2017-01-16T14:48:52.240",
+    "specie_number": "28",
+    "title": "IX",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-25T12:00:37.645",
+    "modified_at": "2015-05-13T07:50:46.676",
+    "specie_number": "29",
+    "title": "HABITACIONAL",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-06-09T16:30:12.404",
+    "modified_at": "2015-06-09T16:31:40.481",
+    "specie_number": "30",
+    "title": "REDUÇÃO 1/3- CONFORME LEI 1818",
+    "invert_type": true,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-11-27T08:18:09.249",
+    "modified_at": "2015-11-27T08:18:09.249",
+    "specie_number": "31",
+    "title": "CC I",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-11-27T08:18:30.907",
+    "modified_at": "2015-11-27T08:18:30.907",
+    "specie_number": "32",
+    "title": "CC II",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-11-27T08:18:44.648",
+    "modified_at": "2015-11-27T08:18:44.648",
+    "specie_number": "33",
+    "title": "CC III",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2018-03-15T16:08:08.775",
+    "modified_at": "2018-03-15T16:08:08.775",
+    "specie_number": "34",
+    "title": "X",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+},
+{
+  "model": "gfp.specieevent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2018-07-05T15:23:55.150",
+    "modified_at": "2018-07-05T15:23:55.150",
+    "specie_number": "35",
+    "title": "XI",
+    "invert_type": false,
+    "concatenate_name": true
+  }
+}
+]

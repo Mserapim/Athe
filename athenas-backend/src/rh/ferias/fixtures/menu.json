@@ -1,0 +1,306 @@
+[
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "RECURSOS HUMANOS", 
+    "father": null, 
+    "uuid": "7180066e807d41268f1950a4a0f7092a", 
+    "icon": "athenas-0827.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "F\u00e9rias", 
+    "father": "7180066e807d41268f1950a4a0f7092a", 
+    "uuid": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "icon": "athenas-0780.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "08dd65fec6d246f5b62ed023fcaba625", 
+    "title": "Autoriza\u00e7\u00e3o", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSAutorizacaoFerias", 
+    "active": true, 
+    "icon": "athenas-0415.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "34b54c87340445609b97042aba12a7a7", 
+    "title": "Autoriza\u00e7\u00e3o - Admin", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSAutorizacaoFeriasChefiaAdmin", 
+    "active": true, 
+    "icon": "athenas-0415.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "eaedfb6540c2494f897bbcda28fe8288", 
+    "title": "Autoriza\u00e7\u00e3o - Membros", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSAutorizacaoFeriasChefiaMembros", 
+    "active": true, 
+    "icon": "athenas-0415.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "21f58c81b9e04d21a3b4d4c6ea4fc109", 
+    "title": "Configura\u00e7\u00f5es", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSConfiguracao", 
+    "active": true, 
+    "icon": "athenas-0222.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "2d1d1d58e2f74137be6ba610effd66fe", 
+    "title": "Configura\u00e7\u00e3o de notifica\u00e7\u00f5es", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSConfiguration", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "bb5c9e4b74bf408ba2f00c462aaa857f", 
+    "title": "Gerenciamento", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSGestorFerias", 
+    "active": true, 
+    "icon": "athenas-0256.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "75fde2e2a1ae47dabb735a2b01b0987f", 
+    "title": "Gerenciamento - Administrativo", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSGestorFeriasAdministrativo", 
+    "active": true, 
+    "icon": "athenas-0256.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "cbb294bd5f304092891261c7c89fb8bd", 
+    "title": "Gerenciamento - Membros", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSGestorFeriasMembros", 
+    "active": true, 
+    "icon": "athenas-0256.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "5a5d286a9b994bbdbded371b144e29df", 
+    "title": "Marca\u00e7\u00e3o de F\u00e9rias", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSMarcacaoFerias", 
+    "active": true, 
+    "icon": "athenas-0249.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "2fbe849c7c0244e88b5075fafb55b963", 
+    "title": "Per\u00edodo Aquisitivo", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSPeriodoAquisitivo", 
+    "active": true, 
+    "icon": "athenas-0254.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e26d39ea2ecc4862b915a6d7bd397463", 
+    "title": "Per\u00edodo Aquisitivo do Servidor", 
+    "module": "rh.ferias", 
+    "application": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "controller": "FRSPeriodoAquisitivoServidor", 
+    "active": true, 
+    "icon": "athenas-0256.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": false, 
+    "title": "Administrativo", 
+    "father": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "uuid": "c593afba0e024d9ea8ee7ca9deb96692", 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "02e00543b5344ab6b884873d9474b348", 
+    "title": "Per\u00edodo Aquisitivo", 
+    "module": "rh.ferias", 
+    "application": "c593afba0e024d9ea8ee7ca9deb96692", 
+    "controller": "FRSPeriodoAquisitivo", 
+    "active": true, 
+    "icon": "athenas-0253.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Relat\u00f3rios", 
+    "father": "cbcc3533aab549cf9399cd42f7b587b3", 
+    "uuid": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "icon": "athenas-0291.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "cd26efd6c35a480586a443e5a00efa61", 
+    "title": "Acompanhamento de Escala de F\u00e9rias", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportAcompanhamentoEscalaFerias", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "55abbeb846c845429b39aea06cde40a2", 
+    "title": "Atividades de F\u00e9rias ", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportAtividadesFerias", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "d806b74c321b4e3a82d0151d74c534d3", 
+    "title": "F\u00e9rias a usufruir no m\u00eas", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportFeriasMes", 
+    "active": true, 
+    "icon": "athenas-0060.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "04be76df2b814765ba20b2b565cb4329", 
+    "title": "Hist\u00f3rico de F\u00e9rias", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportHistoricoFerias", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "5a89266bc6254c85bc563f4bae52ed55", 
+    "title": "Homologa\u00e7\u00e3o - Escala de Membros", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportHomologacaoMembros", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "0b4648e0e8b24a0a81dc44d6282172f1", 
+    "title": "Homologa\u00e7\u00e3o - Escala de Servidores", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportHomologacaoServidores", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "2b08c02b3bfa4cf0a5289c9f5ea59a56", 
+    "title": "F\u00e9rias Pendentes", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportPASsPendentes", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "7cb29336104e420da3013d692cc76b90", 
+    "title": "F\u00e9rias Usufru\u00eddas", 
+    "module": "rh.ferias", 
+    "application": "9a1c7ef0a6a640b3aefc9835026a329b", 
+    "controller": "FRSReportPASsUsufruidas", 
+    "active": true, 
+    "icon": ""
+  }
+}
+]

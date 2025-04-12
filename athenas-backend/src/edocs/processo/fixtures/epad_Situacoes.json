@@ -1,0 +1,30 @@
+[
+{
+    "pk": null, 
+    "model": "processo.situacao", 
+    "fields": {
+        "nome": "Arquivado"
+    }
+},
+{
+    "pk": null, 
+    "model": "processo.situacao", 
+    "fields": {
+        "nome": "Autuado em"
+    }
+},
+{
+    "pk": null, 
+    "model": "processo.situacao", 
+    "fields": {
+        "nome": "Em tr\u00e2mite"
+    }
+},
+{
+    "pk": null, 
+    "model": "processo.situacao", 
+    "fields": {
+        "nome": "Excluido"
+    }
+}
+]

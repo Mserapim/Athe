@@ -1,0 +1,55 @@
+
+    {% extends "raf/base.html" %}
+
+    {% block content %}
+    <div class="field">
+
+        <div>
+            <h2 class="title-1 top-space-3">Solicitação de Ajuste em Atividades</h2>
+        </div>
+        </br>
+        <div class="value">
+          Membro: <b>{{ prosecutor }}</b></br>
+          RAF: <b>{{ raf.month }}/{{ raf.year }}</b></br>
+          Órgão de Execução: <b>{{ doc.activity.workerlocation.location }}</b></br>
+          Questionário: <b>{{ quiz }}</b></br>
+          Item: <b>{{ doc.activity.item }}</b></br>
+          Subitem: <b>{{ doc.activity.subitem }}</b></br></br>
+          Quantidade aferida pela sistema: <b>{{ doc.activity.amount_athenas|default:"0" }}</b></br>
+          Quantidade para submissão: <b>{{ doc.activity.amount_submitted|default:"0" }}</b></br>
+          Alteração solicitada: <b>{{ doc.amount }}</b></br>
+        </div>
+
+        {# <div style="clear:both"></div>#}
+    </div>
+
+    <div class="papper-content">
+        {# <h2>Pedidos</h2>#}
+        <hr/><br />
+        {% if doc.dataadjustment %}
+            {% for data in doc.dataadjustment.all %}
+                - Operação: <b>{{ data.get_operation_display }}</b> <br />
+                - Processo: <b>{{ data.process_number_formatted }}</b> <br />
+                - Data: <b>{{ data.date | date:'d/m/Y' }}</b> <br />
+                - Movimeto: <b>{{ data.movement.title }}</b> <br />
+                - Justificativa: <b>{{ data.initial_message }}</b> <br />
+            {% endfor %}
+        {% else %}
+        <strong>Não há pedidos na solicitação</strong>
+        {% endif %}
+    </div>
+
+    <div class="papper-content">
+        {# <h2>Troca de Informações</h2>#}
+        <hr/>
+        {% if doc.conversation   %}
+            {% for content in doc.conversation.contents.all %}
+                {% include "raf/conversation.html" %}
+            {% endfor %}
+        {% else %}
+        <strong>Não há troca de informações até o momento</strong>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

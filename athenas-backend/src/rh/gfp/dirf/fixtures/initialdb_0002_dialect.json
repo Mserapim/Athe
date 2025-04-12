@@ -1,0 +1,154 @@
+[
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2010",
+    "calendar_year": 2010,
+    "reference_year": 2011,
+    "identificador_layout": null,
+    "copy_from": null
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2011",
+    "calendar_year": 2011,
+    "reference_year": 2012,
+    "identificador_layout": null,
+    "copy_from": null
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2012",
+    "calendar_year": 2012,
+    "reference_year": 2013,
+    "identificador_layout": "7C2DE7J",
+    "copy_from": [
+      "ano-calendario-2011"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2013",
+    "calendar_year": 2013,
+    "reference_year": 2014,
+    "identificador_layout": "F8UCL6C",
+    "copy_from": [
+      "ano-calendario-2012"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2014",
+    "calendar_year": 2014,
+    "reference_year": 2015,
+    "identificador_layout": "M1LB5V2",
+    "copy_from": [
+      "ano-calendario-2013"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2015",
+    "calendar_year": 2015,
+    "reference_year": 2016,
+    "identificador_layout": "L35QJS2",
+    "copy_from": [
+      "ano-calendario-2014"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2016",
+    "calendar_year": 2016,
+    "reference_year": 2017,
+    "identificador_layout": "P49VS72",
+    "copy_from": [
+      "ano-calendario-2015"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2017",
+    "calendar_year": 2017,
+    "reference_year": 2018,
+    "identificador_layout": "Q84FV63",
+    "copy_from": [
+      "ano-calendario-2016"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2018",
+    "calendar_year": 2018,
+    "reference_year": 2019,
+    "identificador_layout": "T17BS45",
+    "copy_from": [
+      "ano-calendario-2017"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2019",
+    "calendar_year": 2019,
+    "reference_year": 2020,
+    "identificador_layout": "AT65HD8",
+    "copy_from": [
+      "ano-calendario-2018"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2020",
+    "calendar_year": 2020,
+    "reference_year": 2021,
+    "identificador_layout": "VR4QLM8",
+    "copy_from": [
+      "ano-calendario-2019"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2021",
+    "calendar_year": 2021,
+    "reference_year": 2022,
+    "identificador_layout": "XJFSFHB",
+    "copy_from": [
+      "ano-calendario-2020"
+    ]
+  }
+},
+{
+  "model": "dirf.dialect",
+  "fields": {
+    "nome": "ano-calendario-2022",
+    "calendar_year": 2022,
+    "reference_year": 2023,
+    "identificador_layout": "ARNZRXP",
+    "copy_from": [
+      "ano-calendario-2021"
+    ]
+  }
+}
+]

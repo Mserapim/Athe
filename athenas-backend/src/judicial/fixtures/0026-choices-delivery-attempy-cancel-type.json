@@ -1,0 +1,16 @@
+[
+{
+  "fields": {
+    "name": "DELIVERY_CANCELATION_REASON",
+    "value": 1,
+    "label": "Local não encontrado",
+    "cache_path": "judicial.DELIVERY_CANCELATION_REASON",
+    "cvalue": "1",
+    "app_label": "judicial",
+    "active": true,
+    "order_weight": 0,
+    "description": ""
+  },
+  "model": "standard.choice"
+}
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "cvalue": "1",
+            "label": "Conselho Regional de Medicina (CRM)",
+            "cache_path": "rh.CLASS_ORGAN",
+            "app_label": "rh",
+            "name": "CLASS_ORGAN"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "cvalue": "2",
+            "label": "Conselho Regional de Odontologia (CRO)",
+            "cache_path": "rh.CLASS_ORGAN",
+            "app_label": "rh",
+            "name": "CLASS_ORGAN"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "cvalue": "3",
+            "label": "Registro do Ministério da Saúde (RMS)",
+            "cache_path": "rh.CLASS_ORGAN",
+            "app_label": "rh",
+            "name": "CLASS_ORGAN"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 99,
+            "cvalue": "99",
+            "label": "Outros",
+            "cache_path": "rh.CLASS_ORGAN",
+            "app_label": "rh",
+            "name": "CLASS_ORGAN"
+        },
+        "model": "standard.choice"
+    }
+]

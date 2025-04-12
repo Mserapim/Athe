@@ -1,0 +1,56 @@
+[{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "DIFFERENCE_TYPE",
+    "label": "Sem diferenças",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "gfp.DIFFERENCE_TYPE",
+    "description": "Sem diferenças",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "DIFFERENCE_TYPE",
+    "label": "Data Base",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "gfp.DIFFERENCE_TYPE",
+    "description": "Diferenças realacionadas à aplicação da Data Base",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "DIFFERENCE_TYPE",
+    "label": "Progressões retroativas",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "gfp.DIFFERENCE_TYPE",
+    "description": "Diferenças realacionadas à aplicação de progressões retroativas",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "DIFFERENCE_TYPE",
+    "label": "Diferenças diversas",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "gfp.DIFFERENCE_TYPE",
+    "description": "Diferenças diversas",
+    "order_weight": 0,
+    "active": true
+  }
+}]

@@ -1,0 +1,100 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "health",
+    "model": "diagnosisprocedure"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "health",
+    "model": "exam"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "bodypart"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "causeragent"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "causeragentaccident"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "environmentharmfulagent"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "environmentworkingcondition"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "epi"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "examsst"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "exposureemployeeenvironment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "harmfulagent"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "injury"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "monitoroccupationalhealth"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sst",
+    "model": "workaccidentcommunication"
+  }
+}
+]

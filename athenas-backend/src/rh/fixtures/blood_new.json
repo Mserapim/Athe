@@ -1,0 +1,72 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "BLOOD",
+    "label": "B",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "rh.BLOOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "BLOOD",
+    "label": "AB",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "rh.BLOOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "BLOOD",
+    "label": "O",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "rh.BLOOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "BLOOD",
+    "label": "A",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "rh.BLOOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "BLOOD",
+    "label": "NAO INFORMADO",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "rh.BLOOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

@@ -1,0 +1,690 @@
+[
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "01",
+            "title": "ACIDENTE/DOENÇA DO TRABALHO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [105, 106, 133]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": ["athenas"],
+            "modified_by": ["athenas"],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "03",
+            "title": "ACIDENTE/DOENÇA NÃO RELACIONADA AO TRABALHO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [105, 106, 133]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "05",
+            "title": "AFASTAMENTO/LICENÇA DE SERVIDOR PÚBLICO PREVISTA EM ESTATUTO, SEM REMUNERAÇÃO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [125, 140, 110, 114]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "06",
+            "title": "APOSENTADORIA POR INVALIDEZ",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "07",
+            "title": "Acompanhamento - Licença para acompanhamento de membro da família enfermo",
+            "description": "Licença para acompanhamento de membro da família enfermo",
+            "esocial_table": "18",
+            "choice": [107]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": "2021-05-09",
+            "code": "08",
+            "title": "AFASTAMENTO DO EMPREGADO PARA PARTICIPAR DE ATIVIDADE DO CONSELHO CURADOR DO FGTS",
+            "description": "Art. 65, § 6o, do Decreto 99.684/1990 (Regulamento do FGTS)",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "10",
+            "title": "AFASTAMENTO/LICENÇA DE SERVIDOR PÚBLICO PREVISTA EM ESTATUTO, COM REMUNERAÇÃO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [125, 140, 113, 118, 119, 120, 121, 122, 123, 124, 127, 128, 129, 130, 131, 132, 134, 984, 1908, 2039]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "11",
+            "title": "CÁRCERE",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [126]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "13",
+            "title": "Cargo eletivo - Candidato a cargo eletivo - Servidor público,",
+            "description": "Cargo eletivo - Candidato a cargo eletivo - Art. 1°, inciso II, alínea 'l', da Lei Complementar 64/1990 - Servidor público, estatutário ou não, dos órgãos ou entidades da Administração Direta ou Indireta da União, dos Estados, do Distrito Federal, dos Municípios e dos Territórios, inclusive das fundações mantidas pelo Poder Público",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": "2021-05-09",
+            "code": "14",
+            "title": "CESSÃO/REQUISIÇÃO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "15",
+            "title": "GOZO DE FÉRIAS OU RECESSO",
+            "description": "Afastamento temporário para o gozo de férias ou recesso",
+            "esocial_table": "18",
+            "choice": [101, 103]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "16",
+            "title": "LICENÇA REMUNERADA",
+            "description": "Lei, liberalidade da empresa ou Acordo/Convenção Coletiva de Trabalho",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2021-05-10",
+            "end_validity": null,
+            "code": "17",
+            "title": "LICENÇA MATERNIDADE",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [108]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": ["athenas"],
+            "modified_by": ["athenas"],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "19",
+            "title": "Licença maternidade - Afastamento temporário por motivo de aborto não criminoso",
+            "description": "Afastamento temporário por motivo de aborto não criminoso",
+            "esocial_table": "18",
+            "choice": [108]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2021-05-10",
+            "end_validity": null,
+            "code": "20",
+            "title": "LICENÇA MATERNIDADE",
+            "description": "Afastamento temporário por motivo de licença-maternidade para o cônjuge sobrevivente ou decorrente de adoção ou de guarda judicial de criança",
+            "esocial_table": "18",
+            "choice": [109]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "21",
+            "title": "LICENÇA NÃO REMUNERADA OU SEM VENCIMENTO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2021-05-10",
+            "end_validity": null,
+            "code": "22",
+            "title": "MANDATO ELEITORAL",
+            "description": "Afastamento temporário para o exercício de mandato eleitoral",
+            "esocial_table": "18",
+            "choice": [117]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": "2021-05-09",
+            "code": "23",
+            "title": "MANDATO ELEITORAL",
+            "description": "Afastamento temporário para o exercício de mandato eleitoral, com remuneração",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "24",
+            "title": "MANDATO SINDICAL",
+            "description": "Afastamento temporário para exercício de mandato sindical",
+            "esocial_table": "18",
+            "choice": [115]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "25",
+            "title": "MULHER VÍTIMA DE VIOLÊNCIA",
+            "description": "Art. 9o, § 2o, inciso II, da Lei 11.340/2006 - Lei Maria da Penha",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "26",
+            "title": "PARTICIPAÇÃO DE EMPREGADO NO CONSELHO NACIONAL DE PREVIDÊNCIA SOCIAL",
+            "description": "CNPS - Art. 3o da Lei 8.213/1991",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "27",
+            "title": "QUALIFICAÇÃO",
+            "description": "Afastamento por suspensão do contrato de acordo com o art. 476- A da CLT",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "28",
+            "title": "REPRESENTANTE SINDICAL",
+            "description": "Afastamento pelo tempo que se fizer necessário, quando, na qualidade de representante de entidade sindical, estiver participando de reunião oficial de organismo internacional do qual o Brasil seja membro",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "29",
+            "title": "SERVIÇO MILITAR",
+            "description": "Afastamento temporário para prestar serviço militar obrigatório",
+            "esocial_table": "18",
+            "choice": [111]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": "2021-05-09",
+            "code": "30",
+            "title": "SUSPENSÃO DISCIPLINAR",
+            "description": "Art. 474 da CLT",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "31",
+            "title": "SERVIDOR PÚBLICO EM DISPONIBILIDADE",
+            "description": "",
+            "esocial_table": "18",
+            "choice": [982]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2016-06-01",
+            "end_validity": "2021-05-09",
+            "code": "33",
+            "title": "LICENÇA MATERNIDADE",
+            "description": "180 dias, Lei 13.301/2016",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "34",
+            "title": "INATIVIDADE DO TRABALHADOR AVULSO (PORTUÁRIO OU NÃO PORTUÁRIO) POR PERÍODO SUPERIOR A 90 DIAS",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": ["athenas"],
+            "modified_by": ["athenas"],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2018-07-01",
+            "end_validity": null,
+            "code": "35",
+            "title": "LICENÇA MATERNIDADE - Antecipação e/ou prorrogação mediante atestado médico",
+            "description": "Antecipação e/ou prorrogação mediante atestado médico",
+            "esocial_table": "18",
+            "choice": [108]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2021-05-10",
+            "end_validity": null,
+            "code": "36",
+            "title": "AFASTAMENTO TEMPORÁRIO DE EXERCENTE DE MANDATO ELETIVO PARA CARGO EM COMISSÃO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2020-04-01",
+            "end_validity": null,
+            "code": "37",
+            "title": "SUSPENSÃO TEMPORÁRIA DO CONTRATO DE TRABALHO NOS TERMOS DA LEI 14.020/2020 (CONVERSÃO DA MP 936/2020)",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2020-04-04",
+            "end_validity": null,
+            "code": "38",
+            "title": "IMPEDIMENTO DE CONCORRÊNCIA À ESCALA PARA TRABALHO AVULSO",
+            "description": "",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "13",
+            "title": "CARGO ELETIVO - CANDIDATO A CARGO ELETIVO - ART. 1°, INCISO II, ALÍNEA \"L\" DA LEI COMPLEMENTAR 64/1990",
+            "description": "Servidor público, estatutário ou não, dos órgãos ou entidades da Administração Direta ou Indireta da União, dos Estados, do Distrito Federal, dos Municípios e dos Territórios, inclusive das fundações mantidas pelo Poder Público",
+            "esocial_table": "18",
+            "choice": [112]
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "39",
+            "title": "Suspensão de pagamento de servidor público por não recadastramento",
+            "description": "Suspensão de pagamento de servidor público por não recadastramento",
+            "esocial_table": "18",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2021-07-13T18:34:08.702",
+            "modified_at": "2021-07-13T18:34:08.702",
+            "start_validity": "2014-01-01",
+            "end_validity": null,
+            "code": "40",
+            "title": "Exercício em outro órgão de servidor ou empregado público cedido",
+            "description": "Exercício em outro órgão de servidor ou empregado público cedido",
+            "esocial_table": "18",
+            "choice": []
+        }
+    }
+]

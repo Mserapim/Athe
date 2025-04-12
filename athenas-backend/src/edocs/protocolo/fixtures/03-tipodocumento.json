@@ -1,0 +1,784 @@
+[
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "APOSTILA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Necessita descrição.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "ATA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Exposição do que ocorreu durante uma reunião ou sessão."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "huancarlos"
+            ],
+            "nome": "ATA DE REUNIÃO",
+            "created_at": "2017-01-25T11:19:04.384",
+            "modified_at": "2017-01-25T11:19:04.384",
+            "created_by": [
+                "huancarlos"
+            ],
+            "habilita": true,
+            "descricao": "<P>ATA DE <BR></P>"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "huancarlos"
+            ],
+            "nome": "ATENDIMENTO",
+            "created_at": "2016-12-09T15:39:20.898",
+            "modified_at": "2016-12-09T15:39:20.898",
+            "created_by": [
+                "huancarlos"
+            ],
+            "habilita": true,
+            "descricao": "<P>REALIZAÇÃO DE ATENDIMENTO AO CIDADÃO<BR></P>"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "ATO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Necessita descrição.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "AVISO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-25T10:45:11.275",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Correspondência entre Gestores."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "CARTA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Correspondência."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "CERTIDÃO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Documento emitido por autoridade pública onde se atesta que algo se verificou de acordo com o que se encontrava já registrado em algum outro documento ou registro."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "huancarlos"
+            ],
+            "nome": "CIENTIFICAÇÃO",
+            "created_at": "2016-02-12T15:53:46.426",
+            "modified_at": "2016-02-12T15:53:53.493",
+            "created_by": [
+                "huancarlos"
+            ],
+            "habilita": true,
+            "descricao": "Dar ciência em documentos<br><!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "CONCURSO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Concurso público é um processo seletivo que permite o acesso a emprego ou cargo público de modo amplo e democrático. É<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "CONVITE",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "definição de convite , significado convite - 1 convocação da presença de alguém um convite para jantar. 2 - convite meio pelo qual se convoca um cartão de convite 3 - convite estímulo, incitamento Os filmes de terror são um convite à violência Léxico convite: invitação. <br><!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "CONVOCAÇÃO",
+            "created_at": "2015-08-25T10:45:31.732",
+            "modified_at": "2015-08-25T10:45:31.732",
+            "created_by": [
+                "gustavodettenborn"
+            ],
+            "habilita": true,
+            "descricao": "<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "DECISÃO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Necessita descrição.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "DECRETO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-25T10:46:04.596",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Ato de natureza legislativa."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "DENÚNCIA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Notícia Crime ou qualquer outro tipo de denúncia."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "rodrigomatias"
+            ],
+            "nome": "DESPACHO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2016-04-08T09:55:43.139",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Manifestação escrita, de autoridade, sobre assunto de sua competência."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "EDITAL",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Ordem oficial afixido nos lugares públicos."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "FORMULÁRIO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Relatório padronizado onde se preenchem os campos previamente definidos."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "IMPUGNAÇÃO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "é ato de oposição, de contradição, de contestação, refutação, comum no âmbito do Direito. É o conjunto de argumentos com que se impugna alguma ideia."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "INFORMAÇÃO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Solicitado por Corregedoria para utilizar no pedido de informações aos memebros.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "marciliobrasileiro"
+            ],
+            "nome": "INQUÉRITO CIVIL",
+            "created_at": "2014-07-17T11:22:31.944",
+            "modified_at": "2014-07-17T11:22:31.944",
+            "created_by": [
+                "marciliobrasileiro"
+            ],
+            "habilita": false,
+            "descricao": "<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "INTIMAÇÃO",
+            "created_at": "2015-08-25T10:46:15.205",
+            "modified_at": "2015-08-25T10:46:23.921",
+            "created_by": [
+                "gustavodettenborn"
+            ],
+            "habilita": true,
+            "descricao": "<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "LAUDO MÉDICO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Necessita descrição.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "LEI",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Norma jurídica escrita pelo poder competente."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "rodrigomatias"
+            ],
+            "nome": "MEMORANDO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-07T14:28:35.505",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Correspondência interna de um órgão."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "saninaimayer"
+            ],
+            "nome": "MEMORANDO CIRCULAR",
+            "created_at": "2016-06-22T11:55:37.228",
+            "modified_at": "2016-06-22T11:55:37.228",
+            "created_by": [
+                "saninaimayer"
+            ],
+            "habilita": true,
+            "descricao": ""
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "rodrigomatias"
+            ],
+            "nome": "OFÍCIO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-07T14:28:47.546",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Correspondência entre autoridades."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "saninaimayer"
+            ],
+            "nome": "OFÍCIO CIRCULAR",
+            "created_at": "2016-06-22T11:55:21.538",
+            "modified_at": "2016-06-22T11:55:21.538",
+            "created_by": [
+                "saninaimayer"
+            ],
+            "habilita": true,
+            "descricao": ""
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "ORDEM DE SERVIÇO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Documento autorizando a execução de algum serviço."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "OUVIDORIA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Ouvidoria"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "rodrigomatias"
+            ],
+            "nome": "PEDIDO DE PUBLICACAO",
+            "created_at": "2016-03-08T16:23:03.556",
+            "modified_at": "2016-03-08T16:24:19.304",
+            "created_by": [
+                "rodrigomatias"
+            ],
+            "habilita": true,
+            "descricao": "Usado para solicitar um pedido de publicação no diário oficial.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "PORTARIA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-25T10:46:12.273",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Ato escrito que determina providências de caráter administrativo, dá instruções sobre a execução de uma lei ou serviço, entre outros."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "jozielcosta"
+            ],
+            "nome": "PROCEDIMENTO DE GESTÃO ADMINISTRATIVA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2017-02-07T08:50:32.426",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "NECESSITA DESCRIÇÃO.<!-- CORREÇÃO DE BUG DA EXTJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "PROCESSO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Modo de proceder, uma sequencia de atos que visam produzir um resultado e, no contexto jurídico, estão previstos em leis ou outros dispositivos vigentes. Etimologicamente, tem o sentido de marcha para frente, avanço, progresso, desenvolvimento."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "saninaimayer"
+            ],
+            "nome": "RECOMENDAÇÃO",
+            "created_at": "2016-05-05T10:08:47.108",
+            "modified_at": "2016-05-05T10:10:31.774",
+            "created_by": [
+                "saninaimayer"
+            ],
+            "habilita": true,
+            "descricao": "<p>ORIENTAÇÃO SEM CARÁTER VINCULATIVO.<br></p>"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "RECURSO-CONCURSO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "o recurso, o meio pelo qual a parte vencida em um processo provoca a revisão da decisão judicial ou administrativa que lhe é desfavorável;<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "REGIMENTO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Conjunto de princípios e normas que estabelecem o modo de funcionamento interno de um órgão."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "REGULAMENTO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-25T10:46:20.806",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Conjunto de normas estabelecidas para a perfeita execução."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "RELATÓRIO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-25T10:46:57.421",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Documento expondo, para autoridade superior o desenvolvimento de um trabalho num determinado período."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "REPRESENTAÇÃO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "A representação processual é quando alguém em nome alheio, defende direito ou interesse alheio."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "gustavodettenborn"
+            ],
+            "nome": "REQUERIMENTO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2015-08-25T10:47:11.345",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": true,
+            "descricao": "Documento em que se faz pedido à autoridade competente."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "SINDICÂNCIA",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "<span class=\"descricao\">Conjunto de atos por meio dos quais se colhem e \nse reúnem informações, inquirições e investigações, em cumprimento de \nordem superior, ou autoridade própria.</span><!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "SOLICITAÇÃO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Solicitação de um serviço."
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "huancarlos"
+            ],
+            "nome": "TERMO DE ACEITE DE SISTEMA DE TI",
+            "created_at": "2016-04-19T13:43:22.509",
+            "modified_at": "2016-04-19T13:43:27.602",
+            "created_by": [
+                "huancarlos"
+            ],
+            "habilita": true,
+            "descricao": "<P>DOCUMENTO PARA RECEBIMENTO DEFINITIVO DE UM SISTEMA DESENVOLVIDO PELO DMTI, DANDO DE ACORDO E CIÊNCIA PARA QUE O MESMO POSSA SER COLOCADO EM PRODUÇÃO E ATENDE AOS REQUISITOS SOLICITADOS.<BR></P>"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "TERMO DE EXERCÍCIO",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Necessita descrição.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    },
+    {
+        "fields": {
+            "modified_by": [
+                "athenas"
+            ],
+            "nome": "TERMO DE POSSE",
+            "created_at": "2014-07-07T17:52:03.798",
+            "modified_at": "2014-07-07T17:52:03.890",
+            "created_by": [
+                "athenas"
+            ],
+            "habilita": false,
+            "descricao": "Necessita descrição.<!-- Correção de bug da ExtJS -->"
+        },
+        "model": "protocolo.tipodocumento",
+        "pk": null
+    }
+]

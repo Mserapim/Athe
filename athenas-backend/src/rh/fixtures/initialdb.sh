@@ -1,0 +1,16 @@
+# INITIAL DB
+./manage.py exportdata "Pessoa.objects.annotate(banks=models.Count('pessoajuridica__como_banco')).filter(banks__gt=0)" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -e "['dado_bancario']" -o 'rh/fixtures/initialdb_0001_personbanks.json'
+./manage.py exportdata "PessoaJuridica.objects.annotate(banks=models.Count('como_banco')).filter(banks__gt=0)" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845}" -e "['dado_bancario']" -o 'rh/fixtures/initialdb_0002_legalpersonbanks.json'
+./manage.py exportdata "Banco.objects.order_by('numero')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/initialdb_0003_banks.json'
+./manage.py exportdata "Cbo.objects.order_by('codigo')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/initialdb_0004_cbo.json'
+./manage.py exportdata "Pais.objects.order_by('nome_completo')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/initialdb_0005_country.json'
+./manage.py exportdata "Estado.objects.order_by('nome')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/initialdb_0006_state.json'
+./manage.py exportdata "Localidade.objects.order_by('nome')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'comarca': None, 'sequencial_arquivo': 0}" -o 'rh/fixtures/initialdb_0007_locality.json'
+# OTHERS
+./manage.py exportdata "Carreira.objects.order_by('codigo')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/career.json'
+./manage.py exportdata "OrgaoGeral.objects.order_by('codigo_igeprev')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'publication': None, 'old': None, 'sequencial_arquivo': 0}" -o 'rh/fixtures/generalorgan.json'
+./manage.py exportdata "UnidadeAdministrativa.objects.order_by('codigo_igeprev')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'pessoa_juridica': None, 'responsavel': None, 'previdencia': None, 'sequencial_arquivo': 0}" -o 'rh/fixtures/administrativeunit.json'
+./manage.py exportdata "Cargo.objects.order_by('codigo')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'lotacao_responsavel': None, 'entrancia': None, 'instancia': None, 'sequencial_arquivo': 0}" -o 'rh/fixtures/jobposition.json'
+./manage.py exportdata "Especialidade.objects.order_by('sigla')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/specialty.json'
+./manage.py exportdata "Quadro.objects.order_by('cargo')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'sequencial_arquivo': 0}" -o 'rh/fixtures/chart.json'
+./manage.py exportdata "CargoQuadro.objects.order_by('cargo')" -i 2 -n -m rh --set-fields="{'modified_by_id': 845, 'created_by_id': 845, 'publicacao_criacao': None, 'publicacao_alteracao': None, 'publicacao_extincao': None, 'sequencial_arquivo': 0}" -o 'rh/fixtures/chart_jobposition.json'

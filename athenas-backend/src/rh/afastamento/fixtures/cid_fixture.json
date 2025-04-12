@@ -1,0 +1,5808 @@
+[
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "001",
+        "description": "C\u00f3lera"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A00"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "002",
+        "description": "Febres tif\u00f3ide e paratif\u00f3ide"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A01"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "003",
+        "description": "Shiguelose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A03"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "004",
+        "description": "Ameb\u00edase"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A06"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "005",
+        "description": "Diarr\u00e9ia e gastroenterite de origem infecciosa presum\u00edvel"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A09"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "006",
+        "description": "Outras doen\u00e7as infecciosas intestinais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A02"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A04-A05"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A07-A08"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "007",
+        "description": "Tuberculose respirat\u00f3ria"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A15-A16"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "007.1",
+        "description": "Tuberculose pulmonar"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A15.0-A15.3"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A16.0-A16.3"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "007.2",
+        "description": "Outras tuberculoses respirat\u00f3rias"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A15.4-A15.9"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A16.4-A16.9"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008",
+        "description": "Outras tuberculoses"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A17-A19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008.1",
+        "description": "Tuberculose do sistema nervoso"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A17"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008.2",
+        "description": "Tuberculose do intestino, do perit\u00f4nio e dos g\u00e2nglios \n               mesent\u00e9ricos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A18.3"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008.3",
+        "description": "Tuberculose \u00f3ssea e das articula\u00e7\u00f5es"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A18.0"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008.4",
+        "description": "Tuberculose do aparelho geniturin\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A18.1"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008.5",
+        "description": "Tuberculose miliar"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "008.9",
+        "description": "Restante de outras tuberculoses"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A18.2"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A18.4-A18.8"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "009",
+        "description": "Peste"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A20"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "010",
+        "description": "Brucelose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A23"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "011",
+        "description": "Hansen\u00edase [lepra]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A30"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "012",
+        "description": "T\u00e9tano neonatal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A33"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "013",
+        "description": "Outros t\u00e9tanos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A34-A35"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "014",
+        "description": "Difteria"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A36"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "015",
+        "description": "Coqueluche"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A37"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "016",
+        "description": "Infec\u00e7\u00e3o meningoc\u00f3cica"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "017",
+        "description": "Septicemia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A40-A41"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "018",
+        "description": "Outras doen\u00e7as bacterianas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A21-A22"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A24-A28"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A31-A32"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A38"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A42-A49"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "018.1",
+        "description": "Leptospirose icterohemorr\u00e1gica"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A27.0"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "018.2",
+        "description": "Outras formas de leptospirose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A27.8"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "018.3",
+        "description": "Leptospirose n\u00e3o especificada"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A27.9"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "018.9",
+        "description": "Restante de outras doen\u00e7as bacterianas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A21-A22"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A24-A26"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A28"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A31-A32"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A38"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A42-A49"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "019",
+        "description": "S\u00edfilis cong\u00eanita"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "020",
+        "description": "S\u00edfilis precoce"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A51"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "021",
+        "description": "Outras s\u00edfilis"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A52-A53"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "022",
+        "description": "Infec\u00e7\u00e3o gonoc\u00f3cica"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "023",
+        "description": "Doen\u00e7as por clam\u00eddias transmitidas por via sexual"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A55-A56"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "024",
+        "description": "Outras infec\u00e7\u00f5es com transmiss\u00e3o predominantemente sexual"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A57-A64"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "025",
+        "description": "Febres recorrentes"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A68"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "026",
+        "description": "Tracoma"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A71"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "027",
+        "description": "Tifo exantem\u00e1tico"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A75"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "028",
+        "description": "Poliomielite aguda"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A80"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "029",
+        "description": "Raiva"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A82"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "030",
+        "description": "Encefalite viral"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A83-A86"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "031",
+        "description": "Febre amarela"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A95"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "032",
+        "description": "Outras febre por arbov\u00edrus e febres hemorr\u00e1gicas por v\u00edrus"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A90-A94"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A96-A99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "032.1",
+        "description": "Dengue [dengue cl\u00e1ssico]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A90"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "032.2",
+        "description": "Febre hemorr\u00e1gica devida ao v\u00edrus da dengue"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A91"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "032.9",
+        "description": "Restante de outras febre por arbov\u00edrus e febres \n               hemorr\u00e1gicas por v\u00edrus"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A92-A94"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A96-A99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "033",
+        "description": "Infec\u00e7\u00f5es pelo v\u00edrus do herpes"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B00"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "034",
+        "description": "Varicela e herpes zoster"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B01-B02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "035",
+        "description": "Sarampo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B05"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "036",
+        "description": "Rub\u00e9ola"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B06"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "037",
+        "description": "Hepatite aguda B"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B16"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "038",
+        "description": "Outras hepatites virais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B15"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B17-B19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "039",
+        "description": "Doen\u00e7a pelo v\u00edrus da imunodefici\u00eancia humana [HIV]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B20-B24"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "040",
+        "description": "Caxumba [parotidite epid\u00eamica]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B26"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "041",
+        "description": "Outras doen\u00e7as virais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A81"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A87-A89"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B03-B04"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B07-B09"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B25"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B27-B34"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "041.1",
+        "description": "Meningite viral"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A87"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "041.9",
+        "description": "Restante de outras doen\u00e7as virais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A81"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A88-A89"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B03-B04"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B07-B09"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B25"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B27-B34"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "042",
+        "description": "Micoses"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B35-B49"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "043",
+        "description": "Mal\u00e1ria"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B50-B54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "043.1",
+        "description": "Mal\u00e1ria por Plasmodium falciparum"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "043.2",
+        "description": "Mal\u00e1ria por Plasmodium vivax"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B51"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "043.3",
+        "description": "Mal\u00e1ria por Plasmodium malariae"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B52"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "043.4",
+        "description": "Outras formas de mal\u00e1ria confirmadas por exames \n               parasitol\u00f3gicos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B53"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "043.5",
+        "description": "Mal\u00e1ria n\u00e3o especificada"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "044",
+        "description": "Leishmaniose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B55"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "044.1",
+        "description": "Leishmaniose visceral"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B55.0"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "044.2",
+        "description": "Leishmaniose cut\u00e2nea"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B55.1"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "044.3",
+        "description": "Leishmaniose cut\u00e2neo-mucosa"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B55.2"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "044.4",
+        "description": "Leishmaniose n\u00e3o especificada"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B55.9"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "045",
+        "description": "Tripanossom\u00edase"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B56-B57"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "046",
+        "description": "Esquistossomose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B65"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "047",
+        "description": "Outras infesta\u00e7\u00f5es por tremat\u00f3deos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B66"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "048",
+        "description": "Equinococose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B67"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "049",
+        "description": "Dracuncul\u00edase"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B72"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "050",
+        "description": "Oncocercose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B73"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "051",
+        "description": "Filariose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B74"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "052",
+        "description": "Ancilostom\u00edase"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B76"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "053",
+        "description": "Outras helmint\u00edases"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B68-B71"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B75"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B77-B83"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "054",
+        "description": "Seq\u00fcelas de tuberculose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B90"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "055",
+        "description": "Seq\u00fcelas de poliomielite"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B91"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "056",
+        "description": "Seq\u00fcelas de hansen\u00edase [lepra]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "B92"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "I",
+        "code": "057",
+        "description": "Outras doen\u00e7as infecciosas e parasit\u00e1rias"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "A65-A67"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A69-A70"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A74"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " A77-A79"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B58-B64"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B85-B89"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " B94-B99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "058",
+        "description": "Neoplasia maligna do l\u00e1bio, cavidade oral e faringe"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C00-C14"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "059",
+        "description": "Neoplasia maligna do es\u00f4fago"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C15"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "060",
+        "description": "Neoplasia maligna do est\u00f4mago"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C16"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "061",
+        "description": "Neoplasia maligna do c\u00f3lon"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C18"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "062",
+        "description": "Neoplasia maligna da jun\u00e7\u00e3o retossigm\u00f3ide, reto, \u00e2nus e canal anal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C19-C21"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "063",
+        "description": "Neoplasia maligna do f\u00edgado e das vias biliares intra-hep\u00e1ticas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C22"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "064",
+        "description": "Neoplasia maligna do p\u00e2ncreas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C25"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "065",
+        "description": "Outras neoplasias malignas de \u00f3rg\u00e3os digestivos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C17"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C23-C24"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C26"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "066",
+        "description": "Neoplasias malignas de laringe"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C32"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "067",
+        "description": "Neoplasia maligna da traqu\u00e9ia, dos br\u00f4nquios e dos pulm\u00f5es"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C33-C34"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "068",
+        "description": "Outras neoplasias malignas de \u00f3rg\u00e3os respirat\u00f3rios e intrator\u00e1cicos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C30-C31"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C37-C39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "069",
+        "description": "Neoplasia maligna do osso e da cartilagem articular"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C40-C41"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "070",
+        "description": "Neoplasia maligna da pele"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C43"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "071",
+        "description": "Outras neoplasias malignas da pele"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C44"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "072",
+        "description": "Neoplasias malignas do tecido mesotelial e tecidos moles"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C45-C49"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "073",
+        "description": "Neoplasia maligna da mama"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "074",
+        "description": "Neoplasia maligna do colo do \u00fatero"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C53"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "075",
+        "description": "Neoplasia maligna de outras por\u00e7\u00f5es e de por\u00e7\u00f5es n\u00e3o especificadas do \u00fatero"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C54-C55"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "076",
+        "description": "Outras neoplasias malignas dos \u00f3rg\u00e3os genitais femininos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C51-C52"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C56-C58"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "077",
+        "description": "Neoplasia maligna da pr\u00f3stata"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C61"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "078",
+        "description": "Outras neoplasias malignas dos \u00f3rg\u00e3os genitais masculinos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C60"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C62-C63"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "079",
+        "description": "Neoplasia maligna da bexiga"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C67"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "080",
+        "description": "Outras neoplasias malignas do trato urin\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C64-C66"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C68"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "081",
+        "description": "Neoplasia maligna dos olhos e anexos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C69"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "082",
+        "description": "Neoplasia maligna do enc\u00e9falo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C71"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "083",
+        "description": "Neoplasia maligna de outras partes do sistema nervoso central"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C70"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C72"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "084",
+        "description": "Neoplasias malignas de outras localiza\u00e7\u00f5es, de localiza\u00e7\u00e3o mal definida, secund\u00e1rias \n               e de localiza\u00e7\u00e3o n\u00e3o especificada"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C73-C80"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C97"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "085",
+        "description": "Doen\u00e7a de Hodgkin"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C81"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "086",
+        "description": "Linfoma n\u00e3o-Hodgkin"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C82-C85"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "087",
+        "description": "Leucemia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C91-C95"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "088",
+        "description": "Outras neoplasias malignas de tecidos linf\u00f3ide, hematopo\u00e9tico e relacionados"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "C88-C90"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " C96"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "089",
+        "description": "Carcinoma in situ de colo do \u00fatero"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D06"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "090",
+        "description": "Neoplasia benigna da pele"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D22-D23"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "091",
+        "description": "Neoplasia benigna da mama"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D24"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "092",
+        "description": "Leiomioma do \u00fatero"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D25"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "093",
+        "description": "Neoplasia benigna do ov\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D27"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "094",
+        "description": "Neoplasia benigna dos \u00f3rg\u00e3os urin\u00e1rios"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D30"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "095",
+        "description": "Neoplasia benigna do enc\u00e9falo e de outras partes do sistema nervoso central"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D33"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "II",
+        "code": "096",
+        "description": "Outras neoplasias in situ e neoplasias benignas e neoplasias de comportamento \n               incerto ou desconhecido"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D00-D05"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " D07-D21"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " D26"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " D28-D29"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " D31-D32"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " D34-D48"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "III",
+        "code": "097",
+        "description": "Anemia por defici\u00eancia de ferro"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "III",
+        "code": "098",
+        "description": "Outras anemias"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D51-D64"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "III",
+        "code": "099",
+        "description": "Afec\u00e7\u00f5es hemorr\u00e1gicas e outras doen\u00e7as do sangue e dos \u00f3rg\u00e3os hematopo\u00e9ticos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D65-D77"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "III",
+        "code": "100",
+        "description": "Alguns transtornos envolvendo o mecanismo imunit\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "D80-D89"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "101",
+        "description": "Transtornos tireoidianos relacionados \u00e0 defici\u00eancia de iodo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E00-E02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "102",
+        "description": "Tireotoxicose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E05"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "103",
+        "description": "Outros transtornos tireoidianos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E03-E04"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " E06-E07"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "104",
+        "description": "Diabetes mellitus"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E10-E14"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "105",
+        "description": "Desnutri\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E40-E46"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "106",
+        "description": "Defici\u00eancia de vitamina A"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "107",
+        "description": "Outras defici\u00eancias vitam\u00ednicas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E51-E56"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "108",
+        "description": "Seq\u00fcelas de desnutri\u00e7\u00e3o e de outras defici\u00eancias nutricionais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E64"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "109",
+        "description": "Obesidade"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E66"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "110",
+        "description": "Deple\u00e7\u00e3o de volume"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E86"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IV",
+        "code": "111",
+        "description": "Outros transtornos end\u00f3crinos, nutricionais e metab\u00f3licos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "E15-E35"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " E58-E63"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " E65"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " E67-E85"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " E87-E90"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "112",
+        "description": "Dem\u00eancia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F00-F03"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "113",
+        "description": "Transtornos mentais e comportamentais devidos ao uso de \u00e1lcool"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F10"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "114",
+        "description": "Transtornos mentais e comportamentais devidos ao uso de outras subst\u00e2ncias \n               psicoativas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F11-F19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "115",
+        "description": "Esquizofrenia, transtornos esquizot\u00edpicos e delirantes"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F20-F29"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "116",
+        "description": "Transtornos de humor [afetivos]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F30-F39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "117",
+        "description": "Transtornos neur\u00f3ticos, transtornos relacionados com o \"stress\" e transtornos \n               somatoformes"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F40-F48"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "118",
+        "description": "Retardo mental"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F70-F79"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "V",
+        "code": "119",
+        "description": "Outros transtornos mentais e comportamentais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "F04-F09"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " F50-F69"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " F80-F99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "120",
+        "description": "Doen\u00e7as inflamat\u00f3rias do sistema nervoso central"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G00-G09"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "120.1",
+        "description": "Meningite bacteriana, n\u00e3o classificada em outra parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G00"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "120.2",
+        "description": "Meningite em doen\u00e7as bacterianas classificadas em outra \n               parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G01"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "120.3",
+        "description": "Meningite em outras doen\u00e7as infecciosas e parasit\u00e1rias \n               classificadas em outra parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "120.4",
+        "description": "Meningite devida a outras causas e a causas n\u00e3o \n               especificadas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G03"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "120.9",
+        "description": "Restante de doen\u00e7as inflamat\u00f3rias do sistema nervoso \n               central"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G04-G09"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "121",
+        "description": "Doen\u00e7a de Parkinson"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G20"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "122",
+        "description": "Doen\u00e7a de Alzheimer"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G30"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "123",
+        "description": "Esclerose m\u00faltiplas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G35"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "124",
+        "description": "Epilepsia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G40-G41"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "125",
+        "description": "Enxaqueca e outras s\u00edndromes de algias cef\u00e1licos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G43-G44"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "126",
+        "description": "Acidentes vasculares cerebrais isqu\u00eamicos transit\u00f3rios e s\u00edndromes correlatas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G45"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "127",
+        "description": "Transtornos dos nervos, das ra\u00edzes e dos plexos nervosos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G50-G59"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "128",
+        "description": "Paralisia cerebral e outras s\u00edndromes paral\u00edticas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G80-G83"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VI",
+        "code": "129",
+        "description": "Outras doen\u00e7as do sistema nervoso"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "G10-G13"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " G21-G26"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " G31-G32"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " G36-G37"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " G46-G47"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " G60-G73"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " G90-G99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "130",
+        "description": "Inflama\u00e7\u00e3o da p\u00e1lpebra"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H00-H01"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "131",
+        "description": "Conjuntivite e outros transtornos da conjuntiva"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H10-H13"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "132",
+        "description": "Ceratite e outros transtornos da escler\u00f3tica e da c\u00f3rnea"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H15-H19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "133",
+        "description": "Catarata e outros transtornos do cristalino"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H25-H28"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "134",
+        "description": "Descolamentos e defeitos da retina"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H33"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "135",
+        "description": "Glaucoma"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H40-H42"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "136",
+        "description": "Estrabismo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H49-H50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "137",
+        "description": "Transtornos da refra\u00e7\u00e3o e da acomoda\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H52"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "138",
+        "description": "Cegueira e vis\u00e3o subnormal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VII",
+        "code": "139",
+        "description": "Outras doen\u00e7as do olho e anexos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H02-H06"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H20-H22"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H30-H32"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H34-H36"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H43-H48"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H51"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H53"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H55-H59"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VIII",
+        "code": "140",
+        "description": "Otite m\u00e9dia e outros transtornos do ouvido m\u00e9dio e da ap\u00f3fise mast\u00f3ide"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H65-H75"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VIII",
+        "code": "141",
+        "description": "Perda de audi\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H90-H91"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "VIII",
+        "code": "142",
+        "description": "Outras doen\u00e7as do ouvido e da ap\u00f3fise mast\u00f3ide"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "H60-H62"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H80-H83"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " H92-H95"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "143",
+        "description": "Febre reum\u00e1tica aguda"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I00-I02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "144",
+        "description": "Doen\u00e7a reum\u00e1tica cr\u00f4nica do cora\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I05-I09"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "145",
+        "description": "Hipertens\u00e3o essencial (prim\u00e1ria)"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I10"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "146",
+        "description": "Outras doen\u00e7as hipertensivas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I11-I15"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "147",
+        "description": "Infarto agudo do mioc\u00e1rdio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I21-I22"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "148",
+        "description": "Outras doen\u00e7as isqu\u00eamicas do cora\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I20"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " I23-I25"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "149",
+        "description": "Embolia pulmonar"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I26"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "150",
+        "description": "Transtornos de condu\u00e7\u00e3o e arritmias card\u00edacas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I44-I49"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "151",
+        "description": "Insufici\u00eancia card\u00edaca"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "152",
+        "description": "Outras doen\u00e7as do cora\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I27-I43"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " I51-I52"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "153",
+        "description": "Hemorragia intracraniana"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I60-I62"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "154",
+        "description": "Infarto cerebral"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I63"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "155",
+        "description": "Acidente vascular cerebral, n\u00e3o especificado como hemorr\u00e1gico ou isqu\u00eamico"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I64"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "156",
+        "description": "Outras doen\u00e7as cerebrovasculares"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I65-I69"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "157",
+        "description": "Ateroesclerose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I70"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "158",
+        "description": "Outras doen\u00e7as vasculares perif\u00e9ricas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I73"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "159",
+        "description": "Embolia e trombose arteriais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I74"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "160",
+        "description": "Outras doen\u00e7as das art\u00e9rias, arter\u00edolas e capilares"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I71-I72"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " I77-I79"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "161",
+        "description": "Flebite, tromboflebite, embolia e trombose venosa"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I80-I82"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "162",
+        "description": "Veias varicosas das extremidades inferiores"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I83"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "163",
+        "description": "Hemorr\u00f3idas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I84"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "IX",
+        "code": "164",
+        "description": "Outras doen\u00e7as do aparelho circulat\u00f3rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "I85-I99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "165",
+        "description": "Faringite aguda e amigdalite aguda"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J02-J03"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "166",
+        "description": "Laringite e traque\u00edte agudas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J04"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "167",
+        "description": "Outras infec\u00e7\u00f5es agudas das vias a\u00e9reas superiores"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J00-J01"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " J05-J06"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "168",
+        "description": "Influenza [gripe]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J09-J11"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "169",
+        "description": "Pneumonia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J12-J18"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "170",
+        "description": "Bronquite aguda e bronquiolite aguda"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J20-J21"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "171",
+        "description": "Sinusite cr\u00f4nica"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J32"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "172",
+        "description": "Outras doen\u00e7as do nariz e dos seios paranasais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J30-J31"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " J33-J34"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "173",
+        "description": "Doen\u00e7as cr\u00f4nicas das am\u00edgdalas e das aden\u00f3ides"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J35"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "174",
+        "description": "Outras doen\u00e7as do trato respirat\u00f3rio superior"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J36-J39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "175",
+        "description": "Bronquite, enfisema e outras doen\u00e7as pulmonares obstrutivas cr\u00f4nicas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J40-J44"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "176",
+        "description": "Asma"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J45-J46"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "177",
+        "description": "Bronquiectasia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J47"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "178",
+        "description": "Pneumoconiose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J60-J65"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "X",
+        "code": "179",
+        "description": "Outras doen\u00e7as do aparelho respirat\u00f3rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "J22"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " J66-J99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "180",
+        "description": "C\u00e1rie dent\u00e1ria"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "181",
+        "description": "Outros transtornos dos dentes e estruturas de suporte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K00-K01"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " K03-K08"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "182",
+        "description": "Outras doen\u00e7as da cavidade oral, gl\u00e2ndulas salivares e dos maxilares"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K09-K14"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "183",
+        "description": "\u00dalcera g\u00e1strica e duodenal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K25-K27"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "184",
+        "description": "Gastrite e duodenite"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K29"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "185",
+        "description": "Outras doen\u00e7as do es\u00f4fago, est\u00f4mago e duodeno"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K20-K23"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " K28"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " K30-K31"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "186",
+        "description": "Doen\u00e7as do ap\u00eandice"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K35-K38"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "187",
+        "description": "H\u00e9rnia inguinal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K40"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "188",
+        "description": "Outras h\u00e9rnias"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K41-K46"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "189",
+        "description": "Doen\u00e7a de Crohn e colite ulcerativa"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K50-K51"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "190",
+        "description": "\u00cdleo paral\u00edtico e obstru\u00e7\u00e3o intestinal sem h\u00e9rnia"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K56"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "191",
+        "description": "Doen\u00e7a diverticular do intestino"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K57"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "192",
+        "description": "Outras doen\u00e7as dos intestinos e perit\u00f4nio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K52-K55"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " K58-K67"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "193",
+        "description": "Doen\u00e7a alco\u00f3lica do f\u00edgado"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K70"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "194",
+        "description": "Outras doen\u00e7as do f\u00edgado"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K71-K77"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "195",
+        "description": "Colelit\u00edase e colecistite"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K80-K81"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "196",
+        "description": "Pancreatite aguda e outras doen\u00e7as do p\u00e2ncreas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K85-K86"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XI",
+        "code": "197",
+        "description": "Outras doen\u00e7as do aparelho digestivo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "K82-K83"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " K87-K93"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XII",
+        "code": "198",
+        "description": "Infec\u00e7\u00f5es da pele e do tecido subcut\u00e2neo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "L00-L08"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XII",
+        "code": "199",
+        "description": "Outras doen\u00e7as da pele e do tecido subcut\u00e2neo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "L10-L99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "200",
+        "description": "Artrite reumat\u00f3ide e outras poliartropatias inflamat\u00f3rias"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M05-M14"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "201",
+        "description": "Artrose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M15-M19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "202",
+        "description": "Deformidades adquiridas das articula\u00e7\u00f5es"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M20-M21"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "203",
+        "description": "Outros transtronos articulares"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M00-M03"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " M22-M25"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "204",
+        "description": "Doen\u00e7as sist\u00eamicas do tecido conjuntivo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M30-M36"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "205",
+        "description": "Transtornos discais cervicais e outros transtornos discais intervertebrais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M50-M51"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "206",
+        "description": "Outras dorsopatias"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M40-M49"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " M53-M54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "207",
+        "description": "Transtornos do tecido mole"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M60-M79"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "208",
+        "description": "Transtornos da densidade e da estrutura \u00f3sseas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M80-M85"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "209",
+        "description": "Osteomielite"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M86"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIII",
+        "code": "210",
+        "description": "Outras doen\u00e7as do sistema osteomuscular e do tecido conjuntivo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "M87-M99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "211",
+        "description": "S\u00edndrome nefr\u00edticas aguda e rapidamente progressiva"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N00-N01"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "212",
+        "description": "Outras doen\u00e7as glomerulares"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N02-N08"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "213",
+        "description": "Doen\u00e7as renais t\u00fabulo-intersticiais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N10-N16"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "214",
+        "description": "Insufici\u00eancia renal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N17-N19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "215",
+        "description": "Urolit\u00edase"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N20-N23"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "216",
+        "description": "Cistite"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N30"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "217",
+        "description": "Outras doen\u00e7as do aparelho urin\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N25-N29"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N31-N39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "218",
+        "description": "Hiperplasia da pr\u00f3stata"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N40"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "219",
+        "description": "Outros transtornos da pr\u00f3stata"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N41-N42"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "220",
+        "description": "Hidrocele e espermatocele"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N43"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "221",
+        "description": "Prepr\u00facio redundante, fimose e parafimose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N47"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "222",
+        "description": "Outras doen\u00e7as dos \u00f3rg\u00e3os genitais masculinos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N44-N46"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N48-N51"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "223",
+        "description": "Transtornos da mama"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N60-N64"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "224",
+        "description": "Salpingite e ooforite"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N70"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "225",
+        "description": "Doen\u00e7a inflamat\u00f3ria do colo do \u00fatero"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N72"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "226",
+        "description": "Outras doen\u00e7as inflamat\u00f3rias dos \u00f3rg\u00e3os p\u00e9lvicos femininos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N71"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N73-N77"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "227",
+        "description": "Endometriose"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N80"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "228",
+        "description": "Prolapso genital feminino"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N81"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "229",
+        "description": "Transtornos n\u00e3o-inflamat\u00f3rios do ov\u00e1rio, da trompa de Fal\u00f3pio e do ligamento largo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N83"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "230",
+        "description": "Transtornos da menstrua\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N91-N92"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "231",
+        "description": "Transtornos menop\u00e1usicos e outros transtornos perimenop\u00e1usicos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N95"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "232",
+        "description": "Infertilidade feminina"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N97"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIV",
+        "code": "233",
+        "description": "Outros transtornos do aparelho geniturin\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "N82"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N84-N90"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N93-N94"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N96"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " N98-N99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "234",
+        "description": "Aborto espont\u00e2neo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O03"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "235",
+        "description": "Aborto por raz\u00f5es m\u00e9dicas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O04"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "236",
+        "description": "Outras gravidezes que terminam em aborto"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O00-O02"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " O05-O08"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "237",
+        "description": "Edema, protein\u00faria e transtornos hipertensivos na gravidez, parto e puerp\u00e9rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O10-O16"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "238",
+        "description": "Placenta pr\u00e9via, descolamento prematuro de placenta e hemorragia anteparto"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O44-O46"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "239",
+        "description": "Outros motivos de assist\u00eancia \u00e0 m\u00e3e relacionados \u00e0 cavidade fetal e amni\u00f3tica, e \n               poss\u00edveis problemas de parto"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O30-O43"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " O47-O48"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "240",
+        "description": "Trabalho de parto obstru\u00eddo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O64-O66"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "241",
+        "description": "Hemorragia p\u00f3s-parto"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O72"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "242",
+        "description": "Outras complica\u00e7\u00f5es da gravidez e do parto"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O20-O29"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " O60-O63"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " O67-O71"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " O73-O75"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " O81-O84"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "243",
+        "description": "Parto \u00fanico espont\u00e2neo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O80"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XV",
+        "code": "244",
+        "description": "Complica\u00e7\u00f5es predominantemente relacionadas ao puerp\u00e9rio e outras afec\u00e7\u00f5es \n               obst\u00e9tricas, n\u00e3o classificadas em outra parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "O85-O99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "245",
+        "description": "Feto e rec\u00e9m-nascido afetados por fatores maternos e por complica\u00e7\u00f5es da gravidez, \n               trabalho de parto e parto"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P00-P04"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "246",
+        "description": "Retardo de crescimento fetal, desnutri\u00e7\u00e3o fetal e transtornos relacionados \u00e0 \n               gesta\u00e7\u00e3o curta e baixo peso ao nascer"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P05-P07"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "247",
+        "description": "Trauma durante o nascimento"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P10-P15"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "248",
+        "description": "Hip\u00f3xia intrauterina e asfixia ao nascer"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P20-P21"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "249",
+        "description": "Outros transtornos respirat\u00f3rios originados no per\u00edodo perinatal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P22-P28"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "250",
+        "description": "Doen\u00e7as infecciosas e parasit\u00e1rias cong\u00eanitas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P35-P37"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "251",
+        "description": "Outras infec\u00e7\u00f5es espec\u00edficas do per\u00edodo perinatal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P38-P39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "252",
+        "description": "Doen\u00e7a hemol\u00edtica do feto e do rec\u00e9m-nascido"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P55"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVI",
+        "code": "253",
+        "description": "Outras afec\u00e7\u00f5es originadas no per\u00edodo perinatal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "P08"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " P29"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " P50-P54"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " P56-P96"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "254",
+        "description": "Espinha b\u00edfida"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q05"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "255",
+        "description": "Outras malforma\u00e7\u00f5es cong\u00eanitas do sistema nervoso"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q00-Q04"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Q06-Q07"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "256",
+        "description": "Malforma\u00e7\u00f5es cong\u00eanitas do aparelho circulat\u00f3rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q20-Q28"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "257",
+        "description": "Fenda labial e fenda palatina"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q35-Q37"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "258",
+        "description": "Aus\u00eancia, atresia e estenose do intestino delgado"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q41"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "259",
+        "description": "Outras malforma\u00e7\u00f5es cong\u00eanitas do aparelho digestivo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q38-Q40"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Q42-Q45"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "260",
+        "description": "Testiculo n\u00e3o-descido"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q53"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "261",
+        "description": "Outras malforma\u00e7\u00f5es do aparelho geniturin\u00e1rio"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q50-Q52"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Q54-Q64"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "262",
+        "description": "Deformidades cong\u00eanitas do quadril"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q65"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "263",
+        "description": "Deformidades cong\u00eanitas dos p\u00e9s"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q66"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "264",
+        "description": "Outras malforma\u00e7\u00f5es e deformidades cong\u00eanitas do aparelho osteomuscular"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q67-Q79"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "265",
+        "description": "Outras malforma\u00e7\u00f5es cong\u00eanitas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q10-Q18"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Q30-Q34"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Q80-Q89"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVII",
+        "code": "266",
+        "description": "Anomalias cromoss\u00f4micas, n\u00e3o classificadas em outra parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Q90-Q99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVIII",
+        "code": "267",
+        "description": "Dor abdominal e p\u00e9lvica"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "R10"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVIII",
+        "code": "268",
+        "description": "Febre de origem desconhecida"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "R50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVIII",
+        "code": "269",
+        "description": "Senilidade"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "R54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XVIII",
+        "code": "270",
+        "description": "Outros sintomas, sinais e achados anormais de exames cl\u00ednicos e de laborat\u00f3rio, n\u00e3o \n               classificados em outra parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "R00-R09"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " R11-R49"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " R51-R53"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " R55-R99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "271",
+        "description": "Fratura do cr\u00e2nio e dos ossos da face"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "272",
+        "description": "Fratura do pesco\u00e7o, t\u00f3rax ou pelve"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S12"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S22"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S32"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T08"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "273",
+        "description": "Fratura do f\u00eamur"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S72"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "274",
+        "description": "Fratura de outros ossos dos membros"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S42"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S52"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S62"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S82"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S92"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T10"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T12"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "275",
+        "description": "Fraturas envolvendo m\u00faltiplas regi\u00f5es do corpo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T02"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "276",
+        "description": "Luxa\u00e7\u00f5es, entorse e distens\u00e3o de regi\u00f5es especificadas e de regi\u00f5es m\u00faltiplas do \n               corpo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S03"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S13"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S23"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S33"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S43"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S53"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S63"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S73"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S83"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S93"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T03"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "277",
+        "description": "Traumatismo do olho e da \u00f3rbita ocular"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S05"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "278",
+        "description": "Traumatismo intracraniano"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S06"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "279",
+        "description": "Traumatismo de outros \u00f3rg\u00e3os internos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S26-S27"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S36-S37"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "280",
+        "description": "Les\u00f5es por esmagamento e amputa\u00e7\u00f5es traum\u00e1ticas de regi\u00f5es especificadas e de \n               m\u00faltiplas regi\u00f5es do corpo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S07-S08"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S17-S18"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S28"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S38"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S47-S48"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S57-S58"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S67-S68"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S77-S78"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S87-S88"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S97-S98"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " \n               T04-T05"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "281",
+        "description": "Outros traumatismos de regi\u00f5es especificadas e n\u00e3o especificadas e de regi\u00f5es \n               m\u00faltiplas do corpo"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "S00-S01"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S04"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S09-S11"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S14-S16"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S19-S21"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S24-S25"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S29-S31"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S34-S35"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S39-S41"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " \n               S44-S46"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S49-S51"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S54-S56"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S59-S61"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S64-S66"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S69-S71"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S74-S76"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S79-S81"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S84-S86"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " \n               S89-S91"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S94-S96"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " S99"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T00-T01"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T06-T07"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T09"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T11"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T13-T14"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "282",
+        "description": "Efeitos de corpo estranho que entra atrav\u00e9s de orif\u00edcio natural"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T15-T19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "283",
+        "description": "Queimadura e corros\u00f5es"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T20-T32"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "284",
+        "description": "Envenenamento por drogas e subst\u00e2ncias biol\u00f3gicas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T36-T50"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "285",
+        "description": "Efeitos t\u00f3xicos de subst\u00e2ncias de origem principalmente n\u00e3o-medicinal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T51-T65"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "286",
+        "description": "S\u00edndromes de maus tratos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T74"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "287",
+        "description": "Outros efeitos e os efeitos n\u00e3o especificados de causas externas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T33-T35"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T66-T73"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " T75-T78"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "288",
+        "description": "Certas complica\u00e7\u00f5es precoces de traumatismo e complica\u00e7\u00f5es cir\u00fargicas, e da \n               assist\u00eancia m\u00e9dica n\u00e3o classificadas em outra parte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T79-T88"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XIX",
+        "code": "289",
+        "description": "Seq\u00fcelas de traumatismos, de envenenamento e de outras conseq\u00fc\u00eancias de causas \n               externas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "T90-T98"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.096",
+        "description": "Acidentes de transporte"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "V01-V99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.097",
+        "description": "Quedas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "W00-W19"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.098",
+        "description": "Afogamento e submers\u00e3o acidentais"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "W65-W74"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.099",
+        "description": "Exposi\u00e7\u00e3o ao fumo, ao fogo e \u00e0s chamas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "X00-X09"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.100",
+        "description": "Envenenamento, intoxica\u00e7\u00e3o por ou exposi\u00e7\u00e3o a subst\u00e2ncias nocivas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "X40-X49"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.101",
+        "description": "Les\u00f5es autoprovocadas voluntariamente"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "X60-X84"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.102",
+        "description": "Agress\u00f5es"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "X85-Y09"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XX",
+        "code": "1.103",
+        "description": "Todas as outras causas externas"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "W20-W64"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " W75-W99"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " X10-X39"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " X50-X59"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Y10-Y89"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "290",
+        "description": "Pessoas em contato com os servi\u00e7os de sa\u00fade para exame e investiga\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z00-Z13"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "291",
+        "description": "Estado de infec\u00e7\u00e3o assintom\u00e1tica pelo v\u00edrus da imunodefici\u00eancia humana [HIV]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z21"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "292",
+        "description": "Outras pessoas com riscos potenciais \u00e0 sa\u00fade relacionadas com doen\u00e7as transmiss\u00edveis"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z20"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Z22-Z29"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "293",
+        "description": "Anticoncep\u00e7\u00e3o"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z30"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "294",
+        "description": "Rastreamento (\"screening\") pr\u00e9-natal e outras supervis\u00f5es da gravidez"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z34-Z36"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "295",
+        "description": "Nascidos vivos segundo o local de nascimento"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z38"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "296",
+        "description": "Assist\u00eancia e exame p\u00f3s-natal"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z39"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "297",
+        "description": "Pessoas em contato com servi\u00e7os de sa\u00fade para cuidados e procedimentos espec\u00edficos"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z40-Z54"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXI",
+        "code": "298",
+        "description": "Pessoas em contato com os servi\u00e7os de sa\u00fade por outras raz\u00f5es"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Z31-Z33"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Z37"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": " Z55-Z99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXII",
+        "code": "901",
+        "description": "S\u00edndrome respirat\u00f3ria aguda grave (Severe acute respiratory syndrome) [SARS]"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "U04"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "XXII",
+        "code": "-",
+        "description": "CID 10\u00aa Revis\u00e3o n\u00e3o dispon\u00edvel"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "U99"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "**",
+        "code": "-",
+        "description": "N\u00e3o preenchido"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "em branco"
+      }
+    },
+    {
+      "model": "afastamento.cid",
+      "fields": {
+        "chapter": "**",
+        "code": "-",
+        "description": "CID inv\u00e1lido"
+      }
+    },
+    {
+      "model": "afastamento.cidcode",
+      "fields": {
+        "code": "Subcategoria da CID n\u00e3o existente"
+      }
+    }
+  ]

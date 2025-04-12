@@ -1,0 +1,5 @@
+<div class="legal-sign">
+    {% for sign in movement.legal_signs.all %}
+        {% include "protocolo/sign.html" %}
+    {% endfor %}
+</div>

@@ -1,0 +1,266 @@
+[
+{
+  "fields": {
+    "username": "alinnydias",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-09T14:33:09.324",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$jyg5$73393a39e8fce164e8f26efcbb3c99b7",
+    "email": "alinnydias@mpto.mp.br",
+    "date_joined": "2011-02-16T14:42:28.371"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "eliasoliveira",
+    "first_name": "elias",
+    "last_name": "fonseca oliveira",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-10T08:26:59.994",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$i5yu$43203622b648358a9a00591b47b334eb",
+    "email": "eliasoliveira@mpto.mp.br",
+    "date_joined": "2010-09-24T14:11:24.190"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "esmeraldasiqueira",
+    "first_name": "esmeralda",
+    "last_name": "siqueira",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-09-06T10:39:13.805",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$rqfi6$b984c6c181fbbead9c2ec600072148f6",
+    "email": "esmeraldasiqueira@mpto.mp.br ",
+    "date_joined": "2010-09-09T16:13:41.306"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "franciscosantos",
+    "first_name": "Francisco",
+    "last_name": "Das Chagas Dos Santos",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-08T19:39:04.979",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$plip$8bca30a7f293a85ac5d148176de48500",
+    "email": "franciscosantos@mpto.mp.br",
+    "date_joined": "2009-12-09T08:45:58"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "freurismarsousa",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-09T14:55:01.968",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "sha1$51633$ef685b29202912ee16d7c7efbe180c35065e8433",
+    "email": "freurismarsousa@mpto.mp.br ",
+    "date_joined": "2011-03-01T09:27:18.076"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "iradianmorais",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-10T08:47:03.318",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$lfajh$0f5757161ada63d4a07e62161c04909b",
+    "email": "iradianmorais@mpto.mp.br",
+    "date_joined": "2010-12-17T08:50:51.822"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "katiacorrea",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-09T09:00:37.255",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$qza2$c5a9036ff7b9e314d2167d49987ed785",
+    "email": "katiacorrea@mpto.mp.br ",
+    "date_joined": "2012-06-26T11:38:44.810"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "patriciacabral",
+    "first_name": "Patricia",
+    "last_name": "de Oliveira Cabral",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-20T15:20:41.216",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$yxm0$c3b0b1b0bdf1c11c24ebdbc3a06e9f3d",
+    "email": "patriciacabral@mpto.mp.br ",
+    "date_joined": "2009-12-09T08:45:58"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "valdinamaciel",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-10T08:37:54.531",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$4hl55$89fa88c6b760da481eb37327c3b1261c",
+    "email": "valdinamaciel@mpto.mp.br",
+    "date_joined": "2013-06-06T09:50:42.815"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "vandacavalcante",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-09T10:19:38.036",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$yayy$abd6fde43e6c4b9355e5462b55ecd1b5",
+    "email": "vandacavalcante@mpto.mp.br",
+    "date_joined": "2011-03-16T15:58:58.597"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "vicentejunior",
+    "first_name": "Vicente",
+    "last_name": "Oliveira De Araujo Junior",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": true,
+    "last_login": "2017-10-23T15:01:15.023",
+    "groups": [
+      [
+        "registration-public"
+      ],
+      [
+        "rh-registration"
+      ]
+    ],
+    "user_permissions": [],
+    "password": "md5$dsy1l$4c60e02228e76e864e535b70639ca20f",
+    "email": "vicentejunior@mpto.mp.br ",
+    "date_joined": "2009-10-23T16:06:25.775"
+  },
+  "model": "auth.user"
+}
+]

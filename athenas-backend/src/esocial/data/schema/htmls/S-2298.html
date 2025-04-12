@@ -1,0 +1,345 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_eSocial" id="2298_eSocial">1</td>
+        <td><a href="#r_2298_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298" id="2298">2</td>
+        <td><a href="#r_2298">evtReintegr</a></td>
+        <td><a href="#r_2298_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Reintegração/Outros Provimentos.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_EMPREGADO_DOMESTICO">REGRA_EMPREGADO_DOMESTICO</a><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_POSTERIOR_CAT_OBITO">REGRA_EVENTO_POSTERIOR_CAT_OBITO</a><br>
+            <a href="#REGRA_EXISTE_EVENTO_DESLIGAMENTO">REGRA_EXISTE_EVENTO_DESLIGAMENTO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXTEMP_REINTEGRACAO">REGRA_EXTEMP_REINTEGRACAO</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_REINTEG_EXCLUSAO_EVENTO">REGRA_REINTEG_EXCLUSAO_EVENTO</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_VINCULO">REGRA_RETIFICA_MESMO_VINCULO</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_Id" id="2298_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2298">evtReintegr</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEvento" id="2298_ideEvento">4</td>
+        <td><a href="#r_2298_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2298">evtReintegr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEvento_indRetif"
+            id="2298_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2298_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEvento_nrRecibo"
+            id="2298_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2298_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2298_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEvento_tpAmb" id="2298_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2298_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEvento_procEmi"
+            id="2298_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2298_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEvento_verProc"
+            id="2298_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2298_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEmpregador" id="2298_ideEmpregador">10
+        </td>
+        <td><a href="#r_2298_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2298">evtReintegr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEmpregador_tpInsc"
+            id="2298_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2298_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideEmpregador_nrInsc"
+            id="2298_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2298_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2298_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideVinculo" id="2298_ideVinculo">13</td>
+        <td><a href="#r_2298_ideVinculo">ideVinculo</a></td>
+        <td><a href="#r_2298">evtReintegr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do trabalhador e do vínculo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideVinculo_cpfTrab"
+            id="2298_ideVinculo_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2298_ideVinculo">ideVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_ideVinculo_matricula"
+            id="2298_ideVinculo_matricula">15
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2298_ideVinculo">ideVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no
+            Sistema de Administração de Recursos Humanos do órgão.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula informada pelo empregador no evento S-2200 do
+            respectivo vínculo trabalhista.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_infoReintegr" id="2298_infoReintegr">16</td>
+        <td><a href="#r_2298_infoReintegr">infoReintegr</a></td>
+        <td><a href="#r_2298">evtReintegr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações da reintegração.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_infoReintegr_tpReint"
+            id="2298_infoReintegr_tpReint">17
+        </td>
+        <td>tpReint</td>
+        <td><a href="#r_2298_infoReintegr">infoReintegr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de reintegração/outro provimento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Reintegração por decisão judicial<br>
+            <strong>2</strong> - Reintegração por anistia legal<br>
+            <strong>3</strong> - Reversão de servidor público<br>
+            <strong>4</strong> - Recondução de servidor público<br>
+            <strong>5</strong> - Reinclusão de militar<br>
+            <strong>6</strong> - Revisão de reforma de militar<br>
+            <strong>9</strong> - Outros<br>
+            <strong>Validação:</strong> Os tipos [3, 4, 5, 6] só podem ser informados se a natureza jurídica do
+            declarante for Administração Pública (grupo [1]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_infoReintegr_nrProcJud"
+            id="2298_infoReintegr_nrProcJud">18
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_2298_infoReintegr">infoReintegr</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Em caso de reintegração por determinação judicial, preencher com o número do processo.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a href="#2298_infoReintegr_tpReint">tpReint</a>
+            = [1].<br>
+            Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_infoReintegr_nrLeiAnistia"
+            id="2298_infoReintegr_nrLeiAnistia">19
+        </td>
+        <td>nrLeiAnistia</td>
+        <td><a href="#r_2298_infoReintegr">infoReintegr</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>5-13</td>
+        <td>-</td>
+        <td>Informar a lei de anistia, descrevendo seu número e ano de publicação.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#2298_infoReintegr_tpReint">tpReint</a>
+            = [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_infoReintegr_dtEfetRetorno"
+            id="2298_infoReintegr_dtEfetRetorno">20
+        </td>
+        <td>dtEfetRetorno</td>
+        <td><a href="#r_2298_infoReintegr">infoReintegr</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data do efetivo retorno ao trabalho.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, posterior à data de desligamento do trabalhador. Não
+            pode ser posterior a 30 (trinta) dias da data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2298_infoReintegr_dtEfeito"
+            id="2298_infoReintegr_dtEfeito">21
+        </td>
+        <td>dtEfeito</td>
+        <td><a href="#r_2298_infoReintegr">infoReintegr</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data de início dos efeitos financeiros da reintegração.<br>
+            <strong>Validação:</strong> Deve ser uma data igual ou anterior à data do efetivo retorno ao trabalho e
+            posterior à data do desligamento.
+        </td>
+    </tr>
+    </tbody>
+</table>

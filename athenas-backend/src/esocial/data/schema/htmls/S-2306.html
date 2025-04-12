@@ -1,0 +1,1008 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_eSocial" id="2306_eSocial">1</td>
+        <td><a href="#r_2306_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306" id="2306">2</td>
+        <td><a href="#r_2306">evtTSVAltContr</a></td>
+        <td><a href="#r_2306_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Alteração Contratual.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_POSTERIOR_CAT_OBITO">REGRA_EVENTO_POSTERIOR_CAT_OBITO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_GERAL_VALIDA_DADOS_TABCONTRIB">REGRA_GERAL_VALIDA_DADOS_TABCONTRIB</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_VINCULO">REGRA_RETIFICA_MESMO_VINCULO</a><br>
+            <a href="#REGRA_TSV_ATIVO_NA_DTEVENTO">REGRA_TSV_ATIVO_NA_DTEVENTO</a><br>
+            <a href="#REGRA_VALIDA_TRABALHADOR_BASE_CPF">REGRA_VALIDA_TRABALHADOR_BASE_CPF</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_Id" id="2306_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2306">evtTSVAltContr</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEvento" id="2306_ideEvento">4</td>
+        <td><a href="#r_2306_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2306">evtTSVAltContr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEvento_indRetif"
+            id="2306_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2306_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEvento_nrRecibo"
+            id="2306_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2306_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2306_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEvento_tpAmb" id="2306_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2306_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEvento_procEmi"
+            id="2306_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2306_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEvento_verProc"
+            id="2306_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2306_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEmpregador" id="2306_ideEmpregador">10
+        </td>
+        <td><a href="#r_2306_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2306">evtTSVAltContr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEmpregador_tpInsc"
+            id="2306_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2306_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideEmpregador_nrInsc"
+            id="2306_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2306_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2306_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideTrabSemVinculo"
+            id="2306_ideTrabSemVinculo">13
+        </td>
+        <td><a href="#r_2306_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td><a href="#r_2306">evtTSVAltContr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideTrabSemVinculo_cpfTrab"
+            id="2306_ideTrabSemVinculo_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2306_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideTrabSemVinculo_matricula"
+            id="2306_ideTrabSemVinculo_matricula">15
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2306_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula informada pelo empregador no evento S-2300 do
+            respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_ideTrabSemVinculo_codCateg"
+            id="2306_ideTrabSemVinculo_codCateg">16
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_2306_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador.<br>
+            Informar somente no caso de TSVE sem informação de matrícula no evento S-2300.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se não houver preenchimento de <a
+                    href="#2306_ideTrabSemVinculo_matricula">matricula</a>. Se informado, deve ser um código válido e
+            existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_infoTSVAlteracao" id="2306_infoTSVAlteracao">
+            17
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao">infoTSVAlteracao</a></td>
+        <td><a href="#r_2306">evtTSVAltContr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TSVE - Alteração Contratual.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_infoTSVAlteracao_dtAlteracao"
+            id="2306_infoTSVAlteracao_dtAlteracao">18
+        </td>
+        <td>dtAlteracao</td>
+        <td><a href="#r_2306_infoTSVAlteracao">infoTSVAlteracao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data da alteração das informações.<br>
+            <strong>Validação:</strong> Não pode ser posterior a 180 (cento e oitenta) dias da data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_infoTSVAlteracao_natAtividade"
+            id="2306_infoTSVAlteracao_natAtividade">19
+        </td>
+        <td>natAtividade</td>
+        <td><a href="#r_2306_infoTSVAlteracao">infoTSVAlteracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Natureza da atividade.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Trabalho urbano<br>
+            <strong>2</strong> - Trabalho rural<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se o código de categoria no Registro de Eventos
+            Trabalhistas - RET for igual a [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se o código de
+            categoria no RET for igual a [721, 722, 771, 901].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2306_infoTSVAlteracao_infoComplementares"
+            id="2306_infoTSVAlteracao_infoComplementares">20
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao">infoTSVAlteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo onde são fornecidas informações complementares, preenchidas conforme a categoria do TSVE.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_cargoFuncao"
+            id="2306_infoTSVAlteracao_infoComplementares_cargoFuncao">21
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que apresenta o cargo e/ou função ocupada pelo TSVE.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmCargo"
+            id="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmCargo">22
+        </td>
+        <td>nmCargo</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar o nome do cargo.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se o código de categoria no RET for diferente de
+            [410].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_CBOCargo"
+            id="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_CBOCargo">23
+        </td>
+        <td>CBOCargo</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmCargo">nmCargo</a> for preenchido. Se
+            informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmFuncao"
+            id="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmFuncao">24
+        </td>
+        <td>nmFuncao</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar o nome da função de confiança.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se o código de categoria no RET for igual a [410] e
+            não houver informação de <a href="#2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmCargo">nmCargo</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_CBOFuncao"
+            id="2306_infoTSVAlteracao_infoComplementares_cargoFuncao_CBOFuncao">25
+        </td>
+        <td>CBOFuncao</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Informar a CBO relativa à função de confiança/cargo em comissão.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_cargoFuncao_nmFuncao">nmFuncao</a> for preenchido.
+            Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_remuneracao"
+            id="2306_infoTSVAlteracao_infoComplementares_remuneracao">26
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_remuneracao">remuneracao</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações da remuneração e periodicidade de pagamento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_remuneracao_vrSalFx"
+            id="2306_infoTSVAlteracao_infoComplementares_remuneracao_vrSalFx">27
+        </td>
+        <td>vrSalFx</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Salário base do trabalhador, correspondente à parte fixa da remuneração.<br>
+            <strong>Validação:</strong> Se <a href="#2306_infoTSVAlteracao_infoComplementares_remuneracao_undSalFixo">undSalFixo</a>
+            for igual a [7], preencher com 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_remuneracao_undSalFixo"
+            id="2306_infoTSVAlteracao_infoComplementares_remuneracao_undSalFixo">28
+        </td>
+        <td>undSalFixo</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Unidade de pagamento da parte fixa da remuneração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Por hora<br>
+            <strong>2</strong> - Por dia<br>
+            <strong>3</strong> - Por semana<br>
+            <strong>4</strong> - Por quinzena<br>
+            <strong>5</strong> - Por mês<br>
+            <strong>6</strong> - Por tarefa<br>
+            <strong>7</strong> - Não aplicável - Salário exclusivamente variável
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_remuneracao_dscSalVar"
+            id="2306_infoTSVAlteracao_infoComplementares_remuneracao_dscSalVar">29
+        </td>
+        <td>dscSalVar</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de
+            10% sobre as vendas.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_remuneracao_undSalFixo">undSalFixo</a> for igual a
+            [6, 7].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoDirigenteSindical"
+            id="2306_infoTSVAlteracao_infoComplementares_infoDirigenteSindical">30
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao dirigente sindical.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoDirigenteSindical_tpRegPrev"
+            id="2306_infoTSVAlteracao_infoComplementares_infoDirigenteSindical_tpRegPrev">31
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior<br>
+            <strong>Validação:</strong> Se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            do evento S-2300 for relativa a "Empregado", não pode ser preenchido com [2].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoTrabCedido"
+            id="2306_infoTSVAlteracao_infoComplementares_infoTrabCedido">32
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao trabalhador cedido/em exercício em outro órgão, preenchidas exclusivamente pelo
+            cessionário/órgão de destino.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoTrabCedido_tpRegPrev"
+            id="2306_infoTSVAlteracao_infoComplementares_infoTrabCedido_tpRegPrev">33
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares das Forças Armadas).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior<br>
+            <strong>4</strong> - Sistema de Proteção Social dos Militares das Forças Armadas - SPSMFA<br>
+            <strong>Validação:</strong> Se <a href="#2300_infoTSVInicio_infoComplementares_infoTrabCedido_categOrig">infoTrabCedido/categOrig</a>
+            do evento S-2300 for relativa a "Empregado", não pode ser preenchido com [2, 4].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoMandElet"
+            id="2306_infoTSVAlteracao_infoComplementares_infoMandElet">34
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas a servidor público exercente de mandato eletivo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoMandElet_indRemunCargo"
+            id="2306_infoTSVAlteracao_infoComplementares_infoMandElet_indRemunCargo">35
+        </td>
+        <td>indRemunCargo</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se o servidor optou pela remuneração do cargo efetivo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_cargoFuncao_CBOCargo">CBOCargo</a> = [111120,
+            111250, 111255]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoMandElet_tpRegPrev"
+            id="2306_infoTSVAlteracao_infoComplementares_infoMandElet_tpRegPrev">36
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario">37
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao estagiário ou ao beneficiário do Programa Nacional de Prestação de Serviço Civil
+            Voluntário.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_natEstagio"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_natEstagio">38
+        </td>
+        <td>natEstagio</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Natureza do estágio ou da prestação de serviço civil voluntário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>O</strong> - Obrigatório<br>
+            <strong>N</strong> - Não obrigatório<br>
+            <strong>Validação:</strong> Se o código de categoria for igual a [906], deve ser preenchido com [N].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_nivEstagio"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_nivEstagio">39
+        </td>
+        <td>nivEstagio</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar o nível do estágio ou da prestação de serviço civil voluntário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Fundamental<br>
+            <strong>2</strong> - Médio<br>
+            <strong>3</strong> - Formação profissional<br>
+            <strong>4</strong> - Superior<br>
+            <strong>8</strong> - Especial<br>
+            <strong>9</strong> - Mãe social (Lei 7.644/1987)<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se o código de categoria for igual a [901]. Se o
+            código de categoria for igual a [906], não pode ser informado [9].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_areaAtuacao"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_areaAtuacao">40
+        </td>
+        <td>areaAtuacao</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Área de atuação do estagiário ou, no caso de prestação de serviço civil voluntário, jornada semanal do
+            desempenho de atividades em formato decimal.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_nrApol"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_nrApol">41
+        </td>
+        <td>nrApol</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Número da apólice de seguro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_dtPrevTerm"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_dtPrevTerm">42
+        </td>
+        <td>dtPrevTerm</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data prevista para o término do estágio ou da prestação de serviço civil voluntário.<br>
+            <strong>Validação:</strong> Deve ser uma data posterior à data de início do estágio ou da prestação de
+            serviço civil voluntário.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">43
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Instituição de ensino ou entidade de formação/qualificação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">44
+        </td>
+        <td>cnpjInstEnsino</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ da instituição de ensino, no caso de estágio, ou da entidade de formação/qualificação,
+            no caso de prestação de serviço civil voluntário. Deve ser preenchido apenas se a instituição/entidade for
+            brasileira.<br>
+            <strong>Validação:</strong> Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_nmRazao"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_nmRazao">45
+        </td>
+        <td>nmRazao</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a razão social.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_dscLograd"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_dscLograd">46
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_nrLograd"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_nrLograd">47
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_bairro"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_bairro">48
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cep"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cep">49
+        </td>
+        <td>cep</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal - CEP.<br>
+            <strong>Validação:</strong> Não informar se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_codMunic"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_codMunic">50
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Não informar se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_uf"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_uf">51
+        </td>
+        <td>uf</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO<br>
+            <strong>Validação:</strong> Não informar se o campo <a
+                    href="#2306_infoTSVAlteracao_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            estiver preenchido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_ageIntegracao"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_ageIntegracao">52
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_ageIntegracao">ageIntegracao</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Agente de integração.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_ageIntegracao_cnpjAgntInteg"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_ageIntegracao_cnpjAgntInteg">53
+        </td>
+        <td>cnpjAgntInteg</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_ageIntegracao">ageIntegracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>CNPJ do agente de integração.<br>
+            <strong>Validação:</strong> Deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_supervisorEstagio"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_supervisorEstagio">54
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_supervisorEstagio">supervisorEstagio</a>
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Supervisor do estágio.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_supervisorEstagio_cpfSupervisor"
+            id="2306_infoTSVAlteracao_infoComplementares_infoEstagiario_supervisorEstagio_cpfSupervisor">55
+        </td>
+        <td>cpfSupervisor</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_infoEstagiario_supervisorEstagio">supervisorEstagio</a>
+        </td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>CPF do responsável pela supervisão do estagiário.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_localTrabGeral"
+            id="2306_infoTSVAlteracao_infoComplementares_localTrabGeral">56
+        </td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Estabelecimento (CNPJ, CNO, CAEPF) onde o trabalhador exercerá suas atividades. Caso o trabalhador exerça
+            suas atividades em instalações de terceiros, este campo deve ser preenchido com o estabelecimento do próprio
+            declarante ao qual o trabalhador esteja vinculado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_localTrabGeral_tpInsc"
+            id="2306_infoTSVAlteracao_infoComplementares_localTrabGeral_tpInsc">57
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_localTrabGeral_nrInsc"
+            id="2306_infoTSVAlteracao_infoComplementares_localTrabGeral_nrInsc">58
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2306_infoTSVAlteracao_infoComplementares_localTrabGeral_tpInsc">localTrabGeral/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos
+            (S-1005), bem como compatível com <a href="#2306_infoTSVAlteracao_infoComplementares_localTrabGeral_tpInsc">localTrabGeral/tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2306_infoTSVAlteracao_infoComplementares_localTrabGeral_descComp"
+            id="2306_infoTSVAlteracao_infoComplementares_localTrabGeral_descComp">59
+        </td>
+        <td>descComp</td>
+        <td><a href="#r_2306_infoTSVAlteracao_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-80</td>
+        <td>-</td>
+        <td>Descrição complementar do local de trabalho.</td>
+    </tr>
+    </tbody>
+</table>

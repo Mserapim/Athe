@@ -1,0 +1,80 @@
+[
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "label": "Nacional",
+            "cache_path": "usefulday.ABRANGENCY",
+            "app_label": "usefulday",
+            "active": true,
+            "order_weight": 0,
+            "name": "ABRANGENCY"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "label": "Estadual",
+            "cache_path": "usefulday.ABRANGENCY",
+            "app_label": "usefulday",
+            "active": true,
+            "order_weight": 0,
+            "name": "ABRANGENCY"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "label": "Municipal",
+            "cache_path": "usefulday.ABRANGENCY",
+            "app_label": "usefulday",
+            "active": true,
+            "order_weight": 0,
+            "name": "ABRANGENCY"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 1,
+            "label": "Feriado",
+            "cache_path": "usefulday.KIND",
+            "app_label": "usefulday",
+            "active": true,
+            "order_weight": 0,
+            "name": "KIND"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 2,
+            "label": "Ponto Facultativo",
+            "cache_path": "usefulday.KIND",
+            "app_label": "usefulday",
+            "active": true,
+            "order_weight": 0,
+            "name": "KIND"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "value": 3,
+            "label": "Suspensão",
+            "cache_path": "usefulday.KIND",
+            "app_label": "usefulday",
+            "active": true,
+            "order_weight": 0,
+            "name": "KIND"
+        },
+        "model": "standard.choice"
+    }
+]

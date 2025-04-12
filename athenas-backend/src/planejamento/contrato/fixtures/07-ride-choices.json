@@ -1,0 +1,30 @@
+[
+    {
+        "fields": {
+            "description": "",
+            "cvalue": "1",
+            "value": 1,
+            "label": "Ativo",
+            "cache_path": "contrato.STATUS_RIDE_ITEM",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "STATUS_RIDE_ITEM"
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "description": "",
+            "cvalue": "2",
+            "value": 2,
+            "label": "Cancelado",
+            "cache_path": "contrato.STATUS_RIDE_ITEM",
+            "app_label": "contrato",
+            "active": true,
+            "order_weight": 0,
+            "name": "STATUS_RIDE_ITEM"
+        },
+        "model": "standard.choice"
+    }
+]

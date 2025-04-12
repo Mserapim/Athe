@@ -1,0 +1,728 @@
+[
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add acquisition period",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "add_acquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Pode bloquear os Períodos Aquisitivos",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "can_block_ap"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Pode desbloquear os Períodos Aquisitivos",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "can_unblock_ap"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change acquisition period",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "change_acquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Pode administrar os Períodos Aquisitivos",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "dayoffadmin"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete acquisition period",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "delete_acquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view acquisition period",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "view_acquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Super permissão para apagar os Períodos Aquisitivos",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "can_super_delete"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity",
+            "content_type": [
+                "dayoff",
+                "activity"
+            ],
+            "codename": "add_activity"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Pode autorizar as Atividades",
+            "content_type": [
+                "dayoff",
+                "activity"
+            ],
+            "codename": "can_authorize_mediate_chief"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can homologate activity",
+            "content_type": [
+                "dayoff",
+                "activity"
+            ],
+            "codename": "can_homologate"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity",
+            "content_type": [
+                "dayoff",
+                "activity"
+            ],
+            "codename": "change_activity"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity",
+            "content_type": [
+                "dayoff",
+                "activity"
+            ],
+            "codename": "delete_activity"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity",
+            "content_type": [
+                "dayoff",
+                "activity"
+            ],
+            "codename": "view_activity"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity book",
+            "content_type": [
+                "dayoff",
+                "activitybook"
+            ],
+            "codename": "add_activitybook"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity book",
+            "content_type": [
+                "dayoff",
+                "activitybook"
+            ],
+            "codename": "change_activitybook"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity book",
+            "content_type": [
+                "dayoff",
+                "activitybook"
+            ],
+            "codename": "delete_activitybook"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity book",
+            "content_type": [
+                "dayoff",
+                "activitybook"
+            ],
+            "codename": "view_activitybook"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity change",
+            "content_type": [
+                "dayoff",
+                "activitychange"
+            ],
+            "codename": "add_activitychange"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity change",
+            "content_type": [
+                "dayoff",
+                "activitychange"
+            ],
+            "codename": "change_activitychange"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity change",
+            "content_type": [
+                "dayoff",
+                "activitychange"
+            ],
+            "codename": "delete_activitychange"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity change",
+            "content_type": [
+                "dayoff",
+                "activitychange"
+            ],
+            "codename": "view_activitychange"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity indemnify",
+            "content_type": [
+                "dayoff",
+                "activityindemnify"
+            ],
+            "codename": "add_activityindemnify"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity indemnify",
+            "content_type": [
+                "dayoff",
+                "activityindemnify"
+            ],
+            "codename": "change_activityindemnify"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity indemnify",
+            "content_type": [
+                "dayoff",
+                "activityindemnify"
+            ],
+            "codename": "delete_activityindemnify"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity indemnify",
+            "content_type": [
+                "dayoff",
+                "activityindemnify"
+            ],
+            "codename": "view_activityindemnify"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity interrupt",
+            "content_type": [
+                "dayoff",
+                "activityinterrupt"
+            ],
+            "codename": "add_activityinterrupt"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity interrupt",
+            "content_type": [
+                "dayoff",
+                "activityinterrupt"
+            ],
+            "codename": "change_activityinterrupt"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity interrupt",
+            "content_type": [
+                "dayoff",
+                "activityinterrupt"
+            ],
+            "codename": "delete_activityinterrupt"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity interrupt",
+            "content_type": [
+                "dayoff",
+                "activityinterrupt"
+            ],
+            "codename": "view_activityinterrupt"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity sell",
+            "content_type": [
+                "dayoff",
+                "activitysell"
+            ],
+            "codename": "add_activitysell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity sell",
+            "content_type": [
+                "dayoff",
+                "activitysell"
+            ],
+            "codename": "change_activitysell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity sell",
+            "content_type": [
+                "dayoff",
+                "activitysell"
+            ],
+            "codename": "delete_activitysell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity sell",
+            "content_type": [
+                "dayoff",
+                "activitysell"
+            ],
+            "codename": "view_activitysell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add activity suspend",
+            "content_type": [
+                "dayoff",
+                "activitysuspend"
+            ],
+            "codename": "add_activitysuspend"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change activity suspend",
+            "content_type": [
+                "dayoff",
+                "activitysuspend"
+            ],
+            "codename": "change_activitysuspend"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete activity suspend",
+            "content_type": [
+                "dayoff",
+                "activitysuspend"
+            ],
+            "codename": "delete_activitysuspend"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view activity suspend",
+            "content_type": [
+                "dayoff",
+                "activitysuspend"
+            ],
+            "codename": "view_activitysuspend"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add attachment",
+            "content_type": [
+                "dayoff",
+                "attachment"
+            ],
+            "codename": "add_attachment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change attachment",
+            "content_type": [
+                "dayoff",
+                "attachment"
+            ],
+            "codename": "change_attachment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Pode administrar os Anexos",
+            "content_type": [
+                "dayoff",
+                "attachment"
+            ],
+            "codename": "dayoffadmin"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete attachment",
+            "content_type": [
+                "dayoff",
+                "attachment"
+            ],
+            "codename": "delete_attachment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view attachment",
+            "content_type": [
+                "dayoff",
+                "attachment"
+            ],
+            "codename": "view_attachment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add configuration",
+            "content_type": [
+                "dayoff",
+                "configuration"
+            ],
+            "codename": "add_configuration"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change configuration",
+            "content_type": [
+                "dayoff",
+                "configuration"
+            ],
+            "codename": "change_configuration"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "dayoff admin",
+            "content_type": [
+                "dayoff",
+                "configuration"
+            ],
+            "codename": "dayoffadmin"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete configuration",
+            "content_type": [
+                "dayoff",
+                "configuration"
+            ],
+            "codename": "delete_configuration"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view configuration",
+            "content_type": [
+                "dayoff",
+                "configuration"
+            ],
+            "codename": "view_configuration"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add group acquisition period",
+            "content_type": [
+                "dayoff",
+                "groupperiod"
+            ],
+            "codename": "add_groupperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change group acquisition period",
+            "content_type": [
+                "dayoff",
+                "groupperiod"
+            ],
+            "codename": "change_groupperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Pode administrar os Grupos",
+            "content_type": [
+                "dayoff",
+                "groupperiod"
+            ],
+            "codename": "dayoffadmin"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete group acquisition period",
+            "content_type": [
+                "dayoff",
+                "groupperiod"
+            ],
+            "codename": "delete_groupperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view group acquisition period",
+            "content_type": [
+                "dayoff",
+                "groupperiod"
+            ],
+            "codename": "view_groupperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add usufruct",
+            "content_type": [
+                "dayoff",
+                "usufruct"
+            ],
+            "codename": "add_usufruct"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change usufruct",
+            "content_type": [
+                "dayoff",
+                "usufruct"
+            ],
+            "codename": "change_usufruct"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete usufruct",
+            "content_type": [
+                "dayoff",
+                "usufruct"
+            ],
+            "codename": "delete_usufruct"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view usufruct",
+            "content_type": [
+                "dayoff",
+                "usufruct"
+            ],
+            "codename": "view_usufruct"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add vacation acquisition period",
+            "content_type": [
+                "dayoff",
+                "vacationacquisitionperiod"
+            ],
+            "codename": "add_vacationacquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change vacation acquisition period",
+            "content_type": [
+                "dayoff",
+                "vacationacquisitionperiod"
+            ],
+            "codename": "change_vacationacquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete vacation acquisition period",
+            "content_type": [
+                "dayoff",
+                "vacationacquisitionperiod"
+            ],
+            "codename": "delete_vacationacquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view vacation acquisition period",
+            "content_type": [
+                "dayoff",
+                "vacationacquisitionperiod"
+            ],
+            "codename": "view_vacationacquisitionperiod"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add usufruct sell",
+            "content_type": [
+                "dayoff",
+                "usufructsell"
+            ],
+            "codename": "add_usufructsell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change usufruct sell",
+            "content_type": [
+                "dayoff",
+                "usufructsell"
+            ],
+            "codename": "change_usufructsell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete usufruct sell",
+            "content_type": [
+                "dayoff",
+                "usufructsell"
+            ],
+            "codename": "delete_usufructsell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view usufruct sell",
+            "content_type": [
+                "dayoff",
+                "usufructsell"
+            ],
+            "codename": "view_usufructsell"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Recebe notificações sobre alteração de Períodos Aquisitivos",
+            "content_type": [
+                "dayoff",
+                "acquisitionperiod"
+            ],
+            "codename": "dayoff_notify_admin"
+        }
+    }
+]

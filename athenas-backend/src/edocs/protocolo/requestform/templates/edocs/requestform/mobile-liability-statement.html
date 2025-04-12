@@ -1,0 +1,71 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .local-th {
+        border:1px solid #000000;
+        text-align: center;
+        padding: 4px;
+        font-weight: bold;
+    }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">TERMO DE ENTREGA E RESPONSABILIDADE DE CELULAR INSTITUCIONAL</p>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Responsável:</th></tr>
+    <tr><td class="rf-td">{{ protocol.interessado }}</td></tr>
+    <tr><th class="rf-th">Cargo ocupado:</th></tr>
+    <tr><td class="rf-td">{{ job_position }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="local-th" colspan="2">RELAÇÃO DE BENS</th></tr>
+    <tr><th class="rf-th" colspan="2">Descrição:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ phone_description | safe }}</td></tr>
+    <tr>
+        <th class="rf-th">IMEI nº:</th>
+        <th class="rf-th">Nº da linha:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ imei }}</td>
+        <td class="rf-td">{{ phone_number }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="local-th">DECLARAÇÃO</th></tr>
+    <tr><td class="rf-td">
+        <p class="rf-abnt" style="margin: 1em 0">
+            Declaro para os devidos fins que o aparelho acima especificado está sob 
+            minha inteira responsabilidade e que só será utilizado em favor da 
+            Procuradoria-Geral de Justiça do Estado do Tocantins, na forma do ATO nº 
+            107/2019, compromentendo-me a devolver nas condições em que foram recebidos, 
+            ressalvados o desgaste natural pelo seu uso normal e regular, bem como que 
+            comunicarei qualquer movimentação deste.
+        </p>
+    </td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="local-th">INSTRUÇÕES</th></tr>
+    <tr><td class="rf-td">
+        <p style="margin: 0.5em 0">
+            - Assine este protocolo antes de encaminhá-lo.
+        </p>
+        <p style="margin: 0.5em 0">
+            - Encaminhe-o para a Área de Suporte de Serviços Administrativos (SUPADM).
+        </p>
+    </td></tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

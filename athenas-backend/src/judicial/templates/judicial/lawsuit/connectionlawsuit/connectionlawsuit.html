@@ -1,0 +1,62 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div>
+    	<h2 class="title-1 top-space-3">Conexões entre Procedimentos</h2>
+    	</div>
+  
+    <div class="field">
+        <div class="label"> 
+        	<span style="text-decoration: underline;"> PROCEDIMENTO PRINCIPAL: </span>
+        </div>
+        <div class="value">
+	        <ol class='list-numbered'>
+	        	<li>
+	        		<div class="label"> 
+	        			{{ doc.lawsuit_connected.get_type_lawsuit_display }} - {{ doc.lawsuit_connected }}
+	        		</div>
+	        	</li>
+	        </ol>
+        </div>
+	    
+        <div class="label">
+        	<span style="text-decoration: underline;"> PROCEDIMENTOS RELACIONADOS: </span>
+        </div>
+    	<ol class='list-numbered'>
+			{% for connection in doc.lawsuit_connected.connections.all %}
+			    <li>
+			    	<div class="label"> 
+			    		{{ connection.lawsuit.get_type_lawsuit_display }} - {{ connection.lawsuit }} 
+			    	</div>
+			    	<div class="paragraph-text"> 
+			    		{{ connection.text | safe }}  
+			    	</div>
+			    </li>
+			{% endfor %}
+		</ol>
+    </div>
+
+    {% if doc.read_only %}
+    	<div style="text-align:center; padding-top: 2.5em">
+	        <div style="padding: 4em 0">
+	        	{{ execution_organ.localidade.nome | city_name }}, {{ doc.signed | date:'d \d\e F \d\e Y' }}
+	        </div>
+	        <div>
+	        	<span class="bold">{{ execution_organ.responsavel.pessoa_fisica }}</span>
+	        </div>
+	        <div>
+	        	<span style="font-size: 0.6em">{{ execution_organ.nome }}</span>
+	        </div>
+    	</div>
+    {% else %}
+	    <div class="paragraph-text">
+	        <h2 style="color:red">Observação</h2>
+	        <p>
+	            Este documento não foi assinado até o momento. Para que o mesmo tenha o seu efeito é
+	            necessário que o mesmo seja assiando pelo responsavel pelo Órgão de Execução
+	            <span class="bold">{{ execution_organ }}</span>.
+	        </p>
+	    </div>
+    {% endif %}
+</div>

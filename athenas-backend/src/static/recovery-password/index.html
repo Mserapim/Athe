@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministerio Público do Estado do Tocantins - Recuperação de Senha</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="mask" class="mask"></div>
+      <h1>Recuperação de Senha</h1>
+      <form onsubmit="return fnSubmit(event)" method="POST">
+        <div class="">
+          <label for="username">Usuário:</label>
+          <div class="flex-normal">
+            <input type="text" name="username" id="username" value="" required>
+            <div class="form-mail-complement">@mpto.mp.br</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div style="flex: 2; margin-right: 10px">
+            <label for="cpf">CPF:</label>
+            <div class="flex-normal">
+              <input style="width: 80px" type="text" name="cpf" id="cpf" value="" required>
+            </div>
+          </div>
+          <div style="flex: 1">
+            <label for="data_nascimento">Nascimento:</label>
+            <div class="flex-normal">
+              <input style="width: 80px" type="date" name="data_nascimento" id="data_nascimento" value="" required>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group right">
+          <button type="submit" name="button">Recuperar minha Senha</button>
+        </div>
+      </form>
+      <div class="display-none output-hidden" id="output">
+        <p>
+          Verifique seu email em <b>{{ email }}</b>, foi enviado um email com as instruções de
+          como alterar a sua senha.
+        </p>
+        <p>
+          <b>Importante</b>: Alguns serviços de email podem classificar os
+          emails do Ministério Público como sendo <b>SPAM</b>, desta forma é
+          importante verificar sua caixa de SPAM, principalmente nos email:
+        </p>
+
+        <ul>
+          <li>Outlook</li>
+          <li>Hotmail</li>
+        </ul>
+      </div>
+    </div>
+
+      <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

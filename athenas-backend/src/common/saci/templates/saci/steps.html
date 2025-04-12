@@ -1,0 +1,12 @@
+{% extends "saci/base_generic.html" %}
+
+{% block content %}
+<div class="papper-content">
+    <h2>Encaminhamentos</h2>
+    {% for step in doc.steps.all %}
+        {% include "saci/step.html" %}
+    {% empty %}
+        <strong>Esse atendimento não possui nenhum encaminhamento até o momento</strong>
+    {% endfor %}
+</div>
+{% endblock %}

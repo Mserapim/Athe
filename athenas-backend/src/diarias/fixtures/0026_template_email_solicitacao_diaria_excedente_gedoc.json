@@ -1,0 +1,12 @@
+[
+{
+    "model": "standard.emailtemplate",
+    "pk": 44,
+    "fields": {
+        "code": "SOLICITACAO_DIARIAS_EXCEDENTES_GEDOC",
+        "subject": "Solicita\u00e7\u00e3o de Di\u00e1rias Excedentes",
+        "contents": "<p>Solicito a autoriza\u00e7\u00e3o&nbsp; para pagamento de %QTD_DIAS% dias&nbsp; referente ao pedido de&nbsp; di\u00e1rias&nbsp; referente a&nbsp; %OSEXCEDENTE% a qual foram originadas do pedido original ( %OSORIGINAL%)a qual constam as demais di\u00e1rias.<br type=\"_moz\"></p><p><br></p><p>Quantidade excedente: %QTD_DIAS%<br type=\"_moz\"></p><p>OS&nbsp; de Origem : %OSORIGINAL%<br>Dados da OS:<br type=\"_moz\"></p><p> %DADOS_VIAGEM%<br type=\"_moz\"></p><p>Se voc\u00ea tiver alguma d\u00favida ou precisar de mais informa\u00e7\u00f5es, n\u00e3o hesite em entrar em contato conosco.</p><p> <br type=\"_moz\"></p>",
+        "description": null
+    }
+}
+]

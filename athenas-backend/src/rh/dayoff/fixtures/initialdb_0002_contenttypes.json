@@ -1,0 +1,93 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "acquisitionperiod"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activity"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activitybook"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activitychange"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activityindemnify"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activityinterrupt"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activitysell"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "activitysuspend"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "attachment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "configuration"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "groupperiod"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "usufruct"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "dayoff",
+    "model": "vacationacquisitionperiod"
+  }
+}
+]

@@ -1,0 +1,32 @@
+[
+{
+    "model": "standard.emailtemplate",
+    "pk": 33,
+    "fields": {
+        "code": "PRESTACAO_CONTAS_DIARIAS_INDEFERIDA",
+        "subject": "Presta\u00e7\u00e3o de Contas Indeferida",
+        "contents": "<p style=\"text-align: justify;\">Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p><br></p><p>A sua presta\u00e7\u00e3o de contas em rela\u00e7\u00e3o a sua Viagem foi indeferida, portanto necessita de ajustas para nova valida\u00e7\u00e3o.<br type=\"_moz\"></p><p><br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p><br></p><p>Observa\u00e7\u00e3o da Avalia\u00e7\u00e3o da Presta\u00e7\u00e3o de contas:<br type=\"_moz\"></p><p><br></p><p>%OBS_ANALISE%<br type=\"_moz\"></p><p><br></p><p>&nbsp; PS: a mesma pode ser acessada pelo Vida funcional para realiza\u00e7\u00e3o dos ajustes.<br><br><br>Texto Aviso Presta\u00e7\u00e3o de Contas em atraso</p><p><br></p><p><br></p><p>Texto Aviso Solicita\u00e7\u00e3o de Presta\u00e7\u00e3o de Contas</p> ",
+        "description": null
+    }
+},
+{
+    "model": "standard.emailtemplate",
+    "pk": 34,
+    "fields": {
+        "code": "PRESTACAO_CONTAS_DIARIAS_DEFERIDA",
+        "subject": "Presta\u00e7\u00e3o de Contas Deferida",
+        "contents": "<p>Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p><br></p><p>A sua presta\u00e7\u00e3o de contas em rela\u00e7\u00e3o a sua Viagem foi Aprovada:<br type=\"_moz\"></p><p><br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p><br></p><p>Observa\u00e7\u00e3o da Avalia\u00e7\u00e3o da Presta\u00e7\u00e3o de contas:<br type=\"_moz\"></p><p><br></p><p>%OBS_ANALISE%<br type=\"_moz\"></p>",
+        "description": null
+    }
+},
+{
+    "model": "standard.emailtemplate",
+    "pk": 35,
+    "fields": {
+        "code": "PRESTACAO_CONTAS_DIARIAS_AVISO",
+        "subject": "Presta\u00e7\u00e3o de Contas",
+        "contents": "<p>Sr(a) %BENEFICIARIO%,<br type=\"_moz\"></p><p><br></p><p>A sua presta\u00e7\u00e3o de contas em rela\u00e7\u00e3o a sua viagem , j\u00e1 est\u00e1 dispon\u00edvel para ser preenchida, a data limite \u00e9 %DATA_LIMITE%<br type=\"_moz\"></p><p><br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p><br></p><br><p><br></p> ",
+        "description": null
+    }
+}
+]

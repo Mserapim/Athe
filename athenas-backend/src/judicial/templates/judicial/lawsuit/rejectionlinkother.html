@@ -1,0 +1,54 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Arquivamento por esta em outro Procedimento {% if rejection.other_lawsuit == 1 %}Extrajudicial{% else %}Judicial{% endif %}</h2></div>
+    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+
+    {% if rejection.other_lawsuit == 1 %}
+    <div class="paragraph-text">
+        A Noticia de Fato com número <span class="bold">{{ doc.lawsuit.origin.codigo }}</span> já encontra-se sendo
+        investigado no Procedimento Extrajudicial <span class="bold">{{ doc.other_lawsuit_number }}</span>.
+        {% if doc.despatch %}
+        {% if rejection.execution_organ.responsavel.pessoa_fisica.sexo == 'M' %}
+        O Promotor de Justiça
+        {% else %}
+        A Promotora de Justiça
+        {% endif %}
+        <span class="bold">{{ rejection.execution_organ.responsavel.pessoa_fisica }}</span>
+        ainda fez a seguinte observação quanto a Noticia de Fato:
+        {% endif %}
+    </div>
+    {% else %}
+    <div class="paragraph-text">
+        A Noticia de Fato com número <span class="bold">{{ doc.lawsuit.origin.codigo }}</span> já encontra-se sendo
+        investigado no Procedimento Judicial <span class="bold">{{ doc.other_lawsuit_number }}</span> que corre no
+        <span class="bold">{{ doc.other_lawsuit_organ.nome }}</span>.
+        {% if doc.despatch %}
+        {% if rejection.execution_organ.responsavel.pessoa_fisica.sexo == 'M' %}
+        O Promotor de Justiça
+        {% else %}
+        A Promotora de Justiça
+        {% endif %}
+        <span class="bold">{{ rejection.execution_organ.responsavel.pessoa_fisica }}</span>
+        ainda fez a seguinte observação quanto a Noticia de Fato:
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if doc.despatch %}
+    <div class="paragraph-text">{{ doc.despatch | safely }}</div>
+    {% endif %}
+
+    <div class="paragraph-text">
+        Desta forma a Noticia de Fato <span class="bold">{{ doc.lawsuit.origin.codigo }}</span> passa a ser considerada arquivada
+        devendo o <span class="bold">{{ doc.lawsuit.origin.interessado }}</span> acompanha o andamento da noticia de fato no procedimento
+        mencionado anteriormente.
+    </div>
+
+    <div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ rejection.execution_organ.localidade.nome | city_name }}, {{ rejection.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ rejection.execution_organ.responsavel.pessoa_fisica }}</span></div>
+        <div><span style="font-size: 0.6em">{{ rejection.execution_organ.nome }}</span></div>
+    </div>
+</div>

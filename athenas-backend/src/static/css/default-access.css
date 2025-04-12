@@ -1,0 +1,47 @@
+
+.x-grid3-row-over {
+    background-image: none !important;
+}
+
+.x-window-header .x-window-header-text {
+    color: white;
+}
+
+#nowLoading h1 {
+    color: #1F2730;
+}
+
+/*.intranet-menu li, .intranet-today-mpe li {
+    color: #fff !important;
+}*/
+
+.intranet-menu li a, .intranet-today-mpe li a, .intranet-today-mpe li span,
+.intranet-birthdates .employee-info,
+.list-item .date-area,
+.list-item p,
+.intranet-detail .text *,
+.intranet-detail .files *
+{
+    color: #fff !important;
+    font-size: 16px;
+}
+
+.intranet-menu li:hover, .intranet-menu li:hover a,
+.intranet-today-mpe li:hover, .intranet-today-mpe li:hover a, .intranet-today-mpe li:hover span,
+.intranet-birthdates li:hover .employee-info,
+.list-item .date-area:hover
+{
+    color: #3366CC !important;
+}
+
+.x-grid3-orange-simple {
+    background-color: #d9ad00 !important;
+}
+
+.papper p, .papper .label, .papper .value, .papper th, .papper td,
+.papper h1, .papper h2, .papper h3, .papper small,
+.papper .sign-content-person *:not(a), .legal-sign .sign-content .sign-content-person *:not(a),
+.papper-content *:not(a),  .papper-container-card *:not(a)
+{ color: #000 !important; }
+
+

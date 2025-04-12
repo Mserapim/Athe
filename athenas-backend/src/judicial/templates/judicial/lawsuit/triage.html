@@ -1,0 +1,116 @@
+{% load judicialfilters %}
+
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div class="field">
+        <div>
+            <div class="label">Triagem:</div>
+            <div class="value">{{ triage.number }}</div>
+        </div>
+
+        <div class="column-two">
+            <div class="label">Criado:</div>
+            <div class="value">{{ created_at }}</div>
+        </div>
+
+        <div>
+            <div class="label">Criado por:</div>
+            <div class="value">{{ created_by }}</div>
+        </div>
+
+        {% if modified_at %}
+        <div class="column-two">
+            <div class="label">Modificado:</div>
+            <div class="value">{{ modified_at }}</div>
+        </div>
+        {% endif %}
+
+        {% if modified_by %}
+        <div class="column-two">
+            <div class="label">Modificado por:</div>
+            <div class="value">{{ modified_by }}</div>
+        </div>
+        {% endif %}
+
+        <div style="clear:both"></div>
+    </div>
+
+    <div>
+        <h2 class="title-1 top-space-3">Distribuição do Procedimento</h2>
+
+        {% if triage.parts %}
+            {% for part in triage.parts %}
+            <div class="distribution">
+                <h3 class="location">{{ part.title }}</h3>
+                <div class="info">
+                    <div class="label">Localidades :</div>
+                    {% if part.locations %}
+                    <div class="value">
+                        <ul>
+                        {% for location in part.locations %}
+                            <li>{{ location.name }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% else %}
+                    <div>Não foi indicada nenhuma localidade até o momento.</div>
+                    {% endif %}
+
+                    <div class="label">Órgãos de Execução no sorteio :</div>
+                    {% if part.concurrence %}
+                    <div class="value">
+                        <ul>
+                        {% for tc in part.concurrence %}
+                            <li>
+                                {% if tc.incident_type == 2 %}
+                                <span style="font-weight:bold">
+                                {% elif tc.incident_type == 3 %}
+                                <span style="text-decoration:line-through;">
+                                {% else %}
+                                <span>
+                                {% endif %}
+                                    {{ tc.name }}
+                                </span>
+                                {% if tc.argumentation %}
+                                <div class="detail">
+                                    <h3>Com {{ tc.incident }}</h3>
+                                    {{ tc.argumentation | safely }}
+                                </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% else %}
+                    <div>Não foi feita a busca por concorrencia até o momento.</div>
+                    {% endif %}
+
+
+                    <div class="label">Distribuir para :</div>
+                    <div class="value">
+                    {% if part.distributed %}
+                        <span class="bold">{{ part.distributed.nome }}</span>
+                    {% else %}
+                        <span>Ainda não foi distribuido para nenhum Órgão de Execução.</span>
+                    {% endif %}
+                    </div>
+
+                    {% if part.effected_by %}
+                    <div>
+                        A triagem foi efetivada pelo servidor <span style="font-weight:bold">{{ part.effected_by }}</span>
+                        na data <span style="font-weight:bold">{{ part.effected_at }}</span>.
+                    </div>
+                    {% else %}
+                    <div style="color:red">Esta triagem ainda não foi distribuido.</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="distribution">
+                <h3>Ainda não foi feita a divisão dos assuntos.</h3>
+            </div>
+        {% endif %}
+    </div>
+</div>

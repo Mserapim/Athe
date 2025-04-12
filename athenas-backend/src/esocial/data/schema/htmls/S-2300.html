@@ -1,0 +1,2334 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_eSocial" id="2300_eSocial">1</td>
+        <td><a href="#r_2300_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300" id="2300">2</td>
+        <td><a href="#r_2300">evtTSVInicio</a></td>
+        <td><a href="#r_2300_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Início.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB">REGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB</a><br>
+            <a href="#REGRA_COMPATIB_CATEG_EVENTO">REGRA_COMPATIB_CATEG_EVENTO</a><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVETRAB_VALIDA_OPCAO_FGTS">REGRA_EVETRAB_VALIDA_OPCAO_FGTS</a><br>
+            <a href="#REGRA_EXCLUSAO_ADMISSAO_TSVE_INICIO">REGRA_EXCLUSAO_ADMISSAO_TSVE_INICIO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_GERAL_VALIDA_DADOS_TABCONTRIB">REGRA_GERAL_VALIDA_DADOS_TABCONTRIB</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_MUDANCA_CPF">REGRA_MUDANCA_CPF</a><br>
+            <a href="#REGRA_REGISTRO_PRELIMINAR">REGRA_REGISTRO_PRELIMINAR</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_VINCULO">REGRA_RETIFICA_MESMO_VINCULO</a><br>
+            <a href="#REGRA_TSV_VERIFICA_DUPLICIDADE">REGRA_TSV_VERIFICA_DUPLICIDADE</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a><br>
+            <a href="#REGRA_VALIDA_MATRICULA">REGRA_VALIDA_MATRICULA</a><br>
+            <a href="#REGRA_VALIDA_TRABALHADOR_BASE_CPF">REGRA_VALIDA_TRABALHADOR_BASE_CPF</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_Id" id="2300_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2300">evtTSVInicio</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEvento" id="2300_ideEvento">4</td>
+        <td><a href="#r_2300_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2300">evtTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEvento_indRetif"
+            id="2300_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2300_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEvento_nrRecibo"
+            id="2300_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2300_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2300_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEvento_tpAmb" id="2300_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2300_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEvento_procEmi"
+            id="2300_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2300_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEvento_verProc"
+            id="2300_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2300_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEmpregador" id="2300_ideEmpregador">10
+        </td>
+        <td><a href="#r_2300_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2300">evtTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEmpregador_tpInsc"
+            id="2300_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2300_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_ideEmpregador_nrInsc"
+            id="2300_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2300_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2300_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador" id="2300_trabalhador">13</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td><a href="#r_2300">evtTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_cpfTrab"
+            id="2300_trabalhador_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_nmTrab"
+            id="2300_trabalhador_nmTrab">15
+        </td>
+        <td>nmTrab</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Informar o nome do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_sexo" id="2300_trabalhador_sexo">
+            16
+        </td>
+        <td>sexo</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_racaCor"
+            id="2300_trabalhador_racaCor">17
+        </td>
+        <td>racaCor</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Etnia e raça do trabalhador, conforme sua autoclassificação (art. 39, § 8º, da Lei 12.288/2010).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Branca<br>
+            <strong>2</strong> - Preta<br>
+            <strong>3</strong> - Parda<br>
+            <strong>4</strong> - Amarela<br>
+            <strong>5</strong> - Indígena<br>
+            <strong>6</strong> - Não informado<br>
+            <strong>Validação:</strong> Se <a href="#2300_infoTSVInicio_dtInicio">dtInicio</a> for igual ou posterior a
+            [2024-04-22], não pode ser informado o valor [6].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_estCiv"
+            id="2300_trabalhador_estCiv">18
+        </td>
+        <td>estCiv</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Estado civil do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Solteiro<br>
+            <strong>2</strong> - Casado<br>
+            <strong>3</strong> - Divorciado<br>
+            <strong>4</strong> - Separado<br>
+            <strong>5</strong> - Viúvo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_grauInstr"
+            id="2300_trabalhador_grauInstr">19
+        </td>
+        <td>grauInstr</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Grau de instrução do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>01</strong> - Analfabeto, inclusive o que, embora tenha recebido instrução, não se alfabetizou<br>
+            <strong>02</strong> - Até o 5º ano incompleto do ensino fundamental (antiga 4ª série) ou que se tenha
+            alfabetizado sem ter frequentado escola regular<br>
+            <strong>03</strong> - 5º ano completo do ensino fundamental<br>
+            <strong>04</strong> - Do 6º ao 9º ano do ensino fundamental incompleto (antiga 5ª a 8ª série)<br>
+            <strong>05</strong> - Ensino fundamental completo<br>
+            <strong>06</strong> - Ensino médio incompleto<br>
+            <strong>07</strong> - Ensino médio completo<br>
+            <strong>08</strong> - Educação superior incompleta<br>
+            <strong>09</strong> - Educação superior completa<br>
+            <strong>10</strong> - Pós-graduação completa<br>
+            <strong>11</strong> - Mestrado completo<br>
+            <strong>12</strong> - Doutorado completo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_nmSoc"
+            id="2300_trabalhador_nmSoc">20
+        </td>
+        <td>nmSoc</td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome social para travesti ou transexual.<br>
+            <strong>Validação:</strong> Informação validada na base de dados do CPF.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_nascimento"
+            id="2300_trabalhador_nascimento">21
+        </td>
+        <td><a href="#r_2300_trabalhador_nascimento">nascimento</a></td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do nascimento do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_nascimento_dtNascto"
+            id="2300_trabalhador_nascimento_dtNascto">22
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2300_trabalhador_nascimento">nascimento</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_nascimento_paisNascto"
+            id="2300_trabalhador_nascimento_paisNascto">23
+        </td>
+        <td>paisNascto</td>
+        <td><a href="#r_2300_trabalhador_nascimento">nascimento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país de nascimento do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_nascimento_paisNac"
+            id="2300_trabalhador_nascimento_paisNac">24
+        </td>
+        <td>paisNac</td>
+        <td><a href="#r_2300_trabalhador_nascimento">nascimento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país de nacionalidade do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco"
+            id="2300_trabalhador_endereco">25
+        </td>
+        <td><a href="#r_2300_trabalhador_endereco">endereco</a></td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do endereço do trabalhador.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil"
+            id="2300_trabalhador_endereco_brasil">26
+        </td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td><a href="#r_2300_trabalhador_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no Brasil.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_tpLograd"
+            id="2300_trabalhador_endereco_brasil_tpLograd">27
+        </td>
+        <td>tpLograd</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Tipo de logradouro.<br>
+            <strong>Validação:</strong> Se informado, deve ser um código válido e existente na <a
+                    href="tabelas.html#20">Tabela 20</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_dscLograd"
+            id="2300_trabalhador_endereco_brasil_dscLograd">28
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_nrLograd"
+            id="2300_trabalhador_endereco_brasil_nrLograd">29
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_complemento"
+            id="2300_trabalhador_endereco_brasil_complemento">30
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_bairro"
+            id="2300_trabalhador_endereco_brasil_bairro">31
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_cep"
+            id="2300_trabalhador_endereco_brasil_cep">32
+        </td>
+        <td>cep</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal - CEP.<br>
+            <strong>Validação:</strong> Deve ser preenchido apenas com números, com 8 (oito) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_codMunic"
+            id="2300_trabalhador_endereco_brasil_codMunic">33
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_brasil_uf"
+            id="2300_trabalhador_endereco_brasil_uf">34
+        </td>
+        <td>uf</td>
+        <td><a href="#r_2300_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior"
+            id="2300_trabalhador_endereco_exterior">35
+        </td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td><a href="#r_2300_trabalhador_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no exterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_paisResid"
+            id="2300_trabalhador_endereco_exterior_paisResid">36
+        </td>
+        <td>paisResid</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_dscLograd"
+            id="2300_trabalhador_endereco_exterior_dscLograd">37
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_nrLograd"
+            id="2300_trabalhador_endereco_exterior_nrLograd">38
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_complemento"
+            id="2300_trabalhador_endereco_exterior_complemento">39
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_bairro"
+            id="2300_trabalhador_endereco_exterior_bairro">40
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_nmCid"
+            id="2300_trabalhador_endereco_exterior_nmCid">41
+        </td>
+        <td>nmCid</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-50</td>
+        <td>-</td>
+        <td>Nome da cidade.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_endereco_exterior_codPostal"
+            id="2300_trabalhador_endereco_exterior_codPostal">42
+        </td>
+        <td>codPostal</td>
+        <td><a href="#r_2300_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4-12</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_trabImig"
+            id="2300_trabalhador_trabImig">43
+        </td>
+        <td><a href="#r_2300_trabalhador_trabImig">trabImig</a></td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do trabalhador imigrante.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_trabImig_tmpResid"
+            id="2300_trabalhador_trabImig_tmpResid">44
+        </td>
+        <td>tmpResid</td>
+        <td><a href="#r_2300_trabalhador_trabImig">trabImig</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tempo de residência do trabalhador imigrante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Prazo indeterminado<br>
+            <strong>2</strong> - Prazo determinado<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2300_infoTSVInicio_dtInicio">dtInicio</a>
+            &gt;= [2021-07-19].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_trabImig_condIng"
+            id="2300_trabalhador_trabImig_condIng">45
+        </td>
+        <td>condIng</td>
+        <td><a href="#r_2300_trabalhador_trabImig">trabImig</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Condição de ingresso do trabalhador imigrante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Refugiado<br>
+            <strong>2</strong> - Solicitante de refúgio<br>
+            <strong>3</strong> - Permanência no Brasil em razão de reunião familiar<br>
+            <strong>4</strong> - Beneficiado pelo acordo entre países do Mercosul<br>
+            <strong>5</strong> - Dependente de agente diplomático e/ou consular de países que mantêm acordo de
+            reciprocidade para o exercício de atividade remunerada no Brasil<br>
+            <strong>6</strong> - Beneficiado pelo Tratado de Amizade, Cooperação e Consulta entre a República Federativa
+            do Brasil e a República Portuguesa<br>
+            <strong>7</strong> - Outra condição<br>
+            <strong>Validação:</strong> Se <a href="#2300_trabalhador_trabImig_tmpResid">tmpResid</a> = [1], não pode
+            ser informado [2, 5]. Se <a href="#2300_trabalhador_trabImig_tmpResid">tmpResid</a> = [2], não pode ser
+            informado [1].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia"
+            id="2300_trabalhador_infoDeficiencia">46
+        </td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Pessoa com deficiência.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_defFisica"
+            id="2300_trabalhador_infoDeficiencia_defFisica">47
+        </td>
+        <td>defFisica</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência física.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_defVisual"
+            id="2300_trabalhador_infoDeficiencia_defVisual">48
+        </td>
+        <td>defVisual</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência visual.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_defAuditiva"
+            id="2300_trabalhador_infoDeficiencia_defAuditiva">49
+        </td>
+        <td>defAuditiva</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência auditiva.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_defMental"
+            id="2300_trabalhador_infoDeficiencia_defMental">50
+        </td>
+        <td>defMental</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência mental.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_defIntelectual"
+            id="2300_trabalhador_infoDeficiencia_defIntelectual">51
+        </td>
+        <td>defIntelectual</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência intelectual.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_reabReadap"
+            id="2300_trabalhador_infoDeficiencia_reabReadap">52
+        </td>
+        <td>reabReadap</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o trabalhador é reabilitado (empregado) ou readaptado (servidor público/militar).<br>
+            Reabilitado: estando o empregado incapacitado parcial ou totalmente para o trabalho, cumpriu programa de
+            reabilitação profissional no INSS, recebendo certificado e sendo proporcionados os meios indicados para
+            participar do mercado de trabalho.<br>
+            Readaptado: o servidor está investido em cargo de atribuições e responsabilidades compatíveis com a
+            limitação que tenha sofrido em sua capacidade física ou mental verificada em inspeção médica.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_infoDeficiencia_observacao"
+            id="2300_trabalhador_infoDeficiencia_observacao">53
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2300_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente"
+            id="2300_trabalhador_dependente">54
+        </td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações dos dependentes.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_tpDep"
+            id="2300_trabalhador_dependente_tpDep">55
+        </td>
+        <td>tpDep</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de dependente.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2300_trabalhador_dependente_depIRRF">depIRRF</a>
+            = [S].<br>
+            Deve ser um código válido e existente na <a href="tabelas.html#07">Tabela 07</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_nmDep"
+            id="2300_trabalhador_dependente_nmDep">56
+        </td>
+        <td>nmDep</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome do dependente.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_dtNascto"
+            id="2300_trabalhador_dependente_dtNascto">57
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_cpfDep"
+            id="2300_trabalhador_dependente_cpfDep">58
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF.<br>
+            <strong>Validação:</strong> Deve ser um número de CPF válido, observando o que segue:<br>
+            a) O preenchimento é obrigatório se <a href="#2300_trabalhador_dependente_depIRRF">depIRRF</a> = [S];<br>
+            b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em <a
+                    href="#2300_ideEmpregador">ideEmpregador</a>;<br>
+            c) Não pode haver mais de um dependente com o mesmo número de CPF.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_depIRRF"
+            id="2300_trabalhador_dependente_depIRRF">59
+        </td>
+        <td>depIRRF</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente do trabalhador para fins de dedução de seu rendimento tributável pelo Imposto de
+            Renda.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_depSF"
+            id="2300_trabalhador_dependente_depSF">60
+        </td>
+        <td>depSF</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente para fins de recebimento do benefício de salário-família.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_incTrab"
+            id="2300_trabalhador_dependente_incTrab">61
+        </td>
+        <td>incTrab</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o dependente tem incapacidade física ou mental para o trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_dependente_descrDep"
+            id="2300_trabalhador_dependente_descrDep">62
+        </td>
+        <td>descrDep</td>
+        <td><a href="#r_2300_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a descrição da dependência.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2300_trabalhador_dependente_tpDep">tpDep</a> = [99].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_contato"
+            id="2300_trabalhador_contato">63
+        </td>
+        <td><a href="#r_2300_trabalhador_contato">contato</a></td>
+        <td><a href="#r_2300_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de contato.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_contato_fonePrinc"
+            id="2300_trabalhador_contato_fonePrinc">64
+        </td>
+        <td>fonePrinc</td>
+        <td><a href="#r_2300_trabalhador_contato">contato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>8-13</td>
+        <td>-</td>
+        <td>Número de telefone do trabalhador, com DDD.<br>
+            <strong>Validação:</strong> Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_trabalhador_contato_emailPrinc"
+            id="2300_trabalhador_contato_emailPrinc">65
+        </td>
+        <td>emailPrinc</td>
+        <td><a href="#r_2300_trabalhador_contato">contato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6-60</td>
+        <td>-</td>
+        <td>Endereço eletrônico.<br>
+            <strong>Validação:</strong> O e-mail deve ser possuir o caractere "@" e este não pode estar no início e no
+            fim do e-mail. Deve possuir no mínimo um caractere "." depois do @ e não pode estar no início ou no final do
+            e-mail.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio" id="2300_infoTSVInicio">66
+        </td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td><a href="#r_2300">evtTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE - Início.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_cadIni"
+            id="2300_infoTSVInicio_cadIni">67
+        </td>
+        <td>cadIni</td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se o evento se refere a cadastramento inicial (o ingresso do trabalhador no empregador declarante é
+            anterior à data de início da obrigatoriedade de envio de seus eventos não periódicos) ou se refere a início
+            de TSVE (o ingresso do trabalhador no empregador declarante é igual ou posterior à data de início da
+            obrigatoriedade de envio de seus eventos não periódicos).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim (Cadastramento Inicial)<br>
+            <strong>N</strong> - Não (Início de TSVE)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_matricula"
+            id="2300_infoTSVInicio_matricula">68
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2300_ideEvento_indRetif">indRetif</a> =
+            [1]. No caso de retificação (<a href="#2300_ideEvento_indRetif">indRetif</a> = [2]), a matrícula deve ser
+            preenchida caso tenha sido informada no evento original.<br>
+            O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_codCateg"
+            id="2300_infoTSVInicio_codCateg">69
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_dtInicio"
+            id="2300_infoTSVInicio_dtInicio">70
+        </td>
+        <td>dtInicio</td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de início, que pode ser:<br>
+            a) Para o cooperado, a data de ingresso na cooperativa;<br>
+            b) Para o diretor não empregado, a data de posse no cargo;<br>
+            c) Para o dirigente sindical, a data de início do mandato no sindicato;<br>
+            d) Para o estagiário, a data de início do estágio;<br>
+            e) Para o trabalhador avulso, a data de ingresso no Órgão Gestor de Mão de Obra - OGMO ou no sindicato;<br>
+            f) Para o servidor público exercente de cargo eletivo, a data de início do mandato;<br>
+            g) Para os demais trabalhadores, a data de início das atividades.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser posterior à data de nascimento do trabalhador, não pode ser posterior a 30 (trinta) dias da data
+            atual e deve ser igual ou anterior ao ano do óbito, se existente;<br>
+            b) Se <a href="#2300_infoTSVInicio_cadIni">cadIni</a> = [S], deve ser anterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o empregador no eSocial;<br>
+            c) Se <a href="#2300_infoTSVInicio_cadIni">cadIni</a> = [N], deve ser igual ou posterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o empregador no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_nrProcTrab"
+            id="2300_infoTSVInicio_nrProcTrab">71
+        </td>
+        <td>nrProcTrab</td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Número que identifica o processo trabalhista, quando o início de TSVE se der por decisão judicial.<br>
+            <strong>Validação:</strong> Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_natAtividade"
+            id="2300_infoTSVInicio_natAtividade">72
+        </td>
+        <td>natAtividade</td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Natureza da atividade.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Trabalho urbano<br>
+            <strong>2</strong> - Trabalho rural<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2300_infoTSVInicio_codCateg">codCateg</a>
+            = [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se <a
+                    href="#2300_infoTSVInicio_codCateg">codCateg</a> = [721, 722, 771, 901].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_infoComplementares"
+            id="2300_infoTSVInicio_infoComplementares">73
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo onde são fornecidas informações complementares, preenchidas conforme a categoria do TSVE.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_infoComplementares_cargoFuncao"
+            id="2300_infoTSVInicio_infoComplementares_cargoFuncao">74
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que apresenta o cargo e/ou função ocupada pelo TSVE.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_cargoFuncao_nmCargo"
+            id="2300_infoTSVInicio_infoComplementares_cargoFuncao_nmCargo">75
+        </td>
+        <td>nmCargo</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar o nome do cargo.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2300_infoTSVInicio_codCateg">codCateg</a>
+            for diferente de [410].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_cargoFuncao_CBOCargo"
+            id="2300_infoTSVInicio_infoComplementares_cargoFuncao_CBOCargo">76
+        </td>
+        <td>CBOCargo</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2300_infoTSVInicio_infoComplementares_cargoFuncao_nmCargo">nmCargo</a> for preenchido. Se
+            informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_cargoFuncao_nmFuncao"
+            id="2300_infoTSVInicio_infoComplementares_cargoFuncao_nmFuncao">77
+        </td>
+        <td>nmFuncao</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar o nome da função de confiança.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2300_infoTSVInicio_codCateg">codCateg</a>
+            = [410] e não houver informação de <a href="#2300_infoTSVInicio_infoComplementares_cargoFuncao_nmCargo">nmCargo</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_cargoFuncao_CBOFuncao"
+            id="2300_infoTSVInicio_infoComplementares_cargoFuncao_CBOFuncao">78
+        </td>
+        <td>CBOFuncao</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_cargoFuncao">cargoFuncao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Informar a CBO relativa à função de confiança/cargo em comissão.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2300_infoTSVInicio_infoComplementares_cargoFuncao_nmFuncao">nmFuncao</a> for preenchido. Se
+            informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_infoComplementares_remuneracao"
+            id="2300_infoTSVInicio_infoComplementares_remuneracao">79
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_remuneracao">remuneracao</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações da remuneração e periodicidade de pagamento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_remuneracao_vrSalFx"
+            id="2300_infoTSVInicio_infoComplementares_remuneracao_vrSalFx">80
+        </td>
+        <td>vrSalFx</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Salário base do trabalhador, correspondente à parte fixa da remuneração.<br>
+            <strong>Validação:</strong> Se <a href="#2300_infoTSVInicio_infoComplementares_remuneracao_undSalFixo">undSalFixo</a>
+            for igual a [7], preencher com 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_remuneracao_undSalFixo"
+            id="2300_infoTSVInicio_infoComplementares_remuneracao_undSalFixo">81
+        </td>
+        <td>undSalFixo</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Unidade de pagamento da parte fixa da remuneração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Por hora<br>
+            <strong>2</strong> - Por dia<br>
+            <strong>3</strong> - Por semana<br>
+            <strong>4</strong> - Por quinzena<br>
+            <strong>5</strong> - Por mês<br>
+            <strong>6</strong> - Por tarefa<br>
+            <strong>7</strong> - Não aplicável - Salário exclusivamente variável
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_remuneracao_dscSalVar"
+            id="2300_infoTSVInicio_infoComplementares_remuneracao_dscSalVar">82
+        </td>
+        <td>dscSalVar</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de
+            10% sobre as vendas.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2300_infoTSVInicio_infoComplementares_remuneracao_undSalFixo">undSalFixo</a> for igual a [6,
+            7].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_infoComplementares_FGTS"
+            id="2300_infoTSVInicio_infoComplementares_FGTS">83
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_FGTS">FGTS</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do Fundo de Garantia do Tempo de Serviço - FGTS.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_FGTS_dtOpcFGTS"
+            id="2300_infoTSVInicio_infoComplementares_FGTS_dtOpcFGTS">84
+        </td>
+        <td>dtOpcFGTS</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_FGTS">FGTS</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data de opção do trabalhador pelo FGTS.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">85
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao dirigente sindical.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">86
+        </td>
+        <td>categOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente à categoria de origem do dirigente sindical.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>,
+            diferente de [401].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpInsc"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpInsc">87
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório e exclusivo se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            corresponder a "Empregado", "Agente Público", "Avulso" ou for igual a [721].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_nrInsc"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_nrInsc">88
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do empregador de origem do dirigente sindical, de acordo com o tipo de
+            inscrição indicado no campo <a href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpInsc">infoDirigenteSindical/tpInsc</a>.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpInsc">infoDirigenteSindical/tpInsc</a>
+            for informado. Se preenchido, deve ser um número de inscrição válido e diferente da inscrição do declarante,
+            considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.<br>
+            Se <a href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpInsc">infoDirigenteSindical/tpInsc</a>
+            = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador e dos
+            estabelecimentos informados através do evento S-1005.<br>
+            Se <a href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpInsc">infoDirigenteSindical/tpInsc</a>
+            = [2], deve possuir 11 (onze) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_dtAdmOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_dtAdmOrig">89
+        </td>
+        <td>dtAdmOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de admissão (ou de início) do dirigente sindical na empresa de origem.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            corresponder a "Empregado", "Agente Público", "Avulso" ou for igual a [721].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_matricOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_matricOrig">90
+        </td>
+        <td>matricOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Preencher com a matrícula do trabalhador na empresa de origem.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            corresponder a "Empregado" ou "Agente Público".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpRegTrab"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpRegTrab">91
+        </td>
+        <td>tpRegTrab</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime trabalhista.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas<br>
+            <strong>2</strong> - Estatutário/legislações específicas (servidor temporário, militar, agente político,
+            etc.)<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório e exclusivo se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            corresponder a "Empregado" ou "Agente Público".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpRegPrev"
+            id="2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_tpRegPrev">92
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoDirigenteSindical">infoDirigenteSindical</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior<br>
+            <strong>Validação:</strong> Se <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            for relativa a "Empregado", não pode ser preenchido com [2].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido">93
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao trabalhador cedido/em exercício em outro órgão ou servidor público indicado para
+            conselho, preenchidas exclusivamente pelo cessionário/órgão de destino.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido_categOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido_categOrig">94
+        </td>
+        <td>categOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente à categoria de origem do trabalhador cedido ou do servidor público
+            indicado para conselho.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>,
+            diferente de [305, 410].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido_cnpjCednt"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido_cnpjCednt">95
+        </td>
+        <td>cnpjCednt</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o CNPJ do empregador/órgão público cedente/de origem.<br>
+            <strong>Validação:</strong> Deve ser um CNPJ diferente do CNPJ do empregador/órgão público e diferente dos
+            estabelecimentos informados através do evento S-1005.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_CNPJ">REGRA_VALIDA_CNPJ</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido_matricCed"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido_matricCed">96
+        </td>
+        <td>matricCed</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Preencher com a matrícula do trabalhador no empregador/órgão público cedente/de origem.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido_dtAdmCed"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido_dtAdmCed">97
+        </td>
+        <td>dtAdmCed</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de admissão (ou de exercício) do trabalhador no empregador/órgão público cedente/de
+            origem.<br>
+            <strong>Validação:</strong> Deve ser uma data igual ou anterior a <a href="#2300_infoTSVInicio_dtInicio">dtInicio</a>
+            e posterior a <a href="#2300_trabalhador_nascimento_dtNascto">nascimento/dtNascto</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido_tpRegTrab"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido_tpRegTrab">98
+        </td>
+        <td>tpRegTrab</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime trabalhista.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas<br>
+            <strong>2</strong> - Estatutário/legislações específicas (servidor temporário, militar, agente político,
+            etc.)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoTrabCedido_tpRegPrev"
+            id="2300_infoTSVInicio_infoComplementares_infoTrabCedido_tpRegPrev">99
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoTrabCedido">infoTrabCedido</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares das Forças Armadas).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior<br>
+            <strong>4</strong> - Sistema de Proteção Social dos Militares das Forças Armadas - SPSMFA<br>
+            <strong>Validação:</strong> Se <a href="#2300_infoTSVInicio_infoComplementares_infoTrabCedido_categOrig">infoTrabCedido/categOrig</a>
+            for relativa a "Empregado", não pode ser preenchido com [2, 4]. Se <a href="#2300_infoTSVInicio_codCateg">codCateg</a>
+            = [305], deve ser preenchido com [2].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet">100
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas a servidor público exercente de mandato eletivo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_categOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_categOrig">101
+        </td>
+        <td>categOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente à categoria de origem do servidor.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>,
+            diferente de [304].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_cnpjOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_cnpjOrig">102
+        </td>
+        <td>cnpjOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o CNPJ do órgão público de origem.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_CNPJ">REGRA_VALIDA_CNPJ</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_matricOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_matricOrig">103
+        </td>
+        <td>matricOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Preencher com a matrícula do servidor no órgão público de origem.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_dtExercOrig"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_dtExercOrig">104
+        </td>
+        <td>dtExercOrig</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de exercício do servidor no órgão público de origem.<br>
+            <strong>Validação:</strong> Deve ser uma data anterior a <a href="#2300_infoTSVInicio_dtInicio">dtInicio</a>
+            e igual ou posterior a 01/01/1890.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_indRemunCargo"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_indRemunCargo">105
+        </td>
+        <td>indRemunCargo</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se o servidor optou pela remuneração do cargo efetivo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2300_infoTSVInicio_infoComplementares_cargoFuncao_CBOCargo">CBOCargo</a> = [111120, 111250,
+            111255]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_tpRegTrab"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_tpRegTrab">106
+        </td>
+        <td>tpRegTrab</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime trabalhista.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas<br>
+            <strong>2</strong> - Estatutário/legislações específicas (servidor temporário, militar, agente político,
+            etc.)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoMandElet_tpRegPrev"
+            id="2300_infoTSVInicio_infoComplementares_infoMandElet_tpRegPrev">107
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoMandElet">infoMandElet</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario">108
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao estagiário ou ao beneficiário do Programa Nacional de Prestação de Serviço Civil
+            Voluntário.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_natEstagio"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_natEstagio">109
+        </td>
+        <td>natEstagio</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Natureza do estágio ou da prestação de serviço civil voluntário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>O</strong> - Obrigatório<br>
+            <strong>N</strong> - Não obrigatório<br>
+            <strong>Validação:</strong> Se o código de categoria for igual a [906], deve ser preenchido com [N].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_nivEstagio"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_nivEstagio">110
+        </td>
+        <td>nivEstagio</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar o nível do estágio ou da prestação de serviço civil voluntário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Fundamental<br>
+            <strong>2</strong> - Médio<br>
+            <strong>3</strong> - Formação profissional<br>
+            <strong>4</strong> - Superior<br>
+            <strong>8</strong> - Especial<br>
+            <strong>9</strong> - Mãe social (Lei 7.644/1987)<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se o código de categoria for igual a [901]. Se o
+            código de categoria for igual a [906], não pode ser informado [9].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_areaAtuacao"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_areaAtuacao">111
+        </td>
+        <td>areaAtuacao</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Área de atuação do estagiário ou, no caso de prestação de serviço civil voluntário, jornada semanal do
+            desempenho de atividades em formato decimal.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_nrApol"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_nrApol">112
+        </td>
+        <td>nrApol</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Número da apólice de seguro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_dtPrevTerm"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_dtPrevTerm">113
+        </td>
+        <td>dtPrevTerm</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data prevista para o término do estágio ou da prestação de serviço civil voluntário.<br>
+            <strong>Validação:</strong> Deve ser uma data posterior à data de início do estágio ou da prestação de
+            serviço civil voluntário.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">114
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Instituição de ensino ou entidade de formação/qualificação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">115
+        </td>
+        <td>cnpjInstEnsino</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ da instituição de ensino, no caso de estágio, ou da entidade de formação/qualificação,
+            no caso de prestação de serviço civil voluntário. Deve ser preenchido apenas se a instituição/entidade for
+            brasileira.<br>
+            <strong>Validação:</strong> Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_nmRazao"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_nmRazao">116
+        </td>
+        <td>nmRazao</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a razão social.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_dscLograd"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_dscLograd">117
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_nrLograd"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_nrLograd">118
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_bairro"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_bairro">119
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            não estiver preenchido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cep"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cep">120
+        </td>
+        <td>cep</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal - CEP.<br>
+            <strong>Validação:</strong> Não informar se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_codMunic"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_codMunic">121
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Não informar se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_uf"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_uf">122
+        </td>
+        <td>uf</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino">instEnsino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO<br>
+            <strong>Validação:</strong> Não informar se o campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoEstagiario_instEnsino_cnpjInstEnsino">cnpjInstEnsino</a>
+            estiver preenchido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_ageIntegracao"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_ageIntegracao">123
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_ageIntegracao">ageIntegracao</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Agente de integração.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_ageIntegracao_cnpjAgntInteg"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_ageIntegracao_cnpjAgntInteg">124
+        </td>
+        <td>cnpjAgntInteg</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_ageIntegracao">ageIntegracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>CNPJ do agente de integração.<br>
+            <strong>Validação:</strong> Deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_supervisorEstagio"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_supervisorEstagio">125
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_supervisorEstagio">supervisorEstagio</a>
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario">infoEstagiario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Supervisor do estágio.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_infoEstagiario_supervisorEstagio_cpfSupervisor"
+            id="2300_infoTSVInicio_infoComplementares_infoEstagiario_supervisorEstagio_cpfSupervisor">126
+        </td>
+        <td>cpfSupervisor</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_infoEstagiario_supervisorEstagio">supervisorEstagio</a>
+        </td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>CPF do responsável pela supervisão do estagiário.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_localTrabGeral"
+            id="2300_infoTSVInicio_infoComplementares_localTrabGeral">127
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares">infoComplementares</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Estabelecimento (CNPJ, CNO, CAEPF) onde o trabalhador exercerá suas atividades. Caso o trabalhador exerça
+            suas atividades em instalações de terceiros, este campo deve ser preenchido com o estabelecimento do próprio
+            declarante ao qual o trabalhador esteja vinculado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_localTrabGeral_tpInsc"
+            id="2300_infoTSVInicio_infoComplementares_localTrabGeral_tpInsc">128
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_localTrabGeral_nrInsc"
+            id="2300_infoTSVInicio_infoComplementares_localTrabGeral_nrInsc">129
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2300_infoTSVInicio_infoComplementares_localTrabGeral_tpInsc">localTrabGeral/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos
+            (S-1005), bem como compatível com <a href="#2300_infoTSVInicio_infoComplementares_localTrabGeral_tpInsc">localTrabGeral/tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2300_infoTSVInicio_infoComplementares_localTrabGeral_descComp"
+            id="2300_infoTSVInicio_infoComplementares_localTrabGeral_descComp">130
+        </td>
+        <td>descComp</td>
+        <td><a href="#r_2300_infoTSVInicio_infoComplementares_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-80</td>
+        <td>-</td>
+        <td>Descrição complementar do local de trabalho.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_mudancaCPF"
+            id="2300_infoTSVInicio_mudancaCPF">131
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_mudancaCPF">mudancaCPF</a></td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de mudança de CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_mudancaCPF_cpfAnt"
+            id="2300_infoTSVInicio_mudancaCPF_cpfAnt">132
+        </td>
+        <td>cpfAnt</td>
+        <td><a href="#r_2300_infoTSVInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF antigo do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_mudancaCPF_matricAnt"
+            id="2300_infoTSVInicio_mudancaCPF_matricAnt">133
+        </td>
+        <td>matricAnt</td>
+        <td><a href="#r_2300_infoTSVInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Preencher com a matrícula anterior do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_mudancaCPF_dtAltCPF"
+            id="2300_infoTSVInicio_mudancaCPF_dtAltCPF">134
+        </td>
+        <td>dtAltCPF</td>
+        <td><a href="#r_2300_infoTSVInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de alteração do CPF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_mudancaCPF_observacao"
+            id="2300_infoTSVInicio_mudancaCPF_observacao">135
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2300_infoTSVInicio_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_afastamento"
+            id="2300_infoTSVInicio_afastamento">136
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_afastamento">afastamento</a></td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de afastamento do TSVE.<br>
+            Preenchimento exclusivo em caso de trabalhador que permaneça afastado na data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador no eSocial ou na data de alteração do CPF.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_afastamento_dtIniAfast"
+            id="2300_infoTSVInicio_afastamento_dtIniAfast">137
+        </td>
+        <td>dtIniAfast</td>
+        <td><a href="#r_2300_infoTSVInicio_afastamento">afastamento</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de início do afastamento.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de início do TSVE;<br>
+            b) Se <a href="#2300_infoTSVInicio_cadIni">cadIni</a> = [S], deve ser anterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o empregador;<br>
+            c) Se <a href="#2300_infoTSVInicio_cadIni">cadIni</a> = [N], deve ser anterior à data de alteração do CPF do
+            trabalhador (<a href="#2300_infoTSVInicio_mudancaCPF_dtAltCPF">dtAltCPF</a>).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_afastamento_codMotAfast"
+            id="2300_infoTSVInicio_afastamento_codMotAfast">138
+        </td>
+        <td>codMotAfast</td>
+        <td><a href="#r_2300_infoTSVInicio_afastamento">afastamento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com o código do motivo de afastamento temporário.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#18">Tabela 18</a>,
+            bem como compatível com o código de categoria do trabalhador, conforme <a href="tabelas.html#18">Tabela
+                18</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_termino"
+            id="2300_infoTSVInicio_termino">139
+        </td>
+        <td><a href="#r_2300_infoTSVInicio_termino">termino</a></td>
+        <td><a href="#r_2300_infoTSVInicio">infoTSVInicio</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação do término do TSVE.<br>
+            Grupo preenchido exclusivamente caso seja necessário enviar cadastramento inicial referente a trabalhador
+            com data de término anterior ao início dos eventos não periódicos para o empregador no eSocial (por exemplo,
+            envio para pagamento de retiradas em meses posteriores à data de término e sob vigência dos eventos
+            periódicos para o empregador no eSocial).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2300_infoTSVInicio_termino_dtTerm"
+            id="2300_infoTSVInicio_termino_dtTerm">140
+        </td>
+        <td>dtTerm</td>
+        <td><a href="#r_2300_infoTSVInicio_termino">termino</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data do término.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de início do TSVE;<br>
+            b) Deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.
+        </td>
+    </tr>
+    </tbody>
+</table>

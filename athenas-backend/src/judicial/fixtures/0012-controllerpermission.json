@@ -1,0 +1,193 @@
+[
+{
+    "fields": {
+        "controllers": [
+            [
+                "083cc11c7a1c4a0da542bad5196632fe"
+            ],
+            [
+                "16aefb20b8274001a5d498b04cfb4111"
+            ]
+        ],
+        "name": "ejud-conselho",
+        "users": [
+            [
+                "allanetenorio"
+            ],
+            [
+                "danielaqueiroz"
+            ],
+            [
+                "mariamascarenhas"
+            ],
+            [
+                "adelmacarvalho"
+            ],
+            [
+                "shirleysantos"
+            ],
+            [
+                "isleysilva"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "6c288c582eec4631a380e8f0c93522e3"
+            ]
+        ],
+        "name": "ejud-gestor-diligencia",
+        "users": [
+            [
+                "mariasouza"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "64d5dacf3b43495d9000cbbf1f8febb2"
+            ],
+            [
+                "4210cf27da214460a1b8a56e0d3467e5"
+            ],
+            [
+                "894ebdc800ed44218551cb5bebfa647e"
+            ]
+        ],
+        "name": "ejud-gestor-expediente",
+        "users": [
+            [
+                "emannuellaoliveira"
+            ],
+            [
+                "elenilsoncorreia"
+            ],
+            [
+                "williamgomes"
+            ],
+            [
+                "eliaslima"
+            ],
+            [
+                "nataliabarbosa"
+            ],
+            [
+                "luismilhomem"
+            ],
+            [
+                "uilitonborges"
+            ],
+            [
+                "kamilasodre"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "5b93636cc02642ce88050b25fd85fb99"
+            ]
+        ],
+        "name": "ejud-oficial-diligencia",
+        "users": [
+            [
+                "divinolima"
+            ],
+            [
+                "luciaferreira"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "16aefb20b8274001a5d498b04cfb4111"
+            ]
+        ],
+        "name": "ejud-promotoria",
+        "users": [
+            [
+                "adrianoneves"
+            ],
+            [
+                "edsonazambuja"
+            ],
+            [
+                "miguelsiqueira"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "16aefb20b8274001a5d498b04cfb4111"
+            ]
+        ],
+        "name": "ejud-promotoria-analista",
+        "users": [
+            [
+                "caiopatury"
+            ],
+            [
+                "claudiapaz"
+            ],
+            [
+                "adrianadutra"
+            ],
+            [
+                "marcellasilva"
+            ],
+            [
+                "millenacavalcante"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "16aefb20b8274001a5d498b04cfb4111"
+            ]
+        ],
+        "name": "ejud-triagem",
+        "users": [
+            [
+                "mariasilva"
+            ],
+            [
+                "suelenelucena"
+            ],
+            [
+                "mariasouza"
+            ]
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+}
+]

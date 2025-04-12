@@ -1,0 +1,18 @@
+[
+    {
+        "pk": 2,
+        "model": "patrimonio.sequencia",
+        "fields": {
+            "titulo": "GERAL CONTROLADO",
+            "proximo": 1
+        }
+    },
+    {
+        "pk": 5,
+        "model": "patrimonio.sequencia",
+        "fields": {
+            "titulo": "GERAL RELACIONADO",
+            "proximo": 1
+        }
+    }
+]

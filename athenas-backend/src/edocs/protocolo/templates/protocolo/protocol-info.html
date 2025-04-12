@@ -1,0 +1,42 @@
+<div class="papper-content">
+    <div class="field" style="margin-top: 0.25em; border-top: 1px dashed #000; height: 250px;">
+        <div class="composite">
+            <div class="label title">Informações do documento</div>
+        </div>
+
+        <div class="column-two">
+            <div class="label">Protocolo :</div>
+            <div class="value">{{ protocol.codigo }}</div>
+        </div>
+
+        <div>
+            <div class="label">Data de Protocolização :</div>
+            <div class="value">{{ protocol.data_criacao | date:'d/m/Y H:i:s' }}</div>
+        </div>
+
+        <div class="column-two">
+            <div class="label">Chancela :</div>
+            <div class="value">{% if protocol.chancela %}{{ protocol.chancela }}{% else %}Não informado{% endif %}</div>
+        </div>
+
+        <div>
+            <div class="label">Protocolo Externo :</div>
+            <div class="value">{% if protocol.numero_externo %}{{ protocol.numero_externo }}{% else %}Não informado{% endif %}</div>
+        </div>
+
+        <div class="column-two">
+            <div class="label">Interessado :</div>
+            <div class="value">{{ protocol.interessado }}</div>
+        </div>
+
+        <div>
+            <div class="label">Midia :</div>
+            <div class="value">{% if protocol.midia %}{{ protocol.get_midia_display }}{% else %}Protocolo Eletrônico{% endif %}</div>
+        </div>
+
+        <div class="column-two">
+            <div class="label">Tipo :</div>
+            <div class="value">{{ protocol.tipo_documento.nome }}</div>
+        </div>
+    </div>
+</div>

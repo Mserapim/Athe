@@ -1,0 +1,4 @@
+./manage.py exportdata "GenreEvent.objects.order_by('genre_number')" --indent=2 --with-natural-keys --import-module=rh.gfp --set-fields="{'modified_by_id': 845, 'created_by_id': 845}" -o esocial/fixtures/dev_genres_gfp.json
+./manage.py exportdata "Choice.objects.filter(name='EVENT_TAGS').order_by('app_label', 'name', 'value')" -i 2 --with-natural-keys -m standard -o "esocial/fixtures/dev_event_tags_choices.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "Evento.objects.exclude(genre_event__isnull=True).order_by('genre_event__genre_number')" --indent=2 --with-natural-keys --import-module=rh.gfp --set-fields="{'modified_by_id': 845, 'created_by_id': 845}" -o esocial/fixtures/dev_gfp_events.json
+./manage.py exportdata "ConfigEvent.objects.filter()" --indent=2 --with-natural-keys --import-module=rh.gfp --set-fields="{'modified_by_id': 845, 'created_by_id': 845}" -o esocial/fixtures/dev_gfp_configevents.json

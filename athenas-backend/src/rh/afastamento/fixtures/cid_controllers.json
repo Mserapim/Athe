@@ -1,0 +1,34 @@
+[
+  {
+    "model": "engine.controller",
+    "fields": {
+      "icon": "athenas-0062.png",
+      "title": "CID",
+      "controller": "CIDRestful",
+      "application": 72,
+      "active": true,
+      "module": "rh",
+      "uuid": "2f3181496c834de99176c1cfcacf5a11",
+      "icon_file": null,
+      "position": 9999,
+      "created_by": 174,
+      "modified_by": 174
+    }
+  }, 
+  {
+    "model": "engine.controller",
+    "fields": {
+      "icon": "athenas-0062.png",
+      "title": "CIDCode",
+      "controller": "CIDCodeRestful",
+      "application": 72,
+      "active": true,
+      "module": "rh",
+      "uuid": "8ca9fa99ef7d4afeb8722760b0ab18b7",
+      "icon_file": null,
+      "position": 9999,
+      "created_by": 174,
+      "modified_by": 174
+    }
+  }
+]

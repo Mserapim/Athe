@@ -1,0 +1,22 @@
+[
+{
+  "model": "standard.emailtemplate",
+  "pk": null,
+  "fields": {
+    "code": "BLOQUEIO_TELETRABALHO",
+    "subject": "SERVIDORES COM O TELETRABALHO BLOQUEADO",
+    "contents": "<p>PREZADO(A)</p><p><br></p><p>OS SERVIDORES ABAIXO RELACIONADOS ENCONTRAM-SE COM OS ENVIOS DE RELATÓRIO MENSAL DO TELETRABALHO BLOQUEADOS</p><p><br></p><p>@conteudo</p>",
+    "description": ""
+  }
+},
+{
+  "model": "standard.emailtemplate",
+  "pk": null,
+  "fields": {
+    "code": "BLOQUEIO_TELETRABALHO_SERVIDOR",
+    "subject": "PLANO DO SERVIDOR(A)  @nome_servidor BLOQUEADO",
+    "contents": "<p style=\"text-align: justify;\">Prezado(a) @nome_servidor<br></p><p style=\"text-align: justify;\"><br>O plano do teletrabalho encontra-se bloqueado a partir desta data<br>Código do plano: @codigo_plano<br></p><p style=\"text-align: justify;\">Vigência: @data_inicio até @data_fim</p><p style=\"text-align: justify;\">Quantidade de&nbsp;bloqueios: @qtde_bloqueios</p><p style=\"text-align: justify;\"><br></p>",
+    "description": "<p style=\"text-align: justify;\"><br></p>"
+  }
+}
+]

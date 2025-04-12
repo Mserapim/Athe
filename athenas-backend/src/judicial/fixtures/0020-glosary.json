@@ -1,0 +1,267 @@
+[
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "triage"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "ordinace"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "supplementordinace"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "denunciation"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "attacheddocument"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "rejectionlinkother"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "rejectionfact"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "remittanceinternal"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "remittanceexternal"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "archivement"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "judicialization"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "connectionlawsuit"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "dilationperiod"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "assessmentnoticeoffice"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "preinvestigationfact"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "dismembermentprocess"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "additionaldiligence"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            1
+        ],
+        "app_label": "tac",
+        "model_name": "managementtac"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            3
+        ],
+        "app_label": "council",
+        "model_name": "distributionrapporteur"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "convocationnotice"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "rapporteurdocument"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "colegialdecision"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "devolutionrecommendation"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "switchexecutionorgan"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+},
+{
+    "fields": {
+        "allowed_for": [
+            2,
+            1
+        ],
+        "app_label": "judicial",
+        "model_name": "recomendation"
+    },
+    "model": "judicial.glosary",
+    "pk": null
+}
+]

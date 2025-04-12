@@ -1,0 +1,36 @@
+<div class="edoc-moviment-content">
+    <table>
+        <thead>
+            <tr>
+                <th>Remetente</th>
+                <th>Enviado em</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="80%">
+                    {{ movement.workplace_sender}} - {{ movement.sender_of_movement }}
+                </td>
+                <td width="20%">
+                    {{ movement.send_at | date:'d/m/Y H:i' }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Destinatário</th>
+                <th>Recebido por</th>
+                <th>Recebido em</th>
+            </tr>
+        </thead>
+        <tbody class="small">
+            {% for child in movement.child_of_movement %}
+                {{ child.received_cache }}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {{ movement.rendered_content_unified | safe }}
+</div>

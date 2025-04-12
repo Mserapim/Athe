@@ -1,0 +1,92 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4433,
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "SUB JUR",
+        "value": 15,
+        "cvalue": "15",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4434,
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "Assessoria da SUB JUR",
+        "value": 16,
+        "cvalue": "16",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4435,
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "PGJ",
+        "value": 17,
+        "cvalue": "17",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4437,
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "Assessoria da PGJ",
+        "value": 18,
+        "cvalue": "18",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4438,
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "An\u00c1lise da PGJ",
+        "value": 19,
+        "cvalue": "19",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4439,
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "Indeferido",
+        "value": 20,
+        "cvalue": "20",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

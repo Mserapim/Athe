@@ -1,0 +1,37 @@
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>SAÚDE</b></td></tr>
+      </table>
+      <div style="padding-top: 1em; ">
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.5em; ">
+          <b><u>Exame Físico</u>:</b>
+          <div style="padding-top: 0.25em; padding-left: 0.5em; ">
+            - Pressão Arterial: <b>{{ health.physical_exam_blood_pressure }}</b><br />
+            - IMC: <b>{{ health.physical_exam_imc }}</b><br />
+            - Circunferência Abdominal: <b>{{ health.physical_exam_abdominal_circumference }}</b><br />
+            - Pulso: <b>{{ health.physical_exam_pulse }}</b><br />
+          </div>
+        </div>
+
+
+        {% if health.assessments_signed.exists %}
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.5em; ">
+            <h2>Recomendações:</h2>
+              {% for assessment in health.assessments_signed %}
+                  <div style="padding-top:1em; padding-left: 0.5em; ">
+                        {{ assessment.content | safely }}
+                        <div>
+                            <hr />
+                        </div>
+                  </div>
+              {% endfor %}
+
+        </div>
+        {% endif %}
+
+      </div>
+
+    {% endblock %}
+</div>

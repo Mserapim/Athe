@@ -1,0 +1,3 @@
+Face ao relato apresentado pelo Sr.(a) <strong>{{ doc.person | upper }}</strong>{% if doc.person.pessoafisica.rg %}, portador do RG <strong>{{ doc.person.pessoafisica.rg }}</strong>{% endif %}, {% if doc.person.pessoafisica.cpf %}CPF n&deg; <strong>{{ doc.person.pessoafisica.cpf }}</strong>,{% endif %}
+
+{% if doc.represented %}representando o Sr.(a) <strong>{{ doc.represented }}</strong>{% if doc.represented.pessoafisica.rg %}, portador do RG <strong>{{ doc.represented.pessoafisica.rg }}</strong>{% endif %}{% if doc.represented.pessoafisica.cpf %}, CPF n&deg; <strong>{{ doc.represented.pessoafisica.cpf }}</strong>{% endif %},{% endif %}

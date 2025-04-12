@@ -1,0 +1,15 @@
+{% load judicialfilters %}
+<div class="papper-text">
+    {{ doc.request | safely }}
+</div>
+
+<div class="papper-text" style="margin-top: 2em">
+    <h3>Arquivos anexos</h3>
+    {% for attach in doc.attaches.all %}
+    {% include "judicial/lawsuit/attach.html" %}
+    {% empty %}
+    <p style="margin-top: 2em">
+        Sem anexos nesta requisição de acesso ao procedimento {{ doc.lawsuit.cache_number }}.
+    </p>
+    {% endfor %}
+</div>

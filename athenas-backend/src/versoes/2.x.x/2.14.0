@@ -1,0 +1,46 @@
+- 2024.7.8:
+    - CARD: ATS-4386 - MR: 1041 - (backend) Criar property qtd_beneficiarios na tabela Viagem e adicionar na API de retorno de listagem de diárias
+- 2024.7.9:
+    - CARD: ATS-4527 - MR: 1040 - [BACK] Picklist - Ajuste na api de editar Aprovadores
+    - CARD: ATS-4387 - MR: 1044 - Alterar API de listagem de contas bancárias adicionando dois filtros, um para selecionar os tipos de contas desejados e outro para não retornar os tipos de contas indesejados 
+    - CARD: ATS-4388 - MR: 1046 - (backend) Alterar API de Finalidade de Viagem para que retorne todas as opções em uma só resposta, não paginada, e adicionar filtro para busca por nome
+    - CARD: ATS-4537 - MR: 1045 - [BACK] Ajuste de cálculo de Limite de uso de Diárias
+    - CARD: ATS-4521 - MR: 1049 - [back] - Alterar o cálculo das verbas de falta de bolsa e transporte pra estagiários e residentes
+    - CARD: ATS-4389 - MR: 1047 - Criar campo na tabela FluxoViagem de configurador para permitir deferir todos os beneficiários em fluxos específicos
+- 2024.7.10:
+    - CARD: ATS-4413 - MR: 1051 - (backend) Criar tabela proxy para armazenar informações de assinatura
+    - CARD: ATS-4391 - MR: 1053 - (backend) Criar tabela Pagamentos , em Diárias
+    - CARD: ATS-4485 - MR: 1052, 1055 - [back] - Adicionar as pendências de teletrabalho na api de minhas pendências
+- 2024.7.11:
+    - CARD: ATS-4406 - MR: 1056 - Criar tabela para Prestação de Contas
+    - CARD: ATS-4485 - MR: 1058 - [back] - Adicionar as pendências de teletrabalho na api de minhas pendências
+- 2024.7.12:
+    - CARD: ATS-4341 - MR: 1060 - (backend) Alterar querys para incluir buscar com e sem acentuação nas telas do VDF
+    - CARD: ATS-4565 - MR: 1061 - [back] - Corrigir validação de pendência de teletrabalho para quem não tem plano
+    - CARD: ATS-4396 - MR: 1065 - [Back] Central Notificação -  Criar campo notifcar_hermes no modelo da task 
+    - CARD: ATS-4399 - MR: 1064 - Back (Central Notificação) Criar api para retornar as notificação do hermes
+- 2024.7.15:
+    - CARD: ATS-4516 - MR: 1039 - [back] Criar job para Limpar os servidores inativos nos grupos de usuarios do painel de controle 
+- 2024.7.16:
+    - CARD: ATS-4499 - MR: 1067, 1073 - [back] - Criar API para retornar informações de afastamentos de um teletrabalho
+    - CARD: ATS-4476 - MR: 1066 - [back] - Notificar servidores da abertura do prazo de envio do teletrabalho (dia 1 ao dia 9)
+    - CARD: ATS-4304 - MR: 1068 - [Back] - Criar API para salvar o rascunho do formulário de prestação de contas
+    - CARD: ATS-4397 - MR: 1071 - Back (Central Notificação) - Modificar função save da task para enviar notificação ao salvar
+    - CARD: ATS-4398 - MR: 1072 - Back (Central Notificação) - Separação do token do hermes por tipo de processamento
+- 2024.7.17:
+    - CARD: ATS-4590 - MR: 1075 - Add informação de idusuario do api do mastiff
+    - CARD: ATS-4477 - MR: 1074 - [back] - Notificar servidores que não enviaram o relatório de teletrabalho (dia 10)
+    - CARD: ATS-4513 - MR: 1076 - [back] - Notificar do encerramento aos servidores que não enviaram o relatório de teletrabalho (dia 11)
+    - CARD: ATS-4587 - MR: 1077 - [back] Alterar rotina de notificação para acrescentar idUsuario
+- 2024.7.18:
+    - CARD: ATS-4600 - MR: 1079 - [Back] Criar API de detalhes de Prestacao de contas 
+    - CARD: ATS-4494 - MR: 1082 - [front Ext] - Exibir código do plano do teletrabalho
+- 2024.7.19:
+    - CARD: ATS-4478 - MR: 1078, 1085 - [back] - Notificar aprovadores com a relação de quem não enviou o relatório de teletrabalho
+    - CARD: ATS-4420 - MR: 1083 - [Back] Portal transparência - Criar api de usufrutos de férias servidores/membros
+    - CARD: ATS-4627 - MR: 1086 - [BACK] Ajuste serializer de Pagamentos
+    - CARD: ATS-4305 - MR: 1080 - [Back] - Criar API para Assinar e Enviar do formulário de prestação de contas
+    - CARD: ATS-4604 - MR: 1087 - Back - Melhorar estratégia de download assíncrono em csv 
+    - CARD: ATS-4426 - MR: 1088 - [Back] Criar API de listagem de Prestação de Contas
+- 2024.7.22:
+    - CARD: ATS-4678 - MR: 1090 - Ajuste no lançamento de substituição para afastamentos manuais

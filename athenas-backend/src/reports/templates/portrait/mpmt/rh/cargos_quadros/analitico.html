@@ -1,0 +1,105 @@
+
++
+2
+−
+2
+
+Viewed
+{% load custom_filters %}
+
+<html lang="en">
+<head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <title>Relatório Sintético</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        tr {
+          page-break-inside: avoid;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+          font-size: 11px;
+        }
+        
+        .page-break {
+          page-break-before: always;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    {% include 'portrait/mpmt/rh/cargos_quadros/header.html' %}
+
+    <!-- Content -->
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>MATRÍCULA</th>
+                    <th>SERVIDOR</th>
+                    <th>CARGO</th>
+                    <th>TIPO</th>
+                    <th>LOTAÇÃO</th>
+                    <th>DATA DE INICIO</th>
+                    <th>ATIVO</th>
+                    <th>TELETRABALHO</th>
+                    <th>INICIO DO PROVIMENTO</th>
+                    <th>FIM DO PROVIMENTO</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                  {% if forloop.counter0|modulo:14 and not forloop.first %}
+                        </tbody>
+                        </table>
+                        <div class="page-break"></div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>MATRÍCULA</th>
+                                    <th>SERVIDOR</th>
+                                    <th>CARGO</th>
+                                    <th>TIPO</th>
+                                    <th>LOTAÇÃO</th>
+                                    <th>DATA DE INICIO</th>
+                                    <th>ATIVO</th>
+                                    <th>TELETRABALHO</th>
+                                    <th>INICIO DO PROVIMENTO</th>
+                                    <th>FIM DO PROVIMENTO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    {% endif %}
+                    <tr>
+                        <td>{{ item.SERVIDOR_ID }}</td>
+                        <td>{{ item.matricula }}</td>
+                        <td>{{ item.servidor_nome }}</td>
+                        <td>{{ item.cargo }}</td>
+                        <td>{{ item.tipo_posse }}</td>
+                        <td>{{ item.lotacao }}</td>
+                        <td>{{ item.data_de_inicio }}</td>
+                        <td>{{ item.servidor_ativo }}</td>
+                        <td>{{ item.teletrabalho }}</td>
+                        <td>{{ item.data_inicio_provimento }}</td>
+                        <td>{{ item.data_fim_provimento }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

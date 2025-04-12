@@ -1,0 +1,40 @@
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+        <br />
+        <br />
+        {% if recipient.pessoa_fisica.sexo == 'M' %}
+            <div class="paragraph-text" style="padding-left: 1em;">
+                Ao Excelentíssimo Senhor Promotor de Justiça
+            </div>
+        {% endif %}
+        {% if recipient.pessoa_fisica.sexo == 'F' %}
+            <div class="paragraph-text" style="padding-left: 1em;">
+                A Excelentíssima Senhora Promotora de Justiça
+            </div>
+        {% endif %}
+        <br />
+        <br />
+        <div class="paragraph-text" style="padding-left: 1em;">
+            Informo que o relatório da última Inspeção já está disponível no Gestor de Inspeções/Correições e poderá ser acessado através da funcionalidade Acompanhar Recomendações, no menu: <b>ATHENAS > CORREGEDORIA > INSPEÇÃO/CORREIÇÃO > ACOMPANHAR RECOMENDAÇÕES</b>, ou <b><a href="#" onClick="javascript:toolkit.Application.createFormFor('INSPECTIONFollowRecommendation');">clicando aqui</a></b>.
+        </div>
+        <br />
+        <br />
+        <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+            Atenciosamente,
+        </div>
+        <br />
+        <br />
+        <div class="paragraph-text" style="text-align: center;">
+            <b>{{ inspector_general.pessoa_fisica.nome | safely }}</b><br />
+            <div style="font-size: 0.8em;">
+                Corregedor-geral<br />
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="paragraph-text" style="padding-left: 1em;">
+            <font color="red"><u><b>ATENÇÃO</b></u></font>: comunicação enviada automaticamente pelo Sistema Gestor de Inspeções/Correições - <u>NÃO RESPONDER</u> via e-Doc.
+        </div>
+        <br />
+    {% endblock %}
+</div>

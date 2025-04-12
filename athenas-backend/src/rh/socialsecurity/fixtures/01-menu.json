@@ -1,0 +1,81 @@
+[
+{
+    "fields": {
+        "active": true,
+        "title": "RECURSOS HUMANOS",
+        "father": null,
+        "uuid": "7180066e807d41268f1950a4a0f7092a",
+        "icon": "athenas-0827.png"
+    },
+    "model": "engine.application",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "ce3cc3df70774650bc1b53a1a4070266",
+        "title": "Previsão de Aposentadoria",
+        "module": "rh.socialsecurity",
+        "application": [
+            "7180066e807d41268f1950a4a0f7092a"
+        ],
+        "controller": "SSRetirementPrevision",
+        "active": true,
+        "icon": "athenas-0844.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "controllers": [
+            [
+                "ce3cc3df70774650bc1b53a1a4070266"
+            ]
+        ],
+        "name": "rh-previsao-aposentadoria",
+        "users": [
+        ]
+    },
+    "model": "engine.controllerpermission",
+    "pk": null
+},
+{
+    "fields": {
+        "name": "rh-previsao-aposentadoria",
+        "permissions": [
+            [
+                "add_employmentbond",
+                "socialsecurity",
+                "employmentbond"
+            ],
+            [
+                "change_employmentbond",
+                "socialsecurity",
+                "employmentbond"
+            ],
+            [
+                "delete_employmentbond",
+                "socialsecurity",
+                "employmentbond"
+            ],
+            [
+                "add_retirementprevision",
+                "socialsecurity",
+                "retirementprevision"
+            ],
+            [
+                "change_retirementprevision",
+                "socialsecurity",
+                "retirementprevision"
+            ],
+            [
+                "delete_retirementprevision",
+                "socialsecurity",
+                "retirementprevision"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+}
+]

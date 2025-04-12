@@ -1,0 +1,49 @@
+- 2024.6.25:
+    - CARD: ATS-4146 - MR: 987 - Implementar utilização da lógica de cálculo de diárias
+    - CARD: ATS-4244 - MR: 989 - [BACK] - Adaptar APi dos plantões
+    - CARD: ATS-4168 - MR: 988 - back - Criar Serializer para arquivos do Ged, para retono mais detalhado nas APIs , que possuem documentos 
+    - CARD: ATS-4243 - MR: 990 - Alterar regra de dedução por afastamento de membros na verba de Transporte (07600)
+    - CARD: ATS-4286 - MR: 991 -[BACK] Verificar validação para bloquear dependente já existente - Solicitação de auxilio creche e IR
+    - CARD: ATS-4290 - MR: 992 -[Back] Remover a criação dependente da licença de maternidade e paternidade
+    - CARD: ATS-4287 - MR: 993 -[Back] Alterar resposta da api de criação da licença maternidade e paternidade
+- 2024.6.26:
+    - CARD: ATS-4310 - MR: 994 - [BACK] Criar tabela para configurador de limite
+    - CARD: ATS-4192 - MR: 995 - Corrigir comportamento da geração de histórico de fluxo do Diárias 
+- 2024.6.27:
+    - CARD: ATS-4309 - MR: 1000 - [Back] - Criar API para o Componente "Assinador Athenas Suite" 
+    - CARD: ATS-4298 - MR: 1002 - [back] - Verificar a alteração de substituto no afastamento
+    - CARD: ATS-4193 - MR: 999 - Criar mecanismo para retornar as informações de Destino detalhadamente
+    - CARD: ATS-4311 - MR: 1004 - [BACK] Criar api para configurador de limite
+    - CARD: ATS-4338 - MR: 1003 - Solicitação já efetivada exibindo ações incorreta
+    - CARD: ATS-4312 - MR: 1005 - Criar API para retornar informações de Detalhamento de Extrato de Valores 
+- 2024.6.28:
+    - CARD: ATS-4247 - MR: 1001 - Back_end Criar a possibilidade de editar dados do beneficiário. 
+    - CARD: ATS-4313 - MR: 1006 - [BACK] Criar api para cadastrar novo LimiteDiarias 
+    - CARD: ATS-4297 - MR: 1008 - [back] - Gerar uma notificação via e-mail informando que não foi criado a lotação por conta do membro não estar lotado no local em que a substituição foi programada.
+    - CARD: ATS-4296 - MR: 1007 - [back] - Criar uma regra para que não seja gerado movimentação de substituição para casos em que o membro foi desligado da lotação
+    - CARD: ATS-4314 - MR: 1009 - [BACK] Criar api para editar LimiteDiarias
+- 2024.7.1:
+    - CARD: ATS-4315 - MR: 1012 - [BACK] Criar api para excluir LimiteDiarias
+    - CARD: ATS-4264,ATS-4267,ATS-4271 - MR: 1011 (Backend) Criar uma api de listagem, criacao e edição
+    - CARD: ATS-4249 - MR: 1014 Back_end Criar a possibilidade de Excluir o beneficiário. 
+    - CARD: ATS-4251 - MR: 1015 Back_end Criar a possibilidade de editar os trechos destino. 
+    - CARD: ATS-4372 - MR: 1016 Back - Ajustar a query que buscar a quantidades de usuarios por Menu
+- 2024.7.2:
+    - CARD: ATS-4197 - MR: 1017 - (BACK) - Criar o campo de termo de aceite
+    - CARD: ATS-4199 - MR: 1018 - [back] - Alterar a API que grava a solicitação
+    - CARD: ATS-4238 - MR: 1013 - [back] - Criar campo anexo nos modelos da aba formação do cadastro de servidor
+    - CARD: ATS-4253 - MR: 1020 - Back_end Criar a possibilidade de Excluir o destino. 
+- 2024.7.3:
+    - CARD: ATS-4300 - MR: 1021 - [Back] - Retornar alerta para o VDF no minhas pendencias - Aguardando Prestação de Contas do diarias 
+-2024.7.4:
+    - CARD: ATS-4321 - MR: 1025 - [BACK] Criar método para retornar diárias/mês e limite 
+    - CARD: ATS-4322 - MR: 1026 - [BACK] Criar api para retornar diárias/mês e limite
+    - CARD: ATS-4200 - MR: 1027 - [back] - Alterar a api de detalhamento da solicitação para exibir os campos
+    - CARD: ATS-4279 - MR: 1028 - [Back] Alterar a api  da listagem dos tipos de solicitações  (retornando a flag se está "disponível")
+    - CARD: ATS-4280 - MR: 1029 - [Back] [BACK] Alterar relatório csv para gerar em background (assíncrono)
+-2024.7.4:
+    - CARD: ATS-4241 - MR: 1034 - [back] - Criar campo para relacionar a dependência com o item gerado no GCPP
+    - CARD: ATS-4242 - MR: 1033 - [back] - Criar função para remover aux. creche do GCPP quando ele for excluído da dependência
+-2024.7.5:
+    - CARD: ATS-4489 - MR: 1036 -  [Back] - Criar API para lista de usuarios/servidores por grupos de usuarios 
+    - CARD: ATS-4320 - MR: 1037 -  [Back] - Atualizar registros de municípios da Base do Athenas em relação nacional

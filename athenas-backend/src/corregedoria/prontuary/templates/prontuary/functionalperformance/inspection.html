@@ -1,0 +1,38 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div class="composite">
+        {% block content %}
+        <br /><br />
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO FUNCIONAL - INSPEÇÃO/CORREIÇÃO</b></td></tr>
+        </table>
+        <div class="paragraph-text" style="padding-left: 0.5em; padding-right: 0.5em; font-size: 12px;">
+            {% if inspection %}
+                <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                    <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3><b>Operosidade</b></td></tr>
+                    <tr><td style="padding: 2px;" colspan=2>Atendimento ao Público</td><td style="padding: 2px; text-align: right;" width=10%>{{ inspection.registeredpublicattendancenumber.score }}</td></tr>
+                    <tr><td style="padding: 2px;" rowspan=4 width=40%>Análise Qualitativa de Peças</td><td style="padding: 2px;">Forenses Cíveis  ({{ qapccl.score }})</td><td style="padding: 2px; text-align: right;" rowspan="4" width=10%>{{ qap_avg }}</td></tr>
+                    <tr><td style="padding: 2px;">Forenses Criminais ({{ qapcrcl.score }})</td></tr>
+                    <tr><td style="padding: 2px;">Procediemnto Extrajudicias  ({{ qapocl.score }})</td></tr>
+                    <tr><td style="padding: 2px;">Eleitorais  ({{ qape.score }})</td></tr>
+                    <tr><td style="padding: 2px;" colspan=2 align=right><b>Nota operosidade</b></td><td style="padding: 2px; text-align: right;" width=15%><b>{{ inspection.operability_score }}</b></td></tr>
+                <!-- </table> -->
+                <!-- <br /> -->
+                <!-- <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;"> -->
+                    <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3><b>Presteza</b></td></tr>
+                    <tr><td style="padding: 2px;" rowspan=2 width=40%>Cumprimento dos Prazos</td><td style="padding: 2px;">Judiciais ({{ inspection.promptnesscourtlawsuit.score }})</td><td style="padding: 2px; text-align: right;" width=10% rowspan=2>{{ plawsuit_avg }}</td></tr>
+                    <tr><td style="padding: 2px;">Extrajudicias  ({{ inspection.promptnessoutcourtlawsuit.score }})</td></tr>
+                    <tr><td style="padding: 2px;" colspan=2>Atendimento tempestivo às determinações</td><td style="padding: 2px; text-align: right;">{{ inspection.promptnessuppermanagement.score }}</td></tr>
+                    <tr><td style="padding: 2px;" colspan=2 align=right><b>Nota presteza</b></td><td style="padding: 2px; text-align: right;" width=10%><b>{{ inspection.promptness_score }}</b></td></tr>
+                <!-- </table> -->
+                <!-- <br /> -->
+                <!-- <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 14px;"> -->
+                    <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=2><b>NOTA FINAL</b></td><td style="padding: 2px; text-align: right; background-color: #c0c0c0;" width=15%><b>{{ inspection.final_score }}</b></td></tr>
+                </table>
+            {% else %}
+                <font style="font-size: 14px;" >Não existem inspeções/correições vinculadas ao prontuário.</font>
+            {% endif %}
+        </div>
+        {% endblock %}
+    </div>
+</div>

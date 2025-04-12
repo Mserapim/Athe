@@ -1,0 +1,8 @@
+./manage.py exportdata "Application.objects.order_by('layer', 'title')" -i 2 --with-natural-keys -m engine -o 'engine/fixtures/initialdb_0001_applications.json'
+./manage.py exportdata "ContentType.objects.order_by('app_label', 'model')" -i 2 --with-natural-keys -m django.contrib.contenttypes -o 'engine/fixtures/initialdb_0002_contenttypes.json'
+./manage.py exportdata "Permission.objects.order_by('content_type', 'codename')" -i 2 --with-natural-keys -m django.contrib.auth -o 'engine/fixtures/initialdb_0003_permissions.json'
+./manage.py exportdata "Group.objects.order_by('name')" -i 2 --with-natural-keys -m django.contrib.auth -o 'engine/fixtures/initialdb_0004_groups.json'
+./manage.py exportdata "Controller.objects.order_by('module', 'title')" -i 2 --with-natural-keys -m engine -o 'engine/fixtures/initialdb_0005_controllers.json'
+./manage.py exportdata "ControllerPermission.objects.order_by('name')" -i 2 --with-natural-keys -m engine -e "['users']" -o 'engine/fixtures/initialdb_0006_controllerpermissions.json'
+./manage.py exportdata "Message.objects.exclude(mid__startswith='__MSG').order_by('mid')" -i 2 --with-natural-keys -m engine.notification -o 'engine/fixtures/initialdb_0007_messages.json'
+./manage.py exportdata "User.objects.filter(username='athenas')" -i 2 --with-natural-keys -m engine -o 'engine/fixtures/initialdb_default_user.json' -s "{'is_superuser': True}" -e "['groups', 'user_permissions']"

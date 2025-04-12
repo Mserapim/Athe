@@ -1,0 +1,98 @@
+{% load custom_filters %}
+
+<html lang="en">
+<head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <title>Relatório Sintético</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        tr {
+          page-break-inside: avoid;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+          font-size: 12px;
+        }
+        
+        .page-break {
+          page-break-before: always;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    {% include 'portrait/mpmt/rh/cargos_quadros/header.html' %}
+
+    <!-- Content -->
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>CARGO</th>
+                    <th>EXISTENTES</th>
+                    <th>MEMBRO</th>
+                    <th>SERVIDOR</th>
+                    <th>COMISSIONADO</th>
+                    <th>EFETIVO EM COMISSAO</th>
+                    <th>SEM VINCULO</th>
+                    <th>VAGOS</th>
+                    <th>PEDIDOS NOMEACAO</th>
+                    <th>PEDIDOS EXONERACAO</th>
+                    <th>SALDO</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for cargo in data %}
+              {% if forloop.counter0|modulo:20 and not forloop.first %}
+                  </tbody>
+                  </table>
+                  <div class="page-break"></div>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>CARGO</th>
+                              <th>EXISTENTES</th>
+                              <th>MEMBRO</th>
+                              <th>SERVIDOR</th>
+                              <th>COMISSIONADO</th>
+                              <th>EFETIVO EM COMISSAO</th>
+                              <th>SEM VINCULO</th>
+                              <th>VAGOS</th>
+                              <th>PEDIDOS NOMEACAO</th>
+                              <th>PEDIDOS EXONERACAO</th>
+                              <th>SALDO</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+              {% endif %}
+              <tr>
+                  <td>{{ cargo.cargo_nome }}</td>
+                  <td>{{ cargo.existentes }}</td>
+                  <td>{{ cargo.membro }}</td>
+                  <td>{{ cargo.servidor }}</td>
+                  <td>{{ cargo.comissionado }}</td>
+                  <td>{{ cargo.efetivo_em_comissao }}</td>
+                  <td>{{ cargo.sem_vinculo }}</td>
+                  <td>{{ cargo.vagos }}</td>
+                  <td>{{ cargo.pedidos_nomeacao }}</td>
+                  <td>{{ cargo.pedidos_exoneracao }}</td>
+                  <td>{{ cargo.saldo }}</td>
+              </tr>
+          {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

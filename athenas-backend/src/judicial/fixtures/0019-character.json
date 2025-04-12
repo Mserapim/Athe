@@ -1,0 +1,113 @@
+[
+{
+    "fields": {
+        "users": [
+            [
+                "adrianoneves"
+            ],
+            [
+                "miguelsiqueira"
+            ],
+            [
+                "zenaidesilva"
+            ],
+            [
+                "katiagallieta"
+            ],
+            [
+                "mariaroselipery"
+            ],
+            [
+                "bartiraquinteiro"
+            ],
+            [
+                "ceresrezende"
+            ],
+            [
+                "pedroaguiar"
+            ],
+            [
+                "marcosbignotti"
+            ],
+            [
+                "lumasouza"
+            ],
+            [
+                "celsimarsilva"
+            ],
+            [
+                "vitorrezende"
+            ],
+            [
+                "marcoandrade"
+            ],
+            [
+                "caiopatury"
+            ],
+            [
+                "adrianadutra"
+            ],
+            [
+                "millenacavalcante"
+            ],
+            [
+                "delcimoniklima"
+            ],
+            [
+                "adriareis"
+            ],
+            [
+                "gilmarcoelho"
+            ],
+            [
+                "edithreis"
+            ],
+            [
+                "rachellimeira"
+            ],
+            [
+                "cristienesene"
+            ],
+            [
+                "alessandradantas"
+            ],
+            [
+                "davidsonoliveira"
+            ]
+        ],
+        "slug": "promotores",
+        "title": "promotores"
+    },
+    "model": "judicial.character",
+    "pk": 1
+},
+{
+    "fields": {
+        "users": [
+            [
+                "claudiapaz"
+            ],
+            [
+                "caiopatury"
+            ]
+        ],
+        "slug": "analista",
+        "title": "analista"
+    },
+    "model": "judicial.character",
+    "pk": 2
+},
+{
+    "fields": {
+        "users": [
+            [
+                "shirleysantos"
+            ]
+        ],
+        "slug": "secretaria-do-colegio",
+        "title": "secretaria-do-colegio"
+    },
+    "model": "judicial.character",
+    "pk": 3
+}
+]

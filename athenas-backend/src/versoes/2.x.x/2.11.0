@@ -1,0 +1,34 @@
+- 2024.5.28:
+    - CARD: ATS-4027 - MR: 923 - Apis de Destinos do Diarias
+    - CARD: ATS-4007 - MR: 924 - Proibir a remoção de faltas pagas no GCF
+- 2024.5.29:
+    - CARD: ATS-4033 - MR: [athenas-project] 67 - (backend - athenas-project) - Configurar variável de ambiente para API do DAA - Transporte Distância
+    - CARD: ATS-4007 - MR: 924 - Proibir a remoção de faltas pagas no GCF
+    - CARD: ATS-4005 - MR: 926 - Criar bloqueio na função implantar - GCF
+    - CARD: ATS-3991 - MR: 927 - Criar API para solicitar dados de itinerário (destino) no sistema do DAA, criar campo distancia_km na tabela Destino 
+    - CARD: ATS-3989 - MR: 928 - Criar a API's da solicitação de auxilio creche e IR
+- 2024.6.3:
+    - CARD: ATS-4006 - MR: 930 - Criar campo Implantado por - GCF/GCPP
+    - CARD: ATS-4046 - MR: 931 - Incluir o campo descrição no retorno da API
+    - CARD: ATS-3864 - MR: 925 - Subsidio de Servidores Comissionados com Troca de Cargo no Mês
+    - CARD: ATS-3994 - MR: 929 - BACK - API de listagem de GrupoAprovador
+- 2024.6.4:
+    - CARD: ATS-3996 - MR: 933 - BACK - API de NOVO GrupoAprovador
+    - CARD: ATS-4000 - MR: 935 - BACK - API pra excluir grupo + validação no model: não pode ter usuários
+    - CARD: ATS-3976 - MR: 937 - BACK - BOTÃO NOVO NO VDF - Diárias VALIDAR QUEM PODE SOLICITAR
+    - CARD: ATS-3998 - MR: 936 - BACK - API de editar GrupoAprovador
+- 2024.6.5:
+    - CARD: ATS-3800 - MR: 938 - (backend) Planejar e criar modelos para armazenar histórico de fluxo das Viagens
+- 2024.6.6:
+    - CARD: ATS-4066 - MR: (athenas-project) 68 - (athenas-project) Atualizar estratégia de conexão à BD na maquina Develop (206) e ajustar configurações de IPs permitidos no Django 
+    - CARD: ATS-4074 - MR 941 - (backend) [Diárias] - Criar lógica para determinar etapa e situação inicial ao criar um Beneficiário
+    - CARD: ATS-3968 - MR 939 - API de Viagens;Solicitações do Diarias
+- 2024.6.7:
+    - CARD: ATS-4008 - MR: 946 - Remover faltas excluídas no gestor de faltas do menu GCF
+    - CARD: ATS-3977 - MR: 944 - Salvar o tipo de solicitante
+    - CARD: ATS-3978 - MR: 948 - Back -Destinos -Visualizar detalhado A Solicitação no Diárias 
+    - CARD: ATS-4098 - MR: 950 - Correção nos filtros da API de servidores 
+    - CARD: ATS-4002 - MR: 945 - BACK - Listagem de usuários (picklist) 
+    - CARD: ATS-3984 - MR: 947 - Criar mecanismo de Definição de Códiog das OS 
+    - CARD: ATS-3992 - MR: 951 - Acresenctar campos de valores na solicitação
+    - CARD: ATS-4012 - MR: 949 - BACK - Alterar API na remoção dos favoritos

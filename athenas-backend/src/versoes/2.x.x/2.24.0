@@ -1,0 +1,29 @@
+- 2024.11.26:
+    - CARD: ATS-5969 - MR: 1515 - [back] - Cálculo de Férias - Criar parâmetros para o cálculo
+- 2024.11.27:
+    - CARD: ATS-5836 - MR: 1509 - Cadastro de Dependentes - Auxilio Creche
+    - CARD: ATS-5899 - MR: 1523 - [back] Teletrabalho - Desconsiderar os dias recesso forense no cálculo da meta do mês
+    - CARD: ATS-5898 - MR: 1522 - [back] Teletrabalho - Desconsiderar os dias recesso forense no bloqueio do teletrabalho
+- 2024.11.29:
+    - CARD: ATS-5962 - MR: 1529 - Notificar servidor sobre saldo devedor no mês
+-2024.12.2:
+    - CARD: ATS-5960 - MR: 1530 - tratar quando houver solicitação de cancelamento do teletrabalho
+    - CARD: ATS-6053 - MR: 1531 - [back] - Verificar criação de GCPP ao processar falta
+-2024.12.3:
+    - CARD: ATS-6038 - MR: 1534 - Corrigir retroativo de Auxilio Creche - GCPP
+-2024.12.5:
+    - CARD: ATS-3278 - MR: 1536 - Ajustes na importação do folha ponto
+-2024.12.6:
+    - CARD: ATS-5995 - MR: 1546 - [BACK] Criar filtro de saldo devedor
+    - CARD: ATS-5998 - MR: 1545 - [BACK] Criar botão de 'zerar saldo devedor'
+    - CARD: ATS-5997 - MR: 1544 - [BACK] Exibir novos campos em colunas e telas
+    - CARD: ATS-5970 - MR: 1548 - [back] - Cálculo de Férias - Criar cálculo para o parâmetro: gratifications_vacation_servers
+    - CARD: ATS-5974 - MR: 1548 - [back] - Cálculo de Férias - Criar cálculo para o parâmetro: gratifications_vacation_servers_media
+    - CARD: ATS-5975 - MR: 1548 - [back] - Cálculo de Férias - Criar cálculo de Férias
+    - CARD: ATS-6098 - MR: 1552 - [back] - Add modelo de dias úteis na auditoria de logs
+    - CARD: ATS-5864 - MR: 1550 - [BACK] - Folha ponto - Relatório de folha ponto
+    - CARD: ATS-5999 - MR: 1549 - [BACK] Acrescentar ao relatório a coluna "Comarca"
+    - CARD: ATS-5961 - MR: 1553 - [BACK] Separar plantões por grupo de cada ano
+-2024.12.9:
+    - CARD: ATS-6089 - MR: 1554 - [back] - Verificar a não criação do GCPP ao efetivar solicitação de aux. creche retroativo
+    - CARD: ATS-6158 - MR: 1558 - Corrigir css da tela de login do Athenas

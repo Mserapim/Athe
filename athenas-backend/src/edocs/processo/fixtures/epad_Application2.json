@@ -1,0 +1,14 @@
+[
+{
+    "pk": null, 
+    "model": "engine.application", 
+    "fields": {
+        "active": true, 
+        "title": "Funcionalidades", 
+        "father": [
+            "EPAD"
+        ], 
+        "icon": "athenas-0061.png"
+    }
+}
+]

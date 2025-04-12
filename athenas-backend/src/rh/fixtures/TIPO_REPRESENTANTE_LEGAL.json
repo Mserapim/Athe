@@ -1,0 +1,86 @@
+[
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TIPO_REPRESENTANTE_LEGAL",
+			"label": "PAI",
+			"value": 1,
+			"cvalue": "1",
+			"cache_path": "rh.TIPO_REPRESENTANTE_LEGAL",
+			"description": "PAI",
+			"order_weight": 6,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TIPO_REPRESENTANTE_LEGAL",
+			"label": "MÂE",
+			"value": 2,
+			"cvalue": "2",
+			"cache_path": "rh.TIPO_REPRESENTANTE_LEGAL",
+			"description": "MÂE",
+			"order_weight": 5,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TIPO_REPRESENTANTE_LEGAL",
+			"label": "TUTOR",
+			"value": 3,
+			"cvalue": "3",
+			"cache_path": "rh.TIPO_REPRESENTANTE_LEGAL",
+			"description": "TUTOR",
+			"order_weight": 4,
+			"active": true
+		}
+	},
+	{
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TIPO_REPRESENTANTE_LEGAL",
+			"label": "CURADOR",
+			"value": 4,
+			"cvalue": "4",
+			"cache_path": "rh.TIPO_REPRESENTANTE_LEGAL",
+			"description": "CURADOR",
+			"order_weight": 3,
+			"active": true
+		}
+	},
+    {
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TIPO_REPRESENTANTE_LEGAL",
+			"label": "RESPONSAVEL POR GUARDA",
+			"value": 5,
+			"cvalue": "5",
+			"cache_path": "rh.TIPO_REPRESENTANTE_LEGAL",
+			"description": "RESPONSAVEL POR GUARDA",
+			"order_weight": 2,
+			"active": true
+		}
+	},
+    {
+		"model": "standard.choice",
+		"fields": {
+			"app_label": "rh",
+			"name": "TIPO_REPRESENTANTE_LEGAL",
+			"label": "GUARDA DE MENOR DE 18 ANOS",
+			"value": 6,
+			"cvalue": "6",
+			"cache_path": "rh.TIPO_REPRESENTANTE_LEGAL",
+			"description": "GUARDA DE MENOR DE 18 ANOS",
+			"order_weight": 1,
+			"active": true
+		}
+	}
+]

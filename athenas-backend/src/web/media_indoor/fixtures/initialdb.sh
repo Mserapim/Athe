@@ -1,0 +1,2 @@
+./manage.py exportdata "Application.objects.filter(title='Mídia Indoor').order_by('title')" -i 2 --with-natural-keys -m engine -o /app/root/web/media_indoor/fixtures/initialdb_0001-application.json
+./manage.py exportdata "Controller.objects.filter(module='web.media_indoor').order_by('application__layer', 'title')" -i 2 --with-natural-keys -m engine -o /app/root/web/media_indoor/fixtures/initialdb_0002_controllers.json

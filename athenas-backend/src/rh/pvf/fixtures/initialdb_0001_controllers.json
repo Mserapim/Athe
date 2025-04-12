@@ -1,0 +1,54 @@
+[
+  {
+    "model": "engine.application",
+    "fields": {
+        "icon": "athenas-0062.png",
+        "title": "PORTAL VIDA FUNCIONAL",
+        "active": true,
+        "uuid": "9ddf6d1420c84daeb9d99ec49d4b26db",
+        "layer": 1
+    }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0062.png",
+    "title": "Aguardando Aprovação/Ciência",
+    "controller": "PortalwaitingApproval",
+    "application": [
+      "9ddf6d1420c84daeb9d99ec49d4b26db"
+    ],
+    "active": true,
+    "module": "rh.pvf",
+    "uuid": "cc75f5d99c334bad9f754fda160fdac6"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0466.png",
+    "title": "Minhas Solicitações",
+    "controller": "PortalRequestApi",
+    "application": [
+      "9ddf6d1420c84daeb9d99ec49d4b26db"
+    ],
+    "active": true,
+    "module": "rh.pvf",
+    "uuid": "b3c5b8ff70bb40deb750582b108f7d36"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0057.png",
+    "title": "Meus Direitos",
+    "controller": "PVFRightType",
+    "application": [
+      "9ddf6d1420c84daeb9d99ec49d4b26db"
+    ],
+    "active": true,
+    "module": "rh.pvf",
+    "uuid": "86669c05c111403b96e4cd6cba775f72"
+  }
+}
+]

@@ -1,0 +1,125 @@
+[
+{
+    "fields": {
+        "title": "TODOS OS SERVIDORES",
+        "all_employees": true,
+        "all_members": false,
+        "persons": [],
+        "level_access": 1,
+        "department": null
+    },
+    "model": "protocolo.groupperson",
+    "pk": 1
+},
+{
+    "fields": {
+        "title": "TODOS OS SERVIDORES E MEMBROS",
+        "all_employees": true,
+        "all_members": true,
+        "persons": [],
+        "level_access": 1,
+        "department": null
+    },
+    "model": "protocolo.groupperson",
+    "pk": 2
+},
+{
+    "fields": {
+        "title": "TODOS OS MEMBROS",
+        "all_employees": false,
+        "all_members": true,
+        "persons": [],
+        "level_access": 1,
+        "department": null
+    },
+    "model": "protocolo.groupperson",
+    "pk": 3
+},
+{
+    "fields": {
+        "department": null,
+        "all_work_location": true,
+        "level_access": 1,
+        "general_organ": [],
+        "title": "TODAS AS LOTA\u00c7\u00d5ES"
+    },
+    "model": "protocolo.groupgeneralorgan",
+    "pk": 1
+},
+{
+    "fields": {
+        "department": null,
+        "all_work_location": false,
+        "level_access": 1,
+        "general_organ": [
+            458,
+            423,
+            363,
+            398,
+            537,
+            400,
+            403,
+            407,
+            412,
+            419,
+            543,
+            388,
+            391,
+            507,
+            578,
+            33245,
+            33556,
+            424,
+            364,
+            43364,
+            43403,
+            402,
+            405,
+            413,
+            1454,
+            386,
+            450,
+            392,
+            43333,
+            513,
+            425,
+            365,
+            399,
+            404,
+            406,
+            414,
+            420,
+            541,
+            389,
+            31132
+        ],
+        "title": "TODAS AS PROMOTORIAS DE JUSTI\u00c7A"
+    },
+    "model": "protocolo.groupgeneralorgan",
+    "pk": 3
+},
+{
+    "fields": {
+        "department": null,
+        "all_work_location": false,
+        "level_access": 1,
+        "general_organ": [
+            458,
+            33245,
+            513,
+            459,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521
+        ],
+        "title": "TODAS AS PROCURADORIAS"
+    },
+    "model": "protocolo.groupgeneralorgan",
+    "pk": 4
+}
+]

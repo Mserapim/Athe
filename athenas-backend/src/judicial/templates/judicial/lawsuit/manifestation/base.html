@@ -1,0 +1,11 @@
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><small>Protocolo : {{ doc.lawsuit.origin.codigo }} - Protocolo: {{ doc.lawsuit.cache_number }}</small></div>
+
+{% if not manifestation.signed_by and manifestation.diligence.delivery_status != 5 %}
+    {% include "judicial/lawsuit/manifestation/diligence_not_delivered.html" %}
+{% elif manifestation.diligence.delivery_status == 5 or manifestation.signed_by %}
+    {% include "judicial/lawsuit/manifestation/diligence_delivered.html" %}
+{% endif %}
+</div>

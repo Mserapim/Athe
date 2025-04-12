@@ -1,0 +1,17 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Aguardando ciência de cancelamento",
+        "value": 22,
+        "cvalue": "22",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]
+

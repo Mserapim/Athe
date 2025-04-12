@@ -1,0 +1,58 @@
+[
+    {
+        "fields": {
+        "uuid": "6f98d3e4ca7348719351b8111851f320",
+        "title": "Abrir Chamado - Administrativo",
+        "module": "",
+        "application": [
+            "b9aefba0251446d39b5a88cafe780bba"
+        ],
+        "controller": "SiatuChamadoSolicitante",
+        "active": true,
+        "icon": "athenas-0644.png"
+        },
+        "model": "engine.controller"
+    },
+    {
+        "fields": {
+        "uuid": "1737e1712e1e4bbbac500ed2efbb9c1c",
+        "title": "Abrir Chamado - Informática",
+        "module": "common.itop",
+        "application": [
+            "b9aefba0251446d39b5a88cafe780bba"
+        ],
+        "controller": "CIUserRequest",
+        "active": true,
+        "icon": "athenas-0644.png"
+        },
+        "model": "engine.controller"
+    },
+    {
+        "fields": {
+        "uuid": "d6b41b809d5a4e5686fc327f703cf7c3",
+        "title": "SUPORTE ADMINISTRATIVO - Abrir Chamado",
+        "module": "",
+        "application": [
+            "22e7d7ed981d48e9bce36bd3c8819708"
+        ],
+        "controller": "SiatuChamadoSolicitante",
+        "active": true,
+        "icon": "athenas-0644.png"
+        },
+        "model": "engine.controller"
+    },
+    {
+        "fields": {
+        "uuid": "3065bc876579449ab9556408d2716a6b",
+        "title": "SUPORTE INFORMATICA - Abrir Chamado",
+        "module": "common.itop",
+        "application": [
+            "22e7d7ed981d48e9bce36bd3c8819708"
+        ],
+        "controller": "CIUserRequest",
+        "active": true,
+        "icon": "athenas-0644.png"
+        },
+        "model": "engine.controller"
+    }
+]

@@ -1,0 +1,24 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+<div class="papper-content">
+    <div class="field">
+        <div class="composite">
+            <div class="label title">
+                Protocolo {{ protocol.codigo }}
+                <span>Assunto: {{ protocol.assunto }}</span>
+            </div>
+            <div class="paragraph-text">
+                <h2>Para visualizar o conteúdo do documento é necessário recebê-lo.</h2>
+                {% if movement%}
+                    {% if movement.physical %}
+                        <h2>Enviado por meio físico e eletrônico<h2>
+                        {% else %}
+                        <h2>Enviado apenas por meio eletrônico</h2>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+[
+{
+    "fields": {
+        "active": true,
+        "title": "Afastamentos e Exercícios",
+        "father": 103,
+        "uuid": "4ca8700859244683b0875914701432e9",
+        "icon": "athenas-0460.png"
+    },
+    "model": "engine.application",
+    "pk": null
+},
+{
+    "fields": {
+        "active": true,
+        "title": "EXPEDIENTE",
+        "father": null,
+        "uuid": "07b1f10e521e4d439a01c9069237db66",
+        "icon": "athenas-0819.png"
+    },
+    "model": "engine.application",
+    "pk": null
+},
+{
+    "fields": {
+        "active": true,
+        "title": "Membros e Atuações",
+        "father": [
+            "07b1f10e521e4d439a01c9069237db66"
+        ],
+        "uuid": "df4bea2fcf3043cb8696cb3c392eeb24",
+        "icon": "athenas-0676.png"
+    },
+    "model": "engine.application",
+    "pk": null
+},
+{
+    "fields": {
+        "active": true,
+        "title": "Parâmetros",
+        "father": [
+            "07b1f10e521e4d439a01c9069237db66"
+        ],
+        "uuid": "7061a6f1fa324f43bd9a4e77a0994d20",
+        "icon": "athenas-0374.png"
+    },
+    "model": "engine.application",
+    "pk": null
+}
+]

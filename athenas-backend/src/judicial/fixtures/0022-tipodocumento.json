@@ -1,0 +1,161 @@
+[
+{
+  "fields": {
+    "cache_path": "rh.TIPO_DOCUMENTO",
+    "label": "PORTARIA DE INSTAURAÇÃO",
+    "name": "TIPO_DOCUMENTO",
+    "value": 101,
+    "app_label": "rh"
+  },
+  "model": "standard.choice",
+  "pk": null
+},
+{
+    "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Termo de Declaração",
+        "cache_path": "judicial.NOTICE_OFFICE_TYPE",
+        "app_label": "judicial",
+        "name": "NOTICE_OFFICE_TYPE"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "description": "",
+        "value": 2,
+        "label": "Noticia de Fato",
+        "cache_path": "judicial.NOTICE_OFFICE_TYPE",
+        "app_label": "judicial",
+        "name": "NOTICE_OFFICE_TYPE"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "description": "",
+        "value": 3,
+        "label": "Carta Precatória",
+        "cache_path": "judicial.NOTICE_OFFICE_TYPE",
+        "app_label": "judicial",
+        "name": "NOTICE_OFFICE_TYPE"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Motivo 1",
+    "cache_path": "judicial.ARCHIVEMENT_NOTICE_OFFICE_CAUSE",
+    "app_label": "judicial",
+    "name": "ARCHIVEMENT_NOTICE_OFFICE_CAUSE"
+  },
+  "model": "standard.choice",
+  "pk": null
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Motivo 1",
+    "cache_path": "judicial.DEARCHIVEDISPATCH_TYPE",
+    "app_label": "judicial",
+    "name": "DEARCHIVEDISPATCH_TYPE"
+  },
+  "model": "standard.choice",
+  "pk": null
+},
+{
+    "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Notícia de Fato",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 2,
+        "label": "Inquérito Civil Público",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 3,
+        "label": "Procedimento Preparatório",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 4,
+        "label": "Procedimento Investigatório Criminal",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 5,
+        "label": "Notícia de Fato Criminal",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 6,
+        "label": "Em instauração",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 7,
+        "label": "Procedimento Administrativo",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 8,
+        "label": "Carta Precatória",
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "app_label": "judicial",
+        "name": "TYPE_LAWSUIT"
+    },
+    "model": "standard.choice"
+}
+]

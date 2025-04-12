@@ -1,0 +1,695 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_eSocial" id="1000_eSocial">1</td>
+        <td><a href="#r_1000_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000" id="1000">2</td>
+        <td><a href="#r_1000">evtInfoEmpregador</a></td>
+        <td><a href="#r_1000_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Informações do Empregador.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_INFO_EMP_PERIODO_CONFLITANTE">REGRA_INFO_EMP_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_INFO_EMP_VALIDA_CLASSTRIB_NATJURID">REGRA_INFO_EMP_VALIDA_CLASSTRIB_NATJURID</a><br>
+            <a href="#REGRA_INFO_EMP_VALIDA_DTINICIAL">REGRA_INFO_EMP_VALIDA_DTINICIAL</a><br>
+            <a href="#REGRA_TAB_PERMITE_EXCLUSAO">REGRA_TAB_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_VALIDA_DT_FUTURA">REGRA_VALIDA_DT_FUTURA</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_Id" id="1000_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1000">evtInfoEmpregador</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEvento" id="1000_ideEvento">4</td>
+        <td><a href="#r_1000_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1000">evtInfoEmpregador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEvento_tpAmb" id="1000_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1000_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEvento_procEmi"
+            id="1000_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1000_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>8</strong> - Aplicativo governamental para envio de eventos pelo Judiciário<br>
+            <strong>9</strong> - Aplicativo governamental - Integração com a Junta Comercial<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEvento_verProc"
+            id="1000_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1000_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEmpregador" id="1000_ideEmpregador">8</td>
+        <td><a href="#r_1000_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1000">evtInfoEmpregador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEmpregador_tpInsc"
+            id="1000_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1000_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_ideEmpregador_nrInsc"
+            id="1000_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1000_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1000_ideEmpregador_tpInsc">tpInsc</a>.<br>
+            <strong>Validação:</strong> Se <a href="#1000_ideEmpregador_tpInsc">tpInsc</a> for igual a [1], deve ser um
+            número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se a natureza
+            jurídica do declarante for igual a 101-5, 104-0, 107-4, 116-3 ou 134-1, situação em que o campo deve ser
+            preenchido com o CNPJ completo (14 posições).<br>
+            Se <a href="#1000_ideEmpregador_tpInsc">tpInsc</a> for igual a [2], deve ser um CPF válido.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador" id="1000_infoEmpregador">11
+        </td>
+        <td><a href="#r_1000_infoEmpregador">infoEmpregador</a></td>
+        <td><a href="#r_1000">evtInfoEmpregador</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da operação (inclusão, alteração ou exclusão) e das respectivas informações do empregador.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao"
+            id="1000_infoEmpregador_inclusao">12
+        </td>
+        <td><a href="#r_1000_infoEmpregador_inclusao">inclusao</a></td>
+        <td><a href="#r_1000_infoEmpregador">infoEmpregador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Inclusão de novas informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao_idePeriodo"
+            id="1000_infoEmpregador_inclusao_idePeriodo">13
+        </td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_idePeriodo">idePeriodo</a></td>
+        <td><a href="#r_1000_infoEmpregador_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Período de validade das informações.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao_idePeriodo_iniValid"
+            id="1000_infoEmpregador_inclusao_idePeriodo_iniValid">14
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_idePeriodo">idePeriodo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao_idePeriodo_fimValid"
+            id="1000_infoEmpregador_inclusao_idePeriodo_fimValid">15
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_idePeriodo">idePeriodo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1000_infoEmpregador_inclusao_idePeriodo_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao_infoCadastro"
+            id="1000_infoEmpregador_inclusao_infoCadastro">16
+        </td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td><a href="#r_1000_infoEmpregador_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_classTrib"
+            id="1000_infoEmpregador_inclusao_infoCadastro_classTrib">17
+        </td>
+        <td>classTrib</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente à classificação tributária do contribuinte.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#08">Tabela 08</a>.
+            Os códigos [21] e [22] somente podem ser utilizados se <a href="#1000_ideEmpregador_tpInsc">tpInsc</a> for
+            igual a [2]. Para os demais códigos, <a href="#1000_ideEmpregador_tpInsc">tpInsc</a> deve ser igual a [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao_infoCadastro_indCoop"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indCoop">18
+        </td>
+        <td>indCoop</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de cooperativa.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não é cooperativa<br>
+            <strong>1</strong> - Cooperativa de trabalho<br>
+            <strong>2</strong> - Cooperativa de produção<br>
+            <strong>3</strong> - Outras cooperativas<br>
+            <strong>Validação:</strong> O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser
+            diferente de [0] se a natureza jurídica do declarante for igual a 214-3.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_indConstr"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indConstr">19
+        </td>
+        <td>indConstr</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de construtora.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não é construtora<br>
+            <strong>1</strong> - Empresa construtora<br>
+            <strong>Validação:</strong> O preenchimento do campo é exclusivo e obrigatório para PJ.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_indDesFolha"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indDesFolha">20
+        </td>
+        <td>indDesFolha</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de opção/enquadramento de desoneração da folha.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não aplicável<br>
+            <strong>1</strong> - Empresa enquadrada nos critérios da legislação vigente<br>
+            <strong>2</strong> - Município enquadrado nos critérios da legislação vigente<br>
+            <strong>Validação:</strong> Pode ser igual a [1] apenas se <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> = [02, 03, 99]. Pode ser
+            igual a [2] apenas para as naturezas jurídicas iguais a [103-1, 106-6, 124-4, 133-3]. Nos demais casos, deve
+            ser igual a [0].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_indOpcCP"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indOpcCP">21
+        </td>
+        <td>indOpcCP</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo da opção pelo produtor rural pela forma de tributação da contribuição previdenciária, nos termos
+            do art. 25, § 13, da Lei 8.212/1991 e do art. 25, § 7°, da Lei 8.870/1994. O não preenchimento deste campo
+            por parte do produtor rural implica opção pela comercialização da sua produção.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Sobre a comercialização da sua produção<br>
+            <strong>2</strong> - Sobre a folha de pagamento<br>
+            <strong>Validação:</strong> Não preencher se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            for diferente de [07, 21].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_indPorte"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indPorte">22
+        </td>
+        <td>indPorte</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de microempresa - ME ou empresa de pequeno porte - EPP para permissão de acesso ao módulo
+            simplificado. Não preencher caso o empregador não se enquadre como micro ou pequena empresa.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>Validação:</strong> Não preencher se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            = [21, 22].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_indOptRegEletron"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indOptRegEletron">23
+        </td>
+        <td>indOptRegEletron</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indica se houve opção pelo registro eletrônico de empregados. Caso o declarante seja órgão público sem
+            empregados regidos pela CLT, informar [0].<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não optou pelo registro eletrônico de empregados (ou opção não aplicável)<br>
+            <strong>1</strong> - Optou pelo registro eletrônico de empregados
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_inclusao_infoCadastro_cnpjEFR"
+            id="1000_infoEmpregador_inclusao_infoCadastro_cnpjEFR">24
+        </td>
+        <td>cnpjEFR</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>CNPJ do Ente Federativo Responsável - EFR.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for
+            Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.<br>
+            Informação validada no cadastro do CNPJ da RFB.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dtTrans11096"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dtTrans11096">25
+        </td>
+        <td>dtTrans11096</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data da transformação em sociedade de fins lucrativos - Lei 11.096/2005.<br>
+            <strong>Validação:</strong> Não preencher se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            = [21, 22].<br>
+            Se informada, deve ser maior que [2005-11-21] e menor ou igual à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_indTribFolhaPisPasep"
+            id="1000_infoEmpregador_inclusao_infoCadastro_indTribFolhaPisPasep">26
+        </td>
+        <td>indTribFolhaPisPasep</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de tributação sobre a folha de pagamento - PIS e PASEP.<br>
+            Preenchimento exclusivo para o empregador em situação de tributação de PIS e PASEP sobre a folha de
+            pagamento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">27
+        </td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares - Empresas isentas - Dados da isenção.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_ideMinLei"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_ideMinLei">28
+        </td>
+        <td>ideMinLei</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-70</td>
+        <td>-</td>
+        <td>Sigla e nome do Ministério ou lei que concedeu o certificado.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_nrCertif"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_nrCertif">29
+        </td>
+        <td>nrCertif</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-40</td>
+        <td>-</td>
+        <td>Número do Certificado de Entidade Beneficente de Assistência Social - CEBAS, número da portaria de concessão
+            do certificado, ou, no caso de concessão através de lei específica, o número da lei.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtEmisCertif"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtEmisCertif">30
+        </td>
+        <td>dtEmisCertif</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de emissão do certificado/publicação da lei.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtVencCertif"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtVencCertif">31
+        </td>
+        <td>dtVencCertif</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de vencimento do certificado.<br>
+            <strong>Validação:</strong> Não pode ser anterior a <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtEmisCertif">dtEmisCertif</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_nrProtRenov"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_nrProtRenov">32
+        </td>
+        <td>nrProtRenov</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-40</td>
+        <td>-</td>
+        <td>Número do protocolo do pedido de renovação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtProtRenov"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtProtRenov">33
+        </td>
+        <td>dtProtRenov</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data do protocolo de renovação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtDou"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_dtDou">34
+        </td>
+        <td>dtDou</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de publicação no Diário Oficial da União - DOU.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_pagDou"
+            id="1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao_pagDou">35
+        </td>
+        <td>pagDou</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_dadosIsencao">dadosIsencao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>-</td>
+        <td>Número da página no DOU referente à publicação do documento de concessão do certificado.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_infoOrgInternacional"
+            id="1000_infoEmpregador_inclusao_infoCadastro_infoOrgInternacional">36
+        </td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_infoOrgInternacional">infoOrgInternacional</a></td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro">infoCadastro</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações exclusivas de organismos internacionais e outras instituições extraterritoriais.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1000_infoEmpregador_inclusao_infoCadastro_infoOrgInternacional_indAcordoIsenMulta"
+            id="1000_infoEmpregador_inclusao_infoCadastro_infoOrgInternacional_indAcordoIsenMulta">37
+        </td>
+        <td>indAcordoIsenMulta</td>
+        <td><a href="#r_1000_infoEmpregador_inclusao_infoCadastro_infoOrgInternacional">infoOrgInternacional</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo da existência de acordo internacional para isenção de multa.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Sem acordo<br>
+            <strong>1</strong> - Com acordo
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_alteracao"
+            id="1000_infoEmpregador_alteracao">38
+        </td>
+        <td><a href="#r_1000_infoEmpregador_alteracao">alteracao</a></td>
+        <td><a href="#r_1000_infoEmpregador">infoEmpregador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Alteração das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_alteracao_idePeriodo"
+            id="1000_infoEmpregador_alteracao_idePeriodo">39
+        </td>
+        <td><a href="#r_1000_infoEmpregador_alteracao_idePeriodo">idePeriodo</a></td>
+        <td><a href="#r_1000_infoEmpregador_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Período de validade das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_alteracao_infoCadastro"
+            id="1000_infoEmpregador_alteracao_infoCadastro">40
+        </td>
+        <td><a href="#r_1000_infoEmpregador_alteracao_infoCadastro">infoCadastro</a></td>
+        <td><a href="#r_1000_infoEmpregador_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações do empregador.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_alteracao_novaValidade"
+            id="1000_infoEmpregador_alteracao_novaValidade">41
+        </td>
+        <td><a href="#r_1000_infoEmpregador_alteracao_novaValidade">novaValidade</a></td>
+        <td><a href="#r_1000_infoEmpregador_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação preenchida exclusivamente em caso de alteração do período de validade das informações,
+            apresentando o novo período de validade.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_exclusao"
+            id="1000_infoEmpregador_exclusao">42
+        </td>
+        <td><a href="#r_1000_infoEmpregador_exclusao">exclusao</a></td>
+        <td><a href="#r_1000_infoEmpregador">infoEmpregador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Exclusão das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1000_infoEmpregador_exclusao_idePeriodo"
+            id="1000_infoEmpregador_exclusao_idePeriodo">43
+        </td>
+        <td><a href="#r_1000_infoEmpregador_exclusao_idePeriodo">idePeriodo</a></td>
+        <td><a href="#r_1000_infoEmpregador_exclusao">exclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Período de validade das informações.</td>
+    </tr>
+    </tbody>
+</table>

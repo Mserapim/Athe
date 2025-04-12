@@ -1,0 +1,97 @@
+<div class="edoc-moviment-content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Remetente</th>
+                    <th>Enviado em</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td width="80%">
+                       {{ moviment.workplace_sender}} - {{ moviment.sender_of_movement }}
+                   </td>
+                    <td width="20%">
+                        <!-- {{ moviment.send_at | date:'d/m/Y H:i' }} -->
+                        {{ moviment.data_encaminhamento | date:'d/m/Y H:i' }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Destinatário</th> <th>Recebido por</th> <th>Recebido em</th>
+                </tr>
+            </thead>
+            <tbody class="small">
+                <tr>
+                    <th width="40%">
+                        {% if moviment.destinatario %}
+                            {{ moviment.destinatario }}
+                        {% else %}
+                            {{ moviment.lotacao_destino.nome }}
+                        {% endif %}
+                    </th>
+                    <th width="40%">
+                        {% if moviment.servidor_destino %}
+                            {{ moviment.servidor_destino.pessoa_fisica }}
+                            {% else %}
+                            Documento não recebido
+                        {% endif %}
+                    </th>
+                    <th width="40%">
+                        {% if moviment.servidor_destino %}
+                            {{ moviment.data_recebimento | date:'d/m/Y H:i' }}
+                            {% else %}
+                            Documento não recebido
+                        {% endif %}
+                    </th>
+                </tr>
+                
+                {% for child in moviment.child_of_movement%}
+                <tr>
+                    <th width="40%">
+                        &#9679;{% if child.destinatario %}
+                            {{ child.destinatario}}
+                        {% else %}
+                            {{ child.lotacao_destino.nome}}
+                        {% endif %}
+                    </th>
+                    <th width="40%">
+                        {% if child.servidor_destino %}
+                            {{ child.servidor_destino.pessoa_fisica }}
+                        {% else %}
+                            Documento não recebido
+                        {% endif %}
+
+                    </th>
+
+                    <th width="20%">{% if child.data_recebimento %}{{child.data_recebimento | date:'d/m/Y H:i' }} {% else %}---{% endif %}</th>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    {% if moviment.parecer %}
+        <div class="opinion">
+            <h3>Parecer:</h3>
+            <div class="paragraph-text">
+                {{ moviment.parecer | safe }}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if child.servidor_destino %}
+        {{moviment.rendered_content_unified | safe}}
+    {% endif %}
+ 
+   <!--      <div style="pading: 2px; text-align: right; font-size: 0.5em; display: block; width: auto">
+            Movimento {{ moviment.passo }} {%if moviment.child_of%} - Origem {{  moviment.child_of.passo }} {%endif%}
+        </div> -->
+
+
+
+</div>

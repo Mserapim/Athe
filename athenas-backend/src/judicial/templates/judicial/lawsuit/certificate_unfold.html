@@ -1,0 +1,21 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+    
+    <div>
+        <div>
+            <h1 style="margin-bottom: 0px">Ceretidão de Desentranhamento</h1>
+        </div>
+    </div>
+
+    <div class="paragraph-text">
+        O documento do evento <strong>{{event.number_control}}</strong> foi desentranhado na presente data.
+    </div>
+
+
+    {% if sign.person %}
+        {% include "judicial/lawsuit/sign.html" %}
+    {% else %}
+        <p style="padding-top:5em; text-align: center">Este documento ainda não foi assinado.</p>
+    {% endif %}
+</div>

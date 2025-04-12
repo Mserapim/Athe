@@ -1,0 +1,63 @@
+{% extends "common/document_access/base.html" %}
+
+{% block content %}
+
+<div style="position: relative;">
+    <table class="da-table">
+        <tr>
+            <th class="da-cell da-column-title">Documento sigiloso:</th>
+            <td class="da-cell">
+                {% if instance.is_secret %} SIM {% else %} NÃO {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Nível de acesso:</th>
+            {% if instance.is_secret %}
+            <td class="da-cell da-secret">
+                {{ instance.control_type_title | upper }}
+            </td>
+            {% else %}
+            <td class="da-cell">{{ instance.control_type_title }}</td>
+            {% endif %}
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Hipótese legal:</th>
+            <td class="da-cell">{{ legal_prerogative }}</td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Data de classificação:</th>
+            <td class="da-cell">{{ instance.created_at | date:"d/m/Y à\s H:i" }}</td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Prazo da restrição:</th>
+            <td class="da-cell">
+                {% if instance.final_term %}
+                    {{ instance.final_term | date:"d/m/Y à\s H:i" }}
+                {% else %}
+                    {{ '-' }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Número do documento:</th>
+            <td class="da-cell">{{ instance.document_number }}</td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Origem:</th>
+            <td class="da-cell">{{ instance.source }}</td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Assunto:</th>
+            <td class="da-cell">{{ instance.subject }}</td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Tipo de documento:</th>
+            <td class="da-cell">{{ instance.document_type }}</td>
+        </tr>
+        <tr>
+            <th class="da-cell da-column-title">Data de produção:</th>
+            <td class="da-cell">{{ instance.production_date | date:'d/m/Y' }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+[
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0675.png",
+    "title": "Configuração do Rel. de Folha",
+    "controller": "ConfigReportRestful",
+    "application": [
+      "07c05ac95eb645ca8aaf9f6f85f32023"
+    ],
+    "active": true,
+    "module": "rh.gfp",
+    "uuid": "7dcac13fb5be478eb4d1860690caa78e",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0601.png",
+    "title": "Relatório de Empenhos e LRF",
+    "controller": "GFPCommitmentReport",
+    "application": [
+      "cde1d8cddd4e4b67aa869d4e434e8507"
+    ],
+    "active": true,
+    "module": "rh.gfp",
+    "uuid": "3d26bb7a9527455f899a54defeaf5fe3",
+    "icon_file": null,
+    "position": 9999
+  }
+}
+]

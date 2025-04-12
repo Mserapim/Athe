@@ -1,0 +1,17 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4472,
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Benefici\u00e1rio acompanha autoridade",
+        "value": 22,
+        "cvalue": "22",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "benef_acomp_autoridade",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

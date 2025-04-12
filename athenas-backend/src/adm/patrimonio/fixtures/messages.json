@@ -1,0 +1,79 @@
+[
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'movimentado': '', 'numero': '', 'cedente': ''}",
+            "header": "Receber bens",
+            "message": "Foi solicitado pelo <b>%(cedente)s</b> o recebimento da movimenta\u00e7\u00e3o patrimonial <b>%(numero)s</b>no dia<b>%(movimentado)s</b>. Favor receber estes itens no sistema mediante o recebimento dos itens fisicamente.<br><br><b>Caminho</b>:<br>Patrimonio  Movimenta\u00e7\u00e3o de Bens<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOVD_PEDIDO_RECEBIMENTO"
+        }
+    },
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'numero': '', 'cedente': ''}",
+            "header": "Validar movimenta\u00e7\u00e3o",
+            "message": "A movimenta\u00e7\u00e3o de bens realizada pelo<b>%(cedente)s</b>que tem o numero<b>%(numero)s</b>esta aguardando valida\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOVD_VALIDAR"
+        }
+    },
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'numero': ''}",
+            "header": "Movimenta\u00e7\u00e3o cancelada",
+            "message": "A movimenta\u00e7\u00e3o <b>%(numero)s</b> foi cancelada.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOV_CANCELADA"
+        }
+    },
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'data_pedido': '', 'numero': '', 'cedente': ''}",
+            "header": "Receber bens",
+            "message": "Foi solicitado pelo <b>%(cedente)s</b> o recebimento da movimenta\u00e7\u00e3o patrimonial <b>%(numero)s</b> no dia <b>%(data_pedido)s</b>. Favor receber estes itens no sistema mediante o recebimento dos itens fisicamente.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOV_PEDIDO_RECEBIMENTO"
+        }
+    },
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'numero': ''}",
+            "header": "Movimenta\u00e7\u00e3o Reaberta",
+            "message": "A movimenta\u00e7\u00e3o de bens <b>%(numero)s</b> foi devolvida para corre\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOV_REABERTO"
+        }
+    },
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'numero': ''}",
+            "header": "Movimenta\u00e7\u00e3o Validada",
+            "message": "A movimenta\u00e7\u00e3o <b>%(numero)s</b> foi validada.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOV_VALIDADO"
+        }
+    },
+    {
+        "pk": null,
+        "model": "notification.message",
+        "fields": {
+            "default_params": "{'favorecido': '', 'numero': '', 'cedente': ''}",
+            "header": "Validar movimenta\u00e7\u00e3o",
+            "message": "A movimenta\u00e7\u00e3o de bens realizada pelo <b>%(cedente)s </b>para o <b>%(favorecido)s</b> e que tem o numero <b>%(numero)s</b> esta aguardando valida\u00e7\u00e3o.<!-- Corre\u00e7\u00e3o de bug da ExtJS -->",
+            "type": "INFO",
+            "mid": "PAT_MOV_VALIDAR"
+        }
+    }
+]

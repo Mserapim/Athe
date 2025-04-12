@@ -1,0 +1,98 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="Legal"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto 
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto; 
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 0.5px solid #000000;
+        text-align: left;
+        font-size: 12px;
+        padding: 5px;
+      }
+      
+      table td div {
+        overflow:visible;
+      }
+
+      table tr th {
+        font-weight: 400;
+        text-align: center;
+      }
+      
+      tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
+
+      .col-1 {
+        width: 400px;
+        text-align: center;
+      }
+      .color-1 {
+        background-color: #c4c0c0;
+        text-align: center;
+      }
+
+
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'landescape/header/header.html' %}
+    
+    <section style="margin-top:50px;margin-bottom:20px;clear: both;">
+        <div>
+          <table>
+            <thead style="border: none;">
+              <tr>
+                  {% for key in keys %}
+                    <th style="font-size: 14px;font-weight: 600;text-transform: uppercase;background-color: rgb(240, 240, 240)">{{ key }}</th>
+                  {% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in data %}
+                  <tr>
+                    {% for value in item  %}
+                      <td>
+                          <div>{{ item|get_value:value }}</div>
+                      </td>
+                    {% endfor %}
+                  <tr>
+              {% endfor  %}      
+
+                 
+            </tbody> 
+          </table>
+  
+        </div>
+
+  </section>
+
+  </body>
+</html>

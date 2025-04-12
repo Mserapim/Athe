@@ -1,0 +1,14 @@
+.icon-siatu128 { width: 128px; height: 128px; background: url('siatu128.png') no-repeat 0 0 } 
+.icon-siatu128-ruim128 { background-position: 0px 0px !important } 
+.icon-siatu128-bom128 { background-position: 0px -128px !important } 
+.icon-siatu128-regular128 { background-position: 0px -256px !important } 
+.icon-siatu128-otimo128 { background-position: 0px -384px !important } 
+.icon-siatu128-pessimo128 { background-position: 0px -512px !important } 
+
+.icon-siatu50 { width: 50px; height: 50px; background: url('siatu50.png') no-repeat 0 0 } 
+.icon-siatu50-bom50 { background-position: 0px 0px !important } 
+.icon-siatu50-otimo50 { background-position: 0px -60px !important } 
+.icon-siatu50-pessimo50 { background-position: 0px -120px !important } 
+.icon-siatu50-regular50 { background-position: 0px -180px !important } 
+.icon-siatu50-ruim50 { background-position: 0px -240px !important } 
+

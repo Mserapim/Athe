@@ -1,0 +1,1053 @@
+[
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "FOLHA DE PAGAMENTO", 
+    "father": null, 
+    "uuid": "2c4cdd0faef5406daf666e994ff35020", 
+    "icon": "athenas-0301.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "37a5cf0d2202475fbd02445e5b9e2f52", 
+    "title": "Ter\u00e7o de F\u00e9rias", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "FRSGestorFeriasFOPAG", 
+    "active": true, 
+    "icon": "athenas-0301.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "f3e8beaea98c40e7ad5d80a8f2393809", 
+    "title": "Configura\u00e7\u00e3o", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPConfiguracao", 
+    "active": true, 
+    "icon": "athenas-0702.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "70e422ad4ff747a398449218758f2acf", 
+    "title": "Auditoria - Contracheques", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPContraChequeAuditoria", 
+    "active": true, 
+    "icon": "athenas-0629.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "897b4859978d4ddb8e58c680b7ee5f70", 
+    "title": "Controlador", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPControlador", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "305e6151ec584959a89c6b8f9e20fe49", 
+    "title": "Estruturas Salariais", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPEstruturaSalarialRestful", 
+    "active": true, 
+    "icon": "athenas-0573.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "fd124aa3df834b5985fec8d453d25189", 
+    "title": "Gestor de Verbas/Pagamentos Adicionais", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPExtraPayment", 
+    "active": true, 
+    "icon": "athenas-0570.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "cd5367d054b04f30a9defbe7397bc11f", 
+    "title": "Gestor de Eventos/Rubricas", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPGenreEvent", 
+    "active": false, 
+    "icon": "athenas-0777.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "7bf34d6bffda4ba597c96db992c064c4", 
+    "title": "Lan\u00e7ador", 
+    "module": "rh.gfp", 
+    "application": "2c4cdd0faef5406daf666e994ff35020", 
+    "controller": "GFPLancador", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Relat\u00f3rio", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "icon": "athenas-0291.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Operacional", 
+    "father": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "uuid": "8d3a31aa1b9040899795256bbfe4ab55", 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "de3d725622f24335acb43a056f19bf0d", 
+    "title": "Sal\u00e1rio da Carreira", 
+    "module": "rh.gfp", 
+    "application": "8d3a31aa1b9040899795256bbfe4ab55", 
+    "controller": "GFPCarreiraSalario", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "2a20cd75e6d846cb872edabb6f305bfe", 
+    "title": "Chancelamento da Folha", 
+    "module": "rh.gfp", 
+    "application": "8d3a31aa1b9040899795256bbfe4ab55", 
+    "controller": "GFPChancela", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Imposto de Renda", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "4bd35e713bc143d1b4ef59461922385d", 
+    "icon": "athenas-0075.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": false, 
+    "title": "Oculto", 
+    "father": "4bd35e713bc143d1b4ef59461922385d", 
+    "uuid": "ec79afc0aeef428c9c408d5da7eee44a", 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "8abfeedc7c3946749bc7903250566fc7", 
+    "title": "Imposto de Renda", 
+    "module": "rh.gfp", 
+    "application": "ec79afc0aeef428c9c408d5da7eee44a", 
+    "controller": "GFPIRRF", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "aabc37ae24fe431ba2e686852f05aef4", 
+    "title": "Faixa", 
+    "module": "rh.gfp", 
+    "application": "ec79afc0aeef428c9c408d5da7eee44a", 
+    "controller": "GFPIRRFFaixa", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Relat\u00f3rios", 
+    "father": "4bd35e713bc143d1b4ef59461922385d", 
+    "uuid": "9a0781b590ee4bda8bff317f7b733b6c", 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "466f8a96e3e54d9987887057a02dc733", 
+    "title": "Configura\u00e7\u00e3o DIRF", 
+    "module": "rh.gfp", 
+    "application": "9a0781b590ee4bda8bff317f7b733b6c", 
+    "controller": "GFPConfigDirf", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": false, 
+    "title": "Consigna\u00e7\u00e3o", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "119c703e26fb4f1fb081b09933153802", 
+    "icon": "athenas-0014.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "ccf23bb49d904d50aac4eef78daf222d", 
+    "title": "Consigna\u00e7\u00e3o", 
+    "module": "rh.gfp", 
+    "application": "119c703e26fb4f1fb081b09933153802", 
+    "controller": "GFPConsignacao", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e85b4fbe842c48bdba6083c87415d08a", 
+    "title": "Servidor", 
+    "module": "rh.gfp", 
+    "application": "119c703e26fb4f1fb081b09933153802", 
+    "controller": "GFPServidorConsignacao", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Importa\u00e7\u00e3o/Exporta\u00e7\u00e3o", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "04edcb98c4974337878332ca4b09aa92", 
+    "icon": "athenas-0755.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "62b7369b0614414e8ca138d70a0c8ef1", 
+    "title": "Bases Salariais", 
+    "module": "rh.gfp", 
+    "application": "04edcb98c4974337878332ca4b09aa92", 
+    "controller": "GFPBaseSalarialPlanSaude", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "37d556a0a3194352a1dbdbb9e1028568", 
+    "title": "Retorno Lan\u00e7amentos", 
+    "module": "rh.gfp", 
+    "application": "04edcb98c4974337878332ca4b09aa92", 
+    "controller": "GFPRetornoPlanSaude", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e9bbceef42184c4a978a903acb2253e7", 
+    "title": "Configurador", 
+    "module": "rh.gfp", 
+    "application": "4bd35e713bc143d1b4ef59461922385d", 
+    "controller": "DIRFConfigurador", 
+    "active": true, 
+    "icon": "athenas-0702.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "846b76e2ad1a417a996a21bf2edd2fbc", 
+    "title": "Formato do arquivo RFB", 
+    "module": "rh.gfp", 
+    "application": "4bd35e713bc143d1b4ef59461922385d", 
+    "controller": "DIRFDialect", 
+    "active": true, 
+    "icon": "athenas-0705.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": false, 
+    "title": "Oculto", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "caf4301ee25a41bfb90c843f930054b8", 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "f69e35af312b4262ace3e8e88e298234", 
+    "title": "Evento", 
+    "module": "rh.gfp", 
+    "application": "caf4301ee25a41bfb90c843f930054b8", 
+    "controller": "GFPEvento", 
+    "active": false, 
+    "icon": "athenas-0538.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "950fad71ab354721b5b4dbb0dff7ad31", 
+    "title": "Mensagens contra-cheque", 
+    "module": "rh.gfp", 
+    "application": "caf4301ee25a41bfb90c843f930054b8", 
+    "controller": "GFPFolhaMensagem", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Par\u00e2metros", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "icon": "athenas-0374.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e5f0dd0a351c472390ebddf33a90225a", 
+    "title": "Dado Banc\u00e1rio - Folhas", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPBankingDataPersonPayroll", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "1dac7c59e25744e3a4ba62b5761b79cc", 
+    "title": "CNAE", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPCNAE", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "d621caf2e40343719d877fef05e5cec1", 
+    "title": "CNAE", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPCNAERestful", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "fd609b6333b94e82bc3f4fc806e7cedc", 
+    "title": "Natureza J\u00faridica", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPCNJRais", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "5bd4beb52ed9480ab4478686a66ae171", 
+    "title": "Natureza J\u00faridica", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPCNJRaisRestful", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "b29c304749b149eebba532c8c10098fb", 
+    "title": "Calculo", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPCalculo", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "84ac18cfc34245359fd06d02e0d91fc3", 
+    "title": "Dado Banc\u00e1rio - Pessoas", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPDadoBancarioPessoa", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e42a3530de524cbd988b51cad9516a1f", 
+    "title": "Eventos/Rubricas", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPEventoRestful", 
+    "active": true, 
+    "icon": "athenas-0538.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "104e3ced1eeb4cdbb9b0ad94194b2541", 
+    "title": "Fator FAP", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFapFactor", 
+    "active": true, 
+    "icon": "athenas-0164.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "74f68b3530904168b0c3e18d7692c002", 
+    "title": "Fator FAP", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFatorFap", 
+    "active": false, 
+    "icon": "athenas-0164.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "809df0ae36cf41e295e427dd15afd886", 
+    "title": "Fator RAT", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFatorRat", 
+    "active": false, 
+    "icon": "athenas-0164.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "450514539966411296aeccdd8c0302a4", 
+    "title": "Folha de Pagamento", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFolha", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "b4bea103b1fe4c1c8819d39627f39332", 
+    "title": "Modelo de lan\u00e7amentos", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFolhaModelo", 
+    "active": false, 
+    "icon": "athenas-0640.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "3cd7d173f58147d1a6ce270b56c1e034", 
+    "title": "Modelo de Lan\u00e7amentos", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFolhaModeloRestful", 
+    "active": false, 
+    "icon": "athenas-0248.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "8a4e0cb1f5124d378d55e5ffaa80ff39", 
+    "title": "Tipo de Folha", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPFolhaTipo", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e107453389fb4943a808ee553f3821a2", 
+    "title": "Modelo de lan\u00e7amentos", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPModelPayroll", 
+    "active": true, 
+    "icon": "athenas-0640.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "19336d2a96ec44d58957331ac9c7becf", 
+    "title": "Folha de Pagamento", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPPayroll", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "b24f6b778b8a407bb5d722125f2aeb8d", 
+    "title": "Tipo de Folha", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPPayrollType", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "8ed9af17b01242f486bc7f372c41093f", 
+    "title": "Periodo", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPPeriod", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "30ae776d5d1540989416bdc0018623b8", 
+    "title": "Periodo", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPPeriodo", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "1994cad247ba4f6da431e356a06426f4", 
+    "title": "RRA - Folha dos Servidores", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPRRAEmployeePayrollType", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "dbcf8eb844fe45479c3bfbd749c28996", 
+    "title": "RRA - Folha dos Servidores", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPRRAServidorFolhaTipo", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "260b6f732b084766a8fc50b50fd0e24b", 
+    "title": "Fator RAT", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "GFPRatFactor", 
+    "active": true, 
+    "icon": "athenas-0164.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "3fdf3a9c66f04b948f8aad2e8ec796eb", 
+    "title": "Bancos", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "RHBanco", 
+    "active": false, 
+    "icon": "athenas-0123.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "c80f4420a7084739a4f0c6ed84b07583", 
+    "title": "Bancos", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "RHBank", 
+    "active": true, 
+    "icon": "athenas-0123.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "7e436d10d18d4796af0df244cab24572", 
+    "title": "Dado Banc\u00e1rio - Pessoas", 
+    "module": "rh.gfp", 
+    "application": "07c05ac95eb645ca8aaf9f6f85f32023", 
+    "controller": "RHBankingDataPerson", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Previd\u00eancia", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "34ca26b4e5cc4c0191febc01ffca2d08", 
+    "icon": "athenas-0075.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "7390a5cd467042c1bdc90a54cd586962", 
+    "title": "Previd\u00eancia", 
+    "module": "rh.gfp", 
+    "application": "34ca26b4e5cc4c0191febc01ffca2d08", 
+    "controller": "GFPPrevidencia", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "2a532ec6adaf479f853968342bcf13ad", 
+    "title": "Faixa", 
+    "module": "rh.gfp", 
+    "application": "34ca26b4e5cc4c0191febc01ffca2d08", 
+    "controller": "GFPPrevidenciaFaixa", 
+    "active": false, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "47c2ff8f48f747bcb58d556cb480026c", 
+    "title": "Previd\u00eancia", 
+    "module": "rh.gfp", 
+    "application": "34ca26b4e5cc4c0191febc01ffca2d08", 
+    "controller": "GFPSocialSecurity", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "a835ab96969c4bdc8575b6a1d05eba0c", 
+    "title": "Gerencial da DIRF", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPComprovanteRendimentosGerencial", 
+    "active": true, 
+    "icon": "athenas-0775.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "22fa3f14d0804c31b04fd7bd4ed86549", 
+    "title": "Comprovante de Rendimentos", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPComprovanteRendimentosServidor", 
+    "active": true, 
+    "icon": "athenas-0123.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "9cf7b67a9e5e4265819ae4c6a081ae73", 
+    "title": "Dependentes - Aux. Creche", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPDependenteAuxilioCreche", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "ba230161de514b6292a0ec675b360419", 
+    "title": "Ficha Financeira", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPFichaFinanceira", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "2495ddf72edc486ea6d174345b65529c", 
+    "title": "Relat\u00f3rio Analitico da Folha", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPFolhaAnalitico", 
+    "active": true, 
+    "icon": "athenas-0779.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "d99065571e0d4bf0b74af55dea0dd3a9", 
+    "title": "Nota de Liquida\u00e7\u00e3o", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPNotaLiquidacao", 
+    "active": true, 
+    "icon": "athenas-0016.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "f922d1bad6694388a74f637e024014c6", 
+    "title": "Contra Cheques", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPPrintContrachequeAdmin", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "8c9a4ce378674c228ea1870d496efafc", 
+    "title": "Contra Cheque para Pensionista", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPPrintContrachequePensionista", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "0e3dcdd18f49425c9b38845ce60db7cf", 
+    "title": "Programa de Desembolso", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPProgramaDesembolso", 
+    "active": true, 
+    "icon": "athenas-0540.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "4828d3015d244d89897d69e974f77a9f", 
+    "title": "Rela\u00e7\u00e3o Bancaria", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPRelacaoBancaria", 
+    "active": true, 
+    "icon": "athenas-0158.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "37aa245e0c264b1ea5c3db0ee34cae49", 
+    "title": "Resumo da Folha", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPResumoGeral", 
+    "active": true, 
+    "icon": "athenas-0006.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "dc3e661a18b34c0c82f5333df9f6603a", 
+    "title": "Resumo geral de Eventos", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "GFPResumoGeralEventos", 
+    "active": true, 
+    "icon": "athenas-0632.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "afd340a28ade4165b4e209b8d7de7d8c", 
+    "title": "Folha dos Servidores - Transpar\u00eancia", 
+    "module": "rh.gfp", 
+    "application": "cde1d8cddd4e4b67aa869d4e434e8507", 
+    "controller": "RHPrintTransparenciaFolhaServidores", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": false, 
+    "title": "Sal\u00e1rios", 
+    "father": "2c4cdd0faef5406daf666e994ff35020", 
+    "uuid": "a6f1a4d38fe244b8aa8cb2879baa507a", 
+    "icon": "athenas-0573.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "cff0532ccd4944888d552c084162e0e9", 
+    "title": "Cargo e sal\u00e1rios", 
+    "module": "rh.gfp", 
+    "application": "a6f1a4d38fe244b8aa8cb2879baa507a", 
+    "controller": "GFPCargoSalario", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "f4687b0b929c4adfa273ca1ee4f2fa83", 
+    "title": "Categorias Salariais", 
+    "module": "rh.gfp", 
+    "application": "a6f1a4d38fe244b8aa8cb2879baa507a", 
+    "controller": "GFPCategoriaSalarial", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "79b487201e2c488199a3757038c8d102", 
+    "title": "Refer\u00eancias Estruturas", 
+    "module": "rh.gfp", 
+    "application": "a6f1a4d38fe244b8aa8cb2879baa507a", 
+    "controller": "GFPReferenciaNiveis2D", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "8d669fd0e6bc4ef5936e5899cad169c2", 
+    "title": "Sal\u00e1rio", 
+    "module": "rh.gfp", 
+    "application": "a6f1a4d38fe244b8aa8cb2879baa507a", 
+    "controller": "GFPSalario", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "884d1d02b0a8411ca338a2afc6c55dab", 
+    "title": "Tabelas Salariais", 
+    "module": "rh.gfp", 
+    "application": "a6f1a4d38fe244b8aa8cb2879baa507a", 
+    "controller": "GFPTabelaSalarial", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "FINANCEIRO", 
+    "father": null, 
+    "uuid": "1930075ea3234033aea9da0f91b6aeef", 
+    "icon": "athenas-0475.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Folha de Pagamento", 
+    "father": "1930075ea3234033aea9da0f91b6aeef", 
+    "uuid": "0cce392b696f44ed815f77c3d30b2cc0", 
+    "icon": "athenas-0301.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "5926bece09cf4b1ba0ce56115d83f468", 
+    "title": "Plano de Contas", 
+    "module": "rh.gfp", 
+    "application": "0cce392b696f44ed815f77c3d30b2cc0", 
+    "controller": "PCGestor", 
+    "active": true, 
+    "icon": "athenas-0363.png"
+  }
+}
+]

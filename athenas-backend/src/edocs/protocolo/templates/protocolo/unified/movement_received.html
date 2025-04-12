@@ -1,0 +1,20 @@
+<tr>
+    <th width="40%">
+        &#9679;{% if child.destinatario %}
+        {{ child.destinatario}}
+        {% else %}
+        {{ child.lotacao_destino.nome}}
+        {% endif %}
+    </th>
+    <th width="40%">
+        {% if child.servidor_destino %}
+        {{ child.servidor_destino.pessoa_fisica }}
+        {% else %}
+        Documento não recebido
+        {% endif %}
+    </th>
+
+    <th width="20%">{% if child.data_recebimento %}{{child.data_recebimento | date:'d/m/Y H:i' }}
+        {% else %}---{% endif %}
+    </th>
+</tr>

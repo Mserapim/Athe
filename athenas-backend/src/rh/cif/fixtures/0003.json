@@ -1,0 +1,20 @@
+[
+	{
+		"fields": {
+			"controllers": [], 
+			"name": "cif-admin", 
+			"users": []
+		}, 
+			"model": "engine.controllerpermission", 
+			"pk": null
+	}, 
+	{
+		"fields": {
+			"controllers": [], 
+			"name": "cif-membro", 
+			"users": []
+		}, 
+			"model": "engine.controllerpermission", 
+			"pk": null
+	}
+]

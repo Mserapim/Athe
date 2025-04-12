@@ -1,0 +1,53 @@
+[
+{
+    "pk": null,
+    "model": "engine.controllerpermission",
+    "fields": {
+        "controllers": [
+            [
+                "6c288c582eec4631a380e8f0c93522e3"
+            ]
+        ],
+        "name": "ejud-gestor-diligencia",
+        "users": [
+            [
+                "mariapereira"
+            ]
+        ]
+    }
+},
+{
+    "pk": null,
+    "model": "engine.controllerpermission",
+    "fields": {
+        "controllers": [
+            [
+                "5b93636cc02642ce88050b25fd85fb99"
+            ]
+        ],
+        "name": "ejud-oficial-diligencia",
+        "users": [
+            [
+                "luciaferreira"
+            ]
+        ]
+    }
+},
+{
+    "pk": null,
+    "model": "engine.controllerpermission",
+    "fields": {
+        "controllers": [
+            [
+                "16aefb20b8274001a5d498b04cfb4111"
+            ]
+        ],
+        "name": "ejud-promotoria",
+        "users": [
+            [
+                "miguelsiqueira"
+            ]
+        ]
+    }
+}
+]

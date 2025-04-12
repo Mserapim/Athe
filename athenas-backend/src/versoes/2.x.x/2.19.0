@@ -1,0 +1,60 @@
+- 2024.9.17:
+    - CARD: ATS-5067 - MR: 1283 - [Back] Acrescentar as regras na tela de cad Destinos sobre carros avião etc.. 
+    - CARD: ATS-5270 - MR: 1284 - Esocial [back] - Criar campos de certificado digital a1 e Cas na configuração
+    - CARD: ATS-5075 - MR: 1286 - [backend - Diárias - Condicionais] Criar condicional de fluxo para validar se o custo de transporte é pelo MPMT
+    - CARD: ATS-5138 - MR: 1288 - [backend Diárias - Condicionais] Criar condicionais para verificar se beneficiário solicitou transporte aéreo
+    - CARD: ATS-5271 - MR: 1287 - Esocial  [back] - Cria da api  que retorna o certificado digital atual
+    - CARD: ATS-5271 - MR: 1289 - [back] Criar validação do cadastro de destinos com datas/horários iguais 
+- 2024.9.18:
+    - CARD: ATS-5265 - MR: 1292 - [back] - Cadastro de serviços - Criar campos sobre a execução
+    - CARD: ATS-5284 - MR: 1291 - [BACK] Api para exibir campo "obs" preenchido pela assessoria PGJ
+    - CARD: ATS-5139 - MR: 1293 - [backend Diárias - Condicionais] Criar condicionais para verificar se beneficiário solicitou veículo institucional sem motorista ou veículo institucional com motorista 
+    - CARD: ATS-5356 - MR: 1294 - [back] ajustes na função de clonar eventos
+    - CARD: ATS-5322 - MR: 1290 - [back] Criar api para retornar lista de teletrabalhos
+- 2024.9.19:
+    - CARD: ATS-5292 - MR: 1295 - [BACK] Ajuste histórico: Assessoria da SUB JUR e Assessoria da SUB ADM
+    - CARD: ATS-5365 - MR: 1298 - [backend - Diárias] Alterar campo para deferimento de acompanhamento de autoridade
+    - CARD: ATS-5238 - MR: 1303 - Gestor folha ponto - Separar a notificação de envio email para aprovadores 
+    - CARD: ATS-5239 - MR: 1204 - Gestor folha ponto - Separar a notificação de envio email para servidores, estagiários e residentes 
+    - CARD: ATS-5340 - MR: 1201 - Gestor folha ponto - Criar um filtro na tela dos que foram notificado e os que não foram notificados
+    - CARD: ATS-5286 - MR: 1302 - [Back] Criar uma função para geração de tokens JWT com base em um username e uma data_limite 
+- 2024.9.20:
+    - CARD: ATS-4632 - MR: 1297 - Alterar regra de cálculo de diárias 
+    - CARD: ATS-5123 - MR: 1296 - [BACK] Assessoria PGJ - Analise de afastamento
+    - CARD: ATS-5302 - MR: 1305 - [BACK] DG - Analise Assessoria
+    - CARD: ATS-5303 - MR: 1306 - [BACK] HISTÓRICO - DG - Analise Assessoria
+    - CARD: ATS-5266 - MR: 1300 - [back] - Cadastro de serviços - Criar função para atualizar os campos de executado
+    - CARD: ATS-5382 - MR: 1308 - [backend - Diárias] Erro ao salvar objeto da classe CalculoConsolidado
+- 2024.9.23:
+    - CARD: ATS-5308 - MR: 1310 - [BACK] Models - DAA - passagem
+    - CARD: ATS-5357 - MR: 1311 - [backend - Diárias] Implementar mecanismo para mover a Viagem de fluxo automaticamente
+    - CARD: ATS-5269 - MR: 1309 - [back] - Cadastro de serviços - Atualizar API para mostrar campos de executado
+    - CARD: ATS-5392 - MR: 1314 - [backend - Diárias] Criar registros automaticamente para Pagamento e Prestação de Contas de acordo com fluxos específicos
+    - CARD: ATS-5283 e ATS-5285 - MR: 1313 - [back] Criar uma API para autenticação e cadastro de prestação de contas Externas 
+    - CARD: ATS-5285 - MR: 1317 - ajuste na migração
+- 2024.9.24:
+    - CARD: ATS-5188 - MR: 1313 - [back] - Alterar informações no arquivo SPPREVCOM
+    - CARD: ATS-5404 - MR: 1319 - [back] - Adicionar data do holerite no arquivo SPPREVCOM
+    - CARD: ATS-5069 - MR: 1318 - [Back] Manutenção de dados bancários no pedido de diárias
+- 2024.9.25:
+    - CARD: ATS-5220 - MR: 1321 - [back] - Cadastro de Classcode - API de Listagem
+    - CARD: ATS-5221 - MR: 1322 - [back] - Cadastro de Classcode - API de Destalhe
+    - CARD: ATS-5232 - MR: 1315 - Cnab - Ajustes em relação enumerador de sequencia
+    - CARD: ATS-5416 - MR: 1324 - [backend] Alterar estrutura de tabela sobre informações de dados bancários de pessoas
+    - CARD: ATS-5277 - MR: 1323 - Licença Maternidade [back] - Cria campo classificação/tipo no afastamento de licença maternidade
+- 2024.9.26:
+    - CARD: ATS-5223 - MR: 1329 - [back] - Cadastro de Classcode - API de Cadastro
+    - CARD: ATS-5224 - MR: 1330 - [back] - Cadastro de Classcode - API de Edição
+    - CARD: ATS-5255 - MR: 1327 - Corrigir cálculo de verba de Diligência - não esta calculando o afastamento em relação ao mês anterior
+- 2024.9.27:
+    - CARD: ATS-4414 - MR: 1325 - (backend) Criar um job para marcar os registros de pagamento que estão com o status ‘cnab criado’ para ‘pagos’ 
+    - CARD: ATS-5308 - MR: 1332 - [BACK] Salvar DAA - passagem
+    - CARD: ATS-5311 - MR: 1334 - [BACK] Dados DAA - passagem
+    - CARD: ATS-5310 - MR: 1333 - Conferência de férias [back] - Corrigir conferência de férias em massa
+    - CARD: ATS-5293 - MR: 1336 - [back] ajustar a função para envio de email para prestação de contas externas 
+    - CARD: ATS-4978 - MR: 1331 - Desativar conexão ao banco oracle em relação à 'plantões' 
+    - CARD: ATS-5456 - MR: 1337 - [Back] Remoção de validação que empede de editar o beneficiario fora do Rascunho
+    - CARD: ATS-5453 - MR: 1338 - [back] Alterar label de mensagem de erro da conferência de férias
+- 2024.9.30:
+    - CARD: ATS-5226 - MR: 1335 - [front] - Cadastro de Classcode - Criar tela de Listagem vinculada ao cadastro de Serviço
+    - CARD: ATS-5454 - MR: 1339 - [back] Alterar verificação de referência do teletrabalho

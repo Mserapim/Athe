@@ -1,0 +1,85 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO PARA INTIMAÇÃO POR WHATSAPP COM AUTENTICIDADE VERIFICÁVEL</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_job_title }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ home_court_unicode }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Comarca:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_workplace }}</td></tr>
+    <tr>
+        <th class="rf-th">Email institucional:</th>
+        <th class="rf-th">Telefone:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_work_email }}</td>
+        <td class="rf-td">{{ employee_ramal }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center">Formulário de notificação por whatsApp de vítimas</th></tr>
+    <tr>
+        <td class="rf-td" style="text-align:justify">
+            <p class="rf-paragraph-height">{{employee_address}} - {{protocol.data_criacao | date:'d/m/Y'}}, Promotoria de Justiça de {{ employee_workplace }}</p>
+            <p class="rf-paragraph-height">Prezado(a) Sr(a) <strong>{{ name_victim }}</strong>, CPF <strong>{{ cpf_victim }}</strong>.</p>
+            <p class="rf-paragraph-height">
+                A Lei nº 13.964/19 passou a permitir acordo entre o Ministério Público e pessoas
+                indiciadas por crimes com pena mínima até 4 (quatro) anos. Cumpridas as condições do
+                acordo, o caso é arquivado e o interessado mantém sua primariedade. As condições
+                podem ser: ressarcir a vítima, pagar multa, prestar serviços à comunidade ou renunciar a
+                bens e direitos.
+            </p>
+            <p class="rf-paragraph-height">
+                Notamos que você foi vítima de crime – Inquérito Policia <strong>{{ number_inquiry_police }}</strong>.
+            </p>
+            <p class="rf-paragraph-height">
+                O indiciado <strong>{{ name_intimate }}</strong> poderá fazer um acordo com o Ministério Público desde que ressarça seus
+                prejuízos. Em razão disso, precisamos saber quais foram seus prejuízos causados pela
+                conduta dele(a): consertos, tratamentos, remédios etc.
+            </p>
+            <p class="rf-paragraph-height">
+                Nosso horário de atendimento é:<br>
+                Segunda-feira à Sexta-feira: {{ workplace_hours }}<br>
+                Sábado: Fechado<br>
+                Domingo: Fechado
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center"></th></tr>
+    <tr>
+        <td class="rf-td" style="text-align:justify">
+            <p class="rf-paragraph-height">
+                Para sua segurança, o telefone a seguir deve ser o mesmo que originou a mensagem de WhatsApp: <strong>{{ employee_ramal }}</strong>.
+                O Ministério Público não pede senhas, depósitos e nenhum pagamento.
+                O link em azul no final deste documento levará a uma página de verificação com conexão segura. Se for
+                autêntica, haverá um símbolo de cadeado antes do endereço eletrônico, e o texto exibido deve ser o
+                mesmo constante neste documento.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

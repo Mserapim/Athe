@@ -1,0 +1,14 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Despacho de Arquivamento</h2></div>
+
+    <div class="paragraph-text">{{ doc.despatch | safely }}</div>
+
+    <div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ execution_organ.localidade.nome | city_name }}, {{ doc.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>
+        <div><span style="font-size: 0.6em">{{ execution_organ.nome }}</span></div>
+    </div>
+</div>

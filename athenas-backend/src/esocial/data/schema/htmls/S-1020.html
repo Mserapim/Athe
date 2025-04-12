@@ -1,0 +1,734 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_eSocial" id="1020_eSocial">1</td>
+        <td><a href="#r_1020_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020" id="1020">2</td>
+        <td><a href="#r_1020">evtTabLotacao</a></td>
+        <td><a href="#r_1020_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Tabela de Lotações Tributárias.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO">REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO">REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO</a><br>
+            <a href="#REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TABLOTACAO_VALIDA_FPASTERCEIROS">REGRA_TABLOTACAO_VALIDA_FPASTERCEIROS</a><br>
+            <a href="#REGRA_TAB_PERMITE_EXCLUSAO">REGRA_TAB_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_VALIDA_DT_FUTURA">REGRA_VALIDA_DT_FUTURA</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_Id" id="1020_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1020">evtTabLotacao</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEvento" id="1020_ideEvento">4</td>
+        <td><a href="#r_1020_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1020">evtTabLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEvento_tpAmb" id="1020_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1020_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEvento_procEmi"
+            id="1020_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1020_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEvento_verProc"
+            id="1020_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1020_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEmpregador" id="1020_ideEmpregador">8</td>
+        <td><a href="#r_1020_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1020">evtTabLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEmpregador_tpInsc"
+            id="1020_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1020_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_ideEmpregador_nrInsc"
+            id="1020_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1020_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1020_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao" id="1020_infoLotacao">11</td>
+        <td><a href="#r_1020_infoLotacao">infoLotacao</a></td>
+        <td><a href="#r_1020">evtTabLotacao</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da operação (inclusão, alteração ou exclusão) e das informações da lotação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao"
+            id="1020_infoLotacao_inclusao">12
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao">inclusao</a></td>
+        <td><a href="#r_1020_infoLotacao">infoLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Inclusão de novas informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_ideLotacao"
+            id="1020_infoLotacao_inclusao_ideLotacao">13
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_ideLotacao">ideLotacao</a></td>
+        <td><a href="#r_1020_infoLotacao_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da lotação e período de validade das informações.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_ideLotacao_codLotacao"
+            id="1020_infoLotacao_inclusao_ideLotacao_codLotacao">14
+        </td>
+        <td>codLotacao</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador para a lotação tributária.<br>
+            <strong>Validação:</strong> O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras
+            posições.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_ideLotacao_iniValid"
+            id="1020_infoLotacao_inclusao_ideLotacao_iniValid">15
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_ideLotacao_fimValid"
+            id="1020_infoLotacao_inclusao_ideLotacao_fimValid">16
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_ideLotacao">ideLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1020_infoLotacao_inclusao_ideLotacao_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_dadosLotacao"
+            id="1020_infoLotacao_inclusao_dadosLotacao">17
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td><a href="#r_1020_infoLotacao_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações da lotação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_dadosLotacao_tpLotacao"
+            id="1020_infoLotacao_inclusao_dadosLotacao_tpLotacao">18
+        </td>
+        <td>tpLotacao</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de lotação.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#10">Tabela 10</a>,
+            bem como compatível com a classificação tributária indicada no evento S-1000, conforme <a
+                    href="tabelas.html#12">Tabela 12</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_dadosLotacao_tpInsc"
+            id="1020_infoLotacao_inclusao_dadosLotacao_tpInsc">19
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>4</strong> - CNO<br>
+            <strong>Validação:</strong> O campo não deve ser preenchido se <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_tpLotacao">tpLotacao</a> for igual a [01, 10, 21, 24,
+            90, 91, 92]. Nos demais casos, observar conteúdo exigido para o campo <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_nrInsc">dadosLotacao/nrInsc</a>, conforme <a
+                    href="tabelas.html#10">Tabela 10</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_inclusao_dadosLotacao_nrInsc"
+            id="1020_infoLotacao_inclusao_dadosLotacao_nrInsc">20
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11, 12 ou 14</td>
+        <td>-</td>
+        <td>Preencher com o número de inscrição (CNPJ, CPF, CNO) ao qual pertence a lotação tributária.<br>
+            <strong>Validação:</strong> a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado
+            no campo <a href="#1020_infoLotacao_inclusao_dadosLotacao_tpInsc">dadosLotacao/tpInsc</a> e na <a
+                    href="tabelas.html#10">Tabela 10</a>;<br>
+            b) Deve ser um identificador válido, constante das bases da RFB.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao">21
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao">fpasLotacao</a></td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de FPAS e Terceiros relativos à lotação tributária.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_fpas"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_fpas">22
+        </td>
+        <td>fpas</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao">fpasLotacao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código relativo ao FPAS.<br>
+            <strong>Validação:</strong> Deve ser um código FPAS válido, conforme <a href="tabelas.html#04">Tabela 04</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_codTercs"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_codTercs">23
+        </td>
+        <td>codTercs</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao">fpasLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Preencher com o código de Terceiros, já considerando a existência de eventuais convênios para recolhimento
+            direto. Ex.: Se o contribuinte está enquadrado com FPAS [507], cujo código cheio de Terceiros é [0079], se
+            possuir convênio com SENAI deve informar o código [0075].<br>
+            <strong>Validação:</strong> Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar
+            [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS
+            informado, conforme <a href="tabelas.html#04">Tabela 04</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_codTercsSusp"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_codTercsSusp">24
+        </td>
+        <td>codTercsSusp</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao">fpasLotacao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Informar o código combinado dos Terceiros para os quais o recolhimento está suspenso em virtude de processos
+            judiciais. Ex.: Se o contribuinte possui decisões de processos para suspensão de recolhimentos ao SESI
+            (0008) e ao SEBRAE (0064), deve informar o código combinado das duas entidades, ou seja, [0072].<br>
+            <strong>Validação:</strong> Deve ser um código consistente com a <a href="tabelas.html#04">Tabela
+                04</a>.<br>
+            Deve haver pelo menos um processo em <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro">procJudTerceiro</a>
+            para cada código de Terceiro cujo recolhimento esteja suspenso.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros">25
+        </td>
+        <td>
+            <a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros">infoProcJudTerceiros</a>
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao">fpasLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre a existência de processos judiciais, com sentença/decisão favorável ao contribuinte,
+            relativos às contribuições destinadas a Outras Entidades e Fundos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro">26
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro">procJudTerceiro</a>
+        </td>
+        <td>
+            <a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros">infoProcJudTerceiros</a>
+        </td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_codTerc"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_codTerc">27
+        </td>
+        <td>codTerc</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro">procJudTerceiro</a>
+        </td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Informar o código de Terceiro.<br>
+            <strong>Validação:</strong> Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros
+            informado no grupo superior, conforme <a href="tabelas.html#04">Tabela 04</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_nrProcJud"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_nrProcJud">28
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro">procJudTerceiro</a>
+        </td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar um número de processo judicial cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido e existente na Tabela de
+            Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_codSusp"
+            id="1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro_codSusp">29
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_fpasLotacao_infoProcJudTerceiros_procJudTerceiro">procJudTerceiro</a>
+        </td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial"
+            id="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial">30
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação complementar que apresenta identificação do contratante de obra de construção civil sob regime de
+            empreitada parcial ou subempreitada.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscContrat"
+            id="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscContrat">31
+        </td>
+        <td>tpInscContrat</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de inscrição do contratante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_nrInscContrat"
+            id="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_nrInscContrat">32
+        </td>
+        <td>nrInscContrat</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Número de inscrição (CNPJ/CPF) do contratante.<br>
+            <strong>Validação:</strong> Deve ser um número de CNPJ ou CPF válido, conforme definido em <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscContrat">tpInscContrat</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscProp"
+            id="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscProp">33
+        </td>
+        <td>tpInscProp</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de inscrição do proprietário do CNO.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo quando o proprietário não for encontrado
+            no CNO.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_nrInscProp"
+            id="1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_nrInscProp">34
+        </td>
+        <td>nrInscProp</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial">infoEmprParcial</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscProp">tpInscProp</a> for
+            informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em <a
+                    href="#1020_infoLotacao_inclusao_dadosLotacao_infoEmprParcial_tpInscProp">tpInscProp</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort"
+            id="1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort">35
+        </td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao">dadosLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do operador portuário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort_aliqRat"
+            id="1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort_aliqRat">36
+        </td>
+        <td>aliqRat</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com a alíquota definida na legislação vigente para a atividade (CNAE) preponderante.<br>
+            <strong>Valores válidos:</strong> 1, 2, 3
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort_fap"
+            id="1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort_fap">37
+        </td>
+        <td>fap</td>
+        <td><a href="#r_1020_infoLotacao_inclusao_dadosLotacao_dadosOpPort">dadosOpPort</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Fator Acidentário de Prevenção - FAP.<br>
+            <strong>Validação:</strong> Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo
+            com o estabelecido pelo órgão governamental competente.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_alteracao"
+            id="1020_infoLotacao_alteracao">38
+        </td>
+        <td><a href="#r_1020_infoLotacao_alteracao">alteracao</a></td>
+        <td><a href="#r_1020_infoLotacao">infoLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Alteração das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_alteracao_ideLotacao"
+            id="1020_infoLotacao_alteracao_ideLotacao">39
+        </td>
+        <td><a href="#r_1020_infoLotacao_alteracao_ideLotacao">ideLotacao</a></td>
+        <td><a href="#r_1020_infoLotacao_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da lotação e período de validade das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_alteracao_dadosLotacao"
+            id="1020_infoLotacao_alteracao_dadosLotacao">40
+        </td>
+        <td><a href="#r_1020_infoLotacao_alteracao_dadosLotacao">dadosLotacao</a></td>
+        <td><a href="#r_1020_infoLotacao_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações da lotação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_alteracao_novaValidade"
+            id="1020_infoLotacao_alteracao_novaValidade">41
+        </td>
+        <td><a href="#r_1020_infoLotacao_alteracao_novaValidade">novaValidade</a></td>
+        <td><a href="#r_1020_infoLotacao_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação preenchida exclusivamente em caso de alteração do período de validade das informações,
+            apresentando o novo período de validade.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_alteracao_novaValidade_iniValid"
+            id="1020_infoLotacao_alteracao_novaValidade_iniValid">42
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1020_infoLotacao_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_alteracao_novaValidade_fimValid"
+            id="1020_infoLotacao_alteracao_novaValidade_fimValid">43
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1020_infoLotacao_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1020_infoLotacao_alteracao_novaValidade_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_exclusao"
+            id="1020_infoLotacao_exclusao">44
+        </td>
+        <td><a href="#r_1020_infoLotacao_exclusao">exclusao</a></td>
+        <td><a href="#r_1020_infoLotacao">infoLotacao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Exclusão das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1020_infoLotacao_exclusao_ideLotacao"
+            id="1020_infoLotacao_exclusao_ideLotacao">45
+        </td>
+        <td><a href="#r_1020_infoLotacao_exclusao_ideLotacao">ideLotacao</a></td>
+        <td><a href="#r_1020_infoLotacao_exclusao">exclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da lotação e período de validade das informações.</td>
+    </tr>
+    </tbody>
+</table>

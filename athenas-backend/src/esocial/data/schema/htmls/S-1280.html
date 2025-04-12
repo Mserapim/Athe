@@ -1,0 +1,418 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_eSocial" id="1280_eSocial">1</td>
+        <td><a href="#r_1280_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280" id="1280">2</td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td><a href="#r_1280_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Informações Complementares aos Eventos Periódicos.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVE_FOPAG_IND_RETIFICACAO">REGRA_EVE_FOPAG_IND_RETIFICACAO</a><br>
+            <a href="#REGRA_EVE_FOPAG_INFO_COMPAT_CLASSTRIB">REGRA_EVE_FOPAG_INFO_COMPAT_CLASSTRIB</a><br>
+            <a href="#REGRA_EVE_FOPAG_PERMITE_EXCLUSAO">REGRA_EVE_FOPAG_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_EVE_FOPAG_SIMPLIFICADO">REGRA_EVE_FOPAG_SIMPLIFICADO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_REMUN_ANUAL_DEZEMBRO">REGRA_REMUN_ANUAL_DEZEMBRO</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_Id" id="1280_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento" id="1280_ideEvento">4</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_indRetif"
+            id="1280_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_nrRecibo"
+            id="1280_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#1280_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_indApuracao"
+            id="1280_ideEvento_indApuracao">7
+        </td>
+        <td>indApuracao</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de período de apuração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Mensal<br>
+            <strong>2</strong> - Anual (13° salário)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_perApur"
+            id="1280_ideEvento_perApur">8
+        </td>
+        <td>perApur</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4 ou 7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) de referência das informações, se <a
+                href="#1280_ideEvento_indApuracao">indApuracao</a> for igual a [1], ou apenas o ano (formato AAAA), se
+            <a href="#1280_ideEvento_indApuracao">indApuracao</a> for igual a [2].<br>
+            <strong>Validação:</strong> Deve ser um mês/ano ou ano válido, igual ou posterior ao início da
+            obrigatoriedade dos eventos periódicos para o empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_indGuia"
+            id="1280_ideEvento_indGuia">9
+        </td>
+        <td>indGuia</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do tipo de guia.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Documento de Arrecadação do eSocial - DAE
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_tpAmb" id="1280_ideEvento_tpAmb">
+            10
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_procEmi"
+            id="1280_ideEvento_procEmi">11
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEvento_verProc"
+            id="1280_ideEvento_verProc">12
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1280_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEmpregador" id="1280_ideEmpregador">13
+        </td>
+        <td><a href="#r_1280_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEmpregador_tpInsc"
+            id="1280_ideEmpregador_tpInsc">14
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1280_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_ideEmpregador_nrInsc"
+            id="1280_ideEmpregador_nrInsc">15
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1280_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1280_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoSubstPatr" id="1280_infoSubstPatr">16
+        </td>
+        <td><a href="#r_1280_infoSubstPatr">infoSubstPatr</a></td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente por empresa enquadrada nos arts. 7º a 9º da Lei 12.546/2011, conforme
+            classificação tributária indicada no evento S-1000.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoSubstPatr_indSubstPatr"
+            id="1280_infoSubstPatr_indSubstPatr">17
+        </td>
+        <td>indSubstPatr</td>
+        <td><a href="#r_1280_infoSubstPatr">infoSubstPatr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de substituição da contribuição previdenciária patronal.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Integralmente substituída<br>
+            <strong>2</strong> - Parcialmente substituída
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoSubstPatr_percRedContrib"
+            id="1280_infoSubstPatr_percRedContrib">18
+        </td>
+        <td>percRedContrib</td>
+        <td><a href="#r_1280_infoSubstPatr">infoSubstPatr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Percentual não substituído pela contribuição prevista na Lei 12.546/2011.<br>
+            Informar 0 (zero) se <a href="#1280_infoSubstPatr_indSubstPatr">indSubstPatr</a> = [1]. Caso contrário,
+            preencher com o percentual correspondente à razão entre a receita de atividades não relacionadas nos arts.
+            7º e 8º da Lei 12.546/2011 e a receita bruta total.<br>
+            <strong>Validação:</strong> Se <a href="#1280_infoSubstPatr_indSubstPatr">indSubstPatr</a> = [1], informar 0
+            (zero).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoSubstPatrOpPort"
+            id="1280_infoSubstPatrOpPort">19
+        </td>
+        <td><a href="#r_1280_infoSubstPatrOpPort">infoSubstPatrOpPort</a></td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-9999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente pelo Órgão Gestor de Mão de Obra - OGMO (<a
+                href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [09]), listando
+            apenas seus códigos de lotação com operadores portuários enquadrados nos arts. 7º a 9º da Lei 12.546/2011.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoSubstPatrOpPort_codLotacao"
+            id="1280_infoSubstPatrOpPort_codLotacao">20
+        </td>
+        <td>codLotacao</td>
+        <td><a href="#r_1280_infoSubstPatrOpPort">infoSubstPatrOpPort</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador para a lotação tributária.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na Tabela de Lotações Tributárias
+            (S-1020), com <a href="#1020_infoLotacao_inclusao_dadosLotacao_tpLotacao">tpLotacao</a> = [08].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoAtivConcom" id="1280_infoAtivConcom">21
+        </td>
+        <td><a href="#r_1280_infoAtivConcom">infoAtivConcom</a></td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido por empresa enquadrada no regime de tributação Simples Nacional com tributação
+            previdenciária substituída e não substituída.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoAtivConcom_fatorMes"
+            id="1280_infoAtivConcom_fatorMes">22
+        </td>
+        <td>fatorMes</td>
+        <td><a href="#r_1280_infoAtivConcom">infoAtivConcom</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informe o fator a ser utilizado para cálculo da contribuição patronal do mês dos trabalhadores envolvidos na
+            execução das atividades enquadradas no Anexo IV em conjunto com as dos Anexos I a III e V da Lei
+            Complementar 123/2006.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoAtivConcom_fator13"
+            id="1280_infoAtivConcom_fator13">23
+        </td>
+        <td>fator13</td>
+        <td><a href="#r_1280_infoAtivConcom">infoAtivConcom</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informe o fator a ser utilizado para cálculo da contribuição patronal do décimo terceiro dos trabalhadores
+            envolvidos na execução das atividades enquadradas no Anexo IV em conjunto com as dos Anexos I a III e V da
+            Lei Complementar 123/2006.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoPercTransf11096"
+            id="1280_infoPercTransf11096">24
+        </td>
+        <td><a href="#r_1280_infoPercTransf11096">infoPercTransf11096</a></td>
+        <td><a href="#r_1280">evtInfoComplPer</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido por entidade que tenha se transformado em sociedade de fins lucrativos nos termos e no
+            prazo da Lei 11.096/2005.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1280_infoPercTransf11096_percTransf"
+            id="1280_infoPercTransf11096_percTransf">25
+        </td>
+        <td>percTransf</td>
+        <td><a href="#r_1280_infoPercTransf11096">infoPercTransf11096</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe o percentual de contribuição social devida em caso de transformação em sociedade de fins lucrativos
+            - Lei 11.096/2005.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - 0,2000<br>
+            <strong>2</strong> - 0,4000<br>
+            <strong>3</strong> - 0,6000<br>
+            <strong>4</strong> - 0,8000<br>
+            <strong>5</strong> - 1,0000
+        </td>
+    </tr>
+    </tbody>
+</table>

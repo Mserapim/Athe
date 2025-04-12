@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #dddddd; padding: 8px; background-color: #f2f2f2;">Servidor</th>
+                <th style="border: 1px solid #dddddd; padding: 8px; background-color: #f2f2f2;">Código do Plano</th>
+                <th style="border: 1px solid #dddddd; padding: 8px; background-color: #f2f2f2;">Vigência do Plano</th>
+                <th style="border: 1px solid #dddddd; padding: 8px; background-color: #f2f2f2;">Qtde. Bloqueios</th>
+                <th style="border: 1px solid #dddddd; padding: 8px; background-color: #f2f2f2;">Aprovador</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in dados %}
+            <tr>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{ item.nome_servidor }}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{ item.plano_id }}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{ item.vigencia_plano }}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{ item.qtde_bloqueios }}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{ item.aprovador_nome }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

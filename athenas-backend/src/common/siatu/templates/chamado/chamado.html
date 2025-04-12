@@ -1,0 +1,142 @@
+{% extends "chamado/base.html" %}
+
+{% block body-resume %}
+<div class="papper-content">
+
+    <p style="padding-bottom: 2%">Código do Chamado: <b> {{ chamado.cache_numero }} </b></p>
+    <p style="padding-bottom: 2%">Serviço: <b> {{ chamado.servico.nome  | safe }} </b></p>
+    <p style="padding-bottom: 2%">Solicitante: <b> {{ chamado.solicitacao.solicitante.servidor.pessoa_fisica.nome | safe }} </b></p>
+    {% for app in appends %}
+        <p style="padding-bottom: 2%">Lotação: <b> {{ app.lotacao }} </b></p>
+        {% if chamado.solicitacao.orgao_geral_origem %}
+            <p style="padding-bottom: 2%">Chamado aberto pela Lotação: <b> {{ chamado.solicitacao.orgao_geral_origem }} </b></p>
+        {% endif %}
+        <p style="padding-bottom: 2%">Membro: <b> {{ app.membro }} </b></p>
+        <p style="padding-bottom: 2%">Telefone: <b> {{ chamado.solicitacao.telefone}} </b></p>
+        <p style="padding-bottom: 2%">Cidade: <b> {{ app.cidade}} </b></p>
+        <p style="padding-bottom: 2%">Atendente(s): <b> {{ app.atendentes }} </b></p>
+        <p style="padding-bottom: 2%">Reincidência: <b> {{ app.reincidencia }} </b></p>
+        <p style="padding-bottom: 2%">Status atual: <b> {{ chamado.status_atual }} - {{ app.status_chamado }} </b></p>
+        <p style="padding-bottom: 2%">Data de Início: <b> {{ app.inicio }} </b></p>
+        <p style="padding-bottom: 2%">Data de Fim: <b> {{ app.fim }} </b></p>
+        <p style="padding-bottom: 2%">Tempo decorrido: <b> {{ app.tempo_decorrido }} </b></p>
+    {% endfor %}
+
+
+    <div class="field">
+        <div class="composite">
+            <div class="field" style="padding-top:1em;margin-top:2em;border-top: 1px dashed #000">
+
+            {% if chamado.urgente %}
+                <div class="label title" style="color:red;">
+                    *Chamado Urgente <br>
+                </div>
+                    {% if chamado.motivo_urgencia %}
+                        <p style="padding-bottom: 2%"> <b> Motivo da urgência: </b></p>
+                        <div class="paragraph-text">{{ chamado.motivo_urgencia | safe }}</div>
+                    {% endif %}
+            {% endif %}
+
+
+            {% if chamado.cancelado %}
+                <div class="label title" style="color:red;">
+                    *Chamado Cancelado <br>
+                </div>
+                    <p style="padding-bottom: 2%"> <b> Motivo do Cancelamento: </b></p>
+                <div class="paragraph-text">{{ chamado.motivo_cancelado | safe }}</div>
+            {% endif %}
+
+            {% if chamado.solicitacao.reincidencia %}
+                <div class="label title" style="color:red;">
+                    *Chamado Reincidente - Chamado Anterior: {{ chamado.solicitacao.chamado_anterior.cache_numero }} <br>
+                </div>
+                    <p style="padding-bottom: 2%"> <b>Resumo do Problema anterior: </b></p>
+                <div class="paragraph-text">{{ chamado.solicitacao.chamado_anterior.solicitacao.descricao_problema | safe }}</div>
+
+                <br>
+
+                {% if not chamado.reincidencia.confirm_atendente %}
+                    <p style="padding-bottom: 2%"> <b>Observação do Atendente sobre o informação de reincidência: </b></p>
+                    <div class="paragraph-text">{{ chamado.reincidencia.opiniao_atendente | safe }}</div>
+                {% endif %}
+
+                <br>
+
+                {% if chamado.reincidencia.motivo_gerente %}
+                    <p style="padding-bottom: 2%"> <b>Parecer do Gerente da Área: </b></p>
+
+                    {% if chamado.reincidencia.parecer %}
+                        <div class="paragraph-text">O Gerente informa que o chamado é uma reincidência!</div>
+                    {% else %}
+                        <div class="paragraph-text">O Gerente informa que o chamado NÃO é uma reincidência!</div>
+                    {% endif %}
+                    <div class="paragraph-text">Justificativa: {{ chamado.reincidencia.motivo_gerente | safe }}</div>
+
+                {% endif %}
+
+                <br>
+
+                <p style="padding-bottom: 2%"> <b> Relatório do Problema Anterior: </b></p> <br>
+                <div class="paragraph-text">{{ chamado.solicitacao.chamado_anterior.relatorio | safe }}</div>
+
+                <div class="field" style="padding-top:1em;margin-top:2em;border-top: 1px dashed #000">
+
+            {% endif %}
+
+
+            {% if chamado.solicitacao.descricao_problema %}
+                <div class="label title">
+                    Resumo do Problema:
+                </div>
+                <div class="paragraph-text">{{ chamado.solicitacao.descricao_problema | safe }}</div>
+            {% endif %}
+
+
+            {% if chamado.relatorio %}
+                <div class="label title">
+                    Relatório do Atendimento:
+                </div>
+                <div class="paragraph-text">{{ chamado.relatorio | safe }}</div>
+            {% endif %}
+
+
+
+            {% if chamado.avaliacao.replica %}
+                <div class="label title">
+                    Réplica da Avaliação do Atendimento:
+                </div>
+                <div class="paragraph-text">{{ chamado.avaliacao.replica | safe }}</div>
+            {% endif %}
+        </div>
+
+        </div>
+    </div>
+
+    {% if chamado.anexos.exists %}
+        <div class="papper-content">
+            <h2 style="margin-bottom: 0.5em">Anexos do Chamado:</h2>
+            <ul>
+                {% for attach in chamado.attachment_list %}
+                    {% include "chamado/attachment.html" %}
+                {% endfor %}
+            </ul>
+            <div style="border: 1px solid #000; font-size: 9pt; margin-top: 1.5em; padding: 3px 5px; background-color: #eee; text-align: justify; border-radius: 3px">
+                Para validar os anexos você pode utilizar o código de 32 digitos, para buscar o documento na base do
+                sistema, para isto acesse o endereço:
+                <a href="https://athenas.mpto.mp.br/athenas/docsverify/verify/" title="Verificador de documentos">https://athenas.mpto.mp.br/athenas/docsverify/verify/</a>
+                será devolvido uma cópia do documento que se identifica com o código informado.
+            </div>
+        </div>
+    {% endif %}
+
+
+    {% if chamado.avaliacao %}
+        <div style="border: 1px solid #000; font-size: 9pt; margin-top: 1.5em; padding: 3px 5px; background-color: #eee; text-align: justify; border-radius: 3px">
+            <div class="paragraph-text" style="font-weight:bold; color:blue">Chamado avaliado com grau de satisfação: {{ chamado.avaliacao | safe }}</div>
+            {% if chamado.avaliacao and chamado.avaliacao.sugestao %}
+                <div class="paragraph-text">Sugestão: {{ chamado.avaliacao.sugestao | safe }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+
+{% endblock %}

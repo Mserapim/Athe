@@ -1,0 +1,41 @@
+- 2024.8.6:
+    - CARD: ATS-4819 - MR: 1138 - [BACK] Ajuste em validação de destino para condizer com alterações na tabela
+- 2024.8.7:
+    - CARD: ATS-4798 - MR: 1142 - (back) Criar tela para cadastrar e editar datas de evento 
+- 2024.8.8:
+    - CARD: ATS-4826 - MR: 1145 - [Back] Inclusão do campo titulo no modelo de EventoBeneficiario do diarias  
+    - CARD: ATS-4778 - MR: 1148 - [BACK] Criar api para salvar cadastro de etapa de Avaliação do CEAF
+- 2024.8.9:
+    - CARD: ATS-4694 - MR: 1149 - [Back] Alterar job que atualiza o username servidor
+    - CARD: ATS-4608 - MR: 1150 - [Back] - Criar opção de feriado municipal  para aparecer na agenda de servidores
+    - CARD: ATS-4831 - MR: 1155 - Ajuste na classe do PaginatorCustom 
+- 2024.8.12:
+    - CARD: ATS-4453 - MR: 1151 - [front Ext] - Exibir campo Tipo do pedido na tela de cadastro do teletrabalho
+    - CARD: ATS-4449 - MR: 1152 - [back] - Criar função para vincular o Tipo do pedido ao cadastrar o teletrabalho
+    - CARD: ATS-4780 - MR: 1153 - [BACK] Criar api para salvar cadastro de etapa de aguardando empenho
+    - CARD: ATS-4829 - MR: 1156 - [back] modificações das apis para auxiliar na produção da tela de Anotações Pessoais
+    - CARD: ATS-4792 - MR: 1147 - [back] Adaptar função da task para notificar processamentos do esocial
+    - CARD: ATS-4793 - MR: 1146 - [back] Notificar relatório txt gerado pela qualificação cadastral
+- 2024.8.13:
+    -CARD: ATS-4782 - MR: 1157 - [BACK] Criar api para salvar cadastro de etapa de nota de liquidação
+    -CARD: ATS-4735 - MR: 1158 - [Back] Criar validação de cidades de Mesma comarca não ser permitido no cad de Trechos 
+    -CARD: ATS-4450 - MR: 1159 - [back] - Criar script para atribuir o Tipo do pedido aos teletrabalhos já cadastrados
+- 2024.8.14:
+    -CARD: ATS-4799 - MR: 1160 - (back) Implementar funcionalidade de apagar datas de evento 
+    -CARD: ATS-4455 - MR: 1161 - [front Ext] - Criar tela de chamada do relatório
+    -CARD: ATS-4727 - MR: 1162 - [back] - Automatizar Cálculo Gaeco - Verbas Extras
+- 2024.8.15:
+    - CARD: ATS-4784 - MR: 1165 - [BACK] Criar api para salvar cadastro de ordem bancária
+    - CARD: ATS-4795 - MR: 1163 - [back] Api de listagem da tela de configuração do esocial
+    - CARD: ATS-4801 - MR: 1169 - [back] Api para edição da configuração do esocial
+    - CARD: ATS-4730 - MR: 1170 - Implementar o uso da API do SISDIAS para não ser mais via banco na integração com Folha 
+    - CARD: ATS-4765 e ATS-4767 - MR: 1171 - [BACK] Adicionar campos de observação e anexo em histórico + Criar api que retorna Observações e Anexos para histórico
+- 2024.8.16:
+    - CARD: ATS-4457 - MR: 1172 - [back] - Criar chamada, filtros e validações para o relatório
+    - CARD: ATS-4800 - MR: 1176 - [back] - [back] Api para criar uma nova configuração do esocial
+    - CARD: ATS-4797 - MR: 1175 - [back] - [back] Api para atualizar o certificado digital do esocial
+    - CARD: ATS-4796 - MR: 1174 - [back] - [back] Api  de configuração do esocial para os eventos, pessoas e orgão geral
+    - CARD: ATS-4756 - MR: 1177 - [back] - [Back] Adaptar jobs de importação de plantões de membros
+    - CARD: ATS-4737 - MR: 1173 - ajustes para poder cadastrar eventos nos destinos, do diarias 
+    - CARD: ATS-4832 - MR: 1178 - Correção na retificação de férias gerenciador admin 
+    - CARD: ATS-4891 - MR: 1179 - Alterar filtro de designação da agenda de membros

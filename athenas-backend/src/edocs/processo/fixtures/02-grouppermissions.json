@@ -1,0 +1,209 @@
+[
+{
+    "fields": {
+        "name": "epad-admin-planej",
+        "permissions": [
+            [
+                "add_justificativa",
+                "processo",
+                "justificativa"
+            ],
+            [
+                "change_justificativa",
+                "processo",
+                "justificativa"
+            ],
+            [
+                "delete_justificativa",
+                "processo",
+                "justificativa"
+            ],
+            [
+                "admin",
+                "processo",
+                "processo"
+            ],
+            [
+                "add_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "change_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "delete_pessoa",
+                "rh",
+                "pessoa"
+            ],
+            [
+                "add_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "change_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "delete_pessoafisica",
+                "rh",
+                "pessoafisica"
+            ],
+            [
+                "add_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ],
+            [
+                "change_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ],
+            [
+                "delete_pessoajuridica",
+                "rh",
+                "pessoajuridica"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+},
+{
+    "fields": {
+        "name": "epad-admin",
+        "permissions": [
+            [
+                "change_legalmatter",
+                "judicial",
+                "legalmatter"
+            ],
+            [
+                "add_justificativa",
+                "processo",
+                "justificativa"
+            ],
+            [
+                "change_justificativa",
+                "processo",
+                "justificativa"
+            ],
+            [
+                "delete_justificativa",
+                "processo",
+                "justificativa"
+            ],
+            [
+                "add_processmatter",
+                "processo",
+                "processmatter"
+            ],
+            [
+                "change_processmatter",
+                "processo",
+                "processmatter"
+            ],
+            [
+                "delete_processmatter",
+                "processo",
+                "processmatter"
+            ],
+            [
+                "admin",
+                "processo",
+                "processo"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+},
+{
+    "fields": {
+        "name": "Basico-processo",
+        "permissions": [
+            [
+                "add_assunto",
+                "processo",
+                "assunto"
+            ],
+            [
+                "change_assunto",
+                "processo",
+                "assunto"
+            ],
+            [
+                "add_movimentacaoprocesso",
+                "processo",
+                "movimentacaoprocesso"
+            ],
+            [
+                "change_movimentacaoprocesso",
+                "processo",
+                "movimentacaoprocesso"
+            ],
+            [
+                "delete_movimentacaoprocesso",
+                "processo",
+                "movimentacaoprocesso"
+            ],
+            [
+                "add_processmatter",
+                "processo",
+                "processmatter"
+            ],
+            [
+                "change_processmatter",
+                "processo",
+                "processmatter"
+            ],
+            [
+                "delete_processmatter",
+                "processo",
+                "processmatter"
+            ],
+            [
+                "add_processo",
+                "processo",
+                "processo"
+            ],
+            [
+                "change_processo",
+                "processo",
+                "processo"
+            ],
+            [
+                "add_referencia",
+                "processo",
+                "referencia"
+            ],
+            [
+                "change_referencia",
+                "processo",
+                "referencia"
+            ],
+            [
+                "delete_referencia",
+                "processo",
+                "referencia"
+            ],
+            [
+                "add_situacao",
+                "processo",
+                "situacao"
+            ],
+            [
+                "change_situacao",
+                "processo",
+                "situacao"
+            ]
+        ]
+    },
+    "model": "auth.group",
+    "pk": null
+}
+]

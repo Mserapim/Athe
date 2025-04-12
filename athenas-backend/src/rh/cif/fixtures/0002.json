@@ -1,0 +1,135 @@
+[
+	{
+		"fields": {
+			"uuid": "7d69700713ff4aea9d29e45286b7f645", 
+			"title": "Endere\u00e7o", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifAddress", 
+			"active": false, 
+			"icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "67f77d410a424a48ae836d4ac284c988", 
+			"title": "C\u00f3digo de Bens", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifCodeProperty", 
+			"active": false, "icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "c49d9277217b4a6ba277f53007db00dc", 
+			"title": "Gestor de Informa\u00e7\u00f5es", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifControlInformationMember", 
+			"active": true, 
+			"icon": "athenas-0189.png"
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "dac82aa90b3d48bc8b5836c2169abeed", 
+			"title": "Disciplinas", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifDiscipline", 
+			"active": false, "icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "be360f253aea40fcb9e30d05ae861eb0", 
+			"title": "Institui\u00e7\u00e3o de Ensino", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifEducationalInstitution", 
+			"active": false, 
+			"icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "ebfb030a65724ebf8d39e4ff9dbd7f67", 
+			"title": "Bens e Valores", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifProperty", 
+			"active": false, 
+			"icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "be19e447007a425f9cb55ec26ee2396d", 
+			"title": "Gestor de Configura\u00e7\u00f5es", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifReferencePeriod", 
+			"active": true, 
+			"icon": "athenas-0678.png"
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "5d004af1df524d9b873a1785d9a8a6cd", 
+			"title": "Hor\u00e1rios", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifSchedule", 
+			"active": false,
+			"icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}, 
+	{
+		"fields": {
+			"uuid": "236d1130536a4bfca1b6c28687206289", 
+			"title": "Doc\u00eancia", 
+			"module": "", 
+			"application": [
+				"458718ff8fc64cbeb27ef32763702a3d"
+			],
+			"controller": "CifTeaching", 
+			"active": false, 
+			"icon": ""
+		}, 
+		"model": "engine.controller", 
+		"pk": null
+	}
+]

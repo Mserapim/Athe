@@ -1,0 +1,1369 @@
+[
+    {
+      "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Solicitar Cancelamento",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 2,
+        "label": "Solicitar Revogação",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 3,
+        "label": "Solicitar Suspensão",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 4,
+        "label": "Finalizar Ata",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 5,
+        "label": "Solicitar de Pagamento",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 6,
+        "label": "Lançar Pagamento",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 7,
+        "label": "Desfazer Pagamento",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 100,
+        "label": "Cadastro da Ata",
+        "cache_path": "contrato.MINUTE_ACTION",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_ACTION"
+      },
+      "model": "standard.choice"
+    },
+    {
+      "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Ativa",
+        "cache_path": "contrato.MINUTE_STATUS",
+        "app_label": "contrato",
+        "active": true,
+        "order_weight": 0,
+        "name": "MINUTE_STATUS"
+      },
+      "model": "standard.choice"
+    },
+    {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "Concluída",
+          "cache_path": "contrato.MINUTE_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 3,
+          "label": "Cancelada",
+          "cache_path": "contrato.MINUTE_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 4,
+          "label": "Revogada",
+          "cache_path": "contrato.MINUTE_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 5,
+          "label": "Suspensa",
+          "cache_path": "contrato.MINUTE_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 6,
+          "label": "Finalizada",
+          "cache_path": "contrato.MINUTE_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 1,
+          "label": "1",
+          "cache_path": "contrato.MINUTE_ADHESION_QUANTITY",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ADHESION_QUANTITY"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "2",
+          "cache_path": "contrato.MINUTE_ADHESION_QUANTITY",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ADHESION_QUANTITY"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 3,
+          "label": "3",
+          "cache_path": "contrato.MINUTE_ADHESION_QUANTITY",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ADHESION_QUANTITY"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 4,
+          "label": "4",
+          "cache_path": "contrato.MINUTE_ADHESION_QUANTITY",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ADHESION_QUANTITY"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 5,
+          "label": "5",
+          "cache_path": "contrato.MINUTE_ADHESION_QUANTITY",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ADHESION_QUANTITY"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 100,
+          "label": "Nenhuma",
+          "cache_path": "contrato.MINUTE_ADHESION_QUANTITY",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ADHESION_QUANTITY"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 1,
+          "label": "Ativo",
+          "cache_path": "contrato.MINUTE_ITEM_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "Desativado",
+          "cache_path": "contrato.MINUTE_ITEM_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 3,
+          "label": "Revogado",
+          "cache_path": "contrato.MINUTE_ITEM_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 4,
+          "label": "Aditivado",
+          "cache_path": "contrato.MINUTE_ITEM_STATUS",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_STATUS"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 1,
+          "label": "Reativar",
+          "cache_path": "contrato.MINUTE_ITEM_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "Desativar",
+          "cache_path": "contrato.MINUTE_ITEM_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 3,
+          "label": "Revogar",
+          "cache_path": "contrato.MINUTE_ITEM_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 4,
+          "label": "Aditivar",
+          "cache_path": "contrato.MINUTE_ITEM_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Ampola",
+          "value": 1,
+          "label": "AMPOLA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Balde",
+          "value": 2,
+          "label": "BALDE",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Bandeja",
+          "value": 3,
+          "label": "BANDEJ",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Barra",
+          "value": 4,
+          "label": "BARRA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Bisnaga",
+          "value": 5,
+          "label": "BISNAGA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Bloco",
+          "value": 6,
+          "label": "BLOCO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Bobina",
+          "value": 7,
+          "label": "BOBINA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Bombona",
+          "value": 8,
+          "label": "BOMB",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Capsula",
+          "value": 9,
+          "label": "CAPS",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      }
+      ,
+      {
+        "fields": {
+          "description": "Cartela",
+          "value": 10,
+          "label": "CART",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Cento",
+          "value": 11,
+          "label": "CENTO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Conjunto",
+          "value": 12,
+          "label": "CJ",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Centimetro",
+          "value": 13,
+          "label": "CM",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Centimetro quadrado",
+          "value": 14,
+          "label": "CM2",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa",
+          "value": 15,
+          "label": "CX",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 2,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 2 unidades",
+          "value": 16,
+          "label": "CX2",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 3 unidades",
+          "value": 17,
+          "label": "CX3",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 5 unidades",
+          "value": 18,
+          "label": "CX5",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 10 unidades",
+          "value": 19,
+          "label": "CX10",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 15 unidades",
+          "value": 20,
+          "label": "CX15",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 20 unidades",
+          "value": 21,
+          "label": "CX20",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 25 unidades",
+          "value": 22,
+          "label": "CX25",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 50 unidades",
+          "value": 23,
+          "label": "CX50",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Caixa com 100 unidades",
+          "value": 24,
+          "label": "CX100",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Display",
+          "value": 25,
+          "label": "DISP",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Dúzia",
+          "value": 26,
+          "label": "DUZIA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Embalagem",
+          "value": 27,
+          "label": "EMBAL",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Fardo",
+          "value": 28,
+          "label": "FARDO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Folha",
+          "value": 29,
+          "label": "FOLHA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Frasco",
+          "value": 30,
+          "label": "FRASCO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Galão",
+          "value": 31,
+          "label": "GALAO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Garrafa",
+          "value": 32,
+          "label": "GF",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Gramas",
+          "value": 33,
+          "label": "GRAMAS",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Jogo",
+          "value": 34,
+          "label": "JOGO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Quilograma",
+          "value": 35,
+          "label": "KG",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Kit",
+          "value": 36,
+          "label": "KIT",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Lata",
+          "value": 37,
+          "label": "LATA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Litro",
+          "value": 38,
+          "label": "LITRO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Metro",
+          "value": 39,
+          "label": "M",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Metro Quadrado",
+          "value": 40,
+          "label": "M2",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 1,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Metro Cúbico",
+          "value": 41,
+          "label": "M3",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Milheiro",
+          "value": 42,
+          "label": "MILHEI",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Mililitro",
+          "value": 43,
+          "label": "ML",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Megawatt hora",
+          "value": 44,
+          "label": "MWH",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Pacote",
+          "value": 45,
+          "label": "PACOTE",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Palete",
+          "value": 46,
+          "label": "PALETE",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Pares",
+          "value": 47,
+          "label": "PARES",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Peça",
+          "value": 48,
+          "label": "PÇ",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Pote",
+          "value": 49,
+          "label": "POTE",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Quilate",
+          "value": 50,
+          "label": "K",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Resma",
+          "value": 51,
+          "label": "RESMA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Rolo",
+          "value": 52,
+          "label": "ROLO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Saco",
+          "value": 53,
+          "label": "SACO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Sacola",
+          "value": 54,
+          "label": "SACOLA",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Seringa",
+          "value": 55,
+          "label": "SER",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Serviço",
+          "value": 56,
+          "label": "SV",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 3,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Tambor",
+          "value": 57,
+          "label": "TAMBOR",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Tanque",
+          "value": 58,
+          "label": "TANQUE",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Tonelada",
+          "value": 59,
+          "label": "TON",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Tubo",
+          "value": 60,
+          "label": "TUBO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Unidade",
+          "value": 61,
+          "label": "UN",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 4,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Vasilhame",
+          "value": 62,
+          "label": "VASIL",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "Vidro",
+          "value": 63,
+          "label": "VIDRO",
+          "cache_path": "contrato.MINUTE_ITEM_UNIT_MEASURE",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_ITEM_UNIT_MEASURE"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 1,
+          "label": "Em Edição",
+          "cache_path": "contrato.MINUTE_SOLICITATION_SITUATION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_SITUATION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "Solicitado",
+          "cache_path": "contrato.MINUTE_SOLICITATION_SITUATION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_SITUATION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 3,
+          "label": "Aprovado",
+          "cache_path": "contrato.MINUTE_SOLICITATION_SITUATION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_SITUATION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 4,
+          "label": "Recusado",
+          "cache_path": "contrato.MINUTE_SOLICITATION_SITUATION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_SITUATION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 5,
+          "label": "Cancelado",
+          "cache_path": "contrato.MINUTE_SOLICITATION_SITUATION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_SITUATION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 6,
+          "label": "Contratado",
+          "cache_path": "contrato.MINUTE_SOLICITATION_SITUATION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_SITUATION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 1,
+          "label": "Adicionar",
+          "cache_path": "contrato.MINUTE_SOLICITATION_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "Solicitar Aprovação",
+          "cache_path": "contrato.MINUTE_SOLICITATION_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 3,
+          "label": "Aprovar",
+          "cache_path": "contrato.MINUTE_SOLICITATION_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 4,
+          "label": "Recusar",
+          "cache_path": "contrato.MINUTE_SOLICITATION_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 5,
+          "label": "Cancelar",
+          "cache_path": "contrato.MINUTE_SOLICITATION_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 6,
+          "label": "Requisitar",
+          "cache_path": "contrato.MINUTE_SOLICITATION_ACTION",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_SOLICITATION_ACTION"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 1,
+          "label": "PGJ",
+          "cache_path": "contrato.MINUTE_COMMITMENT_ORIGIN",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_COMMITMENT_ORIGIN"
+        },
+        "model": "standard.choice"
+      },
+      {
+        "fields": {
+          "description": "",
+          "value": 2,
+          "label": "FUNDO",
+          "cache_path": "contrato.MINUTE_COMMITMENT_ORIGIN",
+          "app_label": "contrato",
+          "active": true,
+          "order_weight": 0,
+          "name": "MINUTE_COMMITMENT_ORIGIN"
+        },
+        "model": "standard.choice"
+      }
+
+]

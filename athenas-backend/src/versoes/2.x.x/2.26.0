@@ -1,0 +1,42 @@
+- 2025.01.08:
+    - CARD: ATS-4872 - MR: 1593 - Personalizar a URL dos manuais no sistema
+- 2025.01.10:
+    - CARD: ATS-5558 - MR: 1592 - [BACK] ATS-5558 - Servidores por Lotação - PDF - Migração Jasper
+    - CARD: ATS-6231 - MR: 1601 - [back] Alterar filtro da api de afastamento do teletrabalho
+- 2025.01.14:
+    - CARD: ATS-6007 - MR: 1606 - [Back] API para o Portal transparencia
+- 2025.01.16:
+    - CARD: ATS-6215 - MR: 1617 - [back] - Alterar forma como o serviço é relacionado ao histórico durante a execução
+- 2025.01.20:
+    - CARD: ATS-6259 - MR: 1628 - [back] - Criar script para homologar as atividades de plantão eleitoral com status de vendido (7)
+    - CARD: ATS-6260 - MR: 1630 - [back]  Criar script para atualizar a data fim das metas do teletrabalho
+- 2025.01.23:
+    - CARD: ATS-6305 - MR: 1644 - [Back] - NOVO - notificação de deferimento/indeferimento pelo DG, SUB ADM, SUB JUR, PGJ para a o email da coger e da gerencia de membros 
+    - CARD: ATS-6307 - MR: 1645 - [Back] - NOVO - validar a questão de afastamentos solicitados para o futuro mas ainda não deferidos/efetivadas 
+- 2025.01.24:
+    - CARD: ATS-6316 - MR: 1646 - [back] - Nas telas de prestação de contas. colocar uma bolinha verde quando a pessoa esta ativa e vermelha inativo 
+    - CARD: ATS-6311 e ATS-6312 - MR: 1650 - [BACK] Api e ajustes para lógica de Nota de Liquidação
+- 2025.01.27:
+    - CARD: ATS-6291 - MR: 1653 - [back] - Gestor de Dias Úteis - Criar API de Listagem
+    - CARD: ATS-6293 - MR: 1653 - [back] - Gestor de Dias Úteis - Criar filtros para a API de Listagem
+    - CARD: ATS-6445 - MR: 1660 - [back] Esocial - Envio dos processos adm/judicial (Evento s1210)
+    - CARD: ATS-6231 - MR: 1658 - [back] Esocial - criar estrutura de verba oculta para calculo de deduções de processos Admin/judiciais
+    - CARD: ATS-4246 - MR: 1654 - [BACK] - Alterar o nome do cabeçalho das colunas
+    - CARD: ATS-6333 - MR: 1662 - [Back]- Arrumar Perfil do DEFIN para ir ara a tela de GEstão. 
+- 2025.01.28:
+    - CARD: ATS-6294 - MR: 1655 - [back] - Gestor de Dias Úteis - Criar API de cadastro
+    - CARD: ATS-6295 - MR: 1655 - [back] - Gestor de Dias Úteis - Criar API de edição
+    - CARD: ATS-6296 - MR: 1655 - [back] - Gestor de Dias Úteis - Criar API de remoção
+    - CARD: ATS-6452 - MR: 1661 - [back] Diferenciar a verba de informativa na tela do contracheque
+- 2025.01.29:
+    - CARD: ATS-6186 - MR: 1648 - [back] - Tela de gestão do Vida Funcional - Endpoint e Filtros
+    - CARD: ATS-6292 - MR: 1666 - [BACK] Alterar ação da etapa de Aguardando Empenho
+    - CARD: ATS-6317 e ATS-6303 - MR: 1667 - [BACK] Criar fluxo DG - liberação de empenho e empenho em andamento
+    - CARD: ATS-6313 - MR: 1668 - [BACK] Ajuste em lógica de api atual
+    - CARD: ATS-6331_6339 - MR: 1669 -  [Back] inclusão do campo valor_devolvido e criação da api para receber... 
+    - CARD: ATS-6285, ATS-6288 - MR: 1672 -  [back] Consultas SQL - Refatorar a tela de cadastros de consultas e relatório de empenho
+- 2025.01.31:
+    - CARD: ATS-6299 - MR: 1656 - [back] - Gestor de Dias Úteis - Criar API de listagem de localidades selecionadas (picklist)
+    - CARD: ATS-6302 - MR: 1657 - [back] - Gestor de Dias Úteis - Criar API para listar anos da tela de copiar
+    - CARD: ATS-6300 - MR: 1659 - [back] - Gestor de Dias Úteis - Criar API para copiar
+    - CARD: ATS-6326 e ATS-6324 - MR: 1675 - [BACK] Fluxo DG Cancelamento

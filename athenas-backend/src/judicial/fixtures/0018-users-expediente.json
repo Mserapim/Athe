@@ -1,0 +1,346 @@
+[
+{
+    "fields": {
+        "username": "emannuellaoliveira",
+        "first_name": "Emannuella",
+        "last_name": "Sales Sousa Oliveira",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-24T09:02:44.170",
+        "groups": [
+            [
+                "protocolo-geral"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "rh-afastamento-gestor"
+            ],
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$z0hyj$c5f3f7055954bacaf3f878c0925ccf5c",
+        "email": "",
+        "date_joined": "2009-10-29T09:00:18.107"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "alderinasilva",
+        "first_name": "Alderina",
+        "last_name": "Mendes Da Silva",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-21T11:21:37.256",
+        "groups": [
+            [
+                "rh-corregedoria"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "Basico"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$a1yzc$392567aefb9e150a4a765cc3c23d588d",
+        "email": "alderinasilva@mpto.mp.br ",
+        "date_joined": "2009-12-09T08:45:58"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "elenilsoncorreia",
+        "first_name": "Elenilson",
+        "last_name": "Correia Pereira",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-11T11:39:46.606",
+        "groups": [
+            [
+                "rh-expediente"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$titd$46966ef479985e0f9baa6d956a3f8ba6",
+        "email": "",
+        "date_joined": "2009-10-29T08:54:28.097"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "williamgomes",
+        "first_name": "William",
+        "last_name": "Gomes",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-04T16:54:17.673",
+        "groups": [
+            [
+                "rh-geral"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "estagio-avaliador"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$pmgyj$95eef53696e0a8ebc55adeb187b96af7",
+        "email": "",
+        "date_joined": "2009-10-29T08:21:21.143"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "eliaslima",
+        "first_name": "Elias",
+        "last_name": "Roseno De Lima",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-09-21T17:55:17.937",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$7lpn$4c7731d6d1083cb965e23c221206d1f5",
+        "email": "eliaslima@mpto.mp.br ",
+        "date_joined": "2009-10-28T18:01:50.071"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "luismilhomem",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T09:58:04.286",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$axqt$003e3a52d14591405d9ced0c41fb48fa",
+        "email": "luismilhomem@mpto.mp.br",
+        "date_joined": "2013-10-18T08:45:19.991"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "kamilasodre",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-08-25T14:21:57.589",
+        "groups": [
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$jvzm$5d43d917ee6f64239c3446dd3c0cfb0c",
+        "email": "kamilasodre@mpto.mp.br ",
+        "date_joined": "2012-06-25T08:44:48.009"
+    },
+    "model": "auth.user",
+    "pk": null
+},
+{
+    "fields": {
+        "username": "nataliabarbosa",
+        "first_name": "Natalia",
+        "last_name": "Barbosa",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-11-24T16:01:05.688",
+        "groups": [
+            [
+                "expediente-afastamento"
+            ],
+            [
+                "rh-expediente"
+            ],
+            [
+                "publicacao-oficial"
+            ],
+            [
+                "Basico"
+            ],
+            [
+                "Férias - Gestor"
+            ],
+            [
+                "expediente-lotacao"
+            ],
+            [
+                "diaria-despacha"
+            ],
+            [
+                "rh-afastamento-gestor"
+            ],
+            [
+                "protocolo-geral"
+            ],
+            [
+                "ejud-gestor-expediente"
+            ]
+        ],
+        "user_permissions": [],
+        "password": "md5$rggyk$e1245b854ccf43daced5c4a3b6ddf5de",
+        "email": "",
+        "date_joined": "2009-10-29T08:31:18.515"
+    },
+    "model": "auth.user",
+    "pk": null
+}
+]

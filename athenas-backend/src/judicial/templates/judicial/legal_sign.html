@@ -1,0 +1,22 @@
+<div style="border: 1px solid #000; height: 128px; border-radius: 3px; margin-top: 1em">
+    <div style="float: left; width: 128px; border-right: 1px solid #000; height: 100%; background: url('data:image/png;base64,{{sign.qrcode}}') center center no-repeat"></div>
+    <div style="margin-left: 129px; height: 100%">
+        <div style="padding: 3px; font-size: 9pt">
+            <div style="padding: 5px;">
+                <span style="font-weight: bold">Assinado por</span>: {{ sign.who_person }} como ({{sign.who}})
+            </div>
+            <div style="padding: 5px;">
+                <span style="font-weight: bold">Na data</span>: {{ sign.when | date:'d/m/Y H:i:s' }}
+            </div>
+            <div style="padding: 5px;">
+                <span style="font-weight: bold">SHA-224</span>: {{ sign.content_sign }}
+            </div>
+            <div style="padding: 5px;">
+                <span style="font-weight: bold">URL</span>:
+                <a href="{{ sign.permalink}}" title="validador de documento" target="_blank">
+                    {{ sign.permalink }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

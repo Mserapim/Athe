@@ -1,0 +1,15 @@
+[
+	{
+		"fields": {
+			"description": "",
+			"value": 1,
+			"label": "Area",
+			"cache_path": "web.KINDS_OF_CONTENT_CHOICES",
+			"app_label": "web",
+			"active": true,
+			"order_weight": 0,
+			"name": "KINDS_OF_CONTENT_CHOICES"
+		},
+		"model": "standard.choice"
+	}
+]

@@ -1,0 +1,38 @@
+[
+{
+    "fields": {
+        "sectional": null,
+        "matter": 12883,
+        "execution_organ": 565,
+        "factor": "1.0000",
+        "document": 19082,
+        "end_document": null
+    },
+    "model": "judicial.distributiontable",
+    "pk": 1
+},
+{
+    "fields": {
+        "sectional": null,
+        "matter": 12883,
+        "execution_organ": 567,
+        "factor": "1.0000",
+        "document": 19082,
+        "end_document": null
+    },
+    "model": "judicial.distributiontable",
+    "pk": 2
+},
+{
+    "fields": {
+        "sectional": null,
+        "matter": 12883,
+        "execution_organ": 563,
+        "factor": "1.0000",
+        "document": 19082,
+        "end_document": null
+    },
+    "model": "judicial.distributiontable",
+    "pk": 3
+}
+]

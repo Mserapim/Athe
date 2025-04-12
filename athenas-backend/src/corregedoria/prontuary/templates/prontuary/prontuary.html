@@ -1,0 +1,710 @@
+{% extends "prontuary/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+        <div>
+            <h1 class="title-1 top-space-1" style="font-size: 20px">PRONTUÁRIO INDIVIDUAL</h1>
+        </div>
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" align=center colspan=3><b>DADOS GERAIS</b></td></tr>
+        </table>
+        <div class="paragraph-text" style="padding-left: 0.5em; padding-right: 0.5em;">
+            <table width=100%>
+                <tr>
+                    <td width=90%>
+                        Nome: <b>{{ prontuary.employee.pessoa_fisica.nome | safely }}</b><br />
+                        <table width=100%>
+                            <tr>
+                                <td width=50%>Registro Funcional PGJ:</td>
+                                <td>Matrícula: <b>{{ prontuary.employee.matricula }}</b></td>
+                            </tr>
+                        </table>
+                        Cargo: <b>{{ prontuary.get_cargo }}</b><br />
+                        Nomeação: <b>{{ prontuary.get_nomeacao.publicacao_movimentacao }}</b><br />
+                        Posse: <b>{{ prontuary.get_nomeacao.publicacao_movimentacao.data_expedicao | date:'d/m/Y' }}</b><br />
+                        Assunção: <b>{{ prontuary.get_nomeacao.data_exercicio | date:'d/m/Y' }}</b><br />
+                    </td>
+                    <td>
+                        <img src="{{ foto_link }}" alt="Visualização da foto" height="115" width="85"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Vitalicionamento: <b>{{ prontuary.get_vitaliciamento}}</b><br />
+                        Titularização:{% if prontuary.get_titularizacao %}<b>{{ prontuary.get_titularizacao.data_exercicio | date:'d/m/Y' }}</b>, <b>{{ prontuary.get_titularizacao.publicacao_movimentacao }}</b>{% endif %}<br />
+                        Entrância: <b>{{ prontuary.get_atualcargo.quadro.cargo.entrancia.nome | safely }}</b><br />
+                        Titular: <b>{{ prontuary.get_atualcargo.quadro.cargo }}</b><br />
+                        Última movimentação na carreira: <b>{{ prontuary.get_atualcargo.data_exercicio | date:'d/m/Y' }} ({{ prontuary.get_atualcargo.tipo_movcarreira }}{% if prontuary.get_criterio %}-{{ prontuary.get_criterio }}{% endif %})</b><br />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.0em;">
+                <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 2px;" colspan="3" >Informações para desempate:</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center" width=7%>1</td>
+                        <td style="padding: 2px;" width=43%>Posição no Quadro de Antiguidade:</td>
+                        <td style="padding: 2px;  text-align: center"><b>{{ prontuary.generaldata.seniority_position }} ({{ prontuary.generaldata.ordinance_seniority_position | safely}})</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center" width=7%>2</td>
+                        <td style="padding: 2px;" width=43%>Data de início na Entrância:</td>
+                        <td style="padding: 2px; text-align: center"><b>{{ prontuary.get_inicioentrancia.data_exercicio | date:'d/m/Y' }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center" width=7%>3</td>
+                        <td style="padding: 2px;" width=43%>Data de início na Carreira:</td>
+                        <td style="padding: 2px; text-align: center"><b>{{ prontuary.get_nomeacao.data_exercicio | date:'d/m/Y' }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center" width=7%>4</td>
+                        <td style="padding: 2px;" width=43%>Tempo de Serviço Público:</td>
+                        <td style="padding: 2px; text-align: center"><b>{{ prontuary.generaldata.public_service_time | safely }}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center" width=7%>5</td>
+                        <td style="padding: 2px;" width=43%>Prole:</td>
+                        <td style="padding: 2px; text-align: center"><b>{{ prontuary.get_prole.count }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px; text-align: center" width=7%>6</td>
+                        <td style="padding: 2px;" width=43%>Data de Nascimento:</td>
+                        <td style="padding: 2px; text-align: center"><b>{{ prontuary.employee.pessoa_fisica.data_nascimento | date:'d/m/Y' }}</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+            {% include "prontuary/functionalperformance/productivity.html" %}
+
+            {% include "prontuary/functionalperformance/inspection.html" %}
+
+        
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO FUNCIONAL - CUMULAÇÃO</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if prontuary.cumulation %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Meses</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2px;" align=center><b>{{ prontuary.cumulation.total_months }}</b> ({{ prontuary.cumulation.total_days }} dias)</td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=right><b>{{ prontuary.cumulation.get_score }}</b></td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem exercícios em cumulação registrados no prontuário.</font>
+                {% endif %}
+            </div>
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - INDICAÇÃO EM LISTA DE REMOÇÃO E PROMOÇÃO</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {%if score_promocao or score_remocao %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="text-align: center; font-size: 12px">
+                            <td style="padding: 2px;" width=25%><b>Tipo</b></td>
+                            <td style="padding: 2px;" width=60%><b>Indicações</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" ><b>Pontuação</b></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2px;">Promoção</td>
+                            <td style="padding: 2px;">
+                                <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                                    <tr><td style="padding: 2px;" colspan="2">Total: <b>{{ totallist_promocao }}</b><br /><td></tr>
+                                    <tr>
+                                        <td style="padding: 2px;">Consecutiva: <b>{{ consecutivenesslist_promocao }}</b></td>
+                                        <td style="padding: 2px;">Alternada: <b>{{ alternancelist_promocao }}</b></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="padding: 2px; text-align: right; background-color: #c0c0c0;"><b>{{ score_promocao }}</b> </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2px;">Remoção</td>
+                            <td style="padding: 2px;">
+                                <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                                    <tr><td style="padding: 2px;" colspan="2">Total: <b>{{ totallist_remocao }}</b><br /><td></tr>
+                                    <tr>
+                                        <td style="padding: 2px;">Consecutiva: <b>{{ consecutivenesslist_remocao }}</b></td>
+                                        <td style="padding: 2px;">Alternada: <b>{{ alternancelist_remocao }}</b></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="padding: 2px; text-align: right; background-color: #c0c0c0;"><b>{{ score_remocao }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem indicações em lista de remoção e promoção registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - PARTICIPAÇÃO INSTITUICIONAL</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if institutionalparticipation %}
+                    <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                        <tr style="text-align: center; font-size: 12px">
+                            <td style="padding: 2px;" width=85%><b>Contribuições</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" ><b>Pontuação</b></td>
+                        </tr>
+                        {% if detailinstitutionalparticipations.all %}
+                            {% for data in detailinstitutionalparticipations.all %}
+                                <tr>
+                                    <td style="padding: 2px;" >
+                                        <b>{{ data.contribution }}</b><br />
+                                        <font style="font-size: 12px;">
+                                            Aprovado pelo CSMP:
+                                            <b>
+                                                {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                {% if data.validated == 2 %} SIM {% endif %}
+                                                {% if data.validated == 3 %} NÃO {% endif %}
+                                            </b><br />
+                                            {% if data.used_edital %} Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }} {% endif %}
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; text-align: right; background-color: #c0c0c0;" width=10%>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;"><b>{{ institutionalparticipation.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem participações instituicionais registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - FREQUÊNCIA E APROVEITAMENTO EM CURSOS</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if coursesparticipation %}
+                    <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px; " align=center>
+                            <td style="padding: 2px;" width=85%> <b>Curso/Aperfeiçamento</b> </td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" > <b>Pontuação</b> </td>
+                        </tr>
+                        {% if detailcoursesparticipations.all %}
+                            {% for data in detailcoursesparticipations.all %}
+                                <tr style="font-size: 14px; " >
+                                    <td style="padding: 2px; " >
+                                        <b>{{ data.course }}</b><br/>
+                                        <font style="font-size: 12px; ">
+                                            <table width=100% border=0>
+                                                <tr>
+                                                    <td width=50%>Tipo: <b>{{data.get_course_level_display}}</b></td>
+                                                    <td width=25%>Data: <b>{{data.date_course | date:'d/m/Y' }}</b></td>
+                                                    <td width=25%>Carga horária: <b>{{ data.workload }}</b></td>
+                                                </tr>
+                                                    <td width=25%>
+                                                        Aprovado pelo CSMP:
+                                                        <b>
+                                                            {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                            {% if data.validated == 2 %} SIM {% endif %}
+                                                            {% if data.validated == 3 %} NÃO {% endif %}
+                                                        </b><br />
+                                                    </td>
+                                                    <td width=25%>Dias afastado: <b>{{ data.get_departure_days }}</b></td>
+                                                </tr>
+                                                {% if data.used_edital %}
+                                                    <tr>
+                                                        <td colspan="3">Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            </table>
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; background-color: #c0c0c0;" align=right>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;"><b>{{ coursesparticipation.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem cursos/aperfeiçoamentos registrados no prontuário.</font>
+                {% endif %}
+            </div>
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - EXERCÍCIOS DE CARGOS OU FUNÇÕES</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if exerciseinrole %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Cargo/Função</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        {% if detailexerciseinroles.all %}
+                            {% for data in detailexerciseinroles.all %}
+                                <tr>
+                                    <td style="padding: 2px; " >
+                                        <b>{{ data.role }}</b><br/>
+                                        <font style="font-size: 12px; ">
+                                            <table width=100% border=0>
+                                                <tr>
+                                                    <td width=55%>Ato: <b>{{data.act | safely }}</b></td>
+                                                    <td width=45%>Período: <b>{{data.date_initial | date:'d/m/Y' }} - {{data.date_final | date:'d/m/Y' }}</b></td>
+                                                </tr>
+                                                    <td colspan="2">
+                                                        Aprovado pelo CPJ:
+                                                        <b>
+                                                            {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                            {% if data.validated == 2 %} SIM {% endif %}
+                                                            {% if data.validated == 3 %} NÃO {% endif %}
+                                                        </b><br />
+                                                    </td>
+                                                </tr>
+                                                {% if data.used_edital %}
+                                                    <tr>
+                                                        <td colspan="2">Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            </table>
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; background-color: #c0c0c0;" align=right>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;"><b>{{ exerciseinrole.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem designações de exercícios para cargos/funções registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - ATUAÇÃO EM COMARCA DE PARTICULAR DIFICULDADE</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if performanceparticulardifficulty %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Meses</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2px;" align=center><b>{{  performanceparticulardifficulty.total_months }}</b> ({{ performanceparticulardifficulty.total_days }} dias)</td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=right><b>{{ performanceparticulardifficulty.get_score }}</b></td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem atuações em comarcas de particular dificuldade registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - APRIMORAMENTO DE FORMAÇÃO JURÍDICA E PROFISSIONAL</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if trainingimprovement %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Publicação</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        {% if detailtrainingimprovement.all %}
+                            {% for data in detailtrainingimprovement.all %}
+                                <tr style="font-size: 14px; " >
+                                    <td style="padding: 2px; " >
+                                        <b>{{ data.publication }}</b><br/>
+                                        <font style="font-size: 12px; ">
+                                            <table width=100% border=0>
+                                                <tr>
+                                                    <td width=50%>Tipo: <b>{{data.get_publication_type_display}}</b></td>
+                                                    <td width=25%>Data: <b>{{data.date_publication | date:'d/m/Y' }}</b></td>
+                                                </tr>
+                                                {% if data.publication_type == 2 %}
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            De acordo CESAF:
+                                                            <b>
+                                                                {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                                {% if data.validated == 2 %} SIM {% endif %}
+                                                                {% if data.validated == 3 %} NÃO {% endif %}
+                                                            </b><br />
+                                                        </td>
+                                                    </tr>
+                                                {% endif %}
+                                                {% if data.used_edital %}
+                                                    <tr>
+                                                        <td colspan="3">Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            </table>
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; background-color: #c0c0c0;" align=right>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;" ><b>{{ trainingimprovement.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem publicações registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - Contribuição para Execução dos Programas de Atuação, Metas Institucionais e Projetos Especiais</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if institutionalcontribution %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Contribuição</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        {% if detailinstituicionalcontributions.all %}
+                            {% for data in detailinstituicionalcontributions.all %}
+                                <tr style="font-size: 14px; " >
+                                    <td style="padding: 2px; " >
+                                        <b>{{ data.contribution }}</b><br/>
+                                        <font style="font-size: 12px; ">
+                                            <table width=100% border=0>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        De acordo:
+                                                        <b>
+                                                            {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                            {% if data.validated == 2 %} SIM {% endif %}
+                                                            {% if data.validated == 3 %} NÃO {% endif %}
+                                                        </b><br />
+                                                    </td>
+                                                </tr>
+                                                {% if data.used_edital %}
+                                                    <tr>
+                                                        <td colspan="3">Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            </table>
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; background-color: #c0c0c0;" align=right>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;"><b>{{ institutionalcontribution.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem contribuições registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - Integrar Grupo de Trabalho, Comissão ou Comitê instituídos por órgão da Administração Superior ou Auxiliar do Ministério Público, para planejamento e elaboração de planos, programas e projetos estratégicos institucionais</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if integratestrategicworkgroup %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Contribuição</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        {% if detailintegratestrategicworkgroups.all %}
+                            {% for data in detailintegratestrategicworkgroups.all %}
+                                <tr style="font-size: 14px; " >
+                                    <td style="padding: 2px; " >
+                                        <b>{{ data.workgroup }}</b><br/>
+                                        <font style="font-size: 12px; ">
+                                            <table width=100% border=0>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        De acordo:
+                                                        <b>
+                                                            {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                            {% if data.validated == 2 %} SIM {% endif %}
+                                                            {% if data.validated == 3 %} NÃO {% endif %}
+                                                        </b><br />
+                                                    </td>
+                                                </tr>
+                                                {% if data.used_edital %}
+                                                    <tr>
+                                                        <td colspan="3">Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            </table>
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; background-color: #c0c0c0;" align=right>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;"><b>{{ integratestrategicworkgroup.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem participações em grupos de trabalho estratégicos registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO INDIVIDUAL - Integrar Grupo de Trabalho, Comissão ou Comitê atualmente existentes, em exercício, no âmbito da Instituição</b></td></tr>
+            </table>
+            <br />
+            <div style="padding-left: 0.5em; padding-right: 0.5em;">
+                {% if integrateworkgroup %}
+                    <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                        <tr style="font-size: 12px;">
+                            <td style="padding: 2px;" align=center width=85%><b>Contribuição</b></td>
+                            <td style="padding: 2px; background-color: #c0c0c0;" align=center><b>Pontuação</b></td>
+                        </tr>
+                        {% if detailintegrateworkgroups.all %}
+                            {% for data in detailintegrateworkgroups.all %}
+                                <tr style="font-size: 14px; " >
+                                    <td style="padding: 2px; " >
+                                        <b>{{ data.workgroup }}</b><br/>
+                                        <font style="font-size: 12px; ">
+                                            <table width=100% border=0>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        De acordo:
+                                                        <b>
+                                                            {% if data.validated == 1 %} Sem informação. {% endif %}
+                                                            {% if data.validated == 2 %} SIM {% endif %}
+                                                            {% if data.validated == 3 %} NÃO {% endif %}
+                                                        </b><br />
+                                                    </td>
+                                                </tr>
+                                                {% if data.used_edital %}
+                                                    <tr>
+                                                        <td colspan="3">Utilizado no Edital nº <b>{{ data.used_edital.edital}}</b>, em {{ data.used_edital.date_edital | date:'d/m/Y' }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            </table>
+                                        </font>
+                                    </td>
+                                    <td style="padding: 2px; background-color: #c0c0c0;" align=right>
+                                        {% if data.validated == 2 %}
+                                            {% if data.used_edital %}
+                                                <s>{{ data.score }}</s>
+                                            {% else %}
+                                                <b>{{ data.score }}</b>
+                                            {% endif %}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr style="background-color: #c0c0c0;">
+                            <td style="padding: 2px; " ><b>Total de pontos disponíveis</b></td>
+                            <td style="padding: 2px; text-align: right;"><b>{{ integrateworkgroup.get_score }}</b> </td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <font style="font-size: 14px;" >Não existem participações em grupos de trabalho registradas no prontuário.</font>
+                {% endif %}
+            </div>
+
+<!--
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - MOVIMENTAÇÃO - PROMOÇÃO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - MOVIMENTAÇÃO - REMOÇÃO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - MOVIMENTAÇÃO - PERMUTA</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESIGNAÇÃO - EXERCÍCIO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESIGNAÇÃO - SUBSTITUIÇÃO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESIGNAÇÃO - CUMULAÇÃO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESIGNAÇÃO - AUTOS E AUDIÊNCIAS</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESIGNAÇÃO - FUNÇÃO ADMINISTRATIVA</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESIGNAÇÃO - ATUAÇÃO CONJUNTA</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESLIGAMENTO - EXONERAÇÃO/REVERSÃO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DESLIGAMENTO - APOSENTADORIA/REVERSÃO</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - AFASTAMENTO/LICENÇA</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - DISPONIBILIDADE</b></td></tr>
+            </table>
+            <br />
+
+
+            <br /><br />
+            <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>CARREIRA - FALTAS E PENALIDADES</b></td></tr>
+            </table>
+            <br /> -->
+
+    {% endblock %}
+</div>

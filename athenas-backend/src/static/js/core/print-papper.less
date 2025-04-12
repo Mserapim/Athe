@@ -1,0 +1,105 @@
+// out: print-papper.css, compress: true
+
+body, html {
+    display: table;
+    width: 210mm;
+    min-width: 210mm !important;
+    max-width: 210mm !important;
+}
+
+@page {
+    size: A4;
+    width: 210mm;
+    min-width: 210mm !important;
+    max-width: 210mm !important;
+}
+
+@media(max-width: 1330px) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 1.0
+        }
+    }
+}
+
+@media(max-width: 1280px) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 1.0
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .papper-container-a4, .papper-container-card {
+        .papper-model {
+            zoom: 1.0
+        }
+    }
+}
+
+.papper {
+}
+
+.papper-container, .papper-container-card, .papper-container-a4 {
+    border: none;
+    background-color: transparent;
+    display: table;
+    font-size: 12pt;
+}
+
+.papper-container-a4 > .papper-model {
+    margin-left: 25mm;
+}
+
+.papper-model {
+    margin: 0;
+    border:none;
+    box-shadow: none;
+}
+
+.papper-header-system {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.papper-header-instituation {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.end-page {
+    page-break-after: always;
+}
+
+.legal-sign {
+    width: 795px !important;
+
+    .sign-content {
+        .sign-content-person {
+            div {
+                width: 665px !important;
+            }
+        }
+    }
+}
+
+.edoc-moviment-content div div.info ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.edoc-moviment-content div div.info ul li {
+    //width: 460px !important;
+}
+
+.page-of-image, .page-of-portable {
+    margin: 0;
+}
+
+.papper-container-a4 {
+    .papper-model {
+        min-height: 0mm;
+    }
+}

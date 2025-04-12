@@ -1,0 +1,16 @@
+[
+{
+    "model": "services.scheduledservices",
+    "pk": 62,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-01-11T19:04:07.877",
+        "modified_at": "2024-01-11T19:04:07.877",
+        "name": "Popular campo marca\u00e7\u00e3o de Folha Ponto",
+        "command": "atualizar_campo_marcacao",
+        "description": "Popular campo marca\u00e7\u00e3o de Folha Ponto",
+        "classcode": 407
+    }
+}
+]

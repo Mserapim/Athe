@@ -1,0 +1,3482 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_eSocial" id="5002_eSocial">1</td>
+        <td><a href="#r_5002_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002" id="5002">2</td>
+        <td><a href="#r_5002">evtIrrfBenef</a></td>
+        <td><a href="#r_5002_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Imposto de Renda Retido na Fonte por Trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_Id" id="5002_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_5002">evtIrrfBenef</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideEvento" id="5002_ideEvento">4</td>
+        <td><a href="#r_5002_ideEvento">ideEvento</a></td>
+        <td><a href="#r_5002">evtIrrfBenef</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do evento de retorno.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideEvento_nrRecArqBase"
+            id="5002_ideEvento_nrRecArqBase">5
+        </td>
+        <td>nrRecArqBase</td>
+        <td><a href="#r_5002_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo que deu origem ao presente arquivo de retorno ao empregador.<br>
+            <strong>Validação:</strong> Deve corresponder ao recibo de um arquivo com informações de rendimentos
+            sujeitos a Imposto de Renda Retido na Fonte - IRRF (S-1210 ou S-3000).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideEvento_perApur"
+            id="5002_ideEvento_perApur">6
+        </td>
+        <td>perApur</td>
+        <td><a href="#r_5002_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) de referência das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideEmpregador" id="5002_ideEmpregador">7</td>
+        <td><a href="#r_5002_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_5002">evtIrrfBenef</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideEmpregador_tpInsc"
+            id="5002_ideEmpregador_tpInsc">8
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5002_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideEmpregador_nrInsc"
+            id="5002_ideEmpregador_nrInsc">9
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5002_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#5002_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador" id="5002_ideTrabalhador">10
+        </td>
+        <td><a href="#r_5002_ideTrabalhador">ideTrabalhador</a></td>
+        <td><a href="#r_5002">evtIrrfBenef</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do beneficiário do pagamento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_cpfBenef"
+            id="5002_ideTrabalhador_cpfBenef">11
+        </td>
+        <td>cpfBenef</td>
+        <td><a href="#r_5002_ideTrabalhador">ideTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no Cadastro de Pessoas Físicas - CPF do beneficiário do pagamento.<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_cpfBenef">cpfBenef</a> de S-1210.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev"
+            id="5002_ideTrabalhador_dmDev">12
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td><a href="#r_5002_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-N</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do demonstrativo de valores devidos.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_perRef"
+            id="5002_ideTrabalhador_dmDev_perRef">13
+        </td>
+        <td>perRef</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4 ou 7</td>
+        <td>-</td>
+        <td>Período de referência das informações, no formato AAAA-MM (ou AAAA, se for relativo a 13° salário).<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoPgto_perRef">perRef</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_ideDmDev"
+            id="5002_ideTrabalhador_dmDev_ideDmDev">14
+        </td>
+        <td>ideDmDev</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Identificador atribuído pela fonte pagadora para o demonstrativo de valores devidos ao trabalhador.<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoPgto_ideDmDev">ideDmDev</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_tpPgto"
+            id="5002_ideTrabalhador_dmDev_tpPgto">15
+        </td>
+        <td>tpPgto</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar o evento de origem do pagamento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - S-1200<br>
+            <strong>2</strong> - S-2299<br>
+            <strong>3</strong> - S-2399<br>
+            <strong>4</strong> - S-1202<br>
+            <strong>5</strong> - S-1207<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoPgto_tpPgto">tpPgto</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_dtPgto"
+            id="5002_ideTrabalhador_dmDev_dtPgto">16
+        </td>
+        <td>dtPgto</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data de pagamento.<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoPgto_dtPgto">dtPgto</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_codCateg"
+            id="5002_ideTrabalhador_dmDev_codCateg">17
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador, conforme <a href="tabelas.html#01">Tabela 01</a>.<br>
+            <strong>Validação:</strong> a) Se <a href="#5002_ideTrabalhador_dmDev_tpPgto">tpPgto</a> = [1, 4], retornar
+            o código de categoria informado no evento de origem;<br>
+            b) Se <a href="#5002_ideTrabalhador_dmDev_tpPgto">tpPgto</a> = [2, 3], retornar o código de categoria
+            existente no Registro de Eventos Trabalhistas - RET;<br>
+            c) Se <a href="#5002_ideTrabalhador_dmDev_tpPgto">tpPgto</a> = [5], retornar [000].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoIR"
+            id="5002_ideTrabalhador_dmDev_infoIR">18
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR">infoIR</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Rendimentos tributáveis, deduções, isenções e retenções do IRRF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoIR_tpInfoIR"
+            id="5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">19
+        </td>
+        <td>tpInfoIR</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR">infoIR</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>2-4</td>
+        <td>-</td>
+        <td>Consolidação dos tipos de valores relativos ao IRRF.<br>
+            <strong>Valores válidos:</strong><br>
+            Rendimentos tributáveis:<br>
+            <strong>11</strong> - Remuneração mensal<br>
+            <strong>12</strong> - 13º salário<br>
+            <strong>14</strong> - PLR<br>
+            <br>
+            Retenções do IRRF efetuadas sobre:<br>
+            <strong>31</strong> - Remuneração mensal<br>
+            <strong>32</strong> - 13º salário<br>
+            <strong>34</strong> - PLR<br>
+            <br>
+            Deduções da base de cálculo do IRRF:<br>
+            <strong>41</strong> - Previdência Social Oficial - PSO - Remuneração mensal<br>
+            <strong>42</strong> - PSO - 13º salário<br>
+            <strong>46</strong> - Previdência complementar - Salário mensal<br>
+            <strong>47</strong> - Previdência complementar - 13º salário<br>
+            <strong>51</strong> - Pensão alimentícia - Remuneração mensal<br>
+            <strong>52</strong> - Pensão alimentícia - 13º salário<br>
+            <strong>54</strong> - Pensão alimentícia - PLR<br>
+            <strong>61</strong> - Fundo de Aposentadoria Programada Individual - FAPI - Remuneração mensal<br>
+            <strong>62</strong> - Fundo de Aposentadoria Programada Individual - FAPI - 13º salário<br>
+            <strong>63</strong> - Fundação de previdência complementar do servidor público - Remuneração mensal<br>
+            <strong>64</strong> - Fundação de previdência complementar do servidor público - 13º salário<br>
+            <strong>67</strong> - Plano privado coletivo de assistência à saúde<br>
+            <strong>68</strong> - Desconto simplificado mensal<br>
+            <br>
+            Rendimento não tributável ou isento do IRRF:<br>
+            <strong>70</strong> - Parcela isenta 65 anos - Remuneração mensal<br>
+            <strong>71</strong> - Parcela isenta 65 anos - 13º salário<br>
+            <strong>72</strong> - Diárias<br>
+            <strong>73</strong> - Ajuda de custo<br>
+            <strong>74</strong> - Indenização e rescisão de contrato, inclusive a título de PDV e acidentes de
+            trabalho<br>
+            <strong>75</strong> - Abono pecuniário<br>
+            <strong>76</strong> - Rendimento de beneficiário com moléstia grave ou acidente em serviço - Remuneração
+            mensal<br>
+            <strong>77</strong> - Rendimento de beneficiário com moléstia grave ou acidente em serviço - 13º salário<br>
+            <strong>700</strong> - Auxílio moradia<br>
+            <strong>701</strong> - Parte não tributável do valor de serviço de transporte de passageiros ou cargas<br>
+            <strong>702</strong> - Bolsa médico residente - remuneração mensal<br>
+            <strong>703</strong> - Bolsa médico residente - 13º salário<br>
+            <strong>704</strong> - Juros de mora recebidos, devidos pelo atraso no pagamento de remuneração por
+            exercício de emprego, cargo ou função.<br>
+            <strong>79</strong> - Outras isenções<br>
+            <strong>7900</strong> - Verba transitada pela folha de pagamento de natureza diversa de rendimento ou
+            retenção/isenção/dedução de IR (exemplo: desconto de convênio farmácia, desconto de consignações, etc.)<br>
+            <br>
+            Códigos para compatibilidade de versões anteriores:<br>
+            <strong>7950</strong> - Rendimento não tributável<br>
+            <strong>7951</strong> - Rendimento não tributável em função de acordos internacionais de bitributação<br>
+            <strong>7952</strong> - Rendimento tributável - RRA<br>
+            <strong>7953</strong> - Retenção de IR - RRA<br>
+            <strong>7954</strong> - Previdência Social Oficial - RRA<br>
+            <strong>7955</strong> - Pensão alimentícia - RRA<br>
+            <strong>7956</strong> - Valores pagos a titular ou sócio de microempresa ou empresa de pequeno porte, exceto
+            pró-labore e aluguéis<br>
+            <strong>7957</strong> - Depósito judicial<br>
+            <strong>7958</strong> - Compensação judicial do ano-calendário<br>
+            <strong>7959</strong> - Compensação judicial de anos anteriores<br>
+            <strong>7960</strong> - Exigibilidade suspensa - Remuneração mensal<br>
+            <strong>7961</strong> - Exigibilidade suspensa - 13º salário<br>
+            <strong>7962</strong> - Exigibilidade suspensa - Férias<br>
+            <strong>7963</strong> - Exigibilidade suspensa - PLR<br>
+            <strong>7964</strong> - Exigibilidade suspensa - RRA<br>
+            <br>
+            Exigibilidade suspensa - Rendimento tributável (base de cálculo do IR):<br>
+            <strong>9011</strong> - Remuneração mensal<br>
+            <strong>9012</strong> - 13º salário<br>
+            <strong>9014</strong> - PLR<br>
+            <br>
+            Exigibilidade suspensa - Retenção do IRRF efetuada sobre:<br>
+            <strong>9031</strong> - Remuneração mensal<br>
+            <strong>9032</strong> - 13º salário<br>
+            <strong>9034</strong> - PLR<br>
+            <strong>9831</strong> - Depósito judicial - Mensal<br>
+            <strong>9832</strong> - Depósito judicial - 13º salário<br>
+            <strong>9834</strong> - Depósito judicial - PLR<br>
+            <br>
+            Exigibilidade suspensa - Dedução da base de cálculo do IRRF:<br>
+            <strong>9041</strong> - Previdência Social Oficial - PSO - Remuneração mensal<br>
+            <strong>9042</strong> - PSO - 13º salário<br>
+            <strong>9046</strong> - Previdência complementar - Salário mensal<br>
+            <strong>9047</strong> - Previdência complementar - 13º salário<br>
+            <strong>9051</strong> - Pensão alimentícia - Remuneração mensal<br>
+            <strong>9052</strong> - Pensão alimentícia - 13º salário<br>
+            <strong>9054</strong> - Pensão alimentícia - PLR<br>
+            <strong>9061</strong> - Fundo de Aposentadoria Programada Individual - FAPI - Remuneração mensal<br>
+            <strong>9062</strong> - Fundo de Aposentadoria Programada Individual - FAPI - 13º salário<br>
+            <strong>9063</strong> - Fundação de previdência complementar do servidor público - Remuneração mensal<br>
+            <strong>9064</strong> - Fundação de previdência complementar do servidor público - 13º salário<br>
+            <strong>9067</strong> - Plano privado coletivo de assistência à saúde<br>
+            <br>
+            Compensação judicial:<br>
+            <strong>9082</strong> - Compensação judicial do ano-calendário<br>
+            <strong>9083</strong> - Compensação judicial de anos anteriores
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoIR_valor"
+            id="5002_ideTrabalhador_dmDev_infoIR_valor">20
+        </td>
+        <td>valor</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR">infoIR</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Composição do valor do rendimento tributável, não tributável, retenção, dedução ou isenção do IRRF, de
+            acordo com a classificação apresentada no campo <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a>.<br>
+            <strong>Validação:</strong> Deve corresponder ao somatório dos valores informados nas rubricas (campo
+            {vrRubr}) dos eventos que deram origem ao S-1210 (grupos {infoPerApur} e {infoPerAnt} do S-1200, S-1202,
+            S-1207 e S-2299, e grupo {verbasResc} do S-2399), desde que o campo {indApurIR} vinculado às respectivas
+            rubricas seja igual a [0] ou não informado, obedecendo ao que segue:<br>
+            a) Somar os valores das rubricas cujo <a href="#1010_infoRubrica_inclusao_dadosRubrica_tpRubr">tpRubr</a> em
+            S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_tpRubr">tpRubr</a> em S-1010 seja igual a [2, 4],
+            observando a tabela de relacionamento abaixo:<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [11, 13];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [12];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [14], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [14];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [70], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [70];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [71], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [71];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [72], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [72];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [73], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [73];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [74], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [74];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [75], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [75];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [76], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [76];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [77], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [77];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [700], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [700];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [701], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [701];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [702], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [702];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [703], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [703];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [704], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [704];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [79];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7900], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7950], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [0];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7951], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [1];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7952], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [15];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7956], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [78];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7960], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [91];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7961], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [92];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7962], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [93];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7963], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [94];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7964], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [95];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9011], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9011,
+            9013];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9012], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9012];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9014], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9014].<br>
+            <br>
+            b) Somar os valores das rubricas cujo <a href="#1010_infoRubrica_inclusao_dadosRubrica_tpRubr">tpRubr</a> em
+            S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_tpRubr">tpRubr</a> em S-1010 seja igual a [1, 3],
+            observando a tabela de relacionamento abaixo:<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [31, 33];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [32];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [34], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [34];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [41, 43];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [42];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [46], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [46, 48];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [47], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [47];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [51], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [51, 53];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [52], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [52];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [54], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [54];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [61], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [61, 66];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [62], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [62];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [63], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [63, 65];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [64], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [64];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [67], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [67];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [68], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [68];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7953], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [35];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7954], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [44];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7955], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [55];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7957], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [81];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7958], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [82];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [7959], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [83];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9031], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9031,
+            9033];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9032], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9032];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9034], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9034];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9831], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9831,
+            9833];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9832], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9832];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9834], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9834];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9041], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9041,
+            9043];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9042], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9042];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9046], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9046,
+            9048];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9047], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9047];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9051], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9051,
+            9053];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9052], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9052];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9054], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9054];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9061], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9061,
+            9066];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9062], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9062];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9063], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9063,
+            9065];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9064], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9064];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9067], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9067];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9082], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9082];<br>
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [9083], <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em S-1010 = [9083].<br>
+            <br>
+            OBS.: Se o campo {indApurIR} vinculado à rubrica for igual a [1], considerar {vrRubr} = [0].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoIR_descRendimento"
+            id="5002_ideTrabalhador_dmDev_infoIR_descRendimento">21
+        </td>
+        <td>descRendimento</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR">infoIR</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do rendimento não tributável ou isento do IRRF.<br>
+            <strong>Origem:</strong> campo <a href="#1010_infoRubrica_inclusao_dadosRubrica_dscRubr">dscRubr</a> em
+            S-1010.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva para eventos S-1210 com <a
+                    href="#1210_ideEvento_perApur">perApur</a> posterior ou igual ao início da DIRF e se <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub"
+            id="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub">22
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub">infoProcJudRub</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR">infoIR</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-N</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares - Demais rendimentos com exigibilidade suspensa decorrentes de decisão judicial
+            aplicável à rubrica.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_nrProc"
+            id="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_nrProc">23
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub">infoProcJudRub</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar o número do processo judicial.<br>
+            <strong>Origem:</strong> Campo <a href="#1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF_nrProc">ideProcessoIRRF/nrProc</a>
+            de S-1010, quando <a href="#1010_infoRubrica_inclusao_ideRubrica_codRubr">codRubr</a> e <a
+                    href="#1010_infoRubrica_inclusao_ideRubrica_ideTabRubr">ideTabRubr</a> de S-1010 com <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> = [9X] ou [9XXX] forem
+            informados em {ideDmDev} de evento remuneratório (S-1200, S-1202, S-1207, S-2299 ou S-2399).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_ufVara"
+            id="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_ufVara">24
+        </td>
+        <td>ufVara</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub">infoProcJudRub</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Identificação da Unidade da Federação - UF da Seção Judiciária.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO<br>
+            <strong>Origem:</strong> campo <a
+                    href="#1070_infoProcesso_inclusao_dadosProc_dadosProcJud_ufVara">ufVara</a> de S-1070.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_codMunic"
+            id="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_codMunic">25
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub">infoProcJudRub</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Origem:</strong> campo <a href="#1070_infoProcesso_inclusao_dadosProc_dadosProcJud_codMunic">codMunic</a>
+            de S-1070.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_idVara"
+            id="5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub_idVara">26
+        </td>
+        <td>idVara</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoIR_infoProcJudRub">infoProcJudRub</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Código de identificação da Vara.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#1070_infoProcesso_inclusao_dadosProc_dadosProcJud_idVara">idVara</a> de S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen"
+            id="5002_ideTrabalhador_dmDev_totApurMen">27
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-50</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Totalizador dos rendimentos tributáveis, deduções, isenções e retenção de tributos com período de apuração
+            mensal.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_CRMen"
+            id="5002_ideTrabalhador_dmDev_totApurMen_CRMen">28
+        </td>
+        <td>CRMen</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Código de Receita - CR relativo ao Imposto de Renda Retido na Fonte sobre rendimentos do trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>056107</strong> - IRRF mensal, 13° salário e férias sobre trabalho assalariado no país ou ausente no
+            exterior a serviço do país, exceto se contratado por empregador doméstico ou por segurado especial sujeito a
+            recolhimento unificado<br>
+            <strong>056108</strong> - IRRF mensal e férias - Empregado doméstico<br>
+            <strong>056109</strong> - IRRF 13° salário na rescisão de contrato de trabalho - Empregado doméstico<br>
+            <strong>056110</strong> - IRRF - Empregado doméstico 13º salário<br>
+            <strong>056111</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial<br>
+            <strong>056112</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial 13° salário<br>
+            <strong>056113</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial 13° salário rescisório<br>
+            <strong>058806</strong> - IRRF sobre rendimento do trabalho sem vínculo empregatício<br>
+            <strong>061001</strong> - IRRF sobre rendimentos relativos a prestação de serviços de transporte rodoviário
+            internacional de carga, pagos a transportador autônomo PF residente no Paraguai<br>
+            <strong>353301</strong> - Proventos de aposentadoria, reserva, reforma ou pensão pagos por previdência
+            pública<br>
+            <strong>356201</strong> - IRRF sobre participação dos trabalhadores em lucros ou resultados - PLR<br>
+            <strong>188901</strong> - Rendimentos Recebidos Acumuladamente - RRA
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_vlrRendTrib"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrRendTrib">29
+        </td>
+        <td>vlrRendTrib</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento tributável mensal e férias.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [101, 102, 103, 105, 106, 107, 108, 111,
+            301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410, 501, 721, 722, 723, 761,
+            901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [104], {indApurIR} = [0] e os campos
+            {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [101, 102, 103, 105, 106, 107, 108, 111],
+            {indApurIR} = [0], os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não
+            forem informados e <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 =
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [201, 202, 701, 711, 712, 731, 734, 738,
+            741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [061001]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [712], {indApurIR} = [0] e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> = [586], efetuar o somatório de <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [356201]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [1XX], {indApurIR} = [0] e os campos
+            {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [14];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11, 12, 14].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11, 14];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11, 12, 14].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrRendTrib13"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrRendTrib13">30
+        </td>
+        <td>vlrRendTrib13</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento do 13º salário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [101, 102, 103, 105, 106, 107, 108, 111,
+            301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410, 501, 721, 722, 723, 761,
+            901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056109]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [104], {indApurIR} = [0] e os campos
+            {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12], apenas se origem for
+            S-2299;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056110]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12], exceto se origem for
+            S-2299;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056112]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12], exceto se origem for
+            S-2299/S-2399;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056113]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12], apenas se origem for
+            S-2299/S-2399;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [12].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrPrevOficial"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrPrevOficial">31
+        </td>
+        <td>vlrPrevOficial</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à previdência oficial sobre rendimentos do trabalho, mensal e férias.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [061001]: se codCateg = [712], {indApurIR}
+            = [0] e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> = [586], efetuar o somatório de <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41, 42].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [41, 42].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrPrevOficial13"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrPrevOficial13">32
+        </td>
+        <td>vlrPrevOficial13</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à previdência oficial sobre o 13° salário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056109]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42], apenas se origem for
+            S-2299;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056110]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42], exceto se origem for
+            S-2299;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056112]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42], exceto se origem for
+            S-2299/S-2399;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056113]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42], apenas se origem for
+            S-2299/S-2399;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [42].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_vlrCRMen"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrCRMen">33
+        </td>
+        <td>vlrCRMen</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao imposto sobre a renda retido na fonte sobre rendimentos do trabalho, mensal e férias.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [101, 102, 103, 105, 106, 107, 108, 111,
+            301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410, 501, 721, 722, 723, 761,
+            901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [104], {indApurIR} = [0] e os campos
+            {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [101, 102, 103, 105, 106, 107, 108, 111],
+            {indApurIR} = [0], os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não
+            forem informados e <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 =
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [201, 202, 701, 711, 712, 731, 734, 738,
+            741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [061001]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [712], {indApurIR} = [0] e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> = [586], efetuar o somatório de <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [356201]: se <a
+                    href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [1XX], {indApurIR} = [0] e os campos
+            {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [34];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31, 32, 34].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31, 34];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31, 32, 34].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_vlrCR13Men"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrCR13Men">34
+        </td>
+        <td>vlrCR13Men</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao imposto sobre a renda retido na fonte sobre rendimentos do trabalho, 13° salário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056109]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32], apenas se origem for
+            S-2299;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056110]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32], exceto se origem for
+            S-2299;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056112]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32], exceto se origem for
+            S-2299/S-2399;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056113]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32], apenas se origem for
+            S-2299/S-2399;<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [32].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrParcIsenta65"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrParcIsenta65">35
+        </td>
+        <td>vlrParcIsenta65</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à parcela isenta de proventos de aposentadoria, reserva remunerada, reforma e pensão de
+            beneficiário com 65 anos ou mais.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [70, 71].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [70];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [70, 71].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrParcIsenta65Dec"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrParcIsenta65Dec">36
+        </td>
+        <td>vlrParcIsenta65Dec</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à parcela isenta de proventos de aposentadoria, reserva remunerada, reforma e pensão de
+            beneficiário com 65 anos ou mais sobre o 13º salário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [71].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_vlrDiarias"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrDiarias">37
+        </td>
+        <td>vlrDiarias</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a diárias.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [72];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [72];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [72];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [72].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrAjudaCusto"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrAjudaCusto">38
+        </td>
+        <td>vlrAjudaCusto</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a ajuda de custo.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [73];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [73];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [73];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [73].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrIndResContrato"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrIndResContrato">39
+        </td>
+        <td>vlrIndResContrato</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a indenização e rescisão de contrato, inclusive a título de PDV e acidentes de trabalho.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [74];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [74];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [74];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [74].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_vlrAbonoPec"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrAbonoPec">40
+        </td>
+        <td>vlrAbonoPec</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao abono pecuniário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [75];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [75];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [75];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [75].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrRendMoleGrave"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrRendMoleGrave">41
+        </td>
+        <td>vlrRendMoleGrave</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento de beneficiário com moléstia grave ou acidente em serviço - remuneração mensal.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [76, 77].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [76];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [76, 77].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrRendMoleGrave13"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrRendMoleGrave13">42
+        </td>
+        <td>vlrRendMoleGrave13</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento de beneficiário com moléstia grave ou acidente em serviço - 13º salário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [77].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrAuxMoradia"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrAuxMoradia">43
+        </td>
+        <td>vlrAuxMoradia</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao auxílio moradia.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [700];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [700];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [700];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [700].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrBolsaMedico"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrBolsaMedico">44
+        </td>
+        <td>vlrBolsaMedico</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a bolsa médico residente.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [902], {indApurIR}
+            = [0], os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados e <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for
+            diferente de [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [702].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrBolsaMedico13"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrBolsaMedico13">45
+        </td>
+        <td>vlrBolsaMedico13</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a bolsa médico residente - 13º salário.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [902], {indApurIR}
+            = [0], os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados e <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for
+            diferente de [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo
+            <a href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [703].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurMen_vlrJurosMora"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrJurosMora">46
+        </td>
+        <td>vlrJurosMora</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo aos juros de mora recebidos, devidos pelo atraso no pagamento de remuneração por exercício de
+            emprego, cargo ou função.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [704].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [188901]: se <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não for informado, {indApurIR} = [0] e
+            {indRRA} = [S], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [704].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_vlrIsenOutros"
+            id="5002_ideTrabalhador_dmDev_totApurMen_vlrIsenOutros">47
+        </td>
+        <td>vlrIsenOutros</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo aos rendimentos isentos - outros.<br>
+            <strong>Validação:</strong> Deve ser agrupado conforme segue:<br>
+            a) Quando o evento de origem for S-1200, S-1202, S-2299, S-2399 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056107]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 401, 410,
+            501, 721, 722, 723, 761, 901, 902, 903, 904, 906], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 for diferente de
+            [22], efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056108]: se codCateg = [104], {indApurIR}
+            = [0] e os campos {indRRA} e <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem
+            informados, efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [056111]: se codCateg = [101, 102, 103,
+            105, 106, 107, 108, 111], {indApurIR} = [0], os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados e <a
+                    href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a> em S-1000 = [22], efetuar
+            o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79];<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [058806]: se codCateg = [201, 202, 701,
+            711, 712, 731, 734, 738, 741, 751, 771, 781], {indApurIR} = [0] e os campos {indRRA} e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79].<br>
+            <br>
+            b) Quando o evento de origem for S-1207 e respectivo S-1210:<br>
+            <a href="#5002_ideTrabalhador_dmDev_totApurMen_CRMen">CRMen</a> = [353301]: se {indApurIR} = [0] e os campos
+            <a href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> e {indRRA} não forem informados, efetuar o
+            somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_totApurMen_descRendimento"
+            id="5002_ideTrabalhador_dmDev_totApurMen_descRendimento">48
+        </td>
+        <td>descRendimento</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurMen">totApurMen</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Descrição do rendimento não tributável ou isento do IRRF.<br>
+            <strong>Origem:</strong> campo <a href="#1010_infoRubrica_inclusao_dadosRubrica_dscRubr">dscRubr</a> em
+            S-1010.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva para eventos S-1210 com <a
+                    href="#1210_ideEvento_perApur">perApur</a> posterior ou igual ao início da DIRF e se <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [79].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia"
+            id="5002_ideTrabalhador_dmDev_totApurDia">49
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-350</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Totalizador de rendimentos tributáveis e tributos com período de apuração diário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia_perApurDia"
+            id="5002_ideTrabalhador_dmDev_totApurDia_perApurDia">50
+        </td>
+        <td>perApurDia</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Período de apuração diário do Código de Receita - CR.<br>
+            <strong>Validação:</strong> Deve ser igual ao dia ("DD") da data informada em <a
+                    href="#5002_ideTrabalhador_dmDev_dtPgto">dtPgto</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia_CRDia"
+            id="5002_ideTrabalhador_dmDev_totApurDia_CRDia">51
+        </td>
+        <td>CRDia</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Código de Receita - CR relativo ao Imposto de Renda Retido na Fonte sobre rendimentos do trabalho pagos a
+            residente no exterior para fins fiscais.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>047301</strong> - IRRF - Residentes no exterior, para fins fiscais
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia_frmTribut"
+            id="5002_ideTrabalhador_dmDev_totApurDia_frmTribut">52
+        </td>
+        <td>frmTribut</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Forma de tributação, conforme opções disponíveis na <a href="tabelas.html#30">Tabela 30</a>.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia_paisResidExt"
+            id="5002_ideTrabalhador_dmDev_totApurDia_paisResidExt">53
+        </td>
+        <td>paisResidExt</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Código do país de residência para fins fiscais, quando no exterior, conforme <a href="tabelas.html#06">Tabela
+            06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia_vlrPagoDia"
+            id="5002_ideTrabalhador_dmDev_totApurDia_vlrPagoDia">54
+        </td>
+        <td>vlrPagoDia</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor pago a residente ou domiciliado no exterior.<br>
+            <strong>Evento de origem:</strong> S-1200, S-1202, S-1207, S-2299, S-2399 e respectivo S-1210.<br>
+            <strong>Validação:</strong> Efetuar o somatório de <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [11, 12, 14, 72, 73, 74, 75, 76,
+            77, 79, 700, 701, 702, 703, 704], se {indApurIR} = [0] e:<br>
+            a) <a href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> for diferente de [712] e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> for informado com qualquer valor;
+            ou<br>
+            b) <a href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [712] e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> for informado com valor diferente de
+            [586].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_totApurDia_vlrCRDia"
+            id="5002_ideTrabalhador_dmDev_totApurDia_vlrCRDia">55
+        </td>
+        <td>vlrCRDia</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_totApurDia">totApurDia</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao Imposto de Renda Retido na Fonte sobre rendimentos do trabalho pagos a residente, para
+            fins fiscais, no exterior.<br>
+            <strong>Evento de origem:</strong> S-1200, S-1202, S-1207, S-2299, S-2399 e respectivo S-1210.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).<br>
+            Efetuar o somatório de <a href="#5002_ideTrabalhador_dmDev_infoIR_valor">valor</a> cujo <a
+                    href="#5002_ideTrabalhador_dmDev_infoIR_tpInfoIR">tpInfoIR</a> = [31, 32, 34], se {indApurIR} = [0]
+            e:<br>
+            a) <a href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> for diferente de [712] e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> for informado com qualquer valor;
+            ou<br>
+            b) <a href="#5002_ideTrabalhador_dmDev_codCateg">codCateg</a> = [712] e <a
+                    href="#1210_ideBenef_infoPgto_paisResidExt">paisResidExt</a> for informado com valor diferente de
+            [586].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA"
+            id="5002_ideTrabalhador_dmDev_infoRRA">56
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares relativas a Rendimentos Recebidos Acumuladamente - RRA.<br>
+            <strong>Origem:</strong> Evento remuneratório (S-1200, S-1202, S-1207, S-2299 ou S-2399) relacionado no
+            evento S-1210 por <a href="#1210_ideBenef_infoPgto_tpPgto">tpPgto</a>, <a
+                    href="#1210_ideBenef_infoPgto_perRef">perRef</a> e <a href="#1210_ideBenef_infoPgto_ideDmDev">ideDmDev</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_tpProcRRA"
+            id="5002_ideTrabalhador_dmDev_infoRRA_tpProcRRA">57
+        </td>
+        <td>tpProcRRA</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_nrProcRRA"
+            id="5002_ideTrabalhador_dmDev_infoRRA_nrProcRRA">58
+        </td>
+        <td>nrProcRRA</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar o número do processo/requerimento administrativo/judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_descRRA"
+            id="5002_ideTrabalhador_dmDev_infoRRA_descRRA">59
+        </td>
+        <td>descRRA</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-50</td>
+        <td>-</td>
+        <td>Descrição dos Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_qtdMesesRRA"
+            id="5002_ideTrabalhador_dmDev_infoRRA_qtdMesesRRA">60
+        </td>
+        <td>qtdMesesRRA</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-4</td>
+        <td>1</td>
+        <td>Número de meses relativo aos Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_despProcJud"
+            id="5002_ideTrabalhador_dmDev_infoRRA_despProcJud">61
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das despesas com processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoRRA_despProcJud_vlrDespCustas"
+            id="5002_ideTrabalhador_dmDev_infoRRA_despProcJud_vlrDespCustas">62
+        </td>
+        <td>vlrDespCustas</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor das despesas com custas judiciais.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoRRA_despProcJud_vlrDespAdvogados"
+            id="5002_ideTrabalhador_dmDev_infoRRA_despProcJud_vlrDespAdvogados">63
+        </td>
+        <td>vlrDespAdvogados</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor total das despesas com advogado(s).</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_ideAdv"
+            id="5002_ideTrabalhador_dmDev_infoRRA_ideAdv">64
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA">infoRRA</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação dos advogados.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_ideAdv_tpInsc"
+            id="5002_ideTrabalhador_dmDev_infoRRA_ideAdv_tpInsc">65
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_ideAdv_nrInsc"
+            id="5002_ideTrabalhador_dmDev_infoRRA_ideAdv_nrInsc">66
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do advogado.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoRRA_ideAdv_vlrAdv"
+            id="5002_ideTrabalhador_dmDev_infoRRA_ideAdv_vlrAdv">67
+        </td>
+        <td>vlrAdv</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da despesa com o advogado, se houver.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoPgtoExt"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt">68
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt">infoPgtoExt</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares relativas a pagamentos a residente fiscal no exterior.<br>
+            <strong>Evento de origem:</strong> S-1210
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_paisResidExt"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_paisResidExt">69
+        </td>
+        <td>paisResidExt</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt">infoPgtoExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Código do país de residência para fins fiscais, quando no exterior, conforme <a href="tabelas.html#06">Tabela
+            06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoPgtoExt_indNIF"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_indNIF">70
+        </td>
+        <td>indNIF</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt">infoPgtoExt</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do Número de Identificação Fiscal (NIF).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Beneficiário com NIF<br>
+            <strong>2</strong> - Beneficiário dispensado do NIF<br>
+            <strong>3</strong> - País não exige NIF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoPgtoExt_nifBenef"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_nifBenef">71
+        </td>
+        <td>nifBenef</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt">infoPgtoExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Número de Identificação Fiscal (NIF).</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoPgtoExt_frmTribut"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_frmTribut">72
+        </td>
+        <td>frmTribut</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt">infoPgtoExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Forma de tributação, conforme opções disponíveis na <a href="tabelas.html#30">Tabela 30</a>.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">73
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt">infoPgtoExt</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço do beneficiário residente ou domiciliado no exterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endDscLograd"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endDscLograd">74
+        </td>
+        <td>endDscLograd</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-80</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endNrLograd"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endNrLograd">75
+        </td>
+        <td>endNrLograd</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endComplem"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endComplem">76
+        </td>
+        <td>endComplem</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endBairro"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endBairro">77
+        </td>
+        <td>endBairro</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-60</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endCidade"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endCidade">78
+        </td>
+        <td>endCidade</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-40</td>
+        <td>-</td>
+        <td>Nome da cidade.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endEstado"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endEstado">79
+        </td>
+        <td>endEstado</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-40</td>
+        <td>-</td>
+        <td>Nome da província/estado.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endCodPostal"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_endCodPostal">80
+        </td>
+        <td>endCodPostal</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-12</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_telef"
+            id="5002_ideTrabalhador_dmDev_infoPgtoExt_endExt_telef">81
+        </td>
+        <td>telef</td>
+        <td><a href="#r_5002_ideTrabalhador_dmDev_infoPgtoExt_endExt">endExt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>8-15</td>
+        <td>-</td>
+        <td>Número do telefone.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_totInfoIR"
+            id="5002_ideTrabalhador_totInfoIR">82
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR">totInfoIR</a></td>
+        <td><a href="#r_5002_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Totais dos rendimentos tributáveis, deduções e isenções para todos os demonstrativos.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_totInfoIR_consolidApurMen"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen">83
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR">totInfoIR</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-50</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Totalização dos rendimentos tributáveis, deduções e isenções com período de apuração mensal.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_CRMen"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_CRMen">84
+        </td>
+        <td>CRMen</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Código de Receita - CR relativo ao Imposto de Renda Retido na Fonte sobre rendimentos do trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>056107</strong> - IRRF mensal, 13° salário e férias sobre trabalho assalariado no país ou ausente no
+            exterior a serviço do país, exceto se contratado por empregador doméstico ou por segurado especial sujeito a
+            recolhimento unificado<br>
+            <strong>056108</strong> - IRRF mensal e férias - Empregado doméstico<br>
+            <strong>056109</strong> - IRRF 13° salário na rescisão de contrato de trabalho - Empregado doméstico<br>
+            <strong>056110</strong> - IRRF - Empregado doméstico 13º salário<br>
+            <strong>056111</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial<br>
+            <strong>056112</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial 13° salário<br>
+            <strong>056113</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial 13° salário rescisório<br>
+            <strong>058806</strong> - IRRF sobre rendimento do trabalho sem vínculo empregatício<br>
+            <strong>061001</strong> - IRRF sobre rendimentos relativos a prestação de serviços de transporte rodoviário
+            internacional de carga, pagos a transportador autônomo PF residente no Paraguai<br>
+            <strong>353301</strong> - Proventos de aposentadoria, reserva, reforma ou pensão pagos por previdência
+            pública<br>
+            <strong>356201</strong> - IRRF sobre participação dos trabalhadores em lucros ou resultados - PLR<br>
+            <strong>188901</strong> - Rendimentos Recebidos Acumuladamente - RRA
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendTrib"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendTrib">85
+        </td>
+        <td>vlrRendTrib</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento tributável mensal e férias.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrRendTrib">totApurMen/vlrRendTrib</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendTrib13"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendTrib13">86
+        </td>
+        <td>vlrRendTrib13</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento do 13º salário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrRendTrib13">totApurMen/vlrRendTrib13</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrPrevOficial"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrPrevOficial">87
+        </td>
+        <td>vlrPrevOficial</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à previdência oficial sobre rendimentos do trabalho, mensal e férias.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrPrevOficial">totApurMen/vlrPrevOficial</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrPrevOficial13"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrPrevOficial13">88
+        </td>
+        <td>vlrPrevOficial13</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à previdência oficial sobre o 13° salário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrPrevOficial13">totApurMen/vlrPrevOficial13</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrCRMen"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrCRMen">89
+        </td>
+        <td>vlrCRMen</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao imposto sobre a renda retido na fonte sobre rendimentos do trabalho, mensal e férias.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrCRMen">totApurMen/vlrCRMen</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrCR13Men"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrCR13Men">90
+        </td>
+        <td>vlrCR13Men</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao imposto sobre a renda retido na fonte sobre rendimentos do trabalho, 13° salário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrCR13Men">totApurMen/vlrCR13Men</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrParcIsenta65"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrParcIsenta65">91
+        </td>
+        <td>vlrParcIsenta65</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à parcela isenta de proventos de aposentadoria, reserva remunerada, reforma e pensão de
+            beneficiário com 65 anos ou mais.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrParcIsenta65">totApurMen/vlrParcIsenta65</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrParcIsenta65Dec"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrParcIsenta65Dec">92
+        </td>
+        <td>vlrParcIsenta65Dec</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à parcela isenta de proventos de aposentadoria, reserva remunerada, reforma e pensão de
+            beneficiário com 65 anos ou mais sobre o 13º salário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrParcIsenta65Dec">totApurMen/vlrParcIsenta65Dec</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrDiarias"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrDiarias">93
+        </td>
+        <td>vlrDiarias</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a diárias.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrDiarias">totApurMen/vlrDiarias</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrAjudaCusto"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrAjudaCusto">94
+        </td>
+        <td>vlrAjudaCusto</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a ajuda de custo.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrAjudaCusto">totApurMen/vlrAjudaCusto</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrIndResContrato"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrIndResContrato">95
+        </td>
+        <td>vlrIndResContrato</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a indenização e rescisão de contrato, inclusive a título de PDV e acidentes de trabalho.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrIndResContrato">totApurMen/vlrIndResContrato</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrAbonoPec"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrAbonoPec">96
+        </td>
+        <td>vlrAbonoPec</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao abono pecuniário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrAbonoPec">totApurMen/vlrAbonoPec</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendMoleGrave"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendMoleGrave">97
+        </td>
+        <td>vlrRendMoleGrave</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento de beneficiário com moléstia grave ou acidente em serviço - remuneração mensal.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrRendMoleGrave">totApurMen/vlrRendMoleGrave</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendMoleGrave13"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrRendMoleGrave13">98
+        </td>
+        <td>vlrRendMoleGrave13</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao rendimento de beneficiário com moléstia grave ou acidente em serviço - 13º salário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrRendMoleGrave13">totApurMen/vlrRendMoleGrave13</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrAuxMoradia"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrAuxMoradia">99
+        </td>
+        <td>vlrAuxMoradia</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo ao auxílio moradia.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrAuxMoradia">totApurMen/vlrAuxMoradia</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrBolsaMedico"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrBolsaMedico">100
+        </td>
+        <td>vlrBolsaMedico</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a bolsa médico residente, mensal.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrBolsaMedico">totApurMen/vlrBolsaMedico</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrBolsaMedico13"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrBolsaMedico13">101
+        </td>
+        <td>vlrBolsaMedico13</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a bolsa médico residente, 13º salário.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrBolsaMedico13">totApurMen/vlrBolsaMedico13</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrJurosMora"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrJurosMora">102
+        </td>
+        <td>vlrJurosMora</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo aos juros de mora recebidos, devidos pelo atraso no pagamento de remuneração por exercício de
+            emprego, cargo ou função.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrJurosMora">totApurMen/vlrJurosMora</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrIsenOutros"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_vlrIsenOutros">103
+        </td>
+        <td>vlrIsenOutros</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo aos rendimentos isentos - outros.<br>
+            <strong>Origem:</strong> valores consolidados do campo <a
+                    href="#5002_ideTrabalhador_dmDev_totApurMen_vlrIsenOutros">totApurMen/vlrIsenOutros</a>.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_totInfoIR_consolidApurMen_descRendimento"
+            id="5002_ideTrabalhador_totInfoIR_consolidApurMen_descRendimento">104
+        </td>
+        <td>descRendimento</td>
+        <td><a href="#r_5002_ideTrabalhador_totInfoIR_consolidApurMen">consolidApurMen</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Descrição do rendimento não tributável ou isento do IRRF.<br>
+            <strong>Origem:</strong> <a href="#5002_ideTrabalhador_dmDev_totApurMen_descRendimento">totApurMen/descRendimento</a>.
+            Concatenar os campos encontrados com separador ';' e truncar o conteúdo que ultrapassar o tamanho do campo.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem"
+            id="5002_ideTrabalhador_infoIRComplem">105
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td><a href="#r_5002_ideTrabalhador">ideTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-13</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares para a DIRF ou para a DAA, com a legislação aplicada ao imposto de renda.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_dtLaudo"
+            id="5002_ideTrabalhador_infoIRComplem_dtLaudo">106
+        </td>
+        <td>dtLaudo</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data da moléstia grave atribuída pelo laudo.<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoIRComplem_dtLaudo">dtLaudo</a> de S-1210.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_perAnt"
+            id="5002_ideTrabalhador_infoIRComplem_perAnt">107
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_perAnt">perAnt</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Identificação do evento S-1210 original e <a href="#1210_ideBenef_infoPgto_perRef">perRef</a> cujas
+            informações de <a href="#1210_ideBenef_infoIRComplem">infoIRComplem</a> serão alteradas.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_perAnt_perRefAjuste"
+            id="5002_ideTrabalhador_infoIRComplem_perAnt_perRefAjuste">108
+        </td>
+        <td>perRefAjuste</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_perAnt">perAnt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td><a href="#1210_ideEvento_perApur">perApur</a> do S-1210 cujo <a href="#1210_ideBenef_infoIRComplem">infoIRComplem</a>
+            será alterado.<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoIRComplem_perAnt_perRefAjuste">perRefAjuste</a>
+            de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_perAnt_nrRec1210Orig"
+            id="5002_ideTrabalhador_infoIRComplem_perAnt_nrRec1210Orig">109
+        </td>
+        <td>nrRec1210Orig</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_perAnt">perAnt</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Número do recibo do S-1210 original cujas informações de <a href="#1210_ideBenef_infoIRComplem">infoIRComplem</a>
+            serão alteradas.<br>
+            <strong>Origem:</strong> campo <a href="#1210_ideBenef_infoIRComplem_perAnt_nrRec1210Orig">nrRec1210Orig</a>
+            de S-1210.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep">110
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação dos dependentes.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep_cpfDep"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep_cpfDep">111
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>CPF do dependente.<br>
+            <strong>Origem:</strong> campo {cpfDep} de S-2200/S-2205/S-2300/S-2400/S-2405 ou <a
+                    href="#1210_ideBenef_infoIRComplem_infoDep_cpfDep">infoDep/cpfDep</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep_depIRRF"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep_depIRRF">112
+        </td>
+        <td>depIRRF</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Este campo somente é informado em caso de dependente do trabalhador para fins de dedução de seu rendimento
+            tributável pelo Imposto de Renda.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Origem:</strong> campo {depIRRF} de S-2200/S-2205/S-2300/S-2400/S-2405 ou <a
+                    href="#1210_ideBenef_infoIRComplem_infoDep_depIRRF">depIRRF</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep_dtNascto"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep_dtNascto">113
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de nascimento do dependente.<br>
+            <strong>Origem:</strong> campo {dependente/dtNascto} de S-2200/S-2205/S-2300/S-2400/S-2405 ou <a
+                    href="#1210_ideBenef_infoIRComplem_infoDep_dtNascto">dtNascto</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep_nome"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep_nome">114
+        </td>
+        <td>nome</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome do dependente.<br>
+            <strong>Origem:</strong> campo {nmDep} de S-2200/S-2205/S-2300/S-2400/S-2405 ou <a
+                    href="#1210_ideBenef_infoIRComplem_infoDep_nome">nome</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep_tpDep"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep_tpDep">115
+        </td>
+        <td>tpDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Relação de dependência.<br>
+            <strong>Origem:</strong> campo {tpDep} de S-2200/S-2205/S-2300/S-2400/S-2405 ou <a
+                    href="#1210_ideBenef_infoIRComplem_infoDep_tpDep">tpDep</a> de S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_ideDep_descrDep"
+            id="5002_ideTrabalhador_infoIRComplem_ideDep_descrDep">116
+        </td>
+        <td>descrDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_ideDep">ideDep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a descrição da dependência.<br>
+            <strong>Origem:</strong> campo {descrDep} de S-2200/S-2205/S-2300/S-2400/S-2405 ou <a
+                    href="#1210_ideBenef_infoIRComplem_infoDep_descrDep">descrDep</a> de S-1210.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_infoIRCR"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR">117
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR">infoIRCR</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de Imposto de Renda, por Código de Receita - CR.<br>
+            <strong>Evento de origem:</strong> S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_infoIRCR_tpCR"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_tpCR">118
+        </td>
+        <td>tpCR</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR">infoIRCR</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Código de Receita - CR relativo ao Imposto de Renda Retido na Fonte sobre rendimentos do trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>056107</strong> - IRRF mensal, 13° salário e férias sobre trabalho assalariado no país ou ausente no
+            exterior a serviço do país, exceto se contratado por empregador doméstico ou por segurado especial sujeito a
+            recolhimento unificado<br>
+            <strong>056108</strong> - IRRF mensal e férias - Empregado doméstico<br>
+            <strong>056109</strong> - IRRF 13° salário na rescisão de contrato de trabalho - Empregado doméstico<br>
+            <strong>056110</strong> - IRRF - Empregado doméstico 13º salário<br>
+            <strong>056111</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial<br>
+            <strong>056112</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial 13° salário<br>
+            <strong>056113</strong> - IRRF - Empregado/Trabalhador rural - Segurado especial 13° salário rescisório<br>
+            <strong>058806</strong> - IRRF sobre rendimento do trabalho sem vínculo empregatício<br>
+            <strong>061001</strong> - IRRF sobre rendimentos relativos a prestação de serviços de transporte rodoviário
+            internacional de carga, pagos a transportador autônomo PF residente no Paraguai<br>
+            <strong>353301</strong> - Proventos de aposentadoria, reserva, reforma ou pensão pagos por previdência
+            pública<br>
+            <strong>356201</strong> - IRRF sobre participação dos trabalhadores em lucros ou resultados - PLR<br>
+            <strong>188901</strong> - Rendimentos Recebidos Acumuladamente - RRA<br>
+            <strong>047301</strong> - IRRF - Residentes no exterior, para fins fiscais
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen">119
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen">dedDepen</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR">infoIRCR</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dedução do rendimento tributável relativa a dependentes.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen_tpRend"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen_tpRend">120
+        </td>
+        <td>tpRend</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen">dedDepen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de rendimento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>11</strong> - Remuneração mensal<br>
+            <strong>12</strong> - 13º salário<br>
+            <strong>13</strong> - Férias
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen_cpfDep"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen_cpfDep">121
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen">dedDepen</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do dependente no CPF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen_vlrDedDep"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen_vlrDedDep">122
+        </td>
+        <td>vlrDedDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_dedDepen">dedDepen</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor da dedução da base de cálculo.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim">123
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim">penAlim</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR">infoIRCR</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação dos beneficiários da pensão alimentícia.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim_tpRend"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim_tpRend">124
+        </td>
+        <td>tpRend</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim">penAlim</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de rendimento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>11</strong> - Remuneração mensal<br>
+            <strong>12</strong> - 13º salário<br>
+            <strong>13</strong> - Férias<br>
+            <strong>14</strong> - PLR<br>
+            <strong>18</strong> - RRA<br>
+            <strong>79</strong> - Rendimento isento ou não tributável
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim_cpfDep"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim_cpfDep">125
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim">penAlim</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número do CPF do dependente/beneficiário da pensão alimentícia.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim_vlrDedPenAlim"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim_vlrDedPenAlim">126
+        </td>
+        <td>vlrDedPenAlim</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_penAlim">penAlim</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à dedução do rendimento tributável correspondente a pagamento de pensão alimentícia.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">127
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR">infoIRCR</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas a planos de previdência complementar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_tpPrev"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_tpPrev">128
+        </td>
+        <td>tpPrev</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de previdência complementar.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Privada: <a href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em
+            S-1010 = [46, 47, 48]<br>
+            <strong>2</strong> - FAPI: <a href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a> em
+            S-1010 = [61, 62, 66]<br>
+            <strong>3</strong> - Funpresp: <a href="#1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">codIncIRRF</a>
+            em S-1010 = [63, 64, 65]
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_cnpjEntidPC"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_cnpjEntidPC">129
+        </td>
+        <td>cnpjEntidPC</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Número de inscrição da entidade de previdência complementar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrDedPC"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrDedPC">130
+        </td>
+        <td>vlrDedPC</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da dedução mensal relativa a previdência complementar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrDedPC13"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrDedPC13">131
+        </td>
+        <td>vlrDedPC13</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da dedução do 13º Salário relativa a previdência complementar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrPatrocFunp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrPatrocFunp">132
+        </td>
+        <td>vlrPatrocFunp</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição mensal do ente público patrocinador da Fundação de Previdência Complementar do
+            Servidor Público (Funpresp).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrPatrocFunp13"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl_vlrPatrocFunp13">133
+        </td>
+        <td>vlrPatrocFunp13</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_previdCompl">previdCompl</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição do 13º Salário do ente público patrocinador da Fundação de Previdência Complementar do
+            Servidor Público (Funpresp).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet">134
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet">infoProcRet</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR">infoIRCR</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-50</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de processos relacionados a não retenção de tributos ou a depósitos judiciais.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_tpProcRet"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_tpProcRet">135
+        </td>
+        <td>tpProcRet</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet">infoProcRet</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_nrProcRet"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_nrProcRet">136
+        </td>
+        <td>nrProcRet</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet">infoProcRet</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar o número do processo administrativo/judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_codSusp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_codSusp">137
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet">infoProcRet</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo contribuinte.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">138
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet">infoProcRet</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de valores relacionados a não retenção de tributos ou a depósitos judiciais.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_indApuracao"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_indApuracao">139
+        </td>
+        <td>indApuracao</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de período de apuração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Mensal<br>
+            <strong>2</strong> - Anual (13° salário)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrNRetido"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrNRetido">140
+        </td>
+        <td>vlrNRetido</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da retenção que deixou de ser efetuada em função de processo administrativo ou judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrDepJud"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrDepJud">141
+        </td>
+        <td>vlrDepJud</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor do depósito judicial em função de processo administrativo ou judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrCmpAnoCal"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrCmpAnoCal">142
+        </td>
+        <td>vlrCmpAnoCal</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da compensação relativa ao ano calendário em função de processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrCmpAnoAnt"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrCmpAnoAnt">143
+        </td>
+        <td>vlrCmpAnoAnt</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da compensação relativa a anos anteriores, em função de processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrRendSusp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_vlrRendSusp">144
+        </td>
+        <td>vlrRendSusp</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor do rendimento com exigibilidade suspensa.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">145
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">dedSusp</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores">infoValores</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-25</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das deduções com exigibilidade suspensa.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_indTpDeducao"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_indTpDeducao">146
+        </td>
+        <td>indTpDeducao</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">dedSusp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do tipo de dedução.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Previdência oficial<br>
+            <strong>2</strong> - Previdência privada<br>
+            <strong>3</strong> - Fundo de Aposentadoria Programada Individual - FAPI<br>
+            <strong>4</strong> - Fundação de Previdência Complementar do Servidor Público - Funpresp<br>
+            <strong>5</strong> - Pensão alimentícia<br>
+            <strong>7</strong> - Dependentes
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_vlrDedSusp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_vlrDedSusp">147
+        </td>
+        <td>vlrDedSusp</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">dedSusp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da dedução da base de cálculo do imposto de renda com exigibilidade suspensa.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_cnpjEntidPC"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_cnpjEntidPC">148
+        </td>
+        <td>cnpjEntidPC</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">dedSusp</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Número de inscrição da entidade de previdência complementar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_vlrPatrocFunp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_vlrPatrocFunp">149
+        </td>
+        <td>vlrPatrocFunp</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">dedSusp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da contribuição do ente público patrocinador da Fundação de Previdência Complementar do Servidor
+            Público (Funpresp).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen">150
+        </td>
+        <td>
+            <a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen">benefPen</a>
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp">dedSusp</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação das deduções suspensas por dependentes e beneficiários da pensão alimentícia.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen_cpfDep"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen_cpfDep">151
+        </td>
+        <td>cpfDep</td>
+        <td>
+            <a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen">benefPen</a>
+        </td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen_vlrDepenSusp"
+            id="5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen_vlrDepenSusp">152
+        </td>
+        <td>vlrDepenSusp</td>
+        <td>
+            <a href="#r_5002_ideTrabalhador_infoIRComplem_infoIRCR_infoProcRet_infoValores_dedSusp_benefPen">benefPen</a>
+        </td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da dedução relativa a dependentes ou a pensão alimentícia com exigibilidade suspensa.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_planSaude"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude">153
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude">planSaude</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Plano de saúde coletivo.<br>
+            Identificação da(s) operadora(s) de plano privado coletivo empresarial de assistência à saúde.<br>
+            <strong>Evento de origem:</strong> S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_planSaude_cnpjOper"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude_cnpjOper">154
+        </td>
+        <td>cnpjOper</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude">planSaude</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o número do CNPJ da operadora de plano privado coletivo empresarial de assistência à saúde.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_planSaude_regANS"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude_regANS">155
+        </td>
+        <td>regANS</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude">planSaude</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Registro na Agência Nacional de Saúde - ANS.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_planSaude_vlrSaudeTit"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude_vlrSaudeTit">156
+        </td>
+        <td>vlrSaudeTit</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude">planSaude</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo à dedução do rendimento tributável correspondente a pagamento a plano de saúde do titular.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau">157
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau">infoDepSau</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude">planSaude</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de dependente de plano de saúde coletivo empresarial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau_cpfDep"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau_cpfDep">158
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau">infoDepSau</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF do dependente do plano de saúde.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau_vlrSaudeDep"
+            id="5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau_vlrSaudeDep">159
+        </td>
+        <td>vlrSaudeDep</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_planSaude_infoDepSau">infoDepSau</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do
+            dependente.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5002_ideTrabalhador_infoIRComplem_infoReembMed"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed">160
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed">infoReembMed</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem">infoIRComplem</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Informações relativas a reembolsos efetuados no período de apuração (<a href="#1210_ideEvento_perApur">perApur</a>)
+            pelo empregador ao trabalhador referente a despesas médicas ou odontológicas pagas pelo trabalhador a
+            prestadores de serviços de saúde.<br>
+            <strong>Evento de origem:</strong> S-1210.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_indOrgReemb"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_indOrgReemb">161
+        </td>
+        <td>indOrgReemb</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed">infoReembMed</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo da origem do reembolso.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Reembolso efetuado pelo empregador no âmbito do plano de saúde (a operadora reembolsa o
+            empregador)<br>
+            <strong>2</strong> - Reembolso efetuado pelo empregador como benefício do próprio empregador
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_cnpjOper"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_cnpjOper">162
+        </td>
+        <td>cnpjOper</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed">infoReembMed</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>CNPJ da operadora do plano de saúde.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_regANS"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_regANS">163
+        </td>
+        <td>regANS</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed">infoReembMed</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Registro na Agência Nacional de Saúde - ANS.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit">164
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit">detReembTit</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed">infoReembMed</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação de reembolso do titular do plano de saúde.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_tpInsc"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_tpInsc">165
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit">detReembTit</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar o código correspondente ao tipo de inscrição do prestador de serviços.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_nrInsc"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_nrInsc">166
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit">detReembTit</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do prestador de serviços de assistência médica, de acordo com o tipo de
+            inscrição indicado em <a
+                    href="#5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_tpInsc">tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_vlrReemb"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_vlrReemb">167
+        </td>
+        <td>vlrReemb</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit">detReembTit</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor do reembolso relativo ao ano do período indicado em <a href="#1210_ideEvento_perApur">perApur</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_vlrReembAnt"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit_vlrReembAnt">168
+        </td>
+        <td>vlrReembAnt</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_detReembTit">detReembTit</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor do reembolso relativo a anos anteriores.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep">169
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep">infoReembDep</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed">infoReembMed</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação de reembolso do dependente do plano de saúde.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep_cpfBenef"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep_cpfBenef">170
+        </td>
+        <td>cpfBenef</td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep">infoReembDep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF do dependente.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep_detReembDep"
+            id="5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep_detReembDep">171
+        </td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep_detReembDep">detReembDep</a></td>
+        <td><a href="#r_5002_ideTrabalhador_infoIRComplem_infoReembMed_infoReembDep">infoReembDep</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td> Detalhamento dos reembolsos efetuados em <a href="#1210_ideEvento_perApur">perApur</a> pelo empregador ao
+            trabalhador referente a despesas médicas ou odontológicas pagas pelo trabalhador a prestadores de serviços
+            de saúde relativo a despesas de seus dependentes.
+        </td>
+    </tr>
+    </tbody>
+</table>

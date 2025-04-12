@@ -1,0 +1,127 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr {
+        page-break-inside: avoid;
+        page-break-after: auto
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto;
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 0.5px solid #000000;
+        text-align: left;
+        font-size: 10px;
+        padding: 5px;
+      }
+
+      table td div {
+        overflow:visible;
+      }
+
+      table tr th {
+        font-weight: 400;
+        text-align: center;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      .col-1 {
+        width: 400px;
+        text-align: center;
+      }
+      .color-1 {
+        background-color: #c4c0c0;
+        text-align: center;
+      }
+      .color-2 {
+        background-color: #f37d7d;;
+        text-align: center;
+      }
+      .title{
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+
+    {% include 'portrait/header/header.html' %}
+
+
+    <section style="margin-top:50px;margin-bottom:20px; margin-right:5px;clear: both;">
+          <div>
+              <div>
+                  <table>
+                      <tbody>
+                          <tr class="color-1" colspan="5">
+                              <th><b> Matricula </b></th>
+                              <th><b> Nome</b></th>
+                              <th><b> CPF </b></th>
+                              <th><b> Data Nascimento </b></th>
+                              <th><b> Categoria Funcional </b></th>
+                              <th style="width: 40%;"><b> ATO </b></th>
+                              <th><b> Proventos Integrais </b></th>
+                              <th><b> Paridade </b></th>
+                          </tr>
+                          {% for mov in data %}
+                              <tr>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.matricula }}</div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.nome }}</div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.cpf }}</div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.dt_nascimento }}</div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.categoria_funcional }}</div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div> 
+                                          {% autoescape off %}
+                                              {{ mov.ato|default:"" }}
+                                          {% endautoescape %}
+                                      </div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.proventos_integrais }}</div>
+                                  </td>
+                                  <td class="col-1 ">
+                                      <div>{{ mov.paridade }}</div>
+                                  </td>
+                              </tr>
+                          {% endfor %}
+                      </tbody>
+                  </table>
+              </div>
+        </section>
+    </body>
+</html>

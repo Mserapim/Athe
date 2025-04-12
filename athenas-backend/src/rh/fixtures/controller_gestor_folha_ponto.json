@@ -1,0 +1,17 @@
+[
+  {
+    "model": "engine.controller",
+    "pk": 817,
+    "fields": {
+        "icon": "athenas-0773",
+        "title": "Gestor de Envio de Folha Ponto",
+        "controller": "RHGestorEnvioPontos",
+        "application": 55,
+        "active": true,
+        "module": "rh",
+        "uuid": "b1c8099a12714342b3d17f6f4568f4ce",
+        "icon_file": null,
+        "position": 9999
+    }
+  }
+]

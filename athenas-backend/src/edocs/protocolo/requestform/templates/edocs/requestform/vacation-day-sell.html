@@ -1,0 +1,41 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+{% if employee.is_membro %}
+{% include "edocs/requestform/vacation-day-sell-member.html" %}
+{% else %}
+{% include "edocs/requestform/vacation-day-sell-employee.html" %}
+{% endif %}
+
+<div style="border-top: 1px solid #333; padding: 0.5rem">
+    <h2>Resumo das férias não usufruídas</h2>
+    {% for row in pas %}
+    <div>
+        <p class="rf-abnt-text" style="text-indent: 10mm">
+            Período <b>{{ row.periodo_aquisitivo }}</b> restam <b>{{ row.dias_ausufruir }}</b> dia(s) com fim de aquisição em {{ row.data_fim_aquisicao }}
+
+        </p>
+    </div>
+    {% empty %}
+    <div>
+        <p class="rf-abnt-text" style="text-indent: 10mm">
+            Nenhum período aquisitivo com dias não fruidos.
+        </p>
+    </div>
+    {% endfor %}
+
+    <p class="rf-spacing">
+        Estas informaçṍes foram extraidas do sistema de gestão de ferias, para simples conferência.
+    </p>
+</div>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

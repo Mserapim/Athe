@@ -1,0 +1,43 @@
+<table border="0" cellborder="0" cellspacing="0" color="#000000">
+  <tr>
+    <td align="center" colspan="2"><b><font point-size="12">{{ destination }} </font></b></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">De:</font></b></td>
+    <td align="left"><font point-size="10">{{ instance.servidor_origem.user }} / {% if instance.lotacao_origem.sigla %}{{ instance.lotacao_origem.sigla }}{% else %}{{ instance.lotacao_origem }}{% endif %} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Para:</font></b></td>
+    <td align="left"><font point-size="10">{{ destination }} </font></td>
+  </tr>
+  <tr>
+    <td align="right"><b><font point-size="10">Recebido por:</font></b></td>
+    <td align="left"><font point-size="10">{% if instance.servidor_destino %}{{ instance.servidor_destino.user }}{% else %}?{% endif %} / {% if instance.lotacao_destino %}{% if instance.lotacao_destino.sigla %}{{ instance.lotacao_destino.sigla }}{% else %}{{ instance.lotacao_destino }}{% endif %}{% else %}?{% endif %} </font></td>
+  </tr>
+  {% if detailed %}
+    <tr>
+      <td align="right"><b><font point-size="10">Recebido em:</font></b></td>
+      <td align="left"><font point-size="10">{{ instance.data_recebimento|date:'d \d\e F \d\e Y, G:i:s'|default:'' }} </font></td>
+    </tr>
+    <tr>
+      <td align="right"><b><font point-size="10">Chegou em:</font></b></td>
+      <td align="left"><font point-size="10">{{ instance.data_encaminhamento|date:'d \d\e F \d\e Y, G:i:s'|default:'' }} </font></td>
+    </tr>
+    <tr>
+      <td align="right"><b><font point-size="10">Encaminhado:</font></b></td>
+      <td align="left"><font point-size="10">{% if instance.encaminhado %}Sim{% else %}Não{% endif %} </font></td>
+    </tr>
+    <tr>
+      <td align="right"><b><font point-size="10">Finalizado em:</font></b></td>
+      <td align="left"><font point-size="10">{{ instance.data_finalizado|date:'d \d\e F \d\e Y, G:i:s'|default:'' }} </font></td>
+    </tr>
+    <tr>
+      <td align="right"><b><font point-size="10">Reaberto em:</font></b></td>
+      <td align="left"><font point-size="10">{{ instance.reopen_at|date:'d \d\e F \d\e Y, G:i:s'|default:'' }} </font></td>
+    </tr>
+    <tr>
+      <td align="right"><b><font point-size="10">Reaberto por:</font></b></td>
+      <td align="left"><font point-size="10">{{ instance.reopen_by|default:'' }} </font></td>
+    </tr>
+  {% endif %}
+</table>

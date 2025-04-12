@@ -1,0 +1,16 @@
+[
+{
+    "model": "services.scheduledservices",
+    "pk": 65,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-01-26T15:31:15.202",
+        "modified_at": "2024-01-26T15:31:15.202",
+        "name": "Importa\u00e7\u00e3o Folha Ponto - Batidas",
+        "command": "importar_batidas",
+        "description": "Importa\u00e7\u00e3o Folha Ponto - Batidas",
+        "classcode": 410
+    }
+}
+]

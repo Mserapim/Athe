@@ -1,0 +1,54 @@
+[{
+        "model": "engine.application",
+        "fields": {
+            "icon": "athenas-0036.png",
+            "title": "Identidade Funcional",
+            "active": true,
+            "father": ["7180066e807d41268f1950a4a0f7092a"],
+            "uuid": "f3758ba2504f491bae9306adfcfae2f2",
+            "layer": 2
+        }
+    },
+    {
+        "model": "engine.controller",
+        "fields": {
+            "icon": "athenas-0389.png",
+            "title": "Configurações",
+            "controller": "FIdFunctionalIdConfiguration",
+            "application": [
+                "f3758ba2504f491bae9306adfcfae2f2"
+            ],
+            "active": true,
+            "module": "common.functional_id",
+            "uuid": "0c8ea8282c524ea7a613ec6226d96456"
+        }
+    },
+    {
+        "model": "engine.controller",
+        "fields": {
+            "icon": "athenas-0819.png",
+            "title": "Gestor de Carteira Funcional",
+            "controller": "FIdFunctionalId",
+            "application": [
+                "f3758ba2504f491bae9306adfcfae2f2"
+            ],
+            "active": true,
+            "module": "common.functional_id",
+            "uuid": "c1c84ca0ce08429fb45243c247f9bf8a"
+        }
+    },
+    {
+        "model": "engine.controller",
+        "fields": {
+            "icon": "athenas-0253.png",
+            "title": "Pendências de Emissão",
+            "controller": "FIdFunctionalIdPendentSign",
+            "application": [
+                "f3758ba2504f491bae9306adfcfae2f2"
+            ],
+            "active": true,
+            "module": "common.functional_id",
+            "uuid": "9723effc48c34312a00a80bbb0a6b873"
+        }
+    }
+]

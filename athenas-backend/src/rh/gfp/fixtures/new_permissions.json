@@ -1,0 +1,46 @@
+[
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add remunerationrelationship",
+        "content_type": [
+            "gfp",
+            "remunerationrelationship"
+        ],
+        "codename": "add_remunerationrelationship"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change remunerationrelationship",
+        "content_type": [
+            "gfp",
+            "remunerationrelationship"
+        ],
+        "codename": "change_remunerationrelationship"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete remunerationrelationship",
+        "content_type": [
+            "gfp",
+            "remunerationrelationship"
+        ],
+        "codename": "delete_remunerationrelationship"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view remunerationrelationship",
+        "content_type": [
+            "gfp",
+            "remunerationrelationship"
+        ],
+        "codename": "view_remunerationrelationship"
+    }
+}
+]

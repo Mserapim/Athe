@@ -1,0 +1,79 @@
+{% load judicialfilters %}
+{% load internal_security_filters %}
+<div class="papper">
+    <div>{% include "internal_security/header.html" %}</div>
+
+    <div class="papper-content">
+        {% if incident %}
+        <div class="field">
+            <div>
+                <div class="label">Reportado por :</div>
+                <div class="attention">{{ employee_reported.pessoa_fisica.nome }}</div>
+            </div>
+
+            <div>
+                <div class="label">Reportado em :</div>
+                <div class="value">{{ incident.reported_at|date:"d/m/Y H:m:i" }}</div>
+            </div>
+
+            <div>
+                <div class="label">Locais de Trabalho:</div>
+                <ul class='disc attention'>
+                    {% for wl in work_locations %}
+                        <li>
+                            {{ wl.nome }} - {{ wl.localidade }}
+                                {% if wl.phone.exists %}
+                                    <ul class="circle">
+                                        {% for phone in wl.phone.all %}
+                                            <li>{{ phone.numero }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <ul class="circle">
+                                        <li>Telefone não definido</li>
+                                    </ul>
+                                {% endif %}
+                            {% if not forloop.last %}
+                                <hr style="border: 2px dotted #999;" />
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <br>
+            {% if employee_received %}
+                <div class="column-two">
+                    <div class="label">Recebido por :</div>
+                    <div class="value">{{ employee_received.pessoa_fisica.nome }}</div>
+                </div>
+
+                <div>
+                    <div class="label">Recebido em :</div>
+                    <div class="value">{{ incident.received_at|date:"d/m/Y H:m:i" }}</div>
+                </div>
+            {% endif %}
+            {% if employee_closed %}
+              <div class="column-two">
+                  <div class="label">Finalizado por :</div>
+                  <div class="value">{{ employee_closed.pessoa_fisica.nome }}</div>
+              </div>
+
+              <div>
+                  <div class="label">Finalizado em :</div>
+                  <div class="value">{{ incident.closed_at|date:"d/m/Y" }}</div>
+              </div>
+            {% endif %}
+        </div>
+        {% if incident.content %}
+          <div>
+              <h3>Observação</h3>
+              {{ incident.content | safely }}
+          </div>
+        {% endif %}
+    {% else %}
+        <div class="field">
+            <strong>{{ text }}</strong>
+        </div>
+    {% endif %}
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.functional-id-preview section {
+  margin: 10px 0;
+  /* row */
+}
+.functional-id-preview section div.flex-end {
+  justify-content: flex-end;
+}
+.functional-id-preview section div.revoked {
+  border: 2px solid red;
+  color: red;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  flex: none;
+}
+.functional-id-preview section div.working-in-progress {
+  border: 2px solid red;
+  color: red;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  flex: none;
+}
+.functional-id-preview section > div {
+  display: flex;
+  padding: 5px 0;
+  /* column */
+}
+.functional-id-preview section > div > div {
+  border: 1px solid #ccc;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 3px;
+  flex: 1;
+}
+.functional-id-preview section > div > div > span {
+  display: block;
+  padding: 3px;
+}
+.functional-id-preview section > div > div > span:first-child {
+  color: #aaa;
+  font-size: 0.8em;
+}
+.functional-id-preview section .image-grid > div:first-child {
+  width: 160px;
+  height: 214px;
+  flex: none;
+}

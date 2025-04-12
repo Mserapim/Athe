@@ -1,0 +1,39 @@
+/*
+    As classes aqui definidas são prefixadas com as iniciais do app
+    document_access (da) para evitar colisão com nomes de outras classes.
+*/
+
+.da-text-center {
+    text-align: center;
+}
+
+.da-table {
+    width: 100%;
+    border-collapse: collapse;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.da-cell {
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-style: dotted;
+    border-color: black;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.da-column-title {
+    width: 170px;
+    font-weight: bold;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.da-secret {
+    color: red;
+    font-weight: bold;
+}

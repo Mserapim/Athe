@@ -1,0 +1,2809 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_eSocial" id="2200_eSocial">1</td>
+        <td><a href="#r_2200_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200" id="2200">2</td>
+        <td><a href="#r_2200">evtAdmissao</a></td>
+        <td><a href="#r_2200_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Cadastramento Inicial do Vínculo e Admissão/Ingresso de Trabalhador.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ADMISSAO_POSTERIOR_INICIO_ATIVIDADES">REGRA_ADMISSAO_POSTERIOR_INICIO_ATIVIDADES</a><br>
+            <a href="#REGRA_ADMISSAO_VALIDA_DT_ADM">REGRA_ADMISSAO_VALIDA_DT_ADM</a><br>
+            <a href="#REGRA_ADMISSAO_VALIDA_DURACAO_CONTRATO">REGRA_ADMISSAO_VALIDA_DURACAO_CONTRATO</a><br>
+            <a href="#REGRA_ANOTACAO_JUDICIAL">REGRA_ANOTACAO_JUDICIAL</a><br>
+            <a href="#REGRA_BLOQUEIA_USO_CPF_EMPREGADOR">REGRA_BLOQUEIA_USO_CPF_EMPREGADOR</a><br>
+            <a href="#REGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB">REGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB</a><br>
+            <a href="#REGRA_COMPATIB_CATEG_EVENTO">REGRA_COMPATIB_CATEG_EVENTO</a><br>
+            <a href="#REGRA_EMPREGADO_DOMESTICO">REGRA_EMPREGADO_DOMESTICO</a><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVETRAB_VALIDA_OPCAO_FGTS">REGRA_EVETRAB_VALIDA_OPCAO_FGTS</a><br>
+            <a href="#REGRA_EXCLUSAO_ADMISSAO_TSVE_INICIO">REGRA_EXCLUSAO_ADMISSAO_TSVE_INICIO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXTEMP_DOMESTICO">REGRA_EXTEMP_DOMESTICO</a><br>
+            <a href="#REGRA_EXTEMP_REINTEGRACAO">REGRA_EXTEMP_REINTEGRACAO</a><br>
+            <a href="#REGRA_GERAL_VALIDA_DADOS_TABCONTRIB">REGRA_GERAL_VALIDA_DADOS_TABCONTRIB</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_MUDANCA_CPF">REGRA_MUDANCA_CPF</a><br>
+            <a href="#REGRA_REGISTRO_PRELIMINAR">REGRA_REGISTRO_PRELIMINAR</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_VINCULO">REGRA_RETIFICA_MESMO_VINCULO</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a><br>
+            <a href="#REGRA_VALIDA_MATRICULA">REGRA_VALIDA_MATRICULA</a><br>
+            <a href="#REGRA_VALIDA_TRABALHADOR_BASE_CPF">REGRA_VALIDA_TRABALHADOR_BASE_CPF</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_Id" id="2200_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2200">evtAdmissao</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEvento" id="2200_ideEvento">4</td>
+        <td><a href="#r_2200_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2200">evtAdmissao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEvento_indRetif"
+            id="2200_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEvento_nrRecibo"
+            id="2200_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2200_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEvento_tpAmb" id="2200_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEvento_procEmi"
+            id="2200_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>9</strong> - Aplicativo governamental - Integração com a Junta Comercial<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEvento_verProc"
+            id="2200_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2200_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEmpregador" id="2200_ideEmpregador">10
+        </td>
+        <td><a href="#r_2200_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2200">evtAdmissao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEmpregador_tpInsc"
+            id="2200_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2200_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_ideEmpregador_nrInsc"
+            id="2200_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2200_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2200_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador" id="2200_trabalhador">13</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td><a href="#r_2200">evtAdmissao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações pessoais do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_cpfTrab"
+            id="2200_trabalhador_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_nmTrab"
+            id="2200_trabalhador_nmTrab">15
+        </td>
+        <td>nmTrab</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Informar o nome do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_sexo" id="2200_trabalhador_sexo">
+            16
+        </td>
+        <td>sexo</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_racaCor"
+            id="2200_trabalhador_racaCor">17
+        </td>
+        <td>racaCor</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Etnia e raça do trabalhador, conforme sua autoclassificação (art. 39, § 8º, da Lei 12.288/2010).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Branca<br>
+            <strong>2</strong> - Preta<br>
+            <strong>3</strong> - Parda<br>
+            <strong>4</strong> - Amarela<br>
+            <strong>5</strong> - Indígena<br>
+            <strong>6</strong> - Não informado<br>
+            <strong>Validação:</strong> Se <a href="#2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm">dtAdm</a>, <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_dtExercicio">dtExercicio</a>, <a
+                    href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a> ou <a
+                    href="#2200_vinculo_transfDom_dtTransf">transfDom/dtTransf</a> (maior data entre elas) for igual ou
+            posterior a [2024-04-22], não pode ser informado o valor [6].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_estCiv"
+            id="2200_trabalhador_estCiv">18
+        </td>
+        <td>estCiv</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Estado civil do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Solteiro<br>
+            <strong>2</strong> - Casado<br>
+            <strong>3</strong> - Divorciado<br>
+            <strong>4</strong> - Separado<br>
+            <strong>5</strong> - Viúvo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_grauInstr"
+            id="2200_trabalhador_grauInstr">19
+        </td>
+        <td>grauInstr</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Grau de instrução do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>01</strong> - Analfabeto, inclusive o que, embora tenha recebido instrução, não se alfabetizou<br>
+            <strong>02</strong> - Até o 5º ano incompleto do ensino fundamental (antiga 4ª série) ou que se tenha
+            alfabetizado sem ter frequentado escola regular<br>
+            <strong>03</strong> - 5º ano completo do ensino fundamental<br>
+            <strong>04</strong> - Do 6º ao 9º ano do ensino fundamental incompleto (antiga 5ª a 8ª série)<br>
+            <strong>05</strong> - Ensino fundamental completo<br>
+            <strong>06</strong> - Ensino médio incompleto<br>
+            <strong>07</strong> - Ensino médio completo<br>
+            <strong>08</strong> - Educação superior incompleta<br>
+            <strong>09</strong> - Educação superior completa<br>
+            <strong>10</strong> - Pós-graduação completa<br>
+            <strong>11</strong> - Mestrado completo<br>
+            <strong>12</strong> - Doutorado completo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_nmSoc"
+            id="2200_trabalhador_nmSoc">20
+        </td>
+        <td>nmSoc</td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome social para travesti ou transexual.<br>
+            <strong>Validação:</strong> Informação validada na base de dados do CPF.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_nascimento"
+            id="2200_trabalhador_nascimento">21
+        </td>
+        <td><a href="#r_2200_trabalhador_nascimento">nascimento</a></td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do nascimento do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_nascimento_dtNascto"
+            id="2200_trabalhador_nascimento_dtNascto">22
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2200_trabalhador_nascimento">nascimento</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_nascimento_paisNascto"
+            id="2200_trabalhador_nascimento_paisNascto">23
+        </td>
+        <td>paisNascto</td>
+        <td><a href="#r_2200_trabalhador_nascimento">nascimento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país de nascimento do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_nascimento_paisNac"
+            id="2200_trabalhador_nascimento_paisNac">24
+        </td>
+        <td>paisNac</td>
+        <td><a href="#r_2200_trabalhador_nascimento">nascimento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país de nacionalidade do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco"
+            id="2200_trabalhador_endereco">25
+        </td>
+        <td><a href="#r_2200_trabalhador_endereco">endereco</a></td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do endereço do trabalhador.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil"
+            id="2200_trabalhador_endereco_brasil">26
+        </td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td><a href="#r_2200_trabalhador_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no Brasil.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_tpLograd"
+            id="2200_trabalhador_endereco_brasil_tpLograd">27
+        </td>
+        <td>tpLograd</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Tipo de logradouro.<br>
+            <strong>Validação:</strong> Se informado, deve ser um código válido e existente na <a
+                    href="tabelas.html#20">Tabela 20</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_dscLograd"
+            id="2200_trabalhador_endereco_brasil_dscLograd">28
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_nrLograd"
+            id="2200_trabalhador_endereco_brasil_nrLograd">29
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_complemento"
+            id="2200_trabalhador_endereco_brasil_complemento">30
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_bairro"
+            id="2200_trabalhador_endereco_brasil_bairro">31
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_cep"
+            id="2200_trabalhador_endereco_brasil_cep">32
+        </td>
+        <td>cep</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal - CEP.<br>
+            <strong>Validação:</strong> Deve ser preenchido apenas com números, com 8 (oito) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_codMunic"
+            id="2200_trabalhador_endereco_brasil_codMunic">33
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_brasil_uf"
+            id="2200_trabalhador_endereco_brasil_uf">34
+        </td>
+        <td>uf</td>
+        <td><a href="#r_2200_trabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior"
+            id="2200_trabalhador_endereco_exterior">35
+        </td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td><a href="#r_2200_trabalhador_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no exterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_paisResid"
+            id="2200_trabalhador_endereco_exterior_paisResid">36
+        </td>
+        <td>paisResid</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_dscLograd"
+            id="2200_trabalhador_endereco_exterior_dscLograd">37
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_nrLograd"
+            id="2200_trabalhador_endereco_exterior_nrLograd">38
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_complemento"
+            id="2200_trabalhador_endereco_exterior_complemento">39
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_bairro"
+            id="2200_trabalhador_endereco_exterior_bairro">40
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_nmCid"
+            id="2200_trabalhador_endereco_exterior_nmCid">41
+        </td>
+        <td>nmCid</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-50</td>
+        <td>-</td>
+        <td>Nome da cidade.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_endereco_exterior_codPostal"
+            id="2200_trabalhador_endereco_exterior_codPostal">42
+        </td>
+        <td>codPostal</td>
+        <td><a href="#r_2200_trabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4-12</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_trabImig"
+            id="2200_trabalhador_trabImig">43
+        </td>
+        <td><a href="#r_2200_trabalhador_trabImig">trabImig</a></td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do trabalhador imigrante.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_trabImig_tmpResid"
+            id="2200_trabalhador_trabImig_tmpResid">44
+        </td>
+        <td>tmpResid</td>
+        <td><a href="#r_2200_trabalhador_trabImig">trabImig</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tempo de residência do trabalhador imigrante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Prazo indeterminado<br>
+            <strong>2</strong> - Prazo determinado<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se (<a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm">dtAdm</a> ou <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_dtExercicio">dtExercicio</a>) &gt;= [2021-07-19].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_trabImig_condIng"
+            id="2200_trabalhador_trabImig_condIng">45
+        </td>
+        <td>condIng</td>
+        <td><a href="#r_2200_trabalhador_trabImig">trabImig</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Condição de ingresso do trabalhador imigrante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Refugiado<br>
+            <strong>2</strong> - Solicitante de refúgio<br>
+            <strong>3</strong> - Permanência no Brasil em razão de reunião familiar<br>
+            <strong>4</strong> - Beneficiado pelo acordo entre países do Mercosul<br>
+            <strong>5</strong> - Dependente de agente diplomático e/ou consular de países que mantêm acordo de
+            reciprocidade para o exercício de atividade remunerada no Brasil<br>
+            <strong>6</strong> - Beneficiado pelo Tratado de Amizade, Cooperação e Consulta entre a República Federativa
+            do Brasil e a República Portuguesa<br>
+            <strong>7</strong> - Outra condição<br>
+            <strong>Validação:</strong> Se <a href="#2200_trabalhador_trabImig_tmpResid">tmpResid</a> = [1], não pode
+            ser informado [2, 5]. Se <a href="#2200_trabalhador_trabImig_tmpResid">tmpResid</a> = [2], não pode ser
+            informado [1].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia"
+            id="2200_trabalhador_infoDeficiencia">46
+        </td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Pessoa com deficiência.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_defFisica"
+            id="2200_trabalhador_infoDeficiencia_defFisica">47
+        </td>
+        <td>defFisica</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência física.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_defVisual"
+            id="2200_trabalhador_infoDeficiencia_defVisual">48
+        </td>
+        <td>defVisual</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência visual.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_defAuditiva"
+            id="2200_trabalhador_infoDeficiencia_defAuditiva">49
+        </td>
+        <td>defAuditiva</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência auditiva.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_defMental"
+            id="2200_trabalhador_infoDeficiencia_defMental">50
+        </td>
+        <td>defMental</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência mental.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_defIntelectual"
+            id="2200_trabalhador_infoDeficiencia_defIntelectual">51
+        </td>
+        <td>defIntelectual</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência intelectual.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_reabReadap"
+            id="2200_trabalhador_infoDeficiencia_reabReadap">52
+        </td>
+        <td>reabReadap</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o trabalhador é reabilitado (empregado) ou readaptado (servidor público/militar).<br>
+            Reabilitado: estando o empregado incapacitado parcial ou totalmente para o trabalho, cumpriu programa de
+            reabilitação profissional no INSS, recebendo certificado e sendo proporcionados os meios indicados para
+            participar do mercado de trabalho.<br>
+            Readaptado: o servidor está investido em cargo de atribuições e responsabilidades compatíveis com a
+            limitação que tenha sofrido em sua capacidade física ou mental verificada em inspeção médica.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_infoCota"
+            id="2200_trabalhador_infoDeficiencia_infoCota">53
+        </td>
+        <td>infoCota</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o trabalhador deve ser contabilizado no preenchimento de cota de pessoas com deficiência
+            habilitadas ou de beneficiários reabilitados.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#2200_vinculo_tpRegTrab">tpRegTrab</a>
+            = [1]. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: <a
+                    href="#2200_trabalhador_infoDeficiencia_defFisica">defFisica</a>, <a
+                    href="#2200_trabalhador_infoDeficiencia_defVisual">defVisual</a>, <a
+                    href="#2200_trabalhador_infoDeficiencia_defAuditiva">defAuditiva</a>, <a
+                    href="#2200_trabalhador_infoDeficiencia_defMental">defMental</a>, <a
+                    href="#2200_trabalhador_infoDeficiencia_defIntelectual">defIntelectual</a> e <a
+                    href="#2200_trabalhador_infoDeficiencia_reabReadap">reabReadap</a>.<br>
+            Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a
+            S-1.0.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_infoDeficiencia_observacao"
+            id="2200_trabalhador_infoDeficiencia_observacao">54
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2200_trabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente"
+            id="2200_trabalhador_dependente">55
+        </td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações dos dependentes.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_tpDep"
+            id="2200_trabalhador_dependente_tpDep">56
+        </td>
+        <td>tpDep</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de dependente.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2200_trabalhador_dependente_depIRRF">depIRRF</a>
+            = [S].<br>
+            Deve ser um código válido e existente na <a href="tabelas.html#07">Tabela 07</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_nmDep"
+            id="2200_trabalhador_dependente_nmDep">57
+        </td>
+        <td>nmDep</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome do dependente.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_dtNascto"
+            id="2200_trabalhador_dependente_dtNascto">58
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_cpfDep"
+            id="2200_trabalhador_dependente_cpfDep">59
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF.<br>
+            <strong>Validação:</strong> Deve ser um número de CPF válido, observando o que segue:<br>
+            a) O preenchimento é obrigatório se <a href="#2200_trabalhador_dependente_depIRRF">depIRRF</a> = [S];<br>
+            b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em <a
+                    href="#2200_ideEmpregador">ideEmpregador</a>;<br>
+            c) Não pode haver mais de um dependente com o mesmo número de CPF.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_sexoDep"
+            id="2200_trabalhador_dependente_sexoDep">60
+        </td>
+        <td>sexoDep</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do dependente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2200_vinculo_tpRegPrev">tpRegPrev</a> =
+            [2] e <a href="#2200_vinculo_cadIni">cadIni</a> = [N]. Não informar se <a href="#2200_vinculo_tpRegPrev">tpRegPrev</a>
+            for diferente de [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_depIRRF"
+            id="2200_trabalhador_dependente_depIRRF">61
+        </td>
+        <td>depIRRF</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente do trabalhador para fins de dedução de seu rendimento tributável pelo Imposto de
+            Renda.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_depSF"
+            id="2200_trabalhador_dependente_depSF">62
+        </td>
+        <td>depSF</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente para fins de recebimento do benefício de salário-família.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_incTrab"
+            id="2200_trabalhador_dependente_incTrab">63
+        </td>
+        <td>incTrab</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o dependente tem incapacidade física ou mental para o trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Não informar se <a href="#2200_vinculo_tpRegPrev">tpRegPrev</a> = [4].
+            Preenchimento obrigatório nos demais casos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_dependente_descrDep"
+            id="2200_trabalhador_dependente_descrDep">64
+        </td>
+        <td>descrDep</td>
+        <td><a href="#r_2200_trabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a descrição da dependência.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2200_trabalhador_dependente_tpDep">tpDep</a> = [99].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_contato"
+            id="2200_trabalhador_contato">65
+        </td>
+        <td><a href="#r_2200_trabalhador_contato">contato</a></td>
+        <td><a href="#r_2200_trabalhador">trabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de contato.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_contato_fonePrinc"
+            id="2200_trabalhador_contato_fonePrinc">66
+        </td>
+        <td>fonePrinc</td>
+        <td><a href="#r_2200_trabalhador_contato">contato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>8-13</td>
+        <td>-</td>
+        <td>Número de telefone do trabalhador, com DDD.<br>
+            <strong>Validação:</strong> Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_trabalhador_contato_emailPrinc"
+            id="2200_trabalhador_contato_emailPrinc">67
+        </td>
+        <td>emailPrinc</td>
+        <td><a href="#r_2200_trabalhador_contato">contato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6-60</td>
+        <td>-</td>
+        <td>Endereço eletrônico.<br>
+            <strong>Validação:</strong> O e-mail deve ser possuir o caractere "@" e este não pode estar no início e no
+            fim do e-mail. Deve possuir no mínimo um caractere "." depois do @ e não pode estar no início ou no final do
+            e-mail.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo" id="2200_vinculo">68</td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td><a href="#r_2200">evtAdmissao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do vínculo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_matricula"
+            id="2200_vinculo_matricula">69
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no
+            Sistema de Administração de Recursos Humanos do órgão.<br>
+            <strong>Validação:</strong> O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras
+            posições.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_tpRegTrab"
+            id="2200_vinculo_tpRegTrab">70
+        </td>
+        <td>tpRegTrab</td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime trabalhista.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas<br>
+            <strong>2</strong> - Estatutário/legislações específicas (servidor temporário, militar, agente político,
+            etc.)<br>
+            <strong>Validação:</strong> Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [104], deve ser
+            preenchido com [1]. Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [314], deve ser
+            preenchido com [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_tpRegPrev"
+            id="2200_vinculo_tpRegPrev">71
+        </td>
+        <td>tpRegPrev</td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares das Forças Armadas).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Regime Geral de Previdência Social - RGPS<br>
+            <strong>2</strong> - Regime Próprio de Previdência Social - RPPS, Regime dos Parlamentares e Sistema de
+            Proteção dos Militares dos Estados/DF<br>
+            <strong>3</strong> - Regime de Previdência Social no exterior<br>
+            <strong>4</strong> - Sistema de Proteção Social dos Militares das Forças Armadas - SPSMFA<br>
+            <strong>Validação:</strong> Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [104], deve ser
+            preenchido com [1]. Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [101, 102, 103, 105,
+            106, 107, 108, 111], não pode ser preenchido com [2, 4].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_cadIni" id="2200_vinculo_cadIni">72
+        </td>
+        <td>cadIni</td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se o evento se refere a cadastramento inicial de vínculo (o ingresso do trabalhador no empregador
+            declarante, por admissão ou transferência, é anterior à data de início da obrigatoriedade de envio de seus
+            eventos não periódicos) ou se refere a admissão (o ingresso do trabalhador no empregador declarante é igual
+            ou posterior à data de início de obrigatoriedade de envio de seus eventos não periódicos).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim (Cadastramento Inicial)<br>
+            <strong>N</strong> - Não (Admissão)
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab"
+            id="2200_vinculo_infoRegimeTrab">73
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab">infoRegimeTrab</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do regime trabalhista.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab_infoCeletista"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista">74
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab">infoRegimeTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de trabalhador celetista.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm">75
+        </td>
+        <td>dtAdm</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de admissão do trabalhador.<br>
+            No caso de transferência do empregado ou de mudança de CPF, preencher com a data inicial do vínculo no
+            primeiro empregador (data de início do vínculo).<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser posterior à data de nascimento do trabalhador e igual ou anterior ao ano do óbito, se existente;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador no eSocial;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N] e <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_tpAdmissao">tpAdmissao</a> = [1], deve ser igual ou
+            posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_tpAdmissao"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_tpAdmissao">76
+        </td>
+        <td>tpAdmissao</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de admissão do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Admissão<br>
+            <strong>2</strong> - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do
+            mesmo Ente Federativo<br>
+            <strong>3</strong> - Transferência de empresa consorciada ou de consórcio<br>
+            <strong>4</strong> - Transferência por motivo de sucessão, incorporação, cisão ou fusão<br>
+            <strong>5</strong> - Transferência do empregado doméstico para outro representante da mesma unidade familiar<br>
+            <strong>6</strong> - Mudança de CPF<br>
+            <strong>7</strong> - Transferência quando a empresa sucedida é considerada inapta por inexistência de
+            fato<br>
+            <strong>Validação:</strong> Se for igual a [5], <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a>
+            deve ser igual a [104] e <a href="#2200_ideEvento_procEmi">procEmi</a> deve ser igual a [2, 22].<br>
+            Se for igual a [6], <a href="#2200_vinculo_cadIni">cadIni</a> deve ser igual a [N].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_indAdmissao"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_indAdmissao">77
+        </td>
+        <td>indAdmissao</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de admissão.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Normal<br>
+            <strong>2</strong> - Decorrente de ação fiscal<br>
+            <strong>3</strong> - Decorrente de decisão judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_nrProcTrab"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_nrProcTrab">78
+        </td>
+        <td>nrProcTrab</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Número que identifica o processo trabalhista, quando a admissão se der por decisão judicial.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_indAdmissao">indAdmissao</a> = [3]. Se preenchido,
+            deve ser um processo judicial válido, com 20 (vinte) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_tpRegJor"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_tpRegJor">79
+        </td>
+        <td>tpRegJor</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Regime de jornada do empregado.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Submetido a horário de trabalho (Capítulo II do Título II da CLT)<br>
+            <strong>2</strong> - Atividade externa especificada no inciso I do art. 62 da CLT<br>
+            <strong>3</strong> - Função especificada no inciso II do art. 62 da CLT<br>
+            <strong>4</strong> - Teletrabalho, previsto no inciso III do art. 62 da CLT
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_natAtividade"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_natAtividade">80
+        </td>
+        <td>natAtividade</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Natureza da atividade.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Trabalho urbano<br>
+            <strong>2</strong> - Trabalho rural<br>
+            <strong>Validação:</strong> Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [104], deve ser
+            preenchido com [1]. Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [102], deve ser
+            preenchido com [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab_infoCeletista_dtBase"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_dtBase">81
+        </td>
+        <td>dtBase</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Mês relativo à data base da categoria profissional do trabalhador.<br>
+            <strong>Validação:</strong> Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_cnpjSindCategProf"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_cnpjSindCategProf">82
+        </td>
+        <td>cnpjSindCategProf</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ do sindicato representativo da categoria (preponderante ou diferenciada).<br>
+            <strong>Validação:</strong> Deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_matAnotJud"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_matAnotJud">83
+        </td>
+        <td>matAnotJud</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula informada no evento S-8200.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula cadastrada no evento S-8200 para o CPF informado
+            em <a href="#2200_trabalhador_cpfTrab">cpfTrab</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab_infoCeletista_FGTS"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_FGTS">84
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_FGTS">FGTS</a></td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do Fundo de Garantia do Tempo de Serviço - FGTS.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_FGTS_dtOpcFGTS"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_FGTS_dtOpcFGTS">85
+        </td>
+        <td>dtOpcFGTS</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_FGTS">FGTS</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data de opção do trabalhador pelo FGTS.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario">86
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario">trabTemporario</a></td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dados sobre trabalho temporário. Preenchimento obrigatório no caso de contratação de trabalhador
+            temporário.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_hipLeg"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_hipLeg">87
+        </td>
+        <td>hipLeg</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario">trabTemporario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Hipótese legal para contratação de trabalhador temporário.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Necessidade de substituição transitória de pessoal permanente<br>
+            <strong>2</strong> - Demanda complementar de serviços
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_justContr"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_justContr">88
+        </td>
+        <td>justContr</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario">trabTemporario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Descrição do fato determinado que, no caso concreto, justifica a hipótese legal para a contratação de
+            trabalho temporário. O prazo de contratação do trabalho temporário deve ser compatível com o motivo
+            justificador alegado.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc">89
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc">ideEstabVinc</a></td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario">trabTemporario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento do tomador ao qual o trabalhador temporário está vinculado</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_tpInsc"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_tpInsc">90
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc">ideEstabVinc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_nrInsc"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_nrInsc">91
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc">ideEstabVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contratante de serviços, de acordo com o tipo de inscrição informado em <a
+                href="#2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_tpInsc">ideEstabVinc/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser um identificador válido. Se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm">dtAdm</a> &gt;= [2024-04-22] e:<br>
+            a) Se <a href="#2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_tpInsc">ideEstabVinc/tpInsc</a>
+            = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ
+            informado deve ser diferente de <a href="#2200_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a>.<br>
+            b) Se <a href="#2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideEstabVinc_tpInsc">ideEstabVinc/tpInsc</a>
+            = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente
+            do CPF do empregador.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideTrabSubstituido"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideTrabSubstituido">92
+        </td>
+        <td>
+            <a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideTrabSubstituido">ideTrabSubstituido</a>
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario">trabTemporario</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-9</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do(s) trabalhador(es) substituído(s).</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideTrabSubstituido_cpfTrabSubst"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideTrabSubstituido_cpfTrabSubst">93
+        </td>
+        <td>cpfTrabSubst</td>
+        <td>
+            <a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_trabTemporario_ideTrabSubstituido">ideTrabSubstituido</a>
+        </td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>CPF do trabalhador substituído.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab_infoCeletista_aprend"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_aprend">94
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_aprend">aprend</a></td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista">infoCeletista</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relacionadas ao aprendiz.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_indAprend"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_indAprend">95
+        </td>
+        <td>indAprend</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_aprend">aprend</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de modalidade de contratação de aprendiz.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contratação direta: contratação do aprendiz efetivada pelo estabelecimento cumpridor da
+            cota de aprendizagem<br>
+            <strong>2</strong> - Contratação indireta: contratação do aprendiz efetivada por entidades sem fins
+            lucrativos ou por entidades de prática desportiva a serviço do estabelecimento cumpridor da cota
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_cnpjEntQual"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_cnpjEntQual">96
+        </td>
+        <td>cnpjEntQual</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_aprend">aprend</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição no CNPJ da entidade qualificadora, no caso de contratação direta.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_aprend_indAprend">indAprend</a> = [1].<br>
+            Deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_tpInsc"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_tpInsc">97
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_aprend">aprend</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do estabelecimento para o qual a contratação de
+            aprendiz foi efetivada, no caso de contratação indireta, conforme <a href="tabelas.html#05">Tabela
+                05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_aprend_indAprend">indAprend</a> = [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_nrInsc"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_nrInsc">98
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_aprend">aprend</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do estabelecimento para o qual a contratação de aprendiz foi efetivada, no
+            caso de contratação indireta, de acordo com o tipo de inscrição indicado no campo <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_aprend_tpInsc">aprend/tpInsc</a>.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_aprend_indAprend">indAprend</a> = [2].<br>
+            Deve ser um identificador válido e:<br>
+            a) Se <a href="#2200_vinculo_infoRegimeTrab_infoCeletista_aprend_tpInsc">aprend/tpInsc</a> = [1], deve ser
+            informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve
+            ser diferente de <a href="#2200_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a>.<br>
+            b) Se <a href="#2200_vinculo_infoRegimeTrab_infoCeletista_aprend_tpInsc">aprend/tpInsc</a> = [2], deve ser
+            diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do
+            empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_cnpjPrat"
+            id="2200_vinculo_infoRegimeTrab_infoCeletista_aprend_cnpjPrat">99
+        </td>
+        <td>cnpjPrat</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoCeletista_aprend">aprend</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição no CNPJ do estabelecimento onde estão sendo realizadas as atividades
+            práticas, quando ocorrer uma das seguintes situações:<br>
+            a) Modalidade alternativa de cumprimento de cota de aprendizagem (neste caso, informar o CNPJ da entidade
+            concedente da parte prática);<br>
+            b) Realização das atividades práticas na empresa contratante do serviço terceirizado;<br>
+            c) Centralização das atividades práticas em estabelecimento da própria empresa, diverso do estabelecimento
+            responsável pelo cumprimento da cota.<br>
+            <strong>Validação:</strong> Deve ser um CNPJ válido, com 14 (catorze) algarismos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoRegimeTrab_infoEstatutario"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario">100
+        </td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab">infoRegimeTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de trabalhador estatutário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">101
+        </td>
+        <td>tpProv</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Preencher com o tipo de provimento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Nomeação em cargo efetivo<br>
+            <strong>2</strong> - Nomeação exclusivamente em cargo em comissão<br>
+            <strong>3</strong> - Incorporação ou matrícula (militar)<br>
+            <strong>5</strong> - Redistribuição ou Reforma Administrativa<br>
+            <strong>6</strong> - Diplomação<br>
+            <strong>7</strong> - Contratação por tempo determinado<br>
+            <strong>8</strong> - Remoção (em caso de alteração do órgão declarante)<br>
+            <strong>9</strong> - Designação<br>
+            <strong>10</strong> - Mudança de CPF<br>
+            <strong>11</strong> - Estabilizados - Art. 19 do ADCT<br>
+            <strong>99</strong> - Outros não relacionados acima<br>
+            <strong>Validação:</strong> Os valores [3, 5, 6, 8, 9] só são permitidos se a natureza jurídica do
+            declarante for Administração Pública (grupo [1]).<br>
+            Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [302], deve ser preenchido com [2, 5, 8,
+            10].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoEstatutario_dtExercicio"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario_dtExercicio">102
+        </td>
+        <td>dtExercicio</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data da entrada em exercício pelo servidor.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser posterior à data de nascimento do trabalhador;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador/ente público no eSocial;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N] e <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> for diferente de [5, 8, 10],
+            deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o
+            empregador/ente público no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoEstatutario_tpPlanRP"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario_tpPlanRP">103
+        </td>
+        <td>tpPlanRP</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de plano de segregação da massa.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Sem segregação da massa<br>
+            <strong>1</strong> - Fundo em capitalização<br>
+            <strong>2</strong> - Fundo em repartição<br>
+            <strong>3</strong> - Mantido pelo Tesouro<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#2200_vinculo_tpRegPrev">tpRegPrev</a>
+            = [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoEstatutario_indTetoRGPS"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario_indTetoRGPS">104
+        </td>
+        <td>indTetoRGPS</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o servidor está sujeito ao teto do RGPS pela instituição do regime de previdência
+            complementar.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#2200_vinculo_tpRegPrev">tpRegPrev</a>
+            = [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoEstatutario_indAbonoPerm"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario_indAbonoPerm">105
+        </td>
+        <td>indAbonoPerm</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se o servidor recebe abono permanência.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#2200_vinculo_tpRegPrev">tpRegPrev</a>
+            = [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoRegimeTrab_infoEstatutario_dtIniAbono"
+            id="2200_vinculo_infoRegimeTrab_infoEstatutario_dtIniAbono">106
+        </td>
+        <td>dtIniAbono</td>
+        <td><a href="#r_2200_vinculo_infoRegimeTrab_infoEstatutario">infoEstatutario</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informar a data de inicio do abono permanência.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_indAbonoPerm">indAbonoPerm</a> = [S] e <a
+                    href="#2200_vinculo_cadIni">cadIni</a> = [N]. Não informar se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_indAbonoPerm">indAbonoPerm</a> = [N]. Se
+            preenchida, devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de exercício do servidor;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o ente público;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N], deve ser igual ou anterior à data da transferência ou
+            alteração do CPF do servidor (<a href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a> ou <a
+                    href="#2200_vinculo_mudancaCPF_dtAltCPF">dtAltCPF</a>). Não informar se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> for diferente de [5, 8, 10].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato"
+            id="2200_vinculo_infoContrato">107
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do contrato de trabalho.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_nmCargo"
+            id="2200_vinculo_infoContrato_nmCargo">108
+        </td>
+        <td>nmCargo</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar o nome do cargo.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em
+            cargo em comissão (<a href="#2200_vinculo_tpRegTrab">tpRegTrab</a> = [2] e <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> = [2]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_CBOCargo"
+            id="2200_vinculo_infoContrato_CBOCargo">109
+        </td>
+        <td>CBOCargo</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2200_vinculo_infoContrato_nmCargo">nmCargo</a> for preenchido. Se informado, deve ser um
+            código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_dtIngrCargo"
+            id="2200_vinculo_infoContrato_dtIngrCargo">110
+        </td>
+        <td>dtIngrCargo</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de ingresso do servidor no cargo.<br>
+            <strong>Validação:</strong> Não preencher se <a href="#2200_vinculo_tpRegTrab">tpRegTrab</a> = [1] ou se <a
+                    href="#2200_vinculo_tpRegPrev">tpRegPrev</a> = [4] ou se <a
+                    href="#2200_vinculo_infoContrato_CBOCargo">CBOCargo</a> não for informado. Se preenchida, devem ser
+            observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de exercício do servidor;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o ente público;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N], deve ser igual ou anterior à data da transferência ou
+            alteração do CPF do servidor (<a href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a> ou <a
+                    href="#2200_vinculo_mudancaCPF_dtAltCPF">dtAltCPF</a>). Não informar se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> for diferente de [5, 8, 10].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_nmFuncao"
+            id="2200_vinculo_infoContrato_nmFuncao">111
+        </td>
+        <td>nmFuncao</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar o nome da função de confiança/cargo em comissão.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se for relativo a servidor nomeado em cargo em
+            comissão (<a href="#2200_vinculo_tpRegTrab">tpRegTrab</a> = [2] e <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> = [2]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_CBOFuncao"
+            id="2200_vinculo_infoContrato_CBOFuncao">112
+        </td>
+        <td>CBOFuncao</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Informar a CBO relativa à função de confiança/cargo em comissão.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2200_vinculo_infoContrato_nmFuncao">nmFuncao</a> for preenchido. Se informado, deve ser um
+            código válido e existente na tabela de CBO, com 6 (seis) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_acumCargo"
+            id="2200_vinculo_infoContrato_acumCargo">113
+        </td>
+        <td>acumCargo</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o cargo, emprego ou função pública é acumulável.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2200_vinculo_cadIni">cadIni</a> = [N] e
+            se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_codCateg"
+            id="2200_vinculo_infoContrato_codCateg">114
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_remuneracao"
+            id="2200_vinculo_infoContrato_remuneracao">115
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_remuneracao">remuneracao</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações da remuneração e periodicidade de pagamento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_remuneracao_vrSalFx"
+            id="2200_vinculo_infoContrato_remuneracao_vrSalFx">116
+        </td>
+        <td>vrSalFx</td>
+        <td><a href="#r_2200_vinculo_infoContrato_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Salário base do trabalhador, correspondente à parte fixa da remuneração.<br>
+            <strong>Validação:</strong> Se <a href="#2200_vinculo_infoContrato_remuneracao_undSalFixo">undSalFixo</a>
+            for igual a [7], preencher com 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_remuneracao_undSalFixo"
+            id="2200_vinculo_infoContrato_remuneracao_undSalFixo">117
+        </td>
+        <td>undSalFixo</td>
+        <td><a href="#r_2200_vinculo_infoContrato_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Unidade de pagamento da parte fixa da remuneração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Por hora<br>
+            <strong>2</strong> - Por dia<br>
+            <strong>3</strong> - Por semana<br>
+            <strong>4</strong> - Por quinzena<br>
+            <strong>5</strong> - Por mês<br>
+            <strong>6</strong> - Por tarefa<br>
+            <strong>7</strong> - Não aplicável - Salário exclusivamente variável
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_remuneracao_dscSalVar"
+            id="2200_vinculo_infoContrato_remuneracao_dscSalVar">118
+        </td>
+        <td>dscSalVar</td>
+        <td><a href="#r_2200_vinculo_infoContrato_remuneracao">remuneracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de
+            10% sobre as vendas.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2200_vinculo_infoContrato_remuneracao_undSalFixo">undSalFixo</a> for igual a [6, 7].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_duracao"
+            id="2200_vinculo_infoContrato_duracao">119
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_duracao">duracao</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Duração do contrato de trabalho.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_duracao_tpContr"
+            id="2200_vinculo_infoContrato_duracao_tpContr">120
+        </td>
+        <td>tpContr</td>
+        <td><a href="#r_2200_vinculo_infoContrato_duracao">duracao</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de contrato de trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Prazo indeterminado<br>
+            <strong>2</strong> - Prazo determinado, definido em dias<br>
+            <strong>3</strong> - Prazo determinado, vinculado à ocorrência de um fato<br>
+            <strong>Validação:</strong> Se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> = [103] e <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm">dtAdm</a> &gt;= [2024-04-22], deve ser
+            informado [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_duracao_dtTerm"
+            id="2200_vinculo_infoContrato_duracao_dtTerm">121
+        </td>
+        <td>dtTerm</td>
+        <td><a href="#r_2200_vinculo_infoContrato_duracao">duracao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data do término do contrato por prazo determinado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a
+                    href="#2200_vinculo_infoContrato_duracao_tpContr">tpContr</a> = [2]. Não informar se <a
+                    href="#2200_vinculo_infoContrato_duracao_tpContr">tpContr</a> = [1]. Se preenchido, deve ser igual
+            ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a <a
+                    href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a>, <a
+                    href="#2200_vinculo_transfDom_dtTransf">transfDom/dtTransf</a> ou <a
+                    href="#2200_vinculo_mudancaCPF_dtAltCPF">dtAltCPF</a> do evento S-2200, conforme o caso).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_duracao_clauAssec"
+            id="2200_vinculo_infoContrato_duracao_clauAssec">122
+        </td>
+        <td>clauAssec</td>
+        <td><a href="#r_2200_vinculo_infoContrato_duracao">duracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se o contrato por prazo determinado contém cláusula assecuratória do direito recíproco de rescisão
+            antes da data de seu término.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a
+                    href="#2200_vinculo_infoContrato_duracao_tpContr">tpContr</a> = [2, 3]. Não preencher se <a
+                    href="#2200_vinculo_infoContrato_duracao_tpContr">tpContr</a> = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_duracao_objDet"
+            id="2200_vinculo_infoContrato_duracao_objDet">123
+        </td>
+        <td>objDet</td>
+        <td><a href="#r_2200_vinculo_infoContrato_duracao">duracao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Indicação do objeto determinante da contratação por prazo determinado (obra, serviço, safra, etc.).<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório e exclusivo se <a
+                    href="#2200_vinculo_infoContrato_duracao_tpContr">tpContr</a> = [3].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_localTrabalho"
+            id="2200_vinculo_infoContrato_localTrabalho">124
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho">localTrabalho</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do local de trabalho.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_localTrabalho_localTrabGeral"
+            id="2200_vinculo_infoContrato_localTrabalho_localTrabGeral">125
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho_localTrabGeral">localTrabGeral</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho">localTrabalho</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Estabelecimento (CNPJ, CNO, CAEPF) onde o trabalhador (exceto doméstico) exercerá suas atividades. Caso o
+            trabalhador exerça suas atividades em instalações de terceiros, este campo deve ser preenchido com o
+            estabelecimento do próprio empregador ao qual o trabalhador esteja vinculado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_localTrabalho_localTrabGeral_tpInsc"
+            id="2200_vinculo_infoContrato_localTrabalho_localTrabGeral_tpInsc">126
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_localTrabalho_localTrabGeral_nrInsc"
+            id="2200_vinculo_infoContrato_localTrabalho_localTrabGeral_nrInsc">127
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2200_vinculo_infoContrato_localTrabalho_localTrabGeral_tpInsc">localTrabGeral/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos
+            (S-1005), bem como compatível com <a href="#2200_vinculo_infoContrato_localTrabalho_localTrabGeral_tpInsc">localTrabGeral/tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_localTrabalho_localTrabGeral_descComp"
+            id="2200_vinculo_infoContrato_localTrabalho_localTrabGeral_descComp">128
+        </td>
+        <td>descComp</td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho_localTrabGeral">localTrabGeral</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-80</td>
+        <td>-</td>
+        <td>Descrição complementar do local de trabalho.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_localTrabalho_localTempDom"
+            id="2200_vinculo_infoContrato_localTrabalho_localTempDom">129
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho_localTempDom">localTempDom</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato_localTrabalho">localTrabalho</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente em caso de trabalhador doméstico e trabalhador temporário, indicando o
+            endereço onde o trabalhador exerce suas atividades.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_horContratual"
+            id="2200_vinculo_infoContrato_horContratual">130
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_horContratual">horContratual</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do horário contratual do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_horContratual_qtdHrsSem"
+            id="2200_vinculo_infoContrato_horContratual_qtdHrsSem">131
+        </td>
+        <td>qtdHrsSem</td>
+        <td><a href="#r_2200_vinculo_infoContrato_horContratual">horContratual</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-4</td>
+        <td>2</td>
+        <td>Quantidade média de horas relativas à jornada semanal do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser preenchida se <a
+                    href="#2200_vinculo_infoContrato_codCateg">codCateg</a> for diferente de [111]. Se informada, deve
+            ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_horContratual_tpJornada"
+            id="2200_vinculo_infoContrato_horContratual_tpJornada">132
+        </td>
+        <td>tpJornada</td>
+        <td><a href="#r_2200_vinculo_infoContrato_horContratual">horContratual</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de jornada.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>2</strong> - Jornada 12 x 36 (12 horas de trabalho seguidas de 36 horas ininterruptas de
+            descanso)<br>
+            <strong>3</strong> - Jornada com horário diário fixo e folga variável<br>
+            <strong>4</strong> - Jornada com horário diário fixo e folga fixa (no domingo)<br>
+            <strong>5</strong> - Jornada com horário diário fixo e folga fixa (exceto no domingo)<br>
+            <strong>6</strong> - Jornada com horário diário fixo e folga fixa (em outro dia da semana), com folga
+            adicional periódica no domingo<br>
+            <strong>7</strong> - Turno ininterrupto de revezamento<br>
+            <strong>9</strong> - Demais tipos de jornada
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_horContratual_tmpParc"
+            id="2200_vinculo_infoContrato_horContratual_tmpParc">133
+        </td>
+        <td>tmpParc</td>
+        <td><a href="#r_2200_vinculo_infoContrato_horContratual">horContratual</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código relativo ao tipo de contrato em tempo parcial.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não é contrato em tempo parcial<br>
+            <strong>1</strong> - Limitado a 25 horas semanais<br>
+            <strong>2</strong> - Limitado a 30 horas semanais<br>
+            <strong>3</strong> - Limitado a 26 horas semanais<br>
+            <strong>Validação:</strong> O código [1] só é válido se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a>
+            = [104]. Os códigos [2, 3] não são válidos se <a href="#2200_vinculo_infoContrato_codCateg">codCateg</a> =
+            [104].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_horContratual_horNoturno"
+            id="2200_vinculo_infoContrato_horContratual_horNoturno">134
+        </td>
+        <td>horNoturno</td>
+        <td><a href="#r_2200_vinculo_infoContrato_horContratual">horContratual</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicar se a jornada semanal possui horário noturno (no todo ou em parte).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Informação obrigatória se <a
+                    href="#2200_vinculo_infoContrato_codCateg">codCateg</a> for diferente de [111].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_horContratual_dscJorn"
+            id="2200_vinculo_infoContrato_horContratual_dscJorn">135
+        </td>
+        <td>dscJorn</td>
+        <td><a href="#r_2200_vinculo_infoContrato_horContratual">horContratual</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Descrição da jornada semanal contratual, contendo os dias da semana e os respectivos horários contratuais
+            (entrada, saída e intervalos).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_alvaraJudicial"
+            id="2200_vinculo_infoContrato_alvaraJudicial">136
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_alvaraJudicial">alvaraJudicial</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do alvará judicial em caso de contratação de menores de 14 anos, em qualquer categoria, e de
+            maiores de 14 e menores de 16, em categoria diferente de "Aprendiz".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2200_vinculo_infoContrato_alvaraJudicial_nrProcJud"
+            id="2200_vinculo_infoContrato_alvaraJudicial_nrProcJud">137
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_2200_vinculo_infoContrato_alvaraJudicial">alvaraJudicial</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Preencher com o número do processo judicial.<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_observacoes"
+            id="2200_vinculo_infoContrato_observacoes">138
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_observacoes">observacoes</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Observações do contrato de trabalho.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_observacoes_observacao"
+            id="2200_vinculo_infoContrato_observacoes_observacao">139
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2200_vinculo_infoContrato_observacoes">observacoes</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação relacionada ao contrato de trabalho.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_treiCap"
+            id="2200_vinculo_infoContrato_treiCap">140
+        </td>
+        <td><a href="#r_2200_vinculo_infoContrato_treiCap">treiCap</a></td>
+        <td><a href="#r_2200_vinculo_infoContrato">infoContrato</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Treinamentos, capacitações, exercícios simulados, autorizações ou outras anotações que devam ser anotadas no
+            registro de empregados e/ou na CTPS, por determinação de Norma Regulamentadora - NR.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_infoContrato_treiCap_codTreiCap"
+            id="2200_vinculo_infoContrato_treiCap_codTreiCap">141
+        </td>
+        <td>codTreiCap</td>
+        <td><a href="#r_2200_vinculo_infoContrato_treiCap">treiCap</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Informar o código do treinamento, capacitação, exercício simulado ou outra anotação, conforme <a
+                href="tabelas.html#28">Tabela 28</a>.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#28">Tabela 28</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_sucessaoVinc"
+            id="2200_vinculo_sucessaoVinc">142
+        </td>
+        <td><a href="#r_2200_vinculo_sucessaoVinc">sucessaoVinc</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações da sucessão de vínculo trabalhista/estatutário.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_sucessaoVinc_tpInsc"
+            id="2200_vinculo_sucessaoVinc_tpInsc">143
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2200_vinculo_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF<br>
+            <strong>5</strong> - CGC<br>
+            <strong>6</strong> - CEI<br>
+            <strong>Validação:</strong> Somente é possível informar [5] se <a
+                    href="#2200_vinculo_sucessaoVinc_dtTransf">dtTransf</a> for igual ou anterior a [1999-06-30].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_sucessaoVinc_nrInsc"
+            id="2200_vinculo_sucessaoVinc_nrInsc">144
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2200_vinculo_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8-14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do empregador anterior, de acordo com o tipo de inscrição indicado no campo
+            <a href="#2200_vinculo_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido e diferente da inscrição do declarante,
+            considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.<br>
+            Se <a href="#2200_vinculo_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a> = [1], deve possuir 14 (catorze)
+            algarismos e ser diferente do CNPJ base do empregador (exceto se <a href="#2200_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a>
+            tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.<br>
+            Se <a href="#2200_vinculo_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a> = [2], deve possuir 11 (onze)
+            algarismos.<br>
+            Se <a href="#2200_vinculo_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a> = [5], deve possuir somente
+            algarismos.<br>
+            Se <a href="#2200_vinculo_sucessaoVinc_tpInsc">sucessaoVinc/tpInsc</a> = [6], deve possuir 12 (doze)
+            algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_sucessaoVinc_matricAnt"
+            id="2200_vinculo_sucessaoVinc_matricAnt">145
+        </td>
+        <td>matricAnt</td>
+        <td><a href="#r_2200_vinculo_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula do trabalhador no empregador anterior.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2200_vinculo_cadIni">cadIni</a> =
+            [N]. Se <a href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a> for igual ou posterior a
+            [2024-04-22], a matrícula informada neste campo deve ser idêntica à matricula do trabalhador no empregador
+            anterior.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_sucessaoVinc_dtTransf"
+            id="2200_vinculo_sucessaoVinc_dtTransf">146
+        </td>
+        <td>dtTransf</td>
+        <td><a href="#r_2200_vinculo_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data da transferência do empregado para o empregador declarante.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser posterior à data de admissão do trabalhador e igual ou anterior ao ano do óbito, se
+            existente;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N], deve ser igual ou posterior à data de início da
+            obrigatoriedade dos eventos não periódicos para o empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_sucessaoVinc_observacao"
+            id="2200_vinculo_sucessaoVinc_observacao">147
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2200_vinculo_sucessaoVinc">sucessaoVinc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_transfDom"
+            id="2200_vinculo_transfDom">148
+        </td>
+        <td><a href="#r_2200_vinculo_transfDom">transfDom</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do empregado doméstico transferido de outro representante da mesma unidade familiar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_transfDom_cpfSubstituido"
+            id="2200_vinculo_transfDom_cpfSubstituido">149
+        </td>
+        <td>cpfSubstituido</td>
+        <td><a href="#r_2200_vinculo_transfDom">transfDom</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do representante anterior da unidade familiar.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido e diferente do CPF do declarante e do empregado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_transfDom_matricAnt"
+            id="2200_vinculo_transfDom_matricAnt">150
+        </td>
+        <td>matricAnt</td>
+        <td><a href="#r_2200_vinculo_transfDom">transfDom</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula do trabalhador no representante anterior da unidade familiar.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_transfDom_dtTransf"
+            id="2200_vinculo_transfDom_dtTransf">151
+        </td>
+        <td>dtTransf</td>
+        <td><a href="#r_2200_vinculo_transfDom">transfDom</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data da transferência do vínculo ao novo representante da unidade familiar.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_mudancaCPF"
+            id="2200_vinculo_mudancaCPF">152
+        </td>
+        <td><a href="#r_2200_vinculo_mudancaCPF">mudancaCPF</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de mudança de CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_mudancaCPF_cpfAnt"
+            id="2200_vinculo_mudancaCPF_cpfAnt">153
+        </td>
+        <td>cpfAnt</td>
+        <td><a href="#r_2200_vinculo_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF antigo do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_mudancaCPF_matricAnt"
+            id="2200_vinculo_mudancaCPF_matricAnt">154
+        </td>
+        <td>matricAnt</td>
+        <td><a href="#r_2200_vinculo_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Preencher com a matrícula anterior do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_mudancaCPF_dtAltCPF"
+            id="2200_vinculo_mudancaCPF_dtAltCPF">155
+        </td>
+        <td>dtAltCPF</td>
+        <td><a href="#r_2200_vinculo_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de alteração do CPF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_mudancaCPF_observacao"
+            id="2200_vinculo_mudancaCPF_observacao">156
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2200_vinculo_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_afastamento"
+            id="2200_vinculo_afastamento">157
+        </td>
+        <td><a href="#r_2200_vinculo_afastamento">afastamento</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de afastamento do trabalhador.<br>
+            Preenchimento exclusivo em caso de trabalhador que permaneça afastado na data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador no eSocial ou na data de transferência ou alteração de CPF do
+            empregado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_afastamento_dtIniAfast"
+            id="2200_vinculo_afastamento_dtIniAfast">158
+        </td>
+        <td>dtIniAfast</td>
+        <td><a href="#r_2200_vinculo_afastamento">afastamento</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de início do afastamento.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N], deve ser anterior à data da transferência ou
+            alteração do CPF do empregado (<a href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a>, <a
+                    href="#2200_vinculo_transfDom_dtTransf">transfDom/dtTransf</a> ou <a
+                    href="#2200_vinculo_mudancaCPF_dtAltCPF">dtAltCPF</a>). Não informar se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_tpAdmissao">tpAdmissao</a> = [1] ou se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> for diferente de [5, 8, 10].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_afastamento_codMotAfast"
+            id="2200_vinculo_afastamento_codMotAfast">159
+        </td>
+        <td>codMotAfast</td>
+        <td><a href="#r_2200_vinculo_afastamento">afastamento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com o código do motivo de afastamento temporário.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#18">Tabela 18</a>,
+            bem como compatível com o código de categoria do trabalhador, conforme <a href="tabelas.html#18">Tabela
+                18</a>. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser
+            informado [14].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_desligamento"
+            id="2200_vinculo_desligamento">160
+        </td>
+        <td><a href="#r_2200_vinculo_desligamento">desligamento</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação do desligamento do trabalhador.<br>
+            Grupo preenchido exclusivamente caso seja necessário enviar cadastramento inicial referente a trabalhador
+            que já tenha sido desligado da empresa antes do início dos eventos não periódicos para o empregador no
+            eSocial (por exemplo, envio para pagamento de diferenças salariais - acordo/dissídio/convenção coletiva - em
+            meses posteriores ao desligamento e sob vigência dos eventos periódicos para o empregador no eSocial) ou no
+            caso de desligamento em data anterior à transferência do empregado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_desligamento_dtDeslig"
+            id="2200_vinculo_desligamento_dtDeslig">161
+        </td>
+        <td>dtDeslig</td>
+        <td><a href="#r_2200_vinculo_desligamento">desligamento</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de desligamento do vínculo (último dia trabalhado).<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o empregador;<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N], deve ser anterior à data da transferência do
+            empregado (<a href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a> ou <a
+                    href="#2200_vinculo_transfDom_dtTransf">transfDom/dtTransf</a>). Não informar se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_tpAdmissao">tpAdmissao</a> = [1] ou se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> for diferente de [5, 8].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_cessao" id="2200_vinculo_cessao">
+            162
+        </td>
+        <td><a href="#r_2200_vinculo_cessao">cessao</a></td>
+        <td><a href="#r_2200_vinculo">vinculo</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação de cessão/exercício em outro órgão do trabalhador.<br>
+            Preenchimento exclusivo em caso de trabalhador que permaneça cedido/em exercício em outro órgão na data de
+            início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial ou na data de
+            transferência ou alteração de CPF do empregado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2200_vinculo_cessao_dtIniCessao"
+            id="2200_vinculo_cessao_dtIniCessao">163
+        </td>
+        <td>dtIniCessao</td>
+        <td><a href="#r_2200_vinculo_cessao">cessao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de início da cessão/exercício em outro órgão.<br>
+            <strong>Validação:</strong> Devem ser observadas as seguintes regras:<br>
+            a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;<br>
+            b) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [S], deve ser anterior à data de início da obrigatoriedade
+            dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração
+            Pública (grupo [1]);<br>
+            c) Se <a href="#2200_vinculo_cadIni">cadIni</a> = [N], deve ser anterior à data da transferência ou
+            alteração do CPF do empregado (<a href="#2200_vinculo_sucessaoVinc_dtTransf">sucessaoVinc/dtTransf</a> ou <a
+                    href="#2200_vinculo_mudancaCPF_dtAltCPF">dtAltCPF</a>) e igual ou posterior a [2021-07-19]. Não
+            informar se <a href="#2200_vinculo_infoRegimeTrab_infoCeletista_tpAdmissao">tpAdmissao</a> = [1] ou se <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_tpProv">tpProv</a> for diferente de [5, 8, 10].
+        </td>
+    </tr>
+    </tbody>
+</table>

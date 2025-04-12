@@ -1,0 +1,460 @@
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Portrait"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+    <style type="text/css">
+     .relatorio{
+        margin-left:50px;
+      }
+      img {
+        border: none;   
+        height: 60px;
+        width:70px;
+      }
+      .periodo{
+        font-size:14px;
+      }
+      .dadospessoais{
+        width:870px;
+        font-size:14px;
+      }
+      .justificado{
+        font-size:14px;
+      }
+      table {
+        border: 1px solid #ccc;
+        margin: 0;
+        font-family: Arial;
+        font-size: 8pt;        
+      }
+      strong {
+        font-weight: bold;
+      }
+      .titulo-relatorio {
+        font-family: Arial;
+        font-size: 19px;
+        font-weight: bold;
+      }
+      .titulo-resumo {
+        font-size: 18px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+      .direita {
+        width: 350px;
+        float: right;
+        text-align: right;
+        padding-bottom:3px;
+        font-size:10pt;
+        margin-top: 40px;
+        margin-right: 60px;
+
+
+      }
+      .esquerda {
+        width: 350px;
+        float: left;
+        text-align: left;
+      }
+      .tabelaCab{
+        width: 870px;
+        margin-bottom: .8rem;
+        border: 1px solid #ccc;
+      }
+      .textoCab{
+        font-family: Arial;
+        font-size: 11pt;
+        font-weight: bolder;
+      }
+      .observacoes {
+        height: 50px;
+        text-align:left;
+        margin-bottom: 2rem;
+        font-size:14px;
+      }
+      .centralizar {
+        width: 870px;
+        text-align: center;
+        margin-bottom:3px;
+      }
+      .assinatura {
+        margin-top: 2rem;
+        width:870px;
+      }
+      th,td {
+        padding: 1px 4px 1px 4px !important;
+        text-align: left;
+        vertical-align: top;
+      }
+      thead tr {
+        background-color: #fc0;
+      }
+      th.sorted {
+        background-color: orange;
+      }
+      th a,th a:visited {
+        color: black;
+      }
+      th a:hover {
+        text-decoration: underline;
+        color: black;
+      }
+      th.sorted a,th.sortable a {
+        background-position: right;
+        display: block;
+        width: 100%;
+      }
+      tr.odd {
+        background-color: #fff
+      }
+      tr.tableRowEven,tr.even {
+        background-color: #fea
+      }
+      tr.highlight {
+        background-color: #eee;
+      }
+      td.center {
+        text-align: center;
+      }
+      span.pagebanner {
+        background-color: #eee;
+        border: 1px dotted #999;
+        padding: 2px 4px 2px 4px;
+        width: 870px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 10px;
+        display: block;
+        border-bottom: none;
+      }
+      span.pagelinks {
+        background-color: #eee;
+        border: 1px dotted #999;
+        padding: 2px 4px 2px 4px;
+        width: 870px;
+        margin-left: 0px;
+        margin-right: 10px;
+        display: block;
+        border-top: none;
+        margin-bottom: -5px;
+      }
+      /* alternative styles */
+      table.its thead tr {
+        background-color: #69c;
+      }
+      table.its tr.even {
+        background-color: #def;
+      }
+      table.mars thead tr {
+        background-color: #9c9;
+      }
+      table.mars tr.even {
+        background-color: #ccb;
+      }
+      table.mars tr.odd {
+        background-color: #eec;
+      }
+      table.simple thead tr th {
+        background-color: #eee;
+      }
+      table.simple tr.even {
+        background-color: #fff;
+      }
+      table.simple {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        width:870px;
+        font-size:13px;
+      }
+      table.simple td,table.simple th {
+        border: 1px solid #ccc;
+      }
+      table.nocol tbody td,table.nocol tbody th {
+        border-left: none;
+        border-right: none;
+      }
+      table.report td,table.report th {
+        font: menu;
+      }
+      table.report th {
+        background: #ccc;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #000;
+        cursor: hand;
+      }
+      table.report idcol {
+        background: buttonface;
+      }
+      table.report tr.even {
+        background-color: #399;
+      }
+      table.report tbody {
+        height: 100px;
+        overflow: auto;
+      }
+      table.report {
+        height: 120px;
+        overflow: auto;
+      }
+      table.report tbody tr {
+        height: 10px;
+      }
+      table.mark td.tableCellError {
+        background-color: #d00;
+        color: #fff;
+      }
+      table.simple td.textRed {
+        color: #d00;
+      }
+     .tabelaCab{
+        border: 1px solid #ccc;
+        width: 870px;
+        padding: 6px;
+
+      }
+      tr.highlight td {
+        background-color: #eee;
+        -webkit-print-color-adjust: exact; 
+      }
+  
+
+    </style>
+  </head>
+<body>
+  <div class="pagina a4">
+    <div class="mensagemGeracaoRelatorio">
+        <div class="barra-progresso">
+            <div class="progress">
+                <loader></loader>
+            </div>
+        </div>
+    </div>
+    <div class="relatorio">
+        <div class="conteudo-relatorio">
+            <div class="pagina-folha">
+                <div class="esquerda">
+                </div>
+                <div class="direita">
+                    <strong>Impresso em {{ date }} {{ hour }}</strong>
+                </div>
+                <table cellpadding="0" cellspacing="0" class="tabelaCab">
+                    <tr>
+                        <td class="center">
+                            <img src="data:image/png;base64,{{logo_mpmt}}"/>
+                        </td>
+                        <td valign="middle">
+                            <div class="textoCab">
+                                MINIST&Eacute;RIO P&Uacute;BLICO DO
+                                ESTADO DE MATO GROSSO<br>
+                                    PROCURADORIA-GERAL DE JUSTI&Ccedil;A<br>
+                                    DEPARTAMENTO DE GEST&Atilde;O DE PESSOAS
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="centralizar">
+                   <div style="padding-bottom:5px">
+                    <span class="titulo-relatorio">Relat&oacute;rio de Folha Ponto</span>
+                   </div>
+                    
+                       <span class="periodo"> Per&iacute;odo: 
+                    {{ dtperson.dt_init }} - {{ dtperson.dt_end }}</span><br>
+                </div>
+                <table class="dadospessoais">
+                    <tr>
+                        <td>
+                            Nome:
+                            {{ dtperson.nome }}
+                        </td>
+                        <td>
+                            Cargo:
+                            {{ dtperson.cargo }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Matr&iacute;cula:
+                            {{ dtperson.matricula}}
+                        </td>
+                        <td>
+                            Departamento:
+                            {{ dtperson.depart}}
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Jornada:
+                            {{ dtperson.jornada}}
+                        </td>
+                        <td>
+                            Carga Hor&aacute;ria:
+                            {{ dtperson.ch}}
+                        </td>
+                    </tr>
+                </table>
+                <div id="grid">
+                    <table class="simple">
+                        <tr class="highlight">
+                            <td class="w-60">
+                                <strong>Data</strong>
+                            </td>
+                            <td class="w-30">
+                                <strong>Dia</strong>
+                            </td>
+                            <td class="w-230">
+                                <strong>Tipo Dia</strong>
+                            </td>
+                            <td>
+                                <strong>Marca&ccedil;&atilde;o 1</strong>
+                            </td>
+                            <td>
+                                <strong>Marca&ccedil;&atilde;o 2</strong>
+                            </td>
+                            <td>
+                                <strong>Marca&ccedil;&atilde;o 3</strong>
+                            </td>
+                            <td>
+                                <strong>Marca&ccedil;&atilde;o 4</strong>
+                            </td>
+                            <td class="w-55">
+                                <strong>Total Dia</strong>
+                            </td>
+                            <td class="w-65">
+                                <strong>Saldo Dia</strong>
+                            </td>
+                        </tr>
+                        {% for item in data %}
+                        <tr >
+                            <td>
+                              {{  item|get_value:'DATABATIDA' }}
+                            </td>
+                            <td>
+                              {{  item.DIASEMANA|get_week }}
+                            </td>
+                            {% if  item|get_value:'TIPODIA' == 'FALTA' %}
+                              <td style="color:red">
+                                {{  item|get_value:'TIPODIA' }}
+                              </td>
+                            {% else %}
+                              <td>
+                                {{  item|get_value:'TIPODIA' }}
+                              </td>
+                            {% endif %}
+                            <td>
+                               {{ item|get_value:'ENTRADA1' }}
+                            </td>
+                            <td>
+                              {{ item|get_value:'SAIDA1' }}
+                            </td>
+                            <td>
+                              {{ item|get_value:'ENTRADA2' }}
+                            </td>
+                            <td>
+                              {{ item|get_value:'SAIDA2' }}
+                            </td>
+                            <td>
+                              {{ item|get_value:'HORASTRABDIA' }}
+                            </td>
+                            <td class="texto-direita">
+                              {{ item|get_value:'SALDODIARIO' }}
+                            </td>
+                        </tr>
+                        {% endfor  %}   
+                    </table>
+                </div>
+                <div class="titulo-resumo"><strong>Resumo do per&iacute;odo:</strong></div>
+                <div id="grid">
+                    <table class="simple">
+                        <tr class="highlight">
+                            <td>
+                                <strong>Dias &uacute;teis</strong>
+                            </td>
+                            <td>
+                                <strong>Dias trabalhados</strong>
+                            </td>
+                            <td>
+                                <strong>Dias justificados</strong>
+                            </td>
+                            <td>
+                                <strong>Faltas no per&iacute;odo</strong>
+                            </td>
+                            <td>
+                                <strong>C.H. do per&iacute;odo</strong>
+                            </td>
+                            <td>
+                                <strong>Horas trabalhadas</strong>
+                            </td>
+                            <td>
+                                <strong>Saldo no per&iacute;odo</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              {{ data_resume.DIASUTEIS }}
+                            </td>
+                            <td>
+                              {{ data_resume.DIASTRABALHADOS }}
+                            </td>
+                            <td>
+                              {{ data_resume.DIASJUSTIFICADOS }}
+                            </td>
+                            <td>
+                              {{ data_resume.FALTASPERIODO }}
+                            </td>
+                            <td>
+                              {{ data_resume.CHPERIODO }}
+                            </td>
+                            <td>
+                              {{ data_resume.HORASTRABALHADAS }}
+                            </td>
+                            <td>
+                              {{ data_resume.SALDOPERIODO }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr align="left" noshade="noshade" width=870 size="1">
+                <div class="observacoes" >
+                    <strong>Observa&ccedil;&otilde;es:</strong>
+                    As faltas justificadas devem constar no campo observações com o carimbo e assinatura do Promotor ou chefe imediato.<br> E ainda, a assinatura do Promotor ou chefe imediato também deve constar no campo assinatura.
+                    <ul style="list-style-type: none;">
+                      {% for item in justification_resume %}
+                            <li>
+                                # {{ item.data }} - {{ item.type }} - {{ item.hours}}
+                            </li>
+                      {% endfor  %}
+                    </ul>
+
+                </div>
+                <hr align="left" noshade="noshade" width=870 size="1">
+                   <span class="justificado"> Reconhe&ccedil;o as horas acima registradas por mim
+                atrav&eacute;s das marca&ccedil;&otilde;es pelos pontos
+                de marca&ccedil;&atilde;o do Minist&eacute;rio
+                P&uacute;blico do Estado de Mato <br> Grosso. </span>
+                <table style="border: none;" class="assinatura">
+                    <tr>
+                        <td>
+                            <div style="text-align:center;font-size:14px;">
+                                ______________________________________________ 
+                                <br>Assinatura do Funcion&aacute;rio
+                            </div>
+                        </td>
+                        <td>
+                            <div style="text-align:center;font-size:14px;">
+                                ______________________________________________ 
+                                <br>Assinatura do Chefe do
+                                            Departamento ou Gerente
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>

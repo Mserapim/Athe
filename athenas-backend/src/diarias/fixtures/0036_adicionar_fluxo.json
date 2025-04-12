@@ -1,0 +1,90 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Liberação de empenho",
+        "value": 25,
+        "cvalue": "25",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Nota de liquidação em andamento",
+        "value": 24,
+        "cvalue": "24",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Encaminhado pelo DEPLAN",
+        "value": 36,
+        "cvalue": "36",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "encaminhado_por_DEPLAN",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2025-01-23T18:55:39.894",
+        "modified_at": "2025-01-23T18:55:39.894",
+        "fluxo": 48,
+        "condicionais": "36"
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2025-01-21T12:26:34.820",
+        "modified_at": "2025-01-23T16:41:18.901",
+        "ordem": 32,
+        "situacao": 24,
+        "etapa": 11,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false,
+        "link_informacao": null
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2025-01-23T16:32:54.965",
+        "modified_at": "2025-01-23T16:41:18.895",
+        "ordem": 30,
+        "situacao": 25,
+        "etapa": 9,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false,
+        "link_informacao": null
+    }
+}
+
+]

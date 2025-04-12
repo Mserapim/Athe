@@ -1,0 +1,722 @@
+[
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753030000",
+    "title": "Crânio (inclusive encéfalo)",
+    "description": "Crânio (inclusive encéfalo)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753050000",
+    "title": "Ouvido (externo, médio, interno, audição e equilíbrio)",
+    "description": "Ouvido (externo, médio, interno, audição e equilíbrio)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753070100",
+    "title": "Olho (inclusive nervo ótico e visão)",
+    "description": "Olho (inclusive nervo ótico e visão)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753070300",
+    "title": "Nariz (inclusive fossas nasais, seios da face e olfato)",
+    "description": "Nariz (inclusive fossas nasais, seios da face e olfato)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753070500",
+    "title": "Boca (inclusive lábios, dentes, língua, garganta e paladar)",
+    "description": "Boca (inclusive lábios, dentes, língua, garganta e paladar)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753070700",
+    "title": "Mandíbula (inclusive queixo)",
+    "description": "Mandíbula (inclusive queixo)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753070800",
+    "title": "Face, partes múltiplas (qualquer combinação das partes acima)",
+    "description": "Face, partes múltiplas (qualquer combinação das partes acima)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753080000",
+    "title": "Cabeça, partes múltiplas (qualquer combinação das partes acima)",
+    "description": "Cabeça, partes múltiplas (qualquer combinação das partes acima)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753090000",
+    "title": "Cabeça, NIC",
+    "description": "Cabeça, NIC"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753510000",
+    "title": "Braço (entre o punho e o ombro)",
+    "description": "Braço (entre o punho e o ombro)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "753510200",
+    "title": "Braço (acima do cotovelo)",
+    "description": "Braço (acima do cotovelo)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "754000000",
+    "title": "Pescoço",
+    "description": "Pescoço"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755010400",
+    "title": "Cotovelo",
+    "description": "Cotovelo"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755010600",
+    "title": "Antebraço (entre o punho e o cotovelo)",
+    "description": "Antebraço (entre o punho e o cotovelo)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755030000",
+    "title": "Punho",
+    "description": "Punho"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755050000",
+    "title": "Mão (exceto punho ou dedos)",
+    "description": "Mão (exceto punho ou dedos)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755070000",
+    "title": "Dedo",
+    "description": "Dedo"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755080000",
+    "title": "Membros superiores, partes múltiplas (qualquer combinação das partes acima)",
+    "description": "Membros superiores, partes múltiplas (qualquer combinação das partes acima)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "755090000",
+    "title": "Membros superiores, NIC",
+    "description": "Membros superiores, NIC"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756020000",
+    "title": "Ombro",
+    "description": "Ombro"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756030000",
+    "title": "Tórax (inclusive órgãos internos)",
+    "description": "Tórax (inclusive órgãos internos)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756040000",
+    "title": "Dorso (inclusive músculos dorsais, coluna e medula espinhal)",
+    "description": "Dorso (inclusive músculos dorsais, coluna e medula espinhal)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756050000",
+    "title": "Abdome (inclusive órgãos internos)",
+    "description": "Abdome (inclusive órgãos internos)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756060000",
+    "title": "Quadris (inclusive pélvis, órgãos pélvicos e nádegas)",
+    "description": "Quadris (inclusive pélvis, órgãos pélvicos e nádegas)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756070000",
+    "title": "Tronco, partes múltiplas (qualquer combinação das partes acima)",
+    "description": "Tronco, partes múltiplas (qualquer combinação das partes acima)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "756090000",
+    "title": "Tronco, NIC",
+    "description": "Tronco, NIC"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757010000",
+    "title": "Perna (entre o tornozelo e a pélvis)",
+    "description": "Perna (entre o tornozelo e a pélvis)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757010200",
+    "title": "Coxa",
+    "description": "Coxa"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757010400",
+    "title": "Joelho",
+    "description": "Joelho"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757010600",
+    "title": "Perna (do tornozelo, exclusive, ao joelho, exclusive)",
+    "description": "Perna (do tornozelo, exclusive, ao joelho, exclusive)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757030000",
+    "title": "Articulação do tornozelo",
+    "description": "Articulação do tornozelo"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757050000",
+    "title": "Pé (exceto artelhos)",
+    "description": "Pé (exceto artelhos)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757070000",
+    "title": "Artelho",
+    "description": "Artelho"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757080000",
+    "title": "Membros inferiores, partes múltiplas (qualquer combinação das partes acima)",
+    "description": "Membros inferiores, partes múltiplas (qualquer combinação das partes acima)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "757090000",
+    "title": "Membros inferiores, NIC",
+    "description": "Membros inferiores, NIC"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758000000",
+    "title": "Partes múltiplas. (aplica-se quando mais de uma parte importante do corpo for afetada, como, por exemplo, um braço e uma perna)",
+    "description": "Partes múltiplas. (aplica-se quando mais de uma parte importante do corpo for afetada, como, por exemplo, um braço e uma perna)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758500000",
+    "title": "Sistemas e aparelhos (aplica-se quando o funcionamento de todo um sistema ou aparelho do corpo humano for afetado, sem lesão específica de qualquer outra parte, como no caso do envenenamento, ação co",
+    "description": "Sistemas e aparelhos (aplica-se quando o funcionamento de todo um sistema ou aparelho do corpo humano for afetado, sem lesão específica de qualquer outra parte, como no caso do envenenamento, ação corrosiva que afete órgãos internos, lesão dos centros nervosos, etc.; não se aplica quando a lesão sistêmica for provocada por lesão externa, como lesão dorsal que afete nervos da medula espinhal)"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758520000",
+    "title": "Aparelho circulatório",
+    "description": "Aparelho circulatório"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758530000",
+    "title": "Aparelho respiratório",
+    "description": "Aparelho respiratório"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758540000",
+    "title": "Sistema nervoso",
+    "description": "Sistema nervoso"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758550000",
+    "title": "Aparelho digestivo",
+    "description": "Aparelho digestivo"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758560000",
+    "title": "Aparelho gênito-urinário",
+    "description": "Aparelho gênito-urinário"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758570000",
+    "title": "Sistema musculoesquelético",
+    "description": "Sistema musculoesquelético"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "758590000",
+    "title": "Sistemas e aparelhos, NIC",
+    "description": "Sistemas e aparelhos, NIC"
+  }
+},
+{
+  "model": "sst.bodypart",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:03:48.765",
+    "modified_at": "2022-11-07T14:03:48.765",
+    "code": "759000000",
+    "title": "Localização da lesão, NIC",
+    "description": "Localização da lesão, NIC"
+  }
+}
+]

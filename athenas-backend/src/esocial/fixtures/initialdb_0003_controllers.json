@@ -1,0 +1,98 @@
+[
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0810.png",
+    "title": "Configurações",
+    "controller": "ESOCIALConfiguration",
+    "application": [
+      "92d6fbf726b0438dad66b1711fe8eb74"
+    ],
+    "active": true,
+    "module": "esocial",
+    "uuid": "28594086a0234de09ac45af1ecc3498a",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0055.png",
+    "title": "Folhas do eSocial",
+    "controller": "ESOCIALPayrollPeriodManage",
+    "application": [
+      "92d6fbf726b0438dad66b1711fe8eb74"
+    ],
+    "active": true,
+    "module": "esocial",
+    "uuid": "95ef40bb0f7d4fd6b5a78c649f90d9fd",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0702.png",
+    "title": "Gestor de Itens de tabela",
+    "controller": "ESOCIALItemTable",
+    "application": [
+      "92d6fbf726b0438dad66b1711fe8eb74"
+    ],
+    "active": true,
+    "module": "esocial",
+    "uuid": "d2d94489d3324e7e8f90414723319cf6",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0617.png",
+    "title": "Gestor Eventos/Lotes",
+    "controller": "ESOCIALBatchEventEmployee",
+    "application": [
+      "92d6fbf726b0438dad66b1711fe8eb74"
+    ],
+    "active": true,
+    "module": "esocial",
+    "uuid": "152c9724968e485fb66a1b1e0949543f",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0617.png",
+    "title": "Gestor Eventos/Lotes - Admin",
+    "controller": "ESOCIALBatchEvent",
+    "application": [
+      "92d6fbf726b0438dad66b1711fe8eb74"
+    ],
+    "active": true,
+    "module": "esocial",
+    "uuid": "a4d9b22f32fd451c8602adf747877e26",
+    "icon_file": null,
+    "position": 9999
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0420.png",
+    "title": "Qualificação Cadastral",
+    "controller": "ESCRegistrationQualification",
+    "application": [
+      "92d6fbf726b0438dad66b1711fe8eb74"
+    ],
+    "active": true,
+    "module": "esocial",
+    "uuid": "c40164c94aed469eafdb75ba98f7cd3d",
+    "icon_file": null,
+    "position": 9999
+  }
+}
+]

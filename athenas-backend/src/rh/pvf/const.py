@@ -1,0 +1,959 @@
+from rh.const import (
+    TYPE_ABSENCE_BIRTH,
+    TYPE_HEALTH3DAYS,
+    TYPE_HEALTH30DAYS,
+    TYPE_HEALTH_MEDICAL_BOARD,
+    TYPE_HEALTH_FAMILY_DESEASE,
+    TYPE_HEALTHHOURS,
+    TYPE_LICENSE_TRAINING,
+    TYPE_LICENSE_SPECIAL_INTEREST,
+    TYPE_LICENSE_POLITICAL_ACTIVITIES,
+    TYPE_MATERNITY_LICENSE,
+    TYPE_ABSENCE_DEATH,
+    TYPE_ABSENCE_MARRIAGE,
+    TYPE_ABSENCE_BLOOD_DONATION,
+    TYPE_DOENCA_PESSOA_FAMILIA_JUNTA_MEDICA,
+)
+from rh.dayoff.const import (
+    USU_NEW,
+    USU_CANCELED,
+    USU_CHANGED,
+    USU_CHANGING,
+    USU_ENJOYED,
+    USU_HOMOLOGATED,
+    USU_NOT_AUTHORIZED,
+    USU_SOLD,
+    USU_SUSPENDED,
+    USU_INTERRUPTED,
+    USU_SUBSTITUTE,
+    USU_AUTORIZED_CI,
+    USU_ENJOYING,
+)
+from django.conf import settings
+
+
+REQUEST_TYPE_SCHEDULE = 1
+REQUEST_TYPE_ABSENCE = 2
+REQUEST_TYPE_DOCUMENT = 3
+REQUEST_TYPE_CHANGE_JOURNEY = 4
+REQUEST_TYPE_CANCELLATION = 5
+REQUEST_TYPE_RETIFICATION = 6
+REQUEST_TYPE_TELEWORK = 7
+REQUEST_TYPE_SERVER_DUTY = 8
+REQUEST_TYPE_POINT_SHEET = 12
+REQUEST_TYPE_PROGRESSION_V = 13
+REQUEST_TYPE_PROGRESSION_H = 14
+REQUEST_TYPE_CUMULATIVE_EXERCISE = 15
+REQUEST_TYPE_CANCELAMENTO_TELETRABALHO = 16
+REQUEST_TYPE_RELATORIO_TELE_SEMESTRAL = 17
+REQUEST_TYPE_SOLICITACAO_CREDITO_FOLGA = 18
+REQUEST_TYPE_SOLICITACAO_AUX_CRECHE_DEPEN_IR = 19
+REQUEST_TYPE_DESBLOQUEIO_TELETRABALHO = 20
+REQUEST_TYPE_CREDITO_DISPENSA_ELEITORAL = 21
+
+
+STS_WAI_SUBS_SCIENCE = 1
+STS_WAI_APPROVER = 2
+STS_WAI_EFFECTIVENESS = 3
+STS_EFFECTIVE = 4
+STS_REJECTED = 5
+STS_CANCELED_DGP = 6
+STS_CANCELED_APPLICANT = 7
+STS_CORREGEDORIE_ADVISORY = 8
+STS_STAND_BY = 9
+STS_ESCALA_ENVIADA = 10
+STS_EFETIVACAO_AUTOMATICA = 11
+
+
+# Ações(action) do modelo de PortalRequestHistory
+REQUEST_ACT_SOLICITATION = 1
+REQUEST_ACT_DEFER = 2
+REQUEST_ACT_INDEFER = 3
+REQUEST_ACT_SCIENCE = 4
+REQUEST_ACT_ANNOTATION = 5
+REQUEST_ACT_EFFECTIVENESS = 6
+REQUEST_ACT_CANCEL = 7
+REQUEST_ACT_OPEN_SOLICITANTION = 8
+REQUEST_ACT_RETURN_APPLICANT = 9
+REQUEST_ACT_RETURN_APPROVER = 10
+REQUEST_ACT_AUTOMATIC_APPROVER = 11
+REQUEST_ACT_APPROVER = 12
+REQUEST_ACT_EDITAR = 13
+REQUEST_ACT_SEND_SUB = 14
+REQUEST_ACT_EFETIVACAO_AUTOMATICO = 15
+REQUEST_ACT_INDEFERIMENTO_AUTOMATICO = 16
+
+REQUEST_STEP_APPROVER = 1
+REQUEST_STEP_DG = 2
+REQUEST_STEP_CORREGEDORIES_ADVISORY = 3
+REQUEST_STEP_CORREGEDORATION = 4
+REQUEST_STEP_PGJ = 5
+REQUEST_STEP_DGP = 7
+REQUEST_STEP_STAND = 8
+REQUEST_STEP_WAITING_SEND = 9
+REQUEST_STEP_JURIDICAL_ADVISORY_1 = 10
+REQUEST_STEP_PROG_DG = 11
+REQUEST_STEP_JURIDICAL_ADVISORY_2 = 12
+REQUEST_STEP_GER_DEV = 13
+REQUEST_STEP_SUB_ADM = 14
+REQUEST_STEP_EFETIVACAO_AUTOMATICA = 15
+
+
+REGULAR_VACATIONS = 9000
+INDIVIDUAL_VACATION = 9001
+FORENSIC_RECESS = 9002
+BIRTHDAY_BREAK = 9003
+ELECTORAL_SLACK = 9004
+ONCALL_BONUS_SERVERS = 9005
+COMP_CLERARANCE_SERVERS = 9006
+COMP_CLEARANCE_MEMBERS = 9007
+COMP_VACATION_MEMBERS = 9008
+PREMIUM_LICENSE = 9009
+INTERNS_RECESS = 9010
+SUBSTITUTE_PROMOTER_CONTEST = 9011
+INTERNSHIP_COMPETITION = 9012
+BLOOD_DONATION_USUFRUCT = 9013
+RESIDENTS_RECESS = 9014
+
+TYPE_CHILDCARE_ASSISTENCE = 4
+TYPE_INCOMING_TAX = 1
+ABRANGENCY_CITY = 3
+
+DEPENDENT_CHILD = 3
+CHILD_AGE_LIMIT = 6
+
+TYPE_SHIFT_WEEKEND = 1
+TYPE_SHIFT_RECESS = 2
+TYPE_SHIFT_ELECTORAL = 3
+TYPE_SHIFT_DTI = 4
+
+TIPO_PLANTAO_PGJ = 5
+TIPO_PLANTAO_INTERINSTITUCIONAL = 6
+TIPO_PLANTAO_AUXILIAR_ELEITORAL = 7
+TIPO_PLANTAO_JUIZADO_TORCEDOR = 8
+TIPO_PLANTAO_CONSELHO_TUTELAR = 9
+TIPO_PLANTAO_CONCURSO = 10
+
+
+MONTH_DEFAULT = 10
+YEAR_DEFAULT = 2022
+
+GROUP_DG = "mpmt-perfil-vdf-aprovador-dg"
+GROUP_ASS_COGER = "mpmt-perfil-vdf-aprovador-assessoria-coger"
+GROUP_COGER = "mpmt-perfil-vdf-aprovador-coger"
+GROUP_PGJ = "mpmt-perfil-vdf-aprovador-pgj"
+GROUP_SERVER = "mpmt-perfil-vdf-aprovador-servidores"
+GROUP_MEMBER = "mpmt-perfil-vdf-aprovador-membros"
+GROUP_ADM_SUPERIOR = "mpmt-perfil-vdf-administracao-superior"
+GROUP_ASS_JUR_1 = "mpmt-perfil-vdf-assessoria-JUR-1"
+GROUP_PROG_DG = "mpmt-perfil-vdf-prog-DG"
+GROUP_ASS_JUR_2 = "mpmt-perfil-vdf-assessoria-JUR-2"
+GROUP_GER_DEV = "mpmt-perfil-vdf-GER-desenvolvimento"
+GROUP_AUDIT = "mpmt-perfil-auditoria"
+GROUPO_RELATORIO_SEMESTRAL = "mpmt-perfil-teletrabalho-semestral"
+GROUPO_TELETRABALHO = "mpmt-perfil-vdf-teletrabalho"
+GROUP_SUB_ADM = "mpmt-perfil-vdf-sub-adm"
+
+
+TYPE_OF_LICENSE = {
+    TYPE_HEALTH3DAYS: "Tratamento de Saúde até 15 dias - Servidor",
+    TYPE_HEALTH30DAYS: "Tratamento de saúde até 30 dias - Membro",
+    TYPE_HEALTHHOURS: "Tratamento de Saúde Horas",
+    TYPE_HEALTH_MEDICAL_BOARD: "Tratamento de saúde junta médica",
+    TYPE_HEALTH_FAMILY_DESEASE: "Doença em pessoa da família",
+    TYPE_LICENSE_TRAINING: "Licença - Capacitação ou especialização",
+    TYPE_LICENSE_SPECIAL_INTEREST: "Licença - Interesse particular",
+    TYPE_LICENSE_POLITICAL_ACTIVITIES: "Licença - Atividade política",
+    TYPE_MATERNITY_LICENSE: "Licença Maternidade/Adoção",
+    TYPE_ABSENCE_BIRTH: " Ausência - Paternidade/Tutoria ou Adoção",
+    TYPE_ABSENCE_DEATH: "Ausência - Falecimento (Luto)",
+    TYPE_ABSENCE_MARRIAGE: "Ausência - Casamento (Gala)",
+    TYPE_ABSENCE_BLOOD_DONATION: "Ausência - Doação de Sangue",
+    TYPE_DOENCA_PESSOA_FAMILIA_JUNTA_MEDICA: "Doença em pessoa da família Junta Médica",
+}
+
+CLASS_ABSENCE = {
+    TYPE_HEALTH3DAYS: ".healthtreatmentabsence",
+    TYPE_HEALTH30DAYS: ".healthtreatmentabsence",
+    TYPE_HEALTH_MEDICAL_BOARD: ".healthtreatmentabsence",
+    TYPE_HEALTH_FAMILY_DESEASE: ".familyhealthtreatmentabsence",
+    TYPE_LICENSE_TRAINING: ".trainingabsence",
+    TYPE_LICENSE_SPECIAL_INTEREST: ".privateinterestabsence",
+    TYPE_LICENSE_POLITICAL_ACTIVITIES: ".politicalactivityabsence",
+    TYPE_MATERNITY_LICENSE: ".maternityabsence",
+    TYPE_ABSENCE_BIRTH: ".paternityabsence",
+    TYPE_ABSENCE_DEATH: ".mourningabsence",
+    TYPE_ABSENCE_MARRIAGE: ".marriageabsence",
+    TYPE_ABSENCE_BLOOD_DONATION: ".blooddonationabsence",
+    TYPE_HEALTHHOURS: ".healthtreatmentabsence",
+}
+
+
+CONFIG_HOLIDAY = [
+    {"enjoyment": [30], "indemnity": []},
+    {"enjoyment": [15, 15], "indemnity": []},
+    {"enjoyment": [20, 10], "indemnity": []},
+    {"enjoyment": [10, 10, 10], "indemnity": []},
+    {"enjoyment": [15], "indemnity": [15]},
+    {"enjoyment": [20], "indemnity": [10]},
+    {"enjoyment": [10, 10], "indemnity": [10]},
+]
+
+CONFIG_HOLIDAY_TWENTY = [
+    {"enjoyment": [10, 10], "indemnity": []},
+    {"enjoyment": [20], "indemnity": []},
+]
+
+CONFIG_HOLIDAY_FIFTEEN = [
+    {"enjoyment": [15], "indemnity": []},
+]
+
+CONFIG_HOLIDAY_TEN = [
+    {"enjoyment": [10], "indemnity": []},
+]
+
+CONFIG_HOLIDAY_MEMBER = [
+    {"enjoyment": [30], "indemnity": []},
+    {"enjoyment": [15, 15], "indemnity": []},
+    {"enjoyment": [20, 10], "indemnity": []},
+    {"enjoyment": [10, 10, 10], "indemnity": []},
+    {"enjoyment": [15], "indemnity": [15]},
+    {"enjoyment": [20], "indemnity": [10]},
+    {"enjoyment": [10, 10], "indemnity": [10]},
+    {"enjoyment": [10], "indemnity": [20]},
+]
+
+CONFIG_INTERNS_RECESS_BEFORE = [
+    {"enjoyment": [30], "indemnity": []},
+    {"enjoyment": [10, 10, 10], "indemnity": []},
+    {"enjoyment": [20, 10], "indemnity": []},
+    {"enjoyment": [15, 15], "indemnity": []},
+]
+
+CONFIG_INTERNS_RECESS_AFTER = [
+    {"enjoyment": [12], "indemnity": []},
+]
+
+CONFIG_HOLIDAY_RETIFICATION = [
+    {"enjoyment": [30], "indemnity": []},
+    {"enjoyment": [15, 15], "indemnity": []},
+    {"enjoyment": [20, 10], "indemnity": []},
+    {"enjoyment": [10, 10, 10], "indemnity": []},
+]
+
+INTERNS_CUT_DATE = "06/01/2022"
+
+QTD_DAYS_RECESS_PARCIAL = 12
+QTD_DAYS_RECESS = 30
+
+GROUPS_PVF = {
+    "DG": GROUP_DG,
+    "ASS_COGER": GROUP_ASS_COGER,
+    "COGER": GROUP_COGER,
+    "PGJ": GROUP_PGJ,
+    "GS": GROUP_SERVER,
+    "GM": GROUP_MEMBER,
+    "AS": GROUP_ADM_SUPERIOR,
+    "ASS_JUR_1": GROUP_ASS_JUR_1,
+    "PROG_DG": GROUP_PROG_DG,
+    "ASS_JUR_2": GROUP_ASS_JUR_2,
+    "GER_DEV": GROUP_GER_DEV,
+    "AUDIT": GROUP_AUDIT,
+}
+
+ACTION_TAKEN = {
+    "SOLICITATION": REQUEST_ACT_SOLICITATION,
+    "DEFER": REQUEST_ACT_DEFER,
+    "INDEFER": REQUEST_ACT_INDEFER,
+    "SCIENCE": REQUEST_ACT_SCIENCE,
+    "ANNOTATION": REQUEST_ACT_ANNOTATION,
+    "EFFECTIVENESS": REQUEST_ACT_EFFECTIVENESS,
+    "CANCEL": REQUEST_ACT_CANCEL,
+}
+
+REQUEST_TYPE = {
+    "SCHEDULE": REQUEST_TYPE_SCHEDULE,
+    "ABSENCE": REQUEST_TYPE_ABSENCE,
+    "DOCUMENT": REQUEST_TYPE_DOCUMENT,
+    "CHANGE_OF_THE_JOURNEY": REQUEST_TYPE_CHANGE_JOURNEY,
+    "CANCELLATION": REQUEST_TYPE_CANCELLATION,
+    "RETIFICATION": REQUEST_TYPE_RETIFICATION,
+}
+
+REQUEST_STEP = {
+    "APPROVER": REQUEST_STEP_APPROVER,
+    "DG": REQUEST_STEP_DG,
+    "CORREGEDORIES_ADVISORY": REQUEST_STEP_CORREGEDORIES_ADVISORY,
+    "CORREGEDORATION": REQUEST_STEP_CORREGEDORATION,
+    "PGJ": REQUEST_STEP_PGJ,
+    "DGP": REQUEST_STEP_DGP,
+    "STAND": REQUEST_STEP_STAND,
+    "WAITING_SEND": REQUEST_STEP_WAITING_SEND,
+    "JURIDICAL_ADVISORY_1": REQUEST_STEP_JURIDICAL_ADVISORY_1,
+    "PROG_DG": REQUEST_STEP_PROG_DG,
+    "JURIDICAL_ADVISORY_2": REQUEST_STEP_JURIDICAL_ADVISORY_2,
+    "DEVELOPMENT_MANAGEMENT": REQUEST_STEP_GER_DEV,
+    "SUB_ADM": REQUEST_STEP_SUB_ADM,
+}
+
+ETAPAS_APROVACAO_VDF = [
+    REQUEST_STEP_APPROVER,
+    REQUEST_STEP_DG,
+    REQUEST_STEP_CORREGEDORIES_ADVISORY,
+    REQUEST_STEP_CORREGEDORATION,
+    REQUEST_STEP_PGJ,
+    REQUEST_STEP_DGP,
+    REQUEST_STEP_STAND,
+    REQUEST_STEP_WAITING_SEND,
+    REQUEST_STEP_JURIDICAL_ADVISORY_1,
+    REQUEST_STEP_PROG_DG,
+    REQUEST_STEP_JURIDICAL_ADVISORY_2,
+    REQUEST_STEP_GER_DEV,
+    REQUEST_STEP_SUB_ADM,
+]
+
+REQUEST_STATUS_GROUP = {
+    GROUP_DG: [STS_WAI_APPROVER],
+    GROUP_ASS_COGER: [STS_WAI_APPROVER, STS_CORREGEDORIE_ADVISORY],
+    GROUP_COGER: [STS_WAI_APPROVER, STS_WAI_SUBS_SCIENCE],
+    GROUP_PGJ: [STS_WAI_APPROVER, STS_WAI_SUBS_SCIENCE],
+    GROUP_MEMBER: [STS_WAI_EFFECTIVENESS],
+    GROUP_SERVER: [STS_WAI_EFFECTIVENESS],
+}
+
+REQUEST_STEP_GROUP = {
+    GROUP_DG: REQUEST_STEP_DG,
+    GROUP_ASS_COGER: REQUEST_STEP_CORREGEDORIES_ADVISORY,
+    GROUP_COGER: REQUEST_STEP_CORREGEDORATION,
+    GROUP_PGJ: REQUEST_STEP_PGJ,
+    GROUP_MEMBER: REQUEST_STEP_DGP,
+    GROUP_SERVER: REQUEST_STEP_DGP,
+    GROUP_ASS_JUR_1: REQUEST_STEP_JURIDICAL_ADVISORY_1,
+    GROUP_PROG_DG: REQUEST_STEP_PROG_DG,
+    GROUP_ASS_JUR_2: REQUEST_STEP_JURIDICAL_ADVISORY_2,
+    GROUP_GER_DEV: REQUEST_STEP_GER_DEV,
+    GROUP_SUB_ADM: REQUEST_STEP_SUB_ADM,
+}
+
+SUB_CONFIGURATION = {
+    "REGULAR_VACATIONS": REGULAR_VACATIONS,
+    "INDIVIDUAL_VACATIONS": INDIVIDUAL_VACATION,
+    "FORENSIC_RECESS": FORENSIC_RECESS,
+    "BIRTHDAY_BREAK": BIRTHDAY_BREAK,
+    "ELECTORAL_SLACK": ELECTORAL_SLACK,
+    "ONCALL_BONUS_SERVERS": ONCALL_BONUS_SERVERS,
+    "COMP_CLERARANCE_SERVERS": COMP_CLERARANCE_SERVERS,
+    "COMP_CLEARANCE_MEMBERS": COMP_CLEARANCE_MEMBERS,
+    "COMP_VACATION_MEMBERS": COMP_VACATION_MEMBERS,
+    "PREMIUM_LICENSE": PREMIUM_LICENSE,
+    "INTERNS_RECESS": INTERNS_RECESS,
+    "SUBSTITUTE_PROMOTER_CONTEST": SUBSTITUTE_PROMOTER_CONTEST,
+    "INTERNSHIP_COMPETITION": INTERNSHIP_COMPETITION,
+}
+
+STATUS_REQUEST = {
+    "AWAITING_SUBSTITUTE_SCIENCE": STS_WAI_SUBS_SCIENCE,
+    "AWAITING_APPROVER": STS_WAI_APPROVER,
+    "WAITING_FOR_EFFECTIVENESS": STS_WAI_EFFECTIVENESS,
+    "MADE_EFFECTIVE": STS_EFFECTIVE,
+    "REJECTED": STS_REJECTED,
+    "CANCELED_DGP": STS_CANCELED_DGP,
+    "CANCELED_APPLICANT": STS_CANCELED_APPLICANT,
+}
+
+USUFRUCT_STATUS = {
+    USU_NEW: "Solicitado",
+    USU_AUTORIZED_CI: "Autorizado",
+    USU_HOMOLOGATED: "Agendado",
+    USU_CHANGED: "Alterado",
+    USU_CHANGING: "Alteração solicitada",
+    USU_INTERRUPTED: "Interrompido",
+    USU_SUSPENDED: "Cancelado",
+    USU_ENJOYING: "Em fruição",
+    USU_ENJOYED: "Usufruído",
+    USU_NOT_AUTHORIZED: "Não autorizado",
+    USU_SUBSTITUTE: "Substituto",
+    USU_SOLD: "Vendido",
+    USU_CANCELED: "Cancelado",
+}
+
+PATH_CONFIG_DETAILWINDOW = {
+    REQUEST_TYPE_SCHEDULE: "rh.pvf.portalrequestusufruct.DetailWindow",
+    REQUEST_TYPE_ABSENCE: "rh.pvf.absence.absence.DetailWindow",
+    REQUEST_TYPE_DOCUMENT: "rh.pvf.portalrequestdoc.DetailWindow",
+    REQUEST_TYPE_CHANGE_JOURNEY: "rh.pvf.portalrequestworkload.DetailWindow",
+    REQUEST_TYPE_CANCELLATION: "rh.pvf.portalcancelschedule.DetailWindow",
+    REQUEST_TYPE_RETIFICATION: "rh.pvf.portalretificationschedule.DetailWindow",
+    REQUEST_TYPE_POINT_SHEET: "rh.pvf.sendpointsheet.DetailWindow",
+    REQUEST_TYPE_TELEWORK: "rh.pvf.sendtelework.DetailWindow",
+    REQUEST_TYPE_SERVER_DUTY: "rh.pvf.shiftmanager.DetailWindow",
+    REQUEST_TYPE_PROGRESSION_V: "rh.pvf.progression.DetailWindow",
+    REQUEST_TYPE_PROGRESSION_H: "rh.pvf.progression_h.DetailWindow",
+}
+
+PATH_CONFIG_STAND_BY_DETAILWINDOW = {
+    REQUEST_TYPE_POINT_SHEET: "rh.pvf.sendpointsheet.Window",
+    REQUEST_TYPE_TELEWORK: "rh.pvf.sendtelework.Window",
+    REQUEST_TYPE_PROGRESSION_V: "rh.pvf.progression.Window",
+    REQUEST_TYPE_PROGRESSION_H: "rh.pvf.progression_h.Window",
+}
+
+
+SERVER_APPROVAL_FLOWER = {
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+INTERN_APPROVAL_FLOWER = {
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+POINT_SHEET_APPROVAL_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_APPROVER,
+    },
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+TELE_WORK_APPROVAL_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_APPROVER,
+    },
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_APPROVER,
+        "next_step": None,
+    },
+}
+
+RELATORIO_TELE_SEMESTRAL_FLOWER = {
+    REQUEST_STEP_WAITING_SEND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_WAITING_SEND,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+DUTY_APPROVAL_FLOWER = {
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+MEMBER_APPROVAL_FLOWER = {
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_SUBS_SCIENCE,
+        "next_step": REQUEST_STEP_CORREGEDORIES_ADVISORY,
+    },
+    REQUEST_STEP_CORREGEDORIES_ADVISORY: {
+        "approver": None,
+        "step_current": REQUEST_STEP_CORREGEDORIES_ADVISORY,
+        "status": STS_CORREGEDORIE_ADVISORY,
+        "next_step": REQUEST_STEP_CORREGEDORATION,
+    },
+    REQUEST_STEP_CORREGEDORATION: {
+        "approver": None,
+        "step_current": REQUEST_STEP_CORREGEDORATION,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_PGJ,
+    },
+    REQUEST_STEP_PGJ: {
+        "approver": None,
+        "step_current": REQUEST_STEP_PGJ,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+MANAGER_APPROVAL_FLOWER = {
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_SUBS_SCIENCE,
+        "next_step": REQUEST_STEP_PGJ,
+    },
+    REQUEST_STEP_PGJ: {
+        "approver": None,
+        "step_current": REQUEST_STEP_PGJ,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_CORREGEDORIES_ADVISORY,
+    },
+    REQUEST_STEP_CORREGEDORIES_ADVISORY: {
+        "approver": None,
+        "step_current": REQUEST_STEP_CORREGEDORIES_ADVISORY,
+        "status": STS_CORREGEDORIE_ADVISORY,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+PROGRESSION_V_APPROVAL_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_JURIDICAL_ADVISORY_1,
+    },
+    REQUEST_STEP_JURIDICAL_ADVISORY_1: {
+        "approver": True,
+        "step_current": REQUEST_STEP_JURIDICAL_ADVISORY_1,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_PROG_DG,
+    },
+    REQUEST_STEP_PROG_DG: {
+        "approver": True,
+        "step_current": REQUEST_STEP_PROG_DG,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_JURIDICAL_ADVISORY_2,
+    },
+    REQUEST_STEP_JURIDICAL_ADVISORY_2: {
+        "approver": True,
+        "step_current": REQUEST_STEP_JURIDICAL_ADVISORY_2,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+PROGRESSION_H_APPROVAL_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_GER_DEV,
+    },
+    REQUEST_STEP_GER_DEV: {
+        "approver": True,
+        "step_current": REQUEST_STEP_GER_DEV,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+EXERCISE_CUMULATIVE_APPROVAL_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_PGJ,
+    },
+    REQUEST_STEP_PGJ: {
+        "approver": None,
+        "step_current": REQUEST_STEP_PGJ,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+CANCELAMENTO_TELETRABALHO_APPROVAL_FLOWER = {
+    REQUEST_STEP_APPROVER: {
+        "approver": True,
+        "step_current": REQUEST_STEP_APPROVER,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_GER_DEV,
+    },
+    REQUEST_STEP_GER_DEV: {
+        "approver": None,
+        "step_current": REQUEST_STEP_GER_DEV,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+DESBLOQUEIO_TELETRABALHO_APPROVAL_FLOWER = {
+    REQUEST_STEP_GER_DEV: {
+        "approver": None,
+        "step_current": REQUEST_STEP_GER_DEV,
+        "status": STS_WAI_APPROVER,
+        "next_step": REQUEST_STEP_SUB_ADM,
+    },
+    REQUEST_STEP_SUB_ADM: {
+        "approver": None,
+        "step_current": REQUEST_STEP_SUB_ADM,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+SOLICITACAO_CREDITO_FOLGA_APPROVAL_FLOWER = {
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    }
+}
+
+CREDITO_DISPENSA_ELEITORAL_APPROVAL_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+SOLICITACAO_AUX_CRECHE_DEPEN_IR_FLOWER = {
+    REQUEST_STEP_STAND: {
+        "approver": None,
+        "step_current": REQUEST_STEP_STAND,
+        "status": STS_STAND_BY,
+        "next_step": REQUEST_STEP_DGP,
+    },
+    REQUEST_STEP_DGP: {
+        "approver": None,
+        "step_current": REQUEST_STEP_DGP,
+        "status": STS_WAI_EFFECTIVENESS,
+        "next_step": None,
+    },
+}
+
+SOLICITACAO_VENDA_PLANTOES_FLOWER = {
+    REQUEST_STEP_EFETIVACAO_AUTOMATICA: {
+        "approver": None,
+        "step_current": REQUEST_STEP_EFETIVACAO_AUTOMATICA,
+        "status": STS_EFETIVACAO_AUTOMATICA,
+        "next_step": None,
+    }
+}
+
+
+DATA_CONFIG_VACATION = [
+    {"type_usufruct": REGULAR_VACATIONS, "total_days": 30, "options": CONFIG_HOLIDAY},
+    {
+        "type_usufruct": REGULAR_VACATIONS,
+        "total_days": 20,
+        "options": CONFIG_HOLIDAY_TWENTY,
+    },
+    {
+        "type_usufruct": REGULAR_VACATIONS,
+        "total_days": 15,
+        "options": CONFIG_HOLIDAY_FIFTEEN,
+    },
+    {
+        "type_usufruct": REGULAR_VACATIONS,
+        "total_days": 10,
+        "options": CONFIG_HOLIDAY_TEN,
+    },
+    {
+        "type_usufruct": INDIVIDUAL_VACATION,
+        "total_days": 30,
+        "options": CONFIG_HOLIDAY_MEMBER,
+    },
+    {
+        "type_usufruct": INDIVIDUAL_VACATION,
+        "total_days": 20,
+        "options": CONFIG_HOLIDAY_TWENTY,
+    },
+    {
+        "type_usufruct": INDIVIDUAL_VACATION,
+        "total_days": 15,
+        "options": CONFIG_HOLIDAY_FIFTEEN,
+    },
+    {
+        "type_usufruct": INDIVIDUAL_VACATION,
+        "total_days": 10,
+        "options": CONFIG_HOLIDAY_TEN,
+    },
+    {
+        "type_usufruct": INTERNS_RECESS,
+        "total_days": 30,
+        "options": CONFIG_INTERNS_RECESS_BEFORE,
+    },
+    {
+        "type_usufruct": INTERNS_RECESS,
+        "total_days": 12,
+        "options": CONFIG_INTERNS_RECESS_AFTER,
+    },
+    {
+        "type_usufruct": RESIDENTS_RECESS,
+        "total_days": 30,
+        "options": CONFIG_INTERNS_RECESS_BEFORE,
+    },
+    {
+        "type_usufruct": RESIDENTS_RECESS,
+        "total_days": 12,
+        "options": CONFIG_INTERNS_RECESS_AFTER,
+    },
+]
+
+
+# Tipos específicos das solicitações VDF
+PORTAL_REGULAR_VACATION_TYPE = 1
+PORTAL_INDIVIDUAL_VACATION_TYPE = 2
+PORTAL_FORENSIC_RECESS_TYPE = 3
+PORTAL_ELECTORAL_SLACK_TYPE = 5
+PORTAL_SERVER_SHIFT_TYPE = 6
+PORTAL_COMP_CLEARANCE_MEMBERS_TYPE = 7
+PORTAL_COMP_VACATION_MEMBERS_TYPE = 8
+PORTAL_INTERNS_RECESS_TYPE = 10
+PORTAL_SUBSTITUTE_PROMOTER_CONTEST_TYPE = 11
+PORTAL_INTERNSHIP_COMPETITION_TYPE = 12
+PORTAL_HEALTH_TREATMENT_SERVER_ABSENCE_TYPE = 13
+PORTAL_HEALTH_TREATMENT_MEMBER_ABSENCE_TYPE = 14
+PORTAL_HEALTH_MEDICAL_BOARD_ABSENCE_TYPE = 15
+PORTAL_HEALTH_FAMILY_DESEASE_TYPE = 16
+PORTAL_MATERNITY_LICENSE_TYPE = 17
+PORTAL_ABSENCE_BIRTH_TYPE = 18
+PORTAL_ABSENCE_DEATH_TYPE = 19
+PORTAL_ABSENCE_MARRIAGE_TYPE = 20
+PORTAL_CANCELAMENTO_TYPE = 22
+PORTAL_RETIFICACAO_USUFRUTO_TYPE = 23
+PORTAL_FOLHA_PONTO_TYPE = 24
+PORTAL_TELEWORK_TYPE = 25
+PORTAL_SOLICITACAO_PLANTAO_TYPE = 26
+PORTAL_BLOOD_DONATION_ABSENCE_TYPE = 27
+PORTAL_REQUEST_TYPE_PROGRESSION_V = 28
+PORTAL_REQUEST_TYPE_PROGRESSION_H = 29
+PORTAL_BLOOD_DONATION_TYPE = 30
+PORTAL_HEALTH_TYPE_HEALTHHOURS = 31
+PORTAL_RESIDENTS_RECESS_TYPE = 32
+PORTAL_CUMULATIVE_EXERCISE_TYPE = 33
+PORTAL_CANCELAMENTO_TELETRABALHO_TYPE = 34
+PORTAL_RELATORIO_TELETRABALHO_SEMESTRAL_TYPE = 35
+PORTAL_SOLICITCAO_CREDITO_SALDO_TYPE = 36
+PORTAL_DOENCA_PESSOA_FAMILIA_JUNTA_MEDICA_TYPE = 37
+PORTAL_SOLICITACAO_AUX_CRECHE_DEPEN_IR = 38
+PORTAL_SOLICITACAO_DESBLOQUEIO_TELETRABALHO = 39
+PORTAL_SOLICITCAO_CREDITO_DISPENSA_ELEITORAL = 40
+
+
+GENERIC_EVENT_BIRTHDAY = 1005
+GENERIC_EVENT_POINT_SHEET = 1002
+GENERIC_EVENT_TELEWORK = 1001
+GENERIC_EVENT_NON_WORKING_DAY = 1003
+GENERIC_EVENT_SUBSTITUTIONS = 1004
+
+
+GROUP_EVENT_BIRTHDAY = 1
+GROUP_EVENT_LICENSES = 2
+GROUP_EVENT_NON_WORKING_DAY = 3
+GROUP_EVENT_USUFRUCTS = 4
+GROUP_EVENT_SUBSTITUTIONS = 5
+GROUP_EVENT_POINT_SHEET = 6
+GROUP_EVENT_TELEWORK = 7
+GROUP_EVENT_SHIFTS = 8
+
+GROUP_EVENT_NAMES = {
+    GROUP_EVENT_BIRTHDAY: "Aniversários",
+    GROUP_EVENT_LICENSES: "Licenças",
+    GROUP_EVENT_NON_WORKING_DAY: "Feriados/Ponto Facultativos",
+    GROUP_EVENT_USUFRUCTS: "Usufrutos",
+    GROUP_EVENT_SUBSTITUTIONS: "Substituições",
+    GROUP_EVENT_POINT_SHEET: "Folha Ponto",
+    GROUP_EVENT_POINT_SHEET: "Teletrabalho",
+    GROUP_EVENT_SHIFTS: "Plantão",
+}
+
+
+# Ações de aprovadores (api PVFApprovalActionsView) ""
+ACTION_CANCEL = 12
+ACTION_ANNOTATION = 9
+ACTION_RETURN_APPLICANT = 7
+ACTION_RETURN_APPROVER = 6
+ACTION_APPROVER = 2
+ACTION_EFFECTIVENESS = 3
+ACTION_CONFIRM_DUTY = 4
+ACTION_NO_CONFIRM_DUTY = 10
+ACTION_CONFIRM_SCIENCE = 8
+ACTION_DEFER = 1
+ACTION_REJECT = 11
+ACTION_CONSOLIDATED = 5
+ACTION_SEND_SUB = 13
+
+# Chaves das ações de aprovadores (api PVFApprovalActionsView) ""
+ACTION_KEY_DEFER = "defer"
+ACTION_KEY_DENY = "deny"
+ACTION_KEY_SCIENCE = "science"
+ACTION_KEY_ANNOTATION = "annotation"
+ACTION_KEY_DGP_OBSERVATION = "dgp_observation"
+ACTION_KEY_RETURN_APPLICATION = "return_applicant"
+ACTION_KEY_RETURN_APPROVER = "return_approver"
+ACTION_KEY_CANCEL = "cancel"
+ACTION_KEY_CONSOLIDATED = "consolidated"
+ACTION_KEY_SEND_SUB = "send_sub"
+
+TIPOS_SOLICITACOES_USUFRUTOS_AFASTAMENTO = [
+    REQUEST_TYPE_SCHEDULE,
+    REQUEST_TYPE_ABSENCE,
+    REQUEST_TYPE_DOCUMENT,
+    REQUEST_TYPE_CHANGE_JOURNEY,
+    REQUEST_TYPE_CANCELLATION,
+    REQUEST_TYPE_RETIFICATION,
+]
+
+TIPO_SOLICITACAO_APROVACAO_SEM_ACAO = [
+    REQUEST_TYPE_CANCELAMENTO_TELETRABALHO,
+    REQUEST_TYPE_RELATORIO_TELE_SEMESTRAL,
+    REQUEST_TYPE_SOLICITACAO_CREDITO_FOLGA,
+]
+
+
+TYPE_EMPLOYEE = [
+    {"label": "Servidor", "value": "SERVIDOR"},
+    {"label": "Membro", "value": "MEMBRO"},
+    {"label": "Estagiário", "value": "ESTAGIARIO"},
+    {"label": "Residente", "value": "RESIDENTE"},
+]
+
+MSG_SUCCESS_METHOD = {
+    "post": "Registro criado com sucesso.",
+    "put": "Registro atualizado com sucesso.",
+    "delete": "Registro excluído com sucesso.",
+}
+
+PVF_ICONS_THEME = {
+    "waiting": "/%s/static/rh/images/andamento.png" % getattr(settings, "CONTEXT"),
+    "rejected": "/%s/static/images/denied.png" % getattr(settings, "CONTEXT"),
+    "approver": "/%s/static/rh/images/athenas-0073.png" % getattr(settings, "CONTEXT"),
+    "blank": "/%s/static/rh/images/blank_icon.png" % getattr(settings, "CONTEXT"),
+}
+
+
+COMBINACACAO_DIAS_FERIAS = [10, 15, 20, 30]
+
+ID_CONFIG_DOACAO_SANGUE_MEMBRO = 54
+ID_CONFIG_DOACAO_SANGUE_SERVIDOR = 29
+
+TIPO_FOLGA_AUXILIO_ELEITORAL = 1
+TIPO_FOLGA_CONCURSO = 2
+TIPO_FOLGA_INTERISTITUCIONAL = 3
+TIPO_FOLGA_CONSELHO_TUTELAR = 4
+TIPO_FOLGA_JUIZADO_TORCEDOR = 5
+
+
+CONFIG_SOLICITACAO_FOLGA_PLANTAO = {
+    TIPO_FOLGA_AUXILIO_ELEITORAL: TIPO_PLANTAO_AUXILIAR_ELEITORAL,
+    TIPO_FOLGA_CONCURSO: TIPO_PLANTAO_CONCURSO,
+    TIPO_FOLGA_INTERISTITUCIONAL: TIPO_PLANTAO_INTERINSTITUCIONAL,
+    TIPO_FOLGA_CONSELHO_TUTELAR: TIPO_PLANTAO_CONSELHO_TUTELAR,
+    TIPO_FOLGA_JUIZADO_TORCEDOR: TIPO_PLANTAO_JUIZADO_TORCEDOR,
+}
+
+MAX_SALDO_FOLGA_PLANTAO = 30
+
+
+CHAVE_TIPOS_SOLICITACOES = {
+    PORTAL_REGULAR_VACATION_TYPE: "FERIAS_REGULAMENTARES",
+    PORTAL_INDIVIDUAL_VACATION_TYPE: "FERIAS_INDIVIDUAIS",
+    PORTAL_FORENSIC_RECESS_TYPE: "RECESSO_FORENSE",
+    PORTAL_ELECTORAL_SLACK_TYPE: "FOLGA_ELEITORAL",
+    PORTAL_SERVER_SHIFT_TYPE: "PLANTOES‌_SERVIDORES",
+    PORTAL_COMP_CLEARANCE_MEMBERS_TYPE: "FOLGAS_COMPENSATORIAS_MEMBROS",
+    PORTAL_COMP_VACATION_MEMBERS_TYPE: "PLANTAO_DE_RECESSO_FORENSE",
+    PORTAL_INTERNS_RECESS_TYPE: "RECESSO_ESTAGIARIO",
+    PORTAL_SUBSTITUTE_PROMOTER_CONTEST_TYPE: "CONCURSO_PROMOTOR_SUBSTITUTO",
+    PORTAL_INTERNSHIP_COMPETITION_TYPE: "CONCURSO_ESTAGIARIOS",
+    PORTAL_CANCELAMENTO_TYPE: "CANCELAMENTO",
+    PORTAL_RETIFICACAO_USUFRUTO_TYPE: "RETIFICACAO",
+    PORTAL_FOLHA_PONTO_TYPE: "FOLHA_PONTO",
+    PORTAL_TELEWORK_TYPE: "TELETRABALHO",
+    PORTAL_SOLICITACAO_PLANTAO_TYPE: "SOLICITACAO_PLANTAO",
+    PORTAL_REQUEST_TYPE_PROGRESSION_V: "PROGRESSAO_VERTICAL",
+    PORTAL_REQUEST_TYPE_PROGRESSION_H: "PROGRESSAO_HORIZONTAL",
+    PORTAL_BLOOD_DONATION_TYPE: "DOACAO_SANGUE",
+    PORTAL_CUMULATIVE_EXERCISE_TYPE: "EXERCICIO_CUMULATIVO",
+    PORTAL_RESIDENTS_RECESS_TYPE: "RECESSO_RESIDENTE",
+    PORTAL_CANCELAMENTO_TELETRABALHO_TYPE: "CANCELAMENTO_TELETRABALHO",
+    PORTAL_RELATORIO_TELETRABALHO_SEMESTRAL_TYPE: "RELATORIO_SEMESTRAL_TELETRABALHO",
+    PORTAL_SOLICITCAO_CREDITO_SALDO_TYPE: "SOLICITACAO_FOLGA",
+    PORTAL_SOLICITACAO_AUX_CRECHE_DEPEN_IR: "SOLICITACAO_AUX_CRECHE_IR",
+    PORTAL_SOLICITACAO_DESBLOQUEIO_TELETRABALHO: "DESBLOQUEIO_TELETRABALHO",
+    PORTAL_SOLICITCAO_CREDITO_DISPENSA_ELEITORAL: "SOLICITACAO_CREDITO_DISPENSA_ELEITORAL",
+}
+
+
+CLASSIF_LICENCA_MATERNIDADE_NORMAL = 1
+CLASSIF_LICENCA_MATERNIDADE_ANTECIPACAO = 2
+
+
+MSG_DEFAULT_ATO_TELETRABALHO = (
+    "Falta de envio do relatório mensal no prazo estipulado, "
+    "conforme disposto no artigo 8º do ato adm. 862/2019."
+)
+
+
+USUFRUTO_PLANTAO_COMPENSATORIAS = [
+    COMP_CLEARANCE_MEMBERS,
+    COMP_VACATION_MEMBERS,
+    ONCALL_BONUS_SERVERS,
+    FORENSIC_RECESS,
+]
+
+
+NOME_JOB_SERVICO = {
+    "job_efetivar_solicitacoes_automatico": "APROVADOR AUTOMÁTICO (ATHENAS)"
+}

@@ -1,0 +1,97 @@
+[
+{
+    "fields": {
+        "layer": 1,
+        "uuid": "b5b0f67956484512be864077284e903f",
+        "title": "RAF",
+        "father": null,
+        "active": true,
+        "icon": "athenas-0679.png"
+    },
+    "model": "engine.application"
+},
+{
+    "fields": {
+        "uuid": "6a7d277624b04b2bb8e2192791b6ef59",
+        "title": "Ajuste de atividade",
+        "module": "raf",
+        "application": [
+            "b5b0f67956484512be864077284e903f"
+        ],
+        "controller": "RAFActivityAdjustmentInternalControl",
+        "active": true,
+        "icon": "athenas-0619.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "0d4b68891f8849ae9ac617c1417fdd61",
+        "title": "Configuração",
+        "module": "raf",
+        "application": [
+            "b5b0f67956484512be864077284e903f"
+        ],
+        "controller": "RAFConfiguration",
+        "active": true,
+        "icon": "athenas-0189.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "4f6a32357d294549b4c4b64adc4c437b",
+        "title": "Preenchimento",
+        "module": "raf",
+        "application": [
+            "b5b0f67956484512be864077284e903f"
+        ],
+        "controller": "RAFFunctionalActivityReport",
+        "active": true,
+        "icon": "athenas-0278.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "9a6fb4d776d84bfa858d2bcdffffbbea",
+        "title": "Gestor de Questionários",
+        "module": "raf",
+        "application": [
+            "b5b0f67956484512be864077284e903f"
+        ],
+        "controller": "RAFQuiz",
+        "active": true,
+        "icon": "athenas-0773.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "7ac5276a279e44d49b07c05f8fe85a36",
+        "title": "Relação de Confiança",
+        "module": "raf",
+        "application": [
+            "b5b0f67956484512be864077284e903f"
+        ],
+        "controller": "RAFTrustRelationship",
+        "active": true,
+        "icon": "athenas-0638.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+    "uuid": "f6d09e07f35c4116a5b6b37ee3dd9f45",
+    "title": "Atividades Não Procedimentais",
+    "module": "raf",
+    "application": [
+        "b5b0f67956484512be864077284e903f"
+    ],
+    "controller": "RAFNonProceduralActivities",
+    "active": true,
+    "icon": "athenas-0433.png"
+    },
+    "model": "engine.controller"
+}
+]

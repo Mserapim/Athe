@@ -1,0 +1,47 @@
+- 2024.3.5:
+    - CARD: ATS-3206/ATS-3207 - MR: 655 - Iniciando alteração no gerador SPPREVCOM
+- 2024.3.6:
+    - CARD: ATS-3223 - MR: 654 - 1.2.1 - Criar o campo da sigla, alterar o campo 'ativo' para 'situacao' na tabela de módulos
+    - CARD: ATS-3273 - MR: 664 - Ajuste na tela de Gestor de Batidas
+- 2024.3.7:
+    - CARD: ATS-3211 - MR: 660 - Coordenação + Gaeco - Gratificação de Membros
+- 2024.3.8:
+    - CARD: ATS-3202 - MR: 674 - inclusão do campo lotacao na api de servidores
+    - CARD: ATS-3203 - MR: 675 - criação do botão de Deferir todos na tela de gratificações de servidores 
+    - CARD: ATS-3204 - MR: 677 - Ajuste na função download da tela Gestor de Designação para Auxiliar de Coordenação 
+    - CARD: ATS-2889 - MR: 678 - Ajustar a documentação da paginação da API
+    - CARD: ATS-3085 - MR: 679 - [Gestão do envio do ponto] - Criação da tela principal
+    - CARD: ATS-3086 - MR: 679 - [Gestão do envio do ponto] - Criação do filtro ano e mês
+    - CARD: ATS-3191 - MR: 680 - [Gestão do envio do ponto] - Criação do filtro de tele
+    - CARD: ATS-3192 - MR: 680 - [Gestão do envio do ponto] - Criação do filtro de situação
+- 2024.3.11:
+    - CARD: ATS-3210 - MR: 681 - Atualização Cálculos de Férias - Comissionados
+    - CARD: ATS-3298 - MR: 685 - GCPP Implantar valores Inseridos Manualmente
+- 2024.3.12:
+    - CARD: ATS-3009 - MR: 683 - Implementar a automação de cancelar retificação
+    - CARD: ATS-3251 - MR: 684 - Montando API de manutenção de Menus
+    - CARD: ATS-3296 - MR: 686 - Adicionando campo descrição ao UsuarioGrupo
+    - CARD: ATS-3297 - MR: 687 - Adicionando validação para o campo Nome do UsuarioGrupo
+- 2024.3.13:
+    - CARD: ATS-3252 - MR: 692 - Criando API para cadastro de GrupoMenu
+    - CARD: ATS-3186 - MR: 690 - Tratar a referência do envio - Função da referência
+- 2024.3.14:
+    - CARD: ATS-3315 - MR: 698 - ajuste no NaturalPersonHistory para ignorar mudanças na PessoaFisica
+    - CARD: ATS-3215 - MR: 699 - API para colaboradores Eventuais 
+    - CARD: ATS-3253 - MR: 701 - Criando API do cadastro de Menu
+    - CARD: ATS-3254 - MR: 702 - Criando Api para listar MenuConfig
+    - CARD: ATS-3237 - MR: 693 - Solicitações de Fogas pro execuções de Plantões e Afins - Membros
+- 2024.3.15:
+    - CARD: ATS-3319 - MR: 700 - Erro ao calcular substituição - Auxilio coordenação de servidores
+    - CARD: ATS-3088 - MR: 689 - envio de email para notificar folha ponto
+    - CARD: ATS-3188 - MR: 703 - Cancelar a justificativa ao cancelar a solicitação
+    - CARD: ATS-3332 - MR: 707 - Corrigir validação na criação do período de Exercício Cumulativo 
+    - CARD: ATS-3255 - MR: 706 - Criando Api para cadastro de MenuConfig
+    - CARD: ATS-3236 - MR: 705 - Permitir alterar status de processamento 210
+    - CARD: ATS-3217 - MR: 711 - API de visualização de Paagaamentos de colaboradores eventuais 
+    - CARD: ATS-3333 - MR: 710 - Adicionar tipo EFC em Gestor Batidas
+    - CARD: ATS-3178 - MR: 712 - Sistema avisar o registro de ponto quando estiver ausente
+    - CARD: ATS-3233 - MR: 714 - APIS do Cbo 
+    - CARD: ATS-3218 - MR: 713 - APIs do crud de Pagamentos de colaboradores eventuais 
+
+

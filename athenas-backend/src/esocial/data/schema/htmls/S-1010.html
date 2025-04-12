@@ -1,0 +1,849 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_eSocial" id="1010_eSocial">1</td>
+        <td><a href="#r_1010_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010" id="1010">2</td>
+        <td><a href="#r_1010">evtTabRubrica</a></td>
+        <td><a href="#r_1010_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Tabela de Rubricas.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO">REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO">REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO</a><br>
+            <a href="#REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TABRUBR_INCLUSAO">REGRA_TABRUBR_INCLUSAO</a><br>
+            <a href="#REGRA_TAB_PERMITE_EXCLUSAO">REGRA_TAB_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_VALIDA_DT_FUTURA">REGRA_VALIDA_DT_FUTURA</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_Id" id="1010_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1010">evtTabRubrica</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEvento" id="1010_ideEvento">4</td>
+        <td><a href="#r_1010_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1010">evtTabRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEvento_tpAmb" id="1010_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1010_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEvento_procEmi"
+            id="1010_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1010_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEvento_verProc"
+            id="1010_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1010_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEmpregador" id="1010_ideEmpregador">8</td>
+        <td><a href="#r_1010_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1010">evtTabRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEmpregador_tpInsc"
+            id="1010_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1010_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_ideEmpregador_nrInsc"
+            id="1010_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1010_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1010_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica" id="1010_infoRubrica">11</td>
+        <td><a href="#r_1010_infoRubrica">infoRubrica</a></td>
+        <td><a href="#r_1010">evtTabRubrica</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da operação (inclusão, alteração ou exclusão) e das informações da rubrica.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao"
+            id="1010_infoRubrica_inclusao">12
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao">inclusao</a></td>
+        <td><a href="#r_1010_infoRubrica">infoRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Inclusão de novas informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_ideRubrica"
+            id="1010_infoRubrica_inclusao_ideRubrica">13
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao_ideRubrica">ideRubrica</a></td>
+        <td><a href="#r_1010_infoRubrica_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da rubrica e período de validade das informações.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_ideRubrica_codRubr"
+            id="1010_infoRubrica_inclusao_ideRubrica_codRubr">14
+        </td>
+        <td>codRubr</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_ideRubrica">ideRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento.<br>
+            <strong>Validação:</strong> O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras
+            posições.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_ideRubrica_ideTabRubr"
+            id="1010_infoRubrica_inclusao_ideRubrica_ideTabRubr">15
+        </td>
+        <td>ideTabRubr</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_ideRubrica">ideRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>Preencher com o identificador da Tabela de Rubricas no âmbito do empregador.<br>
+            <strong>Validação:</strong> O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras
+            posições.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_ideRubrica_iniValid"
+            id="1010_infoRubrica_inclusao_ideRubrica_iniValid">16
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_ideRubrica">ideRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_ideRubrica_fimValid"
+            id="1010_infoRubrica_inclusao_ideRubrica_fimValid">17
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_ideRubrica">ideRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1010_infoRubrica_inclusao_ideRubrica_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica"
+            id="1010_infoRubrica_inclusao_dadosRubrica">18
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td><a href="#r_1010_infoRubrica_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações da rubrica.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_dscRubr"
+            id="1010_infoRubrica_inclusao_dadosRubrica_dscRubr">19
+        </td>
+        <td>dscRubr</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a descrição (nome) da rubrica no sistema de folha de pagamento da empresa.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_natRubr"
+            id="1010_infoRubrica_inclusao_dadosRubrica_natRubr">20
+        </td>
+        <td>natRubr</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Informar o código de classificação da rubrica.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#03">Tabela 03</a>.<br>
+            Para utilização de código [9253], é necessário que <a href="#1010_infoRubrica_inclusao_ideRubrica_iniValid">iniValid</a>
+            seja igual ou posterior ao mês de início do eConsignado no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_tpRubr"
+            id="1010_infoRubrica_inclusao_dadosRubrica_tpRubr">21
+        </td>
+        <td>tpRubr</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de rubrica.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Vencimento, provento ou pensão<br>
+            <strong>2</strong> - Desconto<br>
+            <strong>3</strong> - Informativa<br>
+            <strong>4</strong> - Informativa dedutora<br>
+            <strong>Validação:</strong> Se <a href="#1010_infoRubrica_inclusao_dadosRubrica_natRubr">natRubr</a> =
+            [9253], deve ser preenchido com [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_codIncCP"
+            id="1010_infoRubrica_inclusao_dadosRubrica_codIncCP">22
+        </td>
+        <td>codIncCP</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Código de incidência tributária da rubrica para a Previdência Social.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>00</strong> - Não é base de cálculo<br>
+            <strong>01</strong> - Não é base de cálculo em função de acordos internacionais de previdência social<br>
+            <br>
+            Base de cálculo das contribuições sociais - Salário de contribuição:<br>
+            <strong>11</strong> - Mensal<br>
+            <strong>12</strong> - 13º salário<br>
+            <strong>13</strong> - Exclusiva do empregador - Mensal<br>
+            <strong>14</strong> - Exclusiva do empregador - 13° salário<br>
+            <strong>15</strong> - Exclusiva do segurado - Mensal<br>
+            <strong>16</strong> - Exclusiva do segurado - 13° salário<br>
+            <strong>21</strong> - Salário-maternidade mensal, pago pelo empregador<br>
+            <strong>22</strong> - Salário-maternidade 13º salário, pago pelo empregador<br>
+            <strong>25</strong> - Salário-maternidade mensal, pago pelo INSS<br>
+            <strong>26</strong> - Salário-maternidade 13° salário, pago pelo INSS<br>
+            <br>
+            Contribuição descontada do segurado sobre salário de contribuição:<br>
+            <strong>31</strong> - Mensal<br>
+            <strong>32</strong> - 13º salário<br>
+            <strong>34</strong> - SEST<br>
+            <strong>35</strong> - SENAT<br>
+            <br>
+            Outros:<br>
+            <strong>51</strong> - Salário-família<br>
+            <br>
+            Suspensão de incidência sobre salário de contribuição em decorrência de decisão judicial:<br>
+            <strong>91</strong> - Mensal<br>
+            <strong>92</strong> - 13º salário<br>
+            <strong>93</strong> - Salário-maternidade<br>
+            <strong>94</strong> - Salário-maternidade 13º salário<br>
+            <strong>95</strong> - Exclusiva do empregador - Mensal<br>
+            <strong>96</strong> - Exclusiva do empregador - 13º salário<br>
+            <strong>97</strong> - Exclusiva do empregador - Salário-maternidade<br>
+            <strong>98</strong> - Exclusiva do empregador - Salário-maternidade 13º salário<br>
+            <strong>Validação:</strong> Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a
+            existência de grupo com informações relativas ao processo.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF"
+            id="1010_infoRubrica_inclusao_dadosRubrica_codIncIRRF">23
+        </td>
+        <td>codIncIRRF</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Código de incidência tributária da rubrica para o Imposto de Renda Retido na Fonte - IRRF.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#21">Tabela 21</a>.<br>
+            Para utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao
+            processo.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_codIncFGTS"
+            id="1010_infoRubrica_inclusao_dadosRubrica_codIncFGTS">24
+        </td>
+        <td>codIncFGTS</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Código de incidência da rubrica para o Fundo de Garantia do Tempo de Serviço - FGTS.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>00</strong> - Não é base de cálculo do FGTS<br>
+            <strong>11</strong> - Base de cálculo do FGTS mensal<br>
+            <strong>12</strong> - Base de cálculo do FGTS 13° salário<br>
+            <strong>21</strong> - Base de cálculo do FGTS aviso prévio indenizado<br>
+            <strong>31</strong> - Desconto eConsignado<br>
+            <strong>91</strong> - Incidência suspensa em decorrência de decisão judicial - FGTS mensal<br>
+            <strong>92</strong> - Incidência suspensa em decorrência de decisão judicial - FGTS 13º salário<br>
+            <strong>93</strong> - Incidência suspensa em decorrência de decisão judicial - FGTS aviso prévio
+            indenizado<br>
+            <strong>Validação:</strong> Para utilização de código [91, 92, 93], é necessária a existência de grupo com
+            informações relativas ao processo. A utilização do código [31] é obrigatória e exclusiva quando <a
+                    href="#1010_infoRubrica_inclusao_dadosRubrica_natRubr">natRubr</a> = [9253].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_codIncCPRP"
+            id="1010_infoRubrica_inclusao_dadosRubrica_codIncCPRP">25
+        </td>
+        <td>codIncCPRP</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Código de incidência da rubrica para as contribuições do Regime Próprio de Previdência Social - RPPS ou do
+            Sistema de Proteção Social dos Militares das Forças Armadas - SPSMFA.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>00</strong> - Não é base de cálculo de contribuições devidas<br>
+            <strong>11</strong> - Base de cálculo de contribuições devidas<br>
+            <strong>12</strong> - Base de cálculo de contribuições devidas - 13º salário<br>
+            <strong>31</strong> - Contribuição descontada do segurado ou beneficiário<br>
+            <strong>32</strong> - Contribuição descontada do segurado ou beneficiário - 13º salário<br>
+            <strong>91</strong> - Suspensão de incidência em decorrência de decisão judicial<br>
+            <strong>92</strong> - Suspensão de incidência em decorrência de decisão judicial - 13º salário
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_codIncPisPasep"
+            id="1010_infoRubrica_inclusao_dadosRubrica_codIncPisPasep">26
+        </td>
+        <td>codIncPisPasep</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Código de incidência da rubrica para o PIS/PASEP sobre a folha de salários a ser utilizado quando <a
+                href="#1000_infoEmpregador_inclusao_infoCadastro_indTribFolhaPisPasep">indTribFolhaPisPasep</a> = [S] em
+            S-1000.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>00</strong> - Não é base de cálculo do PIS/PASEP<br>
+            <strong>11</strong> - Base de cálculo do PIS/PASEP mensal<br>
+            <strong>12</strong> - Base de cálculo do PIS/PASEP 13° salário<br>
+            <strong>91</strong> - Incidência suspensa em decorrência de decisão judicial - PIS/PASEP mensal<br>
+            <strong>92</strong> - Incidência suspensa em decorrência de decisão judicial - PIS/PASEP 13º salário<br>
+            <strong>Validação:</strong> Para utilização de código [91, 92], é necessária a existência de grupo com
+            informações relativas ao processo.<br>
+            Caso o campo não seja informado, será presumido o valor [00].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_tetoRemun"
+            id="1010_infoRubrica_inclusao_dadosRubrica_tetoRemun">27
+        </td>
+        <td>tetoRemun</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se a rubrica compõe o teto remuneratório específico (art. 37, XI, da CF/1988).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se a natureza jurídica do declarante for Administração
+            Pública (grupo [1]).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_inclusao_dadosRubrica_observacao"
+            id="1010_infoRubrica_inclusao_dadosRubrica_observacao">28
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observações relacionadas à rubrica ou à sua utilização.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP">29
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP">ideProcessoCP</a></td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Caso a empresa possua processo administrativo ou judicial com decisão/sentença favorável, determinando a não
+            incidência de contribuição previdenciária relativa à rubrica identificada no evento, as informações deverão
+            ser incluídas neste grupo, e o detalhamento do processo deverá ser efetuado através de evento específico na
+            Tabela de Processos (S-1070).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_tpProc"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_tpProc">30
+        </td>
+        <td>tpProc</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP">ideProcessoCP</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_nrProc"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_nrProc">31
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP">ideProcessoCP</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar um número de processo cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo administrativo ou judicial válido e existente na
+            Tabela de Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a>
+            = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_extDecisao"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_extDecisao">32
+        </td>
+        <td>extDecisao</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP">ideProcessoCP</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Extensão da decisão/sentença.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuição previdenciária patronal<br>
+            <strong>2</strong> - Contribuição previdenciária patronal + descontada dos segurados
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_codSusp"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP_codSusp">33
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoCP">ideProcessoCP</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF">34
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF">ideProcessoIRRF</a></td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Caso a empresa possua processo judicial com decisão/sentença favorável, determinando a não incidência de
+            imposto de renda relativo à rubrica identificada no evento, as informações deverão ser incluídas neste
+            grupo, e o detalhamento do processo deverá ser efetuado através de evento específico na Tabela de Processos
+            (S-1070).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF_nrProc"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF_nrProc">35
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF">ideProcessoIRRF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar um número de processo judicial cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido e existente na Tabela de
+            Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF_codSusp"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF_codSusp">36
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoIRRF">ideProcessoIRRF</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoFGTS"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoFGTS">37
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoFGTS">ideProcessoFGTS</a></td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Caso a empresa possua processo judicial com decisão/sentença favorável, determinando a não incidência de
+            FGTS relativo à rubrica identificada no evento, as informações deverão ser incluídas neste grupo, e o
+            detalhamento do processo deverá ser efetuado através de evento específico na Tabela de Processos (S-1070).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoFGTS_nrProc"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoFGTS_nrProc">38
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoFGTS">ideProcessoFGTS</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar um número de processo judicial cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1, 7].<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido e existente na Tabela de
+            Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> = [1, 7].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep">39
+        </td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep">ideProcessoPisPasep</a></td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica">dadosRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Caso a empresa possua processo judicial com decisão/sentença favorável, determinando a não incidência de
+            contribuição para o PIS/PASEP relativo à rubrica identificada no evento, as informações deverão ser
+            incluídas neste grupo, e o detalhamento do processo deverá ser efetuado através de evento específico na
+            Tabela de Processos (S-1070).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep_nrProc"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep_nrProc">40
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep">ideProcessoPisPasep</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar um número de processo judicial cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido e existente na Tabela de
+            Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep_codSusp"
+            id="1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep_codSusp">41
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1010_infoRubrica_inclusao_dadosRubrica_ideProcessoPisPasep">ideProcessoPisPasep</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_alteracao"
+            id="1010_infoRubrica_alteracao">42
+        </td>
+        <td><a href="#r_1010_infoRubrica_alteracao">alteracao</a></td>
+        <td><a href="#r_1010_infoRubrica">infoRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Alteração das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_alteracao_ideRubrica"
+            id="1010_infoRubrica_alteracao_ideRubrica">43
+        </td>
+        <td><a href="#r_1010_infoRubrica_alteracao_ideRubrica">ideRubrica</a></td>
+        <td><a href="#r_1010_infoRubrica_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da rubrica e período de validade das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_alteracao_dadosRubrica"
+            id="1010_infoRubrica_alteracao_dadosRubrica">44
+        </td>
+        <td><a href="#r_1010_infoRubrica_alteracao_dadosRubrica">dadosRubrica</a></td>
+        <td><a href="#r_1010_infoRubrica_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações da rubrica.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_alteracao_novaValidade"
+            id="1010_infoRubrica_alteracao_novaValidade">45
+        </td>
+        <td><a href="#r_1010_infoRubrica_alteracao_novaValidade">novaValidade</a></td>
+        <td><a href="#r_1010_infoRubrica_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação preenchida exclusivamente em caso de alteração do período de validade das informações,
+            apresentando o novo período de validade.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_alteracao_novaValidade_iniValid"
+            id="1010_infoRubrica_alteracao_novaValidade_iniValid">46
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1010_infoRubrica_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_alteracao_novaValidade_fimValid"
+            id="1010_infoRubrica_alteracao_novaValidade_fimValid">47
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1010_infoRubrica_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1010_infoRubrica_alteracao_novaValidade_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_exclusao"
+            id="1010_infoRubrica_exclusao">48
+        </td>
+        <td><a href="#r_1010_infoRubrica_exclusao">exclusao</a></td>
+        <td><a href="#r_1010_infoRubrica">infoRubrica</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Exclusão das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1010_infoRubrica_exclusao_ideRubrica"
+            id="1010_infoRubrica_exclusao_ideRubrica">49
+        </td>
+        <td><a href="#r_1010_infoRubrica_exclusao_ideRubrica">ideRubrica</a></td>
+        <td><a href="#r_1010_infoRubrica_exclusao">exclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da rubrica e período de validade das informações.</td>
+    </tr>
+    </tbody>
+</table>

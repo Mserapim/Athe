@@ -1,0 +1,33 @@
+[
+{
+    "fields": {
+        "cbo": 3544,
+        "unidade_administrativa": 511,
+        "lotacao_responsavel": null,
+        "substituivel": false,
+        "tipo_lei_cargo": "EL",
+        "modified_by": 1,
+        "nome": "MEMBRO DO CONSELHO SUPERIOR DE PROCURADORES",
+        "created_by": 1,
+        "instancia": 2,
+        "entrancia": 4,
+        "poder": 4,
+        "descricao": "<!-- Correção de bug da ExtJS -->",
+        "data_alteracao": "2015-05-18",
+        "cargo_arquimedes": 0,
+        "carreira": 2,
+        "acumulavel": false,
+        "designa_exercicio": true,
+        "chefia": false,
+        "indicativo": "I",
+        "created_at": "2015-05-18T11:19:35.881",
+        "modified_at": "2015-05-18T11:20:01.173",
+        "codigo": "MCSP",
+        "ativo": true,
+        "professor": false,
+        "id": 100001
+    },
+    "model": "rh.cargo",
+    "pk": 100001
+}
+]

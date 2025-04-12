@@ -1,0 +1,1263 @@
+[
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Material de Consumo",
+      "cache_path": "contrato.CLASSIFICACAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICACAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Material Permanente",
+      "cache_path": "contrato.CLASSIFICACAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICACAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Serviço",
+      "cache_path": "contrato.CLASSIFICACAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICACAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Obras e Instalações",
+      "cache_path": "contrato.CLASSIFICACAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICACAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Material Permanente",
+      "cache_path": "contrato.CLASSIFICAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Serviços",
+      "cache_path": "contrato.CLASSIFICAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Obras e Instalações",
+      "cache_path": "contrato.CLASSIFICAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Material de Consumo",
+      "cache_path": "contrato.CLASSIFICAO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "CLASSIFICAO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 90,
+      "label": "3 meses antes do vencimento",
+      "cache_path": "contrato.DIAS_AVISO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "DIAS_AVISO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Não avisar",
+      "cache_path": "contrato.DIAS_AVISO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "DIAS_AVISO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 120,
+      "label": "4 meses antes do vencimento",
+      "cache_path": "contrato.DIAS_AVISO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "DIAS_AVISO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 180,
+      "label": "6 meses antes do vencimento",
+      "cache_path": "contrato.DIAS_AVISO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "DIAS_AVISO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Não",
+      "cache_path": "contrato.PRORROGACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "PRORROGACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Sim",
+      "cache_path": "contrato.PRORROGACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "PRORROGACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Estorno",
+      "cache_path": "contrato.REFORCO_ESTORNO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "REFORCO_ESTORNO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Reforço",
+      "cache_path": "contrato.REFORCO_ESTORNO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "REFORCO_ESTORNO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Solicitada Prorrogação",
+      "cache_path": "contrato.STATUS_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Solicitada a Licitação",
+      "cache_path": "contrato.STATUS_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Solicitada a Recisão",
+      "cache_path": "contrato.STATUS_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Finalizado",
+      "cache_path": "contrato.STATUS_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Em Execução",
+      "cache_path": "contrato.STATUS_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Aguardando Pagamento",
+      "cache_path": "contrato.STATUS_MEDICAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_MEDICAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Pago",
+      "cache_path": "contrato.STATUS_MEDICAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_MEDICAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Não pago",
+      "cache_path": "contrato.STATUS_MEDICAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "STATUS_MEDICAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Administrativo",
+      "cache_path": "contrato.SUPERVISOR_CLASSIFICATION",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "SUPERVISOR_CLASSIFICATION"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Técnico",
+      "cache_path": "contrato.SUPERVISOR_CLASSIFICATION",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "SUPERVISOR_CLASSIFICATION"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Requisitante",
+      "cache_path": "contrato.SUPERVISOR_CLASSIFICATION",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "SUPERVISOR_CLASSIFICATION"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Titular",
+      "cache_path": "contrato.SUPERVISOR_KIND",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "SUPERVISOR_KIND"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Substituto",
+      "cache_path": "contrato.SUPERVISOR_KIND",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "SUPERVISOR_KIND"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Pedir Prorrogação",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Aceitar Pedido de Prorrogação",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Negar Pedido de Prorrogação",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Pedir Licitação",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 5,
+      "label": "Negar Licitação",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 6,
+      "label": "Licitar",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 7,
+      "label": "Finalizar Contrato",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 8,
+      "label": "Pedir Recisão Contratual",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 9,
+      "label": "Aceitar Pedido de Recisão Contratual",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 10,
+      "label": " Negar Pedido de Recisão Contratual",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 11,
+      "label": "Alertar Vencimento do Contrato",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 12,
+      "label": "Solicitação de Pagamento",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 13,
+      "label": "Lançar Pagamento",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Cadastro do Contrato",
+      "cache_path": "contrato.TIPO_ACAO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ACAO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Contrato",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "SRP",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "NE",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Locação",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 5,
+      "label": "Serviços Contínuos",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 6,
+      "label": "Fornecimento",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Fiscal do Contrato",
+      "cache_path": "contrato.TIPO_GESTOR",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_GESTOR"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Gestor Geral",
+      "cache_path": "contrato.TIPO_GESTOR",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_GESTOR"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Departamento de Contrato",
+      "cache_path": "contrato.TIPO_GESTOR",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_GESTOR"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Departamento de Licitação",
+      "cache_path": "contrato.TIPO_GESTOR",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_GESTOR"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 5,
+      "label": "Departamento Financeiro",
+      "cache_path": "contrato.TIPO_GESTOR",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_GESTOR"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Dispensa de Licitação",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Inexigibilidade de Licitação",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Pregão Eletrônico",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Pregão Presencial",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 5,
+      "label": "Adesão a Ata SRP",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 6,
+      "label": "Concorrência",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Registro de Preço",
+      "cache_path": "contrato.TIPO_LICITACAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_LICITACAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Etapa",
+      "cache_path": "contrato.TIPO_MEDICAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_MEDICAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Mensal",
+      "cache_path": "contrato.TIPO_MEDICAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_MEDICAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 100,
+      "label": "Contrato",
+      "cache_path": "contrato.TIPO_MEDICAO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_MEDICAO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Ordinário",
+      "cache_path": "contrato.TIPO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Estimativo",
+      "cache_path": "contrato.TIPO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Global",
+      "cache_path": "contrato.TIPO_NE",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_NE"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Principal",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "1° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "2° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "3° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 5,
+      "label": "4° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 6,
+      "label": "5° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 7,
+      "label": "6° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 8,
+      "label": "7° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 9,
+      "label": "8° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 10,
+      "label": "9° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 11,
+      "label": "10° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 12,
+      "label": "11° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 13,
+      "label": "12° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 14,
+      "label": "13° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 15,
+      "label": "14° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 16,
+      "label": "15° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 17,
+      "label": "16° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 18,
+      "label": "17° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 19,
+      "label": "18° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 20,
+      "label": "19° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 21,
+      "label": "20° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 22,
+      "label": "21° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 23,
+      "label": "22° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 24,
+      "label": "23° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 25,
+      "label": "24° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 26,
+      "label": "25° Aditivo",
+      "cache_path": "contrato.TIPO_ORDEM_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_ORDEM_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 1,
+      "label": "Principal",
+      "cache_path": "contrato.TIPO_VALOR_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_VALOR_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "Prazo",
+      "cache_path": "contrato.TIPO_VALOR_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_VALOR_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 3,
+      "label": "Valor",
+      "cache_path": "contrato.TIPO_VALOR_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_VALOR_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "fields": {
+      "description": "",
+      "value": 4,
+      "label": "Outros",
+      "cache_path": "contrato.TIPO_VALOR_CONTRATO",
+      "app_label": "contrato",
+      "active": true,
+      "order_weight": 0,
+      "name": "TIPO_VALOR_CONTRATO"
+    },
+    "model": "standard.choice"
+  }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "requestform",
+            "name": "HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "label": "Portador de deficiência ou doença grave;",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "requestform.HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "requestform",
+            "name": "HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "label": "Filho, cônjuge, companheiro ou dependente com deficiência ou doença grave;",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "requestform.HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "requestform",
+            "name": "HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "label": "Lactantes, até o primeiro ano de vida da criança;",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "requestform.HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "requestform",
+            "name": "HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "label": "Concessão de licença para acompanhamento do cônjuge ou companheiro;",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "requestform.HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "requestform",
+            "name": "HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "label": "Outras",
+            "value": 5,
+            "cvalue": "5",
+            "cache_path": "requestform.HOME_OFFICE_FOR_EMPLOYEE_REQTYPE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+]

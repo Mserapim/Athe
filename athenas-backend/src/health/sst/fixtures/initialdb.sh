@@ -1,0 +1,14 @@
+# INITIAL DB
+./manage.py exportdata "Choice.objects.filter(app_label='sst').order_by('app_label', 'name', 'value')" -i 2 --with-natural-keys -m standard -o "health/sst/fixtures/0001_choices.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "CauserAgent.objects.filter().order_by('code')" -i 2 --with-natural-keys -m health.sst -o "health/sst/fixtures/0002_causeragent.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "CauserAgentAccident.objects.filter().order_by('code')" -i 2 --with-natural-keys -m health.sst -o "health/sst/fixtures/0003_causeragentaccident.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "BodyPart.objects.filter().order_by('code')" -i 2 --with-natural-keys -m health.sst -o "health/sst/fixtures/0004_bodypart.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "Injury.objects.filter().order_by('code')" -i 2 --with-natural-keys -m health.sst -o "health/sst/fixtures/0005_injury.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "HarmfulAgent.objects.filter().order_by('code')" -i 2 --with-natural-keys -m health.sst -o "health/sst/fixtures/0006_harmfulagent.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+
+./manage.py exportdata "Application.objects.filter(uuid__in=('b2af86ef9f0d40a0b30b3c672bf60a19', 'f0c9c4cf048942d88382fd852dbf25de', '3c0deddb986140289c29e2226a4307ad', '2e056ea4dd084403ad9190cb36e33fbb')).order_by('layer', 'title')" -i 2 --with-natural-keys -m engine -o 'health/sst/fixtures/initialdb_0001_applications.json'
+./manage.py exportdata "ContentType.objects.filter(app_label__in=('sst', 'health')).order_by('app_label', 'model')" -i 2 --with-natural-keys -m django.contrib.contenttypes -o 'health/sst/fixtures/initialdb_0002_contenttypes.json'
+./manage.py exportdata "Permission.objects.filter(content_type__in=ContentType.objects.filter(app_label__in=('sst', 'health'))).order_by('content_type', 'codename')" -i 2 --with-natural-keys -m django.contrib.auth -o 'health/sst/fixtures/initialdb_0003_permissions.json'
+./manage.py exportdata "Group.objects.filter(name='sst').order_by('name')" -i 2 --with-natural-keys -m django.contrib.auth -o 'health/sst/fixtures/initialdb_0004_groups.json'
+./manage.py exportdata "Controller.objects.filter(application__uuid__in=('b2af86ef9f0d40a0b30b3c672bf60a19', 'f0c9c4cf048942d88382fd852dbf25de', '3c0deddb986140289c29e2226a4307ad', '2e056ea4dd084403ad9190cb36e33fbb')).order_by('module', 'title')" -i 2 --with-natural-keys -m engine -o 'health/sst/fixtures/initialdb_0005_controllers.json'
+./manage.py exportdata "ControllerPermission.objects.filter(name='sst').order_by('name')" -i 2 --with-natural-keys -m engine -e "['users']" -o 'health/sst/fixtures/initialdb_0006_controllerpermissions.json'

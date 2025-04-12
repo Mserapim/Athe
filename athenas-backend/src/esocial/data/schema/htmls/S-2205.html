@@ -1,0 +1,1117 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_eSocial" id="2205_eSocial">1</td>
+        <td><a href="#r_2205_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205" id="2205">2</td>
+        <td><a href="#r_2205">evtAltCadastral</a></td>
+        <td><a href="#r_2205_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Alteração de Dados Cadastrais do Trabalhador.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_POSTERIOR_CAT_OBITO">REGRA_EVENTO_POSTERIOR_CAT_OBITO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXISTE_TRABALHADOR">REGRA_EXISTE_TRABALHADOR</a><br>
+            <a href="#REGRA_EXTEMP_DOMESTICO">REGRA_EXTEMP_DOMESTICO</a><br>
+            <a href="#REGRA_EXTEMP_REINTEGRACAO">REGRA_EXTEMP_REINTEGRACAO</a><br>
+            <a href="#REGRA_VALIDA_TRABALHADOR_BASE_CPF">REGRA_VALIDA_TRABALHADOR_BASE_CPF</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_Id" id="2205_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2205">evtAltCadastral</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEvento" id="2205_ideEvento">4</td>
+        <td><a href="#r_2205_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2205">evtAltCadastral</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEvento_indRetif"
+            id="2205_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2205_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEvento_nrRecibo"
+            id="2205_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2205_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2205_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEvento_tpAmb" id="2205_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2205_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEvento_procEmi"
+            id="2205_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2205_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEvento_verProc"
+            id="2205_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2205_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEmpregador" id="2205_ideEmpregador">10
+        </td>
+        <td><a href="#r_2205_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2205">evtAltCadastral</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEmpregador_tpInsc"
+            id="2205_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2205_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideEmpregador_nrInsc"
+            id="2205_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2205_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2205_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideTrabalhador" id="2205_ideTrabalhador">13
+        </td>
+        <td><a href="#r_2205_ideTrabalhador">ideTrabalhador</a></td>
+        <td><a href="#r_2205">evtAltCadastral</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_ideTrabalhador_cpfTrab"
+            id="2205_ideTrabalhador_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2205_ideTrabalhador">ideTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao" id="2205_alteracao">15</td>
+        <td><a href="#r_2205_alteracao">alteracao</a></td>
+        <td><a href="#r_2205">evtAltCadastral</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Alteração de dados cadastrais do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dtAlteracao"
+            id="2205_alteracao_dtAlteracao">16
+        </td>
+        <td>dtAlteracao</td>
+        <td><a href="#r_2205_alteracao">alteracao</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data da alteração das informações.<br>
+            <strong>Validação:</strong> Não pode ser posterior a 180 (cento e oitenta) dias da data atual.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador"
+            id="2205_alteracao_dadosTrabalhador">17
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td><a href="#r_2205_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações pessoais do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_nmTrab"
+            id="2205_alteracao_dadosTrabalhador_nmTrab">18
+        </td>
+        <td>nmTrab</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Informar o nome do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_sexo"
+            id="2205_alteracao_dadosTrabalhador_sexo">19
+        </td>
+        <td>sexo</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_racaCor"
+            id="2205_alteracao_dadosTrabalhador_racaCor">20
+        </td>
+        <td>racaCor</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Etnia e raça do trabalhador, conforme sua autoclassificação (art. 39, § 8º, da Lei 12.288/2010).<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Branca<br>
+            <strong>2</strong> - Preta<br>
+            <strong>3</strong> - Parda<br>
+            <strong>4</strong> - Amarela<br>
+            <strong>5</strong> - Indígena<br>
+            <strong>6</strong> - Não informado<br>
+            <strong>Validação:</strong> Se <a href="#2205_alteracao_dtAlteracao">dtAlteracao</a> for igual ou posterior
+            a [2024-04-22], não pode ser informado o valor [6].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_estCiv"
+            id="2205_alteracao_dadosTrabalhador_estCiv">21
+        </td>
+        <td>estCiv</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Estado civil do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Solteiro<br>
+            <strong>2</strong> - Casado<br>
+            <strong>3</strong> - Divorciado<br>
+            <strong>4</strong> - Separado<br>
+            <strong>5</strong> - Viúvo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_grauInstr"
+            id="2205_alteracao_dadosTrabalhador_grauInstr">22
+        </td>
+        <td>grauInstr</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Grau de instrução do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>01</strong> - Analfabeto, inclusive o que, embora tenha recebido instrução, não se alfabetizou<br>
+            <strong>02</strong> - Até o 5º ano incompleto do ensino fundamental (antiga 4ª série) ou que se tenha
+            alfabetizado sem ter frequentado escola regular<br>
+            <strong>03</strong> - 5º ano completo do ensino fundamental<br>
+            <strong>04</strong> - Do 6º ao 9º ano do ensino fundamental incompleto (antiga 5ª a 8ª série)<br>
+            <strong>05</strong> - Ensino fundamental completo<br>
+            <strong>06</strong> - Ensino médio incompleto<br>
+            <strong>07</strong> - Ensino médio completo<br>
+            <strong>08</strong> - Educação superior incompleta<br>
+            <strong>09</strong> - Educação superior completa<br>
+            <strong>10</strong> - Pós-graduação completa<br>
+            <strong>11</strong> - Mestrado completo<br>
+            <strong>12</strong> - Doutorado completo
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_nmSoc"
+            id="2205_alteracao_dadosTrabalhador_nmSoc">23
+        </td>
+        <td>nmSoc</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome social para travesti ou transexual.<br>
+            <strong>Validação:</strong> Informação validada na base de dados do CPF.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_paisNac"
+            id="2205_alteracao_dadosTrabalhador_paisNac">24
+        </td>
+        <td>paisNac</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país de nacionalidade do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_endereco"
+            id="2205_alteracao_dadosTrabalhador_endereco">25
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco">endereco</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo de informações do endereço do trabalhador.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_endereco_brasil"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil">26
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no Brasil.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_tpLograd"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_tpLograd">27
+        </td>
+        <td>tpLograd</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Tipo de logradouro.<br>
+            <strong>Validação:</strong> Se informado, deve ser um código válido e existente na <a
+                    href="tabelas.html#20">Tabela 20</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_dscLograd"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_dscLograd">28
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_nrLograd"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_nrLograd">29
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_complemento"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_complemento">30
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_bairro"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_bairro">31
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_cep"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_cep">32
+        </td>
+        <td>cep</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal - CEP.<br>
+            <strong>Validação:</strong> Deve ser preenchido apenas com números, com 8 (oito) posições.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_codMunic"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_codMunic">33
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_brasil_uf"
+            id="2205_alteracao_dadosTrabalhador_endereco_brasil_uf">34
+        </td>
+        <td>uf</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_brasil">brasil</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_endereco_exterior"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior">35
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco">endereco</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Endereço no exterior.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_paisResid"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_paisResid">36
+        </td>
+        <td>paisResid</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código do país.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#06">Tabela 06</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_dscLograd"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_dscLograd">37
+        </td>
+        <td>dscLograd</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Descrição do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_nrLograd"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_nrLograd">38
+        </td>
+        <td>nrLograd</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número do logradouro.<br>
+            Se não houver número a ser informado, preencher com "S/N".
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_complemento"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_complemento">39
+        </td>
+        <td>complemento</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Complemento do logradouro.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_bairro"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_bairro">40
+        </td>
+        <td>bairro</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-90</td>
+        <td>-</td>
+        <td>Nome do bairro/distrito.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_nmCid"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_nmCid">41
+        </td>
+        <td>nmCid</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-50</td>
+        <td>-</td>
+        <td>Nome da cidade.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_endereco_exterior_codPostal"
+            id="2205_alteracao_dadosTrabalhador_endereco_exterior_codPostal">42
+        </td>
+        <td>codPostal</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_endereco_exterior">exterior</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>4-12</td>
+        <td>-</td>
+        <td>Código de Endereçamento Postal.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_trabImig"
+            id="2205_alteracao_dadosTrabalhador_trabImig">43
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_trabImig">trabImig</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do trabalhador imigrante.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_trabImig_tmpResid"
+            id="2205_alteracao_dadosTrabalhador_trabImig_tmpResid">44
+        </td>
+        <td>tmpResid</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_trabImig">trabImig</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tempo de residência do trabalhador imigrante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Prazo indeterminado<br>
+            <strong>2</strong> - Prazo determinado<br>
+            <strong>Validação:</strong> Preenchimento obrigatório quando houver trabalhador com (<a
+                    href="#2200_vinculo_infoRegimeTrab_infoCeletista_dtAdm">dtAdm</a> ou <a
+                    href="#2200_vinculo_infoRegimeTrab_infoEstatutario_dtExercicio">dtExercicio</a> ou <a
+                    href="#2300_infoTSVInicio_dtInicio">dtInicio</a>) no Registro de Eventos Trabalhistas - RET &gt;=
+            [2021-07-19].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_trabImig_condIng"
+            id="2205_alteracao_dadosTrabalhador_trabImig_condIng">45
+        </td>
+        <td>condIng</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_trabImig">trabImig</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Condição de ingresso do trabalhador imigrante.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Refugiado<br>
+            <strong>2</strong> - Solicitante de refúgio<br>
+            <strong>3</strong> - Permanência no Brasil em razão de reunião familiar<br>
+            <strong>4</strong> - Beneficiado pelo acordo entre países do Mercosul<br>
+            <strong>5</strong> - Dependente de agente diplomático e/ou consular de países que mantêm acordo de
+            reciprocidade para o exercício de atividade remunerada no Brasil<br>
+            <strong>6</strong> - Beneficiado pelo Tratado de Amizade, Cooperação e Consulta entre a República Federativa
+            do Brasil e a República Portuguesa<br>
+            <strong>7</strong> - Outra condição<br>
+            <strong>Validação:</strong> Se <a href="#2205_alteracao_dadosTrabalhador_trabImig_tmpResid">tmpResid</a> =
+            [1], não pode ser informado [2, 5]. Se <a
+                    href="#2205_alteracao_dadosTrabalhador_trabImig_tmpResid">tmpResid</a> = [2], não pode ser informado
+            [1].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_infoDeficiencia"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia">46
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Pessoa com deficiência.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_defFisica"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_defFisica">47
+        </td>
+        <td>defFisica</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência física.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_defVisual"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_defVisual">48
+        </td>
+        <td>defVisual</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência visual.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_defAuditiva"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_defAuditiva">49
+        </td>
+        <td>defAuditiva</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência auditiva.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_defMental"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_defMental">50
+        </td>
+        <td>defMental</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência mental.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_defIntelectual"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_defIntelectual">51
+        </td>
+        <td>defIntelectual</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Deficiência intelectual.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_reabReadap"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_reabReadap">52
+        </td>
+        <td>reabReadap</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o trabalhador é reabilitado (empregado) ou readaptado (servidor público/militar).<br>
+            Reabilitado: estando o empregado incapacitado parcial ou totalmente para o trabalho, cumpriu programa de
+            reabilitação profissional no INSS, recebendo certificado e sendo proporcionados os meios indicados para
+            participar do mercado de trabalho.<br>
+            Readaptado: o servidor está investido em cargo de atribuições e responsabilidades compatíveis com a
+            limitação que tenha sofrido em sua capacidade física ou mental verificada em inspeção médica.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_infoCota"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_infoCota">53
+        </td>
+        <td>infoCota</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o trabalhador deve ser contabilizado no preenchimento de cota de pessoas com deficiência
+            habilitadas ou de beneficiários reabilitados.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no
+            evento S-2200 com <a href="#2200_vinculo_tpRegTrab">tpRegTrab</a> = [1] e ativo em <a
+                    href="#2205_alteracao_dtAlteracao">dtAlteracao</a>. Somente pode ser informado [S] se pelo menos um
+            dos campos a seguir estiver preenchido com [S]: <a
+                    href="#2205_alteracao_dadosTrabalhador_infoDeficiencia_defFisica">defFisica</a>, <a
+                    href="#2205_alteracao_dadosTrabalhador_infoDeficiencia_defVisual">defVisual</a>, <a
+                    href="#2205_alteracao_dadosTrabalhador_infoDeficiencia_defAuditiva">defAuditiva</a>, <a
+                    href="#2205_alteracao_dadosTrabalhador_infoDeficiencia_defMental">defMental</a>, <a
+                    href="#2205_alteracao_dadosTrabalhador_infoDeficiencia_defIntelectual">defIntelectual</a> e <a
+                    href="#2205_alteracao_dadosTrabalhador_infoDeficiencia_reabReadap">reabReadap</a>.<br>
+            Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a
+            S-1.0.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_infoDeficiencia_observacao"
+            id="2205_alteracao_dadosTrabalhador_infoDeficiencia_observacao">54
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_infoDeficiencia">infoDeficiencia</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observação.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_dependente"
+            id="2205_alteracao_dadosTrabalhador_dependente">55
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações dos dependentes.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_dependente_tpDep"
+            id="2205_alteracao_dadosTrabalhador_dependente_tpDep">56
+        </td>
+        <td>tpDep</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de dependente.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#2205_alteracao_dadosTrabalhador_dependente_depIRRF">depIRRF</a> = [S].<br>
+            Deve ser um código válido e existente na <a href="tabelas.html#07">Tabela 07</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_dependente_nmDep"
+            id="2205_alteracao_dadosTrabalhador_dependente_nmDep">57
+        </td>
+        <td>nmDep</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Nome do dependente.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_dependente_dtNascto"
+            id="2205_alteracao_dadosTrabalhador_dependente_dtNascto">58
+        </td>
+        <td>dtNascto</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data de nascimento.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_dependente_cpfDep"
+            id="2205_alteracao_dadosTrabalhador_dependente_cpfDep">59
+        </td>
+        <td>cpfDep</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Número de inscrição no CPF.<br>
+            <strong>Validação:</strong> Deve ser um número de CPF válido, observando o que segue:<br>
+            a) O preenchimento é obrigatório se <a
+                    href="#2205_alteracao_dadosTrabalhador_dependente_depIRRF">depIRRF</a> = [S];<br>
+            b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em <a
+                    href="#2205_ideEmpregador">ideEmpregador</a>;<br>
+            c) Não pode haver mais de um dependente com o mesmo número de CPF.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_dependente_sexoDep"
+            id="2205_alteracao_dadosTrabalhador_dependente_sexoDep">60
+        </td>
+        <td>sexoDep</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Sexo do dependente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>M</strong> - Masculino<br>
+            <strong>F</strong> - Feminino<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no
+            evento S-2200, ativo em <a href="#2205_alteracao_dtAlteracao">dtAlteracao</a> e com {tpRegPrev} = [2] no
+            RET.<br>
+            Esta validação não deve ser realizada quando se tratar de recepção de evento extemporâneo.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_dependente_depIRRF"
+            id="2205_alteracao_dadosTrabalhador_dependente_depIRRF">61
+        </td>
+        <td>depIRRF</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente do trabalhador para fins de dedução de seu rendimento tributável pelo Imposto de
+            Renda.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_dependente_depSF"
+            id="2205_alteracao_dadosTrabalhador_dependente_depSF">62
+        </td>
+        <td>depSF</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se é dependente para fins de recebimento do benefício de salário-família.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_dependente_incTrab"
+            id="2205_alteracao_dadosTrabalhador_dependente_incTrab">63
+        </td>
+        <td>incTrab</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar se o dependente tem incapacidade física ou mental para o trabalho.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se o trabalhador estiver cadastrado no evento S-2200,
+            ativo em <a href="#2205_alteracao_dtAlteracao">dtAlteracao</a> e com {tpRegPrev} diferente de [4] no RET, ou
+            cadastrado no evento S-2300 e ativo em <a href="#2205_alteracao_dtAlteracao">dtAlteracao</a>. Não informar
+            nos demais casos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_dependente_descrDep"
+            id="2205_alteracao_dadosTrabalhador_dependente_descrDep">64
+        </td>
+        <td>descrDep</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_dependente">dependente</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-100</td>
+        <td>-</td>
+        <td>Informar a descrição da dependência.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se <a
+                    href="#2205_alteracao_dadosTrabalhador_dependente_tpDep">tpDep</a> = [99].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_contato"
+            id="2205_alteracao_dadosTrabalhador_contato">65
+        </td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_contato">contato</a></td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador">dadosTrabalhador</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de contato.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2205_alteracao_dadosTrabalhador_contato_fonePrinc"
+            id="2205_alteracao_dadosTrabalhador_contato_fonePrinc">66
+        </td>
+        <td>fonePrinc</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_contato">contato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>8-13</td>
+        <td>-</td>
+        <td>Número de telefone do trabalhador, com DDD.<br>
+            <strong>Validação:</strong> Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2205_alteracao_dadosTrabalhador_contato_emailPrinc"
+            id="2205_alteracao_dadosTrabalhador_contato_emailPrinc">67
+        </td>
+        <td>emailPrinc</td>
+        <td><a href="#r_2205_alteracao_dadosTrabalhador_contato">contato</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>6-60</td>
+        <td>-</td>
+        <td>Endereço eletrônico.<br>
+            <strong>Validação:</strong> O e-mail deve ser possuir o caractere "@" e este não pode estar no início e no
+            fim do e-mail. Deve possuir no mínimo um caractere "." depois do @ e não pode estar no início ou no final do
+            e-mail.
+        </td>
+    </tr>
+    </tbody>
+</table>

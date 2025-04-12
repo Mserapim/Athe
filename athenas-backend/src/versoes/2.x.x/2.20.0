@@ -1,0 +1,42 @@
+- 2024.10.1:
+    - CARD: ATS-5490 - MR: 1341 - [backend - CNAB Consignado] Criar campo no BD para vincular verba ao banco
+    - CARD: ATS-5491-ATS-5130 - MR: 1343 - Alterar API da tela de gestão de Eventos para gravar a informação de banco - Criar campo para vincular banco nas informações da verba na tela de Gestor de Eventos 
+- 2024.10.3:
+    - CARD: ATS-5131-ATS-5484 - MR: 1345 - Criar opção de 'Pensionistas' na tela de geração de arquivo bancário - Alterar API da tela de geração de arquivos bancários para chamar o método específico de geração de CNAB para pensionistas
+    - CARD: ATS-5227 - MR: 1351 - [front] - Cadastro de Classcode - Criar tela de Cadastro
+- 2024.10.4:
+    - CARD: ATS-5486 - MR: 1352 - [Back] Criar api para Finalizar solicitação de diaria 
+- 2024.10.7:
+    - CARD: ATS-5288 - MR: 1353 - [BACK] Salvar informações de DEFIN - Excedente
+    - CARD: ATS-5290 - MR: 1354 - [BACK] Ajuste em api de historico para fluxo DEFIN - Excedente
+    - CARD: ATS-5418 - MR: 1355 - [backend - Diárias] Alterar API de listagem de contas bancárias do beneficiário
+    - CARD: ATS-5225 - MR: 1357 - [back] - Cadastro de Classcode - API de Exclusão
+    - CARD: ATS-5419 - MR: 1358- [backend - Diárias] Alterar API de cadastro de conta bancária do beneficiário 
+- 2024.10.8:
+    - CARD: ATS-5486v2 - MR: 1360 - ajuste na api de finalizar viagem 
+    - CARD: ATS-5423 - MR: 1359 - [BACK] Ajustar método de buscar_destinos_detalhados
+    - CARD: ATS-5467 - MR: 1361 - [BACK] Acrescentar campo para salvar feedback da assessoria
+    - CARD: ATS-5426 - MR: 1362 - [Back - Ext] Cria modelos de Email para notificar cancelamento 
+- 2024.10.9:
+    - CARD: ATS-5427 - MR: 1366 - [Back] Criar o metodo para envio do notificação de cancelamento
+    - CARD: ATS-5554 - MR: 1364 - [back] Ajustes na api de marcações do folha ponto
+    - CARD: ATS-5424 - MR: 1363 -[backend - Diárias - Cancelamento] Criar novos fluxos para ciência de cancelamento
+    - CARD: ATS-5555 - MR: 1368 - [BACK] Migração para corrigir condicionais de fluxo
+- 2024.10.10:
+    - CARD: ATS-5553 - MR: 1369 - [back] Folha de pagamento - modificar validação para permitir cadastrar mais de um banco com o mesmo código
+    - CARD: ATS-5282 - MR: 1365 - folha-ponto [back] Cria campo exibir_folha_ponto nos tipos de justificativas
+    - CARD: ATS-5431 - MR: 1370 - [Back] Criar Api para solicitar cancelamento de viagem/beneficiario 
+    - CARD: ATS-5522 - MR: 1367 - [back] - Cadastro de Classcode - Criar API para alterar campo Tipo para ser de seleção
+- 2024.10.11:
+    - CARD: ATS-5464 - MR: 1371 - [Back-EXT] Criar modelo de email , para solicitação de GEDOC de excedentes 
+    - CARD: ATS-5465 - MR: 1374 - [Back] Criar logica/função para envio de email para solicitação de GEDOC de excedentes
+    - CARD: ATS-5494 - MR: 1372 - [backend - CNAB Consignado] Criar gerar de arquivo CNAB para Consignado
+    - CARD: ATS-5132 - MR: 1373 - [backend - CNAB Pensionistas] Criar gerar de arquivo CNAB para pensionistas
+    - CARD: ATS-5279 - MR: 1375 - Licença maternidade [back] Criar ações em conflitos com usufrutos de férias
+    - CARD: ATS-5429 - MR: 1377 - [BACK - Dar ciência de cancelamento] Api com lista de beneficiários da etapa
+    - CARD: ATS-5462 - MR: 1378 - [backend - Diárias - Edição Valor Líquido] Alterar lógica sobre o campo de valor total líquido deferido
+    - CARD: ATS-5461 - MR: 1379 - [BACK] Criar api para salvar o valor deferido
+    - CARD: ATS-5428 - MR: 1376 - [BACK] Criar API para dar ciência
+- 2024.10.14:
+    - CARD: ATS-5580 - MR: 1380 - [back] Corrigir exportação me csv - Conferência de Gratificação e Abono
+    - CARD: ATS-5591 - MR: 1381 - [BACK] Ajuste em property de "pode_editar_valor_deferido"

@@ -1,0 +1,25 @@
+<div class="papper">
+    {% block header %}
+    <div class="papper-header">
+        <div class="papper-header-logo"></div>
+        <div>
+            <p class="papper-header-system">Procedimento Eletrônico Extrajudicial</p>
+            <p class="papper-header-instituation">Ministério Público do Estado do Tocantins</p>
+        </div>
+        <div style="clean:both"></div>
+    </div>
+    {% endblock %}
+
+    {% block body %}
+        {% block body-header %}
+        <div>
+        	<h2>{{ doc.title }}</h2>
+            <small>Noticia de Fato: {{ doc.lawsuit.origin.codigo }} - Procedimento: {{ doc.lawsuit.cache_number }}</small>
+        </div>
+        {% endblock %}
+
+        {% block body-content %}
+        <div class="paragraph-text"><p>Conteúdo não modificado</p></div>
+        {% endblock %}
+    {% endblock %}
+</div>

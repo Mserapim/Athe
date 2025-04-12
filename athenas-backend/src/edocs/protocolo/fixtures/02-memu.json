@@ -1,0 +1,227 @@
+[
+{
+    "fields": {
+        "uuid": "76ba28b68bac42aa9e3153b09f913fc7",
+        "title": "Caixa de Entrada/Saída",
+        "module": "",
+        "application": [
+            "aaf823181ec840a0aba510d1c87447d9"
+        ],
+        "controller": "EDOCBox",
+        "active": false,
+        "icon": "athenas-0414.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "b8ac0292ae6e431883b6acc652ed946d",
+        "title": "Documentos Eletrônicos",
+        "module": "",
+        "application": [
+            "aaf823181ec840a0aba510d1c87447d9"
+        ],
+        "controller": "EDOCManage",
+        "active": true,
+        "icon": "athenas-0093.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "d1c107aeef70409cacaf29ae8ca2cc16",
+        "title": "Documentos Eletrônicos",
+        "module": "",
+        "application": [
+            "22e7d7ed981d48e9bce36bd3c8819708"
+        ],
+        "controller": "EDOCManage",
+        "active": true,
+        "icon": ""
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "4650e6aa7fdc47bb8b373ce765c4131d",
+        "title": "Anexo",
+        "module": null,
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCAnexo",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "bf6a708d794a42a584a94a60c7192de5",
+        "title": "Assunto",
+        "module": null,
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCAssunto",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "aa2fe53a01f54d899bef24e39197a79b",
+        "title": "Impressora",
+        "module": null,
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCImpressora",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "469ff924c65b4725a2ddf55e53c95248",
+        "title": "Configurar Impressora",
+        "module": "",
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCImpressoraRestful",
+        "active": true,
+        "icon": "athenas-0289.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "d761a098e81d43748672ab097ea83907",
+        "title": "Tipo de Assunto",
+        "module": null,
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCTipoAssunto",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "4dc81a1af4334010b3e600abd2d63c9c",
+        "title": "Espécie",
+        "module": null,
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCTipoDocumento",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "b77e52570198494b97f29540eca5a6f2",
+        "title": "Espécie de Documento",
+        "module": null,
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCTipoDocumento",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "05856eac7fad4de0bc3c9f3f91229dd5",
+        "title": "Tipo de documento Rest",
+        "module": "",
+        "application": [
+            "93cba4a4d6ae44e6ab0c011e5c9ab9be"
+        ],
+        "controller": "EDOCTipoDocumentoRestful",
+        "active": true,
+        "icon": ""
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "1f6cb0b44e984d8cba7992fae053294a",
+        "title": "Assessoria Especial",
+        "module": null,
+        "application": [
+            "8c65b6f88760417f8b15ff0c87e80638"
+        ],
+        "controller": "EDOCPrintAssEspecial",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "cefa52a62189439b92b1e4df24f5589a",
+        "title": "Athenas",
+        "module": null,
+        "application": [
+            "8c65b6f88760417f8b15ff0c87e80638"
+        ],
+        "controller": "EDOCPrintAthenas",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "0fc9eb7b14844f6684c4f135ad7f0f1a",
+        "title": "Expediente",
+        "module": null,
+        "application": [
+            "8c65b6f88760417f8b15ff0c87e80638"
+        ],
+        "controller": "EDOCPrintExpediente",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "8665d46a89d94b939e087ed008799621",
+        "title": "Protocolo Geral",
+        "module": null,
+        "application": [
+            "8c65b6f88760417f8b15ff0c87e80638"
+        ],
+        "controller": "EDOCPrintGeral",
+        "active": true,
+        "icon": null
+    },
+    "model": "engine.controller",
+    "pk": null
+}
+]

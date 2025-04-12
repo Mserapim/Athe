@@ -1,0 +1,35 @@
+{% load judicialfilters %}
+{% load humanize %}
+<div class="composite">
+    {% block content %}
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>BENS/PROPRIEDADES</b></td></tr>
+      </table>
+      <div style="padding-top: 1em; ">
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Classificação IR: <b>{{ property.irscode.code }} - {{ property.irscode.title.upper | safely }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Descrição:
+          <div style="padding-top: 0.25em; padding-left: 1em; font-size: 12px; text-align: justify; ">
+            {{ property.description | safely }}
+          </div>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Tipo: <b>{{ property.get_kind_display.upper }}</b><br />
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Valor em <b>31/12/{{property.controlinformation.refer_year}}</b>: <b>R${{ property.current_value | intcomma }}</b><br />
+        </div>
+        <!-- {% if property.last_value %}
+          <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+            - Valor em 31/12/{{property.controlinformation.previous_controlinformation.refer_year}}:  R${{ property.last_value | intcomma }} <br />
+          </div>
+        {% endif %} -->
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - País: <b>{{ property.country }}</b><br />
+        </div>
+      </div>
+
+    {% endblock %}
+</div>

@@ -1,0 +1,44 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "TIPO_ONUS",
+    "label": "Origem",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "rh.TIPO_ONUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "name": "TIPO_ONUS",
+    "label": "Requisitante",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "rh.TIPO_ONUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "rh",
+    "label": "Cedente e Cessionário",
+    "name": "TIPO_ONUS",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "rh.TIPO_ONUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

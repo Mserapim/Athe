@@ -1,0 +1,69 @@
+{% extends 'base/templates/template.html' %}
+
+{% block title %}- Ouvidoria{% endblock %}
+
+{% block css %}
+	<link href="/athenas/static/web/ouvidoria/css/styles.css" rel="stylesheet" media="screen" />
+{% endblock %}
+
+{% block js %}
+	<script type="text/javascript" src="/athenas/static/web/ouvidoria/js/scripts.js"></script>
+{% endblock %}
+
+{% block section %} Ouvidoria{{name_increase}} {% endblock %}
+
+{% block menu %}
+<ul>
+    <li>
+        <a href="/{{context}}/ouvidoria/">Inicial</a>
+    </li>
+    <li>
+        <a href="/{{context}}/ouvidoria/from_/">Manifestação</a>
+    </li>
+    <li>
+        <a href="/{{context}}/ouvidoria/monitoring/">Acompanhamento</a>
+    </li>
+    <li>
+        <a href="/{{context}}/ouvidoria/reports/">Relatórios</a>
+    </li>
+    <li>
+        <a href="/athenas/static/web/ouvidoria/files/base-legal.pdf">Base Legal</a>
+    </li>
+    <li>
+        <a href="#">FAQ</a>
+    </li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+    <h1>Inicial</h1>
+
+    <h2><strong>O que é?</strong></h2>
+    <p>A Ouvidoria é um canal permanente de comunicação direta entre o Ministério Público do Estado do Tocantins e a sociedade.</p>
+
+
+    <h2><strong>Ouvidor</strong></h2>
+    <p>Dra. Leila da Costa Vilela Magalhães – Procurador de Justiça</p>
+
+    <h2><strong>Finalidade</strong></h2>
+    <p>Instituída pela Resolução 002/2009/CPJ, a Ouvidoria constitui um órgão auxiliar do Ministério Público Estadual e integra a estrutura administrativa da Procuradoria Geral de Justiça, tendo por finalidade contribuir para o aperfeiçoamento e a melhoria dos padrões de transparência, presteza, eficiência e segurança das atividades desenvolvidas pelo Ministério Público, instituição destinada à defesa da ordem jurídica, do regime democrático e dos interesses da coletividade.</p>
+
+    <h2><strong>Atribuição</strong></h2>
+    <p>Esta Ouvidoria tem por atribuição o conhecimento de manifestações (denúncias, reclamações, críticas, dúvidas, elogios, pedidos de informações, sugestões e comentários) relacionadas às atividades dos membros do Ministério Público do Estado do Tocantins (Promotores e Procuradores de Justiça), bem como dos seus serviços auxiliares (órgãos e servidores).
+    Também é papel desta Ouvidoria divulgar e esclarecer à sociedade a missão institucional do Ministério Público.</p>
+
+    <h2><strong>Atividades desenvolvidas</strong></h2>
+    <p>A principal atividade desenvolvida por esta Ouvidoria é receber, registrar, analisar e dar o devido encaminhamento às manifestações dos cidadãos sobre o trabalho desenvolvido pelo MPE-TO.</p>
+
+    <h2><strong>Como entrar em contato?</strong></h2>
+    <p>As manifestações poderão ser feitas:</p>
+    <ul>
+        <li>a) por este site (www.mpto.mp.br), preenchendo o formulário constante do link “manifestação” (à esquerda);</li>
+        <li>b) pelos telefones (63) 3216-7598 e 3216-7575;</li>
+        <li>c) pelo e-mail ouvidoria@mpto.mp.br;</li>
+        <li>d) por correspondência enviada para o endereço Quadra 202 Norte, Avenida. LO 4, Conjunto. 1, Lotes 5 e 6, Plano Diretor Norte, Cep 77.006-218 – Palmas-TO; ou</li>
+        <li>e) presencialmente, na sede do Ministério Público Estadual (endereço acima).</li>
+    </ul>
+</div>
+{% endblock %}

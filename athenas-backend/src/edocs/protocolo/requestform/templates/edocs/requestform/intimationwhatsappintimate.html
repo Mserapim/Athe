@@ -1,0 +1,91 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO PARA INTIMAÇÃO POR WHATSAPP COM AUTENTICIDADE VERIFICÁVEL</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_job_title }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ home_court_unicode }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Comarca:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_workplace }}</td></tr>
+    <tr>
+        <th class="rf-th">Email institucional:</th>
+        <th class="rf-th">Telefone:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_work_email }}</td>
+        <td class="rf-td">{{ employee_ramal }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center">Formulário de notificação por whatsApp do indiciado</th></tr>
+    <tr>
+        <td class="rf-td" style="text-align:justify">
+            <p class="rf-paragraph-height">{{employee_address}} - {{protocol.data_criacao | date:'d/m/Y'}}, Promotoria de Justiça de {{ employee_workplace }}.</p>
+            <p class="rf-paragraph-height">Prezado(a) Sr(a) <strong>{{ name_intimate }}</strong>, CPF <strong>{{ cpf_intimate }}</strong>.</p>
+            <p class="rf-paragraph-height">
+                A Lei nº 13.964/19 passou a permitir acordo entre o Ministério Público e pessoas
+                indiciadas por crimes com pena mínima até 4 (quatro) anos. Cumpridas as condições do
+                acordo, o caso é arquivado e o interessado mantém sua primariedade. As condições
+                podem ser: I - reparar o dano ou restituir a coisa à vítima, exceto na impossibilidade de
+                fazê-lo; II - renunciar voluntariamente a bens e direitos indicados pelo Ministério Público
+                como instrumentos, produto ou proveito do crime; III - prestar serviço à comunidade ou a
+                entidades públicas por período correspondente à pena mínima cominada ao delito
+                diminuída de um a dois terços, em local a ser indicado pelo juízo da execução; IV - pagar
+                prestação pecuniária (multa).
+            </p>
+            <p class="rf-paragraph-height">
+                Notamos que sua situação é de indiciado(a) no Inquérito Policial <strong>{{ number_inquiry_police }}</strong>. 
+                Havendo interesse na celebração desse acordo, entre em contato
+                conosco. O telefone do Ministério Público é (63)3216-7600.
+            </p>
+            <p class="rf-paragraph-height">
+                É necessário ter um advogado ou defensor público. Caso não tenha condições de arcar com despesas de advogado
+                sem prejuízo do seu próprio sustento, procure a Defensoria Pública pelo telefone 0800 644 8580, ou
+                <a href="https://agendamentoonline.defensoria.to.def.br/auth/sign_in">clique aqui</a>.
+            </p>
+            <p class="rf-paragraph-height">
+                Nosso horário de atendimento é:<br>
+                Segunda-feira à Sexta-feira: {{ workplace_hours }}<br>
+                Sábado: Fechado<br>
+                Domingo: Fechado
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center"></th></tr>
+    <tr>
+        <td class="rf-td" style="text-align:justify">
+            <p class="rf-paragraph-height">
+                Para sua segurança, o telefone a seguir deve ser o mesmo que originou a mensagem de WhatsApp: <strong>{{ employee_ramal }}</strong>.
+                O Ministério Público não pede senhas, depósitos e nenhum pagamento.
+                O link em azul no final deste documento levará a uma página de verificação com conexão segura. Se for
+                autêntica, haverá um símbolo de cadeado antes do endereço eletrônico, e o texto exibido deve ser o
+                mesmo constante neste documento.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

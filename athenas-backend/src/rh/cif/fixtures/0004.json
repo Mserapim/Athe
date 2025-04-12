@@ -1,0 +1,18 @@
+[
+	{
+		"fields": {
+			"name": "cif-admin", 
+			"permissions": []
+		}, 
+			"model": "auth.group", 
+			"pk": null
+	}, 
+	{
+		"fields": {
+			"name": "cif-membro", 
+			"permissions": []
+		}, 
+			"model": "auth.group", 
+			"pk": null
+	}
+]

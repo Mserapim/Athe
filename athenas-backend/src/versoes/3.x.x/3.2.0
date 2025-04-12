@@ -1,0 +1,31 @@
+- 2025.03.06:
+    - CARD: ATS-6441 - MR: 1763 - [back] - Corrigir exibição do usuário no histórico de serviços
+- 2025.03.10:
+    - CARD: ATS-6711 - MR: 1775 - [back] Erro ao gerar relatórios (Quando ocorre duplo clique)
+    - CARD: ATS-6493 - MR: 1776 - [back] - Vincular o serviço à mensagem no momento da execução da task
+- 2025.03.11:
+    - CARD: ATS-6821 - MR: 1780 - [back] Esocial - Data corte para Colaboradores Eventuais
+    - CARD: ATS-6479 - MR: 1782 - [back] - Realizando Ajustes em Gestão VDF
+- 2025.03.11:
+    - CARD: ATS-6821 - MR: 1780 - [back] Esocial - Data corte para Colaboradores Eventuais
+- 2025.03.12
+    - CARD: ATS-6926 - MR: 1785 - [back] Alterar a chave da listagem padrão de choice de "id" para "valor"
+    - CARD: ATS-6891 - MR: 1786 - [Back] - Criar botão de recalcular na tela do Diárias 
+    - CARD: ATS-6685_6842_6923_6915 - MR: 1787 - [Back] - ajustes na solicitação de ferias de residentes e estagiarios
+    - CARD: ATS-6888 - MR: 1783 - [BACK] Api de modelos para listagem em filtro
+- 2025.03.13
+    - CARD: ATS-6693_6890_6942 - MR: 1737 - [back] Ajustes nos Relatórios de Cargos Quadros
+    - CARD: ATS-6819 - MR: 1788 - [back] VDF - Solicitar venda de compensatórias com o saldo total disponível
+    - CARD: ATS-6834, ATS-6837 - MR: 1789 - [back] Criar Api de listagem e filtros do gestor de cargos
+    - CARD: ATS-6101_6947 - MR: 1582 - [back] Gestor de Diferença - Folha de Pagamento
+    - CARD: ATS-6819v2 - MR: 1791 - [back] VDF - Solicitar venda de compensatórias com o saldo total disponível
+- 2025.03.14
+    - CARD: ATS-6695 - MR: 1796 - [back] -Adicionar na auditoria de logs a folha de pagamento
+    - CARD: ATS-6822 - MR: 1795 - [back]  Fazer ajustes em exceções que estão aparecendo nos logs no backend ( middleware, healthcheck, aba relatório)
+    - CARD: ATS-6823 - MR: 1794 - [back] Criar tags para a estrutura de plano de saúde e dependentes S1210
+    - CARD: ATS-6985 - MR: 1797 - [Back] ajustes nas apis para implementacão de novos componentes no front
+- 2025.03.17
+    - CARD: ATS-6439 - MR: 1777 - [back] - Adicionar filtro de executado na API de serviços
+    - CARD: ATS-6491 - MR: 1792 - [front] - Adaptar a tela para que exiba o status "em execução"
+    - CARD: ATS-5683 - MR: 1793 - [front] - Mensagens dos serviços - Criar modal para exibir a lista de mensagens da execução
+    - CARD: ATS-6931 - MR: 1798 - Dar baixa _ desativar lotação de inativos que ainda estão com lotação ativa 

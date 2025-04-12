@@ -1,0 +1,76 @@
+
+Ext._define('judicial.remittance.RemittanceItselfOrganRestful', {
+    extend: 'core.Restful',
+
+    resource: 'EJudRemittanceItselfOrgan',
+
+    getFields: function(cfg) {
+        if(!this._fields)
+            this._fields = judicial.remittance.RemittanceItselfOrganRestful.superclass.getFields.call(this, cfg).concat([
+                {
+                    type: "int",
+                    name: "modified_by",
+                    useNull: true
+                },
+                {
+                    type: "string",
+                    name: "modified_by_unicode"
+                },
+                {
+                    type: "string",
+                    name: "type_part"
+                },
+                {
+                    type: "string",
+                    name: "partlawsuit_ptr"
+                },
+                {
+                    type: "string",
+                    name: "text"
+                },
+                {
+                    type: "string",
+                    name: "cache_rendered"
+                },
+                {
+                    type: "int",
+                    name: "lawsuit",
+                    useNull: true
+                },
+                {
+                    type: "string",
+                    name: "lawsuit_unicode"
+                },
+                {
+                    type: "int",
+                    name: "department",
+                    useNull: true
+                },
+                {
+                    type: "string",
+                    name: "department_unicode"
+                },
+                {
+                    type: "date",
+                    name: "created_at",
+                    dateFormat: "d/m/Y H:i"
+                },
+                {
+                    type: "date",
+                    name: "modified_at",
+                    dateFormat: "d/m/Y H:i"
+                },
+                {
+                    type: "int",
+                    name: "created_by",
+                    useNull: true
+                },
+                {
+                    type: "string",
+                    name: "created_by_unicode"
+                }
+            ]);
+
+        return this._fields;
+    }
+});

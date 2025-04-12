@@ -1,0 +1,73 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">
+    REQUERIMENTO DE NÃO RECEBIMENTO DA ANTECIPAÇÃO<br/>
+    DE 50% DO 13º SALÁRIO NO MÊS DO ANIVERSÁRIO<br/>
+    ART. Nº 3º DO ATO 004/2020
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr>
+        <th class="rf-th">Data de nascimento:</th>
+        <th class="rf-th">Telefone de contato:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ birth_date }}</td>
+        <td class="rf-td">{{ contact_number }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Termo de opção:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                OPTO por não receber a antecipação de 50% (cinquenta por cento)
+                do décimo terceiro salário no mês do meu aniversário, nos termos
+                do Art. nº 3º, do Ato nº 004/2020.
+            </p>
+            <p class="rf-paragraph-height">
+                DECLARO estar ciente de que esta opção tem caráter irretratável
+                e estará apta a produzir os seus efeitos específicos. 
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

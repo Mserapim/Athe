@@ -1,0 +1,794 @@
+[
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Alçapão"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Aparelho telefônico"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [],
+    "descricao": "Aplicação Web"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Ar - condicionado"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Armário"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Token - Assinador Digital"
+      ]
+    ],
+    "descricao": "Assinatura digital"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Cabo Telefônico "
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Cadeira"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Cadeira do Auditório"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Cadeira odontológica"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ],
+      [
+        "Samsung"
+      ]
+    ],
+    "descricao": "CD/DVD"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Token - Assinador Digital"
+      ]
+    ],
+    "descricao": "Certificação Digital SERPRO"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Gaveteiro"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Chave"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Cheese"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Gaveteiro"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Confeccção de chave"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Ducha Higiênica"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "E-mail institucional"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Kodak i2600"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Escaner"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "1000VA"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Estabilizador"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Extensão"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Fax"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Fechadura"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Celeron 1GB RAM"
+      ],
+      [
+        "Padrão"
+      ],
+      [
+        "Pentium 4"
+      ],
+      [
+        "Servidor de arquivos"
+      ]
+    ],
+    "descricao": "Gabinete"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Guirlanda"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Brother HL-2140"
+      ],
+      [
+        "OKI"
+      ],
+      [
+        "Padrão"
+      ],
+      [
+        "Samsung SCX-4521F"
+      ]
+    ],
+    "descricao": "Impressora"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Lâmpada"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "3 +"
+      ],
+      [
+        "3.3"
+      ],
+      [
+        "4.1.2"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "LibreOffice"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Maçaneta"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "AOC LED - 21,5 Polegadas"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Monitor"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Mouse PS/2"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Mouse USB"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ],
+      [
+        "Samsung SCX-4521F"
+      ],
+      [
+        "Xerox WC3210"
+      ]
+    ],
+    "descricao": "Multifuncional"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Firefox"
+      ],
+      [
+        "Google Chrome"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Navegador Web"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ],
+      [
+        "SMS"
+      ],
+      [
+        "TS Shara"
+      ]
+    ],
+    "descricao": "Nobreak"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Dexbook"
+      ],
+      [
+        "LG c400"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Notebook"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "DVD"
+      ],
+      [
+        "Email"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Outros"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Gesso Acartonado"
+      ]
+    ],
+    "descricao": "Parede"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Adobe Reader"
+      ]
+    ],
+    "descricao": "PDF"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Pen drive"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "PindGin"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Porta"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Portão"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Arquivos.odt 4.1"
+      ],
+      [
+        "Local"
+      ],
+      [
+        "Padrão"
+      ],
+      [
+        "Pastas da Rede"
+      ],
+      [
+        "Placa de Rede"
+      ],
+      [
+        "Ponto de rede"
+      ],
+      [
+        "Servidor de Rede"
+      ]
+    ],
+    "descricao": "Rede"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Roda da cadeira"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [],
+    "descricao": "Samsung SCX-4521F"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Arquivos em rede"
+      ],
+      [
+        "Padrão"
+      ],
+      [
+        "Restauração de backup"
+      ]
+    ],
+    "descricao": "Servidor de arquivos"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Sistema Arquimedes"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Sistema Athenas"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "10.04"
+      ],
+      [
+        "12.04"
+      ],
+      [
+        "14.04"
+      ],
+      [
+        "Padrão"
+      ],
+      [
+        "Todos com Ldap instalado."
+      ],
+      [
+        "Token - Assinador Digital"
+      ],
+      [
+        "Zmax 2GB RAM"
+      ]
+    ],
+    "descricao": "Sistema Operacional - Ubuntu"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "7"
+      ],
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Sistema Operacional - Windows"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [],
+    "descricao": "Software"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Teclado PS/2"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Teclado USB"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Telefone"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Teto"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": false,
+    "modelos": [
+      [
+        "Padrão"
+      ]
+    ],
+    "descricao": "Tomada"
+  },
+  "model": "siatu.objeto"
+},
+{
+  "fields": {
+    "informatica": true,
+    "modelos": [
+      [
+        "4.+"
+      ]
+    ],
+    "descricao": "Virtual Box"
+  },
+  "model": "siatu.objeto"
+}
+]

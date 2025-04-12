@@ -1,0 +1,44 @@
+- 2024.7.24:
+    - CARD: ATS-4657 - MR: 1096 - [Back] Criar validação no envio de email pessoal
+    - CARD: ATS-4612 - MR: 1095 - [Back] verificar validação de estagiários e residentes
+- 2024.7.25:
+    - CARD: ATS-4392 - MR: 1070 - (backend) Criar mecanismo para geração de CNAB para pagamento de diárias 
+    - CARD: ATS-4497 - MR: 1098 - [front Ext] - Exibir afastamentos no gestor de teletrabalho
+- 2024.7.26:
+    - CARD: ATS-4656 - MR: 1100 - Esocial - Apis - Ajustes na api de intens de tabela
+    - CARD: ATS-4402 - MR: 1101 - (backend) Gerar ações em pagamento ações após criação de CNAB
+- 2024.7.29:
+    - CARD: ATS-4619 - MR: 1104 - [Back] Ajustes no modelo de prestação de contas e no serializer 
+    - CARD: ATS-4434 - MR: 1105 - [Back] Alterar o retorno da API de minhas pendências para retornar o ID da prestação de contas que deve ser preenchida
+    - CARD: ATS-4660 - MR: 1103 - [Back] [back] Alterar rotina de envio email para notificar todos os destinatários
+- 2024.7.30:
+    - CARD: ATS-4610 - MR: 1108 - [back] - Criar função para gerar justificativa ao solicitar folha ponto
+    - CARD: ATS-4602 - MR: 1106 - Alterar verba 11400 para buscar afastamentos pra desconto, no caso de servidores, do mês anterior
+    - CARD: ATS-4603 - MR: 1111 - Criar classe com lógica para cálculo automático da verba 12400
+- 2024.7.31:
+    - CARD: ATS-4716 - MR: 1113 - [Back] Adicionar dois novos status ,e tratar data_limite vazia no model de PrestacaoContas 
+    - CARD: ATS-4443 - MR: 1114 - [Back] Criar as apis de Deferir e Indeferir PrestacaoContas 
+    - CARD: ATS-4611 - MR: 1109 - [back] - Adicionar choice para feriado municipal na origem do PointJustification
+    - CARD: ATS-4720 - MR: 1115 - [Back] - Ajuste no Serializer der Anotações pessoais 
+    - CARD: ATS-4731 - MR: 1119 - [Back] - Ajuste na API de Anotações pessoais
+    - CARD: ATS-4652 - MR: 1118 - [Back] - Esocial - Considerar o processo de rra vinculado a verba na geração do S1210
+    - CARD: ATS-4655 - MR: 1117 - [Back] - Esocial - Verificar pensões duplicadas para mais de um infocr S1210
+    - CARD: ATS-4654 - MR: 1116 - [Back] - Esocial - Unificar os valores de remuneração mensal de pensão alimenticia para o mesmo tpRend S1210
+    - CARD: ATS-4648 - MR: 1112 - Alterar lógica de cálculo da tela de Auxílio Coordenação
+- 2024.8.1:
+    - CARD: ATS-4630 - MR: 1120 - (backend) Alterar tabelas relacionadas às alterações de cálculo e datas de viagem e evento 
+    - CARD: ATS-4614 - MR: 1121 - [back] - Validar para não criar a falta sobre o feriado municipal
+    - CARD: ATS-4746 - MR: 1124 - Criar arquitetura de tabela para armazenar informações de datas de evento vinculadas ao Beneficiário e à Destino (trechos)
+    - CARD: ATS-4428 - MR: 1123 - [Back] Criar Api para detelhes da tabela PrestacaoContas 
+- 2024.8.2:
+    - CARD: ATS-4564 - MR: 1127 - [back] - Corrigir comportamento de verificação do email secundário quando há atualização cadastral nos dados de pessoa física
+    - CARD: ATS-4448 - MR: 1128 - [back] - Criar campo Tipo do pedido no cadastro de teletrabalho
+    - CARD: ATS-4567 - MR: 1129 - [front Ext] - Corrigir nomenclatura do tipo de plantão
+    - CARD: ATS-4501 - MR: 1122 - [Back] Esocial - Criar api de listagem da tela qualificação cadastral
+    - CARD: ATS-4764 - MR: 1130 - [BACK] Ajuste em campo de estado após alteração da tabela
+    - CARD: ATS-4502 - MR: 1125 - [Back] Esocial - Criar api para Atualizar lista da qualificação cadastral
+    - CARD: ATS-4523 - MR: 1126 - [Back] gerar holerite consolidado no menu de acesso rápido VDF
+    - CARD: ATS-4777 - MR: 1133 - [BACK] Adaptações em campos de diárias após alterações em estrutura de tabelas
+    - CARD: ATS-4447 - MR: 1132 - [Back] Criar modelos de email para notificar sobre Prestação de Contas
+    - CARD: ATS-4769 - MR: 1134 - Criar campos para avaliação do fluxo, campo de obs e tabela de anexos vinculados ao histórico de viagem-beneficiário 
+    - CARD: ATS-4705 - MR: 1135 - Alterar o desconto da verba de diligencia ( 12000)de servidores, para buscar o desconto no mes anterior

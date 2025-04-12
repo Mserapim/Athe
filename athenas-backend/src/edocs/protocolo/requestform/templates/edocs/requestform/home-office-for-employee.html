@@ -1,0 +1,96 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title" style="margin-top: 2.5em">
+    Requerimento de Teletrabalho
+</p>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th-center rf-bg-gray" colspan="2">IDENTIFICAÇÃO DO SERVIDOR</th></tr>
+    <tr>
+        <th class="rf-th">Nome:</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_job_title }}</td></tr>
+    
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ home_court_unicode }}</td></tr>
+ 
+    <tr><th class="rf-th" colspan="2">Email institucional:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_work_email }}</td></tr>
+</table>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th-center rf-bg-gray" colspan="2">CONDIÇÃO DO SERVIDOR (art. 8º, V, do Ato PGJ n. 021/2022)</th></tr>
+   <tr>
+       <th class="rf-td" colspan="2">
+            {% for rt in request_type_query %}
+                <p class="rf-paragraph-height">
+                    {% if rt.value == request_type %}
+                    <strong><span class="rf-ballot-box">&#x2611;</span>&nbsp;{{ rt.label }}</strong>
+                    {% else %}
+                    <span class="rf-ballot-box">&#x2610;</span>&nbsp;{{ rt.label }}
+                    {% endif %}
+                </p>
+            {% endfor %}
+       </th>
+    </tr>
+</table>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th-center rf-bg-gray" colspan="2">JUSTIFICATIVAS</th></tr>
+   <tr><th class="rf-td" colspan="2">{{ justification | safe }}</th></tr>
+</table>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th-center rf-bg-gray" colspan="2">ATIVIDADES E METAS</th></tr>
+   <tr><th class="rf-td" colspan="2">{{ activities_goals | safe }}</th></tr>
+</table>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th rf-bg-gray" colspan="2">Cronograma de reuniões com a chefia imediata para avaliação de desempenho, bem como eventual revisão e ajustes de metas</th></tr>
+   <tr><th class="rf-td" colspan="2">{{ schedule | safe }}</th></tr>
+</table>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th-center rf-bg-gray" colspan="2">CIÊNCIA DAS RESPONSABILIDADES INDIVIDUAIS NO PERÍODO DO TELETRABALHO</th></tr>
+   <tr>
+       <th class="rf-td" colspan="2">
+           <p class="rf-paragraph-height rf-text-justify">
+                Declaro estar ciente de todas as condições e requisitos constantes do Ato PGJ n. 021/2022, comprometendo-me a
+                executar fielmente os meus deveres funcionais e os previstos no Capítulo III da referida norma, sob pena de imediata
+                suspensão do teletrabalho.
+            </p>
+            <p class="rf-paragraph-height rf-text-justify">
+                Declaro estar ciente da precariedade da autorização, revogável a qualquer tempo a bem do serviço público, devendo
+                permanecer disponível para o imediato retorno ao trabalho presencial quando solicitado e/ou convocado, nos termos
+                do previsto no art. 5º, §§ 3º e 4º, e art. 21, do Ato PGJ n. 021/2022.
+            </p>
+            <p class="rf-paragraph-height rf-text-justify">
+                Declaro estar ciente do Plano de Trabalho, contendo as atividades e as metas a serem cumpridas, bem como os
+                prazos a serem alcançados, e de que seu descumprimento injustificado acarreta suspensão e/ou revogação do
+                teletrabalho.
+            </p>
+        </th>
+    </tr>
+</table>
+
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em; border-top: 1px solid black; padding-top: 1em;"><b>Instruções:</b></p>
+<p class="rf-paragraph-height">- Assinar este documento eletronicamente</p>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

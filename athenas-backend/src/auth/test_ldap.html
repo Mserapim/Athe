@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Teste do LDAP Directory</title>
+<style type="text/css">
+div.login {
+	width: 205px;
+	margin: 0 auto
+}
+
+ul.login {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0.1em
+}
+
+ul.login li {
+	font-size: 0.75em;
+	margin: 0.5em;
+}
+
+ul.login li input {
+	padding: 0.2em;
+}
+
+div.message p,ul.login li p {
+	padding: 0.1em;
+	margin: 0
+}
+
+div.message {
+	margin: 2em auto;
+	border: 1px solid #000;
+	padding: 1em;
+	width: 20em
+}
+
+table {
+	margin: 0 auto;
+	border: 1px solid #000
+}
+
+table tr td p {
+	font-size: 0.75em;
+	margin: 0;
+}
+
+div.links p {
+	text-align: center;
+}
+
+div.links p a {
+	padding: 0.25em 1.0em;
+	margin: 0.15em;
+	background: #ccc;
+	border: 1px outset #999;
+	color: black;
+	text-decoration: none;
+}
+
+div.links p a:hover {
+	background: #ddd;
+	border: 1px inset #999;
+}
+
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+	function connect() {
+		var form = document.forms['formLogin'];
+		
+		form.submit();
+	}
+
+	</script>
+	<div class="links"><p><a href="/pgjadmin/login/">Login</a><a href="/pgjadmin/check_login/">Check Auth</a><a href="/pgjadmin/logout/">Logout</a></p></div>
+	<div class="login">
+	<form action="/pgjadmin/login/" id="formLogin" method="post">
+	<ul class="login">
+		<li><label>Nome do Usuário :</label></li>
+		<li><input type="text" name="username" value="" /></li>
+	</ul>
+	<ul class="login">
+		<li><label>Senha :</label></li>
+		<li><input type="password" name="passwd" value="" /></li>
+	</ul>
+	<ul class="login">
+		<li>
+		<p><a href="javascript:connect()">Conectar</a></p>
+		</li>
+	</ul>
+	</form>
+	</div>
+	
+	{% if message %}
+	<div class="message">
+		<p style="text-align:center; font-size: 0.75em">{{ message }}</p>
+	</div>
+	{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "RH_REQUESTMOVEMENT",
+            "header": "Movimentação de Requisição",
+            "message": "<p>O(A) %(employee_text)s %(name)s, integrante do quadro de pessoal do(a) %(organ_origin)s foi cedido ao %(destiny)s , %(onus)s, no período de %(start_date)s à %(end_date)s.</p>",
+            "type": "INFO",
+            "default_params": "{u'employee_text': '', u'name': '', u'organ_origin': '', u'destiny': '', u'onus': '', u'start_date': '', u'end_date': ''}"
+        }
+    },
+    {
+        "model": "notification.message",
+        "fields": {
+            "mid": "RH_ANNOTATION_FIRE",
+            "header": "Movimentação de Desligamento",
+            "message": "<p>%(type_of)s %(employee_text)s %(name)s, matrícula nº %(registry)s, %(job_position)s, a partir de %(termination_date)s.</p>",
+            "type": "INFO",
+            "default_params": "{u'type_of': '', u'employee_text': '', u'name': '', u'registry': '', u'job_position': '', u'termination_date': ''}"
+        }
+    }
+]

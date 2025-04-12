@@ -1,0 +1,63 @@
+[
+  {
+    "fields": {
+      "name": "registration-public",
+      "permissions": [
+        [
+          "add_digitaldocument",
+          "registration",
+          "digitaldocument"
+        ],
+        [
+          "change_digitaldocument",
+          "registration",
+          "digitaldocument"
+        ],
+        [
+          "delete_digitaldocument",
+          "registration",
+          "digitaldocument"
+        ],
+        [
+          "add_forminformation",
+          "registration",
+          "forminformation"
+        ],
+        [
+          "change_forminformation",
+          "registration",
+          "forminformation"
+        ],
+        [
+          "delete_forminformation",
+          "registration",
+          "forminformation"
+        ]
+      ]
+    },
+    "model": "auth.group"
+  },
+  {
+    "fields": {
+      "name": "rh-registration",
+      "permissions": [
+        [
+          "add_validation",
+          "registration",
+          "validation"
+        ],
+        [
+          "change_validation",
+          "registration",
+          "validation"
+        ],
+        [
+          "delete_validation",
+          "registration",
+          "validation"
+        ]
+      ]
+    },
+    "model": "auth.group"
+  }
+]

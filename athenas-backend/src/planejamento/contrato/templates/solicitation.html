@@ -1,0 +1,96 @@
+{% extends "base_generic.html" %}
+
+<table class="papper">
+    {% block header %}
+    <div class="papper-header">
+        <div class="papper-header-logo"></div>
+        <div>
+            <p class="papper-header-system">Gestão de Pedidos</p>
+            <p class="papper-header-instituation">Ministério Público do Estado do Tocantins</p>
+        </div>
+    </div>
+    {% endblock %} {% block content %}
+    <br /><br />
+    <div style="width: 100%; overflow: hidden">
+        <div style="font-weight: bolder; float:left; font-size: 120%; "> Pedido Nº {{solicitation.number}}</div>
+        <div style="font-weight: bolder; float:right; font-size: 120%; ">
+            {% if solicitation.requisition %}
+            Requisição Nº {{solicitation.requisition}}
+            {% endif %}</div>
+    </div>
+    <br /><br />
+    <p style="padding-bottom: 2%">Ata: <strong>{{solicitation.minute_number}}</strong></p>
+    <p style="padding-bottom: 2%">Processo: <strong>{{solicitation.minute_process_number}}</strong></p>
+    <p style="padding-bottom: 2%">Processo Mãe: <strong>{{solicitation.minute_parent_process}}</strong></p>
+    <p style="padding-bottom: 2%">Fornecedor: <strong>{{solicitation.minute_provider}}</strong></p>
+    <p style="padding-bottom: 2%">Objeto: <strong>{{solicitation.minute_object}}</strong></p>
+    <p style="padding-bottom: 2%">Início da Vigência: <strong>{{solicitation.minute_begin_validity}}</strong></p>
+    <p style="padding-bottom: 2%">Fim da Vigência: <strong>{{solicitation.minute_end_validity}}</strong></p>
+    <p style="padding-bottom: 2%">Valor Total da Ata: <strong>{{solicitation.minute_total_amount}}</strong></p>
+    <p style="padding-bottom: 2%">Fiscais Titulares: <strong>{{solicitation.minute_main|join:', '}}</strong></p>
+    <p style="padding-bottom: 2%">Fiscais Substitutos: <strong>{{solicitation.minute_substitutes|join:', '}}</strong></p>
+    <p style="padding-bottom: 2%">Justificativa: <strong>{{solicitation.justification}}</strong></p>
+    <p style="padding-bottom: 2%">Valor Total do Pedido: <strong>{{solicitation.total_solicitation}}</strong></p>
+    <p style="padding-bottom: 2%">Data do Pedido: <strong>{{solicitation.created_at}}</strong></p>
+    <table class="table_class">
+        <thead class="thead_class">
+            <th class="th_class"><strong>ITEM</strong></th>
+            <th class="th_class"><strong>DESCRIÇÂO</strong></th>
+            <th class="th_class"><strong>QTD</strong></th>
+            <th class="th_class"><strong>VL. UN.</strong></th>
+            <th class="th_class"><strong>VL. TOTAL</strong></th>
+        </thead>
+        {% for item in solicitation.items %}
+        {% if item.strip %}
+            <tr class="tr_class" style='text-decoration: line-through;'>
+        {% else %}
+            <tr class="tr_class">
+        {% endif %}
+            <td class="td_class">{{item.group}}</td>
+            <td class="td_class" style="text-align: left;">{{item.description}}</td>
+            <td class="td_class">{{item.quantity}}</td>
+            <td class="td_class values">{{item.unitary_value}}</td>
+            <td class="td_class values">{{item.total_value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <style>
+        .table_class {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0px;
+        }
+
+        .thead_class {
+            padding: 3%;
+        }
+
+        .th_class {
+            text-align: center;
+            padding: 1px;
+            background-color: #0a5888;
+            color: white;
+
+        }
+
+        .tr_class {
+            padding: 1px;
+        }
+
+        .tr_class:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .td_class {
+            padding: 5px;
+            text-align: right;
+            border: 1px solid #d1d1d1;
+
+        }
+    </style>
+
+
+    {% endblock %}
+</table>

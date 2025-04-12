@@ -1,0 +1,113 @@
+<table class="table is-fullwidth is-bordered resumo">
+    <tbody>
+    <tr class="grupo">
+        <td><strong>Grupo</strong></td>
+        <td><strong>Grupo Pai</strong></td>
+        <td><strong>Nível</strong></td>
+        <td><strong>Descrição</strong></td>
+        <td><strong>Ocor.</strong></td>
+        <td><strong>Chave</strong></td>
+        <td><strong>Condição</strong></td>
+    </tr>
+    <tr>
+        <td id="r_1260_eSocial"><a href="#1260_eSocial">eSocial</a></td>
+        <td></td>
+        <td>1</td>
+        <td>eSocial</td>
+        <td>1</td>
+        <td>-</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260"><a href="#1260">evtComProd</a></td>
+        <td><a href="#r_1260_eSocial">eSocial</a></td>
+        <td>2</td>
+        <td>Evento Comercialização da Produção Rural Pessoa Física</td>
+        <td>1</td>
+        <td><a href="#1260_Id">Id</a></td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260_ideEvento"><a href="#1260_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1260">evtComProd</a></td>
+        <td>3</td>
+        <td>Informações de identificação do evento</td>
+        <td>1</td>
+        <td><a href="#1260_ideEvento_perApur">perApur</a>*, <a href="#1260_ideEvento_indGuia">indGuia</a>*</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260_ideEmpregador"><a href="#1260_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1260">evtComProd</a></td>
+        <td>3</td>
+        <td>Informações de identificação do empregador</td>
+        <td>1</td>
+        <td><a href="#1260_ideEmpregador_tpInsc">tpInsc</a>*, <a href="#1260_ideEmpregador_nrInsc">nrInsc</a>*</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260_infoComProd"><a href="#1260_infoComProd">infoComProd</a></td>
+        <td><a href="#r_1260">evtComProd</a></td>
+        <td>3</td>
+        <td>Informação da comercialização de produção</td>
+        <td>1</td>
+        <td>-</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260_infoComProd_ideEstabel"><a href="#1260_infoComProd_ideEstabel">ideEstabel</a></td>
+        <td><a href="#r_1260_infoComProd">infoComProd</a></td>
+        <td>4</td>
+        <td>Identificação do estabelecimento que comercializou a produção</td>
+        <td>1</td>
+        <td><a href="#1260_infoComProd_ideEstabel_nrInscEstabRural">nrInscEstabRural</a>*</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260_infoComProd_ideEstabel_tpComerc"><a href="#1260_infoComProd_ideEstabel_tpComerc">tpComerc</a>
+        </td>
+        <td><a href="#r_1260_infoComProd_ideEstabel">ideEstabel</a></td>
+        <td>5</td>
+        <td>Valor total da comercialização por "tipo" de comercialização</td>
+        <td>1-5</td>
+        <td><a href="#1260_infoComProd_ideEstabel_tpComerc_indComerc">indComerc</a></td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td id="r_1260_infoComProd_ideEstabel_tpComerc_ideAdquir"><a
+                href="#1260_infoComProd_ideEstabel_tpComerc_ideAdquir">ideAdquir</a></td>
+        <td><a href="#r_1260_infoComProd_ideEstabel_tpComerc">tpComerc</a></td>
+        <td>6</td>
+        <td>Identificação dos adquirentes da produção</td>
+        <td>0-9999</td>
+        <td><a href="#1260_infoComProd_ideEstabel_tpComerc_ideAdquir_tpInsc">tpInsc</a>, <a
+                href="#1260_infoComProd_ideEstabel_tpComerc_ideAdquir_nrInsc">nrInsc</a></td>
+        <td>F (se <a href="#1260_infoComProd_ideEstabel_tpComerc_indComerc">indComerc</a> = [3, 7, 8]);<br>
+            N (nos demais casos)
+        </td>
+    </tr>
+    <tr>
+        <td id="r_1260_infoComProd_ideEstabel_tpComerc_ideAdquir_nfs"><a
+                href="#1260_infoComProd_ideEstabel_tpComerc_ideAdquir_nfs">nfs</a></td>
+        <td><a href="#r_1260_infoComProd_ideEstabel_tpComerc_ideAdquir">ideAdquir</a></td>
+        <td>7</td>
+        <td>Notas fiscais da aquisição de produção</td>
+        <td>0-999</td>
+        <td><a href="#1260_infoComProd_ideEstabel_tpComerc_ideAdquir_nfs_serie">serie</a>, <a
+                href="#1260_infoComProd_ideEstabel_tpComerc_ideAdquir_nfs_nrDocto">nrDocto</a></td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td id="r_1260_infoComProd_ideEstabel_tpComerc_infoProcJud"><a
+                href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud">infoProcJud</a></td>
+        <td><a href="#r_1260_infoComProd_ideEstabel_tpComerc">tpComerc</a></td>
+        <td>6</td>
+        <td>Informação de processos judiciais</td>
+        <td>0-10</td>
+        <td><a href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud_tpProc">tpProc</a>, <a
+                href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud_nrProc">nrProc</a>, <a
+                href="#1260_infoComProd_ideEstabel_tpComerc_infoProcJud_codSusp">codSusp</a></td>
+        <td>OC</td>
+    </tr>
+    </tbody>
+</table>

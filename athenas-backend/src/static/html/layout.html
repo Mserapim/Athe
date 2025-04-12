@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% spaceless %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>eGov para {{ APPLICATION_TITLE }}</title>
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/js/ext/resources/css/ext-all.css" />
+
+    {% if theme == 0 %}
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/js/ext/resources/css/xtheme-blue.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/theme-blue.css" />
+    {% elif theme == 1 %}
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/js/ext/resources/css/xtheme-gray.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/theme-gray.css" />
+    {% elif theme == 4 %}
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/js/ext/resources/css/xtheme-gray.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/theme-gray.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/theme-with-zoom.css" />
+    {% elif theme == 3 %}
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/js/ext/resources/css/xtheme-blue.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/theme-blue.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/theme-with-zoom.css" />
+    {% else %}
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/js/ext/resources/css/xtheme-access.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/default-access.css" />
+    {% endif %}
+
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/static/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="/{{CONTEXT}}/Application/css_icons/" />
+
+        <link rel="shortcut icon" href="/{{CONTEXT}}/static/images/{{ imgs_name_default.favicon_name_default }}">
+
+        <!-- custom css include -->
+        {%for path in css %}<link rel="stylesheet" type="text/css" href="{{path}}" />{%endfor%}
+        <!-- custom css include -->
+    </head>
+    <body>
+        <div id="nowLoading"><div></div><h1>Carregando o Sistema Athenas ...</h1></div>
+
+        <script type="text/javascript">
+            window.CONTEXT = "{{ CONTEXT }}";
+            window.CKEDITOR_BASEPATH = "/{{ CONTEXT }}/static/js/ckeditor/";
+            window.DEBUG = {% if DEBUG %}true{% else %}false{% endif %};
+            window.DEFAULT_THEME = {{ DEFAULT_THEME }};
+            var force_secure = {% if force_secure  %}true{% else %}false{% endif %};
+            var header_h1_img_name = "{{ imgs_name_default.logomarca_name_default }}";
+        </script>
+        {% for path in js %}<script type='text/javascript' src='{{ path }}'></script>{% endfor %}
+
+        <script type="text/javascript" src="/{{CONTEXT}}/static/js/start.js"></script>
+    </body>
+</html>
+{% endspaceless %}

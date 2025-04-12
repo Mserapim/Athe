@@ -1,0 +1,48 @@
+{% load brmasks %}
+{% load l10n %}
+
+<h1 style='text-align: center;'><b>Solicita&ccedil;&atilde;o de Pagamento de Ata</b></h1>
+<p>Ata de Registrado de Pre&ccedil;o n&ordm;: <b>{{instance.numero_ata}}</b></p>
+<p>Processo: <b>{{instance.processo}}</b></p>
+<p>Processo-m&atilde;e: <b>{{instance.processo_mae}}</b></p>
+<p>Fornecedor: <b>{{instance.nome_fornecedor}}</b></p>
+<p>CNPJ: <b>{{instance.cnpj_fornecedor | cnpj}}</b></p>
+<p>Fiscais da ATA:</h3>
+<ul>
+    {% for fiscais in instance.fiscais %}
+        <li>{{ fiscais.get_kind_display }}: <b>{{fiscais.employee.pessoa_fisica.nome}}</b> </br>Matr&iacute;cula: <b>{{fiscais.employee.matricula}}</b></li>
+    {% endfor %}
+</ul>
+
+<br>
+
+<table border='1' cellpadding="1" cellspacing="1" style="width:95%">
+    <tr>
+        <th>Pedido</th>
+        <th>Número NF</th>
+        <th>Número NE</th>
+        <th>Valor</th>
+        <th>Início Ref</th>
+        <th>Final Ref</th>
+        <th>Observações</th>
+    </tr>
+    {% for pedidos in instance.pedidos %}
+        <tr>
+            <td>{{pedidos.commitmentnote.solicitation.number}}</td>
+            <td>{{pedidos.invoice}}</td>
+            <td>{{pedidos.commitmentnote}}</td>
+            {% localize on %}
+                <td>{{pedidos.value}}</td>
+            {% endlocalize %}
+            <td>{{pedidos.start_reference_period | date:"d/m/Y"}}</td>
+            <td>{{pedidos.end_reference_period | date:"d/m/Y"}}</td>
+            <td>{{pedidos.observation | striptags}}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+{% localize on %}
+VALOR TOTAL: <b>{{instance.total}}</b>
+{% endlocalize %}

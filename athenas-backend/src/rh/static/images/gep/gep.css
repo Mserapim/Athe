@@ -1,0 +1,66 @@
+.icon-gep {}
+.icon-gep-chefe{ background: url('../folha-pensao.png') no-repeat 0 0 }
+.icon-gep-servidor{ background: url('../folha-dependente.png') no-repeat 0 0 }
+.icon-gep-warning{ background: url('../ferias_conflito.png') no-repeat 0 0 }
+.icon-gep-etapa-finalizada { background: url('../pas_fruido.png') no-repeat 0 0 }
+.icon-warn { background: url('../warn.png') no-repeat 0 0 }
+.icon-gep-bloqueado { background: url('../interrompido.png') no-repeat 0 0 }
+.icon-new { background: url('../add.png') no-repeat 0 0 }
+.icon-edit { background: url('../edit.png') no-repeat 0 0 }
+.icon-delete { background: url('../delete.png') no-repeat 0 0 }
+.icon-up { background: url('../up.png') no-repeat 0 0 }
+.icon-down { background: url('../down.png') no-repeat 0 0 }
+.icon-gep-group { background: url('../user_group.png') no-repeat 0 0 }
+.icon-gep-wait { background: url('../andamento.png') no-repeat 0 0 }
+.icon-gep-recomendou { background: url('../autorizado.png') no-repeat 0 0 }
+.icon-gep-nao-recomendou { background: url('../nao_autorizado.png') no-repeat 0 0 }
+.icon-gep-suspenso { background: url('../pasu_interrompido.png') no-repeat 0 0 }
+.icon-gep-recomendacao-realizada { background: url('../ativo.png') no-repeat 0 0 }
+.icon-gep-recomendacao-nao-realizada { background: url('../pensionista.png') no-repeat 0 0 }
+.icon-gep-ok { background: url('../pasu_fruido.png') no-repeat 0 0 }
+.icon-gep-decisao { background: url('../decisao.png') no-repeat 0 0 }
+.icon-gep-aguardando-decisao { background: url('../aguardando-decisao.png') no-repeat 0 0 }
+.icon-gep-notificacao { background: url('../athenas-0197.png') no-repeat 0 0 }
+
+.info p {
+    font-weight: bold; font-size: 16px; font-family: arial, helvetica, serif;
+}
+.medi_fim p {
+    font-size: 10px;text-align: center;
+}
+.topo{
+    font-size: 10px; margin-left:0; margin-right:0; background: #E8E8E8; height: 140px; width:100%;
+}
+.topo p {
+    font-size: 12px; padding: 3px;
+}
+.topo h1{
+    font-size: 14px; font-weight: bold; font-family: arial, helvetica, serif; text-align: center;
+}
+.cabecalho{
+    font-size: 10px; font-weight: bold;text-align: center; background:#CFCFCF; width:33.333333333%; height:20px; display:inline-block;
+    vertical-align:top; position:relative; display: -moz-inline-stack; zoom: 1; 
+}
+.periodo{ 
+    font-size: 12px; font-weight:bold; text-align: center; background:#B5B5B5; width:100%; height:35px; display:inline-block;
+    vertical-align:top; position:relative;display: -moz-inline-stack; zoom: 1; *display: inline;
+}
+.quesito{
+    font-size: 12px; text-align: center; background:#E8E8E8; width:33.333333333%; height:20px; display:inline-block; vertical-align:top; 
+    position:relative; display: -moz-inline-stack; zoom: 1; *display: inline;
+}
+.media{
+    font-size: 12px; text-align: center; background:#E8E8E8; width:33.333333333%;  height:20px; display:inline-block; vertical-align:top; 
+    position:relative; display: -moz-inline-stack;  zoom: 1; *display: inline;
+}
+.conceito{ 
+    font-size: 12px; text-align: center; background:#E8E8E8; width:33.333333333%; height:20px; display:inline-block; vertical-align:top;
+    position:relative; display: -moz-inline-stack;  zoom: 1; *display: inline;
+}
+.fim{
+    text-align: center; font-size: 12px; font-weight: bold; background:#CFCFCF; height: 30px; width:100%; border-radius:0 0 10px 10px; 
+    -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;
+}
+
+
+

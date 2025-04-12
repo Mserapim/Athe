@@ -1,0 +1,59 @@
+<div class="edoc-moviment-content">
+    <div class="">
+        <div class="label">
+            <h3>Origem</h3>
+        </div>
+        <div class="info">
+            <ul>
+                <li>Encaminhado por:</li>
+                <li>{{ moviment.servidor_origem.pessoa_fisica }}</li>
+                <li>{{ moviment.lotacao_origem }}</li>
+            </ul>
+            <ul>
+                <li>Data:</li>
+                <li>{{ moviment.data_encaminhamento | date:'d/m/Y H:i' }}</li>
+            </ul>
+            {% if moviment.destinatario %}
+            <ul>
+                <li>Destinatário:</li>
+                <li>{{ moviment.destinatario }}</li>
+            </ul>
+            {% else %}
+            <ul>
+                <li>Destinatário:</li>
+                <li>{{ moviment.lotacao_destino.nome }}</li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+    <div class="">
+        <div class="label">
+            <h3>Destino</h3>
+        </div>
+        <div class="info">
+            <ul>
+                <li>Recebido por:</li>
+                <li>
+                    {% if moviment.servidor_destino %}
+                    {{ moviment.servidor_destino.pessoa_fisica }}
+                    {% else %}
+                    Documento não recebido
+                    {% endif %}
+                </li>
+            </ul>
+            <ul>
+                <li>Data:</li>
+                <li>
+                    {% if moviment.servidor_destino %}
+                    {{ moviment.data_recebimento | date:'d/m/Y H:i' }}
+                    {% else %}
+                    Documento não recebido
+                    {% endif %}
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    {{ moviment.rendered_content | safe }}
+    <div style="pading: 2px; text-align: right; font-size: 0.5em; display: block; width: auto">Movimento {{ moviment.passo }} {%if moviment.child_of%} - Origem {{ moviment.child_of.passo }} {%endif%}</div>
+</div>

@@ -1,0 +1,144 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO AUXÍLIO CRECHE</p>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center" colspan="2">IDENTIFICAÇÃO DO REQUERENTE</th></tr>
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr>
+        <th class="rf-th">CPF:</th>
+        <th class="rf-th">Telefone de contato:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_cpf }}</td>
+        <td class="rf-td">{{ contact_number }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Banco:</th>
+        <th class="rf-th">Agência:</th>
+        <th class="rf-th">Conta:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ bank }}</td>
+        <td class="rf-td">{{ agency }}</td>
+        <td class="rf-td">{{ account }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center" colspan="2">IDENTIFICAÇÃO DA CRIANÇA</th></tr>
+    <tr><th class="rf-th" colspan="2">Nome da criança:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ child_name }}</td></tr>
+    <tr>
+        <th class="rf-th">Data de nascimento:</th>
+        <th class="rf-th">CPF:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ child_birth_date }}</td>
+        <td class="rf-td">{{ child_cpf }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Tipo vínculo:</th></tr>
+    <tr>
+        <td class="rf-td" colspan="2">
+            {% if child_type == 0 %}
+            <p class="rf-paragraph-height"><strong>( X ) Filho(a)</strong></p>
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) Dependente</p>
+            {% elif child_type == 1 %}
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) Filho(a)</p>
+            <p class="rf-paragraph-height"><strong>( X ) Dependente</strong></p>
+            {% else %}
+            <p class="rf-paragraph-height">Não informado</p>
+            {% endif %}
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center">DECLARAÇÃO</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                Declaro, sob as penas da lei, que meu cônjuge ou companheiro(a) não
+                percebe benefício igual ou similar de outro órgão ou entidade do
+                Estado; e que meu filho(a) ou dependente não está matriculado no 1º
+                ano do ensino fundamental.
+            </p>
+            <p class="rf-paragraph-height">
+                Em conformidade o artigo 5º do Ato 064/2012, comprometo-me a comunicar,
+                por escrito, ao Departamento de Gestão de Pessoas e Folha de Pagamento
+                quaisquer alterações que impeçam o recebimento do referido auxílio,
+                em conformidade o artigo 5º do Ato 064/2012.
+            </p>
+            <p class="rf-paragraph-height">
+                O servidor não estará impedido de receber o auxílio-creche nas
+                seguintes situações: Artigo 10, do Ato 064/2012 – Não terá direito
+                ao auxílio-creche o servidor deste Ministério Público: I – À
+                disposição em outro órgão público; II – Em gozo de licença
+                não-remunerada; III - Cujo cônjuge ou companheiro perceba benefício
+                igual ou similar de outro órgão ou entidade Pública.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">
+            Se o cônjuge ou companheiro é servidor(a) do MP, indicar o nome
+            e o responsável pelo recebimento do benefício:
+        </th>
+    </tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                <strong>Nome: </strong>{{ spouse_name }}
+            </p>
+            <p class="rf-paragraph-height">
+                <strong>Responsável pelo recebimento: </strong>{{ receiver_name }}
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Anexar cópia do RG da criança.
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar ao Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

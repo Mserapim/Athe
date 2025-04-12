@@ -1,0 +1,72 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title" style="margin-top: 2.5em">
+    TERMO DE COMPROMISSO DE MANUTENÇÃO DO SIGILO
+</p>
+
+<p class="rf-abnt" style="margin-top: 3.5em">
+    Eu, <strong>{{ employee_name }}</strong>, brasileiro(a), CPF nª
+    <strong>{{ employee_cpf }}</strong>, RG nª <strong>{{ employee_rg }}</strong>
+    e endereço <strong>{{ employee_address }}</strong> (servidor ou prestador de
+    serviço), declaro ter ciência inequívoca da legislação sobre o tratamento de
+    informação classificada ou sob restrição de acesso cuja divulgação possa
+    causar risco ou dano à segurança da sociedade ou do Estado e me comprometo
+    a guardar o sigilo necessário, nos termos da Lei Federal nº 12.527, de 18 de
+    novembro de 2011 e da Resolução nº 007/2017/CPJ, e a:
+</p>
+<p class="rf-abnt">
+    a) tratar as informações ou materiais classificados ou sob restrição de acesso
+    que me forem fornecidos pelos <strong>sistemas do MPETO</strong> e preservar
+    o seu sigilo, de acordo com a legislação vigente;
+</p>
+<p class="rf-abnt">
+    b) preservar o conteúdo das informações ou materiais classificados ou sob
+    restrição de acesso, sem divulgá-los a terceiros;
+</p>
+<p class="rf-abnt">
+    c) não praticar quaisquer atos que possam afetar o sigilo ou a integridade das
+    informações ou materiais classificados ou sob restrição de acesso; e
+</p>
+<p class="rf-abnt">
+    d) não copiar ou reproduzir, por qualquer meio ou modo:
+</p>
+<p class="rf-abnt">
+    (1) Informações classificadas ou sob restrição de acesso; e
+</p>
+<p class="rf-abnt">
+    (2) Informações relativas aos materiais de acesso restrito do <strong>MPETO</strong>,
+    salvo autorização da autoridade competente.
+</p>
+<p class="rf-abnt" style="text-indent: 0">
+    Declaro ciência  das responsabilidades e deveres quanto ao sigilo dos
+    documentos, informações e sistemas, e por estar de acordo com o presente
+    Termo.
+</p>
+
+<p class="rf-spacing rf-text-center rf-abnt-text">
+    <span style="font-size: 0.7rem">
+        {{ employee_name }}
+    </span><br />
+    <span style="font-size: 0.7rem">
+        Matrícula {{ employee_number }}
+    </span><br />
+    <span style="font-size: 0.7rem">
+        {{ employee_job_title }}
+    </span>
+</p>
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em; border-top: 1px solid black; padding-top: 1em;"><b>Instruções:</b></p>
+<p class="rf-paragraph-height">- Assinar este documento eletronicamente</p>
+<p class="rf-paragraph-height">- Após assinar encaminhar obrigatoriamente para o NIS</p>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

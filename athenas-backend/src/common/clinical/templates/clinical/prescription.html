@@ -1,0 +1,98 @@
+<style type="text/css">
+@import url('/athenas/static/common/clinical/clinical.css');
+</style>
+
+<div class="clinical-header">
+    <div class="title">
+        <h1>
+            Receituário de Controle Especial
+        </h1>
+    </div>
+    {% if sign and False %}
+    <div class="qrcode">
+        <img
+            src="data:image/png;base64,{{ sign.qrcode }}"
+            title="Imagem de validação"
+            width="96"/>
+    </div>
+    {% endif %}
+</div>
+
+<div class="id-doctor slot">
+    <div class="title">
+        Identificação do Médico
+    </div>
+    <div class="emmiter">
+        <div class="doctor">
+            <div>
+                <span class="bold">NOME COMPLETO</span>: {{ me.doctor.person }}
+            </div>
+            <div>
+                <span class="bold">CRM</span>: {{ me.doctor.medical_identify }}
+            </div>
+            <div>
+                <span class="bold">ENDEREÇO</span>: {{ doctor_address }}
+            </div>
+            <div>
+                <span class="bold">TELEFONE</span>: {{ me.doctor.phone }}
+            </div>
+        </div>
+
+        <div class="logo">
+            <img
+                src="https://mpto.mp.br/static/site/css/images/logo.png"
+                alt="Ministério Publico do Estado do Tocantins"
+                width="135">
+        </div>
+    </div>
+    {% if sign %}
+    <div class="sign">
+        {% include "protocolo/sign-img.html" %}
+    </div>
+    {% endif %}
+</div>
+
+<div class="id-patient slot">
+    <div class="title">
+        Identificação do Paciente
+    </div>
+    <div class="patient">
+        <div>
+            <span class="bold">NOME COMPLETO</span>: {{ me.patient.nome }}
+        </div>
+        <div>
+            <span class="bold">ENDEREÇO</span>: {{ partner_address }}
+        </div>
+    </div>
+</div>
+
+<div class="prescription slot">
+    <div class="title">PRESCRIÇÃO: </div>
+    <div class="content">{{ me.prescription | safe }}</div>
+</div>
+
+
+<div class="delivery-control slot">
+    <div class="to">
+        <div class="title">
+            Identificação do Comprador
+        </div>
+        <div class="content">
+            <img
+                src="/athenas/static/common/clinical/images/buyer-stamp.png"
+                width="98%"
+                alt="Carimbo do comprador">
+        </div>
+    </div>
+    <div class="from">
+        <div class="title">
+            Identificação do Fornecedor
+        </div>
+        <div class="content">
+            <img
+                src="/athenas/static/common/clinical/images/pharmacist-stamp.png"
+                width="98%"
+                alt="Carimbo do comprador">
+        </div>
+    </div>
+</div>

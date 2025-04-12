@@ -1,0 +1,80 @@
+[
+{
+  "fields": {
+    "description": "",
+    "value": 1,
+    "label": "Obsolescência",
+    "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+    "app_label": "patrimonio",
+    "active": true,
+    "order_weight": 0,
+    "name": "WRITEOFF_SUBTYPES"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 2,
+    "label": "Deterioração",
+    "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+    "app_label": "patrimonio",
+    "active": true,
+    "order_weight": 0,
+    "name": "WRITEOFF_SUBTYPES"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 11,
+    "label": "Perda",
+    "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+    "app_label": "patrimonio",
+    "active": true,
+    "order_weight": 0,
+    "name": "WRITEOFF_SUBTYPES"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 12,
+    "label": "Furto",
+    "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+    "app_label": "patrimonio",
+    "active": true,
+    "order_weight": 0,
+    "name": "WRITEOFF_SUBTYPES"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 13,
+    "label": "Roubo",
+    "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+    "app_label": "patrimonio",
+    "active": true,
+    "order_weight": 0,
+    "name": "WRITEOFF_SUBTYPES"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "description": "",
+    "value": 1000,
+    "label": "Não informado",
+    "cache_path": "patrimonio.WRITEOFF_SUBTYPES",
+    "app_label": "patrimonio",
+    "active": true,
+    "order_weight": 0,
+    "name": "WRITEOFF_SUBTYPES"
+  },
+  "model": "standard.choice"
+}
+]

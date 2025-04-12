@@ -1,0 +1,12 @@
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Manifestação do {{ manifestation.get_how_type_display }}</h2></div>
+    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+
+{% if not manifestation.signed_by and manifestation.diligence.delivery_status != 5 %}
+    {% include "judicial/lawsuit/manifestation/diligence_not_delivered.html" %}
+{% elif manifestation.diligence.delivery_status == 5 or manifestation.signed_by %}
+    {% include "judicial/lawsuit/manifestation/diligence_delivered.html" %}
+{% endif %}
+</div>

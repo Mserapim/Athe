@@ -1,0 +1,33 @@
+from django.db import migrations
+from django.conf import settings
+from django.core.management import call_command
+import os
+
+FIXTURES = (
+    "fixtures/cid_fixture.json",
+    "fixtures/cid_controllers.json",
+)
+
+
+def up(apps, schema_editor):
+    BASE_DIR = getattr(settings, "BASE_DIR", "")
+    print("Running forward...")
+
+    for fixture in FIXTURES:
+        filepath = os.path.join(BASE_DIR, "rh", "afastamento", fixture)
+        print(filepath)
+        print('\033[1mRunning loaddata in fixture "%s"\033[0m' % filepath)
+        call_command("loaddata", filepath)
+
+
+def down(apps, schema_editor):
+    print("Running backward...")
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [("afastamento", "0027_auto_20230722_1626")]
+
+    operations = [
+        migrations.RunPython(up, down),
+    ]

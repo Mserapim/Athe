@@ -1,0 +1,576 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_eSocial" id="2220_eSocial">1</td>
+        <td><a href="#r_2220_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220" id="2220">2</td>
+        <td><a href="#r_2220">evtMonit</a></td>
+        <td><a href="#r_2220_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Monitoramento da Saúde do Trabalhador.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG">REGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG</a><br>
+            <a href="#REGRA_EVENTO_POSTERIOR_CAT_OBITO">REGRA_EVENTO_POSTERIOR_CAT_OBITO</a><br>
+            <a href="#REGRA_EXISTE_EVENTO_TSV_INICIO">REGRA_EXISTE_EVENTO_TSV_INICIO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXISTE_VINCULO">REGRA_EXISTE_VINCULO</a><br>
+            <a href="#REGRA_EXTEMP_REINTEGRACAO">REGRA_EXTEMP_REINTEGRACAO</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_VINCULO">REGRA_RETIFICA_MESMO_VINCULO</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_Id" id="2220_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2220">evtMonit</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEvento" id="2220_ideEvento">4</td>
+        <td><a href="#r_2220_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2220">evtMonit</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEvento_indRetif"
+            id="2220_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2220_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEvento_nrRecibo"
+            id="2220_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2220_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2220_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEvento_tpAmb" id="2220_ideEvento_tpAmb">
+            7
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2220_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEvento_procEmi"
+            id="2220_ideEvento_procEmi">8
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2220_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEvento_verProc"
+            id="2220_ideEvento_verProc">9
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2220_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEmpregador" id="2220_ideEmpregador">10
+        </td>
+        <td><a href="#r_2220_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2220">evtMonit</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEmpregador_tpInsc"
+            id="2220_ideEmpregador_tpInsc">11
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2220_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideEmpregador_nrInsc"
+            id="2220_ideEmpregador_nrInsc">12
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2220_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2220_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideVinculo" id="2220_ideVinculo">13</td>
+        <td><a href="#r_2220_ideVinculo">ideVinculo</a></td>
+        <td><a href="#r_2220">evtMonit</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do trabalhador e do vínculo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideVinculo_cpfTrab"
+            id="2220_ideVinculo_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2220_ideVinculo">ideVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideVinculo_matricula"
+            id="2220_ideVinculo_matricula">15
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2220_ideVinculo">ideVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no
+            Sistema de Administração de Recursos Humanos do órgão.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200
+            ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário -
+            TSVE sem informação de matrícula no evento S-2300.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_ideVinculo_codCateg"
+            id="2220_ideVinculo_codCateg">16
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_2220_ideVinculo">ideVinculo</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador.<br>
+            Informar somente no caso de TSVE sem informação de matrícula no evento S-2300.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se não houver preenchimento de <a
+                    href="#2220_ideVinculo_matricula">matricula</a>. Se informado, deve ser um código válido e existente
+            na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup" id="2220_exMedOcup">17</td>
+        <td><a href="#r_2220_exMedOcup">exMedOcup</a></td>
+        <td><a href="#r_2220">evtMonit</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do exame médico ocupacional.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_tpExameOcup"
+            id="2220_exMedOcup_tpExameOcup">18
+        </td>
+        <td>tpExameOcup</td>
+        <td><a href="#r_2220_exMedOcup">exMedOcup</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo do exame médico ocupacional.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Exame médico admissional<br>
+            <strong>1</strong> - Exame médico periódico, conforme Norma Regulamentadora 07 - NR-07 e/ou planejamento do
+            Programa de Controle Médico de Saúde Ocupacional - PCMSO<br>
+            <strong>2</strong> - Exame médico de retorno ao trabalho<br>
+            <strong>3</strong> - Exame médico de mudança de função ou de mudança de risco ocupacional<br>
+            <strong>4</strong> - Exame médico de monitoração pontual, não enquadrado nos demais casos<br>
+            <strong>9</strong> - Exame médico demissional<br>
+            <strong>Validação:</strong> Se informado [0], não pode existir outro evento S-2220 para o mesmo contrato com
+            <a href="#2220_exMedOcup_aso_dtAso">dtAso</a> anterior.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso" id="2220_exMedOcup_aso">19
+        </td>
+        <td><a href="#r_2220_exMedOcup_aso">aso</a></td>
+        <td><a href="#r_2220_exMedOcup">exMedOcup</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações do Atestado de Saúde Ocupacional - ASO.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_dtAso"
+            id="2220_exMedOcup_aso_dtAso">20
+        </td>
+        <td>dtAso</td>
+        <td><a href="#r_2220_exMedOcup_aso">aso</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data de emissão do ASO.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à
+            data de início da obrigatoriedade deste evento para o empregador no eSocial. Se <a
+                    href="#2220_exMedOcup_tpExameOcup">tpExameOcup</a> for diferente de [0], também deve ser igual ou
+            posterior à data de admissão/exercício ou de início.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_resAso"
+            id="2220_exMedOcup_aso_resAso">21
+        </td>
+        <td>resAso</td>
+        <td><a href="#r_2220_exMedOcup_aso">aso</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Resultado do ASO.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Apto<br>
+            <strong>2</strong> - Inapto
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_exame"
+            id="2220_exMedOcup_aso_exame">22
+        </td>
+        <td><a href="#r_2220_exMedOcup_aso_exame">exame</a></td>
+        <td><a href="#r_2220_exMedOcup_aso">aso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que detalha as avaliações clínicas e os exames complementares porventura realizados pelo trabalhador
+            em virtude do determinado nos Anexos da NR-07, além de outros solicitados pelo médico e os referentes ao
+            ASO.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_exame_dtExm"
+            id="2220_exMedOcup_aso_exame_dtExm">23
+        </td>
+        <td>dtExm</td>
+        <td><a href="#r_2220_exMedOcup_aso_exame">exame</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data do exame realizado.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou anterior à data do ASO informada em <a
+                    href="#2220_exMedOcup_aso_dtAso">dtAso</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_exame_procRealizado"
+            id="2220_exMedOcup_aso_exame_procRealizado">24
+        </td>
+        <td>procRealizado</td>
+        <td><a href="#r_2220_exMedOcup_aso_exame">exame</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>4</td>
+        <td>-</td>
+        <td>Código do procedimento diagnóstico.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#27">Tabela 27</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_exame_obsProc"
+            id="2220_exMedOcup_aso_exame_obsProc">25
+        </td>
+        <td>obsProc</td>
+        <td><a href="#r_2220_exMedOcup_aso_exame">exame</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>Observação sobre o procedimento diagnóstico realizado.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2220_exMedOcup_aso_exame_procRealizado">procRealizado</a>
+            = [0583, 0998, 0999, 1128, 1230, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 9999].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_exame_ordExame"
+            id="2220_exMedOcup_aso_exame_ordExame">26
+        </td>
+        <td>ordExame</td>
+        <td><a href="#r_2220_exMedOcup_aso_exame">exame</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Ordem do exame.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Inicial<br>
+            <strong>2</strong> - Sequencial<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a href="#2220_exMedOcup_aso_exame_procRealizado">procRealizado</a>
+            = [0281].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_exame_indResult"
+            id="2220_exMedOcup_aso_exame_indResult">27
+        </td>
+        <td>indResult</td>
+        <td><a href="#r_2220_exMedOcup_aso_exame">exame</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicação dos resultados.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Normal<br>
+            <strong>2</strong> - Alterado<br>
+            <strong>3</strong> - Estável<br>
+            <strong>4</strong> - Agravamento
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_medico"
+            id="2220_exMedOcup_aso_medico">28
+        </td>
+        <td><a href="#r_2220_exMedOcup_aso_medico">medico</a></td>
+        <td><a href="#r_2220_exMedOcup_aso">aso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre o médico emitente do ASO.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_medico_nmMed"
+            id="2220_exMedOcup_aso_medico_nmMed">29
+        </td>
+        <td>nmMed</td>
+        <td><a href="#r_2220_exMedOcup_aso_medico">medico</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Preencher com o nome do médico emitente do ASO.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_medico_nrCRM"
+            id="2220_exMedOcup_aso_medico_nrCRM">30
+        </td>
+        <td>nrCRM</td>
+        <td><a href="#r_2220_exMedOcup_aso_medico">medico</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número de inscrição do médico emitente do ASO no Conselho Regional de Medicina - CRM.<br>
+            <strong>Validação:</strong> O preenchimento do campo não é obrigatório se o endereço do trabalhador em
+            S-2200/S-2300, ou em S-2205 vigente em <a href="#2220_exMedOcup_aso_dtAso">dtAso</a>, for no exterior.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_aso_medico_ufCRM"
+            id="2220_exMedOcup_aso_medico_ufCRM">31
+        </td>
+        <td>ufCRM</td>
+        <td><a href="#r_2220_exMedOcup_aso_medico">medico</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da Unidade da Federação - UF de expedição do CRM.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO<br>
+            <strong>Validação:</strong> O preenchimento do campo não é obrigatório se o endereço do trabalhador em
+            S-2200/S-2300, ou em S-2205 vigente em <a href="#2220_exMedOcup_aso_dtAso">dtAso</a>, for no exterior.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_respMonit"
+            id="2220_exMedOcup_respMonit">32
+        </td>
+        <td><a href="#r_2220_exMedOcup_respMonit">respMonit</a></td>
+        <td><a href="#r_2220_exMedOcup">exMedOcup</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre o médico responsável/coordenador do PCMSO.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_respMonit_cpfResp"
+            id="2220_exMedOcup_respMonit_cpfResp">33
+        </td>
+        <td>cpfResp</td>
+        <td><a href="#r_2220_exMedOcup_respMonit">respMonit</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o CPF do médico responsável/coordenador do PCMSO.<br>
+            <strong>Validação:</strong> Se informado, deve ser um CPF válido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_respMonit_nmResp"
+            id="2220_exMedOcup_respMonit_nmResp">34
+        </td>
+        <td>nmResp</td>
+        <td><a href="#r_2220_exMedOcup_respMonit">respMonit</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2-70</td>
+        <td>-</td>
+        <td>Preencher com o nome do médico responsável/coordenador do PCMSO.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_respMonit_nrCRM"
+            id="2220_exMedOcup_respMonit_nrCRM">35
+        </td>
+        <td>nrCRM</td>
+        <td><a href="#r_2220_exMedOcup_respMonit">respMonit</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-10</td>
+        <td>-</td>
+        <td>Número de inscrição do médico responsável/coordenador do PCMSO no CRM.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2220_exMedOcup_respMonit_ufCRM"
+            id="2220_exMedOcup_respMonit_ufCRM">36
+        </td>
+        <td>ufCRM</td>
+        <td><a href="#r_2220_exMedOcup_respMonit">respMonit</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Preencher com a sigla da UF de expedição do CRM.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO
+        </td>
+    </tr>
+    </tbody>
+</table>

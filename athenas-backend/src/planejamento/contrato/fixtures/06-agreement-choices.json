@@ -1,0 +1,29 @@
+[
+  {
+    "fields": {
+      "description": "",
+      "value": 2,
+      "label": "SRP",
+      "cache_path": "contrato.TIPO_CONTRATO",
+      "app_label": "contrato",
+      "active": false,
+      "order_weight": 0,
+      "name": "TIPO_CONTRATO"
+    },
+    "model": "standard.choice"
+  },
+  {
+    "model": "standard.choice",
+    "fields": {
+      "app_label": "contrato",
+      "name": "INDICE_REAJUSTE",
+      "label": "Não Cadastrado",
+      "value": 10,
+      "cvalue": "10",
+      "cache_path": "contrato.INDICE_REAJUSTE",
+      "description": "",
+      "order_weight": 0,
+      "active": true
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+{
+    "model": "standard.classcode",
+    "pk": 387,
+    "fields": {
+        "slug": "rh.dayoff.management.commands.schedulerecessresidentctl.Command",
+        "path": "rh.dayoff.management.commands.schedulerecessresidentctl.Command",
+        "title": "Agendamento e Notifica\u00e7\u00e3o de recesso de residentes",
+        "description": "Notifica\u00e7\u00e3o de recesso de residentes",
+        "name_object": "Command",
+        "typeof": "JOB"
+    }
+},
+{
+    "model": "standard.classcode",
+    "pk": 388,
+    "fields": {
+        "slug": "rh.dayoff.management.commands.residentrecessperiodctl.Command",
+        "path": "rh.dayoff.management.commands.residentrecessperiodctl.Command",
+        "title": "Gerar marca\u00e7\u00e3o de recesso de residentes",
+        "description": "Gerar marca\u00e7\u00e3o de recesso de residentes",
+        "name_object": "Command",
+        "typeof": "JOB"
+    }
+}
+]

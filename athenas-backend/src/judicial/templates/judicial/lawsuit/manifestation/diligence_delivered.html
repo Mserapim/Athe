@@ -1,0 +1,48 @@
+{% load judicialfilters %}
+{% if manifestation.diligence.delivery_status == 5 %}
+<div class="paragraph-text">
+    A diligência <span class="bold">{{ manifestation.diligence.formated_number }}</span> foi entregue no dia
+    <span class="bold">{{ manifestation.diligence.date_delivery | date:"d/m/Y" }}</span> às
+    <span class="bold">{{ manifestation.diligence.date_delivery | date:"H:i" }}</span> pelo oficial de diligência
+    <span class="bold">{{ manifestation.diligence.responsible_delivering }}</span>, neste momento foi definido o prazo de
+    <span class="bold">{{ manifestation.deadline | date:"d/m/Y" }}</span>
+    para que <span class="bold">{{ manifestation.how }}</span> apresentasse sua manifestação.
+</div>
+{% endif %}
+
+{% if not manifestation.signed_by %}
+<div class="paragraph-text">
+    Até o momento, não foi apresentada nenhuma manifestação, mas o diligenciado ainda tem tempo para apresentar a mesma.
+</div>
+{% elif manifestation.signed_by %}
+    {% if manifestation.manifestation_type == 2 %}
+<div class="paragraph-text">
+    A manifestação foi apresentada no dia <span class="bold">{{ manifestation.signed_at | date:"d/m/Y" }}</span>
+    às <span class="bold">{{ manifestation.signed_at | date:"H:i" }}</span>
+    através de <span class="bold">{{ manifestation.signed_by }}</span> nesta oportunidade <span class="bold">{{ manifestation.how }}</span>
+    fez a seguinte manifestação:
+</div>
+    {% else %}
+<div class="paragraph-text">
+    A manifestação foi apresentada no dia <span class="bold">{{ manifestation.signed_at | date:"d/m/Y" }}</span>
+    às <span class="bold">{{ manifestation.signed_at | date:"H:i" }}</span>
+    diretamente por <span class="bold">{{ manifestation.signed_by }}</span> que fez a seguinte manifestação:
+</div>
+    {% endif %}
+<div class="paragraph-text">
+    <div class="citation">
+        {{ manifestation.content | safely }}
+    </div>
+</div>
+
+<div class="paragraph-text">
+    <h2>Anexos Apresentados</h2>
+    {% for attach in manifestation.attaches.all %}
+        {% include "judicial/lawsuit/attach.html" %}
+    {% empty %}
+    <div class="paragraph-text">
+        Não foram apresentados nenhum documento a mais junto com esta manifestação.
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

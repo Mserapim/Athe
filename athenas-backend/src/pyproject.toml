@@ -1,0 +1,15 @@
+[tool.black]
+include = '\.piy?$'
+exclude = '''
+/(
+  \.git
+ | \.hg
+ | \.mypy_cache
+ | \.tox
+ | \.venv
+ | \.js
+ | _build
+ | buck-out
+ | build
+ )/
+'''

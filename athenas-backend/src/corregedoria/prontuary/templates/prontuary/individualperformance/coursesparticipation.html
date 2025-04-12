@@ -1,0 +1,61 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div class="composite">
+        {% block content %}
+            <b>DESEMPENHO INDIVIDUAL - Frequência e Aproveitamento em Cursos</b>
+            <div class="paragraph-text" style="padding-left: 0.5em; font-size: 12px;">
+                <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 2px;" colspan="3">Curso: <b>{{ detailcoursesparticipation.course }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;" width=45% >Tipo: <b>{{ detailcoursesparticipation.get_course_level_display }}</u></td>
+                        <td style="padding: 2px;" width=30% >Data: <b>{{ detailcoursesparticipation.date_course | date:'d/m/Y' }}</b></td>
+                        <td style="padding: 2px;" width=25% >C/H: <b>{{ detailcoursesparticipation.workload }}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;">Total de <u>dias</u> afastado: <b>{{ detailcoursesparticipation.get_departure_days }}</b></td>
+                        <td style="padding: 2px;" colspan="2">Válido para pontuação:
+                            <b>
+                                {% if detailcoursesparticipation.validated == 1 %} Sem informção {% endif %}
+                                {% if detailcoursesparticipation.validated == 2 %} SIM {% endif %}
+                                {% if detailcoursesparticipation.validated == 3 %} NÃO {% endif %}
+                            </b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 2px;" colspan="3">Utilizado em:
+                            {% if detailcoursesparticipation.used_edital %}
+                                <b>{{ detailcoursesparticipation.used_edital.edital | safely }} de {{ detailcoursesparticipation.used_edital.date_edital | date:'d/m/Y' }}</b>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% if detailcoursesparticipation.course_level != 4 %}
+                        <tr>
+                            <td style="padding: 2px;" colspan="3">Pontuação: <b>{{ detailcoursesparticipation.score }}</b></td>
+                        </tr>
+                    {% endif %}
+                    <tr>
+                        <td style="padding: 2px;" colspan="3">
+                            Anexos: <br />
+                            {% if detailcoursesparticipation.attachments.all %}
+                                {% for data in detailcoursesparticipation.attachments.all %}
+                                    - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                                    <div style="font-size:0.8em; padding-left: 1em; padding-bottom: 0.5em;">
+                                        <small>
+                                            URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                                            MD5: {{ data.attached_file.file }}
+                                        </small>
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                <div style="padding-left: 0.5em;">
+                                 - Não existem anexos.
+                                </div>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        {% endblock %}
+    </div>
+</div>

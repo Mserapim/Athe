@@ -1,0 +1,562 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Férias Regulamentares(Servidores)",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "FERIAS_REGULAMENTARES",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Férias Individuais(Membros)",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "FERIAS_INDIVIDUAIS",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Recesso Forense",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "RECESSO_FORENSE",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Folga de Aniversário",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "FOLGA_ANIVERSARIO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Folga Eleitoral",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "FOLGA_ELEITORAL",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Plantões‌(Servidores)",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "PLANTOES‌_SERVIDORES",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Folgas Compensatórias de Membros",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "FOLGAS_COMPENSATORIAS_MEMBROS",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Plantão de Recesso Forense - Membros ",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "PLANTAO_DE_RECESSO_FORENSE",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Licença Prêmio",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "LICENCA_PREMIO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Recesso de Estagiário",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "RECESSO_ESTAGIARIO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Concurso Promotor Substituto",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "CONCURSO_PROMOTOR_SUBSTITUTO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Concurso de Estagiários",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "CONCURSO_ESTAGIARIOS",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Tratamento de Saúde até 15 dias - Servidor",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Tratamento de saúde até 30 dias - Membro",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Tratamento de saúde junta médica",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Doença em pessoa da família",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Maternidade/Tutoria ou Adoção",
+    "value": 17,
+    "cvalue": "17",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Paternidade/Tutoria ou Adoção",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Falecimento (Luto)",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Casamento (Gala)",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Alteração de Jornada",
+    "value": 21,
+    "cvalue": "21",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Cancelamento",
+    "value": 22,
+    "cvalue": "22",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "CANCELAMENTO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Retificação",
+    "value": 23,
+    "cvalue": "23",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "RETIFICACAO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Folha Ponto",
+    "value": 24,
+    "cvalue": "24",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "FOLHA_PONTO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Relatório Teletrabalho",
+    "value": 25,
+    "cvalue": "25",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "TELETRABALHO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Solicitação de Plantão",
+    "value": 26,
+    "cvalue": "26",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "SOLICITACAO_PLANTAO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Ausência Doação de Sangue",
+    "value": 27,
+    "cvalue": "27",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Progressão Vertical",
+    "value": 28,
+    "cvalue": "28",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "PROGRESSAO_VERTICAL",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Progressão Horizontal",
+    "value": 29,
+    "cvalue": "29",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "PROGRESSAO_HORIZONTAL",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Doação de Sangue",
+    "value": 30,
+    "cvalue": "30",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "DOACAO_SANGUE",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Tratamento de saúde Horas",
+    "value": 31,
+    "cvalue": "31",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Recesso de Residente",
+    "value": 32,
+    "cvalue": "32",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "RECESSO_RESIDENTE",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Exercício Cumulativo",
+    "value": 33,
+    "cvalue": "33",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "EXERCICIO_CUMULATIVO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Cancelamento Teletrabalho",
+    "value": 34,
+    "cvalue": "34",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "CANCELAMENTO_TELETRABALHO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Relatorio Semestral Teletrabalho",
+    "value": 35,
+    "cvalue": "35",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "RELATORIO_SEMESTRAL_TELETRABALHO",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Solicitação de Crédito de Folga",
+    "value": 36,
+    "cvalue": "36",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "SOLICITACAO_FOLGA",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Doença pessoa da família (Junta Médica)",
+    "value": 37,
+    "cvalue": "37",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Solicitação de auxilio creche e dependente IR",
+    "value": 38,
+    "cvalue": "38",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "SOLICITACAO_AUX_CRECHE_IR",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Solicitação de desbloqueio do teletrabalho",
+    "value": 39,
+    "cvalue": "39",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE_VDF",
+    "label": "Solicitação de crédito de dispensa eleitoral",
+    "value": 40,
+    "cvalue": "40",
+    "cache_path": "pvf.REQUEST_TYPE_VDF",
+    "description": "SOLICITACAO_CREDITO_DISPENSA_ELEITORAL",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

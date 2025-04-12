@@ -1,0 +1,287 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_eSocial" id="3000_eSocial">1</td>
+        <td><a href="#r_3000_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000" id="3000">2</td>
+        <td><a href="#r_3000">evtExclusao</a></td>
+        <td><a href="#r_3000_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Exclusão de Eventos.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVE_EXCLUSAO_VALIDA_NRRECIBO">REGRA_EVE_EXCLUSAO_VALIDA_NRRECIBO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXTEMP_DOMESTICO">REGRA_EXTEMP_DOMESTICO</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a><br>
+            <a href="#REGRA_VALIDA_PERANT_1210">REGRA_VALIDA_PERANT_1210</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_Id" id="3000_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_3000">evtExclusao</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEvento" id="3000_ideEvento">4</td>
+        <td><a href="#r_3000_ideEvento">ideEvento</a></td>
+        <td><a href="#r_3000">evtExclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEvento_tpAmb" id="3000_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_3000_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEvento_procEmi"
+            id="3000_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_3000_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>8</strong> - Aplicativo governamental para envio de eventos pelo Judiciário<br>
+            <strong>9</strong> - Aplicativo governamental - Integração com a Junta Comercial<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEvento_verProc"
+            id="3000_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_3000_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEmpregador" id="3000_ideEmpregador">8</td>
+        <td><a href="#r_3000_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_3000">evtExclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEmpregador_tpInsc"
+            id="3000_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_3000_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_ideEmpregador_nrInsc"
+            id="3000_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_3000_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#3000_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao" id="3000_infoExclusao">11</td>
+        <td><a href="#r_3000_infoExclusao">infoExclusao</a></td>
+        <td><a href="#r_3000">evtExclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que identifica o evento objeto da exclusão.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_tpEvento"
+            id="3000_infoExclusao_tpEvento">12
+        </td>
+        <td>tpEvento</td>
+        <td><a href="#r_3000_infoExclusao">infoExclusao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>6</td>
+        <td>-</td>
+        <td>Preencher com o tipo de evento. Ex.: S-1200, S-2200, etc.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_nrRecEvt"
+            id="3000_infoExclusao_nrRecEvt">13
+        </td>
+        <td>nrRecEvt</td>
+        <td><a href="#r_3000_infoExclusao">infoExclusao</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do evento que será excluído.<br>
+            <strong>Validação:</strong> O recibo deve ser relativo ao mesmo tipo de evento indicado em <a
+                    href="#3000_infoExclusao_tpEvento">tpEvento</a> e o respectivo evento não deve constar como excluído
+            ou retificado. Além disso, no caso de exclusão de eventos em que existe a identificação do trabalhador, o
+            evento que está sendo excluído deve referir-se ao mesmo trabalhador identificado por <a
+                    href="#3000_infoExclusao_ideTrabalhador_cpfTrab">cpfTrab</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_ideTrabalhador"
+            id="3000_infoExclusao_ideTrabalhador">14
+        </td>
+        <td><a href="#r_3000_infoExclusao_ideTrabalhador">ideTrabalhador</a></td>
+        <td><a href="#r_3000_infoExclusao">infoExclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que identifica a qual trabalhador se refere o evento a ser excluído.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_ideTrabalhador_cpfTrab"
+            id="3000_infoExclusao_ideTrabalhador_cpfTrab">15
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_3000_infoExclusao_ideTrabalhador">ideTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador ou do beneficiário.<br>
+            <strong>Validação:</strong> O CPF indicado deve existir na base de dados do RET.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_ideFolhaPagto"
+            id="3000_infoExclusao_ideFolhaPagto">16
+        </td>
+        <td><a href="#r_3000_infoExclusao_ideFolhaPagto">ideFolhaPagto</a></td>
+        <td><a href="#r_3000_infoExclusao">infoExclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que identifica a qual período de apuração pertence o evento que será excluído.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_ideFolhaPagto_indApuracao"
+            id="3000_infoExclusao_ideFolhaPagto_indApuracao">17
+        </td>
+        <td>indApuracao</td>
+        <td><a href="#r_3000_infoExclusao_ideFolhaPagto">ideFolhaPagto</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de período de apuração.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Mensal<br>
+            <strong>2</strong> - Anual (13° salário)<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se <a href="#3000_infoExclusao_tpEvento">tpEvento</a>
+            = [S-1200, S-1202, S-1207, S-1280, S-1300].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="3000_infoExclusao_ideFolhaPagto_perApur"
+            id="3000_infoExclusao_ideFolhaPagto_perApur">18
+        </td>
+        <td>perApur</td>
+        <td><a href="#r_3000_infoExclusao_ideFolhaPagto">ideFolhaPagto</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4 ou 7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) ou apenas o ano (formato AAAA) de referência das informações.<br>
+            <strong>Validação:</strong> Deve ser um mês/ano ou ano válido, posterior à implementação do eSocial. Somente
+            pode ser informado ano (formato AAAA) se <a
+                    href="#3000_infoExclusao_ideFolhaPagto_indApuracao">indApuracao</a> = [2].
+        </td>
+    </tr>
+    </tbody>
+</table>

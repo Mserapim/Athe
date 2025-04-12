@@ -1,0 +1,22 @@
+[
+{
+    "model": "standard.item",
+    "pk": 162,
+    "fields": {
+        "configuration": 15,
+        "key": "notificar_cancelamento_diaria_dg",
+        "type_of": 3,
+        "value": "elton.souza@mpmt.mp.br"
+    }
+},
+{
+    "model": "standard.emailtemplate",
+    "pk": 55,
+    "fields": {
+        "code": "CANCELAMENTO_DIARIA_DG",
+        "subject": "Cancelamento de Solicita\u00e7\u00e3o de Di\u00e1rias",
+        "contents": "<p style=\"text-align: justify;\">Informamos o cancelamento de&nbsp; solicita\u00e7\u00e3o de di\u00e1rias a pedido de %CANCELADOR%.<br type=\"_moz\"></p><p>%DADOS_VIAGEM%<br type=\"_moz\"></p><p> <br type=\"_moz\"></p>",
+        "description": null
+    }
+}
+]

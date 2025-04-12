@@ -1,0 +1,1422 @@
+[
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T08:53:42.417",
+    "modified_at": "2022-05-02T10:56:53.867",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0101",
+    "title": "Aposentadoria por idade e tempo de contribuição - Proventos com integralidade, revisão pela paridade",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:19:45.493",
+    "modified_at": "2022-05-02T10:57:03.147",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0102",
+    "title": "Aposentadoria por idade e tempo de contribuição - Proventos pela média, reajuste manter valor real",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:20:15.934",
+    "modified_at": "2022-05-02T10:57:13.193",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0103",
+    "title": "Aposentadoria por idade - Proventos proporcionais calculado sobre integralidade, revisão pela paridade",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:20:41.916",
+    "modified_at": "2022-05-02T10:57:19.844",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0104",
+    "title": "Aposentadoria por idade - Proventos proporcionais calculado sobre a média, reajuste manter valor real",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:22:14.981",
+    "modified_at": "2022-05-02T10:57:25.065",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0105",
+    "title": "Aposentadoria compulsória - Proventos proporcionais calculado sobre integralidade, revisão pela paridade",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:24:46.076",
+    "modified_at": "2022-05-02T10:57:30.121",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0106",
+    "title": "Aposentadoria compulsória - Proventos proporcionais calculado sobre a média, reajuste manter valor real",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:25:08.072",
+    "modified_at": "2022-05-02T10:57:36.466",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0107",
+    "title": "Aposentadoria de professor - Proventos com integralidade, revisão pela paridade",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:25:27.911",
+    "modified_at": "2022-05-02T10:57:42.571",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0108",
+    "title": "Aposentadoria de professor - Proventos pela média, reajuste manter valor real",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:25:58.617",
+    "modified_at": "2022-05-02T10:57:47.132",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0109",
+    "title": "Aposentadoria de servidor vinculado a RPC - Proventos limitados ao teto do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:26:26.022",
+    "modified_at": "2022-05-02T10:58:05.246",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0201",
+    "title": "Aposentadoria especial - Risco",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:26:49.012",
+    "modified_at": "2022-05-02T10:58:09.498",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0202",
+    "title": "Aposentadoria especial - Exposição a agentes nocivos",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:27:19.269",
+    "modified_at": "2022-05-02T10:58:13.403",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0203",
+    "title": "Aposentadoria da pessoa com deficiência",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:27:39.375",
+    "modified_at": "2022-05-02T10:58:17.525",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0204",
+    "title": "Aposentadoria especial do policial civil",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:28:01.041",
+    "modified_at": "2022-05-02T10:58:21.380",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0205",
+    "title": "Aposentadoria especial - Risco - Servidor vinculado a RPC - Proventos limitados ao teto do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:28:19.511",
+    "modified_at": "2022-05-02T10:58:29.710",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0206",
+    "title": "Aposentadoria especial - Exposição a agentes nocivos - Servidor vinculado a RPC - Proventos limitados ao teto do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:28:39.536",
+    "modified_at": "2022-05-02T10:58:25.834",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0207",
+    "title": "Aposentadoria da pessoa com deficiência - Servidor vinculado a RPC - Proventos limitados ao teto do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:28:55.977",
+    "modified_at": "2022-05-02T10:58:33.191",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0208",
+    "title": "Aposentadoria especial de policial - Servidor vinculado a RPC - Proventos limitados ao teto do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:29:22.912",
+    "modified_at": "2022-05-02T10:58:36.995",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0301",
+    "title": "Aposentadoria por invalidez - Proventos com integralidade, revisão pela paridade",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:29:52.793",
+    "modified_at": "2022-05-02T10:58:45.024",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0302",
+    "title": "Aposentadoria por invalidez - Proventos pela média, reajuste manter valor real",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:30:12.363",
+    "modified_at": "2022-05-02T10:58:40.927",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0303",
+    "title": "Aposentadoria por invalidez - Proventos proporcionais calculado sobre integralidade, revisão pela paridade",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:30:33.900",
+    "modified_at": "2022-05-02T10:58:48.488",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0304",
+    "title": "Aposentadoria por invalidez - Proventos proporcionais calculado sobre a média, reajuste manter valor real",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:30:54.338",
+    "modified_at": "2022-05-02T10:58:52.050",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0305",
+    "title": "Aposentadoria por invalidez - Servidor vinculado a RPC - Proventos limitados ao teto do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:31:26.653",
+    "modified_at": "2022-05-02T10:58:55.830",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0401",
+    "title": "Reforma por invalidez",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:31:39.147",
+    "modified_at": "2022-05-02T10:58:59.476",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0402",
+    "title": "Reforma",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:32:04.130",
+    "modified_at": "2022-05-02T10:59:02.794",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0403",
+    "title": "Reforma compulsória proporcional",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:32:20.654",
+    "modified_at": "2022-05-02T10:59:06.468",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0404",
+    "title": "Reforma compulsória integral",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:32:50.398",
+    "modified_at": "2022-05-02T10:59:10.141",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0405",
+    "title": "Reforma por incapacidade definitiva",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:33:13.038",
+    "modified_at": "2022-05-02T10:59:13.393",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0501",
+    "title": "Reserva remunerada compulsória integral",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:33:37.070",
+    "modified_at": "2022-05-02T10:59:17.187",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0502",
+    "title": "Reserva remunerada integral",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:33:55.653",
+    "modified_at": "2022-05-02T10:59:21.242",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0503",
+    "title": "Reserva remunerada proporcional",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:34:22.700",
+    "modified_at": "2022-05-02T10:59:24.870",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0504",
+    "title": "Reserva remunerada compulsória proporcional",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:34:47.278",
+    "modified_at": "2022-05-02T10:59:29.564",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0601",
+    "title": "Pensão por morte (art. 40, § 7º, da CF/1988)",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:35:06.472",
+    "modified_at": "2022-05-02T10:59:32.901",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0602",
+    "title": "Pensão por morte com paridade, decorrente do art. 6º-A da EC 41/2003",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:35:24.611",
+    "modified_at": "2022-05-02T10:59:36.897",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0603",
+    "title": "Pensão por morte com paridade, decorrente do art. 3º da EC 47/2005",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:35:48.619",
+    "modified_at": "2022-05-02T10:59:40.222",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0604",
+    "title": "Pensão por morte militar",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:36:19.124",
+    "modified_at": "2022-05-02T10:59:43.429",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0701",
+    "title": "Complementação de aposentadoria do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:36:57.499",
+    "modified_at": "2022-05-02T10:59:46.929",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0702",
+    "title": "Complementação de pensão por morte do RGPS",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:37:18.620",
+    "modified_at": "2022-05-02T10:59:50.162",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0801",
+    "title": "Aposentadoria sem paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:37:37.707",
+    "modified_at": "2022-05-02T10:59:53.272",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0802",
+    "title": "Aposentadoria com paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:37:58.929",
+    "modified_at": "2022-05-02T10:59:56.856",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0803",
+    "title": "Aposentadoria por invalidez com paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:38:22.633",
+    "modified_at": "2022-05-02T11:00:04.052",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0804",
+    "title": "Aposentadoria por invalidez sem paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:38:47.719",
+    "modified_at": "2022-05-02T10:59:59.961",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0805",
+    "title": "Transferência para reserva concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:39:03.849",
+    "modified_at": "2022-05-02T11:00:07.540",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0806",
+    "title": "Reforma concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:39:23.037",
+    "modified_at": "2022-05-02T11:00:13.740",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0807",
+    "title": "Pensão por morte com paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:39:41.834",
+    "modified_at": "2022-05-02T11:00:17.040",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0808",
+    "title": "Pensão por morte sem paridade concedida antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:40:03.221",
+    "modified_at": "2022-05-02T11:00:20.271",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0809",
+    "title": "Outros benefícios previdenciários concedidos antes da obrigatoriedade de envio dos eventos não periódicos para entes públicos no eSocial",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:40:21.496",
+    "modified_at": "2022-05-02T11:00:23.468",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0810",
+    "title": "Aposentadoria de parlamentar - Plano próprio",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:40:36.830",
+    "modified_at": "2022-05-02T11:00:26.681",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0811",
+    "title": "Aposentadoria de servidor vinculado ao Poder Legislativo - Plano próprio",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:41:00.312",
+    "modified_at": "2022-05-02T11:00:30.191",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0812",
+    "title": "Pensão por morte - Plano próprio",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:41:36.235",
+    "modified_at": "2022-05-02T11:00:34.733",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0901",
+    "title": "Benefício especial proporcional - Servidor pertencente a RPPS que opta pelo RPC da União",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:41:49.723",
+    "modified_at": "2022-05-02T11:00:38.873",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0902",
+    "title": "Benefício especial proporcional - Servidor pertencente a RPPS que opta pelo RPC - Demais entes da Federação, de acordo com as disposições das leis específicas",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:42:10.738",
+    "modified_at": "2022-05-02T11:00:41.885",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "0909",
+    "title": "Outros benefícios especiais com vínculo previdenciário",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:42:45.020",
+    "modified_at": "2022-05-02T11:00:45.815",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1001",
+    "title": "Pensão especial sem vínculo previdenciário",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:43:10.244",
+    "modified_at": "2022-05-02T11:00:49.155",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1009",
+    "title": "Outros benefícios sem vínculo previdenciário",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:43:32.456",
+    "modified_at": "2022-05-02T11:00:52.189",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1101",
+    "title": "Aposentadoria voluntária com proventos proporcionais ao tempo de mandato - Leis próprias",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:43:49.757",
+    "modified_at": "2022-05-02T11:00:55.431",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1102",
+    "title": "Aposentadoria voluntária com proventos integrais ao tempo de mandato - Leis próprias",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:44:08.513",
+    "modified_at": "2022-05-02T11:01:00.359",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1103",
+    "title": "Aposentadoria por invalidez permanente - Proventos integrais - Leis próprias",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:44:57.074",
+    "modified_at": "2022-05-02T11:01:03.466",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1104",
+    "title": "Aposentadoria por invalidez permanente - Proventos proporcionais ao tempo de mandato - Leis próprias",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:45:14.503",
+    "modified_at": "2022-05-02T11:01:06.818",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1105",
+    "title": "Pensão por morte de parlamentar - Lei específica",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:45:34.275",
+    "modified_at": "2022-05-02T11:01:09.781",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "1106",
+    "title": "Pensão por morte de parlamentar - Planos anteriores à EC 20/1998",
+    "description": "",
+    "esocial_table": "25",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:46:12.303",
+    "modified_at": "2022-05-02T11:02:26.119",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "01",
+    "title": "Óbito",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:46:56.446",
+    "modified_at": "2022-05-02T11:02:22.860",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "02",
+    "title": "Reversão",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:47:18.807",
+    "modified_at": "2022-05-02T11:02:18.996",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "03",
+    "title": "Por decisão judicial",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:47:32.633",
+    "modified_at": "2022-05-02T11:02:15.243",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "04",
+    "title": "Cassação",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:47:52.904",
+    "modified_at": "2022-05-02T11:02:10.706",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "05",
+    "title": "Término do prazo do benefício",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:48:14.716",
+    "modified_at": "2022-05-02T11:02:06.768",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "06",
+    "title": "Extinção de quota",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:48:32.248",
+    "modified_at": "2022-05-02T11:02:02.096",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "07",
+    "title": "Não homologado pelo Tribunal de Contas",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:48:50.943",
+    "modified_at": "2022-05-02T11:01:57.460",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "08",
+    "title": "Renúncia expressa",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:49:06.836",
+    "modified_at": "2022-05-02T11:01:52.818",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "09",
+    "title": "Transferência de órgão administrador",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:49:22.720",
+    "modified_at": "2022-05-02T11:01:49.164",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "10",
+    "title": "Mudança de CPF do beneficiário",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+},
+{
+  "model": "esocial.itemtable",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-05-02T09:49:38.814",
+    "modified_at": "2022-05-02T11:01:45.701",
+    "start_validity": "2014-01-01",
+    "end_validity": null,
+    "code": "11",
+    "title": "Não recadastramento",
+    "description": "",
+    "esocial_table": "26",
+    "choice": []
+  }
+}
+]

@@ -1,0 +1,4930 @@
+[
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200004300",
+    "title": "Impacto de pessoa contra objeto parado",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto da pessoa acidentada contra a fonte da lesão, tendo sido o movimento que produziu o contato originalmente o da pessoa, e não o da fonte da lesão, exceto quando o movimento do acidentado tiver sido provocado por queda. Inclui casos de alguém chocar-se contra alguma coisa, tropeçar em alguma coisa, ser empurrado ou projetado contra alguma coisa, etc. Não inclui casos de salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200004600",
+    "title": "Impacto de pessoa contra objeto em movimento",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto da pessoa acidentada contra a fonte da lesão, tendo sido o movimento que produziu o contato originalmente o da pessoa, e não o da fonte da lesão, exceto quando o movimento do acidentado tiver sido provocado por queda. Inclui casos de alguém chocar-se contra alguma coisa, tropeçar em alguma coisa, ser empurrado ou projetado contra alguma coisa, etc. Não inclui casos de salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200008300",
+    "title": "Impacto sofrido por pessoa, de objeto que cai",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido da fonte da lesão, e não do acidentado, o movimento que originou o contato."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200008600",
+    "title": "Impacto sofrido por pessoa, de objeto projetado",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido da fonte da lesão, e não do acidentado, o movimento que originou o contato."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200008900",
+    "title": "Impacto sofrido por pessoa, NIC",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido da fonte da lesão, e não do acidentado, o movimento que originou o contato."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012200",
+    "title": "Queda de pessoa com diferença de nível de andaime, passagem, plataforma, etc",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012300",
+    "title": "Queda de pessoa com diferença de nível de escada móvel ou fixada cujos degraus não permitem o apoio integral do pé",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012400",
+    "title": "Queda de pessoa com diferença de nível de material empilhado",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012500",
+    "title": "Queda de pessoa com diferença de nível de veículo",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012600",
+    "title": "Queda de pessoa com diferença de nível em escada permanente cujos degraus permitem apoio integral do pé",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012700",
+    "title": "Queda de pessoa com diferença de nível em poço, escavação, abertura no piso, etc. (da borda da abertura)",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200012900",
+    "title": "Queda de pessoa com diferença de nível, NIC",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e a fonte da lesão, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade. 2) O ponto de contato com a fonte da lesão estava abaixo da superfície que suportava o acidentado no início da queda. Inclui salto para nível inferior."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200016300",
+    "title": "Queda de pessoa em mesmo nível em passagem ou superfície de sustentação",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e um objeto externo, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade, com perda do equilíbrio e impossibilidade de manter-se de pé. 2) O ponto de contato com a fonte da lesão estava, no momento do início da queda, ao nível ou acima da superfície que suportava o acidentado."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200016600",
+    "title": "Queda de pessoa em mesmo nível sobre ou contra alguma coisa",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e um objeto externo, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade, com perda do equilíbrio e impossibilidade de manter-se de pé. 2) O ponto de contato com a fonte da lesão estava, no momento do início da queda, ao nível ou acima da superfície que suportava o acidentado."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200016900",
+    "title": "Queda de pessoa em mesmo nível, NIC",
+    "description": "\tAplica-se a casos em que a lesão foi produzida por impacto entre o acidentado e um objeto externo, tendo sido do acidentado o movimento que produziu o contato, nas seguintes circunstâncias: 1) O movimento do acidentado foi devido à ação da gravidade, com perda do equilíbrio e impossibilidade de manter-se de pé. 2) O ponto de contato com a fonte da lesão estava, no momento do início da queda, ao nível ou acima da superfície que suportava o acidentado."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200020100",
+    "title": "Aprisionamento em, sob ou entre objetos em movimento convergente (calandra) ou de encaixe",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por compressão, pinçamento ou esmagamento entre um objeto em movimento e outro parado, entre dois objetos em movimento ou entre partes de um mesmo objeto. Não se aplica quando a fonte da lesão for um objeto livremente projetado ou em queda livre."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200020300",
+    "title": "Aprisionamento em, sob ou entre um objeto parado e outro em movimento",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por compressão, pinçamento ou esmagamento entre um objeto em movimento e outro parado, entre dois objetos em movimento ou entre partes de um mesmo objeto. Não se aplica quando a fonte da lesão for um objeto livremente projetado ou em queda livre."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200020500",
+    "title": "Aprisionamento em, sob ou entre dois ou mais objetos em movimento (sem encaixe)",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por compressão, pinçamento ou esmagamento entre um objeto em movimento e outro parado, entre dois objetos em movimento ou entre partes de um mesmo objeto. Não se aplica quando a fonte da lesão for um objeto livremente projetado ou em queda livre."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200020700",
+    "title": "Aprisionamento em, sob ou entre desabamento ou desmoronamento de edificação, barreira, etc",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por compressão, pinçamento ou esmagamento entre um objeto em movimento e outro parado, entre dois objetos em movimento ou entre partes de um mesmo objeto. Não se aplica quando a fonte da lesão for um objeto livremente projetado ou em queda livre."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200020900",
+    "title": "Aprisionamento em, sob ou entre, NIC",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por compressão, pinçamento ou esmagamento entre um objeto em movimento e outro parado, entre dois objetos em movimento ou entre partes de um mesmo objeto. Não se aplica quando a fonte da lesão for um objeto livremente projetado ou em queda livre."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200024300",
+    "title": "Atrito ou abrasão por encostar, pisar, ajoelhar ou sentar em objeto (não em vibração)",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por pressão, vibração ou atrito entre o acidentado e a fonte da lesão."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200024400",
+    "title": "Atrito ou abrasão por manusear objeto (não em vibração)",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por pressão, vibração ou atrito entre o acidentado e a fonte da lesão."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200024500",
+    "title": "Atrito ou abrasão por objeto em vibração",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por pressão, vibração ou atrito entre o acidentado e a fonte da lesão."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200024600",
+    "title": "Atrito ou abrasão por corpo estranho no olho",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por pressão, vibração ou atrito entre o acidentado e a fonte da lesão."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200024700",
+    "title": "Atrito ou abrasão por compressão repetitiva",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por pressão, vibração ou atrito entre o acidentado e a fonte da lesão."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200024900",
+    "title": "Atrito ou abrasão, NIC",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi produzida por pressão, vibração ou atrito entre o acidentado e a fonte da lesão."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200028300",
+    "title": "Reação do corpo a seus movimentos - movimento involuntário (escorregão sem queda, etc.)",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi causada exclusivamente por movimento livre do corpo humano que causou tensão ou torção em alguma parte do corpo. Geralmente aplica-se à ocorrência de torções, distensões, rupturas ou outras lesões internas, resultantes da adoção de uma posição forçada ou de movimentos involuntários provocados por sustos ou esforços de recuperação da posição normal em casos de escorregão ou perda de equilíbrio. Inclui casos de lesão muscular ou interna resultantes de"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200028600",
+    "title": "Reação do corpo a seus movimentos - movimento voluntário",
+    "description": "\tAplica-se a casos, sem impacto, em que a lesão foi causada exclusivamente por movimento livre do corpo humano que causou tensão ou torção em alguma parte do corpo. Geralmente aplica-se à ocorrência de torções, distensões, rupturas ou outras lesões internas, resultantes da adoção de uma posição forçada ou de movimentos involuntários provocados por sustos ou esforços de recuperação da posição normal em casos de escorregão ou perda de equilíbrio. Inclui casos de lesão muscular ou interna resultantes de movimentos individuais como"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200032200",
+    "title": "Esforço excessivo ao erguer objeto",
+    "description": "\tVer explicações do código 200028600."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200032400",
+    "title": "Esforço excessivo ao empurrar ou puxar objeto",
+    "description": "\tVer explicações do código 200028600."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200032600",
+    "title": "Esforço excessivo ao manejar, sacudir ou arremessar objeto",
+    "description": "\tVer explicações do código 200028600."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200032900",
+    "title": "Esforço excessivo, NIC",
+    "description": "\tVer explicações do código 200028600."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200036000",
+    "title": "Exposição à energia elétrica",
+    "description": "\tAplica-se somente a casos sem impacto, em que a lesão consiste em choque elétrico, queimadura ou eletroplessão (eletrocussão)."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200040300",
+    "title": "Contato com objeto ou substância a temperatura muito alta",
+    "description": "\tAplica-se somente a casos, sem impacto, em que a lesão consiste em queimadura, geladura, etc., resultante queimadura, geladura, etc., resultante de contato com objetos, ar, gases, vapores ou líquidos quentes ou frios. Não se aplica a casos em que a lesão foi provocada pelas características tóxicas ou cáusticas de produtos químicos ou a queimadura por descarga elétrica."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200040600",
+    "title": "Contato com objeto ou substância a temperatura muito baixa",
+    "description": "\tAplica-se somente a casos, sem impacto, em que a lesão consiste em queimadura, geladura, etc., resultante queimadura, geladura, etc., resultante de contato com objetos, ar, gases, vapores ou líquidos quentes ou frios. Não se aplica a casos em que a lesão foi provocada pelas características tóxicas ou cáusticas de produtos químicos ou a queimadura por descarga elétrica."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200044300",
+    "title": "Exposição à temperatura ambiente elevada",
+    "description": "\tNão se aplica aos casos de lesão proveniente de exposição à radiação solar ou outras radiações. Também não se aplica a casos de queimadura ou geladura provocada por contato com objeto ou substância a temperaturas extremas ou queimadura devida à energia elétrica."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200044600",
+    "title": "Exposição à temperatura ambiente baixa",
+    "description": "\tNão se aplica aos casos de lesão proveniente de exposição à radiação solar ou outras radiações. Também não se aplica a casos de queimadura ou geladura provocada por contato com objeto ou substância a temperaturas extremas ou queimadura devida à energia elétrica."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200048200",
+    "title": "Inalação de substância cáustica, tóxica ou nociva",
+    "description": "\tAplica-se somente a casos, sem impacto, em que a lesão foi provocada por inalação, absorção ou ingestão de substâncias nocivas. Geralmente refere-se a intoxicações, envenenamentos, queimaduras, irritações ou reações alérgicas por produtos químicos."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200048400",
+    "title": "Ingestão de substancia cáustica, tóxica ou nociva",
+    "description": "\tAplica-se somente a casos, sem impacto, em que a lesão foi provocada por inalação, absorção ou ingestão de substâncias nocivas. Geralmente refere-se a intoxicações, envenenamentos, queimaduras, irritações ou reações alérgicas por produtos químicos."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200048600",
+    "title": "Absorção (por contato) de substância cáustica, tóxica ou nociva",
+    "description": "\tAplica-se somente a casos, sem impacto, em que a lesão foi provocada por inalação, absorção ou ingestão de substâncias nocivas. Geralmente refere-se a intoxicações, envenenamentos, queimaduras, irritações ou reações alérgicas por produtos químicos."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200048900",
+    "title": "Inalação, ingestão e absorção, NIC",
+    "description": "\tAplica-se somente a casos, sem impacto, em que a lesão foi provocada por inalação, absorção ou ingestão de substâncias nocivas. Geralmente refere-se a intoxicações, envenenamentos, queimaduras, irritações ou reações alérgicas por produtos químicos."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200052000",
+    "title": "Imersão",
+    "description": "\tAplica-se aos acidentes que têm por consequência o afogamento."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200056000",
+    "title": "Exposição à radiação não ionizante",
+    "description": "\tAplica-se a casos em que as lesões são provocadas por exposição à radiação solar ou outras radiações não ionizantes (por exemplo, ultravioleta e infravermelho)."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200060000",
+    "title": "Exposição à radiação ionizante",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200064000",
+    "title": "Exposição ao ruído",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200068000",
+    "title": "Exposição à vibração",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200072000",
+    "title": "Exposição à pressão ambiente",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200072300",
+    "title": "Exposição à pressão ambiente elevada",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200072600",
+    "title": "Exposição à pressão ambiente baixa",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200076200",
+    "title": "Exposição à poluição da água",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200076400",
+    "title": "Exposição à poluição do ar",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200076600",
+    "title": "Exposição à poluição do solo",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200076900",
+    "title": "Exposição à poluição, NIC",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200080200",
+    "title": "Ataque de ser vivo por mordedura, picada, chifrada, coice, etc",
+    "description": "\tNão se aplica no caso de haver peçonha ou transmissão de doença."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200080400",
+    "title": "Ataque de ser vivo com peçonha",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200080600",
+    "title": "Ataque de ser vivo com transmissão de doença",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200080900",
+    "title": "Ataque de ser vivo (inclusive do homem), NIC",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "200080901",
+    "title": "Contato com pessoas doentes ou material infectocontagiante - agentes biológicos",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "209000000",
+    "title": "Tipo, NIC",
+    "description": "\t"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:05:47.930",
+    "modified_at": "2022-11-07T14:05:47.930",
+    "code": "209500000",
+    "title": "Tipo inexistente",
+    "description": ""
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010200",
+    "title": "Rua e estrada - superfície utilizada para sustentar pessoas",
+    "description": "Rua e estrada - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010250",
+    "title": "Calçada ou caminho para pedestre - superfície utilizada para sustentar pessoas",
+    "description": "Calçada ou caminho para pedestre - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010300",
+    "title": "Piso de edifício - superfície utilizada para sustentar pessoas",
+    "description": "Piso de edifício - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010350",
+    "title": "Escada permanente cujos degraus permitem apoio integral do pé, degrau - superfície utilizada para sustentar pessoas",
+    "description": "Escada permanente cujos degraus permitem apoio integral do pé, degrau - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010400",
+    "title": "Rampa - superfície utilizada para sustentar pessoas",
+    "description": "Rampa - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010450",
+    "title": "Passarela ou plataforma permanentes - superfície utilizada para sustentar pessoas",
+    "description": "Passarela ou plataforma permanentes - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010500",
+    "title": "Piso de mina - superfície utilizada para sustentar pessoas",
+    "description": "Piso de mina - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010550",
+    "title": "Chão - superfície utilizada para sustentar pessoas",
+    "description": "Chão - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010600",
+    "title": "Piso de andaime e plataforma desmontável - superfície utilizada para sustentar pessoas",
+    "description": "Piso de andaime e plataforma desmontável - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010650",
+    "title": "Piso de veiculo - superfície utilizada para sustentar pessoas",
+    "description": "Piso de veiculo - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010700",
+    "title": "Telhado",
+    "description": "Telhado"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302010900",
+    "title": "Superfície de sustentação, NIC - superfície utilizada para sustentar pessoas",
+    "description": "Superfície de sustentação, NIC - superfície utilizada para sustentar pessoas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302030900",
+    "title": "Escada móvel ou fixada, NIC",
+    "description": "Escada móvel ou fixada, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050100",
+    "title": "Edifício - edifício ou estrutura",
+    "description": "Edifício - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050200",
+    "title": "Depósito fixo (tanque, silo, paiol, etc.) - edifício ou estrutura",
+    "description": "Depósito fixo (tanque, silo, paiol, etc.) - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050300",
+    "title": "Cais, doca - edifício ou estrutura",
+    "description": "Cais, doca - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050400",
+    "title": "Dique, barragem - edifício ou estrutura",
+    "description": "Dique, barragem - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050500",
+    "title": "Ponte, viaduto - edifício ou estrutura",
+    "description": "Ponte, viaduto - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050600",
+    "title": "Arquibancada, estádio - edifício ou estrutura",
+    "description": "Arquibancada, estádio - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050700",
+    "title": "Andaime, plataforma - edifício ou estrutura",
+    "description": "Andaime, plataforma - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050800",
+    "title": "Torre, poste - edifício ou estrutura",
+    "description": "Torre, poste - edifício ou estrutura"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302050900",
+    "title": "Edifício ou estrutura (exceto piso, superfície de sustentação ou área de circulação), NIC",
+    "description": "Edifício ou estrutura (exceto piso, superfície de sustentação ou área de circulação), NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302070100",
+    "title": "Escavação (para edifício, estrada, etc.)",
+    "description": "Escavação (para edifício, estrada, etc.)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302070300",
+    "title": "Canal, fosso",
+    "description": "Canal, fosso"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302070500",
+    "title": "Poço, entrada, galeria, etc. de mina",
+    "description": "Poço, entrada, galeria, etc. de mina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302070700",
+    "title": "Túnel",
+    "description": "Túnel"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302070900",
+    "title": "Escavação, fosso, túnel, NIC",
+    "description": "Escavação, fosso, túnel, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "302090000",
+    "title": "Superfície e estrutura, NIC",
+    "description": "Superfície e estrutura, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010040",
+    "title": "Martelo, malho, marreta - ferramenta manual sem força motriz",
+    "description": "Martelo, malho, marreta - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010080",
+    "title": "Machadinha, enxó - ferramenta manual sem força motriz",
+    "description": "Machadinha, enxó - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010120",
+    "title": "Faca, facão - ferramenta manual sem força motriz",
+    "description": "Faca, facão - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010160",
+    "title": "Tesoura, tesourão - ferramenta manual sem força motriz",
+    "description": "Tesoura, tesourão - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010200",
+    "title": "Formão, cinzel - ferramenta manual sem força motriz",
+    "description": "Formão, cinzel - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010240",
+    "title": "Serra, serrote - ferramenta manual sem força motriz",
+    "description": "Serra, serrote - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010280",
+    "title": "Alicate, torques, tenaz - ferramenta manual sem força motriz",
+    "description": "Alicate, torques, tenaz - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010320",
+    "title": "Plaina - ferramenta manual sem força motriz",
+    "description": "Plaina - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010360",
+    "title": "Lima, grosa - ferramenta manual sem força motriz",
+    "description": "Lima, grosa - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010400",
+    "title": "Punção, ponteiro, vazador, talhadeira - ferramenta manual sem força motriz",
+    "description": "Punção, ponteiro, vazador, talhadeira - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010440",
+    "title": "Pua, trado, verruma, máquina de furar manual - ferramenta manual sem força motriz",
+    "description": "Pua, trado, verruma, máquina de furar manual - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010480",
+    "title": "Chave de parafuso - ferramenta manual sem força motriz",
+    "description": "Chave de parafuso - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010520",
+    "title": "Chave de porca ou de abertura regulável, chave de boca - ferramenta manual sem força motriz",
+    "description": "Chave de porca ou de abertura regulável, chave de boca - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010560",
+    "title": "Alavanca, pé-de-cabra - ferramenta manual sem força motriz",
+    "description": "Alavanca, pé-de-cabra - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010600",
+    "title": "Corda, cabo, corrente - ferramenta manual sem força motriz",
+    "description": "Corda, cabo, corrente - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010640",
+    "title": "Machado - ferramenta manual sem força motriz",
+    "description": "Machado - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010680",
+    "title": "Enxada, enxadão, sacho - ferramenta manual sem força motriz",
+    "description": "Enxada, enxadão, sacho - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010720",
+    "title": "Pá, cavadeira - ferramenta manual sem força motriz",
+    "description": "Pá, cavadeira - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010760",
+    "title": "Picareta - ferramenta manual sem força motriz",
+    "description": "Picareta - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010800",
+    "title": "Garfo, ancinho, forcado - ferramenta manual sem força motriz",
+    "description": "Garfo, ancinho, forcado - ferramenta manual sem força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303010900",
+    "title": "Ferramenta manual sem força motriz, NIC",
+    "description": "Ferramenta manual sem força motriz, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015050",
+    "title": "Martelete, socador - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Martelete, socador - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015100",
+    "title": "Talhadeira - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Talhadeira - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015150",
+    "title": "Cortadeira, guilhotina - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Cortadeira, guilhotina - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015200",
+    "title": "Serra - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Serra - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015250",
+    "title": "Punção, ponteiro, vazador - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Punção, ponteiro, vazador - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015300",
+    "title": "Perfuratriz - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Perfuratriz - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015350",
+    "title": "Rebitadeira - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Rebitadeira - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015400",
+    "title": "Máquina de aparafusar - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Máquina de aparafusar - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015450",
+    "title": "Esmeril - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Esmeril - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015500",
+    "title": "Politriz, enceradeira - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Politriz, enceradeira - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015550",
+    "title": "Ferro de passar - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Ferro de passar - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015600",
+    "title": "Ferramenta de soldagem - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Ferramenta de soldagem - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015650",
+    "title": "Maçarico - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Maçarico - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015700",
+    "title": "Ferramenta acionada por explosivo - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Ferramenta acionada por explosivo - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015750",
+    "title": "Jato de areia - ferramenta portátil com força motriz ou aquecimento",
+    "description": "Jato de areia - ferramenta portátil com força motriz ou aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303015900",
+    "title": "Ferramenta portátil com força motriz ou aquecimento, NIC",
+    "description": "Ferramenta portátil com força motriz ou aquecimento, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020040",
+    "title": "Serra - máquina",
+    "description": "Serra - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020080",
+    "title": "Tesoura, guilhotina, máquina de cortar - máquina",
+    "description": "Tesoura, guilhotina, máquina de cortar - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020120",
+    "title": "Laminadora, calandra - máquina",
+    "description": "Laminadora, calandra - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020160",
+    "title": "Furadeira, broqueadeira, torno, fresa - máquina",
+    "description": "Furadeira, broqueadeira, torno, fresa - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020200",
+    "title": "Prensa - máquina",
+    "description": "Prensa - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020240",
+    "title": "Plaina, tupia - máquina",
+    "description": "Plaina, tupia - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020280",
+    "title": "Máquina de fundir, de forjar, de soldar",
+    "description": "Máquina de fundir, de forjar, de soldar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020320",
+    "title": "Britador, moinho - máquina",
+    "description": "Britador, moinho - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020360",
+    "title": "Misturador, batedeira, agitador - máquina",
+    "description": "Misturador, batedeira, agitador - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020400",
+    "title": "Peneira mecânica, máquina separadora - máquina",
+    "description": "Peneira mecânica, máquina separadora - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020440",
+    "title": "Politriz, lixadora, esmeril - máquina",
+    "description": "Politriz, lixadora, esmeril - máquina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020480",
+    "title": "Máquina de terraplenagem e construção de estrada",
+    "description": "Máquina de terraplenagem e construção de estrada"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020520",
+    "title": "Máquina de mineração e perfuração (de túnel, poço, etc.)",
+    "description": "Máquina de mineração e perfuração (de túnel, poço, etc.)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020560",
+    "title": "Máquina agrícola",
+    "description": "Máquina agrícola"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020600",
+    "title": "Máquina têxtil",
+    "description": "Máquina têxtil"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020640",
+    "title": "Máquina de costurar e de pespontar",
+    "description": "Máquina de costurar e de pespontar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020680",
+    "title": "Máquina de imprimir",
+    "description": "Máquina de imprimir"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020720",
+    "title": "Máquina de escritório",
+    "description": "Máquina de escritório"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020760",
+    "title": "Máquina de embalar ou empacotar",
+    "description": "Máquina de embalar ou empacotar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303020900",
+    "title": "Máquina, NIC",
+    "description": "Máquina, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303025300",
+    "title": "Transportador por gravidade",
+    "description": "Transportador por gravidade"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303025600",
+    "title": "Transportador com força motriz",
+    "description": "Transportador com força motriz"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303025900",
+    "title": "Transportador, NIC",
+    "description": "Transportador, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030050",
+    "title": "Guindaste - equipamento de guindar",
+    "description": "Guindaste - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030100",
+    "title": "Ponte rolante - equipamento de guindar",
+    "description": "Ponte rolante - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030150",
+    "title": "Elevador - equipamento de guindar",
+    "description": "Elevador - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030200",
+    "title": "Elevador de caçamba para mineração - equipamento de guindar",
+    "description": "Elevador de caçamba para mineração - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030250",
+    "title": "Pá mecânica, draga - equipamento de guindar",
+    "description": "Pá mecânica, draga - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030300",
+    "title": "Talha - equipamento de guindar",
+    "description": "Talha - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030350",
+    "title": "Pau de carga - equipamento de guindar",
+    "description": "Pau de carga - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030400",
+    "title": "Macaco (mecânico, hidráulico, pneumático) - equipamento de guindar",
+    "description": "Macaco (mecânico, hidráulico, pneumático) - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030450",
+    "title": "Guincho pneumático - equipamento de guindar",
+    "description": "Guincho pneumático - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030500",
+    "title": "Guincho elétrico - equipamento de guindar",
+    "description": "Guincho elétrico - equipamento de guindar"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303030900",
+    "title": "Equipamento de guindar, NIC",
+    "description": "Equipamento de guindar, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303035300",
+    "title": "Correia - dispositivo de transmissão de energia mecânica",
+    "description": "Correia - dispositivo de transmissão de energia mecânica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303035400",
+    "title": "Corrente, corda, cabo - dispositivo de transmissão de energia mecânica",
+    "description": "Corrente, corda, cabo - dispositivo de transmissão de energia mecânica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303035500",
+    "title": "Tambor, polia, roldana - dispositivo de transmissão de energia mecânica",
+    "description": "Tambor, polia, roldana - dispositivo de transmissão de energia mecânica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303035600",
+    "title": "Embreagem de fricção - dispositivo de transmissão de energia mecânica",
+    "description": "Embreagem de fricção - dispositivo de transmissão de energia mecânica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303035700",
+    "title": "Engrenagem - dispositivo de transmissão de energia mecânica",
+    "description": "Engrenagem - dispositivo de transmissão de energia mecânica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303035900",
+    "title": "Dispositivo de transmissão de energia mecânica, NIC",
+    "description": "Dispositivo de transmissão de energia mecânica, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040100",
+    "title": "Gerador - equipamento elétrico",
+    "description": "Gerador - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040200",
+    "title": "Condutor - equipamento elétrico",
+    "description": "Condutor - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040300",
+    "title": "Transformador, conversor - equipamento elétrico",
+    "description": "Transformador, conversor - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040400",
+    "title": "Painel de controle, barramento, chave, interruptor, disjuntor, fusível - equipamento elétrico",
+    "description": "Painel de controle, barramento, chave, interruptor, disjuntor, fusível - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040500",
+    "title": "Reostato, dispositivo de partida e aparelho de controle, capacitor, retificador, bateria de acumuladores - equipamento elétrico",
+    "description": "Reostato, dispositivo de partida e aparelho de controle, capacitor, retificador, bateria de acumuladores - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040600",
+    "title": "Motor elétrico - equipamento elétrico",
+    "description": "Motor elétrico - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040700",
+    "title": "Equipamento magnético - equipamento elétrico",
+    "description": "Equipamento magnético - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040750",
+    "title": "Equipamento eletrolítico - equipamento elétrico",
+    "description": "Equipamento eletrolítico - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040800",
+    "title": "Equipamento de aquecimento elétrico - equipamento elétrico",
+    "description": "Equipamento de aquecimento elétrico - equipamento elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303040900",
+    "title": "Equipamento elétrico, NIC",
+    "description": "Equipamento elétrico, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303045200",
+    "title": "Motor (combustão interna, vapor)",
+    "description": "Motor (combustão interna, vapor)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303045400",
+    "title": "Bomba",
+    "description": "Bomba"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303045600",
+    "title": "Turbina",
+    "description": "Turbina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303045900",
+    "title": "Motor, bomba, turbina, NIC",
+    "description": "Motor, bomba, turbina, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303050200",
+    "title": "Caldeira",
+    "description": "Caldeira"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303050400",
+    "title": "Vaso sob pressão (para líquido, gás ou vapor)",
+    "description": "Vaso sob pressão (para líquido, gás ou vapor)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303050600",
+    "title": "Tubo sob pressão (mangueira ou tubo para liquido, gás ou vapor)",
+    "description": "Tubo sob pressão (mangueira ou tubo para liquido, gás ou vapor)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303050900",
+    "title": "Caldeira, vaso sob pressão, NIC",
+    "description": "Caldeira, vaso sob pressão, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303055200",
+    "title": "Caixão pneumático - equipamento para trabalho em ambiente de pressão anormal",
+    "description": "Caixão pneumático - equipamento para trabalho em ambiente de pressão anormal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303055400",
+    "title": "Escafandro - equipamento para trabalho em ambiente de pressão anormal",
+    "description": "Escafandro - equipamento para trabalho em ambiente de pressão anormal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303055600",
+    "title": "Equipamento de mergulho - equipamento para trabalho em ambiente de pressão anormal",
+    "description": "Equipamento de mergulho - equipamento para trabalho em ambiente de pressão anormal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303055900",
+    "title": "Equipamento para trabalho em ambiente de pressão anormal, NIC",
+    "description": "Equipamento para trabalho em ambiente de pressão anormal, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303060000",
+    "title": "Forno, estufa, retorta, aquecedor de ambiente, fogão, etc. (exceto quando a lesão principal for choque elétrico ou eletroplessão) - equipamento de aquecimento",
+    "description": "Forno, estufa, retorta, aquecedor de ambiente, fogão, etc. (exceto quando a lesão principal for choque elétrico ou eletroplessão) - equipamento de aquecimento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303065000",
+    "title": "Equipamento emissor de radiação não ionizante",
+    "description": "Equipamento emissor de radiação não ionizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303065300",
+    "title": "Equipamento de iluminação - equipamento emissor de radiação não ionizante",
+    "description": "Equipamento de iluminação - equipamento emissor de radiação não ionizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303065600",
+    "title": "Arco elétrico - equipamento emissor de radiação não ionizante",
+    "description": "Arco elétrico - equipamento emissor de radiação não ionizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303065900",
+    "title": "Equipamento emissor de radiação não ionizante, NIC",
+    "description": "Equipamento emissor de radiação não ionizante, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303066300",
+    "title": "Equipamento de iluminação",
+    "description": "Equipamento de iluminação"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303066600",
+    "title": "Arco elétrico",
+    "description": "Arco elétrico"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303070200",
+    "title": "Equipamento de raios X - equipamento ou substância emissor de radiação ionizante",
+    "description": "Equipamento de raios X - equipamento ou substância emissor de radiação ionizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303070400",
+    "title": "Reator (inclui combustível e resíduo) - equipamento ou substância emissor de radiação ionizante",
+    "description": "Reator (inclui combustível e resíduo) - equipamento ou substância emissor de radiação ionizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303070600",
+    "title": "Fonte de radioisótopo - equipamento ou substância emissor de radiação ionizante",
+    "description": "Fonte de radioisótopo - equipamento ou substância emissor de radiação ionizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303070900",
+    "title": "Equipamento ou substância emissor de radiação ionizante, NIC",
+    "description": "Equipamento ou substância emissor de radiação ionizante, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075100",
+    "title": "Bicicleta",
+    "description": "Bicicleta"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075150",
+    "title": "Triciclo",
+    "description": "Triciclo"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075200",
+    "title": "Motocicleta, motoneta",
+    "description": "Motocicleta, motoneta"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075250",
+    "title": "Veículo rodoviário motorizado",
+    "description": "Veículo rodoviário motorizado"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075300",
+    "title": "Veículo sobre trilho",
+    "description": "Veículo sobre trilho"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075350",
+    "title": "Veículo aquático",
+    "description": "Veículo aquático"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075400",
+    "title": "Aeronave",
+    "description": "Aeronave"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075450",
+    "title": "Empilhadeira",
+    "description": "Empilhadeira"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075500",
+    "title": "Rebocador mecânico, mula mecânica",
+    "description": "Rebocador mecânico, mula mecânica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075550",
+    "title": "Carro de mão",
+    "description": "Carro de mão"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075600",
+    "title": "Trator",
+    "description": "Trator"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075650",
+    "title": "Veículo de terraplenagem",
+    "description": "Veículo de terraplenagem"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075700",
+    "title": "Veículo de tração animal",
+    "description": "Veículo de tração animal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075750",
+    "title": "Veículo deslizante",
+    "description": "Veículo deslizante"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075800",
+    "title": "Veículo funicular (tração por cabo)",
+    "description": "Veículo funicular (tração por cabo)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303075900",
+    "title": "Veículo, NIC",
+    "description": "Veículo, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "303090000",
+    "title": "Ferramenta, máquina, equipamento, veículo, NIC",
+    "description": "Ferramenta, máquina, equipamento, veículo, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004100",
+    "title": "Composto metálico (de chumbo, mercúrio, zinco, cadmio, cromo, etc.)",
+    "description": "Composto metálico (de chumbo, mercúrio, zinco, cadmio, cromo, etc.)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004150",
+    "title": "Composto de arsênio",
+    "description": "Composto de arsênio"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004200",
+    "title": "Gás carbônico (dióxido de carbono, CO2)",
+    "description": "Gás carbônico (dióxido de carbono, CO2)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004250",
+    "title": "Monóxido de carbono (CO)",
+    "description": "Monóxido de carbono (CO)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004300",
+    "title": "Óxidos de nitrogênio (vapores nitrosos)",
+    "description": "Óxidos de nitrogênio (vapores nitrosos)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004350",
+    "title": "Ácido",
+    "description": "Ácido"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004400",
+    "title": "Álcali",
+    "description": "Álcali"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004450",
+    "title": "Composto de fósforo",
+    "description": "Composto de fósforo"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004500",
+    "title": "Dissulfeto de carbono",
+    "description": "Dissulfeto de carbono"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004550",
+    "title": "Cianeto ou composto de cianogênio",
+    "description": "Cianeto ou composto de cianogênio"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004600",
+    "title": "Álcool",
+    "description": "Álcool"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004650",
+    "title": "Tetracloreto de carbono",
+    "description": "Tetracloreto de carbono"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004700",
+    "title": "Composto orgânico halogenado (tricloretileno, percloretileno, cloreto de metilo, substâncias refrigerantes)",
+    "description": "Composto orgânico halogenado (tricloretileno, percloretileno, cloreto de metilo, substâncias refrigerantes)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004750",
+    "title": "Composto aromático (benzol, toluol, xilol, anilina, etc.)",
+    "description": "Composto aromático (benzol, toluol, xilol, anilina, etc.)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305004900",
+    "title": "Substância química, NIC",
+    "description": "Substância química, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305008500",
+    "title": "Água (usar quando o estado líquido contribuir preponderantemente para a ocorrência)",
+    "description": "Água (usar quando o estado líquido contribuir preponderantemente para a ocorrência)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305008900",
+    "title": "Líquido, NIC",
+    "description": "Líquido, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305020000",
+    "title": "Partículas não identificadas",
+    "description": "Partículas não identificadas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305024100",
+    "title": "Pele, crina, pelo, lã (em bruto) - produto animal",
+    "description": "Pele, crina, pelo, lã (em bruto) - produto animal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305024300",
+    "title": "Pena - produto animal",
+    "description": "Pena - produto animal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305024500",
+    "title": "Couro cru ou curtido - produto animal",
+    "description": "Couro cru ou curtido - produto animal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305024700",
+    "title": "Osso - produto animal",
+    "description": "Osso - produto animal"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305024900",
+    "title": "Produto animal, NIC",
+    "description": "Produto animal, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305028000",
+    "title": "Madeira (toro, madeira serrada, pranchão, poste, barrote, ripa e produto de madeira)",
+    "description": "Madeira (toro, madeira serrada, pranchão, poste, barrote, ripa e produto de madeira)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305032000",
+    "title": "Produto mineral metálico - produto de mineração em bruto ou beneficiado, como minério e concentrado de minério",
+    "description": "Produto mineral metálico - produto de mineração em bruto ou beneficiado, como minério e concentrado de minério"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305032500",
+    "title": "Metal (inclui liga ferrosa e não ferrosa, tubo, placa, perfil, trilho, vergalhão, arame, porca, rebite, prego, etc., metal fundido, lingote e sucata de fundição, exceto minério)",
+    "description": "Metal (inclui liga ferrosa e não ferrosa, tubo, placa, perfil, trilho, vergalhão, arame, porca, rebite, prego, etc., metal fundido, lingote e sucata de fundição, exceto minério)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305036000",
+    "title": "Produto mineral não metálico - produto de mineração, escavação, desbarrancamento, etc., como detrito, argila, areia, cascalho, pedra, etc.",
+    "description": "Produto mineral não metálico - produto de mineração, escavação, desbarrancamento, etc., como detrito, argila, areia, cascalho, pedra, etc."
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040100",
+    "title": "Petróleo bruto, bruto reduzido",
+    "description": "Petróleo bruto, bruto reduzido"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040150",
+    "title": "Asfalto, alcatrão, piche",
+    "description": "Asfalto, alcatrão, piche"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040200",
+    "title": "Óleo combustível",
+    "description": "Óleo combustível"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040250",
+    "title": "Parafina, óleo lubrificante e de corte, graxas",
+    "description": "Parafina, óleo lubrificante e de corte, graxas"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040300",
+    "title": "Gasóleo, óleo diesel",
+    "description": "Gasóleo, óleo diesel"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040350",
+    "title": "Querosene",
+    "description": "Querosene"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040400",
+    "title": "Nafta e solvente de nafta (éter de petróleo, álcool mineral, solvente aromático, etc.)",
+    "description": "Nafta e solvente de nafta (éter de petróleo, álcool mineral, solvente aromático, etc.)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040450",
+    "title": "Gasolina (exceto quando a ocorrência for causada preponderantemente por composto de chumbo)",
+    "description": "Gasolina (exceto quando a ocorrência for causada preponderantemente por composto de chumbo)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040500",
+    "title": "Hidrocarboneto gasoso (inclui gás liquefeito, gás encanado de nafta, gás natural)",
+    "description": "Hidrocarboneto gasoso (inclui gás liquefeito, gás encanado de nafta, gás natural)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040600",
+    "title": "Carvão",
+    "description": "Carvão"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040650",
+    "title": "Coque",
+    "description": "Coque"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040700",
+    "title": "Gás encanado de carvão",
+    "description": "Gás encanado de carvão"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305040900",
+    "title": "Produto de petróleo e de carvão, NIC",
+    "description": "Produto de petróleo e de carvão, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305044000",
+    "title": "Vidraria, fibra de vidro, lâmina, etc., exceto frasco, garrafa",
+    "description": "Vidraria, fibra de vidro, lâmina, etc., exceto frasco, garrafa"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048000",
+    "title": "Cerâmica",
+    "description": "Cerâmica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048300",
+    "title": "Tijolo e telha - cerâmica",
+    "description": "Tijolo e telha - cerâmica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048400",
+    "title": "Louça de mesa e outros utensílios (de porcelana, barro, etc.) - cerâmica",
+    "description": "Louça de mesa e outros utensílios (de porcelana, barro, etc.) - cerâmica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048500",
+    "title": "Tubo, manilha - cerâmica",
+    "description": "Tubo, manilha - cerâmica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048600",
+    "title": "Revestimento cerâmico (azulejo, mosaico, etc.) - cerâmica",
+    "description": "Revestimento cerâmico (azulejo, mosaico, etc.) - cerâmica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048700",
+    "title": "Louca sanitária (pia, vaso sanitário, etc.) - cerâmica",
+    "description": "Louca sanitária (pia, vaso sanitário, etc.) - cerâmica"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305048900",
+    "title": "Cerâmica, NIC",
+    "description": "Cerâmica, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305052000",
+    "title": "Têxteis (inclui fibras animais após o primeiro desengorduramento e limpeza, fibras vegetais e sintéticas (exceto vidro), fio, linha, tecido, passamanaria, feltro e produtos têxteis em geral)",
+    "description": "Têxteis (inclui fibras animais após o primeiro desengorduramento e limpeza, fibras vegetais e sintéticas (exceto vidro), fio, linha, tecido, passamanaria, feltro e produtos têxteis em geral)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305056000",
+    "title": "Plástico (inclui pó, folha, trefilado, barra, perfil, etc.; não inclui produto a ser usado na fabricação de plástico)",
+    "description": "Plástico (inclui pó, folha, trefilado, barra, perfil, etc.; não inclui produto a ser usado na fabricação de plástico)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305060000",
+    "title": "Papel e pasta para papel",
+    "description": "Papel e pasta para papel"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064000",
+    "title": "Produto alimentício (inclui carne, leite e derivados, legumes, frutas, cereais e derivados)",
+    "description": "Produto alimentício (inclui carne, leite e derivados, legumes, frutas, cereais e derivados)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064300",
+    "title": "Carne e derivados",
+    "description": "Carne e derivados"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064400",
+    "title": "Leite e derivados",
+    "description": "Leite e derivados"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064500",
+    "title": "Legume, verdura e derivados",
+    "description": "Legume, verdura e derivados"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064600",
+    "title": "Fruta e derivados",
+    "description": "Fruta e derivados"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064700",
+    "title": "Cereal e derivados",
+    "description": "Cereal e derivados"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305064900",
+    "title": "Produto alimentício (inclusive de origem animal), NIC",
+    "description": "Produto alimentício (inclusive de origem animal), NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305068300",
+    "title": "Medicamento em geral (exceto produto biológico)",
+    "description": "Medicamento em geral (exceto produto biológico)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305068600",
+    "title": "Produto biológico (soro, toxina, antitoxina, vacina, plasma) - medicamento",
+    "description": "Produto biológico (soro, toxina, antitoxina, vacina, plasma) - medicamento"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305072000",
+    "title": "Produto de limpeza, sabão, detergente",
+    "description": "Produto de limpeza, sabão, detergente"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305076000",
+    "title": "Sucata, entulho, resíduo",
+    "description": "Sucata, entulho, resíduo"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "305090000",
+    "title": "Substância química, material, produto, NIC",
+    "description": "Substância química, material, produto, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "306020000",
+    "title": "Animal vivo",
+    "description": "Animal vivo"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "306040000",
+    "title": "Vegetal - planta, árvore, em estado natural, não beneficiada (não inclui grão debulhado, fruto colhido, toro mesmo com galho)",
+    "description": "Vegetal - planta, árvore, em estado natural, não beneficiada (não inclui grão debulhado, fruto colhido, toro mesmo com galho)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "306060000",
+    "title": "Agente infeccioso ou parasitário (inclui bactéria, fungo, organismo parasitário, vírus, etc.; não inclui produto químico, preparado farmacêutico ou alimento)",
+    "description": "Agente infeccioso ou parasitário (inclui bactéria, fungo, organismo parasitário, vírus, etc.; não inclui produto químico, preparado farmacêutico ou alimento)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "306090000",
+    "title": "Ser vivo, NIC",
+    "description": "Ser vivo, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030100",
+    "title": "Cadeira banco - mobiliário e acessórios",
+    "description": "Cadeira banco - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030200",
+    "title": "Mesa, carteira, exceto mesa elástica desmontável - mobiliário e acessórios",
+    "description": "Mesa, carteira, exceto mesa elástica desmontável - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030250",
+    "title": "Mesa elástica desmontável - mobiliário e acessórios",
+    "description": "Mesa elástica desmontável - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030300",
+    "title": "Balcão, bancada - mobiliário e acessórios",
+    "description": "Balcão, bancada - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030400",
+    "title": "Arquivo, fichário, estante - mobiliário e acessórios",
+    "description": "Arquivo, fichário, estante - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030500",
+    "title": "Tapete, forração de piso, capacho - mobiliário e acessórios",
+    "description": "Tapete, forração de piso, capacho - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030600",
+    "title": "Luminária, globo, lâmpada - mobiliário e acessórios",
+    "description": "Luminária, globo, lâmpada - mobiliário e acessórios"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307030900",
+    "title": "Mobiliário e acessórios, NIC",
+    "description": "Mobiliário e acessórios, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307040100",
+    "title": "Caixa, engradado, caixote - embalagem, recipiente (vazio ou cheio)",
+    "description": "Caixa, engradado, caixote - embalagem, recipiente (vazio ou cheio)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307040300",
+    "title": "Frasco, garrafa - embalagem, recipiente (vazio ou cheio)",
+    "description": "Frasco, garrafa - embalagem, recipiente (vazio ou cheio)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307040500",
+    "title": "Barril, barrica, barrilete, tambor - embalagem, recipiente (vazio ou cheio)",
+    "description": "Barril, barrica, barrilete, tambor - embalagem, recipiente (vazio ou cheio)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307040700",
+    "title": "Tanque, cilindro (transportáveis e não sob pressão) - embalagem, recipiente (vazio ou cheio)",
+    "description": "Tanque, cilindro (transportáveis e não sob pressão) - embalagem, recipiente (vazio ou cheio)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307040900",
+    "title": "Embalagem, recipiente (vazio ou cheio), NIC",
+    "description": "Embalagem, recipiente (vazio ou cheio), NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307050900",
+    "title": "Vestuário, NIC",
+    "description": "Vestuário, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "307070000",
+    "title": "Área ou ambiente de trabalho (o agente do acidente ocorrido em consequência de fenômeno atmosférico, meteoro, etc., assim como da ação da radiação solar, deverá ser incluído neste item)",
+    "description": "Área ou ambiente de trabalho (o agente do acidente ocorrido em consequência de fenômeno atmosférico, meteoro, etc., assim como da ação da radiação solar, deverá ser incluído neste item)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "309000000",
+    "title": "Agente do acidente, NIC",
+    "description": "Agente do acidente, NIC"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "309500000",
+    "title": "Agente do acidente inexistente",
+    "description": "Agente do acidente inexistente"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "354000000",
+    "title": "Energia",
+    "description": "Energia"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "354010300",
+    "title": "Pressão ambiente alta (trabalho em caixão pneumático, mergulho)",
+    "description": "Pressão ambiente alta (trabalho em caixão pneumático, mergulho)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "354010600",
+    "title": "Pressão ambiente baixa (ar rarefeito)",
+    "description": "Pressão ambiente baixa (ar rarefeito)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "354020000",
+    "title": "Ruído",
+    "description": "Ruído"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "354040000",
+    "title": "Fogo, chama, material incandescente ou quente, fumaça",
+    "description": "Fogo, chama, material incandescente ou quente, fumaça"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "354050300",
+    "title": "Temperatura ambiente (não inclui a de objeto ou substância quente)",
+    "description": "Temperatura ambiente (não inclui a de objeto ou substância quente)"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "355016000",
+    "title": "Aerodispersoides",
+    "description": "Aerodispersoides"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "355016600",
+    "title": "Neblina",
+    "description": "Neblina"
+  }
+},
+{
+  "model": "sst.causeragent",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:06:51.757",
+    "modified_at": "2022-11-07T14:06:51.757",
+    "code": "355016800",
+    "title": "Gás e vapor",
+    "description": "Gás e vapor"
+  }
+}
+]

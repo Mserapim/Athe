@@ -1,0 +1,530 @@
+[
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2016-03-01T16:28:06.825",
+    "modified_at": "2016-03-01T16:28:06.825",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "0000",
+    "data_inicio": "2016-03-01",
+    "data_fim": "2016-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2016-03-01",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:51:52.157",
+    "nome": "ANALISTA MINISTERIAL ESPECIALIZADO",
+    "descricao": "N/A",
+    "codigo": "AME",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:54:15.777",
+    "nome": "ANALISTA MINISTERIAL",
+    "descricao": "N/A",
+    "codigo": "AMI",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:50:34.987",
+    "nome": "AUXILIAR MINISTERIAL ESPECIALIZADO",
+    "descricao": "N/A",
+    "codigo": "AXE",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:51:03.099",
+    "nome": "AUXILIAR MINISTERIAL",
+    "descricao": "N/A",
+    "codigo": "AXM",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-10T15:05:12.320",
+    "modified_at": "2015-02-10T15:05:12.320",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2015-02-01",
+    "data_fim": "2015-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2015-02-10",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-11-04T13:50:54.366",
+    "modified_at": "2014-11-04T13:50:54.366",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2014-11-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2014-11-04",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-04-07T17:55:22.852",
+    "modified_at": "2015-04-07T17:55:22.852",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2015-04-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2015-04-07",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-02-20T08:19:15.892",
+    "modified_at": "2015-02-20T08:19:15.892",
+    "nome": "SERVIDOR A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2015-02-03",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2015-02-20",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-03-25T17:43:58.526",
+    "modified_at": "2015-03-25T17:43:58.526",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2015-04-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2015-03-25",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2015-08-28T10:23:50.515",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "N/A",
+    "codigo": "DISP",
+    "data_inicio": "2006-01-01",
+    "data_fim": "2014-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2015-08-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2016-02-01T12:57:37.193",
+    "modified_at": "2016-02-01T12:57:37.193",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2016-02-05",
+    "data_fim": "2016-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2016-02-01",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2015-04-07T17:29:52.748",
+    "modified_at": "2015-04-07T17:32:54.031",
+    "nome": "SERVIDORES A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "DISP",
+    "data_inicio": "2015-04-06",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2015-04-07",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:54:38.746",
+    "nome": "MOTORISTA PROFISSIONAL",
+    "descricao": "N/A",
+    "codigo": "MOP",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:54:44.430",
+    "nome": "MOTORISTA",
+    "descricao": "N/A",
+    "codigo": "MOT",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:51:34.718",
+    "nome": "MEMBROS DO MINISTÉRIO PÚBLICO",
+    "descricao": "N/A",
+    "codigo": "MPU",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:54:24.462",
+    "nome": "OFICIAL DE DILIGENCIAS",
+    "descricao": "N/A",
+    "codigo": "OFD",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:54:34.316",
+    "nome": "TÉCNICO MINISTERIAL",
+    "descricao": "N/A",
+    "codigo": "TCM",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:27:52.120",
+    "modified_at": "2019-03-28T14:54:29.398",
+    "nome": "TÉCNICO MINISTERIAL ESPECIALIZADO",
+    "descricao": "N/A",
+    "codigo": "TME",
+    "data_inicio": "2006-01-01",
+    "data_fim": null,
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2019-03-28",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-21T11:25:43.405",
+    "modified_at": "2014-07-21T11:25:43.405",
+    "nome": "SERVIDOR A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "XXXARQ",
+    "data_inicio": "2014-07-17",
+    "data_fim": "2014-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2014-07-21",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-21T11:05:00.839",
+    "modified_at": "2014-07-21T11:05:00.839",
+    "nome": "SERVIDOR A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "XXXARQ",
+    "data_inicio": "2014-07-17",
+    "data_fim": "2014-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2014-07-21",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-21T10:13:51.755",
+    "modified_at": "2014-07-21T10:13:51.755",
+    "nome": "SERVIDOR A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "XXXARQ",
+    "data_inicio": "2014-07-17",
+    "data_fim": "2014-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2014-07-21",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-21T10:16:43.316",
+    "modified_at": "2014-07-21T10:16:43.316",
+    "nome": "SERVIDOR A DISPOSIÇÃO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "XXXARQ",
+    "data_inicio": "2014-07-17",
+    "data_fim": "2014-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2014-07-21",
+    "publication_extinction": null
+  }
+},
+{
+  "model": "rh.carreira",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-21T11:31:28.934",
+    "modified_at": "2014-07-21T11:31:28.934",
+    "nome": "SERVIDOR A DISPOSIÇAO",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "codigo": "XXXARQ",
+    "data_inicio": "2014-07-17",
+    "data_fim": "2014-12-31",
+    "publication": null,
+    "active": true,
+    "data_alteracao": "2014-07-21",
+    "publication_extinction": null
+  }
+}
+]

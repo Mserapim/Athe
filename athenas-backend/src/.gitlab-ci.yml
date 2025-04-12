@@ -1,0 +1,148 @@
+stages:
+  - build
+  - prepare
+  - pre-deploy
+  - deploy
+  - clear
+
+variables:
+  DB_URL: postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/db_${CI_COMMIT_SHORT_SHA}
+  DB_URL_TEST: postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/test_db_${CI_COMMIT_SHORT_SHA}
+  DOCKER_IMAGE: "${IMGHUB_REPO}/athenas:${CI_COMMIT_SHORT_SHA}"
+  DOCKER_IMAGE_BRANCH: "${IMGHUB_REPO}/athenas:${CI_COMMIT_REF_NAME}"
+  DOCKER_IMAGE_BASE_BRANCH: "${IMGHUB_REPO}/athenas-base:${CI_COMMIT_REF_NAME}"
+  REMOTE_COMMAND: ssh -p 2280 ${DEPLOY_USER}@${DEPLOY_HOST} -o StrictHostKeyChecking=no
+
+alert init build:
+  stage: build
+  script:
+    - |
+      if [ ! -z $RKT_SERVICE ]; then
+        curl \
+          -s \
+          -X POST \
+          -H 'Content-Type: application/json' \
+          --data "{\"username\":\"Gitlab\",\"text\":\"Olá @${GITLAB_USER_LOGIN} já iniciamos o build do seu commit, aos demais amigos aguardem até que o ambiente seja liberado pelo ${GITLAB_USER_LOGIN} para comitar no branch *${CI_COMMIT_REF_NAME}*, você será avisado do deploy em ambiente de validação. O build pode ser acompanhado nesta url ${CI_PIPELINE_URL}.\"}" \
+          ${RKT_SERVICE}/hooks/${RKT_TOKEN}
+      fi
+  only:
+    refs:
+      - mpmt-master
+      - unstable
+
+build test image:
+  stage: build
+  before_script:
+    - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+    - sed 's|IMGHUB_REPO|'"$DOCKER_IMAGE_BASE_BRANCH"'|g' Dockerfile.template > Dockerfile
+  script:
+    - docker build --pull --no-cache -t ${DOCKER_IMAGE} .
+  after_script:
+    - rm Dockerfile
+  environment:
+    name: staging
+  only:
+    refs:
+      - mpmt-master
+      - unstable
+
+create database:
+  stage: pre-deploy
+  before_script:
+    - echo "${DB_HOST}:${DB_PORT}:*:${DB_USER}:${DB_PASSWORD}" > ${HOME}/.pgpass
+    - chmod 0600 ${HOME}/.pgpass
+    - echo "${DB_HOST}:${DB_PORT}:*:${DB_USER}:${DB_PASSWORD}"
+  script:
+    - chmod +x docker/prepare-db.sh
+    - docker/prepare-db.sh athenas_${CI_COMMIT_REF_NAME} ${DB_TEMPLATE}
+  after_script:
+    - rm ${HOME}/.pgpass
+  environment:
+    name: staging
+  only:
+    refs:
+      - unstable
+
+create test database:
+  stage: prepare
+  before_script:
+    - echo "${DB_HOST}:${DB_PORT}:*:${DB_USER}:${DB_PASSWORD}" > ${HOME}/.pgpass
+    - chmod 0600 ${HOME}/.pgpass
+  script:
+    - chmod +x docker/prepare-db.sh
+    - docker/prepare-db.sh test_db_${CI_COMMIT_SHORT_SHA} ${DB_TEMPLATE}
+  after_script:
+    - rm ${HOME}/.pgpass
+  environment:
+    name: staging
+  only:
+    refs:
+      - unstable
+
+deploy validation in cluster:
+  stage: deploy
+  before_script:
+    - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+    - chmod 0600 $DEPLOY_INDENT
+  script:
+    - docker tag $DOCKER_IMAGE $DOCKER_IMAGE_BRANCH
+    - docker push $DOCKER_IMAGE_BRANCH    
+    - echo $REMOTE_COMMAND ${DEPLOY_PATH}/${CI_COMMIT_REF_NAME}
+    - $REMOTE_COMMAND -i $DEPLOY_INDENT "cd ${DEPLOY_PATH}/${CI_COMMIT_REF_NAME} && git pull"
+    - |
+      $REMOTE_COMMAND -i $DEPLOY_INDENT "\
+        cd ${DEPLOY_PATH}/${CI_COMMIT_REF_NAME} && \
+        ./init-unstable.sh"
+  environment:
+    name: staging
+  only:
+    refs:
+      - unstable
+
+deploy production in cluster:
+  stage: deploy
+  before_script:
+    - docker login ${IMGHUB_URI} -u ${IMGHUB_USER} -p ${IMGHUB_PASSWD}
+    - chmod 600 $DEPLOY_INDENT
+  script:
+    - docker tag $DOCKER_IMAGE $DOCKER_IMAGE_BRANCH
+    - docker push $DOCKER_IMAGE_BRANCH
+    - $REMOTE_COMMAND -i $DEPLOY_INDENT "cd ${DEPLOY_PATH}/${CI_COMMIT_REF_NAME} && git pull"
+    - |
+      $REMOTE_COMMAND -i $DEPLOY_INDENT "\
+        cd ${DEPLOY_PATH}/${CI_COMMIT_REF_NAME} && \        
+        ./init-mpmt-master.sh" 
+    - $REMOTE_COMMAND -i $DEPLOY_INDENT "cd ${DEPLOY_PATH}/${CI_COMMIT_REF_NAME} && crontab -u admin-athenas jobs.cron"
+  environment:
+    name: production
+  only:
+    refs:
+      - mpmt-master
+
+clear build environment:
+  stage: clear
+  script:
+    - docker image rm ${DOCKER_IMAGE}; true
+    - docker image rm ${DOCKER_IMAGE_BRANCH}; true
+  when: always
+  only:
+    refs:
+      - mpmt-master
+      - unstable
+
+clear database environment:
+  stage: clear
+  before_script:
+    - echo "${DB_HOST}:${DB_PORT}:*:${DB_USER}:${DB_PASSWORD}" > ${HOME}/.pgpass
+    - chmod 0600 ${HOME}/.pgpass
+  script:
+    - chmod +x docker/drop-db.sh
+    - docker/drop-db.sh test_db_${CI_COMMIT_SHORT_SHA}
+  after_script:
+    - rm ${HOME}/.pgpass
+  when: always
+  environment:
+    name: staging
+  only:
+    refs:
+      - unstable

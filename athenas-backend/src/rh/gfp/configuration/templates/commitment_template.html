@@ -1,0 +1,219 @@
+{% load helpers_format %}
+{% load config_format %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="Legal"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+  
+      ul {
+          list-style-type: none;
+      }
+
+      li{
+        font-size: 15px;
+      } 
+
+      tr { 
+        page-break-inside:avoid; 
+        page-break-after:auto 
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 49%;
+        table-layout:fixed;
+        float: left;
+        page-break-inside:auto ;
+      }
+
+      th, td {
+        border: 2px solid #747272;
+        text-align: left;
+        font-size: 16px;
+        padding:3px;
+
+      }
+     
+      table td div { 
+        height: 16px;
+        overflow:hidden;
+      }
+
+      table tr th{
+        font-weight: 200
+      }
+      .col1{width: 6%}
+      .col2{width: 5%}
+      .col3{width: 31%}
+      .col4{width: 8%}
+      .col5{width: 10%}
+
+      h3{
+        font-size: 15px;
+      }
+
+
+  </style>
+  </head>
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'header_commitment.html' %}
+
+    {% for value in values %}
+    <section style="margin-top:10px;margin-bottom:20px;clear: both;">
+          <h3 style=" page-break-after: auto; font-family: monospace;background-color: rgb(192, 189, 189); font-weight: 200; padding: 4px;">{{ value.category }}</h3>
+          <div>
+            <table cellspacing="0">
+              <thead style="border: none;">
+                <tr>
+                  <th class="col1" style="border: 0px;font-size: 18px;">Natureza</th>
+                  <th class="col2" style="border: 0px;font-size: 18px">Subelem</th>
+                  <th class="col3" style="border: 0px;font-size: 18px">Provento</th>
+                  <th class="col4" style="border: 0px;font-size: 18px">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for data in value.P %}
+                    <tr>
+                      <td height="38">
+                        <div>{{ data.nature }}</div>
+                      </td>
+                      <td height="38"> 
+                        <div>{{ data.subelem }}</div>
+                      </td>
+                      <td height="38"> 
+                        <div>{{ data.text}}</div>
+                      </td>
+                      {% if data.value != None %}
+                      <td height="38">
+                        <div>{{ data.value|number_format }}</div> 
+                      </td>
+                      {% else %}
+                        <td height="38">
+                          <div></div> 
+                        </td>
+                      {% endif %}
+                    </tr>
+                {% endfor %}
+  
+              </tbody> 
+            </table>
+           
+            <table style="margin-left: 2%;" cellspacing="0">
+              <thead style="border: none;">
+                <tr>
+                  <th class="col5" style="border: 0px;font-size: 18px">Cód. Credor</th>
+                  <th class="col3" style="border: 0px;font-size: 18px">Desconto</th>
+                  <th class="col4" style="border: 0px;font-size: 18px">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for data in value.D %}
+                <tr>
+                  <td height="38" > 
+                    <div>{{data.creditor}}</div>
+                  </td>
+                  <td height="38">
+                    <div>{{data.text}}</div> 
+                  </td>
+                  {% if data.value != None %}
+                    <td height="38">
+                      <div>{{ data.value|number_format }}</div> 
+                    </td>
+                  {% else %}
+                    <td height="38">
+                      <div></div> 
+                    </td>
+                  {% endif %}  
+                </tr>
+                {% endfor %}
+  
+              </tbody> 
+            </table>
+          </div>
+
+          <div >
+            <div style="float: left;font-weight: 200; margin-left: 10%; width: 25%; clear: both;">
+              <h3 style="font-weight: 200; font-size: 16px;">TOTAL DE PROVENTOS: {{ value.amount.P| number_format }}</h3> 
+            </div>
+            <div style="float: left;font-weight: 200;margin-left: 10%;width: 25%">
+              <h3 style="font-weight: 200;font-size: 16px;">TOTAL DE DESCONTOS: {{ value.amount.D| number_format }}</h3> 
+            </div>
+            <div style="float: left;margin-left: 10%;width: 20%">
+              <h3 style="font-weight: 200;font-size: 16px;"> LIQUIDO: {{ value.amount.liquid| number_format }}</h3> 
+            </div>
+          </div>
+          <br>
+          <br>
+    </section>
+    {% endfor %}
+    
+
+    <section >
+      <br>
+      <div style="clear: both;margin-top: 80px;">
+        <div style="margin-bottom: 3px;background-color: rgb(192, 189, 189);width: 60%;">
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin:0;float: right;"> {{value_total.total_earnings|number_format}}</h3>
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin:0;">TOTAL PROVENTOS</h3>
+        </div>
+        <div style="margin-bottom: 3px;background-color: rgb(192, 189, 189);width: 60%;">
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin:0;float: right;">{{value_total.total_earnings_employer |number_format }}</h3>
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin: 0">TOTAL TOTAL GERAL DE PROVENTOS E OBRIGAÇÕES PATRONAIS </h3>
+        </div>
+        <div style="margin-bottom: 3px;background-color: rgb(192, 189, 189);width: 60%;";>
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin:0;float: right;"> {{value_total.total_discounts|number_format}}</h3>
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin: 0">TOTAL DESCONTOS </h3>
+        </div>
+        <div style="margin-bottom: 3px;background-color: rgb(192, 189, 189);width: 60%;">
+          <h3 style="font-family: monospace; font-weight: 200; padding: 4px;margin:0;float: right;">{{ value_total.liquid|number_format }}</h3>
+          <h3 style="font-family: monospace;font-weight: 200; padding: 4px;margin: 0">TOTAL LÍQUIDO DA FOLHA </h3>
+        </div>
+      </div>
+    
+    </section>
+
+    <section style="margin-top:30px;">
+
+      <h3 style="font-family: monospace;background-color: rgb(192, 189, 189); font-weight: 200; padding: 4px;">REPASSES DA FOLHA - FINANCEIRO ({{ period }} - PAGAMENTO {{ number_sheet}})</h3>
+        <section>
+
+          <table style="width: 60%;">
+            <thead style="border: none;">
+              <tr>
+                <th style="border: 0px;width: 12%;font-size: 18px">Credor</th>
+                <th style="border: 0px;width: 38%;font-size: 18px">Descrição</th>
+                <th style="border: 0px;width: 12%;font-size: 18px">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for data in values_transfer %}
+              <tr>
+                <td height="38">
+                  <div>{{data.creditor}}</div>
+                </td>
+                <td height="38">
+                  <div>{{data.description}}</div> 
+                </td>
+                <td height="38"> 
+                  <div>{{data.value|number_format}}</div> 
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody> 
+            <tfoot>
+              <tr>
+                  <td></td>
+                  <th style="text-align:right;">TOTAL</th>
+                  <td height="37" >{{ value_transfer_total|number_format}}</td>
+              </tr>
+            </tfoot>
+          </table>
+       </section>
+    </section>
+  </body>
+</html>

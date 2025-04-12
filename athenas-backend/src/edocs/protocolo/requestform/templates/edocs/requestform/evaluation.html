@@ -1,0 +1,126 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .ballot-box { font-size: 15pt; }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+<p class="rf-spacing">Assunto: <b>{{ protocol.assunto }}</b></p>
+
+<p class="rf-title">RELATÓRIO DE AVALIAÇÃO DE TRABALHO REMOTO</p>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">IDENTIFICAÇÃO DO SERVIDOR</th></tr>
+    <tr>
+        <th class="rf-th">Nome:</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">E-mail institucional:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_work_email }}</td></tr>
+</table>
+
+{% comment %} Chefe imediato {% endcomment %}
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">CHEFE IMEDIATO</th></tr>
+    <tr><th class="rf-th" colspan="2">Nome:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ boss_name }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ boss_job_position }}</td></tr>
+</table>
+
+{% comment %} <table class="rf-table">
+    <tr><th class="rf-th" colspan="2">Servidor:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee }}</td></tr>
+</table> {% endcomment %}
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">CUMPRIMENTO DAS ATIVIDADES E METAS</th></tr>
+    <tr><th class="rf-th" colspan="2">Atividades e metas estipuladas:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ cumpliance_activities_goals | safe }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">QUESTIONÁRIO DE AVALIAÇÃO</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                O servidor cumpriu os prazos estabelecidos?
+                {% if employee_date_established %}
+                <strong>Sim</strong>
+                {% else %}
+                <strong>Não</strong>
+                {% endif %}
+            </p>
+            <p class="rf-paragraph-height">
+                O servidor cumpriu a jornada estabelecida?
+                {% if employee_working_established %}
+                <strong>Sim</strong>
+                {% else %}
+                <strong>Não</strong>
+                {% endif %}
+            </p>
+            <p class="rf-paragraph-height">
+                O servidor estava disponível através dos canais de comunicação no horário habitual de expediente?
+                {% if employee_available %}
+                <strong>Sim</strong>
+                {% else %}
+                <strong>Não</strong>
+                {% endif %}
+            </p>
+            <p class="rf-paragraph-height">
+                O servidor se adaptou ao teletrabalho?
+                {% if employee_addaption_working %}
+                <strong>Sim</strong>
+                {% else %}
+                <strong>Não</strong>
+                {% endif %}
+            </p>
+            <p class="rf-paragraph-height">
+                O servidor descumpriu algum dever a si estabelecido durante o teletrabalho?
+                {% if employee_disobey_working %}
+                <strong>Sim</strong>
+                {% else %}
+                <strong>Não</strong>
+                {% endif %}
+            </p>
+            <p class="rf-paragraph-height">
+                <tr><th class="rf-th" colspan="2">Em caso afirmativo da pergunta acima, elencar quais deveres foram descumpridos:</th></tr>
+                <tr><td class="rf-td" colspan="2">{{ ask_affirmation_working | safe }}</td></tr>
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">OBSERVAÇÕES</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ note | safe  }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">DATA DE APURAÇÃO</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                <strong>{{ start_date }}</strong> a <strong>{{ end_date }}</strong>
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

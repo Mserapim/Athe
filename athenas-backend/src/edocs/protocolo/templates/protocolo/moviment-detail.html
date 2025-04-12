@@ -1,0 +1,42 @@
+<!-- movement desabiguation code {{ desambiguation_code }} -->
+<div class="opinion" style="font-style:italic;">
+{% if movement.physical %}
+    <h3>*Enviado por meio físico e eletrônico</h3>
+{% else %}
+    <h3>*Enviado apenas por meio eletrônico</h3>
+{% endif %}
+</div>
+
+{% if movement.urgente %}
+<div class="opinion">
+    <p>Para este documento foi solicitada <b style="#f00">URGÊNCIA</b> por <b>{{ movement.servidor_origem.pessoa_fisica }}</b>.</p>
+</div>
+{% endif %}
+
+
+{% if movement.parecer %}
+<div class="opinion">
+    <h3>Parecer:</h3>
+    <div class="paragraph-text">
+        {{ movement.parecer | safe }}
+    </div>
+</div>
+{% endif %}
+{% if movement.attachments.exists %}
+<div class="opinion">
+    <h3>Anexos da Movimentação</h2>
+    <ul class="list-attachment">
+        {% for attach in movement.attachments.all %}
+            {% include "protocolo/attachment.html" %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% if movement.referencia_set.exists %}
+<div class="opinion">
+    <h2 style="margin-bottom: 0.5em">Referências da Movimentação</h2>
+    {% for reference in movement.referencia_set.filter %}
+        <div class="opinion">{{ reference.protocolo }}</div>
+    {% endfor %}
+</div>
+{% endif %}

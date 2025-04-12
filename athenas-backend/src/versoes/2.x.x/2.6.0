@@ -1,0 +1,38 @@
+- 2024.3.19:
+    - CARD: ATS-3281 - MR: 721 - Refatoração da classe ApiCore e criação da classe ApiDetailView 
+- 2024.3.20:
+    - CARD: ATS-3234 - MR: 720 -  Realizar este vinculo -Em: Criar vinculo dos exercicios cumulativo com o Períodos
+    - CARD: ATS-3227/ATS-3231 - MR: 724 -  Criação da APIs de Criação e Edição de Modulos
+    - CARD: ATS-3213 - MR: 726 - Permitindo implantação de mais de um abono na folha
+    - CARD: ATS-3383 - MR: 723 - Alterar a logo do email
+    - CARD: ATS-3324 - MR: 725 - Adaptar API de Consolidar na Venda de dias de Substituição no VDF
+- 2024.3.21:
+    - CARD: ATS-3232 - MR: 727 -  Apis de lista de menus, detalhes de menu e editar menu
+    - CARD: ATS-3360,ATS-3361 - MR: 722 -  Criar filtros ao gerar eventos de cadastro
+- 2024.3.22:
+    - CARD: ATS-3356 - MR: 728 - Adicionando função Atribuir competência de desconto por Falta
+    - CARD: ATS-3357 - MR: 730 - Criando Api para listar ações de um MenuConfig
+    - CARD: ATS-3224 - MR: 729 - Alterar (Lógica) Implementar filtra filtragem por usuário
+    - CARD: ATS-3374 - MR: 731 - Corrigir verificação de substitutos
+- 2024.3.25:
+    - CARD: ATS-3353 - MR: 734 - correção de duplicação de itens na tela de teletrabalhor por competencia 
+    - CARD: ATS-3354 - MR: 735 - configuração para que sempre seja exibindo o mês anterior quando se abre a tela de envio de relatorio mensal de teletrabalho
+    - CARD: ATS-3379 - MR: 733 - criação da logica para aceitar ordenação nas apis
+    - CARD: ATS-3355 - MR: 737 - Adicionando Atribuição de Competência para todas as Faltas de um Servidor
+    - CARD: ATS-3382 - MR: 736 - Incluir anexo na solicitação
+    - CARD: ATS-3256 - MR: 738 - Criando Api para listar UsuarioGrupo
+- 2024.3.26:
+    - CARD: ATS-3377 - MR: 732 - Alterar API /painel-controle/controle-acesso/modulos/
+    - CARD: ATS-3235 - MR: 740 - Dar carga do período Passado Em Criar vinculo dos exercicios cumulativo com o Períodos
+    - CARD: ATS-3235 - MR: 741 - Dar carga do período Passado Em Criar vinculo dos exercicios cumulativo com o Períodos
+    - CARD: ATS-3343 - MR: 743 - [Gestão do envio do ponto] - Criar filtro por categoria
+    - CARD: ATS-3358 - MR: 742 - Adicionando funcionalidade de Processar por Falta selecionada
+- 2024.3.27:
+    - CARD: ATS-3344 - MR: 745 - [Gestão do envio do ponto] - Trazer todos afastamentos
+    - CARD: ATS-3225, ATS-3226 - MR: 744 - Criar (Api) exibição de menu e modulos por usuario
+    - CARD: ATS-3437 - MR: 746 - API Módulos - Ajustar paginação da rota de listagem de módulos
+    - CARD: ATS-3369 - MR: 747 - Alterar autenticação do ambiente de dev
+    - CARD: ATS-3357 - MR: 748 - [Gestor de faltas] - Processar falta todos
+    - CARD: ATS-3433 - MR: 751 - [Gestor de faltas] - Melhorando mensagem de validação VDF
+
+

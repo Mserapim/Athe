@@ -1,0 +1,128 @@
+[
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "RECURSOS HUMANOS", 
+    "father": null, 
+    "uuid": "7180066e807d41268f1950a4a0f7092a", 
+    "icon": "athenas-0827.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.application", 
+  "fields": {
+    "active": true, 
+    "title": "Est\u00e1gio Probat\u00f3rio", 
+    "father": "7180066e807d41268f1950a4a0f7092a", 
+    "uuid": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "icon": "athenas-0793.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "952207a14d5240058f3ee53b70342d04", 
+    "title": "Comiss\u00e3o de Est\u00e1gio Probat\u00f3rio", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPApreciacaoComissao", 
+    "active": true, 
+    "icon": "athenas-0827.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "254965a780344ff3a7316bedea4e4232", 
+    "title": "Avalia\u00e7\u00e3o de Est\u00e1gio Probat\u00f3rio", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPAvaliacaoEstagio", 
+    "active": true, 
+    "icon": "athenas-0220.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "7cea088537074ab98b1f8a5e0c3ceb8c", 
+    "title": "Configurador Comiss\u00e3o de Avalia\u00e7\u00e3o", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPComissaoAvaliadora", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "011940e765974cf1903cfd6829e79d54", 
+    "title": "Conceitos", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPConceito", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "9c0e0887971a4682b51092c65b7bd5a0", 
+    "title": "Configura\u00e7\u00e3o", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPConfiguracao", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "e9625de60ac840eaa149d0674510bedd", 
+    "title": "Configurador de Avalia\u00e7\u00e3o", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPConfiguradorAvaliacao", 
+    "active": true, 
+    "icon": ""
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "512d3a83946e477fa6f9d75a5bf504a2", 
+    "title": "Decis\u00e3o Est\u00e1gio Probat\u00f3rio", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPDecisaoChefeOrgao", 
+    "active": true, 
+    "icon": "athenas-0063.png"
+  }
+},
+{
+  "pk": null, 
+  "model": "engine.controller", 
+  "fields": {
+    "uuid": "55e978185a604191a5ad151369137362", 
+    "title": "Gestor de Est\u00e1gio Probat\u00f3rio", 
+    "module": "rh.estagio", 
+    "application": "e52a1b3c68bc4506a78a3cf2bcb1d14c", 
+    "controller": "GEPGestorEstagio", 
+    "active": true, 
+    "icon": "athenas-0143.png"
+  }
+}
+]

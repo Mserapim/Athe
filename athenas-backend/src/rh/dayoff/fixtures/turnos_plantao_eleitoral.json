@@ -1,0 +1,32 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4479,
+    "fields": {
+        "app_label": "dayoff",
+        "name": "CONFIGURACAO_ELEITORAL_TURNO_CHOICE",
+        "label": "1\u00ba Turno",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "dayoff.CONFIGURACAO_ELEITORAL_TURNO_CHOICE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4480,
+    "fields": {
+        "app_label": "dayoff",
+        "name": "CONFIGURACAO_ELEITORAL_TURNO_CHOICE",
+        "label": "2\u00ba Turno",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "dayoff.CONFIGURACAO_ELEITORAL_TURNO_CHOICE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table {
+        border-collapse: collapse;
+        width:790px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        border:1px solid #dddddd
+    }
+    
+</style>
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th>Descrição da meta</th>
+                <th>Teletrabalho</th>
+                <th>Meta cadastrada</th>
+                <th>Meta do mês</th>
+                <th>Valor informado</th>
+                <th>Saldo devedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in dados %}
+            <tr>
+                <td>{{ item.descricao }}</td>
+                <td>{{ item.plano }}</td>
+                <td>{{ item.meta_cadastrada }}</td>
+                <td>{{ item.meta_mes }}</td>
+                <td>{{ item.meta_informada }}</td>
+                <td>{{ item.saldo_devedor }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

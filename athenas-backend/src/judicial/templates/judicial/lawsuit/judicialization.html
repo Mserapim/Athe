@@ -1,0 +1,32 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Judicialização</h2></div>
+    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+
+    <div class="paragraph-text">
+        O Procedimento Extrajudicial {{ doc.lawsuit.cache_number }} foi judicializado na {{ doc.court }} tendo o identificador
+        {{ doc.code }}.
+    </div>
+
+    {% if doc.observation %}
+    <div class="paragraph-text">
+        {% if execution_organ.responsavel.pessoa_fisica.sexo == 'M'  %}
+            O Promotor
+        {% else  %}
+            A Promotora
+        {% endif %}
+        de Justiça em exercicio na <span class="bold">{{ execution_organ.nome }}</span>, ainda fez as seguinte consideração:
+    </div>
+    <div class="paragraph-text">
+        {{ doc.observation | safely }}
+    </div>
+    {% endif %}
+
+    <div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ execution_organ.localidade.nome | city_name }}, {{ doc.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>
+        <div><span style="font-size: 0.6em">{{ execution_organ.nome }}</span></div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<style>
+    .local-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .local-th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 4px;
+        font-weight: bold;
+    }
+
+    .local-td {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 4px;
+    }
+
+    .local-td-x {
+        width: 2.5em;
+        text-align: center;
+    }
+</style>
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">REQUERIMENTO PARA CONCESSÃO DE AUXÍLIO ALIMENTAÇÃO</p>
+
+<p class="rf-paragraph-height">
+    REQUER, ao(à) Excelentíssimo(a) Senhor(a) Procurador(a)-Geral de Justiça:
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Email:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ email }}</td></tr>
+    <tr>
+        <th class="rf-th">Carga horária:</th>
+        <th class="rf-th">Telefone de contato:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ working_time }}</td>
+        <td class="rf-td">{{ contact_number }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Termo de opção:</th></tr>
+    <tr>
+        <td class="rf-td">
+        {% if option_term_query.exists %}
+            {% for choice in option_term_query %}
+                {% if choice.value == option_term %}
+            <p class="rf-paragraph-height"><strong>( X ) {{ choice.description }}</strong></p>
+                {% else %}
+            <p class="rf-paragraph-height">(&nbsp;&nbsp;&nbsp;&nbsp;) {{ choice.description }}</p>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p class="rf-paragraph-height">Não informado</p>
+        {% endif %}
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th" colspan="2">Nome do órgão de origem:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ previous_public_institution }}</td></tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th" colspan="2">Declaração:</th></tr>
+    <tr>
+        <td class="rf-td" colspan="2">
+            Declaro que minha opção está de acordo com o Ato nº 085/2016,
+            responsabilizando-me pelas informações aqui prestadas.
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Fundamentação Legal: De acordo com art. 2º, § único, do Ato
+                nº 085/2016, de 28/09/2016, é obrigatório a apresentação de
+                declaração emitida pelo órgão ou entidade de origem atestando
+                o não recebimento do referido benefício ou outro similar.
+            </p>
+            <p class="rf-paragraph-height">
+                - Documentos necessários: Ato de cessão do servidor (cópia);
+                Este formulário devidamente preenchido e assinado pelo servidor
+                (original); Declaração do órgão de origem atestando o não
+                recebimento do referido benefício (original).
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este requerimento antes de encaminhá-lo.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

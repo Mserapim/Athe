@@ -1,0 +1,466 @@
+[
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702000000",
+    "title": "Lesão imediata",
+    "description": "Lesão imediata"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702005000",
+    "title": "Escoriação, abrasão (ferimento superficial)",
+    "description": "Escoriação, abrasão (ferimento superficial)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702010000",
+    "title": "Corte, laceração, ferida contusa, punctura (ferida aberta)",
+    "description": "Corte, laceração, ferida contusa, punctura (ferida aberta)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702015000",
+    "title": "Contusão, esmagamento (superfície cutânea intacta)",
+    "description": "Contusão, esmagamento (superfície cutânea intacta)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702020000",
+    "title": "Distensão, torção",
+    "description": "Distensão, torção"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702025000",
+    "title": "Inflamação de articulação, tendão ou músculo (inclui sinovite, tenossionovite, etc.; não inclui distensão, torção ou suas consequências)",
+    "description": "Inflamação de articulação, tendão ou músculo (inclui sinovite, tenossionovite, etc.; não inclui distensão, torção ou suas consequências)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702030000",
+    "title": "Luxação",
+    "description": "Luxação"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702035000",
+    "title": "Fratura",
+    "description": "Fratura"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702040000",
+    "title": "Queimadura ou escaldadura - efeito de temperatura elevada ou efeito do contato com substância quente (inclui queimadura por eletricidade, mas não inclui choque elétrico; não inclui queimadura por sub",
+    "description": "Queimadura ou escaldadura - efeito de temperatura elevada ou efeito do contato com substância quente (inclui queimadura por eletricidade, mas não inclui choque elétrico; não inclui queimadura por substância química, efeito de radiação, queimadura de sol, incapacidade sistêmica como intermação, queimadura por atrito, etc.)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702042000",
+    "title": "Queimadura química (lesão de tecido provocada pela ação corrosiva de produto químico, suas emanações, etc.)",
+    "description": "Queimadura química (lesão de tecido provocada pela ação corrosiva de produto químico, suas emanações, etc.)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702045000",
+    "title": "Efeito de radiação (imediato) - queimadura de sol e toda forma de lesão de tecido, osso ou fluido orgânico, por exposição à radiação",
+    "description": "Efeito de radiação (imediato) - queimadura de sol e toda forma de lesão de tecido, osso ou fluido orgânico, por exposição à radiação"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702048000",
+    "title": "Congelamento, geladura e outros efeitos da exposição à baixa temperatura",
+    "description": "Congelamento, geladura e outros efeitos da exposição à baixa temperatura"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702050000",
+    "title": "Asfixia, estrangulamento, afogamento",
+    "description": "Asfixia, estrangulamento, afogamento"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702055000",
+    "title": "Intermação, insolação, cãibra, exaustão e outros efeitos da temperatura ambiente elevada (não inclui queimadura de sol ou outros efeitos de radiação)",
+    "description": "Intermação, insolação, cãibra, exaustão e outros efeitos da temperatura ambiente elevada (não inclui queimadura de sol ou outros efeitos de radiação)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702060000",
+    "title": "Choque elétrico e eletroplessão (eletrocussão)",
+    "description": "Choque elétrico e eletroplessão (eletrocussão)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702065000",
+    "title": "Hérnia de qualquer natureza, ruptura",
+    "description": "Hérnia de qualquer natureza, ruptura"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702070000",
+    "title": "Amputação ou enucleação",
+    "description": "Amputação ou enucleação"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702075000",
+    "title": "Perda ou diminuição de sentido (audição, visão, olfato, paladar e tato, desde que não seja sequela de outra lesão)",
+    "description": "Perda ou diminuição de sentido (audição, visão, olfato, paladar e tato, desde que não seja sequela de outra lesão)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702080000",
+    "title": "Concussão cerebral",
+    "description": "Concussão cerebral"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "702090000",
+    "title": "Lesão imediata, NIC",
+    "description": "Lesão imediata, NIC"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704020000",
+    "title": "Doença contagiosa ou infecciosa (tuberculose, brucelose, etc.)",
+    "description": "Doença contagiosa ou infecciosa (tuberculose, brucelose, etc.)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704030000",
+    "title": "Pneumoconiose (silicose, asbestose, etc.)",
+    "description": "Pneumoconiose (silicose, asbestose, etc.)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704040000",
+    "title": "Dermatose (erupção, inflamação da pele, inclusive furúnculo, etc.) - geralmente provocada pelo contato direto com substâncias ou agentes sensibilizantes ou irritantes, tais como medicamentos, óleos, ",
+    "description": "Dermatose (erupção, inflamação da pele, inclusive furúnculo, etc.) - geralmente provocada pelo contato direto com substâncias ou agentes sensibilizantes ou irritantes, tais como medicamentos, óleos, agentes biológicos, plantas, madeiras ou metais (não inclui lesão provocada pela ação corrosiva de produtos químicos, queimadura por contato com substâncias quentes, efeito de exposição à radiação, efeito de exposição a baixas temperaturas ou inflamação ou irritação causada por fricção ou impacto)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704050000",
+    "title": "Envenenamento sistêmico - condição mórbida sistêmica provocada por inalação, ingestão ou absorção cutânea de substância tóxica, que afete o metabolismo, o funcionamento do sistema nervoso, do aparelh",
+    "description": "Envenenamento sistêmico - condição mórbida sistêmica provocada por inalação, ingestão ou absorção cutânea de substância tóxica, que afete o metabolismo, o funcionamento do sistema nervoso, do aparelho circulatório, do aparelho digestivo, do aparelho respiratório, dos órgãos de excreção, do sistema musculoesquelético, etc. (inclui ação de produto químico, medicamento, metal ou peçonha; não inclui efeito de radiação, pneumoconiose, efeito corrosivo de produto químico, irritação cutânea, septicemia ou caso de ferida infectada)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704060000",
+    "title": "Perda ou diminuição mediatas de sentido (audição, visão, olfato, paladar e tato, desde que não seja sequela de outra lesão)",
+    "description": "Perda ou diminuição mediatas de sentido (audição, visão, olfato, paladar e tato, desde que não seja sequela de outra lesão)"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704070000",
+    "title": "Efeito de radiação (mediato) - queimadura do sol e toda forma de lesão de tecido, osso, ou fluido orgânico por exposição à radiação.",
+    "description": "Efeito de radiação (mediato) - queimadura do sol e toda forma de lesão de tecido, osso, ou fluido orgânico por exposição à radiação."
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "704090000",
+    "title": "Doença, NIC",
+    "description": "Doença, NIC"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "706050000",
+    "title": "Lesões múltiplas",
+    "description": "Lesões múltiplas"
+  }
+},
+{
+  "model": "sst.injury",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2022-11-07T14:07:13.170",
+    "modified_at": "2022-11-07T14:07:13.170",
+    "code": "706090000",
+    "title": "Outras lesões, NIC",
+    "description": "Outras lesões, NIC"
+  }
+}
+]

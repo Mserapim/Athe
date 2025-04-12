@@ -1,0 +1,63 @@
+<div class="paragraph-text">
+    {% block document-title %}
+        {% if doc.competence_others %}
+            <h1 style="text-align: center;">CARTA DE ENCAMINHAMENTO</h1>
+        {% else %}
+            {% if doc.typology %}
+                <h2 style="text-align: center;">
+                {{ doc.typology }}
+                </h2>
+            {% endif%}
+        {% endif %}
+    {% endblock %}
+
+    {% block body-person %}
+
+    <p style="text-align:justify">
+        {% include "saci/parts/person.html" %}
+
+        {% if doc.competence_others %}
+            {% include "saci/parts/text-forward.html"%}
+        {% else %}
+            encaminhamo-lo aos vossos cuidados para que sejam tomadas as providências que entender cabíveis.
+        {% endif %}
+
+    </p>
+    {% endblock %}
+
+    {% block body-resume %}
+
+    {% if doc.story %}
+        <p><strong>Relato: </strong></p>
+        {{ doc.story | safe }}
+    {% else %}
+        <p><strong>Aguardando relato.</strong></p>
+    {% endif %}
+
+    {% if doc.competence_others %}
+    <p style="text-align:justify">
+        {% if doc.destination %}
+            <strong>Encaminhado para: </strong> {{doc.destination}}
+        {% else %}
+            <strong>Encaminhado para: </strong> Não informado.
+        {% endif %}
+        <br />
+        {% if endereco_destino %}
+            <strong>Endereço: </strong>{{endereco_destino.logradouro}} - {{endereco_destino.numero}} - {{endereco_destino.bairro}} - {{endereco_destino.municipio}}
+        {% endif %}
+        <br />
+        {% if telefone_destino %}
+            <strong>Telefone: </strong>{{telefone_destino}}
+        {% endif %}
+    </p>
+    {% endif %}
+    {% endblock %}
+
+    {% block signement-attendance %}
+        {% if doc.signed_by %}
+            <p style="text-align:justify">
+                Este atendimento foi realizado por <strong>{{ attendant_by }}</strong>, em  {{ localidade }}, no dia <strong>{{ attendant_at }}</strong>.
+            </p>
+        {% endif %}
+    {% endblock %}
+</div>

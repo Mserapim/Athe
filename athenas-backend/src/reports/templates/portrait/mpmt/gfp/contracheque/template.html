@@ -1,0 +1,373 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+{% load brmasks %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Portrait"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif; 
+        color: #000000;
+        line-height: 1.2578125; 
+      }
+          
+      span {
+        padding: 3px;
+        text-align: left;
+        font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif; 
+        color: #000000;
+        font-size: 13px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top:8px;
+            
+      }
+   
+    sup{
+      position: absolute; 
+      top: -6px; 
+      left: 1%; 
+      font-size:0.8em;
+      white-space: nowrap;
+    }
+        
+    .border{
+      border-right: 1px solid black;
+      border-bottom: None;
+      border-top: None;
+      font-size: 13px;
+      margin: 0;
+      padding: 3px;
+      line-height: 1;
+    }
+  </style>
+
+  </head>
+  <body>
+    
+    <div style="margin: 20px;padding: 20px;">
+      {% for value in data %}
+      <table>
+        <table style="width:100%;" >
+          <tr>
+            <td style="width:20%" rowspan="2">
+              <img src="data:image/png;base64,{{logo_mpmt}}" style="padding-top: 15px;padding-bottom: 15px;"  width="160px" height="50px" alt="MPMT">
+            </td>
+            <td style="width:40%" rowspan="2">
+              <div style="position: relative;">
+                <sup  style="font-size: 14px;font-weight:bold;text-align: center;top: -7px; left: 8%; "> PROCURADORIA GERAL DE JUSTIÇA </sup>
+                <span style="font-size: 12px;font-weight: normal;text-align: center;">
+                  Rua 4 - Quadra 11, n° 237 - Bairro: Centro Político
+                  e Administrativo - 78049-921 - Cuiabá - MT<br>
+                  CNPJ: 14.921.092/0001-57 - FONE: (65)3613-5100<br>
+                  www.mpmt.mp.br
+                </span>  
+              </div>
+            </td>
+            <td>
+              <div style="position: relative;">
+                  <sup>DEMONSTRATIVO DE PAGAMENTO DE SALÁRIO
+                  </sup>
+                  <span>{{value.tipo_folha}}</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div style="position: relative;">
+                  <sup>MÊS/ANO</sup>
+                  <span>{{value.ref_mes}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      
+        <table style="width:100%">
+            <tr>
+            <td style="width:21%">
+              <div style="position: relative;">
+                  <sup>MATRICULA</sup>
+                  <span>{{data_servidor.matricula}}</span>
+              </div>
+            </td>
+            <td style="width:59%">
+              <div style="position: relative;">
+                  <sup>NOME</sup>
+                  <span>{{ data_servidor.nome }}</span>
+              </div>
+            </td>
+            <td>
+              <div style="position: relative;">
+                  <sup>DATA VÍNCULO</sup>
+                  {% if value.pensionista == ''%}
+                    <span>{{ data_servidor.data_vinculo | date:'d/m/Y' }}</span>
+                  {% endif %}
+              </div>
+            </td>
+          </tr>
+        </table>
+      
+        {% if value.pensionista == ''%}
+        <table style="width:100%">
+            <tr>
+            <td>
+              <div style="position: relative;">
+                  <sup>LOTACÃO</sup>
+                  <span>{{ data_servidor.lotacao}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+
+        {% if value.pensionista != ''%}
+        <table style="width:100%">
+            <tr>
+            <td>
+              <div style="position: relative;">
+                  <sup>BENEFICIÁRIO/PENSAO</sup>
+                  <span>{{ value.pensionista}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+      
+        {% if value.pensionista == ''%}
+        <table style="width:100%">
+            <tr>
+              <td>
+                <div style="position: relative;">
+                    <sup>SITUAÇÃO FUNCIONAL</sup>
+                    <span>{{ data_servidor.situacao_funcional}}</span>
+                </div>
+              </td>
+              <td style="width:35%">
+                <div style="position: relative;">
+                    <sup>SITUAÇÃO PREVIDENCIÁRIA</sup>
+                    <span>{{ data_servidor.situacao_previdenciaria}}</span>
+                </div>
+              </td>
+              <td>
+                <div style="position: relative;">
+                    <sup>DATA EXERCÍCIO</sup>
+                    <span>{{ data_servidor.data_exercicio  | date:'d/m/Y'}}</span>
+                  </div>
+              </td>
+          </tr>
+        </table>
+        {% endif %}
+
+        {% if  data_servidor.cargo_comissioando != '' and value.pensionista == '' %}
+        <table style="width:100%">
+          <tr>
+            <td>
+              <div style="position: relative;">
+                    <sup>CARGO COMISSIONADO</sup>
+                    <span>{{ data_servidor.cargo_comissioando}}</span>
+              </div>
+            </td>
+            <td style="width:21%">
+              <div style="position: relative;">
+                  <sup>REF. SALARIAL</sup>
+                  <span>{{value.ref_salarial_comissonado}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+
+        {% if  data_servidor.cargo_efetivo != '' and value.pensionista == ''%}
+        <table style="width:100%">
+          <tr>
+            <td>
+              <div style="position: relative;">
+                    <sup>CARGO EFETIVO</sup>
+                    <span>{{ data_servidor.cargo_efetivo}}</span>
+              </div>
+            </td>
+            <td style="width:21%">
+              <div style="position: relative;">
+                  <sup>REF. SALARIAL</sup>
+                  <span>{{value.ref_salarial_efetivo}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+        
+        {% if  data_servidor.cargo_eletivo != '' and value.pensionista == '' %}
+        <table style="width:100%">
+          <tr>
+            <td>
+              <div style="position: relative;">
+                    <sup>CARGO ELETIVO</sup>
+                    <span>{{ data_servidor.cargo_eletivo}}</span>
+              </div>
+            </td>
+            <td style="width:21%">
+              <div style="position: relative;">
+                  <sup>REF. SALARIAL</sup>
+                  <span>{{value.ref_salarial_eletivo}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+
+        {% if value.pensionista == ''%}
+        <table style="width:100%">
+            <tr>
+            <td style="width:30%">
+              <div style="position: relative;">
+                  <sup>CPF</sup>
+                  <span>{{ data_servidor.cpf | cpf}}</span>
+              </div>
+            </td>
+            <td style="width:30%">
+              <div style="position: relative;">
+                  <sup>PASEP</sup>
+                  <span>{{ data_servidor.pasep }}</span>
+              </div>
+            </td>
+            <td style="width:40%">
+              <div style="position: relative;">
+                  <sup>DEP. IMP.RENDA</sup>
+                  <span>{{ data_servidor.dep_imp_renda}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+
+        <table style="width:100%">
+            <tr>
+            <td style="width:60%">
+              <div style="position: relative;">
+                  <sup>BANCO</sup>
+                  <span>{{ value.banco}}</span>
+              </div>
+            </td>
+            <td style="width:19%">
+              <div style="position: relative;">
+                  <sup>AGÊNCIA</sup>
+                  <span>{{ value.agencia}}</span>
+              </div>
+            </td>
+            <td style="width:21%">
+              <div style="position: relative;">
+                  <sup>CONTA</sup>
+                  <span>{{ value.conta}}</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        
+        <table style="width:100%">
+            <thead>
+              <tr>
+                <th style="border-bottom:none;font-size: 13px; padding-left: 25%;">VERBAS</th>
+                <th style="border-bottom:none;font-weight: normal;font-size: 13px">REF</th>
+                <th style="border-bottom:none;font-weight: normal;font-size: 13px">QTD</th>
+                <th style="border-bottom:none;font-weight: normal;font-size: 13px">PRAZO</th>
+                <th style="border-bottom:none;font-weight: normal;font-size: 13px">%</th>
+                <th style="border-bottom:none;font-weight: normal;font-size: 13px">BASE</th>
+                <th style="border-bottom:none;font-weight: normal;font-size: 13px">VALOR</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for lancamento in value.lancamentos %}
+                <tr>
+                  <td class="border" style="padding: 5px 5px 5px 15px;" >{{ lancamento.verba}}</td>
+                  <td class="border" style="padding: 5px;" >{{ lancamento.ref}}</td>
+                  <td class="border" style="padding: 5px;" >{{ lancamento.qtd}}</td>
+                  {% if lancamento.prazo != 0 %}
+                    <td class="border" style="padding: 5px;" >{{ lancamento.prazo}}</td>
+                  {% else %}
+                    <td class="border" style="padding: 5px;" ></td>
+                  {% endif %}
+                  {% if lancamento.percen != '0.00' %}
+                    <td class="border" style="padding: 5px;" >{{ lancamento.percen}}</td>
+                  {% else %}
+                    <td class="border" style="padding: 5px;" ></td>
+                  {% endif %}
+                  {% if lancamento.base != '0,00' %}
+                    <td class="border" style="padding: 5px;" >{{ lancamento.base}}</td>
+                  {% else %}
+                    <td class="border" style="padding: 5px;" ></td>
+                  {% endif %}
+                  <td class="border" style="padding: 5px;" >{{ lancamento.valor}}</td>
+                </tr>
+              {% endfor %}
+          </tbody>
+        </table>
+        
+        <table style="width:100%">
+            <tr>
+                  <td colspan="4" style="text-align: right;border-left:None"></td>
+                  <td style="width:22%">
+                    <div style="position: relative;">
+                        <sup>CRÉDITOS</sup>
+                        <span style="font-weight: normal; text-align: right; font-size: 13px;">{{ value.total_bruto}}</span>
+                    </div>
+                  </td>
+                  <td style="width:20%">
+                    <div style="position: relative;">
+                        <sup>DESCONTOS</sup>
+                        <span style="font-weight: normal; text-align: right;font-size: 13px">{{ value.descontos}}</span>
+                    </div>
+                  </td>
+                  <td style="width:20%">
+                    <div style="position: relative;">
+                        <sup>LÍQUIDO</sup>
+                        <span style="text-align: right;font-size: 13px">{{ value.total_liquido}}</span>
+                    </div>
+                  </td>
+              </tr>
+        </table>
+        <table style="width:100%">
+            <tr>
+                  <td colspan="1" style="height:90px">
+                    <div style="position: relative;">
+                        <sup style="font-weight: bold;top: -12px; ">MENSAGEM:</sup>
+                        <span></span>
+                    </div>
+                  </td>
+              </tr>
+        </table>
+        
+        <tr style="height: 13px;">
+          <td colspan="2"></td>
+          <td colspan="2" style="text-indent: 0px; vertical-align: middle; text-align: justify;">
+              <span>Data de geração: {{ date}}</span>
+          </td>
+          <td></td>
+          <td colspan="2" style="text-indent: 0px; text-align: left;">
+              <span>Hora:</span>
+          </td>
+          <td></td>
+          <td colspan="6" style="text-indent: 0px; text-align: left;">
+              <span>{{hour}}</span>
+          </td>
+          <td colspan="10"></td>
+        </tr>
+      </table>
+      {% if value.index < data_servidor.total_contracheques  %}
+        <div style="page-break-after: always;border: none;"></div>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+  </body>
+</html>

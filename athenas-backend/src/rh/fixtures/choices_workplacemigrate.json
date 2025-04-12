@@ -1,0 +1,86 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "APP_TO_MIGRATE",
+            "label": "EDOC",
+            "value": 1,
+            "cvalue": "edoc",
+            "cache_path": "rh.APP_TO_MIGRATE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "APP_TO_MIGRATE",
+            "label": "E-EXT",
+            "value": 2,
+            "cvalue": "eext",
+            "cache_path": "rh.APP_TO_MIGRATE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "APP_TO_MIGRATE",
+            "label": "DIÁRIAS",
+            "value": 3,
+            "cvalue": "diari",
+            "cache_path": "rh.APP_TO_MIGRATE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "APP_TO_MIGRATE",
+            "label": "LOTAÇÃO E EXERCÍCIO",
+            "value": 4,
+            "cvalue": "woexe",
+            "cache_path": "rh.APP_TO_MIGRATE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "TYPE_OF_MIGRATE",
+            "label": "INATIVAÇÃO",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "rh.TYPE_OF_MIGRATE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "TYPE_OF_MIGRATE",
+            "label": "EXTINÇÃO",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "rh.TYPE_OF_MIGRATE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+]

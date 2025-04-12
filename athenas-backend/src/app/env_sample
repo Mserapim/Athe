@@ -1,0 +1,72 @@
+#VAR_DIR = /app/var/
+
+# DEBUG = True
+
+# ALLOWED_HOSTS = localhost, a.127.0.0.1.nip.io, b.127.0.0.1.nip.io, c.127.0.0.1.nip.io, d.127.0.0.1.nip.io, p.127.0.0.1.nip.io
+# ADMINS = [('Rayson Romulo', 'raysonsilva@domain'),]
+
+# DOMAIN = localhost:9000
+
+# FORCE_SECURE = False
+# SESSION_COOKIE_SECURE = False
+
+# LOG_LEVEL = DEBUG
+
+# CONTEXT_ORGAN = mpto
+
+# NOSQL_DATABASE_DEFAULT = mongodb://athenas
+
+# DATABASE_DEFAULT = postgres://postgres:123@db:5432/athenas0
+# DATABASE_SLAVE = postgres://postgres:123@db:5432/athenas0
+
+# DATABASE_FOR_READ =
+# DATABASE_FOR_WRITE =
+
+# SECRET_KEY = ***********************************
+# UPLOAD_STORE_DIR = /app/var/storage/
+
+# AUTHENTICATION_BACKENDS = auth.dummy.Backend, auth.ws.WSAuthBackend, auth.backend.LDAPBackend
+
+# CACHE_MEMCACHED01_LOCATION = memcache:11211
+
+# LDAP_URI = ldap://ldapmaster.domain:389
+# LDAP_TLS = True
+# LDAP_DN = o=mp,dc=to,dc=gov,dc=br
+# LDAP_BASEDN = ou=Usuarios,o=mp,dc=to,dc=gov,dc=br
+# LDAP_ADMIN_USER_DN = cn=admin
+# LDAP_ADMIN_PASSWD = *********
+# LDAP_USER_OBJECT = uid
+# LDAP_NOLOGIN = .
+# LDAP_DB_USER_AUTOCREATE = True
+# LDAP_DOMAIN_MAIL = domain
+
+# DEFAULT_FROM_EMAIL = system@domain
+# SERVER_EMAIL = system@domain
+# EMAIL_HOST = mail.domain
+# EMAIL_HOST_USER = system
+# EMAIL_HOST_PASSWORD = xxxxxx
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+
+# JASPER_SERVER_USERNAME = raysonsilva
+# JASPER_SERVER_PASSWORD = **********
+# JASPER_SERVER_CONTEXT = jasperserver
+# JASPER_SERVER_HOST = 'jrserver.domain'
+# JASPER_SERVER_PORT = 8080
+# REPORT_DEFAULT_PATH = ''
+
+# JAVA_HOME = "/usr"
+# JAVA_OPTIONS = '-Duser.language=pt -Duser.region=BR'
+# JASPER_BUILDER = '/app/var/jasper/JasperBuilder.jar'
+# JASPER_BUILDER_HOME = '/app/var/jasper'
+# JASPER_BUILDER_TMP = '/app/var/cache/report'
+# JASPER_BUILDER_DATASOURCE = athenas0
+
+# MINIFY_JS_OUT = /athenas/static/athenas.min.js?ccache=
+# MINIFY_JS_RESOURCE = http://localhost:9000
+
+# SIGLAS_LOTACAO = {'CHEFIA-MEMBROS': ['PGJ', 'GAB-PGJ'], 'RH-FOLHA': ['FOLHA', 'DTI'], 'CI': ['CONINT', 'DTI'],}
+
+# CELERY_BROKER_URL = 'amqp://user:secret@rabbitmq:5672/athenas'
+# CELERY_MONGODB_BACKEND_SETTINGS = {'database': 'celery_0', 'taskmeta_collection': 'celery_0_taskmeta'}
+# CELERY_RESULT_BACKEND = 'mongodb://mongo/celery_0'

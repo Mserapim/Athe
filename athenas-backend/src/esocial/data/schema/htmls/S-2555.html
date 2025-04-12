@@ -1,0 +1,207 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_eSocial" id="2555_eSocial">1</td>
+        <td><a href="#r_2555_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555" id="2555">2</td>
+        <td><a href="#r_2555">evtConsolidContProc</a></td>
+        <td><a href="#r_2555_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Solicitação de Consolidação das Informações de Tributos Decorrentes de Processo Trabalhista.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_EXISTE_2501">REGRA_EXISTE_2501</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_Id" id="2555_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2555">evtConsolidContProc</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEvento" id="2555_ideEvento">4</td>
+        <td><a href="#r_2555_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2555">evtConsolidContProc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEvento_tpAmb" id="2555_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2555_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEvento_procEmi"
+            id="2555_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2555_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>8</strong> - Aplicativo governamental para envio de eventos pelo Judiciário<br>
+            <strong>9</strong> - Aplicativo governamental - Integração com a Junta Comercial<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEvento_verProc"
+            id="2555_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2555_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEmpregador" id="2555_ideEmpregador">8</td>
+        <td><a href="#r_2555_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2555">evtConsolidContProc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador ou do contribuinte que está prestando a informação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEmpregador_tpInsc"
+            id="2555_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2555_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do empregador ou contribuinte que está prestando
+            a informação, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideEmpregador_nrInsc"
+            id="2555_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2555_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do empregador ou contribuinte que está prestando a informação, de acordo com
+            o tipo de inscrição indicado no campo <a href="#2555_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e
+            conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideProc" id="2555_ideProc">11</td>
+        <td><a href="#r_2555_ideProc">ideProc</a></td>
+        <td><a href="#r_2555">evtConsolidContProc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do processo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideProc_nrProcTrab"
+            id="2555_ideProc_nrProcTrab">12
+        </td>
+        <td>nrProcTrab</td>
+        <td><a href="#r_2555_ideProc">ideProc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>15 ou 20</td>
+        <td>-</td>
+        <td>Número do processo trabalhista, da ata ou número de identificação da conciliação.<br>
+            <strong>Validação:</strong> Deve ser um número de processo válido.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2555_ideProc_perApurPgto"
+            id="2555_ideProc_perApurPgto">13
+        </td>
+        <td>perApurPgto</td>
+        <td><a href="#r_2555_ideProc">ideProc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Mês/ano em que é devida a obrigação de pagar a parcela prevista no acordo/sentença.<br>
+            <strong>Validação:</strong> Deve ser informado no formato AAAA-MM.
+        </td>
+    </tr>
+    </tbody>
+</table>

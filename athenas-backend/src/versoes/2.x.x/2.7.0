@@ -1,0 +1,45 @@
+- 2024.4.2:
+    - CARD: ATS-3364 - MR: 749 - Desenvolvimento do Relatorio de Ficha Financeira em Python 
+    - CARD: ATS-3443 - MR: 757 - Ajuste no alinhamento das tabelas do relatorio da ficha financeira 
+- 2024.4.3:
+    - CARD: ATS-3444 - MR: 761 - Ajuste na pontuação dos valores da ficha financeira 
+    - CARD: ATS-3442 - MR: 764 - [ Adm Superior] - Disparar o email quando membro não indicar substituto
+    - CARD: ATS-3445 - MR: 762 - ajustes nas Labels das linhas de totais do relatorio da ficha financeira 
+- 2024.4.4:
+    - CARD: ATS-3390 - MR: 766 - ajustes na validação de ordem de modulos, menugrupos e menus
+    - CARD: ATS-3498 - MR: 765 - [Gestor do teletrabalho] - Alterar a grid das metas
+    - CARD: ATS-3499 - MR: 768 - Montando estrutura da Grid Detalhes da Meta de Teletrabalho
+    - CARD: ATS-3366 - MR: 758 - Desenvolvimento do Relatório contracheque no python
+    - CARD: ATS-3346,ATS-3347 - MR: 772 - Tratar emissão através do relatório (Contracheque)
+- 2024.4.5:
+    - CARD: ATS-3520 - MR: 775 - ajustes nos parametros enviados do relatorio da ficha financeira
+    - CARD: ATS-3452 - MR: 776 - Inserir os emails de faltas nos templates
+    - CARD: ATS-3487 - MR: 774 - Verba 92200 - SPPREVCOM 
+    - CARD: ATS-3492 - MR: 770 - Alterar verbas de Bolsa e Transporte Estagiários e Residentes (Referência fixa de 30 dias)
+- 2024.4.9:
+    - CARD: ATS-3471 - MR: 778 -  inclusão do campo icone na classe base MenuModulo , campo url em menu e grup_padrão em UsuarioGrupo 
+    - CARD: ATS-3341 - MR: 780 -  Apis de listagem de grupos , listagem de menus e usuairos por grupo
+    - CARD: ATS-3493 - MR: 777 -  Automatizar Descontos por Afastamento (Estagiários e Residentes)
+    - CARD: ATS-3397 - MR: 781 -  Alterar estrutura da API de listagem dos grupos de permissões consolidados
+    - CARD: ATS-3416 - MR: 782 -  Alterar estrutura da API de listagem de ações
+- 2024.4.10:
+    - CARD: ATS-3524 - MR: 783 -  Permitir que insira verba ao contra cheque com diferenciação do campo info automaticamente
+    - CARD: ATS-3500 - MR: 784 -  [Dowload gestor teletrabalho] - Alterar o dowload
+    - CARD: ATS-3477 - MR: 785 -  Criar API para criação, edição e remoção dos grupos de permissões 
+    - CARD: ATS-3417 - MR: 786 - Alterando nomenclatura e urls de APIs
+    - CARD: ATS-3489 - MR: 787 - Cálculo de EFC - Férias
+- 2024.4.10:
+    - CARD: ATS-3485 - MR: 779 -  Acrecesentar validação na Solicitação de afastamentos férias de Membros -indicação de substituto-- Criar o metodo da validação
+    - CARD: ATS-3488 - MR: 779 -  Acrecesentar validação na Solicitação de afastamentos férias de Membros -indicação de substituto - Retornar na API como Requerido
+- 2024.4.11:
+    - CARD: ATS-3466,3467 - MR: 790 - Permitir alterar apenas registros que não foram pagos
+- 2024.4.12:
+    - CARD: ATS-3484 - MR: 791 - Solicitação de criação de relatório/aba - sistema estágio probatório de membros 
+    - CARD: ATS-3478 - MR: 789 - Api para atualizar a lista de servidores/usuarios de um UsuarioGrupo(grupo de usuarios)  
+    - CARD: ATS-3346 - MR: 793 - Download de gestor de envio de ponto
+    - CARD: ATS-3413 - MR: 792 - Usabilidade do gestor de faltas
+    - CARD: ATS-3536 - MR: 794 - Corrigir comportamento da verba 12302 - Aux. Transporte Residentes Devolução 
+    - CARD: ATS-3521 - MR: 796 - ajuste na busca do cargo do relatorio de ficha financeira
+    - CARD: ATS-3495 - MR: 798 - 1.9.9 - Criar API para edição dos menus do grupo de permissão
+- 2024.4.15:
+    - CARD: ATS-3470 - MR: 799 - Ajustar o parâmetro de ordenação  

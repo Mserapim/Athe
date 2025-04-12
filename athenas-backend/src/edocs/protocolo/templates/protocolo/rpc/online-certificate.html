@@ -1,0 +1,34 @@
+{% load static %}
+{% load brmasks %}
+
+<p class="text-center"><strong>Solicitação de certidão</strong>
+</p>
+<p class="hide-on-web">
+Solicito certidão acerca de procedimentos extrajudiciais no âmbito do Ministério Público do Estado do Tocantins em desfavor de {{ informed_name }} CPF/CNPJ {% if cnpj %}{{ cnpj|cnpj }} {% endif %} {% if cpf %}{{ cpf|cpf }} {% endif %}. E-mail informado {{ informed_email }}
+  <br />
+</p>
+
+{% if is_diff %}
+<br />
+<div style="background-color:#f2f2f2; padding: 10px">
+<p>
+  Foram encontradas divergências entre os dados informados pelo usuário e os dados existentes na base de dados
+  <br />
+  Dados Informados pelo usuario:
+  <ul>
+    <li>{% if cnpj %} CNPJ: {{ cnpj|cnpj }} {% endif %} {% if cpf %} CPF: {{ cpf|cpf }} {% endif %}</li>
+    <li>Nome: {{ informed_name }}</li>
+    <li>Email: {{ informed_email }}</li>
+  </ul>
+  <br />
+  Dados existentes na base de dados:
+  <ul>
+    <li>{% if cnpj %} CNPJ: {{ cnpj|cnpj }} {% endif %} {% if cpf %} CPF: {{ cpf|cpf }} {% endif %}</li>
+    <li>Nome: {{ registered_name }}</li>
+    <li>Email: {% for email in registered_emails %} {{ email }}{% if not forloop.last %}, {% endif %} {% endfor %}</li>
+  </ul>
+
+</p>
+</div>
+{% endif %}
+<p class="text-right">{{ date }}</p>

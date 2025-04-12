@@ -1,0 +1,18 @@
+<policymap>
+  <!-- <policy domain="resource" name="temporary-path" value="/tmp"/> -->
+  <policy domain="resource" name="memory" value="256MiB"/>
+  <policy domain="resource" name="map" value="512MiB"/>
+  <policy domain="resource" name="width" value="16KP"/>
+  <policy domain="resource" name="height" value="16KP"/>
+  <policy domain="resource" name="area" value="128MB"/>
+  <policy domain="resource" name="disk" value="1GiB"/>
+  <policy domain="delegate" rights="none" pattern="URL" />
+  <policy domain="delegate" rights="none" pattern="HTTPS" />
+  <policy domain="delegate" rights="none" pattern="HTTP" />
+  <policy domain="path" rights="none" pattern="@*"/>
+  <policy domain="cache" name="shared-secret" value="passphrase" stealth="true"/>
+  <policy domain="coder" rights="read" pattern="PS" />
+  <policy domain="coder" rights="read" pattern="EPI" />
+  <policy domain="coder" rights="read" pattern="PDF" />
+  <policy domain="coder" rights="read" pattern="XPS" />
+</policymap>

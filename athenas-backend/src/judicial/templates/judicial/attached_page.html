@@ -1,0 +1,16 @@
+<div id="{{ attached.file_descriptor.file }}"></div>
+<div style="text-align: center; margin: 110mm 0">
+    <h1 style="font-size: 1.5em">{{ attached.title }}</h1>
+    <div style="font-size: 0.8em">
+        <a href="{{ attached.file_descriptor.complete_permalink }}">
+            {{ attached.file_descriptor.complete_permalink }}
+        </a>
+    </div>
+    <div>MD5: {{ attached.file_descriptor.file }}</div>
+    {% if attached.render_extract == False %}
+	    <p style="text-align:center; font-size: 8pt">
+	    	Renderização suprimida.
+		</p>
+    {% endif %}
+    <div style="margin-top: 15px">[ <a href="#topo">Voltar ao Indice de Anexos</a> ]</div>
+</div>

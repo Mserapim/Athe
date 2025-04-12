@@ -1,0 +1,12 @@
+[
+{
+    "model": "standard.emailtemplate",
+    "pk": 14,
+    "fields": {
+        "code": "CRIACAO_NOVO_USUARIO",
+        "subject": "Cria\u00e7\u00e3o de novo usu\u00e1rio",
+        "contents": "<p style=\"text-align: justify;\">Comunico o Credenciamento do %tipo% informado abaixo, para que sejam tomadas as seguintes Provid\u00eancias, sem preju\u00edzo de outras que julgarem cab\u00edveis:<br type=\"_moz\"></p><ul><li>DTI: cria\u00e7\u00e3o de acesso aos sistemas do MPMT e inclus\u00e3o na lista de Distribui\u00e7\u00e3o MPE %tipo%</li><li>Renata Virginia Sartoreli : inclus\u00e3o em folha de pagamento</li><li>Gabriela Rodrigues : cadastro no triello</li></ul><p><br></p><p>Segue os dados:</p><ul><li>Nome: %nome%</li><li>Matr\u00edcula: %matricula%</li><li>CPF: %CPF%</li><li>Data de Nascimento: %data_nascimento%</li><li>RG: %RG%</li><li>\u00d3rg\u00e3o RG: %orgao%</li><li>Lota\u00e7\u00e3o: %lotacao%</li><li>Supervisor: %supervisor%</li><li>Data de in\u00edcio: %data_inicio%</li><li>Data fim: %data_fim%<br type=\"_moz\"></li><li>Email pessoal: %email_pessoal%<br type=\"_moz\"></li><li>Telefone pessoal: %telefone_pessoal%<br type=\"_moz\"></li></ul><p><br></p><p>Atenciosamente,</p><p>Gerencia de Servidores - Estagi\u00e1rios, Volunt\u00e1rios - Residentes</p>",
+        "description": null
+    }
+}
+]

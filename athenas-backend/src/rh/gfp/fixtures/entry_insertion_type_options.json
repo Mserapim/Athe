@@ -1,0 +1,122 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 3761,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "C\u00e1lculo Autom\u00e1tico",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o autom\u00e1tica",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3762,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "Manual",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o manual",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3763,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "Importa\u00e7\u00e3o",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o via importa\u00e7\u00e3o de arquivo",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3764,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "Gestor de Diferen\u00e7as",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o pelo Gestor de  Diferen\u00e7a",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3765,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "GCPP",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o via GCPP",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3770,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "Gestor de Prestador Evental",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o pelo Gestor de Prestador Eventual",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3771,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "Gestor de F\u00e9rias",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o pelo Gestor de F\u00e9rias",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3772,
+    "fields": {
+        "app_label": "gfp",
+        "name": "ENTRY_INSERTION_TYPE",
+        "label": "Exerc\u00edcio Cumulativo",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "gfp.ENTRY_INSERTION_TYPE",
+        "description": "Inser\u00e7\u00e3o pelo Exerc\u00edcio Cumulativo Consolidado",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

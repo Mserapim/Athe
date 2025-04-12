@@ -1,0 +1,73 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div>
+        <div><span class="bold">Portaria de instauração</span>: {{ ordinace.number }}</div>
+    </div>
+
+    <p class="paragraph-text">
+        <span class="space"></span>
+        {% if ordinace.execution_organ.responsavel.pessoa_fisica.sexo == 'M'  %}
+            O Promotor
+        {% else  %}
+            A Promotora
+        {% endif %}
+        de Justiça em exercicio na <span class="bold">{{ ordinace.execution_organ.nome }}</span>, considerando as informações extraídas do <span class="bold">Protocolo de Noticia de Fato número {{ ordinace.document_number }}</span> (em anexo), no uso de suas atribuições legais conferidas pelo art. 129, inc. III da Constituição e pelo art. 8º, § 1º, da Lei Ordinária 7.347, de 24 de julho de 1985 e legitimado no art. 1º, inc. IV c/c art. 5º inc. I, ambos do referido estatuto infraconstitucional, resolve instaurar o presente <span class="bold">{{ ordinace.type }}</span>, considerando como elementos que subsidiam a medida, o seguinte:
+    </p>
+
+    <ol class="list-numbered">
+        <li>
+            <span class="title bold">Origem : </span>
+            <p>Protocolo de Notícia de Fato número {{ ordinace.document_number }}.</p>
+        </li>
+        {% if ordinace.blokes %}
+        <li>
+            <span class="title bold">Investigados :</span>
+
+            <ul class="list-doted">
+            {% for bloke in ordinace.blokes %}
+                <li>{{ bloke }}</li>
+            {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+        <li>
+            <span class="title bold">Objeto do procedimento :</span>
+            <div class="paragraph-text">
+                {{ ordinace.object_of_proccess | safely }}
+            </div>
+        </li>
+        {% if ordinace.legalgrounds %}
+        <li>
+            <span class="title bold">Fundamentação Legal :</span>
+            <ul class="list-doted">
+            {% for legalground in ordinace.legalgrounds %}
+                <li>{{ legalground }}</li>
+            {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+        <li>
+            <span class="title bold">Diligências :</span>
+            <ol>
+            {% if ordinace.diligences %}
+            {% for diligence in ordinace.diligences %}
+                <li class="paragraph-text">
+                    <span class="numbered">{{ ordinace.section }}.{{ forloop.counter }}.</span>
+                    {{ diligence.observation | safely }}
+                </li>
+            {% endfor %}
+            {% else %}
+                <li>Ainda não foi pedida nenhuma diligencia.</li>
+            {% endif %}
+            </ol>
+        </li>
+    </ol>
+
+    <div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ ordinace.execution_organ.localidade.nome | city_name }}, {{ ordinace.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ ordinace.execution_organ.responsavel.pessoa_fisica }}</span></div>
+        <div><span style="font-size: 0.6em">{{ ordinace.execution_organ.nome }}</span></div>
+    </div>
+</div>

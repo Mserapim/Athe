@@ -1,0 +1,240 @@
+[
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 5,
+        "created_at": "2014-11-28T14:41:46.157",
+        "modified_at": "2016-06-27T18:02:59.836",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <div style=\"margin-bottom: 2em\">\n        <h2 class=\"title-1\" style=\"text-align:center;\">{{ attached.attached_title }}</h2>\n        <div class=\"paragraph-text\">\n            <div><strong>Resumo:</strong></div>\n            {{ attached.resume | safely }}\n        </div>\n\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Documentos apresentados</h3>\n            {% for attach in attached.attaches %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n        \t{% empty %}\n            \tNenhum documento anexado.\n            {% endfor %}\n        </div>\n    </div>\n</div>\n",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 1
+},
+{
+    "fields": {
+        "modified_by": 1,
+        "title": "Modelo 1",
+        "glosary": 2,
+        "created_at": "2014-11-28T14:42:31.215",
+        "modified_at": "2016-06-28T08:03:08.898",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}: {{ ordinace.number }}</h2>\n\n    <div class=\"paragraph-text\">\n\t\t{{ doc.consideration | safely }}\n    </div>\n\n    <ol class=\"list-numbered\">\n        <li>\n            <span class=\"title bold\">Origem : </span>\n            <p>Protocolo de Not\u00edcia de Fato n\u00famero {{ ordinace.document_number }}.</p>\n        </li>\n        {% if ordinace.blokes %}\n        <li>\n            <span class=\"title bold\">Investigados :</span>\n\n            <ul class=\"list-doted\">\n            {% for bloke in ordinace.blokes %}\n                <li>{{ bloke }}</li>\n            {% endfor %}\n            </ul>\n        </li>\n        {% endif %}\n        <li>\n            <span class=\"title bold\">Objeto do procedimento :</span>\n            <div class=\"paragraph-text\">\n                {{ ordinace.object_of_proccess | safely }}\n            </div>\n        </li>\n        {% if ordinace.legalgrounds %}\n        <li>\n            <span class=\"title bold\">Fundamenta\u00e7\u00e3o Legal :</span>\n            <ul class=\"list-doted\">\n            {% for legalground in ordinace.legalgrounds %}\n                <li>{{ legalground }}</li>\n            {% endfor %}\n            </ul>\n        </li>\n        {% endif %}\n        <li>\n            <span class=\"title bold\">Dilig\u00eancias :</span>\n            <ol>\n            {% if ordinace.diligences %}\n            {% for diligence in ordinace.diligences %}\n                <li class=\"paragraph-text\">\n                    <span class=\"numbered\">{{ ordinace.section }}.{{ forloop.counter }}.</span>\n                    {{ diligence.observation | safely }}\n                </li>\n            {% endfor %}\n            {% else %}\n                <li>Ainda n\u00e3o foi pedida nenhuma diligencia.</li>\n            {% endif %}\n            </ol>\n        </li>\n    </ol>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ ordinace.execution_organ.localidade.nome }}, {{ ordinace.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ ordinace.execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ ordinace.execution_organ.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 2
+},
+{
+    "fields": {
+        "modified_by": 1,
+        "title": "Modelo 1",
+        "glosary": 4,
+        "created_at": "2014-11-28T14:42:53.078",
+        "modified_at": "2016-06-28T08:07:37.654",
+        "created_by": 1,
+        "template": "{% extends \"judicial/lawsuit/base.html\" %}\n{% load judicialfilters %}\n\n{% block body %}\n<div class=\"field\">\n    <div class=\"column-two\">\n        <div class=\"label\">Protocolo :</div>\n        <div class=\"value\">{{ protocol.codigo }}</div>\n    </div>\n    \n    <div>{{ doc }}</div>\n\n    <div>\n        <div class=\"label\">Data :</div>\n        <div class=\"value\">{{ protocol.created_at | date:'d/m/Y H:i' }}</div>\n    </div>\n\n    <div>\n        <div class=\"label\">Interessado :</div>\n        <div class=\"value\">{{ protocol.interessado }}</div>\n    </div>\n\n    <div class=\"composite\">\n        <div class=\"label title\">Noticia de Fato :</div>\n        <div class=\"paragraph-text\">{{ protocol.resumo | safely }}</div>\n    </div>\n    {% if protocol.attachments.exists %}\n    <div class=\"composite\">\n        <div class=\"label title\">Anexos do Protocolo :</div>\n        <ul>\n        {% for attach in protocol.attachments.all %}\n            <li style=\"margin-bottom:0.5em\">\n                <a href=\"{{ attach.attach.permalink }}\" title=\"{{ attach.title }}\">{{ attach.title }}</a>\n                <div><small>URL: {{ attach.attach.complete_permalink }}</small></div>\n                <div><small>C\u00f3digo: {{ attach.attach.verify_code }}</small></div>\n            </li>\n        {% endfor %}\n        </ul>\n    </div>\n    <div style=\"border: 1px solid #000; font-size: 9pt; margin-top: 1.5em; padding: 3px 5px; background-color: #eee; text-align: justify; border-radius: 3px\">\n        Para validar os anexos voc\u00ea pode utilizar o c\u00f3digo de 32 digitos, para buscar o documento na base do\n        sistema, para isto acesse o endere\u00e7o: \n        <a href=\"https://athenas.mpto.mp.br/athenas/docsverify/verify/\" title=\"Verificador de documentos\">https://athenas.mpto.mp.br/athenas/docsverify/verify/</a>\n        ser\u00e1 devolvido uma c\u00f3pia do documento que se identifica com o c\u00f3digo informado.\n    </div>\n    {% endif %}\n</div>\n{% endblock %}",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 3
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 1,
+        "created_at": "2014-11-28T14:43:21.040",
+        "modified_at": "2016-06-27T18:00:45.794",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <div class=\"field\">\n        <div>\n            <div class=\"label\">Triagem:</div>\n            <div class=\"value\">{{ triage.number }}</div>\n        </div>\n\n        <div class=\"column-two\">\n            <div class=\"label\">Criado:</div>\n            <div class=\"value\">{{ created_at }}</div>\n        </div>\n\n        <div>\n            <div class=\"label\">Criado por:</div>\n            <div class=\"value\">{{ created_by }}</div>\n        </div>\n\n        {% if modified_at %}\n        <div class=\"column-two\">\n            <div class=\"label\">Modificado:</div>\n            <div class=\"value\">{{ modified_at }}</div>\n        </div>\n        {% endif %}\n\n        {% if modified_by %}\n        <div class=\"column-two\">\n            <div class=\"label\">Modificado por:</div>\n            <div class=\"value\">{{ modified_by }}</div>\n        </div>\n        {% endif %}\n\n        <div style=\"clear:both\"></div>\n    </div>\n\n    <div>\n        <h2 class=\"title-1 top-space-3\">Distribui\u00e7\u00e3o do Procedimento</h2>\n\n        {% if triage.parts %}\n            {% for part in triage.parts %}\n            <div class=\"distribution\">\n                <h3 class=\"location\">{{ part.title }}</h3>\n                <div class=\"info\">\n                    <div class=\"label\">Localidades :</div>\n                    {% if part.locations %}\n                    <div class=\"value\">\n                        <ul>\n                        {% for location in part.locations %}\n                            <li>{{ location.name }}</li>\n                        {% endfor %}\n                        </ul>\n                    </div>\n                    {% else %}\n                    <div>N\u00e3o foi indicada nenhuma localidade at\u00e9 o momento.</div>\n                    {% endif %}\n\n                    <div class=\"label\">\u00d3rg\u00e3os de Execu\u00e7\u00e3o no sorteio :</div>\n                    {% if part.concurrence %}\n                    <div class=\"value\">\n                        <ul>\n                        {% for tc in part.concurrence %}\n                            <li>\n                                {% if tc.incident_type == 2 %}\n                                <span style=\"font-weight:bold\">\n                                {% elif tc.incident_type == 3 %}\n                                <span style=\"text-decoration:line-through;\">\n                                {% else %}\n                                <span>\n                                {% endif %}\n                                    {{ tc.name }}\n                                </span>\n                                {% if tc.argumentation %}\n                                <div class=\"detail\">\n                                    <h3>Com {{ tc.incident }}</h3>\n                                    {{ tc.argumentation | safely }}\n                                </div>\n                                {% endif %}\n                            </li>\n                        {% endfor %}\n                        </ul>\n                    </div>\n                    {% else %}\n                    <div>N\u00e3o foi feita a busca por concorrencia at\u00e9 o momento.</div>\n                    {% endif %}\n\n\n                    <div class=\"label\">Distribuir para :</div>\n                    <div class=\"value\">\n                    {% if part.distributed %}\n                        <span class=\"bold\">{{ part.distributed.nome }}</span>\n                    {% else %}\n                        <span>Ainda n\u00e3o foi distribuido para nenhum \u00d3rg\u00e3o de Execu\u00e7\u00e3o.</span>\n                    {% endif %}\n                    </div>\n\n                    {% if part.effected_by %}\n                    <div>\n                        A triagem foi efetivada pelo servidor <span style=\"font-weight:bold\">{{ part.effected_by }}</span>\n                        na data <span style=\"font-weight:bold\">{{ part.effected_at }}</span>.\n                    </div>\n                    {% else %}\n                    <div style=\"color:red\">Esta triagem ainda n\u00e3o foi distribuido.</div>\n                    {% endif %}\n                </div>\n            </div>\n            {% endfor %}\n        {% else %}\n            <div class=\"distribution\">\n                <h3>Ainda n\u00e3o foi feita a divis\u00e3o dos assuntos.</h3>\n            </div>\n        {% endif %}\n    </div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 4
+},
+{
+    "fields": {
+        "modified_by": 1,
+        "title": "Modelo 1",
+        "glosary": 7,
+        "created_at": "2014-12-02T16:43:15.986",
+        "modified_at": "2016-06-28T08:02:48.751",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div><small>Noticia de Fato : {{ rejection.lawsuit.origin.codigo }} - {{ rejection.lawsuit.cache_number }}</small></div>\n\n    <div class=\"field\">\n        <div class=\"composite\">\n            <div class=\"paragraph-text\">{{ rejection.despatch | safely }}</div>\n        </div>\n    </div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ execution_organ.localidade.nome }}, {{ rejection.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ execution_organ.nome }}</span></div>\n    </div>\n</div>\n",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 5
+},
+{
+    "fields": {
+        "modified_by": 1,
+        "title": "Modelo 1",
+        "glosary": 6,
+        "created_at": "2014-12-10T08:03:22.630",
+        "modified_at": "2016-06-28T08:00:57.981",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <div><h2>Arquivamento por esta em outro Procedimento {% if rejection.other_lawsuit == 1 %}Extrajudicial{% else %}Judicial{% endif %}</h2></div>\n    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>\n\n    {% if rejection.other_lawsuit == 1 %}\n    <div class=\"paragraph-text\">\n        A Noticia de Fato com n\u00famero <span class=\"bold\">{{ doc.lawsuit.origin.codigo }}</span> j\u00e1 encontra-se sendo\n        investigado no Procedimento Extrajudicial <span class=\"bold\">{{ doc.other_lawsuit_number }}</span>.\n        {% if doc.despatch %}\n        {% if rejection.execution_organ.responsavel.pessoa_fisica.sexo == 'M' %}\n        O Promotor de Justi\u00e7a\n        {% else %}\n        A Promotora de Justi\u00e7a\n        {% endif %}\n        <span class=\"bold\">{{ rejection.execution_organ.responsavel.pessoa_fisica }}</span>\n        ainda fez a seguinte observa\u00e7\u00e3o quanto a Noticia de Fato:\n        {% endif %}\n    </div>\n    {% else %}\n    <div class=\"paragraph-text\">\n        A Noticia de Fato com n\u00famero <span class=\"bold\">{{ doc.lawsuit.origin.codigo }}</span> j\u00e1 encontra-se sendo\n        investigado no Procedimento Judicial <span class=\"bold\">{{ doc.other_lawsuit_number }}</span> que corre no\n        <span class=\"bold\">{{ doc.other_lawsuit_organ.nome }}</span>.\n        {% if doc.despatch %}\n        {% if rejection.execution_organ.responsavel.pessoa_fisica.sexo == 'M' %}\n        O Promotor de Justi\u00e7a\n        {% else %}\n        A Promotora de Justi\u00e7a\n        {% endif %}\n        <span class=\"bold\">{{ rejection.execution_organ.responsavel.pessoa_fisica }}</span>\n        ainda fez a seguinte observa\u00e7\u00e3o quanto a Noticia de Fato:\n        {% endif %}\n    </div>\n    {% endif %}\n\n    {% if doc.despatch %}\n    <div class=\"paragraph-text\">{{ doc.despatch | safely }}</div>\n    {% endif %}\n\n    <div class=\"paragraph-text\">\n        Desta forma a Noticia de Fato <span class=\"bold\">{{ doc.lawsuit.origin.codigo }}</span> passa a ser considerada arquivada\n        devendo o <span class=\"bold\">{{ doc.lawsuit.origin.interessado }}</span> acompanha o andamento da noticia de fato no procedimento\n        mencionado anteriormente.\n    </div>\n\n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n    \n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ rejection.execution_organ.localidade.nome }}, {{ rejection.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ rejection.execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ rejection.execution_organ.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 6
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 11,
+        "created_at": "2014-12-10T17:34:33.967",
+        "modified_at": "2016-06-27T18:03:08.819",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>\n\n    <div class=\"paragraph-text\">\n        O Procedimento Extrajudicial {{ doc.lawsuit.cache_number }} foi judicializado na {{ doc.court }} tendo o identificador\n        {{ doc.code }}.\n    </div>\n\n    {% if doc.observation %}\n    <div class=\"paragraph-text\">\n        {% if execution_organ.responsavel.pessoa_fisica.sexo == 'M'  %}\n            O Promotor\n        {% else  %}\n            A Promotora\n        {% endif %}\n        de Justi\u00e7a em exercicio na <span class=\"bold\">{{ execution_organ.nome }}</span>, ainda fez as seguintes considera\u00e7\u00f5es:\n    </div>\n    <div class=\"paragraph-text\">\n        {{ doc.observation | safely }}\n    </div>\n    {% endif %}\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ execution_organ.localidade.nome }}, {{ doc.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ execution_organ.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 7
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 10,
+        "created_at": "2014-12-10T17:35:08.200",
+        "modified_at": "2016-06-27T18:02:04.806",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n\n    <div class=\"paragraph-text\">{{ doc.despatch | safely }}</div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ execution_organ.localidade.nome }}, {{ doc.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ execution_organ.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 8
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 8,
+        "created_at": "2014-12-11T01:12:26.367",
+        "modified_at": "2016-06-27T18:02:47.820",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>\n\n    <div class=\"paragraph-text\">\n        {% if employee_signed_by.pessoa_fisica.sexo == 'M' %}\n        O Promotor de Justi\u00e7a\n        {% else %}\n        A Promotora de Justi\u00e7a\n        {% endif %}\n        <span class=\"bold\">{{ employee_signed_by.pessoa_fisica }}</span>\n        solicitou que a Noticia de Fato <span class=\"bold\">{{ doc.lawsuit.origin.codigo }}</span>,\n        seja encaminhada para o \u00f3rg\u00e3o de execu\u00e7\u00e3o <span class=\"bold\">{{ doc.department }}</span> deste Minist\u00e9rio Publico\n        {% if doc.text %}com a seguinte argumenta\u00e7\u00e3o:{% else %}.{% endif %}\n    </div>\n\n    <div class=\"paragraph-text\">{{ doc.text | safely }}</div>\n    <h2 style=\"color:red\">\n        {% if doc.conflict %}\n        *Conflito de Atribui\u00e7\u00e3o Identificado.\n        {% endif %}\n    </h2>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ local_signed.localidade.nome }}, {{ doc.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ employee_signed_by.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ local_signed.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 9
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 9,
+        "created_at": "2014-12-11T01:13:03.430",
+        "modified_at": "2016-06-27T18:02:55.820",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>\n\n    <div class=\"paragraph-text\">\n        {% if execution_organ.responsavel.pessoa_fisica.sexo == 'M' %}\n        O Promotor de Justi\u00e7a\n        {% else %}\n        A Promotora de Justi\u00e7a\n        {% endif %}\n        <span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span>\n        solicitou que a Noticia de Fato <span class=\"bold\">{{ doc.lawsuit.origin.codigo }}</span>,\n        seja encaminhada para o \u00f3rg\u00e3o <span class=\"bold\">{{ doc.get_organ_display }}</span> com a\n        seguinte argumenta\u00e7\u00e3o:\n    </div>\n\n    <div class=\"paragraph-text\">{{ doc.text | safely }}</div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ execution_organ.localidade.nome }}, {{ doc.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ execution_organ.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 10
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 18,
+        "created_at": "2014-12-11T01:31:22.453",
+        "modified_at": "2016-06-27T18:01:04.793",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n{% load humanize %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <div style=\"margin-bottom:2em\">\n        <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n        <div><small>{{ doc.description }}</small></div>\n        <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>\n    </div>\n\n    <div style=\"margin-bottom:2em\">\n        <h2>Considera\u00e7\u00f5es</h2>\n        <div class=\"paragraph-text\">{{ doc.considerations | safely }}</div>\n    </div>\n\n    <div class=\"field\">\n        <h2>Clausulas</h2>\n        {% for activity in doc.activities_tac.filter %}\n        <div>\n            <div class=\"paragraph-text\">\n                <div style=\"float:left; margin-right:0.2em\">\n                    <span class=\"bold\">Clausula {{ forloop.counter }}\u00aa</span> -\n                </div>\n                {{ activity.description | safely }}\n                <div style=\"margin: 1em 1em 0 1em\">\n                    Paragrafo \u00fanico - {{ activity.responsible_activity.filter | join:', ' }},\n                    fica sujeito ao pagamento de multa de R$ {{ activity.fine_value | intcomma }}\n                    em caso de descumprimento da presente cl\u00e1usula.\n                </div>\n            </div>\n        </div>\n        {% endfor %}\n    </div>\n\n    <div class=\"paragraph-text\">{{ doc.text | safely }}</div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding: 4em 0\">{{ execution_organ.localidade.nome }}, {{ doc.modified_at | date:'d \\d\\e F \\d\\e Y' }}</div>\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span style=\"font-size: 0.6em\">{{ execution_organ.nome }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 11
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 12,
+        "created_at": "2015-04-16T14:41:46.602",
+        "modified_at": "2016-06-27T18:03:33.851",
+        "created_by": 1,
+        "template": "<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <div>\n    \t<h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    </div>\n  \n    <div class=\"field\">\n        <div class=\"label\"> \n        \t<span style=\"text-decoration: underline;\"> PROCEDIMENTO PRINCIPAL: </span>\n        </div>\n        <div class=\"value\">\n\t        <ol class='list-numbered'>\n\t        \t<li>\n\t        \t\t<div class=\"label\"> \n\t        \t\t\t{{ doc.lawsuit_connected.get_type_lawsuit_display }} - {{ doc.lawsuit_connected }}\n\t        \t\t</div>\n\t        \t</li>\n\t        </ol>\n        </div>\n\t    \n        <div class=\"label\">\n        \t<span style=\"text-decoration: underline;\"> PROCEDIMENTOS RELACIONADOS: </span>\n        </div>\n    \t<ol class='list-numbered'>\n\t\t\t{% for connection in doc.lawsuit_connected.connections.all %}\n\t\t\t    <li>\n\t\t\t    \t<div class=\"label\"> \n\t\t\t    \t\t{{ connection.lawsuit.get_type_lawsuit_display }} - {{ connection.lawsuit }} \n\t\t\t    \t</div>\n\t\t\t    \t<div class=\"paragraph-text\"> \n\t\t\t    \t\t{{ connection.text | safe }}  \n\t\t\t    \t</div>\n\t\t\t    </li>\n\t\t\t{% endfor %}\n\t\t</ol>\n    </div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    {% if doc.read_only %}\n    \t<div style=\"text-align:center; padding-top: 2.5em\">\n\t        <div style=\"padding: 4em 0\">\n\t        \t{{ execution_organ.localidade.nome }}, {{ doc.signed | date:'d \\d\\e F \\d\\e Y' }}\n\t        </div>\n\t        <div>\n\t        \t<span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span>\n\t        </div>\n\t        <div>\n\t        \t<span style=\"font-size: 0.6em\">{{ execution_organ.nome }}</span>\n\t        </div>\n    \t</div>\n    {% else %}\n\t    <div class=\"paragraph-text\">\n\t        <h2 style=\"color:red\">Observa\u00e7\u00e3o</h2>\n\t        <p>\n\t            Este documento n\u00e3o foi assinado at\u00e9 o momento. Para que o mesmo tenha o seu efeito \u00e9\n\t            necess\u00e1rio que o mesmo seja assiando pelo responsavel pelo \u00d3rg\u00e3o de Execu\u00e7\u00e3o\n\t            <span class=\"bold\">{{ execution_organ }}</span>.\n\t        </p>\n\t    </div>\n    {% endif %}\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 12
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "model 1",
+        "glosary": 20,
+        "created_at": "2015-05-06T09:56:13.737",
+        "modified_at": "2016-06-27T18:02:31.821",
+        "created_by": 1,
+        "template": "{% load judicialfilters %}\n\n{% block body-header %}\n    <div>\n        <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }} {{ convocation.cached_number }}</h2>\n        <small>Noticia de Fato: {{ doc.lawsuit.origin.codigo }} - Procedimento: {{ doc.lawsuit.cache_number }}</small>\n    </div>\n{% endblock %}\n\n{% block body-content %}\n\t<div class=\"paragraph-text\">\n        {{ convocation.convocation | safely }}\n\t</div>\n\n\t{% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n\t{% if doc.signed_by %}\n\t\t{% with modified_at=doc.signed_at %}\n\t\t{% include \"judicial/lawsuit/owner_sign.html\" %}\n\t\t{% endwith %}\n\t{% endif %}\n{% endblock %}\n",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 13
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 14,
+        "created_at": "2016-06-24T09:00:15.393",
+        "modified_at": "2016-06-27T18:00:54.810",
+        "created_by": 1076,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div>\n        <small>\n            Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}\n        </small>\n    </div>\n\n    <div class=\"paragraph-text\">\n        Aos {{ doc.modified_at | date:'d' }} dias do m\u00eas de {{ doc.modified_at | date:'F' }} de \n        {{ doc.modified_at | date:'Y' }}, \u00e0s {{ doc.modified_at | date:'g:i' }} horas, da Cidade \n        de {{ execution_organ.localidade.nome|title }}, {{ execution_organ.localidade.estado|title }}, \n        {{ execution_organ.nome }}, onde se acha \n        presente o Excelent\u00edssimo Promotor (a) de Justi\u00e7a, comigo, secret\u00e1rio de seu cargo, a\u00ed \n        compareceu {{ doc.interested }} (nome e qualifica\u00e7\u00e3o). Inquirido, respondeu QUE:\n        \n        <div style=\"padding:0.5em;font-style: italic;\">{{ doc.notice|safely }}</div>\n        \n        Nada mais disse nem lhe foi perguntado. Lido e achado conforme, vai devidamente assinado pelo \n        Presidente do Inqu\u00e9rito Civil, pelo depoente e por mim {{ doc.modified_by.servidor.pessoa_fisica }}, \n        que o digitei.\n    </div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        <div style=\"padding-top: 3em\">\n            _________________________________________________\n            <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n    \t\t<div><span>{{ execution_organ.nome|title }}</span></div>\n        </div>\n        <div style=\"padding-top: 3em\">\n            _________________________________________________\n            <div><span class=\"bold\">{{ doc.interested }}</span></div>\n            <div><span>Declarante</span></div>\n        </div>\n        <div style=\"padding-top: 3em\">\n            _________________________________________________\n            <div><span class=\"bold\">{{ doc.modified_by.servidor.pessoa_fisica }}</span></div>\n            <div><span>Secret\u00e1rio</span></div>\n        </div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 14
+},
+{
+    "fields": {
+        "modified_by": 1,
+        "title": "Modelo 1",
+        "glosary": 16,
+        "created_at": "2016-06-24T13:23:45.133",
+        "modified_at": "2016-06-28T08:02:56.768",
+        "created_by": 1076,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div>\n        <small>\n            Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}\n        </small>\n    </div>\n\n    <div class=\"paragraph-text\">\n        <p><strong>Justificativa:</strong></p>\n       {{ doc.justification|safely }}\n    </div>\n\n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        _________________________________________________\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span>{{ execution_organ.nome|title }}</span></div>\n    </div>\n</div>",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 15
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 17,
+        "created_at": "2016-06-24T13:35:35.885",
+        "modified_at": "2016-06-27T18:03:15.827",
+        "created_by": 1076,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n    <div>\n        <small>\n            Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}\n        </small>\n    </div>\n\n    <div class=\"paragraph-text\">\n        <p><strong>Justificativa:</strong></p>\n       {{ doc.justification|safely }}\n    </div>\n    \n    {% if doc.attaches.filter %}\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n            {% endfor %}\n        </div>\n    {% endif %}\n\n    <div style=\"text-align:center; padding-top: 2.5em\">\n        _________________________________________________\n        <div><span class=\"bold\">{{ execution_organ.responsavel.pessoa_fisica }}</span></div>\n        <div><span>{{ execution_organ.nome|title }}</span></div>\n    </div>\n</div>\t",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 16
+},
+{
+    "fields": {
+        "modified_by": 1076,
+        "title": "Modelo 1",
+        "glosary": 23,
+        "created_at": "2016-06-24T14:06:26.567",
+        "modified_at": "2016-06-27T18:02:37.812",
+        "created_by": 1076,
+        "template": "{% load judicialfilters %}\n\n<div class=\"papper\">\n    <div>{% include \"judicial/lawsuit/header.html\" %}</div>\n\n    <div style=\"margin-bottom: 2em\">\n        <h2 class=\"title-1\" style=\"text-align:center;\">{{ doc.codename }}</h2>\n        <div class=\"paragraph-text\">\n            <div><strong>Devolvido para:</strong></div>\n            {{ doc.to | safely }}\n        </div>\n\n        <div style=\"margin: 2em 0\">\n            <h3 style=\"margin-bottom:0.7em\">Anexos</h3>\n            {% for attach in doc.attaches.filter %}\n                <div style=\"padding:0.5em 0\">\n                    <a href=\"{{ attach.file_descriptor.permalink }}\" title=\"{{ attach.title }}\">\n                        {{ attach.file_descriptor.filename }}\n                    </a>\n                    <div><small>URL: http://athenas.developer.ti{{ attach.file_descriptor.permalink }}</small></div>\n                    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>\n                </div>\n        \t{% empty %}\n            \tNenhum documento anexado.\n            {% endfor %}\n        </div>\n    </div>\n</div>\n",
+        "active": true
+    },
+    "model": "judicial.glosarytemplate",
+    "pk": 17
+}
+]

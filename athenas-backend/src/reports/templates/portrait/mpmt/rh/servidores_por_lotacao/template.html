@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <title>Servidor por Lotação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header, .footer {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .lotacao {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .lotacao:nth-child(even) {
+            background-color: #C0C0C0;
+        }
+        .lotacao:nth-child(odd) {
+            background-color: #FFFFFF;
+        }
+        .servidores {
+            margin-left: 20px;
+            padding: 5px;
+        }
+        .servidor {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    {% include 'portrait/header/header.html' %}
+
+    <!-- Content -->
+    <div class="content">
+        {% for lotacao in lotacoes %}
+            <div class="lotacao">
+                <div class="lotacao-header">
+                    <strong>Lotação:</strong> {{ lotacao.serv_resp_matricula }} - {{ lotacao.serv_resp }} / {{ lotacao.nome }}
+                </div>
+                <div class="servidores">
+                    <p><strong>Servidores:</strong></p>
+                    {% for servidor in lotacao.servidores %}
+                        <div class="servidor">{{ servidor }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

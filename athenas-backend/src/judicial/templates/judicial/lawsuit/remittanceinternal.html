@@ -1,0 +1,33 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Remessa interna dos Autos</h2></div>
+    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+
+    <div class="paragraph-text">
+        {% if employee_signed_by.pessoa_fisica.sexo == 'M' %}
+        O Promotor de Justiça
+        {% else %}
+        A Promotora de Justiça
+        {% endif %}
+        <span class="bold">{{ employee_signed_by.pessoa_fisica }}</span>
+        solicitou que a Noticia de Fato <span class="bold">{{ doc.lawsuit.origin.codigo }}</span>,
+        seja encaminhada para o órgão de execução <span class="bold">{{ doc.department }}</span> deste Ministério Publico
+        {% if doc.text %}com a seguinte argumentação:{% else %}.{% endif %}
+    </div>
+
+    <div class="paragraph-text">{{ doc.text | safely }}</div>
+    <h2 style="color:red">
+        {% if doc.conflict %}
+        *Conflito de Atribuição Identificado.
+        {% endif %}
+    </h2>
+
+
+    <div style="text-align:center; padding-top: 2.5em">
+        <div style="padding: 4em 0">{{ local_signed.localidade.nome | city_name }}, {{ doc.modified_at | date:'d \d\e F \d\e Y' }}</div>
+        <div><span class="bold">{{ employee_signed_by.pessoa_fisica }}</span></div>
+        <div><span style="font-size: 0.6em">{{ local_signed.nome }}</span></div>
+    </div>
+</div>

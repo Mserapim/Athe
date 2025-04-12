@@ -1,0 +1,28 @@
+- 2024.11.12:
+    - CARD: ATS-5866 e ATS-5867 - MR: 1484 - [BACK] - Diárias - Não considerar viagens canceladas ou indeferidas + Verificar erro ao exibir limite-diárias de viagem de motorista
+- 2024.11.13:
+    - CARD: ATS-5690 - MR: 1478 - [back] - Corrigir cálculo de auxílio creche retroativo
+    - CARD: ATS-5854 - MR: 1485 - [back] - Corrigir função que cria GCPP após cadastro de Aux. Creche
+    - CARD: ATS-5605 - MR: 1488 - [back] - Folha ponto - Ajustar valor do saldo negativo
+    - CARD: ATS-5907 - MR: 1486 - [Back - Diarias] Script para apagar as viagens Existentes no sistemas 
+    - CARD: ATS-5856 e ATS-5859 - MR: 1489 - [BACK] flag de ativo em servidor e filtro por matrícula
+    - CARD: ATS-5862 - MR: 1490 - [BACK] - Folha ponto - Retornar marcações ignoradas
+    - CARD: ATS-5901 e ATS-5902 - MR: 1493 - [BACK] Adicionar condicional, ajuste em limite diárias e em api de destinos
+- 2024.11.14:
+    - CARD: ATS-5872, ATS-5873 - MR: 1495 - [bacK] Teletrabalho - Cria estrutura de saldo devedor
+    - CARD: ATS-5874 - MR: 1496 - [back] Teletrabalho - Criar e retornar campos "meta do mês", "meta informada" e "saldo devedor" nas api's
+- 2024.11.18:
+    - CARD: ATS-5922 - MR: 1499 - [Back] Ajustar a funcionalidade de minhas pendencias do diarias para direcionamento para o modulo diarias 
+    - CARD: ATS-5905 - MR: 1501 - [BACK] criar opção de informação / link para o manual em cada etapa
+    - CARD: ATS-5858 - MR: 1503 - [BACK] - Folha ponto - Alterar respostas de apis de folha ponto
+    - CARD: ATS-5928 - MR: 1502 - [BACK] diária que não é excedente esta marcada como excedente
+- 2024.11.19:
+    - CARD: ATS-5942 - MR: 1505 - [Back] Correção da quebra da task de geração da os consolidada para envio do email das diárias excedentes
+- 2024.11.22:
+    - CARD: ATS-5600,5601,5603 - MR: 1506 - [back] Gestor envio do ponto - Criar relatório em pdf, xls e csv
+    - CARD: ATS-5953 - MR: 1507 - não aparece pro chefe imediato quando é externo sem vinculo (EXT) 
+    - CARD: ATS-5863 - MR: 1508 - [BACK] - Folha ponto - Considerar feriado municipal em folha ponto
+- 2024.11.25:
+    - CARD: ATS-5951 - MR: 1510 - ajuste em limite diárias e em fluxos
+    - CARD: ATS-5986 - MR: 1511 - [Back] Ajustes Diárias para publicação
+    - CARD: ATS-5913 - MR: 1512 - [back] - Ajustar meta mês quando tem dois envios de planos diferentes no mês

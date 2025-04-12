@@ -1,0 +1,32 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 3773,
+    "fields": {
+        "app_label": "engine",
+        "name": "GFP_NOME_PERFIL_LIMITE_ACESSO",
+        "label": "mpmt-perfil-dgp-folha-pagamento-admin",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "engine.GFP_NOME_PERFIL_LIMITE_ACESSO",
+        "description": "Nome do Gestor de Grupo de Usu\u00e1rio para acesso ao GFP",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3774,
+    "fields": {
+        "app_label": "engine",
+        "name": "GFP_NOME_MENU_LIMITE_ACESSO",
+        "label": "mpmt-menu-dgp-folha-pagamento-admin",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "engine.GFP_NOME_MENU_LIMITE_ACESSO",
+        "description": "Nome da Permiss\u00e3o de Funcionalidades para acesso ao GFP",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

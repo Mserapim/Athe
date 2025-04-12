@@ -1,0 +1,38 @@
+[
+{
+    "pk": null, 
+    "model": "engine.controller", 
+    "fields": {
+        "application": [
+            "EPAD"
+        ], 
+        "controller": "EpadProcesso", 
+        "title": "Caixa de Entrada", 
+        "icon": ""
+    }
+},
+{
+    "pk": null, 
+    "model": "engine.controller", 
+    "fields": {
+        "application": [
+            "EPAD"
+        ], 
+        "controller": "EpadProcessoAdmin", 
+        "title": "Gerenciador de Processos", 
+        "icon": "athenas-0519.png"
+    }
+},
+{
+    "pk": null, 
+    "model": "engine.controller", 
+    "fields": {
+        "application": [
+            "EPAD"
+        ], 
+        "controller": "EpadProcessoComum", 
+        "title": "Consulta de Processos", 
+        "icon": "athenas-0367.png"
+    }
+}
+]

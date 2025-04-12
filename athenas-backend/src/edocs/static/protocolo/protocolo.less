@@ -1,0 +1,179 @@
+//out: protocolo.css, compress: true
+
+.edoc-row {
+    .edoc-iconset {
+        width: 38px;
+        height: 80px;
+        float: left;
+        margin-right: 5px;
+
+        div {
+            margin-top: 3px;
+            float: left;
+        }
+    }
+
+    .edoc-item {
+        padding-right: 45px;
+
+        .inline-with-crop {
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        .subject {
+            line-height: 1.8em;
+            font-weight: bold;
+        }
+
+        .two-column {
+            line-height: 1.8em;
+
+            .one {
+                width: 50%;
+                float: left;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .two {
+                display: inline-block;
+                width: 50%;
+                text-align: right;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.legal-sign {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #000;
+    background-color: #fff;
+
+    h2 {
+        margin-bottom: 1.5em;
+    }
+
+    .sign-content {
+        display: table !important;
+        width: 100% !important;
+        min-width: 640px;
+        font-size: 0.7em;
+        margin-bottom: 1.5em;
+        border: 1px solid #000 !important;
+        border-radius: 3px;
+
+        div {
+            display: inline-table !important;
+        }
+
+        .sign-content-qrcode {
+            width: 118px;
+            height: 114px;
+            float: left;
+        }
+
+        .sign-content-legal {
+            width: 230px;
+            height: 114px;
+            border-right: 1px solid #000 !important;
+        }
+
+        .sign-content-person {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #000 !important;
+            height: 114px;
+
+            div {
+                min-width: 510px !important;
+                display: block !important;
+                margin: 9px 0 5px 10px;
+                width: 510px;
+
+                strong {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.list-attachment {
+    margin-top: 1.0em;
+
+    li {
+        display: block !important !important;
+
+
+        div {
+            width: 100% !important;
+        }
+    }
+}
+
+.papper-content {
+    .edoc-moviment-content {
+        margin-top: 1em;
+        margin-bottom: 2.5em;
+        border-bottom: 1px dashed #000 !important;
+
+        .opinion {
+            width: 100%;
+            margin-top: 1.5em;
+
+            div.paragraph-text {
+                width: 100%;
+                padding-top: 0.5em;
+                padding-bottom: 1em;
+                font-size: 1em;
+            }
+        }
+
+        table {
+            width:100%;
+            text-align: justify;
+            font-size: 0.75rem;
+
+            td, th {
+                font-weight: normal;
+                vertical-align: top;
+                padding: 0.2rem;
+            }
+
+            thead {
+                th {
+                    font-weight: bold;
+                }
+            }
+
+            tbody.small {
+                    font-size: 0.5625rem;
+            }
+
+        }
+    }
+}
+
+.protocol-notify-container * {
+    padding: 6px;
+}
+
+.edoc-selected {
+    background-color: #efffe7;
+    padding-left: 2px;
+    padding-right: 2px;
+}

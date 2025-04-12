@@ -1,0 +1,46 @@
+#
+# Este arquivo não deve ser interpretado como um fonte do projeto o papel dele
+# é ser a template utilizada pelo metodo __router_build_runtime_source__ utilizado
+# para gerar código python.
+#
+from time import time as x_time
+from django.conf import settings
+from contrib.utils import getLogger
+
+from contrib import controller
+{% if controllers %}{% for module in controllers %}from {{ module }} import *
+{% endfor %} {% endif %}
+
+ERROR = False
+ERROR_EXCEPTION = None
+ERROR_TRACEBACK = None
+EXPIRE_AT_BROWSER_CLOSE = getattr(settings, 'SESSION_EXPIRE_AT_BROWSER_CLOSE', False)
+
+log = getLogger(__name__)
+
+ctr = {{ controller }}(request, response, '{{ response_format }}')
+if isinstance(ctr, controller.DefaultController):
+    autorized = False
+    type = 'TEXT'
+
+    if getattr(ctr.{{ action }}, '__update_timeout_session__', True):
+        log.info('{{ controller }}.{{ action }} update timeout session.')
+        request.session.set_expiry(getattr(settings, 'TIMEOUT_SESSION', 1200))
+    else:
+        log.info('{{ controller }}.{{ action }} not update timeout session.')
+
+    if getattr(ctr.{{ action }}, '_is_public', False) or request.user.is_active:
+        t_start = x_time()
+        ctr.{{ action }}({{ args | safe }})
+        t_end = x_time()
+        ctr.response['Response-Time'] = '%0.3fms' % ((t_end - t_start) * 1000.0)
+    else:
+        ctr = Application(request, response)
+        ctr.un_autorized((type,))
+
+    response = getattr(ctr, 'fb_response', ctr.response)
+else:
+    response['Content-Type'] = 'text/plain'
+    response.write(u'O Controlador especificado não é valido.\n')
+    response.write(u'Controller: {{ controller }}\n')
+    response.write(u'Type: %s' % type(ctr))

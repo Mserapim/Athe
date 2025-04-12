@@ -1,0 +1,320 @@
+[
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-triage",
+        "legal_classification": null,
+        "title": "Triagem do Procedimento",
+        "classification_type": null,
+        "allowed_for": [
+            2
+        ],
+        "app_label": "judicial",
+        "model_name": "triage"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-investigation",
+        "legal_classification": null,
+        "title": "Portaria de Instaura\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "ordinace"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-suplement-ordinace",
+        "legal_classification": null,
+        "title": "Suplementa\u00e7\u00e3o de Port\u00e1ria de Instaura\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "supplementordinace"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-denunciation",
+        "legal_classification": null,
+        "title": "Protocolo de Noticia de Fato",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "denunciation"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-attached",
+        "legal_classification": null,
+        "title": "Despacho de Juntada de Documentos",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "attacheddocument"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-rejection-link-other",
+        "legal_classification": null,
+        "title": "Andamento em outro Procedimento",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "judicial",
+        "model_name": "rejectionlinkother"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-rejection-fact",
+        "legal_classification": null,
+        "title": "Indeferimento da Noticia de Fato",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "rejectionfact"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-remittance-internal",
+        "legal_classification": null,
+        "title": "Despacho de Remessa Interna dos Autos",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "remittanceinternal"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-remittance-external",
+        "legal_classification": null,
+        "title": "Despacho de Remessa Externa dos Autos",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "remittanceexternal"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-uknow",
+        "legal_classification": null,
+        "title": "Promo\u00e7\u00e3o de Arquivamento",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "archivement"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-uknow",
+        "legal_classification": null,
+        "title": "Despacho de Judicializa\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "judicialization"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-rejection-link-other",
+        "legal_classification": null,
+        "title": "Conex\u00f5es entre Procedimentos",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "connectionlawsuit"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-dilation-period",
+        "legal_classification": null,
+        "title": "Dila\u00e7\u00e3o de Prazo",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "dilationperiod"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-denunciation",
+        "legal_classification": null,
+        "title": "Termo de Declara\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "assessmentnoticeoffice"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-denunciation",
+        "legal_classification": null,
+        "title": "Investiga\u00e7\u00e3o preliminar dos Fatos",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "preinvestigationfact"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-devolution-recommendation",
+        "legal_classification": null,
+        "title": "Desmembramento de Procedimento",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "dismembermentprocess"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-uknow",
+        "legal_classification": null,
+        "title": "Despacho de Dilig\u00eancias Adicionais",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "judicial",
+        "model_name": "additionaldiligence"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-conduct-term",
+        "legal_classification": null,
+        "title": "Termo de Ajuste de Conduta",
+        "classification_type": null,
+        "allowed_for": [
+            3
+        ],
+        "app_label": "tac",
+        "model_name": "managementtac"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-council icon-judicial-rapporteur-distribution",
+        "legal_classification": null,
+        "title": "Relatoria",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "distributionrapporteur"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "",
+        "legal_classification": null,
+        "title": "Edital de convoca\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "convocationnotice"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-council icon-judicial-rapporteur-document",
+        "legal_classification": null,
+        "title": "Relat\u00f3rio",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "rapporteurdocument"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-council icon-judicial-colegial-decision",
+        "legal_classification": null,
+        "title": "Decis\u00e3o Colegiada",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "colegialdecision"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-devolution-recommendation",
+        "legal_classification": null,
+        "title": "Devoluca\u00e7\u00e3o com Recomenda\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "devolutionrecommendation"
+    },
+    "model": "judicial.glosary"
+},
+{
+    "fields": {
+        "icon_class": "icon-judicial icon-ejud-glosary-uknow",
+        "legal_classification": null,
+        "title": "Indica\u00e7\u00e3o de outro Org\u00e3o de Execu\u00e7\u00e3o",
+        "classification_type": null,
+        "allowed_for": [],
+        "app_label": "council",
+        "model_name": "switchexecutionorgan"
+    },
+    "model": "judicial.glosary"
+}
+]

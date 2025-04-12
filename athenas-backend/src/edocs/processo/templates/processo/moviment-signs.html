@@ -1,0 +1,5 @@
+<div class="legal-sign">
+    {% for sign in moviment.legal_signs.all %}
+        {% include "processo/sign.html" %}
+    {% endfor %}
+</div>

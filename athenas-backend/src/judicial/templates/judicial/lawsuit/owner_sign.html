@@ -1,0 +1,7 @@
+{% load judicialfilters %}
+<div style="text-align:center; padding-top: 2.5em">
+    <div style="padding: 4em 0">{{ execution_organ.localidade.nome | city_name }}, {{ modified_at | date:'d \d\e F \d\e Y'  | lower}}</div>
+    <div><span style="font-size: 0.6em">Documento assinado por meio eletrônico</span></div>
+    <div><span class="bold">{{ doc.signed_by.servidor.pessoa_fisica }}</span></div>
+    <div><span style="font-size: 0.6em">{{ execution_organ.nome }}</span></div>
+</div>

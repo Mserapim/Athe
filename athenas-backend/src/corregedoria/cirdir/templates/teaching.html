@@ -1,0 +1,59 @@
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+          <tr><td style="padding: 5px; background-color: #c0c0c0;" ><b>DOCÊNCIA</b></td></tr>
+      </table>
+      <div style="padding-top: 1em; ">
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Instituição: <b>{{ teaching.institution.razao_social }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Local: <b> {{ teaching.institution.county }} </b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Disciplina: <b>{{ teaching.discipline.name }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Horários:
+        </div>
+        <div style="padding-top: 0.25em; padding-left: 1em; padding-bottom: 0.25em; font-size: 10px; ">
+          <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+              <tr style="background-color: #c0c0c0; text-align: center;">
+                <td width=30% style='padding: 2px;' ><b>Tipo</b></td>
+                <td width=40% style='padding: 2px;' ><b>Dia da Semana/Data</b></td>
+                <td width=40% style='padding: 2px;' ><b>Horário</b></td>
+              </tr>
+              {% if teaching.schedule %}
+                {% for data in teaching.schedule.all %}
+                  <tr>
+                      <td style='padding: 2px; text-align: center; ' >{{ data.get_type_schedule_display.upper }}</td>
+                      <td style='padding: 2px; padding-left: 5px;' > {% if data.date_module %} {{ data.date_module | date:'d/m/Y' }} {% else %} {{ data.get_day_week_display.upper }} {% endif %} </td>
+                      <td style='padding: 2px; text-align: center; ' >{{ data.start_time | safely }} - {{ data.end_time | safely  }}</td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+          </table>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Carga Horária: <b>{{ teaching.work_hours }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Data de Início: <b>{{ teaching.start_date | date:'d/m/Y' }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Data de Término: <b>{{ teaching.end_date | date:'d/m/Y' }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Semestre: <b>{{ teaching.get_period_display.upper }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          - Modalidade: <b>{{ teaching.get_modality_display.upper }}</b>
+        </div>
+        <div style="padding-top: 0.25em; padding-bottom: 0.25em; ">
+          [<b> {% if teaching.authorization_teaching == True %} X {% else %}   {%endif%} </b>] Possui autorização do CSMP.
+        </div>
+      </div>
+
+    {% endblock %}
+</div>

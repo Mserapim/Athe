@@ -1,0 +1,20 @@
+[
+{
+    "model": "standard.item",
+    "fields": {
+        "configuration": 3,
+        "key": "gratifications_vacation_servers",
+        "type_of": 3,
+        "value": "03100,01119,02400"
+    }
+},
+{
+    "model": "standard.item",
+    "fields": {
+        "configuration": 3,
+        "key": "gratifications_vacation_servers_media",
+        "type_of": 3,
+        "value": "05200,10500"
+    }
+}
+]

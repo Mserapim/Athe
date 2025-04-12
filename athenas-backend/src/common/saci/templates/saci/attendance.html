@@ -1,0 +1,58 @@
+{% extends "saci/base_generic.html" %}
+
+<div class="composite">
+    {% block protocol %}
+    <div class="label title">
+        <p>
+        {% if instance.protocol %}
+            <strong>Protocolo: </strong>{{ instance.protocol.codigo }}
+        {% else %}
+            <strong>Não Protocolado</strong>
+        {% endif %}
+        </p>
+
+        <p>
+        {% block subject %}
+            <strong>Assunto: </strong>{{ instance.subject }}
+        {% endblock %}
+        </p>
+
+        <p style="margin-top: 1em">
+            <strong>Nível de acesso: </strong>
+            {% if instance.attendance_control and instance.attendance_control.control_type %}
+                {{ instance.attendance_control.control_type.title }}
+            {% else %}
+                Público
+            {% endif %}
+        </p>
+
+        {% if instance.attendance_control and instance.attendance_control.control_type %}
+        <p>
+            <strong>Hipótese legal: </strong>
+            {% if instance.attendance_control.legal_prerogative %}
+                {{ instance.attendance_control.legal_prerogative.title }}
+            {% else %}
+                Não informada
+            {% endif %}
+        </p>
+        {% endif %}
+    </div>
+    {% endblock %}
+
+    {% block content %}
+        {{ instance.content | safe }}
+    {% endblock %}
+</div>
+
+{% block sign %}
+    {% if instance.signed_by %}
+        {% include "saci/parts/sign.html" %}
+    {% endif %}
+{% endblock %}
+
+{% block aware %}
+    {% if instance.competence_others and instance.signed_by %}
+        {% include "saci/parts/aware.html" %}
+    {% endif %}
+{% endblock %}
+

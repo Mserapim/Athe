@@ -1,0 +1,139 @@
+{% load brmasks %}
+{% load l10n %}
+{% localize on %}
+
+<p style="text-align: center;"><b>REQUISI&Ccedil;&Atilde;O DE FORNECIMENTO</b></p>
+
+<p>ATA DE REGISTRO DE PREÇO NÚMERO: {{ instance.requisition_number }}</p>
+
+<p>{{ instance.bidding_type }} NÚMERO: {{ instance.bid_number }}</p>
+
+<p>REQUISIÇÃO DE FORNECIMENTO NÚMERO: {{ instance.solicitation_number }}</p>
+
+<p>FORNECEDOR: {{ instance.supplier }}</p>
+
+<p>CNPJ: {{ instance.cnpj_fornecedor | cnpj}}</p>
+
+<p>&nbsp;</p>
+
+<p><b>CL&Aacute;USULA PRIMEIRA - DO OBJETO</b></p>
+
+<p><b>1.1.</b>&nbsp;A presente Requisi&ccedil;&atilde;o de Fornecimento tem
+    por objeto a entrega do(s) seguinte(s) produto(s), conforme
+    especifica&ccedil;&otilde;es abaixo:</p>
+
+
+{% if instance.show_items_table %}
+    <br>
+    <table border="1" cellpadding="0" cellspacing="0" style="width:90%" align="center">
+            <thead>
+                <tr>
+                    <th scope="col"><b>ITEM</b></th>
+                    {% if instance.show_line_column %}
+                        <th scope="col"><b>LINHA</b></th>
+                    {% endif %}
+                    <th scope="col">ESPECIFICA&Ccedil;&Atilde;O</th>
+                    {% if instance.show_brand %}
+                        <th scope="col">MARCA / MODELO</th>
+                    {% endif %}
+                    <th scope="col">UN</th>
+                    <th scope="col">QT</th>
+                    <th scope="col">VALOR UNIT. (R$)</th>
+                    <th scope="col">VALOR TOTAL (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in instance.items %}
+                    <tr>
+                        <td style="text-align: center;">{{ item.group }}</td>
+                        {% if instance.show_line_column %}
+                            <td style="text-align: center;">{{ item.line }}</td>
+                        {% endif %}
+                        <td>
+                            {{ item.description | striptags }} {{ item.complementary | striptags }}
+                        </td>
+                        {% if instance.show_brand %}
+                            <td style="text-align: center;">{{ item.brand }}</td>
+                        {% endif %}
+                        <td style="text-align: center;">{{ item.unit_measure }}</td>
+                        <td style="text-align: center;">{{ item.normalized_quantity }}</td>
+                        <td style="text-align: center;">{{ item.unitary_value}}</td>
+                        <td style="text-align: center;"> {{ item.total}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+    </table>
+{% endif %}
+
+
+{% if instance.show_groups_table %}
+<br>
+    <table border="1" cellpadding="0" cellspacing="0" style="width:90%" align="center">
+            <thead>
+                <tr>
+                    <th scope="col"><b>GRUPO</b></th>
+                    <th scope="col"><b>LINHA</b></th>
+                    <th scope="col">ESPECIFICA&Ccedil;&Atilde;O</th>
+                    {% if instance.show_brand %}
+                        <th scope="col">MARCA / MODELO</th>
+                    {% endif %}
+                    <th scope="col">UN</th>
+                    <th scope="col">QT</th>
+                    <th scope="col">VALOR UNIT. (R$)</th>
+                    <th scope="col">VALOR TOTAL (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for group in instance.groups %}
+                    <tr>
+                        <td style="text-align: center;">{{ group.group }}</td>
+                        <td style="text-align: center;">{{ group.line }}</td>
+                        <td>{{ group.description | striptags }}</td>
+                        {% if instance.show_brand %}
+                            <td style="text-align: center;">{{ group.brand }}</td>
+                        {% endif %}
+                        <td style="text-align: center;">{{ group.unit_measure }}</td>
+                        <td style="text-align: center;">{{ group.normalized_quantity }}</td>
+                        <td style="text-align: center;">{{ group.unitary_value}}</td>
+                        <td style="text-align: center;"> {{ group.total}} </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+    </table>
+{% endif %}
+
+<p><b>CL&Aacute;USULA SEGUNDA - DO PRAZO DE FORNECIMENTO</b></p>
+
+<p style="text-align: justify;"><b>2.1.</b>&nbsp;{{ instance.execution | striptags }}</p>
+
+<p>&nbsp;</p>
+
+<p><b>CL&Aacute;USULA TERCEIRA - DO PRE&Ccedil;O</b></p>
+
+<p style="text-align: justify;"><b>3.1.</b>&nbsp;A Procuradoria-Geral de Justiça do Estado do Tocantins pagará ao Fornecedor o valor total de R$ {{ instance.total_number }} ({{ instance.total_long_number }}).</p>
+
+<p style="text-align: justify;"><b>3.2.</b>&nbsp;Dever&atilde;o estar inclu&iacute;dos no pre&ccedil;o todos os impostos, taxas e encargos sociais, obriga&ccedil;&otilde;es trabalhistas, previdenci&aacute;rias, fiscais e comerciais, as quais correr&atilde;o por conta do Fornecedor.</p>
+
+<p style="text-align: justify;"><b>3.3.</b>&nbsp;Para o Fornecedor atender a presente Requisi&ccedil;&atilde;o, foi(ram) emitida(s) a(s) Nota(s) de Empenho n&uacute;mero
+
+    {% for cn in instance.cn %}
+
+    {{ cn.number }},
+
+    {% endfor %}
+
+    em anexo.</p>
+
+<p style="text-align: right;">&nbsp;</p>
+
+<p style="text-align: right;">Palmas - TO, {{ instance.signature_date }}</p>
+
+<p style="text-align: right;">&nbsp;</p>
+
+<p style="text-align: center;"><b>{{ instance.expense_approver }}</b><br />
+{{ instance.expense_approver_job }}</p>
+
+<p style="text-align: center;"><b>{{ instance.requester }}</b><br />
+{{ instance.requester_job }}</p>
+
+{% endlocalize %}

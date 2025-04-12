@@ -1,0 +1,1612 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Solicitação",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Deferido",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Indeferido",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Ciência",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Anotação",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Efetivado",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Cancelado",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Abrir Solicitação",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Devolver ao Solicitante",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Devolver ao Aprovador",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Aprovado automaticamente",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Aprovado",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "HOLERITE_START_YEAR",
+    "label": "ANO DE INICIO HOLERITE",
+    "value": 2022,
+    "cvalue": "2022",
+    "cache_path": "pvf.HOLERITE_START_YEAR",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "MARK_SITUATION",
+    "label": "Alcançada",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.MARK_SITUATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "MARK_SITUATION",
+    "label": "Parcialmente Alcançada",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.MARK_SITUATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "MARK_SITUATION",
+    "label": "Não Alcançada",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.MARK_SITUATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "MAX_DAY_PAID",
+    "label": "40",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.MAX_DAY_PAID",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "MAX_ENJOY_DAYS_YEAR",
+    "label": "60",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.MAX_ENJOY_DAYS_YEAR",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PARCEL_NUMBER",
+    "label": "2",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.PARCEL_NUMBER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PARCEL_NUMBER",
+    "label": "3",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.PARCEL_NUMBER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PARCEL_NUMBER",
+    "label": "4",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.PARCEL_NUMBER",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PARCEL_NUMBER",
+    "label": "5",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.PARCEL_NUMBER",
+    "description": "5",
+    "order_weight": 0,
+    "active": false
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PAYMENT_CUTOFF_DATE",
+    "label": "5",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.PAYMENT_CUTOFF_DATE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_AUTOMATIC_ACKNOWLEDGMENT_DAYS",
+    "label": "Dias para ciencia automatica de substituição",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.PVF_AUTOMATIC_ACKNOWLEDGMENT_DAYS",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "label": "Férias Regulamentares",
+    "value": 9000,
+    "cvalue": "9000",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "label": "Férias Individuais",
+    "value": 9001,
+    "cvalue": "9001",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "label": "Licença Prêmio",
+    "value": 9009,
+    "cvalue": "9009",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "label": "Recesso de Estagiários",
+    "value": 9010,
+    "cvalue": "9010",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_CANCEL_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "label": "Folga Aniversário",
+    "value": 9003,
+    "cvalue": "9003",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "label": "Folga de Plantão Servidores",
+    "value": 9005,
+    "cvalue": "9005",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "label": "Licença Premio",
+    "value": 9009,
+    "cvalue": "9009",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "label": "Doação de Sangue",
+    "value": 9013,
+    "cvalue": "9013",
+    "cache_path": "pvf.PVF_SUB_CONFIGURATION_EXCLUDE_USUFRUCT",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Aguardando Ciência do Substituto",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Aguardando Aprovador",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Aguardando Efetivação",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Efetivado",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Indeferido",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Cancelado DGP",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Cancelado Solicitante",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Aguardando Assessoria da Corregedoria",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Aguardando Envio",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STATUS",
+    "label": "Escala Enviada",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.REQUEST_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "Aprovador",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "DG",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "Assessoria da Corregedoria",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "Corregedoria",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "PGJ",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "DGP",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_STEP",
+    "label": "-",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.REQUEST_STEP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Programação",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Ausência",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Documento",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Alteração Jornada",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Cancelamento",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Retificação",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Teletrabalho",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "REQUEST_TYPE",
+    "label": "Folha Ponto",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.REQUEST_TYPE",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_DOC",
+    "label": "Certidão para fins previdenciários",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.TYPE_DOC",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_DOC",
+    "label": "Certidão para fins bancários",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.TYPE_DOC",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Informar Falta (Somente para dispensados do ponto)",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Abono por Chefia",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Consulta profissional de saúde (Menos de um dia)",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Esquecimento no registro ponto",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Registro em duplicidade",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Relógio ponto inoperante",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Compensado durante o mês",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "A ser compensado no mês subsequente",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Suspensão de expediente Detetização/Desinfecção Covid",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Férias (Somente para cedidos)",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Licença prêmio  (Somente para cedidos)",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Afastamentos  (Somente para cedidos)",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Licença Médica  (Somente para cedidos)",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Convocado por Chefia Imediata",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON",
+    "label": "Compensado por Convocação Chefia Imediata",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "pvf.TYPE_OF_REASON",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON_PENDING",
+    "label": "Abono por Chefia",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.TYPE_OF_REASON_PENDING",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON_PENDING",
+    "label": "Relógio ponto inoperante",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.TYPE_OF_REASON_PENDING",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON_PENDING",
+    "label": "A ser compensado no mês subsequente",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.TYPE_OF_REASON_PENDING",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON_PENDING",
+    "label": "Suspensão de expediente Detetização/Desinfecção Covid",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.TYPE_OF_REASON_PENDING",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON_PENDING",
+    "label": "Horário Especial",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.TYPE_OF_REASON_PENDING",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "TYPE_OF_REASON_PENDING",
+    "label": "Licença Médica",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "pvf.TYPE_OF_REASON_PENDING",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_MAX_RETIFICATION_REGULAR_VACATION",
+    "label": "Maximo retificação de férias Regulamentares por usufruto ",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.VDF_MAX_RETIFICATION_REGULAR_VACATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52918",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52756",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "2",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52880",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "3",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52897",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "4",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52892",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "5",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52895",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "6",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52889",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52894",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52893",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52890",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52761",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52887",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52891",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52898",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52888",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52885",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52884",
+    "value": 17,
+    "cvalue": "17",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52886",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52647",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52762",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52882",
+    "value": 21,
+    "cvalue": "21",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52454",
+    "value": 22,
+    "cvalue": "22",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52641",
+    "value": 24,
+    "cvalue": "24",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52524",
+    "value": 25,
+    "cvalue": "25",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52299",
+    "value": 26,
+    "cvalue": "26",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52703",
+    "value": 27,
+    "cvalue": "27",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52514",
+    "value": 28,
+    "cvalue": "28",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52595",
+    "value": 29,
+    "cvalue": "29",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52300",
+    "value": 30,
+    "cvalue": "30",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52645",
+    "value": 31,
+    "cvalue": "31",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "label": "52344",
+    "value": 32,
+    "cvalue": "32",
+    "cache_path": "pvf.VDF_OPTIONAL_SUBSTITUTE_LOCAL",
+    "description": "1",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "WORKLOAD",
+    "label": "30",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.WORKLOAD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "WORKLOAD",
+    "label": "35",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.WORKLOAD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "WORKLOAD",
+    "label": "40",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.WORKLOAD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

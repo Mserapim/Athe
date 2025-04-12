@@ -1,0 +1,38 @@
+[
+{
+    "fields": {
+        "cache_path": "standard.CONFIGURATION_ITEM_CHOICE",
+        "label": "Texto",
+        "name": "CONFIGURATION_ITEM_CHOICE",
+        "value": 3,
+        "cvalue": 3,
+        "app_label": "standard"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "standard.CONFIGURATION_ITEM_CHOICE",
+        "label": "Numérico",
+        "name": "CONFIGURATION_ITEM_CHOICE",
+        "value": 1,
+        "cvalue": 1,
+        "app_label": "standard"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "standard.CONFIGURATION_ITEM_CHOICE",
+        "label": "Sim ou Não",
+        "name": "CONFIGURATION_ITEM_CHOICE",
+        "value": 2,
+        "cvalue": 2,
+        "app_label": "standard"
+    },
+    "model": "standard.choice",
+    "pk": null
+}
+]

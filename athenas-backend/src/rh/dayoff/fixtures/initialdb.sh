@@ -1,0 +1,12 @@
+# INITIAL DB
+./manage.py exportdata "Application.objects.filter(title__icontains='usufrutos e folgas').order_by('layer', 'title')" -i 2 --with-natural-keys -m engine -o 'rh/dayoff/fixtures/initialdb_0001_applications.json'
+./manage.py exportdata "ContentType.objects.filter(app_label='dayoff').order_by('app_label', 'model')" -i 2 --with-natural-keys -m django.contrib.contenttypes -o 'rh/dayoff/fixtures/initialdb_0002_contenttypes.json'
+./manage.py exportdata "Permission.objects.filter(content_type__app_label='dayoff').order_by('content_type', 'codename')" -i 2 --with-natural-keys -m django.contrib.auth -o 'rh/dayoff/fixtures/initialdb_0003_permissions.json'
+./manage.py exportdata "Group.objects.filter(permissions__content_type__app_label='dayoff').distinct().order_by('name')" -i 2 --with-natural-keys -m django.contrib.auth -o 'rh/dayoff/fixtures/initialdb_0004_groups.json'
+./manage.py exportdata "Controller.objects.filter(application__title__icontains='usufrutos e folgas').order_by('module', 'title')" -i 2 --with-natural-keys -m engine -o 'rh/dayoff/fixtures/initialdb_0005_controllers.json'
+./manage.py exportdata "ControllerPermission.objects.filter(controllers__application__title__icontains='usufrutos e folgas').distinct().order_by('name')" -i 2 --with-natural-keys -m engine -o 'rh/dayoff/fixtures/initialdb_0006_controllerpermissions.json'
+./manage.py exportdata "Message.objects.filter(mid__startswith='DOF_').order_by('mid')" -i 2 --with-natural-keys -m engine.notification -o 'rh/dayoff/fixtures/initialdb_0007_messages.json'
+./manage.py exportdata "User.objects.filter(username__in=['franciscosantos', 'alinnydias', 'valdinamaciel', 'vicentejunior', 'iradianmorais', 'katiacorrea', 'patriciacabral', 'brunnosilva', 'sidneysilva', 'uilitonborges', 'mariabezerra'])" -i 2 --with-natural-keys -m engine -o 'rh/dayoff/fixtures/user_development.json'
+./manage.py exportdata "ClassCode.objects.filter(slug='dayoff-classcodes-birthdaybreak').order_by('path')" -i 2 --with-natural-keys -m standard -o "rh/dayoff/fixtures/initialdb_0008_classcode.json" --set-fields="{'modified_by_id': 845, 'created_by_id': 845}"
+./manage.py exportdata "Configuration.objects.order_by('title')" -i 2 --with-natural-keys -m rh.dayoff -o 'rh/dayoff/fixtures/configuration_development.json'
+./manage.py exportdata "GroupPeriod.objects.order_by('title')" -i 2 --with-natural-keys -m rh.dayoff -o 'rh/dayoff/fixtures/groupperiod_development.json'

@@ -1,0 +1,65 @@
+[
+{
+  "fields": {
+    "all_work_location": false,
+    "level_access": 2,
+    "title": "ANTECIPAÇÃO DE 50% DO 13º SALÁRIO"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+},
+{
+  "fields": {
+    "all_work_location": false,
+    "level_access": 2,
+    "title": "GERENTES DE PROJETOS"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+},
+{
+  "fields": {
+    "all_work_location": false,
+    "level_access": 2,
+    "title": "PROMOTORIAS DA INFÂNCIA E JUVENTUDE"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+},
+{
+  "fields": {
+    "all_work_location": false,
+    "level_access": 2,
+    "title": "PROMOTORIAS DO CONSUMIDOR"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+},
+{
+  "fields": {
+    "all_work_location": true,
+    "level_access": 1,
+    "title": "TODAS AS LOTAÇÕES"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+},
+{
+  "fields": {
+    "all_work_location": false,
+    "level_access": 1,
+    "title": "TODAS AS PROCURADORIAS"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+},
+{
+  "fields": {
+    "all_work_location": false,
+    "level_access": 1,
+    "title": "TODAS AS PROMOTORIAS DE JUSTIÇA"
+  },
+  "model": "protocolo.groupgeneralorgan",
+  "pk": null
+}
+]

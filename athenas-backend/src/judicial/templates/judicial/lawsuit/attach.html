@@ -1,0 +1,20 @@
+{% load judicialfilters %}
+<div style="padding:0.5em 0; text-align: left; font-size: 0.9em">
+    {% if forloop %}
+    <a href="#{{ attach.file_descriptor.file }}">
+        Anexo {{ forloop.counter | roman }}
+    </a>
+    -
+    {% endif %}
+    <a href="#{{ attach.file_descriptor.file }}" title="{{ attach.title }}">
+        {{ attach.title }}
+    </a>
+    <div>
+        <small>URL:
+            <a href="{{ attach.file_descriptor.complete_permalink }}" target="_blank">
+                {{ attach.file_descriptor.complete_permalink }}
+            </a>
+        </small>
+    </div>
+    <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>
+</div>

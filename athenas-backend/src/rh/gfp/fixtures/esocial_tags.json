@@ -1,0 +1,352 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "redutorteto",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "auxiliomoradia",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "diarias",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "ajudadecusto",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "indenizacaoerescisao",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "abonopecuniario",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "salariofamilia",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "salariomaternidade",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "salariomaternidade13",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "diariasdevolucao",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "auxilioalimentacaodevolucao",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "ajudacustotransporte",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "rgps",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "rpps",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "ajusteesocial",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "irrf",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "decimoterceiro",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "irrf-esocial",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "prev-complementar-esocial",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "prev-complementar13-esocial",
+    "value": 21,
+    "cvalue": "21",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "pen-alim-mensal-esocial",
+    "value": 22,
+    "cvalue": "22",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "pen-alim-13-esocial",
+    "value": 23,
+    "cvalue": "23",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "pen-alim-ferias-esocial",
+    "value": 24,
+    "cvalue": "24",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "pen-alim-rra-esocial",
+    "value": 25,
+    "cvalue": "25",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "gfp",
+    "name": "EVENT_TAGS",
+    "label": "plan-saude-agregados-esocial",
+    "value": 26,
+    "cvalue": "26",
+    "cache_path": "gfp.EVENT_TAGS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

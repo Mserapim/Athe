@@ -1,0 +1,1262 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_eSocial" id="2399_eSocial">1</td>
+        <td><a href="#r_2399_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399" id="2399">2</td>
+        <td><a href="#r_2399">evtTSVTermino</a></td>
+        <td><a href="#r_2399_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Término.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EVENTOS_EXTEMP">REGRA_EVENTOS_EXTEMP</a><br>
+            <a href="#REGRA_EVENTO_POSTERIOR_CAT_OBITO">REGRA_EVENTO_POSTERIOR_CAT_OBITO</a><br>
+            <a href="#REGRA_EVE_FOPAG_SIMPLIFICADO">REGRA_EVE_FOPAG_SIMPLIFICADO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_GERAL_VALIDA_DADOS_TABCONTRIB">REGRA_GERAL_VALIDA_DADOS_TABCONTRIB</a><br>
+            <a href="#REGRA_MESMO_PROCEMI">REGRA_MESMO_PROCEMI</a><br>
+            <a href="#REGRA_MUDANCA_CPF">REGRA_MUDANCA_CPF</a><br>
+            <a href="#REGRA_REMUN_IND_RETIFICACAO">REGRA_REMUN_IND_RETIFICACAO</a><br>
+            <a href="#REGRA_REMUN_PERMITE_EXCLUSAO">REGRA_REMUN_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_RETIFICA_MESMO_VINCULO">REGRA_RETIFICA_MESMO_VINCULO</a><br>
+            <a href="#REGRA_RUBRICA_COMPATIVEL_CATEGORIA">REGRA_RUBRICA_COMPATIVEL_CATEGORIA</a><br>
+            <a href="#REGRA_RUBRICA_ECONSIGNADO">REGRA_RUBRICA_ECONSIGNADO</a><br>
+            <a href="#REGRA_TSV_ATIVO_NA_DTEVENTO">REGRA_TSV_ATIVO_NA_DTEVENTO</a><br>
+            <a href="#REGRA_VALIDA_EMPREGADOR">REGRA_VALIDA_EMPREGADOR</a><br>
+            <a href="#REGRA_VALIDA_PERIODO_APURACAO">REGRA_VALIDA_PERIODO_APURACAO</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_Id" id="2399_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_2399">evtTSVTermino</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento" id="2399_ideEvento">4</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td><a href="#r_2399">evtTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento_indRetif"
+            id="2399_ideEvento_indRetif">5
+        </td>
+        <td>indRetif</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informe [1] para arquivo original ou [2] para arquivo de retificação.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Original<br>
+            <strong>2</strong> - Retificação
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento_nrRecibo"
+            id="2399_ideEvento_nrRecibo">6
+        </td>
+        <td>nrRecibo</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo a ser retificado.<br>
+            <strong>Validação:</strong> O preenchimento é obrigatório se <a href="#2399_ideEvento_indRetif">indRetif</a>
+            = [2].<br>
+            Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento_indGuia"
+            id="2399_ideEvento_indGuia">7
+        </td>
+        <td>indGuia</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do tipo de guia.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Documento de Arrecadação do eSocial - DAE
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento_tpAmb" id="2399_ideEvento_tpAmb">
+            8
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento_procEmi"
+            id="2399_ideEvento_procEmi">9
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEvento_verProc"
+            id="2399_ideEvento_verProc">10
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_2399_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEmpregador" id="2399_ideEmpregador">11
+        </td>
+        <td><a href="#r_2399_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_2399">evtTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEmpregador_tpInsc"
+            id="2399_ideEmpregador_tpInsc">12
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2399_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideEmpregador_nrInsc"
+            id="2399_ideEmpregador_nrInsc">13
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2399_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2399_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideTrabSemVinculo"
+            id="2399_ideTrabSemVinculo">14
+        </td>
+        <td><a href="#r_2399_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td><a href="#r_2399">evtTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideTrabSemVinculo_cpfTrab"
+            id="2399_ideTrabSemVinculo_cpfTrab">15
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_2399_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideTrabSemVinculo_matricula"
+            id="2399_ideTrabSemVinculo_matricula">16
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_2399_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa.<br>
+            <strong>Validação:</strong> Deve corresponder à matrícula informada pelo empregador no evento S-2300 do
+            respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_ideTrabSemVinculo_codCateg"
+            id="2399_ideTrabSemVinculo_codCateg">17
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_2399_ideTrabSemVinculo">ideTrabSemVinculo</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador.<br>
+            Informar somente no caso de TSVE sem informação de matrícula no evento S-2300.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se não houver preenchimento de <a
+                    href="#2399_ideTrabSemVinculo_matricula">matricula</a>. Se informado, deve ser um código válido e
+            existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino" id="2399_infoTSVTermino">18
+        </td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td><a href="#r_2399">evtTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>TSVE - Término.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_dtTerm"
+            id="2399_infoTSVTermino_dtTerm">19
+        </td>
+        <td>dtTerm</td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data do término.<br>
+            <strong>Validação:</strong> Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_mtvDesligTSV"
+            id="2399_infoTSVTermino_mtvDesligTSV">20
+        </td>
+        <td>mtvDesligTSV</td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Motivo do término.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>01</strong> - Exoneração do diretor não empregado sem justa causa, por deliberação da assembleia,
+            dos sócios cotistas ou da autoridade competente<br>
+            <strong>02</strong> - Término de mandato do diretor não empregado que não tenha sido reconduzido ao
+            cargo<br>
+            <strong>03</strong> - Exoneração a pedido de diretor não empregado<br>
+            <strong>04</strong> - Exoneração do diretor não empregado por culpa recíproca ou força maior<br>
+            <strong>05</strong> - Morte do diretor não empregado<br>
+            <strong>06</strong> - Exoneração do diretor não empregado por falência, encerramento ou supressão de parte
+            da empresa<br>
+            <strong>07</strong> - Mudança de CPF<br>
+            <strong>99</strong> - Outros<br>
+            <strong>Validação:</strong> Informação obrigatória se o código de categoria no Registro de Eventos
+            Trabalhistas - RET for igual a [721] ou se o grupo <a href="#2399_infoTSVTermino_mudancaCPF">mudancaCPF</a>
+            estiver preenchido. Não preencher nas demais situações.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_pensAlim"
+            id="2399_infoTSVTermino_pensAlim">21
+        </td>
+        <td>pensAlim</td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de pensão alimentícia para fins de retenção de FGTS.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Não existe pensão alimentícia<br>
+            <strong>1</strong> - Percentual de pensão alimentícia<br>
+            <strong>2</strong> - Valor de pensão alimentícia<br>
+            <strong>3</strong> - Percentual e valor de pensão alimentícia<br>
+            <strong>Validação:</strong> Informação obrigatória se o código de categoria no RET for igual a [201, 202,
+            721] e se <a href="#2399_infoTSVTermino_dtTerm">dtTerm</a> for posterior a 21/04/2019.<br>
+            Informação opcional se o código de categoria no RET for igual a [201, 202, 721] e se <a
+                    href="#2399_infoTSVTermino_dtTerm">dtTerm</a> for igual ou anterior a 21/04/2019.<br>
+            Não preencher nas demais situações.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_percAliment"
+            id="2399_infoTSVTermino_percAliment">22
+        </td>
+        <td>percAliment</td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Percentual a ser destinado a pensão alimentícia.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).<br>
+            Informação obrigatória e exclusiva se <a href="#2399_infoTSVTermino_pensAlim">pensAlim</a> = [1, 3].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_vrAlim"
+            id="2399_infoTSVTermino_vrAlim">23
+        </td>
+        <td>vrAlim</td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da pensão alimentícia.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).<br>
+            Informação obrigatória e exclusiva se <a href="#2399_infoTSVTermino_pensAlim">pensAlim</a> = [2, 3].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_nrProcTrab"
+            id="2399_infoTSVTermino_nrProcTrab">24
+        </td>
+        <td>nrProcTrab</td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Número que identifica o processo trabalhista, quando o término de TSVE se der por decisão judicial.<br>
+            <strong>Validação:</strong> Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_mudancaCPF"
+            id="2399_infoTSVTermino_mudancaCPF">25
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_mudancaCPF">mudancaCPF</a></td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação do novo CPF do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_mudancaCPF_novoCPF"
+            id="2399_infoTSVTermino_mudancaCPF_novoCPF">26
+        </td>
+        <td>novoCPF</td>
+        <td><a href="#r_2399_infoTSVTermino_mudancaCPF">mudancaCPF</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o novo CPF do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do
+            trabalhador.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc"
+            id="2399_infoTSVTermino_verbasResc">27
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc">verbasResc</a></td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo onde são prestadas as informações relativas às verbas rescisórias do diretor não empregado, com
+            FGTS.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_dmDev"
+            id="2399_infoTSVTermino_verbasResc_dmDev">28
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev">dmDev</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc">verbasResc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-50</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação de cada um dos demonstrativos de valores devidos ao trabalhador.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_DEMONSTRATIVO">REGRA_DEMONSTRATIVO</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_dmDev_ideDmDev"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideDmDev">29
+        </td>
+        <td>ideDmDev</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Identificador atribuído pela empresa para o demonstrativo de valores devidos ao trabalhador relativo a
+            verbas rescisórias.<br>
+            <strong>Validação:</strong> Deve ser um identificador único dentro da mesma competência (mês/ano da data de
+            término) para cada um dos demonstrativos do trabalhador.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_CARACTERE_ESPECIAL">REGRA_CARACTERE_ESPECIAL</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_dmDev_indRRA"
+            id="2399_infoTSVTermino_verbasResc_dmDev_indRRA">30
+        </td>
+        <td>indRRA</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev">dmDev</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de Rendimentos Recebidos Acumuladamente - RRA.<br>
+            Somente preencher este campo se for um demonstrativo de RRA.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA">31
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares relativas a Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_tpProcRRA"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_tpProcRRA">32
+        </td>
+        <td>tpProcRRA</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_nrProcRRA"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_nrProcRRA">33
+        </td>
+        <td>nrProcRRA</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar o número do processo/requerimento administrativo/judicial.<br>
+            <strong>Validação:</strong> Informação obrigatória se <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [2] e opcional se <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [1]. Deve ser número
+            de processo válido e:<br>
+            a) Se <a href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [1], deve possuir 17
+            (dezessete) ou 21 (vinte e um) algarismos;<br>
+            b) Se <a href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_tpProcRRA">tpProcRRA</a> = [2], deve possuir 20
+            (vinte) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_descRRA"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_descRRA">34
+        </td>
+        <td>descRRA</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-50</td>
+        <td>-</td>
+        <td>Descrição dos Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_qtdMesesRRA"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_qtdMesesRRA">35
+        </td>
+        <td>qtdMesesRRA</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-4</td>
+        <td>1</td>
+        <td>Número de meses relativo aos Rendimentos Recebidos Acumuladamente - RRA.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud">36
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das despesas com processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud_vlrDespCustas"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud_vlrDespCustas">37
+        </td>
+        <td>vlrDespCustas</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor das despesas com custas judiciais.<br>
+            <strong>Validação:</strong> Deve ser maior ou igual a 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud_vlrDespAdvogados"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud_vlrDespAdvogados">38
+        </td>
+        <td>vlrDespAdvogados</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_despProcJud">despProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor total das despesas com advogado(s).<br>
+            <strong>Validação:</strong> Se o grupo <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a> for preenchido, o valor
+            informado neste campo deve ser maior ou igual à soma do(s) campo(s) <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_vlrAdv">vlrAdv</a> do grupo <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a>.<br>
+            Deve ser maior ou igual a 0 (zero).<br>
+            O não preenchimento do grupo <a href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a>
+            indica que o contribuinte declarante não possui as informações detalhadas por advogado.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">39
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA">infoRRA</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação dos advogados.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_tpInsc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_tpInsc">40
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_nrInsc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_nrInsc">41
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do advogado.<br>
+            <strong>Validação:</strong> Deve ser um número de inscrição válido, de acordo com o tipo de inscrição
+            indicado no campo <a href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_tpInsc">ideAdv/tpInsc</a>,
+            considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.<br>
+            Se <a href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_tpInsc">ideAdv/tpInsc</a> = [1], deve
+            possuir 14 (catorze) algarismos e, no caso de declarante pessoa jurídica, ser diferente do CNPJ base do
+            empregador (exceto se <a href="#2399_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a> tiver 14 (catorze)
+            algarismos).<br>
+            Se <a href="#2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_tpInsc">ideAdv/tpInsc</a> = [2], deve
+            possuir 11 (onze) algarismos e, no caso de declarante pessoa física, ser diferente do CPF do empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_vlrAdv"
+            id="2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv_vlrAdv">42
+        </td>
+        <td>vlrAdv</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_infoRRA_ideAdv">ideAdv</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da despesa com o advogado, se houver.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">43
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">ideEstabLot</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev">dmDev</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento e da lotação nos quais o trabalhador possui remuneração no período de
+            apuração.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_tpInsc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_tpInsc">44
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da <a
+                href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>4</strong> - CNO
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_nrInsc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_nrInsc">45
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado
+            no campo <a href="#2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_tpInsc">ideEstabLot/tpInsc</a>.<br>
+            <strong>Validação:</strong> A inscrição informada deve ser compatível com <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_tpInsc">ideEstabLot/tpInsc</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_codLotacao"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_codLotacao">46
+        </td>
+        <td>codLotacao</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">ideEstabLot</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador para a lotação tributária.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">47
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">ideEstabLot</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-200</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das verbas rescisórias devidas ao trabalhador. Deve haver pelo menos uma rubrica de folha,
+            mesmo que o valor líquido a ser pago ao trabalhador seja 0 (zero) em função de descontos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_codRubr"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_codRubr">48
+        </td>
+        <td>codRubr</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código
+            da rubrica constante da Tabela de Rubricas Padrão.<br>
+            <strong>Validação:</strong> Não pode ser utilizada rubrica:<br>
+            a) cujo <a href="#1010_infoRubrica_inclusao_dadosRubrica_codIncCP">codIncCP</a> em S-1010 seja igual a [25,
+            26, 51];<br>
+            b) cuja <a href="#1010_infoRubrica_inclusao_dadosRubrica_natRubr">natRubr</a> em S-1010 seja igual a [1801,
+            9220], desde que mês/ano de <a href="#2399_infoTSVTermino_dtTerm">dtTerm</a> &gt;= [2021-07].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_ideTabRubr"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_ideTabRubr">49
+        </td>
+        <td>ideTabRubr</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-8</td>
+        <td>-</td>
+        <td>Preencher com o identificador da Tabela de Rubricas para a rubrica definida em <a
+                href="#2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_codRubr">codRubr</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_qtdRubr"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_qtdRubr">50
+        </td>
+        <td>qtdRubr</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-12</td>
+        <td>2</td>
+        <td>Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas
+            extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com
+            uma rubrica de salário, etc.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_fatorRubr"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_fatorRubr">51
+        </td>
+        <td>fatorRubr</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>2</td>
+        <td>Informar o fator, percentual, etc. da rubrica, quando necessário. Ex.: Adicional de horas extras 50%,
+            relacionado a uma rubrica de horas extras: Fator = 50.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_vrRubr"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_vrRubr">52
+        </td>
+        <td>vrRubr</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total da rubrica.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_indApurIR"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_indApurIR">53
+        </td>
+        <td>indApurIR</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de tipo de apuração de IR.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>0</strong> - Normal (apuração sob a folha de pagamento declarada no eSocial)<br>
+            <strong>1</strong> - Situação especial de apuração de IR<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se mês/ano de <a
+                    href="#2399_infoTSVTermino_dtTerm">dtTerm</a> &gt;= [2021-07].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha">54
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha">descFolha</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas">detVerbas</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de desconto do empréstimo em folha.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_tpDesc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_tpDesc">55
+        </td>
+        <td>tpDesc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo do tipo de desconto.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - eConsignado
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_instFinanc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_instFinanc">56
+        </td>
+        <td>instFinanc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Código da Instituição Financeira concedente do empréstimo.<br>
+            <strong>Validação:</strong> Deve ser um código válido, conforme tabela do Banco Central.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_nrDoc"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_nrDoc">57
+        </td>
+        <td>nrDoc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8-12</td>
+        <td>-</td>
+        <td>Número do contrato referente ao empréstimo.<br>
+            <strong>Validação:</strong> Se <a
+                    href="#2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_tpDesc">tpDesc</a> =
+            [1], deve ser informado com 8 (oito) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_observacao"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha_observacao">58
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_detVerbas_descFolha">descFolha</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Outras informações do desconto.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_infoSimples"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_infoSimples">59
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_infoSimples">infoSimples</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot">ideEstabLot</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação relativa a empresas enquadradas no regime de tributação Simples Nacional.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_infoSimples_indSimples"
+            id="2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_infoSimples_indSimples">60
+        </td>
+        <td>indSimples</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_dmDev_ideEstabLot_infoSimples">infoSimples</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de contribuição substituída.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuição substituída integralmente<br>
+            <strong>2</strong> - Contribuição não substituída<br>
+            <strong>3</strong> - Contribuição não substituída concomitante com contribuição substituída
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_procJudTrab"
+            id="2399_infoTSVTermino_verbasResc_procJudTrab">61
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_procJudTrab">procJudTrab</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc">verbasResc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre a existência de processos judiciais do trabalhador com decisão favorável quanto à não
+            incidência de contribuições sociais e/ou Imposto de Renda.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_procJudTrab_tpTrib"
+            id="2399_infoTSVTermino_verbasResc_procJudTrab_tpTrib">62
+        </td>
+        <td>tpTrib</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_procJudTrab">procJudTrab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Abrangência da decisão.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - IRRF<br>
+            <strong>2</strong> - Contribuições sociais do trabalhador
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_procJudTrab_nrProcJud"
+            id="2399_infoTSVTermino_verbasResc_procJudTrab_nrProcJud">63
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_procJudTrab">procJudTrab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Informar um número de processo judicial cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido e existente na Tabela de
+            Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_procJudTrab_codSusp"
+            id="2399_infoTSVTermino_verbasResc_procJudTrab_codSusp">64
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_procJudTrab">procJudTrab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_infoMV"
+            id="2399_infoTSVTermino_verbasResc_infoMV">65
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV">infoMV</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc">verbasResc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido exclusivamente em caso de trabalhador que possua outros vínculos/atividades nos quais já
+            tenha ocorrido desconto de contribuição previdenciária.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_verbasResc_infoMV_indMV"
+            id="2399_infoTSVTermino_verbasResc_infoMV_indMV">66
+        </td>
+        <td>indMV</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV">infoMV</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicador de desconto da contribuição previdenciária do trabalhador.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - O declarante aplica a(s) alíquota(s) de desconto do segurado sobre a remuneração por
+            ele informada (o percentual da(s) alíquota(s) será(ão) obtido(s) considerando a remuneração total do
+            trabalhador)<br>
+            <strong>2</strong> - O declarante aplica a(s) alíquota(s) de desconto do segurado sobre a diferença entre o
+            limite máximo do salário de contribuição e a remuneração de outra(s) empresa(s) para as quais o trabalhador
+            informou que houve o desconto<br>
+            <strong>3</strong> - O declarante não realiza desconto do segurado, uma vez que houve desconto sobre o
+            limite máximo de salário de contribuição em outra(s) empresa(s)
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr"
+            id="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr">67
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV">infoMV</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-999</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao trabalhador que possui vínculo empregatício com outra(s) empresa(s) e/ou que exerce
+            outras atividades como contribuinte individual, detalhando as empresas que efetuaram (ou efetuarão) desconto
+            da contribuição.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_tpInsc"
+            id="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_tpInsc">68
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_nrInsc"
+            id="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_nrInsc">69
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a>.<br>
+            <strong>Validação:</strong> a) Se <a href="#2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a>
+            = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador
+            (S-1000) e dos estabelecimentos informados através do evento S-1005.<br>
+            b) Se <a href="#2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_tpInsc">remunOutrEmpr/tpInsc</a> = [2],
+            deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física,
+            diferente do CPF do empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_codCateg"
+            id="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_codCateg">70
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador na qual houve a remuneração.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na <a href="tabelas.html#01">Tabela 01</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_vlrRemunOE"
+            id="2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr_vlrRemunOE">71
+        </td>
+        <td>vlrRemunOE</td>
+        <td><a href="#r_2399_infoTSVTermino_verbasResc_infoMV_remunOutrEmpr">remunOutrEmpr</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Preencher com o valor da remuneração recebida pelo trabalhador na outra empresa/atividade, sobre a qual
+            houve desconto/recolhimento da contribuição do segurado.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_remunAposTerm"
+            id="2399_infoTSVTermino_remunAposTerm">72
+        </td>
+        <td><a href="#r_2399_infoTSVTermino_remunAposTerm">remunAposTerm</a></td>
+        <td><a href="#r_2399_infoTSVTermino">infoTSVTermino</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre a "quarentena" remunerada de trabalhador desligado ou outra situação de término com data
+            anterior.<br>
+            O grupo deve ser preenchido apenas no caso do trabalhador que recebe remuneração após o desligamento por
+            estar impossibilitado de exercer atividade remunerada ou no caso de término reconhecido judicialmente com
+            data anterior a competências com remunerações já informadas no eSocial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_remunAposTerm_indRemun"
+            id="2399_infoTSVTermino_remunAposTerm_indRemun">73
+        </td>
+        <td>indRemun</td>
+        <td><a href="#r_2399_infoTSVTermino_remunAposTerm">remunAposTerm</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de situação de remuneração após o término.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Quarentena<br>
+            <strong>2</strong> - Término reconhecido judicialmente com data anterior a competências com remunerações já
+            informadas no eSocial<br>
+            <strong>Validação:</strong> Informação obrigatória se <a href="#2399_infoTSVTermino_dtTerm">dtTerm</a> &gt;=
+            [2023-01-16].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="2399_infoTSVTermino_remunAposTerm_dtFimRemun"
+            id="2399_infoTSVTermino_remunAposTerm_dtFimRemun">74
+        </td>
+        <td>dtFimRemun</td>
+        <td><a href="#r_2399_infoTSVTermino_remunAposTerm">remunAposTerm</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Preencher com a data final da quarentena a que está sujeito o trabalhador. No caso de término reconhecido
+            judicialmente com data anterior a competências com remunerações já informadas no eSocial, informar o último
+            dia trabalhado.<br>
+            <strong>Validação:</strong> Deve ser uma data posterior a <a href="#2399_infoTSVTermino_dtTerm">dtTerm</a>.
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,444 @@
+[
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 3,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:40:40.800",
+        "modified_at": "2024-09-03T19:44:40.561",
+        "ordem": 3,
+        "situacao": 14,
+        "etapa": 5,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 5,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:41:33.575",
+        "modified_at": "2024-09-03T20:38:13.240",
+        "ordem": 5,
+        "situacao": 15,
+        "etapa": 7,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 6,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:42:22.890",
+        "modified_at": "2024-09-03T19:44:40.584",
+        "ordem": 14,
+        "situacao": 14,
+        "etapa": 1,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 7,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:42:48.009",
+        "modified_at": "2024-09-03T21:17:17.217",
+        "ordem": 15,
+        "situacao": 15,
+        "etapa": 9,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 8,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:43:17.420",
+        "modified_at": "2024-09-03T19:44:40.588",
+        "ordem": 16,
+        "situacao": 4,
+        "etapa": 2,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 10,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:44:27.409",
+        "modified_at": "2024-09-03T19:44:40.591",
+        "ordem": 18,
+        "situacao": 1,
+        "etapa": 3,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 13,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:46:04.822",
+        "modified_at": "2024-09-03T19:44:40.593",
+        "ordem": 19,
+        "situacao": 5,
+        "etapa": 11,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 14,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:46:32.593",
+        "modified_at": "2024-09-03T19:44:40.595",
+        "ordem": 20,
+        "situacao": 6,
+        "etapa": 11,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 15,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:48:15.479",
+        "modified_at": "2024-09-03T19:44:40.597",
+        "ordem": 21,
+        "situacao": 7,
+        "etapa": 11,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 16,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:49:47.037",
+        "modified_at": "2024-09-03T19:44:40.599",
+        "ordem": 22,
+        "situacao": 8,
+        "etapa": 11,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 17,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:50:29.809",
+        "modified_at": "2024-09-03T19:44:40.600",
+        "ordem": 23,
+        "situacao": 9,
+        "etapa": 12,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 18,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:51:09.623",
+        "modified_at": "2024-09-03T19:44:40.602",
+        "ordem": 24,
+        "situacao": 10,
+        "etapa": 12,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 19,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-05-09T18:51:27.361",
+        "modified_at": "2024-09-03T19:44:40.604",
+        "ordem": 25,
+        "situacao": 11,
+        "etapa": 12,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 20,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 9179,
+        "created_at": "2024-08-24T02:15:43.616",
+        "modified_at": "2024-09-03T19:44:40.559",
+        "ordem": 2,
+        "situacao": 17,
+        "etapa": 14,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 21,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-28T10:29:42.585",
+        "modified_at": "2024-09-03T19:44:40.606",
+        "ordem": 26,
+        "situacao": 19,
+        "etapa": 20,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 22,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-28T10:31:03.579",
+        "modified_at": "2024-09-03T20:44:29.333",
+        "ordem": 7,
+        "situacao": 14,
+        "etapa": 15,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 23,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-28T10:37:25.190",
+        "modified_at": "2024-09-03T20:46:07.363",
+        "ordem": 9,
+        "situacao": 14,
+        "etapa": 17,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 24,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-28T10:37:57.073",
+        "modified_at": "2024-09-03T20:42:50.888",
+        "ordem": 6,
+        "situacao": 14,
+        "etapa": 16,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 26,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-28T10:41:04.357",
+        "modified_at": "2024-09-03T20:47:14.616",
+        "ordem": 11,
+        "situacao": 18,
+        "etapa": 19,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 27,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-28T11:05:54.631",
+        "modified_at": "2024-09-03T19:44:40.590",
+        "ordem": 17,
+        "situacao": 20,
+        "etapa": 10,
+        "notificar_solicitante": true,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 28,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-29T15:37:35.404",
+        "modified_at": "2024-09-03T19:44:40.570",
+        "ordem": 8,
+        "situacao": 14,
+        "etapa": 18,
+        "notificar_solicitante": true,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 29,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-29T15:41:19.142",
+        "modified_at": "2024-09-03T19:44:40.573",
+        "ordem": 10,
+        "situacao": 18,
+        "etapa": 18,
+        "notificar_solicitante": true,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 30,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-29T15:48:20.855",
+        "modified_at": "2024-09-03T20:48:33.469",
+        "ordem": 12,
+        "situacao": 14,
+        "etapa": 16,
+        "notificar_solicitante": true,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 31,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-29T15:50:43.221",
+        "modified_at": "2024-09-03T20:49:43.092",
+        "ordem": 13,
+        "situacao": 14,
+        "etapa": 8,
+        "notificar_solicitante": true,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 32,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-08-29T16:03:57.828",
+        "modified_at": "2024-09-03T19:44:40.608",
+        "ordem": 27,
+        "situacao": 19,
+        "etapa": 13,
+        "notificar_solicitante": true,
+        "notificar_emails": null,
+        "calcular": true,
+        "deferir_todos_beneficiarios": true
+    }
+},
+{
+    "model": "diarias.fluxoviagem",
+    "pk": 33,
+    "fields": {
+        "created_by": 9179,
+        "modified_by": 9179,
+        "created_at": "2024-09-03T19:44:26.855",
+        "modified_at": "2024-09-03T19:44:40.562",
+        "ordem": 4,
+        "situacao": 14,
+        "etapa": 8,
+        "notificar_solicitante": false,
+        "notificar_emails": null,
+        "calcular": false,
+        "deferir_todos_beneficiarios": false
+    }
+}
+]

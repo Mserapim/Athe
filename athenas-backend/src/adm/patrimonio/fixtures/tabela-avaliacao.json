@@ -1,0 +1,24 @@
+[
+    {
+        "pk": 21, 
+        "model": "patrimonio.tabelaavaliacao", 
+        "fields": {
+            "data_vigencia": "2014-02-20", 
+            "ano": 2013, 
+            "publicacao": null, 
+            "numero": 2, 
+            "data_fim_vigencia": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "patrimonio.tabelaavaliacao", 
+        "fields": {
+            "data_vigencia": "2013-03-20", 
+            "ano": 2013, 
+            "publicacao": 14079, 
+            "numero": 1, 
+            "data_fim_vigencia": "2014-02-20"
+        }
+    }
+]

@@ -1,0 +1,142 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Afastamentos p/ cursos, seminários e congressos (Apenas aqueles autorizados pelo MPE)",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Informar o período e a programação. Colher a ciência da chefia imediata neste.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Anotações diversas em ficha funcional",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Anexar documento comprobatório.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Averbação de tempo de serviço",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Anexar a competente certidão.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Certidões ou declarações para fins específicos",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Especificar a finalidade.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Recesso natalino",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Indicar a data para usufruir e especificar o ano do correspondente plantão. Colher a ciência da chefia imediata neste.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Licença para trato de interesse particular",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Mencionar o início e a duração.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Domicílio bancário",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Informar agência, conta corrente e nome do banco.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Atividade política",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Registro da candidatura perante Justiça Eleitoral.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Licença para capacitação",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Licença para capacitação.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "EMPLOYEE_REQUEST_TYPE",
+    "label": "Outros",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "requestform.EMPLOYEE_REQUEST_TYPE",
+    "description": "Mencionar o assunto e anexar documento(s) quando necessário.",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

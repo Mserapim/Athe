@@ -1,0 +1,19 @@
+.prov-entry{
+	color: darkblue;
+}
+
+.desc-entry{
+	color: darkred;
+}
+
+.info-entry{
+	color:darkgoldenrod;
+}
+
+.nc-entry{
+	text-decoration: line-through!important;
+}
+
+table.x-grid3-row-table {
+    text-decoration: inherit;
+}

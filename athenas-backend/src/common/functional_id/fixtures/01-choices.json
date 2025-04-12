@@ -1,0 +1,92 @@
+[
+{
+  "model": "standard.choice",
+  "pk": null,
+  "fields": {
+    "app_label": "functional_id",
+    "name": "FUNCTIONAL_ID_STATUS",
+    "label": "Editando",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "functional_id.FUNCTIONAL_ID_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "pk": null,
+  "fields": {
+    "app_label": "functional_id",
+    "name": "FUNCTIONAL_ID_STATUS",
+    "label": "Confeccionando",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "functional_id.FUNCTIONAL_ID_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "pk": null,
+  "fields": {
+    "app_label": "functional_id",
+    "name": "FUNCTIONAL_ID_STATUS",
+    "label": "Revogado",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "functional_id.FUNCTIONAL_ID_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "pk": null,
+  "fields": {
+    "app_label": "functional_id",
+    "name": "FUNCTIONAL_ID_STATUS",
+    "label": "Entregue",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "functional_id.FUNCTIONAL_ID_STATUS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "pk": null,
+  "fields": {
+    "app_label": "functional_id",
+    "name": "FUNCTIONAL_ID_TYPE",
+    "label": "Membro do Ministério Público",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "functional_id.FUNCTIONAL_ID_TYPE",
+    "description": "",
+    "order_weight": 100,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "pk": null,
+  "fields": {
+    "app_label": "functional_id",
+    "name": "FUNCTIONAL_ID_TYPE",
+    "label": "Outros servidores ou prestadores de serviço",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "functional_id.FUNCTIONAL_ID_TYPE",
+    "description": "",
+    "order_weight": 1,
+    "active": true
+  }
+}
+]

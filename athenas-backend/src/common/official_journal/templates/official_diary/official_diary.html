@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block css %}
+            <link rel="stylesheet" href="/athenas/static/common/official_journal/a4.css">
+            <link rel="stylesheet" href="/athenas/static/common/official_journal/index.css">
+            <link rel="stylesheet" href="/athenas/static/common/official_journal/base.css">
+            <link rel="stylesheet" href="/athenas/static/common/official_journal/index_dpto.css">
+            <link rel="stylesheet" href="/athenas/static/common/official_journal/dpto_a4.css">
+            <link rel="stylesheet" href="/athenas/static/edocs/protocolo/protocolo.css">
+        {% endblock%}
+    </head>
+    <body>
+        <div class="papper-content">
+            {% comment %} Capa {% endcomment %}
+            {% block content %}
+                {% include "official_diary/capa.html" %}
+            {% endblock %}
+            {% comment %} Sumário {% endcomment %}
+            <div class="page">
+                <section class="extend">
+                    <div class="summary-title">
+                        <h2>Sumário</h2>
+                    </div>
+                    <div class="summary-list">
+                        <ol>
+                            {% comment %} {% regroup diary.documentos by department_origin.general_organ.first as general_group %} {% endcomment %}
+                            {% for summary in documentos_geral %}
+                                <li>
+                                    <p>
+                                        {{ summary.nome | default_if_none:'OUTROS' | safe }}
+                                    </p>
+                                    <p class="summary"></p>
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </section>
+            </div>
+            {% comment %} Departamento {% endcomment %}
+            {% for item in documentos_geral %}
+                <div class="page_dpto">
+                    <div id="gfg" class="extend division_bar">
+                    </div>
+
+                    <div class="body division_content mt40">
+                        <h2 class="span-title-edition">Edição: {{diary}} | Palmas, {{diary.signed_at|date:"l, d"}} de {{diary.signed_at|date:"F"}} de {{diary.signed_at|date:"Y"}}</h2>
+                    </div>
+
+                    <div class="extend title_dpto">
+                        <h1> {{ item.nome | safe }} </h1>
+                    </div>
+                    {% comment %} footer {% endcomment %}
+                    <footer id="ft" class="footer_content">
+                        <div class="legal-sign">
+                            {% comment %} <img src="/athenas/static/common/official_journal/images/qrcode.png" width="60px" height="60px" alt="" />
+                            <p>Chave de autenticidade: 00000-0000 <a href="#">https://athenas.mpto.mp.br/athenas/docsverify/verify/</a>
+                            Assinado de forma digital conforme MPº 2.200-2 de 24/08/2001.
+                            Edição nº 1414 - Publicação em 14/03/2022 </p> {% endcomment %}
+                            {% comment %} {% include "official_diary/legal_sign_doe.html" %} {% endcomment %}
+                            {% autoescape off %}{{ doe_sign }}{% endautoescape %}
+                        </div>
+                        <div class="mpto_info">
+                            <div>
+                                <p><strong>Endereço</strong> 202 NORTE, AV. LO 4, CONJ. 1, Lotes 5 e 6
+                                    Plano Diretor Norte - CEP 77.006-218
+                                    Palmas-TO </p>
+                                <p><strong>Fone</strong> 63 3216-7600 </p>
+                            </div>
+                            <img src="/athenas/static/common/official_journal/images/logo.png" width="100px" height="50px" alt="" />
+                        </div>
+                    </footer>
+
+                    {% comment %} {% include "official_diary/footer.html" %} {% endcomment %}
+                </div>
+                {% comment %} Conteúdo {% endcomment %}
+                <div class="page">
+                    <div class="papper-model">
+                    {% comment %} <div class="extend_body content paragraph-text"> {% endcomment %}
+                        {% for doc in item.documentos %}
+                            {% comment %} {% regroup department_group.list by department_origin as department_documents %} {% endcomment %}
+                            {% comment %} {% for department in department_documents %} {% endcomment %}
+                                {% comment %} <div class="summary-title-subpage">
+                                    <span> {{ department.grouper | safe }} </span>
+                                </div> {% endcomment %}
+                                {% comment %} {% for document in department.list %} {% endcomment %}
+                            <div class="papper-body">
+                                <p> {{ doc.conteudo | safe }} </p>
+                            </div>
+                                {% comment %} {% endfor %}
+                            {% comment %} {% endfor %} {% endcomment %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+
+            {% comment %} Fundo {% endcomment %}
+            {% block include %}
+                {% include "official_diary/fundo.html" %}
+            {% endblock %}
+        </div>
+        {% block js %}
+            <script>
+                document.addEventListener('DOMContentLoaded', function(e) {
+                    var pages = document.getElementsByClassName('page');
+                    var summarys = document.getElementsByClassName('summary');
+                    var page = 3;
+                    for(var i=1;i<pages.length;i++) {
+                      //console.log(pages[i].clientHeight);
+                      //var qtdPages = Math.ceil(pages[i].clientHeight/925);
+                      var qtdPages = Math.ceil(pages[i].clientHeight/1150) + 1;
+                      //summarys[i].innerText += page;
+                      summarys[i-1].innerText += page;
+                      page += qtdPages;
+                    }
+                });
+            </script>
+        {% endblock js%}
+    </body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "itop/base_generic.html" %}
+{% block content %}
+<section class="request-user-information">
+    <div class="general-information">
+        <span class="section-title">Informações Gerais</span>
+        <div class="info-box">
+            <p><strong>Nº do Chamado:</strong> {{userRequest.ref}}</p>
+            <p><strong>Estado atual:</strong> {{userRequest.status}}</p>
+            <p><strong>Origem:</strong> {{userRequest.origin}}</p>
+            <p><strong>Solicitante:</strong> {{userRequest.caller_id_friendlyname}}</p>
+            <p><strong>Local:</strong> {{userRequest.location_name}}</p>
+            <p><strong>Telefone:</strong> {{userRequest.phone}}</p>
+
+            <div class="info-main">
+                <p><strong>Problema relatado:</strong> {{userRequest.description}}</p>
+            </div>
+            <div class="info-main">
+                <p><strong>Relatório do Atendimento:</strong> {{userRequest.solution}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <span class="section-title">Contatos</span>
+        <div class="info-box">
+            <p><strong>Equipe:</strong> {{userRequest.team_id_friendlyname}}</p>
+            <p><strong>Atendente:</strong> {{userRequest.agent_id_friendlyname}}</p>
+            <p><strong>Aprovador:</strong> {{userRequest.approver_id_friendlyname}}</p>
+        </div>
+    </div>
+
+    <div class="dates">
+        <span class="section-title">Datas</span>
+        <div class="info-box">
+            <p><strong>Data da abertura do Chamado:</strong> {{userRequest.start_date}}</p>
+            <p><strong>Início do Atendimento:</strong> {{userRequest.assignment_date}}</p>
+            <p><strong>Final do Atendimento:</strong> {{userRequest.resolution_date}}</p>
+            <p><strong>Tempo de resolução:</strong> {{userRequest.time_spent}}</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,43 @@
+- 2024.10.30:
+    - CARD: ATS-5434 - MR: 1438 - [Back] Criar api para reenviar notificação de prestação de contas externa 
+- 2024.10.31:
+    - CARD: ATS-5750 - MR: 1444 - [BACK - Diárias - DAA] Adicionar campos em tabelas
+    - CARD: ATS-5751 - MR: 1444 - [BACK - Diárias - DAA] Ajuste em cálculo consolidado
+- 2024.11.01:
+    - CARD: ATS-5411 - MR: 1446 - [Back] Criar o Relatorio/OS consolidado da solicitação de Beneficiario 
+    - CARD: ATS-5744 - MR: 1448 - [back] - Alterar cálculo do auxilio transporte de estagiários
+    - CARD: ATS-5752 - MR: 1447 - [BACK - Diárias - DAA] Validação ao criar PassagemAerea
+    - CARD: ATS-5745 - MR: 1449 - [back] - Alterar cálculo do auxilio transporte de residentes
+- 2024.11.4:
+    - CARD: ATS-5681 - MR: 1452 - [back] Ajustar cnab de pensionistas, consignados  e diárias
+    - CARD: ATS-5736 - MR: 1453 - [back] Criar rotina para regularizar o plano ao enviar a solicitação de teletrabalho
+    - CARD: ATS-5412 - MR: 1454 - [back] Impressão de Relatório de prestação de contas da Viagem 
+    - CARD: ATS-5756 - MR: 1455 - [BACK - Diárias - DAA] Ajuste em api para tratar novos dados
+    - CARD: ATS-5757 - MR: 1456 - [BACK - Diárias - DAA] Ajuste em api de passagem para tratar novos dados
+- 2024.11.5:
+    - CARD: ATS-5737 - MR: 1457 - [back] Criar validação para não permitir criar plano no período estimado  na revogação
+    - CARD: ATS-5764_ATS-5765 - MR: 1459 - [Back - Notificações por etapa no VDF] inclusão da logica das pendenencias do diarias / Api para retornar as etapas que o usuairo tem função de avaliador 
+- 2024.11.6:
+    - CARD: ATS-5738 - MR: 1461 - [back] Alterar lógica do campo observação da api /athenas/api/v2/vdf/infos-teletrabalho-bloqueado
+    - CARD: ATS-5535 - MR: 1464 - [back] VDF - Justificativa ponto - implementar validação de competência ano e mês
+    - CARD: ATS-5689 - MR: 1463 - [back] - Corrigir cálculo do auxílio creche
+    - CARD: ATS-5753 - MR: 1466 - [BACK - Diárias - DAA] Modificar fluxo de diárias
+    - CARD: ATS-5730 - MR: 1465 - [BACK - Diárias - DAA] Criação de fluxos e condicionais
+- 2024.11.7:
+    - CARD: ATS-5631 - MR: 1440 - [back] Ajustar Filtros por Type By Possession - Adicionar Residentes
+    - CARD: ATS-5781 - MR: 1462 - [back] Athenas - Realizar criação de nova tela de Configuração do Ponto da seção Painel de Controle
+    - CARD: ATS-5805 - MR: 1460 - [back] Adicionando query param para download de documento
+    - CARD: ATS-5769 - MR: 1467 - [Back - Diarias] Ajustar o email enviado para o GEDOC na criação de viagem Excedente
+    - CARD: ATS-5739, ATS-5740 e ATS-5742 - MR: 1468 - [back] Permitir que a solicitação de desbloqueio e o bloqueio possa receber mais de um anexo (VDF e Gestor)
+    - CARD: ATS-5794 - MR: 1469 - [back] Adicionando novo item na serialização e novo filtro
+    - CARD: ATS-5761 - MR: 1470 - [BACK - Diárias] Ajuste em apis para destacar diárias de fora do 'padrão'
+- 2024.11.8:
+    - CARD: ATS-5692 - MR: 1472 - [back] - Automatizar cálculo de data fim do auxílio creche
+    - CARD: ATS-5763 - MR: 1471 - [back] Teletrabalho - Criar notificação para servidor
+    - CARD: ATS-5829 - MR: 1479 - [Back] Criar uma sessão de prestação de contas na tela de detalhes do beneficiario
+    - CARD: ATS-5020 - MR: 1474 - [back] - Histórico de Serviços - Criar tabela de histórico de Serviço
+    - CARD: ATS-5021 - MR: 1477 - [back] - Histórico de Serviços - Criar função para gerar o histórico ao executar o Serviço
+    - CARD: ATS-5741 - MR: 1476 - [back] Cancelar solicitação aguardando envio quando o plano for bloqueado
+    - CARD: ATS-5818 - MR: 1475 - Adicionar os modelos de pessoa_fisica, dependente  e dependência na auditoria de logs
+- 2024.11.11:
+    - CARD: ATS-5888 - MR: 1480 - validação no cadastro de Local e servidor lotação , criação de designação 

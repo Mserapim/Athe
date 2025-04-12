@@ -1,0 +1,41 @@
+[{
+	"model": "standard.choice",
+	"fields": {
+		"app_label": "rh",
+		"name": "BENEFIT_SITUATION",
+		"label": "Benefício concedido pelo próprio órgão declarante",
+		"value": 1,
+		"cvalue": "1",
+		"cache_path": "rh.BENEFIT_SITUATION",
+		"description": "",
+		"order_weight": 0,
+		"active": true
+	}
+},
+{
+	"model": "standard.choice",
+	"fields": {
+		"app_label": "rh",
+		"name": "BENEFIT_SITUATION",
+		"label": "Benefício transferido de outro órgão",
+		"value": 2,
+		"cvalue": "2",
+		"cache_path": "rh.BENEFIT_SITUATION",
+		"description": "",
+		"order_weight": 0,
+		"active": true
+	}
+},{
+	"model": "standard.choice",
+	"fields": {
+		"app_label": "rh",
+		"name": "BENEFIT_SITUATION",
+		"label": "Mudança de CPF do beneficiário",
+		"value": 3,
+		"cvalue": "3",
+		"cache_path": "rh.BENEFIT_SITUATION",
+		"description": "",
+		"order_weight": 0,
+		"active": true
+	}
+}]

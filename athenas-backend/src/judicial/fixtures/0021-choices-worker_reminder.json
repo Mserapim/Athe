@@ -1,0 +1,35 @@
+[
+{
+    "fields": {
+        "description": "",
+        "value": 1,
+        "label": "Normal",
+        "cache_path": "judicial.WORKER_REMINDER_PRIORITY",
+        "app_label": "judicial",
+        "name": "WORKER_REMINDER_PRIORITY"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 2,
+        "label": "Urgente",
+        "cache_path": "judicial.WORKER_REMINDER_PRIORITY",
+        "app_label": "judicial",
+        "name": "WORKER_REMINDER_PRIORITY"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 3,
+        "label": "Imediata",
+        "cache_path": "judicial.WORKER_REMINDER_PRIORITY",
+        "app_label": "judicial",
+        "name": "WORKER_REMINDER_PRIORITY"
+    },
+    "model": "standard.choice"
+}
+]

@@ -1,0 +1,5168 @@
+[
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": " "
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-PASS",
+    "slug": "outros-pass",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": "PENSÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": "PREVIDENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "REMUNERAÇÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2022"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": "PENSÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": "PREVIDENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "REMUNERAÇÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2021"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "ABONO PERMANENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": "PENSÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": "PREVIDENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "REMUNERAÇÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2020"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "ABONO PERMANENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": "PENSÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": "PREVIDENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "REMUNERAÇÃO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2019"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "ABONO PERMANENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2018"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "ABONO PERMANENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2017"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "ABONO-PECUNIARIO",
+    "slug": "abono-pecuniario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 7,
+    "extra_info": "ABONO PECUNIARIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "DEDUCAO-DEPENDENTES",
+    "slug": "deducao-dependentes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 3,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "DIARIAS-E-AJUDA-DE-CUSTO",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "ABONO PERMANENCIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-AUXILIO-ALIMENTACAO",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. ALIMENTACAO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-AUXILIO-CRECHE",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX. CRECHE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-AUXILIO-ESPECIAL",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX ESPECIAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-AUXILIO-FUNERAL",
+    "slug": "outros-auxilio-funeral",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX FUNERAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX MORADIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-AUXILIO-NATALIDADE",
+    "slug": "outros-auxilio-natalidade",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "AUX NATALIDADE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-INCENTIVO-FUNCIONAL",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INC. FUNCIONAL"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-INDENIZACAO-TRANSPORTE",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDEN. TRANSPORTE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-INDENIZACOES",
+    "slug": "outros-indenizacoes",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "INDENIZAÇÕES"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PAE"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-PASEP",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PASEP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-PRECATORIO",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "PRECATORIO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-REALINHAMENTO",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "REALINHAMENTO"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-SALARIO-FAMILIA",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "SAL. FAMILIA"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": "URV"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "PENSAO-ALIMENTICIA",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "PREVIDENCIA-SOCIAL",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RRA-IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RRA-PENSAO-ALIMENTICIA",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 1,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RRA-PREVIDENCIA-SOCIAL",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RRA-QUANTIDADE-MESES",
+    "slug": "rra-quantidade-meses",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 22,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RRA-RENDIMENTOS-ISENTOS-MOLESTIA",
+    "slug": "rra-rendimentos-isentos-molestia",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 21,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2016"
+    ],
+    "nome": "RRA-RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "DECIMO-TERCEIRO-SALARIO",
+    "slug": "decimo-terceiro-salario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "DECIMO-TERCEIRO-SALARIO-EXONERACAO",
+    "slug": "decimo-terceiro-salario-exoneracao",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "DECIMO-TERCEIRO-SALARIO-IMPOSTO-RETIDO-FONTE",
+    "slug": "decimo-terceiro-salario-imposto-retido-fonte",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "decimo-terceiro-salario-previdencia-social",
+    "slug": "decimo-terceiro-salario-previdencia-social",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "diarias-e-ajuda-de-custo",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "IMPOSTO-RETIDO-NA-FONTE",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "INDENIZACOES-POR-RESCISAO-DE-CONTRATO-DE-TRABALHO",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "OUTROS",
+    "slug": "outros",
+    "id_receita": "RIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "OUTROS-ABONO-PERMANENCIA",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-auxilio-alimentacao",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-auxilio-creche",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-auxilio-especial",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "OUTROS-AUXILIO-MORADIA",
+    "slug": "outros-auxilio-moradia",
+    "id_receita": "AUX. MORADIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-incentivo-funcional",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-indenizacao-transporte",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "OUTROS-PAE",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-pasep",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-precatorio",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-realinhamento",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "outros-salario-familia",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "OUTROS-URV",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "pensao-alimenticia",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "previdencia-social",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "RENDIMENTOS-TRIBUTAVEIS",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "rra-despesa-com-acao-judicial",
+    "slug": "rra-despesa-com-acao-judicial",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "rra-imposto-retido-na-fonte",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "RIIRP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "rra-pensao-alimenticia",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "rra-previdencia-social",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2015"
+    ],
+    "nome": "rra-rendimentos-tributaveis",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "decimo-terceiro-salario",
+    "slug": "decimo-terceiro-salario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "decimo-terceiro-salario-exoneracao",
+    "slug": "decimo-terceiro-salario-exoneracao",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "decimo-terceiro-salario-imposto-retido-fonte",
+    "slug": "decimo-terceiro-salario-imposto-retido-fonte",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "decimo-terceiro-salario-previdencia-social",
+    "slug": "decimo-terceiro-salario-previdencia-social",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "diarias-e-ajuda-de-custo",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "imposto-retido-na-fonte",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros",
+    "slug": "outros",
+    "id_receita": "RIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-abono-permanencia",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-auxilio-alimentacao",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-auxilio-creche",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-auxilio-especial",
+    "slug": "outros-auxilio-especial",
+    "id_receita": "AUXILIO ESPECIAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-incentivo-funcional",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-indenizacao-transporte",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-pae",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-pasep",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-precatorio",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-realinhamento",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-salario-familia",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "outros-urv",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "pensao-alimenticia",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "previdencia-social",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rendimentos-tributaveis",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rra-despesa-com-acao-judicial",
+    "slug": "rra-despesa-com-acao-judicial",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rra-imposto-retido-na-fonte",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "RIIRP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rra-pensao-alimenticia",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rra-previdencia-social",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2014"
+    ],
+    "nome": "rra-rendimentos-tributaveis",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "decimo-terceiro-salario",
+    "slug": "decimo-terceiro-salario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "decimo-terceiro-salario-exoneracao",
+    "slug": "decimo-terceiro-salario-exoneracao",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "decimo-terceiro-salario-imposto-retido-fonte",
+    "slug": "decimo-terceiro-salario-imposto-retido-fonte",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "decimo-terceiro-salario-previdencia-social",
+    "slug": "decimo-terceiro-salario-previdencia-social",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "diarias-e-ajuda-de-custo",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "imposto-retido-na-fonte",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros",
+    "slug": "outros",
+    "id_receita": "RIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-abono-permanencia",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-auxilio-alimentacao",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-auxilio-creche",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-incentivo-funcional",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-indenizacao-transporte",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-pae",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-pasep",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-precatorio",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-realinhamento",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-salario-familia",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "outros-urv",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "pensao-alimenticia",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "previdencia-social",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rendimentos-tributaveis",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rra-despesa-com-acao-judicial",
+    "slug": "rra-despesa-com-acao-judicial",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rra-imposto-retido-na-fonte",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "RIIRP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rra-pensao-alimenticia",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rra-previdencia-social",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2013"
+    ],
+    "nome": "rra-rendimentos-tributaveis",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "complementar-plansaude",
+    "slug": "complementar-plansaude",
+    "id_receita": "PLANSAUDE 26.894.022/0001-36",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": "PLANSAUDE 26.894.022/0001-36"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "decimo-terceiro-salario",
+    "slug": "decimo-terceiro-salario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "decimo-terceiro-salario-exoneracao",
+    "slug": "decimo-terceiro-salario-exoneracao",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "decimo-terceiro-salario-imposto-retido-fonte",
+    "slug": "decimo-terceiro-salario-imposto-retido-fonte",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "decimo-terceiro-salario-previdencia-social",
+    "slug": "decimo-terceiro-salario-previdencia-social",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "diarias-e-ajuda-de-custo",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "imposto-retido-na-fonte",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros",
+    "slug": "outros",
+    "id_receita": "RIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-abono-permanencia",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-auxilio-alimentacao",
+    "slug": "outros-auxilio-alimentacao",
+    "id_receita": "AUX. ALIMENTAÇÃO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-auxilio-creche",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-incentivo-funcional",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-indenizacao-transporte",
+    "slug": "outros-indenizacao-transporte",
+    "id_receita": "INDENIZAÇÃO TRANSPORTE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-pae",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-pasep",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-precatorio",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-realinhamento",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-salario-familia",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "outros-urv",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "pensao-alimenticia",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "previdencia-social",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rendimentos-tributaveis",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rra-despesa-com-acao-judicial",
+    "slug": "rra-despesa-com-acao-judicial",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rra-imposto-retido-na-fonte",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "RIIRP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rra-pensao-alimenticia",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rra-previdencia-social",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2012"
+    ],
+    "nome": "rra-rendimentos-tributaveis",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "complementar-plansaude",
+    "slug": "complementar-plansaude",
+    "id_receita": "PLANSAUDE 26.894.022/0001-36",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": "PLANSAUDE 26.894.022/0001-36"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "decimo-terceiro-salario",
+    "slug": "decimo-terceiro-salario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "decimo-terceiro-salario-exoneracao",
+    "slug": "decimo-terceiro-salario-exoneracao",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "decimo-terceiro-salario-imposto-retido-fonte",
+    "slug": "decimo-terceiro-salario-imposto-retido-fonte",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "decimo-terceiro-salario-previdencia-social",
+    "slug": "decimo-terceiro-salario-previdencia-social",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "diarias-e-ajuda-de-custo",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "imposto-retido-na-fonte",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros",
+    "slug": "outros",
+    "id_receita": "RIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-abono-permanencia",
+    "slug": "outros-abono-permanencia",
+    "id_receita": "ABONO PERMANENCIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-auxilio-creche",
+    "slug": "outros-auxilio-creche",
+    "id_receita": "AUXILIO CRECHE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-incentivo-funcional",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-pae",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-pasep",
+    "slug": "outros-pasep",
+    "id_receita": "ABONO PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-precatorio",
+    "slug": "outros-precatorio",
+    "id_receita": "PRECATORIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-realinhamento",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-salario-familia",
+    "slug": "outros-salario-familia",
+    "id_receita": "SALARIO FAMILIA",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "outros-urv",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "pensao-alimenticia",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "previdencia-social",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rendimentos-tributaveis",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rra-despesa-com-acao-judicial",
+    "slug": "rra-despesa-com-acao-judicial",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rra-imposto-retido-na-fonte",
+    "slug": "rra-imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 11,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "rra-indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": "RIIRP"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rra-pensao-alimenticia",
+    "slug": "rra-pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 14,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rra-previdencia-social",
+    "slug": "rra-previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 10,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2011"
+    ],
+    "nome": "rra-rendimentos-tributaveis",
+    "slug": "rra-rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 9,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "complementar-plansaude",
+    "slug": "complementar-plansaude",
+    "id_receita": "PLANSAUDE 26.894.022/0001-36",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": "PLANSAUDE 26.894.022/0001-36"
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "decimo-terceiro-salario",
+    "slug": "decimo-terceiro-salario",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "decimo-terceiro-salario-exoneracao",
+    "slug": "decimo-terceiro-salario-exoneracao",
+    "id_receita": "",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "decimo-terceiro-salario-imposto-retido-fonte",
+    "slug": "decimo-terceiro-salario-imposto-retido-fonte",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "decimo-terceiro-salario-previdencia-social",
+    "slug": "decimo-terceiro-salario-previdencia-social",
+    "id_receita": "",
+    "tipo": 2,
+    "identifier": 1,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "diarias-e-ajuda-de-custo",
+    "slug": "diarias-e-ajuda-de-custo",
+    "id_receita": "RIDAC",
+    "tipo": 1,
+    "identifier": 5,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "imposto-retido-na-fonte",
+    "slug": "imposto-retido-na-fonte",
+    "id_receita": "RTIRF",
+    "tipo": 2,
+    "identifier": 4,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "slug": "indenizacoes-por-rescisao-de-contrato-de-trabalho",
+    "id_receita": "RIIRP",
+    "tipo": 1,
+    "identifier": 6,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "outros",
+    "slug": "outros",
+    "id_receita": "RIO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "outros-incentivo-funcional",
+    "slug": "outros-incentivo-funcional",
+    "id_receita": "INCENTIVO FUNCIONAL",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "outros pae",
+    "slug": "outros-pae",
+    "id_receita": "PAE",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "outros-pasep",
+    "slug": "outros-pasep",
+    "id_receita": "PASEP",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "outros-realinhamento",
+    "slug": "outros-realinhamento",
+    "id_receita": "REALINHAMENTO",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "outros urv",
+    "slug": "outros-urv",
+    "id_receita": "URV",
+    "tipo": 1,
+    "identifier": 8,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "pensao-alimenticia",
+    "slug": "pensao-alimenticia",
+    "id_receita": "RTPA",
+    "tipo": 2,
+    "identifier": 13,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "previdencia-social",
+    "slug": "previdencia-social",
+    "id_receita": "RTPO",
+    "tipo": 2,
+    "identifier": 2,
+    "extra_info": ""
+  }
+},
+{
+  "model": "dirf.token",
+  "fields": {
+    "dialect": [
+      "ano-calendario-2010"
+    ],
+    "nome": "rendimentos-tributaveis",
+    "slug": "rendimentos-tributaveis",
+    "id_receita": "RTRT",
+    "tipo": 1,
+    "identifier": 1,
+    "extra_info": ""
+  }
+}
+]

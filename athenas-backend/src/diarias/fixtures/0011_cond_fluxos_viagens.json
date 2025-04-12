@@ -1,0 +1,74 @@
+[
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 1,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-05-09T18:55:37.146",
+        "modified_at": "2024-05-09T18:55:37.146",
+        "fluxo": 3,
+        "condicionais": "[\"1\"]"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 2,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-05-09T18:55:39.894",
+        "modified_at": "2024-05-09T18:55:39.894",
+        "fluxo": 3,
+        "condicionais": "[\"2\"]"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 3,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-05-09T18:58:49.126",
+        "modified_at": "2024-05-09T18:58:49.126",
+        "fluxo": 4,
+        "condicionais": "[\"2\", \"3\"]"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 4,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-05-09T18:59:20.007",
+        "modified_at": "2024-05-09T18:59:20.007",
+        "fluxo": 5,
+        "condicionais": "[\"2\", \"3\"]"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 5,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-05-09T18:59:52.022",
+        "modified_at": "2024-05-09T18:59:52.022",
+        "fluxo": 8,
+        "condicionais": "[\"4\"]"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 6,
+    "fields": {
+        "created_by": 1,
+        "modified_by": 1,
+        "created_at": "2024-05-09T19:00:14.630",
+        "modified_at": "2024-05-09T19:00:14.630",
+        "fluxo": 9,
+        "condicionais": "[\"5\"]"
+    }
+}
+]

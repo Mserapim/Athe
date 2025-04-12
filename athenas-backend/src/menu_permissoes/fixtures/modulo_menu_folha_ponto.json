@@ -1,0 +1,59 @@
+[
+    {
+        "model": "menu_permissoes.modulo",
+        "fields": {
+            "created_by": 10141,
+            "modified_by": 10141,
+            "created_at": "2025-01-17T10:10:17.241",
+            "modified_at": "2025-01-20T15:06:42.095",
+            "nome": "Folha  Ponto",
+            "descricao": "",
+            "situacao": "ATIVO",
+            "ordem": 7,
+            "icone": "edit_calendar",
+            "sigla": "folha-ponto"
+        }
+    },
+    {
+        "model": "menu_permissoes.menugrupo",
+        "fields": {
+            "created_by": 10141,
+            "modified_by": 10141,
+            "created_at": "2025-01-20T15:55:14.068",
+            "modified_at": "2025-01-20T15:55:14.068",
+            "nome": "Folha Ponto",
+            "descricao": "",
+            "situacao": "ATIVO",
+            "ordem": 1,
+            "icone": "edit_calendar",
+            "modulo": 10
+        }
+    },
+    {
+        "model": "menu_permissoes.menu",
+        "fields": {
+            "created_by": 10141,
+            "modified_by": 10141,
+            "created_at": "2025-01-17T10:29:05.887",
+            "modified_at": "2025-01-20T15:09:32.892",
+            "nome": "Folha Ponto",
+            "descricao": "",
+            "situacao": "ATIVO",
+            "ordem": 1,
+            "icone": "edit_calendar",
+            "grupo": 11,
+            "url": "folha-ponto/folha-ponto",
+            "servidores_favoritos": []
+        }
+    },
+    {
+        "model": "menu_permissoes.menuconfig",
+        "pk": 55,
+        "fields": {
+            "usuario_grupo": 1,
+            "menu": 34,
+            "acoes": "[\"ler\", \"criar\", \"editar\", \"apagar\", \"calcular\", \"ativar\", \"desativar\"]"
+        }
+    }
+]
+    

@@ -1,0 +1,23 @@
+<div class="papper-content">
+    <div class="field" style="margin-top: 0.5em; border-top: 1px dashed #000">
+        <h2 style="margin-bottom: 0.5em">Nível de Acesso</h2>
+        <div class="opinion">
+        {% if protocol.protocol_control and protocol.protocol_control.control_type %}
+            {{ protocol.protocol_control.control_type.title }}
+        {% else %}
+            Público
+        {% endif %}
+        </div>
+
+        {% if protocol.protocol_control and protocol.protocol_control.control_type %}
+        <h2 style="margin-bottom: 0.5em">Hipótese Legal</h2>
+        <div class="opinion">
+        {% if protocol.protocol_control.legal_prerogative %}
+            {{ protocol.protocol_control.legal_prerogative.title }}
+        {% else %}
+            Não informada
+        {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>

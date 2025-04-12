@@ -1,0 +1,44 @@
+form.verify input.small3
+{ font-size:20px; margin-right:21px; text-align:center; padding:1px 3px; }
+
+form.verify div
+{ background:#fff; display:table; }
+
+form.verify div.wrapper
+{ float:left; }
+
+form.verify .warning
+{ display:block; margin-top:5px; }
+
+.warning.success
+{ padding: 7px 12px; }
+
+.warning.success span
+{font-size: 18px; color: green; font-weight: bold; }
+
+form.verify .error
+{
+    width: 96%;
+    text-align: center;
+    padding: 7px 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2
+{ margin: 20px 0 0; }
+
+h2 strong
+{ color: #444; }
+
+ul, ol
+{ margin: 7px 0 20px; display: block; }
+
+li
+{ color: #444; line-height: 20px; margin: 7px 0;}
+
+ol li
+{ list-style: decimal inside; }
+
+p
+{ margin: 7px 0 20px; }

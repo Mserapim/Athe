@@ -1,0 +1,200 @@
+{% load helpers_format %}
+{% load config_format %}
+{% load dict_filter %}
+
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Portrait"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto 
+      }
+
+      table {
+        font-family: Georgia, arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        float: left;
+        page-break-inside: auto; 
+        margin-bottom: 30px;
+        table-layout: auto !important;
+      }
+
+      td, th {
+        border: 2px solid #000000;
+        text-align: left;
+        font-size: 9pt;
+        padding: 2px;
+      }
+
+      /* table td div {height:12px;overflow:hidden;} */
+
+      table tr th {
+        font-weight: 200
+      }
+      h2 {
+        font-size: 14px;
+        text-align: center;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
+
+      .recuo2 {
+        text-indent:2em
+      }
+      .recuo4 {
+        text-indent:4em
+      }
+
+      .col-1 {
+        width: 400px;
+      }
+      .col-2 {
+        text-align: center;
+        width: 300px;
+      }
+      .col-3 {
+        text-align: center;
+        font-size: 8pt;
+      }
+
+      .color-1 {
+        background-color: #c4c0c0;
+      }
+      .color-2 {
+        background-color: #9eeef8;
+        text-align: center;
+      }
+      .color-3 {
+        background-color: #eff89e;
+        text-align: right;
+        padding-right: 36px;
+        font-size: 9pt;
+      }
+      .color-4 {
+        background-color: #ffffff;
+        color: #c01111;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body style="height:100%;width:100%;margin:0;padding: 0; font-family: 'Times New Roman', Times, serif;color: #333;">
+    
+    {% include 'portrait/header/header.html' %}
+    
+    
+    <section style="margin-top:50px;margin-bottom:20px;clear: both;">
+      <div>
+        {% if serv_nada_consta %}
+          <div class="recuo2">Não há registros de faltas para o servidor(a) abaixo no período informado:</div>
+          {% for item in data %}
+            <p class="recuo4">
+              Matrícula: <span class="color-4">{{ item.matricula }}</span>
+            </p>
+            <p class="recuo4">
+              Nome: <span class="color-4">{{ item.nome }}</span>
+            </p>
+            <p class="recuo4">
+              Período pesquisado: <span class="color-4">{{ item.periodo }}</span>
+            </p>
+            <p class="recuo4">
+              Último Folha Ponto efetivado: <span class="color-4">{{ item.ultimo_folha_ponto_enviado }}</span>
+            </p>
+            <p class="recuo4">
+              Teletrabalho: <span class="color-4">{{ item.teletrabalho }}</span>
+            </p>
+          {% endfor %}
+        {% else %}
+          <table>
+            <tbody>
+              <tr>
+                <td class="col-1 color-2">
+                  <div><b>MATRÍCULA</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>NOME</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>CATEGORIA</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>DIA INÍCIO</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>DIA FIM</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>DIAS</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>COMPETÊNCIA DE DESCONTO</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>DATA DO PROCESSAMENTO</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>MOTIVO</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>OBSERVAÇÃO</b></div>
+                </td>
+                <td class="color-2">
+                  <div><b>SITUAÇÃO</b></div>
+                </td>
+              </tr>
+                {% for item in data %}
+                  <tr>
+                    <td>
+                      <div>{{ item.matricula }}</div>
+                    </td>
+                    <td class="col-2">
+                      <div>{{ item.nome }}</div>
+                    </td>
+                    <td class="col-2">
+                      <div>{{ item.categoria }}</div>
+                    </td>
+                    <td class="col-3">
+                      <div>{{ item.data_inicio }}</div>
+                    </td>
+                    <td class="col-3">
+                      <div>{{ item.data_fim }}</div>
+                    </td>
+                    <td class="col-3">
+                      <div>{{ item.dias }}</div>
+                    </td>
+                    <td class="col-3">
+                      <div>{{ item.competencia_desconto }}</div>
+                    </td>
+                    <td class="col-3">
+                      <div>{{ item.data_processado }}</div>
+                    </td>
+                    <td class="col-2">
+                      <div>{{ item.motivo }}</div>
+                    </td>
+                    <td class="col-2">
+                      <div>{{ item.observacao }}</div>
+                    </td>
+                    <td class="col-2">
+                      <div>{{ item.situacao }}</div>
+                    </td>
+                  </tr>
+                {% endfor %}
+              <tr>
+                <td class="color-3" colspan="11">
+                  <div><b>{{ total }}</b></div>
+                </td>
+              </tr>
+            </tbody> 
+          </table>
+        {% endif %}
+      </div>
+    </section> 
+  </body>
+</html>

@@ -1,0 +1,2875 @@
+[
+  {
+  "fields": {
+    "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+    "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+    "typeof": "LOADER",
+    "path": "rh.gfp.loaders.gfp_loader.GFPLoader",
+    "name_object": "GFPLoader",
+    "slug": "gfp-loader-generic"
+  },
+  "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.plansaude.PlansaudeComparticipacaoLoader",
+      "name_object": "PlansaudeComparticipacaoLoader",
+      "slug": "gfp-loader-plansaude-comparticipacao"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.plansaude.PlansaudeMensalidade",
+      "name_object": "PlansaudeMensalidade",
+      "slug": "gfp-loader-plansaude-mensalidade"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.plansaude.PlansaudeTaxaInscricao",
+      "name_object": "PlansaudeTaxaInscricao",
+      "slug": "gfp-loader-plansaude-taxa"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.plansaude.PlansaudeDependenteIndireto",
+      "name_object": "PlansaudeDependenteIndireto",
+      "slug": "gfp-loader-plansaude-dependente"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.viabillize.Viabillize",
+      "name_object": "Viabillize",
+      "slug": "gfp-loader-viabillize"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este calculo pode ser usado de forma gen\u00e9rica para calculos simples",
+      "title": "Provisionamento de 13\u00ba Sal\u00e1rio",
+      "typeof": "PROVISION",
+      "path": "rh.gfp.calcs.gratificacao_natalina.Provisioning13thSalary",
+      "name_object": "Provisioning13thSalary",
+      "slug": "provisioning-13thsalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.base.BaseCalculation",
+      "name_object": "BaseCalculation",
+      "slug": "mpto-gfp-base-calculation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo do Aux\u00edlio Alimenta\u00e7\u00e3o",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.aid.AidSupply",
+      "name_object": "AidSupply",
+      "slug": "gfp-mpto-aid-supply"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo do Aux\u00edlio Creche",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.aid.AidDaycare",
+      "name_object": "AidDaycare",
+      "slug": "gfp-mpto-aid-daycare"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo do Aux\u00edlio Especial",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.aid.AidSpecial",
+      "name_object": "AidSpecial",
+      "slug": "gfp-mpto-aid-special"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo do Aux\u00edlio Moradia",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.aid.AidHabitation",
+      "name_object": "AidHabitation",
+      "slug": "gfp-mpto-aid-habitation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para remunera\u00e7\u00e3o",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.BaseSalary",
+      "name_object": "BaseSalary",
+      "slug": "gfp-mpto-basesalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Remunera\u00e7\u00e3o de efetivo apenas",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.SalaryEffective",
+      "name_object": "SalaryEffective",
+      "slug": "gfp-mpto-salaryeffective"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Remunera\u00e7\u00e3o de efetivo com fun\u00e7\u00e3o ou comiss\u00e3o/gratifica\u00e7\u00e3o",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.SalaryEffectiveOld",
+      "name_object": "SalaryEffectiveOld",
+      "slug": "gfp-mpto-salaryeffective-old"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Remunera\u00e7\u00e3o de servidor requisitado",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.SalaryRequested",
+      "name_object": "SalaryRequested",
+      "slug": "gfp-mpto-salaryrequested"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Gratifica\u00e7\u00e3o de fun\u00e7\u00e3o de confian\u00e7a",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.GratificationFunction",
+      "name_object": "GratificationFunction",
+      "slug": "gfp-mpto-gratificationfunction"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Vencimento de comissionado",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.SalaryCommissioned",
+      "name_object": "SalaryCommissioned",
+      "slug": "gfp-mpto-salarycommissioned"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Gratifica\u00e7\u00e3o do cargo em comiss\u00e3o",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.GratificationCommissioned",
+      "name_object": "GratificationCommissioned",
+      "slug": "gfp-mpto-gratificationcomissioned"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Complemento do vencimento de comissionado",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ComplementSalaryCommissioned",
+      "name_object": "ComplementSalaryCommissioned",
+      "slug": "gfp-mpto-complementsalarycommissioned"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Complemento da grtifica\u00e7\u00e3o de comissionado",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ComplementGratificationCommissioned",
+      "name_object": "ComplementGratificationCommissioned",
+      "slug": "gfp-mpto-complementgratificationcommissioned"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo de Vantagem Pessoal Identificada",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.IdentifiedPersonalAdvantage",
+      "name_object": "IdentifiedPersonalAdvantage",
+      "slug": "gfp-mpto-extra"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Redutor de Teto Constitucional",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ReduceSalaryCap",
+      "name_object": "ReduceSalaryCap",
+      "slug": "gfp-mpto-redutor-teto"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Substitui\u00e7\u00e3o de Efetivos.",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.EfectiveSubstitution",
+      "name_object": "EfectiveSubstitution",
+      "slug": "gfp-mpto-substituion-efective"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Complemento de substitui\u00e7\u00e3o para a remunera\u00e7\u00e3o",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ComplementSubstitution",
+      "name_object": "ComplementSubstitution",
+      "slug": "gfp-mpto-substituion-complement"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Substitui\u00e7\u00e3o para a parte vencimental da remunera\u00e7\u00e3o.",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.CommissionedSubstitution",
+      "name_object": "CommissionedSubstitution",
+      "slug": "gfp-mpto-substituion-salary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Substitui\u00e7\u00e3o para a parte vencimental da remunera\u00e7\u00e3o.",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.GratificationSubstitution",
+      "name_object": "GratificationSubstitution",
+      "slug": "gfp-mpto-substituion-gratification"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "13\u00b0 Sal\u00e1rio",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ChristmasGratification",
+      "name_object": "ChristmasGratification",
+      "slug": "gfp-mpto-13thsalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adiantamento de 13\u00b0 Sal\u00e1rio",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.AdvanceChristmasGratification",
+      "name_object": "AdvanceChristmasGratification",
+      "slug": "gfp-mpto-Advance13thsalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "13\u00b0 proporcional",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ChristmasGratificationRescission",
+      "name_object": "ChristmasGratificationRescission",
+      "slug": "gfp-mpto-rescission-13thsalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.covenant.SindSEMP",
+      "name_object": "SindSEMP",
+      "slug": "gfp-mpto-sindsemp"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.covenant.Fenasemp",
+      "name_object": "Fenasemp",
+      "slug": "gfp-mpto-fenasemp"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.covenant.ASAMP",
+      "name_object": "ASAMP",
+      "slug": "gfp-mpto-asamp"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.covenant.ATMP",
+      "name_object": "ATMP",
+      "slug": "gfp-mpto-atmp"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.covenant.ATMP13Salary",
+      "name_object": "ATMP13Salary",
+      "slug": "gfp-mpto-atmp-13salario"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo PlanSa\u00fade",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.covenant.PlanSaudeMonthlyPayment",
+      "name_object": "PlanSaudeMonthlyPayment",
+      "slug": "gfp-mpto-plansaude-monthly-payment"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adicional de F\u00e9rias",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.AdditionalHolidays",
+      "name_object": "AdditionalHolidays",
+      "slug": "gfp-mpto-additional-holidays"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "F\u00e9rias Vencidas",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.RescissionUnusedHolidays",
+      "name_object": "RescissionUnusedHolidays",
+      "slug": "gfp-mpto-unused-holidays"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adicional de F\u00e9rias Vencidas",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.RescissionAdditionalUnusedHolidays",
+      "name_object": "RescissionAdditionalUnusedHolidays",
+      "slug": "gfp-mpto-additional-unused-holidays"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "F\u00e9rias proporcionais",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.ProportionalHolidays",
+      "name_object": "ProportionalHolidays",
+      "slug": "gfp-mpto-proportional-holidays"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adicional de proporcional de f\u00e9rias",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.AdditionalProportionalHolidays",
+      "name_object": "AdditionalProportionalHolidays",
+      "slug": "gfp-mpto-additional-proportional-holidays"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "13\u00b0 Sal\u00e1rio",
+      "typeof": "PROVISION",
+      "path": "rh.gfp.calcs.mpto.gratificacao_natalina.ChristmasGratificationProvision",
+      "name_object": "ChristmasGratificationProvision",
+      "slug": "gfp-mpto-provision-13thsalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "13\u00b0 Sal\u00e1rio",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.gratificacao_natalina.ChristmasGratificationRescission",
+      "name_object": "ChristmasGratificationRescission",
+      "slug": "gfp-mpto-christmas-gratification-rescission"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo de imposto retido na fonte",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.irrf.IRRF",
+      "name_object": "IRRF",
+      "slug": "gfp-mpto-irrf"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.socialsecurity.IgeprevTocantinsPF",
+      "name_object": "IgeprevTocantinsPF",
+      "slug": "gfp-mpto-socialsecurity-igeprev-pf"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.socialsecurity.IgeprevTocantinsPP",
+      "name_object": "IgeprevTocantinsPP",
+      "slug": "gfp-mpto-socialsecurity-igeprev-pp"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.socialsecurity.PrevPalmas",
+      "name_object": "PrevPalmas",
+      "slug": "gfp-mpto-socialsecurity-prevpalmas"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.socialsecurity.INSS",
+      "name_object": "INSS",
+      "slug": "gfp-mpto-socialsecurity-inss"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Provis\u00e3o de Patronal",
+      "typeof": "PROVISION",
+      "path": "rh.gfp.calcs.mpto.socialsecurity.ProvisionSocialSecurity",
+      "name_object": "ProvisionSocialSecurity",
+      "slug": "gfp-mpto-provision-socialsecurity"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adicional de F\u00e9rias",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.AdditionalVacation",
+      "name_object": "AdditionalVacation",
+      "slug": "gfp-mpto-additional-vacation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "F\u00e9rias Vencidas",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.RescissionUnusedVacation",
+      "name_object": "RescissionUnusedVacation",
+      "slug": "gfp-mpto-unused-vacation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adicional de F\u00e9rias Vencidas",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.RescissionAdditionalUnusedVacation",
+      "name_object": "RescissionAdditionalUnusedVacation",
+      "slug": "gfp-mpto-additional-unused-vacation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "F\u00e9rias proporcionais",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.ProportionalVacation",
+      "name_object": "ProportionalVacation",
+      "slug": "gfp-mpto-proportional-vacation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Adicional de proporcional de f\u00e9rias",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.ferias.AdditionalProportionalVacation",
+      "name_object": "AdditionalProportionalVacation",
+      "slug": "gfp-mpto-additional-proportional-vacation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Pens\u00e3o Alimenticia",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.pension.PensionFood",
+      "name_object": "PensionFood",
+      "slug": "gfp-mpto-pension-food"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo de imposto retido na fonte",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.irrf.IRRFRRA",
+      "name_object": "IRRFRRA",
+      "slug": "gfp-mpto-irrf-rra"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "C\u00e1lculo de porcetagem de cumula\u00e7\u00e3o para membros",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.Cumulation",
+      "name_object": "Cumulation",
+      "slug": "gfp-mpto-cumulation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Calculo Base para MPTO",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.DevolutionAdvanceChristmasGratification",
+      "name_object": "DevolutionAdvanceChristmasGratification",
+      "slug": "gfp-mpto-DevolutionAdvance13thsalary"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Complemento de substitui\u00e7\u00e3o para membros",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.ComplementSubstitutionMember",
+      "name_object": "ComplementSubstitutionMember",
+      "slug": "gfp-mpto-substituion-complement-member"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Gratifica\u00e7\u00e3o do cargo em comiss\u00e3o",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.IndemnificationCommissioned",
+      "name_object": "IndemnificationCommissioned",
+      "slug": "gfp-mpto-indemnificationcomissioned"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.plansaude.PlansaudeParcelamento",
+      "name_object": "PlansaudeParcelamento",
+      "slug": "gfp-loader-plansaude-parcelamento"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "Este carregador carrega arquivos gen\u00e9ricos de lan\u00e7amentos nos contracheques de uma determinada folha.",
+      "title": "Carregador gen\u00e9rico de arquivos da FOPAG",
+      "typeof": "LOADER",
+      "path": "rh.gfp.loaders.plansaude.PlansaudeDevolucao",
+      "name_object": "PlansaudeDevolucao",
+      "slug": "gfp-loader-plansaude-devolucoes"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Sal\u00e1rio Maternidade",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.remuneracao.MaternitySalary",
+      "name_object": "MaternitySalary",
+      "slug": "gfp-mpto-maternitypay"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Provis\u00e3o de Previdencia para 13\u0323\u00b0\u0323 Sal\u00e1rio (patronal)",
+      "typeof": "PROVISION",
+      "path": "rh.gfp.calcs.mpto.provisions.ProvisionSocialSecurityChristmas",
+      "name_object": "ProvisionSocialSecurityChristmas",
+      "slug": "gfp-mpto-provision-socialsecurity-christmas"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Provis\u00e3o de F\u00e9rias",
+      "typeof": "PROVISION",
+      "path": "rh.gfp.calcs.mpto.provisions.VacationProvision",
+      "name_object": "VacationProvision",
+      "slug": "gfp-mpto-provision-vacation"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Pens\u00e3o paga pelo servidor",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.pension.PensionEmployee",
+      "name_object": "PensionEmployee",
+      "slug": "gfp-mpto-pension-employee"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "description": "SEM DESCRI\u00c7\u00c3O",
+      "title": "Pens\u00e3o recebida pelo pensionista",
+      "typeof": "CALCULO",
+      "path": "rh.gfp.calcs.mpto.pension.PensionPensioner",
+      "name_object": "PensionPensioner",
+      "slug": "gfp-mpto-pension-pensioner"
+    },
+    "model": "standard.classcode"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "AUX\u00cdLIO MORADIA",
+      "character": 2,
+      "created_at": "2015-01-27T09:20:02.943",
+      "modified_at": "2015-05-14T09:56:04.683",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 37,
+      "genre_number": "069"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "SUBSIDIO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:34.572",
+      "modified_at": "2016-04-11T10:52:02.143",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 25,
+      "genre_number": "001"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VENCIMENTO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.508",
+      "modified_at": "2016-05-13T10:22:24.504",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": null,
+      "genre_number": "002"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VENCIMENTO REQUISITADO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.546",
+      "modified_at": "2015-05-14T09:56:02.345",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 25,
+      "genre_number": "004"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "GRATIFICA\u00c7\u00c3O DE REPRESENTA\u00c7\u00c3O",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.616",
+      "modified_at": "2016-10-24T12:00:50.661",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 27,
+      "genre_number": "005"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VENCIMENTO COMISSIONADO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.640",
+      "modified_at": "2016-10-24T11:53:42.036",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 27,
+      "genre_number": "006"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "GRATIFICA\u00c7\u00c3O POR FUN\u00c7\u00c3O",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.652",
+      "modified_at": "2016-05-13T10:22:08.579",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 27,
+      "genre_number": "007"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "GRATIFICACAO DE CUMULA\u00c7\u00c3O ",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.661",
+      "modified_at": "2015-05-14T09:56:03.075",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 26,
+      "genre_number": "008"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "REDUTOR DE TETO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.672",
+      "modified_at": "2015-05-14T09:56:04.845",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 35,
+      "genre_number": "499"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "COMPLEMENTO VENC. COMISSIONADO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.682",
+      "modified_at": "2016-10-25T10:38:24.776",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 27,
+      "genre_number": "011"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "RED. 50% REMUN.\u00a7 3\u00ba-III-ART. 95/1818",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.712",
+      "modified_at": "2015-06-18T15:22:53.946",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 35,
+      "genre_number": "090"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "COMPLEMENTO POR ENTR\u00c2NCIA",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.724",
+      "modified_at": "2015-05-14T09:56:03.184",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 26,
+      "genre_number": "014"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "13\u00ba SAL\u00c1RIO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.745",
+      "modified_at": "2015-05-14T09:56:03.251",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 30,
+      "genre_number": "015"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "13\u00ba SAL\u00c1RIO - ADIANTAMENTO",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.763",
+      "modified_at": "2015-05-14T09:56:03.298",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 30,
+      "genre_number": "016"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "13\u00ba SAL\u00c1RIO - PROPORCIONAL",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.780",
+      "modified_at": "2015-05-14T09:56:03.327",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 30,
+      "genre_number": "017"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "COMPLEMENTO SUBSTITUI\u00c7\u00c3O",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.791",
+      "modified_at": "2015-05-14T09:56:03.351",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 26,
+      "genre_number": "020"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "URV PRINCIPAL",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.814",
+      "modified_at": "2016-08-10T10:24:51.847",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": null,
+      "genre_number": "030"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "URV ACESS\u00d3RIOS",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.826",
+      "modified_at": "2016-08-10T10:24:54.207",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": null,
+      "genre_number": "031"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PAE PRINCIPAL",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.837",
+      "modified_at": "2016-08-10T10:23:18.696",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 39,
+      "genre_number": "035"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PAE ATUAL. MONET\u00c1RIA",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.877",
+      "modified_at": "2016-08-10T10:23:18.716",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 39,
+      "genre_number": "036"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PAE JUROS DE MORA",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.912",
+      "modified_at": "2016-08-10T10:23:18.730",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 39,
+      "genre_number": "037"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ADICIONAL DE F\u00c9RIAS",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.926",
+      "modified_at": "2015-05-14T09:56:03.596",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 31,
+      "genre_number": "050"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VANTAGEM PESSOAL",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:35.938",
+      "modified_at": "2015-05-14T09:56:03.664",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 26,
+      "genre_number": "051"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ABONO DE PERMAN\u00caNCIA - EC 41",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.948",
+      "modified_at": "2015-05-14T09:56:03.797",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 32,
+      "genre_number": "052"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "F\u00c9RIAS VENCIDAS",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.958",
+      "modified_at": "2015-05-14T09:56:04.298",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 31,
+      "genre_number": "053"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ADIC. DE F\u00c9RIAS VENCIDAS",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.968",
+      "modified_at": "2015-12-23T15:19:31.064",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 31,
+      "genre_number": "054"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "F\u00c9RIAS PROPORCIONAIS",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.978",
+      "modified_at": "2015-05-14T09:56:04.404",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 31,
+      "genre_number": "055"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ADIC.  F\u00c9RIAS PROPORC.",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:35.987",
+      "modified_at": "2015-12-23T15:23:36.992",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 31,
+      "genre_number": "056"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "AUX\u00cdLIO CRECHE",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:36.099",
+      "modified_at": "2016-02-01T13:54:43.931",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 37,
+      "genre_number": "066"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "AUX\u00cdLIO ALIMENTA\u00c7\u00c3O",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:36.141",
+      "modified_at": "2016-02-01T13:54:50.336",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 37,
+      "genre_number": "067"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "AUX\u00cdLIO ESPECIAL",
+      "character": 2,
+      "created_at": "2015-02-25T12:00:36.150",
+      "modified_at": "2016-02-01T13:55:27.254",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 37,
+      "genre_number": "068"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "BB EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.209",
+      "modified_at": "2015-05-14T09:56:05.013",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "500"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "CEF EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.228",
+      "modified_at": "2015-05-14T09:56:05.174",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "501"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "HSBC EMPR\u00c9STIMOS",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.238",
+      "modified_at": "2015-05-14T09:56:05.322",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "502"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "BRADESCO EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.256",
+      "modified_at": "2015-05-14T09:56:05.405",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "503"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "BMC EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.302",
+      "modified_at": "2015-05-14T09:56:05.460",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "504"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "REAL EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.313",
+      "modified_at": "2015-05-14T09:56:05.542",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "505"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "CRUZEIRO DO SUL EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.343",
+      "modified_at": "2015-05-14T09:56:05.613",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "506"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "BANCO ALFA EMPR\u00c9STIMO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.356",
+      "modified_at": "2015-05-14T09:56:05.691",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "507"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "BCO EMPREEND - EMPR. CONSIGNADO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.374",
+      "modified_at": "2015-06-01T09:08:48.182",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "508"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PLANSAUDE - MENSALIDADE",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.396",
+      "modified_at": "2015-05-13T07:50:44.950",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "510"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PLANSAUDE - DEPENDENTE INDIRETO",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.409",
+      "modified_at": "2015-05-13T07:50:44.973",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "511"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PLANSAUDE - COMPARTICIPACAO",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.431",
+      "modified_at": "2015-05-13T07:50:44.988",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "512"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PLANSAUDE - TAXA DE INSCRICAO",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.453",
+      "modified_at": "2015-05-13T07:50:45.003",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "513"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PLANSAUDE - PARCELAMENTO",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.467",
+      "modified_at": "2015-05-13T07:50:45.018",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "514"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "REEMB. A PGJ - PLANSAUDE PTRNAL",
+      "character": 1,
+      "created_at": "2015-02-25T12:00:36.488",
+      "modified_at": "2016-03-22T09:17:00.670",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "515"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "FENASEMP - CONTRIBUI\u00c7\u00c3O SINDICAL",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.508",
+      "modified_at": "2015-05-13T07:50:45.054",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "519"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "SINDSEMP",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.523",
+      "modified_at": "2015-05-13T07:50:45.069",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "520"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASAMP - MENSALIDADE",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.565",
+      "modified_at": "2015-05-13T07:50:45.086",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "530"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASAMP - CONVENIOS",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.578",
+      "modified_at": "2015-05-13T07:50:45.103",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "531"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASAMP - UNIMED",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.612",
+      "modified_at": "2015-05-13T07:50:45.118",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "532"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASAMP - HONORARIOS",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.625",
+      "modified_at": "2015-05-13T07:50:45.133",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "533"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASAMP - MENSALIDADE I",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.642",
+      "modified_at": "2015-05-13T07:50:45.166",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "534"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IAJUS - UNIMED",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.660",
+      "modified_at": "2015-05-13T07:50:45.181",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "537"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASMETO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.679",
+      "modified_at": "2015-05-13T07:50:45.197",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "538"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ATMP",
+      "character": 6,
+      "created_at": "2015-02-25T12:00:36.701",
+      "modified_at": "2015-05-13T07:50:45.211",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "540"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ATMP - ORAL PREV",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.716",
+      "modified_at": "2015-05-13T07:50:45.228",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "541"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ATMP - UNIMED",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.734",
+      "modified_at": "2015-05-13T07:50:45.242",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "542"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ATMP - CONVENIOS",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.749",
+      "modified_at": "2015-05-13T07:50:45.258",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "543"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ATMP - CONSORCIO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.770",
+      "modified_at": "2015-05-13T07:50:45.273",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "544"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VALE TRANSPORTE",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.797",
+      "modified_at": "2015-05-13T07:50:45.290",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "550"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "RESSARCIMENTO AO ER\u00c1RIO",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.812",
+      "modified_at": "2015-06-25T08:49:39.064",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 36,
+      "genre_number": "700"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PENS\u00c3O ALIMENT\u00cdCIA",
+      "character": 5,
+      "created_at": "2015-02-25T12:00:36.831",
+      "modified_at": "2015-05-13T07:50:45.327",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "701"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "RESSARCIMENTO - UNITINS",
+      "character": 7,
+      "created_at": "2015-02-25T12:00:36.849",
+      "modified_at": "2015-06-25T08:52:20.041",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 36,
+      "genre_number": "702"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IGEPREV PF",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.867",
+      "modified_at": "2016-07-28T15:30:51.272",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "900"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IGEPREV PF SOBRE 13\u00ba SALARIO",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.892",
+      "modified_at": "2016-07-28T15:30:51.302",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "901"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IGEPREV PF SOBRE RRA",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.905",
+      "modified_at": "2016-07-28T15:30:51.328",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "902"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IGEPREV PP",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.925",
+      "modified_at": "2016-07-28T15:30:51.337",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "905"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IGEPREV PP SOBRE 13\u00ba SAL\u00c1RIO",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.942",
+      "modified_at": "2016-07-28T15:30:51.377",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "906"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IGEPREV PP SOBRE RRA",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.957",
+      "modified_at": "2016-07-28T15:30:51.401",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "907"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "INSS",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.969",
+      "modified_at": "2016-07-28T15:31:04.985",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "910"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "INSS SOBRE 13\u00ba SALARIO",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.985",
+      "modified_at": "2016-07-28T15:31:05.042",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "911"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PREVPALMAS",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:36.997",
+      "modified_at": "2016-07-28T15:31:53.350",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "915"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PREVPALMAS SOBRE 13\u00ba SALARIO",
+      "character": 8,
+      "created_at": "2015-02-25T12:00:37.008",
+      "modified_at": "2016-07-28T15:31:53.370",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 33,
+      "genre_number": "916"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IRRF SOBRE O 13\u00ba SAL\u00c1RIO",
+      "character": 4,
+      "created_at": "2015-02-25T12:00:37.039",
+      "modified_at": "2015-05-13T07:50:45.653",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 34,
+      "genre_number": "991"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IRRF SOBRE RRA",
+      "character": 4,
+      "created_at": "2015-02-25T12:00:37.100",
+      "modified_at": "2016-08-10T10:25:28.463",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 39,
+      "genre_number": "992"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IRRF",
+      "character": 4,
+      "created_at": "2015-02-25T12:00:37.161",
+      "modified_at": "2015-05-13T07:50:45.690",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 34,
+      "genre_number": "999"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "RED. 1/3 DA REMUN.\u00a7 3\u00ba-III-ART. 95/1818",
+      "character": 1,
+      "created_at": "2015-03-20T09:27:50.423",
+      "modified_at": "2015-05-14T09:56:04.784",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 1001,
+      "genre_number": "091"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "RESSARCIMENTO - UNITINS - ADIC. DE F\u00c9RIAS",
+      "character": 7,
+      "created_at": "2015-03-20T10:31:34.605",
+      "modified_at": "2015-05-13T07:50:45.364",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 1002,
+      "genre_number": "703"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "GRAT.  INCENTIVO DOCENCIA / RSR",
+      "character": 1,
+      "created_at": "2015-04-28T13:29:11.011",
+      "modified_at": "2015-06-16T15:18:59.911",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 26,
+      "genre_number": "710"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "FALTA",
+      "character": 1,
+      "created_at": "2015-05-13T07:43:26.816",
+      "modified_at": "2015-05-13T10:00:47.279",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 36,
+      "genre_number": "049"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "REDUTOR DE TETO 13\u00ba SAL\u00c1RIO",
+      "character": 1,
+      "created_at": "2015-05-13T07:58:23.814",
+      "modified_at": "2015-05-13T07:58:53.527",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 35,
+      "genre_number": "498"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ASAMP - BRASILCARD",
+      "character": 7,
+      "created_at": "2015-11-25T09:04:02.431",
+      "modified_at": "2015-11-25T09:04:02.431",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "535"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "RESSARCIMENTO - UNITINS 13\u00ba",
+      "character": 7,
+      "created_at": "2015-12-02T17:10:51.179",
+      "modified_at": "2015-12-02T17:10:51.179",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 36,
+      "genre_number": "704"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ACERTO BCO DE HORAS POSITIVO",
+      "character": 2,
+      "created_at": "2015-12-21T17:01:41.373",
+      "modified_at": "2016-10-25T10:38:02.064",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": null,
+      "genre_number": "047"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ACERTO BCO DE HORAS NEGATIVO",
+      "character": 2,
+      "created_at": "2015-12-21T17:02:47.272",
+      "modified_at": "2015-12-22T13:02:50.902",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 36,
+      "genre_number": "048"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PAE CORRE\u00c7\u00c3O MONET\u00c1RIA",
+      "character": 2,
+      "created_at": "2016-02-03T17:32:44.647",
+      "modified_at": "2016-02-03T17:32:44.647",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 4005,
+      "genre_number": "038"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "URV CORRE\u00c7\u00c3O MONETARIA",
+      "character": 2,
+      "created_at": "2016-02-03T17:33:54.075",
+      "modified_at": "2016-08-10T10:24:56.602",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": null,
+      "genre_number": "032"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "INDENIZA\u00c7\u00c3O POR REPRESENTA\u00c7\u00c3O",
+      "character": 2,
+      "created_at": "2016-02-17T10:32:27.376",
+      "modified_at": "2016-10-26T16:40:16.113",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 27,
+      "genre_number": "009"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "INDENIZA\u00c7\u00c3O POR CUMULA\u00c7\u00c3O",
+      "character": 2,
+      "created_at": "2016-02-22T08:29:13.783",
+      "modified_at": "2016-10-26T10:09:04.111",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 38,
+      "genre_number": "010"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "BCO EMPREEND - HABITACIONAL",
+      "character": 7,
+      "created_at": "2016-02-26T09:06:12.415",
+      "modified_at": "2016-02-26T09:06:12.415",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "509"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PENS\u00c3O POR MORTE",
+      "character": 5,
+      "created_at": "2016-03-07T11:31:28.679",
+      "modified_at": "2016-03-07T11:31:28.679",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": null,
+      "genre_number": "705"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "PENS\u00c3O",
+      "character": 5,
+      "created_at": "2016-03-07T11:35:17.755",
+      "modified_at": "2016-03-07T11:35:17.755",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": null,
+      "genre_number": "706"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": " SALARIO MATERNIDADE",
+      "character": 1,
+      "created_at": "2016-09-20T10:07:40.359",
+      "modified_at": "2016-09-20T10:21:04.637",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 1,
+      "genre_number": "040"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "FALTA AUX\u00cdLIO",
+      "character": 2,
+      "created_at": "2016-11-23T11:44:12.475",
+      "modified_at": "2016-11-23T11:44:12.475",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "D",
+      "config_transparency": 16,
+      "genre_number": "046"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "INDENIZA\u00c7\u00c3O DE F\u00c9RIAS",
+      "character": 2,
+      "created_at": "2016-12-20T13:06:10.434",
+      "modified_at": "2017-01-02T14:02:16.094",
+      "created_by": [
+        "athenas"
+      ],
+      "type_event": "P",
+      "config_transparency": 39,
+      "genre_number": "057"
+    },
+    "model": "gfp.genreevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "NORMAL",
+      "created_at": "2015-01-27T09:20:34.617",
+      "modified_at": "2015-05-13T07:50:45.711",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "00",
+      "concatenate_name": false
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "MESES ANTERIORES",
+      "created_at": "2015-02-20T08:13:20.467",
+      "modified_at": "2015-12-11T08:33:30.876",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "06",
+      "concatenate_name": false
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "DIFEREN\u00c7A",
+      "created_at": "2015-02-25T12:00:37.320",
+      "modified_at": "2015-05-13T07:50:46.161",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "01",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "DEVOLU\u00c7\u00c3O",
+      "created_at": "2015-02-25T12:00:37.505",
+      "modified_at": "2015-05-13T07:50:46.229",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": true,
+      "specie_number": "02",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "I",
+      "created_at": "2015-02-25T12:00:37.534",
+      "modified_at": "2015-05-13T07:50:46.390",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "20",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "II",
+      "created_at": "2015-02-25T12:00:37.553",
+      "modified_at": "2015-05-13T07:50:46.451",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "21",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "III",
+      "created_at": "2015-02-25T12:00:37.563",
+      "modified_at": "2015-05-13T07:50:46.513",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "22",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IV",
+      "created_at": "2015-02-25T12:00:37.573",
+      "modified_at": "2015-05-13T07:50:46.568",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "23",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "V",
+      "created_at": "2015-02-25T12:00:37.587",
+      "modified_at": "2015-05-13T07:50:46.610",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "24",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VI",
+      "created_at": "2015-02-25T12:00:37.603",
+      "modified_at": "2015-05-13T07:50:46.637",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "25",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VII",
+      "created_at": "2015-02-25T12:00:37.616",
+      "modified_at": "2015-05-13T07:50:46.652",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "26",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "VIII",
+      "created_at": "2015-02-25T12:00:37.632",
+      "modified_at": "2015-05-13T07:50:46.667",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "27",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "HABITACIONAL",
+      "created_at": "2015-02-25T12:00:37.645",
+      "modified_at": "2015-05-13T07:50:46.676",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "29",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "EXERC. ANTERIORES",
+      "created_at": "2015-03-20T09:50:10.201",
+      "modified_at": "2015-12-23T08:38:06.607",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "10",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ESTORNO D\u00c9BITO",
+      "created_at": "2015-05-26T13:58:19.425",
+      "modified_at": "2015-06-10T10:29:34.322",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": true,
+      "specie_number": "07",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "REDU\u00c7\u00c3O 1/3- CONFORME LEI 1818",
+      "created_at": "2015-06-09T16:30:12.404",
+      "modified_at": "2015-06-09T16:31:40.481",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": true,
+      "specie_number": "30",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ESTORNO CR\u00c9DITO",
+      "created_at": "2015-06-10T10:28:35.563",
+      "modified_at": "2015-06-10T10:28:35.563",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "08",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "FALTA",
+      "created_at": "2015-06-15T15:17:55.877",
+      "modified_at": "2015-06-16T09:12:39.970",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": true,
+      "specie_number": "03",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "ATUALIZA\u00c7\u00c3O MONET\u00c1RIA",
+      "created_at": "2015-11-18T11:27:25.307",
+      "modified_at": "2015-11-18T11:27:25.307",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "11",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "CC I",
+      "created_at": "2015-11-27T08:18:09.249",
+      "modified_at": "2015-11-27T08:18:09.249",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "31",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "CC II",
+      "created_at": "2015-11-27T08:18:30.907",
+      "modified_at": "2015-11-27T08:18:30.907",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "32",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "CC III",
+      "created_at": "2015-11-27T08:18:44.648",
+      "modified_at": "2015-11-27T08:18:44.648",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "33",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "AUT/PGJ",
+      "created_at": "2016-02-18T11:10:19.666",
+      "modified_at": "2016-02-18T11:10:19.666",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "14",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  },
+  {
+    "fields": {
+      "modified_by": [
+        "athenas"
+      ],
+      "title": "IX",
+      "created_at": "2017-01-16T14:48:52.240",
+      "modified_at": "2017-01-16T14:48:52.240",
+      "created_by": [
+        "athenas"
+      ],
+      "invert_type": false,
+      "specie_number": "28",
+      "concatenate_name": true
+    },
+    "model": "gfp.specieevent"
+  }
+]

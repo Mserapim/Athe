@@ -1,0 +1,16 @@
+{% if protocol.attachments.exists %}
+<div class="papper-content">
+    <h2 style="margin-bottom: 0.5em">Anexos do Protocolo</h2>
+    <ul>
+        {% for attach in protocol.attachment_list %}
+            {% include "protocolo/attachment.html" %}
+        {% endfor %}
+    </ul>
+    <div style="border: 1px solid #000; font-size: 9pt; margin-top: 1.5em; padding: 3px 5px; background-color: #eee; text-align: justify; border-radius: 3px">
+        Para validar os anexos você pode utilizar o código de 32 digitos, para buscar o documento na base do
+        sistema, para isto acesse o endereço:
+        <a href="https://athenas.mpto.mp.br/athenas/docsverify/verify/" title="Verificador de documentos">https://athenas.mpto.mp.br/athenas/docsverify/verify/</a>
+        será devolvido uma cópia do documento que se identifica com o código informado.
+    </div>
+</div>
+{% endif %}

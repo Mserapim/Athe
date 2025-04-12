@@ -1,0 +1,578 @@
+[
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ADMINISTRAÇÃO",
+    "descricao": null,
+    "sigla": "ADM"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ASSESSOR JURIDICO DE PROCURADOR DE JUSTIÇA",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "sigla": "APG"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ASSISTENCIA ADMINISTRATIVA",
+    "descricao": null,
+    "sigla": "ASA"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ANÁLISE DE SISTEMAS",
+    "descricao": null,
+    "sigla": "ASI"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ASSISTÊNCIA SOCIAL",
+    "descricao": null,
+    "sigla": "ASO"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "AUXILIO ADMINISTRATIVO",
+    "descricao": null,
+    "sigla": "AUA"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "AUXILIO GERAL",
+    "descricao": null,
+    "sigla": "AUG"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "BIBLIOTECONOMIA",
+    "descricao": null,
+    "sigla": "BIB"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "BIOLOGIA",
+    "descricao": null,
+    "sigla": "BIO"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "CIÊNCIAS CONTÁBEIS",
+    "descricao": null,
+    "sigla": "CIC"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "CIÊNCIAS ECONÔMICAS",
+    "descricao": null,
+    "sigla": "CIE"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "CIÊNCIAS JURÍDICAS",
+    "descricao": null,
+    "sigla": "CIJ"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ENGENHARIA AMBIENTAL",
+    "descricao": null,
+    "sigla": "EGA"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ENGENHARIA CIVIL",
+    "descricao": null,
+    "sigla": "EGC"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ENFERMAGEM",
+    "descricao": null,
+    "sigla": "ENF"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ENGENHARIA FLORESTAL",
+    "descricao": null,
+    "sigla": "ENG"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "FUNÇÃO DE CONFIANÇA FC 2",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "sigla": "FC2"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "FISIOTERAPIA",
+    "descricao": null,
+    "sigla": "FIS"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "FOTOGRAFIA",
+    "descricao": null,
+    "sigla": "FOT"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "GEOGRAFIA",
+    "descricao": null,
+    "sigla": "GEO"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "INSTITUCIONAL",
+    "descricao": null,
+    "sigla": "INS"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "JORNALISMO",
+    "descricao": null,
+    "sigla": "JOR"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "LETRAS",
+    "descricao": null,
+    "sigla": "LET"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "MANUTENCAO",
+    "descricao": null,
+    "sigla": "MAN"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "MEDICINA",
+    "descricao": null,
+    "sigla": "MED"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "ODONTOLOGIA",
+    "descricao": null,
+    "sigla": "ODO"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "PEDAGOGIA",
+    "descricao": null,
+    "sigla": "PED"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "PSICOLOGIA",
+    "descricao": null,
+    "sigla": "PSI"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "CINEGRAFISTA",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "sigla": "TCI"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TÉCNICO EM CONTABILIDADE",
+    "descricao": null,
+    "sigla": "TCO"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TECNICO EM ENFERMAGEM",
+    "descricao": null,
+    "sigla": "TEF"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TÉCNICO EM ELETRICIDADE",
+    "descricao": null,
+    "sigla": "TEL"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TÉCNICO EM ELETRONICA",
+    "descricao": null,
+    "sigla": "TET"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TÉCNICO EM INFORMÁTICA",
+    "descricao": null,
+    "sigla": "TIN"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TÉCNICO EM MANUTENÇÃO DE COMPUTADOR",
+    "descricao": null,
+    "sigla": "TMC"
+  }
+},
+{
+  "model": "rh.especialidade",
+  "fields": {
+    "created_by": [
+      "athenas"
+    ],
+    "modified_by": [
+      "athenas"
+    ],
+    "created_at": "2014-07-07T18:26:59.722",
+    "modified_at": "2014-07-07T18:26:59.798",
+    "nome": "TELECOMUNICAÇÕES",
+    "descricao": "<!-- Correção de bug da ExtJS -->",
+    "sigla": "TTE"
+  }
+}
+]

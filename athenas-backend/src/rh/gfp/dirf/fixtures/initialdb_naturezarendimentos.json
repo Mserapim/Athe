@@ -1,0 +1,362 @@
+[
+{
+  "fields": {
+    "titulo": "Retenção de PIS/Pasep sobre Pagamentos efetuados por Pessoas Jurídicas de Direito Privado",
+    "codigo": "5979",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 1
+},
+{
+  "fields": {
+    "titulo": "Retenção de CSLL sobre Pagamentos Efetuados por Pessoas Jurídicas de Direito Privado",
+    "codigo": "5987",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 2
+},
+{
+  "fields": {
+    "titulo": "Retenção de CSLL, Cofins e PIS/Pasep sobre pagamentos efetuados por órgãos, autarquias e fundações dos Estados, Distrito Federal e Municípios",
+    "codigo": "4085",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 3
+},
+{
+  "fields": {
+    "titulo": "Retenção de CSLL sobre pagamentos efetuados por órgãos, autarquias e fundações dos Estados, Distrito Federal e Municípios",
+    "codigo": "4397",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 4
+},
+{
+  "fields": {
+    "titulo": "Retenção de Cofins sobre pagamentos efetuados por órgãos, autarquias e fundações dos Estados, Distrito Federal e Municípios",
+    "codigo": "4407",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 5
+},
+{
+  "fields": {
+    "titulo": "Retenção de PIS/Pasep sobre pagamentos efetuados por órgãos, autarquias e fundações dos Estados, Distrito Federal e Municípios",
+    "codigo": "4409",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 6
+},
+{
+  "fields": {
+    "titulo": "Serviços de Propaganda Prestados por Pessoa Jurídica, Comissões e Corretagens Pagas a Pessoa Jurídica",
+    "codigo": "8045",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 7
+},
+{
+  "fields": {
+    "titulo": "Rendimentos Tributáveis",
+    "codigo": "0589",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 8
+},
+{
+  "fields": {
+    "titulo": "Fundo de Investimento Cultural e Artístico (Ficart) e Demais Rendimentos do Capital",
+    "codigo": "0924",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 9
+},
+{
+  "fields": {
+    "titulo": "Prêmios e Sorteios em Geral, Títulos de Capitalização, Prêmios de Proprietários e Criadores de Cavalos de Corrida e Prêmios em Bens e Serviços",
+    "codigo": "0916",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 10
+},
+{
+  "fields": {
+    "titulo": "Prêmios em Sorteio de Jogos de Bingo",
+    "codigo": "8673",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 11
+},
+{
+  "fields": {
+    "titulo": "Rendimentos de Partes Beneficiárias ou de Fundador",
+    "codigo": "3277",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 12
+},
+{
+  "fields": {
+    "titulo": "Juros e Indenizações por Lucros Cessantes",
+    "codigo": "5204",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 13
+},
+{
+  "fields": {
+    "titulo": "Fundos de Investimento Imobiliário",
+    "codigo": "5232",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 14
+},
+{
+  "fields": {
+    "titulo": "Operações de SWAP",
+    "codigo": "5273",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 15
+},
+{
+  "fields": {
+    "titulo": "Juros sobre o Capital Próprio",
+    "codigo": "5706",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 16
+},
+{
+  "fields": {
+    "titulo": "Rendimentos Decorrentes de Decisões da Justiça Federal",
+    "codigo": "5928",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 17
+},
+{
+  "fields": {
+    "titulo": "Rendimentos decorrentes de Decisões da Justiça do Trabalho",
+    "codigo": "5936",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 18
+},
+{
+  "fields": {
+    "titulo": "Fundos de Investimento Financeiro, Fundos de Aplicação em Quotas de Fundos de Investimento Financeiro",
+    "codigo": "6800",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 19
+},
+{
+  "fields": {
+    "titulo": "Fundos de Ações e Fundo Mútuo de Investimento em Quotas de Fundos de Ações",
+    "codigo": "6813",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 20
+},
+{
+  "fields": {
+    "titulo": "Operações Day-Trade",
+    "codigo": "8468",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 21
+},
+{
+  "fields": {
+    "titulo": "Multas e Vantagens",
+    "codigo": "9385",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 22
+},
+{
+  "fields": {
+    "titulo": "Retenção do Imposto sobre a Renda na Fonte nos termos dos §§ 1o e 2o, inciso II, do art. 2o da Lei no 11.033, de 21 de dezembro de 2004",
+    "codigo": "5557",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 23
+},
+{
+  "fields": {
+    "titulo": "Trabalho Assalariado no País e Ausentes no Exterior a Serviço do País",
+    "codigo": "0561",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 24
+},
+{
+  "fields": {
+    "titulo": "Trabalho Sem Vínculo Empregatício",
+    "codigo": "0588",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 25
+},
+{
+  "fields": {
+    "titulo": "Resgate de Previdência Privada e Fapi",
+    "codigo": "3223",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 26
+},
+{
+  "fields": {
+    "titulo": "Aluguéis e Royalties Pagos a Pessoa Física",
+    "codigo": "3208",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 27
+},
+{
+  "fields": {
+    "titulo": "Indenizações por Danos Morais",
+    "codigo": "6904",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 28
+},
+{
+  "fields": {
+    "titulo": "Cobertura por Sobrevivência em Seguro de Vida (VGBL)",
+    "codigo": "6891",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 29
+},
+{
+  "fields": {
+    "titulo": "Aplicações Financeiras de Renda Fixa, Exceto em Fundos de Investimento",
+    "codigo": "8053",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 30
+},
+{
+  "fields": {
+    "titulo": "Retenção do Imposto sobre a Renda na Fonte sobre pagamento de resgate ou benefícios de caráter previdenciário, cujos beneficiários optaram pelo regime de tributação de que trata o art. 1o da Lei no 11.053, de 29 de dezembro de 2004",
+    "codigo": "5565",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 31
+},
+{
+  "fields": {
+    "titulo": "Remuneração de Serviços Profissionais Prestados por Pessoa Jurídica",
+    "codigo": "1708",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 32
+},
+{
+  "fields": {
+    "titulo": "Remuneração de Serviços Pessoais Prestados por Associados de Cooperativas de Trabalho",
+    "codigo": "3280",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 33
+},
+{
+  "fields": {
+    "titulo": "Aplicações Financeiras de Renda Fixa, Exceto em Fundos de Investimento",
+    "codigo": "3426",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 34
+},
+{
+  "fields": {
+    "titulo": "Retenção de Cofins sobre Pagamentos Referentes à Aquisição de Autopeças",
+    "codigo": "3746",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 35
+},
+{
+  "fields": {
+    "titulo": "Retenção de PIS/Pasep sobre Pagamentos Referentes à Aquisição de Autopeças",
+    "codigo": "3770",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 36
+},
+{
+  "fields": {
+    "titulo": "Retenção de Imposto sobre a Renda sobre Pagamentos Efetuados por Pessoas Jurídicas pela Prestação de Serviços Relacionados com a Atividade de Factoring",
+    "codigo": "5944",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 37
+},
+{
+  "fields": {
+    "titulo": "Retenção de Cofins, CSLL e PIS/Pasep sobre Pagamentos Efetuados por Pessoas Jurídicas de Direito Privado",
+    "codigo": "5952",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 38
+},
+{
+  "fields": {
+    "titulo": "Retenção de Cofins sobre Pagamentos Efetuados por Pessoas Jurídicas de Direito Privado",
+    "codigo": "5960",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 39
+},
+{
+  "fields": {
+    "titulo": "Rendimentos Recebidos Acumuladamente (RRA)",
+    "codigo": "1889",
+    "descricao": ""
+  },
+  "model": "dirf.naturezarendimento",
+  "pk": 41
+}
+]

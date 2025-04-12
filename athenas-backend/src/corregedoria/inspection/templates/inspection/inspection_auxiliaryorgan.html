@@ -1,0 +1,450 @@
+{% extends "inspection/base.html" %}
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+        <div>
+            <h1 class="title-1 top-space-1" style="font-size: 20px">RELATÓRIO DE INSPEÇÃO</h1>
+        </div>
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>I - DADOS GERAIS</b></td></tr>
+        </table>
+            <div style="padding-left: 1em; padding-bottom: 1em;">
+                <div style="padding-top: 0.5em; font-size: 12px; ">
+                    <table width=100%>
+                        <tr>
+                            <td>Data: <b>{{ inspection.inspection_date_initial | date:'d/m/Y' }} a {{ inspection.inspection_date_final | date:'d/m/Y' }}</b><br /></td>
+                            <td>Edital: <b>{{ inspection.notice | safely }}</b></td>
+                            <td>Publicação: <b>{{ inspection.publication | safely }}</b></td>
+                        </tr>
+                    </table>
+                    Corregedor-Geral: <b>{{ inspection.inspector_general.pessoa_fisica.nome | safely }}</b><br />
+                    Promotor-Corregedor:
+                    <div style="padding-left: 1em; ">
+                      <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+                        {% for data in inspection.inspector_prosecutors.all %}
+                          <tr>
+                            <td style="padding: 2px; "><b>{{ data.pessoa_fisica.nome }}</b></td>
+                          </tr>
+                        {% endfor %}
+                      </table>
+                    </div>
+                    <br />
+                    Órgão Inspecionado: <b>{{ inspection.execution_organ.nome | safely }}</b><br />
+                    Integrantes: <br />
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                                <td style="padding: 2px;" width=60% ><b>Membro</b></td>
+                                <td style="padding: 2px;" width=30% ><b>Função<b/></td>
+                                <td style="padding: 2px;" ><b>Atuação Exclusiva<b/></td>
+                            </tr>
+                            {% if membersorgan %}
+                                {% for data in membersorgan %}
+                                    <tr style="font-size: 10px;">
+                                        <td style="padding: 2px;" >{{ data.employee.pessoa_fisica.nome }}</td>
+                                        <td style="padding: 2px;" >{{ data.get_member_role_display }}</td>
+                                        <td style="padding: 2px;" align=center >{% if data.exclusive == True %}X{% endif %}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>II - ESTRUTURA DE FUNCIONAMENTO</b></td></tr>
+        </table>
+            <div style="padding-left: 1em; padding-bottom: 1em;">
+                <div style="padding-top: 0.5em; font-size: 12px; ">
+                    Local de Funcionamento: <b>{{ operatingstructure.location }}</b><br />
+                    Pessoal de Apoio: <br />
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                                <td style="padding: 2px;" width=50% ><b>Nome</b></td>
+                                <td style="padding: 2px;" width=25% ><b>Cargo<b/></td>
+                                <td style="padding: 2px;" ><b>Forma de Provimento<b/></td>
+                            </tr>
+                            {% for data in see %}
+                                <tr style="font-size: 10px;">
+                                    <td style="padding: 2px;" >{{ data.effective_employee.servidor.pessoa_fisica.nome}}</td>
+                                    <td style="padding: 2px;" >{{ data.effective_employee.movimentacaoposse.quadro.cargo.nome}}</td>
+                                    <td style="padding: 2px;" >EFETIVO</td>
+                                </tr>
+                            {% endfor %}
+                            {% for data in sce %}
+                                <tr style="font-size: 10px;">
+                                    <td style="padding: 2px;" >{{ data.commissioned_employee.servidor.pessoa_fisica.nome}}</td>
+                                    <td style="padding: 2px;" >{{ data.commissioned_employee.movimentacaoposse.quadro.cargo.nome}}</td>
+                                    <td style="padding: 2px;" >COMISSIONADO</td>
+                                </tr>
+                            {% endfor %}
+                            {% for data in sep %}
+                                <tr style="font-size: 10px;">
+                                    <td style="padding: 2px;" >{{ data.name}}</td>
+                                    <td style="padding: 2px;" >{{ data.function}}</td>
+                                    <td style="padding: 2px;" >EXTERNO</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    Equipamentos Disponíveis: <br />
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                                <td style="padding: 2px;" width=50% ><b>Tipo</b></td>
+                                <td style="padding: 2px;" width=25% ><b>Quantidade<b/></td>
+                                <td style="padding: 2px;" ><b>Estado<b/></td>
+                            </tr>
+                            {% for data in equipmentsorgan %}
+                                <tr  style="font-size: 10px;">
+                                    <td style="padding: 2px;" >{{ data.equipment }}</td>
+                                    <td style="padding: 2px;" >{% if data.amount %}{{ data.amount }}{% endif %}</td>
+                                    <td style="padding: 2px;" >{% if data.get_status_display %}{{ data.get_status_display }}{% endif %}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    Deficiências do Órgão (físicas, estruturais e de pessoal):
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.3em;">
+                        {{ inspection.structuredeficiency.deficiency | safely }}
+                    </div>
+                    Estado Geral da Estrutura Física do Órgão:
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 12px; background-color: #c0c0c0;" >
+                                <td style="padding: 2px;" width=20% ><b>INSUFICIENTE</b></td>
+                                <td style="padding: 2px;" width=20% ><b>REGULAR<b/></td>
+                                <td style="padding: 2px;" width=20% ><b>BOM<b/></td>
+                                <td style="padding: 2px;" width=20% ><b>MUITO BOM<b/></td>
+                                <td style="padding: 2px;" width=20% ><b>ÓTIMO<b/></td>
+                            </tr>
+                            {% if structuregeneralstatus %}
+                              <tr style="font-size: 10px;" align=center>
+                                  <td style="padding: 2px;" >{% if structuregeneralstatus.status == 1 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if structuregeneralstatus.status == 2 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if structuregeneralstatus.status == 3 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if structuregeneralstatus.status == 4 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if structuregeneralstatus.status == 5 %}X{% endif %}</td>
+                              </tr>
+                            {% endif %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>III - ORGANIZAÇÃO ADMINISTRATIVA</b></td></tr>
+        </table>
+            <div style="padding-left: 1em; padding-bottom: 1em;">
+                <div style="padding-top: 0.5em; padding-left: 0.5em;">
+                    {% if administrativeorganizationoperatinghours %}
+                        Horário de Funcionamento:<br />
+                        <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                          <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                            <tr>
+                              <td style="padding: 2px;" >Manhã: <b>{{ administrativeorganizationoperatinghours.operate_schedule1_initial | safely }} às {{ administrativeorganizationoperatinghours.operate_schedule1_final | safely }}</b></td>
+                              <td style="padding: 2px;" >Tarde: <b>{{ administrativeorganizationoperatinghours.operate_schedule2_initial | safely }} às {{ administrativeorganizationoperatinghours.operate_schedule2_final | safely }}</b></td>
+                            </tr>
+                          </table>
+                          Observações/Determinações: <b>{{ administrativeorganizationoperatinghours.observation | safely }}</b>
+                        </div>
+                    {% else %}
+                        Horário de Funcionamento: <b>NÃO INFORMADO</b><br />
+                    {% endif %}
+
+                    {% if administrativeorganizationattendancehours %}
+                        Atendimento diário ao público:
+                        {% if administrativeorganizationattendancehours.daily_attendance %}
+                            <b>SIM</b>
+                        {% else %}
+                            <b>NÃO</b>
+                        {% endif %}<br />
+                        {% if not administrativeorganizationattendancehours.daily_attendance %}
+                        <div style="padding-left: 0.5em;">
+                            Se não, quantos dias por semana: <b>{{ administrativeorganizationattendancehours.days_of_attendance_per_week }}</b><br />
+                            {% if administrativeorganizationattendancehours.days_of_attendance_per_week > 0 %}
+                                Horário de atendimento:
+                                <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                                  <table width=100% border=1 style="border-width: 2px; border-collapse: collapse; font-size: 10px;">
+                                    <tr>
+                                      <td style="padding: 2px;" >Manhã: <b>{{ administrativeorganizationattendancehours.attendance_schedule1_initial | safely }} às {{ administrativeorganizationattendancehours.attendance_schedule1_final | safely }}</b></td>
+                                      <td style="padding: 2px;" >Tarde: <b>{{ administrativeorganizationattendancehours.attendance_schedule2_initial | safely }} às {{ administrativeorganizationattendancehours.attendance_schedule2_final | safely }}</b></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                        <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                            Observações/Determinações: <b>{{ administrativeorganizationattendancehours.observation | safely }}</b>
+                        </div>
+                    {% else %}
+                        Atendimento diário ao público: <b>NÃO INFORMADO</b>
+                    {%endif%}
+                </div>
+                
+                    <table width=100% border=0 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                        <tr>
+                            <td width=35% >Sistema de Registro/Controle:</td>
+                            <td width=15% >( {% if administrativeorganizationregistrationsystem.registration_type == 1 %}X{% endif %} ) Manual</td>
+                            <td width=20% >( {% if administrativeorganizationregistrationsystem.registration_type == 2 %}X{% endif %} ) Informatizado</td>
+                            <td width=30% >( {% if administrativeorganizationregistrationsystem.registration_type == 3 %}X{% endif %} ) Manual/Informatizado</td>
+                        </tr>
+                    </table>
+                    Livros/Sistemas Existentes: <br />
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                                <td style="padding: 2px;" width=75% ><b>Registro<b/></td>
+                                <td style="padding: 2px;" width=25% ><b>Tipo<b/></td>
+                            </tr>
+                            {% for data in existingregisters %}
+                              <tr style="font-size: 10px;">
+                                  <td style="padding: 2px;" >{{ data.register | safely }}</td>
+                                  <td style="padding: 2px;" align=center >{{ data.get_registration_type_display | safely }}</td>
+                              </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    Relação de Procedimentos em Trâmite: <br />
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                                <td style="padding: 2px;" width=12% ><b>Número</b></td>
+                                <td style="padding: 2px;" width=12% ><b>Data da Instauração<b/></td>
+                                <td style="padding: 2px;" width=38% ><b>Tipo de Procedimento<b/></td>
+                                <td style="padding: 2px;" width=38% ><b>Assunto<b/></td>
+                            </tr>
+                            {% for data in administrativeorganizationproceduresinprogress %}
+                              <tr style="font-size: 10px;">
+                                  <td style="padding: 2px;" align=center >{{ data.number | safely }}</td>
+                                  <td style="padding: 2px;" align=center >{{ data.instauration_date | date:'d/m/Y' }}</td>
+                                  <td style="padding: 2px;" >{{ data.taxonomy_class.title | safely }}</td>
+                                  <td style="padding: 2px;" >{% if data.taxonomy_matter %}{{ data.taxonomy_matter.title | safely }} {% else %} {{ data.matter | safely }} {% endif %}</td>
+                              </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    Relação de Procedimentos Arquivados (nos últimos 06 meses0: <br />
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                          <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                              <td style="padding: 2px;" width=12% ><b>Número</b></td>
+                              <td style="padding: 2px;" width=12% ><b>Data de Instauração<b/></td>
+                              <td style="padding: 2px;" width=12% ><b>Data de Arquivamento<b/></td>
+                              <td style="padding: 2px;" width=32% ><b>Tipo de Procedimento<b/></td>
+                              <td style="padding: 2px;" width=32% ><b>Assunto<b/></td>
+                          </tr>
+                          {% for data in administrativeorganizationarchivedprocedures %}
+                            <tr style="font-size: 10px;">
+                                <td style="padding: 2px;" align=center >{{ data.number | safely }}</td>
+                                <td style="padding: 2px;" align=center >{{ data.instauration_date | date:'d/m/Y' }}</td>
+                                <td style="padding: 2px;" align=center >{{ data.archived_date | date:'d/m/Y' }}</td>
+                                <td style="padding: 2px;" >{{ data.taxonomy_class.title | safely }}</td>
+                                <td style="padding: 2px;" >{% if data.taxonomy_matter %}{{ data.taxonomy_matter.title | safely }} {% else %} {{ data.matter | safely }} {% endif %}</td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                    </div>
+                    Estado Geral da Organização do Órgão:
+                    <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.8em;">
+                        <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse;">
+                            <tr style="text-align: center; font-size: 10px; background-color: #c0c0c0;">
+                                <td style="padding: 2px;" width=20% ><b>INSUFICIENTE</b></td>
+                                <td style="padding: 2px;" width=20% ><b>REGULAR<b/></td>
+                                <td style="padding: 2px;" width=20% ><b>BOM<b/></td>
+                                <td style="padding: 2px;" width=20% ><b>MUITO BOM<b/></td>
+                                <td style="padding: 2px;" width=20% ><b>ÓTIMO<b/></td>
+                            </tr>
+                            {% if administrativeorganizationgeneralstatus %}
+                              <tr  align=center>
+                                  <td style="padding: 2px;" >{% if administrativeorganizationgeneralstatus.status == 1 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if administrativeorganizationgeneralstatus.status == 2 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if administrativeorganizationgeneralstatus.status == 3 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if administrativeorganizationgeneralstatus.status == 4 %}X{% endif %}</td>
+                                  <td style="padding: 2px;" >{% if administrativeorganizationgeneralstatus.status == 5 %}X{% endif %}</td>
+                              </tr>
+                            {% endif %}
+                        </table>
+                    </div>
+                    {% if attach_administrativeorganization %}
+                      <div style="padding-top: 0.5em; font-size: 12px;">
+                        Anexos <br />:
+                        {% for data in attach_administrativeorganization %}
+                          - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                          <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                            <small>
+                              URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                              MD5: {{ data.attached_file.file }}
+                            </small>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                </div>
+            </div>
+
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>IV - ATUAÇÃO</b></td></tr>
+        </table>
+            <div style="padding-left: 1em; padding-bottom: 1em;">
+                {% if performance.performance %}
+                  <div style="padding-top: 0.5em; font-size: 12px; ">
+                      Relatar as Atividades Desenvolvidas nos Últimos 06 Meses:
+                      <div style="padding-top: 0.3em; padding-left: 0.5em; padding-bottom: 0.3em;" align=justify>
+                          {{ performance.performance | safely }}
+                      </div>
+                  </div>
+                {% endif %}
+                {% if attach_performance %}
+                  <div style="padding-top: 0.5em; font-size: 12px;">
+                    Anexos <br />
+                    {% for data in attach_performance %}
+                      - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                      <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                        <small>
+                          URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                          MD5: {{ data.attached_file.file }}
+                        </small>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+            </div>
+
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>OBSERVAÇÕES GERAIS</b></td></tr>
+        </table>
+          <div style="padding-left: 0.5em; padding-bottom: 0.5em;">
+            <div style="padding-top: 0.5em; font-size: 12px; ">
+              <div style="padding-bottom: 0.5em; text-align: justify; ">
+                {% if inspection.generalobservations %}
+                    {{ inspection.generalobservations.observation | safely }}
+                {% else %}
+                    Não foi registrada nenhuma recomendação.
+                {% endif %}
+              </div>
+              {% if attach_og %}
+                <div style="padding-top: 0.5em; font-size: 12px;">
+                  Anexos <br />
+                  {% for data in attach_og %}
+                    - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                    <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                      <small>
+                        URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                        MD5: {{ data.attached_file.file }}
+                      </small>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+          <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+              <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>RECOMENDAÇÕES</b></td></tr>
+          </table>
+            <div style="padding-left: 1em; padding-bottom: 1em; font-size: 12px;">
+              <div style="padding-top: 0.3em; padding-bottom: 0.8em;">
+                {% if rec %}
+                  <table width=100% border=1 style="padding-left: 0.5em; border-width: 2px; border-collapse: collapse; font-size: 10px; ">
+                    <tr style="text-align: center; background-color: #c0c0c0;">
+                      <td style="padding: 2px; " width=15% ><b>Prazo</b></td>
+                      <td class="paragraph-text" style="padding: 2px; " width=85% ><b>Recomendação</b></td>
+                    </tr>
+                    {% for data in rec %}
+                    <tr>
+                      {% if data.waiting_response %}
+                        <td style="padding: 2px; " width=15% >{{ data.deadline | date:'d/m/Y'}}</td>
+                        <td class="paragraph-text" style="padding: 2px; " width=85% >{{ data.recommendation | safely}}</td>
+                      {% else %}
+                        <td class="paragraph-text" style="padding: 2px; " colspan="2" >{{ data.recommendation | safely}}</td>
+                      {% endif %}
+                    </tr>
+                    {% endfor %}
+                  </table>
+                  {% else %} Não foi registrada nenhuma recomendação. {% endif %}
+                  {% if attach_r %}
+                    <div style="padding-top: 0.5em; font-size: 12px;">
+                      Anexos <br />
+                      {% for data in attach_r %}
+                        - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                        <div style="font-size:0.8em; padding-bottom: 0.5em; padding-left: 1em;">
+                          <small>
+                            URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                            MD5: {{ data.attached_file.file }}
+                          </small>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" ><b>ANEXOS</b></td></tr>
+        </table>
+            <div style="padding-left: 1em; padding-bottom: 1em;" align=justify>
+                <div style="padding-top: 0.5em; font-size: 12px; ">
+                    {% if attach_a %}
+                        {% for data in attach_a %}
+                            - <a href="{{ data.attached_file.permalink }}" title="{{ data.description }}" ext:qtip="{{ data.description }}">{{ data.description }}</a>
+                            <div style="font-size:0.8em; padding-left: 1em; padding-bottom: 0.5em;">
+                                <small>
+                                    URL: <a href="{{ data.attached_file.permalink }}">{{ data.attached_file.complete_permalink }}</a><br />
+                                    MD5: {{ data.attached_file.file }}
+                                </small>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        Não existem anexos.
+                    {% endif %}
+                </div>
+            </div>
+        <div style="font-size: 12px; ">
+          {% if sign_inspector_prosecutors %}
+              {% for data in sign_inspector_prosecutors.all %}
+                <br />
+                <br />
+                <br />
+                <div class="paragraph-text" style="text-align: center;">
+                    Palmas-TO, {{ data.created_at | date:'d/m/Y' }}
+                </div>
+                <br />
+                <br />
+                <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+                    {{ data.dispatch | safely }}
+                </div>
+                <br />
+                <div class="paragraph-text" style="text-align: center;">
+                    <b>{{ data.employee.pessoa_fisica.nome | safely }}</b><br />
+                    <div style="font-size: 0.8em;">
+                        Promotor-Corregedor<br />
+                        Assinado de forma digital em: {{ data.created_at | date:'d/m/Y H:i:s' }}
+                    </div>
+                </div>
+              {%endfor%}
+              {% if sign_inspector_general %}
+                  <br />
+                  <br />
+                  <br />
+                  <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+                      {{ sign_inspector_general.dispatch | safely }}
+                  </div>
+                  <br />
+                  <div class="paragraph-text" style="text-align: center;">
+                      <b>{{ inspection.inspector_general.pessoa_fisica.nome | safely }}</b><br />
+                      <div style="font-size: 0.8em;">
+                          Corregedor-Geral<br />
+                          Assinado de forma digital em: {{ sign_inspector_general.created_at | date:'d/m/Y H:i:s' }}
+                      </div>
+                  </div>
+              {% endif %}
+          {% endif %}
+        </div>
+
+    {% endblock %}
+</div>

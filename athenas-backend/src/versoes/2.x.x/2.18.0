@@ -1,0 +1,58 @@
+- 2024.9.3:
+    - CARD: ATS-5044 - MR: 1223 - [front Ext] - Alterar campo Ativo da tela do teletrabalho para apenas visualização
+- 2024.9.4:
+    - CARD: ATS-5039 - MR: 1227 - [backend - Diárias] Criar e alterar configurações em fluxo
+    - CARD: ATS-5046 - MR: 1228 - [back] - Criar função para atualizar o campo Ativo do Teletrabalho automaticamente
+    - CARD: ATS-5080 - MR: 1231 - [backend Diárias - Condicionais] Criar condicional para verificar se a viagem possui membro
+- 2024.9.5:
+    -CARD: ATS-5090 - MR: 1232 - [BACK] Ajustar cálculo de limite de diárias
+    -CARD: ATS-5174 - MR: 1233 - [backend Diárias - Condicionais - Alterar estrutura] Alterar tabela sobre condicionais
+    -CARD: ATS-5048 - MR: 1230 - [back] - Criar JOB para atualizar o campo Ativo do Teletrabalho automaticamente
+    -CARD: ATS-5175 - MR: 1235 - [backend Diárias - Condicionais - Alterar estrutura] Criar fixtures das condicionais de todos os fluxos
+- 2024.9.6:
+    -CARD: ATS-5175 - MR: 1239 - [backend Diárias - Condicionais - Alterar estrutura] Alterar a lógica de leitura dos dados de condicionais
+    -CARD: ATS-5092 - MR: 1242 - [BACK] Alterar a lógica de leitura dos dados de condicionais
+    -CARD: ATS-5092 v2- MR: 1242 - [BACK] Correção de import
+- 2024.9.9:
+    -CARD: ATS-4955 - MR: 1218 - [back] incluir uma ação na tela para notificar todos pendente em massa
+    -CARD: ATS-5084 - MR: 1244 - folha-ponto [back] Modificar api de marcações para o próprio servidor ignorar marcação
+    -CARD: ATS-5085 - MR: 1245 - folha-ponto [back] - Alterar filtro de competência da api de marcações
+    -CARD: ATS-5192 - MR: 1246 - [backend Diárias - Condicionais - Alterar estrutura] Alterar a lógica do processamento das condicionais na movimentação de fluxo
+    -CARD: ATS-5063 - MR: 1247 - [backend Diárias - Condicionais] Criar condicional se viagem é indicado para representar MP (campo finalidade ‘Representar’)
+- 2024.9.10:
+    -CARD: ATS-5010 - MR: 1248 - [back] - Cadastro de serviços - API Listagem
+    -CARD: ATS-5197 - MR: 1250 - [back] - Cadastro de serviços - API Detalhe
+    -CARD: ATS-5011 - MR: 1251 - [back] - Cadastro de serviços - API Cadastro
+    -CARD: ATS-5012 - MR: 1251 - [back] - Cadastro de serviços - API Edição
+    -CARD: ATS-5013 - MR: 1251 - [back] - Cadastro de serviços - API Exclusão
+    -CARD: ATS-5064 - MR: 1253 - [backend Diárias - Condicionais] Criar condicionais para verificar se viagem é Estadual ou Nacional
+    -CARD: ATS-5148 - MR: 1258 - [Athenas][BACK] - Inclusão de dados no e-mail de abertura de chamado para criação dos acessos DTI 
+    -CARD: ATS-5137 - MR: 1256 - [backend Diárias - Condicionais] Criar condicionais para verificar se beneficiário é Servidor
+    -CARD: ATS-5017 - MR: 1257 - [back] - Cadastro de serviços - API para executar o serviço
+    -CARD: ATS-5028 - MR: 1261 - [backend - Diárias - Excedentes] Alterar tabelas
+    -CARD: ATS-5083 - MR: 1262 - Folha-ponto [back] - Alterar filtro na api de marcações para retorna os subordinados do aprovador
+    -CARD: ATS-4956 - MR: 1229-  [back] - Criar histórico de notificações do gestor de envio de folha ponto
+- 2024.9.11:
+    -CARD: ATS-5134 - MR: 1263 - [backend Diárias - Condicionais] Criar condicional de fluxo para validar se há etapa no histórico da viagem
+    -CARD: ATS-5074 - MR: 1264 - [backend - Diárias - Condicionais] Criar condicional de fluxo para validar se colaborador é Externo (type_by_possession é COE) 
+    -CARD: ATS-5231 - MR: 1265 - [BACK] Alterações em tabela de CalculoConsolidado e HistoricoFluxoViagemBeneficiario
+    -CARD: ATS-5127 - MR: 1260 - [BACK] Modificar api para lógica para "indeferir" em Chefe imediato - aguardando ciência
+- 2024.9.12:
+    -CARD: ATS-5040 - MR: 1266 - [backend Diárias - Condicionais] Criar condicional de fluxo para validar etapa anterior
+    -CARD: ATS-5014 - MR: 1267 - [front] - Cadastro de serviços - Tela de listagem
+    -CARD: ATS-5079 - MR: 1269 - [backend - Diárias - Condicionais] Criar condicional de fluxo para verificar se viagem é excedente
+    -CARD: ATS-5246 - MR: 1271 - [backend Diárias] Alterar relação entre Beneficiário e Fluxo
+    -CARD: ATS-5029 - MR: 1270 - ATS-5029 [backend - Diárias - Excedentes] Criar lógica para geração automática de viagem excedente 
+- 2024.9.13:
+    -CARD: ATS-5035 - MR: 1278 - [backend - Diárias] Criar validação para que não permita criar uma solicitação com 5 dias antes do início da viagem
+    -CARD: ATS-5035 - MR: 1278 - [backend - Diárias] Criar validação para que não permita criar uma solicitação com 5 dias antes do início da viagem 
+    -CARD: ATS-5107 - MR: 1279 - [BACK] Criação de api e método para aprovação com alteração de diárias
+    -CARD: ATS-5065 - MR: 1273 - [backend Diárias - Condicionais] Criar condicionais para verificar se beneficiário é chefe ou não em uma das lotações configuradas
+    -CARD: ATS-5108 - MR: 1280 - Api zona eleitoral - Criar api para retornar as lotações eleitorais
+    -CARD: ATS-4931 - MR: 1277 - [Back]  Folha Ponto - Criar listagem das justificativas
+    -CARD: ATS-4929 - MR: 1274 - [Back]  Folha Ponto - Criar justificativa para o folha ponto
+    -CARD: ATS-4933 - MR: 1276 - [Back]  Folha Ponto- Criar api do tipos de justificativas folha ponto
+    -CARD: ATS-4934 - MR: 1275 - [Back] Folha Ponto - Criar api folha-ponto-lotacoes
+    -CARD: ATS-5033 - MR: 1281 - backend - Diárias - Implementar lógica para notificar solicitante seguindo configuração de fluxo 
+
+

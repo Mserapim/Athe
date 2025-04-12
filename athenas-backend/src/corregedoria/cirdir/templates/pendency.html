@@ -1,0 +1,12 @@
+{% load judicialfilters %}
+
+<div style="padding-top: 0.5em; padding-left: 2em; ">
+    <h3>Lista de Pendência</h3>
+    <ul>
+    {% for item in pendencies%}
+        <font color="red"><li>{{ item.message | safely }}</li> </font>
+    {% empty %}
+        <li>Sem pendência.</li>
+    {% endfor %}
+    </ul>
+</div>

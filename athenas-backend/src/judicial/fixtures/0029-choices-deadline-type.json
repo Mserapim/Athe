@@ -1,0 +1,45 @@
+[
+    {
+        "fields": {
+            "name": "DEADLINE_TYPE",
+            "value": 1,
+            "label": "Dia(s)",
+            "cache_path": "judicial.DEADLINE_TYPE",
+            "cvalue": "1",
+            "app_label": "judicial",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "DEADLINE_TYPE",
+            "value": 2,
+            "label": "Mês(es)",
+            "cache_path": "judicial.DEADLINE_TYPE",
+            "cvalue": "2",
+            "app_label": "judicial",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    },
+    {
+        "fields": {
+            "name": "DEADLINE_TYPE",
+            "value": 3,
+            "label": "Ano(s)",
+            "cache_path": "judicial.DEADLINE_TYPE",
+            "cvalue": "3",
+            "app_label": "judicial",
+            "active": true,
+            "order_weight": 0,
+            "description": ""
+        },
+        "model": "standard.choice"
+    }
+]
+    

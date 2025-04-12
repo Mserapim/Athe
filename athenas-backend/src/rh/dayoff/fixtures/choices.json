@@ -1,0 +1,590 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "PERIODS_YEAR_CHOICE",
+            "label": "Anual",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "dayoff.PERIODS_YEAR_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "PERIODS_YEAR_CHOICE",
+            "label": "Semestre",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "dayoff.PERIODS_YEAR_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "PERIODS_YEAR_CHOICE",
+            "label": "Trimeste",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "dayoff.PERIODS_YEAR_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "PERIODS_YEAR_CHOICE",
+            "label": "Quadrimeste",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "dayoff.PERIODS_YEAR_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "CONFIGURATION_CHOICE",
+            "label": "Férias",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "dayoff.CONFIGURATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "CONFIGURATION_CHOICE",
+            "label": "Recesso",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "dayoff.CONFIGURATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "CONFIGURATION_CHOICE",
+            "label": "Folga de Aniversário",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "dayoff.CONFIGURATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "CONFIGURATION_CHOICE",
+            "label": "Folga Eleitoral",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "dayoff.CONFIGURATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "CONFIGURATION_CHOICE",
+            "label": "Folga de Plantão",
+            "value": 5,
+            "cvalue": "5",
+            "cache_path": "dayoff.CONFIGURATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "CONFIGURATION_CHOICE",
+            "label": "Folga por Compensação",
+            "value": 6,
+            "cvalue": "6",
+            "cache_path": "dayoff.CONFIGURATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Inclusão solicitada",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Autorizado",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Homologado",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Alteração solicitada",
+            "value": 8,
+            "cvalue": "8",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Alterado",
+            "value": 16,
+            "cvalue": "16",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Interrompido",
+            "value": 32,
+            "cvalue": "32",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Suspenso",
+            "value": 64,
+            "cvalue": "64",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Em fruição",
+            "value": 128,
+            "cvalue": "128",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Usufruído",
+            "value": 256,
+            "cvalue": "256",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Não autorizado",
+            "value": 512,
+            "cvalue": "512",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "Substituto",
+            "value": 1024,
+            "cvalue": "1024",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "USUFRUCT_STATUS_CHOICE",
+            "label": "CANCELADO",
+            "value": 2048,
+            "cvalue": "2048",
+            "cache_path": "dayoff.USUFRUCT_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_TYPE_CHOICE",
+            "label": "MARCAÇÃO",
+            "value": 1,
+            "cvalue": "boo",
+            "cache_path": "dayoff.ACTIVITY_TYPE_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_TYPE_CHOICE",
+            "label": "ALTERAÇÃO",
+            "value": 2,
+            "cvalue": "cha",
+            "cache_path": "dayoff.ACTIVITY_TYPE_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_TYPE_CHOICE",
+            "label": "SUSPENSÃO",
+            "value": 3,
+            "cvalue": "sus",
+            "cache_path": "dayoff.ACTIVITY_TYPE_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_TYPE_CHOICE",
+            "label": "INTERRUPÇÃO",
+            "value": 4,
+            "cvalue": "int",
+            "cache_path": "dayoff.ACTIVITY_TYPE_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_TYPE_CHOICE",
+            "label": "INDENIZAÇÃO",
+            "value": 5,
+            "cvalue": "ind",
+            "cache_path": "dayoff.ACTIVITY_TYPE_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_TYPE_CHOICE",
+            "label": "VENDA",
+            "value": 7,
+            "cvalue": "sel",
+            "cache_path": "dayoff.ACTIVITY_TYPE_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACQUISITION_PERIOD_STATUS_CHOICE",
+            "label": "Aguardando Liberação p/ Marcação",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "dayoff.ACQUISITION_PERIOD_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACQUISITION_PERIOD_STATUS_CHOICE",
+            "label": "Em Andamento",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "dayoff.ACQUISITION_PERIOD_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACQUISITION_PERIOD_STATUS_CHOICE",
+            "label": "Concluído",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "dayoff.ACQUISITION_PERIOD_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACQUISITION_PERIOD_STATUS_CHOICE",
+            "label": "Indenizado Total ou Parcialmente",
+            "value": 8,
+            "cvalue": "8",
+            "cache_path": "dayoff.ACQUISITION_PERIOD_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACQUISITION_PERIOD_STATUS_CHOICE",
+            "label": "Prescrito",
+            "value": 12,
+            "cvalue": "12",
+            "cache_path": "dayoff.ACQUISITION_PERIOD_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "AUTO_HOMOLOGATION_CHOICE",
+            "label": "NÃO AUTO HOMOLOGAR",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "dayoff.AUTO_HOMOLOGATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "AUTO_HOMOLOGATION_CHOICE",
+            "label": "AUTO HOMOLOGAR APÓS ESCALA",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "dayoff.AUTO_HOMOLOGATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "AUTO_HOMOLOGATION_CHOICE",
+            "label": "AUTO HOMOLOGAR",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "dayoff.AUTO_HOMOLOGATION_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_STATUS_CHOICE",
+            "label": "CRIADO",
+            "value": 1,
+            "cvalue": "1",
+            "cache_path": "dayoff.ACTIVITY_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_STATUS_CHOICE",
+            "label": "AUTORIZADO",
+            "value": 2,
+            "cvalue": "2",
+            "cache_path": "dayoff.ACTIVITY_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_STATUS_CHOICE",
+            "label": "AUTORIZADO CHEFE MEDIATO",
+            "value": 6,
+            "cvalue": "6",
+            "cache_path": "dayoff.ACTIVITY_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_STATUS_CHOICE",
+            "label": "NÃO AUTORIZADO",
+            "value": 3,
+            "cvalue": "3",
+            "cache_path": "dayoff.ACTIVITY_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_STATUS_CHOICE",
+            "label": "HOMOLOGADO",
+            "value": 4,
+            "cvalue": "4",
+            "cache_path": "dayoff.ACTIVITY_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    },
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "dayoff",
+            "name": "ACTIVITY_STATUS_CHOICE",
+            "label": "CANCELADO",
+            "value": 5,
+            "cvalue": "5",
+            "cache_path": "dayoff.ACTIVITY_STATUS_CHOICE",
+            "description": "",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<header style="background-color: rgb(240, 240, 240);border: 2px solid rgb(97, 97, 97);">
+    <div style="width: 100%;height:80px;">
+      <div style="float: left;width: 25%;">
+        <ul style="list-style-type: none; margin-left: 5px; padding-left: 0px;font-size: 14px">
+          <li>
+            <img src="data:image/png;base64,{{logo_mpmt}}" style="padding-top: 10px;padding-bottom: 10px;"  width="110px" height="35px" alt="MPMT">
+          </li>
+        </ul>
+      </div>
+      <div style="float:left;width:50%;">
+          <h2 style="padding-top: 8px;padding-bottom: 8px;text-align:center;color: rgb(71, 69, 69); font-size:18px;font-family: Georgia, arial, sans-serif;">
+              {{ title }}
+          </h2>         
+      </div>
+      <div style="float:left;width: 25%;">
+        <ul style="list-style-type: none; margin-left: 30%; padding-left: 0px;font-size: 14px;padding-top: 2px;padding-bottom: 10px;">
+          <li>
+             Emitido por: {{ user }}        
+          </li>  
+          <li>
+            Emissão: {{ date }}        
+          </li>
+          <li>
+            Hora: {{ hour }}
+          </li>  
+        </ul>
+      </div>
+    </div>
+</header>

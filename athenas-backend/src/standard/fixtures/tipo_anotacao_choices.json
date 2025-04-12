@@ -1,0 +1,1802 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 3853,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Abono de perman\u00eancia",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3854,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Adicional (Gratifica\u00e7\u00e3o Adicional)",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3855,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Admiss\u00e3o (Entrada de Servidores enviados pela SAD)",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3856,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Afastamento para Estudo",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3857,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Altera\u00e7\u00e3o de jornada de trabalho",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3858,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Aposentadorias (membros e servidores)",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3859,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Averba\u00e7\u00e3o Tempo Servi\u00e7o/Contribui\u00e7\u00e3o",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3860,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Cedido pelo MP",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3861,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Cedidos para o MP",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3862,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Compensa\u00e7\u00e3o de Plant\u00e3o de Membro",
+        "value": 10,
+        "cvalue": "10",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3863,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Concess\u00e3o de Licen\u00e7a Pr\u00eamio",
+        "value": 11,
+        "cvalue": "11",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3864,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Convers\u00e3o de Licen\u00e7a Pr\u00eamio ",
+        "value": 12,
+        "cvalue": "12",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3865,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Convite/Palestra",
+        "value": 13,
+        "cvalue": "13",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3866,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Coordena\u00e7\u00e3o",
+        "value": 14,
+        "cvalue": "14",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3867,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Credenciamento de estagi\u00e1rios ",
+        "value": 15,
+        "cvalue": "15",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3868,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Demiss\u00e3o",
+        "value": 16,
+        "cvalue": "16",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3869,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Designa\u00e7\u00e3o (membros)",
+        "value": 17,
+        "cvalue": "17",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3870,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Designa\u00e7\u00e3o Concurso de estagi\u00e1rio",
+        "value": 18,
+        "cvalue": "18",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3871,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Designa\u00e7\u00e3o Eleitoral",
+        "value": 19,
+        "cvalue": "19",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3872,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Designa\u00e7\u00e3o para Compor Comiss\u00e3o",
+        "value": 20,
+        "cvalue": "20",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3873,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Dispensa eleitoral de servidores",
+        "value": 21,
+        "cvalue": "21",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3874,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Enquadramento",
+        "value": 22,
+        "cvalue": "22",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3875,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Escala de Plant\u00e3o",
+        "value": 23,
+        "cvalue": "23",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3876,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Estabilidade",
+        "value": 24,
+        "cvalue": "24",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3877,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Exonera\u00e7\u00e3o",
+        "value": 25,
+        "cvalue": "25",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3878,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Folga Compensat\u00f3ria",
+        "value": 26,
+        "cvalue": "26",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3879,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "F\u00e9rias (membros e servidores)",
+        "value": 27,
+        "cvalue": "27",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3880,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "F\u00e9rias Compensat\u00f3rias",
+        "value": 28,
+        "cvalue": "28",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3881,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "F\u00e9rias Indenizadas",
+        "value": 29,
+        "cvalue": "29",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3882,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Gest\u00e3o de Contratos",
+        "value": 30,
+        "cvalue": "30",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3883,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Gozo de licen\u00e7a Pr\u00eamio",
+        "value": 31,
+        "cvalue": "31",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3884,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Hor\u00e1rio especial para estudante",
+        "value": 32,
+        "cvalue": "32",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3885,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Incorpora\u00e7\u00e3o",
+        "value": 33,
+        "cvalue": "33",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3886,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Indeferimento",
+        "value": 34,
+        "cvalue": "34",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3887,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Instru\u00e7\u00e3o Sum\u00e1ria",
+        "value": 35,
+        "cvalue": "35",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3888,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a Especial (N\u00e3o Remunerada)",
+        "value": 36,
+        "cvalue": "36",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3889,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a para Atividade Pol\u00edtica",
+        "value": 37,
+        "cvalue": "37",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3890,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a para Tratamento de Interesses Particulares (Membros)",
+        "value": 38,
+        "cvalue": "38",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3891,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a para Tratamento de Sa\u00fade em Pessoa na Fam\u00edlia",
+        "value": 39,
+        "cvalue": "39",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3892,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a para casamento",
+        "value": 40,
+        "cvalue": "40",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3893,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a para interesses particulares",
+        "value": 41,
+        "cvalue": "41",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3894,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a para tratamento de sa\u00fade",
+        "value": 42,
+        "cvalue": "42",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3895,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a por luto",
+        "value": 43,
+        "cvalue": "43",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3896,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a \u00e0 gestante",
+        "value": 44,
+        "cvalue": "44",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3897,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a-paternidade",
+        "value": 45,
+        "cvalue": "45",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3898,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a-pr\u00eamio",
+        "value": 46,
+        "cvalue": "46",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3899,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Lista de antiguidade de membros do MPE",
+        "value": 47,
+        "cvalue": "47",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3900,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Lota\u00e7\u00e3o",
+        "value": 48,
+        "cvalue": "48",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3901,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Luto Oficial (membros)",
+        "value": 49,
+        "cvalue": "49",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3902,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Nomea\u00e7\u00e3o",
+        "value": 50,
+        "cvalue": "50",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3903,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Nota de Elogio",
+        "value": 51,
+        "cvalue": "51",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3904,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Outros",
+        "value": 52,
+        "cvalue": "52",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3905,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "PDI - Avalia\u00e7ao de Desempenho",
+        "value": 53,
+        "cvalue": "53",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3906,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Penalidade (N\u00e3o Utilizar)",
+        "value": 54,
+        "cvalue": "54",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3907,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Penalidade Portaria DG",
+        "value": 55,
+        "cvalue": "55",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3908,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Penalidade Portaria PGJ",
+        "value": 56,
+        "cvalue": "56",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3909,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Penalidade \u00bf Outros Tipos de Documentos",
+        "value": 57,
+        "cvalue": "57",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3910,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Pens\u00e3o por morte ",
+        "value": 58,
+        "cvalue": "58",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3911,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Plant\u00e3o Servidor (gratifica\u00e7\u00e3o e compensa\u00e7\u00e3o) ",
+        "value": 59,
+        "cvalue": "59",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3912,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Progress\u00e3o Horizontal",
+        "value": 60,
+        "cvalue": "60",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3913,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Progress\u00e3o Vertical",
+        "value": 61,
+        "cvalue": "61",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3914,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Promo\u00e7\u00e3o",
+        "value": 62,
+        "cvalue": "62",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3915,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Prorroga\u00e7\u00e3o de Posse",
+        "value": 63,
+        "cvalue": "63",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3916,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Reabilita\u00e7\u00e3o de PAD",
+        "value": 64,
+        "cvalue": "64",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3917,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Readapta\u00e7\u00e3o de Fun\u00e7\u00e3o",
+        "value": 65,
+        "cvalue": "65",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3918,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Recesso Remunerado (Estagi\u00e1rios)",
+        "value": 66,
+        "cvalue": "66",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3919,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Reintegracao",
+        "value": 67,
+        "cvalue": "67",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3920,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Relota\u00e7\u00e3o (servidores)",
+        "value": 68,
+        "cvalue": "68",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3921,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Remo\u00e7\u00e3o",
+        "value": 69,
+        "cvalue": "69",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3922,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Retifica\u00e7\u00e3o de Ato Adm.-PGJ",
+        "value": 70,
+        "cvalue": "70",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3923,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Retifica\u00e7\u00e3o de Ato-PGJ",
+        "value": 71,
+        "cvalue": "71",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3924,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Retifica\u00e7\u00e3o de F\u00e9rias",
+        "value": 72,
+        "cvalue": "72",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3925,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Retifica\u00e7\u00e3o de Portaria-DG",
+        "value": 73,
+        "cvalue": "73",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3926,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Retifica\u00e7\u00e3o de Portaria-PGJ",
+        "value": 74,
+        "cvalue": "74",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3927,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Retifica\u00e7\u00e3o de Substituto",
+        "value": 75,
+        "cvalue": "75",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3928,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revog. e Desig. Ato Adm PGJ",
+        "value": 76,
+        "cvalue": "76",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3929,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revog. e Desig. Ato PGJ",
+        "value": 77,
+        "cvalue": "77",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3930,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revog. e Desig. Port. DG",
+        "value": 78,
+        "cvalue": "78",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3931,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revog. e Desig. Port. PGJ",
+        "value": 79,
+        "cvalue": "79",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3932,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revoga\u00e7\u00e3o (N\u00e3o utilizar)",
+        "value": 80,
+        "cvalue": "80",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3933,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revoga\u00e7\u00e3o Ato Adm PGJ\n",
+        "value": 81,
+        "cvalue": "81",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3934,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revoga\u00e7\u00e3o Ato PGJ",
+        "value": 82,
+        "cvalue": "82",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3935,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revoga\u00e7\u00e3o Port. DG",
+        "value": 83,
+        "cvalue": "83",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3936,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revoga\u00e7\u00e3o Port. PGJ\n",
+        "value": 84,
+        "cvalue": "84",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3937,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Revoga\u00e7\u00e3o/Designa\u00e7\u00e3o (N\u00e3o utilizar)",
+        "value": 85,
+        "cvalue": "85",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3938,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Sindic\u00e2ncia/Processo Administrativo",
+        "value": 86,
+        "cvalue": "86",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3939,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Substitui\u00e7\u00e3o",
+        "value": 87,
+        "cvalue": "87",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3940,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Suspens\u00e3o de F\u00e9rias",
+        "value": 88,
+        "cvalue": "88",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3941,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Teletrabalho",
+        "value": 89,
+        "cvalue": "89",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3942,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Termo de Posse de Posse e/ou Entrada em Exerc\u00edcio",
+        "value": 90,
+        "cvalue": "90",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3943,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Titulariza\u00e7\u00e3o",
+        "value": 91,
+        "cvalue": "91",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3944,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tornar sem Efeito (N\u00e3o utilizar)",
+        "value": 92,
+        "cvalue": "92",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3945,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tornar sem Efeito Ato Adm. PGJ",
+        "value": 93,
+        "cvalue": "93",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3946,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tornar sem Efeito Ato PGJ",
+        "value": 94,
+        "cvalue": "94",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3947,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tornar sem Efeito Portaria DG",
+        "value": 95,
+        "cvalue": "95",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3948,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tornar sem Efeito Portaria PGJ",
+        "value": 96,
+        "cvalue": "96",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3949,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Vacancia",
+        "value": 97,
+        "cvalue": "97",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3950,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Vitaliciamento",
+        "value": 98,
+        "cvalue": "98",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3951,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Afastamento",
+        "value": 99,
+        "cvalue": "99",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3952,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Aus\u00eancia",
+        "value": 100,
+        "cvalue": "100",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3953,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Comunica\u00e7\u00e3o",
+        "value": 101,
+        "cvalue": "101",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3954,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Elogio",
+        "value": 102,
+        "cvalue": "102",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3955,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Carreira",
+        "value": 103,
+        "cvalue": "103",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3956,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Evento",
+        "value": 104,
+        "cvalue": "104",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3957,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Falta",
+        "value": 105,
+        "cvalue": "105",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3958,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "F\u00e9rias",
+        "value": 106,
+        "cvalue": "106",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3959,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Folga Anivers\u00e1rio",
+        "value": 107,
+        "cvalue": "107",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3960,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Folga Compensa\u00e7\u00e3o",
+        "value": 108,
+        "cvalue": "108",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3961,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Folga Eleitoral",
+        "value": 109,
+        "cvalue": "109",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3962,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Geral",
+        "value": 110,
+        "cvalue": "110",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3963,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Gratifica\u00e7\u00e3o",
+        "value": 111,
+        "cvalue": "111",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3964,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Hor\u00e1rio Especial",
+        "value": 112,
+        "cvalue": "112",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3965,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Licen\u00e7a",
+        "value": 113,
+        "cvalue": "113",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3966,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Pena Discipinar",
+        "value": 114,
+        "cvalue": "114",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3967,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Recesso",
+        "value": 115,
+        "cvalue": "115",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3969,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tempo em Dobro",
+        "value": 116,
+        "cvalue": "116",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3970,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Tempo Servi\u00e7o/Contribui\u00e7\u00e3o",
+        "value": 117,
+        "cvalue": "117",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3971,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Transposi\u00e7\u00e3o",
+        "value": 118,
+        "cvalue": "118",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3972,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Viagem",
+        "value": 119,
+        "cvalue": "119",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 3973,
+    "fields": {
+        "app_label": "rh",
+        "name": "TIPO_ANOTACAO",
+        "label": "Decl\u00ednio Eleitoral",
+        "value": 120,
+        "cvalue": "120",
+        "cache_path": "rh.TIPO_ANOTACAO",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

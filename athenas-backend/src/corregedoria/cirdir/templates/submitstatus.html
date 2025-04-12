@@ -1,0 +1,16 @@
+<br />
+<div class="composite">
+    <div>
+        
+        <p>    
+            <span>Status:<b> {% if has_submitted %}<font color="blue">{{submitstatus.get_status_display }}</font> {%else%} <font color="red">{{submitstatus.get_status_display }}</font>{%endif%}</b></span><br />  
+        </p>
+    </div>
+    {% if show_timestamp %}
+    <div>
+        <p> 
+            <span>Em <b>{{timestamp.when | date:'d/m/Y H:i' }}</b> por <b>{{timestamp.who }}</b></span><br />
+        </p>
+    </div>
+    {%endif%}
+</div>

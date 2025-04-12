@@ -1,0 +1,44 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div><h2>Decisão de Indeferimento de Noticia de Fato</h2></div>
+    <div><small>Noticia de Fato : {{ doc.lawsuit.origin.codigo }} - {{ doc.lawsuit.cache_number }}</small></div>
+
+    {% if doc.decision_text %}
+    <div class="paragraph-text">
+        {{ doc.decision_text | safely }}
+    </div>
+
+    <div class="paragraph-text">
+        <p>
+            {% if doc.decision_type == 1 %}
+                Decidiu-se então por <span class="bold">{{ doc.get_decision_type_display | upper }}</span>
+                {% if doc.type_ordinace %}
+                e instaurar um <span class="bold">{{ doc.get_type_ordinace_display }}</span>
+                para que sejam apurados os fatos.
+                {% endif %}
+            {% else %}
+                Decidiu-se então por <span class="bold">{{ doc.get_decision_type_display | upper }}</span>
+                então o procedimento será encaminhado para o Conselho Superior do Ministerio Público para
+                seguir os ritos de arquivamento.
+            {% endif %}
+        </p>
+    </div>
+    {% endif %}
+
+    {% if doc.decided_by %}
+    {% with modified_at=doc.decided_at %}
+    {% include "judicial/lawsuit/owner_sign.html" %}
+    {% endwith %}
+    {% else %}
+    <div class="paragraph-text">
+        <h2 style="color:red">Observação</h2>
+        <p>
+            Este documento não foi assinado até o momento. Para que o mesmo tenha o seu efeito é
+            necessário que o mesmo seja assiando pelo responsavel pelo Órgão de Execução
+            <span class="bold">{{ execution_organ }}</span>.
+        </p>
+    </div>
+    {% endif %}
+</div>

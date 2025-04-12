@@ -1,0 +1,18 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div class="composite">
+        {% block content %}
+        <br /><br />
+        <table width=100% border=0 style="border-width: 2px; border-collapse: collapse;">
+            <tr><td style="padding: 2px; background-color: #c0c0c0;" colspan=3 align=center><b>DESEMPENHO FUNCIONAL - PRODUTIVIDADE (ÚLTIMOS 12 MESES)</b></td></tr>
+        </table>
+        {% if inspection %}
+            <div class="paragraph-text" style="padding-left: 0.5em; padding-right: 0.5em; font-size: 12px;">
+                Mensagem: {{ data.teste_mensagem }}
+            </div>
+        {% else %}
+            <font style="font-size: 14px;" >Não existem dados de produtividade vinculados ao prontuário.</font>
+        {% endif %}
+        {% endblock %}
+    </div>
+</div>

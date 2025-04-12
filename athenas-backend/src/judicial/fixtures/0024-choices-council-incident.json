@@ -1,0 +1,57 @@
+[
+{
+    "fields": {
+        "description": "",
+        "value": 101,
+        "label": "Conexão",
+        "cache_path": "council.INCIDENT",
+        "app_label": "council",
+        "name": "INCIDENT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 102,
+        "label": "Prevenção",
+        "cache_path": "council.INCIDENT",
+        "app_label": "council",
+        "name": "INCIDENT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 201,
+        "label": "Impedimento",
+        "cache_path": "council.INCIDENT",
+        "app_label": "council",
+        "name": "INCIDENT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 202,
+        "label": "Suspeição",
+        "cache_path": "council.INCIDENT",
+        "app_label": "council",
+        "name": "INCIDENT"
+    },
+    "model": "standard.choice"
+},
+{
+    "fields": {
+        "description": "",
+        "value": 301,
+        "label": "Ausência Justificada",
+        "cache_path": "council.INCIDENT",
+        "app_label": "council",
+        "name": "INCIDENT"
+    },
+    "model": "standard.choice"
+}
+]

@@ -1,0 +1,48 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title" style="margin-top: 2.5em">
+    Desistência Edital de Remoção n. 02/2022
+</p>
+
+<table class="rf-table" border='1'>
+   <tr><th class="rf-th-center rf-bg-gray" colspan="2">IDENTIFICAÇÃO DO SERVIDOR</th></tr>
+    <tr>
+        <th class="rf-th">Nome:</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ employee_job_title }}</td></tr>
+
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ home_court_unicode }}</td></tr>
+</table>
+
+<table class="rf-table" border='1'>
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">VAGA(S) DE DESISTÊNCIA</th></tr>
+    <tr><th class="rf-td" colspan="2">{{ cancellation_vacancies | safe }}</th></tr>
+ </table>
+
+<table class="rf-table" border='1'>
+    <tr><th class="rf-th-center rf-bg-gray" colspan="2">DECLARAÇÃO DE DESISTÊNCIA</th></tr>
+    <tr><th class="rf-td" colspan="2">Declaro estar ciente dos critérios e requisitos do edital supramencionado.</th></tr>
+ </table>
+
+
+<p class="rf-paragraph-height" style="margin-top: 3.5em; border-top: 1px solid black; padding-top: 1em;"><b>Instruções:</b></p>
+<p class="rf-paragraph-height">- Assinar eletronicamente via e-Doc</p>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

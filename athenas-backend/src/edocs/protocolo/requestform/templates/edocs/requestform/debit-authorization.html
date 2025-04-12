@@ -1,0 +1,31 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-spacing rf-text-justify">
+    Assunto:
+    <b>
+        {{ protocol.assunto }}
+    </b>
+</p>
+
+<h2 class="rf-spacing rf-text-center">AUTORIZAÇÃO DE DÉBITO</h2>
+
+<p class="rf-abnt" style="margin-bottom: 2em">
+    Autorizo a Procuradoria-Geral de Justiça do Tocantins descontar do meu 
+    contracheque, mensalmente, durante os meses de abril, maio e junho de 2021, 
+    a importância correspondente a {{ debit_percentage }} (em %) do Auxílio 
+    Alimentação, a ser destinada à campanha Parceria Solidária II, com a finalidade de 
+    aquisição e distribuição de cestas básicas a famílias carentes do Tocantins.
+</p>
+
+{% include "edocs/requestform/sign.html" %}
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

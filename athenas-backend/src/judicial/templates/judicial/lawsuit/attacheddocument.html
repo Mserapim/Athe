@@ -1,0 +1,24 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+
+    <div style="margin-bottom: 2em">
+        <div><h2>{{ attached.attached_title }}</h2></div>
+        <div class="paragraph-text">
+            {{ attached.resume | safely }}
+        </div>
+
+        <div style="margin: 2em 0">
+            <h3 style="margin-bottom:0.7em">Documentos apresentados</h3>
+            {% for attach in attached.attaches %}
+            <div style="padding:0.5em 0">
+                <a href="{{ attach.file_descriptor.complete_permalink }}" title="{{ attach.title }}">
+                    ({{ forloop.count }}){{ attach.file_descriptor.filename }}
+                </a>
+                <div><small>URL:{{ attach.file_descriptor.complete_permalink }}</small></div>
+                <div><small>MD5: {{ attach.file_descriptor.file }}</small></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

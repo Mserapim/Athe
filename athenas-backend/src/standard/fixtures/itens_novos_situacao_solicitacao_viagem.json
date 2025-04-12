@@ -1,0 +1,32 @@
+[
+{
+    "model": "standard.choice",
+    "pk": 4440,
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "An\u00e1lise Afastamentos",
+        "value": 18,
+        "cvalue": "18",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "pk": 4441,
+    "fields": {
+        "app_label": "diarias",
+        "name": "SITUACAO_SOLICITACAO_VIAGEM",
+        "label": "Cancelado",
+        "value": 19,
+        "cvalue": "19",
+        "cache_path": "diarias.SITUACAO_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

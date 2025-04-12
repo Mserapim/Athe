@@ -1,0 +1,2788 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "",
+    "label": "Produtor Rural Pessoa Jurídica",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1000",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1005",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1010",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1020",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1070",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2200",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2205",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2206",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2230",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2231",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2298",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2299",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2300",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2306",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2399",
+    "value": 15,
+    "cvalue": "15",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s3000",
+    "value": 16,
+    "cvalue": "16",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1200",
+    "value": 17,
+    "cvalue": "17",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1202",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1207",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1210",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s1299",
+    "value": 21,
+    "cvalue": "21",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2400",
+    "value": 22,
+    "cvalue": "22",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2405",
+    "value": 23,
+    "cvalue": "23",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2410",
+    "value": 24,
+    "cvalue": "24",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2416",
+    "value": 25,
+    "cvalue": "25",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2418",
+    "value": 26,
+    "cvalue": "26",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2420",
+    "value": 27,
+    "cvalue": "27",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2210",
+    "value": 28,
+    "cvalue": "28",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2220",
+    "value": 29,
+    "cvalue": "29",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACRONYM",
+    "label": "s2240",
+    "value": 30,
+    "cvalue": "30",
+    "cache_path": "esocial.ACRONYM",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACTION",
+    "label": "INCLUSÃO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.ACTION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACTION",
+    "label": "ALTERAÇÃO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.ACTION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACTION",
+    "label": "EXCLUSÃO",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.ACTION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ACTION",
+    "label": "RETIFICAÇÃO",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.ACTION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "APPLICATION",
+    "label": "ESOCIAL",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.APPLICATION",
+    "description": "Aplicativo eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "APPLICATION",
+    "label": "EFD-REINF",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.APPLICATION",
+    "description": "Aplicativo EFD-REINF",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "CHOICE_ITEM_MAP",
+    "label": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.CHOICE_ITEM_MAP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "CHOICE_ITEM_MAP",
+    "label": "DEPENDENT_TYPE",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "esocial.CHOICE_ITEM_MAP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "CHOICE_ITEM_MAP",
+    "label": "ACRONYM",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "esocial.CHOICE_ITEM_MAP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "CHOICE_ITEM_MAP",
+    "label": "TIPO_BASE_LICENCA_AFASTAMENTO",
+    "value": 18,
+    "cvalue": "18",
+    "cache_path": "esocial.CHOICE_ITEM_MAP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "CHOICE_ITEM_MAP",
+    "label": "TYPE_FIRED",
+    "value": 19,
+    "cvalue": "19",
+    "cache_path": "esocial.CHOICE_ITEM_MAP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "CHOICE_ITEM_MAP",
+    "label": "TYPE_STREET",
+    "value": 20,
+    "cvalue": "20",
+    "cache_path": "esocial.CHOICE_ITEM_MAP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Criando",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Criando",
+    "order_weight": 1,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Aguardando envio",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Aguardando envio",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote recebido com Sucesso",
+    "value": 201,
+    "cvalue": "201",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote Recebido com Sucesso.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote recebido com advertências",
+    "value": 202,
+    "cvalue": "202",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote recebido com advertências",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Erro servidor eSocial",
+    "value": 301,
+    "cvalue": "301",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Erro servidor eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote incorreto - Erro preenchimento",
+    "value": 401,
+    "cvalue": "401",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote incorreto - Erro preenchimento",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote incorreto - Schema inválido",
+    "value": 402,
+    "cvalue": "402",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote incorreto - Schema inválido",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote incorreto - Versão do schema não permitida",
+    "value": 403,
+    "cvalue": "403",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote incorreto - Versão do schema não permitida",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote incorreto - Erro certificado",
+    "value": 404,
+    "cvalue": "404",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote incorreto - Erro certificado",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "DELIVERY_STATUS_BATCH",
+    "label": "Lote incorreto - Lote nulo ou vazio",
+    "value": 405,
+    "cvalue": "405",
+    "cache_path": "esocial.STATUS_BATCH",
+    "description": "Lote incorreto - Lote nulo ou vazio",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ENVIRONMENT",
+    "label": "Produção",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.ENVIRONMENT",
+    "description": "Ambiente de produção do eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "ENVIRONMENT",
+    "label": "Produção Restrita",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.ENVIRONMENT",
+    "description": "Ambiente de homologação e testes do eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "EXTENSION_DECISION",
+    "label": "Contribuição Previdenciária Patronal",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.EXTENSION_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "EXTENSION_DECISION",
+    "label": "Contribuição Previdenciária Patronal + Descontada dos Segurados",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.EXTENSION_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "EXTENSION_DECISION",
+    "label": "Descontada dos Segurados",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.EXTENSION_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "EXTENSION_DECISION",
+    "label": "Não se aplica",
+    "value": 99,
+    "cvalue": "99",
+    "cache_path": "esocial.EXTENSION_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_ASCERTAINMENT_PERIOD",
+    "label": "MENSAL",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.INDICATIVE_ASCERTAINMENT_PERIOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_ASCERTAINMENT_PERIOD",
+    "label": "ANUAL(13 SALÁRIO)",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.INDICATIVE_ASCERTAINMENT_PERIOD",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_AUTHORSHIP",
+    "label": "Próprio contribuinte",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.INDICATIVE_AUTHORSHIP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_AUTHORSHIP",
+    "label": "Outra entidade, empresa ou empregado",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.INDICATIVE_AUTHORSHIP",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Liminar em Mandado de Segurança",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Depósito Judicial do Montante Integral",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Depósito Administrativo do Montante Integral",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Antecipação de Tutela",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Liminar em Medida Cautelar",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Sentença em Mandado de Segurança Favorável ao Contribuinte",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Sentença em Ação Ordinária Favorável ao Contribuinte e Confirmada",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Acórdão do TRF Favorável ao Contribuinte",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Acórdão do STJ em Recurso Especial Favorável ao Contribuinte",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Acórdão do STF em Recurso Extraordinário Favorável ao Contribuinte",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Sentença 1a instância não transitada em julgado com efeito suspensivo",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Contestação Administrativa FAP",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Decisão Definitiva a favor do contribuinte",
+    "value": 90,
+    "cvalue": "90",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_SUSPENSION",
+    "label": "Sem suspensão da exigibilidade",
+    "value": 92,
+    "cvalue": "92",
+    "cache_path": "esocial.INDICATIVE_SUSPENSION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_TYPE_INFORMATION",
+    "label": "ORIGINAL",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.INDICATIVE_TYPE_INFORMATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "INDICATIVE_TYPE_INFORMATION",
+    "label": "RETIFICADO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.INDICATIVE_TYPE_INFORMATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Tributária",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Autorização de trabalho de menor",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Dispensa, ainda que parcial, de contratação de pessoa com deficiência (PCD)",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Dispensa, ainda que parcial, de contratação de aprendiz",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Segurança e Saúde do Trabalho",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Conversão de Licença Saúde em Acidente de Trabalho",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "FGTS ou Contribuição Social Rescisória (Lei Complementar 110/2001)",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Contribuição sindical",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Contribuições para o RPPS/regime militar",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "MATTER_PROCESS",
+    "label": "Outros assuntos",
+    "value": 99,
+    "cvalue": "99",
+    "cache_path": "esocial.MATTER_PROCESS",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "OBLIGATION",
+    "label": "OBRIGATÓRIO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.OBLIGATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "OBLIGATION",
+    "label": "NÃO OBRIGATÓRIO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.OBLIGATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "OBLIGATION",
+    "label": "OBRIGATÓRIO SE EXISTIR INFORMAÇÕES",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.OBLIGATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "OBLIGATION",
+    "label": "NÃO APLICÁVEL",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.OBLIGATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PERIODICITY",
+    "label": "MENSAL",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.PERIODICITY",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PERIODICITY",
+    "label": "QUALQUER MOMENTO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.PERIODICITY",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PERIODICITY",
+    "label": "UMA VEZ",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.PERIODICITY",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote aguardando processamento",
+    "value": 101,
+    "cvalue": "101",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote enviado e  aguardando processamento pelos servidores do eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote processado com Sucesso",
+    "value": 201,
+    "cvalue": "201",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote processo com sucesso pelos servidores do eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote processado com advertências",
+    "value": 202,
+    "cvalue": "202",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote processado com advertências",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Erro servidor eSocial",
+    "value": 301,
+    "cvalue": "301",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Erro servidor eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote incorreto - Erro preenchimento",
+    "value": 401,
+    "cvalue": "401",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote incorreto - Erro preenchimento",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote incorreto - Schema inválido",
+    "value": 402,
+    "cvalue": "402",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote incorreto - Schema inválido",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote incorreto - Versão do schema não permitida",
+    "value": 403,
+    "cvalue": "403",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote incorreto - Versão do schema não permitida",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote incorreto - Erro certificado",
+    "value": 404,
+    "cvalue": "404",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote incorreto - Erro certificado",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Lote incorreto - Lote nulo ou vazio",
+    "value": 405,
+    "cvalue": "405",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Lote incorreto - Lote nulo ou vazio",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_STATUS_BATCH",
+    "label": "Solicitação de consulta incorreta",
+    "value": 501,
+    "cvalue": "501",
+    "cache_path": "esocial.PROCESS_STATUS_BATCH",
+    "description": "Solicitação de consulta incorreta - Erro preenchimento",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_TPPROC",
+    "label": "Administrativo",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.PROCESS_TPPROC",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_TPPROC",
+    "label": "Judicial",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.PROCESS_TPPROC",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_TPPROC",
+    "label": "Número de Benefício (NB) do INSS",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.PROCESS_TPPROC",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "PROCESS_TPPROC",
+    "label": "Processo FAP",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.PROCESS_TPPROC",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "SCOPE_DECISION",
+    "label": "IRRF",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.SCOPE_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "SCOPE_DECISION",
+    "label": "Contribuições Sociais do Trabalhador",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.SCOPE_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "SCOPE_DECISION",
+    "label": "FGTS",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.SCOPE_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "SCOPE_DECISION",
+    "label": "Contribuição sindical",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.SCOPE_DECISION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Aguardando empacotamento",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Evento criado",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Aguardando finalização de dependência",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Evento criado mas não pode ser enviado até que todas as dependências sejam satisfeitas",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Empacotado e aguardando envio",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Evento empacotado no lote de envio",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Enviado e aguardando processamento",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Evento enviado e aguardando ser processado pela base do eSocial",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Dependência não satisfeita",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Evento criado mas possui alguma dependência obrigatória não satisfeita",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Sucesso",
+    "value": 201,
+    "cvalue": "201",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Sucesso",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Sucesso informado",
+    "value": 210,
+    "cvalue": "210",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Sucesso informado localmente",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Sucesso com advertência",
+    "value": 202,
+    "cvalue": "202",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Sucesso com advertência",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Sucesso informado",
+    "value": 210,
+    "cvalue": "210",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Sucesso informado localmente",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro Servidor",
+    "value": 301,
+    "cvalue": "301",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro Servidor",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro no conteúdo do evento",
+    "value": 401,
+    "cvalue": "401",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro no conteúdo do evento",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Schema inválido",
+    "value": 402,
+    "cvalue": "402",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Schema inválido",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Leiaute inválido",
+    "value": 403,
+    "cvalue": "403",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Leiaute inválido",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro do certificado digital",
+    "value": 404,
+    "cvalue": "404",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro do certificado digital da assinatura do evento",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro na assinatura evento",
+    "value": 405,
+    "cvalue": "405",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro na assinatura evento",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Evento não pertence ao grupo",
+    "value": 406,
+    "cvalue": "406",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Evento não pertence ao grupo especificado no lote de eventos",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Regra de precedência de eventos não seguida",
+    "value": 407,
+    "cvalue": "407",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "A regra de precedência na transmissão de eventos não foi seguida. Eventos desse tipo não 407 devem ser enviados para processamento em paralelo. Ver seção 5.6.1 do Manual de Orientação do Desenvolvedor",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro na integração com o sistema CNPJ / CPF",
+    "value": 408,
+    "cvalue": "408",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro na integração com o sistema CNPJ / CPF",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro na integração - Procuração Eletrônica RFB",
+    "value": 409,
+    "cvalue": "409",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro na integração com o sistema Procuração Eletrônica RFB",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Erro na integração - Procuração Eletrônica Caixa",
+    "value": 410,
+    "cvalue": "410",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Erro na integração com o sistema Procuração Eletrônica Caixa",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_EVENT",
+    "label": "Assinante inválido",
+    "value": 411,
+    "cvalue": "411",
+    "cache_path": "esocial.STATUS_EVENT",
+    "description": "Assinante não possui perfil de procuração eletrônica para enviar este tipo de evento ou assinante não consta como representante legal da empresa",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_QUALIFICATION",
+    "label": "Aguardando Qualificação",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.STATUS_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_QUALIFICATION",
+    "label": "Erro nos dados",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.STATUS_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_QUALIFICATION",
+    "label": "Processado com erro",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.STATUS_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_QUALIFICATION",
+    "label": "Rejeitado",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.STATUS_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_QUALIFICATION",
+    "label": "Qualificado",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "esocial.STATUS_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_VALIDATION",
+    "label": "NÃO VÁLIDO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.STATUS_VALIDATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "STATUS_VALIDATION",
+    "label": "VÁLIDO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.STATUS_VALIDATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Empresa enquadrada no regime de tributação Simples Nacional com tributação previdenciáriasubstituída",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Empresa enquadrada no regime de tributação Simples Nacional com tributação previdenciária nãosubstituída",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Empresa enquadrada no regime de tributação Simples Nacional com tributação previdenciáriasubstituída e não substituída",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "MEI - Micro Empreendedor Individual",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Agroindústria",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Consórcio Simplificado de Produtores Rurais",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": false
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Órgão Gestor de Mão de Obra",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Entidade Sindical a que se refere a Lei 12.023/2009",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Associação Desportiva que mantém Clube de Futebol Profissional",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Banco, caixa econômica, sociedade de crédito, financiamento e investimento e demais empresas relacionadas no parágrafo",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Sindicatos em geral, exceto aquele classificado no código [10]",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Pessoa Física, exceto Segurado Especial",
+    "value": 21,
+    "cvalue": "21",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Segurado Especial",
+    "value": 22,
+    "cvalue": "22",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Missão Diplomática ou Repartição Consular de carreira estrangeira",
+    "value": 60,
+    "cvalue": "60",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Empresa de que trata o Decreto 5.436/2005",
+    "value": 70,
+    "cvalue": "70",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Entidade Beneficente de Assistência Social isenta de contribuições sociais",
+    "value": 80,
+    "cvalue": "80",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Administração Direta da União, Estados, Distrito Federal e Municípíos; Autarquias e Fundações Públicas",
+    "value": 85,
+    "cvalue": "85",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_8",
+    "label": "Pessoas Jurídicas em Geral",
+    "value": 99,
+    "cvalue": "99",
+    "cache_path": "esocial.TABLE_8",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Executivo Federal",
+    "value": 1015,
+    "cvalue": "1015",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Executivo Estadual ou do Distrito Federal",
+    "value": 1023,
+    "cvalue": "1023",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Executivo Municipal",
+    "value": 1031,
+    "cvalue": "1031",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Legislativo Federal",
+    "value": 1040,
+    "cvalue": "1040",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Legislativo Estadual ou do Distrito Federal",
+    "value": 1058,
+    "cvalue": "1058",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Legislativo Municipal",
+    "value": 1066,
+    "cvalue": "1066",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Judiciário Federal",
+    "value": 1074,
+    "cvalue": "1074",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público do Poder Judiciário Estadual",
+    "value": 1082,
+    "cvalue": "1082",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Autarquia Federal",
+    "value": 1104,
+    "cvalue": "1104",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Autarquia Estadual ou do Distrito Federal",
+    "value": 1112,
+    "cvalue": "1112",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Autarquia Municipal",
+    "value": 1120,
+    "cvalue": "1120",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundação Pública de Direito Público Federal",
+    "value": 1139,
+    "cvalue": "1139",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundação Pública de Direito Público Estadual ou do Distrito Federal",
+    "value": 1147,
+    "cvalue": "1147",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundação Pública de Direito Público Municipal",
+    "value": 1155,
+    "cvalue": "1155",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público Autônomo Federal",
+    "value": 1163,
+    "cvalue": "1163",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público Autônomo Estadual ou do Distrito Federal",
+    "value": 1171,
+    "cvalue": "1171",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Órgão Público Autônomo Municipal",
+    "value": 1180,
+    "cvalue": "1180",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Comissão Polinacional",
+    "value": 1198,
+    "cvalue": "1198",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundo Público",
+    "value": 1201,
+    "cvalue": "1201",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Consórcio Público de Direito Público (Associação Pública)",
+    "value": 1210,
+    "cvalue": "1210",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Consórcio Público de Direito Privado",
+    "value": 1228,
+    "cvalue": "1228",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Estado ou Distrito Federal",
+    "value": 1236,
+    "cvalue": "1236",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Município",
+    "value": 1244,
+    "cvalue": "1244",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundação Pública de Direito Privado Federal",
+    "value": 1252,
+    "cvalue": "1252",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundação Pública de Direito Privado Estadual ou do Distrito Federal",
+    "value": 1260,
+    "cvalue": "1260",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TABLE_9",
+    "label": "Fundação Pública de Direito Privado Municipal",
+    "value": 1279,
+    "cvalue": "1279",
+    "cache_path": "esocial.TABLE_9",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_ENV",
+    "label": "Produção",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.TYPE_ENV",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_ENV",
+    "label": "Pré-produção - dados reais",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.TYPE_ENV",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_ENV",
+    "label": "Pré-produção - dados fictícios",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.TYPE_ENV",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "SERVIDOR ATIVO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Servidor que possui vínculo ativo no órgão",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "SERVIDOR INATIVO",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Servidor que já não possui mais vínculo com o órgão",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "DEPENDENTE",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Dependente legal para cálculo do IRPF",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "PENSIONISTA",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Pessoa que recebe algum pagamento retroativo no lugar de um servidor já falecido",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "ESTAGIÁRIO",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Estagiário",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "ALIMENTANDO",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Beneficiário de pensão alimentícia",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_OF_PERSON",
+    "label": "DESCONHECIDO",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "esocial.TYPE_OF_PERSON",
+    "description": "Tipo não rastreado",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_QUALIFICATION",
+    "label": "NÃO QUALIFICADO",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "esocial.TYPE_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_QUALIFICATION",
+    "label": "ONLINE",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "esocial.TYPE_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "esocial",
+    "name": "TYPE_QUALIFICATION",
+    "label": "LOTE",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "esocial.TYPE_QUALIFICATION",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

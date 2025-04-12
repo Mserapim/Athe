@@ -1,0 +1,783 @@
+[
+{
+    "fields": {
+        "cache_path": "common.ACTIVE_CHOICES",
+        "label": "Ativo",
+        "name": "ACTIVE_CHOICES",
+        "value": 1,
+        "app_label": "common"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "common.ACTIVE_CHOICES",
+        "label": "Inativo",
+        "name": "ACTIVE_CHOICES",
+        "value": 2,
+        "app_label": "common"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.CONVOCATION_STATE",
+        "label": "Editando",
+        "name": "CONVOCATION_STATE",
+        "value": 1,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.CONVOCATION_STATE",
+        "label": "Publicando",
+        "name": "CONVOCATION_STATE",
+        "value": 2,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.CONVOCATION_STATE",
+        "label": "Publicado",
+        "name": "CONVOCATION_STATE",
+        "value": 3,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.CONVOCATION_STATE",
+        "label": "Descartado",
+        "name": "CONVOCATION_STATE",
+        "value": 4,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.COUNCILLOR_TYPE",
+        "label": "Presidente",
+        "name": "COUNCILLOR_TYPE",
+        "value": 1,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.COUNCILLOR_TYPE",
+        "label": "Corregedor",
+        "name": "COUNCILLOR_TYPE",
+        "value": 2,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.COUNCILLOR_TYPE",
+        "label": "Membro",
+        "name": "COUNCILLOR_TYPE",
+        "value": 3,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+        "label": "A favor do pedido",
+        "name": "RAPPORTEUR_VOTE_TYPE",
+        "value": 1,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+        "label": "Contra o pedido",
+        "name": "RAPPORTEUR_VOTE_TYPE",
+        "value": 2,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+        "label": "Declarar Impedimento",
+        "name": "RAPPORTEUR_VOTE_TYPE",
+        "value": 201,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.RAPPORTEUR_VOTE_TYPE",
+        "label": "Declarar Suspeição",
+        "name": "RAPPORTEUR_VOTE_TYPE",
+        "value": 202,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.VOTE_TYPE",
+        "label": "Acompanha o Relator",
+        "name": "VOTE_TYPE",
+        "value": 1,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.VOTE_TYPE",
+        "label": "Contra o Relator",
+        "name": "VOTE_TYPE",
+        "value": 2,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "council.VOTE_TYPE",
+        "label": "Abstenção",
+        "name": "VOTE_TYPE",
+        "value": 3,
+        "app_label": "council"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.ATTACHED_TYPE",
+        "label": "Documentos",
+        "name": "ATTACHED_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.ATTACHED_TYPE",
+        "label": "Galeria de Fotos",
+        "name": "ATTACHED_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.ATTACHED_TYPE",
+        "label": "Galeria de Videos",
+        "name": "ATTACHED_TYPE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.ATTACHED_TYPE",
+        "label": "Galeria de Áudio",
+        "name": "ATTACHED_TYPE",
+        "value": 4,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DECISION_TYPE",
+        "label": "Reconsiderar Indeferimento",
+        "name": "DECISION_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DECISION_TYPE",
+        "label": "Mater o Indeferimento",
+        "name": "DECISION_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERED",
+        "label": "Entregue",
+        "name": "DELIVERED",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERED",
+        "label": "Não Entregue",
+        "name": "DELIVERED",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Redigindo a diligencia",
+        "name": "DELIVERY_STATUS",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Aguardando Distribução",
+        "name": "DELIVERY_STATUS",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Aguardando Confirmação do Oficial",
+        "name": "DELIVERY_STATUS",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Entrega em andamento",
+        "name": "DELIVERY_STATUS",
+        "value": 4,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Entrega Concluída",
+        "name": "DELIVERY_STATUS",
+        "value": 5,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Publicação em diário Oficial",
+        "name": "DELIVERY_STATUS",
+        "value": 6,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.DELIVERY_STATUS",
+        "label": "Entrega pelo Órgão de Execução",
+        "name": "DELIVERY_STATUS",
+        "value": 7,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.GLOSARY_CLASSIFICATION_TYPE",
+        "label": "Movimento",
+        "name": "GLOSARY_CLASSIFICATION_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.GLOSARY_CLASSIFICATION_TYPE",
+        "label": "Não Procedimental",
+        "name": "GLOSARY_CLASSIFICATION_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT",
+        "label": "Conexão",
+        "name": "INCIDENT",
+        "value": 101,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT",
+        "label": "Prevenção",
+        "name": "INCIDENT",
+        "value": 102,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT",
+        "label": "Impedimento",
+        "name": "INCIDENT",
+        "value": 201,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT",
+        "label": "Suspeição",
+        "name": "INCIDENT",
+        "value": 202,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT_TYPE",
+        "label": "Sem incidente",
+        "name": "INCIDENT_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT_TYPE",
+        "label": "Positivo",
+        "name": "INCIDENT_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.INCIDENT_TYPE",
+        "label": "Negativo",
+        "name": "INCIDENT_TYPE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.MANIFESTASTION_TYPE",
+        "label": "Direta",
+        "name": "MANIFESTASTION_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.MANIFESTASTION_TYPE",
+        "label": "Indireta",
+        "name": "MANIFESTASTION_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.PARTLAWSUIT_ACCESS_MOTIVATION",
+        "label": "Envolve menor indefeso",
+        "name": "PARTLAWSUIT_ACCESS_MOTIVATION",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.PARTLAWSUIT_ACCESS_MOTIVATION",
+        "label": "Quebra de sigilo bancário",
+        "name": "PARTLAWSUIT_ACCESS_MOTIVATION",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.PERSON_ACCESS_STATE",
+        "label": "Autorizado",
+        "name": "PERSON_ACCESS_STATE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.PERSON_ACCESS_STATE",
+        "label": "Autorizado com limitações",
+        "name": "PERSON_ACCESS_STATE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.PERSON_ACCESS_STATE",
+        "label": "Autorização revogada",
+        "name": "PERSON_ACCESS_STATE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.REJECTION_FACT_TYPE",
+        "label": "Não presente a legitimidade do MP",
+        "name": "REJECTION_FACT_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.REJECTION_FACT_TYPE",
+        "label": "O fato não constitui violação de direito e interesses difuso",
+        "name": "REJECTION_FACT_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.REJECTION_FACT_TYPE",
+        "label": "O fato já se encontrar solucionado",
+        "name": "REJECTION_FACT_TYPE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Noticia de Fato",
+        "name": "TYPE_LAWSUIT",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Inquerito Civil Público",
+        "name": "TYPE_LAWSUIT",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Procedimento Preparatório",
+        "name": "TYPE_LAWSUIT",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Procedimento Investigatório Criminal",
+        "name": "TYPE_LAWSUIT",
+        "value": 4,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Noticia de Fato Criminal",
+        "name": "TYPE_LAWSUIT",
+        "value": 5,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Em instauração",
+        "name": "TYPE_LAWSUIT",
+        "value": 6,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_LAWSUIT",
+        "label": "Procedimento Administrativo",
+        "name": "TYPE_LAWSUIT",
+        "value": 7,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_ORDINACE",
+        "label": "INQUÉRITO CIVIL PÚBLICO",
+        "name": "TYPE_ORDINACE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_ORDINACE",
+        "label": "PROCEDIMENTO PREPATATÓRIO",
+        "name": "TYPE_ORDINACE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_ORDINACE",
+        "label": "PROCEDIMENTO INVESTIGATORIO CRIMINAL",
+        "name": "TYPE_ORDINACE",
+        "value": 4,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_ORDINACE",
+        "label": "PROCEDIMENTO ADMINISTRATIVO",
+        "name": "TYPE_ORDINACE",
+        "value": 7,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_VEHICLE",
+        "label": "Veículo Oficial",
+        "name": "TYPE_VEHICLE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_VEHICLE",
+        "label": "Veículo Particular",
+        "name": "TYPE_VEHICLE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.TYPE_VEHICLE",
+        "label": "Correios ou outro terceiro",
+        "name": "TYPE_VEHICLE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.WHO_TYPE",
+        "label": "Interessado",
+        "name": "WHO_TYPE",
+        "value": 1,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.WHO_TYPE",
+        "label": "Apontado",
+        "name": "WHO_TYPE",
+        "value": 2,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.WHO_TYPE",
+        "label": "Testemunha",
+        "name": "WHO_TYPE",
+        "value": 3,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "judicial.WHO_TYPE",
+        "label": "Órgão de Execução",
+        "name": "WHO_TYPE",
+        "value": 4,
+        "app_label": "judicial"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "label": "em dias",
+        "name": "TIMETYPE_CHOICES",
+        "value": 1,
+        "app_label": "tac"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "label": "em mêses",
+        "name": "TIMETYPE_CHOICES",
+        "value": 2,
+        "app_label": "tac"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "tac.TIMETYPE_CHOICES",
+        "label": "em anos",
+        "name": "TIMETYPE_CHOICES",
+        "value": 3,
+        "app_label": "tac"
+    },
+    "model": "standard.choice",
+    "pk": null
+}
+]

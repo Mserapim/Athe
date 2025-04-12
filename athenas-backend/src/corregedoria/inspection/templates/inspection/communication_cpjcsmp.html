@@ -1,0 +1,38 @@
+{% load judicialfilters %}
+<div class="composite">
+    {% block content %}
+        <br />
+        <br />
+        <div class="paragraph-text" style="padding-left: 1em;">
+            <b>
+                EXMO. SENHOR PROCURADOR GERAL DE JUSTIÇA,<br /><br />
+                EXMOS. SENHORES PROCURADORES DE JUSTIÇA INTEGRANTES DO CSMP E CPJ, <br />
+            </b>
+            <br /><br /><br />
+            Em cumprimento ao art. 170 §2º da LC 51/2008, encaminho-lhes {% if var_length > 1 %} os <b>Relatórios {% else %} o <b>Relatório {% endif %} de Inspeção</b> para conhecimento. <br />
+            <div style="padding-left: 0.5em;">
+                {% for data in link %}
+                    - <a href="#" onClick="javascript:engine.mq.Report.request({report: '{{ data.var_report }}', waitMessage: 'Gerando os relatório...', params: { outfile: '{{ data.var_slug_name }}', report_name: 'Relatório de Inspeção - {{ data.var_name }}', inspection: {{data.var_inspection}}, all: 1 }});">{{ data.var_name }}</a><br />
+                {% endfor %}
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="paragraph-text" style="padding-left: 4em; padding-right: 4em;">
+            Atenciosamente,
+        </div>
+        <br />
+        <br />
+        <div class="paragraph-text" style="text-align: center;">
+            <b>{{ inspector_general.pessoa_fisica.nome | safely }}</b><br />
+            <div style="font-size: 0.8em;">
+                Corregedor-geral<br />
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="paragraph-text" style="padding-left: 1em;">
+            <font color="red"><u><b>ATENÇÃO</b></u></font>: mensagem enviada automaticamente pelo Sistema Gestor de Inspeções/Correições - <u>NÃO RESPONDER</u> via e-Doc.
+        </div>
+        <br />
+    {% endblock %}
+</div>

@@ -1,0 +1,821 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_eSocial" id="1005_eSocial">1</td>
+        <td><a href="#r_1005_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005" id="1005">2</td>
+        <td><a href="#r_1005">evtTabEstab</a></td>
+        <td><a href="#r_1005_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Tabela de Estabelecimentos, Obras ou Unidades de Órgãos Públicos.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_TABESTAB_VALIDA_ESTABELECIMENTO">REGRA_TABESTAB_VALIDA_ESTABELECIMENTO</a><br>
+            <a href="#REGRA_TABESTAB_VALIDA_INFO_CNO">REGRA_TABESTAB_VALIDA_INFO_CNO</a><br>
+            <a href="#REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO">REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO">REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO</a><br>
+            <a href="#REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TAB_PERMITE_EXCLUSAO">REGRA_TAB_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_VALIDA_DT_FUTURA">REGRA_VALIDA_DT_FUTURA</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_Id" id="1005_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1005">evtTabEstab</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEvento" id="1005_ideEvento">4</td>
+        <td><a href="#r_1005_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1005">evtTabEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEvento_tpAmb" id="1005_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1005_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEvento_procEmi"
+            id="1005_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1005_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>9</strong> - Aplicativo governamental - Integração com a Junta Comercial<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEvento_verProc"
+            id="1005_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1005_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEmpregador" id="1005_ideEmpregador">8</td>
+        <td><a href="#r_1005_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1005">evtTabEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEmpregador_tpInsc"
+            id="1005_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1005_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_ideEmpregador_nrInsc"
+            id="1005_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1005_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1005_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab" id="1005_infoEstab">11</td>
+        <td><a href="#r_1005_infoEstab">infoEstab</a></td>
+        <td><a href="#r_1005">evtTabEstab</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do estabelecimento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao"
+            id="1005_infoEstab_inclusao">12
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao">inclusao</a></td>
+        <td><a href="#r_1005_infoEstab">infoEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Inclusão de novas informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_ideEstab"
+            id="1005_infoEstab_inclusao_ideEstab">13
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_ideEstab">ideEstab</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento, obra de construção civil ou unidade de órgão público e período de validade
+            das informações.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_ideEstab_tpInsc"
+            id="1005_infoEstab_inclusao_ideEstab_tpInsc">14
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO<br>
+            <strong>Validação:</strong> Se <a href="#1000_infoEmpregador_inclusao_infoCadastro_classTrib">classTrib</a>
+            em S-1000 = [04], deve ser igual a [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_ideEstab_nrInsc"
+            id="1005_infoEstab_inclusao_ideEstab_nrInsc">15
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do estabelecimento (inclusive Sociedade em Conta de Participação - SCP), obra
+            de construção civil ou órgão público de acordo com o tipo de inscrição indicado no campo <a
+                    href="#1005_infoEstab_inclusao_ideEstab_tpInsc">ideEstab/tpInsc</a>.<br>
+            <strong>Validação:</strong> Deve ser compatível com o conteúdo do campo <a
+                    href="#1005_infoEstab_inclusao_ideEstab_tpInsc">ideEstab/tpInsc</a>. Deve ser um identificador
+            válido, constante das bases da RFB, vinculado ao empregador.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_ideEstab_iniValid"
+            id="1005_infoEstab_inclusao_ideEstab_iniValid">16
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1005_infoEstab_inclusao_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_ideEstab_fimValid"
+            id="1005_infoEstab_inclusao_ideEstab_fimValid">17
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1005_infoEstab_inclusao_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1005_infoEstab_inclusao_ideEstab_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab"
+            id="1005_infoEstab_inclusao_dadosEstab">18
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações do estabelecimento, obra de construção civil ou unidade de órgão público.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_cnaePrep"
+            id="1005_infoEstab_inclusao_dadosEstab_cnaePrep">19
+        </td>
+        <td>cnaePrep</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código CNAE conforme legislação vigente, referente à atividade econômica preponderante do
+            estabelecimento.<br>
+            <strong>Validação:</strong> Deve ser um número existente na tabela CNAE, com 7 (sete) algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_cnpjResp"
+            id="1005_infoEstab_inclusao_dadosEstab_cnpjResp">20
+        </td>
+        <td>cnpjResp</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Preencher com o CNPJ responsável pela inscrição no cadastro de obras da RFB.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo por Pessoa Jurídica e se <a
+                    href="#1005_infoEstab_inclusao_ideEstab_tpInsc">ideEstab/tpInsc</a> = [4]. Informação obrigatória se
+            <a href="#1005_infoEstab_inclusao_ideEstab_iniValid">iniValid</a> &gt;= [2022-04].<br>
+            Deve ser um identificador válido, constante das bases da RFB, vinculado ao empregador.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat">21
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat">aliqGilrat</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de apuração da alíquota GILRAT do estabelecimento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_aliqRat"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_aliqRat">22
+        </td>
+        <td>aliqRat</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat">aliqGilrat</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar a alíquota RAT, quando divergente da legislação vigente para a atividade (CNAE) preponderante. A
+            divergência só é permitida se existir o grupo com informações sobre o processo administrativo/judicial que
+            permite a aplicação de alíquota diferente.<br>
+            <strong>Valores válidos:</strong> 1, 2, 3<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo se a alíquota informada for diferente da
+            definida na legislação vigente para o código CNAE informado (neste caso, deverá haver informações de
+            processo em <a href="#1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat">procAdmJudRat</a>).<br>
+            Se informada, deve ser diferente da alíquota definida na legislação vigente para a atividade (CNAE)
+            preponderante.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_fap"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_fap">23
+        </td>
+        <td>fap</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat">aliqGilrat</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-5</td>
+        <td>4</td>
+        <td>Fator Acidentário de Prevenção - FAP.<br>
+            <strong>Validação:</strong> Preenchimento obrigatório e exclusivo por Pessoa Jurídica e:<br>
+            a) <a href="#1005_infoEstab_inclusao_ideEstab_tpInsc">ideEstab/tpInsc</a> = [4] e o campo <a
+                    href="#1005_infoEstab_inclusao_dadosEstab_cnpjResp">cnpjResp</a> não estiver informado; ou<br>
+            b) <a href="#1005_infoEstab_inclusao_ideEstab_tpInsc">ideEstab/tpInsc</a> = [1, 4] e o fator informado for
+            diferente do definido pelo órgão governamental competente para o estabelecimento ou para o CNPJ responsável
+            pela inscrição no CNO (neste caso, deverá haver informações de processo em <a
+                    href="#1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">procAdmJudFap</a>); ou<br>
+            c) <a href="#1005_infoEstab_inclusao_ideEstab_tpInsc">ideEstab/tpInsc</a> = [1, 4] e o estabelecimento ou o
+            CNPJ responsável pela inscrição no CNO não for encontrado na tabela FAP.<br>
+            Se informado, deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000 e, no caso da alínea "b",
+            deve ser diferente do valor definido pelo órgão governamental competente.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat">24
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat">procAdmJudRat</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat">aliqGilrat</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que identifica, em caso de existência, o processo administrativo ou judicial em que houve
+            decisão/sentença favorável ao contribuinte modificando a alíquota RAT da empresa.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat_tpProc"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat_tpProc">25
+        </td>
+        <td>tpProc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat">procAdmJudRat</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat_nrProc"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat_nrProc">26
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat">procAdmJudRat</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar um número de processo cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo administrativo ou judicial válido e existente na
+            Tabela de Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a>
+            = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat_codSusp"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat_codSusp">27
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudRat">procAdmJudRat</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">28
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">procAdmJudFap</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat">aliqGilrat</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que identifica, em caso de existência, o processo administrativo/judicial em que houve decisão ou
+            sentença favorável ao contribuinte suspendendo ou alterando a alíquota FAP aplicável ao contribuinte.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap_tpProc"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap_tpProc">29
+        </td>
+        <td>tpProc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">procAdmJudFap</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial<br>
+            <strong>4</strong> - Processo FAP de exercício anterior a 2019
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap_nrProc"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap_nrProc">30
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">procAdmJudFap</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>16, 17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar um número de processo cadastrado através do evento S-1070, cujo <a
+                href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a> seja igual a [1].<br>
+            <strong>Validação:</strong> Deve ser um número de processo administrativo ou judicial válido e existente na
+            Tabela de Processos (S-1070), com <a href="#1070_infoProcesso_inclusao_dadosProc_indMatProc">indMatProc</a>
+            = [1].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap_codSusp"
+            id="1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap_codSusp">31
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_aliqGilrat_procAdmJudFap">procAdmJudFap</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador em S-1070.<br>
+            <strong>Validação:</strong> A informação prestada deve estar de acordo com o que foi informado em S-1070.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_infoCaepf"
+            id="1005_infoEstab_inclusao_dadosEstab_infoCaepf">32
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoCaepf">infoCaepf</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao Cadastro de Atividade Econômica da Pessoa Física - CAEPF.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoCaepf_tpCaepf"
+            id="1005_infoEstab_inclusao_dadosEstab_infoCaepf_tpCaepf">33
+        </td>
+        <td>tpCaepf</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoCaepf">infoCaepf</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Tipo de CAEPF.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuinte individual<br>
+            <strong>2</strong> - Produtor rural<br>
+            <strong>3</strong> - Segurado especial<br>
+            <strong>Validação:</strong> Deve ser compatível com o cadastro da RFB.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_infoObra"
+            id="1005_infoEstab_inclusao_dadosEstab_infoObra">34
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoObra">infoObra</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo preenchido obrigatória e exclusivamente por empresa construtora, relacionando os estabelecimentos
+            inscritos no Cadastro Nacional de Obras - CNO, para indicar a substituição ou não da contribuição patronal
+            incidente sobre a remuneração dos trabalhadores de obra de construção civil.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoObra_indSubstPatrObra"
+            id="1005_infoEstab_inclusao_dadosEstab_infoObra_indSubstPatrObra">35
+        </td>
+        <td>indSubstPatrObra</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoObra">infoObra</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de substituição da contribuição patronal de obra de construção civil.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Contribuição patronal substituída<br>
+            <strong>2</strong> - Contribuição patronal não substituída
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_inclusao_dadosEstab_infoTrab"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab">36
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab">infoTrab</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab">dadosEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações trabalhistas relativas ao estabelecimento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr">37
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr">infoApr</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab">infoTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relacionadas à contratação de aprendiz.<br>
+            Preenchimento obrigatório somente no caso de dispensa, ainda que parcial, de contratação de aprendiz em
+            virtude de processo judicial ou quando houver contratação de aprendiz por meio de entidade educativa ou de
+            prática desportiva.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_nrProcJud"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_nrProcJud">38
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr">infoApr</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Preencher com o número do processo judicial.<br>
+            <strong>Validação:</strong> Se informado, deve ser um número de processo judicial válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_infoEntEduc"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_infoEntEduc">39
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_infoEntEduc">infoEntEduc</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr">infoApr</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação da(s) entidade(s) educativa(s) ou de prática desportiva.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_infoEntEduc_nrInsc"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_infoEntEduc_nrInsc">40
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoApr_infoEntEduc">infoEntEduc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição da entidade educativa ou de prática desportiva.<br>
+            <strong>Validação:</strong> Deve ser um número de CNPJ válido, com 14 (catorze) algarismos. Se o empregador
+            for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de <a href="#1005_ideEmpregador_nrInsc">ideEmpregador/nrInsc</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoPCD"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoPCD">41
+        </td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoPCD">infoPCD</a></td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab">infoTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre a contratação de pessoa com deficiência (PCD).<br>
+            Essa informação deve ser prestada apenas no estabelecimento matriz.<br>
+            Preenchimento obrigatório somente no caso de dispensa, ainda que parcial, de contratação de PCD em virtude
+            de processo judicial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoPCD_nrProcJud"
+            id="1005_infoEstab_inclusao_dadosEstab_infoTrab_infoPCD_nrProcJud">42
+        </td>
+        <td>nrProcJud</td>
+        <td><a href="#r_1005_infoEstab_inclusao_dadosEstab_infoTrab_infoPCD">infoPCD</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Preencher com o número do processo judicial.<br>
+            <strong>Validação:</strong> Deve ser um número de processo judicial válido.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_alteracao"
+            id="1005_infoEstab_alteracao">43
+        </td>
+        <td><a href="#r_1005_infoEstab_alteracao">alteracao</a></td>
+        <td><a href="#r_1005_infoEstab">infoEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Alteração das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_alteracao_ideEstab"
+            id="1005_infoEstab_alteracao_ideEstab">44
+        </td>
+        <td><a href="#r_1005_infoEstab_alteracao_ideEstab">ideEstab</a></td>
+        <td><a href="#r_1005_infoEstab_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento, obra de construção civil ou unidade de órgão público e período de validade
+            das informações.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_alteracao_dadosEstab"
+            id="1005_infoEstab_alteracao_dadosEstab">45
+        </td>
+        <td><a href="#r_1005_infoEstab_alteracao_dadosEstab">dadosEstab</a></td>
+        <td><a href="#r_1005_infoEstab_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Detalhamento das informações do estabelecimento, obra de construção civil ou unidade de órgão público.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_alteracao_novaValidade"
+            id="1005_infoEstab_alteracao_novaValidade">46
+        </td>
+        <td><a href="#r_1005_infoEstab_alteracao_novaValidade">novaValidade</a></td>
+        <td><a href="#r_1005_infoEstab_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação preenchida exclusivamente em caso de alteração do período de validade das informações,
+            apresentando o novo período de validade.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_alteracao_novaValidade_iniValid"
+            id="1005_infoEstab_alteracao_novaValidade_iniValid">47
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1005_infoEstab_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_alteracao_novaValidade_fimValid"
+            id="1005_infoEstab_alteracao_novaValidade_fimValid">48
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1005_infoEstab_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1005_infoEstab_alteracao_novaValidade_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_exclusao"
+            id="1005_infoEstab_exclusao">49
+        </td>
+        <td><a href="#r_1005_infoEstab_exclusao">exclusao</a></td>
+        <td><a href="#r_1005_infoEstab">infoEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Exclusão das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1005_infoEstab_exclusao_ideEstab"
+            id="1005_infoEstab_exclusao_ideEstab">50
+        </td>
+        <td><a href="#r_1005_infoEstab_exclusao_ideEstab">ideEstab</a></td>
+        <td><a href="#r_1005_infoEstab_exclusao">exclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento, obra de construção civil ou unidade de órgão público e período de validade
+            das informações.
+        </td>
+    </tr>
+    </tbody>
+</table>

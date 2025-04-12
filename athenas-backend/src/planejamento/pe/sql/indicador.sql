@@ -1,0 +1,50 @@
+CREATE OR REPLACE TRIGGER PGJADMIN.PE_INDICADOR_META_CHECK
+  BEFORE
+    INSERT OR UPDATE ON PGJADMIN.PE_INDICADOR_INDICADORMETA
+  REFERENCING
+    NEW As NEW
+    OLD As OLD
+  FOR EACH ROW
+  DECLARE
+    qdias NUMBER(11);
+    qdata DATE;
+  CURSOR c_me IS
+        SELECT PE_INDICADOR_INDICADORMETA.*, PE_INDICADORMETA.DATA
+        FROM PE_INDICADOR_INDICADORMETA
+          INNER JOIN PE_INDICADORMETA ON PE_INDICADOR_INDICADORMETA.INDICADORMETA_ID = PE_INDICADORMETA.ID
+        WHERE INDICADOR_ID = :NEW.INDICADOR_ID
+        ORDER BY PE_INDICADORMETA.DATA;
+    reg_me c_me%ROWTYPE;
+BEGIN
+  SELECT PE_PERIODO.DIAS INTO qdias
+  FROM PGJADMIN.PE_INDICADOR
+    INNER JOIN PGJADMIN.PE_PERIODO ON PE_INDICADOR.PERIODO_ID = PE_PERIODO.ID
+  WHERE PE_INDICADOR.ID = :NEW.INDICADOR_ID;
+  OPEN c_me;
+    LOOP
+      FETCH c_me INTO reg_me;
+      EXIT WHEN c_me%NOTFOUND;
+      SELECT PE_INDICADORMETA.DATA INTO qdata FROM PE_INDICADORMETA
+      WHERE PE_INDICADORMETA.ID = :NEW.INDICADORMETA_ID;
+      IF reg_me.DATA > qdata THEN
+        BEGIN
+          IF qdata > (reg_me.DATA-qdias) THEN
+            raise_application_error(-20000, 'Data Menor...');
+          END IF;
+        END;
+      END IF;
+      IF reg_me.DATA < qdata THEN
+        BEGIN
+          IF qdata < (reg_me.DATA+qdias) THEN
+            raise_application_error(-20000, 'Data Maior...');
+          END IF;
+        END;
+      END IF;
+      IF reg_me.DATA = qdata THEN
+        BEGIN
+          raise_application_error(-20000, 'Data Igual...');
+        END;
+      END IF;
+    END LOOP;
+    CLOSE c_me;
+END;

@@ -1,0 +1,40 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+    <div>
+        <div>
+            <h4 style="margin-bottom: 0px">Diligência {{ doc.formated_number }}</h4>
+        </div>
+    </div>
+
+    <div class="paragraph-text">
+        {{ doc.observation | safely }}
+    </div>
+
+    <div class="paragraph-text">
+        Deve ser entregue à <strong>{{ doc.who }}</strong> que deve ser procurado nos seguintes endereços:
+
+        <ul>
+            {% for address in doc.who.address.filter %}
+            <li>{{ address }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% if doc.attaches.filter %}
+        <div style="margin: 2em 0">
+            <h3 id="topo" style="margin-bottom:0.7em">Anexos</h3>
+            {% for attach in doc.attaches.filter %}
+                {% include "judicial/lawsuit/attach.html" %}
+            {% empty %}
+                Nenhum documento anexado.
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if sign.person %}
+        {% include "judicial/lawsuit/sign.html" %}
+    {% else %}
+        <p style="padding-top:5em; text-align: center">Este documento ainda não foi assinado.</p>
+    {% endif %}
+</div>

@@ -1,0 +1,15 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "rh-can-merge-naturalperson",
+    "permissions": [
+      [
+        "can_merge_naturalperson",
+        "rh",
+        "pessoafisica"
+      ]
+    ]
+  }
+}
+]

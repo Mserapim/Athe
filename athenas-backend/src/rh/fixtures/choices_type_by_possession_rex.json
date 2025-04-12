@@ -1,0 +1,16 @@
+[
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 29,
+    "label": "SERVIDOR REQUISITADO EXTERNO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "REX",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR REQUISITADO EXTERNO"
+  },
+  "model": "standard.choice"
+}
+]

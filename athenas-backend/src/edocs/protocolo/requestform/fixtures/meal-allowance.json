@@ -1,0 +1,44 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEALALLOWANCE_OPTION_TERM",
+    "label": "Quero receber o auxílio pelo MP, pois não recebo em outro órgão público.",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "requestform.MEALALLOWANCE_OPTION_TERM",
+    "description": "Opto em receber o Auxílio Alimentação pelo Ministério Público do Estado do Tocantins, por não perceber idêntico benefício em outro órgão público, nem mesmo outro benefício de espécie semelhante.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEALALLOWANCE_OPTION_TERM",
+    "label": "Quero receber o auxílio pelo MP, deixando de receber no outro órgão público.",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "requestform.MEALALLOWANCE_OPTION_TERM",
+    "description": "Opto em receber o Auxílio Alimentação pelo Ministério Público do Estado do Tocantins, deixando, assim, de perceber esse benefício no órgão de origem.",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "requestform",
+    "name": "MEALALLOWANCE_OPTION_TERM",
+    "label": "Quero continuar recebendo o auxílio em outro órgão público e não pelo MP.",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "requestform.MEALALLOWANCE_OPTION_TERM",
+    "description": "Opto em continuar recebendo o Auxílio Alimentação em outro órgão e não pelo Ministério Público do Estado do Tocantins.",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

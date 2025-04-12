@@ -1,0 +1,28 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div class="composite">
+        {% block content %}
+        <b>DESEMPENHO FUNCIONAL - Exercícios Simultâneos</b>
+        <div class="paragraph-text" style="padding-left: 0.5em; font-size: 12px;">
+            Período: <b>{{ listcumulation.date_initial | date:'d/m/Y' }}</b> a <b>{% if listcumulation.date_final %} {{ listcumulation.date_final | date:'d/m/Y' }} {% else %} (em aberto) {% endif %}</b><br />
+            Marcado como <u>CUMULAÇÃO</u>: <b>{% if listcumulation.active %} SIM {% else %} NÃO {% endif %}</b><br /><br />
+            {% for dc in detaillistcumulation %}
+                <table width=100% border=1 style="border-width: 2px; border-collapse: collapse;">
+                    <!-- <tr><td style="padding: 2px;" colspan=3><b>{{ dc.employeelocation.substitution_substitute }}</b></td></tr> -->
+                    <tr><td style="padding: 2px;" colspan=3><b>{{ dc.employeelocation.lotacao.nome | safely }}</b> {% if dc.employeelocation.substitution_substitute.count > 0 %}<font color="red">(substituição)</font>{% endif %}</td></tr>
+                    <tr>
+                        <td style="padding: 2px;" width=20% >{{ dc.employeelocation.data_vigencia_inicio | date:'d/m/Y' }}</td>
+                        <td style="padding: 2px;" width=20% >{{ dc.employeelocation.data_vigencia_fim | date:'d/m/Y' }}</td>
+                        <td style="padding: 2px;">
+                            <a href="{{ dc.employeelocation.publicacao.arquivo.permalink }}" title="{{ dc.employeelocation.publicacao.cache_unicode }}" ext:qtip="{{ dc.employeelocation.publicacao.cache_unicode }}">
+                                {{ dc.employeelocation.publicacao.cache_unicode }}
+                            </a>
+                        </td>
+                    </tr>
+                </table><br />
+            {% endfor %}
+            Data da última movimentação por <u>MERECIMENTO</u>: <b>{{ listcumulation.cumulation.prontuary.get_lastmeritoriousness.data_exercicio | date:'d/m/Y' }}</b>
+        </div>
+        {% endblock %}
+    </div>
+</div>

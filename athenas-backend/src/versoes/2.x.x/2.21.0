@@ -1,0 +1,53 @@
+- 2024.10.15:
+    - CARD: ATS-5595 - MR: 1384 - [back] Solicitação de desbloqueio - Criar a solicitação de desbloqueio de teletrabalho(Tabela e fluxo)
+- 2024.10.16:
+    - CARD: ATS-5626 - MR: 1389 - [back] - Dispensa Eleitoral - Criar fluxo para solicitação de Crédito de Dispensa Eleitoral
+    - CARD: ATS-5596 - MR: 1388 - [back]   Solicitação de desbloqueio - Criar a solicitação de desbloqueio de teletrabalho(api's)
+- 2024.10.17:
+    - CARD: ATS-5177 - MR: 1390 - [BACK] Alterar api de Fluxos de Diárias para adequar ao novo modelo de Condicionais
+    - CARD: ATS-5313 - MR: 1391 - [BACK] Criar lógica para refazer cálculo de diárias quando salvar a quantidade total deferida
+- 2024.10.18:
+    - CARD: ATS-5587 - MR: 1393 - [back] Encerramento tele - Criar campo "situação" e "qtd_bloqueio"  no teletrabalho 
+    - CARD: ATS-5594 - MR: 1394 - [back] Solicitação de desbloqueio - Alterar api que exibi os tipos de solicitações VDF
+    - CARD: ATS-5593 - MR: 1395 - [back] Solicitação de desbloqueio  - Gerar em minhas pendências no menu inicial do VDF
+    - CARD: ATS-5659 - MR: 1396 - [back] Criar nova etapa da "SUB_ADM" no fluxo de aprovação VDF
+    - CARD: ATS-5660 - MR: 1397 - [back] - Criar api para trazer os dados do plano que vai ser bloqueado
+    - CARD: ATS-5436 - MR: 1383 - [Back] Ajustar a logica de criação de excedentes
+    - CARD: ATS-5627 - MR: 1392 - [back] - Dispensa Eleitoral - API para criar a solicitação
+    - CARD: ATS-5324 - MR: 1399 - [BACK] Ajustar api de limite de diárias
+- 2024.10.21:
+    - CARD: ATS-5628 - MR: 1400 - [back] - Dispensa Eleitoral - API para editar a solicitação
+    - CARD: ATS-4463 - MR: 1403 - [Back] Criar FERAMENTA DO DISPARO DOS EMAILS para notificar sobre Prestação de Contas - pendência, deferimento e indeferimento 
+    - CARD: ATS-4882 - MR: 1406 - [Back] Criar job para acionar a FERAMENTA DO DISPARO DOS EMAILS para notificar sobre Prestação de Contas - deferimento e indeferimento 
+- 2024.10.22:
+    - CARD: ATS-5629 - MR: 1407 - [back] - Dispensa Eleitoral - API de detalhes da solitação
+- 2024.10.23:
+    - CARD: ATS-5586 - MR: 1413 - [back] Encerramento Teletrabalho - Criar Job para bloquear o teletrabalho no 11º dia
+    - CARD: ATS-5709 - MR: 1416 - [back] vincular a plano à solicitação de desbloqueio do teletrabalho
+    - CARD: ATS-5444 - MR: 1411 - [backend - Diárias - Veículo/Motorista] Alterar estrutura de tabela sobre relação entre de veículos , passageiros e motorista
+    - CARD: ATS-5696 - MR: 1412 - [BACK] Ajuste em api de Destinos
+    - CARD: ATS-5697 - MR: 1414 - [BACK] Criar api para motoristas
+    - CARD: ATS-5686 - MR: 1415 - refatoração da função de calculo de diairas 
+    - CARD: ATS-5630 - MR: 1408 - [back] - Dispensa Eleitoral - Criar função para calcular e atualizar dias ao efetivar solicitação
+    - CARD: ATS-5446 - MR: 1417 - [BACK] Api para salvar motoristas e/ou veículos
+    - CARD: ATS-5630v2 - MR: 1418 - [back] - Dispensa Eleitoral - Correção do fluxo de retorno ao solicitante
+- 2024.10.24:
+    - CARD: ATS-5437 - MR: 1419 - [backend - Diárias - Excedentes] Criar lógica para calcular valores especificamente para excedente
+    - CARD: ATS-5564 - MR: 1420 - [back] - Alterar cálculo de valor das verbas de Faltas para Estagiários e Residentes
+    - CARD: ATS-5393 - MR: 1421 - [backend - Diárias] - Implementar chamada ao método de envio de email ao beneficiário sobre prestação de contas no momento de criação do registro 
+    - CARD: ATS-4415 - MR: 1422 - (backend) Criar job para notificar os beneficiários para entregar a prestação de contas de diárias 
+- 2024.10.25:
+    - CARD: ATS-5445 - MR: 1423 - [backend - Diárias - Veículo/Motorista] Desenvolver método para criação de viagem ao motorista
+    - CARD: ATS-5450 - MR: 1424 - [backend - Diárias - Veículo/Motorista] Criar condicionais no fluxo para motoristas
+    - CARD: ATS-5573 - MR: 1425 - [back] - Corrigir validação de permissão do usuário que executa o job
+    - CARD: ATS-5722 - MR: 1426 - [back] - Adicionar informações na API de detalhe da solicitação de crédito de dispensa eleitoral
+    - CARD: ATS-5469 - MR: 1428 - [Back - Ext] Cria modelos de Email para movimentação de fluxo do diarias 
+    - CARD: ATS-5470 - MR: 1429 - [back] Criar função para notificação de movimentação de fluxo do diarias 
+    - CARD: ATS-5589 - MR: 1427 - [back] Encerramento tele - Cria aba de histórico EXT no plano de trabalho
+    - CARD: ATS-5449 - MR: 1432 - [BACK] API para retornar motorista/veículo por destino
+    - CARD: ATS-5507 - MR: 1430 - [backend] Atualização do python - desativar conexão ao oracle em relação ao 'siap'
+    - CARD: ATS-5590 - MR: 1431 - [back] Encerramento tele - Implementar as ações na tela de Gestor do teletrabalho EXT
+    - CARD: ATS-5597 - MR: 1433 - [back] Solicitação de desbloqueio - Criar ação de criar solicitação através da tela de gestão do teletrabalho
+    - CARD: ATS-5598 - MR: 1434 - [back]-  Solicitação de desbloqueio - Criar notificações da solicitação de desbloqueio
+    - CARD: ATS-5592 - MR: 1435 - [back] Encerramento tele - Notificar por email os bloqueios do tele
+    - CARD: ATS-5606 - MR: 1436 - [back]  Cnab - Alterar validação da verba no campo "banco consignado" e parametrizar o caracter do cnab

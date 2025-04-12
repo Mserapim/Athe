@@ -1,0 +1,17 @@
+[
+  {
+    "model": "engine.controller",
+    "pk": 816,
+    "fields": {
+        "icon": "icon-athenas-0631",
+        "title": "Gestor de Batidas",
+        "controller": "RHGestorBatidas",
+        "application": 55,
+        "active": false,
+        "module": "rh",
+        "uuid": "dbbcefb3154a4128ae7b3fec3e64dcd0",
+        "icon_file": null,
+        "position": 9999
+    }
+  }
+]

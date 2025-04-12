@@ -1,0 +1,205 @@
+[
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "athenas"
+            ],
+            "modified_by": [
+                "athenas"
+            ],
+            "created_at": "2020-09-03T11:07:53.210",
+            "modified_at": "2020-09-03T11:07:53.210",
+            "configuration": [
+                "FÉRIAS SERVIDORES",
+                1
+            ],
+            "title": "FÉRIAS SERVIDORES 2019",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2019-10-01",
+            "end_date_book": "2019-10-30",
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": null,
+            "end_date_fruition": null,
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2019
+        }
+    },
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "athenas"
+            ],
+            "modified_by": [
+                "athenas"
+            ],
+            "created_at": "2020-09-03T11:07:51.318",
+            "modified_at": "2020-09-03T11:07:51.318",
+            "configuration": [
+                "FÉRIAS SERVIDORES",
+                1
+            ],
+            "title": "FÉRIAS SERVIDORES 2020",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2019-10-01",
+            "end_date_book": null,
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": null,
+            "end_date_fruition": null,
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2020
+        }
+    },
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "vicentejunior"
+            ],
+            "modified_by": [
+                "vicentejunior"
+            ],
+            "created_at": "2020-08-26T16:58:32.274",
+            "modified_at": "2020-08-26T16:58:32.274",
+            "configuration": [
+                "Folga de Aniversário SERVIDORES",
+                3
+            ],
+            "title": "Folga de Aniversário 2020",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2020-12-20",
+            "end_date_book": null,
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": "2020-12-20",
+            "end_date_fruition": "0004-12-20",
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2020
+        }
+    },
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "vicentejunior"
+            ],
+            "modified_by": [
+                "vicentejunior"
+            ],
+            "created_at": "2020-08-26T16:58:32.689",
+            "modified_at": "2020-08-26T16:58:32.689",
+            "configuration": [
+                "Folga de Plantão SERVIDORES",
+                5
+            ],
+            "title": "Folga de Plantão 2020",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2020-12-20",
+            "end_date_book": null,
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": "2020-12-20",
+            "end_date_fruition": "0004-12-20",
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2020
+        }
+    },
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "vicentejunior"
+            ],
+            "modified_by": [
+                "vicentejunior"
+            ],
+            "created_at": "2020-08-26T16:58:32.476",
+            "modified_at": "2020-08-26T16:58:32.476",
+            "configuration": [
+                "Folga Eleitoral SERVIDORES",
+                4
+            ],
+            "title": "Folga Eleitoral 2020",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2020-12-20",
+            "end_date_book": null,
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": "2020-12-20",
+            "end_date_fruition": "0004-12-20",
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2020
+        }
+    },
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "vicentejunior"
+            ],
+            "modified_by": [
+                "vicentejunior"
+            ],
+            "created_at": "2020-08-26T16:58:32.930",
+            "modified_at": "2020-08-26T16:58:32.930",
+            "configuration": [
+                "Folga por Compensação SERVIDORES",
+                6
+            ],
+            "title": "Folga por Compensação 2020",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2020-12-20",
+            "end_date_book": null,
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": "2020-12-20",
+            "end_date_fruition": "0004-12-20",
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2020
+        }
+    },
+    {
+        "model": "dayoff.groupperiod",
+        "fields": {
+            "created_by": [
+                "vicentejunior"
+            ],
+            "modified_by": [
+                "vicentejunior"
+            ],
+            "created_at": "2020-08-26T16:58:32.055",
+            "modified_at": "2020-08-26T16:58:32.055",
+            "configuration": [
+                "Recesso SERVIDORES",
+                2
+            ],
+            "title": "Recesso 2020",
+            "period": 1,
+            "year_collective_fruition": null,
+            "start_date_book": "2020-12-20",
+            "end_date_book": null,
+            "homologation_date": null,
+            "publication_date": null,
+            "start_date_fruition": null,
+            "end_date_fruition": null,
+            "start_date_automatic_usufruct": null,
+            "end_date_automatic_usufruct": null,
+            "year_reference": 2020
+        }
+    }
+]

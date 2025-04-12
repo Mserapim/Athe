@@ -1,0 +1,198 @@
+[
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Solicitação",
+    "value": 1,
+    "cvalue": "1",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Deferido",
+    "value": 2,
+    "cvalue": "2",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Indeferido",
+    "value": 3,
+    "cvalue": "3",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Ciência",
+    "value": 4,
+    "cvalue": "4",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Anotação",
+    "value": 5,
+    "cvalue": "5",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Efetivado",
+    "value": 6,
+    "cvalue": "6",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Cancelado",
+    "value": 7,
+    "cvalue": "7",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Abrir Solicitação",
+    "value": 8,
+    "cvalue": "8",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Devolver ao Solicitante",
+    "value": 9,
+    "cvalue": "9",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Devolver ao Aprovador",
+    "value": 10,
+    "cvalue": "10",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Aprovado automaticamente",
+    "value": 11,
+    "cvalue": "11",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Aprovado",
+    "value": 12,
+    "cvalue": "12",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Editado",
+    "value": 13,
+    "cvalue": "13",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+},
+{
+  "model": "standard.choice",
+  "fields": {
+    "app_label": "pvf",
+    "name": "ACTION_TAKEN",
+    "label": "Enviar Sub",
+    "value": 14,
+    "cvalue": "14",
+    "cache_path": "pvf.ACTION_TAKEN",
+    "description": "",
+    "order_weight": 0,
+    "active": true
+  }
+}
+]

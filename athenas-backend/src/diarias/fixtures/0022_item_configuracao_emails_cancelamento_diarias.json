@@ -1,0 +1,22 @@
+[
+{
+    "model": "standard.item",
+    "pk": 142,
+    "fields": {
+        "configuration": 15,
+        "key": "notificar_cancelamento_diaria_deplan",
+        "type_of": 3,
+        "value": "elton.souza@mpmt.mp.br"
+    }
+},
+{
+    "model": "standard.item",
+    "pk": 143,
+    "fields": {
+        "configuration": 15,
+        "key": "notificar_cancelamento_diaria_daa",
+        "type_of": 3,
+        "value": "elton.souza@mpmt.mp.br"
+    }
+}
+]

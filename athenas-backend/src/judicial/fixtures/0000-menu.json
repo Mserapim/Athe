@@ -1,0 +1,237 @@
+[
+{
+    "pk": null,
+    "model": "engine.application",
+    "fields": {
+        "active": true,
+        "title": "E-EXT",
+        "father": null,
+        "uuid": "de7c01584f6f4048a14c7bc2f7be7cb1",
+        "icon": "athenas-0106.png"
+    }
+},
+{
+    "fields": {
+        "uuid": "083cc11c7a1c4a0da542bad5196632fe",
+        "title": "Sessão do Conselho",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "CouncilSession",
+        "active": true,
+        "icon": "athenas-0257.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "33803aeb797c4c2fbdbb28a5d581f956",
+        "title": "Gestor de Personagens",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudCharacter",
+        "active": true,
+        "icon": "athenas-0825.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "4e2d01abda7e46709a64fe82e210d079",
+        "title": "Configurações",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudConfiguration",
+        "active": true,
+        "icon": "athenas-0347.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "5595022c149d4ece8fc0c77c49d2de85",
+        "title": "Gestor de Comarcas",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudCounty",
+        "active": true,
+        "icon": "athenas-0317.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "dd31bc52960c49eea6cd8298a93a472e",
+        "title": "Template de diligências",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudDiligenceTemplate",
+        "active": true,
+        "icon": "athenas-0093.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "64d5dacf3b43495d9000cbbf1f8febb2",
+        "title": "Gestor de Órgãos de Execução",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudExecutionOrgan",
+        "active": true,
+        "icon": "athenas-0553.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "9392d15382be49b794ae8e176862dcea",
+        "title": "Gestor de Glosario",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudGlosary",
+        "active": true,
+        "icon": "athenas-0052.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "6c288c582eec4631a380e8f0c93522e3",
+        "title": "Gestor de Diligências",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudJudicialDiligence",
+        "active": true,
+        "icon": "athenas-0776.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "16aefb20b8274001a5d498b04cfb4111",
+        "title": "Gestor de Procedimentos",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudManage",
+        "active": true,
+        "icon": "athenas-0299.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "5b93636cc02642ce88050b25fd85fb99",
+        "title": "Gestor Oficiais",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudOfficerDiligence",
+        "active": true,
+        "icon": "athenas-0176.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "9999ef4d67354e6b8b8fc0a7f4dcb058",
+        "title": "Minhas Diligências",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudOfficerDiligenceDashboard",
+        "active": true,
+        "icon": "athenas-0766.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "170ead2d0138416bb0ae52844b76b56d",
+        "title": "Gestor de Procedimentos (Admin)",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudOutCourtLawsuitAdmin",
+        "active": true,
+        "icon": "athenas-0728.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "4210cf27da214460a1b8a56e0d3467e5",
+        "title": "Regionais de Comarcas",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudSectional",
+        "active": true,
+        "icon": "athenas-0307.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "894ebdc800ed44218551cb5bebfa647e",
+        "title": "Gestor de Taxonomia",
+        "module": null,
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudTaxonomy",
+        "active": true,
+        "icon": "athenas-0167.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "14e7478c580a462d972982d2acad7b26",
+        "title": "Gestor de Procedimentos no Cartório",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "EJudTriageManage",
+        "active": true,
+        "icon": "athenas-0299.png"
+    },
+    "model": "engine.controller"
+},
+{
+    "fields": {
+        "uuid": "6d6758b0df344d76abf8bfb0f7f08633",
+        "title": "Gestor de TAC",
+        "module": "",
+        "application": [
+            "de7c01584f6f4048a14c7bc2f7be7cb1"
+        ],
+        "controller": "TacManagementTAC",
+        "active": false,
+        "icon": "athenas-0443.png"
+    },
+    "model": "engine.controller"
+}
+]

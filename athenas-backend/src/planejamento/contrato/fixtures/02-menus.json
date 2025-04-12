@@ -1,0 +1,69 @@
+[
+  {
+    "fields": {
+      "layer": 1,
+      "uuid": "c304fe6b263b4491bee9f7779d2731da",
+      "title": "GESTÃO DE CONTRATOS",
+      "father": null,
+      "active": true,
+      "icon": "athenas-0540.png"
+    },
+    "model": "engine.application"
+  },
+  {
+    "fields": {
+      "uuid": "1bd03deba6ee4522aeef6a56e38f4a8d",
+      "title": "Gestão de Contratos",
+      "module": "planejamento.contrato",
+      "application": [
+        "c304fe6b263b4491bee9f7779d2731da"
+      ],
+      "controller": "PHAAgreement",
+      "active": true,
+      "icon": "athenas-0833.png"
+    },
+    "model": "engine.controller"
+  },
+  {
+    "fields": {
+      "uuid": "9b5a4a36e3d5465c8b2cda58ccc471c5",
+      "title": "Gestão de Ata",
+      "module": "planejamento.contrato",
+      "application": [
+        "c304fe6b263b4491bee9f7779d2731da"
+      ],
+      "controller": "PHMMinute",
+      "active": true,
+      "icon": "athenas-0093.png"
+    },
+    "model": "engine.controller"
+  },
+  {
+    "fields": {
+      "uuid": "413a9391b67742c1b3f0e8e5785788b4",
+      "title": "Gestão de Pedidos",
+      "module": "planejamento.contrato",
+      "application": [
+        "c304fe6b263b4491bee9f7779d2731da"
+      ],
+      "controller": "PHMMinuteSolicitationManager",
+      "active": true,
+      "icon": "athenas-0765.png"
+    },
+    "model": "engine.controller"
+  },
+  {
+    "fields": {
+      "uuid": "ff994653e838454aa6c478cbbe3679b7",
+      "title": "Configurações",
+      "module": "planejamento.contrato",
+      "application": [
+        "c304fe6b263b4491bee9f7779d2731da"
+      ],
+      "controller": "PHMMinuteConfiguration",
+      "active": true,
+      "icon": "athenas-0047.png"
+    },
+    "model": "engine.controller"
+  }
+]

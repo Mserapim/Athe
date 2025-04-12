@@ -1,0 +1,187 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário possui etapa no histórico (Assessoria PGJ)",
+        "value": 31,
+        "cvalue": "31",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "etapa_no_historico-ASS_PGJ",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário possui etapa no histórico (Assessoria DG)",
+        "value": 32,
+        "cvalue": "32",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "etapa_no_historico-ASS_DG",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "CONDICIONAIS_FLUXO_DIARIAS",
+        "label": "Beneficiário não possui etapa no histórico (DAA)",
+        "value": 33,
+        "cvalue": "33",
+        "cache_path": "diarias.CONDICIONAIS_FLUXO_DIARIAS",
+        "description": "nao_etapa_no_historico-DAA",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 59,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:30:03.907",
+        "modified_at": "2024-11-04T15:30:03.907",
+        "fluxo": 36,
+        "tipo_operador": null,
+        "condicionais": "24"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 60,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:30:32.355",
+        "modified_at": "2024-11-04T15:30:32.355",
+        "fluxo": 37,
+        "tipo_operador": null,
+        "condicionais": "23"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 62,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:32:24.010",
+        "modified_at": "2024-11-04T15:32:24.010",
+        "fluxo": 38,
+        "tipo_operador": null,
+        "condicionais": "5;19"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 63,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:32:49.051",
+        "modified_at": "2024-11-04T15:32:49.051",
+        "fluxo": 39,
+        "tipo_operador": null,
+        "condicionais": "23"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 64,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:33:16.719",
+        "modified_at": "2024-11-04T15:33:16.719",
+        "fluxo": 40,
+        "tipo_operador": null,
+        "condicionais": "5;18"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 65,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:33:42.060",
+        "modified_at": "2024-11-04T15:33:42.060",
+        "fluxo": 41,
+        "tipo_operador": null,
+        "condicionais": "24"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 66,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:35:34.872",
+        "modified_at": "2024-11-04T15:35:34.872",
+        "fluxo": 42,
+        "tipo_operador": null,
+        "condicionais": "5;31"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 68,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:36:35.294",
+        "modified_at": "2024-11-04T15:36:35.294",
+        "fluxo": 43,
+        "tipo_operador": null,
+        "condicionais": "25"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 69,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:37:52.456",
+        "modified_at": "2024-11-04T15:37:52.456",
+        "fluxo": 44,
+        "tipo_operador": null,
+        "condicionais": "5;32"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 70,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:38:37.337",
+        "modified_at": "2024-11-04T15:38:37.337",
+        "fluxo": 45,
+        "tipo_operador": null,
+        "condicionais": "27"
+    }
+},
+{
+    "model": "diarias.condicionalfluxoviagem",
+    "pk": 72,
+    "fields": {
+        "created_by": 10141,
+        "modified_by": 10141,
+        "created_at": "2024-11-04T15:51:51.603",
+        "modified_at": "2024-11-04T15:51:51.603",
+        "fluxo": 8,
+        "tipo_operador": "E",
+        "condicionais": "33"
+    }
+}
+]

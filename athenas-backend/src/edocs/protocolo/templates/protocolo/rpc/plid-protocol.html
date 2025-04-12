@@ -1,0 +1,99 @@
+{% load brmasks %}
+
+<p class="hide-on-web">
+    <h1 class="text-center">Cadastro de Desaparecido</h1>
+    <h2>Dados da Ocorrência</h2>
+    <hr style="width:80%;text-align:left;margin-left:0"><br />
+    <strong>Número do B.O</strong>: {{odf.police_report_number}} <br />
+    <strong>Delegacia de Registro</strong>: {{odf.registration_office}} <br />
+    <strong>Data do Registro da Ocorrência</strong>: {{odf.occurrence_registration_date}} <br />
+    <strong>Data do Desaparecimento</strong>: {{odf.disappearance_date}} <br />
+
+    <h4>Local do Desaparecimento</h4>
+    <strong>Logradouro</strong>: {{odf.public_place}} <br />
+    <strong>Número</strong>: {{odf.number}} <br />
+    <strong>Complemento</strong>: {{odf.extra}} <br />
+    <strong>Bairro</strong>: {{odf.neighborhood}} <br />
+    <strong>Município</strong>: {{odf.city}} <br />
+    <strong>Estado:</strong>: {{odf.state}} <br />
+    <strong>CEP:</strong>: {{odf.zipcode}} <br />
+
+    <strong>Circunstâncias do Desaparecimento</strong>: <br />
+    <p>{{odf.disappearance_circumstances|striptags}}</p>
+
+    <br />
+
+    <h2>Qualificação da Vítima</h2>
+    <hr style="width:80%;text-align:left;margin-left:0"><br />
+    <strong>Nome da Vítima</strong>: {{vqf.name}} <br />
+    <strong>Data de Nascimento</strong>: {{vqf.birth_date}} <br />
+    <strong>Sexo</strong>: {{vqf.genre}} <br />
+    <strong>RG</strong>: {{vqf.rg}} <br />
+    <strong>Órgão Expedidor</strong>: {{vqf.issuing_agency}} <br />
+    <strong>CPF</strong>: {{vqf.cpf|cpf}} <br />
+    <strong>Nome da Mãe</strong>: {{vqf.mother_name}} <br />
+    <strong>Nome do Pai</strong>: {{vqf.father_name}} <br />
+
+    <h4>Endereço Residencial</h4>
+    <strong>Logradouro</strong>: {{vqf.public_place}} <br />
+    <strong>Número</strong>: {{vqf.number}} <br />
+    <strong>Complemento</strong>: {{vqf.extra}} <br />
+    <strong>Bairro</strong>: {{vqf.neighborhood}} <br />
+    <strong>Município</strong>: {{vqf.city}} <br />
+    <strong>Estado:</strong>: {{vqf.state}} <br />
+    <strong>CEP:</strong>: {{vqf.zipcode}} <br />
+
+    <h4>Endereço Comercial</h4>
+    <strong>Logradouro</strong>: {{vqf.baf_public_place}} <br />
+    <strong>Número</strong>: {{vqf.baf_number}} <br />
+    <strong>Complemento</strong>: {{vqf.baf_extra}} <br />
+    <strong>Bairro</strong>: {{vqf.baf_neighborhood}} <br />
+    <strong>Município</strong>: {{vqf.baf_city}} <br />
+    <strong>Estado:</strong>: {{vqf.baf_state}} <br />
+    <strong>CEP:</strong>: {{vqf.baf_zipcode}} <br />
+
+    <h2>Qualificação da Vítima</h2>
+    <hr style="width:80%;text-align:left;margin-left:0"><br />
+    <strong>Cor da Pele</strong>: {{vcf.skin_color}} <br />
+    <strong>Cor dos Olhos</strong>: {{vcf.eye_color}} <br />
+    <strong>Altura</strong>: {{vcf.height}} <br />
+    <strong>Sinais Particulares</strong>: {{vcf.particular_signs}} <br />
+    <strong>Tipo de Cabelo</strong>: {{vcf.hair_type}} <br />
+    <strong>Cor do Cabelo</strong>: {{vcf.hair_color}} <br />
+    <strong>Vestimenta</strong>: {{vcf.clothes}} <br />
+    <strong>Objetos</strong>: {{vcf.objects}} <br />
+
+    <h2>Qualificação do Comunicante</h2>
+    <hr style="width:80%;text-align:left;margin-left:0"><br />
+
+
+    <strong>Nome do Comunicante</strong>: {{cqf.name}} <br />
+    <strong>E-mail do Comunicante</strong>: {{cqf.email}} <br />
+    <strong>Data de Nascimento</strong>: {{cqf.birth_date}} <br />
+    <strong>Sexo</strong>: {{cqf.genre}} <br />
+    <strong>Telefone de Contato</strong>: {{cqf.phone}} <br />
+    <strong>RG</strong>: {{cqf.rg}} <br />
+    <strong>Órgão Expedidor</strong>: {{cqf.issuing_agency}} <br />
+    <strong>CPF</strong>: {{cqf.cpf|cpf}} <br />
+    <strong>Grau de Parentesco com a Vítima</strong>: {{cqf.kinship}} <br />
+    <strong>Nome da Mãe</strong>: {{cqf.mother_name}} <br />
+    <strong>Nome do Pai</strong>: {{cqf.father_name}} <br />
+
+    <h4>Endereço Residencial</h4>
+    <strong>Logradouro</strong>: {{vqf.public_place}} <br />
+    <strong>Número</strong>: {{vqf.number}} <br />
+    <strong>Complemento</strong>: {{vqf.extra}} <br />
+    <strong>Bairro</strong>: {{vqf.neighborhood}} <br />
+    <strong>Município</strong>: {{vqf.city}} <br />
+    <strong>Estado:</strong>: {{vqf.state}} <br />
+    <strong>CEP:</strong>: {{vqf.zipcode}} <br />
+
+    <h4>Endereço Comercial</h4>
+    <strong>Logradouro</strong>: {{vqf.baf_public_place}} <br />
+    <strong>Número</strong>: {{vqf.baf_number}} <br />
+    <strong>Complemento</strong>: {{vqf.baf_extra}} <br />
+    <strong>Bairro</strong>: {{vqf.baf_neighborhood}} <br />
+    <strong>Município</strong>: {{vqf.baf_city}} <br />
+    <strong>Estado:</strong>: {{vqf.baf_state}} <br />
+    <strong>CEP:</strong>: {{vqf.baf_zipcode}} <br />
+</p>

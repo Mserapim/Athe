@@ -1,0 +1,16 @@
+{% extends "raf/base.html" %}
+
+{% block content %}
+<div class="papper-content">
+    <h2>Troca de Informações</h2>
+
+    {% if doc.conversation %}
+        {% for content in doc.conversation.contents.all %}
+            {% include "raf/conversation.html" %}
+        {% endfor %}
+    {% else %}
+    <strong>Não há troca de informações até o momento</strong>
+    {% endif %}
+
+</div>
+{% endblock %}

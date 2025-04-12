@@ -1,0 +1,29 @@
+<p class="hide-on-web">
+    <strong>Assunto</strong>: {{ subject_detail }} <br />
+
+    <strong>Número do Documento</strong>: {{ document_number }} <br />
+
+    <strong>CEP</strong>: {{ zipcode }} <br/>
+
+    <strong>Telefone</strong>: {{ phone_number }} <br/>
+
+    {% if cnpj %}
+    <strong>CNPJ</strong>: {{ cnpj }} <br/>
+    {% endif %}
+
+    {% if cpf %}
+    <strong>CPF</strong>: {{ cpf }} <br/>
+    <strong>Sexo</strong>: {{ genre }} <br/>
+    <strong>Escolaridade</strong>: {{ school }} <br/>
+    {% endif %}
+
+    <strong>Cidade</strong>: {{ city }} <br/>
+    <strong>Residente no município referente à manifestação?</strong>: {{ live_in_referenced_city }} <br/>
+    <strong>Município referente à manifestação?</strong>: {{ referenced_city }} <br/>
+    <br/>
+    {% if text %}
+    <strong>Descrição:</strong>
+    <div class="paragraph-text">
+        {{ text | safe }}</div>
+    {% endif %}
+</p>

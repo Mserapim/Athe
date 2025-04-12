@@ -1,0 +1,63 @@
+{% load judicialfilters %}
+<div class="papper">
+    <div>{% include "judicial/lawsuit/header.html" %}</div>
+    
+    {% if not is_judicialdiligence_internal %}
+        <div>
+            <div>
+                <h4 style="margin-bottom: 0px">{{ doc.attempt }}ª tentativa de entrega</h4>
+                <small>Registro de tentativa de Entrega da Diligência {{ doc.diligence.formated_number }}</small>
+            </div>
+        </div>
+
+        <div style="margin-top: 2em; text-align: justify">
+            {% if doc.exit_date and doc.return_date %}
+                Registrou a saída no dia {{ doc.exit_date | date:'d/m/Y \à\s H:i' }}
+                retornado no dia {{ doc.return_date | date:'d/m/Y \à\s H:i' }}.
+            {% endif %}
+            {% if doc.delivery_date %}
+                O documento foi entregue no dia {{ doc.delivery_date | date:'d/m/Y \à\s H:i' }}.
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if doc.cancel_delivery %}
+    <div style="padding: 2em 0 0 0">
+        <p>
+            A entrega da diligência foi cancelada pelo motivo: 
+            <strong>{{ doc.get_cancel_delivery_type_display }}</strong>.
+        </p>
+    </div>
+    {% endif %}
+    
+    {% if doc.observation %}
+    <div>
+        <h3>Observação</h3>
+        {{ doc.observation | safely }}
+    </div>
+    {% endif %}
+
+    <div>
+        <h3>Anexos</h3>
+
+        {% if doc.file_delivery %}
+        <div style="padding:0.5em 0; text-align: left; font-size: 0.9em">
+            <a href="{{ doc.file_delivery.complete_permalink }}" title="{{ attach.title }}">
+                Registro de Entrega
+            </a>
+            <div><small>URL: {{ doc.file_delivery.complete_permalink }}</small></div>
+            <div><small>MD5: {{ doc.file_delivery.file }}</small></div>
+        </div>
+        {% else %}
+        <p>
+            Nenhum arquivo foi anexado.
+        </p>
+        {% endif %}
+    </div>
+
+    {% if sign.person %}
+        {% include "judicial/lawsuit/sign.html" %}
+    {% else %}
+        <p style="padding-top:5em; text-align: center">Este documento ainda não foi assinado.</p>
+    {% endif %}
+</div>

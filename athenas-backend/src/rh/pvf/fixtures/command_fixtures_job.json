@@ -1,0 +1,32 @@
+[
+{
+  "model": "standard.classcode",
+  "fields": {
+    "slug": "rh.pvf.management.commands.aprovacao_automatica_plantoes.Command",
+    "path": "rh.pvf.management.commands.aprovacao_automatica_plantoes.Command",
+    "title": "Efetivação das vendas de plantões",
+    "description": "Efetivação automática da venda de plantões",
+    "name_object": "Command",
+    "typeof": "JOB"
+  }
+},
+{
+  "model": "services.scheduledservices",
+  "fields": {
+    "created_by": [
+      "rsnascimento"
+    ],
+    "modified_by": [
+      "rsnascimento"
+    ],
+    "created_at": "2025-03-26T15:18:37.116",
+    "modified_at": "2025-03-26T15:18:37.116",
+    "name": "Efetivação da venda de plantões",
+    "command": "efetivar_indeferir_automatico",
+    "description": "Efetivação das venda de plantões (membros e servidores)",
+    "classcode": [
+      "rh.pvf.management.commands.aprovacao_automatica_plantoes.Command"
+    ]
+  }
+}
+]

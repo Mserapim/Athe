@@ -1,0 +1,453 @@
+[
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "REMUNERAÇÃO: Subsídio",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 1,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "TREMUNERAÇÃO: Vencimento",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 2,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "REMUNERAÇÃO: Gratificação de Representação",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 3,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "REMUNERAÇÃO: VPI",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 4,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "REMUNERAÇÃO: Adicional de Férias",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 5,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "REMUNERAÇÃO: Abono Permanência",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 6,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "REMUNERAÇÃO: Gratificação Natilina",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 7,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "RECISÓRIA: Férias Vencidas",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 8,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "RECISÓRIA: Adicional de Férias",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 9,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "RECISÓRIA: Gratificação Natalina",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 10,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "EFEITOS NEGATIVOS: Redutor de Teto",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 11,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "DEDUÇÔES: IRRF",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 12,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "DEDUÇÔES: IRRF - 13º Salário",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 13,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "DEDUÇÔES: Previdência Social",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 14,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "DEDUÇÔES: Previdência - 13º Salário",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 15,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Aux. Alimentação",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 16,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Aux. Creche",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 17,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Aux. Moradia",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 18,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Aux. Transparte",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 19,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Diferença URV",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 20,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Diferença PAE",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 21,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Abono de Permanência",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 22,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: Previdência Social",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 23,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "INDENIZATÓRIAS: IRRF",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 24,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Remuneração do Cargo Efetivo",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 25,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Outras Verbas Remuneratórias, Legais ou Judiciais",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 26,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Função de Confiança",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 27,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Vencimento",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 28,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Gratificação",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 29,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Gratificação Natalina",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 30,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Férias Constitucionais",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 31,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Abono Permanência",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 32,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Contribuição Previdenciária",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 33,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Imposto de Renda",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 34,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Retenção por Teto Constitucional",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 35,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Outros Redutores/Descontos",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 36,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Indenizações",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 37,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "gfp.CONFIG_TRANSPARENCY",
+        "label": "Outras Remunerações Retroativas/Tempo rárias",
+        "name": "CONFIG_TRANSPARENCY",
+        "value": 38,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "GFP.GROUP_TRANSPARENCY",
+        "label": "Total de Rendimentos Brutos",
+        "name": "GROUP_TRANSPARENCY",
+        "value": 1,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "GFP.GROUP_TRANSPARENCY",
+        "label": "Total de Descontos",
+        "name": "GROUP_TRANSPARENCY",
+        "value": 2,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+},
+{
+    "fields": {
+        "cache_path": "GFP.GROUP_TRANSPARENCY",
+        "label": "Rendimento Líquido Total",
+        "name": "GROUP_TRANSPARENCY",
+        "value": 3,
+        "app_label": "gfp"
+    },
+    "model": "standard.choice",
+    "pk": null
+}
+]

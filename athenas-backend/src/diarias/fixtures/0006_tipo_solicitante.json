@@ -1,0 +1,142 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Procurador Geral de Justiça",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Secretário-Geral de Gabinete",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Secretário Geral Administrativo",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Diretor Geral",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Membro do Ministério Público",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Servidor do Ministério Público",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "SubProcurador Geral de Justiça Júridico e Institucional",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Subprocurador-Geral de Justiça Administrativo",
+        "value": 11,
+        "cvalue": "8",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Secretário Geral do Ministério Público",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "TIPO_SOLICITANTE",
+        "label": "Subprocurador-Geral de Justiça Planejamento",
+        "value": 12,
+        "cvalue": "10",
+        "cache_path": "diarias.TIPO_SOLICITANTE",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

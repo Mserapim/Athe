@@ -1,0 +1,40 @@
+[
+{
+      "fields": {
+         "username": "web",
+         "first_name": "",
+         "last_name": "",
+         "is_active": true,
+         "is_superuser": false,
+         "is_staff": false,
+         "last_login": "2015-09-14T15:40:26.455",
+         "groups": [],
+         "user_permissions": [],
+         "password": "",
+         "email": "",
+         "date_joined": "2015-08-26T18:04:05.142"
+      },
+      "model": "auth.user"
+   },
+{
+  "fields": {
+    "valid_at": null,
+    "app_key": "c4ecf1e2c6d0d27ea0dff98edcc34f82",
+    "title": "Polls Client"
+  },
+  "model": "ws.application"
+},
+{
+  "fields": {
+    "active": true,
+    "application": [
+      "c4ecf1e2c6d0d27ea0dff98edcc34f82"
+    ],
+    "user": [
+      "web"
+    ],
+    "user_token": "143a7e3959825308e09e9ede88dbb969"
+  },
+  "model": "ws.userpermission"
+}
+]

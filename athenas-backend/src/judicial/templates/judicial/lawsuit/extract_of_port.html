@@ -1,0 +1,6 @@
+{% load judicialfilters %}
+<div style="margin-bottom: 1.5em">
+    <h1 style="text-align: center">Portária de Instauração {{ doc.formated_code }}</h1>
+</div>
+
+<div class="paragraph-text">{{ doc.extract_of_port | safely }}</div>

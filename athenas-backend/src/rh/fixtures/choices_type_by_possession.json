@@ -1,0 +1,282 @@
+[
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 1,
+    "label": "SERVIDOR EFETIVO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "EFE",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR ADMINISTRATIVO EFETIVO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 2,
+    "label": "SERVIDOR EFETIVO E COMISSIONADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "ECM",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR ADMINISTRATIVO EFETIVO COM CARGO COMISSIONADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 3,
+    "label": "MEMBRO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "MBR",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "MEMBRO VITALÍCIO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 4,
+    "label": "MEMBRO COM CARGO ELETIVO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "MEL",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "MEMBRO COM CARGO ELETIVO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 5,
+    "label": "MEMBRO COM CARGO COMISSIONADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "MCM",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "MEMBRO COM CARGO COMISSIONADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 6,
+    "label": "MEMBRO COM CARGO ELETIVO E COMISSIONADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "MEC",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "MEMBRO COM CARGO ELETIVO E COMISSIONADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 7,
+    "label": "SERVIDOR COMISSIONADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "CMS",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR ADMINISTRATIVO COMISSIONADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 8,
+    "label": "SERVIDOR REQUISITADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "REQ",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR REQUISITADO DE OUTRO ÓRGÃO VIA CESSÃO OU ACORDO DE COOPERAÇÃO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 9,
+    "label": "SERVIDOR REQUISITADO COMISSIONADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "RCM",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR REQUISITADO DE OUTRO ÓRGÃO VIA CESSÃO OU ACORDO DE COOPERAÇÃO COM CARGO COMISSIONADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 10,
+    "label": "ESTAGIÁRIO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "EST",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "ESTAGIÁRIO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 11,
+    "label": "TERCEIRIZADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "TCR",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "TERCEIRIZADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 12,
+    "label": "VOLUNTÁRIO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "VOL",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "VOLUNTÁRIO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 14,
+    "label": "SERVIDOR CONTRATADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "CTR",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR CONTRATADO TEMPORARIAMENTE"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 15,
+    "label": "EXTERNO SEM VÍNCULO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "EXT",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "COLABORADOR SEM VÍNCULO COM O ÓRGÃO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 16,
+    "label": "SERVIDOR EFETIVO APOSENTADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "SAP",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR ADMINISTRATIVO EFETIVO APOSENTADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 17,
+    "label": "MEMBRO APOSENTADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "MAP",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "MEMBRO APOSENTADO"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 18,
+    "label": "SERVIDOR REQUISITADO COM FUNÇÃO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "RFC",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR REQUISITADO DE OUTRO ÓRGÃO VIA CESSÃO OU ACORDO DE COOPERAÇÃO COM FUNÇÃO DE CONFIANÇA"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 19,
+    "label": "SERVIDOR EFETIVO COM FUNÇÃO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "EFC",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "SERVIDOR ADMINISTRATIVO EFETIVO COM FUNÇÃO DE CONFIANÇA"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 20,
+    "label": "JOVEM CIDADÃO - APRENDIZ",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "JCA",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "JOVEM CIDADÃO - APRENDIZ"
+  },
+  "model": "standard.choice"
+},
+{
+  "fields": {
+    "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "value": 21,
+    "label": "APOSENTADO",
+    "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+    "cvalue": "APO",
+    "app_label": "rh",
+    "active": true,
+    "order_weight": 0,
+    "description": "APOSENTADO"
+  },
+  "model": "standard.choice"
+}
+]

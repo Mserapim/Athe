@@ -1,0 +1,21 @@
+{% extends "council/base.html" %}
+
+{% block body-header %}
+<div>
+    <h2>{{ doc.get_incident_type_display }} para {{ doc.possession.servidor.pessoa_fisica }}</h2>
+</div>
+{% endblock %}
+
+{% block body-content %}
+<div class="paragraph-text">{{ doc.comment | safe }}</div>
+{% if doc.substitute %}
+<div class="paragraph-text">
+    <p>
+        Para o seu lugar esta sendo convocado o(a) Procurador(a) de Justiça <span class="bold">{{ doc.substitute.pessoa_fisica }}</span>
+        para atuar no conselho do procedimento <span class="bold">{{ doc.distribution_rapporteur.lawsuit.cache_number }}</span>
+        devido a <span class="bold">{{ doc.get_incident_type_display }}</span> do Procurador(a) de Justiça
+        <span class="bold">{{ doc.possession.servidor.pessoa_fisica }}</span>.
+    </p>
+</div
+{% endif %}
+{% endblock %}

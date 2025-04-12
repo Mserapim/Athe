@@ -1,0 +1,2592 @@
+[
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A01",
+    "label": "ABI Educa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A02",
+    "label": "ABI Artes e humanidades"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A03",
+    "label": "ABI Ci\u00eancias sociais, comunica\u00e7\u00e3o e informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A04",
+    "label": "ABI Neg\u00f3cios, administra\u00e7\u00e3o e direito"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A05",
+    "label": "ABI Ci\u00eancias naturais, matem\u00e1tica e estat\u00edstica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A06",
+    "label": "ABI Computa\u00e7\u00e3o e Tecnologias da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o (TIC)"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A07",
+    "label": "ABI Engenharia, produ\u00e7\u00e3o e constru\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A08",
+    "label": "ABI Agricultura, silvicultura, pesca e veterin\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A09",
+    "label": "ABI Sa\u00fade e bem-estar"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0011A10",
+    "label": "ABI Servi\u00e7os"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0111C01",
+    "label": "Ci\u00eancia da educa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0111P01",
+    "label": "Processos escolares"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0111P02",
+    "label": "Psicopedagogia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0112E01",
+    "label": "Educa\u00e7\u00e3o infantil forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0113E01",
+    "label": "Educa\u00e7\u00e3o do campo forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0113E02",
+    "label": "Educa\u00e7\u00e3o especial forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0113E03",
+    "label": "Educa\u00e7\u00e3o ind\u00edgena forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0113F01",
+    "label": "Forma\u00e7\u00e3o pedag\u00f3gica de professor para a educa\u00e7\u00e3o b\u00e1sica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0113P01",
+    "label": "Pedagogia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114A01",
+    "label": "Artes forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114A02",
+    "label": "Artes visuais forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114B01",
+    "label": "Biologia forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114C01",
+    "label": "Ci\u00eancias agr\u00e1rias forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114C02",
+    "label": "Ci\u00eancias naturais forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114C03",
+    "label": "Ci\u00eancias sociais forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114C04",
+    "label": "Cinema e audiovisual forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114C05",
+    "label": "Computa\u00e7\u00e3o forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114D01",
+    "label": "Dan\u00e7a forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E01",
+    "label": "Economia dom\u00e9stica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E02",
+    "label": "Educa\u00e7\u00e3o do campo em \u00e1reas de conhecimento da educa\u00e7\u00e3o b\u00e1sica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E03",
+    "label": "Educa\u00e7\u00e3o f\u00edsica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E04",
+    "label": "Educa\u00e7\u00e3o ind\u00edgena em \u00e1reas de conhecimento da educa\u00e7\u00e3o b\u00e1sica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E05",
+    "label": "Enfermagem forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E06",
+    "label": "Ensino profissionalizante em \u00e1rea espec\u00edfica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E07",
+    "label": "Ensino religioso forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114E08",
+    "label": "Estat\u00edstica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114F01",
+    "label": "Filosofia forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114F02",
+    "label": "F\u00edsica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114G01",
+    "label": "Geografia forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114H01",
+    "label": "Hist\u00f3ria forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114M01",
+    "label": "Matem\u00e1tica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114M02",
+    "label": "M\u00fasica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114P01",
+    "label": "Psicologia forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114Q01",
+    "label": "Qu\u00edmica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0114T01",
+    "label": "Teatro forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L01",
+    "label": "Letras alem\u00e3o forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L02",
+    "label": "Letras espanhol forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L03",
+    "label": "Letras franc\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L04",
+    "label": "Letras ingl\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L05",
+    "label": "Letras italiano forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L06",
+    "label": "Letras japon\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L07",
+    "label": "Letras l\u00edngua brasileira de sinais forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L08",
+    "label": "Letras l\u00ednguas estrangeiras cl\u00e1ssicas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L09",
+    "label": "Letras lingu\u00edstica forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L10",
+    "label": "Letras outras l\u00ednguas estrangeiras modernas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L11",
+    "label": "Letras portugu\u00eas alem\u00e3o forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L12",
+    "label": "Letras portugu\u00eas espanhol forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L13",
+    "label": "Letras portugu\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L14",
+    "label": "Letras portugu\u00eas franc\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L15",
+    "label": "Letras portugu\u00eas ingl\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L16",
+    "label": "Letras portugu\u00eas italiano forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L17",
+    "label": "Letras portugu\u00eas japon\u00eas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L18",
+    "label": "Letras portugu\u00eas l\u00edngua brasileira de sinais forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L19",
+    "label": "Letras portugu\u00eas l\u00ednguas estrangeiras cl\u00e1ssicas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L20",
+    "label": "Letras portugu\u00eas outras l\u00ednguas estrangeiras modernas forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0115L21",
+    "label": "Letras tradutor e int\u00e9rprete forma\u00e7\u00e3o de professor"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0188P01",
+    "label": "Programas interdisciplinares abrangendo educa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211A01",
+    "label": "Anima\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211C01",
+    "label": "Cinema e audiovisual"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211C02",
+    "label": "Comunica\u00e7\u00e3o assistiva"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211D01",
+    "label": "Design gr\u00e1fico"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211F01",
+    "label": "Fotografia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211P01",
+    "label": "Produ\u00e7\u00e3o audiovisual"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211P02",
+    "label": "Produ\u00e7\u00e3o c\u00eanica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211P03",
+    "label": "Produ\u00e7\u00e3o cultural"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211P04",
+    "label": "Produ\u00e7\u00e3o fonogr\u00e1fica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0211P05",
+    "label": "Produ\u00e7\u00e3o multim\u00eddia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0212D01",
+    "label": "Desenho industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0212D02",
+    "label": "Design"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0212D03",
+    "label": "Design de interiores"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0212D04",
+    "label": "Design de produto"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0212M01",
+    "label": "Moda"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0213A01",
+    "label": "Artes"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0213A02",
+    "label": "Artes pl\u00e1sticas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0213A03",
+    "label": "Artes visuais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0213H01",
+    "label": "Hist\u00f3ria da arte"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0214F01",
+    "label": "Fabrica\u00e7\u00e3o de instrumentos musicais n\u00e3o industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0215A01",
+    "label": "Artes c\u00eanicas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0215D01",
+    "label": "Dan\u00e7a"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0215M01",
+    "label": "M\u00fasica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0215T01",
+    "label": "Teatro"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0221C01",
+    "label": "Ci\u00eancias da religi\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0221T01",
+    "label": "Teologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0222A01",
+    "label": "Arqueologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0222C01",
+    "label": "Conserva\u00e7\u00e3o e restauro"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0222H01",
+    "label": "Hist\u00f3ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0223F01",
+    "label": "Filosofia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L01",
+    "label": "Letras alem\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L02",
+    "label": "Letras escrita criativa"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L03",
+    "label": "Letras espanhol"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L04",
+    "label": "Letras franc\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L05",
+    "label": "Letras ingl\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L06",
+    "label": "Letras italiano"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L07",
+    "label": "Letras japon\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L08",
+    "label": "Letras l\u00edngua brasileira de sinais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L09",
+    "label": "Letras l\u00ednguas estrangeiras cl\u00e1ssicas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L10",
+    "label": "Letras lingu\u00edstica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L11",
+    "label": "Letras outras l\u00ednguas estrangeiras modernas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L12",
+    "label": "Letras portugu\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L13",
+    "label": "Letras portugu\u00eas alem\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L14",
+    "label": "Letras portugu\u00eas espanhol"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L15",
+    "label": "Letras portugu\u00eas franc\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L16",
+    "label": "Letras portugu\u00eas ingl\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L17",
+    "label": "Letras portugu\u00eas italiano"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L18",
+    "label": "Letras portugu\u00eas japon\u00eas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L19",
+    "label": "Letras portugu\u00eas l\u00edngua brasileira de sinais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L20",
+    "label": "Letras portugu\u00eas l\u00ednguas estrangeiras cl\u00e1ssicas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L21",
+    "label": "Letras portugu\u00eas outras l\u00ednguas estrangeiras modernas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0231L22",
+    "label": "Letras tradutor e int\u00e9rprete"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0288P01",
+    "label": "Programas interdisciplinares abrangendo artes e humanidades"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0311E01",
+    "label": "Economia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0312A01",
+    "label": "Antropologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0312C01",
+    "label": "Ci\u00eancia pol\u00edtica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0312C02",
+    "label": "Ci\u00eancias sociais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0312G01",
+    "label": "Geografia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0312R01",
+    "label": "Rela\u00e7\u00f5es internacionais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0312S01",
+    "label": "Sociologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0313P01",
+    "label": "Psicologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0321C01",
+    "label": "Comunica\u00e7\u00e3o social"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0321J01",
+    "label": "Jornalismo"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0321P01",
+    "label": "Produ\u00e7\u00e3o editorial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0321R01",
+    "label": "R\u00e1dio, TV e internet"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0322A01",
+    "label": "Arquivologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0322B01",
+    "label": "Biblioteconomia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0322G01",
+    "label": "Gest\u00e3o da informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0322M01",
+    "label": "Museologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0388P01",
+    "label": "Programas interdisciplinares abrangendo ci\u00eancias sociais, comunica\u00e7\u00e3o e informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0411C01",
+    "label": "Contabilidade"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0411G01",
+    "label": "Gest\u00e3o fiscal e tribut\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0412G01",
+    "label": "Gest\u00e3o financeira"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0412S01",
+    "label": "Seguros"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413A01",
+    "label": "Administra\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413A02",
+    "label": "Administra\u00e7\u00e3o p\u00fablica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413C01",
+    "label": "Com\u00e9rcio exterior"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413E01",
+    "label": "Empreendedorismo"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G01",
+    "label": "Gest\u00e3o da produ\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G02",
+    "label": "Gest\u00e3o da qualidade"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G03",
+    "label": "Gest\u00e3o da sa\u00fade"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G04",
+    "label": "Gest\u00e3o de cooperativas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G05",
+    "label": "Gest\u00e3o de neg\u00f3cios"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G06",
+    "label": "Gest\u00e3o de neg\u00f3cios internacionais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G07",
+    "label": "Gest\u00e3o de pessoas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G08",
+    "label": "Gest\u00e3o de servi\u00e7os"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G09",
+    "label": "Gest\u00e3o do agroneg\u00f3cio"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G10",
+    "label": "Gest\u00e3o estrat\u00e9gica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G11",
+    "label": "Gest\u00e3o hospitalar"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413G12",
+    "label": "Gest\u00e3o p\u00fablica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0413L01",
+    "label": "Log\u00edstica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0414M01",
+    "label": "Marketing"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0414P01",
+    "label": "Publicidade e propaganda"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0414R01",
+    "label": "Rela\u00e7\u00f5es p\u00fablicas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0415S01",
+    "label": "Secretariado"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0416G01",
+    "label": "Gest\u00e3o comercial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0416N01",
+    "label": "Neg\u00f3cios imobili\u00e1rios"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0421D01",
+    "label": "Direito"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0421S01",
+    "label": "Servi\u00e7os jur\u00eddicos e cartoriais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0488P01",
+    "label": "Programas interdisciplinares abrangendo neg\u00f3cios, administra\u00e7\u00e3o e direito"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0511B01",
+    "label": "Biologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0512B01",
+    "label": "Bioqu\u00edmica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0512B02",
+    "label": "Biotecnologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0512T01",
+    "label": "Toxicologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0521C01",
+    "label": "Ci\u00eancias ambientais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0521E01",
+    "label": "Ecologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0531Q01",
+    "label": "Qu\u00edmica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0531Q02",
+    "label": "Qu\u00edmica industrial e tecnol\u00f3gica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0532G01",
+    "label": "Geof\u00edsica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0532G02",
+    "label": "Geologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0532G03",
+    "label": "Geoprocessamento"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0532M01",
+    "label": "Meteorologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0532O01",
+    "label": "Oceanografia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0533A01",
+    "label": "Astronomia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0533F01",
+    "label": "F\u00edsica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0533F02",
+    "label": "F\u00edsica aplicada"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0533F03",
+    "label": "F\u00edsica m\u00e9dica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0541M01",
+    "label": "Matem\u00e1tica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0541M02",
+    "label": "Matem\u00e1tica aplicada e computacional"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0542C01",
+    "label": "Ci\u00eancias atuariais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0542E01",
+    "label": "Estat\u00edstica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0588P01",
+    "label": "Programas interdisciplinares abrangendo ci\u00eancias naturais, matem\u00e1tica e estat\u00edstica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0612B01",
+    "label": "Banco de dados"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0612D01",
+    "label": "Defesa cibern\u00e9tica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0612G01",
+    "label": "Gest\u00e3o da tecnologia da informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0612R01",
+    "label": "Redes de computadores"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0613E01",
+    "label": "Engenharia de software"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0613J01",
+    "label": "Jogos digitais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0614C01",
+    "label": "Ci\u00eancia da computa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0614I01",
+    "label": "Intelig\u00eancia artificial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0615S01",
+    "label": "Seguran\u00e7a da informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0615S02",
+    "label": "Sistemas de informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0615S03",
+    "label": "Sistemas para internet"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0616E01",
+    "label": "Engenharia de computa\u00e7\u00e3o (DCN Computa\u00e7\u00e3o)"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0616I01",
+    "label": "Internet das coisas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0616S01",
+    "label": "Sistemas embarcados"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0617A01",
+    "label": "Agrocomputa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0617C01",
+    "label": "Ci\u00eancia de dados"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0617C02",
+    "label": "Computa\u00e7\u00e3o e Tecnologias da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o (TIC) em bioci\u00eancias e sa\u00fade"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0617C03",
+    "label": "Cria\u00e7\u00e3o digital"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0688P01",
+    "label": "Programas interdisciplinares abrangendo computa\u00e7\u00e3o e Tecnologias da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o (TIC)"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0710E01",
+    "label": "Engenharia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0711B01",
+    "label": "Biocombust\u00edveis"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0711E01",
+    "label": "Engenharia bioqu\u00edmica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0711E02",
+    "label": "Engenharia de bioprocessos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0711E03",
+    "label": "Engenharia de biotecnologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0711E04",
+    "label": "Engenharia de nanotecnologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0711E05",
+    "label": "Engenharia qu\u00edmica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0712E01",
+    "label": "Engenharia ambiental"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0712E02",
+    "label": "Engenharia ambiental e sanit\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0712G01",
+    "label": "Gest\u00e3o ambiental"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0712G02",
+    "label": "Gest\u00e3o de res\u00edduos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0712S01",
+    "label": "Saneamento ambiental"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713E01",
+    "label": "Eletrot\u00e9cnica industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713E02",
+    "label": "Energias renov\u00e1veis"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713E03",
+    "label": "Engenharia bioenerg\u00e9tica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713E04",
+    "label": "Engenharia de energia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713E05",
+    "label": "Engenharia el\u00e9trica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713E06",
+    "label": "Engenharia nuclear"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713R01",
+    "label": "Refrigera\u00e7\u00e3o e climatiza\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0713S01",
+    "label": "Sistemas el\u00e9tricos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714A01",
+    "label": "Automa\u00e7\u00e3o industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E01",
+    "label": "Eletr\u00f4nica industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E02",
+    "label": "Engenharia ac\u00fastica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E03",
+    "label": "Engenharia biom\u00e9dica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E04",
+    "label": "Engenharia de computa\u00e7\u00e3o (DCN Engenharia)"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E05",
+    "label": "Engenharia de controle e automa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E06",
+    "label": "Engenharia de informa\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E07",
+    "label": "Engenharia de telecomunica\u00e7\u00f5es"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E08",
+    "label": "Engenharia eletr\u00f4nica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714E09",
+    "label": "Engenharia mecatr\u00f4nica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714G01",
+    "label": "Gest\u00e3o de telecomunica\u00e7\u00f5es"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714M01",
+    "label": "Mecatr\u00f4nica industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714R01",
+    "label": "Redes de telecomunica\u00e7\u00f5es"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714S01",
+    "label": "Sistemas biom\u00e9dicos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714S02",
+    "label": "Sistemas de telecomunica\u00e7\u00f5es"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0714T01",
+    "label": "Telem\u00e1tica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715E01",
+    "label": "Engenharia f\u00edsica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715E02",
+    "label": "Engenharia mec\u00e2nica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715E03",
+    "label": "Engenharia metal\u00fargica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715F01",
+    "label": "Fabrica\u00e7\u00e3o mec\u00e2nica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715M01",
+    "label": "Manuten\u00e7\u00e3o industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715M02",
+    "label": "Mec\u00e2nica de precis\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715P01",
+    "label": "Processos metal\u00fargicos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0715S01",
+    "label": "Soldagem"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716A01",
+    "label": "Aeroespacial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716C01",
+    "label": "Constru\u00e7\u00e3o naval"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716E01",
+    "label": "Engenharia aeroespacial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716E02",
+    "label": "Engenharia aeron\u00e1utica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716E03",
+    "label": "Engenharia automotiva"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716E04",
+    "label": "Engenharia ferrovi\u00e1ria e metrovi\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716E05",
+    "label": "Engenharia naval"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716M01",
+    "label": "Manuten\u00e7\u00e3o de aeronaves"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716S01",
+    "label": "Sistemas automotivos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0716S02",
+    "label": "Sistemas de navega\u00e7\u00e3o fluvial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721A01",
+    "label": "Alimentos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721E01",
+    "label": "Engenharia de alimentos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721L01",
+    "label": "Latic\u00ednios"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721P01",
+    "label": "Processamento de carnes"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721P02",
+    "label": "Produ\u00e7\u00e3o de cacha\u00e7a"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721P03",
+    "label": "Produ\u00e7\u00e3o sucroalcooleira"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0721P04",
+    "label": "Produ\u00e7\u00e3o de cerveja"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722C01",
+    "label": "Cer\u00e2mica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722C02",
+    "label": "Ci\u00eancias dos materiais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722E01",
+    "label": "Engenharia de materiais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722P01",
+    "label": "Papel e celulose"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722P02",
+    "label": "Pol\u00edmeros"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722P03",
+    "label": "Produ\u00e7\u00e3o joalheira"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0722P04",
+    "label": "Produ\u00e7\u00e3o moveleira"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0723E01",
+    "label": "Engenharia t\u00eaxtil"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0723P01",
+    "label": "Produ\u00e7\u00e3o de vestu\u00e1rio"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0723P02",
+    "label": "Produ\u00e7\u00e3o t\u00eaxtil"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0724E01",
+    "label": "Engenharia de minas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0724E02",
+    "label": "Engenharia de petr\u00f3leo"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0724E03",
+    "label": "Engenharia geol\u00f3gica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0724M01",
+    "label": "Minera\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0724P01",
+    "label": "Petr\u00f3leo e g\u00e1s"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0724R01",
+    "label": "Rochas ornamentais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0725E01",
+    "label": "Engenharia de manufatura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0725E02",
+    "label": "Engenharia de produ\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0725E03",
+    "label": "Engenharia industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0725P01",
+    "label": "Produ\u00e7\u00e3o gr\u00e1fica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0725P02",
+    "label": "Produ\u00e7\u00e3o industrial"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0731A01",
+    "label": "Agrimensura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0731A02",
+    "label": "Arquitetura e urbanismo"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0731E01",
+    "label": "Engenharia cartogr\u00e1fica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0731E02",
+    "label": "Engenharia de agrimensura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0731E03",
+    "label": "Engenharia de agrimensura e cartogr\u00e1fica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732C01",
+    "label": "Constru\u00e7\u00e3o de edif\u00edcios"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732C02",
+    "label": "Controle de obras"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732E01",
+    "label": "Engenharia civil"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732E02",
+    "label": "Engenharia de recursos h\u00eddricos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732E03",
+    "label": "Engenharia de transportes"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732E04",
+    "label": "Engenharia portu\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732E05",
+    "label": "Estradas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732G01",
+    "label": "Gest\u00e3o de recursos h\u00eddricos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0732M01",
+    "label": "Material de constru\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0788P01",
+    "label": "Programas interdisciplinares abrangendo engenharia, produ\u00e7\u00e3o e constru\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811A01",
+    "label": "Agroecologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811A02",
+    "label": "Agroind\u00fastria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811A03",
+    "label": "Agroneg\u00f3cio"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811A04",
+    "label": "Agronomia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811A05",
+    "label": "Agropecu\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811C01",
+    "label": "Cafeicultura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811E01",
+    "label": "Engenharia agr\u00edcola"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811E02",
+    "label": "Engenharia de biossistemas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811F01",
+    "label": "Fruticultura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811I01",
+    "label": "Irriga\u00e7\u00e3o e drenagem"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811M01",
+    "label": "Manejo da produ\u00e7\u00e3o agr\u00edcola"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811V01",
+    "label": "Viticultura e enologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0811Z01",
+    "label": "Zootecnia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0812H01",
+    "label": "Horticultura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0821E01",
+    "label": "Engenharia florestal"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0821S01",
+    "label": "Silvicultura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0831A01",
+    "label": "Aquicultura"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0831E01",
+    "label": "Engenharia de pesca"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0831P01",
+    "label": "Produ\u00e7\u00e3o pesqueira"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0841M01",
+    "label": "Medicina veterin\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0888P01",
+    "label": "Programas interdisciplinares abrangendo agricultura, silvicultura, pesca e veterin\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0911O01",
+    "label": "Odontologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0912M01",
+    "label": "Medicina"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0913E01",
+    "label": "Enfermagem"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0914A01",
+    "label": "An\u00e1lises cl\u00ednicas e toxicol\u00f3gicas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0914B01",
+    "label": "Biomedicina"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0914O01",
+    "label": "Oft\u00e1lmica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0914O02",
+    "label": "Optometria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0914P01",
+    "label": "Pr\u00f3tese e \u00f3rtese"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0914R01",
+    "label": "Radiologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0915E01",
+    "label": "Educa\u00e7\u00e3o f\u00edsica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0915F01",
+    "label": "Fisioterapia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0915F02",
+    "label": "Fonoaudiologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0915N01",
+    "label": "Nutri\u00e7\u00e3o"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0915P01",
+    "label": "Podologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0915T01",
+    "label": "Terapia ocupacional"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0916F01",
+    "label": "Farm\u00e1cia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0917M01",
+    "label": "Musicoterapia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0917P01",
+    "label": "Pr\u00e1ticas integrativas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0918S01",
+    "label": "Sa\u00fade coletiva"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0918S02",
+    "label": "Sa\u00fade p\u00fablica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0921A01",
+    "label": "Assist\u00eancia a idosos e a deficientes"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0921G01",
+    "label": "Gerontologia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0923S01",
+    "label": "Servi\u00e7o social"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "0988P01",
+    "label": "Programas interdisciplinares abrangendo sa\u00fade e bem-estar"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1011E01",
+    "label": "Economia dom\u00e9stica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1012E01",
+    "label": "Est\u00e9tica e cosm\u00e9tica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1013G01",
+    "label": "Gastronomia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1014F01",
+    "label": "Forma\u00e7\u00e3o de t\u00e9cnicos e treinadores esportivos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1014G01",
+    "label": "Gest\u00e3o desportiva e de lazer"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1015E01",
+    "label": "Eventos"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1015H01",
+    "label": "Hotelaria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1015T01",
+    "label": "Turismo"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1022S01",
+    "label": "Seguran\u00e7a no trabalho"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1031C01",
+    "label": "Ci\u00eancias militares"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1032I01",
+    "label": "Investiga\u00e7\u00e3o e per\u00edcia"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1032S01",
+    "label": "Seguran\u00e7a no tr\u00e2nsito"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1032S02",
+    "label": "Seguran\u00e7a privada"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1032S03",
+    "label": "Seguran\u00e7a p\u00fablica"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1032S04",
+    "label": "Servi\u00e7os penais"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1041C01",
+    "label": "Ci\u00eancias aeron\u00e1uticas"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1041G01",
+    "label": "Gest\u00e3o portu\u00e1ria"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1041T01",
+    "label": "Transporte a\u00e9reo"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1041T02",
+    "label": "Transporte terrestre"
+  }
+},
+{
+  "model": "rh.coursecinebrasil",
+  "fields": {
+    "code": "1088P01",
+    "label": "Programas interdisciplinares abrangendo servi\u00e7os"
+  }
+}
+]

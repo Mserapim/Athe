@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="papper-content">
+    <div class="field">
+        <div class="composite">
+            <div class="label title">
+                Protocolo {{ instance.document.codigo }}
+                <span>Assunto: {{ instance.document.assunto }}</span>
+            </div>
+            <div class="paragraph-text">
+                <h2>Este documento possui informação sigilosa.</h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

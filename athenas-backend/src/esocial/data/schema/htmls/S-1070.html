@@ -1,0 +1,610 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_eSocial" id="1070_eSocial">1</td>
+        <td><a href="#r_1070_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070" id="1070">2</td>
+        <td><a href="#r_1070">evtTabProcesso</a></td>
+        <td><a href="#r_1070_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Tabela de Processos Administrativos/Judiciais.<br>
+            <strong>Regras de validação:</strong><br>
+            <a href="#REGRA_ENVIO_PROC_FECHAMENTO">REGRA_ENVIO_PROC_FECHAMENTO</a><br>
+            <a href="#REGRA_EXISTE_INFO_EMPREGADOR">REGRA_EXISTE_INFO_EMPREGADOR</a><br>
+            <a href="#REGRA_PERMITE_ALT_EXCL_CODSUSP">REGRA_PERMITE_ALT_EXCL_CODSUSP</a><br>
+            <a href="#REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_ALTERACAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO">REGRA_TABGERAL_EXISTE_REGISTRO_ALTERADO</a><br>
+            <a href="#REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO">REGRA_TABGERAL_EXISTE_REGISTRO_EXCLUIDO</a><br>
+            <a href="#REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE">REGRA_TABGERAL_INCLUSAO_PERIODO_CONFLITANTE</a><br>
+            <a href="#REGRA_TAB_PERMITE_EXCLUSAO">REGRA_TAB_PERMITE_EXCLUSAO</a><br>
+            <a href="#REGRA_VALIDA_DT_FUTURA">REGRA_VALIDA_DT_FUTURA</a><br>
+            <a href="#REGRA_VALIDA_PROCESSO">REGRA_VALIDA_PROCESSO</a></td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_Id" id="1070_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_1070">evtTabProcesso</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.<br>
+            <strong>Regra de validação:</strong><br>
+            <a href="#REGRA_VALIDA_ID_EVENTO">REGRA_VALIDA_ID_EVENTO</a></td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEvento" id="1070_ideEvento">4</td>
+        <td><a href="#r_1070_ideEvento">ideEvento</a></td>
+        <td><a href="#r_1070">evtTabProcesso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEvento_tpAmb" id="1070_ideEvento_tpAmb">
+            5
+        </td>
+        <td>tpAmb</td>
+        <td><a href="#r_1070_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Identificação do ambiente.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Produção<br>
+            <strong>2</strong> - Produção restrita<br>
+            <strong>7</strong> - Validação (uso interno)<br>
+            <strong>8</strong> - Teste (uso interno)<br>
+            <strong>9</strong> - Desenvolvimento (uso interno)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEvento_procEmi"
+            id="1070_ideEvento_procEmi">6
+        </td>
+        <td>procEmi</td>
+        <td><a href="#r_1070_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-2</td>
+        <td>-</td>
+        <td>Processo de emissão do evento.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Aplicativo do empregador<br>
+            <strong>2</strong> - Aplicativo governamental - Simplificado Pessoa Física<br>
+            <strong>3</strong> - Aplicativo governamental - Web Geral<br>
+            <strong>4</strong> - Aplicativo governamental - Simplificado Pessoa Jurídica<br>
+            <strong>22</strong> - Aplicativo governamental para dispositivos móveis - Empregador Doméstico
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEvento_verProc"
+            id="1070_ideEvento_verProc">7
+        </td>
+        <td>verProc</td>
+        <td><a href="#r_1070_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1-20</td>
+        <td>-</td>
+        <td>Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEmpregador" id="1070_ideEmpregador">8</td>
+        <td><a href="#r_1070_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_1070">evtTabProcesso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEmpregador_tpInsc"
+            id="1070_ideEmpregador_tpInsc">9
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_1070_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_ideEmpregador_nrInsc"
+            id="1070_ideEmpregador_nrInsc">10
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_1070_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo <a
+                href="#1070_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo-choice">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso" id="1070_infoProcesso">11</td>
+        <td><a href="#r_1070_infoProcesso">infoProcesso</a></td>
+        <td><a href="#r_1070">evtTabProcesso</a></td>
+        <td>CG</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações do processo.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao"
+            id="1070_infoProcesso_inclusao">12
+        </td>
+        <td><a href="#r_1070_infoProcesso_inclusao">inclusao</a></td>
+        <td><a href="#r_1070_infoProcesso">infoProcesso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Inclusão de novas informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_ideProcesso"
+            id="1070_infoProcesso_inclusao_ideProcesso">13
+        </td>
+        <td><a href="#r_1070_infoProcesso_inclusao_ideProcesso">ideProcesso</a></td>
+        <td><a href="#r_1070_infoProcesso_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do processo e período de validade das informações.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_ideProcesso_tpProc"
+            id="1070_infoProcesso_inclusao_ideProcesso_tpProc">14
+        </td>
+        <td>tpProc</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_ideProcesso">ideProcesso</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Administrativo<br>
+            <strong>2</strong> - Judicial<br>
+            <strong>4</strong> - Processo FAP de exercício anterior a 2019
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_ideProcesso_nrProc"
+            id="1070_infoProcesso_inclusao_ideProcesso_nrProc">15
+        </td>
+        <td>nrProc</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_ideProcesso">ideProcesso</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>16, 17, 20 ou 21</td>
+        <td>-</td>
+        <td>Informar o número do processo administrativo/judicial de acordo com o tipo informado em <a
+                href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a>.<br>
+            <strong>Validação:</strong> Deve ser um número de processo válido e:<br>
+            a) Se <a href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [1], deve possuir 17 (dezessete)
+            ou 21 (vinte e um) algarismos;<br>
+            b) Se <a href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [2], deve possuir 20 (vinte)
+            algarismos;<br>
+            c) Se <a href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [4], deve possuir 16 (dezesseis)
+            algarismos.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_ideProcesso_iniValid"
+            id="1070_infoProcesso_inclusao_ideProcesso_iniValid">16
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_ideProcesso">ideProcesso</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_ideProcesso_fimValid"
+            id="1070_infoProcesso_inclusao_ideProcesso_fimValid">17
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_ideProcesso">ideProcesso</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1070_infoProcesso_inclusao_ideProcesso_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_dadosProc"
+            id="1070_infoProcesso_inclusao_dadosProc">18
+        </td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc">dadosProc</a></td>
+        <td><a href="#r_1070_infoProcesso_inclusao">inclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dados do processo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_dadosProc_indAutoria"
+            id="1070_infoProcesso_inclusao_dadosProc_indAutoria">19
+        </td>
+        <td>indAutoria</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc">dadosProc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo da autoria da ação judicial.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Próprio contribuinte<br>
+            <strong>2</strong> - Outra entidade, empresa ou empregado<br>
+            <strong>Validação:</strong> Preenchimento obrigatório se <a
+                    href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [2].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_dadosProc_indMatProc"
+            id="1070_infoProcesso_inclusao_dadosProc_indMatProc">20
+        </td>
+        <td>indMatProc</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc">dadosProc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo da matéria do processo.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Exclusivamente tributária ou tributária e FGTS<br>
+            <strong>7</strong> - Exclusivamente FGTS e/ou Contribuição Social Rescisória (Lei Complementar 110/2001)
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_dadosProc_observacao"
+            id="1070_infoProcesso_inclusao_dadosProc_observacao">21
+        </td>
+        <td>observacao</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc">dadosProc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-255</td>
+        <td>-</td>
+        <td>Observações relacionadas ao processo.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_dadosProc_dadosProcJud"
+            id="1070_infoProcesso_inclusao_dadosProc_dadosProcJud">22
+        </td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_dadosProcJud">dadosProcJud</a></td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc">dadosProc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações complementares do processo judicial.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_dadosProcJud_ufVara"
+            id="1070_infoProcesso_inclusao_dadosProc_dadosProcJud_ufVara">23
+        </td>
+        <td>ufVara</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_dadosProcJud">dadosProcJud</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Identificação da Unidade da Federação - UF da Seção Judiciária.<br>
+            <strong>Valores válidos:</strong> AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI,
+            RJ, RN, RS, RO, RR, SC, SP, SE, TO
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_dadosProcJud_codMunic"
+            id="1070_infoProcesso_inclusao_dadosProc_dadosProcJud_codMunic">24
+        </td>
+        <td>codMunic</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_dadosProcJud">dadosProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o código do município, conforme tabela do IBGE.<br>
+            <strong>Validação:</strong> Deve ser um código válido e existente na tabela do IBGE.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_dadosProcJud_idVara"
+            id="1070_infoProcesso_inclusao_dadosProc_dadosProcJud_idVara">25
+        </td>
+        <td>idVara</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_dadosProcJud">dadosProcJud</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-4</td>
+        <td>-</td>
+        <td>Código de identificação da Vara.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_inclusao_dadosProc_infoSusp"
+            id="1070_infoProcesso_inclusao_dadosProc_infoSusp">26
+        </td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_infoSusp">infoSusp</a></td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc">dadosProc</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de suspensão de exigibilidade de tributos em virtude de processo administrativo ou judicial.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_infoSusp_codSusp"
+            id="1070_infoProcesso_inclusao_dadosProc_infoSusp_codSusp">27
+        </td>
+        <td>codSusp</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_infoSusp">infoSusp</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>-</td>
+        <td>Código do indicativo da suspensão, atribuído pelo empregador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_infoSusp_indSusp"
+            id="1070_infoProcesso_inclusao_dadosProc_infoSusp_indSusp">28
+        </td>
+        <td>indSusp</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_infoSusp">infoSusp</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Indicativo de suspensão da exigibilidade.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>01</strong> - Liminar em mandado de segurança<br>
+            <strong>02</strong> - Depósito judicial do montante integral<br>
+            <strong>03</strong> - Depósito administrativo do montante integral<br>
+            <strong>04</strong> - Antecipação de tutela<br>
+            <strong>05</strong> - Liminar em medida cautelar<br>
+            <strong>08</strong> - Sentença em mandado de segurança favorável ao contribuinte<br>
+            <strong>09</strong> - Sentença em ação ordinária favorável ao contribuinte e confirmada pelo TRF<br>
+            <strong>10</strong> - Acórdão do TRF favorável ao contribuinte<br>
+            <strong>11</strong> - Acórdão do STJ em recurso especial favorável ao contribuinte<br>
+            <strong>12</strong> - Acórdão do STF em recurso extraordinário favorável ao contribuinte<br>
+            <strong>13</strong> - Sentença 1ª instância não transitada em julgado com efeito suspensivo<br>
+            <strong>14</strong> - Contestação administrativa FAP<br>
+            <strong>90</strong> - Decisão definitiva a favor do contribuinte<br>
+            <strong>92</strong> - Sem suspensão da exigibilidade<br>
+            <strong>Validação:</strong> Se <a href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [1],
+            deve ser preenchido com [03, 14, 92].<br>
+            Se <a href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [2], deve ser preenchido com [01,
+            02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].<br>
+            Se <a href="#1070_infoProcesso_inclusao_ideProcesso_tpProc">tpProc</a> = [4], deve ser preenchido com [14].
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_infoSusp_dtDecisao"
+            id="1070_infoProcesso_inclusao_dadosProc_infoSusp_dtDecisao">29
+        </td>
+        <td>dtDecisao</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_infoSusp">infoSusp</a></td>
+        <td>E</td>
+        <td>D</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Data da decisão, sentença ou despacho administrativo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="1070_infoProcesso_inclusao_dadosProc_infoSusp_indDeposito"
+            id="1070_infoProcesso_inclusao_dadosProc_infoSusp_indDeposito">30
+        </td>
+        <td>indDeposito</td>
+        <td><a href="#r_1070_infoProcesso_inclusao_dadosProc_infoSusp">infoSusp</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Indicativo de depósito do montante integral.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>S</strong> - Sim<br>
+            <strong>N</strong> - Não<br>
+            <strong>Validação:</strong> Se <a href="#1070_infoProcesso_inclusao_dadosProc_infoSusp_indSusp">indSusp</a>
+            = [90], preencher obrigatoriamente com [N].<br>
+            Se <a href="#1070_infoProcesso_inclusao_dadosProc_infoSusp_indSusp">indSusp</a> = [02, 03] preencher
+            obrigatoriamente com [S].
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_alteracao"
+            id="1070_infoProcesso_alteracao">31
+        </td>
+        <td><a href="#r_1070_infoProcesso_alteracao">alteracao</a></td>
+        <td><a href="#r_1070_infoProcesso">infoProcesso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Alteração das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_alteracao_ideProcesso"
+            id="1070_infoProcesso_alteracao_ideProcesso">32
+        </td>
+        <td><a href="#r_1070_infoProcesso_alteracao_ideProcesso">ideProcesso</a></td>
+        <td><a href="#r_1070_infoProcesso_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do processo e período de validade das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_alteracao_dadosProc"
+            id="1070_infoProcesso_alteracao_dadosProc">33
+        </td>
+        <td><a href="#r_1070_infoProcesso_alteracao_dadosProc">dadosProc</a></td>
+        <td><a href="#r_1070_infoProcesso_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dados do processo.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_alteracao_novaValidade"
+            id="1070_infoProcesso_alteracao_novaValidade">34
+        </td>
+        <td><a href="#r_1070_infoProcesso_alteracao_novaValidade">novaValidade</a></td>
+        <td><a href="#r_1070_infoProcesso_alteracao">alteracao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informação preenchida exclusivamente em caso de alteração do período de validade das informações,
+            apresentando o novo período de validade.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_alteracao_novaValidade_iniValid"
+            id="1070_infoProcesso_alteracao_novaValidade_iniValid">35
+        </td>
+        <td>iniValid</td>
+        <td><a href="#r_1070_infoProcesso_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.<br>
+            <strong>Validação:</strong> Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade
+            deste evento para o empregador no eSocial, no formato AAAA-MM.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_alteracao_novaValidade_fimValid"
+            id="1070_infoProcesso_alteracao_novaValidade_fimValid">36
+        </td>
+        <td>fimValid</td>
+        <td><a href="#r_1070_infoProcesso_alteracao_novaValidade">novaValidade</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Preencher com o mês e ano de término da validade das informações, se houver.<br>
+            <strong>Validação:</strong> Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior
+            a <a href="#1070_infoProcesso_alteracao_novaValidade_iniValid">iniValid</a>.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_exclusao"
+            id="1070_infoProcesso_exclusao">37
+        </td>
+        <td><a href="#r_1070_infoProcesso_exclusao">exclusao</a></td>
+        <td><a href="#r_1070_infoProcesso">infoProcesso</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Exclusão das informações.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="1070_infoProcesso_exclusao_ideProcesso"
+            id="1070_infoProcesso_exclusao_ideProcesso">38
+        </td>
+        <td><a href="#r_1070_infoProcesso_exclusao_ideProcesso">ideProcesso</a></td>
+        <td><a href="#r_1070_infoProcesso_exclusao">exclusao</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do processo e período de validade das informações.</td>
+    </tr>
+    </tbody>
+</table>

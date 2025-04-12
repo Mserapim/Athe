@@ -1,0 +1,3123 @@
+[
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-salaryeffective"
+    ],
+    "created_at": "2018-10-17T14:25:52.288",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.288",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-salaryrequested"
+    ],
+    "created_at": "2018-10-17T14:25:52.369",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.369",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00400"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2014-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-gratificationcomissioned"
+    ],
+    "created_at": "2018-10-17T14:25:52.413",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.413",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-salarycommissioned"
+    ],
+    "created_at": "2018-10-17T14:25:52.498",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.498",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-06-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-gratificationfunction"
+    ],
+    "created_at": "2018-10-17T14:25:52.537",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.538",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00700"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-cumulation"
+    ],
+    "created_at": "2018-10-18T20:32:58.511",
+    "floor": null,
+    "modified_at": "2018-10-19T13:51:52.918",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": "2018-06-30",
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00800"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-aid-cumulation-grat"
+    ],
+    "created_at": "2018-10-17T14:25:52.588",
+    "floor": null,
+    "modified_at": "2018-10-18T20:32:15.220",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00800"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-indemnificationcomissioned"
+    ],
+    "created_at": "2018-10-17T14:25:52.665",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.665",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "00900"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-aid-cumulation"
+    ],
+    "created_at": "2018-10-17T14:25:52.699",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.700",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "01000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-complementsalarycommissioned"
+    ],
+    "created_at": "2018-10-17T14:25:52.766",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.766",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "01100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "71000"
+      ]
+    ],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-13thsalary"
+    ],
+    "created_at": "2018-10-17T14:25:52.875",
+    "floor": null,
+    "modified_at": "2018-12-13T13:19:39.863",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "01500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-01-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "06000"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "49900"
+      ],
+      [
+        "71000"
+      ]
+    ],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-Advance13thsalary"
+    ],
+    "created_at": "2018-10-17T14:25:52.948",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.948",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "50.000000",
+    "base_value": null,
+    "event": [
+      "01600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "0109"
+      ],
+      [
+        "01600"
+      ],
+      [
+        "01607"
+      ],
+      [
+        "01614"
+      ],
+      [
+        "0179"
+      ]
+    ],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "gfp-mpto-DevolutionAdvance13thsalary"
+    ],
+    "created_at": "2018-10-17T14:25:52.989",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:52.989",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "01602"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-rescission-13thsalary"
+    ],
+    "created_at": "2018-10-17T14:25:53.033",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.033",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "01700"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-rescission-13thsalary"
+    ],
+    "created_at": "2018-10-17T14:25:53.051",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.051",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "01702"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-substituion-complement"
+    ],
+    "created_at": "2018-10-17T14:25:53.097",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.097",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "02000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-maternitypay"
+    ],
+    "created_at": "2018-10-17T14:25:53.236",
+    "floor": null,
+    "modified_at": "2018-12-13T15:35:24.995",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "04000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-03-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "09000"
+      ],
+      [
+        "71000"
+      ]
+    ],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "gfp-mpto-additional-vacation"
+    ],
+    "created_at": "2018-10-17T14:25:53.424",
+    "floor": null,
+    "modified_at": "2018-12-13T14:28:14.408",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": "2018-08-31",
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "09000"
+      ],
+      [
+        "71000"
+      ]
+    ],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "gfp-mpto-additional-vacation-ii"
+    ],
+    "created_at": "2018-10-19T14:39:41.423",
+    "floor": null,
+    "modified_at": "2018-12-13T11:19:01.206",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-06-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-extra"
+    ],
+    "created_at": "2018-10-17T14:25:53.504",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.504",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "90000"
+      ],
+      [
+        "90200"
+      ],
+      [
+        "90500"
+      ],
+      [
+        "90501"
+      ]
+    ],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "mpto-gfp-base-calculation"
+    ],
+    "created_at": "2018-10-17T14:25:53.552",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.552",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": true,
+    "automated": true,
+    "percentage": "100.000000",
+    "base_value": null,
+    "event": [
+      "05200"
+    ],
+    "quantity": "1.000000"
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "49900"
+      ]
+    ],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-unused-vacation"
+    ],
+    "created_at": "2018-10-17T14:25:53.616",
+    "floor": null,
+    "modified_at": "2018-10-17T20:01:47.656",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": "2018-07-31",
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05300"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-08-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "49900"
+      ]
+    ],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-unused-vacation-ii"
+    ],
+    "created_at": "2018-10-17T14:25:53.629",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.629",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05300"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-01-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-additional-unused-vacation"
+    ],
+    "created_at": "2018-10-17T14:25:53.686",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.686",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05400"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-proportional-vacation"
+    ],
+    "created_at": "2018-10-17T14:25:53.737",
+    "floor": null,
+    "modified_at": "2018-10-17T20:02:32.471",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": "2018-07-31",
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-08-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-proportional-vacation-ii"
+    ],
+    "created_at": "2018-10-17T14:25:53.748",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.748",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "05500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "12.000000",
+    "calculation": [
+      "gfp-mpto-additional-proportional-vacation"
+    ],
+    "created_at": "2018-10-17T14:25:53.802",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:53.802",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "50.000000",
+    "base_value": null,
+    "event": [
+      "05600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-urv-admin-efective"
+    ],
+    "created_at": "2018-10-17T14:25:53.904",
+    "floor": null,
+    "modified_at": "2018-12-16T13:04:04.033",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "11.980000",
+    "base_value": null,
+    "event": [
+      "06000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00600"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-urv-admin-comissioned"
+    ],
+    "created_at": "2018-10-17T14:25:53.944",
+    "floor": null,
+    "modified_at": "2018-12-16T13:04:17.564",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "11.980000",
+    "base_value": null,
+    "event": [
+      "06100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00500"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-urv-admin-comissioned"
+    ],
+    "created_at": "2018-10-17T14:25:53.984",
+    "floor": null,
+    "modified_at": "2018-12-16T13:04:28.856",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "11.980000",
+    "base_value": null,
+    "event": [
+      "06200"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01100"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-urv-admin-comissioned"
+    ],
+    "created_at": "2018-10-17T14:25:54.022",
+    "floor": null,
+    "modified_at": "2018-12-16T13:04:52.824",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06300"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00700"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-urv-admin-comissioned"
+    ],
+    "created_at": "2018-10-17T14:25:54.061",
+    "floor": null,
+    "modified_at": "2018-12-16T13:15:37.311",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06400"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "04000"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-urv-admin-employee"
+    ],
+    "created_at": "2018-10-17T14:25:54.091",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.091",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2014-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-aid-daycare"
+    ],
+    "created_at": "2018-10-17T14:25:54.127",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.127",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-08-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "22.000000",
+    "calculation": [
+      "gfp-mpto-aid-supply-iii"
+    ],
+    "created_at": "2018-10-17T14:25:54.269",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.269",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06700"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "22.000000",
+    "calculation": [
+      "gfp-mpto-aid-supply"
+    ],
+    "created_at": "2018-10-17T14:25:54.223",
+    "floor": null,
+    "modified_at": "2018-10-17T20:03:25.407",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": "2017-11-30",
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06700"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "22.000000",
+    "calculation": [
+      "gfp-mpto-aid-supply-ii"
+    ],
+    "created_at": "2018-10-17T14:25:54.246",
+    "floor": null,
+    "modified_at": "2018-10-17T20:03:38.458",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": "2018-07-31",
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "06700"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-aid-special"
+    ],
+    "created_at": "2018-10-17T14:25:54.332",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.332",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": "250.00",
+    "event": [
+      "06800"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-11-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "90000"
+      ],
+      [
+        "90100"
+      ],
+      [
+        "90200"
+      ],
+      [
+        "90500"
+      ],
+      [
+        "90501"
+      ],
+      [
+        "90600"
+      ],
+      [
+        "90900"
+      ]
+    ],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "mpto-gfp-base-calculation"
+    ],
+    "created_at": "2018-10-17T14:25:54.444",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.444",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": true,
+    "automated": true,
+    "percentage": "100.000000",
+    "base_value": null,
+    "event": [
+      "07300"
+    ],
+    "quantity": "1.000000"
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "90100"
+      ],
+      [
+        "90600"
+      ],
+      [
+        "90900"
+      ]
+    ],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "mpto-gfp-base-calculation"
+    ],
+    "created_at": "2018-10-17T14:25:54.488",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.488",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": true,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "07800"
+    ],
+    "quantity": "1.000000"
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00500"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "01500"
+      ],
+      [
+        "71000"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-redutor-teto"
+    ],
+    "created_at": "2018-10-17T14:25:54.544",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.544",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "49800"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06500"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-redutor-teto"
+    ],
+    "created_at": "2018-10-17T14:25:54.613",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:54.613",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "49900"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00107"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "49900"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-plansaude-monthly-payment"
+    ],
+    "created_at": "2018-10-17T14:25:55.247",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.247",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "51000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2018-03-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "49900"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-fenasemp"
+    ],
+    "created_at": "2018-10-17T14:25:55.413",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.413",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "51900"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-05-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-fenasemp"
+    ],
+    "created_at": "2018-10-17T14:25:57.408",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:57.408",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "51906"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "49900"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "mpto-gfp-base-calculation"
+    ],
+    "created_at": "2018-10-17T14:25:55.462",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.462",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "0.500000",
+    "base_value": null,
+    "event": [
+      "52000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-basesalary"
+    ],
+    "created_at": "2018-10-17T14:25:55.801",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.801",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": "6.000000",
+    "base_value": null,
+    "event": [
+      "55000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-09-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "1.000000",
+    "calculation": [
+      "gfp-mpto-pension-employee"
+    ],
+    "created_at": "2018-10-17T14:25:55.839",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.839",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "70100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-11-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-pension-employee"
+    ],
+    "created_at": "2018-10-17T14:25:55.942",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.942",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "70500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-pension-pensioner"
+    ],
+    "created_at": "2018-10-17T14:25:55.964",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.964",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "70600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "mpto-gfp-difference"
+    ],
+    "created_at": "2018-10-17T14:25:55.980",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:55.980",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "70700"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-05-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00103"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "03000"
+      ],
+      [
+        "04900"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "09000"
+      ],
+      [
+        "49900"
+      ],
+      [
+        "70200"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-igeprev-pf"
+    ],
+    "created_at": "2018-10-17T14:25:56.075",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.075",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "90000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-11-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01400"
+      ],
+      [
+        "01500"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "07800"
+      ],
+      [
+        "49800"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-igeprev-pf"
+    ],
+    "created_at": "2018-10-17T14:25:56.157",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.157",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "90100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-07-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00103"
+      ],
+      [
+        "00130"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "04900"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "09000"
+      ],
+      [
+        "09100"
+      ],
+      [
+        "49900"
+      ],
+      [
+        "51502"
+      ],
+      [
+        "70200"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-igeprev-pp"
+    ],
+    "created_at": "2018-10-17T14:25:56.262",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.262",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "90500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01400"
+      ],
+      [
+        "01500"
+      ],
+      [
+        "01501"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "49800"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-igeprev-pp"
+    ],
+    "created_at": "2018-10-17T14:25:56.344",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.344",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "90600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-11-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00400"
+      ],
+      [
+        "01500"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-goiasprev-pf"
+    ],
+    "created_at": "2018-10-17T14:25:56.389",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.389",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "90800"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01500"
+      ],
+      [
+        "01501"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "49800"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-goiasprev-pf"
+    ],
+    "created_at": "2018-10-17T14:25:56.411",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.411",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "90900"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-04-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "0001"
+      ],
+      [
+        "0029"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "03000"
+      ],
+      [
+        "04000"
+      ],
+      [
+        "04900"
+      ],
+      [
+        "04906"
+      ],
+      [
+        "05000"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "49900"
+      ],
+      [
+        "70200"
+      ],
+      [
+        "70300"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-inss"
+    ],
+    "created_at": "2018-10-17T14:25:56.468",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.468",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "91000"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2015-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01500"
+      ],
+      [
+        "01501"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "49800"
+      ],
+      [
+        "70200"
+      ],
+      [
+        "70400"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-inss"
+    ],
+    "created_at": "2018-10-17T14:25:56.554",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.554",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "91100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-11-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "04900"
+      ]
+    ],
+    "max_quantity": "30.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-prevpalmas"
+    ],
+    "created_at": "2018-10-17T14:25:56.618",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.618",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "91500"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-12-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01500"
+      ],
+      [
+        "01501"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "01706"
+      ],
+      [
+        "49800"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-socialsecurity-prevpalmas"
+    ],
+    "created_at": "2018-10-17T14:25:56.669",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.669",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "91600"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-11-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "01500"
+      ],
+      [
+        "01501"
+      ],
+      [
+        "01502"
+      ],
+      [
+        "01506"
+      ],
+      [
+        "01700"
+      ],
+      [
+        "49800"
+      ],
+      [
+        "70100"
+      ],
+      [
+        "70400"
+      ],
+      [
+        "90100"
+      ],
+      [
+        "90600"
+      ],
+      [
+        "90900"
+      ],
+      [
+        "91100"
+      ],
+      [
+        "91600"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-irrf"
+    ],
+    "created_at": "2018-10-17T14:25:56.740",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.740",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "99100"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2017-03-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "03000"
+      ],
+      [
+        "03400"
+      ],
+      [
+        "03500"
+      ],
+      [
+        "03600"
+      ],
+      [
+        "49906"
+      ],
+      [
+        "90200"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-irrf-rra"
+    ],
+    "created_at": "2018-10-17T14:25:56.828",
+    "floor": null,
+    "modified_at": "2018-10-17T14:25:56.828",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "99200"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+},
+{
+  "fields": {
+    "ceiling": null,
+    "start_validity": "2016-10-01",
+    "modified_by": [
+      "athenas"
+    ],
+    "focuses_on": [
+      [
+        "00100"
+      ],
+      [
+        "00101"
+      ],
+      [
+        "00102"
+      ],
+      [
+        "00103"
+      ],
+      [
+        "00106"
+      ],
+      [
+        "00107"
+      ],
+      [
+        "00130"
+      ],
+      [
+        "00400"
+      ],
+      [
+        "00401"
+      ],
+      [
+        "00402"
+      ],
+      [
+        "00406"
+      ],
+      [
+        "00500"
+      ],
+      [
+        "00501"
+      ],
+      [
+        "00502"
+      ],
+      [
+        "00506"
+      ],
+      [
+        "00507"
+      ],
+      [
+        "00508"
+      ],
+      [
+        "00600"
+      ],
+      [
+        "00601"
+      ],
+      [
+        "00602"
+      ],
+      [
+        "00700"
+      ],
+      [
+        "00701"
+      ],
+      [
+        "00702"
+      ],
+      [
+        "00706"
+      ],
+      [
+        "00800"
+      ],
+      [
+        "00801"
+      ],
+      [
+        "00802"
+      ],
+      [
+        "00806"
+      ],
+      [
+        "00807"
+      ],
+      [
+        "01100"
+      ],
+      [
+        "01101"
+      ],
+      [
+        "01102"
+      ],
+      [
+        "01106"
+      ],
+      [
+        "01400"
+      ],
+      [
+        "01401"
+      ],
+      [
+        "01402"
+      ],
+      [
+        "01406"
+      ],
+      [
+        "01407"
+      ],
+      [
+        "01408"
+      ],
+      [
+        "0187"
+      ],
+      [
+        "02000"
+      ],
+      [
+        "02001"
+      ],
+      [
+        "02002"
+      ],
+      [
+        "02006"
+      ],
+      [
+        "02007"
+      ],
+      [
+        "03000"
+      ],
+      [
+        "03400"
+      ],
+      [
+        "03500"
+      ],
+      [
+        "03600"
+      ],
+      [
+        "04000"
+      ],
+      [
+        "04001"
+      ],
+      [
+        "04006"
+      ],
+      [
+        "04806"
+      ],
+      [
+        "04900"
+      ],
+      [
+        "04901"
+      ],
+      [
+        "04902"
+      ],
+      [
+        "04903"
+      ],
+      [
+        "04906"
+      ],
+      [
+        "04908"
+      ],
+      [
+        "05000"
+      ],
+      [
+        "05001"
+      ],
+      [
+        "05002"
+      ],
+      [
+        "05006"
+      ],
+      [
+        "05007"
+      ],
+      [
+        "05014"
+      ],
+      [
+        "05100"
+      ],
+      [
+        "05101"
+      ],
+      [
+        "05102"
+      ],
+      [
+        "05106"
+      ],
+      [
+        "06000"
+      ],
+      [
+        "06001"
+      ],
+      [
+        "06002"
+      ],
+      [
+        "06006"
+      ],
+      [
+        "06100"
+      ],
+      [
+        "06101"
+      ],
+      [
+        "06102"
+      ],
+      [
+        "06106"
+      ],
+      [
+        "06200"
+      ],
+      [
+        "06201"
+      ],
+      [
+        "06202"
+      ],
+      [
+        "06206"
+      ],
+      [
+        "06300"
+      ],
+      [
+        "06301"
+      ],
+      [
+        "06302"
+      ],
+      [
+        "06306"
+      ],
+      [
+        "06400"
+      ],
+      [
+        "06401"
+      ],
+      [
+        "06406"
+      ],
+      [
+        "06500"
+      ],
+      [
+        "06501"
+      ],
+      [
+        "06502"
+      ],
+      [
+        "06506"
+      ],
+      [
+        "07700"
+      ],
+      [
+        "09000"
+      ],
+      [
+        "09001"
+      ],
+      [
+        "09100"
+      ],
+      [
+        "49900"
+      ],
+      [
+        "49901"
+      ],
+      [
+        "49902"
+      ],
+      [
+        "49906"
+      ],
+      [
+        "49907"
+      ],
+      [
+        "49908"
+      ],
+      [
+        "5170"
+      ],
+      [
+        "5290"
+      ],
+      [
+        "5400"
+      ],
+      [
+        "5540"
+      ],
+      [
+        "5544"
+      ],
+      [
+        "70100"
+      ],
+      [
+        "70101"
+      ],
+      [
+        "70102"
+      ],
+      [
+        "70106"
+      ],
+      [
+        "70107"
+      ],
+      [
+        "70108"
+      ],
+      [
+        "70200"
+      ],
+      [
+        "70300"
+      ],
+      [
+        "71000"
+      ],
+      [
+        "71001"
+      ],
+      [
+        "71007"
+      ],
+      [
+        "71008"
+      ],
+      [
+        "90000"
+      ],
+      [
+        "90001"
+      ],
+      [
+        "90002"
+      ],
+      [
+        "90006"
+      ],
+      [
+        "90010"
+      ],
+      [
+        "90200"
+      ],
+      [
+        "90500"
+      ],
+      [
+        "90501"
+      ],
+      [
+        "90502"
+      ],
+      [
+        "90506"
+      ],
+      [
+        "90510"
+      ],
+      [
+        "90800"
+      ],
+      [
+        "90801"
+      ],
+      [
+        "90806"
+      ],
+      [
+        "9100"
+      ],
+      [
+        "91000"
+      ],
+      [
+        "91001"
+      ],
+      [
+        "91002"
+      ],
+      [
+        "91006"
+      ],
+      [
+        "91500"
+      ],
+      [
+        "91501"
+      ],
+      [
+        "91502"
+      ]
+    ],
+    "max_quantity": "0.000000",
+    "calculation": [
+      "gfp-mpto-irrf"
+    ],
+    "created_at": "2018-10-17T14:25:57.005",
+    "floor": null,
+    "modified_at": "2018-11-28T16:56:27.399",
+    "created_by": [
+      "athenas"
+    ],
+    "end_validity": null,
+    "inverted_calculation": false,
+    "automated": true,
+    "percentage": null,
+    "base_value": null,
+    "event": [
+      "99900"
+    ],
+    "quantity": null
+  },
+  "model": "gfp.configevent",
+  "pk": null
+}
+]

@@ -1,0 +1,170 @@
+[
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0256.png",
+    "title": "Ações",
+    "controller": "DAYOFFActivity",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "dae06712a05a442f8ff9bbd3d20e5993"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0415.png",
+    "title": "Autorização Chefe Imediato",
+    "controller": "DAYOFFAuthorization",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "56486ff30ae04a1380524e3057b34b1d"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0415.png",
+    "title": "Autorização Admin",
+    "controller": "DAYOFFAdminAuthorization",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "27861cfb152a4331a880b89e7b6e363e"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0415.png",
+    "title": "Autorização Chefe Mediato",
+    "controller": "DAYOFFMediateAuthorization",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "ff478013ce2f40cabc9a5ed5c0267a79"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0222.png",
+    "title": "Configurações",
+    "controller": "DAYOFFConfiguration",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "408a3c1604254a8f80603f45642ffc8b"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0256.png",
+    "title": "Gerenciamento Admin - Servidores/Membros",
+    "controller": "DAYOFFAcquisitionPeriodAdmin",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "413d46666eca4c56b9fcbab4ba230ee8"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0245.png",
+    "title": "Grupo",
+    "controller": "DAYOFFGroupPeriod",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "17f248fb24c94d079a452e05f249010d"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0415.png",
+    "title": "Homologação",
+    "controller": "DAYOFFHomologate",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "d37215958a4a40b18c24ffbc356f2bef"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0256.png",
+    "title": "Marcação",
+    "controller": "DAYOFFAcquisitionPeriodEmployee",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "d96813ea33c84756b98e58f7aea06ccc"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0249.png",
+    "title": "Usufrutos",
+    "controller": "DAYOFFUsufruct",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "6e86a3d36718475299f0fa4e01e714d7"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0249.png",
+    "title": "Usufrutos Servidor",
+    "controller": "DAYOFFEmployeeUsufruct",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "2b27a45116984e9897474887c3ae193a"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0573.png",
+    "title": "Vendas",
+    "controller": "DAYOFFSellActivity",
+    "application": [
+      "5c0bae66cc034d9c9e5628b9cc66a0f7"
+    ],
+    "active": true,
+    "module": "rh.dayoff",
+    "uuid": "411a87d9c4814c61a7429fe76117ba59"
+  }
+}
+]

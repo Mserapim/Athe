@@ -1,0 +1,170 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "Assessoria da DG",
+        "value": 1,
+        "cvalue": "1",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DAA",
+        "value": 2,
+        "cvalue": "2",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DEPLAN-  Executor",
+        "value": 3,
+        "cvalue": "3",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DEPLAN-  Gestor",
+        "value": 4,
+        "cvalue": "4",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "CEAF",
+        "value": 5,
+        "cvalue": "5",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "Solicitante",
+        "value": 6,
+        "cvalue": "6",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "SUB",
+        "value": 7,
+        "cvalue": "7",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "Assessoria da Sub",
+        "value": 8,
+        "cvalue": "8",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DG",
+        "value": 9,
+        "cvalue": "9",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DEFIN",
+        "value": 10,
+        "cvalue": "10",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DEFIN- Gerencia Financeira",
+        "value": 11,
+        "cvalue": "11",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "ETAPA_SOLICITACAO_VIAGEM",
+        "label": "DEFIN- Gerencia de Tomada de contas",
+        "value": 12,
+        "cvalue": "12",
+        "cache_path": "diarias.ETAPA_SOLICITACAO_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]	

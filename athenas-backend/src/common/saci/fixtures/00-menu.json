@@ -1,0 +1,73 @@
+[
+{
+    "fields": {
+        "active": true,
+        "title": "SIACMP",
+        "father": null,
+        "uuid": "2d57c5341ec847afab7b19a1bd83f61b",
+        "icon": "athenas-0638.png"
+    },
+    "model": "engine.application",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "77a9f5e16d884d91beaec3b5b1eab89b",
+        "title": "Gestor de Atendimento",
+        "module": "common.saci",
+        "application": [
+            "2d57c5341ec847afab7b19a1bd83f61b"
+        ],
+        "controller": "SACIClerkRestful",
+        "active": true,
+        "icon": "athenas-0459.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "a274d318214048cf973160eec1cf259c",
+        "title": "Configuração",
+        "module": "common.saci",
+        "application": [
+            "2d57c5341ec847afab7b19a1bd83f61b"
+        ],
+        "controller": "SACIConfiguration",
+        "active": true,
+        "icon": "athenas-0696.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "5d22d52594ce49f9b828b5404728acc7",
+        "title": "Gestor de Atendimento",
+        "module": "common.saci",
+        "application": [
+            "2d57c5341ec847afab7b19a1bd83f61b"
+        ],
+        "controller": "SACIProsecutorRestful",
+        "active": true,
+        "icon": "athenas-0830.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+},
+{
+    "fields": {
+        "uuid": "afc20c9adb3043dfa0c748ee97d59f56",
+        "title": "Gestor de Público Alvo",
+        "module": "common.saci",
+        "application": [
+            "2d57c5341ec847afab7b19a1bd83f61b"
+        ],
+        "controller": "SACITypology",
+        "active": true,
+        "icon": "athenas-0423.png"
+    },
+    "model": "engine.controller",
+    "pk": null
+}
+]

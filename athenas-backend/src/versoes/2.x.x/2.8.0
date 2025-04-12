@@ -1,0 +1,40 @@
+- 2024.4.16:
+    - CARD: ATS-3583 - MR: 802 - 1.5.5 - [Back Usuário] -Criar Api para listar os grupos de permissão filtrado por usuário
+- 2024.4.17:
+    - CARD: ATS-3331 - MR: 807 - Ordenar as ações do VDF
+- 2024.4.18:
+    - CARD: ATS-3602 - MR: 808 - Problema no filtro do gestor de faltas
+    - CARD: ATS-3605 - MR: 809 - Está sendo disparado o email para solicitações de servidores
+    - CARD: ATS-3585 - MR: 812 - Criar fixtures da estrutura de painel de controle e VDF
+    - CARD: ATS-3566 - MR: 811 - [Back usuário] - Criar APi de listagem dos usuários
+    - CARD: ATS-3532 - MR: 810 - Gestão do envio do ponto - Acrescentar o campo Data de admissão
+- 2024.4.19:
+    - CARD: ATS-3615 - MR: 814 - Adicionar o campo 'url' 
+    - CARD: ATS-3586 - MR: 815 - 1.5.7 - [Back Usuários] - Criar API para atualizar os grupos de permissão do usuário
+    - CARD: ATS-3587 - MR: 817 - 1.5.8 - [Back ] - Criar API da árvore de menus por usuário na tela de funcionalidades
+- 2024.4.23:
+    - CARD ATS-3617 - MR: 816 - modificar a api base de listagem para aceitar ordenação por campos de chave estrangeira
+    - CARD ATS-3582 - MR: 819 - 1.5.4 - [Back Atualiar Mastiff] - Criar api para chamar o job que atualiza
+    - CARD ATS-3636 - MR: 820 - 1.5.13 - [back] - Alterar API para pesquisar pelo módulo
+    - CARD ATS-3572 - MR: 818 - 1.5.13 - Criar Opções de Estagiário e Residente no recálculo de folha 
+    - CARD ATS-3573 - MR: 822 - (back) Tratar verbas de Estagiários/Residentes 
+    - CARD ATS-3569 - MR: 825 - [Back] Tratar emissão através do Athenas  
+    - CARD ATS-3578 - MR: 823 - [Back] Exibir no cabeçalho múltiplos cargos 
+    - CARD ATS-3559 - MR: 821 - 1.10.16 - [Back] - Criar Api para listar os ícones do google 
+- 2024.4.24:
+    - CARD ATS-3655 - MR: 827 - [BACK] Ajuste na api de "Grupos"
+    - CARD ATS-3657 - MR: 828 - [BACK] API para editar o grupo de menu
+- 2024.4.25:
+    - CARD ATS-3639 - MR: 824 - (back) Implementar filtragem por id do UsuarioGrupo na api /menu-configs/
+    - CARD ATS-3640 - MR: 829 - (back) Implementar validação para não permitir criar grupos de menus com mesmo nome 
+    - CARD ATS-3641 - MR: 830 - (back) Alterar rota 'grupo/menus/' 'grupo/menus-config' 
+    - CARD ATS-3665 - MR: 832 - [BACK] Criar api para exibir usuários por menu
+- 2024.4.26:
+    - CARD ATS-3579 - MR: 826 - [Back / Ext ] Criar parâmetros no modelo de beneficio
+    - CARD ATS-3580 - MR: 833 - [ Ext ] Criar tela para chamada do relatório
+    - CARD ATS-3581 - MR: 834 - [back] Criar relatório de Paridade/Integralidade 
+    - CARD ATS-3569v2 - MR: 836 - ajuste na busca das posses no relatorio da ficha financeira
+    - CARD ATS-3592 - MR: 831 - 1.6.1 - [Back BD] - Criar uma estrutura para favoritar os menus
+    - CARD ATS-3593 - MR: 831 - 1.6.2 - [Back ] - Alterar a estrutura de menus com os favoritos
+    - CARD ATS-3664 - MR: 835 - Ajuste no filtros de grupos de usuários
+    - CARD ATS-3581v2 - MR: 839 - ajuste na query do relatorio de beneficiarios 

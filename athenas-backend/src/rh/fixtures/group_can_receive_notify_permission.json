@@ -1,0 +1,15 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "afastamento-receber-notificacao",
+    "permissions": [
+      [
+        "can_receive_notify",
+        "afastamento",
+        "baselicencaafastamento"
+      ]
+    ]
+  }
+}
+]

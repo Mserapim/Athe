@@ -1,0 +1,582 @@
+<table class="table is-fullwidth is-bordered completo">
+    <tbody>
+    <tr>
+        <th class="seletor">#</th>
+        <th>Grupo/Campo</th>
+        <th>Grupo Pai</th>
+        <th>Elem.</th>
+        <th>Tipo</th>
+        <th>Ocor.</th>
+        <th>Tamanho</th>
+        <th>Dec.</th>
+        <th>Descrição</th>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_eSocial" id="5503_eSocial">1</td>
+        <td><a href="#r_5503_eSocial">eSocial</a></td>
+        <td></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>eSocial</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503" id="5503">2</td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td><a href="#r_5503_eSocial">eSocial</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Evento Informações do FGTS por Trabalhador em Processo Trabalhista.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_Id" id="5503_Id">3</td>
+        <td>Id</td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td>A</td>
+        <td>C</td>
+        <td>1</td>
+        <td>36</td>
+        <td>-</td>
+        <td>Identificação única do evento.</td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideEvento" id="5503_ideEvento">4</td>
+        <td><a href="#r_5503_ideEvento">ideEvento</a></td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do evento.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideEvento_nrRecArqBase"
+            id="5503_ideEvento_nrRecArqBase">5
+        </td>
+        <td>nrRecArqBase</td>
+        <td><a href="#r_5503_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>23</td>
+        <td>-</td>
+        <td>Preencher com o número do recibo do arquivo que deu origem ao presente arquivo de retorno.<br>
+            <strong>Validação:</strong> Deve ser um recibo de entrega válido, correspondente ao arquivo que deu origem
+            ao presente arquivo de retorno (S-2500 ou S-3500).
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideEvento_perApur"
+            id="5503_ideEvento_perApur">6
+        </td>
+        <td>perApur</td>
+        <td><a href="#r_5503_ideEvento">ideEvento</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>4 ou 7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) de referência das informações.<br>
+            <strong>Origem:</strong> mês/ano do campo <a
+                    href="#2500_infoProcesso_dadosCompl_infoProcJud_dtSent">dtSent</a> ou <a
+                    href="#2500_infoProcesso_dadosCompl_infoCCP_dtCCP">dtCCP</a> de S-2500.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideEmpregador" id="5503_ideEmpregador">7</td>
+        <td><a href="#r_5503_ideEmpregador">ideEmpregador</a></td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações de identificação do empregador ou do contribuinte que prestou a informação.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideEmpregador_tpInsc"
+            id="5503_ideEmpregador_tpInsc">8
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5503_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do empregador ou contribuinte que prestou a
+            informação, conforme <a href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>2</strong> - CPF
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideEmpregador_nrInsc"
+            id="5503_ideEmpregador_nrInsc">9
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5503_ideEmpregador">ideEmpregador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>8, 11 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do empregador ou contribuinte que prestou a informação, de acordo com o tipo
+            de inscrição indicado no campo <a href="#5503_ideEmpregador_tpInsc">ideEmpregador/tpInsc</a> e conforme
+            informado em S-1000.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideProc" id="5503_ideProc">10</td>
+        <td><a href="#r_5503_ideProc">ideProc</a></td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do processo.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideProc_origem" id="5503_ideProc_origem">11
+        </td>
+        <td>origem</td>
+        <td><a href="#r_5503_ideProc">ideProc</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Informar a origem do processo/demanda.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - Processo judicial<br>
+            <strong>2</strong> - Demanda submetida à CCP ou ao NINTER
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideProc_nrProcTrab"
+            id="5503_ideProc_nrProcTrab">12
+        </td>
+        <td>nrProcTrab</td>
+        <td><a href="#r_5503_ideProc">ideProc</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>15 ou 20</td>
+        <td>-</td>
+        <td>Número do processo trabalhista, da ata ou número de identificação da conciliação.<br>
+            <strong>Validação:</strong> a) Se o evento de origem for S-2500, retornar o campo <a
+                    href="#2500_infoProcesso_nrProcTrab">nrProcTrab</a> desse evento;<br>
+            b) Se o evento de origem for S-3500, retornar o campo <a href="#2500_infoProcesso_nrProcTrab">nrProcTrab</a>
+            do evento S-2500 objeto da exclusão.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideTrabalhador" id="5503_ideTrabalhador">13
+        </td>
+        <td><a href="#r_5503_ideTrabalhador">ideTrabalhador</a></td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Grupo que apresenta a identificação básica do trabalhador ao qual se refere o evento de retorno.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_ideTrabalhador_cpfTrab"
+            id="5503_ideTrabalhador_cpfTrab">14
+        </td>
+        <td>cpfTrab</td>
+        <td><a href="#r_5503_ideTrabalhador">ideTrabalhador</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>11</td>
+        <td>-</td>
+        <td>Preencher com o número do CPF do trabalhador.<br>
+            <strong>Validação:</strong> Deve ser um CPF constante no arquivo gerado pelo empregador no evento de origem.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS" id="5503_infoTrabFGTS">15</td>
+        <td><a href="#r_5503_infoTrabFGTS">infoTrabFGTS</a></td>
+        <td><a href="#r_5503">evtFGTSProcTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1-99</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas à matrícula e categoria do trabalhador.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS_matricula"
+            id="5503_infoTrabFGTS_matricula">16
+        </td>
+        <td>matricula</td>
+        <td><a href="#r_5503_infoTrabFGTS">infoTrabFGTS</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>0-1</td>
+        <td>1-30</td>
+        <td>-</td>
+        <td>Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no
+            Sistema de Administração de Recursos Humanos do órgão.<br>
+            <strong>Evento de origem:</strong> S-2500 ou S-3500.<br>
+            <strong>Validação:</strong> a) Se o evento de origem for S-2500, retornar a <a
+                    href="#2500_ideTrab_infoContr_matricula">matricula</a> informada nesse evento;<br>
+            b) Se o evento de origem for S-3500, retornar a matrícula informada no evento objeto da exclusão.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS_codCateg"
+            id="5503_infoTrabFGTS_codCateg">17
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_5503_infoTrabFGTS">infoTrabFGTS</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador, conforme <a href="tabelas.html#01">Tabela 01</a>.<br>
+            <strong>Evento de origem:</strong> S-2500 ou S-3500.<br>
+            <strong>Validação:</strong> Informação obrigatória e exclusiva se o campo <a
+                    href="#5503_infoTrabFGTS_matricula">matricula</a> não for informado. Além disso:<br>
+            a) Se o evento de origem for S-2500, retornar o <a href="#2500_ideTrab_infoContr_codCateg">codCateg</a>
+            informado nesse evento;<br>
+            b) Se o evento de origem for S-3500, retornar o código de categoria informado no evento objeto da exclusão.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS_categOrig"
+            id="5503_infoTrabFGTS_categOrig">18
+        </td>
+        <td>categOrig</td>
+        <td><a href="#r_5503_infoTrabFGTS">infoTrabFGTS</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente à categoria de origem do dirigente sindical ou do trabalhador
+            cedido.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#2300_infoTSVInicio_infoComplementares_infoDirigenteSindical_categOrig">infoDirigenteSindical/categOrig</a>
+            ou <a href="#2300_infoTSVInicio_infoComplementares_infoTrabCedido_categOrig">infoTrabCedido/categOrig</a> de
+            S-2300.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS_infoFGTSProcTrab"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab">19
+        </td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab">infoFGTSProcTrab</a></td>
+        <td><a href="#r_5503_infoTrabFGTS">infoTrabFGTS</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações relativas ao FGTS do processo trabalhista.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS_infoFGTSProcTrab_totalFGTS"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_totalFGTS">20
+        </td>
+        <td>totalFGTS</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab">infoFGTSProcTrab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor total de FGTS a recolher no processo trabalhista.<br>
+            <strong>Validação:</strong> Deve corresponder ao somatório dos valores retornados nos campos <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSProcTrab">dpsFGTSProcTrab</a>,
+            <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSSefip">dpsFGTSSefip</a> e <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSDecAnt">dpsFGTSDecAnt</a>
+            abaixo.<br>
+            Se o evento de origem for S-3500, retornar 0 (zero).
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)" title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab">21
+        </td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab">ideEstab</a></td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab">infoFGTSProcTrab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Identificação do estabelecimento responsável pelo pagamento ao trabalhador dos valores informados.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_tpInsc"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_tpInsc">22
+        </td>
+        <td>tpInsc</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da <a
+                href="tabelas.html#05">Tabela 05</a>.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>1</strong> - CNPJ<br>
+            <strong>3</strong> - CAEPF<br>
+            <strong>4</strong> - CNO<br>
+            <strong>Origem:</strong> campo <a href="#2500_ideTrab_infoContr_ideEstab_tpInsc">ideEstab/tpInsc</a> de
+            S-2500.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_nrInsc"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_nrInsc">23
+        </td>
+        <td>nrInsc</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab">ideEstab</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>12 ou 14</td>
+        <td>-</td>
+        <td>Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado
+            no campo acima.<br>
+            <strong>Origem:</strong> campo <a href="#2500_ideTrab_infoContr_ideEstab_nrInsc">ideEstab/nrInsc</a> de
+            S-2500.
+        </td>
+    </tr>
+    <tr class="grupo">
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">24
+        </td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab">ideEstab</a></td>
+        <td>G</td>
+        <td>-</td>
+        <td>0-N</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Informações sobre bases de cálculo e valores do FGTS por período de referência.</td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_perRef"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_perRef">25
+        </td>
+        <td>perRef</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>C</td>
+        <td>1</td>
+        <td>7</td>
+        <td>-</td>
+        <td>Informar o mês/ano (formato AAAA-MM) de referência das informações.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#2500_ideTrab_infoContr_ideEstab_infoVlr_idePeriodo_perRef">perRef</a> de S-2500.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_codCateg"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_codCateg">26
+        </td>
+        <td>codCateg</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>3</td>
+        <td>-</td>
+        <td>Preencher com o código da categoria do trabalhador, conforme <a href="tabelas.html#01">Tabela 01</a>.<br>
+            <strong>Validação:</strong> a) Se <a href="#2500_ideTrab_infoContr_indContr">indContr</a> em S-2500 = [N],
+            retornar o código informado no campo <a href="#2500_ideTrab_infoContr_codCateg">infoContr/codCateg</a> do
+            evento S-2500;<br>
+            b) Se <a href="#2500_ideTrab_infoContr_indContr">indContr</a> em S-2500 = [S]:<br>
+            b1) Se <a href="#2500_ideTrab_infoContr_indCateg">indCateg</a> em S-2500 = [N], retornar o código de
+            categoria existente no Registro de Eventos Trabalhistas - RET no último dia da competência de
+            referência;<br>
+            b2) Se <a href="#2500_ideTrab_infoContr_indCateg">indCateg</a> em S-2500 = [S] e o mês/ano de <a
+                    href="#2500_ideTrab_infoContr_mudCategAtiv_dtMudCategAtiv">dtMudCategAtiv</a> de S-2500 for maior
+            que <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_perRef">perRef</a>, retornar o código
+            de categoria existente no RET no último dia da competência de referência;<br>
+            b3) Se <a href="#2500_ideTrab_infoContr_indCateg">indCateg</a> em S-2500 = [S] e o mês/ano de <a
+                    href="#2500_ideTrab_infoContr_mudCategAtiv_dtMudCategAtiv">dtMudCategAtiv</a> de S-2500 for menor ou
+            igual a <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_perRef">perRef</a>, retornar <a
+                    href="#2500_ideTrab_infoContr_mudCategAtiv_codCateg">mudCategAtiv/codCateg</a> do evento S-2500.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">27
+        </td>
+        <td>tpValorProcTrab</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>Tipo de valor que influi na apuração do FGTS.<br>
+            <strong>Valores válidos:</strong><br>
+            <strong>71</strong> - FGTS Origem Processo Trabalhista: quando <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_codCateg">codCateg</a> = [101, 102,
+            104, 105, 106, 111, 201, 202, 301, 302, 303, 304, 306, 307, 309, 310, 312, 721] ou ([401, 410], se <a
+                    href="#5503_infoTrabFGTS_categOrig">categOrig</a> for diferente de [103, 107, 108])<br>
+            <strong>72</strong> - FGTS Origem Processo Trabalhista - Aprendiz/Contrato Verde e Amarelo: quando <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_codCateg">codCateg</a> = [103, 107,
+            108] ou ([401, 410], se <a href="#5503_infoTrabFGTS_categOrig">categOrig</a> = [103, 107, 108])<br>
+            <strong>73</strong> - FGTS Origem Processo Trabalhista - Indenização compensatória do empregado doméstico:
+            quando <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_codCateg">codCateg</a> = [104]
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSProcTrab"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSProcTrab">28
+        </td>
+        <td>remFGTSProcTrab</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo de FGTS ainda não declarada, reconhecida no processo trabalhista.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#2500_ideTrab_infoContr_ideEstab_infoVlr_idePeriodo_infoFGTS_vrBcFGTSProcTrab">vrBcFGTSProcTrab</a>
+            de S-2500.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSProcTrab"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSProcTrab">29
+        </td>
+        <td>dpsFGTSProcTrab</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor histórico do FGTS a ser depositado na conta vinculada do trabalhador sobre base reconhecida no
+            processo trabalhista.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).<br>
+            Deve corresponder à multiplicação de <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSProcTrab">remFGTSProcTrab</a>
+            pela alíquota abaixo:<br>
+            a) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [71], alíquota de 8%;<br>
+            b) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [72], alíquota de 2%;<br>
+            c) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [73], alíquota de 3,2%.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSSefip"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSSefip">30
+        </td>
+        <td>remFGTSSefip</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo declarada anteriormente em SEFIP e ainda não recolhida.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#2500_ideTrab_infoContr_ideEstab_infoVlr_idePeriodo_infoFGTS_vrBcFGTSSefip">vrBcFGTSSefip</a>
+            de S-2500.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSSefip"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSSefip">31
+        </td>
+        <td>dpsFGTSSefip</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor histórico do FGTS a ser depositado na conta vinculada do trabalhador sobre base já declarada
+            anteriormente em SEFIP.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).<br>
+            Deve corresponder à multiplicação de <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSSefip">remFGTSSefip</a> pela
+            alíquota abaixo:<br>
+            a) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [71], alíquota de 8%;<br>
+            b) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [72], alíquota de 2%;<br>
+            c) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [73], alíquota de 3,2%.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSDecAnt"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSDecAnt">32
+        </td>
+        <td>remFGTSDecAnt</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor da base de cálculo declarada anteriormente no eSocial e ainda não recolhida.<br>
+            <strong>Origem:</strong> campo <a
+                    href="#2500_ideTrab_infoContr_ideEstab_infoVlr_idePeriodo_infoFGTS_vrBcFGTSDecAnt">vrBcFGTSDecAnt</a>
+            de S-2500.
+        </td>
+    </tr>
+    <tr>
+        <td class="seletor" onclick="copiarCaminho.call(this)"
+            title="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSDecAnt"
+            id="5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_dpsFGTSDecAnt">33
+        </td>
+        <td>dpsFGTSDecAnt</td>
+        <td><a href="#r_5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef">basePerRef</a></td>
+        <td>E</td>
+        <td>N</td>
+        <td>0-1</td>
+        <td>1-14</td>
+        <td>2</td>
+        <td>Valor histórico do FGTS a ser depositado na conta vinculada do trabalhador sobre base já declarada
+            anteriormente no eSocial.<br>
+            <strong>Validação:</strong> Deve ser maior que 0 (zero).<br>
+            Deve corresponder à multiplicação de <a
+                    href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_remFGTSDecAnt">remFGTSDecAnt</a> pela
+            alíquota abaixo:<br>
+            a) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [71], alíquota de 8%;<br>
+            b) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [72], alíquota de 2%;<br>
+            c) Se <a href="#5503_infoTrabFGTS_infoFGTSProcTrab_ideEstab_basePerRef_tpValorProcTrab">tpValorProcTrab</a>
+            = [73], alíquota de 3,2%.
+        </td>
+    </tr>
+    </tbody>
+</table>

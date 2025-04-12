@@ -1,0 +1,934 @@
+[
+{
+  "fields": {
+    "type": 1,
+    "value": "778",
+    "key": "folha"
+  },
+  "model": "standard.item",
+  "pk": 1
+},
+{
+  "fields": {
+    "type": null,
+    "value": "511",
+    "key": "orgao"
+  },
+  "model": "standard.item",
+  "pk": 11
+},
+{
+  "fields": {
+    "type": null,
+    "value": "83",
+    "key": "responsavel_orgao"
+  },
+  "model": "standard.item",
+  "pk": 12
+},
+{
+  "fields": {
+    "type": null,
+    "value": "6332167500",
+    "key": "telefone_responsavel_orgao"
+  },
+  "model": "standard.item",
+  "pk": 13
+},
+{
+  "fields": {
+    "type": null,
+    "value": "77006-218",
+    "key": "cep_orgao"
+  },
+  "model": "standard.item",
+  "pk": 14
+},
+{
+  "fields": {
+    "type": null,
+    "value": "202 NORTE AV LO 4 CONJ 3 LTS 5 E 6 10",
+    "key": "endereco_orgao"
+  },
+  "model": "standard.item",
+  "pk": 15
+},
+{
+  "fields": {
+    "type": null,
+    "value": "PLANO DIRETOR NORTE",
+    "key": "bairro_orgao"
+  },
+  "model": "standard.item",
+  "pk": 16
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "complemento_orgao"
+  },
+  "model": "standard.item",
+  "pk": 17
+},
+{
+  "fields": {
+    "type": null,
+    "value": "717",
+    "key": "responsavel_gfp"
+  },
+  "model": "standard.item",
+  "pk": 18
+},
+{
+  "fields": {
+    "type": null,
+    "value": "6332167692",
+    "key": "telefone_responsavel_gfp"
+  },
+  "model": "standard.item",
+  "pk": 19
+},
+{
+  "fields": {
+    "type": null,
+    "value": "6332167565",
+    "key": "fax_gfp"
+  },
+  "model": "standard.item",
+  "pk": 20
+},
+{
+  "fields": {
+    "type": null,
+    "value": "drtfolha@mpto.mp.br",
+    "key": "email_gfp"
+  },
+  "model": "standard.item",
+  "pk": 21
+},
+{
+  "fields": {
+    "type": null,
+    "value": "MPE-TO",
+    "key": "twitter_user"
+  },
+  "model": "standard.item",
+  "pk": 22
+},
+{
+  "fields": {
+    "type": null,
+    "value": "156619759-mbGl3t0xytERTL1WB0JpSbAXY8YUvhuWtpuetOVO",
+    "key": "twitter_user_token"
+  },
+  "model": "standard.item",
+  "pk": 23
+},
+{
+  "fields": {
+    "type": null,
+    "value": "5G8j1uuH7PX33F6ZBcHSjRhi9honoqAzG5qwOW3Ic",
+    "key": "twitter_user_token_secret"
+  },
+  "model": "standard.item",
+  "pk": 24
+},
+{
+  "fields": {
+    "type": null,
+    "value": "CMS MPE-TO",
+    "key": "twitter_app"
+  },
+  "model": "standard.item",
+  "pk": 25
+},
+{
+  "fields": {
+    "type": null,
+    "value": "OfdyVgZr2VDdAEaHUV4hdw",
+    "key": "twitter_app_token"
+  },
+  "model": "standard.item",
+  "pk": 26
+},
+{
+  "fields": {
+    "type": null,
+    "value": "utrPYXbwLfTWj2POUI7ouX1stsvU1apAcfJ6GxQQ",
+    "key": "twitter_app_token_secret"
+  },
+  "model": "standard.item",
+  "pk": 27
+},
+{
+  "fields": {
+    "type": null,
+    "value": "mpeto",
+    "key": "bitly_user"
+  },
+  "model": "standard.item",
+  "pk": 28
+},
+{
+  "fields": {
+    "type": null,
+    "value": "R_a25e57734c2b432e83c545f3d0eb2c0e",
+    "key": "bitly_token"
+  },
+  "model": "standard.item",
+  "pk": 29
+},
+{
+  "fields": {
+    "type": null,
+    "value": "http://www.mpto.mp.br/web",
+    "key": "frontend"
+  },
+  "model": "standard.item",
+  "pk": 30
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1815",
+    "key": "inss"
+  },
+  "model": "standard.item",
+  "pk": 31
+},
+{
+  "fields": {
+    "type": null,
+    "value": "36.36",
+    "key": "desconto_auxilio_alimentacao"
+  },
+  "model": "standard.item",
+  "pk": 32
+},
+{
+  "fields": {
+    "type": null,
+    "value": "47",
+    "key": "workflow"
+  },
+  "model": "standard.item",
+  "pk": 33
+},
+{
+  "fields": {
+    "type": null,
+    "value": "551",
+    "key": "area"
+  },
+  "model": "standard.item",
+  "pk": 34
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15",
+    "key": "tempo_presta_conta"
+  },
+  "model": "standard.item",
+  "pk": 35
+},
+{
+  "fields": {
+    "type": null,
+    "value": "CONCESS\u00c3O DE DI\u00c1RIAS",
+    "key": "protocolo_assunto"
+  },
+  "model": "standard.item",
+  "pk": 36
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15",
+    "key": "antecedencia"
+  },
+  "model": "standard.item",
+  "pk": 37
+},
+{
+  "fields": {
+    "type": null,
+    "value": "16",
+    "key": "tipo_documento"
+  },
+  "model": "standard.item",
+  "pk": 38
+},
+{
+  "fields": {
+    "type": null,
+    "value": "101",
+    "key": "folha_principal"
+  },
+  "model": "standard.item",
+  "pk": 39
+},
+{
+  "fields": {
+    "type": null,
+    "value": "101",
+    "key": "folha_auxilio_alimentacao"
+  },
+  "model": "standard.item",
+  "pk": 40
+},
+{
+  "fields": {
+    "type": null,
+    "value": "551",
+    "key": "area_transporte"
+  },
+  "model": "standard.item",
+  "pk": 41
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[493]",
+    "key": "can_indicate_servidor"
+  },
+  "model": "standard.item",
+  "pk": 42
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[263, 264, 64, 53]",
+    "key": "ordenadores"
+  },
+  "model": "standard.item",
+  "pk": 43
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[54]",
+    "key": "direcionar_ao_diretor_geral"
+  },
+  "model": "standard.item",
+  "pk": 44
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[64]",
+    "key": "direcionar_a_chefia_de_gabinete"
+  },
+  "model": "standard.item",
+  "pk": 45
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[254]",
+    "key": "can_indicate_membro"
+  },
+  "model": "standard.item",
+  "pk": 46
+},
+{
+  "fields": {
+    "type": null,
+    "value": "90",
+    "key": "antecedencia_tramite"
+  },
+  "model": "standard.item",
+  "pk": 47
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[263, 286]",
+    "key": "dispensado_relatorio_viagem"
+  },
+  "model": "standard.item",
+  "pk": 48
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "solicitante_aguardando_avaliacao"
+  },
+  "model": "standard.item",
+  "pk": 49
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "solicitante_transferido_atendente"
+  },
+  "model": "standard.item",
+  "pk": 50
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "solicitante_garantia"
+  },
+  "model": "standard.item",
+  "pk": 51
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "solicitante_terceirizada"
+  },
+  "model": "standard.item",
+  "pk": 52
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "solicitante_viagem"
+  },
+  "model": "standard.item",
+  "pk": 53
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "atendente_transferido_atendente"
+  },
+  "model": "standard.item",
+  "pk": 54
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "atendente_apos_avaliacao"
+  },
+  "model": "standard.item",
+  "pk": 55
+},
+{
+  "fields": {
+    "type": null,
+    "value": "2",
+    "key": "situacao_novo_processo"
+  },
+  "model": "standard.item",
+  "pk": 56
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "servidor_tipo_deferimento"
+  },
+  "model": "standard.item",
+  "pk": 57
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "servidor_tipo_indeferimento"
+  },
+  "model": "standard.item",
+  "pk": 58
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "servidor_notificacao_destaque"
+  },
+  "model": "standard.item",
+  "pk": 59
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "servidor_notificacao_email_institucional"
+  },
+  "model": "standard.item",
+  "pk": 60
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "membro_tipo_deferimento"
+  },
+  "model": "standard.item",
+  "pk": 61
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "membro_tipo_indeferimento"
+  },
+  "model": "standard.item",
+  "pk": 62
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "membro_notificacao_destaque"
+  },
+  "model": "standard.item",
+  "pk": 63
+},
+{
+  "fields": {
+    "type": 2,
+    "value": "0",
+    "key": "membro_notificacao_email_institucional"
+  },
+  "model": "standard.item",
+  "pk": 64
+},
+{
+  "fields": {
+    "type": null,
+    "value": "2",
+    "key": "grupo_especie_veiculo"
+  },
+  "model": "standard.item",
+  "pk": 65
+},
+{
+  "fields": {
+    "type": null,
+    "value": "01/01/2013",
+    "key": "desconto_auxilio_alimentacao_a_partir_de"
+  },
+  "model": "standard.item",
+  "pk": 66
+},
+{
+  "fields": {
+    "type": null,
+    "value": "01/01/2015",
+    "key": "desconto_auxilio_alimentacao_ate"
+  },
+  "model": "standard.item",
+  "pk": 67
+},
+{
+  "fields": {
+    "type": null,
+    "value": "t",
+    "key": "ativa_desconto_auxilio_alimentacao"
+  },
+  "model": "standard.item",
+  "pk": 68
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15",
+    "key": "max_dias_avaliacao"
+  },
+  "model": "standard.item",
+  "pk": 79
+},
+{
+  "fields": {
+    "type": null,
+    "value": "05/05/2016",
+    "key": "deadline_debtsencumbrances"
+  },
+  "model": "standard.item",
+  "pk": 80
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15/02/2016",
+    "key": "deadline_address"
+  },
+  "model": "standard.item",
+  "pk": 81
+},
+{
+  "fields": {
+    "type": null,
+    "value": "05/05/2016",
+    "key": "deadline_property"
+  },
+  "model": "standard.item",
+  "pk": 82
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15/02/2016",
+    "key": "deadline_teaching"
+  },
+  "model": "standard.item",
+  "pk": 83
+},
+{
+  "fields": {
+    "type": null,
+    "value": "[22]",
+    "key": "autoCreateFor"
+  },
+  "model": "standard.item",
+  "pk": 84
+},
+{
+  "fields": {
+    "type": null,
+    "value": "90",
+    "key": "deadlinePreparatoryCivilInvestigation"
+  },
+  "model": "standard.item",
+  "pk": 85
+},
+{
+  "fields": {
+    "type": null,
+    "value": "553",
+    "key": "triageCenter"
+  },
+  "model": "standard.item",
+  "pk": 86
+},
+{
+  "fields": {
+    "type": null,
+    "value": "180",
+    "key": "deadlineCivilInvestigation"
+  },
+  "model": "standard.item",
+  "pk": 87
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15",
+    "key": "deadlineAppeal"
+  },
+  "model": "standard.item",
+  "pk": 88
+},
+{
+  "fields": {
+    "type": null,
+    "value": "30",
+    "key": "deadlineFactNews"
+  },
+  "model": "standard.item",
+  "pk": 89
+},
+{
+  "fields": {
+    "type": null,
+    "value": "90",
+    "key": "deadlinePreparatoryProcedure"
+  },
+  "model": "standard.item",
+  "pk": 90
+},
+{
+  "fields": {
+    "type": null,
+    "value": "7",
+    "key": "deadlineTriage"
+  },
+  "model": "standard.item",
+  "pk": 91
+},
+{
+  "fields": {
+    "type": null,
+    "value": "7",
+    "key": "deadlineAssessmentNoticeOffice"
+  },
+  "model": "standard.item",
+  "pk": 92
+},
+{
+  "fields": {
+    "type": null,
+    "value": "456",
+    "key": "csmpLocation"
+  },
+  "model": "standard.item",
+  "pk": 93
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "dilationMaxCivilInvestigation"
+  },
+  "model": "standard.item",
+  "pk": 94
+},
+{
+  "fields": {
+    "type": null,
+    "value": "286",
+    "key": "inspectorCouncil"
+  },
+  "model": "standard.item",
+  "pk": 95
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "dilationMaxFactNews"
+  },
+  "model": "standard.item",
+  "pk": 96
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "dilationMaxTriage"
+  },
+  "model": "standard.item",
+  "pk": 97
+},
+{
+  "fields": {
+    "type": null,
+    "value": "263",
+    "key": "presidentCouncil"
+  },
+  "model": "standard.item",
+  "pk": 98
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "dilationMaxPreparatoryCivilInvestigation"
+  },
+  "model": "standard.item",
+  "pk": 99
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "dilationMaxCriminalFactNews"
+  },
+  "model": "standard.item",
+  "pk": 100
+},
+{
+  "fields": {
+    "type": null,
+    "value": "",
+    "key": "dilationMaxPreparatoryProcedure"
+  },
+  "model": "standard.item",
+  "pk": 101
+},
+{
+  "fields": {
+    "type": null,
+    "value": "100001",
+    "key": "electedCouncil"
+  },
+  "model": "standard.item",
+  "pk": 102
+},
+{
+  "fields": {
+    "type": null,
+    "value": "15",
+    "key": "deadlineConvocationNotice"
+  },
+  "model": "standard.item",
+  "pk": 103
+},
+{
+  "fields": {
+    "type": null,
+    "value": "1",
+    "key": "automatic_publication"
+  },
+  "model": "standard.item",
+  "pk": 104
+},
+{
+  "fields": {
+    "type": null,
+    "value": "3",
+    "key": "deadlineDiligence"
+  },
+  "model": "standard.item",
+  "pk": 105
+},
+{
+  "fields": {
+    "application": "gfp",
+    "itens": [
+      1,
+      11,
+      12,
+      16,
+      15,
+      14,
+      17,
+      13,
+      18,
+      21,
+      19,
+      20,
+      31
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 1
+},
+{
+  "fields": {
+    "application": "cms",
+    "itens": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 2
+},
+{
+  "fields": {
+    "application": "diarias",
+    "itens": [
+      48,
+      66,
+      67,
+      68,
+      65,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      47,
+      44,
+      45,
+      46,
+      43
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 3
+},
+{
+  "fields": {
+    "application": "siatu",
+    "itens": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      79
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 4
+},
+{
+  "fields": {
+    "application": "epad",
+    "itens": [
+      56
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 5
+},
+{
+  "fields": {
+    "application": "ferias",
+    "itens": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 6
+},
+{
+  "fields": {
+    "application": "cif",
+    "itens": [
+      80,
+      81,
+      82,
+      83
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 17
+},
+{
+  "fields": {
+    "application": "ejud",
+    "itens": [
+      84,
+      94,
+      86,
+      95,
+      96,
+      87,
+      88,
+      97,
+      89,
+      98,
+      85,
+      104,
+      90,
+      91,
+      105,
+      92,
+      99,
+      93,
+      100,
+      101,
+      102,
+      103
+    ]
+  },
+  "model": "standard.configuration",
+  "pk": 18
+}
+]

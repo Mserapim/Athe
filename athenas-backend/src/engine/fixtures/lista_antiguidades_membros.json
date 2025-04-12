@@ -1,0 +1,19 @@
+[
+{
+    "model": "engine.controller",
+    "pk": 809,
+    "fields": {
+        "icon": "athenas-0248.png",
+        "title": "Lista de Antiguidades Membros",
+        "controller": "ListaAntiguidadeRestfull",
+        "application": 22,
+        "active": true,
+        "module": "rh.antiguidades",
+        "uuid": "8d003891a1f74249a0eb2e383974384c",
+        "icon_file": null,
+        "position": 9999,
+        "created_by": 9137,
+        "modified_by": 9137
+    }
+}
+]

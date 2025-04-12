@@ -1,0 +1,52 @@
+[
+{
+  "model": "engine.application",
+  "fields": {
+    "icon": "athenas-0509.png",
+    "title": "SST",
+    "active": true,
+    "father": null,
+    "uuid": "b2af86ef9f0d40a0b30b3c672bf60a19",
+    "layer": 1
+  }
+},
+{
+  "model": "engine.application",
+  "fields": {
+    "icon": "athenas-0093.png",
+    "title": "Cadastros",
+    "active": true,
+    "father": [
+      "b2af86ef9f0d40a0b30b3c672bf60a19"
+    ],
+    "uuid": "f0c9c4cf048942d88382fd852dbf25de",
+    "layer": 2
+  }
+},
+{
+  "model": "engine.application",
+  "fields": {
+    "icon": "athenas-0529.png",
+    "title": "Exposição a Risco",
+    "active": true,
+    "father": [
+      "b2af86ef9f0d40a0b30b3c672bf60a19"
+    ],
+    "uuid": "2e056ea4dd084403ad9190cb36e33fbb",
+    "layer": 2
+  }
+},
+{
+  "model": "engine.application",
+  "fields": {
+    "icon": "athenas-0374.png",
+    "title": "Parâmetros",
+    "active": true,
+    "father": [
+      "b2af86ef9f0d40a0b30b3c672bf60a19"
+    ],
+    "uuid": "3c0deddb986140289c29e2226a4307ad",
+    "layer": 2
+  }
+}
+]

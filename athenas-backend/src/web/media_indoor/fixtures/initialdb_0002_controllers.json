@@ -1,0 +1,30 @@
+[
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0671.png",
+    "title": "Cadastro de Dispositivos",
+    "controller": "MIDevice",
+    "application": [
+      "fafaf19241c043a4ae93c24ced957dfd"
+    ],
+    "active": true,
+    "module": "web.media_indoor",
+    "uuid": "ce706d4829594685804ed21dc341012d"
+  }
+},
+{
+  "model": "engine.controller",
+  "fields": {
+    "icon": "athenas-0550.png",
+    "title": "Gestor de Campanhas",
+    "controller": "MICampaignManager",
+    "application": [
+      "fafaf19241c043a4ae93c24ced957dfd"
+    ],
+    "active": true,
+    "module": "web.media_indoor",
+    "uuid": "b05a7e245dc8439f9f38984fe375b447"
+  }
+}
+]

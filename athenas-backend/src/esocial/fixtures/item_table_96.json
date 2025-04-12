@@ -1,0 +1,135 @@
+[
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "00",
+            "title": "Não é base de cálculo de contribuições devidas ao RPPS/regime militar",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "11",
+            "title": "Base de cálculo de contribuições devidas ao RPPS/regime militar",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "12",
+            "title": "Base de cálculo de contribuições devidas ao RPPS/regime militar - 13º salário",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "31",
+            "title": "Contribuição descontada do segurado e beneficiário",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "32",
+            "title": "Contribuição descontada do segurado e beneficiário - 13º salário",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "91",
+            "title": "Suspensão de incidência em decorrência de decisão judicial",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    },
+    {
+        "model": "esocial.itemtable",
+        "fields": {
+            "created_by": [
+            "athenas"
+            ],
+            "modified_by": [
+            "athenas"
+            ],
+            "created_at": "2022-08-24T08:34:08.702",
+            "modified_at": "2022-08-24T08:34:08.702",
+            "code": "92",
+            "title": "Suspensão de incidência em decorrência de decisão judicial - 13º salário",
+            "start_validity": "2009-01-01",
+            "end_validity": null,
+            "esocial_table": "96",
+            "choice": []
+        }
+    }
+]

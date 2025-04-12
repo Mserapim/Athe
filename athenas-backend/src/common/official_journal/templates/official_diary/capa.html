@@ -1,0 +1,17 @@
+<div class="page_capa">
+    <div class="extend division_bar">
+    </div>
+    <div class="body division_content mt40">
+        <h2 class="span-title-edition-capa">Edição: {{diary}} | Palmas, {{diary.signed_at|date:"l, d"}} de {{diary.signed_at|date:"F"}} de {{diary.signed_at|date:"Y"}}</h2>
+    </div>
+    <section class="extend body_content">
+        <div>
+            {% comment %} <img src="/athenas/static/common/official_journal/images/logo_banner.png" width="" height="" alt="Diário Oficial Eletrônico" /> {% endcomment %}
+            <h1>Ministério Público do Estado do Tocantins</h1>
+        </div>
+    </section>
+
+    {% block include %}
+        {% include "official_diary/footer.html" %}
+    {% endblock %}
+</div>

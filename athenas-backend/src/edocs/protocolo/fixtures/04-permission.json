@@ -1,0 +1,650 @@
+[
+{
+    "fields": {
+        "codename": "add_anexo",
+        "name": "Can add anexo",
+        "content_type": [
+            "protocolo",
+            "anexo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_anexo",
+        "name": "Can change anexo",
+        "content_type": [
+            "protocolo",
+            "anexo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_anexo",
+        "name": "Can delete anexo",
+        "content_type": [
+            "protocolo",
+            "anexo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_attachment",
+        "name": "Can add attachment",
+        "content_type": [
+            "protocolo",
+            "attachment"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_attachment",
+        "name": "Can change attachment",
+        "content_type": [
+            "protocolo",
+            "attachment"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_attachment",
+        "name": "Can delete attachment",
+        "content_type": [
+            "protocolo",
+            "attachment"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_compartilharcaixa",
+        "name": "Can add compartilhar caixa",
+        "content_type": [
+            "protocolo",
+            "compartilharcaixa"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_compartilharcaixa",
+        "name": "Can change compartilhar caixa",
+        "content_type": [
+            "protocolo",
+            "compartilharcaixa"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_compartilharcaixa",
+        "name": "Can delete compartilhar caixa",
+        "content_type": [
+            "protocolo",
+            "compartilharcaixa"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_compartilharprotocolo",
+        "name": "Can add compartilhar protocolo",
+        "content_type": [
+            "protocolo",
+            "compartilharprotocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_compartilharprotocolo",
+        "name": "Can change compartilhar protocolo",
+        "content_type": [
+            "protocolo",
+            "compartilharprotocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_compartilharprotocolo",
+        "name": "Can delete compartilhar protocolo",
+        "content_type": [
+            "protocolo",
+            "compartilharprotocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_etiqueta",
+        "name": "Can add etiqueta",
+        "content_type": [
+            "protocolo",
+            "etiqueta"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_etiqueta",
+        "name": "Can change etiqueta",
+        "content_type": [
+            "protocolo",
+            "etiqueta"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_etiqueta",
+        "name": "Can delete etiqueta",
+        "content_type": [
+            "protocolo",
+            "etiqueta"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_groupgeneralorgan",
+        "name": "Can add Grupo de Órgão Geral",
+        "content_type": [
+            "protocolo",
+            "groupgeneralorgan"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_groupgeneralorgan",
+        "name": "Can change Grupo de Órgão Geral",
+        "content_type": [
+            "protocolo",
+            "groupgeneralorgan"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_groupgeneralorgan",
+        "name": "Can delete Grupo de Órgão Geral",
+        "content_type": [
+            "protocolo",
+            "groupgeneralorgan"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "group_general_organ_admin_global_distribution",
+        "name": "Pode administrar lista de distribuição global",
+        "content_type": [
+            "protocolo",
+            "groupgeneralorgan"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_groupperson",
+        "name": "Can add Grupo de Pessoas",
+        "content_type": [
+            "protocolo",
+            "groupperson"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_groupperson",
+        "name": "Can change Grupo de Pessoas",
+        "content_type": [
+            "protocolo",
+            "groupperson"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_groupperson",
+        "name": "Can delete Grupo de Pessoas",
+        "content_type": [
+            "protocolo",
+            "groupperson"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "group_person_admin_global_distribution",
+        "name": "Pode administrar lista de distribuição global",
+        "content_type": [
+            "protocolo",
+            "groupperson"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_impressora",
+        "name": "Can add impressora",
+        "content_type": [
+            "protocolo",
+            "impressora"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_impressora",
+        "name": "Can change impressora",
+        "content_type": [
+            "protocolo",
+            "impressora"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_impressora",
+        "name": "Can delete impressora",
+        "content_type": [
+            "protocolo",
+            "impressora"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_legalsign",
+        "name": "Can add legal sign",
+        "content_type": [
+            "protocolo",
+            "legalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_legalsign",
+        "name": "Can change legal sign",
+        "content_type": [
+            "protocolo",
+            "legalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_legalsign",
+        "name": "Can delete legal sign",
+        "content_type": [
+            "protocolo",
+            "legalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_movimentacao",
+        "name": "Can add movimentacao",
+        "content_type": [
+            "protocolo",
+            "movimentacao"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_movimentacao",
+        "name": "Can change movimentacao",
+        "content_type": [
+            "protocolo",
+            "movimentacao"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_movimentacao",
+        "name": "Can delete movimentacao",
+        "content_type": [
+            "protocolo",
+            "movimentacao"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_movimentlegalsign",
+        "name": "Can add moviment legal sign",
+        "content_type": [
+            "protocolo",
+            "movimentlegalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_movimentlegalsign",
+        "name": "Can change moviment legal sign",
+        "content_type": [
+            "protocolo",
+            "movimentlegalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_movimentlegalsign",
+        "name": "Can delete moviment legal sign",
+        "content_type": [
+            "protocolo",
+            "movimentlegalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_permissaoedoc",
+        "name": "Can add permissao edoc",
+        "content_type": [
+            "protocolo",
+            "permissaoedoc"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_permissaoedoc",
+        "name": "Can change permissao edoc",
+        "content_type": [
+            "protocolo",
+            "permissaoedoc"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_permissaoedoc",
+        "name": "Can delete permissao edoc",
+        "content_type": [
+            "protocolo",
+            "permissaoedoc"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_protocollegalsign",
+        "name": "Can add protocol legal sign",
+        "content_type": [
+            "protocolo",
+            "protocollegalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_protocollegalsign",
+        "name": "Can change protocol legal sign",
+        "content_type": [
+            "protocolo",
+            "protocollegalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_protocollegalsign",
+        "name": "Can delete protocol legal sign",
+        "content_type": [
+            "protocolo",
+            "protocollegalsign"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_protocolo",
+        "name": "Can add protocolo",
+        "content_type": [
+            "protocolo",
+            "protocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_protocolo",
+        "name": "Can change protocolo",
+        "content_type": [
+            "protocolo",
+            "protocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_protocolo",
+        "name": "Can delete protocolo",
+        "content_type": [
+            "protocolo",
+            "protocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "has_general_protocol",
+        "name": "Tem protocolo geral.",
+        "content_type": [
+            "protocolo",
+            "protocolo"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_referencia",
+        "name": "Can add referencia",
+        "content_type": [
+            "protocolo",
+            "referencia"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_referencia",
+        "name": "Can change referencia",
+        "content_type": [
+            "protocolo",
+            "referencia"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_referencia",
+        "name": "Can delete referencia",
+        "content_type": [
+            "protocolo",
+            "referencia"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_tipoassunto",
+        "name": "Can add tipoassunto",
+        "content_type": [
+            "protocolo",
+            "tipoassunto"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_tipoassunto",
+        "name": "Can change tipoassunto",
+        "content_type": [
+            "protocolo",
+            "tipoassunto"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_tipoassunto",
+        "name": "Can delete tipoassunto",
+        "content_type": [
+            "protocolo",
+            "tipoassunto"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "add_tipodocumento",
+        "name": "Can add tipodocumento",
+        "content_type": [
+            "protocolo",
+            "tipodocumento"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "change_tipodocumento",
+        "name": "Can change tipodocumento",
+        "content_type": [
+            "protocolo",
+            "tipodocumento"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+},
+{
+    "fields": {
+        "codename": "delete_tipodocumento",
+        "name": "Can delete tipodocumento",
+        "content_type": [
+            "protocolo",
+            "tipodocumento"
+        ]
+    },
+    "model": "auth.permission",
+    "pk": null
+}
+]

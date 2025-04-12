@@ -1,0 +1,34 @@
+[
+{
+    "pk": 1, 
+    "model": "judicial.sectional", 
+    "fields": {
+        "county": 29, 
+        "title": "REGI\u00c3O SUL"
+    }
+},
+{
+    "pk": 2, 
+    "model": "judicial.sectional", 
+    "fields": {
+        "county": 29, 
+        "title": "REGI\u00c3O NORTE"
+    }
+},
+{
+    "pk": 3, 
+    "model": "judicial.sectional", 
+    "fields": {
+        "county": 37, 
+        "title": "CIDADE SEDE"
+    }
+},
+{
+    "pk": 4, 
+    "model": "judicial.sectional", 
+    "fields": {
+        "county": 37, 
+        "title": "CIDADES DO INTERIOR"
+    }
+}
+]

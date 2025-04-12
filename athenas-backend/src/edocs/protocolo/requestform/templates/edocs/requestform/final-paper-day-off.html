@@ -1,0 +1,70 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">
+    REQUERIMENTO CONCESSÃO PARA CONCLUSÃO<br/>DE TRABALHO DE FINAL DE CURSO
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Telefone de contato:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ contact_number }}</td></tr>
+</table>
+
+<p class="rf-paragraph-height">
+    REQUER ao Sr. Diretor-Geral da Procuradoria Geral de Justiça a concessão
+    de 10 (dez) dias para a finalização de trabalho de conclusão de curso no
+    período de <strong>{{ start_date }}</strong> a <strong>{{ end_date }}</strong>.
+</p>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Lei nº 1.818/2007 Art. 111, IV - por até dez dias consecutivos,
+                para finalização de trabalho objeto de curso de graduação,
+                especialização, mestrado ou doutorado, que seja inerente à área
+                de atuação de seu cargo, quando não forem utilizados a licença
+                prevista no art. 102 ou o afastamento de que trata o art. 108,
+                ambos desta Lei.
+            </p>
+            <p class="rf-paragraph-height">
+                - Documentos necessários: Documento emitido pela Instituição
+                de Ensino constando a necessidade de elaboração de Trabalho
+                de Conclusão de Curso no Semestre vigente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para a chefia imediata para ciência.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}

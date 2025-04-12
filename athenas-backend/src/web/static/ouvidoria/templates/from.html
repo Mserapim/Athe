@@ -1,0 +1,21 @@
+{% extends 'ouvidoria/templates/template.html' %}
+
+{% block content %}
+<h1>Manifestação</h1>
+<form method="post">
+	
+	<fieldset>
+		<legend>{{f.tipo.label}}</legend>
+		{{f.tipo}}		
+		<span class="warning">
+			IMPORTANTE! Para realizar sua manifestação não é nessário se identificar, basta escolher a opção anônimo.
+			Caso contrário tenha ciência de que será necessário informar alguns dados particulares tais como: nome, CPF ou CNPJ.
+		</span>		
+	</fieldset>	
+	<p> <input class="button" type="submit" value="Enviar"/> </p>
+</form>
+
+<script type="text/javascript">
+    $('#id_tipo_3').click();
+</script>
+{% endblock %}

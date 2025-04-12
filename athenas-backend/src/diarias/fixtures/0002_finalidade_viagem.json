@@ -1,0 +1,1108 @@
+[
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Suporte Técnico",
+        "value": 1,
+        "cvalue": "61",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Audiência",
+        "value": 2,
+        "cvalue": "64",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Simpósio",
+        "value": 3,
+        "cvalue": "67",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "esignação",
+        "value": 4,
+        "cvalue": "2",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "urso",
+        "value": 5,
+        "cvalue": "3",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "ongresso",
+        "value": 6,
+        "cvalue": "4",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "ubstituição",
+        "value": 7,
+        "cvalue": "5",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "eunião",
+        "value": 8,
+        "cvalue": "6",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Importação Base de Dados*",
+        "value": 9,
+        "cvalue": "7",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "ficina de Trabalho",
+        "value": 10,
+        "cvalue": "8",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Realizar Perícia",
+        "value": 11,
+        "cvalue": "10",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Diligência",
+        "value": 12,
+        "cvalue": "11",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Representar",
+        "value": 13,
+        "cvalue": "12",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Apoio",
+        "value": 14,
+        "cvalue": "13",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Acompanhar",
+        "value": 15,
+        "cvalue": "14",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Acompanhar/Obra",
+        "value": 16,
+        "cvalue": "15",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Fiscalizar",
+        "value": 17,
+        "cvalue": "16",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Seminário",
+        "value": 18,
+        "cvalue": "17",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Coadjuvando",
+        "value": 19,
+        "cvalue": "18",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Sindicância",
+        "value": 20,
+        "cvalue": "19",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Palestra",
+        "value": 21,
+        "cvalue": "20",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Correição",
+        "value": 22,
+        "cvalue": "21",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "GAECO",
+        "value": 23,
+        "cvalue": "22",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Visita Técnica",
+        "value": 24,
+        "cvalue": "23",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Geap",
+        "value": 25,
+        "cvalue": "24",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Planejamento",
+        "value": 26,
+        "cvalue": "25",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Comissão",
+        "value": 27,
+        "cvalue": "26",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "apoio",
+        "value": 28,
+        "cvalue": "27",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Conferência",
+        "value": 29,
+        "cvalue": "28",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Visita Institucional",
+        "value": 30,
+        "cvalue": "29",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Realizar o Cerimonial",
+        "value": 31,
+        "cvalue": "30",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Realizar Cobertura Jornalística",
+        "value": 32,
+        "cvalue": "31",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Designação e Substituição",
+        "value": 33,
+        "cvalue": "32",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Levantamento Patrimonial",
+        "value": 34,
+        "cvalue": "33",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Feira",
+        "value": 35,
+        "cvalue": "34",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Fórum",
+        "value": 36,
+        "cvalue": "35",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Auxiliar",
+        "value": 37,
+        "cvalue": "36",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Assessorar",
+        "value": 38,
+        "cvalue": "37",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Participar da Assembléia Geral",
+        "value": 39,
+        "cvalue": "39",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Participar de Audiência",
+        "value": 40,
+        "cvalue": "40",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Treinamento de Avaliação de Desempenho.",
+        "value": 41,
+        "cvalue": "41",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Certificação Digital",
+        "value": 42,
+        "cvalue": "42",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Evento Regional",
+        "value": 43,
+        "cvalue": "43",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Convocação",
+        "value": 44,
+        "cvalue": "46",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Participar de Solenidades",
+        "value": 45,
+        "cvalue": "47",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Participar de Inauguração",
+        "value": 46,
+        "cvalue": "48",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Cobertura Jornalística",
+        "value": 47,
+        "cvalue": "49",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Sessão Extraordinária",
+        "value": 48,
+        "cvalue": "50",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "sis",
+        "value": 49,
+        "cvalue": "51",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "orrecionais",
+        "value": 50,
+        "cvalue": "9",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Visita de Inspenção",
+        "value": 51,
+        "cvalue": "38",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Sessão Ordinária e Congresso Nacional",
+        "value": 52,
+        "cvalue": "45",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "ncontro",
+        "value": 53,
+        "cvalue": "1",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Realizar Auditoria",
+        "value": 54,
+        "cvalue": "44",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Reunião Ordinária",
+        "value": 55,
+        "cvalue": "53",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Sessão Ordinária",
+        "value": 56,
+        "cvalue": "54",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Grupo de Estudo",
+        "value": 57,
+        "cvalue": "55",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Agenda Institucional",
+        "value": 58,
+        "cvalue": "60",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Procedimento Administrativo Displinar",
+        "value": 59,
+        "cvalue": "69",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Segurança Institucional",
+        "value": 60,
+        "cvalue": "52",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Audiência Pública",
+        "value": 61,
+        "cvalue": "57",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "isdias",
+        "value": 62,
+        "cvalue": "59",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Tribunal do Juri",
+        "value": 63,
+        "cvalue": "63",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Instalação",
+        "value": 64,
+        "cvalue": "65",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Vistoria Técnica",
+        "value": 65,
+        "cvalue": "56",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Visita de Inspeção",
+        "value": 66,
+        "cvalue": "58",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Evento",
+        "value": 67,
+        "cvalue": "62",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Treinamento",
+        "value": 68,
+        "cvalue": "66",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Workshop",
+        "value": 69,
+        "cvalue": "68",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Estágio",
+        "value": 70,
+        "cvalue": "74",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Acompanhamento Corregedor Geral de Justica ou representantes",
+        "value": 71,
+        "cvalue": "78",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Acompanhamento Corregedor Corregedor-Geral Adjunto ou representantes",
+        "value": 72,
+        "cvalue": "79",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Acompanhamento ao Procurador Geral de Justica ou representantes",
+        "value": 73,
+        "cvalue": "80",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "vistoria",
+        "value": 74,
+        "cvalue": "72",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Responder cumulativamente",
+        "value": 75,
+        "cvalue": "73",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "NACO",
+        "value": 76,
+        "cvalue": "77",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Pós-Graduação",
+        "value": 77,
+        "cvalue": "70",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "Reunião Extraordinária",
+        "value": 78,
+        "cvalue": "71",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+},
+{
+    "model": "standard.choice",
+    "fields": {
+        "app_label": "diarias",
+        "name": "FINALIDADE_VIAGEM",
+        "label": "realizar inventário",
+        "value": 79,
+        "cvalue": "75",
+        "cache_path": "diarias.FINALIDADE_VIAGEM",
+        "description": "",
+        "order_weight": 0,
+        "active": true
+    }
+}
+]

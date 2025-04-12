@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta name="pdfkit-orientation" content="Portrait"/>
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta charset="UTF-8">
+
+  </head>
+
+  <body >
+    
+    <header>
+      <div>
+        <div>
+            <img src="data:image/png;base64,{{logo_mpmt}}" style="padding-top: 5px;padding-bottom: 15px;"  width="200px" height="60px" alt="MPMT">            
+        </div>
+        <div >
+            <h1>
+                {{ title }} Período Avaliado - {{ inicio_mes }} a {{ fim_mes }} do ano de {{ ano_referencia }}
+            </h1>
+        </div>
+      </div>
+    </header>
+    <br>
+
+    <span>
+      <p> Total Enviado: {{ total_enviado }}</p>
+      <p> Total Não enviado: {{ total_nao_eviado }}</p>
+    </span>
+    <br>
+
+    {% for item in data.relatorios %}
+    <div>
+      <p><strong>{{ forloop.counter }}. Gestor:</strong> {{item.employee.pessoa_fisica.social_name}}</p>
+      <p><strong>Descrição das Dificuldades</strong>: {{ item.dificuldades_servidores}}</p>
+      <p><strong>Medidas Adotadas</strong>: {{ item.medidas_dirimir_dificuldades_servidores}}</p>
+      <p><strong>Descrição das dificuldades e facilidades do gestor em relação à gestão do Teletrabalho no semestre avaliado</strong>: {{ item.dificuldades_facilidades_gestor}}</p>
+      <p><strong>Medidas adotas para dirimir as dificuldades apontadas</strong>: {{ item.medidas_dirimir_dificuldades_gestor}}</p>
+      <p><strong>Descrição dos resultados alcançados na unidade em função do regime de teletrabalho no semestre avaliado</strong>: {{ item.resultados_alcancados}}</p>
+      <p><strong>Sugestão de melhorias para o aperfeiçoamento do programa</strong>: {{ item.sugestoes_melhorias}}</p>
+    </div>
+    {% endfor %}
+    
+  </body>
+</html>

@@ -1,0 +1,16 @@
+[
+    {
+        "model": "standard.choice",
+        "fields": {
+            "app_label": "rh",
+            "name": "CLASSIF_EMPLOYEE_BY_POSSESSION",
+            "label": "COLABORADOR EVENTUAL",
+            "value": 27,
+            "cvalue": "COE",
+            "cache_path": "rh.CLASSIF_EMPLOYEE_BY_POSSESSION",
+            "description": "COLABORADOR EVENTUAL",
+            "order_weight": 0,
+            "active": true
+        }
+    }
+]

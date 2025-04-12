@@ -1,0 +1,392 @@
+[
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:27:27.905",
+        "created_at": "2016-04-28T10:27:27.905",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "À CLASSIFICAR",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:27:36.345",
+        "created_at": "2016-04-28T10:27:36.345",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "ADVOGADOS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:44:08.467",
+        "created_at": "2016-04-28T10:44:08.467",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "CIDADÃO NÃO-ORIENTADO",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:02.163",
+        "created_at": "2016-04-28T10:42:02.163",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "CONSUMIDORES COM INTERESSES METAINDIVIDUAIS LESADOS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:43:16.472",
+        "created_at": "2016-04-28T10:43:16.472",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADO NO REGULAR FUNCIONAMENTO DO MPE",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:37.645",
+        "created_at": "2016-04-28T10:42:37.645",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA ATUAÇÃO CRIMINAL DO MPE",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:40:17.447",
+        "created_at": "2016-04-28T10:40:17.447",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA DEFESA DO MEIO AMBIENTE E DO URBANISMO",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:40:24.718",
+        "created_at": "2016-04-28T10:40:06.410",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA DEFESA DO PATRIMÔNIO PÚBLICO E PROBIDADE ADMINISTRATIVA",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:28:31.724",
+        "created_at": "2016-04-28T10:28:31.724",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA DEFESA DOS DIREITOS DAS CRIANÇAS E ADOLESCENTES",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:39:31.169",
+        "created_at": "2016-04-28T10:39:20.537",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA DEFESA DOS DIREITOS DAS PESSOAS COM DEFICIÊNCIA",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:28:39.865",
+        "created_at": "2016-04-28T10:28:39.865",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA DEFESA DOS DIREITOS DOS IDOSOS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:41:54.053",
+        "created_at": "2016-04-28T10:41:54.053",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA DEFESA DOS DIREITOS HUMANOS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:41:26.407",
+        "created_at": "2016-04-28T10:41:26.407",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA FISCALIZAÇÃO DAS CURATELA E MASSAS FALIDAS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:41:13.577",
+        "created_at": "2016-04-28T10:41:13.577",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA FISCALIZAÇÃO DAS FUNDAÇÕES E OUTRAS ENTIDADES DE INTERESSE SOCIAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:41:43.922",
+        "created_at": "2016-04-28T10:41:43.922",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NA LISURA DO PROCESSO ELEITORAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:41:35.053",
+        "created_at": "2016-04-28T10:41:35.053",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "INTERESSADOS NO CONTROLE EXTERNO DA ATIVIDADE POLICIAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:43:51.248",
+        "created_at": "2016-04-28T10:43:51.248",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "PARTES OU INTERESSADOS EM PROCESSOS COM ATUAÇÃO COMO CUSTOS LEGIS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:46:22.514",
+        "created_at": "2016-04-28T10:46:22.514",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "PARTES OU INTERESSADOS EM PROCESSOS EM FASE EXTRAJUDICIAL-GERAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:43:41.981",
+        "created_at": "2016-04-28T10:43:41.981",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "PARTES OU INTERESSADOS NO PROCESSO JUDICIAL CRIMINAL OU ATO INFRACIONAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:24.516",
+        "created_at": "2016-04-28T10:42:24.516",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "USUÁRIOS E INTERESSADOS - SERVIÇOS DE ASSISTÊNCIA SOCIAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:17.391",
+        "created_at": "2016-04-28T10:42:17.391",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "USUÁRIOS E INTERESSADOS -  SERVIÇOS PÚBLICOS DE SAÚDE",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:10.125",
+        "created_at": "2016-04-28T10:42:10.125",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "USUÁRIOS E INTERESSADOS - SERVIÇOS PÚBLICOS EDUCACIONAIS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:46.070",
+        "created_at": "2016-04-28T10:42:46.070",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "VÍTIMAS DE ABUSO POLICIAL",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:43:05.656",
+        "created_at": "2016-04-28T10:43:05.656",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "VÍTIMAS DE VIOLAÇÃO DE DIREITOS HUMANOS",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:42:54.114",
+        "created_at": "2016-04-28T10:42:54.114",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "VÍTIMAS DE VIOLÊNCIA DE GÊNERO",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+},
+{
+    "fields": {
+        "modified_at": "2016-04-28T10:44:01.811",
+        "created_at": "2016-04-28T10:44:01.811",
+        "modified_by": [
+            "jozielcosta"
+        ],
+        "name": "VÍTIMAS OU ENVOLVIDOS EM ACIDENTES DE TRÂNSITO",
+        "created_by": [
+            "jozielcosta"
+        ]
+    },
+    "model": "saci.typology",
+    "pk": null
+}
+]

@@ -1,0 +1,1963 @@
+[
+  {
+      "model": "gfp.natureevent",
+      "pk": 1,
+      "fields": {
+          "code": "1000",
+          "title": "SAL\u00c1RIO, VENCIMENTO, SOLDO",
+          "description": "Corresponde ao sal\u00e1rio b\u00e1sico contratual do empregado contratado de acordo com a CLT e o vencimento mensal do servidor p\u00fablico e do militar",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 2,
+      "fields": {
+          "code": "1002",
+          "title": "DESCANSO SEMANAL REMUNERADO \u2013 DSR",
+          "description": "Valor correspondente a um dia de trabalho incidente sobre as verbas de natureza vari\u00e1vel, tais como: horas extras, adicional noturno, produ\u00e7\u00e3o, comiss\u00e3o, etc.",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 3,
+      "fields": {
+          "code": "1003",
+          "title": "HORAS EXTRAORDIN\u00c1RIAS",
+          "description": "Valor correspondente \u00e0 hora extraordin\u00e1ria de trabalho, acrescido de percentual de no m\u00ednimo 50%",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 4,
+      "fields": {
+          "code": "1004",
+          "title": "HORAS EXTRAORDIN\u00c1RIAS - INDENIZA\u00c7\u00c3O DE BANCO DE HORAS",
+          "description": "Valor correspondente a pagamento das horas extraordin\u00e1rias, inicialmente destinadas para o banco de horas e que n\u00e3o foram compensadas",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 5,
+      "fields": {
+          "code": "1005",
+          "title": "DIREITO DE ARENA",
+          "description": "Valores relativos a direito de arena decorrente do espet\u00e1culo, devidos ao atleta",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 6,
+      "fields": {
+          "code": "1006",
+          "title": "INTERVALOS INTRA E INTER JORNADAS N\u00c3O CONCEDIDOS",
+          "description": "Valores relativos a intervalos n\u00e3o concedidos de intra jornada ou interjornada",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 7,
+      "fields": {
+          "code": "1007",
+          "title": "LUVAS E PREMIA\u00c7\u00d5ES",
+          "description": "Valores correspondentes a pr\u00eamios e luvas, devidos ao atleta",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 8,
+      "fields": {
+          "code": "1009",
+          "title": "SAL\u00c1RIO-FAM\u00cdLIA - COMPLEMENTO",
+          "description": "Valor excedente ao do fixado pela previd\u00eancia social para o sal\u00e1rio-fam\u00edlia",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 9,
+      "fields": {
+          "code": "1010",
+          "title": "SAL\u00c1RIO IN NATURA - PAGOS EM BENS OU SERVI\u00c7OS",
+          "description": "Sal\u00e1rio in natura, tamb\u00e9m conhecido por sal\u00e1rio utilidade, correspondente a remunera\u00e7\u00f5es pagas em bens ou servi\u00e7os",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 10,
+      "fields": {
+          "code": "1011",
+          "title": "SOBREAVISO E PRONTID\u00c3O",
+          "description": "Valor correspondente a um percentual da hora normal de trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 11,
+      "fields": {
+          "code": "1020",
+          "title": "F\u00c9RIAS",
+          "description": "Valor correspondente \u00e0 remunera\u00e7\u00e3o a que faz jus na \u00e9poca da concess\u00e3o das f\u00e9rias e o adicional constitucional a que o trabalhador adquiriu direito, inclusive o adiantamento de f\u00e9rias, quando pagas antecipadamente \u2013 nessa op\u00e7\u00e3o deve ser classificado tamb\u00e9m o valor pago mensalmente ao trabalhador avulso e ao empregado com contrato de trabalho intermitente, a t\u00edtulo de f\u00e9rias",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 12,
+      "fields": {
+          "code": "1021",
+          "title": "F\u00c9RIAS - ABONO OU GRATIFICA\u00c7\u00c3O DE F\u00c9RIAS SUPERIOR A 20 DIAS",
+          "description": "Remunera\u00e7\u00e3o a t\u00edtulo de abono de f\u00e9rias, desde que excedente a 20 (vinte) dias do sal\u00e1rio e concedido em virtude de cl\u00e1usula contratual, do regulamento da empresa, de conven\u00e7\u00e3o ou acordo coletivo, como por exemplo, o art. 144 da CLT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 13,
+      "fields": {
+          "code": "1022",
+          "title": "F\u00c9RIAS - ABONO OU GRATIFICA\u00c7\u00c3O DE F\u00c9RIAS N\u00c3O EXCEDENTE A 20 DIAS",
+          "description": "Remunera\u00e7\u00e3o a t\u00edtulo de abono de f\u00e9rias, desde que n\u00e3o excedente a 20 (vinte) dias do sal\u00e1rio e concedido em virtude de cl\u00e1usula contratual, do regulamento da empresa, de conven\u00e7\u00e3o ou acordo coletivo, como por exemplo o art. 144 da CLT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 14,
+      "fields": {
+          "code": "1023",
+          "title": "F\u00c9RIAS - ABONO PECUNI\u00c1RIO",
+          "description": "Valor correspondente a convers\u00e3o em dinheiro de parte dos dias de f\u00e9rias a que o trabalhador adquiriu direito, inclusive o adicional constitucional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 15,
+      "fields": {
+          "code": "1024",
+          "title": "F\u00c9RIAS - DOBRO NA VIG\u00caNCIA DO CONTRATO",
+          "description": "Valor correspondente a remunera\u00e7\u00e3o a que faz jus na \u00e9poca da concess\u00e3o das f\u00e9rias, concedidas ap\u00f3s o prazo de concess\u00e3o, inclusive o adicional constitucional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 16,
+      "fields": {
+          "code": "1040",
+          "title": "LICEN\u00c7A-PR\u00caMIO",
+          "description": "Valor relativo a licen\u00e7a-pr\u00eamio, em decorr\u00eancia de afastamento do trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 17,
+      "fields": {
+          "code": "1041",
+          "title": "LICEN\u00c7A-PR\u00caMIO INDENIZADA",
+          "description": "Valor correspondente \u00e0 convers\u00e3o em dinheiro da licen\u00e7a-pr\u00eamio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 18,
+      "fields": {
+          "code": "1050",
+          "title": "REMUNERA\u00c7\u00c3O DE DIAS DE AFASTAMENTO",
+          "description": "Remunera\u00e7\u00e3o de dias nos quais o trabalhador esteja afastado do trabalho sem preju\u00edzo de sua remunera\u00e7\u00e3o",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 19,
+      "fields": {
+          "code": "1080",
+          "title": "STOCK OPTION",
+          "description": "Remunera\u00e7\u00e3o pelo exerc\u00edcio de op\u00e7\u00e3o de compra de a\u00e7\u00f5es da empresa",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 20,
+      "fields": {
+          "code": "1099",
+          "title": "OUTRAS VERBAS SALARIAIS",
+          "description": "Outras verbas salariais n\u00e3o previstas nos demais itens",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 21,
+      "fields": {
+          "code": "1201",
+          "title": "ADICIONAL DE FUN\u00c7\u00c3O / CARGO CONFIAN\u00c7A",
+          "description": "Adicional ou gratifica\u00e7\u00e3o concedida em virtude de cargo ou fun\u00e7\u00e3o de confian\u00e7a",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 22,
+      "fields": {
+          "code": "1202",
+          "title": "ADICIONAL DE INSALUBRIDADE",
+          "description": "Adicional por servi\u00e7os em condi\u00e7\u00f5es de insalubridade",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 23,
+      "fields": {
+          "code": "1203",
+          "title": "ADICIONAL DE PERICULOSIDADE",
+          "description": "Adicional por servi\u00e7os em condi\u00e7\u00f5es perigosas",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 24,
+      "fields": {
+          "code": "1204",
+          "title": "ADICIONAL DE TRANSFER\u00caNCIA",
+          "description": "Adicional em raz\u00e3o de transfer\u00eancia de trabalhador, enquanto durar a transfer\u00eancia",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 25,
+      "fields": {
+          "code": "1205",
+          "title": "ADICIONAL NOTURNO",
+          "description": "Adicional por trabalho em hor\u00e1rio noturno",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 26,
+      "fields": {
+          "code": "1206",
+          "title": "ADICIONAL POR TEMPO DE SERVI\u00c7O",
+          "description": "Adicional em virtude do tempo de servi\u00e7o (anu\u00eanio, quinqu\u00eanio, etc.)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 27,
+      "fields": {
+          "code": "1207",
+          "title": "COMISS\u00d5ES, PORCENTAGENS, PRODU\u00c7\u00c3O",
+          "description": "Valor correspondente a contrapresta\u00e7\u00e3o de servi\u00e7o, normalmente baseada em um percentual sobre as vendas totais desse trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 28,
+      "fields": {
+          "code": "1208",
+          "title": "GUELTAS OU GORJETAS - REPASSADAS POR FORNECEDORES OU CLIENTES",
+          "description": "Valores pagos diretamente por fornecedores a trabalhador a t\u00edtulo de incentivos de vendas (gueltas) ou por clientes a t\u00edtulo de recompensa por bons servi\u00e7os prestados (gorjetas)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 29,
+      "fields": {
+          "code": "1209",
+          "title": "GUELTAS OU GORJETAS - REPASSADAS PELO EMPREGADOR",
+          "description": "Valores pagos relativos a gueltas ou gorjetas, por meio de repasse ao empregador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 30,
+      "fields": {
+          "code": "1210",
+          "title": "GRATIFICA\u00c7\u00c3O POR ACORDO OU CONVEN\u00c7\u00c3O COLETIVA",
+          "description": "Verba estabelecida em acordo ou conven\u00e7\u00e3o coletiva de trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 31,
+      "fields": {
+          "code": "1211",
+          "title": "GRATIFICA\u00c7\u00d5ES",
+          "description": "Verba n\u00e3o estabelecida em acordo ou conven\u00e7\u00e3o coletiva, mas paga para o empregado em decorr\u00eancia de ajuste entre as partes ou por liberalidade do empregador, como por exemplo produtividade, assiduidade, etc.",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 32,
+      "fields": {
+          "code": "1212",
+          "title": "GRATIFICA\u00c7\u00d5ES OU OUTRAS VERBAS DE NATUREZA PERMANENTE",
+          "description": "\u00d3rg\u00e3o p\u00fablico - Parcelas remunerat\u00f3rias reconhecidamente inerentes \u00e0s fun\u00e7\u00f5es do cargo efetivo, cujo valor integra a remunera\u00e7\u00e3o do cargo efetivo",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 33,
+      "fields": {
+          "code": "1213",
+          "title": "GRATIFICA\u00c7\u00d5ES OU OUTRAS VERBAS DE NATUREZA TRANSIT\u00d3RIA",
+          "description": "\u00d3rg\u00e3o p\u00fablico - Parcelas remunerat\u00f3rias vinculadas \u00e0 atividade cujo recebimento dependa de avalia\u00e7\u00e3o de desempenho ou determinadas condi\u00e7\u00f5es",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 34,
+      "fields": {
+          "code": "1214",
+          "title": "ADICIONAL DE PENOSIDADE",
+          "description": "Adicional pela realiza\u00e7\u00e3o de atividade \u00e1rdua que exija do trabalhador esfor\u00e7o, aten\u00e7\u00e3o ou vigil\u00e2ncia acima do comum",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 35,
+      "fields": {
+          "code": "1215",
+          "title": "ADICIONAL DE UNIDOC\u00caNCIA",
+          "description": "Adicional de unidoc\u00eancia para professores de 1a a 4a s\u00e9rie",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 36,
+      "fields": {
+          "code": "1225",
+          "title": "QUEBRA DE CAIXA",
+          "description": "Valor destinado a cobrir os riscos assumidos por quem trabalha com manuseio de valores, para compensar eventuais descontos ou diferen\u00e7as de numer\u00e1rios",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 37,
+      "fields": {
+          "code": "1230",
+          "title": "REMUNERA\u00c7\u00c3O DO DIRIGENTE SINDICAL",
+          "description": "Remunera\u00e7\u00e3o paga ao trabalhador afastado, durante o exerc\u00edcio da atividade sindical",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 38,
+      "fields": {
+          "code": "1299",
+          "title": "OUTROS ADICIONAIS",
+          "description": "Valores relativos a outros adicionais n\u00e3o previstos nos demais itens",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 39,
+      "fields": {
+          "code": "1300",
+          "title": "PLR - PARTICIPA\u00c7\u00c3O EM LUCROS OU RESULTADOS",
+          "description": "Valor correspondente a participa\u00e7\u00e3o em lucros ou resultados da empresa, de acordo com lei espec\u00edfica",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 40,
+      "fields": {
+          "code": "1350",
+          "title": "BOLSA DE ESTUDO - ESTAGI\u00c1RIO",
+          "description": "Valor devido ao estagi\u00e1rio em atividades pr\u00e1ticas de complementa\u00e7\u00e3o do curr\u00edculo escolar, inclusive os valores pagos a t\u00edtulo de recesso remunerado - Lei 11.788/2008",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 41,
+      "fields": {
+          "code": "1351",
+          "title": "BOLSA DE ESTUDO - M\u00c9DICO RESIDENTE",
+          "description": "Bolsa de estudo ao m\u00e9dico residente",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 42,
+      "fields": {
+          "code": "1352",
+          "title": "BOLSA DE ESTUDO OU PESQUISA",
+          "description": "Remunera\u00e7\u00e3o a professores, pesquisadores e demais profissionais com a finalidade de estudos ou pesquisa, exceto pagamentos a estagi\u00e1rio e m\u00e9dico-residente",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 43,
+      "fields": {
+          "code": "1401",
+          "title": "ABONO",
+          "description": "Qualquer abono concedido de forma espont\u00e2nea ou em virtude de acordo ou conven\u00e7\u00e3o coletiva, norma, etc.",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 44,
+      "fields": {
+          "code": "1402",
+          "title": "ABONOPIS/PASEP",
+          "description": "Abono e/ou rendimento do PIS/PASEP repassado pelo empregador ou \u00f3rg\u00e3o p\u00fablico",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 45,
+      "fields": {
+          "code": "1403",
+          "title": "ABONO LEGAL",
+          "description": "As import\u00e2ncias recebidas a t\u00edtulo de ganhos eventuais e os abonos expressamente desvinculados do sal\u00e1rio, por for\u00e7a da lei",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 46,
+      "fields": {
+          "code": "1404",
+          "title": "AUX\u00cdLIO BAB\u00c1",
+          "description": "Valor relativo a reembolso de despesas com bab\u00e1, limitado ao menor sal\u00e1rio de contribui\u00e7\u00e3o mensal e condicionado \u00e0 comprova\u00e7\u00e3o do registro na carteira de trabalho e previd\u00eancia social da empregada, do pagamento da remunera\u00e7\u00e3o e do recolhimento da contribui\u00e7\u00e3o previdenci\u00e1ria, pago em conformidade com a legisla\u00e7\u00e3o trabalhista, observado o limite m\u00e1ximo de 6 (seis) anos de idade da crian\u00e7a (caso haja previs\u00e3o em acordo coletivo da categoria, este limite de idade poder\u00e1 ser maior) ",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 47,
+      "fields": {
+          "code": "1405",
+          "title": "ASSIST\u00caNCIA M\u00c9DICA ",
+          "description": "Valor pago diretamente ao trabalhador a t\u00edtulo de assist\u00eancia m\u00e9dica ou odontol\u00f3gica, inclusive o reembolso de despesas com medicamentos, \u00f3culos, aparelhos ortop\u00e9dicos, despesas m\u00e9dico-hospitalares e outras similares",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 48,
+      "fields": {
+          "code": "1406",
+          "title": "AUX\u00cdLIO-CRECHE",
+          "description": "O reembolso creche pago em conformidade com a legisla\u00e7\u00e3o trabalhista, observado o limite m\u00e1ximo de 6 (seis) anos de idade da crian\u00e7a, quando devidamente comprovadas as despesas realizadas. Caso haja previs\u00e3o em acordo coletivo da categoria, este limite de idade poder\u00e1 ser maior.",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 49,
+      "fields": {
+          "code": "1407",
+          "title": "AUX\u00cdLIO-EDUCA\u00c7\u00c3O",
+          "description": "Valor relativo a plano educacional, ou bolsa de estudo, que vise \u00e0 educa\u00e7\u00e3o b\u00e1sica de trabalhadores e seus dependentes e, desde que vinculada \u00e0s atividades desenvolvidas pela empresa, \u00e0 educa\u00e7\u00e3o profissional e tecnol\u00f3gica de trabalhadores, nos termos da Lei 9.394/1996, e: 1) n\u00e3o seja utilizado em substitui\u00e7\u00e3o de parcela salarial; 2) o valor mensal do plano educacional ou bolsa de estudo, considerado individualmente, n\u00e3o ultrapasse 5% (cinco por cento) da remunera\u00e7\u00e3o do segurado a que se destina ou o valor correspondente a uma vez e meia o valor do limite m\u00ednimo mensal do sal\u00e1rio de contribui\u00e7\u00e3o, o que for maior",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 50,
+      "fields": {
+          "code": "1409",
+          "title": "SAL\u00c1RIO-FAM\u00cdLIA",
+          "description": "Valor do sal\u00e1rio-fam\u00edlia, conforme limite legal, em virtude do n\u00famero de filhos menores de 14 anos, ou inv\u00e1lidos de qualquer idade",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 51,
+      "fields": {
+          "code": "1410",
+          "title": "AUX\u00cdLIO - LOCAIS DE DIF\u00cdCIL ACESSO",
+          "description": "Valor correspondente a transporte, habita\u00e7\u00e3o e alimenta\u00e7\u00e3o fornecido ao trabalhador contratado para prestar servi\u00e7o em localidade distante da sua resid\u00eancia, em canteiro de obras ou local que, por for\u00e7a da atividade, exija deslocamento e estada",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 52,
+      "fields": {
+          "code": "1601",
+          "title": "AJUDA DE CUSTO - AERONAUTA",
+          "description": "Adicional mensal recebidos pelo aeronauta, nos termos da Lei 5.929/1973",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 53,
+      "fields": {
+          "code": "1602",
+          "title": "AJUDA DE CUSTO DE TRANSFER\u00caNCIA",
+          "description": "Ajuda de custo em parcela \u00fanica, em raz\u00e3o de transfer\u00eancia de local de trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 54,
+      "fields": {
+          "code": "1603",
+          "title": "AJUDA DE CUSTO",
+          "description": "Ajuda de custo paga ao trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 55,
+      "fields": {
+          "code": "1604",
+          "title": "AJUDA DE CUSTO - ACIMA DE 50% DA REMUNERA\u00c7\u00c3O MENSAL",
+          "description": "Ajuda de custo paga ao trabalhador, superior a 50% da sua remunera\u00e7\u00e3o mensal",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 56,
+      "fields": {
+          "code": "1620",
+          "title": "RESSARCIMENTO DE DESPESAS PELO USO DE VE\u00cdCULO PR\u00d3PRIO",
+          "description": "Ressarcimento de despesas ao trabalhador, pela utiliza\u00e7\u00e3o de ve\u00edculo de sua propriedade",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 57,
+      "fields": {
+          "code": "1621",
+          "title": "RESSARCIMENTO DE DESPESAS DE VIAGEM, EXCETO DESPESAS COM VE\u00cdCULOS",
+          "description": "Ressarcimento de despesas pagas com recursos do trabalhador em viagens a trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 58,
+      "fields": {
+          "code": "1623",
+          "title": "RESSARCIMENTO DE PROVIS\u00c3O",
+          "description": "Ressarcimento de desconto efetuado em recibos de f\u00e9rias relativo a provis\u00e3o de contribui\u00e7\u00e3o previdenci\u00e1ria",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 59,
+      "fields": {
+          "code": "1629",
+          "title": "RESSARCIMENTO DE OUTRAS DESPESAS",
+          "description": "Ressarcimento de outras despesas pagas pelo trabalhador, n\u00e3o previstas nos demais itens",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 60,
+      "fields": {
+          "code": "1650",
+          "title": "DI\u00c1RIAS DE VIAGEM",
+          "description": "Di\u00e1rias de viagem ao trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 61,
+      "fields": {
+          "code": "1801",
+          "title": "ALIMENTA\u00c7\u00c3O",
+          "description": "Aux\u00edlio-alimenta\u00e7\u00e3o",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 62,
+      "fields": {
+          "code": "1802",
+          "title": "ETAPAS (MAR\u00cdTIMOS)",
+          "description": "Aux\u00edlio-alimenta\u00e7\u00e3o ao trabalhador mar\u00edtimo",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 63,
+      "fields": {
+          "code": "1805",
+          "title": "MORADIA",
+          "description": "Aux\u00edlio-moradia",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 64,
+      "fields": {
+          "code": "1810",
+          "title": "TRANSPORTE",
+          "description": "Aux\u00edlio-transporte",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 65,
+      "fields": {
+          "code": "2501",
+          "title": "PR\u00caMIOS",
+          "description": "Liberalidades concedidas pelo empregador em forma de bens, servi\u00e7os ou valor em dinheiro a empregado ou a grupo de empregados, em raz\u00e3o de desempenho superior ao ordinariamente esperado no exerc\u00edcio de suas atividades",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 66,
+      "fields": {
+          "code": "2502",
+          "title": "LIBERALIDADES CONCEDIDAS EM MAIS DE DUAS PARCELAS ANUAIS",
+          "description": "Liberalidades concedidas pelo empregador em forma de bens, servi\u00e7os ou valor em dinheiro a empregado ou a grupo de empregados, em raz\u00e3o de desempenho superior ao ordinariamente esperado no exerc\u00edcio de suas atividades, em mais de duas parcelas anuais",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 67,
+      "fields": {
+          "code": "2510",
+          "title": "DIREITOS AUTORAIS E INTELECTUAIS",
+          "description": "Valor correspondente a participa\u00e7\u00e3o em produ\u00e7\u00e3o cient\u00edfica, intelectual ou art\u00edstica",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 68,
+      "fields": {
+          "code": "2801",
+          "title": "QUARENTENA REMUNERADA",
+          "description": "Valor equivalente a remunera\u00e7\u00e3o se em exerc\u00edcio estivesse, devida ao trabalhador desligado, em per\u00edodo de quarentena",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 69,
+      "fields": {
+          "code": "2901",
+          "title": "EMPR\u00c9STIMOS",
+          "description": "Empr\u00e9stimos ao trabalhador para posterior desconto",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 70,
+      "fields": {
+          "code": "2902",
+          "title": "VESTU\u00c1RIO E EQUIPAMENTOS",
+          "description": "Valor correspondente a vestu\u00e1rios, equipamentos e outros acess\u00f3rios fornecidos ao trabalhador e utilizados no local de trabalho para presta\u00e7\u00e3o dos respectivos servi\u00e7os",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 71,
+      "fields": {
+          "code": "2920",
+          "title": "REEMBOLSOS DIVERSOS",
+          "description": "Valor relativo a reembolsos diversos referentes a descontos indevidos efetuados em compet\u00eancias anteriores",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 72,
+      "fields": {
+          "code": "2930",
+          "title": "INSUFICI\u00caNCIA DE SALDO",
+          "description": "Valor lan\u00e7ado em folha de pagamento para cobertura de excesso de descontos em rela\u00e7\u00e3o a vencimentos, tanto o valor do vencimento no m\u00eas em que houver a insufici\u00eancia de saldo, como o respectivo desconto no(s) m\u00eas(es) posteriores",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 73,
+      "fields": {
+          "code": "2999",
+          "title": "ARREDONDAMENTOS",
+          "description": "Valor lan\u00e7ado em folha de pagamento, n\u00e3o superior a 99 centavos, relativo a arrendamentos",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 74,
+      "fields": {
+          "code": "3501",
+          "title": "REMUNERA\u00c7\u00c3O POR PRESTA\u00c7\u00c3O DE SERVI\u00c7OS",
+          "description": "Remunera\u00e7\u00e3o (inclusive adiantamentos) a contribuintes individuais, inclusive honor\u00e1rios, em trabalhos de natureza eventual e sem v\u00ednculo trabalhista",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 75,
+      "fields": {
+          "code": "3505",
+          "title": "RETIRADAS (PR\u00d3-LABORE) DE DIRETORES EMPREGADOS",
+          "description": "Pr\u00f3-labore ou retirada (remunera\u00e7\u00e3o) a diretores empregados (CLT)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 76,
+      "fields": {
+          "code": "3506",
+          "title": "RETIRADAS (PR\u00d3-LABORE) DE DIRETORES N\u00c3O EMPREGADOS",
+          "description": "Pr\u00f3-labore ou retirada (remunera\u00e7\u00e3o) a diretores n\u00e3o empregados",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 77,
+      "fields": {
+          "code": "3508",
+          "title": "RETIRADAS (PR\u00d3-LABORE) DE PROPRIET\u00c1RIOS OU S\u00d3CIOS",
+          "description": "Pr\u00f3-labore ou retirada (remunera\u00e7\u00e3o) a propriet\u00e1rios ou s\u00f3cios da empresa",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 78,
+      "fields": {
+          "code": "3509",
+          "title": "HONOR\u00c1RIOS A CONSELHEIROS",
+          "description": "Valor correspondente a honor\u00e1rios pagos a membros de conselho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 79,
+      "fields": {
+          "code": "3520",
+          "title": "REMUNERA\u00c7\u00c3O DE COOPERADO",
+          "description": "Remunera\u00e7\u00e3o a cooperado vinculado a cooperativa de trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 80,
+      "fields": {
+          "code": "3525",
+          "title": "C\u00d4NGRUAS, PREBENDAS E AFINS",
+          "description": "Valores pagos a ministros de confiss\u00e3o religiosa e que independem de natureza e da quantidade do trabalho executado",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 81,
+      "fields": {
+          "code": "4010",
+          "title": "COMPLEMENTA\u00c7\u00c3O SALARIAL DE AUX\u00cdLIO-DOEN\u00c7A",
+          "description": "Complementa\u00e7\u00e3o salarial de aux\u00edlio-doen\u00e7a ao trabalhador afastado por acidente de trabalho ou por doen\u00e7a",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 82,
+      "fields": {
+          "code": "4050",
+          "title": " SAL\u00c1RIO-MATERNIDADE",
+          "description": "Remunera\u00e7\u00e3o mensal da trabalhadora empregada durante a licen\u00e7a maternidade, quando paga pelo contratante ou \u00f3rg\u00e3o p\u00fablico",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 83,
+      "fields": {
+          "code": "4051",
+          "title": "SAL\u00c1RIO-MATERNIDADE - 13\u00b0 SAL\u00c1RIO",
+          "description": "Valor correspondente ao 13\u00b0 sal\u00e1rio pago pelo contratante ou \u00f3rg\u00e3o p\u00fablico, no per\u00edodo de licen\u00e7a maternidade",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 84,
+      "fields": {
+          "code": "5001",
+          "title": " 13O SAL\u00c1RIO",
+          "description": "Valor relativo ao 13\u00b0 sal\u00e1rio de trabalhador, inclusive as m\u00e9dias de 13\u00b0 sal\u00e1rio (horas extras, adicional noturno, etc.), exceto se relativo \u00e0 primeira parcela ou se pago em rescis\u00e3o contratual \u2013 nessa op\u00e7\u00e3o deve ser classificado tamb\u00e9m o valor pago mensalmente ao trabalhador avulso e ao empregado com contrato de trabalho intermitente, a t\u00edtulo de 13\u00b0 sal\u00e1rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 85,
+      "fields": {
+          "code": "5005",
+          "title": "13\u00b0 SAL\u00c1RIO COMPLEMENTAR",
+          "description": "Valor do 13\u00b0 sal\u00e1rio complementar relativo a diferen\u00e7as apuradas n\u00e3o consideradas na folha de fechamento do 13\u00b0 sal\u00e1rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 86,
+      "fields": {
+          "code": "5501",
+          "title": "ADIANTAMENTO DE SAL\u00c1RIO",
+          "description": "Valor relativo a adiantamento, antecipa\u00e7\u00e3o ou pagamento parcial de folha de sal\u00e1rios",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 87,
+      "fields": {
+          "code": "5504",
+          "title": "13O SAL\u00c1RIO - ADIANTAMENTO",
+          "description": "Valor relativo a adiantamento do 13\u00b0 sal\u00e1rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 88,
+      "fields": {
+          "code": "5510",
+          "title": "ADIANTAMENTO DE BENEF\u00cdCIOS PREVIDENCI\u00c1RIOS",
+          "description": "Valor relativo a adiantamento de benef\u00edcios a serem pagos pela Previd\u00eancia Social Oficial",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 89,
+      "fields": {
+          "code": "6000",
+          "title": "SALDO DE SAL\u00c1RIOS NA RESCIS\u00c3O CONTRATUAL",
+          "description": "Valor correspondente aos dias trabalhados no m\u00eas da rescis\u00e3o contratual",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 90,
+      "fields": {
+          "code": "6001",
+          "title": "13O SAL\u00c1RIO RELATIVO AO AVISO PR\u00c9VIO INDENIZADO",
+          "description": "Valor correspondente ao 13\u00b0 sal\u00e1rio incidente sobre o aviso pr\u00e9vio indenizado",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 91,
+      "fields": {
+          "code": "6002",
+          "title": "13\u00b0 SAL\u00c1RIO PROPORCIONAL NA RESCIS\u00c3O",
+          "description": "Valor correspondente ao 13\u00b0 sal\u00e1rio proporcional pago na rescis\u00e3o do contrato de trabalho, exceto o pago sobre o aviso pr\u00e9vio indenizado",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 92,
+      "fields": {
+          "code": "6003",
+          "title": "INDENIZA\u00c7\u00c3O COMPENSAT\u00d3RIA DO AVISO PR\u00c9VIO",
+          "description": "Valor da maior remunera\u00e7\u00e3o do trabalhador, correspondente ao n\u00famero de dias relativo ao aviso pr\u00e9vio, calculado de acordo com o tempo de servi\u00e7o do empregado",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 93,
+      "fields": {
+          "code": "6004",
+          "title": "F\u00c9RIAS - DOBRO NA RESCIS\u00c3O",
+          "description": "Valor correspondente a remunera\u00e7\u00e3o a que faz jus a \u00e9poca da rescis\u00e3o contratual, correspondente a f\u00e9rias n\u00e3o concedidas no prazo legal, inclusive o adicional constitucional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 94,
+      "fields": {
+          "code": "6006",
+          "title": "F\u00c9RIAS PROPORCIONAIS",
+          "description": "Valor correspondente a 1/12 avos da remunera\u00e7\u00e3o a que faz jus a \u00e9poca da rescis\u00e3o contratual, fra\u00e7\u00e3o superior a 14 dias por m\u00eas de trabalho e a proje\u00e7\u00e3o do aviso pr\u00e9vio indenizado, inclusive o adicional constitucional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 95,
+      "fields": {
+          "code": "6007",
+          "title": "F\u00c9RIAS VENCIDAS NA RESCIS\u00c3O",
+          "description": "Valor correspondente a remunera\u00e7\u00e3o a que faz jus a \u00e9poca da rescis\u00e3o contratual, correspondente a f\u00e9rias vencidas, mas dentro do prazo concessivo, inclusive o adicional constitucional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 96,
+      "fields": {
+          "code": "6101",
+          "title": "INDENIZA\u00c7\u00c3O COMPENSAT\u00d3RIA - MULTA RESCIS\u00d3RIA 20 OU 40% (CF/88)",
+          "description": "Valor correspondente \u00e0 indeniza\u00e7\u00e3o por demiss\u00e3o sem justa causa, por culpa rec\u00edproca ou for\u00e7a maior (ambas reconhecidas pela Justi\u00e7a do Trabalho) ou por acordo entre empregado e empregador, quando da rescis\u00e3o do contrato de trabalho; ou correspondente \u00e0 antecipa\u00e7\u00e3o da multa rescis\u00f3ria do FGTS paga ao empregado com contrato Verde e Amarelo",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 97,
+      "fields": {
+          "code": "6102",
+          "title": "INDENIZA\u00c7\u00c3O DO ART. 9O DA LEI 7.238/1984",
+          "description": "Valor correspondente a indeniza\u00e7\u00e3o quando a dispensa ocorrer sem justa causa dentro dos trinta dias que antecedem a data base",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 98,
+      "fields": {
+          "code": "6103",
+          "title": "INDENIZA\u00c7\u00c3O DO ART. 14 DA LEI 5.889/1973",
+          "description": "Valor correspondente a indeniza\u00e7\u00e3o do tempo de servi\u00e7o ao safrista, import\u00e2ncia correspondente a 1/12 (um doze avos) do sal\u00e1rio mensal, por m\u00eas de servi\u00e7o ou fra\u00e7\u00e3o superior a 14 (quatorze) dias",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 99,
+      "fields": {
+          "code": "6104",
+          "title": "INDENIZA\u00c7\u00c3O DO ART. 479 DA CLT",
+          "description": "Valor correspondente a metade da remunera\u00e7\u00e3o devida ate o termino do contrato a prazo determinado em caso de rescis\u00e3o antecipada",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 100,
+      "fields": {
+          "code": "6105",
+          "title": "INDENIZA\u00c7\u00c3O RECEBIDA A T\u00cdTULO DE INCENTIVO A DEMISS\u00c3O",
+          "description": "Valor correspondente a incentivo a demiss\u00e3o em Programas de Demiss\u00e3o Volunt\u00e1ria - PDV",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 101,
+      "fields": {
+          "code": "6106",
+          "title": "MULTA DO ART. 477 DA CLT",
+          "description": "Valor devido ao trabalhador por atraso no pagamento de rescis\u00e3o do contrato de trabalho (art. 477 da CLT, \u00a7 8o)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 102,
+      "fields": {
+          "code": "6107",
+          "title": "INDENIZA\u00c7\u00c3O POR QUEBRA DE ESTABILIDADE",
+          "description": "Valor correspondente a indeniza\u00e7\u00e3o por desligamento durante per\u00edodo de estabilidade legal, ou estabilidade derivada de acordo ou conven\u00e7\u00e3o coletiva de trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 103,
+      "fields": {
+          "code": "6129",
+          "title": "OUTRAS MULTAS OU INDENIZA\u00c7\u00d5ES",
+          "description": "Valor correspondente a outras multas ou indeniza\u00e7\u00f5es previstas em leis ou em Instrumentos Coletivos de Trabalho, exceto as previstas nos demais itens",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 104,
+      "fields": {
+          "code": "6901",
+          "title": "DESCONTO DO AVISO PR\u00c9VIO",
+          "description": "Valor descontado do trabalhador que tenha pedido demiss\u00e3o e n\u00e3o cumpriu aviso pr\u00e9vio, total ou parcialmente",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 105,
+      "fields": {
+          "code": "6904",
+          "title": "MULTA PREVISTA NO ART. 480 DA CLT",
+          "description": "Valor descontado do empregado pela rescis\u00e3o antecipada, por iniciativa do empregado, do contrato de trabalho a termo",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 106,
+      "fields": {
+          "code": "7001",
+          "title": "PROVENTOS",
+          "description": "Valor dos proventos de Aposentadoria a servidor p\u00fablico",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 107,
+      "fields": {
+          "code": "7002",
+          "title": "PROVENTOS - PENS\u00c3O POR MORTE CIVIL",
+          "description": "Valor dos proventos por morte a benefici\u00e1rio de servidor p\u00fablico",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 108,
+      "fields": {
+          "code": "7003",
+          "title": "PROVENTOS - RESERVA",
+          "description": "Valor dos proventos a militar da reserva remunerada",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 109,
+      "fields": {
+          "code": "7004",
+          "title": "PROVENTOS - REFORMA",
+          "description": "Valor dos proventos a militar reformado",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 110,
+      "fields": {
+          "code": "7005",
+          "title": "PENS\u00c3O MILITAR",
+          "description": "Valor da pens\u00e3o a benefici\u00e1rio de militar",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 111,
+      "fields": {
+          "code": "9200",
+          "title": "DESCONTO DE ADIANTAMENTOS",
+          "description": "Valor relativo a descontos a t\u00edtulo de adiantamentos em geral, como de sal\u00e1rios e outros, exceto a 1a parcela do 13\u00b0 sal\u00e1rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 112,
+      "fields": {
+          "code": "9201",
+          "title": "CONTRIBUI\u00c7\u00c3O PREVIDENCI\u00c1RIA",
+          "description": "Desconto a t\u00edtulo de contribui\u00e7\u00e3o previdenci\u00e1ria",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 113,
+      "fields": {
+          "code": "9203",
+          "title": "IMPOSTO DE RENDA RETIDO NA FONTE",
+          "description": "Desconto a t\u00edtulo de Imposto de Renda Retido na Fonte - IRRF",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 114,
+      "fields": {
+          "code": "9205",
+          "title": "PROVIS\u00c3O DE CONTRIBUI\u00c7\u00c3O PREVIDENCI\u00c1RIA",
+          "description": "Desconto efetuado em recibos de f\u00e9rias relativo a provis\u00e3o de contribui\u00e7\u00e3o previdenci\u00e1ria",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 115,
+      "fields": {
+          "code": "9209",
+          "title": "FALTAS OU ATRASOS",
+          "description": "Desconto correspondente a faltas, atrasos no in\u00edcio da jornada de trabalho ou \u00e0 sa\u00edda antecipada do trabalhador",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 116,
+      "fields": {
+          "code": "9210",
+          "title": "DSR S/FALTAS E ATRASOS",
+          "description": "Desconto correspondente ao Descanso Semanal Remunerado - DSR, calculado sobre faltas e atrasos do trabalhador",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 117,
+      "fields": {
+          "code": "9213",
+          "title": "PENS\u00c3O ALIMENT\u00cdCIA",
+          "description": "Desconto correspondente a pens\u00e3o aliment\u00edcia sobre o sal\u00e1rio mensal, 13\u00b0 sal\u00e1rio, PLR e f\u00e9rias",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 118,
+      "fields": {
+          "code": "9214",
+          "title": "13\u00b0 SAL\u00c1RIO - DESCONTO DE ADIANTAMENTO",
+          "description": "Desconto de antecipa\u00e7\u00e3o do 13\u00b0 sal\u00e1rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 119,
+      "fields": {
+          "code": "9216",
+          "title": "DESCONTO DE VALE-TRANSPORTE",
+          "description": "Desconto do vale-transporte referente a participa\u00e7\u00e3o do trabalhador no custo ou em virtude de concess\u00e3o do benef\u00edcio em valor maior",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 120,
+      "fields": {
+          "code": "9217",
+          "title": "CONTRIBUI\u00c7\u00c3O A OUTRAS ENTIDADES E FUNDOS",
+          "description": "Desconto relativo a contribui\u00e7\u00f5es destinadas a outras entidades e fundos (Terceiros), como por exemplo, Sest, Senat, etc., devidas por algumas categorias de contribuintes individuais",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 121,
+      "fields": {
+          "code": "9218",
+          "title": "RETEN\u00c7\u00d5ES JUDICIAIS",
+          "description": "Desconto relativo a reten\u00e7\u00f5es de verbas devidas a trabalhadores por ordem judicial, exceto pens\u00e3o aliment\u00edcia ",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 122,
+      "fields": {
+          "code": "9219",
+          "title": "DESCONTO DE ASSIST\u00caNCIA M\u00c9DICA OU ODONTOL\u00d3GICA",
+          "description": "Desconto referente a participa\u00e7\u00e3o do trabalhador no custo de assist\u00eancia m\u00e9dica ou odontol\u00f3gica, ou em virtude de concess\u00e3o do benef\u00edcio em valor maior",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 123,
+      "fields": {
+          "code": "9220",
+          "title": "ALIMENTA\u00c7\u00c3O - DESCONTO",
+          "description": "Desconto referente a participa\u00e7\u00e3o do trabalhador no custo ou em virtude de concess\u00e3o do benef\u00edcio em valor maior",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 124,
+      "fields": {
+          "code": "9221",
+          "title": "DESCONTO DE F\u00c9RIAS",
+          "description": "Valor correspondente a remunera\u00e7\u00e3o (dias) de f\u00e9rias do m\u00eas corrente pago no m\u00eas anterior ou adiantamento de f\u00e9rias",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 125,
+      "fields": {
+          "code": "9222",
+          "title": "DESCONTO DE OUTROS IMPOSTOS E CONTRIBUI\u00c7\u00d5ES",
+          "description": "Desconto de outros impostos, taxas e contribui\u00e7\u00f5es, exceto Imposto de Renda Retido na Fonte, contribui\u00e7\u00e3o previdenci\u00e1ria e contribui\u00e7\u00f5es destinadas a outras entidades e fundos (Terceiros)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 126,
+      "fields": {
+          "code": "9223",
+          "title": "PREVID\u00caNCIA COMPLEMENTAR - PARTE DO EMPREGADO",
+          "description": "Desconto referente a participa\u00e7\u00e3o do trabalhador no custo ou em virtude de concess\u00e3o do benef\u00edcio em valor maior",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 127,
+      "fields": {
+          "code": "9224",
+          "title": "FAPI - PARTE DO EMPREGADO",
+          "description": "Desconto referente a participa\u00e7\u00e3o do trabalhador no custo de Fundo de Aposentadoria Programada Individual - FAPI, ou em virtude de concess\u00e3o do benef\u00edcio em valor maior",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 128,
+      "fields": {
+          "code": "9225",
+          "title": "PREVID\u00caNCIA COMPLEMENTAR - PARTE DO SERVIDOR",
+          "description": "Desconto referente a participa\u00e7\u00e3o do trabalhador no custeio de Plano de Previd\u00eancia Complementar do Servidor P\u00fablico",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 129,
+      "fields": {
+          "code": "9226",
+          "title": "DESCONTO DE F\u00c9RIAS - ABONO",
+          "description": "Desconto correspondente ao abono de f\u00e9rias pago no m\u00eas anterior ou adiantamento de f\u00e9rias",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 130,
+      "fields": {
+          "code": "9230",
+          "title": "CONTRIBUI\u00c7\u00c3O SINDICAL LABORAL",
+          "description": "Valor correspondente ao desconto da contribui\u00e7\u00e3o laboral correspondente a um dia de trabalho a t\u00edtulo de contribui\u00e7\u00e3o sindical",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 131,
+      "fields": {
+          "code": "9231",
+          "title": "CONTRIBUI\u00c7\u00c3O SINDICAL - ASSOCIATIVA",
+          "description": "Valor correspondente ao desconto referente a mensalidade sindical do trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 132,
+      "fields": {
+          "code": "9232",
+          "title": "CONTRIBUI\u00c7\u00c3O SINDICAL - ASSISTENCIAL",
+          "description": "Valor correspondente ao desconto da contribui\u00e7\u00e3o destinada ao custeio das atividades assistenciais do sindicato",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 133,
+      "fields": {
+          "code": "9233",
+          "title": "CONTRIBUI\u00c7\u00c3O SINDICAL - CONFEDERATIVA",
+          "description": "Valor correspondente ao desconto da contribui\u00e7\u00e3o destinada ao custeio do sistema confederativo",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 134,
+      "fields": {
+          "code": "9250",
+          "title": "SEGURO DE VIDA - DESCONTO",
+          "description": "Desconto referente a participa\u00e7\u00e3o do trabalhador no custo ou em virtude de concess\u00e3o do benef\u00edcio em valor maior",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 135,
+      "fields": {
+          "code": "9254",
+          "title": "EMPR\u00c9STIMOS CONSIGNADOS - DESCONTO",
+          "description": "Desconto de trabalhadores a t\u00edtulo de empr\u00e9stimos consignados, para repasse a institui\u00e7\u00e3o financeira consignat\u00e1ria",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 136,
+      "fields": {
+          "code": "9255",
+          "title": "EMPR\u00c9STIMOS DO EMPREGADOR - DESCONTO",
+          "description": "Desconto de trabalhadores a t\u00edtulo de empr\u00e9stimos efetuados pelo empregador ao trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 137,
+      "fields": {
+          "code": "9258",
+          "title": "CONV\u00caNIOS",
+          "description": "Desconto relativos a conv\u00eanios diversos com empresas para fornecimento de produtos ou servi\u00e7os ao empregado, sem pagamento imediato, mas com posterior desconto em folha de pagamento como farm\u00e1cias, supermercados, etc.",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 138,
+      "fields": {
+          "code": "9270",
+          "title": "DANOS E PREJU\u00cdZOS CAUSADOS PELO TRABALHADOR",
+          "description": "Desconto do trabalhador para reparar danos e preju\u00edzos por ele causados",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 139,
+      "fields": {
+          "code": "9290",
+          "title": "DESCONTO DE PAGAMENTO INDEVIDO EM MESES ANTERIORES",
+          "description": "Valor correspondente a desconto de verbas pagas indevidamente ao trabalhador em meses anteriores e que est\u00e3o sendo descontadas no m\u00eas de refer\u00eancia, exceto valores relativos a assist\u00eancia m\u00e9dica, alimenta\u00e7\u00e3o, previd\u00eancia complementar e seguro de vida",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 140,
+      "fields": {
+          "code": "9299",
+          "title": "OUTROS DESCONTOS",
+          "description": "Outros descontos n\u00e3o previstos nos demais itens",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 141,
+      "fields": {
+          "code": "9901",
+          "title": "BASE DE C\u00c1LCULO DA CONTRIBUI\u00c7\u00c3O PREVIDENCI\u00c1RIA",
+          "description": "Valor total da base de c\u00e1lculo da contribui\u00e7\u00e3o previdenci\u00e1ria",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 142,
+      "fields": {
+          "code": "9902",
+          "title": "TOTAL DA BASE DE C\u00c1LCULO DO FGTS",
+          "description": "Valor total da base de c\u00e1lculo do FGTS",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 143,
+      "fields": {
+          "code": "9903",
+          "title": "TOTAL DA BASE DE C\u00c1LCULO DO IRRF",
+          "description": "Valor total da base de c\u00e1lculo do Imposto de Renda Retido na Fonte",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 144,
+      "fields": {
+          "code": "9904",
+          "title": "TOTAL DA BASE DE C\u00c1LCULO DO FGTS RESCIS\u00d3RIO",
+          "description": "Valor total da base de c\u00e1lculo do FGTS rescis\u00f3rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 145,
+      "fields": {
+          "code": "9905",
+          "title": "SERVI\u00c7O MILITAR",
+          "description": "Valor n\u00e3o relativo a vencimento ou desconto, relativo \u00e0 remunera\u00e7\u00e3o a que teria direito, se em atividade, o trabalhador afastado do trabalho para presta\u00e7\u00e3o do servi\u00e7o militar obrigat\u00f3rio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 146,
+      "fields": {
+          "code": "9906",
+          "title": "REMUNERA\u00c7\u00c3O NO EXTERIOR",
+          "description": "Remunera\u00e7\u00e3o recebida no exterior por trabalhador expatriado sobre a qual incida contribui\u00e7\u00e3o previdenci\u00e1ria e/ou IRRF e/ou FGTS",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 147,
+      "fields": {
+          "code": "9908",
+          "title": "FGTS - DEP\u00d3SITO",
+          "description": "Valor do dep\u00f3sito do FGTS",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 148,
+      "fields": {
+          "code": "9910",
+          "title": "SEGUROS",
+          "description": "Valor relativo a pr\u00eamio de seguro de vida em grupo pago a empresa de seguros como benef\u00edcio do trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 149,
+      "fields": {
+          "code": "9911",
+          "title": "ASSIST\u00caNCIA M\u00c9DICA",
+          "description": "Valor n\u00e3o relativo a vencimento ou desconto, relativo \u00e0 assist\u00eancia prestada por servi\u00e7o m\u00e9dico ou odontol\u00f3gico, pr\u00f3prio da empresa ou por ela conveniado, como benef\u00edcio ao trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 150,
+      "fields": {
+          "code": "9930",
+          "title": "SAL\u00c1RIO-MATERNIDADE PAGO PELA PREVID\u00caNCIA SOCIAL",
+          "description": "Valor correspondente \u00e0 remunera\u00e7\u00e3o mensal do(a) trabalhador(a) durante a licen\u00e7a maternidade, quando paga pela Previd\u00eancia Social (RGPS ou pela Unidade Gestora do RPPS)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 151,
+      "fields": {
+          "code": "9931",
+          "title": "SAL\u00c1RIO-MATERNIDADE PAGO PELA PREVID\u00caNCIA SOCIAL - 13\u00b0 SAL\u00c1RIO",
+          "description": "Valor correspondente ao 13\u00b0 sal\u00e1rio do(a) trabalhador(a) durante a licen\u00e7a maternidade, quando pago pela Previd\u00eancia Social (RGPS ou pela Unidade Gestora do RPPS)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 152,
+      "fields": {
+          "code": "9932",
+          "title": "AUX\u00cdLIO-DOEN\u00c7A ACIDENT\u00c1RIO",
+          "description": "Valor relativo a base de c\u00e1lculo do FGTS incidente sobre benef\u00edcio previdenci\u00e1rio pago por Previd\u00eancia Social Oficial a trabalhador afastado por acidente de trabalho",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 153,
+      "fields": {
+          "code": "9933",
+          "title": "AUX\u00cdLIO-DOEN\u00c7A",
+          "description": "Valor de benef\u00edcio previdenci\u00e1rio pago por Regime Pr\u00f3prio de Previd\u00eancia Social ou valor de aux\u00edlio-doen\u00e7a dedut\u00edvel conforme Lei 13.982/2020 (Covid-19)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 154,
+      "fields": {
+          "code": "9938",
+          "title": "ISEN\u00c7\u00c3O IRRF - 65 ANOS",
+          "description": "Valor da parcela isenta dos rendimentos de aposentadoria e pens\u00e3o, transfer\u00eancia para a reserva remunerada ou reforma, pagos por \u00f3rg\u00e3o p\u00fablico de previd\u00eancia oficial ou por entidade de previd\u00eancia complementar, no caso de contribuinte com idade igual ou superior a 65 anos",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 155,
+      "fields": {
+          "code": "9939",
+          "title": "OUTROS VALORES TRIBUT\u00c1VEIS",
+          "description": "Valor n\u00e3o relativo a vencimento ou desconto mas considerado como base de c\u00e1lculo do FGTS, e/ou da contribui\u00e7\u00e3o previdenci\u00e1ria e/ou do Imposto de Renda Retido na Fonte inclusive suas dedu\u00e7\u00f5es e isen\u00e7\u00f5es",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 156,
+      "fields": {
+          "code": "9950",
+          "title": "HORAS EXTRAORDIN\u00c1RIAS - BANCO DE HORAS",
+          "description": "Quantidade (em n\u00famero decimal com dois d\u00edgitos) de horas extraordin\u00e1rias incorporadas ao banco de horas",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 157,
+      "fields": {
+          "code": "9951",
+          "title": "HORAS COMPENSADAS - BANCO DE HORAS",
+          "description": "Quantidade (em n\u00famero decimal com dois d\u00edgitos) de horas compensadas no banco de horas",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 158,
+      "fields": {
+          "code": "9989",
+          "title": "OUTROS VALORES INFORMATIVOS",
+          "description": "Outros valores informativos, que n\u00e3o sejam vencimentos nem descontos",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 159,
+      "fields": {
+          "code": "1001",
+          "title": "SUBS\u00cdDIO",
+          "description": "Corresponde \u00e0 remunera\u00e7\u00e3o paga na forma de subs\u00eddio",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 160,
+      "fields": {
+          "code": "1216",
+          "title": "ADICIONAL DE LOCALIDADE",
+          "description": "Adicional pela realiza\u00e7\u00e3o de atividade em localidade transfronteiri\u00e7a",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 161,
+      "fields": {
+          "code": "1217",
+          "title": "GRATIFICA\u00c7\u00c3O DE CURSO/CONCURSO",
+          "description": "Verba de natureza remunerat\u00f3ria por atividade exercida em curso/concurso",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 162,
+      "fields": {
+          "code": "1411",
+          "title": "AUX\u00cdLIO-NATALIDADE",
+          "description": "Valor relativo ao nascimento do filho de servidor p\u00fablico, previsto em lei",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 163,
+      "fields": {
+          "code": "1412",
+          "title": "ABONO PERMAN\u00caNCIA",
+          "description": "Valor relativo ao abono de perman\u00eancia, de acordo com a CF/1988",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 164,
+      "fields": {
+          "code": "1619",
+          "title": "AJUDA COMPENSAT\u00d3RIA - LEI 14.020/2020",
+          "description": "Ajuda compensat\u00f3ria paga pelo empregador ao empregado durante per\u00edodo de suspens\u00e3o do contrato de trabalho ou redu\u00e7\u00e3o proporcional de sal\u00e1rio e jornada, nos termos da Lei 14.020/2020 (convers\u00e3o da MP 936/2020)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 165,
+      "fields": {
+          "code": "1651",
+          "title": "DI\u00c1RIAS DE VIAGEM - AT\u00c9 50% DO SAL\u00c1RIO",
+          "description": "Di\u00e1rias de viagem ao trabalhador, desde que n\u00e3o exceda a 50% do seu sal\u00e1rio-base mensal ",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 166,
+      "fields": {
+          "code": "1652",
+          "title": "DI\u00c1RIAS DE VIAGEM - ACIMA DE 50% DO SAL\u00c1RIO",
+          "description": "Di\u00e1rias de viagem superior a 50% do sal\u00e1rio-base mensal",
+          "active": false
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 167,
+      "fields": {
+          "code": "1800",
+          "title": "ALIMENTA\u00c7\u00c3O CONCEDIDA EM PEC\u00daNIA",
+          "description": "Alimenta\u00e7\u00e3o concedida sob a forma de pec\u00fania",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 168,
+      "fields": {
+          "code": "1806",
+          "title": "ALIMENTA\u00c7\u00c3O EM TICKET OU CART\u00c3O, VINCULADA AO PAT",
+          "description": "Alimenta\u00e7\u00e3o concedida sob a forma de ticket ou cart\u00e3o, por empresa vinculada ao Programa de Alimenta\u00e7\u00e3o do Trabalhador - PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 169,
+      "fields": {
+          "code": "1807",
+          "title": "ALIMENTA\u00c7\u00c3O EM TICKET OU CART\u00c3O, N\u00c3O VINCULADA AO PAT",
+          "description": "Alimenta\u00e7\u00e3o concedida sob a forma de ticket ou cart\u00e3o, por empresa n\u00e3o vinculada ao PAT ",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 170,
+      "fields": {
+          "code": "1808",
+          "title": "CESTA B\u00c1SICA OU REFEI\u00c7\u00c3O, VINCULADA AO PAT",
+          "description": "Alimenta\u00e7\u00e3o concedida sob a forma de cesta b\u00e1sica ou refei\u00e7\u00e3o, por empresa vinculada ao PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 171,
+      "fields": {
+          "code": "1809",
+          "title": "CESTA B\u00c1SICA OU REFEI\u00c7\u00c3O, N\u00c3O VINCULADA AO PAT",
+          "description": "Alimenta\u00e7\u00e3o concedida sob a forma de cesta b\u00e1sica ou refei\u00e7\u00e3o, por empresa n\u00e3o vinculada ao PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 172,
+      "fields": {
+          "code": "1899",
+          "title": "OUTROS AUX\u00cdLIOS",
+          "description": "Valores relativos a outros aux\u00edlios n\u00e3o previstos nos demais itens",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 173,
+      "fields": {
+          "code": "3510",
+          "title": "GRATIFICA\u00c7\u00c3O (JETON)",
+          "description": "Valor correspondente a gratifica\u00e7\u00e3o (jeton) por comparecimento a sess\u00f5es ou reuni\u00f5es",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 174,
+      "fields": {
+          "code": "3511",
+          "title": "GRATIFICA\u00c7\u00c3O ELEITORAL",
+          "description": "Valor correspondente ao exerc\u00edcio da atividade pelo juiz eleitoral",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 175,
+      "fields": {
+          "code": "4011",
+          "title": "COMPLEMENTO DE SAL\u00c1RIO-M\u00cdNIMO - RPPS",
+          "description": "Valor correspondente \u00e0 diferen\u00e7a entre o sal\u00e1rio-m\u00ednimo e o valor do vencimento do cargo efetivo pago a servidor p\u00fablico vinculado a Regime Pr\u00f3prio de Previd\u00eancia Social - RPPS",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 176,
+      "fields": {
+          "code": "6108",
+          "title": "TEMPO DE ESPERA DO MOTORISTA PROFISSIONAL",
+          "description": "Valor correspondente ao tempo de espera do motorista profissional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 177,
+      "fields": {
+          "code": "6119",
+          "title": "INDENIZA\u00c7\u00c3O RESCIS\u00d3RIA - LEI 14.020/2020",
+          "description": "Indeniza\u00e7\u00e3o pela dispensa sem justa causa que ocorrer durante o per\u00edodo de garantia provis\u00f3ria no emprego de que trata o art. 10 da Lei 14.020/2020 (convers\u00e3o da MP 936/2020)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 178,
+      "fields": {
+          "code": "7006",
+          "title": "AUX\u00cdLIO-RECLUS\u00c3O",
+          "description": "Valor de aux\u00edlio-reclus\u00e3o para o servidor p\u00fablico de baixa renda",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 179,
+      "fields": {
+          "code": "7007",
+          "title": "PENS\u00d5ES ESPECIAIS",
+          "description": "Valor das pens\u00f5es de car\u00e1ter especial diferentes de pens\u00e3o por morte",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 180,
+      "fields": {
+          "code": "7008",
+          "title": "COMPLEMENTA\u00c7\u00c3O DE APOSENTADORIA/ PENS\u00c3O",
+          "description": "Valor relativo \u00e0 complementa\u00e7\u00e3o de aposentadoria/pens\u00e3o vinculada ao Regime Geral de Previd\u00eancia Social - RGPS",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 181,
+      "fields": {
+          "code": "9202",
+          "title": "CONTRIBUI\u00c7\u00c3O MILITAR",
+          "description": "Desconto relativo \u00e0 seguridade do militar e seus dependentes",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 182,
+      "fields": {
+          "code": "9207",
+          "title": "FALTAS",
+          "description": "Desconto decorrente de aus\u00eancia de trabalho durante todo o dia em raz\u00e3o de, por exemplo, falta injustificada, suspens\u00e3o disciplinar, greve",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 183,
+      "fields": {
+          "code": "9208",
+          "title": "ATRASOS",
+          "description": "Desconto decorrente de aus\u00eancia de trabalho em raz\u00e3o de, por exemplo, atrasos no in\u00edcio da jornada de trabalho ou de sa\u00edda antecipada do trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 184,
+      "fields": {
+          "code": "9211",
+          "title": "DSR SOBRE FALTAS",
+          "description": "Desconto correspondente ao Descanso Semanal Remunerado - DSR, calculado sobre faltas do trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 185,
+      "fields": {
+          "code": "9212",
+          "title": "DSR SOBRE ATRASOS",
+          "description": "Desconto correspondente ao Descanso Semanal Remunerado - DSR, calculado sobre atrasos do trabalhador",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 186,
+      "fields": {
+          "code": "9240",
+          "title": "ALIMENTA\u00c7\u00c3O CONCEDIDA EM PEC\u00daNIA - DESCONTO",
+          "description": "Desconto referente \u00e0 alimenta\u00e7\u00e3o concedida sob a forma de pec\u00fania",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 187,
+      "fields": {
+          "code": "9241",
+          "title": "ALIMENTA\u00c7\u00c3O EM TICKET OU CART\u00c3O, VINCULADA AO PAT - DESCONTO",
+          "description": "Desconto referente \u00e0 participa\u00e7\u00e3o do trabalhador no custo de alimenta\u00e7\u00e3o concedida sob a forma de ticket ou cart\u00e3o, por empresa vinculada ao Programa de Alimenta\u00e7\u00e3o do Trabalhador - PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 188,
+      "fields": {
+          "code": "9242",
+          "title": "ALIMENTA\u00c7\u00c3O EM TICKET OU CART\u00c3O, N\u00c3O VINCULADA AO PAT - DESCONTO",
+          "description": "Desconto referente \u00e0 participa\u00e7\u00e3o do trabalhador no custo de alimenta\u00e7\u00e3o concedida sob a forma de ticket ou cart\u00e3o, por empresa n\u00e3o vinculada ao PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 189,
+      "fields": {
+          "code": "9243",
+          "title": "CESTA B\u00c1SICA OU REFEI\u00c7\u00c3O, VINCULADA AO PAT - DESCONTO",
+          "description": "Desconto referente \u00e0 participa\u00e7\u00e3o do trabalhador no custo de alimenta\u00e7\u00e3o concedida sob a forma de cesta b\u00e1sica ou refei\u00e7\u00e3o, por empresa vinculada ao PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 190,
+      "fields": {
+          "code": "9244",
+          "title": "CESTA B\u00c1SICA OU REFEI\u00c7\u00c3O, N\u00c3O VINCULADA AO PAT - DESCONTO",
+          "description": "Desconto referente \u00e0 participa\u00e7\u00e3o do trabalhador no custo de alimenta\u00e7\u00e3o concedida sob a forma de cesta b\u00e1sica ou refei\u00e7\u00e3o, por empresa n\u00e3o vinculada ao PAT",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 191,
+      "fields": {
+          "code": "9260",
+          "title": "FIES - DESCONTO",
+          "description": "Desconto referente \u00e0 amortiza\u00e7\u00e3o de financiamento do Fundo de Financiamento Estudantil (FIES), para repasse \u00e0 institui\u00e7\u00e3o consignat\u00e1ria",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 192,
+      "fields": {
+          "code": "9291",
+          "title": "ABATE-TETO",
+          "description": "Valor deduzido da remunera\u00e7\u00e3o total do segurado que supere o teto remunerat\u00f3rio constitucional",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 193,
+      "fields": {
+          "code": "9292",
+          "title": "RESSARCIMENTO AO ER\u00c1RIO",
+          "description": "Valor deduzido da remunera\u00e7\u00e3o para pagamento de ressarcimento ou de penalidade",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 194,
+      "fields": {
+          "code": "9293",
+          "title": "HONOR\u00c1RIOS ADVOCAT\u00cdCIOS",
+          "description": "Valor descontado do trabalhador por determina\u00e7\u00e3o judicial a ser pago ao advogado/escrit\u00f3rio de advocacia",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 195,
+      "fields": {
+          "code": "9294",
+          "title": "REDUTOR EC 41/03",
+          "description": "Valor descontado da remunera\u00e7\u00e3o do instituidor da pens\u00e3o (Emenda Constitucional 41/2003)",
+          "active": true
+      }
+  },
+  {
+      "model": "gfp.natureevent",
+      "pk": 196,
+      "fields": {
+          "code": "9907",
+          "title": "TOTAL DA CONTRIBUI\u00c7\u00c3O DA PREVIDENCI\u00c1RIA PATRONAL - RPPS",
+          "description": "Valor total da contribui\u00e7\u00e3o previdenci\u00e1ria patronal para o RPPS (normal, suplementar e aportes)",
+          "active": true
+      }
+  }
+  ]
+  

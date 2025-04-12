@@ -1,0 +1,102 @@
+{% extends "protocolo/base.html" %}
+
+{% block body-resume %}
+
+{% include "edocs/requestform/styles.html" %}
+
+<p>Protocolo: <b>{{ protocol.codigo }}</b></p>
+
+<p class="rf-title">
+    REQUERIMENTO DE ANTECIPAÇÃO DE 13º SALÁRIO<br/>
+    EM FOLHA COMPLEMENTAR NO MÊS DE MAIO – ATO PGJ Nº 026/2022
+</p>
+
+<table class="rf-table">
+    <tr>
+        <th class="rf-th">Nome do(a) interessado(a):</th>
+        <th class="rf-th">Matrícula:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ employee_name }}</td>
+        <td class="rf-td">{{ employee_number }}</td>
+    </tr>
+    <tr><th class="rf-th" colspan="2">Cargo:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ job_position }}</td></tr>
+    <tr><th class="rf-th" colspan="2">Lotação:</th></tr>
+    <tr><td class="rf-td" colspan="2">{{ department }}</td></tr>
+    <tr>
+        <th class="rf-th">Data de nascimento:</th>
+        <th class="rf-th">Telefone de contato:</th>
+    </tr>
+    <tr>
+        <td class="rf-td">{{ birth_date }}</td>
+        <td class="rf-td">{{ contact_number }}</td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Termo de opção:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height rf-text-justify">
+            {% if option_term == 1 %}
+                OPTO por receber a antecipação de 75% (setenta e cinco por cento)
+                do valor líquido do décimo terceiro salário (gratificação natalina)
+                em folha complementar no mês de maio, nos termos do Art. 1º, do
+                Ato nº 026/2022.
+
+            {% elif option_term == 2 %}
+                OPTO por receber a antecipação de 90% (noventa por cento) do valor
+                líquido do décimo terceiro salário (gratificação natalina) em folha
+                complementar no mês de maio, nos termos do Art. 1º, do
+                Ato nº 026/2022.
+
+            {% elif option_term == 3 %}
+                OPTO por receber o valor complementar de antecipação, de forma a
+                alcançar o percentual de 90% (noventa por cento) do valor líquido
+                do décimo terceiro salário (gratificação natalina), em folha
+                complementar no mês de maio, nos termos do Art. 1º parágrafo único, do Ato
+                nº 026/2022, considerando que já recebi, neste exercício,
+                antecipação de 50% (cinquenta por cento) do valor bruto da
+                gratificação natalina.
+
+            {% else %}
+                Termo de opção inválido.
+            {% endif %}
+            </p>
+
+            <p class="rf-paragraph-height rf-text-justify">
+                DECLARO estar ciente de que esta opção tem caráter irretratável
+                e estará apta a produzir os seus efeitos específicos.
+            </p>
+            <p class="rf-paragraph-height rf-text-justify">
+                DECLARO, AINDA, estar ciente de que eventuais incidências do
+                Imposto sobre a Renda da Pessoa Física – IRPF, retido na fonte,
+                Contribuição Previdenciária (RGPS/INSS) e/ou contribuições
+                associativas (ATMP/ASAMP) recairá(ão), uma única vez, somente
+                no pagamento da última parcela, no mês de dezembro, conforme
+                dispõe a legislação tributária de regência.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<table class="rf-table">
+    <tr><th class="rf-th">Instruções / Informações:</th></tr>
+    <tr>
+        <td class="rf-td">
+            <p class="rf-paragraph-height">
+                - Assinar este documento eletronicamente.
+            </p>
+            <p class="rf-paragraph-height">
+                - Encaminhar para o Departamento de Gestão de Pessoas.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{% include "protocolo/protocol-attachments.html" %}
+{% include "protocolo/access-level.html" %}
+{% include "protocolo/protocol-info.html" %}
+
+{% endblock %}
